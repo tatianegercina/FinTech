@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's class will focus on exposing students to the exciting and innovative FinTech APIs that have been disrupting the industry. There are so many groundbreaking APIs in the FinTech industry that it's almost impossible not to get excited about them. APIs used in this lesson include **Quandl**, an API that provides access to historical stock data, and **Plaid**, an API that brokers connections between multiple financial institutions to create a unified view of personal, financial information and accelerate the extraction of data from multiple financial accounts. Both of these services help democratize and decentralize financial data stores and analytic approaches. And this just the beginning. New APIs and SDKs (software development kits) are released regularly, which means there's always new technologies to use to enhance and advance the FinTech industry. It's a new world, and it's a world to be excited about!
+Today's class will focus on exposing students to the exciting and innovative FinTech APIs that have been disrupting the industry. There are so many groundbreaking APIs in the FinTech industry that it's almost impossible not to get excited about them. APIs used in this lesson include **Quandl**, an API that provides access to historical stock data, and **Plaid**, an API that brokers connections between multiple financial institutions to create a unified view of personal, financial information and accelerate the extraction of data from multiple financial accounts. Both of these services help democratize and decentralize financial data stores and analytic approaches. And this is just the beginning. New APIs and SDKs (software development kits) are released regularly, which means there's always new technologies to use to enhance and advance the FinTech industry. It's a new world, and it's a world to be excited about!
 
 This lesson presents students with hands-on experience using APIs in a Python environment, requesting and leveraging API keys, and securely storing API keys and credentials as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to Quandl using the Python `requests` library and Plaid's software development kit, a library packaged to provide developers with access to Plaid's endpoints and functions.
 
@@ -26,7 +26,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [IEXFinance Installation Guide](../Supplemental/IEXFinance_Installation_Guide.md) (again) and the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class.
+* Slack out the [Alpaca Installation Guide](../Supplemental/AlpacaMarkets_Installation-Guide.md) (again) and the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class.
 
 * This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created and accounts and received API keys prior to this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up. Students were instructed to sign up at the end of 5.1. There will be an activity dedicated to confirming that each student has signed up.
 
@@ -171,37 +171,30 @@ Ask if there are any questions or comments before moving on.
 
 ### 4. Instructor Do: Creating Environment Variables (5 min) (Critical)
 
-In the previous activity, students confirmed that they have their API keys. In this activity, they will learn how to create a `keys.sh` file to store their keys as environment variables. This demo will also include exporting environment variables so that the variables can be used in Python and in other applications and programs.
+In the previous activity, students confirmed that they have their API keys. In this activity, they will learn how to create a `.env` file to store their keys as environment variables. This demo will also include exporting environment variables so that the variables can be used in Python and in other applications and programs.
 
 **Files:**
 
-* [keys.sh](Activities/01-Ins_Create_Env_Variables/Unsolved/keys.sh)
+* [.env](Activities/01-Ins_Create_Env_Variables/Unsolved/.env)
 
 Open the 5.2 slides, and highlight the following discussion points:
 
 * Exporting an environment variable exposes it to all applications and programs sharing the same parent process (e.g., a terminal or Python kernel). Each application and program inherits the variable, which allows developers to make calls using `os.getenv` to access the data stored in the variable.
 
-* The best way to export environment variables is to create a `keys.sh` file. The `keys.sh` shell script will contain commands that will create and export environment variables. The `keys.sh` approach is faster than exporting the variables individually.
+* A common way to export environment variables is to create a `.env` file. The `.env` file will define the environment variables that you would like to export within your local projects environment. The `.env` approach is faster than exporting the variables individually.
 
-Open the [starter file](Activities/01-Ins_Create_Env_Variables/Unsolved/keys.sh), and perform a live demo of creating and exporting environment variables with the `keys.sh` file.
+Open the [starter file](Activities/01-Ins_Create_Env_Variables/Unsolved/.env), and perform a live demo of creating and exporting environment variables with the `.env` file.
 
-* Enter the following command into `keys.sh` file.
-
-  ```shell
-  export QUANDL_API_KEY="ENTER YOUR API KEY HERE"
-  ```
-
-* Once the `keys.sh` file has been created; it has to be executed. Execution can occur manually, or it can be scheduled. Navigate to where `keys.sh` is saved, and execute the following shell command:
+Define your `QUANDL_API_KEY` value in the `.env` file.
 
   ```shell
-  . ./keys.sh
+  QUANDL_API_KEY="ENTER YOUR API KEY HERE"
   ```
 
-* Execute an `echo` command to output the value of the variable to the screen.
+* You define an environment variable in your `.env` like so.
 
-  ```shell
-  echo $QUANDL_API_KEY
-  ```
+* Once the `.env` file has been created; it must be loaded into memory by a package like `python-dotenv` so that the environment variables can be sourced. We will be discussing methods on loading a `.env` in the next lesson.
+
 
 Ask if there are any questions, and then move on to the next activity.
 
@@ -223,32 +216,55 @@ Introduce students to the concept of environment variables by asking the followi
 
   **Answer:** Variables could be created, and the keys could be stored in the variables.
 
-Navigate to the 5.2 slides and touchpoint on each of the below discussion points.
+Create a new `.env` file containing your `QUANDL_API_KEY` in the same directory as the [env_variables.ipynb](Activities/02-Ins_Call_Env_Variables/Solved/env_variables.ipynb) After you have created the `.env` run the jupyter notebook file. Next navigate to the 5.2 slides and touchpoint on each of the below discussion points.
 
-* Environment variables are variables just like Python variables; however, instead of being created in a Python application, they're created on a user's computer. Environment variables are operating-system-level variables that are accessible by all programs and applications.
+* Environment variables are variables just like Python variables; however, instead of being created in a Python application, they're created on a user's computer. Environment variables are operating-system-level variables that are accessible by all programs and applications with access to that environment.
 
-* Environment variables are given a name, and they can hold any string value. It is important to note that environment variables can only hold strings.
+* Environment variables are given a name, and they can hold any string value. It is important to note that environment variables can only hold `strings`.
 
 * Like with Python variables, data within environment variables can be accessed by making a call to the variable.
 
 * An easy, convenient, and secure way to store any data that needs to be accessed across programs and applications is to use environment variables. This includes API keys, as well as user credentials, and program installation paths (e.g., Python).
 
+```python
+# Import dotenv package for setting environment variables
+from dotenv import load_dotenv
+
+# Import os package
+import os
+```
+
+* For reading our `.env` file and setting it's defined environment variables in our local environment we import the `load_dotenv()` method from the `python-dotenv` package.
+
+* For fetching our environment variables from the local environment and loading them into an in-memory python variable we are importing the `os` package.
+
+```python
+# Set environment variables from the .env in the local environment
+load_dotenv()
+```
+
+* Setting the environment variables in our `.env` file is as easy as calling the `load_dotenv()` method.
+
+* Keep in mind unless a file location `string` is passed `load_dotenv` will look for a `.env` in the root directory from which your Python code is executing.
+
+```python
+# Retrieve API key and store as Python variable
+api_key = os.getenv("QUANDL_API_KEY")
+```
+
 * Once an environment variable is declared, it can be called using the `os.environ.get` function. The input to the `os.environ.get` function is the name of the environment variable. The output should then be stored as a Python variable to be used at a later time.
 
-  ```python
-  api_key = os.getenv("QUANDL_API_KEY")
-  ```
 
-* If an environment variable does not exist, Python will return None as the value. An empty environment variable will cause an API call to fail. If an API doesn't seem to be working right, double-check your environment variable using the `type` command. This will indicate if the environment variable is of type None (null) or string  (not null).
+* If an environment variable does not exist, Python will return `None` as the value. An empty environment variable will cause an API call to fail. If an API doesn't seem to be working right, double-check your environment variable using the `type` command. This will indicate if the environment variable is of type `None` **(null)**  or `string  `**(not null)**.
 
-  ```python
-  api_key = os.getenv("MY_QUANDL_API_KEY")
-  type(api_key)
-  ```
+```python
+api_key = os.getenv("MY_QUANDL_API_KEY")
+type(api_key)
+```
 
-  ```
-  NoneType
-  ```
+```
+NoneType
+```
 
 * Emphasize to students that they need to make sure that the environment variable `print` statement is not pushed into Git, or any other repository, as it would expose their API keys to anyone who has access to the repository.
 
@@ -268,7 +284,7 @@ If students finish early, use the extra time to review the final two guided revi
 
 * [env_variables.ipynb](Activities/03-Stu_Under_Lock_And_Key/Unsolved/env_variables.ipynb)
 
-* [keys.sh](Activities/03-Stu_Under_Lock_And_Key/Solved/keys.sh)
+* [.env](Activities/03-Stu_Under_Lock_And_Key/Solved/.env)
 
 **Instructions:**
 
@@ -280,21 +296,19 @@ If students finish early, use the extra time to review the final two guided revi
 
 **Files:**
 
-* [keys.sh](Activities/03-Stu_Under_Lock_And_Key/Solved/keys.sh)
-
 * [env_variables.ipynb](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ipynb)
 
 Kick off the activity review session by asking students to summarize the process of creating and using environment variables with APIs. Engage the students with the following questions:
 
 * After acquiring an API key, what's the first thing that should be done?
 
-  **Answer:** The key should be stored as an environment variable using a `keys.sh` file.
+  **Answer:** The key should be stored as an environment variable in your projects `.env` file.
 
-* Once an environment variable has been exported, what should happen next?
+* Once an environment variable has been defined in your `.env` file, what should happen next?
 
-  **Answer:** The `keys.sh` file should be executed. When executing, the `source` command should be used.
+  **Answer:** The `.env` file should be read using the `load_dotenv()` method and the environment variables exported/set.
 
-* What should be done after the `keys.sh` file has been executed and sourced**?
+* What should be done after the `.env` file has been sourced?
 
   **Answer:** The environment variable should be called in Python using the `os.environ.get` function.
 
@@ -304,15 +318,11 @@ Kick off the activity review session by asking students to summarize the process
 
 Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ipynb), and end the review session with a quick-dry walk-through of the solution.
 
-* The `export` command is used to create environment variables. Once created, the environment variables are then shared with all child processes. For example, when the `keys.sh` file is executed, the export command will ensure the `QUANDL_API_KEY` variable is accessible by all processes running in the terminal that executed the `keys.sh` file.
+* Once created, the environment variables are then shared with all child processes. For example, when the `load_dotenv()` method is executed,it will ensure the `QUANDL_API_KEY` variable is accessible by all processes running in the environment that executed the python file process.
 
   ```shell
-  export QUANDL_API_KEY="ENTER YOUR KEY HERE"
+  QUANDL_API_KEY="ENTER YOUR KEY HERE"
   ```
-
-* Once a `key.sh` file is created, it has to be executed for the `export` commands to execute. Supplying a `source` command before the `key.sh` file will source the variables and load the `keys.sh` file/`export` command.
-
-  ![source_keys.png](Images/source_keys.png)
 
 * Environment variables can be accessed in Python with the os library. The library has to be imported before it can be used. The os library has an `os.getenv` function that can be used to retrieve environment variables from the operating system. Once retrieved, the value can be saved as a Python variable (e.g.,  `api_key`).
 
@@ -332,7 +342,7 @@ Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ip
 
 If time remains, ask two final, guided questions:
 
-* If a user were to export environment variable `QUANDL_API_KEY` using a Git Bash terminal but then launched Jupyter Lab in a different terminal window, would Jupyter Lab be able to retrieve the environment variable?
+* If a user were to export environment variable `QUANDL_API_KEY` using a terminal but then launched Jupyter Lab in a different terminal window, would Jupyter Lab be able to retrieve the environment variable?
 
   **Answer:** No. Environment variables are sourced to current and child processes. Because a new terminal window is used to launch Jupyter Lab, the environment variable `QUANDL_API_KEY` will be out of scope.
 
@@ -437,11 +447,9 @@ Facilitate discussion with the following talking points and guided questions:
 
 Students will receive an instructor-led demo of the Plaid API. The instructor will demonstrate to students how to connect to the Plaid sandbox from a Python environment.
 
-Have the `keys.sh` file prepared before class so that it does not need to be created during the activity.
+Have the `.env` file prepared before class so that it does not need to be created during the activity.
 
 **Files:**
-
-* [keys.sh](Activities/04-Ins_Plaid_Demo/Solved/keys.sh)
 
 * [plaid_demo.ipynb](Activities/04-Ins_Plaid_Demo/Solved/plaid_demo.ipynb)
 
@@ -451,20 +459,20 @@ Emphasize to students that one of the cool things about Plaid is that it provide
 
 #### Prepare Environment Variables
 
-Open the [keys.sh starter file](Activities/04-Ins_Plaid_Demo/Solved/keys.sh), and set up your environment variables. If possible, complete this step prior to the lesson.
+Create a `.env`, and set up your environment variables. If possible, complete this step prior to the lesson.
 
-* Plaid uses three types of API keys (**client id**, **public key**, and **sandbox secret key**). Each of these needs to be saved as environment variables in a `keys.sh` file. Log into [Plaid](https://dashboard.plaid.com/account/keys) to retrieve them.
+* Plaid uses three types of API keys (**client id**, **public key**, and **sandbox secret key**). Each of these needs to be saved as environment variables in a `.env` file. Log into [Plaid](https://dashboard.plaid.com/account/keys) to retrieve them.
 
   ```shell
-  export PLAID_CLIENT_ID="ENTER YOUR KEY HERE"
-  export PLAID_PUBLIC_KEY="ENTER YOUR KEY HERE"
-  export PLAID_SBX_SECRET_KEY="ENTER YOUR KEY HERE"
+  PLAID_CLIENT_ID="ENTER YOUR KEY HERE"
+  PLAID_PUBLIC_KEY="ENTER YOUR KEY HERE"
+  PLAID_SBX_SECRET_KEY="ENTER YOUR KEY HERE"
   ```
 
-* Once complete, the `keys.sh` file will need to be sourced.
+* Once complete, the `.env` file will need to be loaded with `dotenv`.
 
   ```shell
-  source ./keys.sh
+  load_dotenv()
   ```
 
 * Ask students if they have any questions before continuing.
@@ -485,13 +493,20 @@ Because Plaid is offered as an SDK, the Python requests library doesn't need to 
 
 Open the Jupyter [starter file](Activities/04-Ins_Plaid_Demo/Solved/plaid_demo.ipynb), and live code the following:
 
-* After the Plaid SDK is installed, it can be imported into Python using the `import` command. Also import other libraries needed for this activity, including `os`, `json`, and `datetime`.
+* After the Plaid SDK is installed, it can be imported into Python using the `import` command. Also import other libraries needed for this activity, including `os`, `json`, `datetime` and `dotenv`.
 
   ```python
   import plaid
   import os
   import datetime
   import json
+  from dotenv import load_dotenv
+  ```
+
+* The environment variables from the `.env` must be loaded and set with the `load_dtoenv()` method.
+
+  ```python
+  load_dotenv()
   ```
 
 * In order to make a request to the Plaid API, a `client` object needs to be created. This object will serve as the client in the client-server model. The `client` object will specify the API keys, as well as the desired Plaid environment. Plaid offers three different environments for developers: sandbox, development, and production. The sandbox and development environments are unrestricted; however, Plaid bills for the use of the production environment.
@@ -601,7 +616,7 @@ Communicate to students that they can work with a partner to complete the activi
 
 **Files:**
 
-* [keys.sh](Activities/05-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/keys.sh)
+* [example.env](Activities/05-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/example.env)
 
 * [sporting_plaid.ipynb](Activities/05-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/sporting_plaid.ipynb)
 
@@ -627,10 +642,6 @@ If time remains, ask the following questions:
 
   **Answer:** String
 
-* Are environment variables inherited?
-
-  **Answer:** Yes. Parent processes pass environment variables down to child processes. The `export` and `source` commands ensure that child processes inherit the environment variables.
-
 * Why is Plaid considered a FinTech disrupter?
 
   **Answer:** Plaid is changing the way developers and consumers can get access to FinTech data. Not only is Plaid providing a technology platform to get access to FinTech data, but it is also providing analytic and insight products to help consumers understand their data and make data-driven decisions.
@@ -651,7 +662,7 @@ Circulate through the room and provide assistance while students are working. St
 
 **Files:**
 
-* [keys.sh](Activities/06-Stu_Sporting_Plaid_Pt_2/Unsolved/key.sh)
+* [example.env](Activities/06-Stu_Sporting_Plaid_Pt_2/Unsolved/example.env)
 
 * [sporting_plaid.ipynb](Activities/06-Stu_Sporting_Plaid_Pt_2/Unsolved/sporting_plaid.ipynb)
 
@@ -677,11 +688,11 @@ Students will just have completed a lengthy activity of installing and using the
 
   **Answer:** Steps for securely and adequately exporting environment variables include:
 
-    1. Creating `keys.sh` file.
+    1. Creating a `.env` file.
 
-    2. Enter `export` command for each environment variable.
+    2. Import the `dotenv` package.
 
-    3. Use the `source` command to load environment variables.
+    3. Loading the `.env` file with `load_dotenv()` to set the environment variable.
 
 * Engage students by asking what they see for the future of FinTech when companies like Plaid are striving to democratize financial data and analytics, including trends, consequences, and paradoxical effects?
 
