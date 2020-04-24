@@ -6,7 +6,7 @@ For the past three weeks, students have been immersed into the world of Python a
 
 Today's class will teach students what application programming interfaces (APIs) are, what they're used for, and why they are valuable. Students will also learn, from a high level, what the client-server model is and how it works. Students will submit API calls with Postman (a development environment for APIs) and Python, and they'll learn how to decipher and parse API JSON output. Lastly, students will submit API calls with parameters in order to improve response time and filter and narrow down API output. Learning how to make API calls and parse API output using Postman and Python will prepare students for getting their hands dirty with APIs in the professional world.
 
-Before students leave at the end of the class, instruct them to sign up for the APIs that are going to be used tomorrow. These APIs will be used in the next lesson, and the 5.2 activities will require students have API keys. Links are provided below. Remember to slack the links to the students so they have a resource to sign up with.
+Before students leave at the end of the class, instruct them to sign up for the APIs that are going to be used tomorrow. These APIs will be used in the next lesson, and the Lesson 5.2 activities will require students have API keys. Links are provided below. Remember to slack the links to the students so they have a resource to sign up with.
 
 * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
@@ -34,15 +34,19 @@ By the end of class, students will be able to:
 
 * Slack out the [Alpaca Installation Guide](../Supplemental/AlpacaMarkets_Installation-Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with Alpaca outside of class time.
 
-* This class will focus on the fundamentals of APIs and the process of submitting APIs. This class is a great opportunity for students to be impressed and inspired by FinTech. There are a number of fun and creative FinTech APIs, such as Quandl and World of Bank, that will be used to drive student engagement. This lesson is the perfect opportunity to get students excited about FinTech again!
+* This class will focus on the fundamentals of APIs and the process of submitting APIs. This class is a great opportunity for students to be impressed and inspired by FinTech. There are a number of fun and creative FinTech APIs, such as Quandl and World Bank, that will be used to drive student engagement. This lesson is the perfect opportunity to get students excited about FinTech again!
 
 * The first half of the lesson will include instructor demonstrations of submitting requests to different FinTech APIs using Postman. Each demo should be focused on showcasing FinTech APIs and getting students excited about contributing to the wealth of APIs that are already out there. Make sure to create accounts for these APIs:
 
-  * Postman
+  * [Postman](https://www.postman.com/)
 
-  * World of Bank
+  * [World Bank](https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-information)
 
-  * Quandl
+  * [Quandl](https://www.quandl.com/)
+
+  * [Plaid](https://plaid.com/)
+
+  * [Alpaca](https://alpaca.markets/)
 
 * Students should have already downloaded Postman the night before. Use the welcome activity to identify any students who may not have already downloaded Postman, and have the TAs help them get it installed.
 
@@ -52,12 +56,19 @@ By the end of class, students will be able to:
 
 Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also encourage students to work with partners.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
-
-- - -
-
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [5.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=01b5d2b5-75ae-4414-a9ec-aaaf00fb4e47) Note that this video may not reflect the most recent lesson plan.
+
+### Slideshow and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 5.1 Slides]().
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
