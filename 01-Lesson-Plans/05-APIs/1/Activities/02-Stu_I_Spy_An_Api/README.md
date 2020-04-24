@@ -18,7 +18,7 @@ APIs to Investigate:
 
   > https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json
 
-* The World Bank API has a wealth of international bank data. For example, if you wanted to analyze the growth rate of each countries gross domestic product values (GDP), you could extract GDP values, by year, from thehttp://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json World Bank API.
+* The World Bank API has a wealth of international bank data. For example, if you wanted to analyze the growth rate of each country's gross domestic product values (GDP), you could extract GDP values, by year, from the World Bank API.
 
   > http://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json
 
