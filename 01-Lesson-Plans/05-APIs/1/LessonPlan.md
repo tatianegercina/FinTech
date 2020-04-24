@@ -115,7 +115,7 @@ Finish the demo of Quandl with the following reflective question:
 
   **Answer:** Quandl is easier and quicker to use than Nasdaq. As long as the URL is known, fewer steps are needed. A limitation is that the request URL has to be known.
 
-* If you wanted to automate the extraction of historical stock price, what's the better tool: nasdaq.com or Quandl?
+* If you wanted to automate the extraction of historical stock prices, what's the better tool: nasdaq.com or Quandl?
 
   **Answer:** Quandl would be the best tool to use to automate extraction of historical stock data. It would be easier than automating the nasdaq.com process.
 
@@ -147,7 +147,7 @@ Explain to student's that this unit's homework focuses on exposing them to some 
 
 Walk through the homework instructions, and highlight the following:
 
-* The first component of the homework is focused on budget analysis. Students will use an API called **PLAID** to analyze personal financial data. PLAID can be used to securely access any type of banking, credit, or investment account, which opens doors to new services to customers that are not typically available without PLAID. The greatest thing about it is that you can confidently use PLAID knowing you can integrate it with other technologies and apps without security being compromised; PLAID handles the security and provisions access to personal financial accounts.
+* The first component of the homework is focused on budget analysis. Students will use an API called **PLAID** to analyze personal financial data. PLAID can be used to securely access any type of banking, credit, or investment account, which opens doors to new services for customers that are not typically available without PLAID. The greatest thing about it is that you can confidently use PLAID knowing you can integrate it with other technologies and apps without security being compromised; PLAID handles the security and provisions access to personal financial accounts.
 
 * With financial data available and accessible via PLAID, students will transition to using the financial data retrieved via PLAID to forecast financial goals. This section uses a Monte Carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution will be sufficient to cover their future income.
 
