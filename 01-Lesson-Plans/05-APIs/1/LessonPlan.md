@@ -179,31 +179,33 @@ Part of the demonstration will include showing students the client-server model 
 
 Open the lesson slides, move to the "Client-Server Model" section and highlight the following:
 
-* Explain the client-server model architecture. Indicate that the model encompasses the relationship between clients and servers.
+* The client-server model is a structure that outlines the relationship and flow of communication between two components: a client and a server.
 
   ![client_server_model.jpg](Images/client_server_model.png)
-
-* Define the client-server model as structure that outlines the relationship and flow of communication between two components: a client and a server.
 
   * A **client** is any tool or application that is used to connect to or communicate with a server. This includes internet browsers, mobile devices, and command line terminals, just to name a few. Clients submit requests to servers, and clients receive responses from servers.
 
   * A **server** is a computer program, device, or hardware. Servers run some form of application and are tasked with interacting and providing functionality to clients. Servers receive requests from clients, and servers send responses back to clients.
 
-* Inform students that client-server requests are commonly `GET` and `POST` requests. `GET` requests fetch data from servers. `POST` requests transmit data (like user credentials for authorization) to servers.
+* Client-server requests are commonly `GET` and `POST` requests.
 
-* Communicate that the client-server model is what handles all traffic and requests sent to a server. This includes websites, APIs, and databases. The client-server model architecture ensures that request calls and tasks made to servers are handled appropriately and effectively. When students check Yahoo Finance or log in to Facebook.com, they're enacting the client-server model.
+  * `GET` requests fetch data from servers.
+
+  * `POST` requests transmit data (like user credentials for authorization) to servers.
+
+* The client-server model is what handles all traffic and requests sent to a server. This includes websites, APIs, and databases.
+
+* The client-server model architecture ensures that request calls and tasks made to servers are handled appropriately and effectively. When you check Yahoo Finance or log in to Facebook.com, you're enacting the client-server model.
 
 If time remains, demonstrate the client-server model by using the terminal to ping Yahoo Finance.
 
-* Open a terminal.
+Open a terminal window. Use the ping command to send a request to Yahoo Finance. Explain to students that `ping` is a utility used to test connectivity to a server.
 
-* Use the ping command to send a request to Yahoo Finance. Explain to students that the ping is a utility used to test connectivity to a server.
+```shell
+ping finance.yahoo.com
+```
 
-  ```shell
-  ping finance.yahoo.com
-  ```
-
-* Explain the output from the `ping` command. Underscore that with every execution of the client-server model, data is transmitted over a network. This data is inside **packets**. An example of data contained inside packets is user credentials for a website. When transmission is successful, the number of packets sent will match the number of packets received.
+Explain the output from the `ping` command. Underscore that with every execution of the client-server model, data is transmitted over a network. This data is inside **packets**. An example of data contained inside packets is user credentials for a website. When transmission is successful, the number of packets sent will match the number of packets received.
 
   ![client_server_ping.png](Images/client_server_ping.png)
 
@@ -219,7 +221,7 @@ Ask students the following questions. (If time did not permit for the ping demo,
 
 Ask students if there are any questions before moving on.
 
-- - -
+---
 
 ### 4. Students Do: Eavesdropping on the Server (10 min)
 
@@ -229,7 +231,7 @@ This activity drives home the discussion on the client-server model by having st
 
 * [README.md](Activities/01-Stu_Eavesdropping_On_Server/README.md)
 
-- - -
+---
 
 ### 5. Instructor Do: Eavesdropping on the Server Activity Review (5 min)
 
@@ -237,7 +239,7 @@ This activity drives home the discussion on the client-server model by having st
 
 * [eavesdropping.md](Activities/01-Stu_Eavesdropping_On_Server/Solved/client_server_model.md)
 
-Open the solution and walk through the following:
+Open the solution and highlight the following:
 
 * Firefox, Chrome, and Safari all offer developer consoles that allow users to see requests being exchanged between clients and servers.
 
@@ -257,11 +259,11 @@ Engage students by asking some of the following review questions:
 
   **Answer:** `GET` request
 
-* Explain the client-server model from the perspective of emails.
+* Could you explain the client-server model from the perspective of emails?
 
   **Answer:** Servers provided by companies like Google, Yahoo, Microsoft, etc. are used to store and distribute email messages. Email applications and internet browsers are clients that are used to specify who emails are sent to and the body of emails. Clients are used to submit email content to servers, and then servers distribute the message to the corresponding email targets.
 
-* If time remains, round robin and ask some students to give details about the data they saw transmitted. This will allow students to compare what they say with what others saw. It will also help students understand some of the common data exchanges, such as user credentials and search queries.
+If time remains, round robin and ask some students to give details about the data they saw transmitted. This will allow students to compare what they say with what others saw. It will also help students understand some of the common data exchanges, such as user credentials and search queries.
 
   **Answer:** `GET` requests
 
@@ -271,7 +273,7 @@ Engage students by asking some of the following review questions:
 
 Ask for any remaining questions before moving on.
 
-- - -
+---
 
 ### 6. Instructor Do: Postman (5 min)
 
