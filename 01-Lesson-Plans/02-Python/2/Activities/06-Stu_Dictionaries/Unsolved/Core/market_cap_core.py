@@ -10,7 +10,7 @@ bank names associated with the corresponding market cap ranges.
 #-----------------------
 # JP Morgan Chase: 327
 # Bank of America: 302
-# Citigroup: 170
+# Citigroup: 173
 # Wells Fargo: 273
 # Goldman Sachs: 87
 # Morgan Stanley: 72

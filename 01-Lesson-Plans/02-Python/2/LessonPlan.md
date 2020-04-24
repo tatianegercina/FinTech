@@ -879,7 +879,7 @@ In this activity, students will practice creating a dictionary, as well as updat
 
 ### 11. Instructor Do: Review Market Capitalization (5 min)
 
-**File:** [market_cap.py](Activities/06-Stu_Dictionaries/Solved/Core/market_cap_core.py)
+**File:** [market_cap.py](Activities/06-Stu_Dictionaries/Solved/Challenge/market_cap_core.py)
 
 Open the solution file, `market_cap.py`, and explain the following:
 
@@ -937,7 +937,7 @@ Open the solution file, `market_cap.py`, and explain the following:
           minimum_key = bank_name
 
       # Logic to determine max value and associated key
-      if market_cap < maximum_value:
+      if market_cap > maximum_value:
           maximum_value = market_cap
           maximum_key = bank_name
   ```
