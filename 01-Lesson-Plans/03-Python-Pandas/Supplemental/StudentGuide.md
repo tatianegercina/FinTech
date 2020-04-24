@@ -109,13 +109,12 @@ Now when we run the code, we get the result we are looking for:
 
 </details>
 
+#### Sources
 
-#### Sources:
-McKinney, W. (2013) *Python for Data Analysis.* O'Reilly Media, Inc, USA.
-
+* McKinney, W. (2017) *Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (2nd Edition)* O'Reilly Media, Inc, USA. ([Book's repository](https://github.com/wesm/pydata-book))
 
 - - -
 
 ### Copyright
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services
