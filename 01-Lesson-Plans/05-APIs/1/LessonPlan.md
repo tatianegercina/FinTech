@@ -807,7 +807,7 @@ Transition the class into a review session. Ask the following questions:
 
   **Answer:** Scoring.
 
-* Has URL parameters made APIs more challenging or easier to use?
+* Has URL parameters made APIs more challenging to use or easier to use?
 
 Ask if there are any remaining questions or comments before continuing.
 
