@@ -52,7 +52,7 @@ By the end of class, students will be able to:
 
 Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also encourage students to work with partners.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
 - - -
 
