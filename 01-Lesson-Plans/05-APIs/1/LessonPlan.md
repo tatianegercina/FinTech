@@ -40,7 +40,7 @@ By the end of class, students will be able to:
 
   * [Postman](https://www.postman.com/)
 
-  * [World Bank](https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-information)
+  * [World Bank](https://datahelpdesk.worldbank.org/knowledgebase/articles/889386-developer-information-overview)
 
   * [Quandl](https://www.quandl.com/)
 
@@ -115,7 +115,7 @@ Navigate to the [Quandle API Overview](https://www.quandl.com/tools/api) page, a
 
 * Submit Quandl API to get OPEC oil prices using an internet browser and the link below. Show students the data, and bring attention to the OPEC oil prices in the output.
 
-  ```
+  ```text
   https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=<instructor's API key>
   ```
 
@@ -279,25 +279,26 @@ Ask for any remaining questions before moving on.
 
 In this activity, students will learn how to use Postman. The instructor will demo making Quandl API calls with Postman rather than through a browser. This will highlight the advantages of using Postman, such access to a UI, request logs, and tools that format API output for ease of use.
 
-Be sure to have the Postman client installed prior to beginning this activity. Consult the Postman Install Guide for instructions on how to install (link is listed below).
-
-**Files:**
-
-* [Postman Install Guide](../Supplemental/PostmanInstallGuide.md)
-
 Briefly recap on how APIs have been submitted so far. Ask the students:
 
 * We submitted Quandl API requests earlier in the class. What tool did we use to submit the API call?
 
-**Answer**: An internet browser.
+  **Answer**: An internet browser.
 
 Explain to students that an internet browser is a sufficient tool to submit API requests. But a service like Postman is much more efficient and effective.
 
-* Define Postman as a service that provides users with a UI to submit and store API calls and requests.
+Open the lesson slides, move to the "Postman" section and highlight the following:
 
-* Communicate that Postman is a development environment for APIs. API requests can be submitted and tested within Postman. Servers can also be spun up in Postman in order to develop or host APIs.
+* Postman is a service that provides users with a UI to submit and store API calls and requests.
 
-Open Postman and perform a live demonstration of submitting an API request to Quandl for AAPL stock data. Use this as an opportunity to bridge back to the previous assignments where requests were submitted via a browser rather than a tool like Postman. Highlight the following:
+* API requests have to be submitted in some type of development environment.
+Postman offers an API specific development environment that is free to users.
+
+* Postman is a great tool to use when onboarding onto a new API. All that is needed to execute an API with Postman is the request URL.
+
+* Because Postman is a development environment, users have the ability to save API requests, configure environments, and even create mock servers.
+
+Close the lesson slides, open Postman and perform a live demonstration of submitting an API request to Quandl for `AAPL` stock data. Use this as an opportunity to bridge back to the previous assignments where requests were submitted via a browser rather than a tool like Postman. Highlight the following:
 
 * Creating a request in Postman is easy; it's just the click of a button. Selecting Request in the Create New window will open a screen where information can be put in for the request and the request saved.
 
@@ -311,25 +312,25 @@ Open Postman and perform a live demonstration of submitting an API request to Qu
 
   ![new_request.png](Images/new_request.png)
 
-* Submit an API call to Quandl using the Postman submit button. Use the below request URL.
+Submit an API call to Quandl using the Postman submit button. Use the below request URL.
 
-  * https://www.quandl.com/api/v3/datasets/WIKI/AAPL.json
+```text
+  https://www.quandl.com/api/v3/datasets/WIKI/AAPL.json?api_key=<instructor's API key>
+```
 
   ![postman_get.png](Images/postman_get.png)
 
-* The output from an API call is returned in the Postman client. Postman presents users with the ability to choose the format of the output (e.g., JSON vs. XML). Indicate that the format of the output on the screen is called JSON (JavaScript Object Notation).
+Explain to students that the output from an API call is returned in the Postman client. Postman presents users with the ability to choose the format of the output (e.g., JSON vs. XML). Indicate that the format of the output on the screen is called JSON (JavaScript Object Notation).
 
-  ![postman_submit.png](Images/postman_submit.png)
+![postman_submit.png](Images/postman_submit.png)
 
-* Postman allows users to save or download the results of an API call. This is one of the advantages of using Postman to work with APIs. The Postman environment supports creating, storing, and retrieving API requests, as well as API results.
+Highlight to students that Postman allows users to save or download the results of an API call. This is one of the advantages of using Postman to work with APIs. The Postman environment supports creating, storing, and retrieving API requests, as well as API results.
 
-  ![save_output.png](Images/save_output.png)
+![save_output.png](Images/save_output.png)
 
-Ask if there are any questions before moving onto the next module.
+Ask if there are any questions before moving onto the next activity.
 
-In the next activity, students will leverage the steps from this demonstration in order to make their first API call using Postman. Students will make a Get request to **Quandl** for **AAPL** historical stock data.
-
-- - -
+---
 
 ### 7. Students Do: I Spy an API (15 min)
 
@@ -351,7 +352,7 @@ Instruct students to inform the TAs when they are finished. The next activity wi
 
 * [README.md](Activities/02-Stu_I_Spy_An_Api/README.md)
 
-- - -
+---
 
 ### 8. Students Do: Parlez-vous le JSON? (5 min)
 
