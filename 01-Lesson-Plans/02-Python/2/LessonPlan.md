@@ -937,7 +937,7 @@ Open the solution file, `market_cap.py`, and explain the following:
           minimum_key = bank_name
 
       # Logic to determine max value and associated key
-      if market_cap < maximum_value:
+      if market_cap > maximum_value:
           maximum_value = market_cap
           maximum_key = bank_name
   ```
