@@ -203,7 +203,7 @@ Continuing with the slides, show students some companies that currently use Amaz
 
 * [**Novartis**](https://aws.amazon.com/blogs/industries/aws-and-novartis-re-inventing-pharma-manufacturing/?cs=4) is currently using Amazon SageMaker to build a computer vision-based model that will determine production line clearance.
 
-* Using Amazon SageMaker, engineers at [**Coinbase**](https://aws.amazon.com/machine-learning/customers/innovators/coinbase/?cs=3) developed a machine learning-driven system that recognizes mismatches and anomalies in sources of user identification, allowing them to take action against potential sources of fraud quickly.
+* Engineers at [**Coinbase**](https://aws.amazon.com/machine-learning/customers/innovators/coinbase/?cs=3) developed a machine learning-driven system that recognizes mismatches and anomalies in sources of user identification, allowing them to take action against potential sources of fraud quickly.
 
 Now, you will continue to demo how to get started with Amazon SageMaker Studio. Ask students to log-in to the [AWS Management Console](https://console.aws.amazon.com/) using their root user and to follow your steps throughout the process.
 
