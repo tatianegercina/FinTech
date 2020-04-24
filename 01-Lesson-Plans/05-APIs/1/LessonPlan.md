@@ -638,7 +638,7 @@ Navigate to the 5.1 slides, and highlight the following:
 
     **Answer**: When using the `?format=json` tag.
 
-* **Parameters** can be specified in one of two ways. Parameters can follow `/` forward slashes or specified by parameter name and then by parameter value.
+* **Parameters** can be specified in one of two ways. Parameters can follow `/` forward slashes or be specified by parameter name and then by parameter value.
 
   ```
   Parameter provided after /
