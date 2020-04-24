@@ -91,7 +91,7 @@ Start the class off with a review of the introductory slide about APIs. Highligh
 
 Introduce Quandl and briefly demonstrate to students how to use an internet browser to submit a Quandl API call.
 
-* Quandl is a data mart of financial data. Quandl collects data from various sources, consolidates the data,and then makes it available to users. **Quandl** is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Quandl's data can be accessed by users via their API. The API supports multiple programming languages, including Python.
+* Quandl is a data mart of financial data. Quandl collects data from various sources, consolidates the data, and then makes it available to users. **Quandl** is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Quandl's data can be accessed by users via their API. The API supports multiple programming languages, including Python.
 
   ![quandl_flow.gif](Images/quandl_flow.gif)
 
@@ -101,7 +101,7 @@ Navigate to the [Quandle API Overview](https://www.quandl.com/tools/api) page, a
 
   ![quandl_url.png](Images/quandl_url.png)
 
-* Submit Quandl API to get AAPL's stock prices using an internet browser and the link below. Show students the data, and bring attention to the AAPL stock prices in the output.
+* Submit the Quandl API request to get AAPL's stock prices using an internet browser and the link below. Show students the data, and bring attention to the AAPL stock prices in the output.
 
   ```
   https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=<instructor's API key>
