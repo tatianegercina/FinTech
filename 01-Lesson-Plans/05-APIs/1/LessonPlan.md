@@ -321,7 +321,7 @@ In the next activity, students will leverage the steps from this demonstration i
 
 It's time students stopped learning about APIs and started playing with some! In this activity, students will go through a list of FinTech APIs and test out their functionality using Postman. This will give students a better understanding of what Postman is and how it should be used, and it will expose students to one of the most common tools used in the FinTech industry.
 
-Instruct TAs to make rounds to sure all students have Postman installed. Postman should have been installed prior to the class. Have TAs provide assistance and troubleshooting to any students experiencing issues getting started.
+Instruct TAs to make rounds to ensure all students have Postman installed. Postman should have been installed prior to the class. Have TAs provide assistance and troubleshooting to any students experiencing issues getting started.
 
 Recommend that students save their API requests in Postman so they do not have to continually execute the same request.
 
