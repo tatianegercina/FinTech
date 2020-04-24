@@ -36,7 +36,7 @@ By the end of class, students will be able to:
 
 * This class will focus on the fundamentals of APIs and the process of submitting APIs. This class is a great opportunity for students to be impressed and inspired by FinTech. There are a number of fun and creative FinTech APIs, such as Quandl and World Bank, that will be used to drive student engagement. This lesson is the perfect opportunity to get students excited about FinTech again!
 
-* The first half of the lesson will include instructor demonstrations of submitting requests to different FinTech APIs using Postman. Each demo should be focused on showcasing FinTech APIs and getting students excited about contributing to the wealth of APIs that are already out there. Make sure to create accounts for these APIs:
+* The first half of the lesson will include instructor demonstrations of submitting requests to different FinTech APIs using Postman. Each demo should be focused on showcasing FinTech APIs and getting students excited about contributing to the wealth of APIs that are already out there. Make sure to create your accounts for these APIs:
 
   * [Postman](https://www.postman.com/)
 
@@ -74,29 +74,30 @@ Be sure to set the pace for the class. Encourage students to attend office hours
 
 ### 1. Instructor Do: Welcome (5 mins)
 
-Welcome the students to the first day of APIs. This lesson will require students to leverage various FinTech APIs (e.g., Quandl) to accelerate their financial analytic pipelines, as well as get access to data they otherwise would not have access to. Students will continue employing skills learned from weeks two and three, such as data cleaning, working with DataFrames, and visualizing data.
+Welcome the students to the first day of APIs. This lesson will require students to leverage various FinTech APIs (e.g., Quandl) to accelerate their financial analytic pipelines, as well as get access to data they otherwise would not have access to. Students will continue employing skills learned from the previous weeks, such as data cleaning, working with DataFrames, and visualizing data.
 
 The focus of this lesson will be to demo to students some of the creative and quirky FinTech APIs that are currently available to the public. Students will learn and use these APIs to take their FinTech careers to the next level.
 
 Before initiating the demo, ask if there are any students who do not have Postman installed. Instruct TAs to help these students install Postman. Postman will be needed for the first few modules of the lesson.
 
-Be sure to have the following websites loaded prior to class so that the demo can move along. Multiple APIs will need to be demoed within the 5 minute time period.
+Be sure to have the following websites loaded prior to class so that the demo can move along. Multiple APIs will need to be demoed within the five minute time period.
 
 * [Quandl API Features](https://www.quandl.com/tools/api)
 
 * [WrapAPI](https://wrapapi.com/)
 
-**Files:**
+Open the lesson slides and present to students the class objectives; continue the class off with a review of the introductory slide about APIs. Highlight the following:
 
-* [welcome-slides](https://docs.google.com/presentation/d/1cn9TvizIpIEQ4v1_HR5xQkjQV0v7zyYQHHkwCM-BCeU/edit?usp=sharing)
+* Application programming interfaces, or APIs, are a set of functions packaged together
+that provide developers with a means of communicating with a server and integrating third-party software and technology into new applications.
 
-Start the class off with a review of the introductory slide about APIs. Highlight the following:
+* APIs are made by individual developers like the students, as well as private companies and corporations to offer programmatic services and functions to the development community. Some APIs are free and others require payment for services.
 
-* Application programming interfaces, or APIs, are functions and procedures that enable users to gain access to features and data of an underlying system.
+* APIs are used to extract data, play games, connect programs to platforms like AWS, and manage personal finances.
 
 * APIs work as endpoints, like old-time telephone operators. A request or call is submitted by a user to be connected to another entity. The API interprets the request and transmits the request to the target entity. The user then receives a response.
 
-* APIs are made by individual developers like the students, as well as private companies and corporations. Some APIs are free and others require payment for services.
+* In software development, APIs are often a bridge between different components or even companies.
 
 * There are a large number of FinTech APIs available that accelerate day-to-day financial analytics and data acquisition. These include Quandl and Wrap API, just to name two.
 
@@ -112,7 +113,7 @@ Navigate to the [Quandle API Overview](https://www.quandl.com/tools/api) page, a
 
   ![quandl_url.png](Images/quandl_url.png)
 
-* Submit Quandl API to get AAPL's stock prices using an internet browser and the link below. Show students the data, and bring attention to the AAPL stock prices in the output.
+* Submit Quandl API to get OPEC oil prices using an internet browser and the link below. Show students the data, and bring attention to the OPEC oil prices in the output.
 
   ```
   https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=<instructor's API key>
@@ -122,7 +123,7 @@ Navigate to the [Quandle API Overview](https://www.quandl.com/tools/api) page, a
 
 Finish the demo of Quandl with the following reflective question:
 
-* We've extracted historical stock data in the past using the Nasdaq website. How does using the `Quandl` API compare? How is it different?
+* We've extracted historical stock data in the past using the Nasdaq website. How does using the Quandl API compare? How is it different?
 
   **Answer:** Quandl is easier and quicker to use than Nasdaq. As long as the URL is known, fewer steps are needed. A limitation is that the request URL has to be known.
 
@@ -132,7 +133,7 @@ Finish the demo of Quandl with the following reflective question:
 
 If time remains, communicate to students that if they wanted to automate the Nasdaq process, they could use the really cool [WrapAPI](https://wrapapi.com/). Open the site and show students the Yelp GIFs.
 
-* Explain that the WrapAPI provides a functionality that allows users to record a series of actions on a website and automate them. This includes actions like signing into Facebook and extracting data from nasdaq.com. It can also scrape data from a website!
+* Explain that WrapAPI provides a functionality that allows users to record a series of actions on a website and automate them. This includes actions like signing into Facebook and extracting data from nasdaq.com. It can also scrape data from a website!
 
 * Convey what's happening in each GIF.
 
@@ -142,9 +143,11 @@ If time remains, communicate to students that if they wanted to automate the Nas
 
   3. Action and request output is reviewed
 
-* The WrapAPI could be used to submit Quandl API requests via a web browser as well. WrapAPI could automate the process of copying and pasting the request URL into the browser.
+* WrapAPI could be used to submit Quandl API requests via a web browser as well. WrapAPI could automate the process of copying and pasting the request URL into the browser.
 
 Before ending this activity, let students know that this is just the beginning in terms of available APIs for use. Ask if there are any questions prior to moving onto the next activity.
+
+---
 
 ### 2. Instructor Do: Review Homework (10 min)
 
@@ -166,7 +169,7 @@ Walk through the homework instructions, and highlight the following:
 
 Ask the students if there are any questions related to the homework.
 
-- - -
+---
 
 ### 3. Instructor Do: Client-Server Model (5 min)
 
@@ -174,13 +177,11 @@ Now that students know what APIs are and how to execute them, it's time they lea
 
 Part of the demonstration will include showing students the client-server model by pinging Yahoo Finance. Make sure to have a terminal open and ready for the demo.
 
-Navigate to the 5.1 slides for the client-server model, and highlight the following:
+Open the lesson slides, move to the "Client-Server Model" section and highlight the following:
 
 * Explain the client-server model architecture. Indicate that the model encompasses the relationship between clients and servers.
 
   ![client_server_model.jpg](Images/client_server_model.png)
-
-  Image acquired from [Shutterstock](https://www.shutterstock.com/image-vector/vector-concept-client-server-model-safe-483125932?src=cvaByXWnT8wlRtaTVaTE7Q-1-0).
 
 * Define the client-server model as structure that outlines the relationship and flow of communication between two components: a client and a server.
 
