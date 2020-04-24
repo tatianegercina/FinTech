@@ -1,4 +1,4 @@
-## 13.1 Lesson Plan—Unsupervised Learning and The Cloud
+## 13.1 Lesson Plan—Unsupervised Learning and the Cloud
 
 ### Overview
 
