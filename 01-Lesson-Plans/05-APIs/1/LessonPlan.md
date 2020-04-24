@@ -815,7 +815,7 @@ Ask if there are any remaining questions or comments before continuing.
 
 ### 18. Instructor Do: Recap (10 min)
 
-This activity will conclude the APIs Day 1. Recap the skills and concepts learned throughout the lesson. Engage the students by having students lead the recap as much as possible.
+This activity will conclude APIs Day 1. Recap the skills and concepts learned throughout the lesson. Engage the students by having students lead the recap as much as possible.
 
 * Ask if there's a student who would like to volunteer to summarize what was learned today.
 
@@ -831,7 +831,7 @@ Guide students and the recap session. Use the below sample statements and questi
 
 Finish the recap with a few statements of encouragement.
 
-* Tell students they need to give themselves, yet gain, a round of applause. They've added yet another valuable tool to their developer's toolkit.
+* Tell students they need to give themselves, yet again, a round of applause. They've added yet another valuable tool to their developer's toolkit.
 
 * Remind students that completing this amount of work in this time period already means they've proven their aptitude. It's just growth from here.
 
