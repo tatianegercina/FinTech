@@ -531,7 +531,7 @@ If a student doesn't find a fact or joke they feel like sharing, ask them to do 
 
 * Discuss their opinions regarding using the Python `requests` library to make API calls instead of Postman.
 
-* Identify one advantage of using Python `requests` library over using Postman.
+* Identify one advantage of using the Python `requests` library over using Postman.
 
 **Answer** The `requests` library allows API calls to be made in-line with the rest of the code and processing. Postman requires users to transition from one development environment to another.
 
