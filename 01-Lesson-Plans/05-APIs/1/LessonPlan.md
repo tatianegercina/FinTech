@@ -6,7 +6,7 @@ For the past three weeks, students have been immersed into the world of Python a
 
 Today's class will teach students what application programming interfaces (APIs) are, what they're used for, and why they are valuable. Students will also learn, from a high level, what the client-server model is and how it works. Students will submit API calls with Postman (a development environment for APIs) and Python, and they'll learn how to decipher and parse API JSON output. Lastly, students will submit API calls with parameters in order to improve response time and filter and narrow down API output. Learning how to make API calls and parse API output using Postman and Python will prepare students for getting their hands dirty with APIs in the professional world.
 
-Before students leave at the end of the class, instruct them to sign up for the APIs that are going to be used tomorrow. These APIs will be used in the next lesson, and the 5.2 activities will require students have API keys. Links are provided below. Remember to slack the links to the students so they have a resource to sign up with.
+Before students leave at the end of the class, instruct them to sign up for the APIs that are going to be used in the next class. These APIs will require that students have API keys. Links are provided below. Remember to slack the links to the students so they have a resource to sign up with.
 
 * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
