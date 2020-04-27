@@ -122,18 +122,18 @@ Next, create a new contract named ArtToken that inherits from ERC721Full, for ER
 
 * The `ERC721Full` constructor accepts a `string` for the `token name` and a `string` for the token's `symbol`.
 
-Now define a new counter to keep track of what current `token_id` we are on starting from 0. Apply the `using for` syntax to attach the SafeMath counter library to the counter type and create a new variable named `token_ids` that is of type Counters.counter.
+Now, define a new counter to keep track of what current `token_id` we are starting on from 0. Apply the `using for` syntax to attach the SafeMath counter library to the counter type and create a new variable named `token_ids` that is of type Counters.counter.
 
  ```solidity
  using Counters for Counters.Counter;
  Counters.Counter token_ids;
  ```
 
-* In order for us to track the number of tokens that have been minted and to generate the next `token_id`, we will be leveraging the custom Counter data structure from OpenZeppelin.
+* In order for us to track the number of tokens that have been minted and to generate the next `token_id`, we will be leveraging the custom counter data structure from OpenZeppelin.
 
-* Openzeppelin SafeMath counters allows us to increment and decrement a counter without worrying about overflows and other common types of errors.
+* OpenZeppelin SafeMath counters allow us to increment and decrement a counter without worrying about overflows and other common types of errors.
 
-Represent the artwork's information as a struct named `Artwork` containing these three attributes. A `string` named `name`, a `string` named artist, and a `uint` named `appraisal_value`.
+Represent the artwork's information as a struct named `Artwork` containing these three attributes: a `string` named `name`, a `string` named `artist`, and a `uint` named `appraisal_value`.
 
  ```solidity
  struct Artwork {
@@ -153,7 +153,7 @@ Represent the artwork's information as a struct named `Artwork` containing these
 
 * As you can see, the `struct` that we are creating for this contract contains two `string`s and a `uint`.
 
-* You can think of a struct kind of like a python dictionary in that they are both types of objects containing data, however, make no mistake a struct is a fundamentally different data type than a python dictionary.
+* You can think of a struct kind of like a Python dictionary, in that they are both types of objects containing data. However, make no mistake—a struct is a fundamentally different data type than a Python dictionary.
 
 Define a new `mapping` named `art_collection` that maps a `uint` to our defined Artwork data structure.
 
