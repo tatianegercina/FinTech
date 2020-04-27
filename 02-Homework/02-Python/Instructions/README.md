@@ -177,7 +177,7 @@ Complete the following:
 
 * As you will discover, for some of these activities, the datasets are quite large. This was done purposefully, as it showcases one of the limits of Excel-based analysis. While our first instinct as data analysts is often to head straight to Excel, creating scripts in Python can provide us with more robust options for handling "big data."
 
-* Your scripts should work for each dataset provided. Run your script for each dataset separately, to make sure that the code works for different data.
+* Your scripts should work for each dataset provided. Run your script for each dataset separately to make sure that the code works for different data.
 
 * Feel encouraged to work in groups, but don't shortchange yourself by copying someone else's work. Dig your heels in, and learn this while you can! These are skills that will pay dividends in your future career.
 
