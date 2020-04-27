@@ -679,7 +679,7 @@ Students can play the game against a classmate or imaginary dealer. Students are
 
 * [README.md](Activities/07-Stu_House_of_Requests/README.md)
 
-- - -
+---
 
 ### 17. Instructor Do: House of Requests Activity Review (5 min)
 
@@ -690,12 +690,6 @@ Students can play the game against a classmate or imaginary dealer. Students are
 Facilitate a dry walk through of the solution utilizing the following discussion points:
 
 * Passing parameters to APIs through request URLs gives users the ability to configure and control API actions. By passing parameters to the request URLs for the Deck of Cards API, users can create and shuffle a deck of cards. Parameters also allow users to draw `n` number of cards from the deck.
-
-  ```python
-  create_deck_url = "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6"
-  draw_cards_url = "https://deckofcardsapi.com/api/deck/<<deck_id>>/draw/?count=2"
-  shuffle_deck_url = "https://deckofcardsapi.com/api/deck/<<deck_id>>/shuffle/"
-  ```
 
   ![parameters.png](Images/parameters.png)
 
@@ -712,7 +706,7 @@ Facilitate a dry walk through of the solution utilizing the following discussion
   print(shuffle_deck_url)
   ```
 
-  ```
+  ```text
   https://deckofcardsapi.com/api/deck/epigy7ynp5yi/draw/?count=2
   https://deckofcardsapi.com/api/deck/epigy7ynp5yi/shuffle/
   ```
@@ -726,46 +720,35 @@ Facilitate a dry walk through of the solution utilizing the following discussion
 
 * In order to parse JSON data, the structure of the JSON data needs to be understood. JSON data includes parent objects, one or many JSON objects, and elements and attributes for each JSON object. Each of these has to be specified when extracting values from JSON output.
 
-  ```python
-  # Select returned card's value and suit (e.g., 3 of clubs)
-  player_1_card_1 = drawn_cards['cards'][0]['value'] + " of " + drawn_cards['cards'][0]['suit']
-  player_1_card_2 = drawn_cards['cards'][1]['value'] + " of " + drawn_cards['cards'][1]['suit']
-
-  # Print player cards
-  print(player_1_card_1)
-  print(player_1_card_2)
-  ```
-
-  ```
-  3 of HEARTS
-  QUEEN of CLUBS
-  ```
-
   ![parse_json.png](Images/parse_json.png)
 
 Transition the class into a review session. Ask the following questions:
 
 * In addition to `deck_id`, what other parameter values should be interpolated for the `draw_cards_url`?
 
-  **Answer:** Count.
+  * **Answer:** Count.
 
 * If you were to contribute to the Deck of Cards API, what type of features or functionality would you want to enhance or add?
 
-  **Answer:** Game options (e.g., poker, Go Fish, War, etc.).
+  * **Answer:** Game options (e.g., poker, Go Fish, War, etc.).
 
-  **Answer**: Automated dealing based off of game type (e.g., poker, Texas Hold'em, etc.)
+  * **Answer**: Automated dealing based off of game type (e.g., poker, Texas Hold'em, etc.)
 
-  **Answer:** Game specific interactions (e.g, playing War compares player cards turn by turn).
+  * **Answer:** Game specific interactions (e.g, playing War compares player cards turn by turn).
 
-  **Answer:** Turn based gaming.
+  * **Answer:** Turn based gaming.
 
-  **Answer:** Scoring.
+  * **Answer:** Scoring.
 
 * Has URL parameters made APIs more challenging or easier to use?
 
+  * **Answer:** It's clear that parameters will help us to customize the API's response.
+
+  * **Answer:** Passing parameters using `?` seems to be easier since you explicitly define the parameters like variables to be used by the API.
+
 Ask if there are any remaining questions or comments before continuing.
 
-- - -
+---
 
 ### 18. Instructor Do: Recap (10 min)
 
