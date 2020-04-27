@@ -76,7 +76,7 @@ In this homework assignment, you will need to:
 
 Complete the following:
 
-* Read in `menu_data.csv` and set its contents to a separate list object. (This way, you can cross-reference your menu data with your sales data, as you read your sales data in the coming steps.)
+* Read in `menu_data.csv` and set its contents to a separate list object. (This way, you can cross-reference your menu data with your sales data as you read your sales data in the coming steps.)
 
   * Initialize an empty `menu` list object to hold the contents of `menu_data.csv`.
 
