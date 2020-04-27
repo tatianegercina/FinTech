@@ -296,7 +296,7 @@ contract CryptoFax is ERC721Full {
  constructor() ERC721Full("CryptoFax", "CARS") public { }
 ```
 
-* First, we inherited the properties of ERC721Full's contract in our new CryptoFax contract and called the ERC721Full's constructor passing it the name of the token `CryptoFax` and the token symbol `Cars`.
+* First, we inherited the properties of ERC721Full's contract in our new CryptoFax contract, and called the ERC721Full's constructor passing it the name of the token `CryptoFax` and the token symbol `Cars`.
 
 ```solidity
  using Counters for Counters.Counter;
@@ -314,21 +314,21 @@ contract CryptoFax is ERC721Full {
  }
 ```
 
-* A struct was defined to hold each car's on-chain information, it's `vin` and it's number of `accidents`.
+* A struct was defined to hold each car's on-chain information, its `vin` and its number of `accidents`.
 
 ```solidity
  mapping(uint => Car) public cars;
 ```
 
-* The CryptoFax contract tracks each new token that is minted by storing it's `token_id` and corresponding info for each car.
+* The CryptoFax contract tracks each new token that is minted by storing its `token_id` and corresponding info for each car.
 
 ```solidity
  event Accident(uint token_id, string report_uri);
 ```
 
-* Here we defined a new event called `Accident` that accepts a `uint` named `token_id`, and a `string` named `report_uri`.
+* Here, we defined a new event called `Accident` that accepts a `uint` named `token_id`, and a `string` named `report_uri`.
 
-* As mentioned, the data that is stored on-chain for each car token is stored in the cars `mapping`; however, accident reports are far too large to store on-chain. Instead, it is much cheaper (in gas) to store accident reports in a decentralized storage provider such as [IPFS](https://ipfs.io/) and then reference them on-chain by hash.
+* As mentioned, the data that is stored on-chain for each car token is stored in the car's `mapping`; however, accident reports are far too large to store on-chain. Instead, it is much cheaper (in gas) to store accident reports in a decentralized storage provider such as [IPFS](https://ipfs.io/) and then reference them on-chain by hash.
 
 * Calling an event is an easy and cheap way to permanently log a `URI` or `Uniform Resource Identifier`.
 
@@ -350,11 +350,11 @@ contract CryptoFax is ERC721Full {
 
 * The `token_ids` counter is first incremented so that a new token can be minted; the new token id is stored as a uint named `token_id`.
 
-* The mint function is then called passing it the owner's address from `registerVehicle` and the new `token_id`.
+* The mint function is then called, passing it the owner's address from `registerVehicle` and the new `token_id`.
 
-* The `_setTokenURI` function is then called to set the new token's `URI` based upon it's id.
+* The `_setTokenURI` function is then called to set the new token's `URI` based upon its id.
 
-* A newly defined car with a corresponding `vin` and a given number of `accidents` is then added to the car mapping with it's mapped `token_id`, and the new token_id is returned.
+* A newly defined car with a corresponding `vin` and a given number of `accidents` is then added to the car mapping with its mapped `token_id`, and the new token_id is returned.
 
 ```solidity
  function reportAccident(uint token_id, string memory report_uri) public returns(uint) {
@@ -367,19 +367,19 @@ contract CryptoFax is ERC721Full {
  }
 ```
 
-* The `reportAccident`function is responsible for reporting a new accident by logging its `report_uri`.  It accepts two parameters - a `uint` named `token_id` and a `string memory` representing the `report_uri`.
+* The `reportAccident`function is responsible for reporting a new accident by logging its `report_uri`.  It accepts two parameters—a `uint` named `token_id` and a `string memory` representing the `report_uri`.
 
 * The `reportAccident` function does three things:
 
- * it increments the number of accidents for the given `token_id` inside the car's mapping,
+ * It increments the number of accidents for the given `token_id` inside the car's mapping,
 
- * it `emits` the `Accident` event passing it the given `token_id` and `report_uri`
+ * It `emits` the `Accident` event passing it the given `token_id` and `report_uri`
 
- * it returns the current number of accidents after the latest accident.
+ * It returns the current number of accidents after the latest accident.
 
-* Remember, you are `emitting` the Accident function in order to trigger the logging of a new accident report.
+* Remember, you are `emitting` the accident function in order to trigger the logging of a new accident report.
 
-* Congratulations, you've just built an `ERC721` compliant `non-fungible` token complete with on-chain custom attributes and several linked token `URI`s
+* Congratulations! You've just built an `ERC721` compliant `non-fungible` token complete with on-chain custom attributes and several linked token `URI`s.
 
 Return to the slides and discuss the following review questions with the class:
 
