@@ -709,7 +709,7 @@ Be prepared to explain the following, for example:
 
   * `==` checks to see if a value equals another; it double-checks equality. (Like all work, you want to double-check what you're doing!) So, when you're basing a condition on equality, you should double-check what's being compared. You don't want to compare apples to oranges. They'll never be equal!
 
-  * `=` is used to set and put values in a variable; it is used to assess and declare that a variable is something. You're not comparing it; you know for sure this is the answer. Think back to algebra. When you finish showing your work and steps in the calculation, you declare that `x = <some value>`. This is exactly how using the `=` works when declaring variables. You're declaring, rather than evaluating.
+  * `=` is used to set and put values in a variable; it is used to assess and declare that a variable is something. You're not comparing it; you know for sure this is the answer. Think back to algebra. When you finish showing your work and steps in the calculation, you declare that `x = <some value>`. This is exactly how using the `=` works when declaring variables. You're declaring rather than evaluating.
 
 * It's difficult to remember when to use _greater than_ `>` and _less than_ `<` operators, and when to use _greater than or equal to_ `>=` and _less than or equal to_ `<=`.
 
