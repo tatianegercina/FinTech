@@ -171,11 +171,11 @@ Define a new event called `Appraisal` that will accept a `uint` named `token_id`
 
 * The data that is stored on-chain for each art token is stored in the art_collection mapping, but appraisal reports are far too large to store on-chain.
 
-* Instead, it is a much lower gas price to store appraisal reports in a decentralized storage provider such as IPFS and then referenced on-chain by hash. Calling an event is an easy and cheap way to permanently log a `URI` or `Uniform Resource Identifier`.
+* Instead, it is a much lower gas price to store appraisal reports in a decentralized storage provider such as IPFS, and then referenced on-chain by hash. Calling an event is an easy and cheap way to permanently log a `URI` or `Uniform Resource Identifier`.
 
 Define a function named `registerArtwork`; it accepts the following parameters:
 
- * address owner,
+ * address owner
 
  * string memory name
 
@@ -195,7 +195,7 @@ Define a function named `registerArtwork`; it accepts the following parameters:
 
 * This function will be responsible for registering a new piece of artwork on the chain.
 
-* The token URI can be a link to some metadata anywhere on the internet. This can be a potential point of centralization, but we will solve that later by using a tool called IPFS.
+* The token URI can be a link to some metadata anywhere on the internet. This can be a potential point of centralization, but we will solve that later, by using a tool called IPFS.
 
 * In our use case, we will be creating a JSON object that contains a `name`, `description`, and `image` field, then converting it to a special immutable URI with IPFS that ensures that you will always be getting that same piece of data. Essentially, we will be linking to some JSON metadata in a decentralized fashion, but for now, we just need to be able to store a string.
 
@@ -206,7 +206,7 @@ Add the following lines of code inside the `registerArtwork` function for genera
  uint token_id = token_ids.current();
  ```
 
-* Inside the body of the `registerArtwork` function you must generate the next `token_id`, this is done by incrementing the `token_ids` counter with the `.increment()` method and then by fetching the current count with the `.current()` method; storing it as a `uint` named `token_id`.
+* Inside the body of the `registerArtwork` function, you must generate the next `token_id`. This is done by incrementing the `token_ids` counter with the `.increment()` method, and then by fetching the current count with the `.current()` method; storing it as a `uint` named `token_id`.
 
 Next, inside the `registerArtwork` function, call the internal `_mint` method from `ERC721Full`. Pass the `owner` value that we defined and the new `token_id` that was generated into the `_mint` function.
 
