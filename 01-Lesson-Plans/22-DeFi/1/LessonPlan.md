@@ -195,9 +195,9 @@ Define a function named `registerArtwork`; it accepts the following parameters:
 
 * This function will be responsible for registering a new piece of artwork on the chain.
 
-* The token URI can be a link to some metadata anywhere on the internet. This can be a potential point of centralization, but we will solve that later, by using a tool called IPFS.
+* The token URI can be a link to some metadata anywhere on the internet. This can be a potential point of centralization, but we will solve that later by using a tool called IPFS.
 
-* In our use case, we will be creating a JSON object that contains a `name`, `description`, and `image` field, then converting it to a special immutable URI with IPFS that ensures that you will always be getting that same piece of data. Essentially, we will be linking to some JSON metadata in a decentralized fashion, but for now, we just need to be able to store a string.
+* In our use case, we will be creating a JSON object that contains a `name`, `description`, and `image` field, then converting it to a special immutable URI with IPFS—which ensures that you will always be getting that same piece of data. Essentially, we will be linking to some JSON metadata in a decentralized fashion, but for now, we just need to be able to store a string.
 
 Add the following lines of code inside the `registerArtwork` function for generating the token's id.
 
@@ -235,13 +235,13 @@ On the next line of the `registerArtwork` function, add the generated `token_id`
 
 * When our `registerArtwork` function finishes creating a new artwork token, it will then return the token's id.
 
-Define a second function named `newAppraisal`; this function will be responsible for reporting a new artwork appraisal by logging it's `report_uri`, it accepts three parameters a `uint` named `token_id`, a second `uint` named `new_value` and a `string memory` representing the `report_uri`. Make `newAppraisal` a public function that returns a `uint`.
+Define a second function named `newAppraisal`; this function will be responsible for reporting a new artwork appraisal by logging its `report_uri`. It accepts three parameters a `uint` named `token_id`, a second `uint` named `new_value` and a `string memory` representing the `report_uri`. Make `newAppraisal` a public function that returns a `uint`.
 
  ```solidity
  function newAppraisal(uint token_id, uint new_value, string memory report_uri) public returns(uint) {
  ```
 
-Inside the body of the `newAppraisal` function set the passed token_id's appraisal_value to the new_amount passed to the function. Then `emit` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal, and the `report_uri`. Finally return the `new_amount` value.
+Inside the body of the `newAppraisal` function, set the passed token_id's appraisal_value to the new_amount passed to the function. Then `emit` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal, and the `report_uri`. Finally return the `new_amount` value.
 
  ```solidity
  art_collection[token_id].appraisal_value = new_value;
@@ -251,15 +251,15 @@ Inside the body of the `newAppraisal` function set the passed token_id's apprais
  return art_collection[token_id].appraisal_value;
  ```
 
-* This function will be responsible for reporting a new accident by logging it's `report_uri`.
+* This function will be responsible for reporting a new accident by logging its `report_uri`.
 
 * The `newAppraisal` function does three things:
 
- * it increments the new appraisal amount for the given `token_id` inside the `art_collection` mapping,
+ * It increments the new appraisal amount for the given `token_id` inside the `art_collection` mapping
 
- * it `emits` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal and the `report_uri`
+ * It `emits` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal, and the `report_uri`
 
- * it returns the current artwork `appraisal_value` after the latest appraisal.
+ * It returns the current artwork `appraisal_value` after the latest appraisal.
 
 * We have now created a new ERC721 non-fungible token with custom attributes.
 
@@ -269,7 +269,7 @@ If you see a warning like this:
 
 This is coming from the OpenZeppelin library and is safe to ignore.
 
-### 3. Students Do: Building the CryptoFax Car Token (20 min)
+### 3. Student Do: Building the CryptoFax Car Token (20 min)
 
 In this activity, students will implement a non-fungible car token containing an immutable vehicle history using the ERC721 OpenZeppelin contract. This contract will require them to apply their knowledge of SafeMath counters, structs, and events.
 
