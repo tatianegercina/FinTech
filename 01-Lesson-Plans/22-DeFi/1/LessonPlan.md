@@ -10,7 +10,7 @@ Trilogy is a company that values transparency and data-driven change. As we grow
 
 ### Overview
 
-In today's class, students will be introduced to the concept of DeFi (short for decentralized finance). Though DeFi most commonly refers to financial systems built upon distributed ledgers frequently leveraging smart contracts. Students will gain the scope that DeFi is not a particular technology or implementation. Rather, DeFi is a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
+In today's class, students will be introduced to the concept of DeFi (decentralized finance), which are financial systems built upon distributed ledgers that frequently leverage smart contracts. Students will learn that DeFi is not a particular technology or implementation, but rather, a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
 
 ### Class Objectives
 
@@ -22,13 +22,13 @@ By the end of the class, students will be able to:
 
 * Use IPFS to store immutable data off-chain to save gas
 
-* Use Filters in Web3.py to react to Events from smart contracts
+* Use Filters in Web3.py to react to events from smart contracts
 
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1mSVwnJQnqBCj9u2nzfK0UkbKeVvbRzrq8eMOAfg60Fo/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then add the PDF file to your class repository, along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting `Make a copy`.
 
@@ -36,7 +36,7 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* The contracts you will be deploying today are relatively large and may take a few minutes to compile.
+* The contracts you will be deploying today are relatively large, and may take a few minutes to compile.
 
 * Refer to OpenZeppelin ERC721 documentation for further information about Non-Fungible Tokens. [ERC721 Docs](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721)
 
@@ -46,15 +46,15 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome Back (10 min)
 
-Previously students have implemented both a basic token as well as the ERC21 fungible token standard using the OpenZeppelin libraries. Today they will be implementing their first ERC721 Non-fungible token using the Openzeppelin libraries. Take a few minutes to review ERC's, OpenZeppelin, and the concept of fungibility by discussing the following recall questions with the class.
+Previously, students have implemented a basic token, as well as the ERC21 fungible token standard using the OpenZeppelin libraries. Today they will implement their first ERC721 non-fungible token using the OpenZeppelin libraries. Take a few minutes to review ERC's, OpenZeppelin, and the concept of fungibility by discussing the following recall questions with the class.
 
 * What are some differences between `fungible` and `non-fungible` tokens?
 
     * **Answer**: Non-fungible tokens are unique, fungible tokens are not unique.
 
-    * **Answer**: Fungible tokens are interchangeable with one another whereas non-fungible are not.
+    * **Answer**: Fungible tokens are interchangeable with one another, whereas non-fungible are not.
 
-    * **Answer**: non-fungible tokens use ERC 721, fungible tokens use ERC 777.
+    * **Answer**: Non-fungible tokens use ERC 721, fungible tokens use ERC 777.
 
 * What are some examples of `fungible` assets?
 
@@ -72,21 +72,21 @@ Previously students have implemented both a basic token as well as the ERC21 fun
 
     * **Answer**: Diamonds
 
-    * **Answer**: Land Ownership
+    * **Answer**: Land ownership
 
 * What are some potential benefits of using open source libraries such as OpenZeppelin?
 
-    * **Answer**: They are freely available to use and contribute to under the MIT license.
+    * **Answer**: They are free to use and contribute to under the MIT license.
 
-    * **Answer**: It's a community-backed project that has implemented many of the communities agreed-upon standards (EIPS/ERCS).
+    * **Answer**: It's a community-backed project that has implemented many of the communities agreed upon standards (EIPS/ERCS).
 
     * **Answer**: It provides a secure, standardized starting point for various smart contract standards.
 
-Now that the class has been refreshed on fungibility set the stage for today's lesson by introducing the concept of `DeFi`.
+Now that the class has had a refresher on fungibility, set the stage for today's lesson by introducing the concept of `DeFi`.
 
 * `DeFi` is short for decentralized finance.
 
-* `DeFi` encompasses many of the technologies and paradigms that we have learned throughout the previous unit; however, DeFi is not a particular technology or implementation.
+* `DeFi` encompasses many of the technologies and paradigms that we have learned about in the previous unit; however, DeFi is not a particular technology or implementation.
 
 * `DeFi` is a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
 
