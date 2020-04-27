@@ -364,7 +364,7 @@ Walk around and instruct TAs to circulate during this activity so that students 
 
 * [README.md](Activities/03-Stu_Parlez_Vous_Le_Json/README.md)
 
-- - -
+---
 
 ### 9. Instructor Do: Parlez-vous le JSON Activity Review (5 min)
 
@@ -372,7 +372,9 @@ Instructor and students will review the JSON turn and teach activity. The instru
 
 Open Postman and submit the below request to Quandl. Then, conduct a live deciphering of the JSON data, emphasizing the following:
 
-* https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json
+```text
+https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json?api_key=YOUR_API_KEY_HERE
+```
 
 * Name/value pairs are used to make deciphering JSON data easy because it does a single map between **name** and **value**. Point out an example of a name (e.g., the `description` field). Then, identify the corresponding value.
 
@@ -380,7 +382,7 @@ Open Postman and submit the below request to Quandl. Then, conduct a live deciph
 
   ![decipher_json.png](Images/decipher_json.png)
 
-* JSON Objects are contained within curly braces `{}`. These objects often contain multiple name-value pairs, like a row (e.g., {"ticker":"GOOG","close_price":192.57}).
+* JSON Objects are contained within curly braces `{}`. These objects often contain multiple name-value pairs, like a row (e.g., `{""id": 9775718, dataset_code": "GOOG"}`).
 
 * JSON Arrays are identified by brackets `[]`. An example of a JSON Array is the `column_names` object returned from the Quandl API call.
 
@@ -390,17 +392,17 @@ If time permits, ask the students  the following questions. Sample answers have 
 
   **Answer:** WrapAPI. While it is not FinTech related, it's unique and has a number of different use cases. Of all of the APIs, WrapApi seems the most flexible and all-encompassing.
 
-* Ask students to write down two things they like about APIs and the client-server model. Ask for two volunteers to present their answers.
+Ask students to write down two things they like about APIs and the client-server model. Ask for two volunteers to present their answers.
 
   **Answer:** The client-server model is simple, easy to understand, and used almost everywhere. APIs are cool because they eliminate the need of having to reinvent the wheel.
 
-* Ask students to write down one thing they do not like or find challenging about APIs and the client-server model. Ask one student to volunteer an answer and collect the remaining answers as students leave the classroom.
+Ask students to write down one thing they do not like or find challenging about APIs and the client-server model. Ask one student to volunteer an answer and collect the remaining answers as students leave the classroom.
 
   **Answer**: Not all APIs have good documentation. It's difficult to gauge exactly what an API can do or how it should be used.
 
 Before moving forward, ask the students if there are any remaining questions.
 
-- - -
+---
 
 ### 10. Instructor Do: Python Requests (10 min)
 
