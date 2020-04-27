@@ -406,7 +406,7 @@ Before moving forward, ask the students if there are any remaining questions.
 
 ### 10. Instructor Do: Python Requests (10 min)
 
-Submitting APIs with Postman is useful, but API requests are better sent with Python code. Instructors will demonstrate to students how to submit an API request with Python instead of Postman. Emphasis will be placed on the similarities between the two processes, as well as the advantages of sending requests through Python.
+Submitting APIs with Postman is useful, but API requests are better sent with Python code. In this activity you will demonstrate to students how to submit an API request with Python instead of Postman. Emphasis will be placed on the similarities between the two processes, as well as the advantages of sending requests through Python.
 
 The World Bank API (GDP extraction) should be used for this instructor demonstration activity.
 
@@ -414,9 +414,9 @@ The World Bank API (GDP extraction) should be used for this instructor demonstra
 
 * [python_requests.ipynb](Activities/04-Ins_Python_Requests/Solved/python_requests.ipynb)
 
-Navigate to the 5.1 slides, and highlight the following:
+Open the lesson slides, move to the "Python Requests" section and highlight the following:
 
-* Just as API **requests** can be sent through Postman, they can also be sent through Python. Python offers a `requests` package that can be used to submit API requests through a protocol known as `HTTP`. The `requests` library supports `GET`, `POST`, and `PUT` requests, just to name a few. `GET` requests will be the focus for this class.
+* Just as API **requests** can be sent through Postman, they can also be sent through Python. Python offers a `requests` library that can be used to submit API requests through a protocol known as `HTTP`. The `requests` library supports `GET`, `POST`, and `PUT` requests, just to name a few. `GET` requests will be the focus for this class.
 
 * Each type of request serves a different purpose.
 
@@ -426,7 +426,9 @@ Navigate to the 5.1 slides, and highlight the following:
 
   * `PUT` requests are used to overwrite content on the server.
 
-* APIs play a key role in data analytic pipelines, often being the source of data or a means to analyze data. By submitting requests in Python, APIs can be used in-line with other processing. For example, data can be pulled from Coinbase to calculate cumulative returns, sharpe ratio, and beta for a set of cryptos. Similarly, data could be extracted from the Quandl API to complete portfolio simulations. Instead of switching back and forth between Postman and Python, everything can just be completed in Python.
+* APIs play a key role in data analytic pipelines, often being the source of data or a means to analyze data. By submitting requests in Python, APIs can be used in-line with other processing. For example, data can be pulled from Coinbase to calculate cumulative returns, sharpe ratio, and beta for a set of cryptos.
+
+* Similarly, data could be extracted from the Quandl API to complete portfolio simulations. Instead of switching back and forth between Postman and Python, everything can just be completed in Python.
 
 Demonstrate with live code how to use the Python `requests` library, and use the following discussion points:
 
@@ -439,10 +441,16 @@ Demonstrate with live code how to use the Python `requests` library, and use the
 * The first step to using the requests library after importing it is to declare a variable that will hold the URL.
 
   ```python
-  url = "http://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD"
+  url = "http://api.worldbank.org/v2/country/ca/indicator/NY.GDP.MKTP.CD"
   ```
 
-* Because most APIs support multiple output formats, the next step is to specify the desired output format. This can be added to the URL with a format tag, `?format=`. Common formats used are JSON, CSV, and XML. For this lesson, JSON will be the focus. The format tag will need to be appended to the URL string previously created; ask students if anyone remembers how to append to a string. (Answer: concatenation.)
+* Because most APIs support multiple output formats, the next step is to specify the desired output format. This can be added to the URL with a format tag, `?format=`.
+
+* Common formats used are JSON, CSV, and XML. For this lesson, JSON will be the focus. The format tag will need to be appended to the URL string previously created.
+
+Ask students if anyone remembers how to append to a string.
+
+* **Answer:** We can merge strings with concatenation using the `+` operator.
 
   ```python
   url = url + "?format=json"
@@ -450,16 +458,11 @@ Demonstrate with live code how to use the Python `requests` library, and use the
 
 * `GET` requests can be sent using the `requests.get` function. The function accepts the request URL as an argument.
 
-  ```python
-  # Execute GET request
-  requests.get(url)
-  ```
-
   ![request_response.png](Images/request_response.png)
 
 * Most APIs incorporate programming that will return a code with each server response. These are called **response codes**. A list of common response codes and their meanings can be found below.
 
-  ```
+  ```text
   Common Response Codes
 
   200s: Success
@@ -476,53 +479,25 @@ Demonstrate with live code how to use the Python `requests` library, and use the
 
 * The actual data returned from the server, called **content**, can be accessed with the `content` attribute.
 
-  ```python
-  # Get content
-  response_content = response_data.content
-  print(response_content)
-  ```
-
   ![submit_python_request.png](Images/submit_python_request.png)
 
 * The `json` function from the `json` library can be used to format API output in true JSON format.
 
-  ```python
-  import json
+  ![raw_json](Images/raw_json.png)
 
-  # Format JSON
-  data = response_data.json()
-  ```
+* To improve visual formatting even more, the `json.dump` function can be used to add indentations to the JSON raw data to make the JSON levels and hierarchies more apparent.
 
-* To improve visual formatting even more, the `json.dump` function can be used to add indentations to the JSON data to make the JSON levels and hierarchies more apparent. The `json.dump` function accepts an argument `indent`, which can be configured to change the indents. `indent=4` is commonly used. Communicate to students  that the `json.dump` function only visually formats the JSON output on the screen; it does not alter the underlying JSON structure.
-
-  ```python
-  # Add indents to JSON and output to screen
-  print(json.dumps(data, indent=4))
-  ```
+* The `json.dump` function accepts an argument `indent`, which can be configured to change the indents. `indent=4` is commonly used. Communicate to students  that the `json.dump` function only visually formats the JSON output on the screen; it does not alter the underlying JSON structure.
 
   ![json_with_indent.png](Images/json_with_indent.png)
 
 * JSON data has to be selected based off levels and hierarchies. For example, some JSON objects are organized by JSON object -> JSON array -> attribute. Some have multiple objects, and others have multiple JSON arrays. Either way, accessing JSON data is just like accessing data in a dictionary. Brackets `[]` are used with **keys** to retrieve values.
 
-  ```python
-  # Select country and GDP value for second row
-  country = data[1][1]['country']['value']
-  gdp_value = data[1][1]['value']
-
-  print(country)
-  print("GDP Value: " + str(gdp_value))
-  ```
-
-  ```
-  Country: Arab World
-  GDP Value: 2584531235434.03
-  ```
-
   ![selecting_json.png](Images/selecting_json.png)
 
 Ask if there are any remaining questions before moving forward.
 
-- - -
+---
 
 ### 11. Students Do: Ice Breakers on Request (20 min)
 
