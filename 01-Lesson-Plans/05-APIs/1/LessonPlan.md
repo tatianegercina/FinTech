@@ -430,7 +430,7 @@ Open the lesson slides, move to the "Python Requests" section and highlight the 
 
 * Similarly, data could be extracted from the Quandl API to complete portfolio simulations. Instead of switching back and forth between Postman and Python, everything can just be completed in Python.
 
-Demonstrate with live code how to use the Python `requests` library, and use the following discussion points:
+Open the unsolved version of the Jupyter notebook, demonstrate with live code how to use the Python `requests` library and use the following discussion points:
 
 * The `requests` library has to be imported in order to be used.
 
@@ -513,7 +513,7 @@ Walk around with TAs to provide assistance to students with parsing JSON data. S
 
 * [README.md](Activities/05-Stu_Ice_Breakers_on_Request/README.md)
 
-- - -
+---
 
 ### 12. Students Do: Engagement Activity (15 min)
 
@@ -525,7 +525,7 @@ If a student doesn't find a fact or joke they feel like sharing, ask them to do 
 
 * Identify one advantage of using Python `requests` library over using Postman.
 
-**Answer** The `requests` library allows API calls to be made in-line with the rest of the code and processing. Postman requires users to transition from one development environment to another.
+  * **Answer** The `requests` library allows API calls to be made in-line with the rest of the code and processing. Postman requires users to transition from one development environment to another.
 
 Transition into a reflective Q&A session. Ask the students the following questions:
 
@@ -541,7 +541,7 @@ If time remains, tell students about some of the APIs you've worked with and how
 
 Ask students if there are any comments or questions they'd like to make regarding their experiences working with APIs so far. Then transition into a formal review of the Python Requests activity.
 
-- - -
+---
 
 ### 13. Instructor Do: Ice Breakers on Request Activity Review (10 min)
 
@@ -589,107 +589,69 @@ Open the solution and conduct a dry walk-through review, highlighting the follow
 
 * `json.dumps` can be used to format the JSON output in a way that is easy to decipher and interpret visually. The indent argument is used to specify how many indentations should be used when formatting. Indents help delineate JSON levels and hierarchies.
 
-  ```python
-  import json
-
-  # Use json.dumps with argument indent=4 to format data
-  print(json.dumps(data, indent=4))
-  ```
-
   ![json_dumps.png](Images/json_dumps.png)
 
 * Data from the API can be extracted from its JSON format by using brackets `[]` to specify the desired element in fully qualified format (i.e., [parent][index][child]). Depending on the JSON format, the parent and index levels may not be applicable.
 
-  ```python
-  # Select a programming joke
-  selected_value = data[0]['setup']
-  selected_value_2 = data[0]['punchline']
-  ```
-
   ![access_json_data.png](Images/access_json_data.png)
 
-- - -
+Answer any questions before moving on.
+
+---
 
 ### 14. BREAK (15 min)
 
-- - -
+---
 
 ### 15. Instructor Do: URL Parameters (5 min)
 
-In this activity, students learn how to customize API requests with parameters through instructor demonstration. The [Numbers API](http://numbersapi.com) will be used for the demonstration, so make sure the API is still up and running prior to class.
+In this activity, students will learn how to customize API requests with parameters through instructor demonstration. The [Numbers API](http://number sapi.com) will be used for the demonstration, so make sure the API is still up and running prior to class.
 
 **Files:**
 
 * [url_parameters.ipynb](Activities/06-Ins_URL_Parameters/Solved/url_parameters.ipynb)
 
-Navigate to the 5.1 slides, and highlight the following:
+Open the lesson slides, move to the "URL Parameters" section and highlight the following:
 
 * Each API call supports a set of parameters. These parameters can be used to help direct the API toward the data needed or be used to reduce the amount of data being returned by the server.
 
   * Ask the students: We've already made some API requests using parameters. Can anyone remember any examples?
 
-    **Answer**: When using the `?format=json` tag.
+  * **Answer**: When using the `?format=json` tag.
 
 * **Parameters** can be specified in one of two ways. Parameters can follow `/` forward slashes or specified by parameter name and then by parameter value.
 
-  ```
+  ```text
   Parameter provided after /
   http://numbersapi.com/42
   ```
 
-  ```
+  ```text
   Parameter provided using parameter name and value
   http://numbersapi.com/random?min=10?json
   ```
 
 * When used with parameter names, URL parameters have to be separated from the request URL with the `?` symbol.
 
-  ```
+  ```text
   http://numbersapi.com/random?min=10
   ```
 
 * Multiple parameters can be passed in with the same URL by separating each parameter with an `&` symbol
 
-  ```
+  ```text
   http://numbersapi.com/random?min=10&max=20
   ```
 
-Open the solution, and conduct a dry walk through of the following solution. Touch upon the following discussion points:
+Open the unsolved version of the Jupyter notebook and conduct a dry walk through of the following solution. Touch upon the following discussion points:
 
-* The requests `GET` function can be used to submit a parameterized request to the Numbers API to get trivia facts about the number 42.
-
-  ```python
-  import requests
-  import json
-
-  # Create parameterized url
-  request_url = "http://numbersapi.com/42?json"
-
-  # Submit and format request
-  response_data = requests.get(request_url).json()
-  print(json.dumps(response_data, indent=4))
-
-  # Select fact
-  response_data['text']
-  ```
+* The requests `GET` function can be used to submit a parameterized request to the Numbers API to get trivia facts about the number `42`.
 
   ![url_parameters.png](Images/url_parameters.png)
 
-Open the starter file, and live code the following:
+Continue the demo  and live code the following:
 
 * The Numbers API URL can be parameterized to execute for the number `8` instead of `42`.
-
-  ```python
-  # Create parameterized url
-  request_url = "http://numbersapi.com/8?json"
-
-  # Submit and format request
-  response_data = requests.get(request_url).json()
-  print(json.dumps(response_data, indent=4))
-
-  # Select fact
-  response_data['text']
-  ```
 
   ![url_parameters_8.png](Images/url_parameters_8.png)
 
@@ -701,7 +663,7 @@ Ask the class the following question:
 
 Ask the students if they have any remaining questions before moving on.
 
-- - -
+---
 
 ### 16. Students Do: House of Requests (25 min)
 
