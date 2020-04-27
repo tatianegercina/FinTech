@@ -16,7 +16,7 @@ Complete the following steps.
 
 5. Run the `git add .` command to add all changed files to the tracked files queue.
 
-6. Run the `git commit -m "<message"` command to group tracked/changed files as a checkpoint prior to uploading to the remote git repo.
+6. Run the `git commit -m "message"` command to group tracked/changed files as a checkpoint prior to uploading to the remote git repo.
 
 7. Execute `git push` to push the commit to the remote git repo.
 
