@@ -521,19 +521,19 @@ In your browser, open the [CID IPFS Website](https://cid.ipfs.io) and convert th
 
 * Originally, the CIDv0 standard allowed for URL hashes that supported both upper and lowercase characters, but this breaks in many browsers nowadays, since some of them automatically make your URL lowercase. Since the hash relied on case sensitivity to encode the necessary data, this broke it.
 
-* CIDv1 is a longer, lowercase hash that also contains more metadata that can be converted for human-readable info in some applications. Since we're alway at the cutting edge, we are going to opt for the newer, more compatible standard.
+* CIDv1 is a longer, lowercase hash that also contains more metadata that can be converted for human-readable info in some applications. Since we're always at the cutting edge, we are going to opt for the newer, more compatible standard.
 
-* Pinata is a useful service, but they have yet to update their file pinning  website frontend to support CIDv1. In order to avoid bugs, we are going to convert the `IPFS hash` with a free CIDv1 converter.
+* Pinata is a useful service, but they have yet to update their file pinning website front end to support CIDv1. In order to avoid bugs, we are going to convert the `IPFS hash` with a free CIDv1 converter.
 
-Now to test the browser extension copy the files new CIDv1 `IPFS hash` and prepend `ipfs://` to the front of it, e.g., [ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m](ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m). Demonstrate creating the link and opening it in your browser.
+Now to test the browser extension, copy the files new CIDv1 `IPFS hash` and prepend `ipfs://` to the front of it, e.g., [ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m](ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m). Demonstrate creating the link and opening it in your browser.
 
 * Once the IPFS browser extension is installed, files on IPFS can be accessed at `ipfs://whatever your file hash is`.
 
 * When pasting an IPFS URI into our browser, we need to make sure it is navigating directly to the `ifps://` scheme, and not simply searching the string on Google.
 
-Now navigate to [Remix](http://remix.ethereum.org/). Then open the example contract for the `Artwork Token` and compile/deploy the contract on your local ganache blockchain.
+Now navigate to [Remix](http://remix.ethereum.org/). Then, open the example contract for the `Artwork Token` and compile/deploy the contract on your local ganache blockchain.
 
-You may have to increase the `Gas Limit`, but once the contract has successfully deployed, click on the deployed contract and click the `newAppraisal` function. Fill in the fields with a generated address from your wallet, some sample details about the artwork, and the token URI; then call the function. The data you enter should be:
+You may have to increase the `Gas Limit`, but once the contract has successfully deployed, click on the deployed contract and then click the `newAppraisal` function. Fill in the fields with a generated address from your wallet, some sample details about the artwork, and the token URI; then call the function. The data you enter should be:
 
 ![Register Artwork](Images/remix_register_artwork.png)
 
@@ -547,11 +547,11 @@ You may have to increase the `Gas Limit`, but once the contract has successfully
 
 * token_uri: `ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m`
 
-Congratulate them, that was a lot of new information to take in; then briefly introduce the next activity.
+Congratulate the students—that was a lot of new information to take in! Then, quickly introduce the next activity.
 
 * We've now deployed our ERC721 non-fungible token with a linked IPFS `token URI`. In the next activity, you will be uploading a similar token URI file to Pinata for your CryptoFax car token.
 
-### 6. Students Do: IPFS + Blockchain (15 min)
+### 6. Student Do: IPFS + Blockchain (15 min)
 
 In this activity, students will upload a Car TokenURI to IPFS via Pinata and link them to a transaction via their ERC721 contracts.
 
