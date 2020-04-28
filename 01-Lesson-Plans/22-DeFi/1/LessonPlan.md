@@ -961,7 +961,7 @@ Send out the instructions and the starter code, and have TAs circulate the room,
 
 * [.env](Activities/06-Stu_Accident_Report_System/Unsolved/.env)
 
-If students are having difficulties, make sure of the following:
+If students are having difficulties, ensure the following:
 
 * The student has installed the `python-dotenv` package. This can be done by running the following command:
 
@@ -1011,11 +1011,11 @@ Ask for any remaining questions before moving on.
 
 Congratulate the class on having made it this far!
 
-Explain that, over the next two class weeks, students will work in groups to complete a capstone project for FinTech.
+Explain that, over the next two weeks, students will work in groups to complete a capstone project for FinTech.
 
-Explain that students can choose any topic from any section of the course as their capstone project. Point out that this allows them to align their capstone project with their specific career goals, and that the final project does not have to focus on Blockchain.
+Tell students they may choose any topic from any section of the course as their capstone project. Point out that this allows them to align their capstone project with their specific career goals, and that the final project does not have to focus on blockchain.
 
-Tell students that they will also be able to choose their teams of 2-6 students for this final project. Students are also able to request placement on a team by the instructional staff.
+Tell students that they will also be able to choose their teams, of two to six students, for this final project. Students are also able to request placement on a team by the instructional staff.
 
 Explain that the rest of the class will be dedicated to working on their final projects.
 
