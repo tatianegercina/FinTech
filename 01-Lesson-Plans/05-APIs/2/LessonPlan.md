@@ -226,23 +226,27 @@ Ask if there are any questions, and then move on to the next activity.
 
 ### 5. Instructor Do: Calling Environment Variables (5 min) (Critical)
 
-This activity involves students learning, by way of an instructor live demo, how to store API keys in environment variables, as well as how to call and use the environment variables in Python code. Teaching students how to store API keys as environment variables will help ensure that API keys are not hard-coded in Python scripts.
+In this activity students will learn how to call API keys as environment variables using the `dotenv` Python package.
+
+**Important Note:** Ensure that you have a local `.env` file containing your `QUANDL_API_KEY` into the `Solved` folder before running the demo.
 
 **Files:**
 
 * [env_variables.ipynb](Activities/02-Ins_Call_Env_Variables/Solved/env_variables.ipynb)
 
-Introduce students to the concept of environment variables by asking the following question:
+Recall students to the concept of environment variables by asking the following question:
 
 * Imagine you signed up for 10 APIs, and each API gave you a key. It'd be extremely difficult to commit each key to memory, so you need to find some way to save the keys. What are some possible approaches?
 
   **Answer:** One approach would include tracking the keys in an Excel document. The document could be password protected to preserve confidentiality.
 
-  **Answer:** Variables could be created, and the keys could be stored in the variables.
+  **Answer:** Environment variables could be created, and the keys could be stored in the variables.
 
-Create a new `.env` file containing your `QUANDL_API_KEY` in the same directory as the [env_variables.ipynb](Activities/02-Ins_Call_Env_Variables/Solved/env_variables.ipynb) After you have created the `.env` run the jupyter notebook file. Next navigate to the 5.2 slides and touchpoint on each of the below discussion points.
+Open the solved version of the jupyter notebook. Next, run the code on every cell and highlight the following:
 
-* Environment variables are variables just like Python variables; however, instead of being created in a Python application, they're created on a user's computer. Environment variables are operating-system-level variables that are accessible by all programs and applications with access to that environment.
+* Environment variables are variables just like Python variables; however, instead of being created in a Python application, they're created on a user's computer.
+
+* Environment variables are operating-system-level variables that are accessible by all programs and applications with access to that environment.
 
 * Environment variables are given a name, and they can hold any string value. It is important to note that environment variables can only hold `strings`.
 
@@ -250,47 +254,64 @@ Create a new `.env` file containing your `QUANDL_API_KEY` in the same directory 
 
 * An easy, convenient, and secure way to store any data that needs to be accessed across programs and applications is to use environment variables. This includes API keys, as well as user credentials, and program installation paths (e.g., Python).
 
-```python
-# Import dotenv package for setting environment variables
-from dotenv import load_dotenv
-
-# Import os package
-import os
-```
-
 * For reading our `.env` file and setting it's defined environment variables in our local environment we import the `load_dotenv()` method from the `python-dotenv` package.
+
+  ```python
+  # Import dotenv package for setting environment variables
+  from dotenv import load_dotenv
+  ```
 
 * For fetching our environment variables from the local environment and loading them into an in-memory python variable we are importing the `os` package.
 
-```python
-# Set environment variables from the .env in the local environment
-load_dotenv()
-```
+  ```python
+  # Import os package
+  import os
+  ```
 
 * Setting the environment variables in our `.env` file is as easy as calling the `load_dotenv()` method.
 
+  ```python
+  # Set environment variables from the .env in the local environment
+  load_dotenv()
+  ```
+
 * Keep in mind unless a file location `string` is passed `load_dotenv` will look for a `.env` in the root directory from which your Python code is executing.
 
-```python
-# Retrieve API key and store as Python variable
-api_key = os.getenv("QUANDL_API_KEY")
-```
+* Once an environment variable is declared, it can be called using the `os.getenv` function. The input to the `os.getenv` function is the name of the environment variable. The output should then be stored as a Python variable to be used at a later time.
 
-* Once an environment variable is declared, it can be called using the `os.environ.get` function. The input to the `os.environ.get` function is the name of the environment variable. The output should then be stored as a Python variable to be used at a later time.
+  ```python
+  # Retrieve API key and store as Python variable
+  api_key = os.getenv("QUANDL_API_KEY")
+  ```
 
+* A way to check if the environment variable was correctly loaded, is to print the data type of the Python variable.
 
-* If an environment variable does not exist, Python will return `None` as the value. An empty environment variable will cause an API call to fail. If an API doesn't seem to be working right, double-check your environment variable using the `type` command. This will indicate if the environment variable is of type `None` **(null)**  or `string  `**(not null)**.
+* If the environment variable exists, Python will return `str` as the data type.
 
-```python
-api_key = os.getenv("MY_QUANDL_API_KEY")
-type(api_key)
-```
+  ```python
+  api_key = os.getenv("QUANDL_API_KEY")
+  type(api_key)
+  ```
 
-```
-NoneType
-```
+  ```text
+  NoneType
+  ```
 
-* Emphasize to students that they need to make sure that the environment variable `print` statement is not pushed into Git, or any other repository, as it would expose their API keys to anyone who has access to the repository.
+* If an environment variable does not exist, Python will return `NoneType` as the data type. An empty environment variable will cause an API call to fail.
+
+  ```python
+  # Retrieve an environment variable that doesn't exist
+  api_key_bis = os.getenv("MY_QUANDL_API_KEY")
+  type(api_key_bis)
+  ```
+
+  ```text
+  NoneType
+  ```
+
+* If an API key doesn't seem to be working right, double-check your environment variable by reviewing your `.env` file.
+
+Emphasize to students that they need to make sure that the environment variable `print` statement is not pushed into Git, or any other repository, as it would expose their API keys to anyone who has access to the repository.
 
 Ask students if there are any questions before continuing.
 
