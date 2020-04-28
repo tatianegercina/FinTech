@@ -413,7 +413,7 @@ In this activity, students are introduced to the `IPFS` technology and how it ca
 
 * [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_System/Solved/example_uri.json))
 
-Begin by giving the students some background on IPFS, what it is, how it works.
+Begin by giving the students some background on IPFS, such as what it is, and how it works.
 
 * So what is IPFS?
 
@@ -425,13 +425,13 @@ Begin by giving the students some background on IPFS, what it is, how it works.
 
  * and a `Filesystem`
 
-* So what exactly does this mean and how does it all fit together?
+* So what exactly does this mean, and how does it all fit together?
 
 * For two users to exchange data with one another across the internet, they need a common set of rules for how the information is sent between them; this is a `communication protocol`.
 
 * `Communication protocols` are usually built within a stack known as a `protocol suite`. For example, the `internet protocol suite` is widely used today, and of the protocols that make up the suite, `HyperText Transfer Protocol` or `HTTP` is the foundation for communication.
 
-* Another important piece is known as the `system's architecture` or how the actual computers within the network can communicate with one another. Traditionally this is done in a `client-server` model; however, IPFS leverages a `peer-to-peer` network model of connection.
+* Another important piece is known as the `system's architecture` or how the actual computers within the network can communicate with one another. Traditionally, this is done in a `client-server` model; however, IPFS leverages a `peer-to-peer` network model of connection.
 
 * In a typical `client-server` model, `centralized` servers store data that is accessed via `location-based addressing`. This provides an easy way to secure and manage data in a scalable manner, though it doesn't come without its drawbacks.
 
