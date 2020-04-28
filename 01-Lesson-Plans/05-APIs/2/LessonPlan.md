@@ -142,7 +142,7 @@ End the activity by asking the students if they have any further questions.
 
 ---
 
-### 3. Instructor Do: Keys to the FinTech Kingdom (10 min)
+### 3. Instructor Do: Keys to the FinTech Kingdom (5 min)
 
 Over the next couple of activities, students will be working with APIs that require keys for access. Use this time to engage them with API keys facilitated review discussion.
 
@@ -182,32 +182,43 @@ Ask if there are any questions or comments before moving on.
 
 ---
 
-### 4. Instructor Do: Creating Environment Variables (5 min) (Critical)
+### 4. Instructor Do: Creating Environment Variables (10 min) (Critical)
 
-In the previous activity, students confirmed that they have their API keys. In this activity, they will learn how to create a `.env` file to store their keys as environment variables. This demo will also include exporting environment variables so that the variables can be used in Python and in other applications and programs.
+In this activity, students will learn how to create a `.env` file to store their keys as environment variables. This demo will also include exporting environment variables so that the variables can be used in Python and in other applications and programs.
 
 **Files:**
 
-* [.env](Activities/01-Ins_Create_Env_Variables/Unsolved/.env)
+* [example.env](Activities/01-Ins_Create_Env_Variables/Unsolved/example.env)
 
-Open the 5.2 slides, and highlight the following discussion points:
+Open the lesson slides, move to the "Environment Variables" section and highlight the following discussion points:
 
 * Exporting an environment variable exposes it to all applications and programs sharing the same parent process (e.g., a terminal or Python kernel). Each application and program inherits the variable, which allows developers to make calls using `os.getenv` to access the data stored in the variable.
 
 * A common way to export environment variables is to create a `.env` file. The `.env` file will define the environment variables that you would like to export within your local projects environment. The `.env` approach is faster than exporting the variables individually.
 
-Open the [starter file](Activities/01-Ins_Create_Env_Variables/Unsolved/.env), and perform a live demo of creating and exporting environment variables with the `.env` file.
+* Because environment variables are at the operating system level, variables can be passed down from parent processes to child processes.
 
-Define your `QUANDL_API_KEY` value in the `.env` file.
+* An environment variable created in Python cannot be accessed by a terminal; in contrast, an environment variable created in a terminal can be accessed by Python.
 
-  ```shell
+* You can set environment variables either in Mac or Windows.
+
+Open a plain text editor, such as VSCode or Sublime Text, and create a new blank file. Perform a live demo of creating and exporting environment variables with the `.env` file by highlighting the following:
+
+* Now, we will create a `.env` file to store the API keys as environment variables.
+
+* To set an environment variable, you have to define a name for that variable; let's start creating a variable to store the Quandl API key.
+
+* Set the variable name as `QUANDL_API_KEY` and assign your API key to it.
+
+  ```text
   QUANDL_API_KEY="ENTER YOUR API KEY HERE"
   ```
 
-* You define an environment variable in your `.env` like so.
+* Once you set your brand new environment variable, save the file as `.env`. You may receive a warning message that states that the file will be hidden.
 
-* Once the `.env` file has been created; it must be loaded into memory by a package like `python-dotenv` so that the environment variables can be sourced. We will be discussing methods on loading a `.env` in the next lesson.
+  ![create_env_file](Images/create_env_file.gif)
 
+* Once the `.env` file has been created; it must be loaded into memory by a package like `python-dotenv` so that the environment variables can be sourced. We will be discussing methods on loading a `.env` in the next activity.
 
 Ask if there are any questions, and then move on to the next activity.
 
