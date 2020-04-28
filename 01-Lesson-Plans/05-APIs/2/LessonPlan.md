@@ -96,6 +96,8 @@ Navigate to the [Plaid](https://plaid.com/) website and highlight the following:
 
 * [Plaid is available in Canada since May, 2019](https://blog.plaid.com/plaid-in-canada/).
 
+Answer any questions before moving on.
+
 ---
 
 ### 2. Instructor Do: API Keys (5 min) (Critical)
