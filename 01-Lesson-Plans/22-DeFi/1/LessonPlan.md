@@ -768,9 +768,9 @@ Quickly pull up the [web3.py Documentation](https://web3py.readthedocs.io/en/sta
 
 * Web3.py in auto-mode will try a few things. First, it will check the `WEB3_PROVIDER_URI` environment variable for a connection string. If it finds one, it'll try to connect to it. Since we provided one, it will find ours immediately!
 
-* After that, it tries to find local Unix socket files to connect to applications like `geth` with. Then, it tries to look for a `localhost:8545` RPC connection. If we didn't set `WEB3_PROVIDER_URI`, Web3.py might have found Ganache automatically.
+* After that, it will try to find local Unix socket files to connect to applications like `geth` with. Then, it will look for a `localhost:8545` RPC connection. If we didn't set `WEB3_PROVIDER_URI`, Web3.py might have found Ganache automatically.
 
-* It's easiest for us to just tell Web3.py right away where to connect, and have it manage our connection and Ganache accounts automatically! If we connect manually, we'd have to work with the raw private keys of our test addresses. Ganache exposes the accounts API to Web3.py in a special way that abstracts away private key logic, which is why we want to use auto-mode.
+* It's easiest just to tell Web3.py where to connect, and have it manage our connection and Ganache accounts automatically! If we connect manually, we'd have to work with the raw private keys of our test addresses. Ganache exposes the accounts API to Web3.py in a special way that abstracts away private key logic, which is why we want to use auto mode.
 
 Now, create one last function in `crypto.py`:
 
@@ -834,7 +834,7 @@ def createAccidentReport():
 
 * Then, we convert that data into the JSON object we want to send to Pinata via the `convertDataToJSON` function.
 
-* We capture the final IPFS URI from our `pinJSONToIPFS` function, passing in the JSON data we want to upload and return the `token_id` and `report_uri` variables.
+* We capture the final IPFS URI from our `pinJSONToIPFS` function, passing in the JSON data we want to upload and returning the `token_id` and `report_uri` variables.
 
 Next, we'll need to create the function that will etch the event to the blockchain:
 
@@ -941,9 +941,9 @@ python accident.py report
 python accident.py get 1
 ```
 
-Voila! A complete vehicle accident report system that permanently stores accident reports to the blockchain and IPFS. Now it's time for the students to build the same system.
+Voila! A complete vehicle accident report system that permanently stores accident reports to the blockchain and IPFS. Now it's time for students to build the same system.
 
-### 10. Students Do: Building the Accident Report System (20 min)
+### 10. Student Do: Building the Accident Report System (20 min)
 
 In this activity, students will build the same Accident Report System, leveraging IPFS and event filters.
 
@@ -1025,4 +1025,4 @@ Explain that the rest of the class will be dedicated to working on their final p
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
