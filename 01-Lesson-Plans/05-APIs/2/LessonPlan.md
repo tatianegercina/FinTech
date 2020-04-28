@@ -329,7 +329,7 @@ If students finish early, use the extra time to review the final two guided revi
 
 * [env_variables.ipynb](Activities/03-Stu_Under_Lock_And_Key/Unsolved/env_variables.ipynb)
 
-* [.env](Activities/03-Stu_Under_Lock_And_Key/Solved/.env)
+* [example.env](Activities/03-Stu_Under_Lock_And_Key/Solved/example.env)
 
 **Instructions:**
 
