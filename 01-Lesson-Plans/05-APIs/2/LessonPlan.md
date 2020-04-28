@@ -339,6 +339,8 @@ If students finish early, use the extra time to review the final two guided revi
 
 ### 7. Instructor Do: Under Lock and Key Activity Review (5 min)
 
+**Important Note:** Ensure that you have a local `.env` file containing your `QUANDL_API_KEY` into the `Solved` folder before running the solution.
+
 **Files:**
 
 * [env_variables.ipynb](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ipynb)
@@ -347,53 +349,53 @@ Kick off the activity review session by asking students to summarize the process
 
 * After acquiring an API key, what's the first thing that should be done?
 
-  **Answer:** The key should be stored as an environment variable in your projects `.env` file.
+  * **Answer:** The key should be stored as an environment variable in your projects `.env` file.
 
 * Once an environment variable has been defined in your `.env` file, what should happen next?
 
-  **Answer:** The `.env` file should be read using the `load_dotenv()` method and the environment variables exported/set.
+  * **Answer:** The `.env` file should be read using the `load_dotenv()` method and the environment variables exported/set.
 
 * What should be done after the `.env` file has been sourced?
 
-  **Answer:** The environment variable should be called in Python using the `os.environ.get` function.
+  * **Answer:** The environment variable should be called in Python using the `os.getenv` function.
 
 * Is there ever a time where an API key should be hard-coded within a Python script?
 
-  **Answer:** No. The best practice for keeping API keys secure is to store them in environment variables. This practice should always be used.
+  * **Answer:** No. The best practice for keeping API keys secure is to store them in environment variables. This practice should always be used.
 
-Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ipynb), and end the review session with a quick-dry walk-through of the solution.
+Open the solution and end the review session with a quick-dry walk-through of the solution.
 
-* Once created, the environment variables are then shared with all child processes. For example, when the `load_dotenv()` method is executed,it will ensure the `QUANDL_API_KEY` variable is accessible by all processes running in the environment that executed the python file process.
+* Once created, the environment variables are then shared with all child processes. For example, when the `load_dotenv()` method is executed, it will ensure the `QUANDL_API_KEY` variable is accessible by all processes running in the environment that executed the python file process.
 
   ```shell
   QUANDL_API_KEY="ENTER YOUR KEY HERE"
   ```
 
-* Environment variables can be accessed in Python with the os library. The library has to be imported before it can be used. The os library has an `os.getenv` function that can be used to retrieve environment variables from the operating system. Once retrieved, the value can be saved as a Python variable (e.g.,  `api_key`).
+* Environment variables can be accessed in Python with the `os` library. The library has to be imported before it can be used. The `os` library has an `os.getenv` function that can be used to retrieve environment variables from the operating system. Once retrieved, the value can be saved as a Python variable (e.g., `api_key`).
 
   ```python
   api_key = os.getenv("QUANDL_API_KEY")
-  type(api_key)
   ```
 
 * Once stored as a Python variable, the environment variable value can be used for processing. In this case, the `QUANDL_API_KEY` is stored as Python variable api_key and then concatenated with the request URL. The concatenated request URL will then be used to submit a request to the Quandl API.
 
   ```python
-  request_url = "https://www.quandl.com/api/v3/datasets/WIKI/AMD.json?api_key="
+  # Define the base request URL
+  request_url = "https://www.quandl.com/api/v3/datasets/WIKI/MSFT.json?api_key="
 
   # Concatenate request_url and api_key. Store as new variable
-  request_url_rfd = request_url + api_key
+  request_url = request_url + api_key
   ```
 
 If time remains, ask two final, guided questions:
 
 * If a user were to export environment variable `QUANDL_API_KEY` using a terminal but then launched Jupyter Lab in a different terminal window, would Jupyter Lab be able to retrieve the environment variable?
 
-  **Answer:** No. Environment variables are sourced to current and child processes. Because a new terminal window is used to launch Jupyter Lab, the environment variable `QUANDL_API_KEY` will be out of scope.
+  * **Answer:** No. Environment variables are sourced to current and child processes. Because a new terminal window is used to launch Jupyter Lab, the environment variable `QUANDL_API_KEY` will be out of scope.
 
 * If environment variables are inherited through parent-child processes, what happens when a parent process is terminated?
 
-  **Answer:** The environment variable is deleted and no longer available for use.
+  * **Answer:** The environment variable is deleted and no longer available for use.
 
 Ask for any remaining questions before moving on.
 
