@@ -433,19 +433,19 @@ Begin by giving the students some background on IPFS, such as what it is, and ho
 
 * Another important piece is known as the `system's architecture` or how the actual computers within the network can communicate with one another. Traditionally, this is done in a `client-server` model; however, IPFS leverages a `peer-to-peer` network model of connection.
 
-* In a typical `client-server` model, `centralized` servers store data that is accessed via `location-based addressing`. This provides an easy way to secure and manage data in a scalable manner, though it doesn't come without its drawbacks.
+* In a typical `client-server` model, `centralized` servers store data that is accessed via `location-based addressing`. This provides an easy way to secure and manage data in a scalable manner, although it does have some drawbacks.
 
- * Since data is stored on `centralized` servers, anyone with access to those servers, whether an authorized admin or a hacker with malicious intent, can alter and remove data. This poses problems in both the realms of privacy and security because, in this model, control of the server is equal to control of the data.
+ * Since data is stored on `centralized` servers, anyone with access to those servers—whether an authorized admin or a hacker with malicious intent—can alter and remove data. This poses problems regarding privacy and security, because in this model, control of the server is equal to control of the data.
 
- * In `location-based addressing`; a piece of data is recognized by location as opposed to its content; this means that to access a piece of data, you must go to its specific location even if the same data is available from a closer source.
+ * In `location-based addressing`, a piece of data is recognized by location as opposed to its content. This means that to access a piece of data, you must go to its specific location, even if the same data is available from a closer source.
 
- * This also means a client has no defacto way to tell if the data it has received has been altered because the client isn't concerned with what the data is but rather where it is.
+ * This also means a client has no de facto way to tell if the data it has received has been altered, because the client isn't concerned with what the data is, but rather where it is.
 
  * The `client-server` model works well for websites and small pieces of data, but it's not the most efficient when it comes to big pieces of data.
 
-* IPFS hopes to address these issues with the traditional `client-server` model with the use of a distributed `peer to peer` file-sharing system.
+* IPFS hopes to address these issues with the traditional `client-server` model, with the use of a distributed `peer to peer` file-sharing system.
 
-Now that the students have a general grasp on what IPFS is and the purposes that it is trying to serve. Introduce the class to the Pinata service and how `IPFS` can be a valuable tool for building dApps and decentralized systems.
+Students should now have a general grasp on what IPFS is and what purpose it serves. Introduce the class to the Pinata service and how `IPFS` can be a valuable tool for building dApps and decentralized systems.
 
 Open a web browser and navigate to the [Pinata Website](https://pinata.cloud/).
 
@@ -453,7 +453,7 @@ Open a web browser and navigate to the [Pinata Website](https://pinata.cloud/).
 
 * Pinata is a file pinning service for IPFS. It allows you to host files on the IPFS network and reference them by hash; they also provide a free gateway for communicating with IPFS.
 
-Click the `Try it for Free` or the `Signup` and register for a free account. If you already have an account login to the pinata dashboard.
+Click the `Try it for Free` or the `Signup` and register for a free account. If you already have an account, log in to the pinata dashboard.
 
 ![Pinata Signup](Images/pinata_singup.png)
 
@@ -473,7 +473,7 @@ Open the [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_Syste
 }
 ```
 
-* As previously mentioned, each `ERC721` token typically has an associated `token URI` that is stored on some off-chain storage provider such as IPFS. A URI may resolve to any file, but an ERC721 token URI usually looks something like this.
+* As previously mentioned, each `ERC721` token typically has an associated `token URI` that is stored on an off-chain storage provider, such as IPFS. A URI may resolve to any file, but an ERC721 token URI usually looks something like this.
 
 Click on the `Pinata Upload` link in the website's top navigation bar.
 
@@ -499,19 +499,19 @@ After the upload is successful, click the `Pin Explorer` link in the website's t
 
 ![Pin Hash Click](Images/pinata_pin_hash.png)
 
-* If we click the hash link, pinata will even generate a link to the file on IPFS accessible through pinata's free IPFS gateway.
+* If we click the hash link, pinata will even generate a link to the file on IPFS, accessible through Pinata's free IPFS gateway.
 
 Make a note to the class that the Pinata gateway is a point of centralization. However, dApps can leverage the use of multiple IPFS gateways to mitigate this.
 
 ![Gateway File](Images/pinata_gateway_file.png)
 
-* By default, pinata generates a connection to the IPFS network through their free IPFS gateway; however, we will be using a direct `ipfs://` link to the hash that will be resolved through the IPFS browser extension.
+* By default, Pinata generates a connection to the IPFS network through their free IPFS gateway; however, we will be using a direct `ipfs://` link to the hash that will be resolved through the IPFS browser extension.
 
 Navigate to the [IPFS Browser Companion github](https://github.com/ipfs-shipyard/ipfs-companion) and install the browser extension for your desired browser.
 
-* You do not need to install the IPFS Desktop version.
+* You do not need to install the IPFS desktop version.
 
-* You also do not need to worry about if you cannot connect to an IPFS node, as the browser extension will fallback to the IPFS.io gateway. You do not need to install an IPFS node if you don't want to, though it is valuable to explore down the line.
+* You also don't need to worry if you cannot connect to an IPFS node, as the browser extension will fallback to the IPFS.io gateway. You do not need to install an IPFS node if you don't want to, but it is worth exploring, down the line.
 
  ![IPFS Install Links](Images/ipfs-browser-companion.png)
 
@@ -519,7 +519,7 @@ In your browser, open the [CID IPFS Website](https://cid.ipfs.io) and convert th
 
 ![CID Converter](Images/cid-converter.png)
 
-* Originally, the CIDv0 standard allowed for URL hashes that supported both upper and lowercase characters, but this breaks in many browsers nowadays since some of them automatically make your URL lowercase. Since the hash relied on case sensitivity to encode the necessary data, this broke it.
+* Originally, the CIDv0 standard allowed for URL hashes that supported both upper and lowercase characters, but this breaks in many browsers nowadays, since some of them automatically make your URL lowercase. Since the hash relied on case sensitivity to encode the necessary data, this broke it.
 
 * CIDv1 is a longer, lowercase hash that also contains more metadata that can be converted for human-readable info in some applications. Since we're alway at the cutting edge, we are going to opt for the newer, more compatible standard.
 
