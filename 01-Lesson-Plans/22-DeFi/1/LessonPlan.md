@@ -553,7 +553,7 @@ Congratulate the students—that was a lot of new information to take in! Then, 
 
 ### 6. Student Do: IPFS + Blockchain (15 min)
 
-In this activity, students will upload a Car TokenURI to IPFS via Pinata and link them to a transaction via their ERC721 contracts.
+In this activity, students will upload a Car TokenURI to IPFS via Pinata, and link them to a transaction via their ERC721 contracts.
 
 **Instructions:**
 
@@ -569,11 +569,11 @@ Discuss the following review questions with the class about the general concepts
 
 * What are some potential issues that IPFS seeks to solve?
 
-    * **Answer**: Inefficiencies in the web such as `duplicate files`.
+    * **Answer**: Inefficiencies in the web, such as `duplicate files`.
 
-    * **Answer**: Inefficiencies in the web such as having to route to a faraway server to get the file you need when it might be right next door.
+    * **Answer**: Inefficiencies in the web, such as having to route to a faraway server to get the file you need when it might be right next door.
 
-    * **Answer**: Problems with security and file integrity, such as not knowing whether or not files you have accessed over the web have changed.
+    * **Answer**: Problems with security and file integrity, such as not knowing if files you have accessed over the web have changed.
 
     * **Answer**: Problems with the security of centralized servers providing a centralized attack vector.
 
@@ -583,7 +583,7 @@ Discuss the following review questions with the class about the general concepts
 
     * **Answer**: Hosting any file that needs to be censorship-resistant.
 
-    * **Answer**: Hosting very-large files between organizations.
+    * **Answer**: Hosting very large files between organizations.
 
     * **Answer**: Hosting any file in general.
 
@@ -607,7 +607,7 @@ Discuss the following review questions with the class about the general concepts
 
 Now that students understand that IPFS is a content-routed system that works against hashes instead of IP addresses, it's time to put the systems together to make an Accident Report System.
 
-In this activity, you will demonstrate uploading a sample "accident report" in JSON format to IPFS via the Pinata API, then permanently record the report's IPFS URI to the blockchain via the `reportAccident` function on the `CryptoFax` contract using a transaction generated with Web3.py.
+In this activity, you will demonstrate uploading a sample "accident report" in JSON format to IPFS via the Pinata API, then permanently record the report's IPFS URI to the blockchain via the `reportAccident` function on the `CryptoFax` contract, using a transaction generated with Web3.py.
 
 **Files:**
 
@@ -718,7 +718,7 @@ def pinJSONtoIPFS(json):
 
 * Then, we return the `IpfsHash` value from the JSON response that Pinata defines inside of an `f` string. The final output is an IPFS URI, formatted like `ipfs://some_hash_here`.
 
-Up to this point, this process should be pretty familiar. The last Pinata related item we need to take care of is a function called `convertDataToJSON` that will take our user input and convert it to a JSON object formatted in a way that allows us to set some options in the Pinata API:
+Up to this point, this process should be pretty familiar. The last Pinata-related item we need to take care of is a function called `convertDataToJSON` that will take our user input and convert it to a JSON object formatted in a way that allows us to set some options in the Pinata API:
 
 ```python
 def convertDataToJSON(time, description):
@@ -736,7 +736,7 @@ def convertDataToJSON(time, description):
 
 * In this function, we are simply taking in a `time` and `description` that we'll accept as user input later, then setting up a dictionary called `data` that contains a few fields.
 
-* The first field, `pinataOptions`, tells the API to use `CIDv1` as the IPFS URL format. This just simply means to use the latest version of the way that IPFS generates the final address that allows for more metadata to be encoded versus using `CIDv0`, which are the shorter, case-sensitive URIs that IPFS used initially.
+* The first field, `pinataOptions`, tells the API to use `CIDv1` as the IPFS URL format. This simply means using the latest version of the way that IPFS generates the final address that allows for more metadata to be encoded, versus using `CIDv0`, which are the shorter, case-sensitive URIs that IPFS used initially.
 
 * `pinataContent` contains the object that will be pinned to IPFS by Pinata. Only what is in this field will be uploaded to IPFS.
 
@@ -762,7 +762,7 @@ from web3.auto import w3
 
 * Web3.py will accept this ABI, plus the address we defined in our `.env` file, and output a contract object that we can use to interact with the `CryptoFax` contract.
 
-* Since we configured `WEB3_PROVIDER_URI` in `.env`, `web3.auto` will automatically recognize the Ganache network and automatically connect and use the same accounts that Ganache generates. No need to work with private keys when using `web3.auto` and Ganache!
+* Since we configured `WEB3_PROVIDER_URI` in `.env`, `web3.auto` will automatically recognize and connect with the Ganache network and use the same accounts Ganache generates. No need to work with private keys when using `web3.auto` and Ganache!
 
 Quickly pull up the [web3.py Documentation](https://web3py.readthedocs.io/en/stable/providers.html#how-automated-detection-works) for how auto-detection works. Explain the following:
 
