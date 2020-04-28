@@ -403,23 +403,25 @@ Ask for any remaining questions before moving on.
 
 ### 8. Instructor Do: Intro to SDKs (5 min) (Critical)
 
-The past two lessons have focused on students using the Python requests library to submit API requests. Students will now learn how to use proprietary software development kits (SDKs) to submit API calls and streamline development efforts.
+The past lesson has focused on students using the Python `requests` library to submit API requests. Students will now learn how to use proprietary software development kits (SDKs) to submit API calls and streamline development efforts.
 
-Communicate to students that while the Python requests library is a great tool with which to submit requests to APIs, there are more sophisticated APIs out there that offer tools called software development kits that provide a packaged way to access API endpoints and submit calls.
+Explain to students that while the Python requests library is a great tool with which to submit requests to APIs, there are more sophisticated APIs out there that offer tools called software development kits that provide a packaged way to access API endpoints and submit calls.
 
-Navigate to the 5.2 slides for SDKs, and initiate a facilitated discussion by highlighting the following:
+Open the lesson slides and navigate to the "SDKs" section, initiate a facilitated discussion by highlighting the following:
 
-* SDKs offer programmatic ways to access API endpoints without using the requests library. Instead of using the requests library to execute API calls, users would use functions provided by the SDK. For example, an SDK would provide a GET function similar to the `requests.get` function offered by the Python requests library. The SDK might also provide additional attributes and functions for filtering and calculating data.
+* SDKs offer programmatic ways to access API endpoints without using the `requests` library. Instead of using the `requests` library to execute API calls, users would use functions provided by the SDK. For example, an SDK would provide a GET function similar to the `requests.get` function offered by the Python `requests` library. The SDK might also provide additional attributes and functions for filtering and calculating data.
 
-* Example companies that offer SDKs are Quandl, Plaid, Investors Exchange, Google, and AWS.
+* Some companies, like Plaid, offer Software Development Kits as a mean to submit requests to their APIs.
 
-* Pose the following question to facilitate discussion:
+* In addition to the generic GET and POST functions though, SDKs offer functions that are specific to their services/API. For example, the Plaid SDK lets you execute a function that returns bank transactions.
+
+Pose the following question to facilitate discussion:
 
   * What type of operations can you imagine being offered by SDKs? We already know GET operations are one of them. What are some others?
 
-    **Answer:** Create, update, and delete operations.
+  * **Answer:** Create, update, and delete operations.
 
-* Working with SDKs removes the need to build API request URLs. Instead of using request URLs to make parameterized API calls, SDK functions and attributes are used.
+Explain to students that working with SDKs removes the need to build API request URLs. Instead of using request URLs to make parameterized API calls, SDK functions and attributes are used.
 
   ```
   quandl.get("WIKI/AAPL", rows=5)
@@ -433,13 +435,13 @@ Ask students the following guided question:
 
 * Why would companies create SDKs when Python provides users with the requests library?
 
-    **Answer:** By creating SDKs, companies allow users to interact with their APIs in a more powerful way. The requests library only supports so many functions (GET, POST, etc.). However, by providing users with an SDK, companies can give users access to in-house built attributes and functions that can provide more value than the functions in the requests library.
+  * **Answer:** By creating SDKs, companies allow users to interact with their APIs in a more powerful way. The requests library only supports so many functions (GET, POST, etc.). However, by providing users with an SDK, companies can give users access to in-house built attributes and functions that can provide more value than the functions in the requests library.
 
-    **Answer:** When writing a Python script, using a Python SDK can often be cleaner and easier to understand and integrate in one's code. SDKs allow developers to use syntax and language features that often simplify and clean up code. A decent example of this is evidenced when comparing the URL request to Quandl with the `quandl.get('AAPL')` function. Both will extract historical stock; however, the `quandl.get` function is easier to use and looks cleaner.
+  * **Answer:** When writing a Python script, using a Python SDK can often be cleaner and easier to understand and integrate in one's code. SDKs allow developers to use syntax and language features that often simplify and clean up code. A decent example of this is evidenced when comparing the URL request to Quandl with the `quandl.get("AAPL")` function. Both will extract historical stock; however, the `quandl.get` function is easier to use and looks cleaner.
 
 * Because SDKs provide out-of-the-box functions that can be used with the API, developers do not have to worry about reinventing the wheel. What is an example of a function or operation a FinTech SDK might provide?
 
-  **Answer:** A FinTech SDK might provide a function that calculates Sharpe ratios, which means users would not need to create this functionality themselves; they'd be able to use the SDK to extract historical stock data AND calculate Sharpe ratios. The requests library would only support data extraction.
+  * **Answer:** A FinTech SDK might provide a function that calculates Sharpe ratios, which means users would not need to create this functionality themselves; they'd be able to use the SDK to extract historical stock data and calculate Sharpe ratios. The `requests` library would only support data extraction.
 
 Ask students if there are any questions before moving on.
 
