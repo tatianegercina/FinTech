@@ -40,10 +40,19 @@ By the end of class, students will be able to:
 
 * Toward the end of class, students will begin applying Monte Carlo simulations to portfolio returns. Therefore, they will need to combine the concepts of portfolio optimization (taught in the Pandas unit) with the concept of portfolio forecasting (taught in today's lesson). Walk through the steps in detail as students can easily get lost in this myriad of technical concepts!
 
-* Have your TAs keep track of the [Time Tracker](TimeTracker.xlsx).
-
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [5.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=629c0f35-efd0-4081-a916-aab4015c80e0) Note that this video may not reflect the most recent lesson plan.
+
+### Slideshow and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 5.3 Slides]().
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
