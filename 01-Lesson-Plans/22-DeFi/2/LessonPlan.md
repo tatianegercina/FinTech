@@ -151,7 +151,7 @@ Inside the CryptoRight contract under the `copyright_ids` counter, create a new 
 
 * We've created our map that references a custom datatype named `Work`, but now we have to define that datatype with a `struct`.
 
-* According to the `copyrights` method's spec, we need a "`struct` containing the copyright's `owner` and `uri`".
+* According to the `copyrights` method's spec, we need a "`struct` containing the copyrights `owner` and `uri`".
 
 Read aloud the `copyrightWork` method interface definition and description.
 
@@ -590,7 +590,7 @@ event OpenSource(uint copyright_id, string reference_uri);
 event Transfer(uint copyright_id, address new_owner);
 ```
 
-* We've also defined the three events defined in our copyright specification `Copyright`, `OpenSource`, and `Transfer`.
+* We've also defined the three events defined in our copyright specification: `Copyright`, `OpenSource`, and `Transfer`.
 
 ```Solidity
 modifier onlyCopyrightOwner(uint copyright_id) {
@@ -622,7 +622,7 @@ function openSourceWork(string memory reference_uri) public {
     }
 ```
 
-* The `copyrightWork` and `openSourceWork` functions were both implemented in a very similar way. Both functions generate a new `copyright_id` by incrementing the `copyright_ids` counter and taking its current value. Where the two functions differ is when it comes to setting the Work's owner's address. Since open-source works don't have an owner in this system we leave the `owner` attribute set to the default `address(0)`.
+* The `copyrightWork` and `openSourceWork` functions were both implemented in a very similar way. Both functions generate a new `copyright_id` by incrementing the `copyright_ids` counter and taking its current value. Where the two functions differ is when it comes to setting the Work's owner's address. Since open source works don't have an owner in this system, we leave the `owner` attribute set to the default `address(0)`.
 
 
 ```Solidity
@@ -634,7 +634,7 @@ function transferCopyrightOwnership(uint copyright_id, address new_owner) public
     }
 ```
 
-* The `transferCopyrightOwnership` function simply re-maps a given copyright_id to a new copyright owner and emits the `Transfer` event.
+* The `transferCopyrightOwnership` function simply remaps a given copyright_id to a new copyright owner, and emits the `Transfer` event.
 
 ```Solidity
 function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
@@ -651,9 +651,9 @@ Ask the class the following review questions.
 
 * Are there any ways that you felt the `CryptoRight` contract code could be improved upon?
 
-* **Potential Answer** Common functionality such as generating copyright_ids could be abstracted to an internal function.
+* **Answer** Common functionality such as generating copyright_ids could be abstracted to an internal function.
 
-* What are some reasons for using a struct with two attributes instead of as opposed to two mappings for the copyright `owner` and `uri`?
+* What are some reasons for using a struct with two attributes, as opposed to two mappings for the copyright `owner` and `uri`?
 
 * **Answer:** Cheaper gas cost.
 
@@ -661,7 +661,7 @@ Ask the class the following review questions.
 
 * After having completed this exercise, can you think of any interesting EIP/ERC specification ideas?
 
-### 5. Instructor Do: Frontend Introduction (10 min)
+### 5. Instructor Do: Front-end Introduction (10 min)
 
 In this activity, you will demonstrate combining the `CryptoRight` contract with a pre-made frontend.
 
@@ -675,9 +675,9 @@ In this activity, you will demonstrate combining the `CryptoRight` contract with
 
 Explain to the class:
 
-* Since we built our `CryptoRight` contract to spec, we should be able to integrate a frontend that was designed against the same interface.
+* Since we built our `CryptoRight` contract to spec, we should be able to integrate a front end that was designed against the same interface.
 
-* In this scenario, a frontend developer built a graphical interface using the specification while you implemented the contract.
+* In this scenario, a front-end developer built a graphical interface using the specification while you implemented the contract.
 
 Copy the files linked above into a new directory, or copy the [cryptoright-frontend](Activities/03-Ins_Integrating_Frontend_Intro/Resources/cryptoright-frontend) folder into your workspace, to a project folder called `cryptoright-frontend`.
 
