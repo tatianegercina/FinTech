@@ -663,23 +663,25 @@ Communicate to students that they can work with a partner to complete the activi
 
 Facilitate discussion by asking students about their experiences working with API keys and SDKs.
 
-* Ask students about the pace of the class. Is it going too fast, too slow, or just right?
+Ask students about the pace of the class. Is it going too fast, too slow, or just right?
 
-* Empower students to continue on by emphasizing that they're one step away from adding Plaid to their toolkit. Reiterate that Plaid is going to help them acquire the data they need to perform financial analysis, and it will broker the communication channel between banks and FinTech application servers.
+Empower students to continue on by emphasizing that they're one step away from adding Plaid to their toolkit. Reiterate that Plaid is going to help them acquire the data they need to perform financial analysis, and it will broker the communication channel between banks and FinTech application servers.
 
-* Remind students that they are making excellent progress. Not only are they submitting requests to an API, they're submitting authenticated requests in a programmatic way using SDKs.
+Remind students that they are making excellent progress. Not only are they submitting requests to an API, they're submitting authenticated requests in a programmatic way using SDKs.
 
 If time remains, ask the following questions:
 
 * What data type can environment variables be stored as?
 
-  **Answer:** String
+  * **Answer:** String
 
 * Why is Plaid considered a FinTech disrupter?
 
-  **Answer:** Plaid is changing the way developers and consumers can get access to FinTech data. Not only is Plaid providing a technology platform to get access to FinTech data, but it is also providing analytic and insight products to help consumers understand their data and make data-driven decisions.
+  * **Answer:** Plaid is changing the way developers and consumers can get access to FinTech data. Not only is Plaid providing a technology platform to get access to FinTech data, but it is also providing analytic and insight products to help consumers understand their data and make data-driven decisions.
 
 * How glad are you that SDKs don't require users to build long, parameterized request URLs like the Python `requests` library?
+
+  * **Answer:** It's definitely better to use an SDK since it eases the process of fetching data and reduces the chance of errors due to misspelling URLs or parameters used in the `requests` library.
 
 Ask students if they have any questions before moving on.
 
