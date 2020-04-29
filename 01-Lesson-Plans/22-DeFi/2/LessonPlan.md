@@ -341,9 +341,9 @@ Add the following comments to the `transferCopyrightOwnership` function body.
     }
 ```
 
-* Now let's take a look at the first part of the `transferCopyrightOwnership` function definition and break it down into comments about what steps must take place inside the function.
+* Now, let's take a look at the first part of the `transferCopyrightOwnership` function definition, and break it down into comments about what steps must take place inside the function.
 
-* As you can see, the `transferCopyrightOwnership` method is relatively simple, the first part of the description can be copied into a single comment consisting of the exact text.
+* As you can see, the `transferCopyrightOwnership` method is relatively simple; the first part of the description can be copied into a single comment consisting of the exact text.
 
 Next, add the code implementation for each commented step inside the `transferCopyrightOwnership` method.
 
@@ -377,9 +377,9 @@ Add the `renounceCopyrightOwnership` function defintion with the `onlyCopyrightO
 
   * However, this time around, we already have our `onlyCopyrightOwner` defined. Let's add it to our function definition.
 
-* Now let's focus on the second part of the function's description and break it down into comments about what steps must take place inside the function.
+* Now, let's focus on the second part of the function's description and break it down into comments about what steps must take place inside the function.
 
-* Re-maps a given copyright ID to the 0x0000000000000000000000000000000000000000 address to "open source" the copyright, and prevent anyone from modifying it further.
+* Remap a given copyright ID to the 0x0000000000000000000000000000000000000000 address to "open source" the copyright, and prevent anyone from modifying it further.
 
 ```Solidity
     function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
@@ -387,9 +387,9 @@ Add the `renounceCopyrightOwnership` function defintion with the `onlyCopyrightO
     }
 ```
 
-* Here the important part of the method descripton is "Re-maps a given copyright_id to the 0x0000000000000000000000000000000000000000".
+* Here the important part of the method descripton is "Remaps a given copyright_id to the 0x0000000000000000000000000000000000000000".
 
-* Remember we've already implemented a function that can re-map copyright to a new owner's address called `transferCopyrightOwnership`.
+* Remember: we've already implemented a function that can remap copyright to a new owner's address called `transferCopyrightOwnership`.
 
 Next, add the code implementation for each commented step inside the `renounceCopyrightOwnership` method.
 
@@ -401,11 +401,11 @@ Next, add the code implementation for each commented step inside the `renounceCo
     }
 ```
 
-* Here we call the previously `transferCopyrightOwnership` method passing it the given `copyright_id` and `address(0)`.
+* Here we call the previously `transferCopyrightOwnership` method, passing it the given `copyright_id` and `address(0)`.
 
-* Mapping, something to `address(0)` in effect, makes it so that no-one can ever control that copyright, e.g., it becomes `open source`.
+* Mapping, something to `address(0)` in effect, makes it so that no one can ever control that copyright; e.g., it becomes `open source`.
 
-Now that all of the method definitions with their accompanying business logic have been implemented. Go back over the contract in remix and implement the defined `events` within the contract specification's events section.
+Now all of the method definitions with their accompanying business logic have been implemented. Go back over the contract in Remix and implement the defined `events` within the contract specification's events section.
 
 Read aloud the `Copyright` event interface definition and description.
 
@@ -417,7 +417,7 @@ event Copyright(uint copyright_id, address owner, string reference_uri);
 
 * According to the `Copyright` event's description, it MUST trigger whenever a new copyrighted work is registered.
 
-* Let's define our events towards the top of our contract above our modifiers.
+* Let's define our events towards the top of our contract, above our modifiers.
 
 Define the `Copyright` event above the modifier. This section of your contract should now look something like this.
 
@@ -443,7 +443,7 @@ Define the `Copyright` event above the modifier. This section of your contract s
 
 * Now, as per the event description, we have to emit the event when a new copyrighted work is registered or, in other words, when the `copyrightWork` function is called.
 
-On the last line inside the body of the `copyrightWork` function `emit` the Copyright event passing it the required parameters.
+On the last line inside the body of the `copyrightWork` function `emit` the copyright event, passing it the required parameters.
 
 ```Solidity
 emit Copyright(id, msg.sender, reference_uri);
