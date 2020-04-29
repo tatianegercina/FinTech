@@ -390,7 +390,7 @@ Students can check their PHP installation by typing `php -v` in the terminal, wh
 
 * We will not be writing any PHP ourselves, but rather capturing the output of this tool inside of Python.
 
-First, share the `hd-wallet-derive` tools [Github page](https://github.com/dan-da/hd-wallet-derive#installation-and-running)
+First, share the `hd-wallet-derive` tool's [Github page](https://github.com/dan-da/hd-wallet-derive#installation-and-running)
 and have them navigate to the `Installation and Running` section.
 
 Have the students copy and paste the `Basics` section, ignoring the Ubuntu requirements (unless the student is running Ubuntu)
