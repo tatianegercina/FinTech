@@ -459,7 +459,7 @@ event OpenSource(uint copyright_id, string reference_uri);
 
 * The copyright event requires a `uint copy_right_id`, and a `string reference_uri`.
 
-* According to the `OpenSource` event's description, it MUST trigger whenever a new open-source work is registered.
+* According to the `OpenSource` event's description, it MUST trigger whenever a new open source work is registered.
 
 Add the `OpenSource` event definition below the `Copyright` event.
 
@@ -471,9 +471,9 @@ event OpenSource(uint copyright_id, string reference_uri);
 
 * As you can see, we are going to add the `OpenSource` event below the `Copyright` event, but the order does not matter.
 
-* Now, as per the event description, we have to `emit` the event when a new Open Source work is created or in other words when the `openSourceWork` and `renounceCopyrightOwnership` functions are called.
+* Now, as per the event description, we have to `emit` the event when a new open source work is created, such as when the `openSourceWork` and `renounceCopyrightOwnership` functions are called.
 
-On the last line inside the body of the `OpenSource` function `emit` the Copyright event passing it the required parameters.
+On the last line inside the body of the `OpenSource` function, `emit` the copyright event, passing it the required parameters.
 
 ```Solidity
   function openSourceWork(string memory reference_uri) public {
@@ -494,7 +494,7 @@ On the last line inside the body of the `OpenSource` function `emit` the Copyrig
 
 * Inside the `renounceCopyrightOwnership` function we emit the `OpenSource` event like this.
 
-On the last line inside the body of the `renounceCopyrightOwnership` function `emit` the Copyright event passing it the required parameters.
+On the last line inside the body of the `renounceCopyrightOwnership` function `emit` the copyright event, passing it the required parameters.
 
 ```Solidity
     function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
@@ -531,7 +531,7 @@ event Transfer(uint copyright_id, address new_owner);
 
 * Now, as per the event description, we have to emit the event whenever copyright is transferred or, in other words, when the `transferCopyrightOwnership` function is called.
 
-On the last line inside the body of the `transferCopyrightOwnership` function `emit` the `Transfer` event passing it the required parameters.
+On the last line inside the body of the `transferCopyrightOwnership` function, `emit` the `Transfer` event passing it the required parameters.
 
 ```Solidity
     function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
@@ -546,7 +546,7 @@ On the last line inside the body of the `transferCopyrightOwnership` function `e
 
 ### 3. Student Do: Building to a Smart Contract Specification (15 min)
 
-In this activity, students will take a simple, smart contract specification, in this particular case, the ERC333 example contract specification and implement it.
+In this activity, students will take a simple, smart contract specification—in this case, the ERC333 example contract specification—and implement it.
 
 **Instructions:**
 
@@ -560,7 +560,7 @@ In this activity, students will take a simple, smart contract specification, in 
 
 ### 4. Instructor Do: Smart Contract Specifications Review (10 min)
 
-Walkthrough the solution and highlight the following:
+Review the solution and highlight the following:
 
 ```Solidity
 using Counters for Counters.Counter;
