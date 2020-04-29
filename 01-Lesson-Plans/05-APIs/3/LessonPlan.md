@@ -130,45 +130,19 @@ Walkthrough the solution and highlight the following:
   # Import libraries and dependencies
   from numpy import random
   import pandas as pd
+
   %matplotlib inline
   ```
 
-* The `choice` function from the `random` class, combined with the `p` parameter for setting the probability of random events, is used to randomly choose between the two outcomes of a coin: heads or tails. Therefore, in this case, the `p` parameter is set to `[0.5, 0.5]` to represent a `50%` chance of a coin landing on heads and a `50%` chance of a coin landing on tails.
+* The initial step is to configure the simulation parameters.
 
-  ```python
-  # Print simulation iteration
-  print(f"Running Simulation {n+1}...")
+  * `num_simulations` is be the number of simulations to execute.
 
-  # Set an empty list to hold flip results
-  flips = []
+  * `num_flips` is the number of coin flips per simulation.
 
-  # Set probability of events
-  probability = [0.5, 0.5]
+  * `coin` is a list to set the possible options of the event, in this case we can get heads or tails.
 
-  # Flip the coin several times
-  for i in range(num_flips):
-      # Random int: 0 or 1
-      coin_flip = random.choice(coin, p=probability)
-
-      # Print flip result
-      print(f"  Flip {i+1}: {coin_flip}")
-
-      # Append flip result to list
-      flips.append(coin_flip)
-  ```
-
-  ![coin-flip-results](Images/coin-flip-results.png)
-
-* The resulting heads and tails outputs for each simulation of `10` coin flips are saved as individual columns to a Pandas DataFrame.
-
-  ```python
-  # Append column for each simulation and flip results
-  monte_carlo[f"Simulation {n}"] = pd.Series(flips)
-  ```
-
-  ![coin-flip-dataframe](Images/coin-flip-dataframe.png)
-
-* The following is a holistic view of the example Monte Carlo simulation program—see, it's not that bad!
+  * `probability` is a list with the probability of every option to occur, in this case, heads and tails have the same chance to arise.
 
   ```python
   # Set number of simulations and coin flips
@@ -180,37 +154,32 @@ Walkthrough the solution and highlight the following:
 
   # Set probability of events
   probability = [0.5, 0.5]
+  ```
 
+* Next, we create and empty DataFrame to store the simulation results.
+
+  ```python
   # Create an empty DataFrame to hold simulation results
   monte_carlo = pd.DataFrame()
-
-  # Run n number of simulations
-  for n in range(num_simulations):
-
-      # Print simulation iteration
-      # print(f"Running Simulation {n+1}...")
-
-      # Set an empty list to hold flip results
-      flips = []
-
-      # Flip the coin several times
-      for i in range(num_flips):
-
-          # Random int: 0 or 1
-          coin_flip = random.choice(coin, p=probability)
-
-          # Print flip result
-          # print(f"  Flip {i+1}: {coin_flip}")
-
-          # Append flip result to list
-          flips.append(coin_flip)
-
-      # Append column for each simulation and flip results
-      monte_carlo[f"Simulation {n}"] = pd.Series(flips)
-
-  # Print the DataFrame
-  monte_carlo
   ```
+
+* The simulation process is executed by two nested `for-loops`, one to control the number of simulations, another to control the number of coin flips.
+
+  ![coin_flips_sims](Images/coin_flips_sims.png)
+
+* In the inner loop, the `choice` function from the `random` class, combined with the `p` parameter for setting the probability of random events, is used to randomly choose between the two outcomes of a coin: heads or tails. Therefore, in this case, the `p` parameter is set to `[0.5, 0.5]` to represent a `50%` chance of a coin landing on heads and a `50%` chance of a coin landing on tails.
+
+  ![random_choice_function](Images/random_choice_function.png)
+
+* The resulting heads and tails outputs for each simulation of `10` coin flips are saved as individual columns to a Pandas DataFrame.
+
+  ![add_coin_flip_sim_results](Images/add_coin_flip_sim_results.png)
+
+* Finally we display the simulations results in the notebook.
+
+  ![show_coin_flip_results](Images/show_coin_flip_results.png)
+
+  ![coin-flip-dataframe.png](Images/coin-flip-dataframe.png)
 
 * Looping through the DataFrame containing the coin flip results while leveraging the `value_counts` function allows for counting the occurrences of the different heads-to-tails combinations of every simulation.
 
