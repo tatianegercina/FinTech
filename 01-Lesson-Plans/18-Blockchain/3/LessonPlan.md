@@ -775,7 +775,7 @@ Ensure that:
 
 #### 17.2 Instructor Do: FinTech and LinkedIn Profiles (10 min)
 
-- You might use your own LinkedIn profile as an example or select one that you think is a good candidate with the following criteria.
+- You might use your own LinkedIn profile as an example or select one that you think is a good candidate with the following criteria. Alternatively, you may use this example account: [https://www.linkedin.com/in/george-smith-401147bb/](https://www.linkedin.com/in/george-smith-401147bb/)
 
 - Run through each of the sections and use the following comments to demonstrate what makes an employer-ready LinkedIn profile:
 
