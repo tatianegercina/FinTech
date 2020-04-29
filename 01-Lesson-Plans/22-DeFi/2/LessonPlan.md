@@ -757,9 +757,9 @@ You can expand the items in the accordion menus:
 
 Now it's time for students to integrate the front end with their contracts!
 
-### 6. Student Do: Integrating a Pre-Built Frontend (15 min)
+### 6. Student Do: Integrating a Pre-Built Front end (15 min)
 
-In this activity, students will integrate the same frontend code with their `CryptoRight` contracts, and upload a few sample copyrights using the interface.
+In this activity, students will integrate the same front-end code with their `CryptoRight` contracts, and upload a few sample copyrights using the interface.
 
 Send out the instructions and have TAs circulate the class.
 
@@ -781,9 +781,9 @@ Have the TAs ensure that students:
 
 * Have replaced the `contract_address` variable in the `dapp.js` file with their deployed contract.
 
-* Have successfully implemented the contract. If the contract is not implemented properly, the frontend will not function.
+* Have successfully implemented the contract. If the contract is not implemented properly, the front end will not function.
 
-### 7. Instructor Do: Frontend Review (5 min)
+### 7. Instructor Do: Front end Review (5 min)
 
 **Files:**
 
@@ -791,11 +791,11 @@ Have the TAs ensure that students:
 
 Open the solution and explain the following:
 
-* By setting `contract_address` to point at our deployed contract, the frontend can communicate with the contract via MetaMask.
+* By setting `contract_address` to point at our deployed contract, the front end can communicate with the contract via MetaMask.
 
-* Since our contract was built to spec, the ABI generated will be the same as any other contract built to the same spec. This allows the frontend to be developed independently from the contract.
+* Since our contract was built to spec, the ABI generated will be the same as any other contract built to the same spec. This allows the front end to be developed independently from the contract.
 
-* The dApp uploads an image to IPFS, then takes that images URI and stuffs it into JSON object that also contains `name` and `description`, and uploads that to IPFS. The final URI is used for the `reference_uri` when calling the `copyrightWork` or `openSourceWork` functions on the contract.
+* The dApp uploads an image to IPFS, then takes that image's URI and stuffs it into a JSON object that also contains `name` and `description`, and uploads that to IPFS. The final URI is used for the `reference_uri` when calling the `copyrightWork` or `openSourceWork` functions on the contract.
 
 Ask for any remaining questions before moving on.
 
