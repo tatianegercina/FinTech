@@ -324,7 +324,7 @@ Add a modifier between the `copyrights mapping` and `copyrightWork` function nam
     }
 ```
 
-* Here we are adding a modifier named `onlyCopyrightOwner` with a  `require statement` that checks if the given. `copyrights_id` is equal to the current `msg.sender`.
+* Here we are adding a modifier named `onlyCopyrightOwner` with a  `require statement` that checks if the given `copyrights_id` is equal to the current `msg.sender`.
 
 Add the`transferCopyrightOwnership` function defintion with the included `onlyCopyrightOwner` modifier.
 
