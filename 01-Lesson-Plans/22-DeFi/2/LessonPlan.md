@@ -687,13 +687,13 @@ Copy the files linked above into a new directory, or copy the [cryptoright-front
 python -m http.server 8000
 ```
 
-* This is a built-in Python one-liner that creates a local HTTP server that is hosting the files inside of the current directory.
+* This is a built-in, Python one-liner that creates a local HTTP server that is hosting the files inside of the current directory.
 
 * This is necessary in order to register our dApp with MetaMask. While we could just open the `index.html` file directly in our browser, MetaMask wouldn't register in this case.
 
 * By serving from the directory, we are able to navigate to `localhost:8000`. Browsers automatically try to load `index.html` first, so since that file is present in our directory, our site will load automatically.
 
-Next, you will need to modify the `contract_address` variable stored in the frontend code to point at your deployed contract.
+Next, you will need to modify the `contract_address` variable stored in the front-end code to point at your deployed contract.
 
 Open up `dapp.js` in a code editor, and modify the first line of code. Copy the deployed contract address (redeploy a fresh contract if needed) from Remix, and set the `contract_address` variable:
 
@@ -701,9 +701,9 @@ Open up `dapp.js` in a code editor, and modify the first line of code. Copy the 
 const contract_address = "0xa5b70b3f9e02b2d0b85E10042a76b1A7F397Cc6b";
 ```
 
-* We must ensure this address matches our deployed contract; otherwise, the frontend will not know where to find the contract.
+* We must ensure this address matches our deployed contract; otherwise, the front end will not know where to find the contract.
 
-After that, all that is left is to ensure that the `CryptoRight.json` has the contract's ABI within.
+After that, all that remains is to ensure that the `CryptoRight.json` has the contract's ABI within.
 
 * The `CryptoRight.json` file contains the contract's ABI. This dApp automatically loads this file and expects it to be in the same directory. We'll want to ensure that our contract's ABI is in this file.
 
@@ -713,7 +713,7 @@ Next, navigate to `localhost:8000` in your web browser. You should see an interf
 
 ![CryptoRight UI](Images/cryptoright-ui.png)
 
-* This front-end fetches all `OpenSource` and `Copyright` events and displays them in a collapsible list. Since we have not copywritten anything yet, the UI is pretty empty.
+* This front-end fetches all `OpenSource` and `Copyright` events and displays them in a collapsible list. Since we have not copywritten anything yet, the UI is fairly empty.
 
 * The UI also allows us to upload files and JSON to Pinata, completely locally. It takes in the `name` and `description` fields we want to account for in our `reference_uri` JSON, as well as uploading an `image`.
 
@@ -721,7 +721,7 @@ Next, navigate to `localhost:8000` in your web browser. You should see an interf
 
 * Once the JSON is pinned to IPFS, a transaction is created via MetaMask that calls the `copyrightWork` or `openSourceWork` functions on the `CryptoRight` contract, passing in the `reference_uri` we generated.
 
-Now it's time to demonstrate using the frontend by creating sample copyright.
+Now it's time to demonstrate using the front end by creating sample copyright.
 
 First, navigate to your [Pinata Account Page](https://pinata.cloud/account), and copy over your API key and Secret API key into the corresponding fields in the form.
 
@@ -737,11 +737,11 @@ The form should look something like:
 
 You can choose to `Check to Open Source`, or leave unchecked. If checked, the `openSourceWork` function is called instead of `copyrightWork`.
 
-Submit the form once filled out by clicking `COPYRIGHT WORK` at the bottom of the form, and confirm the transaction that appears after uploading to IPFS:
+Once the form is filled out, submit by clicking `COPYRIGHT WORK` at the bottom of the form, and confirm the transaction that appears after uploading to IPFS:
 
 ![Form Submit](Images/cryptoright-submit.gif)
 
-* As you can see, notifications appeared on-screen updating the status of the copyright process.
+* As you can see, notifications appeared on-screen, updating the status of the copyright process.
 
 * Once finished, a transaction appears for confirmation. Confirming this transaction permanently etches the `reference_uri` we uploaded via Pinata to the blockchain.
 
@@ -751,11 +751,11 @@ You can expand the items in the accordion menus:
 
 ![Cryptoright Work](Images/cryptoright-work.png)
 
-* This frontend fetches the `reference_uri` and parses the JSON automatically, and also parses and renders the `image` as well!
+* This front end fetches the `reference_uri` and parses the JSON automatically, and also parses and renders the `image` as well!
 
 * Even though the only data stored on-chain is the `reference_uri`, we can fetch all of this metadata with it!
 
-Now it's time for students to integrate the frontend with their contracts!
+Now it's time for students to integrate the front end with their contracts!
 
 ### 6. Student Do: Integrating a Pre-Built Frontend (15 min)
 
