@@ -2,7 +2,7 @@
 
 ### Overview
 
-In today's class, students will be introduced to the thought process and techniques that go into taking a formalized contract spec and implementing it into solidity code. Throughout the process of software development, employees are often required to collaborate with one another, creating a separation of concerns within a system's architecture. Students will learn to take a simple yet more formalized smart contract specification and implement it to fit the interface of an already established frontend dApp. Students will then deploy the configured dApp to a centralized production environment, Github pages.
+In today's class, students will be introduced to the thought processes and techniques that go into taking a formalized contract spec and implementing it into solidity code. In the software development process, employees frequently collaborate, creating a separation of concerns within a system's architecture. Students will learn to take a simple, yet more formalized, smart contract specification and implement it to fit the interface of an already established front-end dApp. Students will then deploy the configured dApp to a centralized production environment, Github pages.
 
 Students will use the remainder of the class to work on their projects.
 
