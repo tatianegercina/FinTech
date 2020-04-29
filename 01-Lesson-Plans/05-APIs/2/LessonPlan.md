@@ -417,7 +417,7 @@ Open the lesson slides and navigate to the "SDKs" section, initiate a facilitate
 
 Pose the following question to facilitate discussion:
 
-  * What type of operations can you imagine being offered by SDKs? We already know GET operations are one of them. What are some others?
+* What type of operations can you imagine being offered by SDKs? We already know GET operations are one of them. What are some others?
 
   * **Answer:** Create, update, and delete operations.
 
@@ -453,9 +453,9 @@ Ask students if there are any questions before moving on.
 
 ### 10. Instructor Do: Intro to Plaid (10 min)
 
-Navigate to the `Plaid SDK` section of the 5.2 slides, and introduce the Plaid by highlighting how it is disrupting the FinTech data industry:
+Navigate to the "Plaid SDK" section of the lesson slides, and introduce the Plaid SDK by highlighting how it is disrupting the FinTech data industry:
 
-* According to a [Forbes](https://www.forbes.com/sites/donnafuscaldo/2019/02/06/plaid-and-quovo-just-scratching-the-surface-with-data-aggregation/#6e169e401841) article from February 2019, FinTech is transforming into a new data industry that focuses on and specializes in the democratization of financial services. This is largely due the startup **Plaid**, a company seeking to enrich and empower consumers through financial data and technology.
+* According to a [Forbes article from February 2019](https://www.forbes.com/sites/donnafuscaldo/2019/02/06/plaid-and-quovo-just-scratching-the-surface-with-data-aggregation/#6e169e401841), FinTech is transforming into a new data industry that focuses on and specializes in the democratization of financial services. This is largely due the startup **Plaid**, a company seeking to enrich and empower consumers through financial data and technology.
 
 * Whether intentional or not, Plaid is becoming the Magellan of this new FinTech market, circumnavigating the centralized FinTech powers that be and plotting the course for a new, democratized approach to financial services.
 
@@ -465,38 +465,39 @@ Navigate to the `Plaid SDK` section of the 5.2 slides, and introduce the Plaid b
 
 * What exactly does Plaid do? Plaid brokers connections to users' bank accounts to create a one-stop-shop experience for financial management. Typically when analyzing data across multiple accounts, one would have to visit each financial institution and extract the desired data. Plaid streamlines this process by offering a platform that will broker the request for data extraction, so users do not have to do it manually. Plaid also offers analytics and insights products as well, helping users better understand trends in their data.
 
-* Plaid offers the following services:
+* The Plaid API allows users to:
 
-  * Help users monitor, budget, and gain insights from their personal finances.
+  * Connect multiple bank accounts to Plaid platform.
 
-  * Help users manage data from multiple accounts (e.g.,  savings, equity, investments, retirement) in one platform.
+  * Get account balances.
 
+  * Extract data from Plaid at the institution and account level.
 
-Up until now, students have been solely conducting quantitative analysis on investments.
+  * Create an asset report.
 
-  ![plaid_services.png](Images/plaid_services.png)
-
-Facilitate discussion with the following talking points and guided questions:
+Up until now, students have been solely conducting quantitative analysis on investments. Facilitate discussion with the following talking points and guided questions:
 
 * Plaid can be used to analyze financial data in a more comprehensive and holistic view. Plaid takes the data from each financial account and consolidates it to create an overarching portfolio that encompasses savings, investments, retirement funds, loans, etc. What types of analysis can be done with these datasets?
 
-  **Answer:** Net worth analysis would require data to be extracted from all financial accounts.
+  * **Answer:** Net worth analysis would require data to be extracted from all financial accounts.
 
 * Plaid was created as a tool to assist developers in designing FinTech applications. By brokering connections to financial institutions, Plaid allows developers to focus on designing analytic pipelines for consumers that provide insight and drive financial budgeting decisions. If you had access to your savings, investment, and retirement account data, what would you do with it?
 
-  **Answer:** Calculate the rate of cumulative returns daily, quarterly, and yearly to show cumulative returns over time. This insight could be used to change the types of funds, bonds, and individualized stocks used in each account.
+  * **Answer:** Calculate the rate of cumulative returns daily, quarterly, and yearly to show cumulative returns over time. This insight could be used to change the types of funds, bonds, and individualized stocks used in each account.
 
-  **Answer:** Calculate beta to compare individualized stock and retirement portfolio volatility.
+  * **Answer:** Calculate beta to compare individualized stock and retirement portfolio volatility.
 
-* By leveraging the data provided by Plaid, consumers no longer have to rely on financial services professionals or big companies to give them insights into their data. Furthermore, developers no longer have to concern themselves with data acquisition and brokering communication with financial institutions. Instead, both parties can just use Plaid.
+Explain to students that by leveraging the data provided by Plaid, consumers no longer have to rely on financial services professionals or big companies to give them insights into their data. Furthermore, developers no longer have to concern themselves with data acquisition and brokering communication with financial institutions. Instead, both parties can just use Plaid.
+
+Answer any questions before moving on.
 
 ---
 
 ### 11. Instructor Do: Plaid Demo (15 min)
 
-Students will receive an instructor-led demo of the Plaid API. The instructor will demonstrate to students how to connect to the Plaid sandbox from a Python environment.
+In this activity, students will receive an instructor-led demo of the Plaid API. The instructor will demonstrate to students how to connect to the Plaid sandbox from a Python environment.
 
-Have the `.env` file prepared before class so that it does not need to be created during the activity.
+Have the `.env` file prepared with you Plaid API Keys before class so that it does not need to be created during the activity.
 
 **Files:**
 
@@ -504,13 +505,29 @@ Have the `.env` file prepared before class so that it does not need to be create
 
 Emphasize to students that one of the cool things about Plaid is that it provides developers a sandbox for users to get started running. The sandbox contains account data that can be used to test connectivity to Plaid, as well as test some of Plaid's functionality.
 
-* The sandbox is great because it gives developers a space to play with Plaid without having to connect to personal bank accounts. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
+Explain to students that the sandbox is great because it gives developers a space to play with Plaid without having to connect to personal bank accounts. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
 
-#### Prepare Environment Variables
+Continue the demo by leading students on the environment preparation by highlighting the following:
 
-Create a `.env`, and set up your environment variables. If possible, complete this step prior to the lesson.
+* Before start using the Plaid SDK, you should install it in your virtual environment using pip-install.
 
-* Plaid uses three types of API keys (**client id**, **public key**, and **sandbox secret key**). Each of these needs to be saved as environment variables in a `.env` file. Log into [Plaid](https://dashboard.plaid.com/account/keys) to retrieve them.
+  ```shell
+  pip install plaid-python
+  ```
+
+* Once you installed the Plaid SDK, the next step is to prepare your environment variables.
+
+* Plaid uses three types of API keys (**client id**, **public key**, and **sandbox secret key**). Each of these needs to be saved as environment variables in a `.env` file.
+
+* To retrieve your keys, log into the [Plaid Dashboard](https://dashboard.plaid.com/account/keys), on the main menu click on "Team Settings" and choose the "Keys" option.
+
+  ![retrieve_plaid_keys](Images/retrieve_plaid_keys.png)
+
+* Copy your `client_id`, `public_key`, and sandbox secret.
+
+  ![plaid_keys](Images/plaid_keys.png)
+
+* Create a `.env` file and define the following variables to store your Plaid keys as environment variables.
 
   ```shell
   PLAID_CLIENT_ID="ENTER YOUR KEY HERE"
@@ -518,33 +535,12 @@ Create a `.env`, and set up your environment variables. If possible, complete th
   PLAID_SBX_SECRET_KEY="ENTER YOUR KEY HERE"
   ```
 
-* Once complete, the `.env` file will need to be loaded with `dotenv`.
+Explain to students that now it's time to start using the Plaid SDK from Python. Open the unsolved version of the Jupyter notebook, live code the solution and highlight the following:
 
-  ```shell
-  load_dotenv()
-  ```
-
-* Ask students if they have any questions before continuing.
-
-#### Install Plaid Library
-
-Because Plaid is offered as an SDK, the Python requests library doesn't need to be used. The functions provided by the Plaid SDK can be used to broker the same connection as the requests library. Plaid can be installed using the `pip install` command.
-
-* Open a terminal, and execute the following command:
-
-  ```shell
-  pip install plaid-python
-  ```
-
-* Once Plaid is installed, it can be imported into Jupyter Lab.
-
-#### Execute Plaid Request
-
-Open the Jupyter [starter file](Activities/04-Ins_Plaid_Demo/Solved/plaid_demo.ipynb), and live code the following:
-
-* After the Plaid SDK is installed, it can be imported into Python using the `import` command. Also import other libraries needed for this activity, including `os`, `json`, `datetime` and `dotenv`.
+* After the Plaid SDK is installed, it can be imported into Python using the `import` command. Also other libraries needed for this activity are imported, including `os`, `json`, `datetime` and `dotenv`.
 
   ```python
+  # Initial imports
   import plaid
   import os
   import datetime
@@ -552,60 +548,67 @@ Open the Jupyter [starter file](Activities/04-Ins_Plaid_Demo/Solved/plaid_demo.i
   from dotenv import load_dotenv
   ```
 
-* The environment variables from the `.env` must be loaded and set with the `load_dtoenv()` method.
+* The environment variables from the `.env` must be loaded and set with the `load_dotenv()` method.
 
   ```python
   load_dotenv()
   ```
 
-* In order to make a request to the Plaid API, a `client` object needs to be created. This object will serve as the client in the client-server model. The `client` object will specify the API keys, as well as the desired Plaid environment. Plaid offers three different environments for developers: sandbox, development, and production. The sandbox and development environments are unrestricted; however, Plaid bills for the use of the production environment.
-
-  ```
-  client = Client(client_id='***', secret='***', public_key='***', environment='sandbox')
+  ```text
+  True
   ```
 
-* Since the client object requires the Plaid keys, the keys will need to be extracted using the `os.getenv` function. Once these are stored as Python variables, they can be passed to the `client` object.
+* Once the environment variables are available, we can retrieve the Plaid keys to store them as Python variables.
 
   ```python
   # Extract API keys from environment variables
-  PLAID_CLIENT_ID = os.getenv("client_id")
-  PLAID_PUBLIC_KEY = os.getenv("public_key")
-  PLAID_SBX_SECRET_KEY = os.getenv("sbx_secret_key")
+  PLAID_CLIENT_ID = os.getenv('PLAID_CLIENT_ID')
+  PLAID_PUBLIC_KEY = os.getenv('PLAID_PUBLIC_KEY')
+  PLAID_SBX_SECRET_KEY = os.getenv('PLAID_SBX_SECRET_KEY')
+  ```
 
+* In order to make a request to the Plaid API, a `client` object needs to be created. This object will serve as the client in the client-server model.
+
+  ```python
   # Create client object
-  client = Client(client_id=PLAID_CLIENT_ID, secret=PLAID_PUBLIC_KEY, public_key=PLAID_SBX_SECRET_KEY
-  , environment='sandbox')
+  client = plaid.Client(
+      client_id=PLAID_CLIENT_ID,
+      secret=PLAID_SBX_SECRET_KEY,
+      public_key=PLAID_PUBLIC_KEY,
+      environment="sandbox"
+  )
   ```
 
-Explain that data can be extracted from Plaid using the `GET` function. The Plaid sandbox comes preloaded with financial data ready and available for use. Sandbox data includes institution data, account information, transactions, investment records, and more. However, to extract data, there are a few data attributes that are needed first.
+* The `client` object will specify the API keys, as well as the desired Plaid environment. Plaid offers three different environments for developers: sandbox, development, and production. The sandbox and development environments are unrestricted; however, Plaid bills for the use of the production environment.
 
-* Generate a list of all of the institutions that have been loaded into the sandbox. This can be done by using the `Institutions.get` function, which accepts count as an argument.
+* We can fetch data from Plaid using the `get()` function. The Plaid sandbox comes preloaded with financial data ready and available for use. Sandbox data includes institution data, account information, transactions, investment records, and more. However, to extract data, there are a few data attributes that are needed first.
+
+* To generate a list of all of the institutions that have been loaded into the sandbox,we can use the `Institutions.get()` function which accepts the number of institutions to fetch as an argument.
+
+  ![plaid_fetch_institutions](Images/plaid_fetch_institutions.png)
+
+* Knowing the institutions available in the sandbox allows one to extract account data for that institution. To extract account data, Plaid will need to perform another level of authentication. This level of authentication requires the generation and exchange of a **public token** for an **access token**.
+
+* You can create a public token using an `institution_id` from the sandbox (e.g., `ins_112060`). The `client.Sandbox.public_token.create()` function will create and return a public token for `1st Bank (Broadus, MT) - Personal`. The function accepts two arguments: institution and products. Products can be understood as the types of datasets Plaid has available. These include, but are not limited to, transactions, income, and assets.
 
   ```python
-  # Fetch institutions
-  client.Institutions.get(2)
-
   # Select an institution for processing
-  INSTITUTION_ID = "ins_109512"
-  ```
+  INSTITUTION_ID = "ins_112060"
 
-  ![plaid_institutions.png](Images/plaid_institutions.png)
+  # Create public token to be exchanged for institution access token
+  create_tkn_response = client.Sandbox.public_token.create(
+      INSTITUTION_ID,
+      ['transactions','income','assets']
+  )
 
-* Knowing the institutions available in the sandbox allows one to extract account data for that institution. In order to extract account data, Plaid will need to perform another level of authentication. This level of authentication requires the generation and exchange of a **public token** for an **access token**.
-
-  * Create a public token using an institution from the sandbox (e.g.,  ins_109512). The `client.Sandbox.public_token.create` function will create and return a public token for Houndstooth Bank. The function accepts two arguments: institution and products. Products can be understood as the types of datasets Plaid has available. These include, but are not limited to, transactions, income, and assets.
-
-    ```python
-    # Create public token to be exchanged for institution access token
-    create_tkn_response = client.Sandbox.public_token.create(INSTITUTION_ID, ['transactions','income','assets'])
-    ```
-
-* Public tokens can be exchanged for access tokens. Access tokens are needed to be able to access account details such as transactions. The exchange serves as an additional round of security. The `client.Item.public_token.exchange` function handles the exchange and returns an access token, item id, and request id. The `client.Item.public_token.exchange` function accepts one argument: the public_token returned in `create_tkn_response`.
-
-  ```python
   # Exchange public token for access token
   exchange_response = client.Item.public_token.exchange(create_tkn_response['public_token'])
+
+  # Store access token as variable
+  access_token = exchange_response['access_token']
   ```
+
+* Public tokens can be exchanged for access tokens. Access tokens are needed to be able to access account details such as transactions. The exchange serves as an additional round of security. The `client.Item.public_token.exchange()` function handles the exchange and returns an access token, item id, and request id. The `client.Item.public_token.exchange()` function accepts one argument: the `public_token` returned in `create_tkn_response`.
 
   ![token_exchange.png](Images/token_exchange.png)
 
@@ -616,32 +619,13 @@ Explain that data can be extracted from Plaid using the `GET` function. The Plai
   access_token = exchange_response['access_token']
   ```
 
-#### Wielding Plaid
-
-Once the access token is in hand, you can really start using Plaid to its fullest potential. You'll have access to a bunch of different accounts and transactions, all available for use. All that is needed is that access token.
+* Once the access token is in hand, you can really start using Plaid to its fullest potential. You'll have access to a bunch of different accounts and transactions, all available for use. All that is needed is that access token.
 
 * Fetch all accounts at an institution
 
-  ```python
-  # Get accounts associated with institution
-  client.Accounts.get(access_token)
-  ```
-
   ![get_accounts.png](Images/get_accounts.png)
 
-* Fetch transactions for a date range. Python date objects can be used to specify start and end dates.
-
-  ```python
-  # Get transactions for institution for specific date range
-  start_date = '{:%Y-%m-%d}'.format(datetime.datetime.now() + datetime.timedelta(-30))
-  end_date = '{:%Y-%m-%d}'.format(datetime.datetime.now())
-
-  # Get transactions for date range
-  transaction_response = client.Transactions.get(access_token,start_date,end_date)
-
-  # Print JSON output
-  print(json.dumps(transaction_response['transactions'][:2],indent=4,sort_keys=True))
-  ```
+* You can fetch transactions for a date range. Python date objects can be used to specify start and end dates.
 
   ![get_transactions.png](Images/get_transactions.png)
 
@@ -651,7 +635,7 @@ Take some time to emphasize what it means to have this type of data provided by 
 
 * Imagine wanting to create a digital dashboard for personal spending. Plaid is what can make this happen, providing the outlet for connecting to personal accounts, as well as a means to consolidate and extract data for aggregation. This means that as developers, we can provide our consumers with the look, feel, and functionality that we want: a digital financial dashboard for the people, by the people.
 
-If time remains, ask students for any thoughts or questions.
+If time remains, ask students for any thoughts and answer any questions before moving on.
 
 ---
 
