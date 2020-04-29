@@ -715,62 +715,45 @@ Circulate through the room and provide assistance while students are working. St
 
 Students will just have completed a lengthy activity of installing and using the Plaid SDK to extract financial data. End the class with a reflection exercise to reinforce the conceptual information learned.
 
-* Give students 2 minutes to pick one data element from the Plaid transaction data that they'd like to analyze. Call on each student in a round-robin fashion and ask them to volunteer a data point of interest. Allow the students to suggest different types of analysis they'd like to do with Plaid's data.
+Give students 2 minutes to pick one data element from the Plaid transaction data that they'd like to analyze. Call on each student in a round-robin fashion and ask them to volunteer a data point of interest. Allow the students to suggest different types of analysis they'd like to do with Plaid's data.
 
-  **Answer:** Example data elements include the amount of interest payments, number of restaurant purchases, number of travel purchases across time, etc.
+* **Answer:** Example data elements include the amount of interest payments, number of restaurant purchases, number of travel purchases across time, etc.
 
-* Ask students to create a summarized list of the steps needed to securely and adequately export environment variables. Ask if there is anyone who would like to volunteer an answer; if not, ask students to call the steps out in unison.
+Ask students to create a summarized list of the steps needed to securely and adequately export environment variables. Ask if there is anyone who would like to volunteer an answer; if not, ask students to call the steps out in unison.
 
-  **Answer:** Steps for securely and adequately exporting environment variables include:
+* **Answer:** Steps for securely and adequately exporting environment variables include:
 
-    1. Creating a `.env` file.
+  1. Creating a `.env` file.
 
-    2. Import the `dotenv` package.
+  2. Import the `dotenv` package.
 
-    3. Loading the `.env` file with `load_dotenv()` to set the environment variable.
+  3. Loading the `.env` file with `load_dotenv()` to set the environment variable.
 
-* Engage students by asking what they see for the future of FinTech when companies like Plaid are striving to democratize financial data and analytics, including trends, consequences, and paradoxical effects?
+Engage students by asking what they see for the future of FinTech when companies like Plaid.
 
-  **Answer:** More peer-to-peer payment services driven by Plaid and crypto alt coins.
+* Are these companies striving to democratize financial data and analytics, including trends, consequences, and paradoxical effects?
 
-  **Answer:** Data generators and synthetic financial data will no longer be needed.
+  * **Answer:** More peer-to-peer payment services driven by Plaid and crypto alt coins.
 
-  **Answer:** Daily financial monitoring will focus on a unified view of all accounts rather than a microcosmic deep-dive into one account.
+  * **Answer:** Data generators and synthetic financial data will no longer be needed.
 
-  **Answer:** Plaid will become the one-stop-shop for all financial data needs. This includes daily monitoring and ad-hoc reporting. Instead of checking in with a bank app for one's current account balance or a most recent transaction, Plaid will be used.
+  * **Answer:** Daily financial monitoring will focus on a unified view of all accounts rather than a microcosmic deep-dive into one account.
 
-  **Answer:** Instead of democratizing FinTech, Plaid could become the new centralized entity for FinTech data and decision-making. This could lead to reduced rate limits and more expensive premiums.
+  * **Answer:** Plaid will become the one-stop-shop for all financial data needs. This includes daily monitoring and ad-hoc reporting. Instead of checking in with a bank app for one's current account balance or a most recent transaction, Plaid will be used.
 
-  **Answer:** Hackers will be given the tools to attack less mature FinTech applications using Plaid.
+  * **Answer:** Instead of democratizing FinTech, Plaid could become the new centralized entity for FinTech data and decision-making. This could lead to reduced rate limits and more expensive premiums.
 
-If a student or team of students were chosen to conduct a review, instruct them to perform a dry walk-through using the [solution](Activities/06-Stu_Sporting_Plaid_Pt_2/Solved/sporting_plaid.ipynb). Otherwise, use the [solution](Activities/06-Stu_Sporting_Plaid_Pt_2/Solved/sporting_plaid.ipynb) to complete the dry walk-through yourself.
+  * **Answer:** Hackers will be given the tools to attack less mature FinTech applications using Plaid.
+
+If a student or team of students were chosen to conduct a review, instruct them to perform a dry walk-through using the solution. Otherwise, use the solution to complete the dry walk-through yourself.
 
 * The Plaid SDK functions offer a great way to submit requests without having to create and customize or concatenate request URLs.
 
 * Plaid has a Client object that is used to communicate with the Plaid servers. This object stores the **client id**, **secret**, and **public** keys, and it is used to execute each API request.
 
-  ```python
-  # Create client object
-  client = plaid.Client(client_id=PLAID_CLIENT_ID, secret=PLAID_SBX_SECRET_KEY, public_key=PLAID_PUBLIC_KEY, environment='sandbox')
-  ```
-
   ![client_obj_arguments.png](Images/client_obj_arguments.png)
 
 * Plaid offers two types of tokens: **public** and **access**. Public tokens are public and not very secure. Access tokens are secure and are used when authenticating with bank accounts.
-
-  ```python
-    # Select an institution for processing
-  INSTITUTION_ID = "ins_109512"
-
-  # Create public token to be exchanged for institution access token
-  create_tkn_response = client.Sandbox.public_token.create(INSTITUTION_ID, ['transactions','income','assets'])
-
-  # Exchange public token for access token
-  exchange_response = client.Item.public_token.exchange(create_tkn_response['public_token'])
-
-  # Store access token as variable
-  access_token = exchange_response['access_token']
-  ```
 
   ![plaid_tokens.png](Images/plaid_tokens.png)
 
@@ -787,16 +770,9 @@ If a student or team of students were chosen to conduct a review, instruct them 
 
 * JSON data returned from SDK calls are in the same format as response data from request URLs. Data elements are accessed by key/value pairs.
 
-  ```python
-  # Iterate and parse JSON response
-  for transactions in transactions_response['transactions']:
-      if transactions['name'] == 'INTRST PYMNT':
-          print(json.dumps(transactions['amount'], indent=4, sort_keys=True))
-  ```
-
   ![parse_json.png](Images/parse_json.png)
 
-Underscore to students that working with Plaid does not mean just working within the sandbox. They could go home and begin analyzing their own financial data across multiple accounts as soon as tonight!
+Explain to students that working with Plaid does not mean just working within the sandbox. They could go home and begin analyzing their financial data across multiple accounts as soon as tonight!
 
 Ask if there are any remaining questions.
 
