@@ -109,7 +109,7 @@ Next, pull up Remix side by side with the [Example CryptoRight EIP](Activities/0
 
 * Now that we've familiarized ourselves with the goal of the example ERC333 copyright contract, let's define the structure of our contract and scaffold out each function's business logic.
 
-* When writing code to a particular specification, it can be very helpful to write comments for each step that must be performed inside a function's body. In this activity, we will take the contract specification and break down each of the method's business logic and backing data structures into descriptive comments.
+* When writing code to a particular specification, it can be very helpful to write comments for each step that must be performed inside a function's body. In this activity, we will take the contract specification and break down each component of the method's business logic and backing data structures into descriptive comments.
 
 Read aloud the `copyrights` method's interface definition and description.
 
@@ -123,9 +123,9 @@ Highlight the CryptoRight contract interface definition.
 function copyrights(uint copyright_id) public returns(IWork memory);
 ```
 
-* The ERC333 spec defines this interface for the copyrights method.
+* The ERC333 spec defines this interface for the copyright's method.
 
-Now demonstrate what this looks like implemented inside the smart contract.
+Now, demonstrate what this looks like implemented inside the smart contract.
 
 ```Solidity
 mapping(uint => Work) public copyrights;
@@ -138,9 +138,9 @@ mapping(uint => Work) public copyrights;
 
   * Remember that a variable defined with the public modifier automatically generates a getter function with defined parameters. In this case, our publically defined mapping `copyrights` generates a getter function that accepts a `uint` and returns a `Work` struct.
 
-  * This is a great example of how a specification's defined interface may not always exactly match what the actual code will look like but rather the interface that will be generated. `Interface` is both a defined function and the concept of what input/output for a given `API` is expected to be present.
+  * This is a great example of how a specification's defined interface may not always exactly match what the actual code will look like, but rather the interface that will be generated. `Interface` is both a defined function and the concept of what input/output for a given `API` is expected to be present.
 
-Inside the CryptoRight contract under the `copyright_ids` counter create a new `struct` named `Work`. Inside this `struct` create an `address` attribute named `owner` and a `string` attribute named `uri`.
+Inside the CryptoRight contract under the `copyright_ids` counter, create a new `struct` named `Work`. Inside this `struct` create an `address` attribute named `owner` and a `string` attribute named `uri`.
 
   ```Solidity
   struct Work {
@@ -149,7 +149,7 @@ Inside the CryptoRight contract under the `copyright_ids` counter create a new `
   }
   ```
 
-* We've created our map that reference's a custom datatype named `Work`, but now we have to define that datatype with a `struct`.
+* We've created our map that references a custom datatype named `Work`, but now we have to define that datatype with a `struct`.
 
 * According to the `copyrights` method's spec, we need a "`struct` containing the copyright's `owner` and `uri`".
 
