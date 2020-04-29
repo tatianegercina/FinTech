@@ -941,7 +941,7 @@ Ensure the following:
 
 * Ensure that within the `README.md` there is a link to the `frontend/index.html` file somewhere in order to generate the URL to the front-end dApp.
 
-### 10. Instructor Do: Github Pages Review (10 min)
+### 10. Instructor Do: GitHub Pages Review (10 min)
 
 Ask students the following questions:
 
