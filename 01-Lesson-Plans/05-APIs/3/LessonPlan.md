@@ -76,27 +76,37 @@ Answer any questions before moving on.
 
 ### 2. Instructor Do: Intro to Monte Carlo Simulations (10 min)
 
-Ease students into the notion of Monte Carlo simulations by presenting the following questions and answers:
+In this activity, students will be introduced to Mote Carlo Simulations and the core concepts behind.
 
-* What is a simulation?
+Open the lesson slides, move to the "Monte Carlo Simulations" section and highlight the following:
 
-  > At its core, a simulation is a running instance of a model that seeks to emulate an existing process or system.
+* Today we will combine what we’ve learned so far on using APIs to pull in stock data and forecast single stock/portfolio returns using Monte Carlo simulations.
 
-* What is a Monte Carlo simulation?
+* Simulations will require a switch from historical analysis to predicting the future.
 
-  > A Monte Carlo simulation is a specific type of simulation that uses probability and variables to predict the future potential outcomes of a randomly occurring process.
+* By the end of the lesson, Monte Carlo simulations will have predicted future stock prices and therefore forecast the potential stocks returns of an initial investment, either as a single stock investment or as an investment in a portfolio.
+
+Continue with the slides switching to the "Simulations" section, ease students into the notion of this type of simulations by presenting the following questions and answers:
+
+* What are simulations?
+
+  * At its core, a simulation is a running instance of a model that seeks to emulate an existing process or system.
+
+* What are Monte Carlo simulations?
+
+  * A Monte Carlo simulation is a specific type of simulation that uses probability and variables to predict the future potential outcomes of a randomly occurring process.
 
 * What is probability?
 
-  > The chance of an event happening. For example, the chance of a coin landing on heads is `50%`.
+  * The chance of an event happening. For example, the chance of a coin landing on heads is `50%`.
 
 * Why use Monte Carlo simulations?
 
-  > Monte Carlo simulations provide a method of testing the range of values and corresponding probabilities that a random process can generate over time—specifically, how far results may deviate from the expected average. Monte Carlo simulations help to understand the risk of uncertainty in prediction and forecasting models, which is particularly helpful when dabbling in the domain of capital investments and stock price uncertainty!
+  * Monte Carlo simulations provide a method of testing the range of values and corresponding probabilities that a random process can generate over time—specifically, how far results may deviate from the expected average. Monte Carlo simulations help to understand the risk of uncertainty in prediction and forecasting models, which is particularly helpful when dabbling in the domain of capital investments and stock price uncertainty!
 
 * What would be an example of a Monte Carlo simulation?
 
-  > Imagine a scientist wanted to know how often a coin could land on heads for `5` trials of `10` coin flips. Flipping a coin has a `50%` chance of landing on heads and a `50%` chance of landing on tails. Because of the randomly occurring nature of flipping a coin, results could vary: for example, a coin could produce `6` heads and `4` tails; `3` heads and `7` tails; `8` heads and `2` tails, `5` heads and `5` tails, or `4` heads and `6` tails. Therefore, an example Monte Carlo simulation would be to flip a coin `10` times to determine the resulting number of heads and tails, and then do that same process another `5` times to determine the frequency distribution of landing on heads (how many times the coin landed a specific number of heads). The frequency distribution of heads can then be used to calculate the corresponding probability distribution that determines how likely it is for varying numbers (or ranges) of heads to land.
+  * Imagine a scientist wanted to know how often a coin could land on heads for `5` trials of `10` coin flips. Flipping a coin has a `50%` chance of landing on heads and a `50%` chance of landing on tails. Because of the randomly occurring nature of flipping a coin, results could vary: for example, a coin could produce `6` heads and `4` tails; `3` heads and `7` tails; `8` heads and `2` tails, `5` heads and `5` tails, or `4` heads and `6` tails. Therefore, an example Monte Carlo simulation would be to flip a coin `10` times to determine the resulting number of heads and tails, and then do that same process another `5` times to determine the frequency distribution of landing on heads (how many times the coin landed a specific number of heads). The frequency distribution of heads can then be used to calculate the corresponding probability distribution that determines how likely it is for varying numbers (or ranges) of heads to land.
 
 Ask the students if they can think of any other examples of Monte Carlo simulations. Be sure to have all the students on the same page before moving on.
 
