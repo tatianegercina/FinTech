@@ -58,19 +58,19 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-**Files:**
+Energize your students and welcome them to the third day of APIs! Today is the day where students move from historical to future-oriented analysis. Time to look into the crystal ball!
 
-* [Slideshow](https://docs.google.com/presentation/d/1AqrhqULvquRO1W6WdUrYBKp5jcLLngN989DItBr_IBQ/edit?usp=sharing)
+Cover the following points:
 
-Welcome students to the third day of APIs! Cover the following points:
+* The previous lessons focused on API calls and showcased the Plaid API to exemplify that you can leverage the power of external datasets and functionality.
 
-* The previous lessons focused on API calls and showcased the Plaid API to exemplify that students can leverage the power of external datasets and functionality. Today students will combine what they've learned so far on using APIs to pull in stock data and forecast single stock and portfolio returns using Monte Carlo simulations.
+* Today you will combine what you've learned so far on using APIs to pull in stock data and forecast single stock and portfolio returns using Monte Carlo simulations.
 
-* Mention to the class that today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. Students should feel empowered as they are learning how they can use other curated datasets to analyze and generate insights on their own.
+* Today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. You should feel empowered as you are learning how you can use other curated datasets to analyze and generate insights on their own.
 
-* Students should be prepared to push their mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.
+* You should be prepared to push your mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.
 
-* Energize your students! Today is the day where students move from historical to future-oriented analysis. Time to look into the crystal ball!
+Answer any questions before moving on.
 
 ---
 
