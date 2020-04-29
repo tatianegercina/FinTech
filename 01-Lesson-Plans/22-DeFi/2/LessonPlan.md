@@ -911,7 +911,7 @@ Click on the link that you generated to take you to your dApp, and ensure MetaMa
 
 Voila! Now it's time to have students create their own landing pages!
 
-### 9. Students Do: Create a Landing Page with GitHub Pages (15 min)
+### 9. Student Do: Create a Landing Page with GitHub Pages (15 min)
 
 Now it's time for the students to create their own landing pages!
 
@@ -933,37 +933,37 @@ Send out the instructions and have TAs circulate the room.
 
 Ensure the following:
 
-* Students are using their own ABIs in `CryptoRight.json` and that their frontends are functioning with the local `python -m http.server 8000` command before attempting this activity.
+* Students are using their own ABIs in `CryptoRight.json` and that their front ends are functioning with the local `python -m http.server 8000` command before attempting this activity.
 
-* Ensure that the students directory tree looks like the following:
+* Ensure that students' directory trees look like the following:
 
   ![Github File Tree](Images/github-pages-tree.png)
 
-* Ensure that within the `README.md` there is a link to the `frontend/index.html` file somewhere in order to generate the URL to the frontend dApp.
+* Ensure that within the `README.md` there is a link to the `frontend/index.html` file somewhere in order to generate the URL to the front-end dApp.
 
 ### 10. Instructor Do: Github Pages Review (10 min)
 
-Ask the students the following questions:
+Ask students the following questions:
 
-* What is the purpose of having a Github Pages website for our dApp?
+* What is the purpose of having a GitHub Pages website for our dApp?
 
   **Answer:** It allows us to demonstrate our expertise in a context that we can control.
 
   **Answer:** It allows us to write documentation websites, explain the purpose of our project, gain developer and user traction, and much more.
 
-* What facilitates the connection between our frontend code that Github Pages hosts, and the Ethereum networks that we have configured/connected to?
+* What facilitates the connection between our front-end code that GitHub Pages hosts, and the Ethereum networks that we have configured/connected to?
 
   **Answer:** MetaMask!
 
-* Would our frontend code work if we deployed it anywhere else?
+* Would our front-end code work if we deployed it anywhere else?
 
   **Answer:** Yes, as long as the browser has MetaMask installed, our dApp will run!
 
-* Would it be possible to deploy our frontend code to IPFS?
+* Would it be possible to deploy our front-end code to IPFS?
 
   **Answer:** Absolutely! However, it would require some code changes to make sure that the URLs referenced work properly.
 
-* Would it be possible to use Github Pages to create a portfolio website that allows us to show off more than this application?
+* Would it be possible to use GitHub Pages to create a portfolio website that allows us to show off more than this application?
 
   **Answer:** Absolutely! It should be leveraged wherever possible to give your work more exposure.
 
@@ -973,7 +973,7 @@ Ask the students the following questions:
 
 ---
 
-### 12. Students Do: Project Work (Remainder of Class)
+### 12. Student Do: Project Work (Remainder of Class)
 
 Students will use the remainder of the class to work on their projects.
 
@@ -983,4 +983,4 @@ Students will use the remainder of the class to work on their projects.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
