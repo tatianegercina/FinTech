@@ -784,21 +784,21 @@ Woo-hoo! You've reached the end of APIs Day 2. Over the past two days, the class
 
 Recap by asking students to summarize with one word or a three-word phrase what they learned today. Ask for volunteers, and then eventually go round-robin if necessary.
 
- **Answer:** Disruptive
+* **Answer:** Disruptive
 
- **Answer:** Open-source
+* **Answer:** Open-source
 
- **Answer:** Democratization
+* **Answer:** Democratization
 
- **Answer:** Keys, keys, keys
+* **Answer:** Keys, keys, keys
 
- **Answer:** Decentralization
+* **Answer:** Decentralization
 
- **Answer:** For the people
+* **Answer:** For the people
 
- **Answer:** Data Extraction
+* **Answer:** Data Extraction
 
- **Answer:** Development kit
+* **Answer:** Development kit
 
 Underscore to students that their progress in learning how to programmatically submit API calls using the Python `requests` library and SDKs is going to have real-world benefits. These skills are practical and could be employed to solve a number of FinTech use cases.
 
@@ -814,13 +814,15 @@ Highlight that students have shown themselves to be cutting edge by working with
 
 * This requires developers to be able to write code that connects and integrates multiple APIs and SDKs to create unique interactions.
 
-* Reinforce to students that this is exactly what they did today in class. With the skills they've learned today, they'll be able to keep up with emerging technologies.
+Reinforce to students that this is exactly what they did today in class. With the skills they've learned today, they'll be able to keep up with emerging technologies.
 
 Communicate to students that the applications they've completed today should be discussed during interviews and added to their resumes.
 
-* They've created reusable data extraction tools, which are valuable artifacts in the FinTech industry.
+* You've created reusable data extraction tools, which are valuable artifacts in the FinTech industry.
 
 * With the right parameterization, the Quandl and Plaid APIs could easily evolve into engines and frameworks.
+
+Answer any questions before ending the class.
 
 ### End Class
 
