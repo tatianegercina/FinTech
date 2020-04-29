@@ -14,11 +14,11 @@ By the end of the class, students will be able to:
 
 * Implement a given smart contract specification into real solidity code.
 
-* Integrate the contract with a JavaScript/HTML/CSS frontend.
+* Integrate the contract with a JavaScript/HTML/CSS front end.
 
-* Deploy a bundled dApp to Github Pages
+* Deploy a bundled dApp to Github Pages.
 
-* Customize and deploy a landing page for projects on Github Pages
+* Customize and deploy a landing page for projects on Github Pages.
 
 ---
 
@@ -42,9 +42,9 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome to Class (10 min)
 
-During the previous class, students were introduced to the concept of DeFi (short for decentralized finance). Students were given the scope that many of the concepts that they had learned up to this point can be leveraged to build financial systems based on the principals of DeFi as well as given the tools that directly enable these systems through the deployment of dApps such as solidity events and IPFS. Briefly review the following talking points to refresh the class on DeFi, events, and IPFS.
+In the previous class, students were introduced to the concept of DeFi (short for decentralized finance). Many of the concepts they have learned up to now can be leveraged to build financial systems based on DeFi principles, as well as given the tools that directly enable these systems through the deployment of dApps such as solidity events and IPFS. Briefly review the following talking points to refresh the class on DeFi, events, and IPFS.
 
-* What are some benefits of solidity events?
+* What are some benefits of Solidity events?
 
   **Answer:** They are a cheap amount of gas.
 
@@ -52,7 +52,7 @@ During the previous class, students were introduced to the concept of DeFi (shor
 
   **Answer:** Events are MUCH cheaper than contract storage.
 
-  **Answer:** Events are solidity's built-in way to interact with something external, such as a user interface.
+  **Answer:** Events are Solidity's built-in way to interact with something external, such as a user interface.
 
 * What are some potential issues that IPFS seeks to solve?
 
