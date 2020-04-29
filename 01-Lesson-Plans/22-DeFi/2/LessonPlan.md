@@ -60,13 +60,13 @@ In the previous class, students were introduced to the concept of DeFi (short fo
 
   **Answer:** Inefficiencies in the web such as having to route to a faraway server to get the file you need when it might be right next door.
 
-  **Answer:** Problems with security and file integrity, such as not knowing whether or not files you have accessed over the web have changed.
+  **Answer:** Problems with security and file integrity, such as not knowing if files you have accessed over the web have changed.
 
   **Answer:** Problems with the security of centralized servers providing a centralized attack vector.
 
 ### 2. Instructor Do: Building to a Smart Contract Specification (15 min)
 
-The instructor will discuss the process of breaking down the elements of a smart contract specification, such as it's interface, and how to turn it into functioning code. The EIP provides an example interface file for testing the contract linked below.
+The instructor will discuss the process of breaking down the elements of a smart contract specification, such as its interface, and how to turn it into functioning code. The EIP provides an example interface file for testing the contract linked below.
 
 **Files:**
 
@@ -78,9 +78,9 @@ The instructor will discuss the process of breaking down the elements of a smart
 
 Begin by opening the [Example CryptoRight EIP](Activities/01-Ins_Building_to_a_Smart_Contract_Specification/Resources/ExampleEIP.md) and displaying it for the class.
 
-* In earlier classes we took a look at a variety of the EIP specifications located on [https://eips.ethereum.org/](https://eips.ethereum.org/)
+* In earlier classes, we took a look at a variety of the EIP specifications located on [https://eips.ethereum.org/](https://eips.ethereum.org/)
 
-* Today we will take a new example EIP, break it down and translate it into functioning code. Remember, an EIP is an Ethereum Improvement Proposal. An ERC is an application-level (aka, Solidity) EIP.
+* Today, we will take a new example EIP, break it down, and translate it into functioning code. Remember—an EIP is an Ethereum Improvement Proposal. An ERC is an application-level (aka, Solidity) EIP.
 
 * Let's begin by identifying the goal of the current contract. This will allow us to gain scope on the logic that we will be implementing.
 
@@ -88,9 +88,9 @@ Begin by opening the [Example CryptoRight EIP](Activities/01-Ins_Building_to_a_S
 
 Together with the class, read the `Simple Summary`, `Abstract`, and `Motivation` sections of the EIP.
 
-Open [Remix](https://remix.ethereum.org/) in your web browser and create two new contracts the first-named `ICryptoRight.sol` and the second named `CryptoRight.sol`.
+Open [Remix](https://remix.ethereum.org/) in your web browser and create two new contracts—the first named `ICryptoRight.sol` and the second named `CryptoRight.sol`.
 
-Inside `ICryptoRight.sol` paste the contents of [ICryptoRight.sol](Activities/01-Ins_Building_to_a_Smart_Contract_Specification/Resources/ICryptoRight.sol) from the resources folder.
+Inside `ICryptoRight.sol` paste the contents of [ICryptoRight.sol](Activities/01-Ins_Building_to_a_Smart_Contract_Specification/Resources/ICryptoRight.sol) from the Resources folder.
 
 Inside `CryptoRight.sol` define a new contract named `CryptoRight` that extends the `ICryptoRight` interface.
 
