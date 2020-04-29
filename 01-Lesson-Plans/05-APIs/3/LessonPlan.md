@@ -929,4 +929,4 @@ Use the remaining time to get a head start on office hours. Allow students to as
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
