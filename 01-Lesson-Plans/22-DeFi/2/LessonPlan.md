@@ -115,7 +115,7 @@ Read aloud the `copyrights` method's interface definition and description.
 
 * `copyrights`
 
-* Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyright's `owner` and `uri`.
+* Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyrights `owner` and `uri`.
 
 Highlight the CryptoRight contract interface definition.
 
@@ -123,7 +123,7 @@ Highlight the CryptoRight contract interface definition.
 function copyrights(uint copyright_id) public returns(IWork memory);
 ```
 
-* The ERC333 spec defines this interface for the copyright's method.
+* The ERC333 spec defines this interface for the copyrights method.
 
 Now, demonstrate what this looks like implemented inside the smart contract.
 
