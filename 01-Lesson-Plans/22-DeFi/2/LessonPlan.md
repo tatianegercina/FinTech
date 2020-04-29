@@ -2,7 +2,7 @@
 
 ### Overview
 
-In today's class, students will be introduced to the thought processes and techniques that go into taking a formalized contract spec and implementing it into solidity code. In the software development process, employees frequently collaborate, creating a separation of concerns within a system's architecture. Students will learn to take a simple, yet more formalized, smart contract specification and implement it to fit the interface of an already established front-end dApp. Students will then deploy the configured dApp to a centralized production environment, Github pages.
+In today's class, students will be introduced to the thought processes and techniques that go into taking a formalized contract spec and implementing it into Solidity code. In the software development process, employees frequently collaborate, creating a separation of concerns within a system's architecture. Students will learn to take a simple, yet more formalized, smart contract specification and implement it to fit the interface of an already established front-end dApp. Students will then deploy the configured dApp to a centralized production environment, GitHub pages.
 
 Students will use the remainder of the class to work on their projects.
 
@@ -12,13 +12,13 @@ Students will use the remainder of the class to work on their projects.
 
 By the end of the class, students will be able to:
 
-* Implement a given smart contract specification into real solidity code.
+* Implement a given smart contract specification into real Solidity code.
 
 * Integrate the contract with a JavaScript/HTML/CSS front end.
 
-* Deploy a bundled dApp to Github Pages.
+* Deploy a bundled dApp to GitHub Pages.
 
-* Customize and deploy a landing page for projects on Github Pages.
+* Customize and deploy a landing page for projects on GitHub Pages.
 
 ---
 
@@ -201,7 +201,7 @@ contract CryptoRight is ICryptoRight {
 }
 ```
 
-* The `copyrightWork` method spec says that we have to generate an `id` for our copyrights, but it doesn't specify how. This leaves it up to us to decide. For this contract, let's use a Safemath counter and make each id the incremented value from the counter.
+* The `copyrightWork` method spec says that we have to generate an `id` for our copyrights, but it doesn't specify how. This leaves it up to us to decide. For this contract, let's use a SafeMath counter and make each id the incremented value from the counter.
 
 Add the following comments inside the body of the `copyrightWork` function.
 
