@@ -6,7 +6,7 @@ In this activity, you will extract a Bitcoin testnet address from your mnemonic,
 
 * Download a local copy of the BIP39 online converter from [the releases page](https://github.com/iancoleman/bip39/releases).
 
-  * You will need to download the `bip30-standalone.html` file.
+  * You will need to download the `bip39-standalone.html` file.
 
 * Open this file in your browser.
 
@@ -20,7 +20,7 @@ In this activity, you will extract a Bitcoin testnet address from your mnemonic,
 
 ![BTC Test address](Images/bip39-derived.png)
 
-* Navigate to the [Bitcoin Testnet Faucet](https://coinfaucet.eu/en/btc-testnet/) to request tokens.
+* Navigate to the [Bitcoin Testnet Faucet](https://testnet-faucet.mempool.co/) to request tokens.
 
 * Paste your testnet address, and click `Get bitcoins!`
 
