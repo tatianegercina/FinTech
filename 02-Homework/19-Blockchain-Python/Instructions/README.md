@@ -147,7 +147,7 @@ You'll need to set the account with  `priv_key_to_account` and use `send_tx` to 
 
 #### Bitcoin Testnet transaction
 
-- Fund a `BTCTEST` address using [this testnet faucet](https://coinfaucet.eu/en/btc-testnet/).
+- Fund a `BTCTEST` address using [this testnet faucet](https://testnet-faucet.mempool.co/).
 
 - Use a [block explorer](https://tbtc.bitaps.com/) to watch transactions on the address.
 
