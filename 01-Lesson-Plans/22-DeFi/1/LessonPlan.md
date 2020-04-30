@@ -54,7 +54,7 @@ Previously, students have implemented a basic token, as well as the ERC21 fungib
 
     * **Answer**: Fungible tokens are interchangeable with one another, whereas non-fungible are not.
 
-    * **Answer**: Non-fungible tokens use ERC 721, fungible tokens use ERC 777.
+    * **Answer**: Non-fungible tokens use ERC721, fungible tokens use ERC777.
 
 * What are some examples of `fungible` assets?
 
