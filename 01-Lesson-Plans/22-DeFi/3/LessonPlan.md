@@ -14,7 +14,7 @@ By the end of the class, students will be able to:
 
 * Create an ERC721 token that leverages the auction contracts in an internal mapping structure to create "Auctionable non-fungible Martian land tokens.
 
-* Create a landing page that points to the Martian land ERC721 dApp.
+* Create a landing page that points to the Martian Land ERC721 dApp.
 
 ### Slideshow and Time Tracker
 
@@ -70,7 +70,7 @@ Review the following recall questions with the class.
 
 ### 2. Instructor Do: Auction Contracts in Solidity (10 min)
 
-In this activity, the Instructor will demonstrate the various Auction contracts available from the Solidity example documentation, and modify it to fit our needs. Students will be introduced to the story of the "Martian Land Foundation" and how we will be "tokenizing" martian land and auctioning it to the public, raising funds for the Martian Land Foundation's terraforming projects, and allowing every-day citizens to claim their spot on humanity's next frontier.
+In this activity, the Instructor will demonstrate the various auction contracts available from the Solidity example documentation, and modify it to fit our needs. Students will be introduced to the story of the "Martian Land Foundation" and how we will be "tokenizing" martian land and auctioning it to the public, raising funds for the Martian Land Foundation's terraforming projects, and allowing every-day citizens to claim their spot on humanity's next frontier.
 
 **Files:**
 
@@ -356,7 +356,7 @@ Inside the body of the `auctionEnd` contract:
 
 Congratulations, we have just built a `MartianAuction` contract; you may have very well just secured mankind's future.
 
-### 3. Students Do: Writing an Auction Contract (15 min)
+### 3. Student Do: Writing an Auction Contract (15 min)
 
 In this activity, students will take a SimpleAuction contract from the Solidity documentation, modify it for their own needs (remove the time-related features), and prepare it for use within another contract.
 
@@ -576,7 +576,7 @@ Make sure your contract compiles and matches the [solution](Activities/05-Ins_Ma
 
 Voila! Now it's time for the students to build out the same system.
 
-### 6. Students Do: Building the MartianMarket (20 min)
+### 6. Student Do: Building the MartianMarket (20 min)
 
 In this activity, students will be building the ERC721 + Auction based `MartianMarket`.
 
@@ -624,7 +624,7 @@ Ask for any remaining questions before moving on.
 
 ### 8. Students Do: Deploying the MartianMarket (20 min)
 
-In this challenge activity, students will create a landing page and deploy the MartianMarket dApp to Github Pages. The frontend will be provided in a similar fashion to `CryptoRight`. Students will leverage their skills to put together their dApp, create a detailed landing page, and deploy to GitHub Pages.
+In this challenge activity, students will create a landing page and deploy the MartianMarket dApp to GitHub Pages. The frontend will be provided in a similar fashion to `CryptoRight`. Students will leverage their skills to put together their dApp, create a detailed landing page, and deploy to GitHub Pages.
 
 Send the instructions and have TAs circulate the class.
 
@@ -660,13 +660,13 @@ Ensure the following:
 
 Walkthrough the following recall questions with the class to review the various technologies/levels of the stack and their purpose:
 
-* What is the purpose of having a Github Pages website for our dApp?
+* What is the purpose of having a GitHub Pages website for our dApp?
 
   **Answer:** It allows us to demonstrate our expertise in a context that we can control.
 
   **Answer:** It allows us to write documentation websites, explain the purpose of our project, gain developer and user traction, and much more.
 
-* What are some benefits of Solidity Events?
+* What are some benefits of Solidity events?
 
   **Answer:** They have a lower gas cost.
 
@@ -706,4 +706,4 @@ This section is reserved for the Career Services portion of the class.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
