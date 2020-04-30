@@ -2,19 +2,19 @@
 
 ### Overview
 
-In today's class, students will be introduced to auction contracts. Students will create an ERC721 token that leverages their created auction contracts in an internal mapping structure to facilitate the sale of `Auctionable Non-Fungible Martian Land Tokens`.
+In today's class, students will be introduced to auction contracts. Students will create an ERC721 token that leverages their created auction contracts in an internal mapping structure to facilitate the sale of `Auctionable non-fungible Martian land tokens`.
 
 ### Class Objectives
 
 By the end of the class, students will be able to:
 
-* Modify and Deploy an Auction contract written in Solidity.
+* Modify and deploy an auction contract written in Solidity.
 
-* Use the .value function to pass Ether from one function to another in Solidity, and explain the difference between `.value`, `.call.value`, `.send`, and `.transfer`.
+* Use the .value function to pass ether from one function to another in Solidity, and explain the difference between `.value`, `.call.value`, `.send`, and `.transfer`.
 
-* Create an ERC721 token that leverages the Auction contracts in an internal mapping structure to create "Auctionable Non-Fungible Martian Land Tokens.
+* Create an ERC721 token that leverages the auction contracts in an internal mapping structure to create "Auctionable non-fungible Martian land tokens.
 
-* Create a landing page that points to the Martian Land ERC721 dApp.
+* Create a landing page that points to the Martian land ERC721 dApp.
 
 ### Slideshow and Time Tracker
 
