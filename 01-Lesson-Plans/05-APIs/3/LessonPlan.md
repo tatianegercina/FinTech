@@ -249,7 +249,7 @@ Answer any questions before moving on.
 
 ### 4. Students Do: Free Throw Simulation (15 min)
 
-In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of free throws made out of 10 shots for a player with a `70%` accuracy and determine the likelihood of the player making `9-10` free throws in a single session.
+In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of free throws made out of `10` shots for a player with a `70%` accuracy and determine the likelihood of the player making `9-10` free throws in a single session.
 
 Circulate with TAs during this activity to provide students with assistance. Below are a couple of scenarios to watch out for.
 
@@ -265,7 +265,11 @@ Circulate with TAs during this activity to provide students with assistance. Bel
 
 * [free_throw_simulation.ipynb](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes/Unsolved/free_throw_simulation.ipynb)
 
+---
+
 ### 5. Instructor Do: Review Free Throw Simulation (5 min)
+
+**Important Note:** Since we are not setting the random seed in this demo, your simulation results may vary and will produce different plots.
 
 **Files:**
 
@@ -330,9 +334,11 @@ Open the solution and explain the following:
 
   ![free-throws-probability-distribution](Images/free-throws-probability-distribution.png)
 
-* The probability distribution of free throws made will change slightly with every run of the program; however, in this current run, the probability distribution shows that the likelihood of the player making `9-10` shots in a single session is approximately `15%`.
+* The probability distribution of free throws made will change slightly with every run of the program due to the randomness of the sample data generator; however, in this current run, the probability distribution shows that the likelihood of the player making `9-10` shots in a single session is approximately `15%`.
 
   ![free-throws-probability-distribution-focus](Images/free-throws-probability-distribution-focus.png)
+
+Answer any questions before moving on.
 
 ---
 
