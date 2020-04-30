@@ -34,21 +34,21 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome to Class (10 min)
 
-During the previous lecture, students were introduced to the thought process and techniques that go into taking a formalized contract spec and implementing it into solidity code.  Students learned to take a simple yet formalized smart contract specification and implement it to fit the interface of an already established frontend dApp. Students then deployed the configured dApp to a centralized production environment, Github pages.
+In our last class, students were introduced to the thought processes and techniques that go into taking a formalized contract spec and implementing it into Solidity code.  Students learned to take a simple yet formalized smart contract specification and implement it to fit the interface of an already established front-end dApp. Students then deployed the configured dApp to a centralized production environment, GitHub pages.
 
-Today students will once again be leveraging the Github Pages service to host their static dApp bundle.
+Today, students will once again be leveraging the GitHub Pages service to host their static dApp bundle.
 
 Review the following recall questions with the class.
 
-* What are some benefits of using Github pages?
+* What are some benefits of using GitHub pages?
 
-  **Answer:** Quick and Easy Deployments.
+  **Answer:** Quick and easy deployments
 
-  **Answer:** Free Static Web Hosting
+  **Answer:** Free static web hosting
 
   **Answer:** Free-SSL
 
-  **Answer:** Integrated Version Control (Git)
+  **Answer:** Integrated version control (Git)
 
 * Why is having a documented/formalized API for your applications and libraries important?
 
