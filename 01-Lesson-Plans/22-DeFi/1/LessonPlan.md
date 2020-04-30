@@ -395,7 +395,7 @@ Return to the slides and discuss the following review questions with the class:
 
     * **Answer**: Events are a cheap way of logging information on the blockchain.
 
-    * **Answer**: Events alappsApps to update and monitor given values on the blockchain.
+    * **Answer**: Events allow Apps to update and monitor given values on the blockchain.
 
 * What are some other examples of non-fungible tokens that could be created?
 
