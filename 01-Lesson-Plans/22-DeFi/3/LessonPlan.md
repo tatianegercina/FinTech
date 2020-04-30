@@ -70,7 +70,7 @@ Review the following recall questions with the class.
 
 ### 2. Instructor Do: Auction Contracts in Solidity (10 min)
 
-In this activity, the Instructor will demonstrate the various auction contracts available from the Solidity example documentation, and modify it to fit our needs. Students will be introduced to the story of the "Martian Land Foundation" and how we will be "tokenizing" martian land and auctioning it to the public, raising funds for the Martian Land Foundation's terraforming projects, and allowing every-day citizens to claim their spot on humanity's next frontier.
+In this activity, the instructor will demonstrate the various auction contracts available from the Solidity example documentation, and modify it to fit our needs. Students will be introduced to the story of the "Martian Land Foundation" and how we will be "tokenizing" Martian land, auctioning it to the public, raising funds for the Martian Land Foundation's projects, and allowing citizens to claim their spot on humanity's next frontier.
 
 **Files:**
 
@@ -78,15 +78,15 @@ In this activity, the Instructor will demonstrate the various auction contracts 
 
 Begin the activity by introducing the class to the backstory of the `Martian Land Foundation`.
 
-* You are a smart contract engineer on a team of elite developers hired by the martian land foundation to build a system that will crowdfund the development of a new colony on Mars. To accomplish this goal and help humanity thrive on Mars, you have communicated with your project manager, gathered the necessary business requirements, and have decided to leverage an `Open Auction Smart Contract`.
+* You are a smart contract engineer on an elite development team hired by the Martian Land Foundation to build a system that will crowdfund the development of a new colony on Mars. In pursuit of this goal, you have communicated with your project manager, gathered the necessary business requirements, and decided to leverage an `Open Auction Smart Contract`.
 
-Next open the [Solidity open auction contract documentation](https://solidity.readthedocs.io/en/v0.5.3/solidity-by-example.html#simple-open-auction)
+Next, open the [Solidity open auction contract documentation](https://solidity.readthedocs.io/en/v0.5.3/solidity-by-example.html#simple-open-auction)
 
-* To implement our open auction smart contract, let's take a look at how the solidity community recommends we do it based on the current version of solidity.
+* To implement our open auction smart contract, let's look at how the Solidity community recommends we do it based on the current version of Solidity.
 
 Begin by reading the description for the `Simple Open Auction`.
 
-* "The general idea of the following simple auction contract is that everyone can send their bids during a bidding period. The bids already include sending money/ether in order to bind the bidders to their bid. If the highest bid is raised, the previously highest bidder gets her money back. After the end of the bidding period, the contract has to be called manually for the beneficiary to receive their money - contracts cannot activate themselves".
+* "The general idea of the following simple auction contract is that everyone can send their bids during a bidding period. The bids already include sending money/ether in order to bind the bidders to their bid. If the highest bid is raised, the previously highest bidder gets her money back. After the end of the bidding period, the contract has to be called manually for the beneficiary to receive their money—contracts cannot activate themselves."
 
 * We will take this contract and simplify it for our needs.
 
@@ -117,13 +117,13 @@ contract MartianAuction {
 
 * This consists of:
 
-  * An `address payable public beneficiary` will be used to track the beneficiary of the contract.
+  * An `address payable public beneficiary` to track the beneficiary of the contract.
 
-  * An `address public highestBidder` will be used to keep track of the address of the current highestBidder.
+  * An `address public highestBidder` to track the address of the current highest bidder.
 
-  * A `uint public highestBid` will be used to track the current highest bid amount of the highest bidder.
+  * A `uint public highestBid` to track the current highest bid amount of the highest bidder.
 
-Add a mapping of `addressses` to `uints` to track the pending returns of those that were outbid.
+Add a mapping of `addresses` to `uints` to track the pending returns of those that were outbid.
 
 ```solidity
     // Allowed withdrawals of previous bids
