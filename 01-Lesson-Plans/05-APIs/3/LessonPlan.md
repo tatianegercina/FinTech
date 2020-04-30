@@ -181,11 +181,13 @@ Walkthrough the solution and highlight the following:
 
   ![coin-flip-dataframe.png](Images/coin-flip-dataframe.png)
 
-* Looping through the DataFrame containing the coin flip results while leveraging the `value_counts` function allows for counting the occurrences of the different heads-to-tails combinations of every simulation.
+* Next, we count the occurrences of the different heads-to-tails combination of every simulation by looping through the DataFrame that contains the coin flip results.
+
+* We use the Pandas `value_counts` function to calculate the frequency distribution of heads-to-tails for every simulation, returns Series object
 
   ![coin-flip-value-counts](Images/coin-flip-value-counts.png)
 
-* The conditional statements check to make sure that both the `heads` and `tails` keys are present in the series object returned from the `value_counts` function. If one or the other key is not present, the missing key gets a `0` to account for the fact that the event did not occur at all during the simulation (flipped 10 heads or flipped 10 tails).
+* Into the `for-loop`, the conditional statements check to make sure that both the `heads` and `tails` keys are present in the series object returned from the `value_counts` function. If one or the other key is not present, the missing key gets a `0` to account for the fact that the event did not occur at all during the simulation (flipped 10 heads or flipped 10 tails).
 
   ```python
   # Append results of heads and tails to respective lists
@@ -207,19 +209,25 @@ Walkthrough the solution and highlight the following:
       heads.append(value_count['heads'])
   ```
 
-* Creating a DataFrame from the list of heads per simulation and using the `plot` function with the `kind` parameter set to `hist` produces a histogram that showcases the frequency distribution of landed heads.
+* Once the `for-loop` ends, we add two columns to the empty DataFrame we set before the loop, to add the heads and tails lists that we populated during the iterations of the loop.
+
+```python
+# Create columns from heads and tails lists
+freq_dist_df["heads"] = heads
+freq_dist_df["tails"] = tails
+```
+
+* Using the `plot` function with the `kind` parameter set to `hist` produces a histogram that showcases the frequency distribution of landed heads.
 
   ![coin-flip-5-simulations](Images/coin-flip-5-simulations.png)
 
-* Remember that a histogram is not a bar graph; frequency values in histogram bars are determined by the area (length times width) of the bar, not by the height of the bar. Histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single data point.
+* An histogram is not a bar graph; frequency values in histogram bars are determined by the area (length times width) of the bar, not by the height of the bar. Histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single data point.
 
 * Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum data points provided. Sometimes this creates ranges deviating from what is being simulated. Therefore, manually setting the `bins` parameter ensures that the histogram properly represents the edges of each bin, in this case, bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`.
 
-  ![coin-flip-5-simulations-bins-off](Images/coin-flip-5-simulations-bins-off.png)
-
   ![coin-flip-5-simulations-bins](Images/coin-flip-5-simulations-bins.png)
 
-* Setting the `density` parameter to `True` for the histogram plot function creates a frequency density histogram which can be used to showcase the probability distribution of potential outcomes. In this case, it can be interpreted that for an experiment of `5` simulations of `10` coin flips, we can expect approximately `40%` of our simulations to land between 4 and 5 heads and another `40%` of our simulations to land between 5 and 6 heads. In addition, it could be said that `80%` of our simulations could land between 4 and 6 heads.
+* Setting the `density` parameter to `True` for the histogram plot function creates a frequency density histogram which can be used to showcase the probability distribution of potential outcomes. In this case, it can be interpreted that for an experiment of `5` simulations of `10` coin flips, we can expect approximately `20%` of our simulations to land between `4` and `5` heads and another `20%` of our simulations to land between `5` and `6` heads. In addition, it could be said that `40%` of our simulations could land between `4` and `6` heads.
 
   ![coin-flip-density-histogram](Images/coin-flip-density-histogram.png)
 
@@ -234,6 +242,8 @@ Walkthrough the solution and highlight the following:
 * Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve nature to the probability of its potential outcomes. This distribution is one in which probability is maximized in the middle of the distribution and decreases in probability as outcomes deviate left and right from the mean, otherwise known as the *mean* and *standard deviation*. This well-known phenomenon is called the *normal distribution* or continuous probability distribution of a range of potential outcomes.
 
   ![normal-distribution](Images/normal-distribution.png)
+
+Answer any questions before moving on.
 
 ---
 
