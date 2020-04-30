@@ -577,7 +577,7 @@ Discuss the following review questions with the class about the general concepts
 
     * **Answer**: Problems with the security of centralized servers providing a centralized attack vector.
 
-* What are some examples of how IPFS seeks to solve these issues?
+* What are some examples of how IPFS tries to solve these issues?
 
     * **Answer**: Hosting any file that you want to maintain an immutable copy of.
 
