@@ -417,13 +417,13 @@ Begin by giving the students some background on IPFS, such as what it is, and ho
 
 * So what is IPFS?
 
-* IPFS stands for `InterPlanetary Filesystem`, it is both:
+* IPFS stands for `InterPlanetary File System`, it is both:
 
  * a `Protocol`
 
  * a `Network`
 
- * and a `Filesystem`
+ * and a `File System`
 
 * So what exactly does this mean, and how does it all fit together?
 
@@ -499,7 +499,7 @@ After the upload is successful, click the `Pin Explorer` link in the website's t
 
 ![Pin Hash Click](Images/pinata_pin_hash.png)
 
-* If we click the hash link, pinata will even generate a link to the file on IPFS, accessible through Pinata's free IPFS gateway.
+* If we click the hash link, Pinata will even generate a link to the file on IPFS, accessible through Pinata's free IPFS gateway.
 
 Make a note to the class that the Pinata gateway is a point of centralization. However, dApps can leverage the use of multiple IPFS gateways to mitigate this.
 
