@@ -390,7 +390,7 @@ Now discuss the following recall questions:
 
   **Potential Answer:** A buy now at market price feature.
 
-* Are there any other events that you think this contract could benefit from having?
+* Are there any other events that this contract could benefit from having?
 
   **Answer:** An event that is emitted when the auction opens.
 
