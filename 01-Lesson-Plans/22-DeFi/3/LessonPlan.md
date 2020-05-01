@@ -140,7 +140,7 @@ Define a public `bool` named `ended`.
     bool public ended;
 ```
 
-* We need a way to set when an auction's bidding period has closed, and the auction has ended. We are going to track this with a pubic `bool` named ended.
+* We need a way to set when an auction's bidding period has closed and the auction has ended. We are going to track this with a pubic `bool` named ended.
 
 Define the two events that we are going to use to log data for our frontend dApp.
 
