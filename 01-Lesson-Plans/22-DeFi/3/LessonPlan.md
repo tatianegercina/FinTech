@@ -12,7 +12,7 @@ By the end of the class, students will be able to:
 
 * Use the .value function to pass ether from one function to another in Solidity, and explain the difference between `.value`, `.call.value`, `.send`, and `.transfer`.
 
-* Create an ERC721 token that leverages the auction contracts in an internal mapping structure to create "Auctionable non-fungible Martian land tokens.
+* Create an ERC721 token that leverages the auction contracts in an internal mapping structure to create Auctionable non-fungible Martian land tokens.
 
 * Create a landing page that points to the Martian Land ERC721 dApp.
 
