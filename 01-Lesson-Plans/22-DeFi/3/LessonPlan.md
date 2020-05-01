@@ -378,7 +378,7 @@ Review the code from the previous activity with the class.
 
 Now discuss the following recall questions:
 
-* What are some additional features that you believe could add useful functionality to this contract?
+* What are some additional features that could add useful functionality to this contract?
 
   **Potential Answer:** The ability to re-open bids.
 
@@ -386,7 +386,7 @@ Now discuss the following recall questions:
 
   **Potential Answer:** The ability to set a minimum bid price.
 
-  **Potential Answer:** The ability to set a max bid price.
+  **Potential Answer:** The ability to set a maximum bid price.
 
   **Potential Answer:** A buy now at market price feature.
 
