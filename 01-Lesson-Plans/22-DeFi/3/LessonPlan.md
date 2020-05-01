@@ -78,7 +78,7 @@ In this activity, the instructor will demonstrate the various auction contracts 
 
 Begin the activity by introducing the class to the backstory of the `Martian Land Foundation`.
 
-* You are a smart contract engineer on a team of elite developers hired by the Martian Land Foundation to build a system that will crowdfund the development of a new colony on Mars. In pursuit of this goal, you have communicated with your project manager, gathered the necessary business requirements, and decided to leverage an `Open Auction Smart Contract`.
+* You are a smart contract engineer on a team of elite developers hired by the Martian Land Foundation to build a system that will crowdfund the development of a new colony on Mars. To achieve this goal, you have communicated with your project manager, gathered the necessary business requirements, and decided to leverage an `Open Auction Smart Contract`.
 
 Next, open the [Solidity open auction contract documentation](https://solidity.readthedocs.io/en/v0.5.3/solidity-by-example.html#simple-open-auction)
 
