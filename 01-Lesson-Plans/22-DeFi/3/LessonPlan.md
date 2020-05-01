@@ -140,9 +140,9 @@ Define a public `bool` named `ended`.
     bool public ended;
 ```
 
-* We need a way to set when an auction's bidding period has closed and the auction has ended. We are going to track this with a pubic `bool` named ended.
+* We need a way to set when an auction's bidding period has closed and the auction has ended. We are going to track this with a pubic `bool` named `ended`.
 
-Define the two events that we are going to use to log data for our frontend dApp.
+Define the two events that we are going to use to log data for our front-end dApp.
 
 ```solidity
     // Events that will be emitted on changes.
@@ -151,7 +151,7 @@ Define the two events that we are going to use to log data for our frontend dApp
 
 ```
 
-* This contract will serve as a backend store of information for an auction to easily communicate with our frontend, we have to define some events.
+* This contract will serve as a back-end store of information for an auction to easily communicate with our front end, we have to define some events.
 
 * Whenever the highest bid amount increases, we are going to call the `HighestBidIncreased` event and log the `address` of the bidder and the `amount`.
 
@@ -167,7 +167,7 @@ Define the contracts `constructor` and set the public `beneficiary` variable to 
     }
 ```
 
-* Upon deployment of a new instance of the `MartianAuction` contract, a beneficiary or the person hosting the auction must be set. Here we are going to define a constructor that will set the beneficiary.
+* Upon deployment of a new instance of the `MartianAuction` contract, a beneficiary, or the person hosting the auction, must be set. Here we are going to define a constructor that will set the beneficiary.
 
 Add a new `public` function definition named `bid` for users to bid on the auction.
 
@@ -178,11 +178,11 @@ function bid(address payable sender) public payable {
 
 * An auction requires a method of bidding on an item within the auction.
 
-* Here we are defining a `public payable` function named `bid` that accepts an `address` of the designated bidder the bidder can send funds to.
+* Here we are defining a `public payable` function named `bid` that accepts an `address` of the designated bidder that they  can send funds to.
 
 * Bidders will bid on the auction with the value sent, and the value will only be refunded if the auction is not won.
 
-Inside the `bid` function, add the `require` check for if a sent bid is less than the current `highest bid`. If it is less, then we are going to send it back and not execute any further.
+Inside the `bid` function, add the `require` check, for if a sent bid is less than the current `highest bid`. If it is less, then we are going to send it back and not execute any further.
 
 ```solidity
         require(
@@ -199,13 +199,13 @@ Add a second `require` check inside the `bid` function that will check the ended
         require(!ended, "auctionEnd has already been called.");
 ```
 
-* Remember the `ended` variable that we defined at the top of our contract? We are going to add a second check inside our bid function that will check that `bool` value to see if the auction has ended.
+* Remember the `ended` variable that we defined at the top of our contract? We are going to add a second check inside our bid function that will check the `bool` value to see if the auction has ended.
 
 * Remember that we can use the logical operator `!` or `not` to check if something is not the condition.
 
-* In this case, we are checking if our `ended` variable, which is set to `false` by default is `not false` or `true`.
+* In this case, we are checking if our `ended` variable, which is set to `false` by default, is `not false` or `true`.
 
-Add an `if statement` to check if there has been a previous bidder. Inside the body of the `if statement`, add the current `highestBidder` to the `pendingReturns` mapping and map the current value of `highestBid` to that bidder's address.
+Add an `if statement` to check if there has been a previous bidder. Inside the body of the `if statement`, add the current `highestBidder` to the `pendingReturns` mapping, and map the current value of `highestBid` to that bidder's address.
 
 ```solidity
         if (highestBid != 0) {
@@ -220,13 +220,13 @@ Add an `if statement` to check if there has been a previous bidder. Inside the b
 
 * Thus far, our bid function checks if an `incoming bid` is `higher` than the `current bid` and whether the `auction` has `ended`. If the `bid` is `higher` than the `current bid` and the `auction` has `not ended` then the next line of code will continue to execute.
 
-* Now we need to save the previous bidders info so that they can withdraw their funds from the contract since they've been outbid.
+* Now we need to save the previous bidders info so that they can withdraw their funds from the contract, since they've been outbid.
 
-* Before we can do this, we need to check that there has first been a previous bidder. This is done by checking if the `highestBid` is `not equal to 0`.
+* Before we can do this, we first need to check that there has been a previous bidder. This is done by checking if the `highestBid` is `not equal to 0`.
 
 Set the new `highestBidder` to the `address` passed from the `bid` function's `sender` parameter. Also set the new `highestBid` value to the `msg.value` sent to the bid function.
 
-On the last line inside the `bid` function `emit` the `HighestBidIncreased` and pass it `sender` and the current `msg.value`
+On the last line inside the `bid` function, `emit` the `HighestBidIncreased` and pass it `sender` and the current `msg.value`
 
 ```solidity
         highestBidder = sender;
@@ -236,7 +236,7 @@ On the last line inside the `bid` function `emit` the `HighestBidIncreased` and 
 
 * To complete our bid function, we need to set the new `highestBidder` equal to the `sender` parameter that was passed and the `highestBidder` equal to the amount sent to the bid function, e.g., `msg.value`.
 
-* Finally we `emit` the `HighestBidIncreased` event and pass it those two values as well.
+* Finally, we `emit` the `HighestBidIncreased` event, and pass it those two values as well.
 
 Define a `pubic` function named `withdraw` that returns a `bool`.
 
@@ -245,7 +245,7 @@ function withdraw() public returns (bool) {
 }
 ```
 
-* Currently, we have a way to bid and even outbid other bidders. As you may remember, when a bidder is outbid, the amount that they originally bid is stored in `pendingReturns`. Now we need to create a way for them to return that amount to their account.
+* Currently, we have a way to bid, and even outbid, other bidders. As you may remember, when a bidder is outbid, the amount that they originally bid is stored in `pendingReturns`. Now we need to create a way for them to return that amount to their account.
 
 Inside the `withdraw` function, start by defining a new `uint` named `amount` and set the value equal to that of the `mapped` value of `msg.sender` in the `pendingReturns` map.
 
@@ -260,7 +260,7 @@ Next, define a new `if statement` that checks if the amount variable is greater 
 
 * Inside the `withdraw` function, we are first going to check the current amount that the person who is calling the withdraw function, e.g., `msg.sender` has deposited into the contract. If the amount is not greater than 0, then there is nothing to withdraw, and we return `true`.
 
-Inside the `if stament` set the current `msg.sender's` mapped `uint` value from `pendingReturns` to 0.
+Inside the `if statement` set the current `msg.sender's` mapped `uint` value from `pendingReturns` to 0.
 
 ```solidity
             pendingReturns[msg.sender] = 0;
@@ -286,7 +286,7 @@ Inside the nested `if statement` set the current `ms.sender`'s mapped `uint` val
 
 * If the `msg.sender.send` fails and returns `false`, we have to revert our change of zeroing out the current bidders owed balance and return the owed value to the previous amount.
 
-Define a new `public` function named `pendingReturn`, this function will accept a `sender`'s `address` and returns that `sender`'s corresponding `pendingReturn amount` via the `pendingReturns` mapping.
+Define a new `public` function named `pendingReturn`. This function will accept a `sender`'s `address` and returns that `sender`'s corresponding `pendingReturn amount` via the `pendingReturns` mapping.
 
 ```solidity
     function pendingReturn(address sender) public view returns (uint) {
@@ -294,7 +294,7 @@ Define a new `public` function named `pendingReturn`, this function will accept 
     }
 ```
 
-* For ease of use, let's define a new function named `pendingReturn`, this function will accept a `sender`'s `address` and returns that `sender`'s corresponding `pendingReturn amount` via the `pendingReturns` mapping.
+* For ease of use, let's define a new function named `pendingReturn`. This function will accept a `sender`'s `address` and returns that `sender`'s corresponding `pendingReturn amount` via the `pendingReturns` mapping.
 
 Define a new `public` function named `auctionEnd`.
 
@@ -311,7 +311,7 @@ Inside the body of the `auctionEnd` contract:
 
   Define a `require` statement that will check if the auction has ended by negating the `ended` variable with the `!` operator.
 
-  Below that define a second `require` statement that checks to see if `msg.sender` is equal to `beneficiary`.
+  Below that, define a second `require` statement that checks to see if `msg.sender` is equal to `beneficiary`.
 
   Then set the `ended` variable equal to `true`.
 
@@ -332,7 +332,7 @@ Inside the body of the `auctionEnd` contract:
         beneficiary.transfer(highestBid);
 ```
 
-* It is a good guideline to structure functions that interact with other contracts (i.e., they call functions or send Ether) into three phases:
+* It is a good guideline to structure functions that interact with other contracts (i.e., they call functions or send ether) into three phases:
 
   1. Checking conditions
 
@@ -350,11 +350,11 @@ Inside the body of the `auctionEnd` contract:
 
   * A second require is defined to check if the `msg.sender` attempting to end the auction is equal to the `beneficiary` running the auction.
 
-  * Next, we are going to set `ended` equal to true to end the auction if it hasn't already.
+  * Next, we are going to set `ended` equal to true, to end the auction if it hasn't already.
 
   * Finally, we are going to transfer the `highestBid` amount to the `beneficiary` using the `.transfer` address method.
 
-Congratulations, we have just built a `MartianAuction` contract; you may have very well just secured mankind's future.
+Congratulations! We have just built a `MartianAuction` contract. You may have just secured mankind's future!
 
 ### 3. Student Do: Writing an Auction Contract (15 min)
 
