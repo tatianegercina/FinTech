@@ -54,9 +54,9 @@ Review the following recall questions with the class.
 
   **Answer:** It clarifies what the application can do and how it works on a granular level.
 
-  **Answer:** Helps set forth standards from and for your given implementation. (like `EIPS` and `ERCS`)
+  **Answer:** It helps establish standards from for your given implementation. (like `EIPS` and `ERCS`)
 
-  **Answer:** Facilitates code hand-offs between team members and increases collaboration.
+  **Answer:** It facilitates code hand-offs between team members and increases collaboration.
 
 * Having written many smart contracts, and now deployed a dApp, what are some contracts that you believe could be leveraged within a dApp?
 
