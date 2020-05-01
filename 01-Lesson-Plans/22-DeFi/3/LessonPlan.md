@@ -60,7 +60,7 @@ Review the following recall questions with the class.
 
 * Having written many smart contracts, and now deployed a dApp, what are some contracts that you believe could be leveraged within a dApp?
 
-  **Potential Answer:** A contract that tracks the immutable locations of historical landmarks.
+  **Potential Answer:** A contract that tracks the immutable locations of historic landmarks.
 
   **Potential Answer:** A contract that transfers tokens between two users within a decentralized product swapping website.
 
