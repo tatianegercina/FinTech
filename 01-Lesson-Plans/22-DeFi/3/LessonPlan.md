@@ -64,7 +64,7 @@ Review the following recall questions with the class.
 
   **Potential Answer:** A contract that transfers tokens between two users within a decentralized product swapping website.
 
-  **Potential Answer:** Maintain an immutable achievement list of users' achievements within an online course dApp.
+  **Potential Answer:** A contract that maintains an immutable achievement list of users' achievements within an online course dApp.
 
   **Potential Answer:** Any other dApp or smart contract that you can think of—the Ethereum blockchain is a globally distributed data store and supports Turing-complete programming languages.
 
