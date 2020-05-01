@@ -572,9 +572,9 @@ Finally, we need to create our last function, `bid`:
 
 * We must be careful about this syntax, as it only forwards `2300` gas. Since that's enough to complete our function, we're okay. Otherwise, we'd have to add `.call` right before `.value()`, but that syntax doesn't protect against reentrancy attacks, so we'd need to be very careful about modifying the state of our contract in that case.
 
-Make sure your contract compiles and matches the [solution](Activities/05-Ins_Martian_Market/Solved/MartianMarket.sol). The next activity includes a frontend that expects the same ABI.
+Make sure your contract compiles and matches the [solution](Activities/05-Ins_Martian_Market/Solved/MartianMarket.sol). The next activity includes a front end that expects the same ABI.
 
-Voila! Now it's time for the students to build out the same system.
+Voila! Now it's time for students to build out the same system.
 
 ### 6. Student Do: Building the MartianMarket (20 min)
 
@@ -606,11 +606,11 @@ Open the solution and review the `MartianMarket` code. Make sure to explain the 
 
   * We must be careful about this syntax, as it only forwards `2300` gas. Since that's enough to complete our function, we're okay. Otherwise, we'd have to add `.call` right before `.value()`. That forwards the remaining gas, but that syntax doesn't protect against reentrancy attacks, so we'd need to be very careful about modifying the state of our contract in that case.
 
-Ask the students:
+Ask students:
 
 * If we needed to drop down to the lower level `.call.value` syntax, how could we prevent a reentrancy attack?
 
-  **Answer:** We'd need to set any state that limits an Ether withdrawal before calling the external function. Like in the `MartianAuction` contract, we set the `pendingReturns` for the address that is calling the `withdraw` function *before* calling `.send`. If we're able to get our function to `re-enter`, the check would know they already withdrew and stop the function from sending more Ether.
+  **Answer:** We'd need to set any state that limits an ether withdrawal before calling the external function. Like in the `MartianAuction` contract, we set the `pendingReturns` for the address that is calling the `withdraw` function *before* calling `.send`. If we're able to get our function to `re-enter`, the check would know they already withdrew and stop the function from sending more ether.
 
 * What are some ways we can improve the logic of the `MartianMarket`? Can we make it more decentralized? How?
 
@@ -618,13 +618,13 @@ Ask the students:
 
   **Answer:** We could use a voting system to decentralize the process of land registration.
 
-  **Answer:** We could re-introduce the time limit factor to the auction and tweak it to our preferences.
+  **Answer:** We could re-introduce the time limit factor to the auction and tweak it based on our preferences.
 
 Ask for any remaining questions before moving on.
 
-### 8. Students Do: Deploying the MartianMarket (20 min)
+### 8. Student Do: Deploying the MartianMarket (20 min)
 
-In this challenge activity, students will create a landing page and deploy the MartianMarket dApp to GitHub Pages. The frontend will be provided in a similar fashion to `CryptoRight`. Students will leverage their skills to put together their dApp, create a detailed landing page, and deploy to GitHub Pages.
+In this challenge activity, students will create a landing page and deploy the MartianMarket dApp to GitHub Pages. The front end will be provided in a similar fashion to `CryptoRight`. Students will leverage their skills to put together their dApp, create a detailed landing page, and deploy to GitHub Pages.
 
 Send the instructions and have TAs circulate the class.
 
@@ -658,7 +658,7 @@ Ensure the following:
 
 ### 9. Instructor Do: dApp Review (10 min)
 
-Walkthrough the following recall questions with the class to review the various technologies/levels of the stack and their purpose:
+Review the various technologies/levels of the stack, and their purpose, with students:
 
 * What is the purpose of having a GitHub Pages website for our dApp?
 
