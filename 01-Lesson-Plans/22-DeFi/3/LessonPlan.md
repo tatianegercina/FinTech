@@ -408,13 +408,13 @@ In this activity, you will be demonstrating combining the ERC721 standard with t
 
 First, explain to the students:
 
-* We are going to be creating an ERC721 token with the ticker `MARS`. Only one entity will be allowed to create the tokens, and that entity in this example is called the "Martian Land Foundation." Assume this foundation is a global initiative from the governments of the world and is responsible for the terraforming and fundraising of Martian Land Development.
+* We are going to create an ERC721 token with the ticker `MARS`. Only one entity will be allowed to create the tokens; for this example that will be the "Martian Land Foundation." Assume this foundation is a global initiative from the governments of the world and is responsible for the terraforming and fundraising of Martian Land Development.
 
-* For every token that the Martian Land Foundation mints, an `Auction` contract will be created. This auction contract will become the new owner of the token and will allow the public to bid on that piece of land. In the spirit of humanity, some landmarks will be marked as "sovereign" and will become permanently owner-less.
+* For every token that the Martian Land Foundation mints, an `Auction` contract will be created. This auction contract will become the new owner of the token, and will allow the public to bid on that piece of land. In the spirit of humanity, some landmarks will be marked as "sovereign" and will not have owners.
 
 * The Martian Land Foundation can end the auctions at any time.
 
-Open up [Remix](https://remix.ethereum.org) and create a new file called `MartianMarket.sol` and populate it with the contents of the [starter code](Activities/05-Ins_Martian_Market/Unsolved/MartianMarket.sol).
+Open up [Remix](https://remix.ethereum.org), create a new file called `MartianMarket.sol` and populate it with the contents of the [starter code](Activities/05-Ins_Martian_Market/Unsolved/MartianMarket.sol).
 
 The beginning of the contract should look something like:
 
@@ -433,7 +433,7 @@ contract MartianMarket is ERC721Full, Ownable {
 
 * In this contract, we are simply defining an ERC721 token contract called `MartianMarket` with the ticker of `MARS`. Each `MARS` token will represent a plot of land/landmark on Mars.
 
-* We are importing the `MartianAuction` code as well since we will want to create a new auction for every new token.
+* We are importing the `MartianAuction` code as well, since we will want to create a new auction for every new token.
 
 * We are setting the ERC721 contract as `Ownable` using the OpenZeppelin library, as the Martian Land Foundation will be solely responsible for the management of the tokens, and we'll want to restrict some of our functions using the `onlyOwner` modifier that OpenZeppelin provides.
 
@@ -461,9 +461,9 @@ Now, create a new mapping that keeps track of all of the auction contracts relat
     mapping(uint => MartianAuction) public auctions;
 ```
 
-* We are going to be creating a new `MartianAuction` contract for every `token_id` that we register into the system.
+* We are going to create a new `MartianAuction` contract for every `token_id` that we register into the system.
 
-* During the minting process, we will create a `Martian Auction` contract in this mapping at the corresponding `token_id`. The `foundation_address` will be the initial owner of the token, but we will add functionality to transfer the ownership once the auction is ended.
+* During the minting process, we will create a `MartianAuction` contract in this mapping at the corresponding `token_id`. The `foundation_address` will be the initial owner of the token, but we will add functionality to transfer the ownership once the auction is ended.
 
 Add a modifier that will check if a specific token exists:
 
