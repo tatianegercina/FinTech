@@ -488,7 +488,7 @@ Add a function to create a new `MartianAuction` contract given a `token_id`:
 
 * This function is short and sweet, as it creates a new `MartianAuction` contract in the slot of the `auctions` mapping that belongs to the specified `token_id`. By passing in the `foundation_address`, we set the foundation as the beneficiary of the auction. In other words, the funds raised from this auction will go to the `foundation_address`.
 
-* We can now reference this auction contract later as long as we know the `token_id` it relates to.
+* We can now reference this auction contract later, as long as we know the `token_id` it relates to.
 
 Now it's time to fill in the `registerLand` function:
 
@@ -537,7 +537,7 @@ Now we need to add a function to tell whether or not an auction has ended:
     }
 ```
 
-* This function simply fetches the `MartianAuction` relating to a `token_id`, then returns the value of `auction.ended()`. This allows users and a frontend to quickly tell whether an auction is running for a specific land token.
+* This function simply fetches the `MartianAuction` relating to a `token_id`, then returns the value of `auction.ended()`. This allows users and a front end to quickly tell whether an auction is running for a specific land token.
 
 Repeat the process with the `highestBid` and `pendingReturn` functions:
 
@@ -564,11 +564,11 @@ Finally, we need to create our last function, `bid`:
     }
 ```
 
-* While this function starts out the same as the others, it is doing something a bit special. The first thing to notice is that it is set to `payable`. Meaning, we are going to expose this function to allow users to bid on specific `MARS` land tokens by sending Ether to this function, and forwarding it to the `MartianAuction`'s `bid` function.
+* While this function starts out the same as the others, it is doing something a bit special. The first thing to notice is that it is set to `payable`. Meaning, we are going to expose this function to allow users to bid on specific `MARS` land tokens by sending ether to this function, and forwarding it to the `MartianAuction`'s `bid` function.
 
-* In order to forward the Ether sent from one function to another, we have to use a special `.value()` syntax. All we need to do is add `.value()` *before* the parameters of any function.
+* In order to forward the ether sent from one function to another, we have to use a special `.value()` syntax. All we need to do is add `.value()` *before* the parameters of any function.
 
-* For example, `auction.bid(msg.sender)` is the normal syntax. However, this only passes in the `sender` address parameter that the `MartianAuction` expects. The actual Ether attached to the transaction would be left behind. By adding `.value(msg.value)` right before the normal parenthesis that includes our parameters, we are sending the entire `msg.value` to the `auction.bid` function!
+* For example, `auction.bid(msg.sender)` is the normal syntax. However, this only passes in the `sender` address parameter that the `MartianAuction` expects. The actual ether attached to the transaction would be left behind. By adding `.value(msg.value)` right before the normal parenthesis that includes our parameters, we are sending the entire `msg.value` to the `auction.bid` function!
 
 * We must be careful about this syntax, as it only forwards `2300` gas. Since that's enough to complete our function, we're okay. Otherwise, we'd have to add `.call` right before `.value()`, but that syntax doesn't protect against reentrancy attacks, so we'd need to be very careful about modifying the state of our contract in that case.
 
