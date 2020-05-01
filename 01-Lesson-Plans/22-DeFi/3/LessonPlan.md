@@ -408,9 +408,9 @@ In this activity, you will be demonstrating combining the ERC721 standard with t
 
 First, explain to the students:
 
-* We are going to create an ERC721 token with the ticker `MARS`. Only one entity will be allowed to create the tokens; for this example that will be the "Martian Land Foundation." Assume this foundation is a global initiative from the governments of the world and is responsible for the terraforming and fundraising of Martian Land Development.
+* We are going to create an ERC721 token with the ticker `MARS`. Only one entity will be allowed to create the tokens; for this example that will be the "Martian Land Foundation." Assume this foundation is a global initiative from the governments of the world and is responsible for the terraforming and fundraising of Martian land development.
 
-* For every token that the Martian Land Foundation mints, an `Auction` contract will be created. This auction contract will become the new owner of the token, and will allow the public to bid on that piece of land. In the spirit of humanity, some landmarks will be marked as "sovereign" and will not have owners.
+* For every token that the Martian Land Foundation mints, an `Auction` contract will be created. This auction contract will become the new owner of the token, and will allow the public to bid on that piece of land. In the spirit of humanity, some landmarks will be marked as "sovereign," and won't have owners.
 
 * The Martian Land Foundation can end the auctions at any time.
 
