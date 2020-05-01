@@ -672,9 +672,9 @@ Review the various technologies/levels of the stack, and their purpose, with stu
 
   **Answer:** They allow you to keep a log of information on-chain.
 
-  **Answer:** Events are MUCH cheaper than contract storage.
+  **Answer:** They are MUCH cheaper than contract storage.
 
-  **Answer:** Events are Solidity's built-in way to interact with something external, such as a user interface.
+  **Answer:** They are Solidity's built-in way to interact with something external, such as a user interface.
 
 * What are some potential issues that IPFS seeks to solve?
 
