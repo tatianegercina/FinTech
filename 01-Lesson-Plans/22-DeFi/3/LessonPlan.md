@@ -46,7 +46,7 @@ Review the following recall questions with the class.
 
   **Answer:** Free static web hosting
 
-  **Answer:** Free-SSL
+  **Answer:** Free SSL
 
   **Answer:** Integrated version control (Git)
 
