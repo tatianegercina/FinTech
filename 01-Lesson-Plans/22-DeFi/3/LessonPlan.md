@@ -52,7 +52,7 @@ Review the following recall questions with the class.
 
 * Why is having a documented/formalized API for your applications and libraries important?
 
-  **Answer:** Improves clarity of what the application can do and how it works on a granular level.
+  **Answer:** It clarifies what the application can do and how it works on a granular level.
 
   **Answer:** Helps set forth standards from and for your given implementation. (like `EIPS` and `ERCS`)
 
