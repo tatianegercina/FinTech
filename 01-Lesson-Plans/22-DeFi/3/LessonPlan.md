@@ -211,7 +211,7 @@ Add an `if statement` to check if there has been a previous bidder. Inside the b
         if (highestBid != 0) {
             // Sending back the money by simply using
             // highestBidder.send(highestBid) is a security risk
-            // because it could execute an un-trusted contract.
+            // because it could execute an untrustworthy contract.
             // It is always safer to let the recipients
             // withdraw their money themselves.
             pendingReturns[highestBidder] += highestBid;
