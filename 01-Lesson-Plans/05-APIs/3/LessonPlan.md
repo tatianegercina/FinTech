@@ -533,7 +533,7 @@ Answer any questions before moving on.
 
 ### 10. Students Do: Financial Forecasting Part 1 (15 min)
 
-In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical `TSLA` daily returns.
+In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical  daily returns.
 
 **Instructions:**
 
@@ -558,21 +558,25 @@ Open the solution and explain the following:
 
 * The `get_historical_data` function in conjunction with the `datetime` library pulls stock data from the `Alpaca` API using a dynamic datetime range. Specifically, `start_date` and `end_date` variables are not hard-coded.
 
-  ![datetime-range](Images/alpaca-data-tsla.png)
+  ![datetime-range](Images/alpaca-data-bb.png)
 
-* Applying a Monte Carlo simulation to forecasting the future daily closing prices of `TSLA` stock involves multiplying the closing price of each preceding trading day by a randomly generated daily return approximated by a normal probability distribution given the historical average and standard deviation of `TSLA` daily returns.
+* Applying a Monte Carlo simulation to forecasting the future daily closing prices of `BB` stock involves multiplying the closing price of each preceding trading day by a randomly generated daily return approximated by a normal probability distribution given the historical average and standard deviation of `BB` daily returns.
 
-* In other words, each `TSLA` closing price of the preceding trading day is multiplied by a randomly chosen daily return where values closer to the expected daily return have a higher probability of occurring while values farther away from the expected daily return have a lesser probability of occurring.
+* In other words, each `BB` closing price of the preceding trading day is multiplied by a randomly chosen daily return where values closer to the expected daily return have a higher probability of occurring while values farther away from the expected daily return have a lesser probability of occurring.
 
-  ![tsla-normal-distribution](Images/tsla-normal-distribution.PNG)
+  ![bb-normal-distribution](Images/bb-normal-distribution.PNG)
 
-* Simulations for the next `252` trading shows that `TSLA` stock is forecast to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years.
+* Simulations for the next `252` trading shows that `BB` stock is forecast to continue to decline.
 
-  ![tsla-simulated-price-plot](Images/tsla-simulated-price-plot.PNG)
+  ![bb-simulated-price-plot](Images/bb-simulated-price-plot.PNG)
 
-  ![tsla-cumulative-pnl](Images/tsla-cumulative-pnl.PNG)
+* With a `$10,000` investment facing brutal negative cumulative returns if invested in `BB` over the next 3 years.
 
-* It should be stated that although the forecast for the next `3` years of `TSLA` stock prices show considerable declines, it does not mean that it is guaranteed. A forecast/prediction is only as good as the foundation of information from which it was made, and even then, by the nature of random events -- *anything* can happen.
+  ![bb-cumulative-pnl](Images/bb-cumulative-pnl.PNG)
+
+* It should be stated that although the forecast for the next `3` years of `BB` stock prices show considerable declines, it does not mean that it is guaranteed. A forecast/prediction is only as good as the foundation of information from which it was made, and even then, by the nature of random events -- *anything* can happen.
+
+Answer any questions before moving on.
 
 ---
 
