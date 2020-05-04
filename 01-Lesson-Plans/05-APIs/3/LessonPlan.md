@@ -400,7 +400,11 @@ In this activity, students execute a Monte Carlo simulation to analyze the proba
 
 * [archery_target_hits.ipynb](Activities/04-Stu_Confidence_Intervals/Unsolved/archery_target_hits.ipynb)
 
+---
+
 ### 8. Instructor Do: Review Archery Target Hits (5 min)
+
+**Important Note:** Since we are not setting the random seed in this demo, your simulation results may vary and will produce different plots.
 
 **Files:**
 
@@ -429,6 +433,8 @@ Open the solution and explain the following:
 * The `95%` confidence interval suggests that there is about a `95%` chance of the archer hitting the target `0-3` times out of `5` shots. Marking the confidence interval over the probability distribution histogram shows that the area of the bars within the lower and upper bounds approximate to about `95%`.
 
   ![archery-confidence-interval](Images/archery-confidence-interval.png)
+
+Answer any questions before moving on.
 
 ---
 
