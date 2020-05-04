@@ -99,6 +99,8 @@ Together with the class, walk through the following steps:
 
 Then, slack out the [schema](Activities/01-Evr_Import_Data/Solved/schema.sql) and [seed](Activities/01-Evr_Import_Data/Solved/seed.sql) files to the class. Mention that while we could import each CSV one by one, it will be quicker to create and import all of our data at once. Have students copy and paste the contents of the files in their query editors and execute the code.
 
+**Note:** Use the CTRL+C and CTRL+A hotkeys to quickly copy and paste all the contents of the files.
+
 The TAs should walk around the classroom to assist students with the database upload.
 
 ### 3. Instructor Do: Aggregate Functions, Aliases, and Grouping (10 min)
