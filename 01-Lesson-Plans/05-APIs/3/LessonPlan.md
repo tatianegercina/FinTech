@@ -543,6 +543,8 @@ In this activity, students execute a Monte Carlo simulation to forecast stock pr
 
 * [financial_forecasting_part_1.ipynb](Activities/06-Stu_Financial_Forecasting_Pt_I/Unsolved/financial_forecasting_part_1.ipynb)
 
+---
+
 ### 11. Instructor Do: Review Financial Forecasting Part 1 (5 min)
 
 **Files:**
