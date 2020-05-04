@@ -1,5 +1,3 @@
-placeholder
-
 ## 7.2 Lesson Plan: Advanced SQL Queries
 
 ### Overview
