@@ -66,7 +66,7 @@ In this activity, instructors will help students prepare for today's lesson by i
 
 Explain to the class that today's activities will require a few tables to be imported into a database.
 
-For this class, students will use create and populate tables from data provided by the [sakila database](https://dev.mysql.com/doc/sakila/en/), which is a sample database used to learn MySQL. Data files are provided within the `Resources` folder. An example for importing the data is provided below.
+For this class, students will create and populate tables from data provided by the [sakila database](https://dev.mysql.com/doc/sakila/en/), which is a sample database used to learn MySQL. Data files are provided within the `Resources` folder. An example for importing the data is provided below.
 
 Together with the class, walk through the following steps:
 
@@ -74,7 +74,7 @@ Together with the class, walk through the following steps:
 
 * Open the query tool for the newly created `rental_db`.
 
-* Create the `actor` table by running the following code:
+* Create the "actor" table by running the following code:
 
   ```sql
   CREATE TABLE actor (
@@ -97,9 +97,7 @@ Together with the class, walk through the following steps:
 
   **Optional:** Right-click the "actor" table and view the first 100 rows to check that the data was imported correctly.
 
-Then slack out the [seed SQL](Activities/01-Evr_Import_Data/Solved/seed.sql) file to the class. Mention that while we could import 
-
-Have the class repeat this process for the remaining tables using the CSV files provided in the Resources folder.
+Then, slack out the [schema](Activities/01-Evr_Import_Data/Solved/schema.sql) and [seed](Activities/01-Evr_Import_Data/Solved/seed.sql) files to the class. Mention that while we could import each CSV one by one, it will be quicker to create and import all of our data at once.
 
 The TAs should walk around the classroom to assist students with the database upload.
 
