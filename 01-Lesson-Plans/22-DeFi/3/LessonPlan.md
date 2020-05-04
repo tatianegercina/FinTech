@@ -342,11 +342,11 @@ Inside the body of the `auctionEnd` contract:
 
   * If these phases are mixed up, the other contract could callback into the current contract and modify the state or cause effects (ether payout) to be performed multiple times.
 
-  * If functions called internally include interaction with external contracts, they also have to be considered interaction with external contracts.
+  * If functions called internally include interactions with external contracts, they also have to be considered interaction with external contracts.
 
 * Inside the body of the `auctionEnd` contract:
 
-  * We are going to first check for the condition of whether or not the auction has ended by negating the `ended` variable with the `!` operator.
+  * First, we will check for the condition of whether or not the auction has ended by negating the `ended` variable with the `!` operator.
 
   * A second require is defined to check if the `msg.sender` attempting to end the auction is equal to the `beneficiary` running the auction.
 
