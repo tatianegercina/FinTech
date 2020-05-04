@@ -683,6 +683,12 @@ Tell students that the SQLAlchemy library allows interaction between PostgreSQL 
 conda install -c anaconda sqlalchemy
 ```
 
+In addition, in order to connect to a PostgreSQL database students will need the correct database drivers. Therefore, students should also install the following library in their virtual environments:
+
+```bash
+conda install -c anaconda psycopg2
+```
+
 Make sure all students have installed SQLAlchemy. Then open the unsolved Jupyter Notebook file and live code the solution while highlighting the following:
 
 * SQLAlchemy offers several functionalities to interact with databases from Python.
