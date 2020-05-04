@@ -446,15 +446,19 @@ This activity exemplifies the use case where a Monte Carlo simulation can be app
 
 * [stock_price_simulation.ipynb](Activities/05-Ins_Simulation_of_Stock_Price_Trajectory/Solved/stock_price_simulation.ipynb)
 
-Walkthrough the solution and highlight the following:
+Open the lesson slides, move to the "Simulation of Stock Price Trajectory" section and highlight the following:
 
 * Monte Carlo simulations can be executed not just on random processes with *discrete probabilities* (ex. `70%` to make a free throw and `30%` to miss a free throw), but also on *continuous probabilities* such as normal probability distributions.
 
-* Normal probability distributions showcase the various probabilities of returning a value based on the number of standard deviations it is from the mean (how far the value may lie plus or minus from the average expected value); values far away from the mean are less common while values near the mean are more common. Monte Carlo simulation uses this characteristic to simulate a random process' potential outcomes with respect to the variability around its mean.
+* Normal probability distributions showcase the various probabilities of returning a value based on the number of standard deviations it is from the mean (how far the value may lie plus or minus from the average expected value); values far away from the mean are less common while values near the mean are more common.
 
   ![example-normal-distribution](Images/example-normal-distribution.png)
 
-* The daily closing stock price data will be pulled using the `Alpaca-trade-api` SDK that connects to the `Alpaca` API. Therefore, make sure to import the necessary libraries and dependencies before proceeding.
+* Monte Carlo simulation uses this characteristic from the normal distribution to simulate a random process' potential outcomes with respect to the variability around its mean. In this sense, Monte Carlo simulations can be applied to a historical dataset of daily closing stock prices in order to predict probable stock price trajectories.
+
+Open the solved version of the Jupyter notebook, walktrough the code and highlight the following:
+
+* In this demo, we will use the Alpaca API SDK to pull the daily closing stock price data from Apple Inc. (`AAPL`). Therefore, we import the necessary libraries and dependencies before proceeding to fetch the data and create some plots.
 
   ```python
   # Import libraries and dependencies
@@ -462,8 +466,8 @@ Walkthrough the solution and highlight the following:
   import pandas as pd
   import os
   from datetime import datetime, timedelta
-  import matplotlib.pyplot as plt
   import alpaca_trade_api as tradeapi
+
   %matplotlib inline
   ```
 
@@ -478,27 +482,29 @@ Walkthrough the solution and highlight the following:
   ![alpaca-list-assets-df](Images/alpaca-list-assets-df.png)
 
 * The `get_barset()` function from the `Alpaca` SDK takes in the following parameters
-  *  `ticker`,
-  *  `timeframe`,
-  *  `limit`,
-  *  `start_date`,
-  *  `end_date`,
-  *  `after`,
-  *  `until`
+  * `ticker`,
 
-* And returns an object containing a DataFrame of `AAPL` daily stock prices. The `start_date` and `end_date` variables, in this case, are set to `365` days from the `current date` and the `current date`, respectively.
+  * `timeframe`,
+
+  * `limit`,
+
+  * `start_date`,
+
+  * `end_date`,
+
+  * `after`,
+
+  * `until`
+
+* The `get_barset()` returns an object containing a DataFrame of `AAPL` daily stock prices. The `start_date` and `end_date` variables, in this case, are set to `365` days from the `current date` and the `current date`, respectively. To correctly fetch the stock data, the Alpaca SDK works with dates in ISO format, so we transform the `start_date` and the `end_date` using the `Timestamp` and `isoformat` functions from Pandas.
 
   ![alpaca-get-barset](Images/alpaca-get-barset.png)
 
-* The DataFrame object from the Alpaca SDK contains an outer level (`level 0`) that is not needed, drop this level using the `df.droplevel` function.
-
-*  Simulating stock price trajectory involves analyzing the closing prices of a stock. Therefore, it's best to drop the extraneous columns for the `AAPL` price data received from the `Alpaca` API.
+* The DataFrame object from the Alpaca SDK contains an outer level (`level 0`) that is not needed, drop this level using the `df.droplevel` function. Simulating stock price trajectory involves analyzing the closing prices of a stock. Therefore, it's best to drop the extraneous columns for the `AAPL` price data received from the Alpaca API.
 
   ![dataframe-drop-columns](Images/dataframe-drop-columns.png)
 
 * To simulate `AAPL` stock prices for the next `252` trading days, the simulation must be framed in the context of a stock's *growth*. Therefore, the `pct_change` function is used to calculate the last year of daily returns for `AAPL`, and the `mean` and `std` functions are used to calculate the average daily return and the volatility of daily returns.
-
-  ![aapl-daily-returns](Images/aapl-daily-returns.png)
 
   ![aapl-daily-return-mean-and-std](Images/aapl-daily-return-mean-and-std.png)
 
@@ -519,9 +525,9 @@ Walkthrough the solution and highlight the following:
 
 * Calculating the daily returns and cumulative returns of `AAPL` simulated prices allow for plotting the profits and losses of a potential investment in `AAPL` over the next trading year.
 
-  ![aapl-cumulative-pnl.png](Images/aapl-cumulative-pnl.png)
-
   ![aapl-cumulative-pnl-plot.png](Images/aapl-cumulative-pnl-plot.png)
+
+Answer any questions before moving on.
 
 ---
 
