@@ -1,6 +1,6 @@
 # Financial Forecasting Part I
 
-In this three-part activity, Harold's manager wants Harold to take a look at one year's worth of BlackBerry Ltd. (`BB`) stock prices and plot a potential stock trajectory for where `BB` stock prices could go in the next `3` years. In addition, he would like to know how a `$10,000` investment would perform given the simulated results.
+In this three-part activity, Harold's manager wants Harold to take a look at one year's worth of BlackBerry Ltd. (`BB`) stock prices and plot a potential stock trajectory for where `BB` stock prices could go in the next `3` years. Also, he would like to know how a `$10,000` investment would perform given the simulated results.
 
 Help Harold by creating a Monte Carlo simulation that simulates the next `252 * 3` trading days using one year's worth of `BB` stock data to perform a normally distributed random selection based on the sample mean and standard deviation of historical `BB` daily returns. Plot the simulated results of `BB` stock prices over the next `3` years as well as the corresponding cumulative returns.
 
@@ -40,7 +40,7 @@ You'll complete this in the next student activity! Get ready!
 
 ## Part 3 Instructions: Portfolio Forecasting
 
-The culminating activity—by this point, you'll be stock price fortune tellers!
+The culminating activity—by this point, you'll be stock price, fortune tellers!
 
 ## Hints
 
