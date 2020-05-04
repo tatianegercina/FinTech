@@ -358,7 +358,7 @@ Congratulations! We have just built a `MartianAuction` contract. You may have ju
 
 ### 3. Student Do: Writing an Auction Contract (15 min)
 
-In this activity, students will take a SimpleAuction contract from the Solidity documentation, modify it for their own needs (remove the time-related features), and prepare it for use within another contract.
+In this activity, students will take a SimpleAuction contract from the Solidity documentation, modify it for their own needs (removing the time-related features), and prepare it for use within another contract.
 
 **Instructions:**
 
@@ -408,7 +408,7 @@ In this activity, you will be demonstrating combining the ERC721 standard with t
 
 First, explain to the students:
 
-* We are going to create an ERC721 token with the ticker `MARS`. Only one entity will be allowed to create the tokens; for this example that will be the "Martian Land Foundation." Assume this foundation is a global initiative from the governments of the world and is responsible for the terraforming and fundraising of Martian land development.
+* We are going to create an ERC721 token with the ticker `MARS`. Only one entity will be allowed to create the tokens. For this example, we'll use the Martian Land Foundation. A global initiative from the governments of the world, it is responsible for the terraforming and fundraising of Martian land development.
 
 * For every token that the Martian Land Foundation mints, an `Auction` contract will be created. This auction contract will become the new owner of the token, and will allow the public to bid on that piece of land. In the spirit of humanity, some landmarks will be marked as "sovereign," and won't have owners.
 
