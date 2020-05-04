@@ -220,7 +220,7 @@ Add an `if statement` to check if there has been a previous bidder. Inside the b
 
 * Thus far, our bid function checks if an `incoming bid` is `higher` than the `current bid` and whether the `auction` has `ended`. If the `bid` is `higher` than the `current bid` and the `auction` has `not ended` then the next line of code will continue to execute.
 
-* Now we need to save the previous bidders info so that they can withdraw their funds from the contract, since they've been outbid.
+* Now we need to save the previous bidders info so they can withdraw their funds from the contract, since they've been outbid.
 
 * Before we can do this, we first need to check that there has been a previous bidder. This is done by checking if the `highestBid` is `not equal to 0`.
 
@@ -238,7 +238,7 @@ On the last line inside the `bid` function, `emit` the `HighestBidIncreased` and
 
 * Finally, we `emit` the `HighestBidIncreased` event, and pass it those two values as well.
 
-Define a `pubic` function named `withdraw` that returns a `bool`.
+Define a `public` function named `withdraw` that returns a `bool`.
 
 ```solidity
 function withdraw() public returns (bool) {
