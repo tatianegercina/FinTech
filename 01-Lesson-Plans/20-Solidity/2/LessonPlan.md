@@ -281,7 +281,7 @@ contract LatestTrade {
 
  * Now that we have defined our variables for our contract's values, we can create a function to set them.
 
- * Remember, we have to specify the data type of the parameters as well. We can't get away with ambiguity here, like we can in Python!
+ * Remember, we have to specify the data type of the parameters as well. We can't get away with ambiguity here like we can in Python!
 
  * Pay close attention to the keyword `memory` in front of the `newCoin` variable.
 
