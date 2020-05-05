@@ -601,7 +601,7 @@ Discuss the following review questions with the class about the general concepts
 
 Now that students understand that IPFS is a content-routed system that works against hashes instead of IP addresses, it's time to put the systems together to make an Accident Report System.
 
-In this activity, you will demonstrate uploading a sample "accident report" in JSON format to IPFS via the Pinata API, then permanently record the report's IPFS URI to the blockchain via the `reportAccident` function on the `CryptoFax` contract, using a transaction generated with Web3.py.
+In this activity, you will demonstrate how to upload a sample "accident report" in JSON format to IPFS via the Pinata API, and then permanently record the report's IPFS URI to the blockchain via the `reportAccident` function on the `CryptoFax` contract, using a transaction generated with Web3.py.
 
 **Files:**
 
