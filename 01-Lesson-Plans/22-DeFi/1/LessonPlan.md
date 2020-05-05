@@ -197,7 +197,7 @@ Define a function named `registerArtwork`; it accepts the following parameters:
 
 * The token URI can be a link to some metadata anywhere on the internet. This can be a potential point of centralization, but we will solve that later by using a tool called IPFS.
 
-* In our use case, we will create a JSON object that contains a `name`, `description`, and `image` field. Then we'll convert it to a special immutable URI with IPFS, which ensures that you will always be getting that same piece of data. Essentially, we'll link to some JSON metadata in a decentralized fashion, but for now, we just need to be able to store a string.
+* In our use case, we will create a JSON object that contains a `name`, `description`, and `image` field. Then we'll convert it to a special immutable URI with IPFS, which ensures that you will always get that same piece of data. Essentially, we'll link to some JSON metadata in a decentralized fashion, but for now, we just need to be able to store a string.
 
 Add the following lines of code inside the `registerArtwork` function for generating the token's id.
 
