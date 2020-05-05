@@ -2,7 +2,7 @@
 
 ---
 
-### Please take the End-Course Instructional Staff Survey if You Haven't Yet
+### Take the End-Course Instructional Staff Survey 
 
 Trilogy is a company that values transparency and data-driven change. As we grow, we know there will be areas that need improvement, and in order to do that effectively, we need your input. Your insights truly matter, since you are an integral member of the Trilogy team. In addition to the individual feedback at the end of each lesson plan, we would appreciate your feedback via the following link, if you have not already taken the end-course survey:
 
