@@ -34,7 +34,7 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome to Class (10 min)
 
-In our last class, students were introduced to the thought processes and techniques that go into taking a formalized contract spec and implementing it into Solidity code.  Students learned to take a simple yet formalized smart contract specification and implement it to fit the interface of an already established front-end dApp. Students then deployed the configured dApp to a centralized production environment, GitHub pages.
+In our last class, students were introduced to the thought processes and techniques that go into taking a formalized contract spec and implementing it into Solidity code.  Students learned to take a simple yet formalized smart contract specification and implement it to fit the interface of an already established front-end dApp. Students then deployed the configured dApp to a centralized production environment, GitHub Pages.
 
 Today, students will once again be leveraging the GitHub Pages service to host their static dApp bundle.
 
