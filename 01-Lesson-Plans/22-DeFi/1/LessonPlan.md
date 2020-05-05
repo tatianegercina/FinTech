@@ -241,7 +241,7 @@ Define a second function named `newAppraisal`; this function will be responsible
  function newAppraisal(uint token_id, uint new_value, string memory report_uri) public returns(uint) {
  ```
 
-Inside the body of the `newAppraisal` function, set the passed token_id's appraisal_value to the new_amount passed to the function. Then `emit` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal, and the `report_uri`. Finally return the `new_amount` value.
+Inside the body of the `newAppraisal` function, set the passed token_id's appraisal_value to the new_amount passed to the function. Then `emit` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal, and the `report_uri`. Finally, return the `new_amount` value.
 
  ```solidity
  art_collection[token_id].appraisal_value = new_value;
