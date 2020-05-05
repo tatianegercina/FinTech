@@ -687,7 +687,7 @@ Copy the files linked above into a new directory, or copy the [cryptoright-front
 python -m http.server 8000
 ```
 
-* This is a built-in, Python one-liner that creates a local HTTP server that is hosting the files inside of the current directory.
+* This is a built-in Python one-liner that creates a local HTTP server that is hosting the files inside of the current directory.
 
 * This is necessary in order to register our dApp with MetaMask. While we could just open the `index.html` file directly in our browser, MetaMask wouldn't register in this case.
 
