@@ -459,7 +459,7 @@ event OpenSource(uint copyright_id, string reference_uri);
 
 * The copyright event requires a `uint copy_right_id`, and a `string reference_uri`.
 
-* According to the `OpenSource` event's description, it MUST trigger whenever a new open source work is registered.
+* According to the `OpenSource` event's description, it MUST trigger whenever a new open-source work is registered.
 
 Add the `OpenSource` event definition below the `Copyright` event.
 
