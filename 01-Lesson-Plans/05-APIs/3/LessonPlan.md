@@ -739,6 +739,8 @@ In this activity, students ascend to the final step and learn to project not one
 
 Walkthrough the solution and highlight the following:
 
+* In this demo, we will analyze a portfolio composed by two stocks, Johnson & Johnson (`JNJ`) and Micron Technology, Inc. (`MU`).
+
 * The `get_barset()` function of the `alpaca-trade-api` SDK can provide stock price data for more than one ticker in a single API call.
 
   ![multi-level-index](Images/iex-multi-level-index.png)
@@ -759,8 +761,8 @@ Walkthrough the solution and highlight the following:
   num_trading_days = 252
 
   # Set last closing prices of `JNJ` and `MU`
-  jnj_last_price = df['JNJ']['close'][-1]
-  mu_last_price = df['MU']['close'][-1]
+  jnj_last_price = df["JNJ"]["close"][-1]
+  mu_last_price = df["MU"]["close"][-1]
 
   # Initialize empty DataFrame to hold simulated prices for each simulation
   simulated_price_df = pd.DataFrame()
@@ -830,6 +832,8 @@ Walkthrough the solution and highlight the following:
 
   ![portfolio-cumulative-returns-confidence-interval](Images/portfolio-cumulative-returns-confidence-interval.png)
 
+Answer any questions before moving on.
+
 ---
 
 ### 18. Students Do: Financial Forecasting Part 3 (15 min)
@@ -843,6 +847,8 @@ In this activity, students execute a Monte Carlo simulation to forecast the pote
 **Files:**
 
 * [financial_forecasting_part_3.ipynb](Activities/10-Stu_Financial_Forecasting_Pt_III/Unsolved/financial_forecasting_part_3.ipynb)
+
+---
 
 ### 19. Instructor Do: Review Financial Forecasting Part 3 (5 min)
 
