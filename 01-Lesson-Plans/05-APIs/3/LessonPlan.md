@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's class will focus on the notion of using Monte Carlo simulations to forecast future results and make confident predictions supported by statistical evidence. Monte Carlo simulations are an important tool in emulating a real-world use case that involves a degree of randomness surrounding an event or outcome. It seeks to iterate `n` number of times to find the most probable result of a variable event as well as the range of results and their corresponding probabilities of occurring.
+Today's class will focus on the notion of using Monte Carlo simulations to forecast future results and make confident predictions supported by statistical evidence. Monte Carlo simulations are an essential tool in emulating a real-world use case that involves a degree of randomness surrounding an event or outcome. It seeks to iterate `n` number of times to find the most probable result of a variable event as well as the range of effects and their corresponding probabilities of occurring.
 
 In particular, stock prices tend to move in such a way that there are varying probabilities to where the price may go or deviate from its average (daily, weekly, monthly). Therefore, this lesson will teach students how to apply the concept of Monte Carlo simulations to predict future stock prices and therefore forecast the potential returns of an initial investment, either as a single stock or as a portfolio.
 
@@ -32,13 +32,13 @@ By the end of class, students will be able to:
 
 * As a reminder, slack out the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class.
 
-* Today's lesson deals heavily with statistical concepts, particularly probability. Try to be as clear as possible and be mindful of students who may become easily confused, as this lesson will push the boundaries of most students' comfort levels when it comes to statistics.
+* Today's lesson deals heavily with statistical concepts, particularly probability. Try to be as transparent as possible and be mindful of students who may become easily confused, as this lesson will push the boundaries of most students' comfort levels when it comes to statistics.
 
 * When overviewing the concept of probability distributions, also make sure to stress the notion of randomness. Probability merely implies that there is a chance that a specific result or event may occur but makes no guarantees, which is why results can differ with each iteration.
 
 * Once students are comfortable with probability distributions, namely normal distributions, students should be able to process the idea that Monte Carlo simulations on stock investments seek to chart the different paths (and probabilities) in which a stock can vary about its average daily return. Overview the code in detail so that this becomes more apparent.
 
-* Toward the end of class, students will begin applying Monte Carlo simulations to portfolio returns. Therefore, they will need to combine the concepts of portfolio optimization (taught in the Pandas unit) with the concept of portfolio forecasting (taught in today's lesson). Walk through the steps in detail as students can easily get lost in this myriad of technical concepts!
+* Toward the end of class, students will begin applying Monte Carlo simulations to portfolio returns. Therefore, they will need to combine the concepts of portfolio optimization (taught in the Pandas unit) with the concept of portfolio forecasting (taught in today's lesson). Walkthrough the steps in detail as students can easily get lost in this myriad of technical concepts!
 
 ### Sample Class Video (Highly Recommended)
 
@@ -76,15 +76,15 @@ Answer any questions before moving on.
 
 ### 2. Instructor Do: Intro to Monte Carlo Simulations (10 min)
 
-In this activity, students will be introduced to Mote Carlo Simulations and the core concepts behind.
+In this activity, students will be introduced to Monte Carlo Simulations and the core concepts behind it.
 
 Open the lesson slides, move to the "Monte Carlo Simulations" section and highlight the following:
 
-* Today we will combine what we’ve learned so far on using APIs to pull in stock data and forecast single stock/portfolio returns using Monte Carlo simulations.
+* Today, we will combine what we’ve learned so far on using APIs to pull in stock data and forecast single stock/portfolio returns using Monte Carlo simulations.
 
 * Simulations will require a switch from historical analysis to predicting the future.
 
-* By the end of the lesson, Monte Carlo simulations will have predicted future stock prices and therefore forecast the potential stocks returns of an initial investment, either as a single stock investment or as an investment in a portfolio.
+* By the end of the lesson, Monte Carlo simulations will have predicted future stock prices and therefore forecast the potential stock's returns of an initial investment, either as a single stock investment or as an investment in a portfolio.
 
 Continue with the slides switching to the "Simulations" section, ease students into the notion of this type of simulations by presenting the following questions and answers:
 
@@ -124,7 +124,7 @@ Walkthrough the solution and highlight the following:
 
 * This solution represents a technical example to the Monte Carlo simulation use case presented in the previous activity (coin flip simulation). Therefore, the program flips a coin `10` times for `5` simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers (or ranges) of heads.
 
-* Make sure to import the `random` class from the `numpy` library which allows for randomizing a particular code process.
+* Make sure to import the `random` class from the `numpy` library, which allows for randomizing a particular code process.
 
   ```python
   # Import libraries and dependencies
@@ -140,9 +140,9 @@ Walkthrough the solution and highlight the following:
 
   * `num_flips` is the number of coin flips per simulation.
 
-  * `coin` is a list to set the possible options of the event, in this case we can get heads or tails.
+  * `coin` is a list to set the possible options of the event. In this case, we can get heads or tails.
 
-  * `probability` is a list with the probability of every option to occur, in this case, heads and tails have the same chance to arise.
+  * `probability` is a list with the probability of every option to occur. In this case, heads and tails have the same chance to arise.
 
   ```python
   # Set number of simulations and coin flips
@@ -156,7 +156,7 @@ Walkthrough the solution and highlight the following:
   probability = [0.5, 0.5]
   ```
 
-* Next, we create and empty DataFrame to store the simulation results.
+* Next, we create an empty DataFrame to store the simulation results.
 
   ```python
   # Create an empty DataFrame to hold simulation results
@@ -175,7 +175,7 @@ Walkthrough the solution and highlight the following:
 
   ![add_coin_flip_sim_results](Images/add_coin_flip_sim_results.png)
 
-* Finally we display the simulations results in the notebook.
+* Finally, we display the simulations results in the notebook.
 
   ![show_coin_flip_results](Images/show_coin_flip_results.png)
 
@@ -187,7 +187,7 @@ Walkthrough the solution and highlight the following:
 
   ![coin-flip-value-counts](Images/coin-flip-value-counts.png)
 
-* Into the `for-loop`, the conditional statements check to make sure that both the `heads` and `tails` keys are present in the series object returned from the `value_counts` function. If one or the other key is not present, the missing key gets a `0` to account for the fact that the event did not occur at all during the simulation (flipped 10 heads or flipped 10 tails).
+* Into the `for-loop`, the conditional statements check to make sure that both the `heads` and `tails` keys are present in the series object returned from the `value_counts` function. If one or the other key is not present, the missing key gets a `0` to account for the fact that the event did not occur at all during the simulation (flipped `10` heads or flipped `10` tails).
 
   ```python
   # Append results of heads and tails to respective lists
@@ -209,7 +209,7 @@ Walkthrough the solution and highlight the following:
       heads.append(value_count['heads'])
   ```
 
-* Once the `for-loop` ends, we add two columns to the empty DataFrame we set before the loop, to add the heads and tails lists that we populated during the iterations of the loop.
+* Once the `for-loop` ends, we add two columns to the empty DataFrame we set before the loop to add the heads and tails lists that we populated during the iterations of the loop.
 
 ```python
 # Create columns from heads and tails lists
@@ -223,7 +223,7 @@ freq_dist_df["tails"] = tails
 
 * An histogram is not a bar graph; frequency values in histogram bars are determined by the area (length times width) of the bar, not by the height of the bar. Histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single data point.
 
-* Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum data points provided. Sometimes this creates ranges deviating from what is being simulated. Therefore, manually setting the `bins` parameter ensures that the histogram properly represents the edges of each bin, in this case, bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`.
+* Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum data points provided. Sometimes this creates ranges deviating from what is being simulated. Therefore, manually setting the `bins` parameter ensures that the histogram accurately represents the edges of each bin, in this case, bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`.
 
   ![coin-flip-5-simulations-bins](Images/coin-flip-5-simulations-bins.png)
 
@@ -231,7 +231,7 @@ freq_dist_df["tails"] = tails
 
   ![coin-flip-density-histogram](Images/coin-flip-density-histogram.png)
 
-* Unfortunately, the probability distribution of potential outcomes generated for a small number of simulations should not be trusted. This is because a small number of simulations cannot test every possible outcome and, therefore, may generate biased results that are not indicative of the true nature of the random process in the long term. Therefore, increasing the simulation count to `100` provides a more reliable and continuous range of probable outcomes.
+* Unfortunately, the probability distribution of potential outcomes generated for a small number of simulations should not be trusted. This is because a small number of simulations cannot test every possible outcome and, therefore, may generate biased results that are not indicative of the true nature of the random process in the long term. Thus, increasing the simulation count to `100` provides a more reliable and continuous range of probable outcomes.
 
   ![coin-flip-100-simulations](Images/coin-flip-100-simulations.png)
 
@@ -255,7 +255,7 @@ Circulate with TAs during this activity to provide students with assistance. Bel
 
 * Students might face difficulty working with the histograms. Histogram bins have a default value, so if the bins are not appropriately configured, the charts might not look as expected (the bin edges will be off), and the ranges may deviate from what is being simulated.
 
-* Also keep an eye out for any student issues related to missing data; if missed or made data is missing, this is most likely because 0 was not appended for the missing values. This could visually result in one side of the distribution being cut off (producing a non-normal distribution with no values for the first shot attempted).
+* Also keep an eye out for any student issues related to missing data; if missed or made data is missing, this is most likely because `0` was not appended for the missing values. This could visually result in one side of the distribution being cut off (producing a non-normal distribution with no values for the first shot attempted).
 
 **Instructions:**
 
@@ -321,14 +321,14 @@ Open the solution and explain the following:
   monte_carlo
   ```
 
-* The `choice` function from the `random` class of the `numpy` library has a `p` parameter that allows for setting a nonuniform probability to events. In this case, a player has a `70%` chance of making a shot and consequently, a `30%` chance of missing the shot. Therefore, the `choice` function below reflects this.
+* The `choice` function from the `random` class of the `numpy` library has a `p` parameter that allows for setting a nonuniform probability to events. In this case, a player has a `70%` chance of making a shot and, consequently, a `30%` chance of missing the shot. Therefore, the `choice` function below reflects this.
 
   ```python
   # Randomly choose between `made` and `missed` with a `70%` chance to make the throw and a `30%` chance the throw is missed
   free_throw = random.choice(throw, p=probability)
   ```
 
-* Because the random process has nonuniform probability (`70%` chance to make a shot and `30%` chance to miss a shot) the corresponding frequency and probability distributions of made free throws show that a majority of the distribution lies within the `7, 8, 9, and 10` range, while the rest of the distribution is spread out within the `0, 1, 2, 3, 4, 5, 6` range. Unlike the bell curve of a normal distribution, this is called a skewed (in this case, left-skewed) distribution.
+* Because the random process has nonuniform probability (`70%` chance to make a shot and `30%` chance to miss a shot) the corresponding frequency and probability distributions of made free throws show that a majority of the distribution lies within the `7, 8, 9, and 10` range. In contrast, the rest of the distribution is spread out within the `0, 1, 2, 3, 4, 5, 6` range. Unlike the bell curve of a normal distribution, this is called a skewed (in this case, left-skewed) distribution.
 
   ![free-throws-frequency-distribution](Images/free-throws-frequency-distribution.png)
 
@@ -362,7 +362,7 @@ Open the lesson slides, move to the "Confidence Intervals" section and highlight
 
 * In the context of Monte Carlo simulations, a confidence interval is a value range of a frequency distribution that contains a specific percentage of all potential outcomes. For example, a `90%` confidence interval would be a range of values of which `90%` of all potential outcomes of the Monte Carlo simulation are contained. Therefore, confidence intervals used with frequency distributions of Monte Carlo simulations calculate the range of potential outcomes and their probabilities of occurring. For example, one could analyze the frequency distribution of potential stock price trajectories and determine that "there is a `90%` chance that the stock price will be between `$10` and `$20` next week."
 
-* In order to create a confidence interval, the upper and lower bounds of the confidence interval need to be set as a quantile or percentile range of the frequency distribution.
+* To create a confidence interval, the upper and lower bounds of the confidence interval need to be set as a quantile or percentile range of the frequency distribution.
 
 * A quantile is a measurement in which a frequency distribution is divided into equal groups; thus, each group contains an equal fraction of the total sample. Often, quantiles are expressed in `100` equal parts, otherwise known as *percentiles*. For example, a student in the 95th percentile of height for his school is as tall as or taller than `95%` of the students at the school.
 
@@ -378,11 +378,11 @@ Open the solved Jupyter notebook, walkthrough the solution and highlight the fol
 
   ![coin-flip-quantile-function](Images/coin-flip-quantile-function.png)
 
-* The `pyplot` class from the `matplotlib` library contains a `axvline` function that allows for setting upper and lower bounds to a confidence interval on a plot. The `color` parameter sets the color of the line.
+* The `pyplot` class from the `matplotlib` library contains a `axvline` function that allows for setting upper and lower bounds to a confidence interval on a plot. The `color` parameter sets the colour of the line.
 
   ![coin-flip-confidence-interval](Images/coin-flip-confidence-interval.png)
 
-* The `90%` confidence interval calculated suggests that if a coin were to be flipped 10 times, there is a `90%` chance of the coin landing somewhere between `3` and `8` heads. This is because the confidence interval encapsulates `90%` of the frequency distribution (the area of the bars in the histogram) of simulated results.
+* The `90%` confidence interval calculated suggests that if a coin were to be flipped `10` times, there is a `90%` chance of the coin landing somewhere between `3` and `8` heads. This is because the confidence interval encapsulates `90%` of the frequency distribution (the area of the bars in the histogram) of simulated results.
 
 Answer any questions before moving on.
 
@@ -454,9 +454,9 @@ Open the lesson slides, move to the "Simulation of Stock Price Trajectory" secti
 
   ![example-normal-distribution](Images/example-normal-distribution.png)
 
-* Monte Carlo simulation uses this characteristic from the normal distribution to simulate a random process' potential outcomes with respect to the variability around its mean. In this sense, Monte Carlo simulations can be applied to a historical dataset of daily closing stock prices in order to predict probable stock price trajectories.
+* Monte Carlo simulation uses this characteristic from the normal distribution to simulate a random process' potential outcomes concerning the variability around its mean. In this sense, Monte Carlo simulations can be applied to a historical dataset of daily closing stock prices to predict probable stock price trajectories.
 
-Open the solved version of the Jupyter notebook, walktrough the code and highlight the following:
+Open the solved version of the Jupyter notebook, walkthrough the code and highlight the following:
 
 * In this demo, we will use the Alpaca API SDK to pull the daily closing stock price data from Apple Inc. (`AAPL`). Therefore, we import the necessary libraries and dependencies before proceeding to fetch the data and create some plots.
 
@@ -471,7 +471,7 @@ Open the solved version of the Jupyter notebook, walktrough the code and highlig
   %matplotlib inline
   ```
 
-* Now that you have imported the `alpaca-trade-api` and it's required dependencies we are going to list out the available, tradeable assets.
+* Now that you have imported the `alpaca-trade-api` and it's required dependencies, we are going to list out the available, tradeable assets.
 
 * Use the `list_assets()` function from the `tradeapi` object to check the available stock ticker data that can be pulled from the `Alpaca` API. Then iterate over the data to only keep the currently tradeable assets.
 
@@ -533,7 +533,7 @@ Answer any questions before moving on.
 
 ### 10. Students Do: Financial Forecasting Part 1 (15 min)
 
-In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical  daily returns.
+In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical daily returns.
 
 **Instructions:**
 
@@ -570,7 +570,7 @@ Open the solution and explain the following:
 
   ![bb-simulated-price-plot](Images/bb-simulated-price-plot.PNG)
 
-* With a `$10,000` investment facing brutal negative cumulative returns if invested in `BB` over the next 3 years.
+* With a `$10,000` investment is facing brutal negative cumulative returns if invested in `BB` over the next `3` years.
 
   ![bb-cumulative-pnl](Images/bb-cumulative-pnl.PNG)
 
@@ -594,7 +594,7 @@ In this activity, students go one step further to produce not just a single pote
 
 Walkthrough the solution and highlight the following:
 
-* Simulating a single price trajectory for a stock, with respect to its average daily return and volatility, is but one pathway of which the stock price could move over time. Therefore, to analyze the possible ranges of where a stock price might end up, multiple simulations of stock price trajectories need to be run.
+* Simulating a single price trajectory for a stock, concerning its average daily return and volatility, is but one pathway of which the stock price could move over time. Therefore, to analyze the possible ranges of where a stock price might end up, multiple simulations of stock price trajectories need to be run.
 
   ![multiple-stock-simulation](Images/multiple-stock-simulation.PNG)
 
@@ -715,7 +715,7 @@ Present the following questions and answers regarding portfolio forecasting:
 
 * How is portfolio forecasting done?
 
-  * **Answer:** Similar to the forecasting of a stock's price trajectory, Monte Carlo simulations are applied to forecast the potential price trajectories of the individual stocks that comprise the portfolio. Then the series of returns (for example, daily, weekly, monthly) of each stock is calculated and multiplied by the corresponding weights within the portfolio to output the portfolio's series of returns. Finally, the series of returns for the portfolio are used to generate the cumulative returns, which can then be multiplied by an investment amount to determine the portfolio performance in terms of capital.
+  * **Answer:** Similar to the forecasting of a stock's price trajectory, Monte Carlo simulations are applied to forecast the potential price trajectories of the individual stocks that comprise the portfolio. Then the series of returns (for example, daily, weekly, monthly) of each stock is calculated and multiplied by the corresponding weights within the portfolio to output the portfolio's series of returns. Finally, the series of returns for the portfolio is used to generate the cumulative returns, which can then be multiplied by an investment amount to determine the portfolio performance in terms of capital.
 
 * Why is portfolio forecasting performed?
 
@@ -739,7 +739,7 @@ In this activity, students ascend to the final step and learn to project not one
 
 Walkthrough the solution and highlight the following:
 
-* In this demo, we will analyze a portfolio composed by two stocks, Johnson & Johnson (`JNJ`) and Micron Technology, Inc. (`MU`).
+* In this demo, we will analyze a portfolio composed of two stocks, Johnson & Johnson (`JNJ`) and Micron Technology, Inc. (`MU`).
 
 * The `get_barset()` function of the `alpaca-trade-api` SDK can provide stock price data for more than one ticker in a single API call.
 
@@ -794,7 +794,7 @@ Walkthrough the solution and highlight the following:
       simulated_daily_returns = simulated_price_df.pct_change()
   ```
 
-* The portfolio weights are multiplied against the values of each column and totaled for each index of the DataFrame. For example, a `0.01` or `1%` daily return in `JNJ` and a `0.005` or `0.5%` daily return in `MU` on the `1st` simulated trading day would constitute a portfolio return of `(0.6 * 0.01) + (0.4 * 0.005) = 0.008` or `0.8%` daily return for that day.
+* The portfolio weights are multiplied against the values of each column and totalled for each index of the DataFrame. For example, a `0.01` or `1%` daily return in `JNJ` and a `0.005` or `0.5%` daily return in `MU` on the `1st` simulated trading day would constitute a portfolio return of `(0.6 * 0.01) + (0.4 * 0.005) = 0.008` or `0.8%` daily return for that day.
 
   ```python
       # Set the portfolio weights (60% JNJ; 40% MU)
@@ -933,13 +933,13 @@ Answer any questions before moving on.
 
 Is this the end, or is it just another iteration of a simulation? It's actually the end! Welcome to today's finish line.
 
-The content in this lesson is probably the most difficult material students have digested so far. Students were required to whip out every FinTech skill and asset they've learned. This lesson was involved, including portfolio optimization (calculation of returns, standard deviation, risk, etc.) and portfolio forecasting (Monte Carlo, probability distributions, confidence trajectories, and forecasting). Furthermore, this doesn't even include the Python and Pandas skills they had to leverage!
+The content in this lesson is probably the most challenging material students have digested so far. Students were required to whip out every FinTech skill and asset they've learned. This lesson was involved, including portfolio optimization (calculation of returns, standard deviation, risk, etc.) and portfolio forecasting (Monte Carlo, probability distributions, confidence trajectories, and forecasting). Furthermore, this doesn't even include the Python and Pandas skills they had to leverage!
 
 Make sure students can recognize and acknowledge their accomplishments. Communicate and highlight the following:
 
-* You've added another tool to your API-SDK tool belt: the Alpaca Trade API SDK, which is a great resource for historical stock data and financial functions.
+* You've added another tool to your API-SDK tool belt: the Alpaca Trade API SDK, which is an excellent resource for historical stock data and financial functions.
 
-* You've taken yet another deep dive into statistics, learning how to create, calculate, and interpret probability distributions. This includes using mean, **standard deviation**, **daily returns**, Numpy's random data generators, and histograms in order to implement and visualize portfolio simulations.
+* You've taken yet another deep dive into statistics, learning how to create, calculate, and interpret probability distributions. This includes using mean, **standard deviation**, **daily returns**, Numpy's random data generators, and histograms to implement and visualize portfolio simulations.
 
 * You've plotted the price trajectory of stock prices and returns using single and multiple Monte Carlo simulations.
 
