@@ -865,9 +865,9 @@ Open the solution and explain the following:
   num_simulations = 1000
   num_trading_days = 252 * 3
 
-  # Set last closing prices of `TSLA` and `SPHD`
-  tsla_last_price = df['TSLA']['close'][-1]
-  sphd_last_price = df['SPHD']['close'][-1]
+  # Set last closing prices of `BB` and `SPHD`
+  BB_last_price = df["BB"]["close"][-1]
+  sphd_last_price = df["SPHD"]["close"][-1]
 
   # Initialize empty DataFrame to hold simulated prices for each simulation
   simulated_price_df = pd.DataFrame()
@@ -876,29 +876,29 @@ Open the solution and explain the following:
   # Run the simulation of projecting stock prices for the next trading year, `1000` times
   for n in range(num_simulations):
 
-      # Initialize the simulated prices list with the last closing price of `TSLA` and `SPHD`
-      simulated_tsla_prices = [tsla_last_price]
+      # Initialize the simulated prices list with the last closing price of `BB` and `SPHD`
+      simulated_BB_prices = [BB_last_price]
       simulated_sphd_prices = [sphd_last_price]
 
       # Simulate the returns for 252 * 3 days
       for i in range(num_trading_days):
 
           # Calculate the simulated price using the last price within the list
-          simulated_tsla_price = simulated_tsla_prices[-1] * (1 + np.random.normal(avg_daily_return_tsla, std_dev_daily_return_tsla))
+          simulated_BB  _price = simulated_BB_prices[-1] * (1 + np.random.normal(avg_daily_return_BB, std_dev_daily_return_BB))
           simulated_sphd_price = simulated_sphd_prices[-1] * (1 + np.random.normal(avg_daily_return_sphd, std_dev_daily_return_sphd))
 
           # Append the simulated price to the list
-          simulated_tsla_prices.append(simulated_tsla_price)
+          simulated_BB_prices.append(simulated_BB_price)
           simulated_sphd_prices.append(simulated_sphd_price)
 
       # Append a simulated prices of each simulation to DataFrame
-      simulated_price_df["TSLA prices"] = pd.Series(simulated_tsla_prices)
+      simulated_price_df["BB prices"] = pd.Series(simulated_BB_prices)
       simulated_price_df["SPHD prices"] = pd.Series(simulated_sphd_prices)
 
       # Calculate the daily returns of simulated prices
       simulated_daily_returns = simulated_price_df.pct_change()
 
-      # Set the portfolio weights (75% TSLA; 25% SPHD)
+      # Set the portfolio weights (75% BB; 25% SPHD)
       weights = [0.25, 0.75]
 
       # Use the `dot` function with the weights to multiply weights with each column's simulated daily returns
@@ -913,7 +913,7 @@ Open the solution and explain the following:
 
   ![portfolio-monte-carlo-simulation-results](Images/portfolio-monte-carlo-simulation-results.png)
 
-* The plot shows the different potential performances of the `25–75` weighed portfolio of `TSLA` and `SPHD` over the next three trading years.
+* The plot shows the different potential performances of the `25–75` weighed portfolio of `BB` and `SPHD` over the next three trading years.
 
   ![portfolio-monte-carlo-simulation-plot](Images/portfolio-monte-carlo-simulation-plot.png)
 
@@ -925,6 +925,8 @@ Open the solution and explain the following:
 
   ![portfolio-confidence-interval](Images/portfolio-confidence-interval.png)
 
+Answer any questions before moving on.
+
 ---
 
 ### 20. Recap (25 min)
@@ -933,23 +935,23 @@ Is this the end, or is it just another iteration of a simulation? It's actually 
 
 The content in this lesson is probably the most difficult material students have digested so far. Students were required to whip out every FinTech skill and asset they've learned. This lesson was involved, including portfolio optimization (calculation of returns, standard deviation, risk, etc.) and portfolio forecasting (Monte Carlo, probability distributions, confidence trajectories, and forecasting). Furthermore, this doesn't even include the Python and Pandas skills they had to leverage!
 
-Make sure students can recognize and acknowledge their accomplishments. Communicate that
+Make sure students can recognize and acknowledge their accomplishments. Communicate and highlight the following:
 
-* They've added another tool to their API-SDK tool belt: the Alpaca Trade API SDK, which is a great resource for historical stock data and financial functions.
+* You've added another tool to your API-SDK tool belt: the Alpaca Trade API SDK, which is a great resource for historical stock data and financial functions.
 
-* They've taken yet another deep dive into statistics, learning how to create, calculate, and interpret probability distributions. This includes using mean, standard deviation**, **daily returns, Numpy's random data generators, and histograms in order to implement and visualize portfolio simulations.
+* You've taken yet another deep dive into statistics, learning how to create, calculate, and interpret probability distributions. This includes using mean, **standard deviation**, **daily returns**, Numpy's random data generators, and histograms in order to implement and visualize portfolio simulations.
 
-* They've plotted the price trajectory of stock prices and returns using single and multiple Monte Carlo simulations.
+* You've plotted the price trajectory of stock prices and returns using single and multiple Monte Carlo simulations.
 
-* They've forecast average daily return volatility at the stock and portfolio level.
+* You've forecast average daily return volatility at the stock and portfolio level.
 
-* They've assessed the risk of investing in stock by predicting the probability of stock prices rising or falling over time.
+* You've assessed the risk of investing in stock by predicting the probability of stock prices rising or falling over time.
 
-* They've put the Fin in FinTech, and they're just getting started!
+* You've put the **Fin** in FinTech, and you're just getting started!
 
 Give students space to emotionally release. Use this activity as a way to gauge student confidence, frustration, and stress levels.
 
-* Ask students to summarize how they're feeling with a one-word emotion. Ask for volunteers first. If no one volunteers initiate the activity by using one word to convey how you're feeling, and then go round-robin. Gauge the students, verbal and nonverbal cues of stress and confusion (e.g., withdrawal from the activity or isolation, irritability or impatience, chronic worrying, pessimistic attitude, and restlessness).
+Ask students to summarize how they're feeling with a one-word emotion. Ask for volunteers first. If no one volunteers initiate the activity by using one word to convey how you're feeling, and then go round-robin. Gauge the students, verbal and nonverbal cues of stress and confusion (e.g., withdrawal from the activity or isolation, irritability or impatience, chronic worrying, pessimistic attitude, and restlessness).
 
   **Answer**: Relieved
 
@@ -963,9 +965,9 @@ Give students space to emotionally release. Use this activity as a way to gauge 
 
   **Answer:** Doubtful
 
-* Indicate to students that no matter what they're feeling, either excited and empowered or stressed and doubtful, they've come a long way. Also, underscore that they're not alone in their feelings or the journey. Portfolio simulations are no joke, and results can easily be misinterpreted or corrupted, which is why the best of the best are the ones executing simulations.
+Indicate to students that no matter what they're feeling, either excited and empowered or stressed and doubtful, they've come a long way. Also, underscore that they're not alone in their feelings or the journey. Portfolio simulations are no joke, and results can easily be misinterpreted or corrupted, which is why the best of the best are the ones executing simulations.
 
-* Emphasize that students can reach out individually or attend office hours to ask questions, discuss the activities in the lesson, or just release emotionally.
+Emphasize that students can reach out individually or attend office hours to ask questions, discuss the activities in the lesson, or just release emotionally.
 
 Use the remaining time to get a head start on office hours. Allow students to ask questions about this lesson, the overall unit, or the homework.
 
