@@ -6,7 +6,7 @@ undertake based on max NPV values.
 """
 
 # Import the NumPy library
-import numpy
+import numpy_financial as npf
 
 # Discount Rate
 discount_rate = .1
@@ -20,9 +20,9 @@ cash_flows_aggressive = [-2250, 800, 800, 800, 800]
 npv_dict = {}
 
 # Calculate the NPV for each scenario
-npv_dict['conservative'] = numpy.npv(discount_rate, cash_flows_conservative)
-npv_dict['neutral'] = numpy.npv(discount_rate, cash_flows_neutral)
-npv_dict['aggressive'] = numpy.npv(discount_rate, cash_flows_aggressive)
+npv_dict['conservative'] = npf.npv(discount_rate, cash_flows_conservative)
+npv_dict['neutral'] = npf.npv(discount_rate, cash_flows_neutral)
+npv_dict['aggressive'] = npf.npv(discount_rate, cash_flows_aggressive)
 
 # Initialize variables
 max_value = 0

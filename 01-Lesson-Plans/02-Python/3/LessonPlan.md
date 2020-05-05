@@ -32,7 +32,9 @@ By the end of this class, students will be able to:
 
 - Make sure TAs circulate the classroom to provide assistance to students who are still struggling with Python concepts. If the lesson moves ahead of schedule, you can use the extra time to review those topics.
 
-- Remind students to activate their conda environment so that they can access libraries like NumPy, which they will need for this lesson. If they have issues importing the NumPy library, suggest running `conda install anaconda` or `conda install numpy`. The conda environment may not have included the Anaconda tools, as this is a common error.
+- Remind students to activate their conda environment so that they can access libraries like NumPy (and its financial cousin, numpy_financial), which they will need for this lesson. If they have issues importing the NumPy library, suggest running `conda install anaconda` or `conda install numpy`. The conda environment may not have included the Anaconda tools, as this is a common error.
+
+  * `numpy` and  `numpy_financial` are two separate packages that will both need to be installed for this lesson.
 
 - Make sure that students are properly setting their file paths when reading in files. Ensure that their paths are properly set and look out for erroneous relative or absolute paths.
 
@@ -429,18 +431,18 @@ Introduce NumPy.
 
 - NumPy is a Python library that provides fast input/output, or I/O, on multidimensional or nested array objects. Among other things, NumPy can be used as a scientific computing or financial analysis tool.
 
-- The built-in NPV function from the NumPy library makes calculating NPV values simple so that you don't have to reinvent the wheel.
+- A Numpy offshoot library applicable to fintech is called numpy-financial. The built-in NPV function from the NumPy Financial library makes calculating NPV values simple so that you don't have to reinvent the wheel.
 
   ```python
   # Import the NumPy library
-  import numpy
+  import numpy_financial as npf
 
   # Initialize variables
   interest_rate = .1
   cash_flows = [-1000, 400, 400, 400, 400]
 
   # Call the NPV function from the NumPy library
-  net_present_value = numpy.npv(interest_rate, cash_flows)
+  net_present_value = npf.npv(interest_rate, cash_flows)
   print(f"NPV = {net_present_value}")
   ```
 
@@ -450,7 +452,7 @@ Answer any questions before moving on.
 
 ### 8. Student Do: Net Present Value (15 min)
 
-In this activity, students will use the `npv` function from the NumPy library to calculate the net present value of three potential company projects (and their cash flows) and assess which is the optimal project to undertake.
+In this activity, students will use the `npv` function from the NumPy Financial library to calculate the net present value of three potential company projects (and their cash flows) and assess which is the optimal project to undertake.
 
 **File:** [Starter Code](Activities/06-Stu_Imports/Unsolved/Core/net_present_value_core.py)
 
@@ -464,7 +466,7 @@ In this part of the lesson, you will review the previous Net Present Value activ
 
 Open the [solution file](Activities/06-Stu_Imports/Solved/Core/net_present_value_core.py) and explain the process of performing financial analysis using net present value (NPV):
 
-- NumPy's built-in NPV function makes it easy to calculate NPV values.
+- NumPy Financial's built-in NPV function makes it easy to calculate NPV values.
 
 - Each list of cash flows represents a project proposal.
 
@@ -825,4 +827,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

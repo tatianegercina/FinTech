@@ -5,7 +5,7 @@ This script will choose the optimal project scenario to
 undertake based on max NPV values.
 """
 
-# @TODO: Import the NumPy library
+# @TODO: Import the NumPy Financial (numpy_financial) library
 
 
 # Discount Rate
