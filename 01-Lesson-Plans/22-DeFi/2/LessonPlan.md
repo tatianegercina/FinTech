@@ -341,7 +341,7 @@ Add the following comments to the `transferCopyrightOwnership` function body.
     }
 ```
 
-* Now, let's take a look at the first part of the `transferCopyrightOwnership` function definition, and break it down into comments about what steps must take place inside the function.
+* Now let's take a look at the first part of the `transferCopyrightOwnership` function definition, and break it down into comments about what steps must take place inside the function.
 
 * As you can see, the `transferCopyrightOwnership` method is relatively simple; the first part of the description can be copied into a single comment consisting of the exact text.
 
