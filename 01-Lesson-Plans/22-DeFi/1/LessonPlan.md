@@ -371,9 +371,9 @@ contract CryptoFax is ERC721Full {
 
 * The `reportAccident` function does three things:
 
- * It increments the number of accidents for the given `token_id` inside the car's mapping,
+ * It increments the number of accidents for the given `token_id` inside the car's mapping.
 
- * It `emits` the `Accident` event passing it the given `token_id` and `report_uri`
+ * It `emits` the `Accident` event passing it the given `token_id` and `report_uri`. 
 
  * It returns the current number of accidents after the latest accident.
 
