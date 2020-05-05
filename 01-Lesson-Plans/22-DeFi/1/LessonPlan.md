@@ -36,7 +36,7 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* The contracts you will be deploying today are relatively large, and may take a few minutes to compile.
+* The contracts you will deploy today are relatively large and may take a few minutes to compile.
 
 * Refer to OpenZeppelin ERC721 documentation for further information about Non-Fungible Tokens. [ERC721 Docs](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721)
 
