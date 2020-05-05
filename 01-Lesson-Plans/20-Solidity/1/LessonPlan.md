@@ -659,7 +659,7 @@ Go further with the demo; click on the "Create Account" button in the upper righ
 
  ![State Of The Dapps - 10](Images/state-of-the-daps-10.png)
 
-* After clicking on "Continue to your Nexo Account", you will have instant access to your brand new account.
+* After clicking on "Continue to your Nexo Account," you will have instant access to your brand new account.
 
  ![State Of The Dapps - 11](Images/state-of-the-daps-11.gif)
 
