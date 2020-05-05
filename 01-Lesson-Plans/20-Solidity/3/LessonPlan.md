@@ -158,7 +158,7 @@ function withdraw(uint amount) public {
 
 Ask students:
 
-* Why might we include this if statement, versus just setting the `last_to_withdraw` every time?
+* Why might we include this if statement, rather than setting the `last_to_withdraw` every time?
 
   * **Answer**: It costs gas to write to the chain. By checking beforehand, we can prevent spending unnecessary gas when the variable doesn't need to change.
 
@@ -448,7 +448,7 @@ Welcome the students back to class, allow them to settle, and explain the follow
  the balance is pulled.
 
 * Then, we are going to add a special function called a `constructor` that will allow us to deploy this contract with custom
- values vs. hardcoding things like our account owners directly in the code.
+ values versus hardcoding things like our account owners directly in the code.
 
 Have students navigate back to their [Remix IDE](https://remix.ethereum.org) and continue.
 
