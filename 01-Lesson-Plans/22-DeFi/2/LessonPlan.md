@@ -622,7 +622,7 @@ function openSourceWork(string memory reference_uri) public {
     }
 ```
 
-* The `copyrightWork` and `openSourceWork` functions were both implemented in a very similar way. Both functions generate a new `copyright_id` by incrementing the `copyright_ids` counter and taking its current value. Where the two functions differ is when it comes to setting the Work's owner's address. Since open source works don't have an owner in this system, we leave the `owner` attribute set to the default `address(0)`.
+* The `copyrightWork` and `openSourceWork` functions were both implemented in a very similar way. Both functions generate a new `copyright_id` by incrementing the `copyright_ids` counter and taking its current value. Where the two functions differ is when it comes to setting the Work's owner's address. Since open-source works don't have an owner in this system, we leave the `owner` attribute set to the default `address(0)`.
 
 
 ```Solidity
