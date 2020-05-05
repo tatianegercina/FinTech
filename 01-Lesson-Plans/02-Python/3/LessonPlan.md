@@ -434,14 +434,17 @@ Introduce NumPy.
 - A Numpy offshoot library applicable to fintech is called numpy-financial. The built-in NPV function from the NumPy Financial library makes calculating NPV values simple so that you don't have to reinvent the wheel.
 
   ```python
-  # Import the NumPy library
+  # Import the NumPy library (for most calculations)
+  import numpy
+
+  # Import the NumPy Financial library (for some finance-specific calculations)
   import numpy_financial as npf
 
   # Initialize variables
   interest_rate = .1
   cash_flows = [-1000, 400, 400, 400, 400]
 
-  # Call the NPV function from the NumPy library
+  # Call the NPV function from the NumPy Financial library
   net_present_value = npf.npv(interest_rate, cash_flows)
   print(f"NPV = {net_present_value}")
   ```
