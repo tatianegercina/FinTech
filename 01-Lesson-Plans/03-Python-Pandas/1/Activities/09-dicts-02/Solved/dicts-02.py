@@ -22,8 +22,8 @@ print(shows['genre']['talk']['the_daily_show']['host'])
 
 # QUESTION 7: Who are all the hosts of the view (talk)
 # Hint: You will need to use a loop for this one. You may not simply log the entire list, but must log each name individually
-for key, value in shows['genre']['talk'].items():
-    print(value['host'])
+for person in shows['genre']['talk']['the_view']['host']:
+    print(person)
 
 # QUESTION 8: What are the show names of the Impractical Jokers (comedy)
 # Hint: You will need to use a loop for this one. You may not simply log the entire list, but must log each name individually
