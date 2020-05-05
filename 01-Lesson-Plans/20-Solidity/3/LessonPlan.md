@@ -698,7 +698,7 @@ Get the class excited, as they have just built a complex smart contract that can
 
 ### 18. Instructor Do: Review Smart Contracts (10 min)
 
-Congratulate the students on building smart contracts, and remind them that few in the world can do this! They are already differentiating themselves from the crypto-crowd. However, you must remind them that with this power comes responsibility— security should be top of mind, and we cannot allow cutting corners in Solidity!
+Congratulate the students on building smart contracts, and remind them that few in the world can do this! They are already differentiating themselves from the crypto-crowd. However, you must remind them that with this power comes responsibility—security should be top of mind, and we cannot allow cutting corners in Solidity!
 
 Ask the students the following questions:
 
