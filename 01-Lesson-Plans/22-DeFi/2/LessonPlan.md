@@ -140,7 +140,7 @@ mapping(uint => Work) public copyrights;
 
   * This is a great example of how a specification's defined interface may not always exactly match what the actual code will look like, but rather the interface that will be generated. `Interface` is both a defined function and the concept of what input/output for a given `API` is expected to be present.
 
-Inside the CryptoRight contract under the `copyright_ids` counter, create a new `struct` named `Work`. Inside this `struct` create an `address` attribute named `owner` and a `string` attribute named `uri`.
+Inside the CryptoRight contract under the `copyright_ids` counter, create a new `struct` named `Work`. Inside this `struct`, create an `address` attribute named `owner` and a `string` attribute named `uri`.
 
   ```Solidity
   struct Work {
