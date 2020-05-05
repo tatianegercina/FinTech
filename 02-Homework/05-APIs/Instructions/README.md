@@ -9,26 +9,28 @@ The consumer division of Harold's company has decided to offer budgeting and fin
 In this homework assignment, you will help Harold complete the following tasks:
 
 1. [Budget Analysis with Plaid](#Budget-Analysis)
+
 2. [Retirement Planner](#Retirement-Planner)
+
 3. [Financial Report](#Financial-Report)
 
-- - -
+---
 
 ### Files
 
-[Budget Starter Notebook](Starter_Code/account_summary.ipynb)
+* [Budget Starter Notebook](Starter_Code/account_summary.ipynb)
 
-[Retirement Planner Starter Notebook](Starter_Code/portfolio_planner.ipynb)
+* [Retirement Planner Starter Notebook](Starter_Code/portfolio_planner.ipynb)
 
-- - -
+---
 
-### Instructions
+## Instructions
 
-#### Budget Analysis
+### Budget Analysis
 
 In this section, you will use the Plaid API to obtain transaction and account data for the budget analysis section of the report.
 
-Follow the steps outlined in the budget starter notebook to complete the following:
+Follow the steps outlined in the budget starter notebook (`account_summary.ipynb`) to complete the following:
 
 1. Generate a Plaid access token to access the Developer Sandbox.
 
@@ -40,29 +42,29 @@ Follow the steps outlined in the budget starter notebook to complete the followi
 
 3. Perform basic budget analysis on the sandbox transaction and generate the following plots:
 
-* Spending Categories Pie Chart
+    * Spending Categories Pie Chart.
 
-  ![Expenses per category](Images/spending-pie.png)
+      ![Expenses per category](Images/spending-pie.png)
 
-* Spending Per Month Bar Chart
+    * Spending Per Month Bar Chart.
 
-  ![Expenses per month](Images/spending-month.png)
+      ![Expenses per month](Images/spending-month.png)
 
 4. Use the API to fetch income data from the sandbox and print the following:
 
-* Last Year's Income Before Tax
+* Last Year's Income Before Tax.
 
-* Current Monthly Income
+* Current Monthly Income.
 
-* Projected Year's Income Before Tax
+* Projected Year's Income Before Tax.
 
-#### Retirement Planner
+### Retirement Planner
 
 In this section, you will use the IEX API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to answer questions about the portfolio.
 
 Follow the steps outlined in the budget starter notebook to complete the following:
 
-##### Monte Carlo Simulation
+#### Monte Carlo Simulation
 
 Create a Monte Carlo simulation for the retirement portfolio:
 
@@ -76,7 +78,7 @@ Create a Monte Carlo simulation for the retirement portfolio:
 
     ![histogram](Images/histogram.png)
 
-##### Retirement Analysis
+#### Retirement Analysis
 
 Use the Monte Carlo simulation data to answer the following questions:
 
@@ -88,41 +90,43 @@ Use the Monte Carlo simulation data to answer the following questions:
 
     ![projected-returns.png](Images/projected-returns.png)
 
-#### Financial Report
+### Financial Report
 
 In this section, you will compile a financial report to demo your calculations to the consumer app team. The report should be written as a markdown file and include the following sections:
 
 1. Budget Analysis: Summarize the transaction data from the budget analysis and include images for each chart and table produced.
 2. Retirement Planning: Summarize the retirement portfolio analysis and include the charts for the Monte Carlo simulation.
 
-#### Optional Challenge — Early Retirement
+### Optional Challenge — Early Retirement
 
 Harold was really impressed with your work on this planner, but commented that 30 years seems like such a long time to wait to retire! Harold starts wondering if the retirement plan could be adjusted to retire earlier than normal. Try adjusting the portfolio to either include more risk (a higher stock than bond ratio) or to have a larger initial investment and rerun the retirement analysis to see what it would take to retire in five years instead of 30!
 
-- - -
+---
 
 ### Resources
 
-[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* [Plaid API Docs](https://plaid.com/docs/)
 
-- - -
+* [AlpacaDOCS](https://alpaca.markets/docs/)
+
+* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+---
 
 ### Hints and Considerations
 
-[Plaid API Docs](https://plaid.com/docs/)
+* For the Monte Carlo simulation, start out by running 100 simulations for one year of returns, and when you have the code worked out, run the simulation at 100–500 simulations for 30 years (this takes a long time).
 
-[IEX Financial API Docs](https://addisonlynch.github.io/iexfinance/stable/)
-
-For the Monte Carlo simulation, start out by running 100 simulations for one year of returns, and when you have the code worked out, run the simulation at 100–500 simulations for 30 years (this takes a long time).
-
-- - -
+---
 
 ### Submission
 
 * Create Jupyter Notebooks for the analysis and planner and host the notebooks on GitHub.
-* Include a Markdown Financial Planner report that summarizes your assumptions and finding and include this report in your GitHub repo.
+
+* Include a Markdown Financial Planner report that summarizes your assumptions and findings and include this report in your GitHub repo.
+
 * Submit the link to your GitHub project to Bootcampspot.
 
-- - -
+---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
