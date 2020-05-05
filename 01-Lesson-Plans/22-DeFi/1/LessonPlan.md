@@ -10,7 +10,7 @@ Trilogy is a company that values transparency and data-driven change. As we grow
 
 ### Overview
 
-In today's class, students will be introduced to the concept of DeFi (decentralized finance), which are financial systems built upon distributed ledgers that frequently leverage smart contracts. Students will learn that DeFi is not a particular technology or implementation, but rather, a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
+In today's class, students will be introduced to the concept of DeFi (decentralized finance), which are financial systems built upon distributed ledgers that frequently leverage smart contracts. Students will learn that DeFi is not a particular technology or implementation, but rather a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
 
 ### Class Objectives
 
