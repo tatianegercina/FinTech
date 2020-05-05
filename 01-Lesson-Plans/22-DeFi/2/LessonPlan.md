@@ -783,7 +783,7 @@ Have the TAs ensure that students:
 
 * Have successfully implemented the contract. If the contract is not implemented properly, the front end will not function.
 
-### 7. Instructor Do: Front end Review (5 min)
+### 7. Instructor Do: Front-End Review (5 min)
 
 **Files:**
 
