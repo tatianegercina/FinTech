@@ -40,6 +40,10 @@ By the end of class, students will be able to:
 
 * Toward the end of class, students will begin applying Monte Carlo simulations to portfolio returns. Therefore, they will need to combine the concepts of portfolio optimization (taught in the Pandas unit) with the concept of portfolio forecasting (taught in today's lesson). Walkthrough the steps in detail as students can easily get lost in this myriad of technical concepts!
 
+* In this class, the concept of random numbers and random numbers generators is introduced and applied using `numpy.random`. A random seed (`random.seed(3)`) has been set for all the Instructor's activities to ensure reproducibility, be aware of that during your coding demos and explain to students the purpose of using a random seed for prototyping but not for deploying models.
+
+* In those Students' activities that use `numpy.random`, there a random seed is not set to allow students to experience randomness.
+
 ### Sample Class Video (Highly Recommended)
 
 * To watch an example class lecture, go here: [5.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=629c0f35-efd0-4081-a916-aab4015c80e0) Note that this video may not reflect the most recent lesson plan.
@@ -56,7 +60,7 @@ By the end of class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Welcome Class (5 min)
+### 1. Instructor Do: Welcome Class and Intro to Monte Carlo Simulations (10 min)
 
 Energize your students and welcome them to the third day of APIs! Today is the day where students move from historical to future-oriented analysis. Time to look into the crystal ball!
 
@@ -69,14 +73,6 @@ Cover the following points:
 * Today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. You should feel empowered as you are learning how you can use other curated datasets to analyze and generate insights on their own.
 
 * You should be prepared to push your mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.
-
-Answer any questions before moving on.
-
----
-
-### 2. Instructor Do: Intro to Monte Carlo Simulations (10 min)
-
-In this activity, students will be introduced to Monte Carlo Simulations and the core concepts behind it.
 
 Open the lesson slides, move to the "Monte Carlo Simulations" section and highlight the following:
 
@@ -703,7 +699,7 @@ Answer any questions before moving on.
 
 ---
 
-### 16. Instructor Do: Intro to Portfolio Forecasting (10 min)
+### 16. Instructor Do: Intro to Portfolio Forecasting (5 min)
 
 At this point, students have executed Monte Carlo simulations, learned to interpret frequency distributions, probability distributions, and confidence intervals, and realized how to apply Monte Carlo simulations to forecast the future prices (and corresponding returns) of individual stocks. Now, students will take their journey one step further and learn how to apply Monte Carlo simulations to forecast the returns of a portfolio, which can be comprised of either all stocks or a combination of multiple asset classes such as stocks and bonds.
 
@@ -929,7 +925,7 @@ Answer any questions before moving on.
 
 ---
 
-### 20. Recap (25 min)
+### 20. Instructor Do: Structured Review (35 min)
 
 Is this the end, or is it just another iteration of a simulation? It's actually the end! Welcome to today's finish line.
 
