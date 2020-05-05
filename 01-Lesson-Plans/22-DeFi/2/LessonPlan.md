@@ -661,7 +661,7 @@ Ask the class the following review questions.
 
 * After having completed this exercise, can you think of any interesting EIP/ERC specification ideas?
 
-### 5. Instructor Do: Front-end Introduction (10 min)
+### 5. Instructor Do: Front-End Introduction (10 min)
 
 In this activity, you will demonstrate combining the `CryptoRight` contract with a pre-made frontend.
 
