@@ -757,7 +757,7 @@ You can expand the items in the accordion menus:
 
 Now it's time for students to integrate the front end with their contracts!
 
-### 6. Student Do: Integrating a Pre-Built Front end (15 min)
+### 6. Student Do: Integrating a Pre-Built Front End (15 min)
 
 In this activity, students will integrate the same front-end code with their `CryptoRight` contracts, and upload a few sample copyrights using the interface.
 
