@@ -255,9 +255,9 @@ Inside the body of the `newAppraisal` function, set the passed token_id's apprai
 
 * The `newAppraisal` function does three things:
 
- * It increments the new appraisal amount for the given `token_id` inside the `art_collection` mapping
+ * It increments the new appraisal amount for the given `token_id` inside the `art_collection` mapping.
 
- * It `emits` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal, and the `report_uri`
+ * It `emits` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal, and the `report_uri`. 
 
  * It returns the current artwork `appraisal_value` after the latest appraisal.
 
