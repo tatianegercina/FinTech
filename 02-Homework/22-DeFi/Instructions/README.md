@@ -72,7 +72,7 @@ You will need to complete the functions provided in the starter code. Here are s
 - Make sure to include `require(_exists(tokenId), "error message here")` when possible, and other `requires` that will
   prevent lost ether or enforce security.
 
-### Modifying the Front-end Code
+### Modifying the Front-End Code
 
 You will need to update the `contractAddress` at the very top of `dapp.js`. This will ensure that the front end can communicate with the smart contract back end. This will need to be consistent with the network the market is deployed on.
 
