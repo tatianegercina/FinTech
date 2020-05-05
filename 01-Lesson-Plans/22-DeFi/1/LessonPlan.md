@@ -417,13 +417,7 @@ Begin by giving the students some background on IPFS, such as what it is and how
 
 * So what is IPFS?
 
-* IPFS stands for `InterPlanetary File System`, it is both:
-
- * a `Protocol`
-
- * a `Network`
-
- * and a `File System`
+* IPFS stands for `InterPlanetary File System`. It is a `Protocol`, a `Network`, and a `File System`. 
 
 * So what exactly does this mean, and how does it all fit together?
 
