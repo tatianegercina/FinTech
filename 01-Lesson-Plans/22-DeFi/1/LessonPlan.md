@@ -413,7 +413,7 @@ In this activity, students are introduced to the `IPFS` technology and how it ca
 
 * [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_System/Solved/example_uri.json))
 
-Begin by giving the students some background on IPFS, such as what it is, and how it works.
+Begin by giving the students some background on IPFS, such as what it is and how it works.
 
 * So what is IPFS?
 
