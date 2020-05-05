@@ -235,7 +235,7 @@ On the next line of the `registerArtwork` function, add the generated `token_id`
 
 * When our `registerArtwork` function finishes creating a new artwork token, it will then return the token's id.
 
-Define a second function named `newAppraisal`; this function will be responsible for reporting a new artwork appraisal by logging its `report_uri`. It accepts three parameters a `uint` named `token_id`, a second `uint` named `new_value` and a `string memory` representing the `report_uri`. Make `newAppraisal` a public function that returns a `uint`.
+Define a second function named `newAppraisal`; this function will be responsible for reporting a new artwork appraisal by logging its `report_uri`. It accepts three parameters: a `uint` named `token_id`, a second `uint` named `new_value`, and a `string memory` representing the `report_uri`. Make `newAppraisal` a public function that returns a `uint`.
 
  ```solidity
  function newAppraisal(uint token_id, uint new_value, string memory report_uri) public returns(uint) {
