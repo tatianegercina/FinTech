@@ -944,7 +944,7 @@ Click confirm in the `MetaMask` window.
 
 * You should now see a confirmed `Deposit` transaction, a confirmed `Withdraw` transaction, and your `MetaMask` wallet should now once again contain the additional `10 ether`.
 
-Congratulations...you have now written, compiled, deployed, and executed your first smart contract!
+Congratulations—you have now written, compiled, deployed, and executed your first smart contract!
 
 Not only have you written a smart contract, but you have learned a strictly typed programming language which will enable you to write super precise and fast code.
 
