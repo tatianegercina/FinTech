@@ -213,7 +213,7 @@ Explain the following points about the usage agreement:
 
 * The usage agreement is where the MetaMask team asks you to collaborate on improving the tool.
 
-* This agreement to participate is optional, and a personal choice.
+* This agreement to participate is optional and a personal choice.
 
 ![MetaMask installation - 6](Images/metamask-6.png)
 
