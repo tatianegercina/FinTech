@@ -366,7 +366,7 @@ Walkthrough the solution and highlight the following:
 
   ![coin-flip-quantile-function](Images/coin-flip-quantile-function.png)
 
-* The `pyplot` class from the `matplotlib` library contains a `axvline` function that allows for setting upper and lower bounds to a confidence interval on a plot. The `color` parameter sets the color of the line.
+* The `pyplot` class from the `matplotlib` library contains an `axvline` function that allows for setting upper and lower bounds to a confidence interval on a plot. The `color` parameter sets the color of the line.
 
   ![coin-flip-confidence-interval](Images/coin-flip-confidence-interval.png)
 
