@@ -688,7 +688,7 @@ Students will just have completed a lengthy activity of installing and using the
 
     1. Creating a `.env` file.
 
-    2. Import the `dotenv` package.
+    2. Importing the `dotenv` package.
 
     3. Loading the `.env` file with `load_dotenv()` to set the environment variable.
 
