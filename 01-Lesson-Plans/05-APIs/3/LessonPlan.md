@@ -538,7 +538,7 @@ Open the solution and explain the following:
 
   ![tsla-normal-distribution](Images/tsla-normal-distribution.PNG)
 
-* Simulations for the next `252` trading shows that `TSLA` stock is forecast to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years.
+* Simulations for the next `252` trading days show that `TSLA` stock is forecast to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years.
 
   ![tsla-simulated-price-plot](Images/tsla-simulated-price-plot.PNG)
 
