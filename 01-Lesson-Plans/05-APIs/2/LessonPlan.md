@@ -43,6 +43,7 @@ By the end of class, students will be able to:
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [5.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=50ef1953-f071-47b8-8bb3-aab10107ea41) Note that this video may not reflect the most recent lesson plan.
 
 ---
@@ -51,31 +52,25 @@ By the end of class, students will be able to:
 
 Day 2 takes students to the next step in using APIs. Students will transition from using the Python `requests` library to using SDKs that provide practical use cases for FinTech analysis.
 
-**Files:**
-
-* [welcome-slides](https://docs.google.com/presentation/d/1l0JmnichhnQ4RkI5Boe-zrEE5uuCehC2YTqxlTAudsA/edit?usp=sharing)
-
 Welcome students to the second day of APIs by highlighting the following talking points:
 
-* Communicate that today's lesson will be a continuation of the last session; however, there will be more emphasis and focus on using FinTech APIs in a practical manner.
+Welcome students to the second day of APIs, open the lesson slides and move to "The Rise of APIs" section by highlighting the following talking points:
 
-* Underscore that practical APIs work just like the fun APIs (e.g., Python Blackjack). A client submits a request, and a server responds. Ask the students a quick refresher question:
+* Today's class will be a continuation of the last session; however, there will be more emphasis and focus on effectively using FinTech APIs.
 
-    **Question:** What is the name or conceptual phrase for this interaction or relationship between a client and an API?
-
-    **Answer:** Client-server model.
-
-* There are a number of FinTech APIs available that grant users the ability to create and execute analytic pipelines on various forms of financial data.
+* There are several FinTech APIs available that grant users the ability to create and execute analytic pipelines on various forms of financial data.
 
 * Because APIs often offer practical services, they may require subscriptions or payment. Companies use API keys and user accounts to ensure billing and secure transmission of financial and other confidential information.
 
+* You will hands-on experience on using Plaid (a banking API), Quandl (to fetch historical stock data) and Alpaca (a trading API)
+
 Transition into a dry demonstration (just visit the site) of a practical FinTech API that will be used later in the lesson: Plaid.
 
-* Navigate to the [Plaid](https://plaid.com/) website.
+Navigate to the [Plaid](https://plaid.com/) website and highlight the following:
 
-* Explain that Plaid is an API that allows users to connect multiple bank accounts to one platform and provides a unified view of a person's financial ecosystem. This allows users to manage and analyze their accounts and financial information from one spot.
+* Plaid is an API that allows users to connect multiple bank accounts to one platform and provides a unified view of a person's financial ecosystem. This will enable users to manage and analyze their accounts and financial information from one spot.
 
-* Communicate that Plaid was designed as a tool for developers to accelerate their FinTech development. Developers can use Plaid to provide services to their users and consumers without having to worry about making API calls to each bank or financial entity.
+* Plaid was designed as a tool for developers to accelerate their FinTech development. Developers can use Plaid to provide services to their users and consumers without having to worry about making API calls to each bank or financial entity.
 
 * Because Plaid handles the behind-the-scenes handshakes with each financial institution, developers can focus on designing and developing a program that will:
 
@@ -83,7 +78,7 @@ Transition into a dry demonstration (just visit the site) of a practical FinTech
 
   2. Analyze data by either extracting financial information from Plaid or by using Plaid's out-of-the-box capabilities.
 
-  ![plaid_services.png](Images/plaid_services.png)
+Answer any questions before moving on.
 
 ---
 
@@ -171,7 +166,7 @@ Ask if there are any questions or comments before moving on.
 
 ### 4. Instructor Do: Creating Environment Variables (5 min) (Critical)
 
-In the previous activity, students confirmed that they have their API keys. In this activity, they will learn how to create a `.env` file to store their keys as environment variables. This demo will also include exporting environment variables so that the variables can be used in Python and in other applications and programs.
+In this activity, students will learn how to create a `.env` file to store their keys as environment variables. This demo will also include exporting environment variables so that the variables can be used in Python and in other applications and programs.
 
 **Files:**
 
