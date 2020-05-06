@@ -22,7 +22,7 @@ Create a Monte Carlo simulation with `1000` simulations of `5` shots to analyze 
 
     * Use the `choice` function from the `random` class of the `numpy` library to randomly choose between the list elements `hit` and `missed` of the `shot` list. Use the `p` parameter for the `choice` function to specify the probabilities of hitting a shot and missing a shot; set the `p` parameter to `[0.2, 0.8]`.
 
-    * Append the results to the DataFrame, with each column set as the series of free throw results for every simulation.
+    * Append the results to the DataFrame, with each column set as the series of shot results for every simulation.
 
   * Loop through every column of the DataFrame and use the `value_counts` function to count the number of hit targets per simulation. Select only the values of the `hit` key from the Series object that the `value_counts` function returns. Save the results to another DataFrame.
 
