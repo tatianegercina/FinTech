@@ -125,11 +125,9 @@ If time remains, communicate to students that if they wanted to automate the Nas
 
 * Convey what's happening in each GIF.
 
-  1. Actions are recorded
+  1. Actions are recorded using the Chrome extension
 
-  2. Actions and requests are executed
-
-  3. Action and request output is reviewed
+  2. Data is fetched with the WraAPI Builder.
 
 * The WrapAPI could be used to submit Quandl API requests via a web browser as well. WrapAPI could automate the process of copying and pasting the request URL into the browser.
 
@@ -379,7 +377,7 @@ If time permits, ask the students  the following questions. Sample answers have 
 
   **Answer:** The client-server model is simple, easy to understand, and used almost everywhere. APIs are cool because they eliminate the need of having to reinvent the wheel.
 
-* Ask students to write down one thing they do not like or find challenging about APIs and the client-server model. Ask one student to volunteer an answer and collect the remaining answers as students leave the classroom.
+* Ask students to write down one thing they do not like or find challenging about APIs and the client-server model. Ask one student to volunteer an answer.
 
   **Answer**: Not all APIs have good documentation. It's difficult to gauge exactly what an API can do or how it should be used.
 
