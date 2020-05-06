@@ -300,7 +300,7 @@ Kick off the activity review session by asking students to summarize the process
 
 * After acquiring an API key, what's the first thing that should be done?
 
-  **Answer:** The key should be stored as an environment variable in your projects `.env` file.
+  **Answer:** The key should be stored as an environment variable in your project's `.env` file.
 
 * Once an environment variable has been defined in your `.env` file, what should happen next?
 
@@ -308,15 +308,15 @@ Kick off the activity review session by asking students to summarize the process
 
 * What should be done after the `.env` file has been sourced?
 
-  **Answer:** The environment variable should be called in Python using the `os.environ.get` function.
+  **Answer:** The environment variable should be called in Python using the `os.getenv()` function.
 
 * Is there ever a time where an API key should be hard-coded within a Python script?
 
   **Answer:** No. The best practice for keeping API keys secure is to store them in environment variables. This practice should always be used.
 
-Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ipynb), and end the review session with a quick-dry walk-through of the solution.
+Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ipynb), and end the review session with a dry walk-through of the solution.
 
-* Once created, the environment variables are then shared with all child processes. For example, when the `load_dotenv()` method is executed,it will ensure the `QUANDL_API_KEY` variable is accessible by all processes running in the environment that executed the python file process.
+* Once created, the environment variables are then shared with all child processes. For example, when the `load_dotenv()` method is executed, it will ensure the `QUANDL_API_KEY` variable is accessible by all processes running in the environment that executed the python file process.
 
   ```shell
   QUANDL_API_KEY="ENTER YOUR KEY HERE"
@@ -329,12 +329,12 @@ Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ip
   type(api_key)
   ```
 
-* Once stored as a Python variable, the environment variable value can be used for processing. In this case, the `QUANDL_API_KEY` is stored as Python variable api_key and then concatenated with the request URL. The concatenated request URL will then be used to submit a request to the Quandl API.
+* Once stored as a Python variable, the environment variable value can be used for processing. In this case, the `QUANDL_API_KEY` is stored as Python variable `api_key` and then concatenated with the request URL. The concatenated request URL will then be used to submit a request to the Quandl API.
 
   ```python
   request_url = "https://www.quandl.com/api/v3/datasets/WIKI/AMD.json?api_key="
 
-  # Concatenate request_url and api_key. Store as new variable
+  # Concatenate request_url and api_key, then store as new variable
   request_url_rfd = request_url + api_key
   ```
 
