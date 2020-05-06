@@ -643,7 +643,7 @@ Open the solution and explain the following:
 
   ![tsla-multiple-stock-trajectories](Images/tsla-multiple-stock-trajectories.png)
 
-* The last row of the DataFrame containing the `252 * 3` records of closing prices for each simulation contains the closing prices of `1000` different stock price trajectories on the last day of the project `252 * 3` trading days or a three-year trading period.
+* The last row of the DataFrame containing the `252 * 3` records of closing prices for each simulation contains the closing prices of `1000` different stock price trajectories on the last day of the projected `252 * 3` trading days or a three-year trading period.
 
   ![tsla-last-row](Images/tsla-last-row.png)
 
