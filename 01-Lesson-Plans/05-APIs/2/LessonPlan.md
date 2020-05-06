@@ -61,7 +61,7 @@ Welcome students to the second day of APIs by highlighting the following talking
 
 * Underscore that practical APIs work just like the fun APIs (e.g., Python Blackjack). A client submits a request, and a server responds. Ask the students a quick refresher question:
 
-    **Question:** What is the name or conceptual phrase for this interaction or relationship between a client and an API.
+    **Question:** What is the name or conceptual phrase for this interaction or relationship between a client and an API?
 
     **Answer:** Client-server model.
 
@@ -175,7 +175,7 @@ In the previous activity, students confirmed that they have their API keys. In t
 
 **Files:**
 
-* [.env](Activities/01-Ins_Create_Env_Variables/Unsolved/.env)
+* [example.env](Activities/01-Ins_Create_Env_Variables/Unsolved/example.env)
 
 Open the 5.2 slides, and highlight the following discussion points:
 
@@ -185,13 +185,11 @@ Open the 5.2 slides, and highlight the following discussion points:
 
 Open the [starter file](Activities/01-Ins_Create_Env_Variables/Unsolved/.env), and perform a live demo of creating and exporting environment variables with the `.env` file.
 
-Define your `QUANDL_API_KEY` value in the `.env` file.
+Define your `QUANDL_API_KEY` value in the `.env` file like so:
 
   ```shell
   QUANDL_API_KEY="ENTER YOUR API KEY HERE"
   ```
-
-* You define an environment variable in your `.env` like so.
 
 * Once the `.env` file has been created; it must be loaded into memory by a package like `python-dotenv` so that the environment variables can be sourced. We will be discussing methods on loading a `.env` in the next lesson.
 
@@ -216,7 +214,7 @@ Introduce students to the concept of environment variables by asking the followi
 
   **Answer:** Variables could be created, and the keys could be stored in the variables.
 
-Create a new `.env` file containing your `QUANDL_API_KEY` in the same directory as the [env_variables.ipynb](Activities/02-Ins_Call_Env_Variables/Solved/env_variables.ipynb) After you have created the `.env` run the jupyter notebook file. Next navigate to the 5.2 slides and touchpoint on each of the below discussion points.
+Create a new `.env` file containing your `QUANDL_API_KEY` in the same directory as the [env_variables.ipynb](Activities/02-Ins_Call_Env_Variables/Solved/env_variables.ipynb). After you have created the `.env` run the jupyter notebook file. Next navigate to the 5.2 slides and touchpoint on each of the below discussion points.
 
 * Environment variables are variables just like Python variables; however, instead of being created in a Python application, they're created on a user's computer. Environment variables are operating-system-level variables that are accessible by all programs and applications with access to that environment.
 
@@ -252,7 +250,7 @@ load_dotenv()
 api_key = os.getenv("QUANDL_API_KEY")
 ```
 
-* Once an environment variable is declared, it can be called using the `os.environ.get` function. The input to the `os.environ.get` function is the name of the environment variable. The output should then be stored as a Python variable to be used at a later time.
+* Once an environment variable is declared, it can be called using the `os.getenv()` function. The input to the `os.getenv()` function is the name of the environment variable. The output should then be stored as a Python variable to be used at a later time.
 
 
 * If an environment variable does not exist, Python will return `None` as the value. An empty environment variable will cause an API call to fail. If an API doesn't seem to be working right, double-check your environment variable using the `type` command. This will indicate if the environment variable is of type `None` **(null)**  or `string  `**(not null)**.
@@ -274,7 +272,7 @@ Ask students if there are any questions before continuing.
 
 ### 6. Students Do: Under Lock and Key (20 min)
 
-The previous modules focused on the instructor demoing how to create, store, and use API keys with environment variables. Students now engage in a bridge activity that involves retrieving a Quandl API key, and submitting a Quandl API request with the key stored as an environment variables. This will be the students' first opportunity for hands-on practice with API keys and environment variables.
+The previous modules focused on the instructor demoing how to create, store, and use API keys with environment variables. Students now engage in a bridge activity that involves retrieving a Quandl API key, and submitting a Quandl API request with the key stored as an environment variable. This will be the students' first opportunity for hands-on practice with API keys and environment variables.
 
 Working with environment variables can be a little tricky, especially if they are not declared and exported correctly. Make sure both TAs and you are circulating during this activity to help resolve any technical issues students may face.
 
@@ -284,7 +282,7 @@ If students finish early, use the extra time to review the final two guided revi
 
 * [env_variables.ipynb](Activities/03-Stu_Under_Lock_And_Key/Unsolved/env_variables.ipynb)
 
-* [.env](Activities/03-Stu_Under_Lock_And_Key/Solved/.env)
+* [example.env](Activities/03-Stu_Under_Lock_And_Key/Solved/example.env)
 
 **Instructions:**
 
