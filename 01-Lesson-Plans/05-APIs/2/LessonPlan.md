@@ -451,7 +451,7 @@ Have the `.env` file prepared before class so that it does not need to be create
 
 * [plaid_demo.ipynb](Activities/04-Ins_Plaid_Demo/Solved/plaid_demo.ipynb)
 
-Emphasize to students that one of the cool things about Plaid is that it provides developers a sandbox for users to get started running. The sandbox contains account data that can be used to test connectivity to Plaid, as well as test some of Plaid's functionality.
+Emphasize to students that one of the cool things about Plaid is that it provides developers a sandbox for users to get started creating with the SDK. The sandbox contains account data that can be used to test connectivity to Plaid, as well as test some of Plaid's functionality.
 
 * The sandbox is great because it gives developers a space to play with Plaid without having to connect to personal bank accounts. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
 
