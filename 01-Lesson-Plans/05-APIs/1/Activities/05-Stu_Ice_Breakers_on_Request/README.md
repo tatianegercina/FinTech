@@ -28,7 +28,7 @@ APIS
 
 5. Use the `json` function to format `response_content` as JSON. Store the output as a variable named `data`.
 
-6. Import the `json` package, and use `json.dump` to print `response_content` to the screen with formatting. Use the `indent=4` parameter to format with indentation.
+6. Import the `json` package, and use `json.dumps` to print `response_content` to the screen with formatting. Use the `indent=4` parameter to format with indentation.
 
 7. Decipher the JSON data, and identify an interesting fact/joke to share with the class. Write it down to tell the class during the activity review.
 

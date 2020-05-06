@@ -6,7 +6,7 @@ For the past three weeks, students have been immersed into the world of Python a
 
 Today's class will teach students what application programming interfaces (APIs) are, what they're used for, and why they are valuable. Students will also learn, from a high level, what the client-server model is and how it works. Students will submit API calls with Postman (a development environment for APIs) and Python, and they'll learn how to decipher and parse API JSON output. Lastly, students will submit API calls with parameters in order to improve response time and filter and narrow down API output. Learning how to make API calls and parse API output using Postman and Python will prepare students for getting their hands dirty with APIs in the professional world.
 
-Before students leave at the end of the class, instruct them to sign up for the APIs that are going to be used tomorrow. These APIs will be used in the next lesson, and the 5.2 activities will require students have API keys. Links are provided below. Remember to slack the links to the students so they have a resource to sign up with.
+Before students leave at the end of the class, instruct them to sign up for the APIs that are going to be used in the next class. These APIs will require that students have API keys. Links are provided below. Remember to slack the links to the students so they have a resource to sign up with.
 
 * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
@@ -52,7 +52,7 @@ By the end of class, students will be able to:
 
 Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also encourage students to work with partners.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
 - - -
 
@@ -91,7 +91,7 @@ Start the class off with a review of the introductory slide about APIs. Highligh
 
 Introduce Quandl and briefly demonstrate to students how to use an internet browser to submit a Quandl API call.
 
-* Quandl is a data mart of financial data. Quandl collects data from various sources, consolidates the data,and then makes it available to users. **Quandl** is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Quandl's data can be accessed by users via their API. The API supports multiple programming languages, including Python.
+* Quandl is a data mart of financial data. Quandl collects data from various sources, consolidates the data, and then makes it available to users. **Quandl** is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Quandl's data can be accessed by users via their API. The API supports multiple programming languages, including Python.
 
   ![quandl_flow.gif](Images/quandl_flow.gif)
 
@@ -101,7 +101,7 @@ Navigate to the [Quandle API Overview](https://www.quandl.com/tools/api) page, a
 
   ![quandl_url.png](Images/quandl_url.png)
 
-* Submit Quandl API to get AAPL's stock prices using an internet browser and the link below. Show students the data, and bring attention to the AAPL stock prices in the output.
+* Submit the Quandl API request to get AAPL's stock prices using an internet browser and the link below. Show students the data, and bring attention to the AAPL stock prices in the output.
 
   ```
   https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=<instructor's API key>
@@ -115,7 +115,7 @@ Finish the demo of Quandl with the following reflective question:
 
   **Answer:** Quandl is easier and quicker to use than Nasdaq. As long as the URL is known, fewer steps are needed. A limitation is that the request URL has to be known.
 
-* If you wanted to automate the extraction of historical stock price, what's the better tool: nasdaq.com or Quandl?
+* If you wanted to automate the extraction of historical stock prices, what's the better tool: nasdaq.com or Quandl?
 
   **Answer:** Quandl would be the best tool to use to automate extraction of historical stock data. It would be easier than automating the nasdaq.com process.
 
@@ -125,11 +125,9 @@ If time remains, communicate to students that if they wanted to automate the Nas
 
 * Convey what's happening in each GIF.
 
-  1. Actions are recorded
+  1. Actions are recorded using the Chrome extension
 
-  2. Actions and requests are executed
-
-  3. Action and request output is reviewed
+  2. Data is fetched with the WraAPI Builder.
 
 * The WrapAPI could be used to submit Quandl API requests via a web browser as well. WrapAPI could automate the process of copying and pasting the request URL into the browser.
 
@@ -147,7 +145,7 @@ Explain to student's that this unit's homework focuses on exposing them to some 
 
 Walk through the homework instructions, and highlight the following:
 
-* The first component of the homework is focused on budget analysis. Students will use an API called **PLAID** to analyze personal financial data. PLAID can be used to securely access any type of banking, credit, or investment account, which opens doors to new services to customers that are not typically available without PLAID. The greatest thing about it is that you can confidently use PLAID knowing you can integrate it with other technologies and apps without security being compromised; PLAID handles the security and provisions access to personal financial accounts.
+* The first component of the homework is focused on budget analysis. Students will use an API called **PLAID** to analyze personal financial data. PLAID can be used to securely access any type of banking, credit, or investment account, which opens doors to new services for customers that are not typically available without PLAID. The greatest thing about it is that you can confidently use PLAID knowing you can integrate it with other technologies and apps without security being compromised; PLAID handles the security and provisions access to personal financial accounts.
 
 * With financial data available and accessible via PLAID, students will transition to using the financial data retrieved via PLAID to forecast financial goals. This section uses a Monte Carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution will be sufficient to cover their future income.
 
@@ -171,7 +169,7 @@ Navigate to the 5.1 slides for the client-server model, and highlight the follow
 
   Image acquired from [Shutterstock](https://www.shutterstock.com/image-vector/vector-concept-client-server-model-safe-483125932?src=cvaByXWnT8wlRtaTVaTE7Q-1-0).
 
-* Define the client-server model as structure that outlines the relationship and flow of communication between two components: a client and a server.
+* Define the client-server model as a structure that outlines the relationship and flow of communication between two components: a client and a server.
 
   * A **client** is any tool or application that is used to connect to or communicate with a server. This includes internet browsers, mobile devices, and command line terminals, just to name a few. Clients submit requests to servers, and clients receive responses from servers.
 
@@ -321,7 +319,7 @@ In the next activity, students will leverage the steps from this demonstration i
 
 It's time students stopped learning about APIs and started playing with some! In this activity, students will go through a list of FinTech APIs and test out their functionality using Postman. This will give students a better understanding of what Postman is and how it should be used, and it will expose students to one of the most common tools used in the FinTech industry.
 
-Instruct TAs to make rounds to sure all students have Postman installed. Postman should have been installed prior to the class. Have TAs provide assistance and troubleshooting to any students experiencing issues getting started.
+Instruct TAs to make rounds to ensure all students have Postman installed. Postman should have been installed prior to the class. Have TAs provide assistance and troubleshooting to any students experiencing issues getting started.
 
 Recommend that students save their API requests in Postman so they do not have to continually execute the same request.
 
@@ -379,7 +377,7 @@ If time permits, ask the students  the following questions. Sample answers have 
 
   **Answer:** The client-server model is simple, easy to understand, and used almost everywhere. APIs are cool because they eliminate the need of having to reinvent the wheel.
 
-* Ask students to write down one thing they do not like or find challenging about APIs and the client-server model. Ask one student to volunteer an answer and collect the remaining answers as students leave the classroom.
+* Ask students to write down one thing they do not like or find challenging about APIs and the client-server model. Ask one student to volunteer an answer.
 
   **Answer**: Not all APIs have good documentation. It's difficult to gauge exactly what an API can do or how it should be used.
 
@@ -531,7 +529,7 @@ If a student doesn't find a fact or joke they feel like sharing, ask them to do 
 
 * Discuss their opinions regarding using the Python `requests` library to make API calls instead of Postman.
 
-* Identify one advantage of using Python `requests` library over using Postman.
+* Identify one advantage of using the Python `requests` library over using Postman.
 
 **Answer** The `requests` library allows API calls to be made in-line with the rest of the code and processing. Postman requires users to transition from one development environment to another.
 
@@ -638,7 +636,7 @@ Navigate to the 5.1 slides, and highlight the following:
 
     **Answer**: When using the `?format=json` tag.
 
-* **Parameters** can be specified in one of two ways. Parameters can follow `/` forward slashes or specified by parameter name and then by parameter value.
+* **Parameters** can be specified in one of two ways. Parameters can follow `/` forward slashes or be specified by parameter name and then by parameter value.
 
   ```
   Parameter provided after /
@@ -807,7 +805,7 @@ Transition the class into a review session. Ask the following questions:
 
   **Answer:** Scoring.
 
-* Has URL parameters made APIs more challenging or easier to use?
+* Has URL parameters made APIs more challenging to use or easier to use?
 
 Ask if there are any remaining questions or comments before continuing.
 
@@ -815,7 +813,7 @@ Ask if there are any remaining questions or comments before continuing.
 
 ### 18. Instructor Do: Recap (10 min)
 
-This activity will conclude the APIs Day 1. Recap the skills and concepts learned throughout the lesson. Engage the students by having students lead the recap as much as possible.
+This activity will conclude APIs Day 1. Recap the skills and concepts learned throughout the lesson. Engage the students by having students lead the recap as much as possible.
 
 * Ask if there's a student who would like to volunteer to summarize what was learned today.
 
@@ -831,7 +829,7 @@ Guide students and the recap session. Use the below sample statements and questi
 
 Finish the recap with a few statements of encouragement.
 
-* Tell students they need to give themselves, yet gain, a round of applause. They've added yet another valuable tool to their developer's toolkit.
+* Tell students they need to give themselves, yet again, a round of applause. They've added yet another valuable tool to their developer's toolkit.
 
 * Remind students that completing this amount of work in this time period already means they've proven their aptitude. It's just growth from here.
 
