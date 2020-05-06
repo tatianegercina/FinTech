@@ -12,13 +12,13 @@ Since Quandl has cracked down on the number of API calls users can make to the s
 
 2. Create a new `.env` file, and declare an environment variable named `QUANDL_API_KEY`.
 
-3. Open the [Jupyter Notebook starter file](Unsolved/env_variables.ipynb), and import the Python `requests` and `os` and `dotenv` libraries.
+3. Open the [Jupyter Notebook starter file](Unsolved/env_variables.ipynb), and import the Python `requests`, `os` and `dotenv` libraries.
 
 ### Execute API call with API key/env variable
 
 4.  Use the `load_dotenv()` method from the `dotenv` package to load and export the environment variables.
 
-5. Use the `os.environ.get` function to retrieve the environment variable named `QUANDL_API_KEY`. Store as a Python variable named api_key.
+5. Use the `os.getenv()` function to retrieve the environment variable named `QUANDL_API_KEY`, and store it as a Python variable named api_key.
 
 6. Use the `type` function to confirm the retrieval of the API key. Hint: If `NoneType` is returned, the environment variable does not exist. Revisit steps 2 and 3.
 
