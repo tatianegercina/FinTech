@@ -685,7 +685,7 @@ Present the following questions and answers regarding portfolio forecasting:
 
 * Who is performing portfolio forecasting?
 
-  > Portfolio managers, quantitative analysts, retirement planners are just some of many who need to forecast the future performance of a portfolio to gauge the potential risk of investment.
+  > Portfolio managers, quantitative analysts, and retirement planners are just some of many who need to forecast the future performance of a portfolio to gauge the potential risk of investment.
 
 Ask the students if they have any questions or concerns before moving on.
 
