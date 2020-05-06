@@ -124,7 +124,7 @@ End the activity by asking the students if they have any further questions.
 
 ---
 
-### 3. Instructor Do: Keys to the FinTech Kingdom (10 min)
+### 3. Instructor Do: Keys to the FinTech Kingdom (5 min)
 
 Over the next couple of activities, students will be working with APIs that require keys for access. Use this time to engage them with API keys facilitated review discussion.
 
@@ -164,30 +164,43 @@ Ask if there are any questions or comments before moving on.
 
 ---
 
-### 4. Instructor Do: Creating Environment Variables (5 min) (Critical)
+### 4. Instructor Do: Creating Environment Variables (10 min) (Critical)
 
-In this activity, students will learn how to create a `.env` file to store their keys as environment variables. This demo will also include exporting environment variables so that the variables can be used in Python and in other applications and programs.
+In this activity, students will learn how to create a `.env` file to store their keys as environment variables. This demo will also include exporting environment variables so that the variables can be used in Python and other applications and programs.
 
 **Files:**
 
 * [example.env](Activities/01-Ins_Create_Env_Variables/Unsolved/example.env)
 
-Open the 5.2 slides, and highlight the following discussion points:
+Open the lesson slides, move to the "Environment Variables" section and highlight the following discussion points:
 
 * Exporting an environment variable exposes it to all applications and programs sharing the same parent process (e.g., a terminal or Python kernel). Each application and program inherits the variable, which allows developers to make calls using `os.getenv` to access the data stored in the variable.
 
-* A common way to export environment variables is to create a `.env` file. The `.env` file will define the environment variables that you would like to export within your local projects environment. The `.env` approach is faster than exporting the variables individually.
+* A common way to export environment variables is to create a `.env` file. The `.env` file will define the environment variables that you would like to export within the environment of your local projects. The `.env` approach is faster than exporting the variables individually.
 
-Open the [starter file](Activities/01-Ins_Create_Env_Variables/Unsolved/.env), and perform a live demo of creating and exporting environment variables with the `.env` file.
+* Because environment variables are at the operating system level, variables can be passed down from parent processes to child processes.
 
-Define your `QUANDL_API_KEY` value in the `.env` file like so:
+* An environment variable created in Python cannot be accessed by a terminal; in contrast, an environment variable created in a terminal can be accessed by Python.
 
-  ```shell
+* You can set environment variables either in Mac or Windows.
+
+Open a plain text editor, such as VSCode or Sublime Text, and create a new blank file. Perform a live demo of creating and exporting environment variables with the `.env` file by highlighting the following:
+
+* Now, we will create a `.env` file to store the API keys as environment variables.
+
+* To set an environment variable, you have to define a name for that variable; let's start creating a variable to store the Quandl API key.
+
+* Set the variable name as `QUANDL_API_KEY` and assign your API key to it.
+
+  ```text
   QUANDL_API_KEY="ENTER YOUR API KEY HERE"
   ```
 
-* Once the `.env` file has been created; it must be loaded into memory by a package like `python-dotenv` so that the environment variables can be sourced. We will be discussing methods on loading a `.env` in the next lesson.
+* Once you set your brand new environment variable, save the file as `.env`. You may receive a warning message that states that the file will be hidden.
 
+  ![create_env_file](Images/create_env_file.gif)
+
+* Once the `.env` file has been created; it must be loaded into memory by a package like `python-dotenv` so that the environment variables can be sourced. We will be discussing methods of loading a `.env` in the next activity.
 
 Ask if there are any questions, and then move on to the next activity.
 
@@ -195,23 +208,27 @@ Ask if there are any questions, and then move on to the next activity.
 
 ### 5. Instructor Do: Calling Environment Variables (5 min) (Critical)
 
-This activity involves students learning, by way of an instructor live demo, how to store API keys in environment variables, as well as how to call and use the environment variables in Python code. Teaching students how to store API keys as environment variables will help ensure that API keys are not hard-coded in Python scripts.
+In this activity, students will learn how to call API keys as environment variables using the `dotenv` Python package.
+
+**Important Note:** Ensure that you have a local `.env` file containing your `QUANDL_API_KEY` into the `Solved` folder before running the demo.
 
 **Files:**
 
 * [env_variables.ipynb](Activities/02-Ins_Call_Env_Variables/Solved/env_variables.ipynb)
 
-Introduce students to the concept of environment variables by asking the following question:
+Recall students to the concept of environment variables by asking the following question:
 
-* Imagine you signed up for 10 APIs, and each API gave you a key. It'd be extremely difficult to commit each key to memory, so you need to find some way to save the keys. What are some possible approaches?
+* Imagine you signed up for 10 APIs, and each API gave you a key. It'd be challenging to commit each key to memory, so you need to find some way to save the keys. What are some possible approaches?
 
   **Answer:** One approach would include tracking the keys in an Excel document. The document could be password protected to preserve confidentiality.
 
-  **Answer:** Variables could be created, and the keys could be stored in the variables.
+  **Answer:** Environment variables could be created, and the keys could be stored in the variables.
 
-Create a new `.env` file containing your `QUANDL_API_KEY` in the same directory as the [env_variables.ipynb](Activities/02-Ins_Call_Env_Variables/Solved/env_variables.ipynb). After you have created the `.env` run the jupyter notebook file. Next navigate to the 5.2 slides and touchpoint on each of the below discussion points.
+Open the solved version of the Jupyter notebook. Next, run the code on every cell and highlight the following:
 
-* Environment variables are variables just like Python variables; however, instead of being created in a Python application, they're created on a user's computer. Environment variables are operating-system-level variables that are accessible by all programs and applications with access to that environment.
+* Environment variables are variables just like Python variables; however, instead of being created in a Python application, they're created on a user's computer.
+
+* Environment variables are operating-system-level variables that are accessible by all programs and applications with access to that environment.
 
 * Environment variables are given a name, and they can hold any string value. It is important to note that environment variables can only hold `strings`.
 
@@ -219,47 +236,64 @@ Create a new `.env` file containing your `QUANDL_API_KEY` in the same directory 
 
 * An easy, convenient, and secure way to store any data that needs to be accessed across programs and applications is to use environment variables. This includes API keys, as well as user credentials, and program installation paths (e.g., Python).
 
-```python
-# Import dotenv package for setting environment variables
-from dotenv import load_dotenv
-
-# Import os package
-import os
-```
-
 * For reading our `.env` file and setting it's defined environment variables in our local environment we import the `load_dotenv()` method from the `python-dotenv` package.
 
-* For fetching our environment variables from the local environment and loading them into an in-memory python variable we are importing the `os` package.
+  ```python
+  # Import dotenv package for setting environment variables
+  from dotenv import load_dotenv
+  ```
 
-```python
-# Set environment variables from the .env in the local environment
-load_dotenv()
-```
+* For fetching our environment variables from the local environment and loading them into an in-memory python variable, we are importing the `os` package.
+
+  ```python
+  # Import os package
+  import os
+  ```
 
 * Setting the environment variables in our `.env` file is as easy as calling the `load_dotenv()` method.
 
+  ```python
+  # Set environment variables from the .env in the local environment
+  load_dotenv()
+  ```
+
 * Keep in mind unless a file location `string` is passed `load_dotenv` will look for a `.env` in the root directory from which your Python code is executing.
 
-```python
-# Retrieve API key and store as Python variable
-api_key = os.getenv("QUANDL_API_KEY")
-```
+* Once an environment variable is declared, it can be called using the `os.getenv` function. The input to the `os.getenv` function is the name of the environment variable. The output should then be stored as a Python variable to be used at a later time.
 
-* Once an environment variable is declared, it can be called using the `os.getenv()` function. The input to the `os.getenv()` function is the name of the environment variable. The output should then be stored as a Python variable to be used at a later time.
+  ```python
+  # Retrieve API key and store as Python variable
+  api_key = os.getenv("QUANDL_API_KEY")
+  ```
 
+* A way to check if the environment variable was correctly loaded, is to print the data type of the Python variable.
 
-* If an environment variable does not exist, Python will return `None` as the value. An empty environment variable will cause an API call to fail. If an API doesn't seem to be working right, double-check your environment variable using the `type` command. This will indicate if the environment variable is of type `None` **(null)**  or `string  `**(not null)**.
+* If the environment variable exists, Python will return `str` as the data type.
 
-```python
-api_key = os.getenv("MY_QUANDL_API_KEY")
-type(api_key)
-```
+  ```python
+  api_key = os.getenv("QUANDL_API_KEY")
+  type(api_key)
+  ```
 
-```
-NoneType
-```
+  ```text
+  NoneType
+  ```
 
-* Emphasize to students that they need to make sure that the environment variable `print` statement is not pushed into Git, or any other repository, as it would expose their API keys to anyone who has access to the repository.
+* If an environment variable does not exist, Python will return `NoneType` as the data type. An empty environment variable will cause an API call to fail.
+
+  ```python
+  # Retrieve an environment variable that doesn't exist
+  api_key_bis = os.getenv("MY_QUANDL_API_KEY")
+  type(api_key_bis)
+  ```
+
+  ```text
+  NoneType
+  ```
+
+* If an API key doesn't seem to be working right, double-check your environment variable by reviewing your `.env` file.
+
+Emphasize to students that they need to make sure that the environment variable `print` statement is not pushed into Git, or any other repository, as it would expose their API keys to anyone who has access to the repository.
 
 Ask students if there are any questions before continuing.
 
@@ -397,42 +431,43 @@ Ask students if there are any questions before moving on.
 
 ### 10. Instructor Do: Intro to Plaid (10 min)
 
-Navigate to the `Plaid SDK` section of the 5.2 slides, and introduce Plaid by highlighting how it is disrupting the FinTech data industry:
+Navigate to the "Plaid SDK" section of the lesson slides, and introduce the Plaid SDK by highlighting how it is disrupting the FinTech data industry:
 
-* According to a [Forbes](https://www.forbes.com/sites/donnafuscaldo/2019/02/06/plaid-and-quovo-just-scratching-the-surface-with-data-aggregation/#6e169e401841) article from February 2019, FinTech is transforming into a new data industry that focuses on, and specializes in, the democratization of financial services. This is largely due to the startup **Plaid**, a company seeking to enrich and empower consumers through financial data and technology.
+* According to a [Forbes article from February 2019](https://www.forbes.com/sites/donnafuscaldo/2019/02/06/plaid-and-quovo-just-scratching-the-surface-with-data-aggregation/#6e169e401841), FinTech is transforming into a new data industry that focuses on and specializes in the democratization of financial services. This is mainly due the startup **Plaid**, a company seeking to enrich and empower consumers through financial data and technology.
 
 * Whether intentional or not, Plaid is becoming the Magellan of this new FinTech market, circumnavigating the centralized FinTech powers that be and plotting the course for a new, democratized approach to financial services.
 
-* As a FinTech company, Plaid has two customers in mind: the everyday person seeking to take ownership and control over their finances, and the developers seeking to design and build robust FinTech applications that enable financial analysis.
+* As a FinTech company, Plaid has two customers in mind: the everyday person seeking to take ownership and control over their finances, and the developers trying to design and build robust FinTech applications that enable financial analysis.
 
-* Plaid is tipping the financial scales by breaking down barriers and providing a self-service platform not for FinTech professionals but for FinTech consumers: a platform offering data and analytic needs to promote the decentralization of financial analytics. Plaid literally bestows upon users the processing power and data access points previously reserved just for financial elites.
+* Plaid is tipping the financial scales by breaking down barriers and providing a self-service platform, not for FinTech professionals but FinTech consumers: a platform offering data and analytic needs to promote the decentralization of financial analytics. Plaid bestows upon users the processing power and data access points previously reserved just for financial elites.
 
-* What exactly does Plaid do? Plaid brokers connections to users' bank accounts to create a one-stop-shop experience for financial management. Typically when analyzing data across multiple accounts, one would have to visit each financial institution and extract the desired data. Plaid streamlines this process by offering a platform that will broker the request for data extraction, so users do not have to do it manually. Plaid also offers analytics and insights products as well, helping users better understand trends in their data.
+* What exactly does Plaid do? Plaid brokers connections to users' bank accounts to create a one-stop-shop experience for financial management. Typically when analyzing data across multiple accounts, one would have to visit each financial institution and extract the desired data. Plaid streamlines this process by offering a platform that will broker the request for data extraction, so users do not have to do it manually. Plaid offers analytics and insights products as well, helping users better understand trends in their data.
 
-* Plaid offers the following services:
+* The Plaid API allows users to:
 
-  * Help users monitor, budget, and gain insights from their personal finances.
+  * Connect multiple bank accounts to the Plaid platform.
 
-  * Help users manage data from multiple accounts (e.g.,  savings, equity, investments, retirement) in one platform.
+  * Get account balances.
 
+  * Extract data from Plaid at the institution and account level.
 
-Up until now, students have been solely conducting quantitative analysis on investments.
+  * Create an asset report.
 
-  ![plaid_services.png](Images/plaid_services.png)
-
-Facilitate discussion with the following talking points and guided questions:
+Up until now, students have been solely conducting quantitative analysis of investments. Facilitate discussion with the following talking points and guided questions:
 
 * Plaid can be used to analyze financial data in a more comprehensive and holistic view. Plaid takes the data from each financial account and consolidates it to create an overarching portfolio that encompasses savings, investments, retirement funds, loans, etc. What types of analysis can be done with these datasets?
 
-  **Answer:** Net worth analysis would require data to be extracted from all financial accounts.
+  * **Answer:** Net worth analysis would require data to be extracted from all financial accounts.
 
 * Plaid was created as a tool to assist developers in designing FinTech applications. By brokering connections to financial institutions, Plaid allows developers to focus on designing analytic pipelines for consumers that provide insight and drive financial budgeting decisions. If you had access to your savings, investment, and retirement account data, what would you do with it?
 
-  **Answer:** Calculate the rate of cumulative returns daily, quarterly, and yearly to show cumulative returns over time. This insight could be used to change the types of funds, bonds, and individualized stocks used in each account.
+  * **Answer:** Calculate the rate of cumulative returns daily, quarterly, and yearly to show cumulative returns over time. This insight could be used to change the types of funds, bonds, and individualized stocks used in each account.
 
-  **Answer:** Calculate beta to compare individualized stock and retirement portfolio volatility.
+  * **Answer:** Calculate beta to compare individualized stock and retirement portfolio volatility.
 
-* By leveraging the data provided by Plaid, consumers no longer have to rely on financial services professionals or big companies to give them insights into their data. Furthermore, developers no longer have to concern themselves with data acquisition and brokering communication with financial institutions. Instead, both parties can just use Plaid.
+Explain to students that by leveraging the data provided by Plaid, consumers no longer have to rely on financial services professionals or big companies to give them insights into their data. Furthermore, developers no longer have to concern themselves with data acquisition and brokering communication with financial institutions. Instead, both parties can just use Plaid.
+
+Answer any questions before moving on.
 
 ---
 
