@@ -36,4 +36,4 @@ Join and query the tables to get all data on the students.
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

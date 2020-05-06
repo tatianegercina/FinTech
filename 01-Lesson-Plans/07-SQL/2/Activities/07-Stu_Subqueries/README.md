@@ -18,4 +18,4 @@ Using subqueries, find the first and last names of customers who reside in citie
 
  ---
 
- © 2020 Trilogy Education Services
+ © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

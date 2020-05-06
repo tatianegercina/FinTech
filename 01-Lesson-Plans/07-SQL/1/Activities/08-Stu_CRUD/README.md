@@ -22,4 +22,4 @@ After creating your new nation and some parts of your military strategy, add the
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -30,4 +30,4 @@ To learn more about what makes a good README file, go [here](https://gist.github
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -23,4 +23,4 @@ Help Harold create a program that will achieve the marketing department's goals�
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -83,4 +83,4 @@ Refer to this [article](https://www.investopedia.com/terms/p/plstatement.asp) fo
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

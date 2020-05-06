@@ -118,4 +118,4 @@ McKinney, W. (2013) *Python for Data Analysis.* O'Reilly Media, Inc, USA.
 
 ### Copyright
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

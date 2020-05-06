@@ -64,4 +64,4 @@ Use a [format specifier](https://www.python.org/dev/peps/pep-0498/#format-specif
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

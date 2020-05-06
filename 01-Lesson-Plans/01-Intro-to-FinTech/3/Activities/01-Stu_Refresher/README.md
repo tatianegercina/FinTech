@@ -28,4 +28,4 @@ To learn more about git and how it's used, use [this resource](https://www.atlas
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -28,4 +28,4 @@ Think about how you can select certain columns in a table. Use those columns as 
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

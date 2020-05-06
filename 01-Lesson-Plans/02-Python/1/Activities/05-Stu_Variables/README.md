@@ -41,4 +41,4 @@ For additional help with f-strings, visit [Python 3's f-Strings](https://realpyt
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

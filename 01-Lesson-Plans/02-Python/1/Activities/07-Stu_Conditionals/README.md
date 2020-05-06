@@ -16,4 +16,4 @@ Like you, your coworker Sam is studying conditional statements. You two have dec
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

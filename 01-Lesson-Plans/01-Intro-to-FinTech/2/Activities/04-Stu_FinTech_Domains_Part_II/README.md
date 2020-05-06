@@ -20,4 +20,4 @@ As you brainstorm, think about the trends in each FinTech domain today, and how 
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -20,4 +20,4 @@ Read this [documentation](https://www.visual-paradigm.com/support/documents/vpus
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
