@@ -402,9 +402,9 @@ Ask students if there are any questions before moving on.
 
 ### 10. Instructor Do: Intro to Plaid (10 min)
 
-Navigate to the `Plaid SDK` section of the 5.2 slides, and introduce the Plaid by highlighting how it is disrupting the FinTech data industry:
+Navigate to the `Plaid SDK` section of the 5.2 slides, and introduce Plaid by highlighting how it is disrupting the FinTech data industry:
 
-* According to a [Forbes](https://www.forbes.com/sites/donnafuscaldo/2019/02/06/plaid-and-quovo-just-scratching-the-surface-with-data-aggregation/#6e169e401841) article from February 2019, FinTech is transforming into a new data industry that focuses on and specializes in the democratization of financial services. This is largely due the startup **Plaid**, a company seeking to enrich and empower consumers through financial data and technology.
+* According to a [Forbes](https://www.forbes.com/sites/donnafuscaldo/2019/02/06/plaid-and-quovo-just-scratching-the-surface-with-data-aggregation/#6e169e401841) article from February 2019, FinTech is transforming into a new data industry that focuses on, and specializes in, the democratization of financial services. This is largely due to the startup **Plaid**, a company seeking to enrich and empower consumers through financial data and technology.
 
 * Whether intentional or not, Plaid is becoming the Magellan of this new FinTech market, circumnavigating the centralized FinTech powers that be and plotting the course for a new, democratized approach to financial services.
 
