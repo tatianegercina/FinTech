@@ -430,7 +430,7 @@ Walkthrough the solution and highlight the following:
 
 * Monte Carlo simulations can be executed not just on random processes with *discrete probabilities* (ex. `70%` to make a free throw and `30%` to miss a free throw), but also on *continuous probabilities* such as normal probability distributions.
 
-* Normal probability distributions showcase the various probabilities of returning a value based on the number of standard deviations it is from the mean (how far the value may lie plus or minus from the average expected value); values far away from the mean are less common while values near the mean are more common. Monte Carlo simulation uses this characteristic to simulate a random process' potential outcomes with respect to the variability around its mean.
+* Normal probability distributions showcase the various probabilities of returning a value based on the number of standard deviations it is from the mean (how far the value may lie plus or minus from the average expected value); values far away from the mean are less common while values near the mean are more common. A Monte Carlo simulation uses this characteristic to simulate a random process' potential outcomes with respect to the variability around its mean.
 
   ![example-normal-distribution](Images/example-normal-distribution.png)
 
@@ -461,8 +461,8 @@ Walkthrough the solution and highlight the following:
   *  `ticker`,
   *  `timeframe`,
   *  `limit`,
-  *  `start_date`,
-  *  `end_date`,
+  *  `start`,
+  *  `end`,
   *  `after`,
   *  `until`
 
