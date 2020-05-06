@@ -554,7 +554,7 @@ Open the solution and explain the following:
 
 ### 13. Instructor Do: Predicting Probable Outcomes of Stock Price Trajectory (10 min)
 
-In this activity, students go one step further to produce not just a single potential price trajectory for a stock over the next `252` trading days, but many potential price trajectories. So that it's possible to analyze the probability distribution of where a stock's price can go, and therefore an interval to which confident predictions can be made regarding the future stock price.
+In this activity, students go one step further to produce not just a single potential price trajectory for a stock over the next `252` trading days, but many potential price trajectories. This makes it possible to analyze the probability distribution of where a stock's price can go, and therefore an interval to which confident predictions can be made regarding the future stock price.
 
 **Files:**
 
@@ -635,7 +635,7 @@ In this activity, students execute a Monte Carlo simulation to forecast the many
 
 Open the solution and explain the following:
 
-* Performing a Monte Carlo simulation on potential stock price outcomes involves simulating the stock price of `TSLA` over `253 times 3` trading days using a randomly selected normal distribution of daily returns and then doing the same process `n` number of times. Therefore, the code reflects another `for` loop to account for the extra iteration.
+* Performing a Monte Carlo simulation on potential stock price outcomes involves simulating the stock price of `TSLA` over `252 * 3` trading days using a randomly selected normal distribution of daily returns and then doing the same process `n` number of times. Therefore, the code reflects another `for` loop to account for the extra iteration.
 
   ![nested-tsla-monte-carlo-simulation](Images/nested-tsla-monte-carlo-simulation.png)
 
