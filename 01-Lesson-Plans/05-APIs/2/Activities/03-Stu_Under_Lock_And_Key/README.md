@@ -10,7 +10,7 @@ Since Quandl has cracked down on the number of API calls users can make to the s
 
 1. Navigate to the Quandl [Account Settings](https://www.quandl.com/account/profile) page to retrieve your API key.
 
-2. Create a new  [.env](Unsolved/.env), and declare an environment variable named `QUANDL_API_KEY`.
+2. Create a new `.env` file, and declare an environment variable named `QUANDL_API_KEY`.
 
 3. Open the [Jupyter Notebook starter file](Unsolved/env_variables.ipynb), and import the Python `requests` and `os` and `dotenv` libraries.
 
