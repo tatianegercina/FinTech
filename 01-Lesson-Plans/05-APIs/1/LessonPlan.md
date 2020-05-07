@@ -61,6 +61,16 @@ Be sure to set the pace for the class. Encourage students to attend office hours
 
 ---
 
+### Class Slides and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [5.1 Slides](https://docs.google.com/presentation/d/1ApEeROS2N3M-KeyLhqW15avfwwWhcf4GGmEMyfWFRSY/edit?usp=sharing).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+
 ### 1. Instructor Do: Welcome (5 mins)
 
 Welcome the students to the first day of APIs. This lesson will require students to leverage various FinTech APIs (e.g., Quandl) to accelerate their financial analytic pipelines, as well as get access to data they otherwise would not have access to. Students will continue employing skills learned from weeks two and three, such as data cleaning, working with DataFrames, and visualizing data.
@@ -77,7 +87,7 @@ Be sure to have the following websites loaded prior to class so that the demo ca
 
 **Files:**
 
-* [welcome-slides](https://docs.google.com/presentation/d/1cn9TvizIpIEQ4v1_HR5xQkjQV0v7zyYQHHkwCM-BCeU/edit?usp=sharing)
+* [welcome-slides](https://docs.google.com/presentation/d/1ApEeROS2N3M-KeyLhqW15avfwwWhcf4GGmEMyfWFRSY/edit?usp=sharing)
 
 Start the class off with a review of the introductory slide about APIs. Highlight the following:
 
