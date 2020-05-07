@@ -6,7 +6,7 @@
 
 ## Technology Stack
 
-- Python, Pandas, APIs, AWS, SQL
+- Python, Pandas, NumPy, APIs, AWS, SQL
 
 ## About
 
