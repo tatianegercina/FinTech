@@ -2,7 +2,7 @@
 
 ## Blockchain and Logistics
 
-![blockchain-logistics.png](../1/Images/blockchain-logistics.png)
+![blockchain-logistics.png](Images/blockchain-logistics.png)
 
 * The idea behind using a blockchain for supply chain tracking is essentially creating a provable historical record for each logistical step in from producer to consumer.
 
@@ -14,7 +14,7 @@
 
 ## Cross-Border and Localized Payments
 
-![blockchain-cross-border](../1/Images/blockchain-cross-border.png)
+![blockchain-cross-border](Images/blockchain-cross-border.png)
 
 * Since no single party manages the blockchain, geographical borders become irrelevant.
 
@@ -24,14 +24,17 @@
 
 ## Mobile and Online Merchants
 
-![blockchain-mobile-merchant](../1/Images/blockchain-mobile-merchant.png)
+![blockchain-mobile-merchant](Images/blockchain-mobile-merchant.png)
 
 * Since all you need to participate in a blockchain is a device with an internet connection, crypto is a great way for ad-hoc and online merchants.
 
-* Anyone, anywhere, can use their mobile phone to create a wallet they can receive payment on. This means that merchants can do away with third party services like Square, and can take the payments directly.
+* Anyone, anywhere, can use their mobile phone to create a wallet they can receive payment on. This means that merchants can do away with third party services like [Square](https://squareup.com/), and can take the payments directly.
 
 * This makes complex financial infrastructure available to practically anyone.
 
-* Countries like Kenya, Tanzania, India, Lesotho, DRC, Ghana, Mozambique, Egypt already use a purely mobile form of cash, called "M-Pesa" where they transact via text messages.
+* Countries like Kenya, Tanzania, India, Lesotho, Congo, Ghana, Mozambique, Egypt already use a purely mobile form of cash, called ["M-Pesa"](https://en.wikipedia.org/wiki/M-Pesa) where they transact via text messages.
 
 * Blockchain provides a far more secure and stable system as an alternative.
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
