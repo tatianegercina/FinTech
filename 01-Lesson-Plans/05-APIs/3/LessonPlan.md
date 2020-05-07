@@ -40,60 +40,79 @@ By the end of class, students will be able to:
 
 * Toward the end of class, students will begin applying Monte Carlo simulations to portfolio returns. Therefore, they will need to combine the concepts of portfolio optimization (taught in the Pandas unit) with the concept of portfolio forecasting (taught in today's lesson). Walk through the steps in detail as students can easily get lost in this myriad of technical concepts!
 
-* Have your TAs keep track of the [Time Tracker](TimeTracker.xlsx).
+* Note that the results from Monte Carlo simulations may vary from the lesson plan and a new execution in class since stock data is fetched `90` days before the current date.
+
+* In this class, the concept of random numbers and random numbers generators is introduced and applied using `numpy.random`. A random seed (`random.seed(3)`) has been set for all the Instructor's activities to ensure reproducibility, be aware of that during your coding demos and explain to students the purpose of using a random seed for prototyping but not for deploying models.
+
+* In those Students' activities that use `numpy.random`, there a random seed is not set to allow students to experience randomness.
+
+* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [5.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=629c0f35-efd0-4081-a916-aab4015c80e0) Note that this video may not reflect the most recent lesson plan.
 
----
+### Slideshow and Time Tracker
 
-### 1. Instructor Do: Welcome Class (5 min)
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 5.3 Slides]().
 
-**Files:**
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
 
-* [Slideshow](https://docs.google.com/presentation/d/1AqrhqULvquRO1W6WdUrYBKp5jcLLngN989DItBr_IBQ/edit?usp=sharing)
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-Welcome students to the third day of APIs! Cover the following points:
-
-* The previous lessons focused on API calls and showcased the Plaid API to exemplify that students can leverage the power of external datasets and functionality. Today students will combine what they've learned so far on using APIs to pull in stock data and forecast single stock and portfolio returns using Monte Carlo simulations.
-
-* Mention to the class that today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. Students should feel empowered as they are learning how they can use other curated datasets to analyze and generate insights on their own.
-
-* Students should be prepared to push their mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.
-
-* Energize your students! Today is the day where students move from historical to future-oriented analysis. Time to look into the crystal ball!
+* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
-### 2. Instructor Do: Intro to Monte Carlo Simulations (10 min)
+### 1. Instructor Do: Welcome Class and Intro to Monte Carlo Simulations (10 min)
 
-Ease students into the notion of Monte Carlo simulations by presenting the following questions and answers:
+Energize your students and welcome them to the third day of APIs! Today is the day where students move from historical to future-oriented analysis. Time to look into the crystal ball!
 
-* What is a simulation?
+Cover the following points:
 
-  > At its core, a simulation is a running instance of a model that seeks to emulate an existing process or system.
+* The previous lessons focused on API calls and showcased the Plaid API to exemplify that you can leverage the power of external datasets and functionality.
 
-* What is a Monte Carlo simulation?
+* Today you will combine what you've learned so far on using APIs to pull in stock data and forecast single stock and portfolio returns using Monte Carlo simulations.
 
-  > A Monte Carlo simulation is a specific type of simulation that uses probability and variables to predict the future potential outcomes of a randomly occurring process.
+* Today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. You should feel empowered as you are learning how you can use other curated datasets to analyze and generate insights on their own.
+
+* You should be prepared to push your mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.
+
+Open the lesson slides, move to the "Monte Carlo Simulations" section and highlight the following:
+
+* Today, we will combine what we’ve learned so far on using APIs to pull in stock data and forecast single stock/portfolio returns using Monte Carlo simulations.
+
+* Simulations will require a switch from historical analysis to predicting the future.
+
+* By the end of the lesson, Monte Carlo simulations will have predicted future stock prices and therefore forecast the potential stock's returns of an initial investment, either as a single stock investment or as an investment in a portfolio.
+
+Continue with the slides switching to the "Simulations" section, ease students into the notion of this type of simulations by presenting the following questions and answers:
+
+* What are simulations?
+
+  * At its core, a simulation is a running instance of a model that seeks to emulate an existing process or system.
+
+* What are Monte Carlo simulations?
+
+  * A Monte Carlo simulation is a specific type of simulation that uses probability and variables to predict the future potential outcomes of a randomly occurring process.
 
 * What is probability?
 
-  > The chance of an event happening. For example, the chance of a coin landing on heads is `50%`.
+  * The chance of an event happening. For example, the chance of a coin landing on heads is `50%`.
 
 * Why use Monte Carlo simulations?
 
-  > Monte Carlo simulations provide a method of testing the range of values and corresponding probabilities that a random process can generate over time—specifically, how far results may deviate from the expected average. Monte Carlo simulations help to understand the risk of uncertainty in prediction and forecasting models, which is particularly helpful when dabbling in the domain of capital investments and stock price uncertainty!
+  * Monte Carlo simulations provide a method of testing the range of values and corresponding probabilities that a random process can generate over time—specifically, how far results may deviate from the expected average. Monte Carlo simulations help to understand the risk of uncertainty in prediction and forecasting models, which is particularly helpful when dabbling in the domain of capital investments and stock price uncertainty!
 
 * What would be an example of a Monte Carlo simulation?
 
-  > Imagine a scientist wanted to know how often a coin could land on heads for `5` trials of `10` coin flips. Flipping a coin has a `50%` chance of landing on heads and a `50%` chance of landing on tails. Because of the randomly occurring nature of flipping a coin, results could vary: for example, a coin could produce `6` heads and `4` tails; `3` heads and `7` tails; `8` heads and `2` tails, `5` heads and `5` tails, or `4` heads and `6` tails. Therefore, an example Monte Carlo simulation would be to flip a coin `10` times to determine the resulting number of heads and tails, and then do that same process another `5` times to determine the frequency distribution of landing on heads (how many times the coin landed a specific number of heads). The frequency distribution of heads can then be used to calculate the corresponding probability distribution that determines how likely it is for varying numbers (or ranges) of heads to land.
+  * Imagine a scientist wanted to know how often a coin could land on heads for `5` trials of `10` coin flips. Flipping a coin has a `50%` chance of landing on heads and a `50%` chance of landing on tails. Because of the randomly occurring nature of flipping a coin, results could vary: for example, a coin could produce `6` heads and `4` tails; `3` heads and `7` tails; `8` heads and `2` tails, `5` heads and `5` tails, or `4` heads and `6` tails. Therefore, an example Monte Carlo simulation would be to flip a coin `10` times to determine the resulting number of heads and tails, and then do that same process another `5` times to determine the frequency distribution of landing on heads (how many times the coin landed a specific number of heads). The frequency distribution of heads can then be used to calculate the corresponding probability distribution that determines how likely it is for varying numbers (or ranges) of heads to land.
 
 Ask the students if they can think of any other examples of Monte Carlo simulations. Be sure to have all the students on the same page before moving on.
 
 ---
 
-### 3. Instructor Do: Probability Distribution of Potential Outcomes (10 min)
+### 2. Instructor Do: Probability Distribution of Potential Outcomes (10 min)
 
 Monte Carlo simulations seek to explain the probability of potential outcomes for a randomly occurring event. Therefore, this activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like and how to interpret the results.
 
@@ -105,51 +124,25 @@ Walkthrough the solution and highlight the following:
 
 * This solution represents a technical example to the Monte Carlo simulation use case presented in the previous activity (coin flip simulation). Therefore, the program flips a coin `10` times for `5` simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers (or ranges) of heads.
 
-* Make sure to import the `random` class from the `numpy` library which allows for randomizing a particular code process.
+* Make sure to import the `random` class from the `numpy` library, which allows for randomizing a particular code process.
 
   ```python
   # Import libraries and dependencies
   from numpy import random
   import pandas as pd
+
   %matplotlib inline
   ```
 
-* The `choice` function from the `random` class, combined with the `p` parameter for setting the probability of random events, is used to randomly choose between the two outcomes of a coin: heads or tails. Therefore, in this case, the `p` parameter is set to `[0.5, 0.5]` to represent a `50%` chance of a coin landing on heads and a `50%` chance of a coin landing on tails.
+* The initial step is to configure the simulation parameters.
 
-  ```python
-  # Print simulation iteration
-  print(f"Running Simulation {n+1}...")
+  * `num_simulations` is be the number of simulations to execute.
 
-  # Set an empty list to hold flip results
-  flips = []
+  * `num_flips` is the number of coin flips per simulation.
 
-  # Set probability of events
-  probability = [0.5, 0.5]
+  * `coin` is a list to set the possible options of the event. In this case, we can get heads or tails.
 
-  # Flip the coin several times
-  for i in range(num_flips):
-      # Random int: 0 or 1
-      coin_flip = random.choice(coin, p=probability)
-
-      # Print flip result
-      print(f"  Flip {i+1}: {coin_flip}")
-
-      # Append flip result to list
-      flips.append(coin_flip)
-  ```
-
-  ![coin-flip-results](Images/coin-flip-results.png)
-
-* The resulting heads and tails outputs for each simulation of `10` coin flips are saved as individual columns to a Pandas DataFrame.
-
-  ```python
-  # Append column for each simulation and flip results
-  monte_carlo[f"Simulation {n}"] = pd.Series(flips)
-  ```
-
-  ![coin-flip-dataframe](Images/coin-flip-dataframe.png)
-
-* The following is a holistic view of the example Monte Carlo simulation program—see, it's not that bad!
+  * `probability` is a list with the probability of every option to occur. In this case, heads and tails have the same chance to arise.
 
   ```python
   # Set number of simulations and coin flips
@@ -161,43 +154,40 @@ Walkthrough the solution and highlight the following:
 
   # Set probability of events
   probability = [0.5, 0.5]
-
-  # Create an empty DataFrame to hold simulation results
-  monte_carlo = pd.DataFrame()
-
-  # Run n number of simulations
-  for n in range(num_simulations):
-
-      # Print simulation iteration
-      # print(f"Running Simulation {n+1}...")
-
-      # Set an empty list to hold flip results
-      flips = []
-
-      # Flip the coin several times
-      for i in range(num_flips):
-
-          # Random int: 0 or 1
-          coin_flip = random.choice(coin, p=probability)
-
-          # Print flip result
-          # print(f"  Flip {i+1}: {coin_flip}")
-
-          # Append flip result to list
-          flips.append(coin_flip)
-
-      # Append column for each simulation and flip results
-      monte_carlo[f"Simulation {n}"] = pd.Series(flips)
-
-  # Print the DataFrame
-  monte_carlo
   ```
 
-* Looping through the DataFrame containing the coin flip results while leveraging the `value_counts` function allows for counting the occurrences of the different heads-to-tails combinations of every simulation.
+* Next, we create an empty DataFrame to store the simulation results.
+
+  ```python
+  # Create an empty DataFrame to hold simulation results
+  monte_carlo = pd.DataFrame()
+  ```
+
+* The simulation process is executed by two nested `for-loops`, one to control the number of simulations, another to control the number of coin flips.
+
+  ![coin_flips_sims](Images/coin_flips_sims.png)
+
+* In the inner loop, the `choice` function from the `random` class, combined with the `p` parameter for setting the probability of random events, is used to randomly choose between the two outcomes of a coin: heads or tails. Therefore, in this case, the `p` parameter is set to `[0.5, 0.5]` to represent a `50%` chance of a coin landing on heads and a `50%` chance of a coin landing on tails.
+
+  ![random_choice_function](Images/random_choice_function.png)
+
+* The resulting heads and tails outputs for each simulation of `10` coin flips are saved as individual columns to a Pandas DataFrame.
+
+  ![add_coin_flip_sim_results](Images/add_coin_flip_sim_results.png)
+
+* Finally, we display the simulations results in the notebook.
+
+  ![show_coin_flip_results](Images/show_coin_flip_results.png)
+
+  ![coin-flip-dataframe.png](Images/coin-flip-dataframe.png)
+
+* Next, we count the occurrences of the different heads-to-tails combination of every simulation by looping through the DataFrame that contains the coin flip results.
+
+* We use the Pandas `value_counts` function to calculate the frequency distribution of heads-to-tails for every simulation, returns Series object
 
   ![coin-flip-value-counts](Images/coin-flip-value-counts.png)
 
-* The conditional statements check to make sure that both the `heads` and `tails` keys are present in the series object returned from the `value_counts` function. If one or the other key is not present, the missing key gets a `0` to account for the fact that the event did not occur at all during the simulation (flipped 10 heads or flipped 10 tails).
+* Into the `for-loop`, the conditional statements check to make sure that both the `heads` and `tails` keys are present in the series object returned from the `value_counts` function. If one or the other key is not present, the missing key gets a `0` to account for the fact that the event did not occur at all during the simulation (flipped `10` heads or flipped `10` tails).
 
   ```python
   # Append results of heads and tails to respective lists
@@ -219,23 +209,29 @@ Walkthrough the solution and highlight the following:
       heads.append(value_count['heads'])
   ```
 
-* Creating a DataFrame from the list of heads per simulation and using the `plot` function with the `kind` parameter set to `hist` produces a histogram that showcases the frequency distribution of landed heads.
+* Once the `for-loop` ends, we add two columns to the empty DataFrame we set before the loop to add the heads and tails lists that we populated during the iterations of the loop.
+
+```python
+# Create columns from heads and tails lists
+freq_dist_df["heads"] = heads
+freq_dist_df["tails"] = tails
+```
+
+* Using the `plot` function with the `kind` parameter set to `hist` produces a histogram that showcases the frequency distribution of landed heads.
 
   ![coin-flip-5-simulations](Images/coin-flip-5-simulations.png)
 
-* Remember that a histogram is not a bar graph; frequency values in histogram bars are determined by the area (length times width) of the bar, not by the height of the bar. Histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single data point.
+* An histogram is not a bar graph; frequency values in histogram bars are determined by the area (length times width) of the bar, not by the height of the bar. Histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single data point.
 
-* Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum data points provided. Sometimes this creates ranges deviating from what is being simulated. Therefore, manually setting the `bins` parameter ensures that the histogram properly represents the edges of each bin, in this case, bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`.
-
-  ![coin-flip-5-simulations-bins-off](Images/coin-flip-5-simulations-bins-off.png)
+* Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum data points provided. Sometimes this creates ranges deviating from what is being simulated. Therefore, manually setting the `bins` parameter ensures that the histogram accurately represents the edges of each bin, in this case, bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`.
 
   ![coin-flip-5-simulations-bins](Images/coin-flip-5-simulations-bins.png)
 
-* Setting the `density` parameter to `True` for the histogram plot function creates a frequency density histogram which can be used to showcase the probability distribution of potential outcomes. In this case, it can be interpreted that for an experiment of `5` simulations of `10` coin flips, we can expect approximately `40%` of our simulations to land between 4 and 5 heads and another `40%` of our simulations to land between 5 and 6 heads. In addition, it could be said that `80%` of our simulations could land between 4 and 6 heads.
+* Setting the `density` parameter to `True` for the histogram plot function creates a frequency density histogram which can be used to showcase the probability distribution of potential outcomes. In this case, it can be interpreted that for an experiment of `5` simulations of `10` coin flips, we can expect approximately `20%` of our simulations to land between `4` and `5` heads and another `20%` of our simulations to land between `5` and `6` heads. In addition, it could be said that `40%` of our simulations could land between `4` and `6` heads.
 
   ![coin-flip-density-histogram](Images/coin-flip-density-histogram.png)
 
-* Unfortunately, the probability distribution of potential outcomes generated for a small number of simulations should not be trusted. This is because a small number of simulations cannot test every possible outcome and, therefore, may generate biased results that are not indicative of the true nature of the random process in the long term. Therefore, increasing the simulation count to `100` provides a more reliable and continuous range of probable outcomes.
+* Unfortunately, the probability distribution of potential outcomes generated for a small number of simulations should not be trusted. This is because a small number of simulations cannot test every possible outcome and, therefore, may generate biased results that are not indicative of the true nature of the random process in the long term. Thus, increasing the simulation count to `100` provides a more reliable and continuous range of probable outcomes.
 
   ![coin-flip-100-simulations](Images/coin-flip-100-simulations.png)
 
@@ -247,9 +243,11 @@ Walkthrough the solution and highlight the following:
 
   ![normal-distribution](Images/normal-distribution.png)
 
+Answer any questions before moving on.
+
 ---
 
-### 4. Students Do: Free Throw Simulation (15 min)
+### 3. Students Do: Free Throw Simulation (15 min)
 
 In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of free throws made out of 10 shots for a player with a `70%` accuracy and determine the likelihood of the player making `9-10` free throws in a single session.
 
@@ -257,7 +255,7 @@ Circulate with TAs during this activity to provide students with assistance. Bel
 
 * Students might face difficulty working with the histograms. Histogram bins have a default value, so if the bins are not appropriately configured, the charts might not look as expected (the bin edges will be off), and the ranges may deviate from what is being simulated.
 
-* Also keep an eye out for any student issues related to missing data; if missed or made data is missing, this is most likely because 0 was not appended for the missing values. This could visually result in one side of the distribution being cut off (producing a non-normal distribution with no values for the first shot attempted).
+* Also keep an eye out for any student issues related to missing data; if 'missed free throws' or 'made free throws' data is missing, this is most likely because 0 was not appended for the missing values. This could visually result in one side of the distribution being cut off (producing a non-normal distribution with no values for the first shot attempted).
 
 **Instructions:**
 
@@ -267,7 +265,9 @@ Circulate with TAs during this activity to provide students with assistance. Bel
 
 * [free_throw_simulation.ipynb](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes/Unsolved/free_throw_simulation.ipynb)
 
-### 5. Instructor Do: Review Free Throw Simulation (5 min)
+---
+
+### 4. Instructor Do: Review Free Throw Simulation (5 min)
 
 **Files:**
 
@@ -338,7 +338,7 @@ Open the solution and explain the following:
 
 ---
 
-### 6. Instructor Do: Confidence Intervals (10 min)
+### 5. Instructor Do: Confidence Intervals (10 min)
 
 In this activity, students are introduced to confidence intervals, which in the context of Monte Carlo simulations, are value ranges of potential outcomes with a particular probability of occurring. Confidence intervals in combination with Monte Carlo simulations are useful when trying to predict the likelihood of an outcome falling within a specific range.
 
@@ -346,7 +346,7 @@ In this activity, students are introduced to confidence intervals, which in the 
 
 * [coin_flip_confidence_intervals.ipynb](Activities/03-Ins_Confidence_Intervals/Solved/coin_flip_confidence_intervals.ipynb)
 
-Walkthrough the solution and highlight the following:
+Open the lesson slides, move to the "Confidence Intervals" section and highlight the following:
 
 * Often in statistics, there is a disconnect between the results of a sample dataset and attempting to apply the results of a sample to the overall population. For example, analyzing the average height of `20` students at a school to assume the exact average height of the entire population of students at the school would be an erroneous assumption. Therefore, confidence intervals suggest a range of values where there is an `X%` chance that the true expected value would lie within the specified range. In this case, a `95%` confidence interval may suggest that there is a `95%` chance that the true average height of students would range in height between `4` ft and `6 ft`, or in other words, the `95%` of the expected height of students should lie within the range of `4` ft and `6 ft`.
 
@@ -358,23 +358,33 @@ Walkthrough the solution and highlight the following:
 
 * In the context of Monte Carlo simulations, a confidence interval is a value range of a frequency distribution that contains a specific percentage of all potential outcomes. For example, a `90%` confidence interval would be a range of values of which `90%` of all potential outcomes of the Monte Carlo simulation are contained. Therefore, confidence intervals used with frequency distributions of Monte Carlo simulations calculate the range of potential outcomes and their probabilities of occurring. For example, one could analyze the frequency distribution of potential stock price trajectories and determine that "there is a `90%` chance that the stock price will be between `$10` and `$20` next week."
 
-* In order to create a confidence interval, the upper and lower bounds of the confidence interval need to be set as a quantile or percentile range of the frequency distribution.
+* To create a confidence interval, the upper and lower bounds of the confidence interval need to be set as a quantile or percentile range of the frequency distribution.
 
 * A quantile is a measurement in which a frequency distribution is divided into equal groups; thus, each group contains an equal fraction of the total sample. Often, quantiles are expressed in `100` equal parts, otherwise known as *percentiles*. For example, a student in the 95th percentile of height for his school is as tall as or taller than `95%` of the students at the school.
 
-* The `quantile` function for `pandas` DataFrames takes in a range of values that represent the lower and upper bounds of the confidence interval. The `numeric_only` parameter set to `True` ensures the quantiles are computed on numeric only values. In this case, quantiles of `0.05` and `0.95` are values where landing `2` heads is only greater than `5%` of all simulated outcomes, whereas landing `8` heads is greater than `95%` of all simulated outcomes.
+* The `quantile` function for `pandas` DataFrames takes in a range of values that represent the lower and upper bounds of the confidence interval.
+
+  ![slides_quantiles](Images/slides_quantiles.png)
+
+Open the solved Jupyter notebook, walkthrough the solution and highlight the following:
+
+* In this demo, we will define confidence intervals for the example of running `1000` Monte Carlo simulations with `10` coin flips each.
+
+* To define a `90%` confidence interval, we use the Pandas `quantile` function setting the parameter `q=[0.05, 0.95]`. In this case, quantiles of `0.05` and `0.95` are values where landing `3` heads is only greater than `5%` of all simulated outcomes, whereas landing `8` heads is greater than `95%` of all simulated outcomes.
 
   ![coin-flip-quantile-function](Images/coin-flip-quantile-function.png)
 
-* The `pyplot` class from the `matplotlib` library contains a `axvline` function that allows for setting upper and lower bounds to a confidence interval on a plot. The `color` parameter sets the color of the line.
+* The `pyplot` class from the `matplotlib` library contains an `axvline` function that allows for setting upper and lower bounds to a confidence interval on a plot. The `color` parameter sets the colour of the line.
 
   ![coin-flip-confidence-interval](Images/coin-flip-confidence-interval.png)
 
-* The `90%` confidence interval calculated suggests that if a coin were to be flipped 10 times, there is a `90%` chance of the coin landing somewhere between 2 and 8 heads. This is because the confidence interval encapsulates `90%` of the frequency distribution (the area of the bars in the histogram) of simulated results.
+* The `90%` confidence interval calculated suggests that if a coin were to be flipped `10` times, there is a `90%` chance of the coin landing somewhere between `3` and `8` heads. This is because the confidence interval encapsulates `90%` of the frequency distribution (the area of the bars in the histogram) of simulated results.
+
+Answer any questions before moving on.
 
 ---
 
-### 7. Students Do: Archery Target Hits (15 min)
+### 6. Students Do: Archery Target Hits (15 min)
 
 In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of potential hits (out of `5` shots) of a target for a beginner archer with a `20%` accuracy and determine the range of hits for the archer that has a `95%` chance of happening in a single session.
 
@@ -386,7 +396,7 @@ In this activity, students execute a Monte Carlo simulation to analyze the proba
 
 * [archery_target_hits.ipynb](Activities/04-Stu_Confidence_Intervals/Unsolved/archery_target_hits.ipynb)
 
-### 8. Instructor Do: Review Archery Target Hits (5 min)
+### 7. Instructor Do: Review Archery Target Hits (5 min)
 
 **Files:**
 
@@ -406,7 +416,7 @@ Open the solution and explain the following:
 
 * To know the range of data points that contain a specific percentage of all data points in the sample, generating a frequency distribution is a prerequisite to defining a confidence interval.
 
-  ![archery-probability-distribution](Images/archery-probability-distribution.png)
+  ![archery-probability-distribution](Images/archery-frequency-distribution.png)
 
 * Because the mean of a normal distribution is considered to be at the `50th` quantile, confidence intervals are usually set around the mean or `0.50` quantile. Therefore, a `95%` confidence interval would have quantiles set at `0.025` and `0.975` rather than something like `0.05` and `1.00`.
 
@@ -418,7 +428,7 @@ Open the solution and explain the following:
 
 ---
 
-### 9. Instructor Do: Simulation of Stock Price Trajectory (10 min)
+### 8. Instructor Do: Simulation of Stock Price Trajectory (10 min)
 
 This activity exemplifies the use case where a Monte Carlo simulation can be applied to a historical dataset such as daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution. Stock datasets will be pulled in from the Alpaca API and used to generate a Monte Carlo simulation-based off a normally distributed random process using the dataset's calculated average and standard deviation of daily returns.
 
@@ -430,7 +440,7 @@ Walkthrough the solution and highlight the following:
 
 * Monte Carlo simulations can be executed not just on random processes with *discrete probabilities* (ex. `70%` to make a free throw and `30%` to miss a free throw), but also on *continuous probabilities* such as normal probability distributions.
 
-* Normal probability distributions showcase the various probabilities of returning a value based on the number of standard deviations it is from the mean (how far the value may lie plus or minus from the average expected value); values far away from the mean are less common while values near the mean are more common. Monte Carlo simulation uses this characteristic to simulate a random process' potential outcomes with respect to the variability around its mean.
+* Normal probability distributions showcase the various probabilities of returning a value based on the number of standard deviations it is from the mean (how far the value may lie plus or minus from the average expected value); values far away from the mean are less common while values near the mean are more common. A Monte Carlo simulation uses this characteristic to simulate a random process' potential outcomes with respect to the variability around its mean.
 
   ![example-normal-distribution](Images/example-normal-distribution.png)
 
@@ -458,27 +468,25 @@ Walkthrough the solution and highlight the following:
   ![alpaca-list-assets-df](Images/alpaca-list-assets-df.png)
 
 * The `get_barset()` function from the `Alpaca` SDK takes in the following parameters
-  *  `ticker`,
-  *  `timeframe`,
-  *  `limit`,
-  *  `start_date`,
-  *  `end_date`,
-  *  `after`,
-  *  `until`
+  * `ticker`,
+  * `timeframe`,
+  * `limit`,
+  * `start`,
+  * `end`,
+  * `after`,
+  * `until`
 
-* And returns an object containing a DataFrame of `AAPL` daily stock prices. The `start_date` and `end_date` variables, in this case, are set to `365` days from the `current date` and the `current date`, respectively.
+* And returns an object containing a DataFrame of `AAPL` daily stock prices. The `start_date` and `end_date` variables, in this case, are set to `365` days from the `current date` and the `current date`, respectively. To correctly fetch the stock data, the Alpaca SDK works with dates in ISO format, so we transform the `start_date` and the `end_date` using the `Timestamp` and `isoformat` functions from Pandas.
 
   ![alpaca-get-barset](Images/alpaca-get-barset.png)
 
 * The DataFrame object from the Alpaca SDK contains an outer level (`level 0`) that is not needed, drop this level using the `df.droplevel` function.
 
-*  Simulating stock price trajectory involves analyzing the closing prices of a stock. Therefore, it's best to drop the extraneous columns for the `AAPL` price data received from the `Alpaca` API.
+* Simulating stock price trajectory involves analyzing the closing prices of a stock. Therefore, it's best to drop the extraneous columns for the `AAPL` price data received from the `Alpaca` API.
 
   ![dataframe-drop-columns](Images/dataframe-drop-columns.png)
 
 * To simulate `AAPL` stock prices for the next `252` trading days, the simulation must be framed in the context of a stock's *growth*. Therefore, the `pct_change` function is used to calculate the last year of daily returns for `AAPL`, and the `mean` and `std` functions are used to calculate the average daily return and the volatility of daily returns.
-
-  ![aapl-daily-returns](Images/aapl-daily-returns.png)
 
   ![aapl-daily-return-mean-and-std](Images/aapl-daily-return-mean-and-std.png)
 
@@ -499,13 +507,13 @@ Walkthrough the solution and highlight the following:
 
 * Calculating the daily returns and cumulative returns of `AAPL` simulated prices allow for plotting the profits and losses of a potential investment in `AAPL` over the next trading year.
 
-  ![aapl-cumulative-pnl.png](Images/aapl-cumulative-pnl.png)
-
   ![aapl-cumulative-pnl-plot.png](Images/aapl-cumulative-pnl-plot.png)
+
+Answer any questions before moving on.
 
 ---
 
-### 10. Students Do: Financial Forecasting Part 1 (15 min)
+### 9. Students Do: Financial Forecasting Part 1 (15 min)
 
 In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical `TSLA` daily returns.
 
@@ -517,7 +525,9 @@ In this activity, students execute a Monte Carlo simulation to forecast stock pr
 
 * [financial_forecasting_part_1.ipynb](Activities/06-Stu_Financial_Forecasting_Pt_I/Unsolved/financial_forecasting_part_1.ipynb)
 
-### 11. Instructor Do: Review Financial Forecasting Part 1 (5 min)
+---
+
+### 10. Instructor Do: Review Financial Forecasting Part 1 (5 min)
 
 **Files:**
 
@@ -538,7 +548,7 @@ Open the solution and explain the following:
 
   ![tsla-normal-distribution](Images/tsla-normal-distribution.PNG)
 
-* Simulations for the next `252` trading shows that `TSLA` stock is forecast to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years.
+* Simulations for the next `252` trading days show that `TSLA` stock is forecast to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years.
 
   ![tsla-simulated-price-plot](Images/tsla-simulated-price-plot.PNG)
 
@@ -546,15 +556,17 @@ Open the solution and explain the following:
 
 * It should be stated that although the forecast for the next `3` years of `TSLA` stock prices show considerable declines, it does not mean that it is guaranteed. A forecast/prediction is only as good as the foundation of information from which it was made, and even then, by the nature of random events -- *anything* can happen.
 
----
-
-### 12. BREAK (40 min)
+Answer any questions before moving on.
 
 ---
 
-### 13. Instructor Do: Predicting Probable Outcomes of Stock Price Trajectory (10 min)
+### 11. BREAK (40 min)
 
-In this activity, students go one step further to produce not just a single potential price trajectory for a stock over the next `252` trading days, but many potential price trajectories. So that it's possible to analyze the probability distribution of where a stock's price can go, and therefore an interval to which confident predictions can be made regarding the future stock price.
+---
+
+### 12. Instructor Do: Predicting Probable Outcomes of Stock Price Trajectory (10 min)
+
+In this activity, students go one step further to produce not just a single potential price trajectory for a stock over the next `252` trading days, but many potential price trajectories. This makes it possible to analyze the probability distribution of where a stock's price can go, and therefore an interval to which confident predictions can be made regarding the future stock price.
 
 **Files:**
 
@@ -615,7 +627,7 @@ Walkthrough the solution and highlight the following:
 
 ---
 
-### 14. Students Do: Financial Forecasting Part 2 (15 min)
+### 13. Students Do: Financial Forecasting Part 2 (15 min)
 
 In this activity, students execute a Monte Carlo simulation to forecast the many different possibilities of simulated stock price trajectories, thereby analyzing the frequency and probability of potential `TSLA` stock price outcomes.
 
@@ -627,7 +639,9 @@ In this activity, students execute a Monte Carlo simulation to forecast the many
 
 * [financial_forecasting_part_2.ipynb](Activities/08-Stu_Financial_Forecasting_Pt_II/Unsolved/financial_forecasting_part_2.ipynb)
 
-### 15. Instructor Do: Review Financial Forecasting Part 2 (5 min)
+---
+
+### 14. Instructor Do: Review Financial Forecasting Part 2 (5 min)
 
 **Files:**
 
@@ -635,7 +649,7 @@ In this activity, students execute a Monte Carlo simulation to forecast the many
 
 Open the solution and explain the following:
 
-* Performing a Monte Carlo simulation on potential stock price outcomes involves simulating the stock price of `TSLA` over `253 times 3` trading days using a randomly selected normal distribution of daily returns and then doing the same process `n` number of times. Therefore, the code reflects another `for` loop to account for the extra iteration.
+* Performing a Monte Carlo simulation on potential stock price outcomes involves simulating the stock price of `TSLA` over `252 * 3` trading days using a randomly selected normal distribution of daily returns and then doing the same process `n` number of times. Therefore, the code reflects another `for` loop to account for the extra iteration.
 
   ![nested-tsla-monte-carlo-simulation](Images/nested-tsla-monte-carlo-simulation.png)
 
@@ -643,7 +657,7 @@ Open the solution and explain the following:
 
   ![tsla-multiple-stock-trajectories](Images/tsla-multiple-stock-trajectories.png)
 
-* The last row of the DataFrame containing the `252 * 3` records of closing prices for each simulation contains the closing prices of `1000` different stock price trajectories on the last day of the project `252 * 3` trading days or a three-year trading period.
+* The last row of the DataFrame containing the `252 * 3` records of closing prices for each simulation contains the closing prices of `1000` different stock price trajectories on the last day of the projected `252 * 3` trading days or a three-year trading period.
 
   ![tsla-last-row](Images/tsla-last-row.png)
 
@@ -665,7 +679,7 @@ Open the solution and explain the following:
 
 ---
 
-### 16. Instructor Do: Intro to Portfolio Forecasting (10 min)
+### 15. Instructor Do: Intro to Portfolio Forecasting (5 min)
 
 At this point, students have executed Monte Carlo simulations, learned to interpret frequency distributions, probability distributions, and confidence intervals, and realized how to apply Monte Carlo simulations to forecast the future prices (and corresponding returns) of individual stocks. Now, students will take their journey one step further and learn how to apply Monte Carlo simulations to forecast the returns of a portfolio, which can be comprised of either all stocks or a combination of multiple asset classes such as stocks and bonds.
 
@@ -685,15 +699,15 @@ Present the following questions and answers regarding portfolio forecasting:
 
 * Who is performing portfolio forecasting?
 
-  > Portfolio managers, quantitative analysts, retirement planners are just some of many who need to forecast the future performance of a portfolio to gauge the potential risk of investment.
+  > Portfolio managers, quantitative analysts, and retirement planners are just some of many who need to forecast the future performance of a portfolio to gauge the potential risk of investment.
 
 Ask the students if they have any questions or concerns before moving on.
 
 ---
 
-### 17. Instructor Do: Portfolio Forecasting (10 min)
+### 16. Instructor Do: Portfolio Forecasting (10 min)
 
-In this activity, students ascend to the final step and learn to project not one, but many, future stock prices using Monte Carlo simulations to calculate the daily and cumulative returns of a multi-weighted portfolio. Then analyze and plot the frequency and probability distributions of potential ending cumulative returns to assess the investment risk of the portfolio.
+In this activity, students ascend to the final step and learn to project not one, but many, future stock prices using Monte Carlo simulations to calculate the daily and cumulative returns of a multi-weighted portfolio. Students will then analyze and plot the frequency and probability distributions of potential ending cumulative returns to assess the investment risk of the portfolio.
 
 **Files:**
 
@@ -794,7 +808,7 @@ Walkthrough the solution and highlight the following:
 
 ---
 
-### 18. Students Do: Financial Forecasting Part 3 (15 min)
+### 17. Students Do: Financial Forecasting Part 3 (15 min)
 
 In this activity, students execute a Monte Carlo simulation to forecast the potential ranges of cumulative returns for a portfolio, based on the simulated closing prices of the stocks that comprise it, to determine the investment risk of the portfolio.
 
@@ -806,7 +820,9 @@ In this activity, students execute a Monte Carlo simulation to forecast the pote
 
 * [financial_forecasting_part_3.ipynb](Activities/10-Stu_Financial_Forecasting_Pt_III/Unsolved/financial_forecasting_part_3.ipynb)
 
-### 19. Instructor Do: Review Financial Forecasting Part 3 (5 min)
+---
+
+### 18. Instructor Do: Review Financial Forecasting Part 3 (5 min)
 
 **Files:**
 
@@ -883,29 +899,29 @@ Open the solution and explain the following:
 
 ---
 
-### 20. Recap (25 min)
+### 19. Instructor Do: Structured Review (35 min)
 
 Is this the end, or is it just another iteration of a simulation? It's actually the end! Welcome to today's finish line.
 
-The content in this lesson is probably the most difficult material students have digested so far. Students were required to whip out every FinTech skill and asset they've learned. This lesson was involved, including portfolio optimization (calculation of returns, standard deviation, risk, etc.) and portfolio forecasting (Monte Carlo, probability distributions, confidence trajectories, and forecasting). Furthermore, this doesn't even include the Python and Pandas skills they had to leverage!
+The content in this lesson is probably the most challenging material students have digested so far. Students were required to whip out every FinTech skill and asset they've learned. This lesson was involved, including portfolio optimization (calculation of returns, standard deviation, risk, etc.) and portfolio forecasting (Monte Carlo, probability distributions, confidence trajectories, and forecasting). Furthermore, this doesn't even include the Python and Pandas skills they had to leverage!
 
-Make sure students can recognize and acknowledge their accomplishments. Communicate that
+Make sure students can recognize and acknowledge their accomplishments. Communicate and highlight the following:
 
-* They've added another tool to their API-SDK tool belt: the Alpaca Trade API SDK, which is a great resource for historical stock data and financial functions.
+* You've added another tool to your API-SDK tool belt: the Alpaca Trade API SDK, which is an excellent resource for historical stock data and financial functions.
 
-* They've taken yet another deep dive into statistics, learning how to create, calculate, and interpret probability distributions. This includes using mean, standard deviation**, **daily returns, Numpy's random data generators, and histograms in order to implement and visualize portfolio simulations.
+* You've taken yet another deep dive into statistics, learning how to create, calculate, and interpret probability distributions. This includes using mean, **standard deviation**, **daily returns**, Numpy's random data generators, and histograms to implement and visualize portfolio simulations.
 
-* They've plotted the price trajectory of stock prices and returns using single and multiple Monte Carlo simulations.
+* You've plotted the price trajectory of stock prices and returns using single and multiple Monte Carlo simulations.
 
-* They've forecast average daily return volatility at the stock and portfolio level.
+* You've forecast average daily return volatility at the stock and portfolio level.
 
-* They've assessed the risk of investing in stock by predicting the probability of stock prices rising or falling over time.
+* You've assessed the risk of investing in stock by predicting the probability of stock prices rising or falling over time.
 
-* They've put the Fin in FinTech, and they're just getting started!
+* You've put the **Fin** in FinTech, and you're just getting started!
 
 Give students space to emotionally release. Use this activity as a way to gauge student confidence, frustration, and stress levels.
 
-* Ask students to summarize how they're feeling with a one-word emotion. Ask for volunteers first. If no one volunteers initiate the activity by using one word to convey how you're feeling, and then go round-robin. Gauge the students, verbal and nonverbal cues of stress and confusion (e.g., withdrawal from the activity or isolation, irritability or impatience, chronic worrying, pessimistic attitude, and restlessness).
+Ask students to summarize how they're feeling with a one-word emotion. Ask for volunteers first. If no one volunteers initiate the activity by using one word to convey how you're feeling, and then go round-robin. Gauge the students, verbal and nonverbal cues of stress and confusion (e.g., withdrawal from the activity or isolation, irritability or impatience, chronic worrying, pessimistic attitude, and restlessness).
 
   **Answer**: Relieved
 
@@ -919,9 +935,9 @@ Give students space to emotionally release. Use this activity as a way to gauge 
 
   **Answer:** Doubtful
 
-* Indicate to students that no matter what they're feeling, either excited and empowered or stressed and doubtful, they've come a long way. Also, underscore that they're not alone in their feelings or the journey. Portfolio simulations are no joke, and results can easily be misinterpreted or corrupted, which is why the best of the best are the ones executing simulations.
+Indicate to students that no matter what they're feeling, either excited and empowered or stressed and doubtful, they've come a long way. Also, underscore that they're not alone in their feelings or the journey. Portfolio simulations are no joke, and results can easily be misinterpreted or corrupted, which is why the best of the best are the ones executing simulations.
 
-* Emphasize that students can reach out individually or attend office hours to ask questions, discuss the activities in the lesson, or just release emotionally.
+Emphasize that students can reach out individually or attend office hours to ask questions, discuss the activities in the lesson, or just release emotionally.
 
 Use the remaining time to get a head start on office hours. Allow students to ask questions about this lesson, the overall unit, or the homework.
 
