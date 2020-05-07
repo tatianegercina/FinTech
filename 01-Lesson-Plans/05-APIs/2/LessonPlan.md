@@ -62,8 +62,6 @@ By the end of class, students will be able to:
 
 Day 2 takes students to the next step in using APIs. Students will transition from using the Python `requests` library to using SDKs that provide practical use cases for FinTech analysis.
 
-Welcome students to the second day of APIs by highlighting the following talking points:
-
 Welcome students to the second day of APIs, open the lesson slides and move to "The Rise of APIs" section by highlighting the following talking points:
 
 * Today's class will be a continuation of the last session; however, there will be more emphasis and focus on effectively using FinTech APIs.
