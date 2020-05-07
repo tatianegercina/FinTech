@@ -47,7 +47,17 @@ By the end of class, students will be able to:
 * To watch an example class lecture, go here: [5.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=50ef1953-f071-47b8-8bb3-aab10107ea41) Note that this video may not reflect the most recent lesson plan.
 
 ---
+### Class Slides and Time Tracker
 
+* The slides for this lesson can be viewed on Google Drive here: [5.2 Slides](https://docs.google.com/presentation/d/1wz8HZNlLWsPJ6ZmNiARjUH7vEOxrkTJ76cIFgMuwfW8/edit?usp=sharing).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+
+---
 ### 1. Instructor Do: Welcome Class (5 min)
 
 Day 2 takes students to the next step in using APIs. Students will transition from using the Python `requests` library to using SDKs that provide practical use cases for FinTech analysis.
