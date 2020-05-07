@@ -714,11 +714,11 @@ Welcome the students back to class, and allow them to use this activity time to 
 
   * ☝️ Why are they important when job-seeking?
 
-  * 🙋 It is the first impression recruiters and prospective employers will have of our resume.
+  * 🙋 It is the first impression recruiters and prospective employers will have of our projects.
 
   * ☝️And what should we include in order to make it a good, high-quality `README` that we would want employers to see?
 
-  * 🙋A `README` should include a a project title, the technology used, screen shots, installation instructions, instructions on how to use it, tets, any credits you need to give, as well as contributors.
+  * 🙋A `README` should include a project title, the technology used, screen shots, installation instructions, instructions on how to use it, tests, any credits you need to give, as well as contributors.
 
 * Show students how to pin a repository in GitHub. Navigate to `www.github.com/<yourUsername>` and click `Customize your pins`:
 
@@ -770,9 +770,9 @@ and [SAMPLE_3.md](./Activities/12-Stu_Compare_Readme/SAMPLE_3.md) and note the d
 
 #### Students Do: Create Readme (15 min)
 
-* For the remaining 15 minutes, ask students update their Project #1 `README` according to standards set in `SAMPLE_3.md`. They should feel free to add other elements that they think will be useful for people to know about their project.
+* For the remaining 15 minutes, ask students update their Project #2 `README` according to standards set in `SAMPLE_3.md`. They should feel free to add other elements that they think will be useful for people to know about their project.
 
-* If they finish early, or have already updated their Project #1 `README` file, ask students to move on to creating a `README` for Project #2.
+* If they finish early, or have already updated their Project #1 and Project #2 `README` files, ask students to move on to updating any homework `README` files that need additional details.
 
 
 ---
