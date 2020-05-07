@@ -700,15 +700,15 @@ Welcome the students back to class, and allow them to use this activity time to 
 
 **Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
 
-* In this Career Services section, you will discuss with the students the importance of writing a high-quality and effective README for each project.
+* In this Career Services section, you will discuss with the students the importance of writing a high-quality and effective `README` for each project.
 
-* There's no universal standard in what to include in a README, but we do know from speaking to employers the kinds of things they're looking for, and the sort of READMEs that are effective.
+* There's no universal standard in what to include in a `README`, but we do know from speaking to employers the kinds of things they're looking for, and the sort of `READMEs` that are effective.
 
 #### Instructor Do: Introduction to READMEs (5 min)
 
 * Ask the class the following questions (☝️) and call on students for the answers (🙋):
 
-  * ☝️What is a README file?
+  * ☝️What is a `README` file?
 
   * 🙋A text file written using Markdown that describes the repository, what it does, how to use it, who built it etc.
 
@@ -716,9 +716,9 @@ Welcome the students back to class, and allow them to use this activity time to 
 
   * 🙋 It is the first impression recruiters and prospective employers will have of our resume.
 
-  * ☝️And what should we include in order to make it a good, high-quality README that we would want employers to see?
+  * ☝️And what should we include in order to make it a good, high-quality `README` that we would want employers to see?
 
-  * 🙋A README should include a a project title, the technology used, screen shots, installation instructions, instructions on how to use it, tets, any credits you need to give, as well as contributors.
+  * 🙋A `README` should include a a project title, the technology used, screen shots, installation instructions, instructions on how to use it, tets, any credits you need to give, as well as contributors.
 
 * Show students how to pin a repository in GitHub. Navigate to `www.github.com/<yourUsername>` and click `Customize your pins`:
 
@@ -732,9 +732,13 @@ Welcome the students back to class, and allow them to use this activity time to 
 
 #### Students Do: Compare and Review (10 min)
 
-* In this activity, students will compare three README files and write down the differences they note between them.
+* In this activity, students will compare three `README` files and write down the differences they note between them.
 
-* Ask students to compare `SAMPLE_1.md`, `SAMPLE_2.md` and `SAMPLE_3.md` and note the differences they see.
+* Using `12-Stu_Compare_Readme`, ask students to compare [SAMPLE_1.md](./Activities/12-Stu_Compare_Readme/SAMPLE_1.md),
+[SAMPLE_2.md](./Activities/12-Stu_Compare_Readme/SAMPLE_2.md),
+and [SAMPLE_3.md](./Activities/12-Stu_Compare_Readme/SAMPLE_3.md) and note the differences they see.
+
+* Slack out the instruction file for the acitivty and these three sample files.
 
 #### Instructor Do: Review ReadMe (5 min)
 
@@ -766,7 +770,9 @@ Welcome the students back to class, and allow them to use this activity time to 
 
 #### Students Do: Create Readme (15 min)
 
-* For the remaining 15 minutes, askstudents to select one repository from their GitHub and create a new README for it that meets the standards set in `SAMPLE_3.md`. They should feel free to add other elements that they think will be useful for people to know about their project.
+* For the remaining 15 minutes, ask students update their Project #1 `README` according to standards set in `SAMPLE_3.md`. They should feel free to add other elements that they think will be useful for people to know about their project.
+
+* If they finish early, or have already updated their Project #1 `README` file, ask students to move on to creating a `README` for Project #2.
 
 
 ---
