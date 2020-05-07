@@ -575,19 +575,64 @@ Take a moment to reflect on the lesson with students. Ask for volunteers to shar
 
 ---
 
-### 17. Instructor Do: Career Services (35 min)
+### 17. Career Services (35 min)
 
 **Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
 
-Explain to students that we've spent a great deal of time, introducing ourselves to FinTech this week, learning the basics, and preparing our tools for the course. But we also want to make sure we're focusing on where you will go once the course is over. Starting today, we're going to dedicate time on certain Saturday classes to talk specifically about Career Services.
+**Note:** The 35 minutes allocated for this lesson are broken out into each subsection below.
 
-Use the following slides and lesson plan to discuss the Career Services content for this week.
+#### 17.1 Instructor Do: Career Services Introduction (5 min)
 
-**Files:**
+Explain to students that we've spent a great deal of time introducing ourselves to the FinTech curriculum; learning the basics, and preparing our tools for the course. But we also want to make sure we're focusing on where you will go once the course is over. Starting today, we're going to dedicate time on certain Saturday classes to talk specifically about Career Services.
 
-* [Career Services Slides](https://docs.google.com/presentation/d/1f1h9TRxFlHJLEiL53kRMULt2FpG5hm_LJsnd7hY4AIQ/edit?usp=sharing)
+Students probably know fairly little about Career Services. So today, you will:
 
-* [Career Services Lesson Plan](https://docs.google.com/document/d/1BGoLNt4zrD7wJUXwt0KDm4Ubxuljmc07tDJ4ocfeWpE/edit?usp=sharing)
+* introduce students to Career Services, the various people they'll come in contact with, and the services offered during and after boot camp,
+* ensure students understand what it means and takes to become **employer-ready**,
+* show students how to sign up for workshops offered by Career Services
+
+#### 17.2 Instructor Do: Career Services Video (20 min)
+
+* Navigate to the Career Services FinTech resource page: [http://bit.ly/FinTechCS](http://bit.ly/FinTechCS). Slack out the link to your students so they have it as well.
+
+* Let students know that this site contains many resources provided by Career Services that they can freely use during and after their time in boot camp.
+
+* 🎬 Play the video at the top of the homepage, `Career Services: Your Partner in Success`. Ask students to write down any terms or words that are unfamiliar to them.
+
+* After the video, ask the class the following questions (☝️) and call on students for the answers (🙋):
+
+  ☝️ What is Career Services?
+
+  🙋 Our partner in success. Whether we are job seekers or promotion seekers, Career Services can help us improve our behavioral and technical interviewing skills, as well as create great professional materials (resume, portfolio, LinkedIn etc.)
+
+  ☝️ So there's a lot of keywords in this video, or jargon, that we may not know. Did anybody note anything down that they didn't know?
+
+  🙋 Students will give a variety of answers, likely touching on some of these below. Take the time to run through each of them and give students a cursory idea of what they are:
+
+  * **Employer-ready**: Career Services has talked with thousands of employers and they know exactly what employers are looking for when they receive an application. _Employer-ready means that you have the minimum requirements to enter into a typical job application process. Your job search materials are strong and complete._ Every job-seeking student in this class should make it their goal to be employer-ready BY graduation so that they are ready for the job search.
+
+  * **Employer-competitive**: Taking it a step further, _employer-competitive candidates position themselves for success by networking and performing company research, as well as preparing exemplary professional materials, and demonstrating their commitment to ongoing learning. Employer-competitive candidates proactive seek and pursue jobs they desire with effective outreach and follow-up strategies._
+
+  * **Career Director**: Offers quality coaching, strategies, and resources to help you become employer-competitive. You can meet with a Career Director by phone/video, 1:1 throughout and after the boot camp.
+
+  * **Profile Coach (now, Career Material Advisor)**: Offers unlimited feedback on professional materials to help you become employer-competitive. Career Material Advisors receive your materials via digital submission (BootcampSpot, Canvas etc.).
+
+  * **Demo Day**: Once boot camp is over, we will invite you to present at an event where we will invite local employers and recruiters to view your projects, ask you questions, and hopefully, offer you a job!
+
+  * **Whiteboarding sessions**: Actually, Career Services offers a wide range of sessions on whiteboarding, talking tech with recruiters, tackling online technical assessments and behavioral interviewing techniques. You can find these on your BootcampSpot or Canvas calendar.
+
+#### 17.3 Students Do: Employer-Ready Criteria (8 min)
+
+* Ask students to navigate to the Intro to Career Services page of the site, located [here](https://sites.google.com/2u.com/careerservices-fintech/fintech-milestones/intro-to-career-services).
+
+* Toward the bottom is a table containing the employer-ready and employer-competitive requirements. In groups of 2 or 3, ask students to review the employer-ready requirements.
+
+#### 17.4 Instructor Do: Wrap-up (2 min)
+
+* ✅ Let students know that if they already have some of these materials, and it's likely that some already do if they're working in a finance or tech-related field, that they can already submit these materials to a Career Materials Advisor (formerly, Profile Coach) for review!
+
+* ✅ Encourage students to check out the Career Services workshops and sign up for anything that seems useful or interesting to them at this point. There are both general sessions and FinTech specific technical interviewing sessions available.
+
 
 ### End Class
 
