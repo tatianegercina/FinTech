@@ -1,8 +1,8 @@
 # Archery Target Hits
 
-In this activity, a beginner archer has a shot accuracy of approximately `20%` and therefore on average hits the target `1` time for every `5` shots. His archery master wants to assess the beginner archer's *long-term performance* of hitting the target, and therefore wants to simulate and predict the beginner archer's performance over many trials. Specifically, the archery master wants to know what the range of hit targets (out of `5` shots) the beginner archer is likely to make for a `95%` confidence interval. In other words, what is the range of targets that the beginner archer will hit out of `5` shots if he is `95%` certain of the outcome?
+In this activity, a beginner archer has a shot accuracy of approximately `20%` and therefore on average hits the target `1` time for every `5` shots. His archery master wants to assess the beginner archer's *long-term performance* of hitting the target and therefore wants to simulate and predict the beginner archer's performance over many trials. Specifically, the archery master wants to know what the range of hit targets (out of `5` shots) the beginner archer is likely to make for a `95%` confidence interval. In other words, what is the range of targets that the beginner archer will hit out of `5` shots if he is `95%` certain of the outcome?
 
-Create a Monte Carlo simulation with `1000` simulations of `5` shots to analyze the beginner archer's frequency distribution and corresponding probability distribution of hit targets to determine the `95%` confidence interval of hit targets.
+Create a Monte Carlo simulation with `1000` simulations of `5` shots to analyze the beginner archer's frequency distribution and the corresponding probability distribution of hit targets to determine the `95%` confidence interval of hit targets.
 
 ## Instructions
 
@@ -22,7 +22,7 @@ Create a Monte Carlo simulation with `1000` simulations of `5` shots to analyze 
 
     * Use the `choice` function from the `random` class of the `numpy` library to randomly choose between the list elements `hit` and `missed` of the `shot` list. Use the `p` parameter for the `choice` function to specify the probabilities of hitting a shot and missing a shot; set the `p` parameter to `[0.2, 0.8]`.
 
-    * Append the results to the DataFrame, with each column set as the series of free throw results for every simulation.
+    * Append the results to the DataFrame, with each column set as the series of free-throw results for every simulation.
 
   * Loop through every column of the DataFrame and use the `value_counts` function to count the number of hit targets per simulation. Select only the values of the `hit` key from the Series object that the `value_counts` function returns. Save the results to another DataFrame.
 
@@ -40,4 +40,4 @@ Create a Monte Carlo simulation with `1000` simulations of `5` shots to analyze 
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
