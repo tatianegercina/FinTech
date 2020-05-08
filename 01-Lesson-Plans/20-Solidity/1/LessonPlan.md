@@ -376,9 +376,7 @@ Click the `Solidity Compiler` button on the Remix sidebar then click `Compile` t
 
 * Solidity is compiled to basic instructions that are read by the `Ethereum Virtual Machine`.
 
-Now click the `Deploy` button on the Remix sidebar.
-
-![remix_deploy_messsage_board](Images/remix_deploy_messsage_board.png)
+Now click the `Deploy` tab on the Remix sidebar.
 
 At this point, open `MetaMask`. MetaMask may prompt you to sign-in. Then select `localhost:8545` from the dropdown menu at the top.
 
@@ -388,13 +386,9 @@ At this point, open `MetaMask`. MetaMask may prompt you to sign-in. Then select 
 
 * In this case, the blockchain that we are communicating with is our local development chain.
 
-Change the Environment to `Injected Web3`:
+Change the `Environment` to `Injected Web3`. Once `Injected Web3` is selected, it should connect to a `Custom` network (this is Ganache):
 
-![remix_injected_web3](Images/remix_injected_web3.png)
-
-You will see a connection request from MetaMask to connect Remix with your local blockchain, click the "Connect" button to continue.
-
-![remix_metamask_connection](Images/remix_metamask_connection.png)
+![Remix Deployment](Images/remix_deploy.gif)
 
 Explain to the students that:
 
@@ -442,11 +436,7 @@ Open Ganache and ask the students the following questions.
 
 ---
 
-### 09. BREAK (15 min)
-
----
-
-### 10. Instructor Do: Contextualizing Solidity (15 min)
+### 09. Instructor Do: Contextualizing Solidity (15 min)
 
 In this exercise, the instructor will explain to the students that Solidity is a statically typed language and that it runs inside the Ethereum Virtual Machine (EVM) in a sandbox.
 
@@ -512,7 +502,7 @@ Show the class the example machine code.
 
 ---
 
-### 11. Students Do: Contextualizing Solidity Worksheet (10 min)
+### 10. Students Do: Contextualizing Solidity Worksheet (10 min)
 
 Students will fill in a simple chart (pipeline) of the various levels of the EVM's architecture with the names of the various levels and their real-world implementation.
 
@@ -528,7 +518,7 @@ Students will fill in a simple chart (pipeline) of the various levels of the EVM
 
 ---
 
-### 12. Instructor Do: Contextualizing Solidity Review (5 min)
+### 11. Instructor Do: Contextualizing Solidity Review (5 min)
 
 Once again, display the completed graphic of the EVM's architecture to the class.
 
@@ -555,8 +545,6 @@ Ask the class the following recall questions:
  **Answer** C++
 
  **Answer** Java
-
----
 
 ---
 
