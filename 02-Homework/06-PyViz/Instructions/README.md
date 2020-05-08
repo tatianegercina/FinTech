@@ -111,7 +111,7 @@ Sample Dashboard:
 
   ![dashboard-demo.gif](Images/dashboard-demo.gif)
 
-- - -
+---
 
 ### Submission
 
@@ -122,3 +122,7 @@ Sample Dashboard:
 * Note: You should not submit your `mapbox` access token to Github!
 
 * Submit the Github URL repository to Bootcampspot.
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
