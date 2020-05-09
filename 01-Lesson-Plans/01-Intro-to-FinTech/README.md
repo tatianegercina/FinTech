@@ -2,7 +2,7 @@
 
 ### Overview
 
-This week we will cover...
+This week we will cover the fundamentals of FinTech industry and basic git commands.
 
 ### Slides
 
@@ -32,6 +32,10 @@ This week we will cover...
 
 * [Student Guide](Supplemental/StudentGuide.md)
 
-- - -
+* [Writing an Awesome README File](Supplemental/Awesome_README_Guide.md)
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+* [Writing a Successful Case Study](Supplemental/Case_Study_Guide.md)
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
