@@ -1,8 +1,6 @@
 # Unit 18: Blockchain
 
-
-<details><summary>Helpful Links</summary>
-<blockquote>
+## Helpful Links
 
 <details><summary>Blockchain</summary>
 
@@ -49,21 +47,16 @@
 
 * https://www.investopedia.com/terms/p/proof-stake-pos.asp
 </details>
-</blockquote>
-</details>
 
-<details><summary>Additional Course Resources</summary>
-<blockquote>
+## Additional Course Resources
+
 
 * [Blockchain Installation Guide](blockchain-install-guide.md)
 
 * [Blockchain Terminology Guide](Blockchain-Terminology-Guide.md)
 
-</blockquote>
-</details>
 
-<details><summary>FAQs</summary>
-<blockquote>
+## FAQs
 
 <details><summary>What is Blockchain?</summary>
 
@@ -178,8 +171,7 @@ A block explorer is a tool that allows you to search transactions on a particula
 <details><summary>What are consensus algorithms?</summary>
 
 </details>
-</blockquote>
-</details>
+
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
