@@ -59,7 +59,13 @@ This guide walks through the installation and configuration process for an Anaco
 
     ![Jupyter_Lab_Activate_Dev.png](Images/Jupyter_Lab_Activate_Dev.png)
 
-10. After the installation of Anaconda,  we'll want to enable the terminal commands. The instructions differ by your operating system.
+10. Verify your your installations by executing the `conda list` command after activating the environment, then locating the following packages in the populated list:
+
+    - Numpy
+    - Pandas
+    - Matplotlib
+
+11. After the installation of Anaconda,  we'll want to enable the terminal commands. The instructions differ by your operating system.
 
 * [Windows](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=93a9c967-71b2-434c-bcda-ab7a011f5c9c). After these instructions, you need to open your terminal and run `conda init bash`. Then close your terminal, and start a new one before using any `jupyter` command.
 
