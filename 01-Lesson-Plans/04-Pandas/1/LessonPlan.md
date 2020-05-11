@@ -130,7 +130,7 @@ Open [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
 
   * Chances are there is another factor at play that results in this positive correlation. One possible factor is that as temperature increases (during the summer months), people tend to both eat more ice cream and go swimming.
 
-* **Regression analysis** should be used to predict causation, i.e., how _x_ predicts _y_.
+* **Multiple regression analysis** is a method we'll learn in a later unit that can measure multiple relationships at the same time (e.g., the effect of both weather and income on ice cream sales). This does not solve our problem of confusing correlation with causation, but it will help us better tease out economic relationships from multiple influences.
 
 * How do these concepts apply to stock investments?
 
