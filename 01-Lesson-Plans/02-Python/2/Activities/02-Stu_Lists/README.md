@@ -28,7 +28,7 @@ Use the [starter file](Unsolved/Core/grocery_list_core.py) to complete the follo
 
 5. Add `flour` to the grocery list.
 
-6. Change `apples` to `gala apples`. (Mike decides to be more specific with the types of apples needed.)
+6. Change `apples` to `gala apples`. (Mike decides to be more specific with the type of apples needed.)
 
 7. Determine the total number of items on the grocery list.
 
@@ -46,4 +46,4 @@ Mike arrives at the supermarket and walks through the aisles to gather the items
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

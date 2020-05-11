@@ -88,7 +88,7 @@ Complete the following:
 
   * Loop over the rest of the rows and append every row to the `menu` list object (the outcome will be a list of lists).
 
-* Set up the same process to read in `sales_data.csv`. However, instead append every row of the sales data to a new `sales` list object.
+* Set up the same process to read in `sales_data.csv`. But now, append every row of the sales data to a new `sales` list object.
 
 ### Manipulate the Data
 
@@ -195,4 +195,4 @@ Complete the following:
 
 ---
 
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U Inc. brand. All Rights Reserved.

@@ -8,49 +8,49 @@ bank names associated with the corresponding market cap ranges.
 
 # Banks and Market Caps
 #-----------------------
-# JP Morgan Chase: 327
-# Bank of America: 302
-# Citigroup: 173
+# National Bank of Canada: 327
+# Toronto-Dominion Bank: 302
+# Royal Bank of Canada: 173
 # Wells Fargo: 273
 # Goldman Sachs: 87
 # Morgan Stanley: 72
-# U.S. Bancorp: 83
+# Canadian Imperial Bank of Commerce: 83
 # TD Bank: 108
-# PNC Financial Services: 67
+# Bank of Montreal: 67
 # Capital One: 47
 # FNB Corporation: 4
-# First Hawaiian Bank: 3
+# Laurentian Bank of Canada: 3
 # Ally Financial: 12
-# Wachovia: 145
-# Republic Bancorp: .97
+# Montreal Trust Company: 145
+# Canadian Western Bank: .97
 
 # Initialize a dictionary of banks and market caps (in billions)
 banks = {
-    "JP Morgan Chase": 327,
-    "Bank of America": 302,
-    "Citigroup": 173,
+    "National Bank of Canada": 327,
+    "Toronto-Dominion Bank": 302,
+    "Royal Bank of Canada": 173,
     "Wells Fargo": 273,
     "Goldman Sachs": 87,
     "Morgan Stanley": 72,
-    "U.S. Bancorp": 83,
+    "Canadian Imperial Bank of Commerce": 83,
     "TD Bank": 108,
-    "PNC Financial Services": 67,
+    "Bank of Montreal": 67,
     "Capital One": 47,
     "FNB Corporation": 4,
-    "First Hawaiian Bank": 3,
+    "Laurentian Bank of Canada": 3,
     "Ally Financial": 12,
-    "Wachovia": 145,
-    "Republic Bancorp": .97
+    "Montreal Trust Company": 145,
+    "Canadian Western Bank": .97
 }
 
-# Change the market cap for 'Citigroup'
-banks['Citigroup'] = 170
+# Change the market cap for 'Royal Bank of Canada'
+banks['Royal Bank of Canada'] = 170
 
 # Add a new bank and market cap pair
-banks['American Express'] = 33
+banks['Scotiabank'] = 33
 
 # Remove a bank from the dictionary
-del banks['Wachovia']
+del banks['Montreal Trust Company']
 
 # Initialize metric variables
 total_market_cap = 0
@@ -115,7 +115,7 @@ avg_market_cap = round(total_market_cap / bank_count, 2)
 
 # Print the metrics
 print(f"Total Market Capitalization: {total_market_cap}")
-print(f"Total Numer of Banks: {bank_count}")
+print(f"Total Number of Banks: {bank_count}")
 print(f"Average Market Capitalization: {avg_market_cap}")
 print(f"Largest Bank: {maximum_key}")
 print(f"Smallest Bank: {minimum_key}")

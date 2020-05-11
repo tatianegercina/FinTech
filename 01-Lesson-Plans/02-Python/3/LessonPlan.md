@@ -69,7 +69,7 @@ Welcome students back to class. Tell them that in today's lesson, we will begin 
 
 Use the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57c97b9346_4_1) to review the class objectives.
 
-Use the solution file to perform a live coding session and quickly recap concepts learned in previous classes. During the session, ask the following questions:
+Use the solution file to perform a live coding session, and quickly recap concepts learned in previous classes. During the session, ask the following questions:
 
 - What are variables?
 
@@ -596,17 +596,17 @@ Answer any questions before moving on.
 
 ---
 
-### 11. Student Do: E-Commerce Traffic (15 min)
+### 11. Student Do: ECommerce Traffic (15 min)
 
-In this activity, students will perform file I/O by parsing a text file and calculating the sum and average of customer e-traffic, and then writing the results back to a text file.
+In this activity, students will perform file I/O by parsing a text file and calculating the sum and average of customer etraffic, and then writing the results back to a text file.
 
 **File:** [Starter Code](Activities/08-Stu_File_IO/Unsolved/ecommerce_traffic.py)
 
 **Instructions:** [README.md](Activities/08-Stu_File_IO/README.md)
 
-### 12. Instructor Do: Review E-Commerce Traffic (5 min)
+### 12. Instructor Do: Review ECommerce Traffic (5 min)
 
-Review the previous activity, E-Commerce Traffic, with students.
+Review the previous activity, ECommerce Traffic, with students.
 
 **File:** [Solution](Activities/08-Stu_File_IO/Solved/ecommerce_traffic.py)
 

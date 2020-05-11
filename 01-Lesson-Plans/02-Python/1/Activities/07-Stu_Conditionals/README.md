@@ -10,10 +10,10 @@ Like you, your coworker Sam is studying conditional statements. You two have dec
 
 1. Open the [starter file](Unsolved/conditionals.py). Look through the examples and figure out what the output would be for each conditional statement.
 
-2. Do not run the code yet; first see if you can follow the thought process and guess.
+2. Do not run the code yet; first see if you can follow the thought process and make a guess.
 
 3. Once you've guessed, run the file.
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

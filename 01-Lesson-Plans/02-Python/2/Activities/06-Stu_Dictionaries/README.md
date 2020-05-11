@@ -14,27 +14,27 @@ Using the [starter file](Unsolved/Core/market_cap_core.py), complete the followi
 
 - Initialize the dictionary of `banks`. Add the following key-value pairs:
 
-  - JP Morgan Chase: 327
-  - Bank of America: 302
-  - Citigroup: 173
+  - National Bank of Canada: 327
+  - Toronto-Dominion Bank: 302
+  - Royal Bank of Canada: 173
   - Wells Fargo: 273
   - Goldman Sachs: 87
   - Morgan Stanley: 72
-  - U.S. Bancorp: 83
+  - Canadian Imperial Bank of Commerce: 83
   - TD Bank: 108
-  - PNC Financial Services: 67
+  - Bank of Montreal: 67
   - Capital One: 47
   - FNB Corporation: 4
-  - First Hawaiian Bank: 3
+  - Laurentian Bank of Canada: 3
   - Ally Financial: 12
-  - Wachovia: 145
-  - Republic Bancorp: .97
+  - Montreal Trust Company: 145
+  - Canadian Western Bank: .97
 
-- Change the market cap for `Citigroup` to `170`.
+- Change the market cap for `Royal Bank of Canada` to `170`.
 
-- Add a new bank `American Express` to the dictionary and set the market cap to `33`.
+- Add a new bank `Scotiabank` to the dictionary and set the market cap to `33`.
 
-- Delete `Wachovia` from the dictionary, as it is a deprecated bank acquired by Wells Fargo in 2008.
+- Delete `Montreal Trust Company` from the dictionary, as it is a depreciated bank acquired by Scotiabank in 1994.
 
 ## Challenge
 
@@ -50,7 +50,7 @@ Group banks by their corresponding market capitalization tier.
 
 - Use an if-else statement and lists to compare and group banks by their corresponding market capitalization: `mega-cap`, `large-cap`, `mid-cap`, and `small-cap`.
 
-  - `mega-cap`: Market capitalization greater than or equal to \$300 billion.
+  - `mega-cap`: Market capitalization greater than or equal to $300 billion.
 
   - `large-cap`: Market capitalization greater than or equal to $10 billion and less than $300 billion.
 
@@ -62,19 +62,19 @@ Group banks by their corresponding market capitalization tier.
 
 Your results should look similar to the following:
 
-```
+```text
 Total Market Capitalization: 1588
-Total Numer of Banks: 15
+Total Number of Banks: 15
 Average Market Capitalization: 105.87
-Largest Bank: JP Morgan Chase
-Smallest Bank: Republic Bancorp
+Largest Bank: National Bank of Canada
+Smallest Bank: Canadian Western Bank
 ------------------------------------------------
-Mega Cap Banks: ['JP Morgan Chase', 'Bank of America']
-Large Cap Banks: ['Citigroup', 'Wells Fargo', 'Goldman Sachs', 'Morgan Stanley', 'U.S. Bancorp', 'TD Bank', 'PNC Financial Services', 'Capital One', 'Ally Financial', 'American Express']
-Mid Cap Banks: ['FNB Corporation', 'First Hawaiian Bank']
-Small Cap Banks: ['Republic Bancorp']
+Mega Cap Banks: ['National Bank of Canada', 'Toronto-Dominion Bank']
+Large Cap Banks: ['Royal Bank of Canada', 'Wells Fargo', 'Goldman Sachs', 'Morgan Stanley', 'Canadian Imperial Bank of Commerce', 'TD Bank', 'Bank of Montreal', 'Capital One', 'Ally Financial', 'Scotiabank']
+Mid Cap Banks: ['FNB Corporation', 'Laurentian Bank of Canada']
+Small Cap Banks: ['Canadian Western Bank']
 ```
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

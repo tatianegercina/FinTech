@@ -1,10 +1,12 @@
 # Demonstrate conditional statement
 if True:
     # Do something
+    print("something")
 else:
     # Do something else
+    print("something else")
 
-# Demonstrate conditional with print statement
+    # Demonstrate conditional with print statement
 is_raining = True
 if is_raining:
     print("Bring an umbrella!")
