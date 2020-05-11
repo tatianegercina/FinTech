@@ -463,7 +463,6 @@ Open the solved version of the Jupyter notebook, walkthrough the code and highli
   import numpy as np
   import pandas as pd
   import os
-  from datetime import datetime, timedelta
   import alpaca_trade_api as tradeapi
 
   %matplotlib inline
