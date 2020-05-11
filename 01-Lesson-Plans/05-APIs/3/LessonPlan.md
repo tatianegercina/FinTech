@@ -451,9 +451,9 @@ Walkthrough the solution and highlight the following:
   import numpy as np
   import pandas as pd
   import os
-  from datetime import datetime, timedelta
   import matplotlib.pyplot as plt
   import alpaca_trade_api as tradeapi
+
   %matplotlib inline
   ```
 
@@ -546,13 +546,13 @@ Open the solution and explain the following:
 
 * In other words, each `TSLA` closing price of the preceding trading day is multiplied by a randomly chosen daily return where values closer to the expected daily return have a higher probability of occurring while values farther away from the expected daily return have a lesser probability of occurring.
 
-  ![tsla-normal-distribution](Images/tsla-normal-distribution.PNG)
+  ![tsla-normal-distribution](Images/tsla-normal-distribution.png)
 
 * Simulations for the next `252` trading days show that `TSLA` stock is forecast to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years.
 
-  ![tsla-simulated-price-plot](Images/tsla-simulated-price-plot.PNG)
+  ![tsla-simulated-price-plot](Images/tsla-simulated-price-plot.png)
 
-  ![tsla-cumulative-pnl](Images/tsla-cumulative-pnl.PNG)
+  ![tsla-cumulative-pnl](Images/tsla-cumulative-pnl.png)
 
 * It should be stated that although the forecast for the next `3` years of `TSLA` stock prices show considerable declines, it does not mean that it is guaranteed. A forecast/prediction is only as good as the foundation of information from which it was made, and even then, by the nature of random events -- *anything* can happen.
 
@@ -576,7 +576,7 @@ Walkthrough the solution and highlight the following:
 
 * Simulating a single price trajectory for a stock, with respect to its average daily return and volatility, is but one pathway of which the stock price could move over time. Therefore, to analyze the possible ranges of where a stock price might end up, multiple simulations of stock price trajectories need to be run.
 
-  ![multiple-stock-simulation](Images/multiple-stock-simulation.PNG)
+  ![multiple-stock-simulation](Images/multiple-stock-simulation.png)
 
   * The outer loop controls the total number of simulations. The more simulations we have, the more accurate the model.
 
@@ -611,19 +611,19 @@ Walkthrough the solution and highlight the following:
 
 * The plot of the DataFrame containing the `1000` simulations of `252` trading day price records showcases the potential pathways that a stock price can take.
 
-  ![multiple-stock-simulation-plot](Images/multiple-stock-simulation-plot.PNG)
+  ![multiple-stock-simulation-plot](Images/multiple-stock-simulation-plot.png)
 
 * The last row of the DataFrame containing the results of each simulation represents the closing stock prices of `AAPL` on the `252nd` simulated trading day. In other words, the last row of the DataFrame represents the potential outcomes of `AAPL` stock price over the next `252` trading days.
 
-  ![stock-price-frequency-distribution](Images/stock-price-frequency-distribution.PNG)
+  ![stock-price-frequency-distribution](Images/stock-price-frequency-distribution.png)
 
 * Calculating a `95%` confidence interval of potential outcomes for projected `AAPL` stock prices over the next `252` trading days showcases a range in which there is a `95%` chance that `AAPL` stock price will end up within the range of `$106.22 - $329.27`.
 
-  ![stock-price-confidence-interval](Images/stock-price-confidence-interval.PNG)
+  ![stock-price-confidence-interval](Images/stock-price-confidence-interval.png)
 
 * Multiplying an initial investment of `$10,000` by the percentage change in stock price for the lower and upper bounds of the `95%` confidence interval produces a confidence interval in terms of investment.
 
-  ![stock-price-investment-confidence-interval](Images/stock-price-investment-confidence-interval.PNG)
+  ![stock-price-investment-confidence-interval](Images/stock-price-investment-confidence-interval.png)
 
 ---
 
