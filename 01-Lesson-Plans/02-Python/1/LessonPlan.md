@@ -34,7 +34,7 @@ By the end of this class, students will be able to:
 
 * Be encouraging. Remind students that all developers have started where the students are right now. Actively work to build confidence, engagement, and promote effective problem-solving skills by letting students explain concepts if they feel comfortable.
 
-* As you review the activities, find ways to connect the concepts to FinTech. Include brief discussions about emerging or disruptive/innovative technologies, and how they have changed the FinTech landscape.
+* As you review the activities, find ways to connect the concepts to FinTech. Include brief discussions about emerging or disruptive/innovative technologies and how they have changed the FinTech landscape.
 
 * Today's class will include a tour of JupyterLab. There will also be several live-coding activities that should be completed in a Python Notebook. Make sure JupyterLab is installed and running properly on your machine.
 
@@ -56,7 +56,7 @@ By the end of this class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -293,7 +293,7 @@ At this point, students may feel apprehensive about the upcoming coding activiti
 
 Set up the following real-world scenario to help explain variables:
 
-* Think about any time you've kept score for a game or watched someone else keep score. It can be an involved process. Scores change all the time. Tally marks and points have to be tracked and calculated, and you're always searching for pen and paper.
+* Think about any time you've kept score for a game or watched someone else keep score. It can be an involved process—you need paper and pencil, tally marks and points have to be tracked and calculated, and scores are always changing.
 
 * In this scenario, `score` is a variable that represents an ever-changing numeric number. We can track two scores in two different variables: `team_a_score` and `team_b_score`. Whenever Team A gets a point, the `team_a_score` variable should be incremented by 1. The same goes for Team B. At any moment, the two scores can be compared to find out who is winning.
 
@@ -709,7 +709,7 @@ Be prepared to explain the following, for example:
 
   * `==` checks to see if a value equals another; it double-checks equality. (Like all work, you want to double-check what you're doing!) So, when you're basing a condition on equality, you should double-check what's being compared. You don't want to compare apples to oranges. They'll never be equal!
 
-  * `=` is used to set and put values in a variable; it is used to assess and declare that a variable is something. You're not comparing it; you know for sure this is the answer. Think back to algebra. When you finish showing your work and steps in the calculation, you declare that `x = <some value>`. This is exactly how using the `=` works when declaring variables. You're declaring, rather than evaluating.
+  * `=` is used to set and put values in a variable; it is used to assess and declare that a variable is something. You're not comparing it; you know for sure this is the answer. Think back to algebra. When you finish showing your work and steps in the calculation, you declare that `x = <some value>`. This is exactly how using the `=` works when declaring variables. You're declaring rather than evaluating.
 
 * It's difficult to remember when to use _greater than_ `>` and _less than_ `<` operators, and when to use _greater than or equal to_ `>=` and _less than or equal to_ `<=`.
 
