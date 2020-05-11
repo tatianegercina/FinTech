@@ -33,7 +33,7 @@ Using the starter file, complete the following steps:
 
 2. Use the `corr` function and the `heatmap` function from the `seaborn` library to calculate and visualize the stock return correlations for each stock pair.
 
-3. Drop the two most consistently highly correlated stocks and keep the remaining less correlated stocks from the DataFrame (two stocks should be dropped).
+3. Drop the two most consistently highly correlated stocks and keep the remaining less correlated stocks from the DataFrame (two stocks should be dropped). (*Hint: you can do this by visually identifying high correlations, or by summing then comparing total correlation values per stock.*)    
 
 4. Use the `mean` and `std` functions to calculate the annualized Sharpe ratio and assess the reward-to-risk ratio of the 8 remaining, less-correlated stocks.
 
