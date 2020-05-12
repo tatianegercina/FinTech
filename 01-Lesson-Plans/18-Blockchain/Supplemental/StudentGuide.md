@@ -60,23 +60,16 @@
 
 <details><summary>What is Blockchain?</summary>
 
-A blockchain is an evergrowing list of records, called blocks, that are linked together cryptographically.  Along with encryption, the list of records (blocks), is stored in a distributed manner, meaning that exact copies of all records are stored across all machines that access the network.  Combined with encryption, this makes the blockchain extremely trustworthy, as the records are very difficult to alter.  Not only does the encryption form a layer of protection, but even if one record is changed, becuase there are so many duplicates, its easy to prove that the information was altered.
+A blockchain is an evergrowing list of records, called blocks, that are linked together cryptographically.  Along with encryption, the list of records (blocks), is stored in a distributed manner, meaning that exact copies of all records are stored across all machines that access the network.  Combined with encryption, this makes the blockchain extremely trustworthy, as the records are very difficult to alter.  Not only does the encryption form a layer of protection, but even if one record is changed, because there are so many duplicates, its easy to prove that the information was altered.
 
 <img src= Images/BlockChain_info.png width=800>
 
-<blockquote>
-<details><summary>Why do we need it?</summary>
-
-A blockchain
 
 </details>
-<details><summary>How do we use it?</summary>
+<details><summary>Why do we need blockchain?</summary>
 
-</details>
+Blockchain has become more and more important to our world because of many reasons.  They can generally be summed up by **The Five Pillars of Blockchain**:
 
-</blockquote>
-</details>
-<details><summary>What are the 5 Pillars of Blockchain?</summary>
 <blockquote>
 <details><summary>Open</summary>
 
@@ -155,13 +148,38 @@ A block explorer is a tool that allows you to search transactions on a particula
 </details>
 <details><summary>What is cryptography and why is relevant to Blockchain?</summary>
 
-</details>
-<details><summary>What is the difference between Symetric and Asymetric Cryptography?</summary>
+Cryptography is the science of using math to secure data so that third parties cannot decipher it or tamper with it.  This process is done through various methods of encryption and digital signatures such as hashing and numerical keys (passcodes).
 
 </details>
 <details><summary>What is hash and why do I need it?</summary>
 
+A hash is a one way function that provides a digital fingerprint of data.  Hashing is a key component of security on the blockchain, as this is what is used to 'chain' each block (list of records) to the last block.  These hashes must match or the block cannot be proven as trustworthy and added to the official blockchain (ledger or list of blocks/records).
+
+Hashing algorithms are complex, but thankfully we don't have to write the algorithms themselves, as there are plenty that have alrady been generated that can be used.  Python includes an in-built hashing library called hashlib that includes some of the most popular hashing functions.
+
+A hash function takes an input of any length and turns it into a fixed length, encrypted alphanumeric string - regardless of the input contents, or length of characters.
+
+For example the following two input strings result in different output hash strings that are the same length:
+
+<blockquote>
+
+input = `'Hashing is super fun'`<br>
+ouput =  `'82197c1b5722865cf1a98a3a6edc1c35cad6264f2247d9b90713c40344e91722'`<br>
+length = `64`
+
+input = `'Blockchain is totally rad'`<br>
+output = `'052f2acc6d16628adeb76339fb03f63fd39450a62fa748e530cec10b5c259a76'`<br>
+length = `64`
+
+</blockquote>
+
+Though the inputs are different lengths and characters, the outputs are both 64 characters long.
+
 </details>
+<details><summary>What is the difference between Symetric and Asymetric Cryptography?</summary>
+
+</details>
+
 <details><summary>How are the blocks 'chained' in the Blockchain?</summary>
 
 </details>
