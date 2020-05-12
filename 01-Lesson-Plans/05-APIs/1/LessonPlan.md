@@ -505,8 +505,8 @@ Demonstrate with live code how to use the Python `requests` library, and use the
   ```
 
   ```
-  Country: Arab World
-  GDP Value: 2584531235434.03
+  Country: United States
+  GDP Value: 20544343456936.5
   ```
 
   ![selecting_json.png](Images/selecting_json.png)
