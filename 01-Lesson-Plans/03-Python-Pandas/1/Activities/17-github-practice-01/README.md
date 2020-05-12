@@ -46,7 +46,7 @@ Git is a great resource for managing your code and very convenient if you want t
 
     ![Pulling down from Github](Images/10.PNG)
 
-11. If you want to work on your project on another computer or from a different location, you can clone the repository from GitHub as we did in Step 4. 
+11. If you want to work on your project on another computer or from a different location, you can clone the repository from GitHub as we did in Step 4.
 
     ![Cloning to another computer or location](Images/11.PNG)
 
@@ -60,4 +60,4 @@ Git is a great resource for managing your code and very convenient if you want t
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
