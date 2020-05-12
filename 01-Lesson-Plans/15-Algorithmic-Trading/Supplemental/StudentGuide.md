@@ -90,7 +90,7 @@ A short strategy is much more difficult to conceptualize. To short a stock or fi
 
 Let's say that Bob owns 100 shares of *World's Best Co. Inc.* and they are each valued at $100, making their total value $10,000.
 
-You've been researching the *World's Best Co. Inc.* and you've found some information that leads you to believe its not really the best after all, and that it's stock is well over-valued at $100 per share. You think its overvalued enough that the price is going to tank. You ask to borrow Bob's shares, and he agrees, temporarily transferring ownership of the shares to you (kind of like renting a home is the temporary transfer of many ownership rights). Now that you own the shares, even though its temporary, you can sell them!  You sell all 100 shares for $100 each for a $10,000 cash injection - Nice job!
+You've been researching the *World's Best Co. Inc.* and you've found some information that leads you to believe its not really the best after all, and that its stock is well over-valued at $100 per share. You think its overvalued enough that the price is going to tank. You ask to borrow Bob's shares, and he agrees, temporarily transferring ownership of the shares to you (kind of like renting a home is the temporary transfer of many ownership rights). Now that you own the shares, even though it's temporary, you can sell them!  You sell all 100 shares for $100 each for a $10,000 cash injection - Nice job!
 
 Not long after you do this, the price per share does in fact tank - down to $25 per share. You can now buy another 100 shares of the stock yourself on the open market at a total price of $2,500 to replace the borrowed stock you sold. Just in time too, because you are scheduled to return Bob's 100 shares to him tomorrow per your contract agreement!  You transfer all 100 shares of stock back to Bob, while keeping the $7,500 profit you made on the sale!
 
@@ -287,7 +287,7 @@ signals_df.tail()
 <details>
 <summary>Step Two: Creating the Signal Values</summary><br>
 
-Next we create the signals themselves using `np.where()`. The code begins at the start of the fast_close window because the values prior to that are null. We accomplish this by slicing the column with a colon after the short_window variable: `signals_df[short_window:]`. The complete code loos like this:
+Next we create the signals themselves using `np.where()`. The code begins at the start of the fast_close window because the values prior to that are null. We accomplish this by slicing the column with a colon after the short_window variable: `signals_df[short_window:]`. The complete code looks like this:
 ```python
 # Generate the trading signal (1 or 0) to when the fast_close is less than the slow_close
 # Note: Use 1 when the fast_close is less than the slow_close and 0 for when it is not.
@@ -308,7 +308,7 @@ The next step is to take the `.diff()` of the `Signals` column and add it to the
 <details>
 <summary>Step Four: Visualizing the Indicators</summary><br>
 
-Finally, the entry/exit points can be visualized using the code below. You'll notice there are many more entry/exit points than with the DMAC. This is because the exponentially weighted moving averages cause the price action to move faster:
+Finally, the entry/exit points can be visualized using the code below. You'll notice there are many more entry/exit points than with the DMAC. This is because (in this case) the exponentially weighted moving averages uses shorter windows (1 and 10 days, versus 50 and 100), which causes the signals to respond to recent price action faster:
 ```python
 # Visualize exit position relative to close price
 exit = signals_df[signals_df['Entry/Exit'] == -1.0]['Close'].hvplot.scatter(
@@ -447,7 +447,7 @@ btc_df[['Close','bollinger_mid_band','bollinger_upper_band','bollinger_lower_ban
 <details>
 <summary>What is back testing and how do I use it?</summary><br>
 
-The term sounds more complicated that it actually is - backtesting is simply the testing of your trading strategy using historical data in a simulated scenario. The results indicate how much the gains and losses **_would_** have been if the strategy had been implemented on a dummy portfolio of predetermined share size with a dummy capital amount of a predetermined size. Typically `500` is chosen for the portfolio size and `$100,000` is chosen for the available capital.
+The term sounds more complicated that it actually is - backtesting is simply the testing of your trading strategy using historical data in a simulated scenario. The results indicate how much the gains and losses **_would_** have been if the strategy had been implemented on a dummy portfolio of predetermined share size with a dummy capital amount of a predetermined size. There's no set rule for what share size or capital amount to backtest with, but in the example below, `500` is chosen for the portfolio size and `$100,000` is chosen for the available capital.
 
 For an example of back test simulation check out the steps below:
 
@@ -474,7 +474,7 @@ This inserts a column as seen below:
 <details>
 <summary>Step Two: </summary><br>
 
-Next, a columm is inserted indicating the share size purchase or sale, depending on the entry/exit points. If there is an entry point, the share size is  `500` if there is an exit point, the share size is `-500`. This is creating by running `.diff()` on the `Position` column.
+Next, a column is inserted indicating the share size purchase or sale, depending on the entry/exit points. If there is an entry point, the share size is  `500`. If there is an exit point, the share size is `-500`. This is creating by running `.diff()` on the `Position` column.
 
 ```python
 # Find the points in time where a 500 share position is bought or sold
@@ -531,7 +531,7 @@ This inserts a column as seen below:
 <details>
 <summary>Step Five: </summary><br>
 
-The final step before plotting is to generate the daily and cumulative returns. The `Portfolio Daily Returns` column is populated by using `.pct_change()` on the `Portfolio Total` column. The `Portfolio Cumulative Returns` column is populated using `cumprod()` on the newly generated `Portfolio Daily Returns` column.
+The final step before plotting is to generate the daily and cumulative returns. The `Portfolio Daily Returns` column is populated by using `.pct_change()` on the `Portfolio Total` column. This converts the daily portfolio value to daily portfolio returns. The `Portfolio Cumulative Returns` column is populated using `cumprod()` on the newly generated `Portfolio Daily Returns` column. This means that we convert those daily portfolio returns to a cumulative performance index, which makes it easy to see total performance over time and total dollars made. 
 ```python
 # Calculate the portfolio daily returns
 signals_df['Portfolio Daily Returns'] = signals_df['Portfolio Total'].pct_change()
@@ -592,19 +592,19 @@ The above code generates a chart like the one below. This allows us to visualize
 <details>
 <summary>What are evaluation metrics used for?</summary><br>
 
-Evaluation metrics are calculations used to assess the value of trades. Used in conjunction with your trading algorithms, they can be used to analyze it's performance and plan for needed adjustments. In class we cover the following evluation metrics:
+Evaluation metrics are calculations used to assess the value of trades. Used in conjunction with your trading algorithms, they can be used to analyze it's performance and plan for needed adjustments. In class we cover the following evaluation metrics:
 
-- **Cumulative Return:** the total/aggregated amount of gains and losses for an investment. Cumulative return is measured across time and not for a given time period.
+- **Cumulative Return:** the total/aggregated amount of gains and losses for an investment. Cumulative return is typically measured over an extended time period.
 
-- **Annual Return:** a time-weighted annual percentage representing the return on an investment over a period of time.
+- **Annual Return:** a time-weighted annual percentage representing the return on an investment over a year.
 
-- **Annual Volatility:** the annualized degree of variation in trading prices over time.
+- **Annual Volatility:** the annualized degree of variation in trading prices over time. Volatility is measured by standard deviation.
 
-- **Sharpe Ratio:** The return of investment compared to its risk, measured by the difference between the return on investment and the risk-free return.
+- **Sharpe Ratio:** The return on an investment compared to its risk. Measured by the difference between the return on investment and the risk-free return, all divided by standard deviation. Is often used as an annual performance measure, but can be measured over any period of time.
 
-- **Downside Deviation/Return:** The measure of risk for returns that are below the minimum acceptable return.
+- **Downside Deviation/Return:** The measure of risk for returns that are below the minimum acceptable return (usually below zero, or negative).
 
-- **Sortino Ratio:** The quotient of harmful volatility and overall volatility. The Sortino ratio focuses on downside deviation rather than the standard deviation.
+- **Sortino Ratio:** The ratio of investment return to harmful volatility. Similar to Sharpe Ratio, but instead focuses on downside deviation rather than the standard deviation.
 
 A cheat sheet to these calculations can be seen [here.](EvaluationsCalculationGuide.md)
 
