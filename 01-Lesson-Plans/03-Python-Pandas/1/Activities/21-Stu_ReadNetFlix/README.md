@@ -1,6 +1,6 @@
 # Netflix Lookup
 
-In this activity, you will find information about some of Netflix's most popular videos. 
+In this activity, you will find information about some of Netflix's most popular videos.
 
 ## Instructions
 
@@ -14,4 +14,4 @@ In this activity, you will find information about some of Netflix's most popular
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

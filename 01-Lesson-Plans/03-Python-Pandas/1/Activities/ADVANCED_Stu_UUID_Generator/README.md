@@ -15,7 +15,7 @@ In this activity, you will generate a universally unique ID (UUID) string using 
     * This string of characters will be the alphabet used to generate the UUID.
 
     * For example, if we pass `'abcdef'`, the UUID can only consist of the letters 'abcdef'.
-    
+
     * The length and characters parameters should be optional and have default values.
 
 3. Define a default character alphabet using the constants provided by the [string module](https://docs.python.org/3/library/string.html).
@@ -36,4 +36,4 @@ In this activity, you will generate a universally unique ID (UUID) string using 
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
