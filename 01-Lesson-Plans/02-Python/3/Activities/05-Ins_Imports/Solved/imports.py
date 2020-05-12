@@ -17,10 +17,13 @@ print_hello()
 # Import the NumPy library
 import numpy
 
+# Import the NumPy Financial library
+import numpy_financial as npf
+
 # Initialize variables
 interest_rate = .1
 cash_flows = [-1000, 400, 400, 400, 400]
 
-#Call the NPV function from the NumPy library
-net_present_value = numpy.npv(interest_rate, cash_flows)
+#Call the NPV function from the NumPy Financial library
+net_present_value = npf.npv(interest_rate, cash_flows)
 print(f"NPV = {net_present_value}")

@@ -66,7 +66,7 @@ In this activity, instructors will help students prepare for today's lesson by i
 
 Explain to the class that today's activities will require a few tables to be imported into a database.
 
-Slack out the SQL file to the class. The data is taken from the [sakila database](https://dev.mysql.com/doc/sakila/en/), which is a sample database used to learn MySQL. For this class, students should use the CSV files provided in the `Resources` folder and import the CSV data into the tables that they have created. An example is provided below.
+For this class, students will create and populate tables from data provided by the [sakila database](https://dev.mysql.com/doc/sakila/en/), which is a sample database used to learn MySQL. Data files are provided within the `Resources` folder. An example for importing the data is provided below.
 
 Together with the class, walk through the following steps:
 
@@ -74,7 +74,16 @@ Together with the class, walk through the following steps:
 
 * Open the query tool for the newly created `rental_db`.
 
-* Copy [schema.sql](Activities/01-Evr_Import_Data/Solved/schema.sql) and run the code to create the needed tables.
+* Create the "actor" table by running the following code:
+
+  ```sql
+  CREATE TABLE actor (
+    actor_id integer NOT NULL,
+    first_name character varying(45) NOT NULL,
+    last_name character varying(45) NOT NULL,
+    last_update timestamp without time zone DEFAULT now() NOT NULL
+  );
+  ```
 
 * Right-click the "actor" table on the right-hand side, and then select Import/Export.
 
@@ -88,7 +97,9 @@ Together with the class, walk through the following steps:
 
   **Optional:** Right-click the "actor" table and view the first 100 rows to check that the data was imported correctly.
 
-Have the class repeat this process for the remaining tables using the CSV files provided in the Resources folder.
+Then, slack out the [schema](Activities/01-Evr_Import_Data/Solved/schema.sql) and [seed](Activities/01-Evr_Import_Data/Solved/seed.sql) files to the class. Mention that while we could import each CSV one by one, it will be quicker to create and import all of our data at once. Have students copy and paste the contents of the files in their query editors and execute the code.
+
+**Note:** Use the CTRL+C and CTRL+A hotkeys to quickly copy and paste all the contents of the files.
 
 The TAs should walk around the classroom to assist students with the database upload.
 

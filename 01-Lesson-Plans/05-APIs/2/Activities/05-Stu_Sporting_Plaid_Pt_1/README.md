@@ -8,13 +8,13 @@ Rally your troops and join Plaid's cause by signing up for their API keys. Sport
 
 1. Obtain your key from the [Plaid API Key Site](https://dashboard.plaid.com/account/keys).
 
-2. Use the [keys.sh](Unsolved/Core/keys.sh) starter file to create and export environment variables for **Client ID**, **Public Key**, and **Sandbox Secret Key**.
+2. Create a `.env` file based on the  the [example.env](Unsolved/Core/example.env) starter file to create and export environment variables for **Client ID**, **Public Key**, and **Sandbox Secret Key**.
 
-3. Open the terminal, and use the `source` command to source the `keys.sh` file.
+3. Use the `pip install` command to install the `plaid-python` SDK.
 
-4. Use the `pip install` command to install the `plaid-python` SDK.
+4. Open the JupyterLab [starter file](Unsolved/Core/sporting_plaid.ipynb), and import `plaid`, `os,` `datetime`, and `json`, and `dotenv` libraries.
 
-5. Open the JupyterLab [starter file](Unsolved/Core/sporting_plaid.ipynb), and import `plaid`, `os,` `datetime`, and `json` libraries.
+5. Read and set the environment variables defined in your `.env` using the `load_dotenv` method.
 
 6. Use the `os.getenv` function to bring the Plaid API key variables into Python. Store these values in Python variables.
 

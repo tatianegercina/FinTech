@@ -4,13 +4,23 @@ This guide serves as a step by step process for setting up and validating the `A
 
 ## Install
 
-In order to install the `alpaca-trade-api` package, all of the dependencies must be satisfied. The dependencies list can be found below for reference.
+In order for the `alpaca-trade-api` package to install and run properly, all of the dependencies must be satisfied. The dependencies list can be found below for reference.
 
 * Pandas
 
 * Requests
 
-Open a terminal and execute the following command to install `alpaca-trade-api`.
+* Dotenv
+
+To verify the installation of a package, run `conda list | grep package_name` in your terminal, substituting `package_name` for the actual package name.
+
+If `Dotenv` is not installed, you can do so by running the following command in your terminal:
+
+```python
+pip install python-dotenv
+```
+
+To initiate the `alpaca-trade-api` install, open a terminal and execute the following command:
 
 * Use the `pip install` command to download the `alpaca-trade-api` module.
 

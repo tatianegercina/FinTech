@@ -14,6 +14,10 @@ Complete the following:
 
   * [estates.csv](Resources/estates.csv)
 
+* If you have issues importing the `.csv` files, you may alternatively import the data using the following seed file:
+
+  * [seed.sql](Unsolved/seed.sql)
+
 * Make sure that the `estates` table contains an `owner_id` foreign key that references the `owner_id` column in the `owners` table.
 
 * Test foreign keys by writing a query to insert data in the `estates` table that does not have a reference ID in the `owners` table.
