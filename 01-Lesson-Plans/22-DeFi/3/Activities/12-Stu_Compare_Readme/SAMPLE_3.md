@@ -1,39 +1,35 @@
 # Trackrr
 
-## Contributors
-
-@janedoe
+Trackrr is an application that pulls exchange rates from an API, stores data in a SQL database and allows user to compare and contrast trends.
 
 ## Technology Stack
 
 - Python, Pandas, NumPy, APIs, AWS, SQL
 
-## About
 
-- Trackrr is an application that pulls exchange rates from an API, stores data in a SQL database and allows user to compare and contrast trends.
-
-## Installation Instructions
+## Installation Guide
 
 1. Clone the repository
 2. Install dependencies
 3. Run using Python
 
-## Screenshots
+## Examples
 
 Login Page
 ![shot4](./assets/shot1.png)
 
 
-## License
+## Usage
+The app can be used by running on localhost and then accessing the chosen port in the browser.
 
-- MIT
-
-## Contact
-
-#### Developer / Financial Analyst
+## Contributors
 
 - Name: Jane Doe (@janedoe)
+- Position: Financial Analyst
 - Homepage: [janedoe.com](https://janedoe.com)
 - e-mail: janedoe@gmail.com
 - Twitter: @jdoe37
 - LinkedIn: [https://www.linkedin.com/in/janedoe/](https://www.linkedin.com/in/janedoe/)
+
+## License
+![mitlicense](https://img.shields.io/badge/license-MIT-green)

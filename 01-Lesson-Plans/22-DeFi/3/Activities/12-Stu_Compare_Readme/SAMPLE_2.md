@@ -1,4 +1,5 @@
 # Trackrr
+Trackrr is an application that pulls exchange rates from an API, stores data in a SQL database and allows user to compare and contrast trends.
 
 ## Contributors
 
@@ -8,9 +9,6 @@
 
 - Python, Pandas, NumPy, APIs, AWS, SQL
 
-## About
-
-- Trackrr is an application that pulls exchange rates from an API, stores data in a SQL database and allows user to compare and contrast trends.
 
 ## Screenshots
 

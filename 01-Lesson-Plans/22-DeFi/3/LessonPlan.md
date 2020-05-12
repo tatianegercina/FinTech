@@ -718,7 +718,7 @@ Welcome the students back to class, and allow them to use this activity time to 
 
   * ☝️And what should we include in order to make it a good, high-quality `README` that we would want employers to see?
 
-  * 🙋A `README` should include a project title, the technology used, screen shots, installation instructions, instructions on how to use it, tests, any credits you need to give, as well as contributors.
+  * 🙋A `README` should include a project title, technologies, installation guide, screen shots / examples, instructions on how to use it, contributors, and a license.
 
 * Show students how to pin a repository in GitHub. Navigate to `www.github.com/<yourUsername>` and click `Customize your pins`:
 
@@ -764,7 +764,7 @@ and [SAMPLE_3.md](./Activities/12-Stu_Compare_Readme/SAMPLE_3.md) and note the d
 
   * 🙋 It's better because it has a unique app title and subsections but:
     * the images are broken
-    * No installation instructions
+    * No installation guide
     * No license
     * No LinkedIn
 
