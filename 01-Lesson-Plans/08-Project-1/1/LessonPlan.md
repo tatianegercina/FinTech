@@ -19,6 +19,7 @@ Be sure to slack out the [Visual Introduction to Git](https://medium.com/@ashk3l
 * If possible, share the above links both _before_ today's class and again at the end of it.
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [8.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a2cb4f58-e796-4877-a52d-aad10153dca8) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
@@ -77,7 +78,6 @@ Refer to `08-project-1/01-Stu_Create-Repository`, which contains the following i
 
 * Ask an instructor or TA if you get stuck!
 
-
 ### 3. Instructor Do: Pull Requests and Code Review (5 min)
 
 Explain that when working with others on the same repo, it's important to make sure that all of the new code gets reviewed by at least one other team member before getting merged into the master branch.
@@ -99,7 +99,6 @@ In this activity, groups will protect their master branches.
 Refer to `08-project-1/02-Stu_Protect-Master`, which contains the following instructions:
 
 **Instructions**
-
 
 * Only one member per project group needs to complete this activity.
 
@@ -250,7 +249,3 @@ Be sure to walk around and offer advice on project scope, finding data sources, 
 ---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
-```
-
-```
