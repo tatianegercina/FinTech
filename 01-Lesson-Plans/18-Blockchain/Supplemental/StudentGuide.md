@@ -188,6 +188,13 @@ Though the inputs are different lengths and characters, the outputs are both 64 
 </details>
 <details><summary>What are consensus algorithms?</summary>
 
+Proof of Authority
+Proof of Work
+Proof of Stake
+
+Proof of Capacity - It uses free hard drive space as a contribution to the network.
+
+Proof of Burn -- This algorithm "burns" or making some amount of coins un-spendable to act as a stake to the network.
 </details>
 
 ---
