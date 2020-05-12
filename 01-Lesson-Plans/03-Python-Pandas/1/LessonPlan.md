@@ -44,7 +44,9 @@ Encourage students to try to complete the simple code drills from memory, googli
 
 Students will be given the remaining class time to work through the code drills at their own pace.
 
-**File:** [Code Drills](Activities/)
+**Files:**
+
+* [Code Drills](Activities/)
 
 ---
 
