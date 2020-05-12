@@ -430,7 +430,7 @@ Demonstrate with live code how to use the Python `requests` library, and use the
 * The first step to using the requests library after importing it is to declare a variable that will hold the URL.
 
   ```python
-  url = "http://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD"
+  url = "http://api.worldbank.org/v2/country/us/indicator/NY.GDP.MKTP.CD"
   ```
 
 * Because most APIs support multiple output formats, the next step is to specify the desired output format. This can be added to the URL with a format tag, `?format=`. Common formats used are JSON, CSV, and XML. For this lesson, JSON will be the focus. The format tag will need to be appended to the URL string previously created; ask students if anyone remembers how to append to a string. (Answer: concatenation.)
