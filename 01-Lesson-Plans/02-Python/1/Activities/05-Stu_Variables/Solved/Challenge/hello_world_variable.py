@@ -22,4 +22,4 @@ print(f"Apple's original stock price was ${original_price}")
 print(f"Apple's current stock price is ${current_price}")
 
 # Print percent increase
-print("Apple's stock price increased by", "{:.2f}%".format(percent_increase))
+print(f"Apples percent increase in price is {percent_increase:.2f}%")

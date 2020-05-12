@@ -40,5 +40,4 @@ Use a [format specifier](https://www.python.org/dev/peps/pep-0498/#format-specif
 For additional help with f-strings, visit [Python 3's f-Strings](https://realpython.com/python-f-strings/).
 
 ---
-
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

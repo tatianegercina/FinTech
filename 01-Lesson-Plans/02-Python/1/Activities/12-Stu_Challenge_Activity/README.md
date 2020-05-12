@@ -56,7 +56,7 @@ Using the [starter file](Unsolved/Core/conditionally_yours.py), complete the fol
 
 Add a layer of sophistication to your program by creating a `balance` variable. This will serve as the amount of excess equity or money available in a portfolio.
 
-Create logic that will take into consideration `balance` when determining a recommendation. Only recommend to buy if `balance` is 5 times the amount of the stock's current price.
+Create logic that will take into consideration `balance` when determining a recommendation. Only recommend to buy if `balance` is five times the amount of the stock's current price.
 
 ## Hint
 
@@ -64,4 +64,4 @@ Use a [format specifier](https://www.python.org/dev/peps/pep-0498/#format-specif
 
 ---
 
-© 2019 Trilogy Education Services
+ © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

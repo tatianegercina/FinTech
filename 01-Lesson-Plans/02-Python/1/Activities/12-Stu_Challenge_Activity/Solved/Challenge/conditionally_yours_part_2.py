@@ -56,7 +56,7 @@ print(f"Netflix's original stock price was ${original_price}")
 print(f"Netflix's current stock price is ${current_price}")
 
 # Print percent increase
-print("Netflix's stock price changed by", "{:.2f}%".format(percent_increase))
+print(f"Netflix's stock price changed by {percent_increase:.2f}%")
 
 # Determine if stock should be bought or sold
 if percent_increase >= threshold_to_sell:

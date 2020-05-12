@@ -28,7 +28,7 @@ By the end of this class, students will be able to:
 
 - Students need to have a thorough understanding of financial concepts and how they are used in order to develop a mindset for solving financial use cases programmatically. Make sure to relate each financial use case to its corresponding programmatic process.
 
-- Remember that students most likely have varying levels of finance experience. Therefore, make sure your lectures are clear and thorough for newcomers while serving as interesting refreshers for veterans. Draw upon your industry experience or tell a story that relates to the concepts at hand; make things simple to understand as well as memorable!
+- Remember that students most likely have varying levels of finance experience. Therefore, make sure your lectures are clear and thorough for newcomers while serving as interesting refreshers for veterans. Draw upon your industry experience or tell a story that relates to the concepts at hand; make things simple to understand, as well as memorable!
 
 - Make sure TAs circulate the classroom to provide assistance to students who are still struggling with Python concepts. If the lesson moves ahead of schedule, you can use the extra time to review those topics.
 
@@ -45,13 +45,13 @@ By the end of this class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-- The slides for this lesson can be viewed on Google Drive here: [Lesson 2.3 Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss).
+- The slides for this lesson can be viewed on Google Drive here: [Lesson 2.3 Slides](https://docs.google.com/presentation/d/1nqVDdwQp8mqtoVnsAzSNBUWyGFMM8ThEfvov1URZw2M/edit?usp=sharing).
 
 - To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
 - **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-- The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+- The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -65,11 +65,11 @@ In this section, welcome students to class, review the lesson objectives, and co
 
 - [refresher.py](Activities/01-Ins_Refresher/Solved/refresher.py)
 
-Welcome students back to class. Tell them that in today's lesson we will begin to apply Python concepts to financial use cases. Today will be fun!
+Welcome students back to class. Tell them that in today's lesson, we will begin to apply Python concepts to financial use cases. Today will be fun!
 
 Use the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57c97b9346_4_1) to review the class objectives.
 
-Use the solution file to perform a live coding session and quickly recap concepts learned in previous classes. During the session, ask the following questions:
+Use the solution file to perform a live coding session, and quickly recap concepts learned in previous classes. During the session, ask the following questions:
 
 - What are variables?
 
@@ -345,7 +345,7 @@ Answer any questions before moving on.
 
 In this activity, students will apply the concept of time value of money (TVM) to discount the future value of a zero-coupon bond and determine its present value. They will also compare the present value to its current selling price in order to decide whether or not to purchase the bond.
 
-Encourage students to work in pairs for this activity. Motivate students to help each other by explaining that the best way to learn is to teach, so taking the time to help their neighbor will really reinforce the concepts.
+Encourage students to work in pairs for this activity. Motivate students to help each other by explaining that the best way to learn is to teach, so taking the time to help their neighbour will really reinforce the concepts.
 
 **File:** [Starter Code](Activities/04-Stu_Time_Value_of_Money/Unsolved/zero_coupon_bonds.py)
 
@@ -429,7 +429,7 @@ Introduce NumPy.
 
 - NumPy is a Python library that provides fast input/output, or I/O, on multidimensional or nested array objects. Among other things, NumPy can be used as a scientific computing or financial analysis tool.
 
-- The built-in NPV function from the NumPy library makes calculating NPV values simple so that you don't have to reinvent the wheel.
+- The built-in NPV function from the NumPy library makes calculating NPV values simple, so that you don't have to reinvent the wheel.
 
   ```python
   # Import the NumPy library
@@ -596,17 +596,17 @@ Answer any questions before moving on.
 
 ---
 
-### 11. Student Do: E-Commerce Traffic (15 min)
+### 11. Student Do: ECommerce Traffic (15 min)
 
-In this activity, students will perform file I/O by parsing a text file and calculating the sum and average of customer e-traffic, and then writing the results back to a text file.
+In this activity, students will perform file I/O by parsing a text file and calculating the sum and average of customer etraffic, and then writing the results back to a text file.
 
 **File:** [Starter Code](Activities/08-Stu_File_IO/Unsolved/ecommerce_traffic.py)
 
 **Instructions:** [README.md](Activities/08-Stu_File_IO/README.md)
 
-### 12. Instructor Do: Review E-Commerce Traffic (5 min)
+### 12. Instructor Do: Review ECommerce Traffic (5 min)
 
-Review the previous activity, E-Commerce Traffic, with students.
+Review the previous activity, ECommerce Traffic, with students.
 
 **File:** [Solution](Activities/08-Stu_File_IO/Solved/ecommerce_traffic.py)
 
@@ -729,7 +729,7 @@ Open the [solution file](Activities/10-Stu_CSV_Reader/Solved/Core/sales_analysis
 
 - Python's CSV module parses CSV data and creates `row` list objects, making it easier to access specific column values for each row.
 
-- Data that is read in from CSV files is interpreted as strings. To perform numerical calculations, we'll need to convert the strings to ints or floats.
+- Data that is read from CSV files is interpreted as strings. To perform numerical calculations, we'll need to convert the strings to ints or floats.
 
   ```python
   for row in csvreader:
@@ -816,7 +816,7 @@ Suggested Format:
 
 * Allow students to start the homework with extra TA support.
 
-Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
 
 ---
 
@@ -824,4 +824,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

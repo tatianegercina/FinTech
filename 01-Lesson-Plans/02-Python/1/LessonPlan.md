@@ -50,13 +50,13 @@ By the end of this class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 2.1 Slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 2.1 Slides](https://docs.google.com/presentation/d/1UXIdqA5nA6ndYtBhuZeifsSA1vcIF1iHRpXwaRzB-qg/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -293,7 +293,7 @@ At this point, students may feel apprehensive about the upcoming coding activiti
 
 Set up the following real-world scenario to help explain variables:
 
-* Think about any time you've kept score for a game or watched someone else keep score. It can be an involved process. Scores change all the time. Tally marks and points have to be tracked and calculated, and you're always searching for pen and paper.
+* Think about any time you've kept score for a game or watched someone else keep score. It can be an involved process—you need paper and pencil, tally marks and points have to be tracked and calculated, and scores are always changing.
 
 * In this scenario, `score` is a variable that represents an ever-changing numeric number. We can track two scores in two different variables: `team_a_score` and `team_b_score`. Whenever Team A gets a point, the `team_a_score` variable should be incremented by 1. The same goes for Team B. At any moment, the two scores can be compared to find out who is winning.
 
@@ -309,7 +309,7 @@ Transition to discussing variables. Use the [slides]((https://docs.google.com/pr
 
   * Each cell has a name (e.g., A1), a value (e.g., 5), and a type (integer).
 
-* Variables allow us to name our data in ways that make it easier to understand and use in code, and provides the freedom of choice in regard to variable names.
+* Variables allow us to name our data in ways that make it easier to understand and use in code, and provide the freedom of choice in regard to variable names.
 
   * For example, computers allow us to name a string of text characters something like `first_name` or `first_nm`.
 
@@ -431,7 +431,7 @@ Review the solution to the variables activity, highlighting the following points
 
   * The Python interpreter receives the value, evaluates it internally, and determines what data type it is.
 
-  * This process is similar to a taste-testing challenge: Python unknowingly receives an item and has to "sense" what it is.
+  * This process is similar to a taste-test challenge: Python unknowingly receives an item and has to "sense" what it is.
 
 * String formatting can be used to improve the appearance of values when they are printed to the screen.
 
@@ -481,7 +481,7 @@ To guide students, you may want to follow up with questions such as:
 
 * Can a string be concatenated with an integer?
 
-  **Answer:** No, a string can only be concatenated with another string. Other data types like integers must first be converted to a string before it can be concatenated to another string.
+  **Answer:** No, a string can only be concatenated with another string. Other data types like integers must first be converted to a string before they can be concatenated to another string.
 
 * What type of calculations can be done with integers?
 
@@ -493,7 +493,7 @@ Ask if there are any questions before moving on.
 
 ### 9. Instructor Do: Conditionals (10 min)
 
-In this section, students will learn how to apply logic to the values assigned to variables. This establishes a workflow in which a program exhibits a specific behavior based on the evaluation of a condition.
+In this section, students will learn how to apply logic to the values assigned to variables. This establishes a workflow in which a program exhibits a specific behaviour based on the evaluation of a condition.
 
 **Files:**
 
@@ -507,7 +507,7 @@ Use the [slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f
 
 * In the previous activity, variables were used to tell computers what (data) to remember/store.
 
-* In this section, variables and their associated values are called upon and evaluated via conditionals, which determine the decisions or behavior the computer should exhibit.
+* In this section, variables and their associated values are called upon and evaluated via conditionals, which determine the decisions or behaviour the computer should exhibit.
 
 * Computers are simple in that they do exactly what you tell them to do. If you want to have a useful script, you must program decision logic into the computer.
 
@@ -715,9 +715,9 @@ Be prepared to explain the following, for example:
 
   * Deciding when to use specific comparison operators comes down to whether you want your conditional statement to include the minimum and maximum values needed to pass the condition.
 
-  * This is best explained with the example of drinking age. In the U.S., you have to be 21 years of age or older to legally drink. 21 is the minimum age acceptable.
+  * This is best explained with the example of drinking age. In Ontario, you have to be 19 years of age or older to legally drink. 19 is the minimum age acceptable.
 
-  * If we were to write a program to check whether someone's age meets the legal conditions, we would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 21 cannot drink.
+  * If we were to write a program to check whether someone's age meets the legal conditions, we would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 19 cannot drink.
 
 Tell students to look at the following code. Ask:
 
@@ -847,7 +847,7 @@ Answer any questions before moving on.
 
 Introduce for loops by presenting the following scenario:
 
-* Imagine that your new job at Accrual World, Inc. is to generate a daily report for each of your client's total sales. Every day, you need to gather the sales data from each client, and then break out your trusty calculator to add up their total sales. This results in hours of manual labor.
+* Imagine that your new job at Accrual World, Inc. is to generate a daily report for each of your client's total sales. Every day, you need to gather the sales data from each client, and then break out your trusty calculator to add up their total sales. This results in hours of manual labour.
 
 * Just before you finish, you realize that you were given last week's data. You have to start over! Well, there's a better way to handle repetitive tasks like this.
 
@@ -863,7 +863,7 @@ At this point, transition to your discussion to for loops. Use the [slides](http
 
 * **For loops** are used for iterating over a sequence or collection. As the sequence or collection is iterated, a process is executed. This means the process is executed with every round in the loop.
 
-  * For loops are called for loops because every time a loop happens, a repeating decision or behavior happens.
+  * For loops are called for loops because every time a loop happens, a repeating decision or behaviour happens.
 
   * For example, if you have a string `Hello World`, a loop would allow you to iterate over each letter in the phrase and perform some type of operation (e.g., capitalize each letter).
 
@@ -880,7 +880,7 @@ Open [loop_dee_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py) and rev
 
 * For loops should be used when you want a process to run _n_ number of times.
 
-  * For example, when you want to execute a decision or behavior for each number in a range, you would use a for loop: you know you have _n_ number of items, and you want a behavior executed for each item.
+  * For example, when you want to execute a decision or behaviour for each number in a range, you would use a for loop: you know you have _n_ number of items, and you want a behaviour executed for each item.
 
   * For loops should be used if you know a process needs to be executed a specific number of times.
 
@@ -940,7 +940,7 @@ Open [loop_dee_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py) and rev
 
 Now introduce while loops and compare them to for loops.
 
-* Whereas for loops loop until they've completed a decision or behavior for each element in a sequence, **while loops** loop until a condition no longer evaluates as `True`.
+* Whereas for loops loop until they've completed a decision or behaviour for each element in a sequence, **while loops** loop until a condition no longer evaluates as `True`.
 
 * For example, `while` you are wearing your uniform (uniform = `True`), keep ringing up customers at the checkout line.
 
@@ -950,7 +950,7 @@ Now introduce while loops and compare them to for loops.
       # Ring up customers
   ```
 
-* While loops should be used when you want a decision or behavior to be executed continuously until a condition is no longer `True`. In other words, use a while loop when there's a specific condition that must be met in order for the loop to end.
+* While loops should be used when you want a decision or behaviour to be executed continuously until a condition is no longer `True`. In other words, use a while loop when there's a specific condition that must be met in order for the loop to end.
 
 * While loops require an **iterator**, or counter variable, to be created and incremented. If the iterator is not incremented, the loop will not iterate correctly.
 
@@ -1108,7 +1108,7 @@ Explain that pseudocode is a great tool to use on interviews.
 
 * Pseudocoding on interviews allows employers to see a candidate's thought process and problem-solving skills, as well as their ability to design algorithms.
 
-* Some employers even specifically ask interviewees to complete a pseudocoding activity, which shows how interested employers are in developers' ability to solve problems, design and envision algorithms, and articulate process. Data shows that employers are looking for interviewees to pseudocode during interviews.
+* Some employers even ask interviewees to complete a pseudocoding activity, which shows how interested employers are in developers' ability to solve problems, design and envision algorithms, and articulate process. Data shows that employers are looking for interviewees to pseudocode during interviews.
 
 * Pseudocoding ensures that interviewees don't jump head first into a technical question; it requires them to think about what they're going to do. The last thing anyone wants is to start coding and not know what to do next.
 
@@ -1184,7 +1184,7 @@ Engage the students with the following questions:
 
 * How did pseudocoding improve or hinder your coding process?
 
-  **Sample Answer:**  Pseudocoding provides a human-readable set of requirements from which a program should operate. In other words, pseudocoding makes it easier to define and outline the behavior of an application.
+  **Sample Answer:**  Pseudocoding provides a human-readable set of requirements from which a program should operate. In other words, pseudocoding makes it easier to define and outline the behaviour of an application.
 
 * What are some best practices for pseudocoding?
 
@@ -1228,4 +1228,4 @@ Congratulate students on making it through their first lesson on programming! Of
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
