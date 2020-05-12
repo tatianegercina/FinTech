@@ -14,7 +14,7 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * Overall, this should be a fun day for students that will help them build confidence in their programming skills. Be sure to offer plenty of support and encouragement to beginners.
 
-* Remind the class that a student guide for each unit can be found in the corresponding unit's supplemental folder. Each guide has helpful links and FAQ's for the unit. The unit 2 student guide can be found [here.](../Supplemental/StudentGuide.md) If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
+* Remind the class that a student guide for each unit can be found in the corresponding unit's supplemental folder. Each guide has helpful links and FAQ's for the unit. The unit 2 student guide can be found [here](../Supplemental/StudentGuide.md). If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [3.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e1e2c6d5-ca1e-4255-8b93-aaa301156f71) Note that this video may not reflect the most recent lesson plan.

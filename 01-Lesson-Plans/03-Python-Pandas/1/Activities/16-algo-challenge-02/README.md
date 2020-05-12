@@ -1,6 +1,6 @@
 # Password Strength Checker
 
-In this activity, you will create a validation function for checking the strength of a password. The focus of this activity is the logic behind the checker. You will be given the HTML and the rest of the JavaScript; you should not have to modify any part of the code given to you.
+In this activity, you will create a validation function for checking the strength of a password. The focus of this activity is the logic behind the checker.
 
 Password strengths are as follows:
 
