@@ -92,6 +92,8 @@ Using the starter file, complete the following steps:
 
 3. Drop highly correlated stocks and keep only non-correlated stocks from the DataFrame (two stocks should be dropped).
 
+    **Hint:** You can do this by visually identifying high correlations, or by summing then comparing total correlation values per stock.
+
 4. Use the `mean` and `std` functions to calculate the annualized Sharpe ratio and assess the reward-to-risk ratio of the non-correlated stocks.
 
 5. Drop stocks with negative Sharpe ratios from the DataFrame (three stocks should be dropped).

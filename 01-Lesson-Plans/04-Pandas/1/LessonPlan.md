@@ -158,7 +158,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution and hi
 
   * Chances are there is another factor at play that results in this positive correlation. One possible factor is that as temperature increases (during the summer months), people tend to both eat more ice cream and go swimming.
 
-Explain to students that **Regression analysis** should be used to predict causation, i.e., how _x_ predicts _y_. Close this activity by asking the following question:
+Explain to students that **Regression analysis** is a method we'll learn in a later unit that can measure multiple relationships at the same time (e.g., the effect of both weather and income on ice cream sales). This explanation may not solve our problem of confusing correlation with causation, but it will help us better tease out economic relationships from multiple influences. Close this activity by asking the following question:
 
 * How do these concepts apply to stock investments?
 
@@ -591,6 +591,8 @@ This activity is a two-part mini-project where you will work in pairs to researc
 **Files:**
 
 * [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner/Unsolved/portfolio_planner_part_1.ipynb)
+
+* [portfolio_planner_part_2.ipynb](Activities/08-Stu_Portfolio_Planner/Solved/portfolio_planner_part_2.ipynb)
 
 * [bk_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/bk_data.csv)
 
