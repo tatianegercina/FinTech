@@ -28,11 +28,13 @@ This constitutes your Project Proposal and Outline, and it should look something
 
 Once your group has written an outline, it's time to start hunting for data. You are free to use data from any source, but we recommend the following curated sources of high-quality data:
 
-* [data.world](https://data.world/)
+* [data.world](https://data.world/datasets/canada)
 
-* [Kaggle](https://www.kaggle.com/)
+* [Kaggle](https://www.kaggle.com/datasets?search=canada)
 
-* [Data.gov](https://www.data.gov)
+* [TSX Stock Exchange](https://www.tsx.com/trading/market-data-and-statistics)
+
+* [Open Data](https://open.canada.ca/en/open-data)
 
 * [Public APIs](https://github.com/abhishekbanthia/Public-APIs)
 
