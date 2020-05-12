@@ -46,18 +46,22 @@ Announce that students have the next half-hour to outline their presentations.
 
 Make sure they don't code. They should consider:
 
-  * The structure of their presentation
+* The structure of their presentation
 
-  * The key messages they need to show
+* The key messages they need to show
 
-  * The details that they should _avoid_ reviewing (they only have 10 minutes to talk). (Note: Adjust the presentation time based on your class size.)
+* The details that they should _avoid_ reviewing (they only have 10 minutes to talk). (Note: Adjust the presentation time based on your class size.)
 
 Offer these tidbits of advice:
 
 * The presentation of any project to an audience must flow like a story. Your narrative should open on a conflict, hint at a potential resolution for that problem, depict the steps taken to resolve the issue, and finally end on the resolution of the conflict with an eye toward the future. In other words:
+  
   1. What problem does your app focus on?
+  
   2. How does your app solve this problem at a high-level?
+  
   3. What steps did you take to build the app?
+  
   4. Show the app running and solving the problem that began your story. Also talk about what features you'd like to add in an update to your app.
 
 While the groups organize their presentations, offer to answer any questions about Saturday.

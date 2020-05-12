@@ -39,7 +39,9 @@ Make sure groups have deployed their app to GitHub Pages, as well. We want to se
 Give students a rundown of how their presentations should pan out.
 
 1. They should last about eight minutes, followed by two to four minutes of open-floor Q&A. (Note: Adjust the presentation time based on your class size.)
+
 2. They should speak **into** the microphone—this ensures that we capture high-quality audio for their recorded presentation.
+
 3. They need to show confidence! All of them have contributed to impressive projects—they need to recognize and project that during their demonstrations.
 
 Ask which groups would like to go first, then second and so on. When groups stop responding, assign the remaining teams to random slots (and write this list down).
