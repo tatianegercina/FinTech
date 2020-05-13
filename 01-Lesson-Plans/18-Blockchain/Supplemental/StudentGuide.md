@@ -161,11 +161,16 @@ A hash function takes an input of any length and turns it into a fixed length, e
 
 For example the following two input strings result in different output hash strings that are the same length:
 
+### Hash #1
 <blockquote>
 
 input = `'Hashing is super fun'`<br>
 ouput =  `'82197c1b5722865cf1a98a3a6edc1c35cad6264f2247d9b90713c40344e91722'`<br>
 length = `64`
+</blockquote>
+
+### Hash #2
+<blockquote>
 
 input = `'Blockchain is totally rad'`<br>
 output = `'052f2acc6d16628adeb76339fb03f63fd39450a62fa748e530cec10b5c259a76'`<br>
