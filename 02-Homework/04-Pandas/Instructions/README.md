@@ -80,7 +80,22 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 
 2. Download the data as CSV files and calculate the portfolio returns.
 
-3. Add your portfolio returns to the DataFrame with the other portfolios and rerun the analysis. How does your portfolio fair?
+3. Calculate the returns for each stock.
+
+4. Using those returns, calculate the weighted returns for your entire portfolio assuming an equal number of shares for each stock.
+
+5. Add your portfolio returns to the DataFrame with the other portfolios and rerun the analysis. How does your portfolio fair?
+
+
+## Your analysis should include the following:
+
+- Using all portfolios:
+  - The annualized standard deviation (252 trading days) for all portfolios.
+  - The plotted rolling standard deviation using a 21 trading day window for all portfolios.
+  - The calculated annualized Sharpe Ratios and the accompanying bar plot visualization.
+  - A correlation table.
+- Using your custom portfolio and one other of your choosing:
+  - The plotted beta. . How does your portfolio fair?
 
 ---
 
