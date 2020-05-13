@@ -36,7 +36,7 @@ In this activity, you will be creating a crowdsale contract using the OpenZeppel
 
   * Then, store the address of the token by using `token_address = address(token)`. This will allow us to easily fetch the token's address for later from the deploying contract.
 
-  * Next, create the `ArcadeTokenSale` contract using the same logic used when creating `ArcadeToken`. Store the variable in `ArcadeTokenSale arcade_sale` and set the parameters:
+  * Next, create the `ArcadeTokenSale` contract instance using the same logic used when creating `ArcadeToken`. Store the variable in `ArcadeTokenSale arcade_sale` and set the parameters:
 
     * `rate` should be hard-coded to `1` in order to maintain the same units as Ether.
 
