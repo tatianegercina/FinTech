@@ -52,6 +52,8 @@ Analyze the data to see if any of the portfolios outperform the stock market (i.
 
 2. Calculate the standard deviation for each portfolio. Which portfolios are riskier than the S&P 500?
 
+3. Calculate the annualized standard deviation (252 trading days).
+
 #### Rolling Statistics
 
 1. Plot the rolling standard deviation of the various portfolios along with the rolling standard deviation of the S&P 500 (consider a 21 day rolling window). Does the risk increase for each of the portfolios at the same time risk increases in the S&P?
