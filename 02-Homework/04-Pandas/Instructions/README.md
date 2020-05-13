@@ -52,13 +52,17 @@ Analyze the data to see if any of the portfolios outperform the stock market (i.
 
 2. Calculate the standard deviation for each portfolio. Which portfolios are riskier than the S&P 500?
 
+3. Calculate the annualized standard deviation (252 trading days).
+
 #### Rolling Statistics
 
-1. Plot the rolling standard deviation of the various portfolios along with the rolling standard deviation of the S&P 500 (consider a 21 day rolling window). Does the risk increase for each of the portfolios at the same time risk increases in the S&P?
+1. Plot the rolling standard deviation of the various portfolios along with the rolling standard deviation of the S&P 500 using a 21 day rolling window. Does the risk increase for each of the portfolios at the same time risk increases in the S&P?
 
 2. Construct a correlation table for the algorithmic, whale, and S&P 500 returns. Which returns most closely mimic the S&P?
 
 3. Choose one portfolio and plot a rolling beta between that portfolio's returns and S&P 500 returns. Does the portfolio seem sensitive to movements in the S&P 500?
+
+4. An alternative way to calculate a rolling window is to take the exponentially weighted moving average. This is like a moving window average, but it assigns greater importance to more recent observations. Try calculating the ewm with a 21 day half-life.
 
 ### Plot Sharpe Ratios
 
@@ -76,7 +80,22 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 
 2. Download the data as CSV files and calculate the portfolio returns.
 
-3. Add your portfolio returns to the DataFrame with the other portfolios and rerun the analysis. How does your portfolio fair?
+3. Calculate the returns for each stock.
+
+4. Using those returns, calculate the weighted returns for your entire portfolio assuming an equal number of shares for each stock.
+
+5. Add your portfolio returns to the DataFrame with the other portfolios and rerun the analysis. How does your portfolio fair?
+
+
+## Your analysis should include the following:
+
+- Using all portfolios:
+  - The annualized standard deviation (252 trading days) for all portfolios.
+  - The plotted rolling standard deviation using a 21 trading day window for all portfolios.
+  - The calculated annualized Sharpe Ratios and the accompanying bar plot visualization.
+  - A correlation table.
+- Using your custom portfolio and one other of your choosing:
+  - The plotted beta. . How does your portfolio fair?
 
 ---
 

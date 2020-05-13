@@ -400,7 +400,7 @@ At this point, ask students, "Why do you think there are unequal counts in the d
     csv_data['customer_no'].value_counts()
     ```
 
-    ![LP_Ins_Data_Cleansing_Distinct_Customer.PNG](Images/LP_Ins_Data_Cleansing_Distinct_Customer.PNG)
+    ![LP_Ins_Data_Cleansing_Distinct_Customer.PNG](Images/value_counts.png)
 
 * Identifying `nulls` is key in assessing data quality health.
 
@@ -487,6 +487,8 @@ At this point, ask students, "Why do you think there are unequal counts in the d
   # Cleaning duplicates
   csv_data.drop_duplicates()
   ```
+
+  ![Drop Duplicates](Images/drop_duplicates.png)
 
 Next, tell students you will live code a few data quality checks that are especially relevant for financial data. Cover the following points in your discussion:
 

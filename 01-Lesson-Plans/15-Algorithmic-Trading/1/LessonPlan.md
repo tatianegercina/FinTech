@@ -228,9 +228,9 @@ Open the solution file and highlight the following points:
 
 * The `where` function can be used to define the logic for when to buy and sell.
 
-  * When a short moving average is greater than the long moving average, the technical indicator will have a value of 1, for sell.
+  * When a short moving average is greater than the long moving average, the technical indicator will have a value of 1, for buy.
 
-  * When a short moving average is less than the long moving average, the technical indicator is a value of 0, for buy.
+  * When a short moving average is less than the long moving average, the technical indicator is a value of 0, for sell.
 
   * These values are assigned to data points starting from an offset equal to the length of the short moving average window, as moving average calculations will be null before that point (not enough data points to perform the rolling mean calculation).
 
@@ -345,8 +345,8 @@ Open the solution file and review the following:
 
 * Similar to a long position dual moving average crossover trading signal, the `where` function can be used to define the logic for a short position trading strategy. The goal of this strategy would be to short the market by selling high once the short moving average dips below the long moving average (to buy later at a lower rate).
 
-  * When a short moving average is less than the long moving average, issue a value of 1.
-  * When a short moving average is greater than the long moving average, issue a value of 0.
+  * When a short moving average is less than the long moving average, issue a value of 0.
+  * When a short moving average is greater than the long moving average, issue a value of 1.
 
   * Values are assigned to data points starting from an offset equal to the length of the short moving average window, as moving average calculations will be null before that point (not enough data points to perform the rolling mean calculation).
 

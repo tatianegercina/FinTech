@@ -239,7 +239,8 @@ freq_dist_df["tails"] = tails
 
   ![coin-flip-1000-simulations](Images/coin-flip-1000-simulations.png)
 
-* Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve nature to the probability of its potential outcomes. This distribution is one in which probability is maximized in the middle of the distribution and decreases in probability as outcomes deviate left and right from the mean, otherwise known as the *mean* and *standard deviation*. This well-known phenomenon is called the *normal distribution* or continuous probability distribution of a range of potential outcomes.
+* Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve nature to the probability of its potential outcomes. This bell curve, a normal distribution, is one in which probability is maximized in the middle of the distribution (these values are more likely) and more minimized in probability the further outcomes deviate left and right from the mean, known as *standard deviation*. 
+* This convergence to the shape of a normal distribution is a well-known phenomenon called the *central limit theorem*: multiple measurements of averages for a variable (in this case the average number of heads from a series of coin toss games) almost always conform to the shape of a normal distribution, even when the underlying variable (whether it was heads or whether it was tails) is not itself normally distributed.
 
   ![normal-distribution](Images/normal-distribution.png)
 
