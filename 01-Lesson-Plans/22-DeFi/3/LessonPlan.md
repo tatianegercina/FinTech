@@ -722,11 +722,11 @@ Welcome the students back to class, and allow them to use this activity time to 
 
 * Show students how to pin a repository in GitHub. Navigate to `www.github.com/<yourUsername>` and click `Customize your pins`:
 
-<img src="./assets/customize.png"  height="300" />
+![customize.png](Images/customize.png)
 
 * Then select the pins you would like to show on the main page of your profile:
 
-<img src="./assets/pins.png" width="300" height="300" />
+![pins.png](Images/pins.png)
 
 * Let students know this allows recruiters to more easily find the repositories you want them to look at!
 
@@ -734,11 +734,11 @@ Welcome the students back to class, and allow them to use this activity time to 
 
 * In this activity, students will compare three `README` files and write down the differences they note between them.
 
-* Using `12-Stu_Compare_Readme`, ask students to compare [SAMPLE_1.md](./Activities/12-Stu_Compare_Readme/SAMPLE_1.md),
-[SAMPLE_2.md](./Activities/12-Stu_Compare_Readme/SAMPLE_2.md),
-and [SAMPLE_3.md](./Activities/12-Stu_Compare_Readme/SAMPLE_3.md) and note the differences they see.
+* Using `09-Stu_Compare_README`, ask students to compare [SAMPLE_1.md](Activities/09-Stu_Compare_README/Resources/SAMPLE_1.md),
+[SAMPLE_2.md](Activities/09-Stu_Compare_README/Resources/SAMPLE_2.md),
+and [SAMPLE_3.md](Activities/09-Stu_Compare_README/Resources/SAMPLE_3.md) and note the differences they see.
 
-* Slack out the instruction file for the acitivty and these three sample files.
+* Slack out the instruction file for the activity and these three sample files.
 
 #### Instructor Do: Review ReadMe (5 min)
 
