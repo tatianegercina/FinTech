@@ -181,17 +181,23 @@ length = `64`
 Though the inputs are different lengths and characters, the outputs are both 64 characters long.
 
 </details>
-<details><summary>What is a Nonce, Public Key and Secret Key?</summary>
+<details><summary>What is a Public Key, Secret Key and Nonce?</summary>
 
-A nonce is a number used once.
+**Public Key** - A public key is a key that is provided publicly to others to use in conjunction with another person's private key to decrypt and encrypt messages securely.
+
+**Private Key** - A private key is a key that is kept secret.  It can be used in conjunction with another person's public key to encrypt and decrypt messages with assymetric cryptography or it can be shared with another person so that they might decrypt your symmetric cryptography message.
+
+**Nonce** - A nonce is a number used once.  It can be added to encryption methods to increase security by introducing an element of randomness.
+
+The uses of these terms is explained in more detail in the next question: *What is the difference between Symmetric and Asymmetric Cryptography?*.
 
 </details>
 
-<details><summary>What is the difference between Symetric and Asymetric Cryptography?</summary>
+<details><summary>What is the difference between Symmetric and Asymmetric Cryptography?</summary>
 
 Symmetric cryptography means "one key" to "one lock" -- hence the "symmetry." Asymmetric cryptography doesn't just use one key like symmetric, but now it splits up the key into a "keypair" -- a public key and a private key, or "two keys" to "one lock".
 
-With symmetric cryptography, the key is shared between the parties in need of the message.  The key encrypts and decrypts the message.
+With symmetric cryptography, the private key is shared between the parties in need of the message.  The key encrypts and decrypts the message.
 
 Asymmetric cryptography uses a public key *and* a private key to encrypt/decrypt messages.
 
