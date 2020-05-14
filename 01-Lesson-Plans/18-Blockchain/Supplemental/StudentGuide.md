@@ -181,16 +181,34 @@ length = `64`
 Though the inputs are different lengths and characters, the outputs are both 64 characters long.
 
 </details>
+<details><summary>What is a Nonce, Public Key and Secret Key?</summary>
+
+A nonce is a number used once.
+
+</details>
+
 <details><summary>What is the difference between Symetric and Asymetric Cryptography?</summary>
+
+Symmetric cryptography means "one key" to "one lock" -- hence the "symmetry." Asymmetric cryptography doesn't just use one key like symmetric, but now it splits up the key into a "keypair" -- a public key and a private key, or "two keys" to "one lock".
+
+With symmetric cryptography, the key is shared between the parties in need of the message.  The key encrypts and decrypts the message.
+
+Asymmetric cryptography uses a public key *and* a private key to encrypt/decrypt messages.
+
+To **encrypt** and send a message:
+-- The sender must have their own private key, and the _recipient's_ public key.
+
+To **decrypt** a received message:
+-- The recipient must have their own private key, and the _sender's_ public key
+
+Using a nonce with this method can increase security by adding an element of randomness. The Nonce, _number used once_, is used much like a key.  If employing the nonce method with your public key, both would be required to encrypt/decrypt messages.
 
 </details>
 
 <details><summary>How are the blocks 'chained' in the Blockchain?</summary>
 
 </details>
-<details><summary>What is a Nonce, Public Key and Secret Key?</summary>
 
-</details>
 <details><summary>What are consensus algorithms?</summary>
 
 Proof of Authority
