@@ -2,7 +2,6 @@
 
 This guide is a reference for building Graphical User Interfaces or Command Line Interfaces for Solidity dApps.
 
-
 ## Python
 
 [Web3.py](https://web3py.readthedocs.io/en/stable/) can be used in [Jupyter Notebooks](Example_dApp/jupyter_notebook/accident.ipynb) to create a dynamic and shareable graphical interface for your dApp.
