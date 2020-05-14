@@ -181,7 +181,7 @@ length = `64`
 Though the inputs are different lengths and characters, the outputs are both 64 characters long.
 
 </details>
-<details><summary>What is a Public Key, Secret Key and Nonce?</summary>
+<details><summary>What is a Public Key, Private Key and Nonce?</summary>
 
 **Public Key** - A public key is a key that is provided publicly to others to use in conjunction with another person's private key to decrypt and encrypt messages securely.
 
