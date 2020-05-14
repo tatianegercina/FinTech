@@ -8,71 +8,97 @@ The investment division of Harold's company has been investing in algorithmic tr
 
 You just learned these quantitative analysis techniques with Python and Pandas, so Harold has come to you with a challenge—to help him determine which portfolio is performing the best across many areas: volatility, returns, risk, and Sharpe ratios.
 
-You will need to create a tool (an analysis notebook) that analyzes and visualizes the major metrics of the portfolios across all of these areas, and determine which portfolio outperformed the others. You will be given the historical daily returns of several portfolios: some from the firm's algorithmic portfolios, some that represent the portfolios of famous "whale" investors like Warren Buffett, and some from the big hedge and mutual funds. You will then use this analysis to create a custom portfolio of stocks and compare its performance to that of the other portfolios, as well as the larger market (S&P 500).
+You will need to create a tool (an analysis notebook) that analyzes and visualizes the major metrics of the portfolios across all of these areas, and determine which portfolio outperformed the others. You will be given the historical daily returns of several portfolios: some from the firm's algorithmic portfolios, some that represent the portfolios of famous "whale" investors like Warren Buffett, and some from the big hedge and mutual funds. You will then use this analysis to create a custom portfolio of stocks and compare its performance to that of the other portfolios, as well as the larger market ([S&P TSX 60 Index](https://en.wikipedia.org/wiki/S%26P/TSX_60)).
 
 In this homework assignment, you will be accomplishing three main tasks:
 
 1. [Read in and Wrangle Returns Data](#Prepare-the-Data)
+
 2. [Determine Success of Each Portfolio](#Conduct-Quantitative-Analysis)
+
 3. [Choose and Evaluate a Custom Portfolio](#Create-Custom-Portfolio)
 
 ---
 
 ## Instructions
 
-**File:** [Whale Analysis Starter Code](Starter_Code/whale_analysis.ipynb)
+**Files:**
+
+* [Whale Analysis Starter Code](Starter_Code/whale_analysis.ipynb)
+
+* [algo_returns.csv](Starter_Code/Resources/algo_returns.csv)
+
+* [otex_historical.csv](Starter_Code/Resources/otex_historical.csv)
+
+* [sp_tsx_history.csv](Starter_Code/Resources/sp_tsx_history.csv)
+
+* [l_historical.csv](Starter_Code/Resources/l_historical.csv)
+
+* [shop_historical.csv](Starter_Code/Resources/shop_historical.csv)
+
+* [whale_returns.csv](Starter_Code/Resources/whale_returns.csv)
 
 ### Prepare the Data
 
-First, read and clean several CSV files for analysis. The CSV files include whale portfolio returns, algorithmic trading portfolio returns, and S&P 500 historical prices. Use the [Whale Analysis Starter Code](Starter_Code/whale_analysis.ipynb) to complete the following steps:
+First, read and clean several CSV files for analysis. The CSV files include whale portfolio returns, algorithmic trading portfolio returns, and S&P TSX 60 Index historical prices. Use the starter code to complete the following steps:
 
-1. Use Pandas to read in each of the [CSV files](Starter_Code/Resources) as a DataFrame. Be sure to convert the dates to a `DateTimeIndex`.
+1. Use Pandas to read the following CSV files as a DataFrame. Be sure to convert the dates to a `DateTimeIndex`.
+
+    * `whale_returns.csv`: Contains returns of some famous "whale" investors' portfolios.
+
+    * `algo_returns.csv`: Contains returns from the in-house trading algorithms from Harold's company.
+
+    * `sp_tsx_history.csv`: Contains historical closing prices of the S&P TSX 60 Index.
 
 2. Detect and remove null values.
 
-3. Remove dollar signs from the numeric values and convert the data types as needed.
+3. Remove dollar signs and any other character from the numeric values and convert the data types as needed.
 
-4. The whale portfolios and algorithmic portfolio CSV files contain daily returns, but the S&P 500 CSV file contains closing prices. Convert the S&P 500 closing prices to daily returns.
+4. The whale portfolios and algorithmic portfolio CSV files contain daily returns, but the S&P TSX 60 CSV file contains closing prices. Convert the S&P TSX 60 closing prices to daily returns.
 
-5. Join `Whale Returns`, `Algorithmic Returns`, and the `S&P 500 Returns` into a single DataFrame with columns for each portfolio's returns.
+5. Join `Whale Returns`, `Algorithmic Returns`, and the `S&P TSX 60 Returns` into a single DataFrame with columns for each portfolio's returns.
 
-  ![returns-dataframe.png](Images/returns-dataframe.png)
+    ![returns-dataframe.png](Images/returns-dataframe.png)
 
 ### Conduct Quantitative Analysis
 
-Analyze the data to see if any of the portfolios outperform the stock market (i.e., the S&P 500).
+Analyze the data to see if any of the portfolios outperform the stock market (i.e., the S&P TSX 60).
 
 #### Performance Analysis
 
-1. Calculate and plot cumulative returns. Does any portfolio outperform the S&P 500?
+1. Calculate and plot cumulative returns. Does any portfolio outperform the S&P TSP 60?
 
 #### Risk Analysis
 
 1. Create a box plot for each of the returns. Which box has the largest spread? Which has the smallest spread?
 
-2. Calculate the standard deviation for each portfolio. Which portfolios are riskier than the S&P 500?
+2. Calculate the standard deviation for each portfolio. Which portfolios are riskier than the S&P TSX 60?
 
 #### Rolling Statistics
 
-1. Plot the rolling standard deviation of the firm's portfolios along with the rolling standard deviation of the S&P 500. Does the risk increase for each of the portfolios at the same time risk increases in the S&P?
+1. Plot the rolling standard deviation of the firm's portfolios along with the rolling standard deviation of the S&P TSX 60. Does the risk increase for each of the portfolios at the same time risk increases in the S&P TSX 60?
 
-2. Construct a correlation table for the algorithmic, whale, and S&P 500 returns. Which returns most closely mimic the S&P?
+2. Construct a correlation table for the algorithmic, whale, and S&P TSX 60 returns. Which returns most closely mimic the S&P TSX 60?
 
-3. Choose one portfolio and plot a rolling beta between that portfolio's returns and S&P 500 returns. Does the portfolio seem sensitive to movements in the S&P 500?
+3. Choose one portfolio and plot a rolling beta between that portfolio's returns and S&P TSX 60 returns. Does the portfolio seem sensitive to movements in the S&P TSX 60?
 
-### Plot Sharpe Ratios
+#### Rolling Statistics Challenge: Exponentially Weighted Average
 
-Investment managers and their institutional investors look at the return-to-risk ratio, not just the returns. (After all, if you have two portfolios that each offer a 10% return, yet one is lower risk, you would invest in the lower-risk portfolio, right?)
+An alternative way to calculate a rolling window is to take the exponentially weighted moving average. This is like a moving window average, but it assigns greater importance to more recent observations. Try calculating the [`ewm`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.ewm.html) with a 21-day half-life.
+
+### Sharpe Ratios
+
+Investment managers and their institutional investors look at the return-to-risk ratio, not just the returns. After all, if you have two portfolios that each offer a 10% return, yet one is lower risk, you would invest in the lower-risk portfolio, right?
 
 1. Using the daily returns, calculate and visualize the Sharpe ratios using a bar plot.
 
-2. Determine whether the algorithmic strategies outperform both the market (S&P 500) and the whales portfolios.
+2. Determine whether the algorithmic strategies outperform both the market (S&P TSX 60) and the whales portfolios.
 
 ### Create Custom Portfolio
 
-Harold is ecstatic that you were able to help him prove that the algorithmic trading portfolios are doing so well compared to the market and whales portfolios. However, now you are wondering whether you can choose your own portfolio that performs just as well as the algorithmic portfolios. Investigate by doing the following:
+Harold is ecstatic that you were able to help him prove that the algorithmic trading portfolios are doing so well compared to the market and whales portfolios. However, now you are wondering whether you can choose your portfolio that performs just as well as the algorithmic portfolios. Investigate by doing the following:
 
-1. Visit [Google Sheets](https://docs.google.com/spreadsheets/) and use the in-built Google Finance function to choose 3-5 stocks for your own portfolio.
+1. Visit [Google Sheets](https://docs.google.com/spreadsheets/) and use the in-built Google Finance function to choose 3-5 stocks for your portfolio.
 
 2. Download the data as CSV files and calculate the portfolio returns.
 
@@ -82,7 +108,13 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 
 ## Resources
 
-[Pandas API Docs](https://pandas.pydata.org/pandas-docs/stable/reference/index.html)
+* [Pandas API Docs](https://pandas.pydata.org/pandas-docs/stable/reference/index.html)
+
+* [Exponential weighted function in Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.ewm.html)
+
+* [`GOOGLEFINANCE` function help](https://support.google.com/docs/answer/3093281)
+
+* [Supplemental Guide: Fetching Stock Data Using Google Sheets](../../../01-Lesson-Plans/04-Pandas/Supplemental/googlefinance_guide.md)
 
 ---
 
@@ -102,8 +134,8 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 
 2. Submit your notebook to a new GitHub repository.
 
-3. Add the URL of your GitHub repository to your Assignment when submitting via Bootcamp Spot.
+3. Add the URL of your GitHub repository to your assignment when submitting via Bootcamp Spot.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
