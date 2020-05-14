@@ -193,7 +193,7 @@ The uses of these terms is explained in more detail in the next question: *What 
 
 </details>
 
-<details><summary>What is the difference between Symmetric and Asymmetric Cryptography?</summary>
+<details><summary>What is the difference between Symmetric and Asymmetric Cryptography, and how is it related to nonce and digital signatures?</summary>
 
 Symmetric cryptography means "one key" to "one lock" -- hence the "symmetry." Asymmetric cryptography doesn't just use one key like symmetric, but now it splits up the key into a "keypair" -- a public key and a private key, or "two keys" to "one lock".
 
@@ -208,6 +208,8 @@ To **decrypt** a received message:
 -- The recipient must have their own private key, and the _sender's_ public key
 
 Using a nonce with this method can increase security by adding an element of randomness. The Nonce, _number used once_, is used much like a key.  If employing the nonce method with your public key, both would be required to encrypt/decrypt messages.
+
+Digital signatures are the use of a private key to digitally 'sign' a document. To sign a document digitally, one uses their private key and public key.  The 'signing' of the document produces a string of random alphanumeric characters, much like a nonce.  This string is the 'signature'  the recipient of the document can then use the sender's public key in conjunction with this signature string to verify the document.
 
 </details>
 
