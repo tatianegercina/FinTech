@@ -125,6 +125,11 @@ Blockchain has become more and more important to our world because of many reaso
 </details>
 </blockquote>
 </details>
+
+<details><summary>If the blockchain is decentralized, where is it stored?</summary>
+
+</details>
+
 <details><summary>What is a digital Blockchain wallet?</summary>
 
 A digital, or blockchain, wallet is simply a set of "keys" to your funds that are on the blockchain.  It also serves as place where you can view and send transactions.
@@ -213,11 +218,9 @@ Digital signatures are the use of a private key to digitally 'sign' a document. 
 
 </details>
 
-<details><summary>How are the blocks 'chained' in the Blockchain?</summary>
-
-</details>
-
 <details><summary>What are consensus algorithms?</summary>
+
+Consensus algorithms in blockchain are methods to allow the network to reach agreement (consensus!) on whether a block can be trusted and thus added to the chain.  Because blockchains are decentralized, no one person can be trusted to make this decision, so concensus algorithms are used.  There are multiple types:
 
 Proof of Authority
 Proof of Work
@@ -226,6 +229,12 @@ Proof of Stake
 Proof of Capacity - It uses free hard drive space as a contribution to the network.
 
 Proof of Burn -- This algorithm "burns" or making some amount of coins un-spendable to act as a stake to the network.
+</details>
+<details><summary>What 'puzzle' is the Proof of Work algorithm solving?</summary>
+
+When a block (or collection of records), is 'mined' - meaning validated and added to the chain - a miner will have solved a very difficult mathematical puzzle to do so.  With many puzzles, there is some bit of logic involved, however with bitcoin mining, the puzzle is almost completely random.  In simplistic terms, the puzzle is solved by finding the Nonce that, when added to the hash of the block itself, will produce a **new** hash with a predetermined number of leading zeros.
+
+Solving the puzzle of which nonce will produce a new hash with n number of leading zeros is based solely on trial and error.  Because of this it can be quite time intensive to decipher.  Large quantities of electricity and computational power are used.  This is why the winner of the nonce lottery receives a block reward for solving the puzzle.
 </details>
 
 ---
