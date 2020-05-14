@@ -23,18 +23,19 @@ def initContract():
     return w3.eth.contract(address=os.getenv("CRYPTOFAX_ADDRESS"), abi=abi)
 
 
-def convertDataToJSON(time, description):
+def convertDataToJSON(metadata):
     data = {
         "pinataOptions": {"cidVersion": 1},
-        "pinataContent": {
-            "name": "Example Accident Report",
-            "description": description,
-            "image": "ipfs://bafybeihsecbomd7gbu6qjnvs7jinlxeufujqzuz3ccazmhvkszsjpzzrsu",
-            "time": time,
-        },
+        "pinataContent": metadata
     }
     return json.dumps(data)
 
+def pinFileToIPFS(file_object):
+    r = requests.post(
+        "https://api.pinata.cloud/pinning/pinFileToIPFS", data=file_object, headers=headers
+    )
+    ipfs_hash = r.json()["IpfsHash"]
+    return f"ipfs://{ipfs_hash}"
 
 def pinJSONtoIPFS(json):
     r = requests.post(
