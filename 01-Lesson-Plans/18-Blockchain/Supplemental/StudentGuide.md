@@ -128,6 +128,10 @@ Blockchain has become more and more important to our world because of many reaso
 
 <details><summary>If the blockchain is decentralized, where is it stored?</summary>
 
+The blockchain is stored in many remote locations called nodes.  These nodes are simply computers that log onto the network and store a copy of the blockchain.  Anyone can join the network and become a node with their personal computer.  This is one of the reasons why the Blockchain is considered open and neutral.
+
+Some nodes are online all the time, constantly downloading new transactions.  Others sync up to the system when they log on and update their records to include those newly added.
+
 </details>
 
 <details><summary>What is a digital Blockchain wallet?</summary>
