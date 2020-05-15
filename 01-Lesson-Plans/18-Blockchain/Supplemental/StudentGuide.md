@@ -146,29 +146,6 @@ To learn more about nodes, click [this link](https://medium.com/coinmonks/blockc
 
 </details>
 
-<details><summary>What is a digital Blockchain wallet?</summary>
-
-A digital, or blockchain, wallet is simply a set of "keys" to your funds that are on the blockchain. It also serves as place where you can view and send transactions.
-
-Much like a debit card does not hold your actual money, but the access to it, a blockchain wallet holds the access to your funds but not the actual funds. The actual funds live on the blockchain.
-
-For more reading on blockchain wallets, check out these articles from [investopedia](https://www.investopedia.com/terms/b/blockchain-wallet.asp) and [uncoin](https://blog.unocoin.com/what-happens-if-you-forget-your-bitcoin-wallet-keys-bbf563ce281a).
-
-</details>
-
-<details><summary>What is a Block explorer and how do I use it?</summary>
-
-A block explorer is a tool that allows you to search transactions on a particular blockchain. Just as you might use a search engine to search topics online, the block explorer allows you to search blocks on the blockchain. With a block explorer you can see various data about the block and drill down into the specifics. For example on Etherscan, a block explorer for Ethereum, you can find information such as:
-
-* Block Height (block number on the chain)
-* Transaction Hash
-* From and To Address
-* Entity that mined the block
-* Block Reward
-* Difficulty
-* Gas
-
-</details>
 <details><summary>What is cryptography and why is relevant to Blockchain?</summary>
 
 Cryptography is the science of using math to secure data so that third parties cannot decipher it or tamper with it. This process is done through various methods of encryption and digital signatures such as hashing and numerical keys (passcodes).
@@ -277,6 +254,29 @@ When a block (or collection of records), is 'mined' - meaning validated and adde
 Solving the puzzle of which nonce will produce a new hash with n number of leading zeros is based solely on trial and error. Because of this it can be quite time intensive to decipher. Large quantities of electricity and computational power are used. This is why the winner of the nonce lottery receives a block reward for solving the puzzle.
 </details>
 
+<details><summary>What is a digital Blockchain wallet?</summary>
+
+A digital, or blockchain, wallet is simply a set of "keys" to your funds that are on the blockchain. It also serves as place where you can view and send transactions.
+
+Much like a debit card does not hold your actual money, but the access to it, a blockchain wallet holds the access to your funds but not the actual funds. The actual funds live on the blockchain.
+
+For more reading on blockchain wallets, check out these articles from [investopedia](https://www.investopedia.com/terms/b/blockchain-wallet.asp) and [uncoin](https://blog.unocoin.com/what-happens-if-you-forget-your-bitcoin-wallet-keys-bbf563ce281a).
+
+</details>
+
+<details><summary>What is a Block explorer and how do I use it?</summary>
+
+A block explorer is a tool that allows you to search transactions on a particular blockchain. Just as you might use a search engine to search topics online, the block explorer allows you to search blocks on the blockchain. With a block explorer you can see various data about the block and drill down into the specifics. For example on Etherscan, a block explorer for Ethereum, you can find information such as:
+
+* Block Height (block number on the chain)
+* Transaction Hash
+* From and To Address
+* Entity that mined the block
+* Block Reward
+* Difficulty
+* Gas
+
+</details>
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
