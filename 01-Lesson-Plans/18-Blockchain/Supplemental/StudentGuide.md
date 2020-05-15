@@ -230,7 +230,9 @@ Digital signatures are the use of a private key to digitally 'sign' a document. 
 
 <details><summary>What are consensus algorithms?</summary>
 
-Consensus algorithms in blockchain are methods to allow the network to reach agreement (consensus!) on whether a block can be trusted and thus added to the chain.  Because blockchains are decentralized, no one person can be trusted to make this decision, so concensus algorithms are used. These algorithms typically use some type of collateral structure to determine trustworthiness.  The three main types are:
+Consensus algorithms in blockchain are methods to allow the network to reach agreement (consensus!) on whether a block can be trusted and thus added to the chain.  Because blockchains are decentralized, no one person can be trusted to make this decision, so concensus algorithms are used. These algorithms typically use some type of collateral structure to determine trustworthiness.  For more information on consensus algorithms in general, check out [this article](https://www.binance.vision/blockchain/what-is-a-blockchain-consensus-algorithm).
+
+The three main types of consensus algorithms that we cover in class are:
 
 <blockquote>
 
