@@ -5,13 +5,13 @@ This guide is a reference for building Graphical User Interfaces or Command Line
 
 ## Python
 
-[Web3.py](https://web3py.readthedocs.io/en/stable/) can be used in [Juptyer Notebooks](accident.ipynb) to create a dynamic and shareable graphical interface for your dApp.
+[Web3.py](https://web3py.readthedocs.io/en/stable/) can be used in [Jupyter Notebooks](example_dApp/jupyter_notebook/accident.ipynb) to create a dynamic and shareable graphical interface for your dApp.
 
 You can also create command-line interfaces with Python libraries like [Python-Fire](https://github.com/google/python-fire)
 
 ## Remix
 
-[OneClikdApp](https://oneclickdapp.com/) allows you to build your smart contract to any network using Remix.
+[OneClickdApp](https://oneclickdapp.com/) allows you to build your smart contract to any network using Remix.
 
 ## Pinata and IPFS
 
