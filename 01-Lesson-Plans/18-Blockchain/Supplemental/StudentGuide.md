@@ -277,6 +277,10 @@ A block explorer is a tool that allows you to search transactions on a particula
 * Gas
 
 </details>
+
+<details><summary>Where can I get a quick summary of Blockchain Terminology?</summary>
+
+For a quick run down of all the terms we cover in Unit 18, check out [this terminology guide](Blockchain-Terminology-Guide.md).
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
