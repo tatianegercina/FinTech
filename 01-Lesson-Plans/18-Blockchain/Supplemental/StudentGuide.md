@@ -58,7 +58,7 @@
 
 ## FAQs
 
-<details><summary>What is Blockchain?</summary>
+<details><summary>What is Blockchain?</summary><br>
 
 A blockchain is an evergrowing list of records, called blocks, that are linked together cryptographically. Along with encryption, the list of records (blocks), is stored in a distributed manner, meaning that exact copies of all records are stored across all machines that access the network. Combined with encryption, this makes the blockchain extremely trustworthy, as the records are very difficult to alter. Not only does the encryption form a layer of protection, but even if one record is changed, because there are so many duplicates, its easy to prove that the information was altered.
 
@@ -71,7 +71,7 @@ A blockchain is an evergrowing list of records, called blocks, that are linked t
 Blockchain has become more and more important to our world because of many reasons. They can generally be summed up by **The Five Pillars of Blockchain**:
 
 <blockquote>
-<details><summary>Open</summary>
+<details><summary>Open</summary><br>
 
 - Openness means that the system is designed to incentivize users to keep it open. The internet is an example of this, and it is built on open protocols that anyone can learn and contribute to.
 
@@ -83,14 +83,14 @@ Blockchain has become more and more important to our world because of many reaso
 
 
 </details>
-<details><summary>Borderless</summary>
+<details><summary>Borderless</summary><br>
 
 - Borderless means the network is completely without geographical or political borders.
 - To be borderless, the network needs to be decentralized. This means there is **no** central party that holds control of the network.
 - Since the blockchain is synchronized onto every device that helps maintain it (called nodes), it lives everywhere.
 
 </details>
-<details><summary>Neutral</summary>
+<details><summary>Neutral</summary><br>
 
 - Neutral means that the protocol does not discriminate against any user, whether human or machine.
 
@@ -98,7 +98,7 @@ Blockchain has become more and more important to our world because of many reaso
 
 - Open blockchain networks are also governed in a neutral fashion, with many using the blockchain itself for voting on the next network upgrades.
 </details>
-<details><summary>Censor Resistant</summary>
+<details><summary>Censor Resistant</summary><br>
 
 - Decentralized Blockchains are highly resistant to censorship and authoritarian control.
 
@@ -113,7 +113,7 @@ Blockchain has become more and more important to our world because of many reaso
   - Money is often compared to a form of speech. These are systems where this form of expression cannot be censored.
 
 </details>
-<details><summary>Public</summary>
+<details><summary>Public</summary><br>
 
 - Open/Public blockchains are separate from the state are thus well-suited for public affairs.
 
