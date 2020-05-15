@@ -230,15 +230,21 @@ Digital signatures are the use of a private key to digitally 'sign' a document. 
 
 <details><summary>What are consensus algorithms?</summary>
 
-Consensus algorithms in blockchain are methods to allow the network to reach agreement (consensus!) on whether a block can be trusted and thus added to the chain.  Because blockchains are decentralized, no one person can be trusted to make this decision, so concensus algorithms are used.  There are multiple types:
+Consensus algorithms in blockchain are methods to allow the network to reach agreement (consensus!) on whether a block can be trusted and thus added to the chain.  Because blockchains are decentralized, no one person can be trusted to make this decision, so concensus algorithms are used. These algorithms typically use some type of collateral structure to determine trustworthiness.  The three main types are:
 
-Proof of Authority
-Proof of Work
-Proof of Stake
+- Proof of Authority
+  - This algorithm deviates somewhat from the decentralized nature of blockchains in that there are designated entities that validate the blocks. PoA is almost always used for test networks and not for production.
+  - With this algorithm, the entities put their reputation on the line as collateral and must typically be voted in.
+- Proof of Work
+  - Used by Bitcoin and many other well known Blockchains, *Proof of Work* was the first concensus algorithm, and is where the term *mining* originated.
+  - To malicously attack a blockchain using *PoW*, one would need to use 51% of the computational power that the network uses.  This strongly disincentivizes attacking the network.
+  - With this algorithm, the entities put their computational resources on the line as collateral.
+- Proof of Stake
+  - Developed as alternative to the resource consuming *PoW* algorithm, this method validates blocks based on a monetized stake in the network.
+  - To malicously attack a blockchain using *PoS*, one would need to hold 51% of the monetary power that the network holds.  This strongly disincentivizes attacking the network.
+  - With this algorithm, the entities put their cryptocurrency on the line as collateral.
 
-Proof of Capacity - It uses free hard drive space as a contribution to the network.
 
-Proof of Burn -- This algorithm "burns" or making some amount of coins un-spendable to act as a stake to the network.
 </details>
 <details><summary>What 'puzzle' is the Proof of Work algorithm solving?</summary>
 
