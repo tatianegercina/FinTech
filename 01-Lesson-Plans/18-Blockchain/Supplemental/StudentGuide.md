@@ -66,7 +66,7 @@ A blockchain is an evergrowing list of records, called blocks, that are linked t
 
 
 </details>
-<details><summary>Why do we need blockchain?</summary>
+<details><summary>Why do we need blockchain?</summary><br>
 
 Blockchain has become more and more important to our world because of many reasons. They can generally be summed up by **The Five Pillars of Blockchain**:
 
@@ -126,7 +126,7 @@ Blockchain has become more and more important to our world because of many reaso
 </blockquote>
 </details>
 
-<details><summary>If the blockchain is decentralized, where is it stored?</summary>
+<details><summary>If the blockchain is decentralized, where is it stored?</summary><br>
 
 The blockchain is stored in many remote locations called nodes. These nodes are simply computers that log onto the network and store a copy of the blockchain. Anyone can join the network and become a node with their personal computer. This is one of the reasons why the Blockchain is considered open and neutral.
 
@@ -136,7 +136,7 @@ For more information on nodes, take a look at [this article](https://medium.com/
 
 </details>
 
-<details><summary>What is the difference between a node and miner?</summary>
+<details><summary>What is the difference between a node and miner?</summary><br>
 
 Both miners and nodes are computers, and a computer can be both - however they perform different functions. A node is a computer that stores a copy of the blockchain. A miner is a computer that works to solve the puzzle that will allow the a block of transactions to be validated and added to the network of nodes.
 
@@ -146,12 +146,12 @@ To learn more about nodes, click [this link](https://medium.com/coinmonks/blockc
 
 </details>
 
-<details><summary>What is cryptography and why is relevant to Blockchain?</summary>
+<details><summary>What is cryptography and why is relevant to Blockchain?</summary><br>
 
 Cryptography is the science of using math to secure data so that third parties cannot decipher it or tamper with it. This process is done through various methods of encryption and digital signatures such as hashing and numerical keys (passcodes).
 
 </details>
-<details><summary>What is hash and why do I need it?</summary>
+<details><summary>What is hash and why do I need it?</summary><br>
 
 A hash is a one way function that provides a digital fingerprint of data. Hashing is a key component of security on the blockchain, as this is what is used to 'chain' each block (list of records) to the last block. These hashes must match or the block cannot be proven as trustworthy and added to the official blockchain (ledger or list of blocks/records).
 
@@ -182,7 +182,7 @@ Though the inputs are different lengths and characters, the outputs are both 64 
 
 For more on hashing, check out [this](https://www.investopedia.com/terms/h/hash.asp) *Investopedia* article.
 </details>
-<details><summary>What is a Public Key, Private Key and Nonce?</summary>
+<details><summary>What is a Public Key, Private Key and Nonce?</summary><br>
 
 **Public Key** - A public key is a key that is provided publicly to others to use in conjunction with another person's private key to decrypt and encrypt messages securely.
 
@@ -194,7 +194,7 @@ The uses of these terms is explained in more detail in the next question: *What 
 
 </details>
 
-<details><summary>What is the difference between Symmetric and Asymmetric Cryptography, and how is it related to nonce and digital signatures?</summary>
+<details><summary>What is the difference between Symmetric and Asymmetric Cryptography, and how is it related to nonce and digital signatures?</summary><br>
 
 Symmetric cryptography means "one key" to "one lock" -- hence the "symmetry." Asymmetric cryptography doesn't just use one key like symmetric, but now it splits up the key into a "keypair" -- a public key and a private key, or "two keys" to "one lock".
 
@@ -216,7 +216,7 @@ To read more about digital signatures, click [here](https://www.instantssl.com/d
 
 </details>
 
-<details><summary>What are consensus algorithms?</summary>
+<details><summary>What are consensus algorithms?</summary><br>
 
 Consensus algorithms in blockchain are methods to allow the network to reach agreement (consensus!) on whether a block can be trusted and thus added to the chain. Because blockchains are decentralized, no one person can be trusted to make this decision, so concensus algorithms are used. These algorithms typically use some type of collateral structure to determine trustworthiness. For more information on consensus algorithms in general, check out [this article](https://www.binance.vision/blockchain/what-is-a-blockchain-consensus-algorithm).
 
@@ -247,14 +247,14 @@ The three main types of consensus algorithms that we cover in class are:
 </details>
 </blockquote>
 </details>
-<details><summary>What 'puzzle' is the Proof of Work algorithm solving?</summary>
+<details><summary>What 'puzzle' is the Proof of Work algorithm solving?</summary><br>
 
 When a block (or collection of records), is 'mined' - meaning validated and added to the chain - a miner will have solved a very difficult mathematical puzzle to do so. With many puzzles, there is some bit of logic involved, however with bitcoin mining, the puzzle is almost completely random. In simplistic terms, the puzzle is solved by finding the Nonce that, when added to the hash of the block itself, will produce a **new** hash with a predetermined number of leading zeros.
 
 Solving the puzzle of which nonce will produce a new hash with n number of leading zeros is based solely on trial and error. Because of this it can be quite time intensive to decipher. Large quantities of electricity and computational power are used. This is why the winner of the nonce lottery receives a block reward for solving the puzzle.
 </details>
 
-<details><summary>What is a digital Blockchain wallet?</summary>
+<details><summary>What is a digital Blockchain wallet?</summary><br>
 
 A digital, or blockchain, wallet is simply a set of "keys" to your funds that are on the blockchain. It also serves as place where you can view and send transactions.
 
@@ -264,7 +264,7 @@ For more reading on blockchain wallets, check out these articles from [investope
 
 </details>
 
-<details><summary>What is a Block explorer and how do I use it?</summary>
+<details><summary>What is a Block explorer and how do I use it?</summary><br>
 
 A block explorer is a tool that allows you to search transactions on a particular blockchain. Just as you might use a search engine to search topics online, the block explorer allows you to search blocks on the blockchain. With a block explorer you can see various data about the block and drill down into the specifics. For example on Etherscan, a block explorer for Ethereum, you can find information such as:
 
