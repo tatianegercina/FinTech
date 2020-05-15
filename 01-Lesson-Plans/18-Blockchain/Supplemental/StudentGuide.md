@@ -132,11 +132,17 @@ The blockchain is stored in many remote locations called nodes.  These nodes are
 
 Some nodes are online all the time, constantly downloading new transactions.  Others sync up to the system when they log on and update their records to include those newly added.
 
+For more information on nodes, take a look at [this article](https://medium.com/coinmonks/blockchain-what-is-a-node-or-masternode-and-what-does-it-do-4d9a4200938f).
+
 </details>
 
 <details><summary>What is the difference between a node and miner?</summary>
 
 Both miners and nodes are computers, and a computer can be both - however they perform different functions.  A node is a computer that stores a copy of the blockchain.  A miner is a computer that works to solve the puzzle that will allow the a block of transactions to be validated and added to the network of nodes.
+
+To learn about mining, click [this link](https://www.bitcoinmining.com/).
+
+To learn more about nodes, click [this link](https://medium.com/coinmonks/blockchain-what-is-a-node-or-masternode-and-what-does-it-do-4d9a4200938f).
 
 </details>
 
@@ -145,6 +151,8 @@ Both miners and nodes are computers, and a computer can be both - however they p
 A digital, or blockchain, wallet is simply a set of "keys" to your funds that are on the blockchain.  It also serves as place where you can view and send transactions.
 
 Much like a debit card does not hold your actual money, but the access to it, a blockchain wallet holds the access to your funds but not the actual funds.  The actual funds live on the blockchain.
+
+For more reading on blockchain wallets, check out these articles from [investopedia](https://www.investopedia.com/terms/b/blockchain-wallet.asp) and [uncoin](https://blog.unocoin.com/what-happens-if-you-forget-your-bitcoin-wallet-keys-bbf563ce281a).
 
 </details>
 
@@ -195,6 +203,7 @@ length = `64`
 
 Though the inputs are different lengths and characters, the outputs are both 64 characters long.
 
+For more on hashing, check out [this](https://www.investopedia.com/terms/h/hash.asp) *Investopedia* article.
 </details>
 <details><summary>What is a Public Key, Private Key and Nonce?</summary>
 
@@ -225,6 +234,8 @@ To **decrypt** a received message:
 Using a nonce with this method can increase security by adding an element of randomness. The Nonce, _number used once_, is used much like a key.  If employing the nonce method with your public key, both would be required to encrypt/decrypt messages.
 
 Digital signatures are the use of a private key to digitally 'sign' a document. To sign a document digitally, one must provide their private key and public key.  Then the document is 'signed' which produces a string of random alphanumeric characters, much like a nonce.  This string is the 'signature'  the recipient of the document can then use the sender's public key in conjunction with this signature string to verify the document.
+
+To read more about digital signatures, click [here](https://www.instantssl.com/digital-signature) and [here](https://medium.com/@xragrawal/digital-signature-from-blockchain-context-cedcd563eee5).
 
 </details>
 
