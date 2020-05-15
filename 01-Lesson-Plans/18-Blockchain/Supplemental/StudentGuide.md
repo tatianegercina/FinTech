@@ -134,6 +134,12 @@ Some nodes are online all the time, constantly downloading new transactions.  Ot
 
 </details>
 
+<details><summary>What is the difference between a node and miner?</summary>
+
+Both miners and nodes are computers, and a computer can be both - however they perform different functions.  A node is a computer that stores a copy of the blockchain.  A miner is a computer that works to solve the puzzle that will allow the a block of transactions to be validated and added to the network of nodes.
+
+</details>
+
 <details><summary>What is a digital Blockchain wallet?</summary>
 
 A digital, or blockchain, wallet is simply a set of "keys" to your funds that are on the blockchain.  It also serves as place where you can view and send transactions.
