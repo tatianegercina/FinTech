@@ -1,4 +1,4 @@
-# Grouping Data in Pandas DataFrames
+# Sorting Data in Pandas DataFrames
 
 In this exercise you'll learn how to use sort Pandas DataFrames in ascending and descending order.
 
@@ -6,7 +6,7 @@ In this exercise you'll learn how to use sort Pandas DataFrames in ascending and
 
 Perform the following:
 
-1. Import the `pandas` and `pathlib` libraries and set the `%matplotlib inline` property.
+1. Import the `pandas` and `pathlib` libraries.
 
 2. Create a variable `csvpath` that represents the path to the [people_cleansed.csv](Resources/people_cleansed.csv) using the Pathlib library.
 
