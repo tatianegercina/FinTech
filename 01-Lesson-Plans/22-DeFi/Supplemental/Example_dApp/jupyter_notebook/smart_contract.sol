@@ -1,23 +1,29 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/drafts/Counters.sol";
+import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/master/contracts/utils/Counters.sol";
 
-contract Message_Board{
+contract MessageBoard {
     using Counters for Counters.Counter;
-    Counters.Counter token_ids;
+    Counters.Counter message_ids;
 
-    // Maps ID's to messages
+    // Maps id's to messages
     mapping(uint => string) public messages;
 
-    event Message(uint mesage_id, string message_uri);
+    event Message(uint message_id, string message_uri);
 
-    function postMessage() public returns(uint) {
-        token_ids.increment();
-        uint token_id = token_ids.current();
-        message[token_id] = message_uri;
+    function postMessage(string memory message_uri) public returns(uint) {
+        message_ids.increment();
+        uint message_id = message_ids.current();
+        messages[message_id] = message_uri;
 
-        emit Message(token_id, message_uri);
+        emit Message(message_id, message_uri);
 
-        return token_id;
+        return message_id;
+    }
+
+    function getLatestMessage() public view returns(string memory) {
+        uint message_id = message_ids.current();
+
+        return messages[message_id];
     }
 }
