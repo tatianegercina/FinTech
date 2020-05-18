@@ -14,7 +14,7 @@ Perform the following:
 
 4. View summary statistics using the `describe` function.
 
-5. Create bins for the future `Total Ranking` column: 'Very Weak', 'Weak', 'Moderate', 'Strong', 'Very Strong', 'Over Powered'.
+5. Create bins for the future `Total Ranking` column: `Very Weak`, `Weak`, `Moderate`, `Strong`, `Very Strong`, `Over Powered`.
 
 6. Use the `cut` function to label each record based off of the `Total` column value and categorize each Pokemon into a corresponding `Total Ranking` bin.
 
