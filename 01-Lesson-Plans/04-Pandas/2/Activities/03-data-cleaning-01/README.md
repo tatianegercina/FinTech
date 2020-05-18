@@ -36,9 +36,11 @@ In this exercise you'll learn how to assess the quality of your data via the in-
 
     2. Use the `dropna` function to drop the remaining records with nulls from the DataFrame. Use the `inplace` parameter set to `True` or resolve the changes to a new DataFrame.
 
-    3. Use the `drop_duplicates` function with the `subset` parameter to drop duplicates based on the `Last_Name` and `First_Name` columns.
+    3. Re-check the null value count by using the `isnull` function in conjunction with the `sum` function to count the number of null values for each column
 
-    4. Use the `as_type` function to convert the `Person_ID` column to the data type `int`.
+    4. Use the `drop_duplicates` function with the `subset` parameter to drop duplicates based on the `Last_Name` and `First_Name` columns.
+
+    5. Use the `as_type` function to convert the `Person_ID` column to the data type `int`.
 
 8. Saved the cleansed data to a new CSV in the `Resources` folder.
 
