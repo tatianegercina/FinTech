@@ -4,7 +4,7 @@ In this exercise you'll be learning to use the pandas module.
 
 ## Instructions
 
-1. Import the `pandas` library
+1. Import the `pandas` and `pathlib` libraries.
 
 2. Create a variable `bac_path` that represents the path to the [BAC.csv](Resources/BAC.csv) using the Pathlib library.
 
@@ -18,7 +18,7 @@ In this exercise you'll be learning to use the pandas module.
 
 7. Filter the DataFrame to a six month date range selection between `2017-01-03` to `2017-06-03`.
 
-8. Drop the extra columns: 'Open', 'High', 'Low', 'Close', 'Volume'.
+8. Drop the extra columns: `Open`, `High`, `Low`, `Close`, `Volume`.
 
 9. Use the `pct_change` function to calculate the daily returns over the six month date range of closing BAC prices.
 
