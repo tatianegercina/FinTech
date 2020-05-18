@@ -10,15 +10,15 @@ Perform the following:
 
 2. Create a two variables `msft_csv_path` and `sp500_csv_path` that represents the path to the [MSFT.csv](Resources/MSFT.csv) and [SP500.csv](Resources/SP500.csv) using the Pathlib library.
 
-3. Read the CSVs into Pandas DataFrames.
+3. Read the CSVs into Pandas DataFrames, setting the `date` as datetime index for both.
 
 4. Use the `concat` function to combine the DataFrames by column and perform an inner join. Also, make sure to sort the index of the Pandas DataFrame in ascending order (important for time series calculations!)
 
-5. Drop the extraneous columns: 'volume', 'open', 'high', 'low'.
+5. Drop the extraneous columns: `volume`, `open`, `high`, `low`.
 
 6. Rename the columns for the respective stock (MSFT or SP500).
 
-7. Calculate the daily returns of the combined DataFramee.
+7. Calculate the daily returns of the combined DataFrame.
 
 8. Use the `cov` function to calculate the covariance between the daily returns of MSFT and the daily returns of the S&P 500.
 
