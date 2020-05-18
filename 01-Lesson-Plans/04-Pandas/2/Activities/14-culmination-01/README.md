@@ -1,6 +1,6 @@
 # Bank of America Stock Data
 
-In this exercise you'll be learning to use the pandas module.
+In this exercise you'll be practicing using the pandas module.
 
 ## Instructions
 
