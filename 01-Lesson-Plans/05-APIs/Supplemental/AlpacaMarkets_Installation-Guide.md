@@ -12,7 +12,7 @@ In order for the `alpaca-trade-api` package to install and run properly, all of 
 
 * Dotenv
 
-To verify the installation of a package, run `conda list | grep package_name` in your terminal, substituting `package_name` for the actual package name.
+To verify the installation of a package, run `conda list package_name` in your terminal, substituting `package_name` for the actual package name.
 
 If `Dotenv` is not installed, you can do so by running the following command in your terminal:
 
@@ -34,10 +34,10 @@ To initiate the `alpaca-trade-api` install, open a terminal and execute the foll
 
 Once the `alpaca-trade-api` download is complete, verify the installation completed successfully.
 
-* Use the `pip list` function with a `grep` argument to identify if the `alpaca-trade-api` library installed successfully.
+* Use the `conda list package_name` terminal command, substituting `package_name` for the actual package name, to determine if the `alpaca-trade-api` library installed successfully.
 
   ```shell
-  pip list | grep alpaca-trade-api
+  conda list alpaca-trade-api
   ```
 
   ![alpaca_verify](Images/alpaca-verify.png)
