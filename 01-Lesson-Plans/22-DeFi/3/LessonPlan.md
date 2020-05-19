@@ -692,13 +692,9 @@ Walkthrough the following recall questions with the class to review the various 
 
 ---
 
-### 11. Student Do: Project Work Session (50 min)
+### 11. Student Do: Project Work Session (85 mins)
 
 Welcome the students back to class, and allow them to use this activity time to work on their projects.
-
-### 12. Instructor Do: Career Services (35 min)
-
-This section is reserved for the Career Services portion of the class.
 
 ---
 
