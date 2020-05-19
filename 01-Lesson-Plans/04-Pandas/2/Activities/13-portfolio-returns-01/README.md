@@ -12,7 +12,7 @@ In this activity, you will learn how to calculate portfolio returns with a 60-40
 
 4. Use the `concat` function to combine the two DataFrames by columns and an inner join, and then sort the index in ascending order.
 
-5. Drop the extraneous columns: 'volume', 'open', 'high', 'low'.
+5. Drop the extraneous columns: `volume`, `open`, `high`, `low`.
 
 6. Rename the columns to the respective stock (MSFT or S&P 500)
 

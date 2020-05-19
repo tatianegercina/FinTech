@@ -8,9 +8,10 @@ In this exercise, you will learn how to calculate correlation between the respec
 
 2. Create a two variables `msft_csv_path` and `sp500_csv_path` that represents the path to the [MSFT.csv](Resources/MSFT.csv) and [SP500.csv](Resources/SP500.csv) using the Pathlib library.
 
-3. Read the CSVs into Pandas DataFrames.
+3. Read the CSVs into DataFrames, setting the `date` as the index for both.
 
-4. Combine the DataFrames by concatenating by columns and performing and inner join.
+
+4. Combine the DataFrames by concatenating by columns and performing an inner join.
 
 5. Drop the extra columns (everything except closing prices).
 

@@ -26,7 +26,7 @@ Perform the following:
 
 5. Select the `Happiness.Score` for 'Vietnam' using loc.
 
-6. Select the `Happiness.Rank` and `Happiness.Score` for 'Belgium', 'Belize', 'Benin', 'Bhutan', and 'Bolivia'.
+6. Select the `Happiness.Rank` and `Happiness.Score` for `Belgium'`, `Belize`, `Benin`, `Bhutan`, and `Bolivia`.
 
 7. Select the `Freedom` and `Trust..Government.Corruption.` for each row/country.
 

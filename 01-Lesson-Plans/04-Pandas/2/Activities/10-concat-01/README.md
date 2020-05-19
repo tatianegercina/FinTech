@@ -6,7 +6,7 @@ In this exercise you will learn how to concatenate DataFrames and append their d
 
 Perform the following:
 
-1. Import the `pandas` and `pathlib` libraries, and set the `%matplotlib inline` property.
+1. Import the `pandas` and `pathlib` libraries.
 
 2. Create a two variables `msft_csv_path` and `sp500_csv_path` that represents the path to the [MSFT.csv](Resources/MSFT.csv) and [SP500.csv](Resources/SP500.csv) using the Pathlib library.
 

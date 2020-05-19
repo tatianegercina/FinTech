@@ -8,7 +8,7 @@ In this exercise you will learn how to calculate and visualize rolling statistic
 
 2. Create a variable `csvpath` that represents the path to the [MSFT.csv](Resources/MSFT.csv) using the Pathlib library.
 
-3. Read the CSV into a Pandas DataFrame.
+3. Read the CSV into a DataFrame while both formatting and setting the `date` column as the index.
 
 4. Drop the extra columns: 'volume', 'open', 'high', 'low'.
 
@@ -16,14 +16,14 @@ In this exercise you will learn how to calculate and visualize rolling statistic
 
 6. Use the `rolling`, `mean`, and `plot` functions to calculate a 7 day rolling window of average MSFT closing prices.
 
-7. Use the `rolling`, `mean`, and `plot` functions to calculate a 7 day rolling window of standard deviation for MSFT closing prices.
+7. Use the `rolling`, `std`, and `plot` functions to calculate a 7 day rolling window of standard deviation for MSFT closing prices.
 
 8. Use the `rolling`, `mean`, and `plot` functions to calculate a 30 day rolling window of average MSFT closing Prices
 
-9. Use the `rolling`, `mean`, and `plot` functions to calculate a 30 day rolling window of standard deviation for MSFT closing prices.
+9. Use the `rolling`, `std`, and `plot` functions to calculate a 30 day rolling window of standard deviation for MSFT closing prices.
 
 10. Use the `rolling`, `mean`, and `plot` functions to calculate a 180 day rolling window of average MSFT closing prices.
 
-11. Use the `rolling`, `mean,` and `plot` functions to calculate a 180 day rolling window of standard deviation for MSFT closing prices.Rolling 180-Day Mean and Standard Deviation of TSLA Closing Prices
+11. Use the `rolling`, `std,` and `plot` functions to calculate a 180 day rolling window of standard deviation for MSFT closing prices.Rolling 180-Day Mean and Standard Deviation of TSLA Closing Prices
 
 12. Overlay the plot for a 180 day rolling mean of MSFT on top of the daily closing prices of MSFT. Use the `plot` function with the `ax` parameter to overlay multiple plots.
