@@ -120,7 +120,7 @@ Explain to students that they have already installed Pandas through Anaconda, so
 
 Review the [instructions](../../../02-Homework/04-Pandas/Instructions/README.md) for the homework assignment. Focus on getting students excited about learning Pandas by previewing the skills and work they will accomplish by the end of the week. Emphasize calculating investment returns/profit over time, as well as plot visualizations.
 
-If time allows, you can end the discussion by presenting the following Pandas applications discussed in more detail [here](https://data-flair.training/blogs/applications-of-pandas/) to give students a taste of what to expect in the field. Applications to highlight include:
+If time allows, you can end by presenting the following Pandas applications which are discussed in more detail [here](https://data-flair.training/blogs/applications-of-pandas/) to give students a taste of what to expect in the field. Applications to highlight include:
 
 * Stock prediction
 
@@ -156,9 +156,9 @@ Open the lesson slides, move to "The Pandas DataFrame" section and highlight the
 
 * Comma-separated values (CSV) is one of the most common file formats used to share data on finance. You will start working with DataFrames by creating them from CSV files.
 
-Slack out to students the [Pandas DataFrame Documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and the [Pandas Getting Started Guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) and encourage them to review these resources at their pace.
+Slack out to students the [Pandas DataFrame Documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and the [Pandas Getting Started Guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) and encourage them to review these resources at their own pace.
 
-Continue by opening the two CSV files in the "Resources" directory (`sales.csv` and `sales_no_header.csv`) in VSCode or any other plain text editor to show students the format of the data. Point out that one file has a header while the other does not. Refer back to these files during the demo as needed.
+Continue by opening the two CSV files in the "Resources" directory (`sales.csv` and `sales_no_header.csv`) in VSCode or any other plain text editor to show students the format of the data. Point out that one file has a header, while the other does not. Refer back to these files during the demo as needed.
 
 Next, open `reading_csvs.ipynb` Jupyter notebook and walk through the following aspects of the code with your students. Highlight the following in sequential order.
 
@@ -197,11 +197,11 @@ Then highlight the `head` function.
 
   ![dataframe.png](Images/dataframe.png)
 
-Remark to students that this data is a fake dataset about sales.
+Tell students that this data is a fake dataset about sales.
 
-Continue the demo and explain to students that sometimes they may have situations where a given CSV file has no headers; ask the following question to the class:
+Continue the demo and explain to students that sometimes they may have situations where a given CSV file has no headers. Ask the the class the following question:
 
-* How the `read_csv` function may deal with a CSV without a header?
+* How might the `read_csv` function deal with a CSV without a header?
 
   * **Possible Answer:** The `read_csv` function will automatically detect that there is no header and will raise an error.
 
@@ -211,7 +211,7 @@ Continue the demo and explain to students that sometimes they may have situation
 
 Explain to students that if they load CSV files without a header into a DataFrame by passing just the file path to the `read_csv` function, the first row will be taken as the header.
 
-Continue the demo by loading the `sales_no_header` file into a DataFrame, use the `head` method to show demonstrate to students the default behaviour fo the `read_csv` function.
+Continue the demo by loading the `sales_no_header` file into a DataFrame, then use the `head` method to demonstrate to students the default behaviour fo the `read_csv` function.
 
 ![Loading a CSV file with no header](Images/csv_no_header.png)
 
@@ -235,9 +235,9 @@ Now call attention to the `header` parameter for `read_csv` and highlight the fo
 
 Open the Pandas documentation to show students more about the [`read_csv`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) function. Review the many options available in the function signature.
 
-Explain that, while the most common scenario is to provide the path to the file directly. Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files, such as the parameters associated with the file path and header that were used in the demo code.
+Explain that while the most common scenario is to provide the path to the file directly, Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files, such as the parameters associated with the file path and header that were used in the demo code.
 
-Congratulate students on reading their first CSV file into Pandas as this is an exciting moment because students can now harness the power of Pandas to work with tabular data! Ask if there are any questions before moving on.
+Congratulate the class on reading their first CSV file into Pandas! This is an exciting moment because students can now harness the power of Pandas to work with tabular data. Ask if there are any questions before moving on.
 
 ---
 
