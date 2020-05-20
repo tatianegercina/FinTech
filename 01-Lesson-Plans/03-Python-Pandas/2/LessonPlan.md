@@ -552,7 +552,7 @@ Review data cleaning from a conceptual standpoint, mentioning the following poin
 
 * Without data cleaning, financial data can be calculated and aggregated incorrectly and inaccurately. Data quality issues can skew financial numbers, with inaccurate numbers being reported. Since numbers drive business decisions in the financial world, the use of incorrect data can have catastrophic implications.
 
-Open the solution file, review the activity solution and highlight the following:
+Open the solution file, review the activity solution, and highlight the following:
 
 * The `shape` function provides a quick and easy way to understand the structure of a DataFrame, including the number of columns and number of tuples/rows in the DataFrame.
 
@@ -593,7 +593,7 @@ Ask students the following question:
 
   * **Answer:** The Series should be dropped.
 
-* Nulls can throw a wrench in an analytic pipeline. The `isnull` function will identify which Series has nulls. If there are nulls, they can be removed or filled. The `dropna` and `fillna` functions provide this functionality, respectively. Note that it's important to understand which fields can have nulls and which one's cannot.
+* Nulls can throw a wrench in an analytic pipeline. The `isnull` function will identify which Series has nulls. If there are nulls, they can be removed or filled. The `dropna` and `fillna` functions provide this functionality, respectively. Note that it's important to understand which fields can have nulls and which cannot.
 
 * Using `mean` with `isnull` will calculate the percentage of nulls for a DataFrame. This is important when considering the distribution of missing values in a DataFrame. The percentage of nulls can impact how the missing values are cleaned.
 
@@ -655,7 +655,7 @@ Ask students the following question:
   csv_data["ebitda"] = csv_data["ebitda"].fillna(0)
   ```
 
-* Finally, to remove duplicate values, the `drop_duplicates` function is used together with the `copy` function to create a newly cleaned DataFramed.
+* Finally, to remove duplicate values, the `drop_duplicates` function is used together with the `copy` function to create a newly cleaned DataFrame.
 
   ```python
   csv_data = csv_data.drop_duplicates().copy()
