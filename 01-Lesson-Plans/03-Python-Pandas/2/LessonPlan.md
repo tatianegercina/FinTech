@@ -369,7 +369,7 @@ Students will now take part in a lecture and discussion about data cleaning. The
 
 * [order_data.csv](Activities/04-Ins_Data_Cleaning/Resources/order_data.csv)
 
-Open the lesson slides, move to the "Data Cleaning" section and highlight the following:
+Open the lesson slides, move to the "Data Cleaning" section, and highlight the following:
 
 * Up to this point, you have been working with clean data already curated for use. But in the real world, data is messy and needs to be prepared for it to be valuable. This process is called **data cleaning**.
 
@@ -401,7 +401,7 @@ Discuss how data quality is determined.
 
   * There should not be any duplicate rows in a dataset.
 
-* Data quality rules are also defined by business or functional rules. Sometimes data needs to be stored or formatted in a unique way for business needs. For example, an international company might store dates as `DD/MM/YYY`, whereas an American company might store dates as `MM/DD/YYYY`.
+* Data quality rules are also defined by business or functional rules. Sometimes data needs to be stored or formatted in a unique way for business needs. For example, an international company might store dates as `DD/MM/YYYY`, whereas an American company might store dates as `MM/DD/YYYY`.
 
 Mention to students that these rules can all be researched outside of class.
 
@@ -409,11 +409,11 @@ Ask students to propose some reasons why data might become dirty. Then, highligh
 
 * **Typos:** When manually entering data, users can enter typos. If gone unchecked, typos can corrupt data values. There is little that can be be done to get rid of typos, as it is often difficult to identify them.
 
-* **Human error:** Humans can copy and manipulate data incorrectly. For instance, someone might copy and paste data into the wrong Excel file. Or a Python function can incorrectly compute a data value. If these issues are not fixed, data quality issues will arise down the road.
+* **Human error:** Humans can copy and manipulate data incorrectly. For instance, someone might copy and paste data into the wrong Excel file, or a Python function can incorrectly compute a data value. If these issues are not fixed, data quality issues will arise down the road.
 
 * **Poor data management:** Data is poorly managed when it is not cleaned or stored in an effective way. While not all data needs to be cleaned, industry standards and business rules should be consistently implemented to ensure the integrity of data.
 
-Discuss approaches for identifying data quality issues while you switch to Jupyter lab to live coding a few examples.
+Discuss approaches for identifying data quality issues while you switch to Jupyter lab to live code a few examples.
 
 * The first step in assessing data for quality issues is to evaluate a sample of the data visually. This allows programmers to identify obvious quality issues as well as any skewed rows (e.g., a customer address in a first name field).
 
@@ -425,11 +425,11 @@ Discuss approaches for identifying data quality issues while you switch to Jupyt
 
 * The `dtypes` function can be used to return the data type of each Series/column.
 
-    **Note:** It's crucial to review data types after loading data into a DataFrame, as Pandas automatically assigns a data type to a Series. There are instances where Pandas is unable to infer the data type. Students will need to be aware of when this happens so that they can assign the proper data type.
+    **Note:** It's crucial to review data types after loading data into a DataFrame, as Pandas automatically assigns a data type to a Series. There are instances where Pandas is unable to infer the data type. Students will need to be aware of when this happens, so that they can assign the proper data type.
 
   ![LP_Ins_Data_Cleansing_Data_Types.PNG](Images/LP_Ins_Data_Cleansing_Data_Types.PNG)
 
-* Record counts should always be reviewed to ensure the expected number of rows matches the actual.
+* Record counts should always be reviewed, to ensure the expected number of rows matches the actual number.
 
 * The total number of records can be identified using the `count` function. The `count` function counts the number of non-null cells for each column or row in a Pandas DataFrame.
 
