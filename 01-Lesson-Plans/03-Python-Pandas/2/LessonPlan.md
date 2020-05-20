@@ -58,7 +58,7 @@ Welcome students to the first day of Pandas. Open the lesson slides and briefly 
 
 Move to the "Hello Pandas!" section and highlight the following:
 
-* Pandas is currently one of the most powerful libraries in Python for data manipulation and analysis. Because of this, it is one of the most important superpowers you can have as FinTech professionals. Instead of reinventing the wheel and writing your code, you will be able to leverage Pandas' repository of functions.
+* Pandas is currently one of the most powerful libraries in Python for data manipulation and analysis. Because of this, it is one of the most important superpowers a FinTech professional can have. Instead of reinventing the wheel and writing your code, you will be able to leverage Pandas' repository of functions.
 
 * Pandas was created by [Wes McKinney](https://wesmckinney.com/) to offer a flexible, high-performance tool for conducting quantitative analysis of financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
 
@@ -88,15 +88,15 @@ Now ask students if they have experienced any disasters or significant challenge
 
 * Regional sales data for a sales competition was copied and pasted next to the wrong sales representatives. This resulted in the wrong person being identified as the winner.
 
-* In a monthly budget spreadsheet, the Excel formula to calculate the remaining balance in a chequing account did not include the entire cell range necessary for the calculation; this resulted in the account has a negative balance.
+* In a monthly budget spreadsheet, the Excel formula to calculate the remaining balance in a chequing account did not include the entire cell range necessary for the calculation; this resulted in the account having a negative balance.
 
-After talking about some of the common pain points of using spreadsheets, introduce Pandas and highlight the following:
+After discussing some of the common pain points of spreadsheets, introduce Pandas and highlight the following:
 
 * Fortunately, we have Pandas to help us manage data on Python.
 
 * Pandas is one of the most powerful open source libraries in Python for analyzing and manipulating data.
 
-* This library was born in 2008 at AQR Capital when Wes McKinney was looking for a high-performance and flexible tool to perform quantitative analysis on financial data.
+* The library was born in 2008 at AQR Capital when Wes McKinney was looking for a high-performing, flexible tool to conduct quantitative analysis on financial data.
 
 * Etymology: The name “Pandas” originates from “panel data structures.”
 
@@ -106,8 +106,7 @@ After talking about some of the common pain points of using spreadsheets, introd
 
 * Pandas functions range from simple arithmetic to complex statistics. This allows users to automate most, if not all, financial calculations. Instead of writing the formula in a cell or calculating by hand, users just need to make a function call (e.g., `pct_change` to calculate daily returns for an investment).
 
-* Python + Pandas = the perfect combination for small experiments or for implementing large-scale production systems to analyze data and
-make smarter decisions.
+* Python + Pandas = the perfect combination for small experiments or for implementing large-scale production systems to analyze data and make smarter decisions.
 
 * Pandas provides many advantages over spreadsheets due to its data structures and built-in functions for analysis.
 
@@ -115,7 +114,7 @@ make smarter decisions.
   * DataFrame (2D structures similar to spreadsheets)
   * Panel (Collection of DataFrames as 3D labelled arrays)
 
-* Pandas offers built-in time series functionality, which is a must for financial and quants analysis
+* Pandas offers built-in time series functionality, which is a must for financial and quants analysis.
 
 Explain to students that they have already installed Pandas through Anaconda, so they don't need to install additional libraries. However, if they have issues running Pandas, they can use a free notebook by [Google Colaboratory](https://colab.research.google.com/) and troubleshoot their installation with a TA during a break or office hours.
 
