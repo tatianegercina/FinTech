@@ -314,7 +314,7 @@ Transition to the topic of column manipulation by covering the following talking
 
 * Now it's time to learn how to use the various Pandas functions to perform each of these operations. You need to know how to create and curate DataFrames to fit your needs.
 
-* In the previous activity, you created a Pandas DataFrame from a CSV file and assigned column names to the DataFrame. This was one example of column manipulation. There are also other ways to manipulate columns. This demonstration will cover the common techniques used to do so.
+* In the previous activity, you created a Pandas DataFrame from a CSV file and assigned column names to the DataFrame. This was one example of column manipulation. There are also other ways to manipulate columns, and this demonstration will cover some of the most common techniques.
 
 Open the solution file and demonstrate the fundamentals of column manipulation in Pandas:
 
