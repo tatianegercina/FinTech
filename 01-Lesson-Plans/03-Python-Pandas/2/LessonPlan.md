@@ -550,7 +550,7 @@ Review data cleaning from a conceptual standpoint, mentioning the following poin
 
 * Data cleaning is important because it removes all of the issues and errors that would block or inhibit computation.
 
-* Without data cleaning, financial data can be calculated and aggregated incorrectly and inaccurately. Data quality issues can skew financial numbers, resulting in numbers being reported either higher or lower than actual. Since numbers drive business decisions in the financial world, the use of incorrect data can have catastrophic implications.
+* Without data cleaning, financial data can be calculated and aggregated incorrectly and inaccurately. Data quality issues can skew financial numbers, with inaccurate numbers being reported. Since numbers drive business decisions in the financial world, the use of incorrect data can have catastrophic implications.
 
 Open the solution file, review the activity solution and highlight the following:
 
