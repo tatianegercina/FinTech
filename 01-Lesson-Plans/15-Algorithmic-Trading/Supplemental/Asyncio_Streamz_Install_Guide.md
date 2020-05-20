@@ -26,18 +26,18 @@ Open a terminal, and execute the following commands to install `asyncio` and `st
 
 Once the `asyncio` and `streamz` modules are downloaded and installed, verify that both installations completed successfully.
 
-* Use the `pip list` function with a `grep` argument to identify if the `asyncio` library installed successfully.
+* Use the `conda list package_name` command, substituting `package_name` with `asyncio` to identify if the `asyncio` library installed successfully.
 
   ```shell
-  pip list | grep asyncio
+  conda list asyncio
   ```
 
   ![asyncio-verify](Images/asyncio-verify.png)
 
-* Use the `conda list` function with a `grep` argument to identify if the `streamz` library installed successfully.
+* Use the `conda list package_name` command, substituting `package_name` with `streamz` to identify if the `asyncio` library installed successfully.
 
   ```shell
-  conda list | grep streamz
+  conda list streamz
   ```
 
   ![streamz-verify](Images/streamz-verify.png)
