@@ -16,6 +16,12 @@ In this homework assignment, you will help Harold accomplish the following tasks
 
 2. [Create a dashboard of interactive visualizations to explore the market data](#Dashboard)
 
+The data provided for this homework was retrieved from the following websites:
+
+* [Toronro Open Data](https://open.toronto.ca/)
+
+* [Census Profile, 2016 Census - Toronto Metropolitan Area, Ontario and Canada](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/prof/details/page.cfm?Lang=E&Geo1=CMACA&Code1=535&Geo2=PR&Code2=01&SearchText=toronto&SearchType=Begins&SearchPR=01&B1=All&TABID=1&type=0)
+
 ---
 
 ## Files
