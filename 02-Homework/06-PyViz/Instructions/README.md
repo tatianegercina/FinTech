@@ -1,14 +1,14 @@
 # Unit 6 - Pythonic Monopoly
 
-![San Francisco Park Reading](Images/san-francisco-park-reading.jpg)
+![Toronto at night](Images/toronto.jpg)
 
-*[San Francisco Park Reading by Juan Salamanca](https://www.pexels.com/photo/park-san-francisco-reading-61109/) | [Free License](https://www.pexels.com/photo-license/)*
+*[Photo by James Wheeler](https://www.pexels.com/@souvenirpixels?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) | [Free License](https://www.pexels.com/photo-license/)*
 
 ## Background
 
-Harold's company has just started a new Real Estate Investment division to provide customers with a broader range of portfolio options. Harold was tasked with building a prototype dashboard and he needs your help. The real estate team wants to trial this initial offering with investment opportunities for the San Francisco market. If the new service is popular, then they can start to expand to other markets.
+Harold's company has just started a new Real Estate Investment division to provide customers with a broader range of portfolio options. Harold was tasked with building a prototype dashboard and he needs your help. The real estate team wants to trial this initial offering with investment opportunities for the Toronto market. If the new service is popular, then they can start to expand to other markets.
 
-The goal of this dashboard is to provide charts, maps, and interactive visualizations that help customers explore the data and determine if they want to invest in rental properties in San Francisco.
+The goal of this dashboard is to provide charts, maps, and interactive visualizations that help customers explore the data and determine if they want to invest in rental properties in Toronto.
 
 In this homework assignment, you will help Harold accomplish the following tasks:
 
@@ -20,9 +20,12 @@ In this homework assignment, you will help Harold accomplish the following tasks
 
 ## Files
 
-* [sfo_neighborhoods_census_data.csv](Starter_Code/Data/sfo_neighborhoods_census_data.csv)
-* [neighborhoods_coordinates.csv](Starter_Code/Data/neighborhoods_coordinates.csv)
+* [toronto_neighbourhoods_census_data.csv](Starter_Code/Data/toronto_neighbourhoods_census_data.csv)
+
+* [toronto_neighbourhoods_coordinates.csv](Starter_Code/Data/toronto_neighbourhoods_coordinates.csv)
+
 * [Rental Analysis Starter Jupyter Notebook](Starter_Code/rental_analysis.ipynb)
+
 * [Dashboard Starter Jupyter Notebook](Starter_Code/dashboard.ipynb)
 
 ## Instructions
@@ -31,20 +34,15 @@ In this homework assignment, you will help Harold accomplish the following tasks
 
 The first step to building the dashboard is to work out all of the calculations and visualizations in an analysis notebook. Once the code is worked out here, it can be copied over to a dashboard code and used with Panel to create the final layout. Use the `rental_analysis.ipynb` to complete the following:
 
-#### Housing Units Per Year
+#### Dwelling Types Per Year
 
-In this section, you will calculate the number of housing units per year and visualize the results as a bar chart using the Pandas plot function.
+In this section, you will calculate the number of dwelling types per year and visualize the results as a bar chart using the Pandas plot function.
 
-Note: By default, the limits auto-scale to the data. However, it is hard to see the difference between the yearly data. In the optional challenge, you can use the min, max, and standard deviation of the data to manually scale the y limits of the plot.
+Note: By default, the color of bar charts is blue. However, it is hard to see the difference between the yearly data. In the optional challenge, you can use the `color` parameter of the `plot()` function to manually change the color of each bar chart.
 
-Default Bar Chart
-
-  ![unscaled-bar.png](Images/unscaled-bar.png)
-
-Bar Chart with y-axis limits adjusted
-
-  ![scaled-bar.png](Images/scaled-bar.png)
-
+| Default Bar Charts                                  | Colored Bar Charts                                   |
+------------------------------------------------------|------------------------------------------------------|
+|![default_bar_charts](Images/default_bar_charts.png) | ![colored_bar_charts](Images/colored_bar_charts.png) |
 
 #### Average Gross Rent in San Francisco Per Year
 
