@@ -24,13 +24,13 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today’s lesson is students’ introduction to Pandas. Students may be confused as to why they are using Pandas now, having just learned Python. Focus on helping them understand the relationship between Python and Pandas, and how it makes sense at this point to transition to Pandas. Discuss Pandas from a Pythonic point of view and emphasize that Pandas is written in Python. Underscore the fact that Pandas is Python code that a user wrote for financial analytics; instead of hoarding their code in the depths of a hard drive, the creators packaged up the functions and made them available to the public.
+* Today’s lesson will introduce students to Pandas. Students may be confused as to why they are using Pandas now, having just learned Python. Help them understand the relationship between Python and Pandas, and why it makes sense at this point to transition to Pandas. Discuss Pandas from a Pythonic point of view and emphasize that Pandas is written in Python. Underscore that Pandas is Python code that a user wrote for financial analytics; instead of hoarding their code in the depths of a hard drive, the creators packaged the functions and made them publicly available.
 
-* This lesson first covers technical concepts like reading in CSV files and checking for nulls and then progresses to more advanced skills such as calculating daily and cumulative investment returns. Keep in mind that not all students have a finance background and, as such, may not understand returns right away. Leverage the knowledge of finance-savvy students in the class and encourage them to help their partners if they get stuck. Be sure to allow enough time for students to ask questions at the end of each section.
+* The lesson starts by covering technical concepts like reading in CSV files and checking for nulls, and then progresses to more advanced skills, such as calculating daily and cumulative investment returns. Keep in mind that not all students have a finance background and may not understand returns right away. Leverage the knowledge of finance-savvy students in the class and encourage them to help their partners if they get stuck. Be sure to allow enough time for students to ask questions at the end of each section.
 
 * Keep in mind that some students may be confused by the concept of return on investment (ROI) but hesitant to vocalize their uncertainty. Encourage students to work in groups so that they can make sense of the activity and concepts together. TAs should circulate the classroom to assist groups, and you should make yourself available for financial or technical questions. Finally, consider asking the finance-savvy students to provide clarity and assistance for students who need help.
 
-* The activities in this lesson focus on developing and honing skills that are critical for succeeding in this course as well as performing day-to-day tasks within the FinTech professional world. Therefore, encourage students to practice these skills outside of class to gain mastery.
+* The activities in this lesson focus on developing and honing skills that are critical for succeeding in this course, as well as performing daily tasks within the FinTech professional world. Therefore, encourage students to practice these skills outside of class to gain mastery.
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
@@ -46,7 +46,7 @@ By the end of class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -62,15 +62,15 @@ Move to the "Hello Pandas!" section and highlight the following:
 
 * Pandas was created by [Wes McKinney](https://wesmckinney.com/) to offer a flexible, high-performance tool for conducting quantitative analysis of financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
 
-* If Python was compared to a garage, Pandas would be the sleek Tesla parked inside. The owner can choose to leverage the speed, power, and efficiency of their Tesla and take it for a spin, or the owner could walk to their destination. While walking would produce the same result as using the Tesla, it would require extra labour and take more time. This lesson will teach you how skillfully utilize the sleek Tesla sitting in your garage.
+* If Python was compared to a garage, Pandas would be the sleek Tesla parked inside. The owner could choose to leverage the speed, power, and efficiency of their Tesla and take it for a spin, or they could walk to their destination. While walking would produce the same result as using the Tesla, it would require extra labour and take more time. This lesson will teach you how to skillfully utilize the sleek Tesla sitting in your garage.
 
 Transition to the "Why Pandas?" section and highlight the following:
 
-* Since spreadsheets appeared in [1969 when the plant budgeting operations of AT&T first used LANPAR](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed the finance and quants analysis forever.
+* Since spreadsheets appeared in [1969 when the plant budgeting operations of AT&T first used LANPAR](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed finance and quants analysis forever.
 
 * However, as the volume and complexity of data has increased significantly, spreadsheets are now limited when it comes to data analysis.
 
-Ask the class what the pain points they have experienced while using spreadsheets to handle data. Possible answers include:
+Ask students what pain points they have experienced while using spreadsheets to handle data. Possible answers could include:
 
 * Microsoft Office is expensive.
 
@@ -82,13 +82,13 @@ Ask the class what the pain points they have experienced while using spreadsheet
 
 * Automation and custom function creation is not inherent. Macros and VBA need to be learned.
 
-Ask students if they have experienced any disasters or significant challenges while working in Excel. Possible answers include:
+Now ask students if they have experienced any disasters or significant challenges while working in Excel. Possible answers include:
 
 * Excel hogged so much memory that my laptop crashed.
 
 * Regional sales data for a sales competition was copied and pasted next to the wrong sales representatives. This resulted in the wrong person being identified as the winner.
 
-* In a monthly budget spreadsheet, the Excel formula to calculate the remaining balance in a checking account did not include the entire cell range necessary for the calculation; this resulted in the account has a negative balance.
+* In a monthly budget spreadsheet, the Excel formula to calculate the remaining balance in a chequing account did not include the entire cell range necessary for the calculation; this resulted in the account has a negative balance.
 
 After talking about some of the common pain points of using spreadsheets, introduce Pandas and highlight the following:
 
