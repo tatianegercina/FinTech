@@ -899,9 +899,9 @@ Open the unsolved version, live code the demo and explain the following:
 
 * The `plot()` function uses the `matplotlib`, a Python data visualization library, to create the plots.
 
-* To display the plots in the notebook's canvas, you need to set a [Jupyter notebook's magic command](https://ipython.readthedocs.io/en/stable/interactive/magics.html) that whose name is `matplotlib`. A magic command allows us to add interactive elements to a Jupyter notebook, like plots.
+* To display the plots in the notebook's canvas, you need to set a [Jupyter notebook's magic command](https://ipython.readthedocs.io/en/stable/interactive/magics.html) with the name `matplotlib`. A magic command allows us to add interactive elements to a Jupyter notebook, like plots.
 
-* To introduce a magic command, you should start with the percentage symbol `%` followed by the command name and optionally a parameter. In this demo, we pass the `inline` parameter to the `matplotlib` magic command to allow the plots to be displayed in the notebook's canvas.
+* To introduce a magic command, you should start with the percentage symbol `%` followed by the command name and, optionally, a parameter. In this demo, we pass the `inline` parameter to the `matplotlib` magic command to allow the plots to be displayed in the notebook's canvas.
 
   ```python
   %matplotlib inline
@@ -915,11 +915,11 @@ Open the unsolved version, live code the demo and explain the following:
 
   ![set-index](Images/set-index.png)
 
-* Be sure to drop the extra `Date` column after setting it as the index!
+* Be sure to drop the extra `Date` column after setting it as the index.
 
   ![drop-column](Images/drop-column.png)
 
-* Plotting data with datetimes as the index now allows us to see the dates as the x-axis label of the line chart.
+* Plotting data with datetimes as the index allows us to see the dates as the x-axis label of the line chart.
 
   ![line-chart-with-index](Images/line-chart-with-index.png)
 
@@ -937,7 +937,7 @@ Slack out to students the [Pandas Visualization help document](https://pandas.py
 
 ### 14. Student Do: Market Analysis (15 min)
 
-In this activity, students will use Pandas to create three different charts: pie chart, bar chart and scatter plot. This activity will teach students how to create pie charts and scatter plots in addition to bar and line plots.
+In this activity, students will use Pandas to create three different charts: pie chart, bar chart, and scatter plot. This activity will teach students how to create pie charts and scatter plots in addition to bar and line plots.
 
 Circulate the classroom to review student progress as they complete the activity. Guidance may be required, as this is the first time students will be exposed to pie charts and scatter plots.
 
@@ -985,7 +985,7 @@ Open the solution file and explain the following:
   sector_count.plot(kind="pie")
   ```
 
-* A pie chart is best suited for representing the distribution of an entire category, which, in this case, is the distribution of company sectors in the S&P 500. The plot shows that Consumer Discretionary companies hold the most significant weight or proportion among the S&P 500 companies.
+* A pie chart is best suited for representing the distribution of an entire category, which, in this case, is the distribution of company sectors in the S&P 500. The plot shows that consumer discretionary companies hold the most significant weight or proportion among the S&P 500 companies.
 
   ![pie_chart](Images/pie.png)
 
@@ -995,13 +995,13 @@ Open the solution file and explain the following:
   market_cap = sp500_companies_csv.loc[:, ["Symbol", "Market Cap"]]
   ```
 
-* When plotting a DataFrame, set the index to a specific column to ensure the desired chart labels are displayed (ex. the x-axis labels on a line or bar chart).
+* When plotting a DataFrame, set the index to a specific column to ensure the desired chart labels are displayed (for example, the x-axis labels on a line or bar chart).
 
 * Use the `nlargest()` function to return the top `n` number of rows based on a particular DataFrame column.
 
   ![nlargest-function](Images/nlargest-function.png)
 
-* A bar chart is best suited for comparing the values of several variables of the same type, which, in this case, are the market caps of the top 20 companies in the S&P 500. The plot shows the varying market cap values of the top 20 market cap companies in the S&P 500.
+* A bar chart is best suited for comparing the values of several variables of the same type, which in this case are the market caps of the top 20 companies in the S&P 500. The plot shows the varying market cap values of the top 20 market cap companies in the S&P 500.
 
   ![bar_chart](Images/bar.png)
 
@@ -1025,19 +1025,19 @@ The following demo introduces students to calculating daily returns with Pandas.
 
 Open the unsolved version to begin the demo. Incorporate the following points into your demonstration as you live code the solution:
 
-Open the lesson slides and move to the "Results" section, introduce the concept of ROI and highlight the following:
+Open the lesson slides and move to the "Results" section, introduce the concept of ROI, and highlight the following:
 
 * A **return on investment (ROI)** is a percentage calculation that signifies either a profit or loss relative to the initial cost of an investment.
 
-* ROI calculations can be used to standardize and compare the investment performances of varying asset classes such as equities, bonds, real estate, etc.
+* ROI calculations can be used to standardize and compare the investment performances of varying asset classes, such as equities, bonds, real estate, etc.
 
-Explain to students that ROI can be easily calculated in pure Python, show them the code in the slide and switch to the unsolved version of the Jupyter notebook to begin the demo.
+Explain to students that ROI can be easily calculated in pure Python. Show them the code in the slide and switch to the unsolved version of the Jupyter notebook to begin the demo.
 
 Incorporate the following points into your demonstration as you live code the solution:
 
-* Let's imagine that you invested 100 dollars last week in a single stock.
+* Let's imagine that you invested $100 last week in a single stock.
 
-* Suppose that you check the current price of the stock Today and its current price is 110 dollars.
+* Suppose that you check the current price of the stock today and its current price is $110.
 
 * How can you calculate the ROI using Python?
 
@@ -1061,7 +1061,7 @@ Incorporate the following points into your demonstration as you live code the so
 
 Continue the demo and explain to students that you will cover some concepts about returns using sample data from the [S&P/TSX Composite Index](https://en.wikipedia.org/wiki/S%26P/TSX_Composite_Index).
 
-Conduct a dry-walkthrough on the code that loads the S&P TSX data and prepares the DataFrame to start the analysis. After plotting the daily close price, continue the demo and highlight the following:
+Conduct a dry walkthrough on the code that loads the S&P TSX data and prepares the DataFrame to start the analysis. After plotting the daily close price, continue the demo and highlight the following:
 
 * **Daily returns** are a series of returns calculated over several days, with each daily return representing the relative increase or decrease in investment between days.
 
@@ -1091,7 +1091,7 @@ Conduct a dry-walkthrough on the code that loads the S&P TSX data and prepares t
 
   ![cumprod-function](Images/cumprod-function.png)
 
-* Plotting cumulative returns makes it easier to visualize the profitability of a single asset and, in particular, the profitabilities of several asset classes over time. In this case, the plot shows that the S&P TSX lost a good deal of its value in 2015, but started a recovery tendency since 2016.
+* Plotting cumulative returns makes it easier to visualize the profitability of a single asset and, in particular, the profitabilities of several asset classes over time. In this case, the plot shows that the S&P TSX lost a good deal of its value in 2015, but began a recovery tendency in 2016.
 
   ![Plot of Cumulative Returns](Images/cumulative-return-plot.png)
 
@@ -1103,7 +1103,7 @@ Answer any questions before moving on.
 
 ### 17. Student Do: Returns Over Date Ranges (15 min)
 
-In this activity, students will analyze the last years of historical price data for Shopify and plot the daily returns over the previous 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each period to determine whether a short or long-term perspective should be used in prospecting Shopify as a potential investment opportunity.
+In this activity, students will analyze historical price data for Shopify and plot the daily returns over the previous 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each period to determine whether a short or long-term perspective should be used in prospecting Shopify as a potential investment opportunity.
 
 **File:**
 
@@ -1157,7 +1157,7 @@ With the remaining time, open the solution file and discuss the following points
 
   ![datetime-index](Images/datetime-index.png)
 
-* Notice the hard-coding required to create the slice notations for each period. It would be more convenient to be able to choose a date and use a function to go 365 days before that date to create 1-year, 2-year, 3-year, and 4-year time chunks; `datetime` objects will help us do this in the future.
+* Notice the hard coding required to create the slice notations for each period. It would be more convenient to be able to choose a date and use a function to go 365 days before that date to create 1-year, 2-year, 3-year, and 4-year time chunks; `datetime` objects will help us do this in the future.
 
   ```python
   # Slice DataFrame into 1 year timeframe
