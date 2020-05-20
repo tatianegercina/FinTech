@@ -78,7 +78,7 @@ conda activate pyvizenv
     panel                     0.9.5
     ```
 
-5. Use the `conda list | grep plotly` function to confirm all Plotly packages are available. NOTE: If using the Anaconda Prompt instead of Bash, you will instead run the `conda list plotly` command.
+5. Use the `conda list plotly` function to confirm proper Plotly package installation.
 
   * Make sure that you have the following version installed:
 
