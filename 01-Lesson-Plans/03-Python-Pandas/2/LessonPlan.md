@@ -837,13 +837,13 @@ Use this part of the lesson to review the previous activity with students.
 
 * [loans.csv](Activities/07-Stu_Indexing/Resources/loans.csv)
 
-Open the solution file and explain the following while doing a dry walk-through:
+Open the solution file and explain the following while doing a dry walkthrough:
 
 * Displaying an index of the first 10 rows is similar to what the `head()` function does; however, utilizing `iloc[]` gives you more control over the index ranges.
 
   ![First 10 Records](Images/first-10-records.png)
 
-* The `iloc[]` function allows for selecting the specific row and column indexes. In this case, the `:` keyword suggests that all rows will be returned from the `0`, `3`, `4`, `8`, `11`, `16` column indexes.
+* The `iloc[]` function allows for selecting the specific row and column indexes. In this case, the `:` keyword suggests that all rows will be returned from the `0`, `3`, `4`, `8`, `11`, and `16` column indexes.
 
   ![Specific Columns](Images/specific-columns.png)
 
@@ -861,7 +861,7 @@ Open the solution file and explain the following while doing a dry walk-through:
 
   ![row-modification-without-warning](Images/row-modification-without-warning.png)
 
-* To get the summary statistics of the 3 year term loans, we use the `describe` function by setting the parameter `include="all"`.
+* To get the summary statistics of the 3-year term loans, we use the `describe` function by setting the parameter `include="all"`.
 
   ```python
   term_df.describe(include="all")
@@ -871,7 +871,7 @@ Open the solution file and explain the following while doing a dry walk-through:
 
   ![Unique Values](Images/unique-values.png)
 
-* To get the summary statistics for 3 year loans of customers with annual income greater than $80,000 or less than $80,000 we filter the DataFrame using `loc` and conditionals.
+* To get the summary statistics for 3-year loans of customers with an annual income greater than $80,000 or less than $80,000 we filter the DataFrame using `loc` and conditionals.
 
   ![Filtering Loans](Images/filtering-loans.png)
 
