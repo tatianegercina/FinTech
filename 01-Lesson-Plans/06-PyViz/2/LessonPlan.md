@@ -26,7 +26,7 @@ By the end of class, students will be able to:
 
 * Prepare for the lesson by running the code examples and reviewing the lectures before class. Today's lesson will include using Plotly Express and Mapbox, a mapping API/development kit used for visualizing geospatial data, so make sure the appropriate plugins and API keys have been set up.
 
-* Because this lesson is using an API, make sure to sign up for a Mapbox API key using this [link](https://account.mapbox.com/auth/signup/). Create a `keys.sh` file to store your API key, and source it so that it is callable in Python. You can add the source command to your `bash_profile` or `bashrc` file in your home directory.
+* Because this lesson is using an API, make sure to sign up for a Mapbox API key using this [link](https://account.mapbox.com/auth/signup/). Create a `.env` file to store your API key, and use `python-dotenv` to make it callable in Python.
 
 * Throughout the day, reinforce to students the importance and power of interactive plotting. The widgets, automatic color formatting and skins, and plot types can all be accessed and manipulated with ease. The plots being created by Plotly Express would have taken someone in the past hours to create. Plotly Express does it in seconds.
 
@@ -41,6 +41,7 @@ By the end of class, students will be able to:
 * Have your TAs keep track of time with the Time Tracker.
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [6.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5be4b5c1-1085-4071-8236-aab80143e360) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
@@ -694,4 +695,4 @@ Ask for any remaining questions before ending the class.
 
 - - -
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

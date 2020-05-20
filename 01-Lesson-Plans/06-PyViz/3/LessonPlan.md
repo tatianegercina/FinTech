@@ -39,8 +39,8 @@ By the end of class, students will be able to:
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
-* To watch an example class lecture, go here: [6.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=305e7537-e3c7-432a-bc99-aabf00dfdc9b) Note that this video may not reflect the most recent lesson plan.
 
+* To watch an example class lecture, go here: [6.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=305e7537-e3c7-432a-bc99-aabf00dfdc9b) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
 
@@ -55,10 +55,6 @@ By the end of class, students will be able to:
 ---
 
 ### 1. Instructor Do: Welcome Class (10 mins)
-
-**Files:**
-
-* [welcome-slides](https://docs.google.com/presentation/d/1xzEteF7tPkqJKHusUOtyAZG85NTJtTAcL1AlG9ZE3sE/edit?usp=sharing)
 
 Welcome back! Today marks the last unit of the PyViz Data Visualization unit. Today's lesson will take data visualizations to the next level and will focus on using Panel, a PyViz technology, to create dashboards.
 

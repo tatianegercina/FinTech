@@ -51,6 +51,7 @@ By the end of this class, students will be able to:
 * Have your TAs keep track of the time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [6.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=10e96d93-f5d1-4563-910f-aab600c8d69d) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
@@ -66,7 +67,6 @@ By the end of this class, students will be able to:
 ---
 
 ### 1. Instructor Do: Welcome (5 min)
-
 
 Welcome to Unit 6! Unit 6 is dedicated to introducing and teaching students all they need to know about data visualization using the PyViz visualization platform.
 
@@ -87,7 +87,9 @@ Navigate to the 6.1 slides, and highlight the following:
 Transition into a demonstration of the types of visualizations that can be made using PyViz:
 
 * Interactive visualizations allow data to be explored and analyzed in the most efficient and effective manner for human eyes.
+
 * Interactive visualizations give users the ability to pan, zoom, and filter data elements and values.
+
 * Interactive visualizations also include functionality that allows data to be sorted off different values based off a simple click.
 
 End the module communicating to students that gone are the days where simple line, bar, and histogram charts satisfied data visualization and data analysis needs. Students will now learn how to create interactive and innovative visualizations.
@@ -110,7 +112,7 @@ This activity involves a quick demo and a review of the homework.
 
 Navigate to the Unit 6 Homework Instructions, and communicate the following to the students:
 
-* This week’s homework focuses on visualizing and analyzing real estate data to identify the best properties in the San Francisco region.
+* This week’s homework focuses on visualizing and analyzing real estate data to identify the best properties in Toronto.
 
 * The homework includes using hvPlot and Plotly Express to create interactive data visualizations. These data visualizations will then be integrated with Panel in order to create a digital dashboard that contains multiple tabs.
 
@@ -119,6 +121,8 @@ Navigate to the Unit 6 Homework Instructions, and communicate the following to t
 * In an investment scenario, offering a way to explore the real estate market interactively gives the investor the power to find properties that are of particular interest to them. In scenarios like these, it is the visualizations that help users make decisions.
 
 Demo the homework solution by giving the students a preview of the solution.
+
+![homework_demo](Images/homework_demo.gif)
 
 Ask the students for any questions before moving forward.
 
@@ -184,7 +188,7 @@ Navigate to the 6.1 slides, and introduce students to the world of hvPlot intera
 
 Encourage students to review some of the [example plots](https://hvplot.pyviz.org/) on their own time. Make sure to slack out this link.
 
-```
+```text
 https://hvplot.pyviz.org/
 ```
 
@@ -775,4 +779,4 @@ Ask for any remaining questions before ending the class.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
