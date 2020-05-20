@@ -26,10 +26,10 @@ conda install -c conda-forge wordcloud
 
 Once the `wordcloud` library download is complete, verify the installation completed successfully.
 
-* Open the terminal and use the `conda-list` function with a `grep` argument to identify if the `wordcloud` library installed successfully.
+* Open the terminal and use the `conda list package_name` command, substituting `package_name` with `wordcloud` to verify the library installed successfully.
 
 ```shell
-conda list | grep wordcloud
+conda list wordcloud
 ```
 
 ![Wordcloud verification](Images/wordcloud-verify.png)
@@ -48,10 +48,10 @@ pip install newsapi-python==0.2.5
 
 Once the `newsapi-python` library download is complete, verify the installation completed successfully.
 
-* Open the terminal and use the `conda-list` function with a `grep` argument to identify if the `newsapi-python` library installed successfully.
+* Open the terminal and use the `conda list package_name` command, substituting `package_name` with `newsapi-python` to verify the library installed successfully.
 
 ```shell
-conda list | grep newsapi-python
+conda list newsapi-python
 ```
 
 ![News API verification](Images/news-api-verify.png)
@@ -70,10 +70,10 @@ pip install --upgrade "ibm-watson>=3.0.3"
 
 Once the `ibm-watson` library download is complete, verify the installation completed successfully.
 
-* Open the terminal and use the `conda-list` function with a `grep` argument to identify if the `ibm-watson` library installed successfully.
+* Open the terminal and use the `conda list package_name` command, substituting `package_name` with `ibm-watson` to verify the library installed successfully.
 
 ```shell
-conda list | grep ibm-watson
+conda list ibm-watson
 ```
 ![IBM Watson verification](Images/ibm-watson-verify.png)
 
@@ -94,10 +94,10 @@ The first command will install the `spacy` library; the second command is going 
 
 Once the `spacy` library download is complete, verify the installation completed successfully.
 
-* Open the terminal and use the `conda-list` function with a `grep` argument to identify if the `spacy` library installed successfully.
+* Open the terminal and use the `conda list package_name` command, substituting `package_name` with `spacy` to verify the library installed successfully.
 
 ```shell
-conda list | grep spacy
+conda list spacy
 ```
 
 ![SpaCy verification](Images/spacy-verify.png)
@@ -141,7 +141,7 @@ An out-of-date Anaconda environment can create issues when trying to install new
 If you have issues running or updating anaconda, you can check if the package is correctly installed by running the following command in your terminal.
 
 ```shell
-conda list | grep anaconda
+conda list anaconda
 ```
 
 After running this command, you should see a list with the anaconda packages installed in your environment, at least the packages in the red square should be listed.
@@ -152,21 +152,21 @@ In case you guess your anaconda environment is broken, deactivate your current v
 
 ### Checking the Current Version of a Package
 
-If you want to validate which version of a package is installed in your environment, run the following command on the terminal.
+To validate which version of a package is installed in your environment, run the following command in the terminal, just as you did after each package installation in the above instructions.
 
 ```shell
-python -c "import <package_name>;print(<package_name>.__version__)"
+conda list <package_name>
 ```
 
 Where `<package_name>` is the name of the package you want to verify. For example, to corroborate the current version of the `spacy` package, you should run the following command in the terminal.
 
 ```shell
-python -c "import spacy;print(spacy.__version__)"
+conda list spacy
 ```
 
 This is the output you should see on the terminal window.
 
-![Package version check](Images/package-version.png)
+![Package version check](Images/spacy-verify.png)
 
 
 ### Package is not Installed in Windows
