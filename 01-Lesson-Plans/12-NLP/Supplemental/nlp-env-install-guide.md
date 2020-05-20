@@ -152,21 +152,21 @@ In case you guess your anaconda environment is broken, deactivate your current v
 
 ### Checking the Current Version of a Package
 
-If you want to validate which version of a package is installed in your environment, run the following command on the terminal.
+To validate which version of a package is installed in your environment, run the following command in the terminal, just as you did after each package installation in the above instructions.
 
 ```shell
-python -c "import <package_name>;print(<package_name>.__version__)"
+conda list <package_name>
 ```
 
 Where `<package_name>` is the name of the package you want to verify. For example, to corroborate the current version of the `spacy` package, you should run the following command in the terminal.
 
 ```shell
-python -c "import spacy;print(spacy.__version__)"
+conda list spacy
 ```
 
 This is the output you should see on the terminal window.
 
-![Package version check](Images/package-version.png)
+![Package version check](Images/spacy-verify.png)
 
 
 ### Package is not Installed in Windows
