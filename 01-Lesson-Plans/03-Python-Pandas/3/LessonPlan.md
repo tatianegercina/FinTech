@@ -947,7 +947,7 @@ Answer any questions before moving on.
 
 Please use the entire time to review questions with the students before officially ending class.
 
-Suggested Format:
+Suggested format:
 
 * Ask students for specific activities to revisit.
 
