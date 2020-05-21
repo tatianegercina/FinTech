@@ -306,7 +306,7 @@ In this activity, students will work with historical cryptocurrency data. They w
 
 ### 6. Instructor Do: Review Group Dynamics (10 min)
 
-In this section, review the Group Dynamics activity by completing a dry walk-through of the solution. End by asking a series of review questions to test students' understanding.
+In this section, review the Group Dynamics activity by completing a dry walkthrough of the solution. End by asking a series of review questions to test students' understanding.
 
 **Files:**
 
@@ -314,7 +314,7 @@ In this section, review the Group Dynamics activity by completing a dry walk-thr
 
 * [crypto_data.csv](Activities/04-Stu_Groupby/Resources/crypto_data.csv)
 
-Open the solution file and complete a dry walk-through of the student activity solution, covering the following points:
+Open the solution file and complete a dry walkthrough of the student activity solution, covering the following points:
 
 * The `groupby` function can be used to group a DataFrame by a column. This allows data to be aggregated and summarized in groups rather than all at once. A single column or multiple columns can group DataFrames.
 
@@ -370,7 +370,7 @@ If time remains, end the review by calling on students to answer the following r
 
 * Does the concept of grouping to aggregate data make sense?
 
-    **Sample Answer:** Yes. When aggregating data without groups, all of the data is aggregated, grouping and then aggregating allows calculations to be executed against groups (e.g., January's stock data would be grouped and computed separately from February's).
+    **Sample Answer:** Yes. When aggregating data without groups, all of the data is aggregated. Grouping and then aggregating allows calculations to be executed against groups (e.g., January's stock data would be grouped and computed separately from February's).
 
 * How did working with more than one ticker help you in this activity?
 
@@ -402,7 +402,7 @@ Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like t
 
 * [metro_inc_stock_data.csv](Activities/05-Ins_Multi_Indexing/Resources/metro_inc_stock_data.csv)
 
-Open the lesson slides, move to the "Multi-Indexing" section and provide an overview of multi-indexing as follows:
+Open the lesson slides, move to the "Multi-Indexing" section, and provide an overview:
 
 * **Multi-indexing** is the process of indexing a dataset by more than one value. Multi-indexing is like using two bookmarks in a book. Each bookmark is an index, and depending on which index you go to, you'll get different content.
 
@@ -410,19 +410,19 @@ Open the lesson slides, move to the "Multi-Indexing" section and provide an over
 
 * Multiple indexes are valuable because they enable dimensional data to be grouped and retrieved.
 
-  * This is particularly valuable when working with financial data and dates. While dates are great to index, dates do not always provide all of the detail needed to manipulate and analyze data.
+  * This is particularly helpful when working with financial data and dates. While dates are great to index, dates do not always provide all of the detail needed to manipulate and analyze data.
 
   * For example, when looking at stock prices and purchases over time, it is essential to group data by both date and ticker. In this operation, both date and ticker can be indexes, and by specifying date and ticker, you can slice out the price of a particular stock at a specific point in time.
 
 * Essentially, multi-indexing improves data storage, lookup, and manipulation/assignment.
 
-Open the unsolved Jupyter notebook and live code on how to create and use multiple indexes, as well as how to access data using more than one index. Cover the following points:
+Now, open the unsolved Jupyter notebook and live code on how to create and use multiple indexes, as well as how to access data using more than one index. Cover the following points:
 
-* When working with indexes, its a common practice to clean data before setting indexes. For example, a Series being used as an index should not have any `NaN` values. These can be handled by first executing `dropna` against a DataFrame. The `set_index` function can then be used to set the index.
+* When working with indexes, it's a common practice to clean data before setting indexes. For example, a Series being used as an index should not have any `NaN` values. These can be handled by first executing `dropna` against a DataFrame. The `set_index` function can then be used to set the index.
 
 * Multi-indexing is commonly done when working with `Date` data.
 
-* When used as an index, `Date` data is considered a `DatetimeIndex`. `DatetimeIndexes` have the ability to create multi-indexing inherently.
+* When used as an index, `Date` data is considered a `DatetimeIndex`. `DatetimeIndexes` have the inherent ability to create multi-indexes.
 
 * A `DatetimeIndex` can be created by passing a `Date` field to the `index_col` attribute when using `read_csv`. `parse_dates` and `infer_datetime_format` should also be included.
 
@@ -434,7 +434,7 @@ Open the unsolved Jupyter notebook and live code on how to create and use multip
 
 * `DatetimeIndexes` can be split into year, month, and day segments. The `DatetimeIndex` object includes the attributes `index.year`, `index.month`, and `index.day` for this. Passing these to a `groupby` statement will create multiple indexes based on each attribute.
 
-* The `first` function is used to display the first value for each group within a GroupBy object. In this case, every group down to the `year`, `month`, and `day` level is unique and therefore grabs the first and only value of every group.
+* The `first` function is used to display the first value for each group within a GroupBy object. In this case, every group down to the `year`, `month`, and `day` level is unique, and therefore grabs the first and only value of every group.
 
   ![multi_index_date.png](Images/multi_index_date.png)
 
