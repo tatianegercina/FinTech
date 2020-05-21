@@ -60,7 +60,7 @@ Then, move to the "Hello Pandas!" section and highlight the following:
 
 * Pandas is currently one of the most powerful libraries in Python for data manipulation and analysis. Because of this, it is one of the most important superpowers a FinTech professional can have. Instead of reinventing the wheel and writing your code, you will be able to leverage Pandas' repository of functions.
 
-* Pandas was created by [Wes McKinney](https://wesmckinney.com/) to offer a flexible, high-performance tool for conducting quantitative analysis of financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
+* Pandas was created by [Wes McKinney](https://wesmckinney.com/) to offer a flexible, high-performance tool for conducting quantitative analyses of financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
 
 * If Python was compared to a garage, Pandas would be the sleek Tesla parked inside. The owner could choose to leverage the speed, power, and efficiency of their Tesla and take it for a spin, or they could walk to their destination. While walking would produce the same result as using the Tesla, it would require extra labour and take more time. This lesson will teach you how to skillfully utilize the sleek Tesla sitting in your garage.
 
