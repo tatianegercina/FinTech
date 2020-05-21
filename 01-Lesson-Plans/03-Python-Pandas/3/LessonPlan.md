@@ -555,9 +555,9 @@ In this section, you will provide an overview of concatenation and then live cod
 
 * [uk_products.csv](Activities/07-Ins_Concat_DataFrame/Resources/uk_products.csv)
 
-Open the lesson slides, move to the "Concatenation" section and introduce this topic by explaining the following:
+Open the lesson slides, move to the "Concatenation" section, and explain the following:
 
-* Indexing, grouping, and sorting datasets are all part of data analysis preparation. Another step in this process is combining or concatenating, datasets. This is beneficial when more than one dataset needs to be combined.
+* Indexing, grouping, and sorting datasets are all part of data analysis preparation. Another step in this process is combining, or concatenating, datasets. This is beneficial when more than one dataset needs to be combined.
 
 * For example, many months of financial records or investment data from different markets can be consolidated into one dataset to streamline and centralize data analysis.
 
@@ -569,7 +569,7 @@ Open the slideshow and provide a brief overview of concatenation:
 
 * DataFrames can be concatenated so that the records from two or more DataFrames are combined.
 
-* Concatenation can be done by column so that the columns from one DataFrame are placed adjacent to columns from another DataFrame.
+* Concatenation can be done by column, so that the columns from one DataFrame are placed adjacent to columns from another DataFrame.
 
 * There are multiple ways to concatenate objects, including by column and row.
 
@@ -587,7 +587,7 @@ Open the slideshow and provide a brief overview of concatenation:
 
 * The `join="outer"` argument will union the data.
 
-Open the unsolved version of the Jupyter notebook, live code the demo and highlight the following:
+Open the unsolved version of the Jupyter notebook, live code the demo, and highlight the following:
 
 * A key consideration to keep in mind when concatenating DataFrames is that data is joined by index. Pandas `concat` function will by default join rows or columns by index. Before concatenating DataFrames, make sure the same column indexes the DataFrames.
 
