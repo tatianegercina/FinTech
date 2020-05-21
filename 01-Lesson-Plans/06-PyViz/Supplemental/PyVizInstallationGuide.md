@@ -68,10 +68,12 @@ conda activate pyvizenv
       set NODE_OPTIONS=
       ```
 
-4. Use the `conda list | grep pyviz` function to confirm installation of all PyViz packages. Look for version numbers with at least the following versions:
+4. Use the `conda list package_name` command, substituting `package_name` for each of the installed packages, `holoviz`, `hvplot` and `panel` to confirm installation of all PyViz packages. Look for version numbers with at least the following versions:
 
     ```shell
-    conda list | grep pyviz
+    conda list holoviz
+    conda list hvplot
+    conda list panel
     ```
 
     ```text
@@ -80,10 +82,12 @@ conda activate pyvizenv
     panel                     0.9.5
     ```
 
-5. Use the `conda list | grep plotly` function to confirm all Plotly packages are available. Make sure that you have the following version installed:
+5. Use the `conda list plotly` function to confirm proper Plotly package installation.
+
+  * Make sure that you have the following version installed:
 
     ```shell
-    conda list | grep plotly
+    conda list plotly
     ```
 
     ```text
