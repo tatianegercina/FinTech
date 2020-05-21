@@ -26,7 +26,7 @@ By the end of class, students will be able to:
 
 * Today’s lesson will introduce students to Pandas. Students may be confused as to why they are using Pandas now, having just learned Python. Help them understand the relationship between Python and Pandas, and why it makes sense at this point to transition to Pandas. Discuss Pandas from a Pythonic point of view, and emphasize that Pandas is written in Python. Underscore that Pandas is Python code that a user wrote for financial analytics–instead of hoarding their code in the depths of a hard drive, the creators packaged the functions and made them publicly available.
 
-* The lesson starts by covering technical concepts like reading in CSV files and checking for nulls, and then progresses to more advanced skills, such as calculating daily and cumulative investment returns. Keep in mind that not all students have a finance background and may not understand returns right away. Leverage the knowledge of finance-savvy students in the class and encourage them to help their partners if they get stuck. Be sure to allow enough time for students to ask questions at the end of each section.
+* The lesson starts with technical concepts, like reading in CSV files and checking for nulls, and progresses to more advanced skills, such as calculating daily and cumulative investment returns. Keep in mind that not all students have a finance background, and may not understand returns right away. Leverage the knowledge of finance-savvy students in the class and encourage them to help their partners if they get stuck. Be sure to allow enough time for students to ask questions at the end of each section.
 
 * Keep in mind that some students may be confused by the concept of return on investment (ROI) but hesitant to vocalize their uncertainty. Encourage students to work in groups so that they can make sense of the activity and concepts together. TAs should circulate the classroom to assist groups, and you should make yourself available for financial or technical questions. Finally, consider asking the finance-savvy students to provide clarity and assistance for students who need help.
 
@@ -373,7 +373,7 @@ Open the lesson slides, move to the "Data Cleaning" section, and highlight the f
 
 * Up to this point, you have been working with clean data already curated for use. But in the real world, data is messy and needs to be prepared for it to be valuable. This process is called **data cleaning**.
 
-* Data cleaning is comprised of three parts:
+* Data cleaning consists of three parts:
 
   1. Data exploration
 
@@ -381,7 +381,7 @@ Open the lesson slides, move to the "Data Cleaning" section, and highlight the f
 
   3. Data cleaning strategies
 
-Explain to students that you will demonstrate each of these parts so that they can confidently clean and prep data for analysis.
+Explain to students that you will demonstrate each of these parts, so that they can confidently clean and prep data for analysis.
 
 Introduce data cleaning by covering these points:
 
