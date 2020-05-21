@@ -680,12 +680,12 @@ Open the starter file, and live code how to run a Panel dashboard as a **web app
 * Once the Panel object has been tagged as servable, the `panel serve` command can be executed from a CLI to spin up a **Bokeh** server and deploy the specified Panel object as a **web app**.
 
   ```shell
-  panel serve dashboard_webapps.ipynb
+  panel serve dashboard_webapps.ipynb --log-level debug --show
   ```
 
   ![panel_serve.png](Images/panel_serve.png)
 
-* The web app can be accessed using the URL returned from the `panel serve` CLI command. Enter the URL in a browser, and watch your dashboard load. Note that when the dashboard loads, it will load without all of the code and Jupyter cells. Only the dashboard content will be displayed.
+* The web app can be accessed using the URL returned from the `panel serve` CLI command. If the webapp is not launched automatically, enter the URL in a browser, and watch your dashboard load. Note that when the dashboard loads, it will load without all of the code and Jupyter cells. Only the dashboard content will be displayed.
 
 If time remains, ask the following guiding question:
 

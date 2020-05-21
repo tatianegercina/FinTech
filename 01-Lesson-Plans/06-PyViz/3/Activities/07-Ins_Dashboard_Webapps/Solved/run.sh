@@ -1,1 +1,1 @@
-panel serve dashboard_webapps.ipynb
+panel serve dashboard_webapps.ipynb --log-level debug --show
