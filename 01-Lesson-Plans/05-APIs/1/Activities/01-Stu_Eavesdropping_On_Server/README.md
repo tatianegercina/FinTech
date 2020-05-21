@@ -10,15 +10,25 @@ Links to documentation for Firefox, Chrome, and Safari can be found [here](https
 
 Navigate to the below websites with the developer console open to review the exchanges between the client (browser) and server (websites visited).
 
-1. Open an internet browser, and launch the developer console. Consult the [documentation](https://support.airtable.com/hc/en-us/articles/232313848-How-to-open-the-developer-console) for help with getting the developer console open in your browser. Instruction is provided for each browser.
+1. Open an internet browser, and launch the developer console. Consult the following links for help with getting the developer console open. Instruction is provided for each browser.
 
-2. Select `requests`.
+    * [Open Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/open)
 
-    ![dev_console_reqs.png](Images/dev_console_reqs.png)
+    * [Firefox Browser Console](https://developer.mozilla.org/en-US/docs/Tools/Browser_Console)
 
-3. Navigate to `https://google.com`.
+    * [Open the Console developer tool in Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console)
+
+2. On the developer console, select `network`.
+
+    ![network_console](Images/network_console.gif)
+
+3. Navigate to `https://www.un.org/`.
 
 4. Review the output in the developer console. Compare the `POST` requests with the `GET` requests.
+
+    **Note:** In Google Chrome, you need to right-click on the column names and choose the `Method` option to visualize the `POST` and `GET` requests.
+
+    ![network_traffic](Images/network_traffic.gif)
 
 5. Scroll to the top of the console and identify the first request sent to the server. This was the first message sent by the client to the server when the site was accessed.
 
@@ -26,7 +36,7 @@ Navigate to the below websites with the developer console open to review the exc
 
 7. Review the output in the developer console.
 
-8. Visit `https://nasdaq.com` and search for a ticker. Review the developer console as you submit the request.
+8. Visit `https://finance.yahoo.com/` and search for a ticker. Review the developer console as you submit the request.
 
 9. Continue to navigate the internet with the developer console open. Take note of the type of requests that are sent for each site visited (how many POST vs GET). Also, take into consideration the differences in API URLs.
 
