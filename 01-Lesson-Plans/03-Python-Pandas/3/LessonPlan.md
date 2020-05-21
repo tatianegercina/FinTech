@@ -649,7 +649,7 @@ In this activity, students will get hands-on experience with combining multiple 
 
 ### 13. Instructor Do: Review Mastering Concatenation (5 min)
 
-In this part of the lesson, review the Mastering Concatenation activity with students. First, you will conduct a brief Q & A to test students' understanding, and then you will perform a dry walk-through of the solution.
+In this part of the lesson, review the Mastering Concatenation activity with students. You will start with a brief Q&A to test students' understanding, and then perform a dry walkthrough of the solution.
 
 **Files:**
 
@@ -663,7 +663,7 @@ In this part of the lesson, review the Mastering Concatenation activity with stu
 
 * [invstrs_leadership.csv](Activities/08-Stu_Concat_Dataframes/Resources/invstrs_leadership.csv)
 
-Start the review by conducting a Q & A with the following questions:
+Start the review by conducting a Q&A with the following questions:
 
 * If you want to consolidate two DataFrames with the same columns into one DataFrame, which `concat` axis would you use?
 
@@ -677,7 +677,7 @@ Start the review by conducting a Q & A with the following questions:
 
   **Answer:** Outer join. Inner joins represent only a section of all of the data.
 
-Open the solution and perform a dry-walkthrough review by covering the following points:
+Open the solution and perform a dry walkthrough by covering the following points:
 
 * The `concat` function can be used to combine or link more than one DataFrame.
 
