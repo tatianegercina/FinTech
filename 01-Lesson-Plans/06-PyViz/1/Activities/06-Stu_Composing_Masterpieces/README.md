@@ -40,4 +40,4 @@ Also, remember to sort data before plotting and leverage labels. This will help 
 
 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

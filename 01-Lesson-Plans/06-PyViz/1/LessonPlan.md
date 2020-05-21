@@ -296,7 +296,7 @@ Ask students if they have any questions before moving onto the next activity.
 
 In this activity, students revisit plots they made earlier in the class using Matplotlib, and they recreate them as hvPlots. This bridge assignment aims to demonstrate the similarities between the hvPlot plot API and Matplotlib's API.
 
-**Instructions**
+**Instructions:**
 
 * [README.md](Activities/02-Stu_Plotting_Visual_Takeover/README.md)
 
@@ -428,6 +428,8 @@ In this activity, students will play around with the hvPlot widgets to get more 
 **Files:**
 
 * [hvplot_widgets.ipynb](Activities/04-Stu_hvPlot_Widgets/Unsolved/hvplot_widgets.ipynb)
+
+---
 
 ### 11. Instructor Do: HvPlot Widgets Activity Review (10 min)
 

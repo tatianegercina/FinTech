@@ -26,6 +26,6 @@ Consider the questions below when thinking about the story.
 * How many bedrooms and full bathrooms do single-family homes tend to have?
 * When there are three bedrooms, how many full bathrooms are there usually?
 
+---
 
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

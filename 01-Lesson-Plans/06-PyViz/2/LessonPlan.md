@@ -58,10 +58,6 @@ The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-**Files:**
-
-* [Welcome-slides](https://docs.google.com/presentation/d/19qivsXUwDt_RDsHQ3qRJzgSXlDLEOJmsXpPqSFhxG9A/edit?usp=sharing)
-
 Welcome students back! Indicate that today will start day 2 of interactive visualizations using PyViz.
 
 Begin the class explaining to students that **hvPlot** is not the only visualization package that can be used to create interactive visualizations.
@@ -522,6 +518,8 @@ To complete this activity, a Mapbox API will be required. A personal key can be 
 
 Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/500-cities-local-data-for-better-health-fc759).
 
+Remember to create your `.env` file to set you Mapbox API key. You can use the `sample.env` file as template.
+
 **Files:**
 
 * [plotly_maps.ipynb](Activities/07-Ins_Mapbox_Demo/Unsolved/plotly_maps.ipynb)
@@ -546,7 +544,7 @@ Open the starter file, and live code the following. Make sure to have your Mapbo
 
   ```python
   # Extract token
-  mapbox_token = os.getenv("MAPBOX_API_KEY")
+  map_box_api = os.getenv("mapbox")
   ```
 
 * Once the environment variable is ready and available in Python, it can be registered with Plotly. Plotly provides a function to do this: `set_mapbox_access_token`.
@@ -554,7 +552,7 @@ Open the starter file, and live code the following. Make sure to have your Mapbo
   * Because Plotly Express will broker the client-server relationship, the Mapbox API key has to be set/registered with Plotly Express.
 
   ```python
-  px.set_mapbox_access_token(mapbox_token)
+  px.set_mapbox_access_token(map_box_api)
   ```
 
 * After the token is set with the `set_mapbox_access_token`, the Plotly Express mapbox plot functions can be used to create geographic plots.
@@ -565,12 +563,22 @@ Demonstrate how to create a map scatter plot using the Plotly Express `scatter_m
 
   ```python
   # Read in data
-  df = pd.read_csv(Path('../Resources/population_counts_reduced.csv')).drop_duplicates()
-  data_to_plot = df[['Year','PopulationCount','Latitude','Longitude']]
-  filtered_data = df[df['StateDesc'] == 'California']
+  df = pd.read_csv(Path("../Resources/population_counts.csv")).drop_duplicates()
+  data_to_plot = df[["Year", "PopulationCount", "Latitude", "Longitude"]]
+  filtered_data = df[df["StateDesc"] == "California"]
 
-  px.scatter_mapbox(filtered_data, lat='Latitude', lon='Longitude',
-                  size='PopulationCount', color='CityName')
+  # Plot Data
+  map = px.scatter_mapbox(
+      filtered_data,
+      lat="Latitude",
+      lon="Longitude",
+      size="PopulationCount",
+      color="CityName",
+      zoom=4
+  )
+
+  # Display the map
+  map.show()
   ```
 
   ![scatter_map_plot.gif](Images/scatter_map_plot.gif)
