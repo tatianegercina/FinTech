@@ -28,10 +28,10 @@ Open the terminal, and execute the following command to install `imbalanced-lear
 
 Once the `imbalanced-learn` download is complete, verify the installation completed successfully.
 
-* Use the `conda-list` function with a `grep` argument to identify if the `imbalanced-learn` library installed successfully.
+* Use the `conda-list package_name` name, substituting `package_name` with `imbalanced-learn` to verify the `imbalanced-learn` library installed successfully.
 
   ```shell
-  conda list | grep imbalanced-learn
+  conda list imbalanced-learn
   ```
 
   ![Verify imbalanced-learn installation](Images/imbalanced_learn_verify.png)
@@ -54,18 +54,12 @@ conda install -c conda-forge pydotplus
 
 Once the `pydotplus` and the additional libraries download is complete, verify the installation completed successfully.
 
-* Open the terminal (Git Bash in Windows), and use the `conda-list` function with a `grep` argument to identify if the `pydotplus` and `graphviz` libraries installed successfully.
+* Open the terminal and use the `conda list graphviz` and `conda list pydotplus` commands to identify if the `pydotplus` and `graphviz` libraries installed successfully.
 
-  ```shell
-  conda list | grep -E 'pydotplus|graphviz'
-  ```
+  ![Verify graphviz installation](Images/graphviz-verify.png)
 
-  _Installation verification in macOS_
-  ![Verify pydotplus macOS installation](Images/pydotplus-verify.png)
+  ![Verify pydotplus installation](Images/pydotplus-verify.png)
 
-  _Installation verification in Windows_
-
-  ![Verify pydotplus Windows installation](Images/pydotplus_windows_check.png)
 
 ## Troubleshooting
 
