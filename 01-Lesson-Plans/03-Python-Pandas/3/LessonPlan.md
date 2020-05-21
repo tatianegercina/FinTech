@@ -130,7 +130,7 @@ As students work on the activity, circulate the room with the TAs to offer assis
 
 If a student finishes the activity early, ask if they are willing to help present the solution by live coding how to sort a DataFrame by more than one column. This live-coding exercise will be completed in the activity review (the next part of the lesson).
 
-If the student agrees, spend up to 5 minutes with them reviewing the following scenario.
+If the student agrees, spend up to five minutes with them reviewing the following scenario.
 
 **Scenario:**
 
@@ -149,7 +149,7 @@ Sort the data alphabetically by country. Then, present the data so that the meda
 
 Review the sorting activity by having a student participate in a live-coding exercise in front of the class. This exercise should be completed only if the student feels comfortable and previously agreed to participate.
 
-Skip to the dry walk-through of the activity solution if you do not have a student who can live code this activity.
+Skip to the dry walkthrough of the activity solution if you do not have a student who can live code this activity.
 
 **Files:**
 
@@ -165,7 +165,7 @@ Ask the student to live code a solution to the given scenario. If the student lo
 
     **Answer:** List the columns to sort by in a comma-separated list.
 
-* Can you use a list to tell Pandas to sort some columns by ascending values and others by descending values?
+* Can you use a list to tell Pandas to sort some columns by ascending values, and others by descending values?
 
     **Answer:** Yes. The `ascending` parameter can be used to sort columns by ascending values. The default value is `True`. `False` will sort in descending order. The `ascending` parameter accepts a list of Boolean responses when data is sorted by more than one column.
 
@@ -180,9 +180,9 @@ There's a DataFrame named `df` that contains Olympic medal data (gold, silver, a
 
 Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by the number of medals awarded in descending order. (The medals awarded most should be at the top.)
 
-**Dry Walk-Through of the Solution:**
+**Dry Walkthrough of the Solution:**
 
-Do this dry walk-through in place of the live-coding exercise if you do not have a student volunteer.
+Do this dry walkthrough in place of the live-coding exercise if you do not have a student volunteer.
 
 Open the solution and explain the following:
 
@@ -218,7 +218,7 @@ This section focuses on grouping and aggregating data. Grouping data is particul
 
 * [crypto_data.csv](Activities/03-Ins_Groupby/Resources/crypto_data.csv)
 
-Open the lesson slides, move to the "Grouping" section and introduce the `groupby` function by explaining the following:
+Open the lesson slides, move to the "Grouping" section, and introduce the `groupby` function by explaining the following:
 
 * A common technique in data analysis is to summarize data by grouping similar values.
 
@@ -240,7 +240,7 @@ Open the lesson slides, move to the "Grouping" section and introduce the `groupb
 
   * The `groupby` function splits data into groups. Once groups are created, a function or operation can be executed against each group (e.g., addition).
 
-  * Data must be grouped using `groupby` before the values in each group can be aggregated. This ensures data is aggregated at the group level rather than at the column level.
+  * Data must be grouped using `groupby` before the values in each group can be aggregated. This ensures data is aggregated at the group level, rather than at the column level.
 
   ![Visual data grouping](Images/visual_grouping.png)
 
@@ -276,7 +276,7 @@ Start the live demonstration of how to use the `groupby` function. Open the unso
 
   ![multi_group_count.png](Images/multi_group_count.png)
 
-* We may want to round the prices; we can do that using the `round` function of the DataFrame, next we can group the data again.
+* We may want to round the prices; we can do that using the `round` function of the DataFrame, then we can group the data again.
 
   ![multi_group_round_count.png](Images/multi_group_round_count.png)
 
