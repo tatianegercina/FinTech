@@ -56,18 +56,18 @@ Open a terminal and execute the following commands to install `web3.py` and `bit
 
 Once the `web3.py` and `bit` modules are downloaded and installed, verify that both installations completed successfully. Windows users **MUST** use `git-bash` in this section.
 
-* Use the `pip list` function with a `grep` argument to identify if the `web3` library installed successfully.
+* Use the `conda list package_name` command, substituting `package_name` with `web3` to verify if the `web3` library installed successfully.
 
   ```shell
-  pip list | grep web3
+  conda list web3
   ```
 
   ![web3-verify](Images/web3-verify.png)
 
-* Use the `conda list` function with a `grep` argument to identify if the `bit` library installed successfully.
+* Use the `conda list package_name` command, substituting `package_name` with `bit` to verify if the `bit` library installed successfully.
 
   ```shell
-  pip list | grep bit
+  pip list bit
   ```
 
   ![bit-verify](Images/bit-verify.png)
