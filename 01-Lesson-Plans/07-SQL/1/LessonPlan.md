@@ -140,8 +140,8 @@ CREATE TABLE customer (
   age INT,
   address VARCHAR(50),
   city VARCHAR(50),
-  state CHAR(2),
-  zip_code CHAR(5)
+  province CHAR(2),
+  postal_code CHAR(6)
 );
 ```
 
@@ -159,9 +159,9 @@ CREATE TABLE customer (
 
 * `city VARCHAR(50)` creates a `city` column that represents the city in which the customer lives. The column values can hold character strings of up to 50 characters.
 
-* `state VARCHAR(10)` creates a `state` column that represents the province ticker in which the customer lives. The column values must be character strings of 2 characters.
+* `province CHAR(2)` creates a `province` column that represents the province ticker in which the customer lives. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values *must* be character strings of 2 characters.
 
-* `zip_code CHAR(5)` creates a `zip_code` column which represents the postal code of the customer. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values *must* be character strings of 5 characters.
+* `postal_code CHAR(6)` creates a `postal_code` column which represents the postal code of the customer. The CHAR datatype ensures that the column values *must* be character strings of 6 characters.
 
 **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
 
