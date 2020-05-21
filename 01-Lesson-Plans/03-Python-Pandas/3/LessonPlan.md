@@ -480,7 +480,7 @@ In this activity, students will use hierarchical indexes to gain access to histo
 
 ### 9. Instructor Do: Review Indexing Fever (5 min)
 
-In this section, you will perform a dry walk-through of the solution for the Indexing Fever activity that students just completed.
+In this section, you will perform a dry walkthrough of the solution for the Indexing Fever activity.
 
 **Files:**
 
@@ -488,7 +488,7 @@ In this section, you will perform a dry walk-through of the solution for the Ind
 
 * [bombardier_stock_data.csv](Activities/06-Stu_Multi_Indexing/Resources/bombardier_stock_data.csv)
 
-Open challenge solved version to review the solution, covering the following points:
+Open the solved version to review the solution, and cover the following points:
 
 * `read_csv` accepts arguments that make creating indexes easy. Passing a column name to the `read_csv` `index_col` parameter will create a DataFrame index based on the values in that series.
 
@@ -505,7 +505,7 @@ Open challenge solved version to review the solution, covering the following poi
 
 * Multi-indexing is used to create multiple lookup points for data, as well as hierarchal relationships between data elements.
 
-* Multi-indexing will enable users to index data with more than one data element (e.g., `year` and `month`).
+* Multi-indexing enables users to index data with more than one data element (e.g., `year` and `month`).
 
 * Multi-indexing is valuable because it enables data to be indexed with more than one column. Using multi-indexing, especially with date series, ensures that financial data can be stored and accessed by date.
 
@@ -515,7 +515,7 @@ Open challenge solved version to review the solution, covering the following poi
 
 * Grouped data can be selected by using the `first` and `last` functions. These will return the first group of grouped items and the last group, respectively.
 
-* When using a `DateTimeIndex`, data can be grouped by date. Components of date (i.e. year or month) can be accessed using `index.year` and `index.month`.
+* When using a `DateTimeIndex`, data can be grouped by date. Components of date (i.e., year or month) can be accessed using `index.year` and `index.month`.
 
   ![Multi_Indexing_Groupby.png](Images/Multi_Indexing_Groupby.png)
 
