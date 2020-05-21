@@ -51,6 +51,7 @@ By the end of this class, students will be able to:
 * Have your TAs keep track of the time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [6.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=10e96d93-f5d1-4563-910f-aab600c8d69d) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
@@ -66,7 +67,6 @@ By the end of this class, students will be able to:
 ---
 
 ### 1. Instructor Do: Welcome (5 min)
-
 
 Welcome to Unit 6! Unit 6 is dedicated to introducing and teaching students all they need to know about data visualization using the PyViz visualization platform.
 
@@ -87,7 +87,9 @@ Navigate to the 6.1 slides, and highlight the following:
 Transition into a demonstration of the types of visualizations that can be made using PyViz:
 
 * Interactive visualizations allow data to be explored and analyzed in the most efficient and effective manner for human eyes.
+
 * Interactive visualizations give users the ability to pan, zoom, and filter data elements and values.
+
 * Interactive visualizations also include functionality that allows data to be sorted off different values based off a simple click.
 
 End the module communicating to students that gone are the days where simple line, bar, and histogram charts satisfied data visualization and data analysis needs. Students will now learn how to create interactive and innovative visualizations.
@@ -120,6 +122,8 @@ Navigate to the Unit 6 Homework Instructions, and communicate the following to t
 
 Demo the homework solution by giving the students a preview of the solution.
 
+![dashboard-demo.gif](Images/dashboard-demo.gif)
+
 Ask the students for any questions before moving forward.
 
 ---
@@ -127,7 +131,6 @@ Ask the students for any questions before moving forward.
 ### 3. Instructor Do: Intro to PyViz (5 min)
 
 Students will be introduced to PyViz by way of a facilitated discussion led by the instructor. The discussion will focus on the advantages of using PyViz rather than individual technologies (HoloViews, Matplotlib, D3.js, etc.).
-
 
 Communicate to students that the Python environment comes packed with a number of different visualization technologies that have all been wrapped together into one platform called PyViz.
 
@@ -161,7 +164,6 @@ Ask if there are any questions; then, move onto the next module.
 
 Students participate in a formal lecture regarding what hvPlot is and what it has to offer in terms of data visualization.
 
-
 Navigate to the 6.1 slides, and introduce students to the world of hvPlot interactive graphs!
 
 * Explain to students that hvPlot is a technology that brings plots to life.
@@ -184,7 +186,7 @@ Navigate to the 6.1 slides, and introduce students to the world of hvPlot intera
 
 Encourage students to review some of the [example plots](https://hvplot.pyviz.org/) on their own time. Make sure to slack out this link.
 
-```
+```text
 https://hvplot.pyviz.org/
 ```
 
