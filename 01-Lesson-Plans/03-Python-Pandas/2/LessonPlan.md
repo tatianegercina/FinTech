@@ -24,7 +24,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today’s lesson will introduce students to Pandas. Students may be confused as to why they are using Pandas now, having just learned Python. Help them understand the relationship between Python and Pandas, and why it makes sense at this point to transition to Pandas. Discuss Pandas from a Pythonic point of view and emphasize that Pandas is written in Python. Underscore that Pandas is Python code that a user wrote for financial analytics; instead of hoarding their code in the depths of a hard drive, the creators packaged the functions and made them publicly available.
+* Today’s lesson will introduce students to Pandas. Students may be confused as to why they are using Pandas now, having just learned Python. Help them understand the relationship between Python and Pandas, and why it makes sense at this point to transition to Pandas. Discuss Pandas from a Pythonic point of view, and emphasize that Pandas is written in Python. Underscore that Pandas is Python code that a user wrote for financial analytics–instead of hoarding their code in the depths of a hard drive, the creators packaged the functions and made them publicly available.
 
 * The lesson starts by covering technical concepts like reading in CSV files and checking for nulls, and then progresses to more advanced skills, such as calculating daily and cumulative investment returns. Keep in mind that not all students have a finance background and may not understand returns right away. Leverage the knowledge of finance-savvy students in the class and encourage them to help their partners if they get stuck. Be sure to allow enough time for students to ask questions at the end of each section.
 
