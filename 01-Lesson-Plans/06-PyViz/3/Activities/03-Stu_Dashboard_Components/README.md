@@ -28,4 +28,4 @@ If time remains, complete the challenge activity by converting an hvPlot to a Pa
 
 - - -
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

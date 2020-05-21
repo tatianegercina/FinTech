@@ -18,10 +18,6 @@ Open the [starter file](Unsolved/Core/plotting_visual_takeover.ipynb) and code t
 
 Create an hvplot chart of kind **scatter**.
 
-
-
-
-
 ------
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

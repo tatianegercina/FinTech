@@ -38,6 +38,6 @@ Use the `reset_index` function whenever an index field needs to be manipulated o
 
 Dropping nulls after concatenation will ensure that data relationships are preserved. This will ensure partial data is not being reported on.
 
+---
 
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
