@@ -68,7 +68,9 @@ A blockchain is an ever-growing list of records, called blocks, that are linked 
 </details>
 <details><summary>Why do we need blockchain?</summary><br>
 
-Blockchain has become more and more important to our world for many reasons. They can generally be summed up by **The Five Pillars of Blockchain**:
+We need blockchain because It solves the fundamental problem of trust between organizations and their affiliated parties, eg (Citizens, Customers, Vendors).
+
+This is achieved thanks to the methodologies in **The Five Pillars of Blockchain**:
 
 <blockquote>
 <details><summary>Open</summary><br>
@@ -123,7 +125,7 @@ Blockchain has become more and more important to our world for many reasons. The
 
 - These public systems are built by the people, for the people, and are governed by the people.
 </details>
-</blockquote>
+</blockquote><br>
 </details>
 
 <details><summary>If the blockchain is decentralized, where is it stored?</summary><br>
