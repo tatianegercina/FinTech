@@ -783,7 +783,7 @@ In this section, students will be introduced to Sharpe ratios and learn why risk
 
 Explain to students that understanding how to identify risk and assess investment performance will help them adjust for risk to maximize reward.
 
-Open the slideshow, move to the "Sharpe Ratios" section and provide an overview of Sharpe ratios and how they are calculated. Cover the following points:
+Open the slideshow, move to the "Sharpe Ratios" section, and provide an overview of Sharpe ratios and how they are calculated. Cover the following points:
 
 * **Sharpe ratios** are used to help compare the rate of return for an investment with its risk. Sharpe ratios shed light on the potential of profits, even with the risk involved.
 
@@ -793,9 +793,9 @@ Open the slideshow, move to the "Sharpe Ratios" section and provide an overview 
 
   ![sharpe_ratio_formula.png](Images/sharpe_ratio_formula.PNG)
 
-Open the unsolved Jupyter notebook and live code on how to calculate and plot sharpe ratios. Explain the following as part of the demo:
+Open the unsolved Jupyter notebook and live code on how to calculate and plot Sharpe ratios. Explain the following as part of the demo:
 
-* To calculate sharpe rations in this demo, we will use data from two files with stock data from diverse technology companies.
+* To calculate Sharpe ratios in this demo, we will use data from two files with stock data from diverse technology companies.
 
 * After loading the data, we calculate daily returns and concatenate the resulting DataFrames using a `join` operation to compare prices on the same dates.
 
@@ -807,7 +807,7 @@ Open the unsolved Jupyter notebook and live code on how to calculate and plot sh
 
   ![sharpe_ratios.png](Images/sharpe_ratios.png)
 
-* The return-to-risk ratio can be used to determine which stocks and/or portfolios have outperformed the others—the higher the sharpe ratio, the better the investment.
+* The return-to-risk ratio can be used to determine which stocks and/or portfolios have outperformed the others—the higher the Sharpe ratio, the better the investment.
 
 * The `plot` function is used to compare Sharpe ratios visually.
 
@@ -819,7 +819,7 @@ Answer any questions before moving on.
 
 ### 16. Student Do: Risky Business (15 min)
 
-It's time to put it all together. In this activity, students will prep data and use standard deviation and Sharpe ratios to analyze cryptocurrency portfolio performance. The goal is to calculate which portfolio has the highest risk. Students will also identify which individual cryptos have had the highest return. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
+Now, it's time to put it all together! In this activity, students will prep data and use standard deviation and Sharpe ratios to analyze cryptocurrency portfolio performance. The goal is to calculate which portfolio has the highest risk. Students will also identify which individual cryptos have had the highest return. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
 Encourage students to work in pairs to complete this activity.
 
@@ -847,7 +847,7 @@ Encourage students to work in pairs to complete this activity.
 
 * [my_portfolio.csv](Activities/11-Stu_Risky_Business/Resources/my_portfolio.csv)
 
-Open the solution, conduct a dry-walkthrough review  and highlight the following:
+Open the solution, conduct a dry walkthrough review, and highlight the following:
 
 * It's important to remember to clean data before beginning to analyze and compute calculations with it. Remember to use the `dropna` function to remove `NaN` values. If the `dropna` function is not used, `NaN` values may end up becoming indexes.
 
@@ -913,29 +913,29 @@ Ask students the following questions:
 
 * How many smart investments did Harold make compared to risky investments? How many did you make?
 
-    **Answer:** Out of his ten investments, Harold only made four good investments. Out of the students' six investments, three of them were smart investments.
+    **Answer:** Out of his ten investments, Harold only made four smart investments. Out of the students' six investments, three of them were smart investments.
 
-* Which cryptos are the smartest investments?
+* Which cryptos were the smartest investments?
 
-    **Answer:** DOGE, TRON, and XML are the smartest crypto investments.
+    **Answer:** DOGE, TRON, and XML were the smartest crypto investments.
 
 For the challenge section, the first step is to compute the annualized standard deviation for each portfolio.
 
 ![cryto_stu_annual_std](Images/cryto_stu_annual_std.png)
 
-Next, the share ratios for each portfolio are calculated.
+Next, the Sharpe ratios for each portfolio are calculated.
 
 ![crypto_stu_sharpe_ratios](Images/crypto_stu_sharpe_ratios.png)
 
-To decide who has the smartest portfolio, the average sharpe ratios are calculated and compared.
+To decide who has the smartest portfolio, the average Sharpe ratios are calculated and compared.
 
 ![crypto_stu_final](Images/crypto_stu_final.png)
 
 Conclude the review by asking students the following question:
 
-* Which portfolio is the smartest investment, based on risk to reward ratio?
+* Which portfolio was the smartest investment, based on risk to reward ratio?
 
-  **Answer:** My portfolio is the smartest! Harold owes me 5 dollars.
+  **Answer:** My portfolio was the smartest! Harold owes me 5 dollars.
 
 Answer any questions before moving on.
 
@@ -943,7 +943,7 @@ Answer any questions before moving on.
 
 ### 18. Instructor Do: Structured Review (35 mins)
 
-**Note:** If you are teaching this lesson on a weeknight, please save this 35 minute review for the next Saturday class.
+**Note:** If you are teaching this lesson on a weeknight, please save this 35-minute review for the next Saturday class.
 
 Please use the entire time to review questions with the students before officially ending class.
 
