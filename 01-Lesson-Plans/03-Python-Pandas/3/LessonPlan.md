@@ -2,7 +2,7 @@
 
 ### Overview
 
-In the last class, students got their hands dirty using Pandas to read, clean, and analyze financial data over time. Today's lesson will continue this trajectory as students learn how to use Pandas to conduct time series analysis to calculate risks and returns over time. Learning this skill will allow students to manage all of the financial data they will inevitably encounter in FinTech. In this lesson students will also learn how to group data and apply multi-indexing to a DataFrame to improve the analysis and visualization of stock exchange data.
+In the last class, students got their hands dirty using Pandas to read, clean, and analyze financial data over time. Today's lesson continues this trajectory, as students learn how to use Pandas to conduct time series analysis to calculate risks and returns over time. This skill will allow students to manage all the financial data they encounter in FinTech. Students will also learn how to group data and apply multi-indexing to a DataFrame to improve the analysis and visualization of stock exchange data.
 
 ### Class Objectives
 
@@ -26,15 +26,15 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Prepare for the lesson by running the code examples and reviewing the lectures before class. Today's lesson will be a quantum leap for students as they move beyond the basics of Pandas to more advanced concepts that can be applied to risk analysis use cases. You will need to clearly articulate what you are doing in each live demo and why, from a financial point of view. This is especially true for the standard deviation and Sharpe ratio activities.
+* Prepare for the lesson by running the code examples and reviewing the lectures before class. Today's lesson will be a quantum leap for students, as they move beyond the basics of Pandas to more advanced concepts that can be applied to risk analysis use cases. You must clearly articulate what you are doing in each live demo and why, from a financial point of view. This is especially true for the standard deviation and Sharpe ratio activities.
 
 * Throughout the lesson, be sure to underscore how Pandas lessens the burden of analysis by providing financial functions such as `MultiIndex` and `groupby()`. Students will learn the practical applications of these concepts by analyzing cryptocurrencies and stock exchange data. For example, tell students they can use the `groupby` function to automatically consolidate data to calculate an average, rather than organizing two years’ worth of daily returns data for each cryptocurrency in an Excel file. Similarly, instead of having to create a `groupby` function themselves, students get to use the Pandas function for free.
 
-* The sections on grouping and multi-indexing contain abstract concepts that can be difficult to grasp without a visual representation. Therefore, be sure to show the slides before walking through the demos to give students a chance to absorb the information.
+* The sections on grouping and multi-indexing contain abstract concepts that can be difficult to grasp without a visual representation. Therefore, be sure to show the slides before walking through the demos so students can absorb the information.
 
-* Be mindful of the class pacing; the pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage students who are confused about attending office hours.
+* Be mindful of the class pacing; it should feel urgent, not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage any struggling students to attend office hours.
 
-* Encourage students to work in pairs or groups on the in-class activities to help facilitate discussions as well as troubleshooting. Collaborative exercises such as student-led activity reviews and discussions have been built into this lesson.
+* Encourage students to work in pairs or groups on the in-class activities, to help facilitate discussions as well as troubleshooting. Collaborative exercises such as student-led activity reviews and discussions have been built into this lesson.
 
 * Have your TAs keep track of time with the Time Tracker.
 
@@ -50,31 +50,31 @@ By the end of class, students will be able to:
 
 * Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome and Intro to Sorting (10 min)
 
-In this section, you will provide an overview of today's lesson, and then you will introduce students to sorting.
+In this section, you will provide an overview of today's lesson and then introduce students to sorting.
 
 **Files:**
 
 * [sort_dataframe.ipynb](Activities/01-Ins_Sorting/Solved/sort_dataframe.ipynb)
 
-Welcome students to the second day of Pandas, open the lesson slides to explain the focus of today's class and highlight the following:
+Welcome students to the second day of Pandas. Open the lesson slides to explain the focus of today's class and highlight the following:
 
 * You will leverage your data cleaning, indexing, and visualization skills from Day 1 to sort, group, multi-index, and concatenate multiple financial datasets for daily returns and investment risk analysis.
 
 * By the end of the lesson, you will have used Pandas to compare two portfolios and identify which is the smarter investment.
 
-Continue with the lesson slides, move to to the `Sorting` section and highlight the following:
+Move to the `Sorting` section of the slideshow, and highlight the following:
 
 * When you work with financial data, it is common to sort values in ascending or descending order. Data is not always organized in the best way for analysis. Sometimes, data needs to be cleaned and sorted.
 
 * Pandas provides a function for this called `sort_values` that will sort a DataFrame by a column.
 
-* Using `sort_values`, data can be sorted in either ascending or descending order. This is especially important when you are dealing with dates, would you rather see dates sorted or randomly listed?
+* Using `sort_values`, data can be sorted in ascending or descending order. This is especially important when dealing with dates. What makes more sense–sorting dates, or randomly listing them?
 
 * This function can be used to find the highest or lowest daily returns from stock data.
 
@@ -96,15 +96,15 @@ Open the file `sort_dataframe.ipynb` and highlight the following:
 
   ![sort index](Images/sort_index.png)
 
-* Additionally we can set a new index and *then* sort.  In the following example, we set the `Price` column as the index and then sort based on descending price values.
+* We can also set a new index and *then* sort.  In the following example, we set the `Price` column as the index and then sort based on descending price values.
 
   ![set-index-sort.png](Images/set-index-sort.png)
 
-Close this activity by highlighting the following about sorting and the skills that students will learn in today's class:
+Close this activity by highlighting the following about sorting, and the skills that students will learn in today's class:
 
 * Today's activities will provide the foundation you need to begin grouping and aggregating data.
 
-* It's common to group and aggregate financial data by some different metrics, including dates, tickers, and categories.
+* It's common to group and aggregate financial data by different metrics, including dates, tickers, and categories.
 
 * Example use cases include determining the average close price for a list of stock tickers and aggregating data (summing, adding, averaging) over time (e.g., 3-month intervals).
 
