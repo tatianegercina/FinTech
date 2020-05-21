@@ -695,7 +695,7 @@ Answer any questions before moving on.
 
 ### 14. Instructor Do: Standard Deviation and Risk (10 min)
 
-This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate the standard deviation using Pandas. Students will need the concepts covered in this section to calculate Sharpe ratios in the next activity.
+This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate the standard deviation using Pandas. Students will use the concepts covered in this section to calculate Sharpe ratios in the next activity.
 
 **Files:**
 
@@ -711,9 +711,9 @@ Explain to students that everything completed in class up until this point has b
 
 * With daily returns calculated, and data from multiple portfolios combined into one dataset, you are now able to complete a holistic analysis of stock data.
 
-* One component of risk is calculating the mean performance or price of a stock. The second is calculating the standard deviation.
+* One component of risk is calculating the mean performance, or price, of a stock. The second is calculating the standard deviation.
 
-* The **mean** can be used to determine the average value of a portfolio or stock overtime. This can serve as a baseline for measuring risk and value: a portfolio/stock performing above average is more valuable; investing in a portfolio or buying a stock performing below average is risky business.
+* The **mean** can be used to determine the average value of a portfolio or stock over time. This can serve as a baseline for measuring risk and value: a portfolio/stock performing above average is more valuable; investing in a portfolio or buying a stock performing below average is risky business.
 
 * A common technique for measuring how far away an asset is from the mean is calculating the standard deviation. **Standard deviation** identifies precisely how far away a value is from the average.
 
@@ -727,9 +727,9 @@ Explain to students that everything completed in class up until this point has b
 
 * Standard deviation can be used to determine the risk associated with an investment. Standard deviation is also used to calculate how much returns have been distributed from the average.
 
-* The higher the standard deviation, the greater the risk and the potential for a higher payout.
+* The higher the standard deviation, the greater the risk, and the potential for a higher payout.
 
-End the presentation and open the unsolved Jupyter notebook. Live code how to use Pandas to calculate standard deviation to evaluate risk and highlight the following:
+End the presentation and open the unsolved Jupyter notebook. Live code how to use Pandas to calculate standard deviation to evaluate risk, highlighting the following:
 
 * For this demo, we will use stock data from some popular technology companies.
 
@@ -739,7 +739,7 @@ End the presentation and open the unsolved Jupyter notebook. Live code how to us
 
   ![risk_daily_returns](Images/risk_daily_returns.png)
 
-* Calculating standard deviation against daily returns will help identify risk based on return value rather than price volatility.
+* Calculating standard deviation against daily returns will help identify risk based on return value, rather than price volatility.
 
 * The `std` Pandas function can be used to determine the risk associated with a portfolio or stock. Behind the scenes, the `std` function calculates the mean/average, and then it evaluates how far away from the average the input is. The function returns a new DataFrame.
 
