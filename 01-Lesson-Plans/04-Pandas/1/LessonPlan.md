@@ -120,7 +120,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution and hi
 
   ![correlation_data](Images/correlation_data.png)
 
-* Before verify the correlation between these two variables, we will concatenate both DataFrames.
+* Before verifying the correlation between these two variables, we will concatenate both DataFrames.
 
   ![correlation_concat_data](Images/correlation_concat_data.png)
 
@@ -144,19 +144,19 @@ Open the unsolved version of the Jupyter notebook, live code the solution and hi
 
   ![correlation.png](Images/correlation.png)
 
-* Pandas doesn't offer a plot to visualize correlation, so we will `Seaborn`, a popular Python data visualization library that is built-in in Anaconda to create a heat map plot. In later units, we will learn about even more advanced plotting libraries.
+* Pandas doesn't offer a plot to visualize correlation, so we will use `Seaborn`, a popular Python data visualization library that is built-in in Anaconda to create a heat map plot. In later units, we will learn about even more advanced plotting libraries.
 
-* The `heatmap` function from the `seaborn` library colour codes the different variations in a correlation table. This is particularly useful when there are many variables in a correlation table.
+* The `heatmap` function from the `Seaborn` library colour codes the different variations in a correlation table. This is particularly useful when there are many variables in a correlation table.
 
 * When you are plotting correlations, it's useful to set the parameters `vmin=-1` and `vmax=1` to set a suitable range for the colour map.
 
   ![correlation_seaborn.png](Images/correlation-seaborn.png)
 
-* Remember that correlation does not imply causation!
+* Remember: Correlation does not imply causation!
 
   * Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents`, this does not mean that buying more ice cream causes people to drown; it merely means that there is a positive relationship between the numbers.
 
-  * Chances are there is another factor at play that results in this positive correlation. One possible factor is that as temperature increases (during the summer months), people tend to both eat more ice cream and go swimming.
+  * Chances are there is another factor at play that results in this positive correlation. One possiblity is that as the temperature increases (during the summer months), people tend to both eat more ice cream, and go swimming.
 
 Explain to students that **Regression analysis** is a method we'll learn in a later unit that can measure multiple relationships at the same time (e.g., the effect of both weather and income on ice cream sales). This explanation may not solve our problem of confusing correlation with causation, but it will help us better tease out economic relationships from multiple influences. Close this activity by asking the following question:
 
@@ -164,7 +164,7 @@ Explain to students that **Regression analysis** is a method we'll learn in a la
 
   **Answer:** Investigating the correlations of returns among stocks in a portfolio can help analysts properly diversify their portfolios and mitigate risk and volatility.
 
-  Non-correlated stocks in a portfolio tend to cancel out large swings in volatility; one stock may increase in price while another may decrease in price rather than all stocks increasing or all stocks decreasing.
+  Non-correlated stocks in a portfolio tend to cancel out large swings in volatility; one stock may increase in price, while another may decrease in price, rather than all stocks increasing or all stocks decreasing.
 
 Answer any questions before moving on.
 
