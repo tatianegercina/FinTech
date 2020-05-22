@@ -68,7 +68,7 @@ Welcome to the third day of Pandas! Open the slideshow and introduce the concept
 
 ### 2. Instructor Do: Introduction to Portfolios and Correlation (15 min)
 
-In this activity, you will use a discussion format to introduce stock portfolios and some of the particular regulations in Canada for FinTech companies. Also, this activity introduces students to the concept of correlation, or the positive or negative relationship between two variables.
+In this activity, you will use a discussion format to introduce stock portfolios and some of the particular regulations in Canada for FinTech companies. This activity also introduces students to the concept of correlation, or the positive or negative relationship between two variables.
 
 **Files:**
 
@@ -78,7 +78,7 @@ In this activity, you will use a discussion format to introduce stock portfolios
 
 * [ice_cream.csv](Activities/01-Ins_Correlation/Resources/ice_cream.csv)
 
-Open the lesson slides, move to the "Introduction to Portfolios" section and ask students the following questions about portfolios and then explain the corresponding answers:
+Open the lesson slides, move to the "Introduction to Portfolios" section and review the following Q&A with students:
 
 * What is an investment portfolio?
 
@@ -90,19 +90,19 @@ Open the lesson slides, move to the "Introduction to Portfolios" section and ask
 
 * Why are stock portfolios better than single stock investments?
 
-  **Answer:** Single stock investments are risky in that they represent the "all eggs in one basket" problem. If the performance of a single stock fails, then so does the entirety of one's investment (as it is tied only to that particular stock). However, by grouping multiple stocks, the risk is minimized or spread throughout the portfolio; a single stock might fail, but others can continue to succeed.
+  **Answer:** Single stock investments are risky as they represent the "all eggs in one basket" problem. If the performance of a single stock fails, then so does the entirety of one's investment (as it is tied only to that particular stock). However, by grouping multiple stocks, the risk is minimized, or spread throughout the portfolio. While a single stock might fail, others can continue to succeed.
 
 * What is a stock market index?
 
-  **Answer:** Similar to a stock portfolio, a stock market index is a collection of stocks used to gauge the performance of a particular area within the stock market. For example, a popular stock market index is the S&P TSX 60, a collection of sixty large companies listed on the Toronto Stock Exchange and serves as a general health indicator of the overall Canadian stock market.
+  **Answer:** Similar to a stock portfolio, a stock market index is a collection of stocks used to gauge the performance of a particular area within the stock market. For example, a popular stock market index is the S&P TSX 60, a collection of 60 large companies listed on the Toronto Stock Exchange which serves as a general health indicator of the overall Canadian stock market.
 
 * Why do stock market indexes matter?
 
-  **Answer:** Stock market indexes, like the S&P TSX 60, serve as general health indicators for particular areas in the stock market. However, they also serve as benchmarks to compare performances of portfolios. For example, how does the performance of one's stock portfolio compare to that of the S&P TSX 60 or the general stock market?
+  **Answer:** Stock market indexes, like the S&P TSX 60, serve as general health indicators for particular areas in the stock market. They are also used as benchmarks to compare performances of portfolios. For example, how does the performance of one's stock portfolio compare to that of the S&P TSX 60 or the general stock market?
 
-Continue the presentation by moving to the "Correlation" section in the lesson slides and highlight the following:
+Continue the presentation by moving to the "Correlation" section of the slideshow, and highlight the following:
 
-* **Correlation** is the measure of a positive, negative, or neutral (random) relationship between two variables. For example, there is often a positive correlation between height and weight; that is, as you grow in height, you tend to weigh more.
+* **Correlation** is the measure of a positive, negative, or neutral (random) relationship between two variables. For example, there is often a positive correlation between height and weight; that is, as your height increases, you tend to weigh more.
 
 * Two given variables may have a positive or negative correlation.
 
@@ -110,7 +110,7 @@ Continue the presentation by moving to the "Correlation" section in the lesson s
 
   * A **negative correlation** is a relationship between two variables in which one variable increases as the other decreases, and vice versa.
 
-* Regardless of two variables that may be correlated, you must be aware that correlation doesn't imply causation, as you will see next in the demo.
+* Regardless of two variables that may be correlated, be aware that correlation doesn't mean causation, as you will see in this next demo.
 
 Open the unsolved version of the Jupyter notebook, live code the solution and highlight the following:
 
