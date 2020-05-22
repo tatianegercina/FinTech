@@ -62,7 +62,7 @@ Follow the next steps to install PyViz and all its dependencies in your Python v
 
       jupyter labextension install plotlywidget@4.6.0 --no-build
 
-      jupyter labextension install @pyviz/jupyterlab_pyviz
+      jupyter labextension install @pyviz/jupyterlab_pyviz --no-build
       ```
 
     * Build the extensions (This may take a few minutes)
