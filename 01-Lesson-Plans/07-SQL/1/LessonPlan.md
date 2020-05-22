@@ -122,6 +122,14 @@ Answer any questions before moving on.
 
 In this activity, you will walk students through the process of creating a table and manipulating its contents in PostgreSQL.
 
+**Files:**
+
+* [query.sql](Activities/02-Ins_Creating_Tables/Solved/query.sql)
+
+* [schema.sql](Activities/02-Ins_Creating_Tables/Solved/schema.sql)
+
+* [seed.sql](Activities/02-Ins_Creating_Tables/Solved/seed.sql)
+
 Now that there is a database on the server, it's time to dig into the real meat of SQL and start creating tables within the new database!
 
 From the left-hand menu in pgAdmin, right-click "example_db" and select Query Tool.
@@ -267,7 +275,7 @@ In this activity, students will use pgAdmin to recreate and query a table from a
 
 * [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql)
 
-Create a new database named `state_info` in pgAdmin. Then use the the schema.sql and seed.sql files to create and populate the `states` table. Use the query.sql file to walk through the correct queries.
+Create a new database named `state_info` in pgAdmin. Then use the the `schema.sql` and `seed.sql` files to create and populate the `states` table. Use the query.sql file to walk through the correct queries.
 
 * To create a new table, specify the data type for each column.
 
@@ -309,7 +317,7 @@ Create a new database named `state_info` in pgAdmin. Then use the the schema.sql
 
 * Note the syntax here. Even though the code can fit on a single line, it's good practice to split it up over two lines instead. This way, the code is easier to read when more advanced queries are created.
 
-* Using the `SELECT` clause again, query the data to return only the province names in the table.
+* Using the `SELECT` clause again, query the data to return only the state names in the table.
 
   ```sql
   SELECT state_name
@@ -370,10 +378,10 @@ Using the `customer` table from the `example_db` database, insert the duplicate 
 
  ```sql
 INSERT INTO customer
-  (first_name, last_name, gender, age, address, city, state, zip_code)
+(first_name, last_name, gender, age, address, city, province, postal_code)
 VALUES
-  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'NL', 'A1A0A4'),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'NU', 'X0A0H0');
 
 SELECT *
 FROM customer;
@@ -413,20 +421,20 @@ CREATE TABLE customer (
   age INT,
   address VARCHAR(50),
   city VARCHAR(50),
-  state CHAR(2),
-  zip_code CHAR(5)
+  province CHAR(2),
+  postal_code CHAR(6)
 );
 
 -- Insert duplicated data back into the re-created table
 INSERT INTO customer
-  (first_name, last_name, gender, age, address, city, state, zip_code)
+(first_name, last_name, gender, age, address, city, province, postal_code)
 VALUES
-  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-  ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
-  ('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
-  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673),
-  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'NL', 'A1A0A4'),
+  ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'QC', 'G1A0B1'),
+  ('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AB', 'T2P1B4'),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'NU', 'X0A0H0'),
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'NL', 'A1A0A4'),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'NU', 'X0A0H0');
 
 -- Query all fields from the table
 SELECT *
