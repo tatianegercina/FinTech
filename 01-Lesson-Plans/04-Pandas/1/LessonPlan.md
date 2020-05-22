@@ -26,11 +26,11 @@ By the end of class, students will be able to:
 
 * This lesson brings the heat on two fronts: statistics and financial knowledge. Not all students have experience in these subjects, so be mindful of this during class discussions and demonstrations. Be clear in your lectures, present code and charts visually whenever possible, and draw from your industry experience.
 
-* Be aware that students may be confused about the differences between correlation and beta. Both attempt to measure relationships between variables; but whereas correlation measures the linear relationship between two variables, beta measures the unit-driven relationship between two variables (stock A returns vs. stock B returns). Be sure to explain these concepts clearly and allow time for students to ask questions.
+* Be aware that students may be confused about the differences between correlation and beta. Both measure relationships between variables; but while correlation measures the linear relationship between two variables, beta measures the unit-driven relationship between two variables (Stock A returns vs. Stock B returns). Be sure to explain these concepts clearly, and allow time for students to ask questions.
 
 * When explaining the notion of rolling statistics and how they benefit in identifying statistical trends, emphasize the comparison of the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
 
-* When discussing portfolios and its characteristics—risk, return, and correlation, explain the concepts in terms of money. For example, if you start with $10,000, how would a poorly optimized portfolio compare with one that is not?
+* When discussing portfolio characteristics—namely, risk, return, and correlation—explain the concepts in terms of money. For example, if you start with $10,000, how would a poorly optimized portfolio compare with one that is not?
 
 ### Sample Class Video (Highly Recommended)
 
@@ -46,13 +46,13 @@ By the end of class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Introduce today's lesson and get students excited about what they are about to learn. Today is when they will genuinely leverage Pandas to create insightful financial analyses.
+Introduce today's lesson and get students amped on what they're about to learn—today they'll genuinely leverage Pandas to create insightful financial analyses.
 
 Welcome students to the third day of Pandas! Open the slideshow and introduce the concepts that will be covered in today's class. Highlight the following:
 
