@@ -198,7 +198,7 @@ This activity introduces the concept and implementation of stopwords. In English
 
 Solved: [stopwords.ipynb](Activities/03-Ins_Stopwords/Solved/stopwords.ipynb)
 
-Walkthrough, the notebook, taking care to allow time for students to look at the output of each step.
+Walkthrough the notebook, taking care to allow time for students to look at the output of each step.
 
 For simplicity's sake, we're only going to use one sentence from the article to demonstrate stopwording. Note that these techniques can be applied to entire documents or corpora, as well.
 
