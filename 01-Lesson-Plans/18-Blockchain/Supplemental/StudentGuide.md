@@ -60,7 +60,9 @@
 
 <details><summary>What is Blockchain?</summary><br>
 
-A blockchain is an ever-growing list of records, called blocks, that are linked together cryptographically. Along with encryption, the list of records (blocks), is stored in a distributed manner, meaning that exact copies of all records are stored across all machines (called nodes) that access the network. Combined with encryption, this makes the blockchain extremely trustworthy, as the records are very difficult to alter. Not only does the encryption form a layer of protection, but even if one record is changed, because there are so many duplicates, its easy to prove that the information was altered.
+A blockchain is an ever-growing list of records, called blocks, that are linked together cryptographically with hashing. Hashing, though similar to encryption is fundamentally different in that it cannot be decrypted - it is a one way scrambling of a message to produce a unique string of characters. This hash string is what links each list of records to the one previous.
+
+The lists of records (blocks), are stored in a distributed manner, meaning that exact copies of all records are stored across all machines (called nodes) that access the network. Combined with hashing, this makes the blockchain extremely trustworthy, as the records are very difficult to alter. Not only does the hashing form a layer of protection, but even if one record is changed, because there are so many duplicates, its easy to prove that the information was altered.
 
 <img src= Images/BlockChain_info.png width=800>
 
@@ -147,7 +149,7 @@ Cryptography is the science of using math to secure data so that third parties c
 
 A hash is a one way function that provides a digital fingerprint of data. Hashing is a key component of security on the blockchain, as this is what is used to 'chain' each block (list of records) to the last block. These hashes must match or the block cannot be proven as trustworthy and added to the official blockchain (ledger or list of blocks/records).
 
-A hash function takes an input of any length and turns it into a fixed length, encrypted alphanumeric string - regardless of the input contents, or length of characters.
+A hash function takes an input of any length and turns it into a fixed length, encrypted alphanumeric string - regardless of the input contents, or length of characters. The outputed hash cannot be decrypted.
 
 For example the following two input strings result in different output hash strings that are the same length:
 
