@@ -54,15 +54,15 @@ By the end of class, students will be able to:
 
 Introduce today's lesson and get students amped on what they're about to learn—today they'll genuinely leverage Pandas to create insightful financial analyses.
 
-Welcome students to the third day of Pandas! Open the slideshow and introduce the concepts that will be covered in today's class. Highlight the following:
+Welcome to the third day of Pandas! Open the slideshow and introduce the concepts that will be covered, highlighting the following:
 
 * In the previous two classes, we focused on Pandas basics and single stock evaluation. Today, you will transition to analyze groups of stocks (stock portfolios) to achieve the best risk-to-reward ratio for your investments.
 
-* The focus of this lesson is on using Pandas to make more informed—and better!—investments. You will be learning and using techniques used by financial analysts, quantitative traders, and portfolio managers. This should feel exciting and refreshing!
+* The focus of this lesson is on using Pandas to make more informed—and better!—investments. Get excited, as you will learn and use techniques used by financial analysts, quantitative traders, and portfolio managers. 
 
-* Get ready to test yourselves mentally today, as you go from analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.
+* Prepare to test yourselves mentally, as you go from analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.
 
-* Get excited! Feel energized! Today is the day where you truly begin leveraging the power of Pandas to create insightful analyses that can benefit your skills in financial analysis and investing.
+* Get pumped up! Today is the day you'll truly begin leveraging the power of Pandas to create insightful analyses that can benefit your skills in financial analysis and investing.
 
 ---
 
