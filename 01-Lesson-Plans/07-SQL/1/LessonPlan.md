@@ -86,6 +86,8 @@ Slack out the following resources:
 
 * [SQL Installation Guides](../Supplemental/InstallationGuides) outlining how to install PostgreSQL and pgAdmin for either Mac or Windows (if not done already).
 
+---
+
 ### 3. Instructor Do: Create a Database (5 min)
 
 In this activity, you will walk students through the process of creating a database in PostgreSQL.
@@ -113,6 +115,8 @@ At this point, show students that there is a new database listed in the left-han
 ![new_db.png](Images/new_db.png)
 
 Answer any questions before moving on.
+
+---
 
 ### 4. Instructor Do: Create a Table (10 min)
 
@@ -197,12 +201,12 @@ Type the following code, while explaining what it does, line by line:
 
 ```sql
 INSERT INTO customer
-  (first_name, last_name, gender, age, address, city, state, zip_code)
+  (first_name, last_name, gender, age, address, city, province, postal_code)
 VALUES
-  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-  ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
-  ('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
-  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'NL', 'A1A0A4'),
+  ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'QC', 'G1A0B1'),
+  ('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AB', 'T2P1B4'),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'NU', 'X0A0H0');
 
 SELECT *
 FROM customer;
@@ -243,11 +247,15 @@ Explain the following points:
 
 Answer any questions before moving on.
 
+---
+
 ### 5. Student Do: Creating Tables (15 min)
 
 In this activity, students will use pgAdmin to recreate and query a table from an image provided.
 
 **Instructions:** [README.md](Activities/03-Stu_Creating_Tables/README.md)
+
+---
 
 ### 6. Instructor Do: Review Creating Tables (5 min)
 
@@ -343,6 +351,8 @@ Now, walk through the solutions for the third and final bonus questions.
   ```
 
 Answer any questions before moving on.
+
+---
 
 ### 7. Instructor Do: The Value of Unique Values (5 min)
 
@@ -470,11 +480,15 @@ Explain the following points:
 
 Answer any remaining questions before moving on.
 
+---
+
 ### 8. Student Do: Making and Using an ID (10 min)
 
 In this activity, students will recreate a table and then query, insert, and update data.
 
 **Instructions:** [README.md](Activities/05-Stu_Making_IDs/README.md)
+
+---
 
 ### 9. Instructor Do: Review Making and Using an ID (10 min)
 
@@ -563,6 +577,8 @@ In the query tool, rerun `SELECT * FROM mortgage` to verify that data has been i
 
 Let the class know that the larger a dataset is, the longer it will take for pgAdmin to import values.
 
+---
+
 ### 12. Student Do: Customer Demographics (10 min)
 
 In this activity, students will create a new table and import data from a CSV file.
@@ -572,6 +588,8 @@ In this activity, students will create a new table and import data from a CSV fi
 * [customer.csv](Activities/07-Stu_Customer_Demographics/Resources/customer.csv)
 
 * **Instructions:** [README.md](Activities/07-Stu_Customer_Demographics/README.md)
+
+---
 
 ### 13. Instructor Do: Review Customer Demographics (5 min)
 
@@ -596,6 +614,8 @@ Walk through the solutions to the bonus questions, touching on the following poi
 * `AND` statements can be used more than once for more specific results.
 
 Answer any questions before moving on.
+
+---
 
 ### 14. Instructor Do: CRUD (5 min)
 
@@ -656,6 +676,8 @@ Introduce the class to an additional method of reading the data: wildcards.
 
 Answer any questions before moving on.
 
+---
+
 ### 15. Student Do: Using CRUD (20 min)
 
 In this activity, students will utilize CRUD operations on the provided data.
@@ -669,6 +691,8 @@ In this activity, students will utilize CRUD operations on the provided data.
 Let the class know that they will be using the `WHERE` clause in this activity.
 
 This activity will require students to do some research. Links are provided to help them search for solutions to problems they are likely to encounter.
+
+---
 
 ### 16. Instructor Do: Review Using CRUD (5 min)
 
@@ -689,6 +713,8 @@ Open a query tool in `sales_db` and copy and paste the code from schema.sql and 
 * An average of all values in a specified column can be calculated using the `AVG()` function.
 
 * Columns can be added to pre-existing tables using the ALTER TABLE statement.
+
+---
 
 ### 17. Instructor Do: Joins (15 min)
 
@@ -779,6 +805,8 @@ Slack out the link to this explanation of Postgres [joins](https://www.tutorials
 
 Demonstrate a couple of different joins that can be performed. Then answer any questions before moving on to the next activity.
 
+---
+
 ### 18. Student Do: Joining the Big Banks (20 min)
 
 In this activity, students will be using joins to query payment information and associated bank information via a common bank routing number.
@@ -790,6 +818,8 @@ In this activity, students will be using joins to query payment information and 
 * [payments.csv](Activities/10-Stu_Joins/Resources/payments.csv)
 
 **Instructions:** [README.md](Activities/10-Stu_Joins/README.md)
+
+---
 
 ### 19. Instructor Do: Review Joining the Big Banks (5 min)
 
