@@ -11,6 +11,20 @@ conda create -n pyvizenv python=3.7 anaconda
 conda activate pyvizenv
 ```
 
+Before installing the PyViz dependencies, you need to install a couple of libraries. First, install the `python-dotenv` library using `pip` to work with environment variables.
+
+```shell
+pip install python-dotenv
+```
+
+Next, install the `nb_conda` package that will allow you to switch between virtual environments in Jupyter lab.
+
+```shell
+conda install -c anaconda nb_conda
+```
+
+Follow the next steps to install PyViz and all its dependencies in your Python virtual environment.
+
 1. Download the PyViz dependencies **nodejs** and **npm** (included in nodejs).
 
     ```shell
@@ -48,7 +62,7 @@ conda activate pyvizenv
 
       jupyter labextension install plotlywidget@4.6.0 --no-build
 
-      jupyter labextension install @pyviz/jupyterlab_pyviz
+      jupyter labextension install @pyviz/jupyterlab_pyviz --no-build
       ```
 
     * Build the extensions (This may take a few minutes)
