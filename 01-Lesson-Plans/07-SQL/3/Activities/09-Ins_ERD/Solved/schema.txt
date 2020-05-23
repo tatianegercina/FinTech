@@ -3,7 +3,7 @@
 Employee
 -
 
-Zipcode
+Postalcode
 -
 
 Employee_Email
@@ -30,10 +30,10 @@ Agent_Region_Junction
 -- Conceptual (with relationships)
 
 Employee
-rel Zipcode
+rel Postalcode
 -
 
-Zipcode
+Postalcode
 -
 
 Employee_Email
@@ -46,7 +46,7 @@ Owners
 Estates
 rel Owners
 rel Estate_Type
-rel Zipcode
+rel Postalcode
 -
 
 Estate_Type
@@ -72,13 +72,13 @@ Employee_ID PK
 Name
 Age
 Address
-Zipcode FK - Zipcode.Zip_Code
+Postalcode FK - Postalcode.Postal_Code
 
-Zipcode
+Postalcode
 -
-Zip_Code PK
+Postal_Code PK
 City
-State
+Province
 
 Employee_Email
 -
@@ -98,7 +98,7 @@ Estate_ID PK
 Owner_ID FK - Owners.Owner_ID
 Estate_Type FK - Estate_Type.Estate_Type_ID
 Address
-Zip_Code FK - Zipcode.Zip_Code
+Postal_Code FK - Postalcode.Postal_Code
 
 Estate_Type
 -
@@ -129,7 +129,7 @@ employee_id INT PK
 name VARCHAR(255)
 age INT
 address VARCHAR(255)
-zip_code INT FK - Zipcode.zip_code
+postal_code INT FK - Postalcode.postal_code
 
 Zipcode
 -
@@ -155,7 +155,7 @@ estate_id INT PK
 owner_id INT FK - Owners.owner_id
 estate_type VARCHAR(255) FK - Estate_Type.estate_type_id
 address VARCHAR(255)
-zip_code INT FK - Zipcode.zip_code
+postal_code INT FK - Postalcode.postal_code
 
 Estate_Type
 -
@@ -187,13 +187,13 @@ employee_id INT PK
 name VARCHAR(255)
 age INT
 address VARCHAR(255)
-zip_code INT FK - Zipcode.zip_code
+postal_code INT FK - Postalcode.postal_code
 
-Zipcode
+Postalcode
 -
-zip_code INT PK
+postal_code INT PK
 city VARCHAR(255)
-state VARCHAR(255)
+province VARCHAR(255)
 
 Employee_Email
 -
@@ -213,7 +213,7 @@ estate_id INT PK
 owner_id INT FK - Owners.owner_id
 estate_type VARCHAR(255) FK - Estate_Type.estate_type_id
 address VARCHAR(255)
-zip_code INT FK - Zipcode.zip_code
+postal_code INT FK - Postalcode.postal_code
 
 Estate_Type
 -
