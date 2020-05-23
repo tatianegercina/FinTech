@@ -28,8 +28,6 @@ Using hvPlot, analyze and plot the provided hospital claims data. Use the widget
 
 7. Use the **Save** widget to save your visualizations.
 
-
-
 - - -
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

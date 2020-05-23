@@ -1,1 +1,1 @@
-panel serve dashboard.ipynb
+panel serve dashboard.ipynb --log-level debug --show

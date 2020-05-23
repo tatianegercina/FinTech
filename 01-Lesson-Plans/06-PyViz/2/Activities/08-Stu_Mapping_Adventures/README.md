@@ -34,6 +34,6 @@ Plot the data with the count of boroughs as the size.
 
 Creating too many map plots in one notebook might create a memory issue. Consider creating a separate notebook for the challenge section. This will require you to read the CSV data in both notebooks.
 
+---
 
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
