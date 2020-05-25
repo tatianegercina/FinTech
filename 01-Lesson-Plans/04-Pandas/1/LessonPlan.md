@@ -382,7 +382,7 @@ Open the lesson slides, move to the "Beta" section, and highlight the following:
 
 * What is variance?
 
-  * **Variance** is the measurement of how far numbers in a dataset are spread about their mean. For example, let's say stock A has an average price of $50 but varies in price as low as $5 and as high as $90. However, stock B averages $50 but differs in price as low as $40 and as high as $60. Stock A has a higher variance than stock B.
+  * **Variance** is the measurement of how far numbers in a dataset are spread about their mean. For example, let's say Stock A has an average price of $50 but varies in price as low as $5 and as high as $90. However, Stock B averages $50 but differs in price as low as $40 and as high as $60. Stock A has a higher variance than Stock B.
 
 * What is the difference between covariance and variance?
 
