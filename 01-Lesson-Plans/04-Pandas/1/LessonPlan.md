@@ -498,7 +498,7 @@ In this section, review the solution to the previous activity, Beta Comparisons.
 
 * [twtr_data.csv](Activities/06-Stu_Beta/Resources/twtr_data.csv)
 
-Open the solved version of the Jupyter notebook, live code the solution and explain the following:
+Open the solved version of the Jupyter notebook, live code the solution, and explain the following:
 
 * The first step is to read in the data from the CSV files and combine the DataFrames for each social media stock and the S&P 500 into a single DataFrame.
 
@@ -574,7 +574,7 @@ Open the unsolved version of the Jupyter notebook to live code the solution. Cov
 
 * A higher portfolio's volatility means more risk but potentially higher returns.
 
-* The purpose of a portfolio is to control the amount of risk and diversity in an investment. In the following example, `ENB` has more volatility than `IMO`, so changing the weights of the portfolios (how much of each stock in invested in) may affect the returns.
+* The purpose of a portfolio is to control the amount of risk and diversity in an investment. In the following example, `ENB` has more volatility than `IMO`, so changing the weights of the portfolios (how much of each stock is invested in) may affect the returns.
 
   * The `cumprod` function computes the cumulative returns to indicate the total return profit or loss from a percentage standpoint. Multiplying an initial investment of $10,000 by the series of cumulative returns outputs a trend over time of cumulative profit or loss.
 
