@@ -172,7 +172,7 @@ Answer any questions before moving on.
 
 ### 3. Student Do: Diversification (15 min)
 
-In this activity, students will apply the concept of correlation to diversify a portfolio, a practical financial use case. To create a diversified portfolio that tends to minimize long-term volatility and risk, stocks within the portfolio should be as non-correlated as possible. Students need to find the stock with returns that are least correlated to the returns of stocks in an existing portfolio.
+In this practical financial use case, students will apply the concept of correlation to diversify a portfolio. In order to create a diversified portfolio that minimizes long-term volatility and risk, stocks within the portfolio should be as non-correlated as possible. Students need to find the stock with returns that are least correlated to the returns of stocks in an existing portfolio.
 
 **Files:**
 
@@ -220,27 +220,27 @@ In this section, you will review the solution to the Diversification activity wi
 
 * [TRP.csv](Activities/02-Stu_Correlation/Resources/TRP.csv)
 
-Open the solution file, live code the solution and explain the following:
+Open the solution file, live code the solution, and explain the following:
 
-* Diversification of stock portfolios is an important strategy in the realm of investing, as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma. Therefore, it is necessary to not only analyze the average return and risk of the portfolio overall but also the correlation between stocks (how much one stock price changes with or against another).
+* When investing, diversification of stock portfolios is an important strategy, as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma. It is important to analyze the average return and risk of the portfolio overall, as well as the correlation between stocks (how much one stock price changes with or against another).
 
-* The first step towards helping Harold to decide which energy stock should be included in the portfolio is to load the data files, concatenate all the data in a single DataFrame, and calculate de daily returns using the `pct_change` function.
+* The first step towards helping Harold decide which energy stock to include in the portfolio is to load the data files, concatenate all the data in a single DataFrame, and calculate the daily returns using the `pct_change` function.
 
   ![diversifications_daily_returns](Images/diversifications_daily_returns.png)
 
-* The `corr` function compares values from each column-to-column pair. When viewing a correlation table with many variables present, it's difficult to distinguish lower values from higher values.
+* The `corr` function compares values from each column-to-column pair. When viewing a correlation table with many variables, it's difficult to distinguish lower values from higher values.
 
   ![correlation-table](Images/correlation-table.png)
 
-* The `heatmap` function from the `seaborn` library makes it easier to discern differences by using colour gradients.
+* The `heatmap` function from the `Seaborn` library makes it easier to discern differences by using colour gradients.
 
   ![correlation-heatmap](Images/correlation-heatmap.png)
 
-* Use the `vmin` and `vmax` parameters with the `heatmap` function to modify the scale of the heatmap. Correlation values range from `-1` to `0` to `+1`. Therefore the scale of the heatmap will need to reflect this.
+* Use the `vmin` and `vmax` parameters with the `heatmap` function to modify the scale of the heatmap. Correlation values range from `-1` to `0` to `+1`. Therefore, the scale of the heatmap needs to reflect this.
 
   ![correlation-heatmap-scaled](Images/correlation-heatmap-scaled.png)
 
-* Look at the heatmap and cross-reference the correlation table. It would appear as though the `ENB` stock seems to be the least correlated with the energy stocks. Therefore, the `ENV` stock would be the best energy stock to add to the existing portfolio.
+* Look at the heatmap and cross-reference the correlation table. It appears that the `ENB` stock seems to be the least correlated with the energy stocks. Therefore, the `ENV` stock would be the best energy stock to add to the existing portfolio.
 
   ![correlation-heatmap-focus](Images/correlation-heatmap-focus.png)
 
