@@ -260,15 +260,15 @@ This section focuses on the concept of rolling statistics, in which a series of 
 
 * [tsla_historical.csv](Activities/03-Ins_Rolling_Statistics/Resources/tsla_historical.csv)
 
-Open the lesson slides, move to the "Rolling Statistics" section and explain the following:
+Open the lesson slides, move to the "Rolling Statistics" section, and explain the following:
 
-* A **rolling statistic** is a metric calculated over the range of a shifting, or rolling, window. For example, a 7-day rolling mean of 14 days' worth of closing prices for a stock would calculate the mean of the closing prices for days 1–7, and then days 2–8, and then days 3–9, and so on.
+* A **rolling statistic** is a metric calculated over the range of a shifting, or rolling, window. For example, a 7-day rolling mean of 14 days' worth of closing prices for a stock would calculate the mean of the closing prices for days 1–7, days 2–8, days 3–9, and so on.
 
-* Some commonly used rolling statistics are rolling averages, otherwise known as simple moving averages, and rolling standard deviations.
+* Some commonly used rolling statistics are rolling averages (otherwise known as simple moving averages), and rolling standard deviations.
 
-* Rolling statistics help to demonstrate the progression or change of a particular metric over time. For example, calculating the average closing price of one year's worth of stock data will output a single metric, the average closing price for the year. But a rolling 7-day mean will give you the change in weekly average closing prices over the year.
+* Rolling statistics help demonstrate the progression, or change, of a particular metric over time. For example, calculating the average closing price of one year's worth of stock data will output a single metric, the average closing price for the year. But a rolling 7-day mean will give you the change in weekly average closing prices over the year.
 
-Close the presentation, open the unsolved version of the Jupyter notebook and live code the demo by highlighting the following:
+Close the presentation, open the unsolved version of the Jupyter notebook, and live code the demo by highlighting the following:
 
 * In this demo, we will analyze historical stock data from Tesla Inc. (`TSLA`) to calculate rolling statistics in Python.
 
@@ -280,9 +280,9 @@ Close the presentation, open the unsolved version of the Jupyter notebook and li
 
   ![rolling_stats_daily_prices](Images/rolling_stats_daily_prices.png)
 
-* Rolling statistics tend to smooth out the trend of the initial dataset, allowing for a more general or holistic analysis of a dataset rather than focusing on every twist and turn of the data.
+* Rolling statistics tend to smooth out the trend of the initial dataset. This allows for a more general or holistic analysis of a dataset, rather than focusing on every twist and turn of the data.
 
-* Rolling statistics factor in the progression of time. Therefore, a rolling 7-day window makes sense to smooth out the trend when looking at a short-term weekly investment scope. Two interesting metrics to calculate in rolling statistics are the mean and the standard deviation.
+* Rolling statistics factor in the progression of time. Therefore, a rolling 7-day window makes sense to smooth out the trend when looking at a short-term, weekly investment scope. Two valuable metrics to calculate in rolling statistics are the mean, and the standard deviation.
 
   ![rolling_stats_7_days](Images/rolling_stats_7_days.png)
 
@@ -300,7 +300,7 @@ Close the presentation, open the unsolved version of the Jupyter notebook and li
 
 * Remember that standard deviation/volatility is how far data points deviate from the mean; this does not necessarily need to be negative.
 
-* Although on a monthly scale there was a spike in volatility in late 2018, over six months, the highest spike in volatility was in late 2016 when the stock skyrocketed.
+* While there was a spike in volatility on a monthly scale in late 2018, over six months, the highest spike in volatility was in late 2016, when the stock skyrocketed.
 
 Explain to students that overlaying a rolling statistic trend on top of the original data trend makes this feature easier to spot.
 
