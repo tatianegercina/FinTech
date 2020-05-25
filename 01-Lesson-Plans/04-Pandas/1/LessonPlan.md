@@ -312,7 +312,7 @@ Answer any questions before moving on.
 
 ---
 
-### 6. Students Do: Simple Moving Averages (15 mins)
+### 6. Student Do: Simple Moving Averages (15 mins)
 
 In this activity, students will calculate multiple windows of rolling statistics, such as moving averages and rolling standard deviations, to identify trends in average price and volatility/risk that can provide insight to the investment decisions concerning a particular stock.
 
@@ -338,15 +338,15 @@ In this section, review the solution to the previous activity, Simple Moving Ave
 
 Open the solution file and highlight the following:
 
-* The first step to help Harold to decide if it's worth to invest in Shopify Inc. for the long-term, is to load the data into a DataFrame and plot the daily closing prices.
+* The first step to helping Harold decide if Shopify Inc. is worth a long-term investment is to load the data into a DataFrame and plot the daily closing prices.
 
   ![shop_rolling_stats_data](Images/shop_rolling_stats_data.png)
 
-* The `rolling` function and the `window` parameter set the time window for the calculated metric, which in this case is the average or mean for 20-day, 50-day, and 100-day windows.
+* The `rolling` function and the `window` parameter set the time window for the calculated metric, which in this case is the average, or mean, for 20-day, 50-day, and 100-day windows.
 
   ![rolling-mean-calculation](Images/rolling-mean-calculation.png)
 
-* When overlaying the plot of daily closing prices for `SHOP` with its simple moving averages, you can see the ways in which larger rolling time windows smooth data and show general trends, as opposed to smaller rolling time windows that showcase more volatility.
+* When overlaying the plot of daily closing prices for `SHOP` with its simple moving averages, you can see the ways in which larger rolling time windows smooth data and show general trends, as opposed to smaller rolling time windows, that showcase more volatility.
 
   ![sma-overlay](Images/sma-overlay.png)
 
@@ -354,7 +354,7 @@ Open the solution file and highlight the following:
 
   ![std-overlay](Images/std-overlay.png)
 
-* Because the desire is to invest long term in Shopify, the `SMA100` and `STD100` should hold more emphasis. Based on the chart overlays, although there is a recent price uptrend in earlier in 2019, long-term volatility has been high for the entirety of 2019. Therefore, it may best to hold off on investing in Shopify long term for now.
+* Because the desire is to invest long term in Shopify, the `SMA100` and `STD100` should hold more emphasis. Based on the chart overlays, although there was a recent price uptrend earlier in 2019, long-term volatility has been high for the entirety of 2019. Therefore, it may best to hold off on investing long term in Shopify for now.
 
 Answer any questions before moving on.
 
