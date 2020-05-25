@@ -372,9 +372,9 @@ In this activity, students will be introduced to the concept of beta and how it 
 
 * [sp500_data.csv](Activities/05-Ins_Beta/Resources/sp500_data.csv)
 
-Open the lesson slides, move to the "Beta" section and highlight the following:
+Open the lesson slides, move to the "Beta" section, and highlight the following:
 
-* Before start using beta, there are two concepts that we need to review: covariance and variance.
+* Before we start using beta, there are two concepts we need to review: covariance and variance.
 
 * What is covariance?
 
@@ -388,13 +388,13 @@ Open the lesson slides, move to the "Beta" section and highlight the following:
 
   * **Answer:** Variance looks at one variable, measuring the range in which that variable’s values may take. By contrast, covariance looks at the variance of two variables and studies how those two variables vary together.
 
-    Covariance is similar in concept to correlation: the difference is that covariance values are usually too difficult to interpret (other than being positive or negative), whereas correlation is a standardized value (regardless of data type) that ranges from `-1` to `+1`.
+    Conceptually, covariance is similar to correlation: the difference is that covariance values are usually too difficult to interpret (other than being positive or negative), whereas correlation is a standardized value (regardless of data type) that ranges from `-1` to `+1`.
 
 * How do covariance and variance relate to beta?
 
   * **Beta** uses covariance and variance to calculate the relative volatility of an individual stock's returns in comparison to the volatility of the overall market's returns.
 
-* The value of Beta can be interpreted as follows:
+* The value of beta can be interpreted as follows:
 
   * `β = 1` exactly as volatile as the market
   * `β >1` more volatile than the market
@@ -402,9 +402,9 @@ Open the lesson slides, move to the "Beta" section and highlight the following:
   * `β = 0` uncorrelated to the market
   * `β < 0` negatively correlated to the market
 
-* A company with a higher beta has greater risk and also greater expected returns.
+* A company with a higher beta has greater risk, and also greater expected returns.
 
-Close the lesson slides and explain to students that now you will show them how to compute beta using Python.
+Close the lesson slides and explain to students that you will now show them how to compute beta using Python.
 
 Open the unsolved version of the Jupyter notebook and highlight the following:
 
@@ -418,7 +418,7 @@ Open the unsolved version of the Jupyter notebook and highlight the following:
 
   ![beta_prepare_data](Images/beta_prepare_data.png)
 
-* Since we want to compute the Beta of Amazon's stock in comparison with the S&P 500 index, the first step is to calculate the variance of the S&P 500 index. We use the `var` function from Pandas.
+* Since we want to compute the beta of Amazon's stock in comparison with the S&P 500 index, the first step is to calculate the variance of the S&P 500 index. We use the `var` function from Pandas.
 
   ![variance.png](Images/variance.png)
 
@@ -436,11 +436,11 @@ Open the unsolved version of the Jupyter notebook and highlight the following:
 
   ![rolling-beta.png](Images/rolling-beta.png)
 
-* Beta and correlation seem to be similar since both metrics contrast two variables, however, there is a difference between beta and correlation.
+* Beta and correlation seem to be similar since both metrics contrast two variables. However, there is a difference between beta and correlation.
 
 * Beta measures the impact of one variable on another variable. Correlations measure the possible frequency of similar directional movements without consideration for cause and effect.
 
-* To have a better understanding of this difference, we will use the `seaborn` library to plot the difference between beta and correlation.
+* To have a better understanding of this difference, we will use the `Seaborn` library to plot the difference between beta and correlation.
 
   ![beta-vs-correlation.png](Images/beta-vs-correlation.png)
 
@@ -450,7 +450,7 @@ Open the unsolved version of the Jupyter notebook and highlight the following:
 
   ![beta_vs_correlation](Images/beta_vs_correlation.png)
 
-* Note that the Beta value and the correlation do **not** match! Beta is a measure of volatility relative to the market. We would conclude that this stock is approximately 33% more volatile than the market (Beta of 1.329). The correlation is an indication of the extent of the linear relationship between `AMZN` and the `S&P500`.
+* Note that the beta value and the correlation do **not** match! Beta is a measure of volatility relative to the market. We would conclude that this stock is approximately 33% more volatile than the market (beta of 1.329). The correlation is an indication of the extent of the linear relationship between `AMZN` and the `S&P500`.
 
 Ask if there are any questions before moving on.
 
