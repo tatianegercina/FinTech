@@ -156,7 +156,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution and hi
 
   * Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents`, this does not mean that buying more ice cream causes people to drown; it merely means that there is a positive relationship between the numbers.
 
-  * Chances are there is another factor at play that results in this positive correlation. One possiblity is that as the temperature increases (during the summer months), people tend to both eat more ice cream, and go swimming.
+  * Chances are there is another factor at play that results in this positive correlation. One possibility is that as the temperature rises during the summer months, people tend to eat more ice cream, and go swimming.
 
 Explain to students that **Regression analysis** is a method we'll learn in a later unit that can measure multiple relationships at the same time (e.g., the effect of both weather and income on ice cream sales). This explanation may not solve our problem of confusing correlation with causation, but it will help us better tease out economic relationships from multiple influences. Close this activity by asking the following question:
 
