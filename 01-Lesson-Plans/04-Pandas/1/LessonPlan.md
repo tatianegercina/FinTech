@@ -550,7 +550,7 @@ Open the lesson slides, move to the "Portfolio Returns" section and highlight th
 
 * Now, we will calculate portfolio returns using Python and all the metrics we have learned up to date.
 
-Open the unsolved version of the Jupyter notebook to live code the solution. Cover the following points as you walk through the file.
+Open the unsolved version of the Jupyter notebook to live code the solution. Cover the following points as you walk through the file:
 
 * In this demo, we will compare the closing prices of two energy stocks listed in the S&P TSX 60 index: Enbridge Inc. (`ENB`) and Imperial Oil Limited (`IMO`).
 
@@ -586,7 +586,7 @@ Ask if there are any questions before moving on.
 
 ### 13. Student Do: Portfolio Planner (30 min)
 
-This activity is a two-part mini-project where you will work in pairs to research a group of ten stocks and perform an analysis of a $10,000 investment in the portfolio over time.
+This activity is a two-part mini-project where you will work in pairs to research a group of 10 stocks and perform an analysis of a $10,000 investment in the portfolio over time.
 
 **Files:**
 
@@ -650,15 +650,15 @@ In this section, you will review the solution to the previous activity.
 
 * [wrk_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/wrk_data.csv)
 
-Open the solved version of the Jupyter notebook for Part 2, conduct a dry-walkthrough review and explain the following:
+Open the solved version of the Jupyter notebook for Part 2, conduct a dry walkthrough review, and explain the following:
 
 * We will start reviewing Part 1.
 
-* The first step to help Harold to analyze these ten stocks, is to load the data into a DataFrame for each data file.
+* The first step in helping Harold analyze these 10 stocks is to load the data into a DataFrame for each data file.
 
   ![portfolio_data](Images/portfolio_data.png)
 
-* After reading in the data, we combine the data from all the DataFrames in a single DataFrame. When dealing with datetime indexes, make sure to sort the DataFrame by index in ascending order, to arrange the dates chronologically from past to present. This is particularly important when employing time-series functions such as `pct_change`.
+* After reading in the data, combine the data from all the DataFrames into a single DataFrame. When dealing with datetime indexes, be sure to sort the DataFrame by index in ascending order, to arrange the dates chronologically from past to present. This is particularly important when employing time-series functions such as `pct_change`.
 
   ![portfolio_data_combined](Images/portfolio_data_combined.png)
 
@@ -680,7 +680,7 @@ Open the solved version of the Jupyter notebook for Part 2, conduct a dry-walkth
 
   ![portfolio-planner-cumulative-returns](Images/portfolio-planner-cumulative-returns.png)
 
-* In Part 2, we filter the ten stocks to just the non-correlated stocks and stocks with positive Sharpe ratios. This is to maximize the diversification of the portfolio—and, therefore, minimize volatility—and maximize the risk-to-returns ratio of the optimized portfolio.
+* In Part 2, we filter the 10 stocks to just the non-correlated stocks, and stocks with positive Sharpe ratios. This is to maximize the diversification of the portfolio—and, therefore, minimize volatility—and maximize the risk-to-returns ratio of the optimized portfolio.
 
 * We start Part 2 by re-calculating daily returns as the DataFrame was modified in Part 2.
 
@@ -688,7 +688,7 @@ Open the solved version of the Jupyter notebook for Part 2, conduct a dry-walkth
 
 * Stock correlation describes the linear relationship between the returns of two stocks, and indicates whether returns of both stocks tend to move in tandem, inversely, or randomly (no correlation).
 
-* The `corr` function used in conjunction with the `heatmap` function from the `seaborn` library makes it easy to spot the highly correlated stocks.
+* The `corr` function used in conjunction with the `heatmap` function from the `Seaborn` library makes it easy to spot the highly correlated stocks.
 
   ![part-2-correlation](Images/part-2-correlation.png)
 
@@ -700,7 +700,7 @@ Open the solved version of the Jupyter notebook for Part 2, conduct a dry-walkth
 
   ![part-2-sharpe-ratios](Images/part-2-sharpe-ratios.png)
 
-* We drop the three stocks with a negative sharpe ratio since it either means the risk-free rate is higher than the portfolio's return, or the portfolio's return is expected to be negative.
+* We drop the three stocks with a negative Sharpe ratio since it either means the risk-free rate is higher than the portfolio's return, or the portfolio's return is expected to be negative.
 
   ![portfolio_drop_three](Images/portfolio_drop_three.png)
 
@@ -708,15 +708,15 @@ Open the solved version of the Jupyter notebook for Part 2, conduct a dry-walkth
 
   ![part-2-equal-weighted](Images/part-2-equal-weighted.png)
 
-* The overlay chart of a $10,000 investments in each corresponding portfolio over time describes the following:
+* The overlay chart of a $10,000 investment in each corresponding portfolio over time describes the following:
 
-  * The non-correlated and Sharpe ratio optimized portfolio performs the best of the four portfolios, consistently achieving higher returns with minimized volatility.
-
-  * The non-correlated (diversified) portfolio performs the second-worst of the four portfolios; it manages to minimize volatility but at the expense of higher returns.
-
+  * The non-correlated, Sharpe ratio optimized portfolio performs the best of the four portfolios, consistently achieving higher returns with minimized volatility.
+  
   * The original, unoptimized portfolio performs the second-best of the four portfolios; it achieves higher returns but at the expense of more volatility. Returns increased more quickly, but also fell more quickly—notice the dip in early 2019.
+  
+  * The non-correlated (diversified) portfolio performs the second-worst of the four portfolios; it manages to minimize volatility, but at the expense of higher returns.
 
-  * The risk-optimized portfolio performs the worst of the four portfolios, achieving minimal volatility but at the expense of returns.
+  * The risk-optimized portfolio performs the worst of the four portfolios, achieving minimal volatility, but at the expense of returns.
 
   ![part-2-overlay](Images/part-2-overlay.png)
 
