@@ -20,7 +20,7 @@ Review the [Notes to the Interviewer](03-Stu_Partner_Interviews/README.md) prior
 
 * [Maximin](03-Stu_Partner_Interviews/Solved/maximin)
 
-* [Most Frequently Element](03-Stu_Partner_Interviews/Solved/most_frequent_element)
+* [Most Frequent Element](03-Stu_Partner_Interviews/Solved/most_frequent_element)
 
 * [Palindrome](03-Stu_Partner_Interviews/Solved/palindrome)
 
