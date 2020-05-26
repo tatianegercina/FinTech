@@ -18,7 +18,7 @@ Open the [starter file](Unsolved/inputs-01.py) and perform the following:
 
     * Print a string of "Please wait 10 min for your " concatenated with the variable `food_prompt`.
 
-    * If `question_sandwich` is false, print a string of "If you don't want a sandwich what are you here for?!"
+    * If `question_sandwich` is false, print a string of "If you don't want a sandwich, what are you here for?!"
 
 ---
 
