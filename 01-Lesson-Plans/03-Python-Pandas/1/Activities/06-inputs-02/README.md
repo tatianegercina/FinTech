@@ -1,6 +1,6 @@
 # More Practice with Variables and Logic Check
 
-You will be getting more practice declaring and manipulating variables and checking logic in this exercise.
+You will be getting more practice declaring and manipulating variables, and checking logic in this exercise.
 
 ## Instructions
 
