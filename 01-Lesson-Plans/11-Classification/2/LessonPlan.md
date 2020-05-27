@@ -4,7 +4,7 @@
 
 ### Overview
 
-By the end of Today's class, students will recognize the benefits of using tree-based algorithms for classifications problems. Also, students will gain hands-on experience with random forests and ensemble methods such as bagging and boosting.
+By the end of today's class, students will recognize the benefits of using tree-based algorithms for classifications problems. Also, students will gain hands-on experience with random forests and ensemble methods such as bagging and boosting.
 
 Today´s lesson also introduces students to dealing with categorical data in machine learning. Students will be able to identify when it is worth to use categorical data as a feature in a model.
 
@@ -871,7 +871,7 @@ Highlight to students that **boosting** is not the only way to make a **weak lea
 
 * **Bagging** is another method used to improve the accuracy and robustness of a model.
 
-* Where **boosting** takes multiple algorithms and coordinates them as an ensemble and runs the algorithms in tandem to identify the best prediction, **bagging** focuses on re-sampling data and running with different models on the fly in order to formulate the most accurate and precise prediction.
+* Where **boosting** takes multiple algorithms and coordinates them as an ensemble and runs the algorithms iteratively to identify the best prediction, **bagging** focuses on re-sampling data and running with different models on the fly in order to formulate the most accurate and precise prediction.
 
 * Each classifier used in the **bagging** process runs independently of the others. Once all classifiers are finished predicting, the **bagging** algorithm will aggregate results.
 
@@ -881,9 +881,9 @@ Highlight to students that **boosting** is not the only way to make a **weak lea
 
   * Summarize the comparison again to help reinforce the differences:
 
-    * Bagging iteratively weighs inaccurate predictions and continue to execute.
+    * Bagging combines predictions from multiple models, taking the most frequent prediction among the models as the most likely prediction. Bagging resamples and replaces data in order to improve model fitting and accuracy.
 
-    * Boosting iteratively resamples and replaces data in order to train the best model.
+    * Boosting also resamples and replaces data in order to train the best model. The difference is that boosting resamples with greater frequency those samples that previously had the highest error.
 
     ![bagging_flow.png](Images/bagging_flow.png)
 
@@ -891,7 +891,7 @@ If time remains, engage students with the below questions. If there are no conve
 
 * Ask if there is a volunteer who would like to summarize the difference between boosting and bagging algorithms.
 
-  * **Answer** Bagging iteratively weighs inaccurate predictions and continue to execute. Boosting iteratively resamples and replaces data in order to train the best model.
+  * **Answer** Bagging averages predictions from multiple models and/or multiple re-samples of the data. Boosting is similar, but iteratively resamples more of those observations with previously higher error rates. Both methods average model predictions in order to train the best overall model.
 
 * Ask if another volunteer would like to explain what **boosting** and **bagging** algorithms are used for.
 
@@ -1141,7 +1141,7 @@ Continue the presentation by showing to students, some of the cases when classic
 
 * SVM handles outliers better.
 
-* KNN naturally supports incremental learning (data streams).
+* KNN (a method we'll cover in coming weeks) naturally supports incremental learning (data streams).
 
 Close the discussion by asking this final question:
 
@@ -1171,4 +1171,4 @@ Congratulate students on learning about a new family of machine learning algorit
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
