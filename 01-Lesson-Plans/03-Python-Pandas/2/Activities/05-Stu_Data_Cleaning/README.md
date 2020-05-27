@@ -1,8 +1,8 @@
 # Spring Cleaning
 
-It's that time of year again: the end of the fiscal year and the time to begin financial spring cleaning! Within a month, auditors will be camped out at your investment firm, inspecting everyone's trades and the company's end-of-year financial statements. All of the traders in the firm are under a lot of pressure to finalize their portfolio earnings and deliver them to their managers. That is, all traders except you.
+It's that time of year again: the end of the fiscal year and the time to begin financial spring cleaning! Within a month, auditors will be camped out at your investment firm, inspecting everyone's trades and the company's end-of-year financial statements. All of the firm's traders are under a lot of pressure to finalize their portfolio earnings and deliver them to their managers. That is, all traders except you.
 
-You automated your end-of-year financial reporting last week, and now you're using the pipeline to help out Harold with his reports. Before loading Harold's stock ticker data into Pandas, you open the Excel file he sent you to look at the quality of the data. You realize that Harold has not subscribed to any data quality standards and that the data is a mess.
+You automated your end-of-year financial reporting last week, and now you're using the pipeline to help Harold with his reports. Before loading Harold's stock ticker data into Pandas, you open the Excel file he sent you to look at the quality of the data. You realize that Harold has not subscribed to any data quality standards and that the data is a mess.
 
 For this activity, use Pandas to clean Harold's portfolio data to get it fit for use.
 
@@ -14,7 +14,7 @@ Using the [starter file](Unsolved/Core/spring_cleaning.ipynb) and Harold's finan
 
 2. Identify the number of rows and columns in the DataFrame, otherwise known as its shape/structure.
 
-3. Generate a sample of the data to visually ensure data has been loaded in correctly.
+3. Generate a data sample to visually ensure data has been loaded in correctly.
 
 4. Identify the number of records in the DataFrame, and compare it with the number of rows in the original file.
 
