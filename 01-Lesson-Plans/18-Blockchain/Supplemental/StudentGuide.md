@@ -60,12 +60,11 @@
 
 <details><summary>What is Blockchain?</summary><br>
 
-A blockchain is an ever-growing list of records, called blocks, that are linked together cryptographically with hashing. Hashing, though similar to encryption is fundamentally different in that it cannot be decrypted - it is a one way scrambling of a message to produce a unique string of characters. This hash string is what links each list of records to the one previous.
+A blockchain is a type of database that stores an ever-growing list of records, called blocks, that are linked together cryptographically with hashing. Hashing, though similar to encryption is fundamentally different in that it cannot be decrypted - it is a one way scrambling of a message to produce a unique string of characters. This hash string is what links each list of records to the one previous.
 
 The lists of records (blocks), are stored in a distributed manner, meaning that exact copies of all records are stored across all machines (called nodes) that access the network. Combined with hashing, this makes the blockchain extremely trustworthy, as the records are very difficult to alter. Not only does the hashing form a layer of protection, but even if one record is changed, because there are so many duplicates, its easy to prove that the information was altered.
 
 <img src= Images/BlockChain_info.png width=800>
-
 
 </details>
 <details><summary>Why do we need blockchain?</summary><br>
