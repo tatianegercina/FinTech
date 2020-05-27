@@ -935,7 +935,7 @@ Conclude the review by asking students the following question:
 
 * Which portfolio was the smartest investment, based on risk to reward ratio?
 
-  **Answer:** My portfolio was the smartest! Harold owes me 5 dollars.
+  **Answer:** My portfolio was the smartest! Harold owes me five dollars.
 
 Answer any questions before moving on.
 
