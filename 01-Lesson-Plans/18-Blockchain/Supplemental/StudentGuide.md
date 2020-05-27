@@ -260,7 +260,7 @@ To learn more about nodes, click [this link](https://medium.com/coinmonks/blockc
 
 <details><summary>What is a digital Blockchain wallet?</summary><br>
 
-A digital, or blockchain, wallet is simply a set of "keys" to your funds that are on the blockchain. It also serves as place where you can view and send transactions.
+A digital, or blockchain, wallet is simply a set of "keys" to your funds that are on the blockchain. It also serves as a place where you can view and send transactions.
 
 Much like a debit card does not hold your actual money, but the access to it, a blockchain wallet holds the access to your funds but not the actual funds. The actual funds live on the blockchain.
 
