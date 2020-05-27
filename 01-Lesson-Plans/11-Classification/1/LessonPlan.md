@@ -468,7 +468,7 @@ Navigate to the 11.1 slides section on accuracy, precision, and recall; and high
 
 * When running a classification model, or any statistical model, it is important that the model is evaluated for **accuracy**, **precision**, and **recall**.
 
-* Accuracy is how often the model is correct: the ratio of correctly predicted observations to the total number of observations. As demonstrated previously, the **accuracy** of a model can be evaluated by scoring the model using training and testing data sets. Scoring will reveal how accurate the model. However, it does not communicate how precise it is.
+* Accuracy is how often the model is correct: the ratio of correctly predicted observations to the total number of observations. As demonstrated previously, the **accuracy** of a model can be evaluated by scoring the model using training and testing data sets. Scoring will reveal how accurate the model is. However, it does not communicate how precise it is.
 
   * Accuracy can be very susceptible to imbalanced classes. In the case of the homework assignment, the number of good loans greatly outweighs the number of at-risk loans. In this case, it can be really easy for the model to only care about the good loans because that has the biggest impact on accuracy. However, we also care about at-risk loans, so we need a metric that can help us evaluate each class prediction.
 
