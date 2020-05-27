@@ -285,15 +285,17 @@ Transition into the next part of the demo by explaining to students that once th
 
 The next step after training the model is **validating** it. A common approach is the Train/Test Split approach. Walk students through how this approach is used.
 
-* In order to validate a model, it must be scored, which the **sklearn** `score` function can do. The **testing** data sets are passed to the `score` function, and the function evaluates results. Explain to students that the scoring process takes the predictions made using the training data and compares it to the predictions made using the test data. If the predictions are the same and the score is **1.0**, the model is considered accurate.
+* In order to validate a model, it must be scored, which the **sklearn** `score` function can do. Either the **testing** or **training** data sets are passed to the `score` function, and the function evaluates the results.
+
+Explain to students that the scoring process takes the predictions made using the data and compares it to their actual outcomes (i.e., predicted y versus actual y). If the predictions are the same and the score is **1.0**, the model is considered perfectly accurate. In general, the closer the score is to 1.0, the more accurate the model.
 
 * It's important to note to students that two things need to be scored: the **training** AND **test** data.
 
-  * When scoring the training data, the accuracy of the model is applied against the training data it was created with. The more data is trained, the higher the accuracy.
+  * When scoring the training data, the accuracy of the model is applied against the training data it was created with. Usually, the more data that is trained, the higher the accuracy score.
 
-  * Scoring of test data consists of applying the model against the test data. The test data is considered new data; the model has not seen if the score will reflect the accuracy of the predictions made by the model using the test data.
+  * Scoring of test data consists of applying the model (which was learned using the training data) against only the test data. The test data is considered new data; the model has not seen or learned from this data. Testing using this test data is akin to an acid test: it’s a way to gauge how accurately the model might make predictions in real life.
 
-  * If the training score is more accurate than the testing score, the model is considered overtrained. **Overtraining** the model can result in **overfitting**, where the model learned rules for predictions that apply mostly just for the training data set. The goal is to have the scores as close to each other in accuracy as possible.
+  * If the training score is significantly more accurate than the testing score, the model may be overtrained. **Overtraining** the model can result in **overfitting**, where the model learned rules for predictions that apply mostly just for the training data set. The goal is to have the scores as close to each other in accuracy as possible.
 
     ```python
     # Score the model
@@ -1048,4 +1050,4 @@ Ask if there are any questions before ending the class.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
