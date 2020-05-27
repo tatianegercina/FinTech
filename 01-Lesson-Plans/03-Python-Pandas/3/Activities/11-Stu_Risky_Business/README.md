@@ -1,8 +1,8 @@
 # Risky Business
 
-Harold has been participating in some risky business. He recently became seriously involved in the cryptocurrency market and has seen some excellent returns. Harold's recent returns have him strutting around the office like he's the best trader. He even had the audacity to bet you $5 that his portfolio returns are better than yours.
+Harold has been involved in some risky business. He's gotten serious about the cryptocurrency market, and has seen some excellent returns. Harold's latest returns have him strutting around the office like he's the world's best trader. He even had the audacity to bet you five dollars that his portfolio returns are better than yours!
 
-Using standard deviation and sharpe ratios, do the following:
+Using standard deviation and Sharpe ratios, do the following:
 
 * Identify which cryptocurrencies have the greatest risk-to-reward ratio.
 
