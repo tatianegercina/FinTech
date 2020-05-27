@@ -936,7 +936,7 @@ Open the solution and explain the following:
   classifier
   ```
 
-  ```
+  ```python
   SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
   decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
   kernel='linear', max_iter=-1, probability=False, random_state=None,

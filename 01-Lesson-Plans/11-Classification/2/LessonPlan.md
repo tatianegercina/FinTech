@@ -6,7 +6,7 @@
 
 By the end of today's class, students will recognize the benefits of using tree-based algorithms for classifications problems. Also, students will gain hands-on experience with random forests and ensemble methods such as bagging and boosting.
 
-Today´s lesson also introduces students to dealing with categorical data in machine learning. Students will be able to identify when it is worth to use categorical data as a feature in a model.
+Today's lesson also introduces students to dealing with categorical data in machine learning. Students will be able to identify when it is worth to use categorical data as a feature in a model.
 
 ### Class Objectives
 
@@ -279,7 +279,7 @@ Walkthrough the solution and highlight the following:
   loans_df["Month"] = loans_df["Month"].apply(lambda x: name_to_num[x])
   ```
 
-* The `LabelEncoder´ from `sklearn` is used to encode the `RealEstate`, `RevLineCr` and `UrbanRural` columns, following the Model -> Fit -> Predict/Transform API workflow.
+* The `LabelEncoder` from `sklearn` is used to encode the `RealEstate`, `RevLineCr` and `UrbanRural` columns, following the Model -> Fit -> Predict/Transform API workflow.
 
   ```python
   # Create the LabelEncoder instance
@@ -421,7 +421,7 @@ Explain to students that in order to train and validate the decision tree model,
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 ```
 
-Explain to students that in order to improve an algorithm's performance, the features data will be scaled using the 'StandardScaler`. There is no need to scale the target data since it contains the labels that we want to predict using the decision tree.
+Explain to students that in order to improve an algorithm's performance, the features data will be scaled using the `StandardScaler`. There is no need to scale the target data since it contains the labels that we want to predict using the decision tree.
 
 ```python
 # Creating StandardScaler instance
@@ -853,7 +853,7 @@ Students are given a formal lecture on **boosting**, **bagging**, its benefits, 
 
 Navigate to the **boosting** and **bagging** section of the slideshow. Highlight the following:
 
-* **Boosting** is both a process and a set of algorithms. Boosting is the process of combining a set of **weak learners** into a **strong longer**.
+* **Boosting** is both a process and a set of algorithms. Boosting is the process of combining a set of **weak learners** into a **strong learner**.
 
   * **Boosting** algorithms work by taking the predictions of each **weak learner** and aggregating them to produce a more accurate and precise prediction. The goal of a boosting algorithm is to combine **weak learners** into **ensemble learners**.
 
