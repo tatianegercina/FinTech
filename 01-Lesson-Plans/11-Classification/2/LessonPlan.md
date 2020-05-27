@@ -485,11 +485,11 @@ Explain to students, that a very large and complex tree shape like this, probabl
 
   ```python
   # Saving the tree as PDF
-  file_path = Path("../Resources/loans_tree.pdf")
+  file_path = "../Resources/loans_tree.pdf"
   graph.write_pdf(file_path)
 
   # Saving the tree as PNG
-  file_path = Path("../Resources/loans_tree.png")
+  file_path = "../Resources/loans_tree.png"
   graph.write_png(file_path)
   ```
 
