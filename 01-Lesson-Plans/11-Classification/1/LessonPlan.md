@@ -462,7 +462,7 @@ The instructor provides a formal lecture explaining to students what accuracy, p
 
 Navigate to the 11.1 slides section on accuracy, precision, and recall; and highlight the following:
 
-* Explain to students that **accuracy**, **precision**, and **recall** are especially important for **classification** models, which a **binary decision problem**. **Binary decision problems** have two possible correct answers: **True Positive** and **True Negative**.
+* Explain to students that **accuracy**, **precision**, and **recall** are especially important for **classification** models, which are **binary decision problems**. **Binary decision problems** have two possible correct answers: **True Positive** and **True Negative**.
 
   * Inaccurate and imprecise models result in models returning false positives and false negatives.
 
