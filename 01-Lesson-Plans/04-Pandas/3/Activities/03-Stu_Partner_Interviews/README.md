@@ -2,7 +2,7 @@
 
 Each interview problem in the [Interview Questions README](../README.md) has its own README, replete with prompts and specific notes.
 
-Because every candidate is unique, with their own thoughts and characteristics, it's impossible to provide an "exemplary" response for each interview question. Strong candidates might respond to an interview problem in a manner that is both well crafted and impossible to anticipate; therefore, each evaluation contains an element of subjectivity. Ultimately, the interview should be considered an _organic_ discussion between you and your candidate. Use the README to supplement that discussion, but don't be afraid to ignore or add to the prompts and hints as needed.
+Because every candidate is unique, with their own thoughts and characteristics, it's impossible to provide an "exemplary" response for each interview question. Strong candidates might respond to an interview problem in a manner that is both well crafted and impossible to anticipate; therefore, each evaluation will be somewhat subjective. Ultimately, the interview should be considered an _organic_ discussion between you and your candidate. Use the README to supplement that discussion, but don't be afraid to ignore or add to the prompts and hints as needed.
 
 ## How to Use the READMEs
 
@@ -16,7 +16,7 @@ Because every candidate is unique, with their own thoughts and characteristics, 
 
 * When a README contains a code snippet in the Problem statement at the top, do _not_ provide it to the candidate in code on the computer. Rather, write it in a notebook or on the whiteboard, and provide it for them to brainstorm with. Avoid the text editor until you have given the candidate the go-ahead to implement their solutions.
 
-* Keep in mind that evaluation is subjective. The READMEs contain useful information, prompts, and hints that often come up when candidates are solving problems, but aren't, and can't be, _completely_ comprehensive.
+* Remember: evaluation is subjective. The READMEs contain useful information, prompts, and hints that often come up when candidates are solving problems, but aren't, and can't be, _completely_ comprehensive.
 
   * Use the README to supplement and guide your discussion with your candidate, _not_ as a final reference for how to discuss the problem.
 
@@ -30,7 +30,7 @@ Because every candidate is unique, with their own thoughts and characteristics, 
 
   * Candidates should also be in the habit of asking the interviewer if their solution sketch is "on the right track" before they start implementing. Remind them to do this if they forget.
 
-* In the best case, candidates won't need _any_ prompts.
+* Ideally, candidates won't need _any_ prompts.
 
   * Don't penalize candidates if they need prompts but use the information well. But, do reward them if they do _not_ need the prompts.
 
