@@ -840,7 +840,7 @@ Emphasize to students that data will not always be equidistant with a wide margi
 
 * Remind students that margins should always be maximized
 
-* Indicate that when support vectors are too close to the margin, there is a 50% change the classification can go either this. This is why these results are not reliable.
+* Indicate that when support vectors are too close to the margin, there is a 50% chance the classification can go either way. This is why these results are not reliable.
 
   ![overlap.png](Images/overlap.png)
 
