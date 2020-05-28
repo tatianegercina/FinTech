@@ -171,7 +171,7 @@ The three main types of consensus algorithms that we cover in class are:
 
 <details><summary>Proof of Work</summary><br>
 
-- Used by Bitcoin and many other well known Blockchains, *Proof of Work* was the first concensus algorithm, and is where the term *mining* originated.
+- Used by Bitcoin and many other well known Blockchains, *Proof of Work* was the first consensus algorithm used in a public blockchain, and is where the term *mining* originated.
 - To malicously attack a blockchain using *PoW*, one would need to use 51% of the computational power that the network uses. This strongly disincentivizes attacking the network.
 - With this algorithm, the entities put their computational resources on the line as collateral.
 - For more information on *PoW*, check out [this article](https://en.bitcoin.it/wiki/Proof_of_work).
