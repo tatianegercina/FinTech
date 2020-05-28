@@ -126,7 +126,7 @@ For more on hashing, check out [this](https://www.investopedia.com/terms/h/hash.
 
 **Private Key** - A private key is a key that is kept secret. It can be used in conjunction with another person's public key to encrypt and decrypt messages with assymetric cryptography or it can be shared with another person so that they might decrypt your symmetric cryptography message.
 
-**Nonce** - A nonce is a number used once. It can be added to encryption methods to increase security by introducing an element of randomness.
+**Nonce** - A nonce is a number used once. It can be added to cryptographic methods to increase security by introducing an element of randomness.
 
 The uses of these terms is explained in more detail in the next question: *What is the difference between Symmetric and Asymmetric Cryptography?*.
 
