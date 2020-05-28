@@ -440,7 +440,7 @@ Next, provide an overview of the activity.
 
 * Students will have 30 minutes to develop their case studies, and 2 to 3 minutes to present their reports.
 
-Slack out the [case study examples](https://github.com/coding-boot-camp/FinTech-Lesson-Plans/tree/master/01-Lesson-Plans/01-Intro-to-FinTech/3/Activities/04-Stu_Group_Case_Study/Resources) to the class for reference. Get them excited! This activity is a great opportunity for students to combine what they've learned technically (command line and git) as well as conceptually (FinTech domains) to produce a company analysis.
+Slack out the [case study examples](https://github.com/coding-boot-camp/FinTech-Lesson-Plans/tree/master/01-Lesson-Plans/01-Intro-to-FinTech/3/Activities/14-Stu_Group_Case_Study/Resources) to the class for reference. Get them excited! This activity is a great opportunity for students to combine what they've learned technically (command line and git) as well as conceptually (FinTech domains) to produce a company analysis.
 
 ---
 
@@ -448,7 +448,7 @@ Slack out the [case study examples](https://github.com/coding-boot-camp/FinTech-
 
 n this activity, students will work in pairs to create a shortened case study report on a particular FinTech company, which will be chosen from a list of case study proposals. Each team will create a shared GitHub repository and write their report in markdown.
 
-**Instructions:** [README.md](Activities/04-Stu_Group_Case_Study/README.md)
+**Instructions:** [README.md](Activities/14-Stu_Group_Case_Study/README.md)
 
 ### 15. Instructor Do: Review FinTech Case Study (15 min)
 
