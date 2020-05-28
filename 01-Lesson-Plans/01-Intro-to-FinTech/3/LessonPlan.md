@@ -402,7 +402,7 @@ Answer any questions before moving on.
 
 In this activity, students will visually enhance their README files for their GitHub repositories by adding additional markdown features.
 
-**Instructions:** [README.md](Activities/10-Stu_Markdown/README.md)
+**Instructions:** [README.md](Activities/10-Stu_Git_Welcome/README.md)
 
 ### 11. Instructor Do: Review Git Welcome (5 min)
 
