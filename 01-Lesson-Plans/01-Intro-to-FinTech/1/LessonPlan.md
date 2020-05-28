@@ -109,7 +109,7 @@ Then move on to the first topic of the day: defining FinTech. Review the slides 
 
 In this activity, students get a chance to reflect by writing down what FinTech means to them.
 
-**File:** [README.md](Activities/03-Stu_FinTech_Group_Discussions/README.md)
+**File:** [README.md](Activities/03-Stu_FinTech_and_Me/README.md)
 
 During this activity, students will share their responses with their classmates. Be sure that you and the TAs circulate the classroom to listen to students' responses. If you hear responses that are especially engaging or interesting, ask those students to share their responses with the class during the review portion (Instructor Do: Review FinTech and Me).
 
