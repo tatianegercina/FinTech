@@ -322,7 +322,7 @@ def headline_sentiment_summarizer_avg(headlines):
     return sentiment
 ```
 
-* After calculating the sentiment scores and merging it with the stock return that we get from the IEX API, we generate the correlation coefficients between each variable in the DataFrame. One useful trick when looking for strong correlations, especially when there are many variables of interest, is to use the Pandas style module to visualize the DataFrame as a heat map.
+* After calculating the sentiment scores and merging it with the stock return that we get from the Alpaca API, we generate the correlation coefficients between each variable in the DataFrame. One useful trick when looking for strong correlations, especially when there are many variables of interest, is to use the Pandas style module to visualize the DataFrame as a heat map.
 
 ```python
 topic_sentiments.corr().style.background_gradient()
