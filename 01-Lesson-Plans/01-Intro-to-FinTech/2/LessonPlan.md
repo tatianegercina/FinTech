@@ -133,13 +133,13 @@ Answer any questions before moving on.
 
 In this activity, students will perform their own file system operations via the command line.
 
-**File:** [README.md](Activities/02-Stu_Terminal/README.md)
+**File:** [README.md](Activities/03_File_System_Operations/README.md)
 
 ---
 
 ### 4. Instructor Do: Review File System Operations (5 min)
 
-Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points. You can also use the slides to show these definitions to students:
+Open [file_system_operations.sh](Activities/03_File_System_Operations/Solved/file_system_operations.sh) and cover the following points. You can also use the slides to show these definitions to students:
 
 * `mkdir` creates folder directories.
 
