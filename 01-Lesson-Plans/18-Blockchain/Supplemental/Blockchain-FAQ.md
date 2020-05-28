@@ -83,7 +83,7 @@ For more information on nodes, take a look at [this article](https://medium.com/
 
 <details><summary>What is cryptography and why is relevant to Blockchain?</summary><br>
 
-Cryptography is the science of using math to secure data so that third parties cannot decipher it or tamper with it. This process is done through various methods of encryption and digital signatures such as hashing and numerical keys (passcodes).
+Cryptography is the science of using math to secure data so that third parties cannot decipher it or tamper with it. There are many types of cryptographic functions, such as hashing, encryption, digital signatures, and other data integrity checks. Each serve a different specific purpose, and when combined together correctly, form highly secured systems.
 
 </details>
 <details><summary>What is a hash and why do I need it?</summary><br>
