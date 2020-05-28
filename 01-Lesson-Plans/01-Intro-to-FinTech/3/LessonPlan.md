@@ -289,7 +289,7 @@ Make sure all students were able to successfully clone a repository, add files t
 
 In this activity, students will use the git CLI to clone their git repositories to their local file systems, and then add directories to their GitHub repositories.
 
-**Instructions:** [README.md](Activities/07-Stu_Git_CLI/README.md)
+**Instructions:** [README.md](Activities/07-Stu_GitHub_Reorganized/README.md)
 
 ### 8. Instructor Do: Review GitHub Reorganized (10 min)
 
