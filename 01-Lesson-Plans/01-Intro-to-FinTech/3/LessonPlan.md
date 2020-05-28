@@ -593,7 +593,7 @@ Students probably know fairly little about Career Services. So today, you will:
 
 #### 17.2 Instructor Do: Career Services Video (20 min)
 
-* Navigate to the Career Services FinTech resource page: [http://bit.ly/FinTechCS](http://bit.ly/FinTechCS). Slack out the link to your students so they have it as well.
+* Navigate to the Career Services FinTech resource page: [http://bit.ly/FinTechCS](http://bit.ly/FinTechCS). Slack out the link to your students, so they have it as well.
 
 * Let students know that this site contains many resources provided by Career Services that they can freely use during and after their time in boot camp.
 
@@ -603,7 +603,7 @@ Students probably know fairly little about Career Services. So today, you will:
 
   ☝️ What is Career Services?
 
-  🙋 Our partner in success. Whether we are job seekers or promotion seekers, Career Services can help us improve our behavioral and technical interviewing skills, as well as create great professional materials (resume, portfolio, LinkedIn etc.)
+  🙋 Our partner in success. Whether we are job seekers or promotion seekers, Career Services can help us improve our behavioural and technical interviewing skills, as well as create great professional materials (resume, portfolio, LinkedIn etc.)
 
   ☝️ So there's a lot of keywords in this video, or jargon, that we may not know. Did anybody note anything down that they didn't know?
 
@@ -615,11 +615,11 @@ Students probably know fairly little about Career Services. So today, you will:
 
   * **Career Director**: Offers quality coaching, strategies, and resources to help you become employer-competitive. You can meet with a Career Director by phone/video, 1:1 throughout and after the boot camp.
 
-  * **Profile Coach (now, Career Material Advisor)**: Offers unlimited feedback on professional materials to help you become employer-competitive. Career Material Advisors receive your materials via digital submission (BootcampSpot, Canvas etc.).
+  * **Profile Coach (now, Career Material Advisor)**: Offers unlimited feedback on professional materials to help you become employer-competitive. Career Material Advisors receive your materials via digital submission (BootcampSpot, Canvas, etc.).
 
   * **Demo Day**: Once boot camp is over, we will invite you to present at an event where we will invite local employers and recruiters to view your projects, ask you questions, and hopefully, offer you a job!
 
-  * **Whiteboarding sessions**: Actually, Career Services offers a wide range of sessions on whiteboarding, talking tech with recruiters, tackling online technical assessments and behavioral interviewing techniques. You can find these on your BootcampSpot or Canvas calendar.
+  * **Whiteboarding sessions**: Actually, Career Services offers a wide range of sessions on whiteboarding, talking tech with recruiters, tackling online technical assessments and behavioural interviewing techniques. You can find these on your BootcampSpot or Canvas calendar.
 
 #### 17.3 Students Do: Employer-Ready Criteria (8 min)
 
