@@ -123,7 +123,7 @@ Open the command line and demo the following commands. Tell students that on a M
 
 ![terminal-example](Images/terminal-example.png)
 
-Slack out [CommonCommands.txt](Activities/01-Ins_Terminal/Solved/CommonCommands.md) for students to use as a reference.
+Slack out [CommonCommands.txt](Activities/02-Ins_Intro_to_Command_Line/Solved/CommonCommands.md) for students to use as a reference.
 
 Answer any questions before moving on.
 
