@@ -448,7 +448,7 @@ Slack out the [case study examples](https://github.com/coding-boot-camp/FinTech-
 
 n this activity, students will work in pairs to create a shortened case study report on a particular FinTech company, which will be chosen from a list of case study proposals. Each team will create a shared GitHub repository and write their report in markdown.
 
-**Instructions:** [README.md](Activities/14-Stu_Group_Case_Study/README.md)
+**Instructions:** [README.md](Activities/14-Stu_FinTech_Case_Study/README.md)
 
 ### 15. Instructor Do: Review FinTech Case Study (15 min)
 
