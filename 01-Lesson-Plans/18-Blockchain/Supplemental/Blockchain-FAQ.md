@@ -90,7 +90,7 @@ Cryptography is the science of using math to secure data so that third parties c
 
 A hash is a one way function that provides a digital fingerprint of data. Hashing is a key component of security on the blockchain, as this is what is used to 'chain' each block (list of records) to the last block. These hashes must match or the block cannot be proven as trustworthy and added to the official blockchain (ledger or list of blocks/records).
 
-A hash function takes an input of any length and turns it into a fixed length, encrypted alphanumeric string - regardless of the input contents, or length of characters. The outputed hash cannot be decrypted.
+A hash function takes an input of any length and turns it into a fixed length scrambled alphanumeric string - regardless of the input contents, or length of characters. The resulting hash cannot be decrypted, as hashing is a one-way function. A hash can be used as a "fingerprint" for any kind of data.
 
 For example the following two input strings result in different output hash strings that are the same length:
 
