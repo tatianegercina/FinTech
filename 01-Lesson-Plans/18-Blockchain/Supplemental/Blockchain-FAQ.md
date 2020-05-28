@@ -146,7 +146,7 @@ To **encrypt** and send a message:
 To **decrypt** a received message:
 -- The recipient must have their own private key, and the _sender's_ public key
 
-Using a nonce with this method can increase security by adding an element of randomness. The Nonce, _number used once_, is used much like a key. If employing the nonce method with your public key, both would be required to encrypt/decrypt messages.
+Using a nonce with this method can increase security by adding an element of randomness. The Nonce, _number used once_, is used to make the resulting encrypted message different regardless of the same input, which makes it harder to analyze the output for patterns. If employing the nonce method with your cryptographic algorithm, it would be required to regenerate the same results again later or to decrypt data properly.
 
 Digital signatures are the use of a private key to digitally 'sign' a document. To sign a document digitally, one must provide their private key and public key. Then the document is 'signed' which produces a string of random alphanumeric characters, much like a nonce. This string is the 'signature'. The recipient of the document can then use the sender's public key in conjunction with this signature string to verify the document.
 
