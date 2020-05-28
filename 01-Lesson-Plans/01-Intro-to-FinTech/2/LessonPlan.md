@@ -319,7 +319,7 @@ Then, end the discussion with the following points:
 
 In this activity, students will work in groups to research and answer questions about various FinTech domains.
 
-**File:** [README.md](Activities/03-Stu_FinTech_Domains_Part_I/README.md)
+**File:** [README.md](Activities/10-Stu_FinTech_Domains_Part_I/README.md)
 
 **Note:** There should be an even number of groups for this activity.
 
@@ -352,7 +352,7 @@ In this activity, students will build on the research gathered in Part 1 to crea
 
 ---
 
-**File:** [README.md](Activities/04-Stu_FinTech_Domains_Part_II/README.md)
+**File:** [README.md](Activities/12-Stu_FinTech_Domains_Part_II/README.md)
 
 ### 13. Instructor Do: Review FinTech Domains, Part 2 (15 min)
 
