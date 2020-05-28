@@ -140,7 +140,7 @@ Ask if there are any questions before moving on.
 
 In this activity, students will follow the steps in the preceding instructor demo to create their own repository in GitHub and modify the README file in order to personalize their repo.
 
-**Instructions:** [README.md](Activities/03-Stu_Refresher/README.md)
+**Instructions:** [README.md](Activities/03-Stu_Create_GitHub_Repository/README.md)
 
 ### 4. Instructor Do: Review Create and Personalize a GitHub Repository (5 min)
 
