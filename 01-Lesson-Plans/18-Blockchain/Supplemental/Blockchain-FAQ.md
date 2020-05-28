@@ -111,6 +111,9 @@ length = `64`
 
 </blockquote>
 
+Notice that even though we only changed the input very slightly, we got a completely different hash!
+
+The same logic applies for any other type of data. If you download a piece of software from a website that provides the hash of the file, and want to verify that the file you downloaded was exactly what you expected, you could run the same hashing algorithm on the file to verify that you get the **exact** same hash as the website listed. Even if one single bit changed in the file you downloaded, the resulting hash would be dramatically different.
 Though the inputs are different lengths and characters, the outputs are both 64 characters long.
 
 Hashing algorithms are complex, but thankfully we don't have to write the algorithms themselves, as there are plenty that have alrady been generated that can be used. Python includes an in-built hashing library called hashlib that includes some of the most popular hashing functions.
