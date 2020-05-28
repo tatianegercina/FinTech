@@ -148,7 +148,7 @@ To **decrypt** a received message:
 
 Using a nonce with this method can increase security by adding an element of randomness. The Nonce, _number used once_, is used to make the resulting encrypted message different regardless of the same input, which makes it harder to analyze the output for patterns. If employing the nonce method with your cryptographic algorithm, it would be required to regenerate the same results again later or to decrypt data properly.
 
-Digital signatures are the use of a private key to digitally 'sign' a document. To sign a document digitally, one must provide their private key and public key. Then the document is 'signed' which produces a string of random alphanumeric characters, much like a nonce. This string is the 'signature'. The recipient of the document can then use the sender's public key in conjunction with this signature string to verify the document.
+Digital signatures are the use of a private key to digitally 'sign' a document. To sign a document digitally, one must use their private key to "sign" the data which produces a string of alphanumeric characters. This string is the "signature". The recipient of the document can then use the public key of the signer to verify that the signature and document was not tampered with.
 
 To read more about digital signatures, click [here](https://www.instantssl.com/digital-signature) and [here](https://medium.com/@xragrawal/digital-signature-from-blockchain-context-cedcd563eee5).
 
