@@ -2,9 +2,9 @@
 
 ## Introduction
 
-* In this activity, you will use the Hodrick-Prescott filter to examine macro economic trends in the United States between 2004 and 2010.
+* In this activity, you will use the Hodrick-Prescott filter to examine macro economic trends in Canada between 2004 and 2010.
 
-* FRED, or Federal Reserve Economic Data, is a database of macroeconomic data in the United States.
+* FRED, or Federal Reserve Economic Data, is a database of macroeconomic data held within the United States.
 
 ## Instructions
 
@@ -18,7 +18,7 @@
 
 * Plot the GDP noise as a line plot.
 
-* Repeat the processes for inflation (keyword `CPIAUCNS`) and job count (keyword `PAYEMS`).
+* Repeat the processes for inflation (keyword `INFLATION_RATE`) and employment (keyword `EMPLOYMENT_RATE`).
 
 * For at least one of these data sets, plot the exponentially-weighted moving averages. How do the results compare to results of the H-P filter?
 

@@ -518,7 +518,7 @@ Finally, show the plots of the trend and noise components after filtering:
 
 ### 10. Students Do: You've Got a FRED (15 min)
 
-In this activity, students will use the Hodrick-Prescott filter to identify macroeconomic trends in the United States in the period from 2004 to 2010.
+In this activity, students will use the Hodrick-Prescott filter to identify macroeconomic trends in Canada in the period from 2004 to 2010.
 
 **Files:**
 
@@ -536,7 +536,7 @@ In this activity, students will use the Hodrick-Prescott filter to identify macr
 
 Open the solution file, and conduct a brief dry walkthrough of the code.
 
-* Explain that we'll read in data from the Federal Reserve via a csv. 
+* Explain that we'll read in data from the Federal Reserve via a csv.
   
   * (To prevent in-class bugs, we're using csv's, but for students that want to pull this data real-time, they can use Pandas's `DataReader` package.):
 
