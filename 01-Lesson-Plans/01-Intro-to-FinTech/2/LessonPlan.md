@@ -69,7 +69,7 @@ Encourage students and get them excited for the lesson. Reiterate that today wil
 
 ---
 
-### 2. Instructor Do: Introduction to the Command Line (10 min)
+### 2. Instructor Do: Terminal (10 min)
 
 In this section, students will learn the basics of using the command line to perform basic file system operations on their machines.
 
@@ -129,7 +129,7 @@ Answer any questions before moving on.
 
 ---
 
-### 3. Student Do: File System Operations (15 min)
+### 3. Student Do: Terminal (15 min)
 
 In this activity, students will perform their own file system operations via the command line.
 
@@ -137,7 +137,7 @@ In this activity, students will perform their own file system operations via the
 
 ---
 
-### 4. Instructor Do: Review File System Operations (5 min)
+### 4. Instructor Do: Review Terminal (5 min)
 
 Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points. You can also use the slides to show these definitions to students:
 
