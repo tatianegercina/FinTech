@@ -372,7 +372,7 @@ List the components of time series decomposition:
 
 * Residual: How much noise exists in the data?
 
-Open the notebook and explain that it is a chart of monthly liquor sales in the United States between 1980 and 2007.
+Open the notebook and explain that it is a chart of monthly maple syrup sales in Canada between 1980 and 2007.
 
   ![Images/decomposition01.png](Images/decomposition01.png)
 
@@ -388,14 +388,14 @@ Show the next image in the notebook:
 
   ![Images/decomposition02.png](Images/decomposition02.png)
 
-* It plots liquor sales data from a 26-month period.
+* It plots maple syrup sales data from a 26-month period.
 
 * It shows a sales spike during each holiday season.
 
-Next, explain that the code below decomposes the liquor sales data.
+Next, explain that the code below decomposes the maple syrup sales data.
 
   ```python
-  decomposed = seasonal_decompose(df['liquor_sales'], model='multiplicative')
+  decomposed = seasonal_decompose(df['maple_syrup_sales'], model='multiplicative')
   ```
 
 * The model is specified as multiplicative because the seasonal fluctuation (the spikes) increases with the series.
