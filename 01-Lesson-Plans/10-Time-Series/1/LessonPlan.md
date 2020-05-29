@@ -237,7 +237,7 @@ The next slide introduces an Instructor Demonstration. Open the notebook and run
 Explain how to read a time series data set:
 
 ```python
-df2 = pd.read_csv('liquor_sales.csv', parse_dates=True, index_col='datetime')
+df2 = pd.read_csv(Path("../Resources/maple_syrup_sales.csv"), parse_dates=True, index_col="datetime")
 ```
 
 * There are two additional arguments here. The first, `parse_dates=True`, formats the column containing the datetime information as `datetime`.
@@ -248,7 +248,7 @@ Demonstrate that the data frame is now a true time series:
 
 * `df2.info()` shows that the index is a `DatetimeIndex`.
 
-* Plotting the `liquor_sales` column automatically formats the x-axis as dates.
+* Plotting the `maple_syrup_sales` column automatically formats the x-axis as dates.
 
 ![Images/datetime01.png](Images/datetime02.png)
 
