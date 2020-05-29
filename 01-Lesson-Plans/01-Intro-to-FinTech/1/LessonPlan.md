@@ -105,7 +105,7 @@ Then move on to the first topic of the day: defining FinTech. Review the slides 
 
 ---
 
-### 3. Student Do: FinTech and Me (5 min)
+### 3. Student Do: FinTech Group Discussions (5 min)
 
 In this activity, students get a chance to reflect by writing down what FinTech means to them.
 
@@ -113,7 +113,7 @@ In this activity, students get a chance to reflect by writing down what FinTech 
 
 During this activity, students will share their responses with their classmates. Be sure that you and the TAs circulate the classroom to listen to students' responses. If you hear responses that are especially engaging or interesting, ask those students to share their responses with the class during the review portion (Instructor Do: Review FinTech and Me).
 
-### 4. Instructor Do: Review FinTech and Me (10 min)
+### 4. Instructor Do: Review FinTech Group Discussions (10 min)
 
 **Optional:** Consider using a tool such as [polleverywhere](https://www.polleverywhere.com/) to collect and share responses in real-time. [Groupmap](https://www.groupmap.com/) may also be a good option.
 
