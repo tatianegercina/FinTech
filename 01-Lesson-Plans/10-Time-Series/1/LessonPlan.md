@@ -219,12 +219,12 @@ In addition, we'll be:
 The next slide introduces an Instructor Demonstration. Open the notebook and run the following lines of code:
 
   ```python
-  df = pd.read_csv('liquor_sales.csv')
+  df = pd.read_csv('maple_syrup_sales.csv')
   df.head()
   df.info()
   ```
 
-* The CSV, a data set of liquor sales figures, is opened with pandas.
+* The CSV, a data set of maple syrup sales figures, is opened with pandas.
 
 * `df.info()` lists the number of rows, as well as the column data types.
 
