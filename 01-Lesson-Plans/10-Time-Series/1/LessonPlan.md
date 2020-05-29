@@ -310,7 +310,7 @@ In this activity, students will practice the basics of time series manipulation 
 
 * [README.md](Activities/02-Stu_Time_Series_Basics/README.md)
 
-* [amazon.csv](Activities/02-Stu_Time_Series_Basics/Resources/amazon.csv)
+* [amazon.csv](Activities/02-Stu_Time_Series_Basics/Resources/shopify.csv)
 
 - - -
 
