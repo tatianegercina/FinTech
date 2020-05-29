@@ -12,13 +12,13 @@ For many students, this unit and the units to follow will be the bread and butte
 
 * Remember to emphasize the real-world value and application of time series analysis, machine learning, sentiment analysis, and other advanced analytic concepts as they are discussed.
 
- * Learning how to develop machine learning algorithms is what is required to take programming to the next level in the current day technological ecosystem. By the end of the course, students will have evolved from standard Python developers to FinTech data scientists, capable of designing and developing:
+  * Learning how to develop machine learning algorithms is what is required to take programming to the next level in the current day technological ecosystem. By the end of the course, students will have evolved from standard Python developers to FinTech data scientists, capable of designing and developing:
 
-   * Robo-advisors and chat-bots for algorithmic trading, product/investment recommendation, and customer service/support
+  * Robo-advisors and chat-bots for algorithmic trading, product/investment recommendation, and customer service/support
 
-   * Sentiment analysis engines to assess and predict economical sentiment for stock and housing markets
+  * Sentiment analysis engines to assess and predict economical sentiment for stock and housing markets
 
-   * Models that predict and detect fraudulent financial transactions
+  * Models that predict and detect fraudulent financial transactions
 
 Today's class will initiate this journey by introducing students to the basics of time series analytics.
 
@@ -65,6 +65,7 @@ By the end of this class, students will be able to:
   * [Machine Learning and Human Agility](https://www.youtube.com/watch?v=sWNG3omofoM)
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [10.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4234324b-3993-4779-a9b6-aad801186c48) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
@@ -205,12 +206,12 @@ In this activity, you will introduce the basics of working with time series in P
 
 Navigate to the Time Series Basics slides and explain that we will learn the following Pandas techniques to work with time series data:
 
-
 * Using the `loc[]` accessor to select rows with specified dates. (First Slide)
 
 * Using the `resample()` method to group rows by day, week, month, year, or any datetime attribute. (Following Slide)
 
 In addition, we'll be:
+
 * Converting a column of dates from string to datetime format.
 
 * Accessing datetime attributes from the index.
@@ -223,53 +224,53 @@ The next slide introduces an Instructor Demonstration. Open the notebook and run
   df.info()
   ```
 
-  * The CSV, a data set of liquor sales figures, is opened with pandas.
+* The CSV, a data set of liquor sales figures, is opened with pandas.
 
-  * `df.info()` lists the number of rows, as well as the column data types.
+* `df.info()` lists the number of rows, as well as the column data types.
 
-  * The `datetime` column type is listed as `object`. In Pandas the `object` datatype name typically means the values held inside are strings.
+* The `datetime` column type is listed as `object`. In Pandas the `object` datatype name typically means the values held inside are strings.
 
   ![Images/datetime00.png](Images/datetime00.png)
 
   ![Images/datetime01.png](Images/datetime01.png)
 
-
 Explain how to read a time series data set:
 
-  ```python
-  df2 = pd.read_csv('liquor_sales.csv', parse_dates=True, index_col='datetime')
-  ```
+```python
+df2 = pd.read_csv('liquor_sales.csv', parse_dates=True, index_col='datetime')
+```
 
-  * There are two additional arguments here. The first, `parse_dates=True`, formats the column containing the datetime information as `datetime`.
+* There are two additional arguments here. The first, `parse_dates=True`, formats the column containing the datetime information as `datetime`.
 
-  * The next argument, `index_col='datetime'` sets this column as the data frame index.
+* The next argument, `index_col='datetime'` sets this column as the data frame index.
 
 Demonstrate that the data frame is now a true time series:
 
+* `df2.info()` shows that the index is a `DatetimeIndex`.
 
-  * `df2.info()` shows that the index is a `DatetimeIndex`.
+* Plotting the `liquor_sales` column automatically formats the x-axis as dates.
 
-  * Plotting the `liquor_sales` column automatically formats the x-axis as dates.
+![Images/datetime01.png](Images/datetime02.png)
 
-  ![Images/datetime01.png](Images/datetime02.png)
-
-  ![Images/datetime01.png](Images/datetime03.png)
+![Images/datetime01.png](Images/datetime03.png)
 
 Having properly formatted and indexed the time series, explain next how to select and slice the data frame with specified dates:
 
-  * Using the `loc[]` accessor, only rows from the year 1980 can be selected.
-  ```python
-  first_year = df2.loc['1980']
-  ```
+* Using the `loc[]` accessor, only rows from the year 1980 can be selected.
 
-  * Specific months or days of a particular year can be accessed this way as well, using the following syntax:
 ```python
-  sepcific_date1 = df2.loc['1980-11']
-  specific_date2 = df2.loc['November 1, 2016']
-  specific_date3 = df2.loc['2016-Nov-1']
-
+first_year = df2.loc['1980']
 ```
-  * The `loc[]` accessor can also be used to slice a date range: `two_year_period = df2.loc['1985': '1986']`.
+
+* Specific months or days of a particular year can be accessed this way as well, using the following syntax:
+
+```python
+sepcific_date1 = df2.loc['1980-11']
+specific_date2 = df2.loc['November 1, 2016']
+specific_date3 = df2.loc['2016-Nov-1']
+```
+
+* The `loc[]` accessor can also be used to slice a date range: `two_year_period = df2.loc['1985': '1986']`.
 
 Next, explain that the `resample()` method groups rows by a specified time frame:
 
@@ -396,8 +397,8 @@ Next, explain that the code below decomposes the liquor sales data.
   ```
 
 * The model is specified as multiplicative because the seasonal fluctuation (the spikes) increases with the series.
-   
-   * Why? If you have a time series with a trend, the amplitude of any seasonal activity  in that series tends to increase over time. In other words, those periodic 'spikes' in a series get 'spikier', the more you progress through time. A multiplicative model specification will better capture and predict this type of activity.
+
+  * Why? If you have a time series with a trend, the amplitude of any seasonal activity  in that series tends to increase over time. In other words, those periodic 'spikes' in a series get 'spikier', the more you progress through time. A multiplicative model specification will better capture and predict this type of activity.
 
 Explain that the time series is decomposed visually by the library:
 
@@ -425,7 +426,8 @@ In this activity, you will introduce EWMA, or exponentially-weighted moving aver
 
 Begin by doing a concept overview of the EWMA and Hodrick-Prescott filters using the slides.  
 
-**EWMA Slides** 
+**EWMA Slides**
+
 Explain that an exponentially-weighted moving average (EWMA) is similar to a moving average, with a significant difference:
 
   ![Images/ma02.png](Images/ma02.png)
@@ -458,9 +460,8 @@ The math slide explains the overall mathematical idea of the Hodrick-Prescott fi
 * The right side basically describes the volatility in trend.
 
 * The H-P filter essentially **minimizes** the aggregate values associated with non-trend (periodicity and volatility).
- 
-Phew! Let's move on to demo-ing the code. 
 
+Phew! Let's move on to demo-ing the code.
 
 **Instructor Demo and Files:**
 
@@ -485,8 +486,8 @@ Begin the activity with a brief review of the moving average, before rolling on 
 * In pandas, an EWMA can be computed with the `ewm()` and `mean()` methods.
 
 * As mentioned above, in a rolling average, a `window` argument is supplied. By contrast, the `ewm()` method takes a `halflife` argument. 
-  *  The two are conceptually similar, but not mathematically the same thing. Essentially halflife relates to how much weight we give to the more recent observations: the shorter the halflife, the more weight we're giving to those recent observations (think: shorter half life==reacting more quickly).
-
+  
+  * The two are conceptually similar, but not mathematically the same thing. Essentially halflife relates to how much weight we give to the more recent observations: the shorter the halflife, the more weight we're giving to those recent observations (think: shorter half life==reacting more quickly).
 
 Next, explain the Python code used to run the Hodrick-Prescott filter:
 
@@ -534,15 +535,16 @@ In this activity, students will use the Hodrick-Prescott filter to identify macr
 Open the solution file, and conduct a brief dry walkthrough of the code.
 
 * Explain that we'll read in data from the Federal Reserve via a csv. 
-  *  (To prevent in-class bugs, we're using csv's, but for students that want to pull this data real-time, they can use Pandas's `DataReader` package.):
+  
+  * (To prevent in-class bugs, we're using csv's, but for students that want to pull this data real-time, they can use Pandas's `DataReader` package.):
 
-        ```python
-        start = datetime.datetime(2004, 1, 1)
-        end = datetime.datetime(2010, 1, 1)
-        gdp = web.DataReader(['GDP'], 'fred', start, end)
-        ```
+    ```python
+    start = datetime.datetime(2004, 1, 1)
+    end = datetime.datetime(2010, 1, 1)
+    gdp = web.DataReader(['GDP'], 'fred', start, end)
+    ```
 
-        ![datareader.png](Images/datareader.png)
+    ![datareader.png](Images/datareader.png)
 
 * Explain using the H-P filter in Python. It is a `statsmodels` module that requires a single line of code. The plots are created simply with pandas's `plot()` method.
 
@@ -567,7 +569,8 @@ Before diving into the code, introduce the concept of autocorrelation with the f
 
 * Autocorrelation, on the other hand, determines to what extent, for example, today's values correlate with yesterday's values.
 
-* Hourly temperature is a clear, easy to understand, illustration of the concept autocorrelation. 
+* Hourly temperature is a clear, easy to understand, illustration of the concept autocorrelation.
+  
   * What's the temperature an hour into the future? It's very likely to be similar to what it is now (one "lag" away).
   * What's the temparature at noon today? Likely we'll get good information by looking at what the temperature was at noon yesterday (24 hours, or "lags", ago).
 
@@ -582,7 +585,6 @@ Open the notebook and briefly describe the data set:
 * The temperature readings are hourly.
 
 * Each hourly reading is fairly close to that of the previous hour.
-
 
 To illustrate autocorrelation, explain to students that the `Lag_Temperature` column is the result of shifting the `Temperature` column down by one:
 
@@ -610,7 +612,7 @@ Now show the plotting of temperature over a 48-hour period, with the following o
 
 * The temperature, predictably, shows a cyclical pattern.
 
- * Despite significant swings seen in a day, the temperature change between one hour to the next is fairly small.
+  * Despite significant swings seen in a day, the temperature change between one hour to the next is fairly small.
 
 * For a given temperature reading, say 6 am on January 1st, the most similar temperature reading is seen again 24 hours later.
 
@@ -664,7 +666,8 @@ The `plot_acf()` function visualizes what we have discussed so far:
 * This plot, in other words, shows autocorrelation at lags up to 48, which was specified in the argument `lags=48`.
 
 * As pointed out previously, there is high autocorrelation at a lag of 1, slightly lower at lag 2, and so on. Then a high autocorrelation is found at a lag of 24, and multiples of 24, such as 48.
-     * This high autocorrelation at the -24 and -48 hour lag is a good example of seasonality; the weather today at noon is much more likely to be correlated with what the weather was yesterday at noon than, say, what the weather was last midnight.   
+  
+  * This high autocorrelation at the -24 and -48 hour lag is a good example of seasonality; the weather today at noon is much more likely to be correlated with what the weather was yesterday at noon than, say, what the weather was last midnight.
 
 Next, explain that the band in light blue is the confidence interval.
 
@@ -758,14 +761,13 @@ Review the ACF and PACF plots:
 
   ![Images/etf02.png](Images/etf02.png)
 
-  * The ACF and PACF plots here have a similar appearance, although that is not always the case.
+* The ACF and PACF plots here have a similar appearance, although that is not always the case.
 
-  * The ACF and PACF both appear to be significant at a lag of 1, along with possibly the 4th lag.
-    * Should we chose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest we use a model that carries the order all the way out to AR(4). Ultimately, however, whether an AR(1) or an AR(4) is more appropriate will really just ultimately depend on how well the two different specifications perform on the data that we have. 
-
-    * While approximately the 13th lag looks significant in the autocorrelation plot, it's not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(); the really beneficial lags are the 1st and the 4th, whereas the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads. 
-
+* The ACF and PACF both appear to be significant at a lag of 1, along with possibly the 4th lag.
   
+  * Should we chose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest we use a model that carries the order all the way out to AR(4). Ultimately, however, whether an AR(1) or an AR(4) is more appropriate will really just ultimately depend on how well the two different specifications perform on the data that we have. 
+
+  * While approximately the 13th lag looks significant in the autocorrelation plot, it's not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(); the really beneficial lags are the 1st and the 4th, whereas the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads. 
 
 - - -
 
