@@ -310,7 +310,7 @@ In this activity, students will practice the basics of time series manipulation 
 
 * [README.md](Activities/02-Stu_Time_Series_Basics/README.md)
 
-* [amazon.csv](Activities/02-Stu_Time_Series_Basics/Resources/shopify.csv)
+* [shopify.csv](Activities/02-Stu_Time_Series_Basics/Resources/shopify.csv)
 
 - - -
 
@@ -326,7 +326,7 @@ Quickly walk through the basic steps of working with a time series in pandas. Us
 
   ```python
   df = pd.read_csv(
-    'amazon.csv',
+    'shopify.csv',
     parse_dates=True,
     index_col='Date')
   sep_2018 = df2.loc['2018-09']
