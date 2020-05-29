@@ -136,13 +136,13 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 3. Student Do: Create and Personalize a GitHub Repository (15 min)
+### 3. Student Do: Refresher (15 min)
 
 In this activity, students will follow the steps in the preceding instructor demo to create their own repository in GitHub and modify the README file in order to personalize their repo.
 
 **Instructions:** [README.md](Activities/01-Stu_Refresher/README.md)
 
-### 4. Instructor Do: Review Create and Personalize a GitHub Repository (5 min)
+### 4. Instructor Do: Review Refresher (5 min)
 
 Review the previous activity with students, highlighting the following points:
 
@@ -285,13 +285,13 @@ Make sure all students were able to successfully clone a repository, add files t
 
 ---
 
-### 7. Student Do: GitHub Reorganized (15 min)
+### 7. Student Do: Git CLI (15 min)
 
 In this activity, students will use the git CLI to clone their git repositories to their local file systems, and then add directories to their GitHub repositories.
 
 **Instructions:** [README.md](Activities/02-Stu_Git_CLI/README.md)
 
-### 8. Instructor Do: Review GitHub Reorganized (10 min)
+### 8. Instructor Do: Review Git CLI (10 min)
 
 In this section, review the previous activity and take some time to answer students' questions.
 
@@ -398,13 +398,13 @@ Answer any questions before moving on.
 
 ---
 
-### 10. Student Do: Git Welcome (15 min)
+### 10. Student Do: Markdown (15 min)
 
 In this activity, students will visually enhance their README files for their GitHub repositories by adding additional markdown features.
 
 **Instructions:** [README.md](Activities/03-Stu_Markdown/README.md)
 
-### 11. Instructor Do: Review Git Welcome (5 min)
+### 11. Instructor Do: Review Markdown (5 min)
 
 Take some time to review the previous activity with students, highlighting the following points:
 
@@ -444,13 +444,13 @@ Slack out the [case study examples](https://github.com/coding-boot-camp/FinTech-
 
 ---
 
-### 14. Student Do: FinTech Case Study (30 min)
+### 14. Student Do: Group Case Study (30 min)
 
 n this activity, students will work in pairs to create a shortened case study report on a particular FinTech company, which will be chosen from a list of case study proposals. Each team will create a shared GitHub repository and write their report in markdown.
 
 **Instructions:** [README.md](Activities/04-Stu_Group_Case_Study/README.md)
 
-### 15. Instructor Do: Review FinTech Case Study (15 min)
+### 15. Instructor Do: Review Group Case Study (15 min)
 
 Students will now present their findings to the class.
 
