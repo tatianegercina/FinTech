@@ -57,7 +57,6 @@
 
 
 ## FAQs
-
 <details><summary>What is Blockchain?</summary><br>
 
 A blockchain is a type of database that stores an ever-growing list of records, called blocks, that are linked together cryptographically with hashing. Hashing, though similar to encryption is fundamentally different in that it cannot be decrypted - it is a one way scrambling of a message to produce a unique string of characters. This hash string is what links each list of records to the one previous.
@@ -141,14 +140,14 @@ For more information on nodes, take a look at [this article](https://medium.com/
 
 <details><summary>What is cryptography and why is relevant to Blockchain?</summary><br>
 
-Cryptography is the science of using math to secure data so that third parties cannot decipher it or tamper with it. This process is done through various methods of encryption and digital signatures such as hashing and numerical keys (passcodes).
+Cryptography is the science of using math to secure data so that third parties cannot decipher it or tamper with it. There are many types of cryptographic functions, such as hashing, encryption, digital signatures, and other data integrity checks. Each serve a different specific purpose, and when combined together correctly, form highly secured systems.
 
 </details>
 <details><summary>What is a hash and why do I need it?</summary><br>
 
 A hash is a one way function that provides a digital fingerprint of data. Hashing is a key component of security on the blockchain, as this is what is used to 'chain' each block (list of records) to the last block. These hashes must match or the block cannot be proven as trustworthy and added to the official blockchain (ledger or list of blocks/records).
 
-A hash function takes an input of any length and turns it into a fixed length, encrypted alphanumeric string - regardless of the input contents, or length of characters. The outputed hash cannot be decrypted.
+A hash function takes an input of any length and turns it into a fixed length scrambled alphanumeric string - regardless of the input contents, or length of characters. The resulting hash cannot be decrypted, as hashing is a one-way function. A hash can be used as a "fingerprint" for any kind of data.
 
 For example the following two input strings result in different output hash strings that are the same length:
 
@@ -163,12 +162,15 @@ length = `64`
 ### Hash #2
 <blockquote>
 
-input = `'Blockchain is totally rad'`<br>
-output = `'052f2acc6d16628adeb76339fb03f63fd39450a62fa748e530cec10b5c259a76'`<br>
+input = `'Hashing is super fun!`<br>
+output = `'1e56ea7198cfad7774adf89b32459914b6c165ba19d2e44f28f907384623d15b'`<br>
 length = `64`
 
 </blockquote>
 
+Notice that even though we only changed the input very slightly, we got a completely different hash!
+
+The same logic applies for any other type of data. If you download a piece of software from a website that provides the hash of the file, and want to verify that the file you downloaded was exactly what you expected, you could run the same hashing algorithm on the file to verify that you get the **exact** same hash as the website listed. Even if one single bit changed in the file you downloaded, the resulting hash would be dramatically different.
 Though the inputs are different lengths and characters, the outputs are both 64 characters long.
 
 Hashing algorithms are complex, but thankfully we don't have to write the algorithms themselves, as there are plenty that have alrady been generated that can be used. Python includes an in-built hashing library called hashlib that includes some of the most popular hashing functions.
@@ -181,7 +183,7 @@ For more on hashing, check out [this](https://www.investopedia.com/terms/h/hash.
 
 **Private Key** - A private key is a key that is kept secret. It can be used in conjunction with another person's public key to encrypt and decrypt messages with assymetric cryptography or it can be shared with another person so that they might decrypt your symmetric cryptography message.
 
-**Nonce** - A nonce is a number used once. It can be added to encryption methods to increase security by introducing an element of randomness.
+**Nonce** - A nonce is a number used once. It can be added to cryptographic methods to increase security by introducing an element of randomness.
 
 The uses of these terms is explained in more detail in the next question: *What is the difference between Symmetric and Asymmetric Cryptography?*.
 
@@ -201,9 +203,9 @@ To **encrypt** and send a message:
 To **decrypt** a received message:
 -- The recipient must have their own private key, and the _sender's_ public key
 
-Using a nonce with this method can increase security by adding an element of randomness. The Nonce, _number used once_, is used much like a key. If employing the nonce method with your public key, both would be required to encrypt/decrypt messages.
+Using a nonce with this method can increase security by adding an element of randomness. The Nonce, _number used once_, is used to make the resulting encrypted message different regardless of the same input, which makes it harder to analyze the output for patterns. If employing the nonce method with your cryptographic algorithm, it would be required to regenerate the same results again later or to decrypt data properly.
 
-Digital signatures are the use of a private key to digitally 'sign' a document. To sign a document digitally, one must provide their private key and public key. Then the document is 'signed' which produces a string of random alphanumeric characters, much like a nonce. This string is the 'signature'. The recipient of the document can then use the sender's public key in conjunction with this signature string to verify the document.
+Digital signatures are the use of a private key to digitally 'sign' a document. To sign a document digitally, one must use their private key to "sign" the data which produces a string of alphanumeric characters. This string is the "signature". The recipient of the document can then use the public key of the signer to verify that the signature and document was not tampered with.
 
 To read more about digital signatures, click [here](https://www.instantssl.com/digital-signature) and [here](https://medium.com/@xragrawal/digital-signature-from-blockchain-context-cedcd563eee5).
 
@@ -226,7 +228,7 @@ The three main types of consensus algorithms that we cover in class are:
 
 <details><summary>Proof of Work</summary><br>
 
-- Used by Bitcoin and many other well known Blockchains, *Proof of Work* was the first concensus algorithm, and is where the term *mining* originated.
+- Used by Bitcoin and many other well known Blockchains, *Proof of Work* was the first consensus algorithm used in a public blockchain, and is where the term *mining* originated.
 - To malicously attack a blockchain using *PoW*, one would need to use 51% of the computational power that the network uses. This strongly disincentivizes attacking the network.
 - With this algorithm, the entities put their computational resources on the line as collateral.
 - For more information on *PoW*, check out [this article](https://en.bitcoin.it/wiki/Proof_of_work).
@@ -260,7 +262,7 @@ To learn more about nodes, click [this link](https://medium.com/coinmonks/blockc
 
 <details><summary>What is a digital Blockchain wallet?</summary><br>
 
-A digital, or blockchain, wallet is simply a set of "keys" to your funds that are on the blockchain. It also serves as a place where you can view and send transactions.
+A digital, or blockchain, wallet is simply an asymmetric keypair that act as "keys" to your funds that are on the blockchain. It also serves as a place where you can view and send transactions.
 
 Much like a debit card does not hold your actual money, but the access to it, a blockchain wallet holds the access to your funds but not the actual funds. The actual funds live on the blockchain.
 
