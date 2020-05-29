@@ -343,8 +343,8 @@ Quickly walk through the basic steps of working with a time series in pandas. Us
   ```python
   weekly = df['Close'].resample('W').mean()
   ```
-  
-  ![original-sample](Images.original-sample.png)
+
+  ![original-sample](Images/original-sample.png)
 
   ![resample.png](Images/resample.png)
 
