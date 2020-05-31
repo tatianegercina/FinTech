@@ -16,7 +16,7 @@ Welcome to the natural language processing unit! NLP is an exciting area of mach
 
 By the end of the class, students will be able to:
 
-* Understand what NLP is, why we use it.
+* Understand what NLP is, and why we use it.
 
 * Understand and be able to implement the NLP workflow.
 
@@ -26,7 +26,7 @@ By the end of the class, students will be able to:
 
 * Experiment with a few ways of counting tokens and displaying the most frequent ones.
 
-* Define the concept of ngrams and implement with Scikit-learn.
+* Define the concept of ngrams and implement them with Scikit-learn.
 
 * Create a word cloud to show the most frequent terms in a text.
 
@@ -263,7 +263,7 @@ In this activity, students will practice creating a function that strips non-let
 
 * [crude_stopwords.ipynb](Activities/04-Stu_Crude_Stopwords/Solved/crude_stopwords.ipynb)
 
-Reiterate that stopwording is very domain and circumstance specific. Using the same set of stopwords for every corpus is rarely a good idea. The NLTK set is a good start, but the chances are that you'll want to augment it with your own set after inspecting the results.
+Reiterate that stopwording is very domain and circumstance specific. Using the same set of stopwords for every corpus is rarely a good idea. The NLTK set is a good start, but chances are you'll want to augment it with your own set after inspecting the results.
 
 Note the order in which we apply the regex cleaning, word tokenizing, and stopwording.
 
@@ -292,7 +292,7 @@ Tell students that the extent to which we want to add stopwords is a trade-off. 
 
 ### 10. Instructor Do: Lemmatization (5 min)
 
-Lemmatization is a technique that transforms various morphologies of a word into its base form. This may sound fancy, but it's pretty intuitive. If we're looking to summarize a document with the most frequent words in it, words like "stock" and "stocks" should, for the most part, mean the same. This is also true for words like "run" and "ran." NLTK's lemmatizer takes words in different forms (past tense, plural, etc.) and transforms them into the base form (present tense, singular).
+Lemmatization is a technique that transforms various morphologies of a word into its base form. This may sound fancy, but it's pretty intuitive. If we're looking to summarize a document with the most frequent words in it, words like "stock" and "stocks" should, for the most part, mean the same thing. This is also true for words like "run" and "ran." NLTK's lemmatizer takes words in different forms (past tense, plural, etc.) and transforms them into the base form (present tense, singular).
 
 **Files:**
 
@@ -306,7 +306,7 @@ The lemmatizer does not automatically lemmatize any part of speech; the default 
 
 ![lemma2](Images/lemma2.PNG)
 
-Note that it's possible to lemmatize every part of speech for any given word—all we need to do is apply the lemmatize function to the word with a different pos argument on each pass. In practice, however, noun lemmatizations are usually enough, since the most informative words for most NLP analyses are nouns. It's also important to note that lemmatization is not a step one would want to apply for any kind of analysis—measures of sentiment would be biased if the words were adjective-lemmatized beforehand, for example.
+Note that it's possible to lemmatize every part of speech for any given word—all we need to do is apply the lemmatize function to the word with a different pos argument on each pass. In practice, however, noun lemmatizations are usually enough, since the most informative words for most NLP analyses are nouns. It's also important to note that lemmatization is not a step one would want to apply on just any kind of analysis — measures of sentiment would be biased if the words were adjective-lemmatized beforehand, for example.
 
 ---
 
@@ -423,13 +423,13 @@ def word_counter(corpus):
  return pd.DataFrame(list(top_10.items()), columns=['word', 'count'])
 ```
 
-* The join() method can be used to combine multiple strings into one long string.
+* The `join()` method can be used to combine multiple strings into one long string.
 
-* We next run the defined process_text function over this string to get the list of words needed for the Counter function. Once the most frequent words are selected with most_common, all we need to do is to put them into a DataFrame.
+* We next run the defined `process_text` function over this string to get the list of words needed for the Counter function. Once the most frequent words are selected with `most_common`, all we need to do is to put them into a DataFrame.
 
-* One way of transforming the dictionary is to turn it into a list of tuples first with the .items() method.
+* One way of transforming the dictionary is to turn it into a list of tuples first with the `.items()` method.
 
-* The bigram Counter function, shown below, is very similar. The difference is that instead of going right to the Counter function after we preprocess the text, we apply the ngram function first, with two as the n argument.
+* The bigram Counter function, shown below, is very similar. The difference is that instead of going right to the Counter function after we preprocess the text, we apply the ngram function first, with two as the `n` argument.
 
 ```python
 def bigram_counter(corpus):
@@ -451,7 +451,7 @@ Frequency analysis is a useful technique, but counts of words or ngrams are diff
 
 [wordcloud.ipynb](Activities/09-Ins_Word_Cloud/Solved/wordcloud.ipynb)
 
-First, we need to import the word cloud library, which will do most of the heavy lifting for this activity. Note that we also import matplotlib's pyplot module; although we won't be using pyplot substantively, because the word cloud library is built on top of the matplotlib library, there are some useful matplotlib functions that we can use to create our word cloud.
+First, we need to import the word cloud library, which will do most of the heavy lifting for this activity. Note that we also import matplotlib's pyplot module; although we won't be using pyplot substantively, the word cloud library is built on top of the matplotlib library, so there are some useful matplotlib functions that we can use to create our word cloud.
 
 We can copy most of the preprocessing code from previous activities. Alert students to one small but important change—whereas before we were returning a list of words, this time, we want to return one string instead. So, as the last step, we use a join to create that string. We still want to lemmatize and stopword, so word tokenizing is necessary as an intermediate step. But, since the word cloud function takes only a single string as an argument, we must join these words back together in the preprocessing function.
 
