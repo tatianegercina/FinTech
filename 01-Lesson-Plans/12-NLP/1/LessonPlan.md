@@ -412,7 +412,12 @@ Open the solved notebook and explain the following:
 
 Go over the first word counter function below line by line, highlighting the following points:
 
-* Given a list of articles as a corpus, we have two options. We can either treat each article separately clean and count words for each in turn or we can combine all the articles into one big string and preprocess and count that string all at once. Since the latter is more efficient, both computationally and in terms of lines of code written, we choose that method, which is implemented in the function below.
+* Given a list of articles such as a corpus, we have two options:
+
+    1. Treat each article separately and clean and count words for each in turn.
+    2. Combine all the articles into one big string and preprocess and count that string all at once.
+
+* The latter is more efficient both computationally and in terms of lines of code written, so we choose that method and implement it as follows:
 
 ```python
 def word_counter(corpus):
