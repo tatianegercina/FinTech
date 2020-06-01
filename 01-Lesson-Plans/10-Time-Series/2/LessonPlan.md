@@ -151,7 +151,7 @@ In this activity, students will perform techniques to make stationary a non-stat
 
 * [README.md](Activities/02-Stu_Stationarity/README.md)
 
-* [amazon.csv](Activities/02-Stu_Stationarity/Resources/shopify.csv)
+* [shopify.csv](Activities/02-Stu_Stationarity/Resources/shopify.csv)
 
 * [stationarity.ipynb](Activities/02-Stu_Stationarity/Unsolved/stationarity.ipynb)
 
@@ -167,7 +167,7 @@ Show the initial plot of Shopify's closing prices, and explain that this time se
 
   ![Images/stationarity01.png](Images/stationarity01.png)
 
-* It shows an obvious upward trend which indicates non-stationary data, but we can also use the Augmented Dickey-Fuller test to verify. In this case, a p-value of 0.449 indicates non-stationary data.
+* It shows an obvious upward trend which indicates non-stationary data, but we can also use the Augmented Dickey-Fuller test to verify. In this case, a p-value of 0.544 indicates non-stationary data.
 
   ![adf-test](Images/adf-test.png)
 
@@ -341,7 +341,7 @@ Now that we have a theoretical understanding of the ARMA model explain that we w
 
 Open the notebook.
 
-* This is a dataset of NASDAQ stock prices from 2012 to 2019.
+* This is a dataset of TSX stock prices from 2012 to 2019.
 
 Display the plot and ask the class whether the time series is stationary:
 
@@ -802,7 +802,7 @@ Show the plot of the volatility forecast:
 
 * [README.md](Activities/08-Stu_USD/README.md)
 
-* [USD_per_Euro_Hourly_Mid_Prices.csv](Activities/08-Stu_USD/Resources/USD_per_Euro_Hourly_Mid_Prices.csv)
+* [euro_cad.csv](Activities/08-Stu_USD/Resources/euro_cad.csv)
 
 * [usd.ipynb](Activities/08-Stu_USD/Unsolved/usd.ipynb)
 
@@ -812,7 +812,7 @@ Show the plot of the volatility forecast:
 
 **Files:**
 
-* [usd.ipynb](Activities/08-Stu_USD/Solved/usd.ipynb)
+* [cad.ipynb](Activities/08-Stu_USD/Solved/cad.ipynb)
 
 Open the notebook and display the plot of the exchange rate:
 
