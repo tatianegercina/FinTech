@@ -796,7 +796,7 @@ Show the plot of the volatility forecast:
 
 - - -
 
-### 14. Students Do: Euro-USD Volatility (10 min)
+### 14. Students Do: Euro-CAD Volatility (10 min)
 
 **Files:**
 
@@ -804,7 +804,7 @@ Show the plot of the volatility forecast:
 
 * [euro_cad.csv](Activities/08-Stu_USD/Resources/euro_cad.csv)
 
-* [cad.ipynb](Activities/08-Stu_USD/Unsolved/usd.ipynb)
+* [cad.ipynb](Activities/08-Stu_USD/Unsolved/cad.ipynb)
 
 - - -
 
