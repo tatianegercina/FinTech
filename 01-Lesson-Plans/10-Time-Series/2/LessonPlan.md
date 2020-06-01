@@ -169,6 +169,8 @@ Show the initial plot of Shopify's closing prices, and explain that this time se
 
 * It shows an obvious upward trend which indicates non-stationary data, but we can also use the Augmented Dickey-Fuller test to verify. In this case, a p-value of 0.449 indicates non-stationary data.
 
+  ![adf-test](Images/adf-test.png)
+
 Walk through the first part of the code, in which the diffs are plotted:
 
   ```python
