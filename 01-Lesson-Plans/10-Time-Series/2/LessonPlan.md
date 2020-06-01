@@ -816,7 +816,7 @@ Show the plot of the volatility forecast:
 
 Open the notebook and display the plot of the exchange rate:
 
-  ![Images/usd01.png](Images/usd01.png)
+  ![Images/cad01.png](Images/cad01.png)
 
 * Volatility appears to be more pronounced in the years 2015-2017.
 
