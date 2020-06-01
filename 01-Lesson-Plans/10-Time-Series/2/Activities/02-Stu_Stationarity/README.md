@@ -2,7 +2,7 @@
 
 ## Instructions
 
-In this activity, you will stationarize a non-stationary time series. The dataset is a time series of Amazon stock prices from years 2009 through 2011.
+In this activity, you will stationarize a non-stationary time series. The dataset is a time series of Shopify stock prices in CAD from years early 2017 through late 2019.
 
 As you can see from the initial plot of the closing stock price, this time series is not stationary (it trends upwards). Perform the techniques below to stationarize your time series.
 
