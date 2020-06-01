@@ -804,7 +804,7 @@ Show the plot of the volatility forecast:
 
 * [euro_cad.csv](Activities/08-Stu_USD/Resources/euro_cad.csv)
 
-* [usd.ipynb](Activities/08-Stu_USD/Unsolved/usd.ipynb)
+* [cad.ipynb](Activities/08-Stu_USD/Unsolved/usd.ipynb)
 
 - - -
 
