@@ -151,7 +151,7 @@ In this activity, students will perform techniques to make stationary a non-stat
 
 * [README.md](Activities/02-Stu_Stationarity/README.md)
 
-* [amazon.csv](Activities/02-Stu_Stationarity/Resources/amazon.csv)
+* [amazon.csv](Activities/02-Stu_Stationarity/Resources/shopify.csv)
 
 * [stationarity.ipynb](Activities/02-Stu_Stationarity/Unsolved/stationarity.ipynb)
 
@@ -163,7 +163,7 @@ In this activity, students will perform techniques to make stationary a non-stat
 
 * [stationarity.ipynb](Activities/02-Stu_Stationarity/Solved/stationarity.ipynb)
 
-Show the initial plot of Amazon's closing prices, and explain that this time series is non-stationary.
+Show the initial plot of Shopify's closing prices, and explain that this time series is non-stationary.
 
   ![Images/stationarity01.png](Images/stationarity01.png)
 
