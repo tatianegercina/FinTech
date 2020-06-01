@@ -260,9 +260,9 @@ Engage students by asking some of the following review questions:
 
 * Could you explain the client-server model from the perspective of emails?
 
-  **Answer:** Servers provided by companies like Google, Yahoo, Microsoft, etc. are used to store and distribute email messages. Email applications and internet browsers are clients that are used to specify who emails are sent to and the body of emails. Clients are used to submit email content to servers, and then servers distribute the message to the corresponding email targets.
+  **Answer:** Servers provided by companies like Google, Yahoo, Microsoft, etc. are used to store and distribute email messages. Email applications and internet browsers are clients that are used to specify who emails are sent to, and the body of emails. Clients are used to submit email content to servers, and then servers distribute the message to the corresponding email targets.
 
-If time remains, round-robin and ask some students to give details about the data they saw transmitted. This will allow students to compare what they say with what others saw. It will also help students understand some of the common data exchanges, such as user credentials and search queries.
+If time remains, do a round robin and ask students to provide details about the data that they saw transmitted. This will allow them to compare their observations with others. It will also help students understand some of the common data exchanges, such as user credentials and search queries.
 
   **Answer:** `GET` requests
 
