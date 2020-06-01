@@ -48,7 +48,7 @@ By the end of class, students will be able to:
 
   * [Alpaca](https://alpaca.markets/)
 
-* Students should have already downloaded Postman the night before. Use the welcome activity to identify any students who may not have already downloaded Postman, and have the TAs help them get it installed.
+* Students should have already downloaded Postman prior to class. Use the welcome activity to identify any students who may not have downloaded Postman, and have the TAs help them get it installed.
 
 * The welcome class module will be dedicated to demoing some of the previously mentioned FinTech APIs.
 
@@ -74,34 +74,33 @@ Be sure to set the pace for the class. Encourage students to attend office hours
 
 ### 1. Instructor Do: Welcome (5 mins)
 
-Welcome the students to the first day of APIs. This lesson will require students to leverage various FinTech APIs (e.g., Quandl) to accelerate their financial analytic pipelines, as well as get access to data they otherwise would not have access to. Students will continue employing skills learned from the previous weeks, such as data cleaning, working with DataFrames, and visualizing data.
+Welcome the students to the first day of APIs. This lesson will require students to leverage various FinTech APIs (e.g., Quandl) to accelerate their financial analytic pipelines, as well as access data they otherwise would not have access to. Students will continue employing skills learned from the previous weeks, such as data cleaning, working with DataFrames, and visualizing data.
 
-The focus of this lesson will be to demo to students some of the creative and quirky FinTech APIs that are currently available to the public. Students will learn and use these APIs to take their FinTech careers to the next level.
+This lesson will focus on demoing some of the creative and quirky FinTech APIs that are currently available to the public. Students will learn and use these APIs to take their FinTech careers to the next level.
 
-Before initiating the demo, ask if any students do not have Postman installed. Instruct TAs to help these students install Postman. Postman will be needed for the first few modules of the lesson.
+Before initiating the demo, ask if any students do not have Postman installed. Instruct TAs to help these students with installation, as Postman is needed for the first few modules of the lesson.
 
-Be sure to have the following websites loaded before class so that the demo can move along. Multiple APIs will need to be demoed within the five minute time period.
+Be sure to have the following websites loaded before class so that the demo can move along. Multiple APIs will need to be demoed within the five-minute time period.
 
 * [Quandl API Features](https://www.quandl.com/tools/api)
 
 * [WrapAPI](https://wrapapi.com/)
 
-Open the lesson slides and present to students the class objectives; continue the class off with a review of the introductory slide about APIs. Highlight the following:
+Open the lesson slides and present the class objectives. Then, continue on to the introductory slide about APIs. Highlight the following:
 
-* Application programming interfaces, or APIs, are a set of functions packaged together
-that provide developers with a means of communicating with a server and integrating third-party software and technology into new applications.
+* Application programming interfaces, or APIs, are a set of functions packaged together that provide developers with a means of communicating with a server and integrating third-party software and technology into new applications.
 
-* APIs are made by individual developers like the students, as well as private companies and corporations to offer programmatic services and functions to the development community. Some APIs are free, and others require payment for services.
+* APIs are created by individual developers, as well as private companies and corporations to offer programmatic services and functions to the development community. Some APIs are free, while others require payment for services.
 
 * APIs are used to extract data, play games, connect programs to platforms like AWS, and manage personal finances.
 
-* APIs work as endpoints, like old-time telephone operators. A request or call is submitted by a user to be connected to another entity. The API interprets the request and transmits the request to the target entity. The user then receives a response.
+* APIs work as endpoints, like old-time telephone operators. A request or call is submitted by a user to be connected to another entity. The API interprets the request and transmits it to the target entity. The user then receives a response.
 
-* In software development, APIs are often a bridge between different components or even companies.
+* In software development, APIs are often a bridge between different components, or even companies.
 
-* There are a large number of FinTech APIs available that accelerate day-to-day financial analytics and data acquisition. These include Quandl and Wrap API, just to name two.
+* A large number of FinTech APIs are available that accelerate day-to-day financial analytics and data acquisition. These include Quandl and Wrap API, just to name two.
 
-Introduce Quandl and briefly demonstrate to students how to use an internet browser to submit a Quandl API call.
+Introduce Quandl, and briefly demonstrate to students how to use an internet browser to submit a Quandl API call.
 
 * Quandl is a data mart of financial data. Quandl collects data from various sources, consolidates the data, and then makes it available to users. **Quandl** is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Users can access Quandl's data via their API. The API supports multiple programming languages, including Python.
 
@@ -145,7 +144,7 @@ If time remains, communicate to students that if they wanted to automate the Nas
 
 * WrapAPI could be used to submit Quandl API requests via a web browser as well. WrapAPI could automate the process of copying and pasting the request URL into the browser.
 
-Before ending this activity, let students know that this is just the beginning in terms of available APIs for use. Ask if there are any questions before moving onto the next activity.
+Before ending this activity, let students know that this is just the beginning in terms of available APIs for use. Ask if there are any questions before moving on to the next activity.
 
 ---
 
