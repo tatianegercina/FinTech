@@ -52,7 +52,7 @@ By the end of class, students will be able to:
 
 * The welcome class module will be dedicated to demoing some of the previously mentioned FinTech APIs.
 
-* Working with APIs can be challenging for anyone using them, especially when documentation is limited. Whenever introducing students to a new API, slack out the link to the documentation so that students have access to it for reference.
+* Working with APIs can be challenging, especially when documentation is limited. Make sure that you slack out the link to the documentation whenever introducing a new API, so that students have it for reference.
 
 Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also, encourage students to work with partners.
 
@@ -64,11 +64,11 @@ Be sure to set the pace for the class. Encourage students to attend office hours
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson 5.1 Slides](https://docs.google.com/presentation/d/1XJkEUoD9EWjjfhayPkDErPAUBQdRJXXAFF_28WnHCyw/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, select "Download as," and then choose "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and select "Make a copy...".
 
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
