@@ -286,24 +286,23 @@ Briefly recap on how APIs have been submitted so far. Ask the students:
 
 Explain to students that an internet browser is a sufficient tool to submit API requests. But a service like Postman is much more efficient and effective.
 
-Open the lesson slides, move to the "Postman" section and highlight the following:
+Open the lesson slides, move to the "Postman" section, and highlight the following:
 
 * Postman is a service that provides users with a UI to submit and store API calls and requests.
 
-* API requests have to be submitted in some type of development environment.
-Postman offers an API specific development environment that is free to users.
+* API requests have to be submitted in some type of development environment. Postman offers an API specific development environment that is free to users.
 
 * Postman is a great tool to use when onboarding onto a new API. All that is needed to execute an API with Postman is the request URL.
 
 * Because Postman is a development environment, users can save API requests, configure environments, and even create mock servers.
 
-Close the lesson slides, open Postman and perform a live demonstration of submitting an API request to Quandl for `AAPL` stock data. Use this as an opportunity to bridge back to the previous assignments where requests were submitted via a browser rather than a tool like Postman. Highlight the following:
+Close the lesson slides, open Postman, and perform a live demonstration of submitting an API request to Quandl for `AAPL` stock data. Use this as an opportunity to bridge back to the previous assignments where requests were submitted via a browser rather than a tool like Postman. Highlight the following:
 
-* Creating a request in Postman is easy; it's just the click of a button. Selecting Request in the Create New window will open a screen where information can be put in for the request and the request saved.
+* Creating a request in Postman is easy; it's just the click of a button. Selecting "Request" in the "Create New" window will open a screen where information can be put in for the request, and the request is saved.
 
   ![create_request.png](Images/create_request.png)
 
-* Postman allows users to save API requests to what they call **collections**. This will enable requests to be created once but ran many times. It also allows requests to be scheduled. To save a request, a request must be saved with a name, description, and collection.
+* Postman allows users to save API requests to what they call **collections**. This enables requests to be created once, but run many times. It also allows requests to be scheduled. To save a request, a request must be saved with a name, description, and collection.
 
   ![save_request.png](Images/save_request.png)
 
@@ -353,7 +352,7 @@ Instruct students to inform the TAs when they are finished. The next activity wi
 
 ---
 
-### 8. Students Do: Parlez-vous le JSON? (5 min)
+### 8. Student Do: Parlez-vous le JSON? (5 min)
 
 In this activity, students will choose a sub-selection of the JSON output to decipher. They will then explain the sub-selection to a peer. The key to working with APIs is being able to decipher their output. Because API output is commonly in JSON format, students will need practice deciphering JSON structures and syntax.
 
