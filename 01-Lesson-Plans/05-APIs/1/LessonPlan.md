@@ -497,11 +497,11 @@ Ask if there are any remaining questions before moving forward.
 
 ---
 
-### 11. Students Do: Ice Breakers on Request (20 min)
+### 11. Student Do: Ice Breakers on Request (20 min)
 
-In this activity, students are given a list of **request URLs** to execute using the Python `requests` library. Students will also receive the opportunity to put their JSON knowledge to use by interpreting JSON output. Students will interpret the JSON output to find an interesting fact or joke to tell the class.
+In this activity, students will be given a list of **request URLs** to execute using the Python `requests` library. They'll also be able to put their JSON knowledge to use by interpreting JSON output in order to find an interesting fact or joke to tell the class.
 
-Walk around with TAs to assist students with parsing JSON data. Students may need assistance parsing JSON output. Make sure every student has been able to successfully execute a request and find an interesting fact or joke to share, even if the fact has to relate to their own experiences using Python requests.
+Walk around with TAs to assist students with parsing JSON data. Students may need assistance parsing JSON output. Make sure every student has been able to successfully execute a request and find an interesting fact or joke to share, even if the fact relates to their own experiences using Python requests.
 
 **Files:**
 
@@ -513,11 +513,11 @@ Walk around with TAs to assist students with parsing JSON data. Students may nee
 
 ---
 
-### 12. Students Do: Engagement Activity (15 min)
+### 12. Student Do: Engagement Activity (15 min)
 
-In this activity, have each student reveal an interesting fact or joke they discovered while working with APIs. Round robin and have each student volunteer a fact or joke.
+In this activity, students will reveal an interesting fact or joke they discovered while working with APIs. Do a round robin so each student can volunteer a fact or joke.
 
-If a student doesn't find a fact or joke they feel like sharing, ask them to do one of the following:
+If any students did not find a fact or joke they feel like sharing, ask them to do one of the following:
 
 * Discuss their opinions regarding using the Python `requests` library to make API calls instead of Postman.
 
@@ -525,11 +525,11 @@ If a student doesn't find a fact or joke they feel like sharing, ask them to do 
 
   * **Answer** The `requests` library allows API calls to be made in-line with the rest of the code and processing. Postman requires users to transition from one development environment to another.
 
-Transition into a reflective Q&A session. Ask the students the following questions:
+Transition into a reflective Q&A session. Ask students the following questions:
 
 * Having seen a range of FinTech and quirky APIs, what API can you see yourself implementing on your own accord?
 
-* Are there specific types or categories of APIs you'd be interested in working with?
+* Are there specific types, or categories, of APIs you'd be interested in working with?
 
 * What type of APIs are you interested in creating?
 
