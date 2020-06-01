@@ -841,7 +841,7 @@ df.head()
 
 * The plot of the resulting stationarized series also confirms the clustering of volatility seen in 2015, 2016, and 2017:
 
-  ![Images/usd02.png](Images/usd02.png)
+  ![Images/cad02.png](Images/cad02.png)
 
 Explain the code for creating the GARCH model in Python:
 
@@ -882,7 +882,7 @@ Finally, walk through the steps of plotting the volatility forecast:
 
 * The volatility is plotted with the `pd.plot()` method:
 
-  ![Images/usd04.png](Images/usd04.png)
+  ![Images/cad04.png](Images/cad04.png)
 
 * Based on the upward trend in the plot, the volatility of the EUR-USD exchange rate is predicted to increase over the next 5 days.
 
