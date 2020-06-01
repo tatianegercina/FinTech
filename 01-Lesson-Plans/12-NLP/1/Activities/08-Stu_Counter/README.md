@@ -4,8 +4,8 @@ In this activity, you will create a function that preprocesses and outputs a lis
 
 ## Instructions
 
-* Create a function that takes in a list of documents and outputs a DataFrame that contains the 10 most frequent (preprocessed) words in the list of documents.
-* Create a similar function that outputs the 10 most frequent bigrams in the list of documents.
+* Create a function called `word_counter` that takes in a list of documents and outputs a DataFrame that contains the 10 most frequent (preprocessed) words in the list of documents.
+* Create a similar function called `bigram_counter` that outputs the 10 most frequent bigrams in the list of documents.
 * Run both functions on the corpus of Reuters articles that has been prepared.
 
 ## Hint
