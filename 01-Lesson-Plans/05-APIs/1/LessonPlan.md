@@ -160,9 +160,9 @@ Explain to students that this unit's homework focuses on exposing them to some o
 
 Walkthrough the homework instructions and highlight the following:
 
-* The first component of the homework is focused on budget analysis. Students will use an API called **PLAID** to analyze personal financial data. PLAID can be used to securely access any type of banking, credit, or investment account, which opens doors to new services to customers that are not typically available without PLAID. The greatest thing about it is that you can confidently use PLAID, knowing you can integrate it with other technologies and apps without security being compromised; PLAID handles the security and provisions access to personal financial accounts.
+* The first component of the homework is focused on budget analysis. Students will use an API called **PLAID** to analyze personal financial data. PLAID can be used to securely access any type of banking, credit, or investment account, providing customers with new services that are not typically available without PLAID. Customers can integrate PLAID with other technologies and apps without security being compromised; it also provides access to personal financial accounts.
 
-* With financial data available and accessible via PLAID, students will transition to using the financial data retrieved via PLAID to forecast financial goals. This section uses a Monte Carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution will be sufficient to cover their future income.
+* With financial data accessible via PLAID, students will transition to using PLAID to forecast financial goals. This section uses a Monte Carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution is sufficient to cover their future income.
 
 * Lastly, students will analyze the output of the retirement planner activity and summarize assumptions and findings in a markdown file. This file will need to be uploaded to the GitHub repository.
 
