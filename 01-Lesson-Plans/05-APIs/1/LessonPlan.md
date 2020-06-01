@@ -368,27 +368,27 @@ Walk around and instruct TAs to circulate during this activity so that students 
 
 Instructor and students will review the JSON turn and teach the activity. The instructor will complete a live demo of submitting an API request and deciphering the JSON output.
 
-Open Postman and submit the below request to Quandl. Then, conduct a live deciphering of the JSON data, emphasizing the following:
+Open Postman and submit the below request to Quandl. Then conduct a live deciphering of the JSON data, emphasizing the following:
 
 ```text
 https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json?api_key=YOUR_API_KEY_HERE
 ```
 
-* Name/value pairs are used to make deciphering JSON data easy because it does a single map between **name** and **value**. Point out an example of a name (e.g., the `description` field). Then, identify the corresponding value.
+* Name/value pairs are used to make deciphering JSON data easy, because it does a single map between **name** and **value**. Point out an example of a name (e.g., the `description` field). Then, identify the corresponding value.
 
 * Point out **JSON Array** and **JSON Objects** in order to compare them.
 
   ![decipher_json.png](Images/decipher_json.png)
 
-* JSON Objects are contained within curly braces `{}`. These objects often contain multiple name-value pairs, like a row (e.g., `{""id": 9775718, dataset_code": "GOOG"}`).
+* JSON objects are contained within curly braces `{}`. These objects often contain multiple name-value pairs, like a row (e.g., `{""id": 9775718, dataset_code": "GOOG"}`).
 
-* JSON Arrays are identified by brackets `[]`. An example of a JSON Array is the `column_names` object returned from the Quandl API call.
+* JSON arrays are identified by brackets `[]`. An example of a JSON array is the `column_names` object returned from the Quandl API call.
 
 If time permits, ask the students the following questions. Sample answers have been provided.
 
 * We've seen some APIs in action (e.g., WrapAPI, Quandl, World Bank, Coinbase). Which API did everyone find the most interesting?
 
-  **Answer:** WrapAPI. While it is not FinTech related, it's unique and has some different use cases. Of all of the APIs, WrapApi seems the most flexible and all-encompassing.
+  **Answer:** WrapAPI. While not FinTech related, it is unique and has some different use cases. Of all of the APIs, WrapApi seems the most flexible and all encompassing.
 
 Ask students to write down two things they like about APIs and the client-server model. Ask for two volunteers to present their answers.
 
@@ -396,7 +396,7 @@ Ask students to write down two things they like about APIs and the client-server
 
 Ask students to write down one thing they do not like or find challenging about APIs and the client-server model. Ask one student to volunteer an answer and collect the remaining answers as students leave the classroom.
 
-  **Answer**: Not all APIs have good documentation. It's difficult to gauge exactly what an API can do or how it should be used.
+  **Answer**: Not all APIs have good documentation. It's difficult to gauge exactly what an API can do, or how it should be used.
 
 Before moving forward, ask the students if there are any remaining questions.
 
@@ -412,7 +412,7 @@ The World Bank API (GDP extraction) should be used for this instructor demonstra
 
 * [python_requests.ipynb](Activities/04-Ins_Python_Requests/Solved/python_requests.ipynb)
 
-Open the lesson slides, move to the "Python Requests" section and highlight the following:
+Open the lesson slides, move to the "Python Requests" section, and highlight the following:
 
 * Just as API **requests** can be sent through Postman, they can also be sent through Python. Python offers a `requests` library that can be used to submit API requests through a protocol known as `HTTP`. The `requests` library supports `GET`, `POST`, and `PUT` requests, just to name a few. `GET` requests will be the focus of this class.
 
@@ -424,7 +424,7 @@ Open the lesson slides, move to the "Python Requests" section and highlight the 
 
   * `PUT` requests are used to overwrite content on the server.
 
-* APIs play a key role in data analytics pipelines, often being the source of data or a means to analyze data. By submitting requests in Python, APIs can be used in-line with other processing. For example, data can be pulled from Coinbase to calculate cumulative returns, sharpe ratio, and beta for a set of cryptos.
+* APIs play a key role in data analytics pipelines, often being the source of data or a means to analyze data. By submitting requests in Python, APIs can be used in-line with other processing. For example, data can be pulled from Coinbase to calculate cumulative returns, Sharpe ratio, and beta for a set of cryptos.
 
 * Similarly, data could be extracted from the Quandl API to complete portfolio simulations. Instead of switching back and forth between Postman and Python, everything can just be completed in Python.
 
