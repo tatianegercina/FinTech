@@ -162,7 +162,7 @@ Walkthrough the homework instructions and highlight the following:
 
 * The first component of the homework is focused on budget analysis. Students will use an API called **PLAID** to analyze personal financial data. PLAID can be used to securely access any type of banking, credit, or investment account, providing customers with new services that are not typically available without PLAID. Customers can integrate PLAID with other technologies and apps without security being compromised; it also provides access to personal financial accounts.
 
-* With financial data accessible via PLAID, students will transition to using PLAID to forecast financial goals. This section uses a Monte Carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution is sufficient to cover their future income.
+* With financial data accessible via PLAID, students will transition to using PLAID to forecast financial goals. The homework uses a Monte Carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution is sufficient to cover their future income.
 
 * Lastly, students will analyze the output of the retirement planner activity and summarize assumptions and findings in a markdown file. This file will need to be uploaded to the GitHub repository.
 
@@ -172,17 +172,17 @@ Ask the students if there are any questions related to the homework.
 
 ### 3. Instructor Do: Client-Server Model (5 min)
 
-Now that students know what APIs are and how to execute them, it's time they learn what goes on in the back end when an API request is sent. Students will learn the various components of the client-server model through instructor demonstration.
+Now that students know what APIs are and how to execute them, it's time they learn what goes on in the backend when an API request is sent. Students will learn the various components of the client-server model through instructor demonstration.
 
 Part of the demonstration will include showing students the client-server model by pinging Yahoo Finance. Make sure to have a terminal open and ready for the demo.
 
-Open the lesson slides, move to the "Client-Server Model" section and highlight the following:
+Open the lesson slides, move to the "Client-Server Model" section, and highlight the following:
 
 * The client-server model is a structure that outlines the relationship and flow of communication between two components: a client and a server.
 
   ![client_server_model.jpg](Images/client_server_model.png)
 
-  * A **client** is any tool or application that is used to connect to or communicate with a server. This includes internet browsers, mobile devices, and command line terminals, just to name a few. Clients submit requests to servers, and clients receive responses from servers.
+  * A **client** is any tool or application that is used to connect to, or communicate with, a server. This includes internet browsers, mobile devices, and command line terminals, just to name a few. Clients submit requests to servers, and clients receive responses from servers.
 
   * A **server** is a computer program, device, or hardware. Servers run some form of application and are tasked with interacting and providing functionality to clients. Servers receive requests from clients, and servers send responses back to clients.
 
@@ -214,7 +214,7 @@ Ask students the following questions. (If time did not permit for the ping demo,
 
   **Answer**: The terminal is the client, and Yahoo Finance provides the server.
 
-* Was the request sent to Yahoo Finance via the terminal a successful execution of the client-server model based on packets sent and received?
+* Was the request sent to Yahoo Finance via the terminal a successful execution of the client-server model, based on packets sent and received?
 
   **Answer**: Yes, all packets that were sent to the server were received.
 
