@@ -1,6 +1,6 @@
 # Netflix Lookup
 
-In this activity, you will find information about some of Netflix's most popular videos. 
+In this activity, you will find information about some of Netflix's most popular videos.
 
 ## Instructions
 

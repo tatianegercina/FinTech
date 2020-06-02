@@ -1,6 +1,6 @@
 # Number Chain
 
-In this activity, you will "chain up the numbers." 
+In this activity, you will "chain up the numbers."
 
 ## Instructions
 
