@@ -84,10 +84,10 @@
 # Write an if-else statement to check if `c2_age` is greater than `c1_age`. If so, print a string of "Mr. Farley is older than Mr. Snuggles". Else if `c1_age` is greater than `c2_age`, print a string of "Mr. Snuggles is older than Mr. Farley". Else, `c1_age` must have to be equal to `c2_age`, therefore print a string of "Mr. Farley is the same age as Mr. Snuggles".
 
 
-# Write an if-else statement to check if `c1_location` is equal to "Oakland, CA". If so, print a string of "Mr. Farley comes from the home of the Raiders!". Else if `c1_location` is equal to a string of "San Francisco, CA", print a string of "Mr. Farley comes from the home of the 49ers!". Else both conditions must not apply and therefore print a string "Mr. Farley doesn't hail from a sports town."
+# Write an if-else statement to check if `c1_location` is equal to "Oakland, CA". If so, print a string of "Mr. Farley comes from the home of the Raiders!". Else if `c2_location` is equal to a string of "San Francisco, CA", print a string of "Mr. Farley comes from the home of the 49ers!". Else both conditions must not apply and therefore print a string "Mr. Farley doesn't hail from a sports town."
 
 
-# Write an if-else statement to check if `c1_monthly_rent` is greater than `c2_monthly_rent`. If so, print a string of "Mr. Farley pays more rent than Mr. Snuggles". Else if `c1_monthly_rent` is less than `c2_monthly_rent`, print a string of "Mr. Farley pays less rent than Mr. Snuggles". Else, `c1_monthly_rent` must have to be equal to `c2_monthly_rent`, therefore print a string of "Mr. Farley pays the same rent as Mr. Snuggles".
+# Write an if-else statement to check if `c1_rent` is greater than `c2_rent`. If so, print a string of "Mr. Farley pays more rent than Mr. Snuggles". Else if `c1_rent` is less than `c2_rent`, print a string of "Mr. Farley pays less rent than Mr. Snuggles". Else, `c1_rent` must have to be equal to `c2_rent`, therefore print a string of "Mr. Farley pays the same rent as Mr. Snuggles".
 
 
 # Write an if-else statement to check if `c1_monthly_expenses` is greater than `c2_monthly_expenses`. If so, print a string of `Mr. Farley has more expenses than Mr. Snuggles`. Else if `c1_monthly_expenses` is less than `c2_monthly_expenses`, print a string of "Mr. Farley pays less expenses than Mr. Snuggles". Else, `c1_monthly_expenses` must have to be equal to `c2_monthly_expenses`, therefore print a string of "Mr. Farley pays the same expenses at Mr. Snuggles".
