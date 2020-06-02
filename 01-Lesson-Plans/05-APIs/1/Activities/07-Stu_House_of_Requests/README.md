@@ -1,8 +1,8 @@
 # House of Requests
 
-You've been challenged to a game of BlackJack, but you don't have any playing cards on-hand. Instead of spending money to buy a set, find a way to play the game programmatically. Use the `Deck of Cards API`, an API that simulates card games through API calls, to play against a classmate or an imaginary dealer. The player with the number of points closest to `21` is the winner!
+You've been challenged to a game of blackjack, but you don't have any playing cards. Instead of spending money to buy a set, find a way to play the game programmatically. Use the `Deck of Cards API`, which simulates card games through API calls, to play against a classmate or an imaginary dealer. The player with the number of points closest to `21` is the winner!
 
-While you won't win any real prizes in this game, you will get the opportunity to crush opponents in Python BlackJack and gain the respect of your peers.
+While you won't win any real prizes in this game, you will get the opportunity to crush opponents in Python blackjack and gain the respect of your peers.
 
 ## API URLs
 
@@ -16,11 +16,11 @@ While you won't win any real prizes in this game, you will get the opportunity t
 
 ## Rules of the Game
 
-* The first to `21` wins!
+* The first person that gets to `21` wins!
 
 * Scoring over `21` means you automatically lose.
 
-* Each player-turn consists of one to two drawings. Decide if you should draw two or three cards for your turn. The closer to `21` you are, the fewer rounds you should take unless you're feeling risky.
+* Each player's turn consists of one to two drawings. Decide if you should draw two or three cards for your turn. The closer to `21` you are, the fewer rounds you should take, unless you're feeling risky.
 
   * An initial drawing of `2` cards
 
@@ -30,7 +30,7 @@ While you won't win any real prizes in this game, you will get the opportunity t
 
 ### Prep for the Game
 
-1. Submit `parameterized` `GET` request to create and shuffle a deck of cards.
+1. Submit a `parameterized` `GET` request to create and shuffle a deck of cards.
 
 2. Extract the value of `deck ID` from the JSON output, and store it as a variable. This value will be interpolated into the `Draw Cards` and `Shuffling Deck` `request urls`.
 
@@ -40,7 +40,7 @@ While you won't win any real prizes in this game, you will get the opportunity t
 
 4. Execute a `GET` request using the `draw_cards_url`.
 
-5. Parse the JSON and extract values for elements `suit` and `value` for each card. Store `suit` and `value` for each card into respective variables (i.e. `player_1_card_1`).
+5. Parse the JSON and extract values for elements `suit` and `value` for each card. Store `suit` and `value` for each card into respective variables (i.e., `player_1_card_1`).
 
 6. Manually add the numeric values to determine your points. How close to `21` did you get? If you scored `21` or below, you could consider drawing another card for yourself, or you can decide to end your turn and let the dealer go next.
 
@@ -64,7 +64,7 @@ While you won't win any real prizes in this game, you will get the opportunity t
 
 Interpolation can be achieved by using the literal `f` prefix before a string. Consult the [documentation](https://www.programiz.com/python-programming/string-interpolation) for assistance.
 
-When extracting values from the `Draw Cards` request, an index will have to be provided to extract values whenever more than one card is returned (i.e. `drawn_cards["cards"][0]["value"] + " of " + drawn_cards["cards"][0]["suit"]`).
+When extracting values from the `Draw Cards` request, an index will have to be provided to extract values whenever more than one card is returned (i.e., `drawn_cards["cards"][0]["value"] + " of " + drawn_cards["cards"][0]["suit"]`).
 
 ---
 
