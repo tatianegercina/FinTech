@@ -102,7 +102,7 @@ Open the lesson slides and present the class objectives. Then, continue on to th
 
 Introduce Quandl, and briefly demonstrate to students how to use an internet browser to submit a Quandl API call.
 
-* Quandl is a data mart of financial data. Quandl collects data from various sources, consolidates the data, and then makes it available to users. **Quandl** is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Users can access Quandl's data via their API. The API supports multiple programming languages, including Python.
+* Quandl is a marketplace of financial data. Quandl collects and consolidates data from various sources, and then makes it available to users. **Quandl** is great for extracting financial data to calculate ROI, risk-to-reward ratio, etc. Users access Quandl's data via their API, which supports multiple programming languages, including Python.
 
   ![quandl_flow.gif](Images/quandl_flow.gif)
 
