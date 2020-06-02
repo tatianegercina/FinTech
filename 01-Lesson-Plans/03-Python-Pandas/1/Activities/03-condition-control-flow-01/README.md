@@ -44,7 +44,7 @@ Open the [starter file](Unsolved/condition-control-flow-01.py) and perform the f
 
 19. Write an if statement that checks whether the sum of all the costs is within the budget.
 
-    * If so, print "Your total cost is " concatentated with the `total_cost` variable.
+    * If so, print "You're total cost is " concatentated with the `total_cost` variable.
 
     * Else, print "You're over budget by " concatenated with the difference between `budget` and `total_cost`.
 

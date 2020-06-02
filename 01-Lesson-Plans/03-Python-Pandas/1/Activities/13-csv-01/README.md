@@ -16,7 +16,7 @@ Open the [starter file](Unsolved/csv-01.py) and perform the following:
 
 5. Iterate through the data and search for the number the user inputted. Remember to skip the header of the CSV.
 
-6. Print the name of the Pokemon (identifier) and Pokedex number (species ID) at that number. For example, "Pokemon No. 25 - Pikachu".
+6. Print the name of the Pokemon (identifier) and Pokedex number(species ID) at that number. For example, "Pokemon No. 25 - Pikachu".
 
 7. Iterate through the data and search for Pokemon whose weight is greater than 3000. Append only the Pokemon's name and weight to the "heaviest" list.
 
