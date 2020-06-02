@@ -222,7 +222,7 @@ Ask students if there are any questions before moving on.
 
 ---
 
-### 4. Students Do: Eavesdropping on the Server (10 min)
+### 4. Student Do: Eavesdropping on the Server (10 min)
 
 This activity drives home the discussion on the client-server model by having students surf the web with the browser's developer console open. Students will visit websites like Facebook and Yahoo, as well as complete a Google search. They will read the standard output from the console to get a better idea of what data is sent between the client and server as students navigate sites. This will communicate to students that every click and API request brokers a connection between client and server, allowing data to be exchanged between the two.
 
@@ -330,7 +330,7 @@ Ask if there are any questions before moving onto the next activity.
 
 ---
 
-### 7. Students Do: I Spy an API (15 min)
+### 7. Student Do: I Spy an API (15 min)
 
 It's time students stopped learning about APIs and started playing with some! In this activity, students will go through a list of FinTech APIs and test out their functionality using Postman. This will give students a better understanding of what Postman is and how it should be used, and it will expose students to one of the most common tools used in the FinTech industry.
 
