@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's class will expose students to some exciting and innovative FinTech APIs that have truly disrupted the industry. **Quandl** is an API providing access to historical stock data, while **Plaid** brokers connections between multiple financial institutions for a unified view of personal financial information and accelerates data extraction from various financial accounts. Both APIs help democratize and decentralize financial data stores and analytic approaches. But that's not all–new APIs and software development kits (SDKs) are released regularly to help enhance and advance the FinTech industry. It's a new world, and one to be excited about!
+Today's class will expose students to some exciting and innovative FinTech APIs that have truly disrupted the industry. **Quandl** is an API that provides access to historical stock data, while **Plaid** brokers connections between multiple financial institutions for a unified view of personal financial information and accelerates data extraction from various financial accounts. Both APIs help democratize and decentralize financial data stores and analytic approaches. But that's not all–new APIs and software development kits (SDKs) are released regularly to help enhance and advance the FinTech industry. It's a new world, and one to be excited about!
 
 This lesson presents students with hands-on experience using APIs in a Python environment, requesting and leveraging API keys, and securely storing API keys and credentials as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to Quandl using the Python `requests` library and Plaid's software development kit, a library packaged to provide developers with access to Plaid's endpoints and functions.
 
@@ -32,17 +32,17 @@ By the end of class, students will be able to:
 
 * Slack out the [Alpaca Installation Guide](../Supplemental/AlpacaMarkets_Installation-Guide.md) (again) and the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class.
 
-* This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created and accounts and received API keys before this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up. Students were instructed to sign up at the end of Lesson 5.1. There will be an activity dedicated to confirming that each student has signed up.
+* This lesson includes the demonstration, and use of, two APIs that require users to have accounts and API keys. You, students, and TAs should all have created accounts and received API keys prior to this lesson. (Students were instructed to sign up at the end of Lesson 5.1.) The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up. There is an activity dedicated to confirming that each student has signed up.
 
   * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
   * [Plaid](https://dashboard.plaid.com/signup)
 
-* Since this lesson will work with API keys, you and students must not hardcode or print any API keys or request URLs with keys. All keys must be stored in environment variables and then referred to with an `os.getenv` function call in Python.
+* Since this lesson works with API keys, you and the students must not hardcode or print any API keys, or request URLs with keys. All keys must be stored in environment variables and then referred to with an `os.getenv` function call in Python.
 
 * This lesson has a dependency on the Quandl and Plaid APIs being up and running. Visit each site and execute preemptive API calls to ensure connectivity. It is imperative to confirm that the APIs used in this lesson are executing as expected.
 
-* Some students may have experience working with making API calls. Keep an eye out for any students who might be advanced with APIs and could help with review activities. Allowing advanced students to conduct reviews and help their peers is a great way to keep them engaged and interested in the material.
+* Some students may have experience working with making API calls. Keep an eye out for any students that are more advanced with APIs and could assist with review activities. Allowing advanced students to conduct reviews and help their peers is a great way to keep them engaged and interested in the material.
 
 ### Sample Class Video (Highly Recommended)
 
