@@ -18,7 +18,7 @@ By the end of class, students will be able to:
 
 * Describe the client-server model.
 
-* Read the documentation and identify endpoints from a given API.
+* Read documentation and identify endpoints from a given API.
 
 * Perform a GET request and view the JSON response using the Postman client.
 
