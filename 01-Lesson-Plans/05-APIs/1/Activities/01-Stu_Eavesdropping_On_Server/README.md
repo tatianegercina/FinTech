@@ -8,7 +8,7 @@ Links to documentation for Firefox, Chrome, and Safari can be found [here](https
 
 ## Instructions
 
-Navigate to the below websites with the developer console open to review the exchanges between the client (browser) and server (websites visited).
+Navigate to the websites below with the developer console open to review the exchanges between the client (browser) and server (websites visited).
 
 1. Open an internet browser, and launch the developer console. Consult the following links for help with getting the developer console open. Instruction is provided for each browser.
 
@@ -38,7 +38,7 @@ Navigate to the below websites with the developer console open to review the exc
 
 8. Visit `https://finance.yahoo.com/` and search for a ticker. Review the developer console as you submit the request.
 
-9. Continue to navigate the internet with the developer console open. Take note of the type of requests that are sent for each site visited (how many POST vs GET). Also, take into consideration the differences in API URLs.
+9. Continue to navigate the internet with the developer console open. Take note of the type of requests that are sent for each site visited (how many POST vs. GET). Also, take into consideration the differences in API URLs.
 
 ---
 
