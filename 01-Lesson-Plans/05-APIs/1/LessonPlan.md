@@ -617,7 +617,7 @@ Open the lesson slides, move to the "URL Parameters" section and highlight the f
 
   * **Answer**: When using the `?format=json` tag.
 
-* **Parameters** can be specified in one of two ways. Parameters can follow `/` forward slashes or determined by parameter name and then by the parameter value.
+* **Parameters** can be specified in one of two ways. Parameters can follow `/` forward slashes or be specified by parameter name and then by the parameter value.
 
   ```text
   Parameter provided after /
