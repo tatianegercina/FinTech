@@ -1,6 +1,6 @@
 # Parlez-vouz le JSON?
 
-Now that you know that the below APIs are working go back and rerun one of them to get a closer look at the JSON data being returned. Capture your findings, and then turn and share your observations with a partner.
+Now that you know that the APIs below are working, go back and rerun one of them to get a closer look at the JSON data being returned. Capture your findings, and then turn and share your observations with a partner.
 
 ## APIs
 
@@ -18,7 +18,7 @@ Now that you know that the below APIs are working go back and rerun one of them 
 
 3. Execute the API request and view the output in `JSON` format.
 
-4. Read through the JSON. Try and make sense of a sub-section of the data (i.e. close date for a specific ticker, the Canadian 2018 GDP value, or current price of Ethereum).
+4. Read through the JSON. Try and make sense of a sub-section of the data (i.e., close date for a specific ticker, the Canadian 2018 GDP value, or current price of Ethereum).
 
 5. Turn and teach your partner about what you deciphered from the JSON data.
 
