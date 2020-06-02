@@ -4,7 +4,7 @@
 
 ## Background
 
-The Consumer Division of Harold's company has decided to offer budgeting and financial planning services to customers. They want to build a report for customers that links to their banking and investment accounts and automatically refreshes the data and charts on login. However, some of the calculations are tricky, and Harold could really use some help connecting the accounts and simulating the retirement investment projections. Luckily, there are APIs available to obtain account transactions and fetch retirement portfolio prices.
+The Consumer Division of Harold's company has decided to offer budgeting and financial planning services to customers. They want to build a report for customers that links to their banking and investment accounts and automatically refreshes the data and charts upon login. However, some of the calculations are tricky, and Harold could use some help connecting the accounts and simulating the retirement investment projections. Luckily, there are APIs available to obtain account transactions and fetch retirement portfolio prices.
 
 In this homework assignment, you will help Harold complete the following tasks:
 
@@ -70,7 +70,7 @@ Create a Monte Carlo simulation for the retirement portfolio:
 
 1. Use the Alpaca API to fetch historical closing prices for a traditional 60/40 portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`).
 
-2. Run a Monte Carlo Simulation of `500` runs and `30` years for the `60/40` portfolio and plot the results.
+2. Run a Monte Carlo simulation of `500` runs and `30` years for the `60/40` portfolio and plot the results.
 
     ![monte carlo](Images/monte-carlo.png)
 
@@ -106,7 +106,7 @@ In this section, you will compile a financial report to demo your calculations t
 
 ### Optional Challenge — Early Retirement
 
-Harold was really impressed with your work on this planner, but commented that `30` years seems like such a long time to wait to retire! Harold starts wondering if the retirement plan could be adjusted to retire earlier than normal. Try adjusting the portfolio to either include more risk (a higher stock than bond ratio) or to have a larger initial investment and rerun the retirement analysis to see what it would take to retire in `5` years instead of `30`!
+Harold is impressed with your work on this planner, but thinks that `30` years seems like a very long time to wait to retire! Harold wants to know if the retirement plan could be adjusted to retire earlier than normal. Try adjusting the portfolio to either include more risk (a higher stock than bond ratio), or to have a larger initial investment and then rerun the retirement analysis to see what it would take to retire in `5` years, instead of `30`!
 
 ---
 
