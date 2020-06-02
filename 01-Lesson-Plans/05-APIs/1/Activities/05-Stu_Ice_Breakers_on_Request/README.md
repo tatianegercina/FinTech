@@ -1,8 +1,8 @@
 # Ice Breakers on Request
 
-Your company has recently begun engaging in table talk sessions aimed towards helping the team continue to build soft and conversational skills by having co-workers join each other for five minutes. You're tired of asking basic questions about hometowns and occupations, so you've decided to crawl the web for some new content to use. Your goal is to have ice breakers available on request. You've found six APIs that you feel could provide some good, random material for table/small talk.
+Your company has recently started five-minute table talk sessions, where co-workers meet to build soft and conversational skills. You're tired of asking basic questions about hometowns and occupations, so you've decided to crawl the web for some new content to use. Your goal is to have ice breakers available on request. You've found six APIs that you feel could provide some solid material for more lively and productive table talk sessions.
 
-Submit `GET` requests using the Python `requests` library for one of the below `request urls`. Then, interpret the JSON output and find an interesting fact or joke to share with the class. Save that fact/joke, or another value from the JSON output, as a variable.
+Submit `GET` requests using the Python `requests` library for one of the below `request urls`. Then, interpret the JSON output and find an interesting fact or joke to share with the class. Save that fact/joke, or another value from the JSON output as a variable.
 
 ## APIS
 
@@ -32,7 +32,7 @@ Submit `GET` requests using the Python `requests` library for one of the below `
 
 7. Decipher the JSON data, and identify an amusing fact/joke to share with the class. Write it down to tell the class during the activity review.
 
-8. Select an element from the JSON and store it into a new variable. Hint: JSON attribute names are like keys in dictionaries (i.e. `response_content.fact` or `response_content.joke`).
+8. Select an element from the JSON and store it into a new variable. Hint: JSON attribute names are like keys in dictionaries (i.e., `response_content.fact` or `response_content.joke`).
 
 ### Challenge
 
@@ -40,7 +40,7 @@ If time remains, use the `GET` function to explore the other APIs.
 
 ### Hint
 
-Selecting values from JSON data requires data to be accessed first by parent object and then the child. When an API returns output with multiple `JSON Objects`, `indices` have to be specified to indicate which object/record should be selected. For example,
+Selecting values from JSON data requires data to be accessed first by parent object and then the child. When an API returns output with multiple `JSON Objects`, `indices` have to be specified to indicate which object/record should be selected. For example:
 
 ```python
 selected_value = data["all"][0]["text"]
