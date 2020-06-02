@@ -20,9 +20,9 @@
 
 * `Change Directory`
 
-  > cd /<directory>
+  > cd \<directory>
 
-  Open the /<directory> folder. This folder must be present in your current directory.
+  Open the \<directory> folder. This folder must be present in your current directory.
 
   > cd ..
 
@@ -34,63 +34,63 @@
 
 * `Make Directory`
 
-  > mkdir /<directory>
+  > mkdir \<directory>
 
-  Make a new folder with the name /<directory>
+  Make a new folder with the name \<directory>
 
 * `Remove Directory`
 
-  > rm -r /<directory>
+  > rm -r \<directory>
 
-  Delete the folder /<directory> and all the files within it.
+  Delete the folder \<directory> and all the files within it.
 
 * `Copy Directory`
 
-  > cp -r /<directory1> /<directory2>
+  > cp -r \<directory1> \<directory2>
 
-  Copies /<directory1> and its contents into /<directory2>. If there is already a folder named /<directory1> within /<directory2>, the contents of the folder that was already present will be overwritten by the /<directory1> you're copying into the folder.
+  Copies \<directory1> and its contents into \<directory2>. If there is already a folder named \<directory1> within \<directory2>, the contents of the folder that was already present will be overwritten by the \<directory1> you're copying into the folder.
 
 * `Move Directory`
 
-  > mv /<directory1> /<directory2>
+  > mv \<directory1> \<directory2>
 
-  Move /<directory1> into /<directory2>. This will not work if there is already a folder in /<directory1> with the name /<directory2>.
+  Move \<directory1> into \<directory2>. This will not work if there is already a folder in \<directory1> with the name \<directory2>.
 
-  > mv /<directory> ..
+  > mv \<directory> ..
 
-  Move /<directory> into the parent directory. `..` always refers to the parent directory
+  Move \<directory> into the parent directory. `..` always refers to the parent directory
 
 ## Files ##
 
 * `Create File`
 
-  > touch /<file>
+  > touch \<file>
 
-  Create a new /<file> in the current directory. Remember to include the file extension. If there is already a file with the name /<file>, it will just update the last modified time of the file.
+  Create a new \<file> in the current directory. Remember to include the file extension. If there is already a file with the name \<file>, it will just update the last modified time of the file.
 
 * `Delete File`
 
-  > rm /<file>
+  > rm \<file>
 
-  Deletes the file with the name /<file>.
+  Deletes the file with the name \<file>.
 
 * `Copy File`
 
-  > cp /<file> /<directory>
+  > cp \<file> \<directory>
 
-  Copies the /<file> into the /<directory> folder. If there is already a file named /<file>, the file that is already present will be overwritten by the new /<file> you're copying in.
+  Copies the \<file> into the \<directory> folder. If there is already a file named \<file>, the file that is already present will be overwritten by the new \<file> you're copying in.
 
 * `Rename File`
 
-  > mv /<old-name> /<new-name>
+  > mv \<old-name> \<new-name>
 
-  Renames a file named /<old-name> into /<new-name>
+  Renames a file named \<old-name> into \<new-name>
 
 * `Move File`
 
-  > mv /<file> /<directory>
+  > mv \<file> \<directory>
 
-  Move a file named /<file> into the /<directory> folder. If there is already a file named /<file>, the file that is already present will be overwritten by the new /<file> you're moving in.
+  Move a file named \<file> into the \<directory> folder. If there is already a file named \<file>, the file that is already present will be overwritten by the new \<file> you're moving in.
 
 ## Utility ##
 
