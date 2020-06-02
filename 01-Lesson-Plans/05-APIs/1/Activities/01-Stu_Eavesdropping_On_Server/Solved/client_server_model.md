@@ -30,7 +30,7 @@ Eavesdrop on the exchanges sent between client and server when visiting differen
 
     ![console_nasdaq.png](../Images/console_nasdaq.png)
 
-9. Continue to navigate the internet with the developer console open. Take note of the type of requests that are sent for each site visited (how many POST vs GET). Also, take into consideration the differences in API URLs.
+9. Continue to navigate the internet with the developer console open. Take note of the type of requests that are sent for each site visited (how many POST vs. GET). Also, take into consideration the differences in API URLs.
 
 ---
 
