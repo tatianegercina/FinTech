@@ -64,7 +64,7 @@ By the end of today's class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Day 2 takes students to the next step in using APIs. Students will transition from using the Python `requests` library to using SDKs that provide practical use cases for FinTech analysis.
+Today will take students to the next step in using APIs. Students will transition from using the Python `requests` library to using SDKs that provide practical use cases for FinTech analysis.
 
 Welcome students to the second day of APIs. Open the lesson slides, move to "The Rise of APIs" section, and highlight the following points:
 
