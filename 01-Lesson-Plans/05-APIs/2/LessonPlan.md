@@ -641,7 +641,7 @@ If time remains, ask students for their thoughts, and answer any questions befor
 
 ### 12. Student Do: Sporting Plaid—Part 1 (20 min)
 
-This activity is the first part of a two-part mini-project activity. Students will create environment variables for Plaid API keys and install the Plaid SDK, which will be used in the next activity to extract transaction data.
+This activity is the first part of a two-part, mini-project activity. Students will create environment variables for Plaid API keys and install the Plaid SDK, which will be used in the next activity to extract transaction data.
 
 Instruct TAs to confirm that each student has Plaid API keys and can authenticate with Plaid. Circulate through the room to help troubleshoot any challenges related to environment variables and API keys.
 
@@ -679,19 +679,19 @@ If time remains, ask the following questions:
 
   * **Answer:** Plaid is changing the way developers and consumers can get access to FinTech data. Not only is Plaid providing a technology platform to get access to FinTech data, but it is also providing analytic and insight products to help consumers understand their data and make data-driven decisions.
 
-* How glad are you that SDKs don't require users to build long, parameterized request URLs like the Python `requests` library?
+* How glad are you that SDKs don't require users to build long, parameterized request URLs, like the Python `requests` library?
 
-  * **Answer:** It's better to use an SDK since it eases the process of fetching data and reduces the chance of errors due to misspelling URLs or parameters used in the `requests` library.
+  * **Answer:** It's better to use an SDK, since it eases the process of fetching data and reduces the chance of errors due to misspelling URLs or parameters used in the `requests` library.
 
 Ask students if they have any questions before moving on.
 
 ---
 
-### 14. Students Do: Sporting Plaid—Part 2 (25 min)
+### 14. Student Do: Sporting Plaid—Part 2 (25 min)
 
 It's time the students donned some Plaid again, as they will be extracting financial data from the Plaid sandbox. To complete this assignment, students will submit requests to the Plaid API and parse JSON output.
 
-Communicate to students that they can work with a partner to complete the activity; however, each student will need to complete the assignment. If a student or team finishes early, ask if they'd be willing to conduct a dry walk-through of the solution and explain what steps were taken and why.
+Communicate to students that they can work with a partner to complete the activity; however, each student will need to complete the assignment. If a student or team finishes early, ask if they'd be willing to conduct a dry walkthrough of the solution and explain what steps were taken, and why.
 
 Circulate through the room and assist while students are working. Students may run into difficulty parsing through multiple JSON indexes.
 
@@ -715,7 +715,7 @@ Circulate through the room and assist while students are working. Students may r
 
 Students will just have completed a lengthy activity of installing and using the Plaid SDK to extract financial data. End the class with a reflection exercise to reinforce the conceptual information learned.
 
-Give students 2 minutes to pick one data element from the Plaid transaction data that they'd like to analyze. Call on each student in a round-robin fashion and ask them to volunteer a data point of interest. Allow the students to suggest different types of analysis they'd like to do with Plaid's data.
+Give students two minutes to pick one data element from the Plaid transaction data that they'd like to analyze. Call on each student in a round robin, and ask them to volunteer a data point of interest. Allow students to suggest different types of analysis they'd like to do with Plaid's data.
 
 * **Answer:** Example data elements include the amount of interest payments, number of restaurant purchases, number of travel purchases across time, etc.
 
@@ -729,27 +729,27 @@ Ask students to create a summarized list of the steps needed to securely and ade
 
   3. Loading the `.env` file with `load_dotenv()` to set the environment variable.
 
-Engage students by asking what they see for the future of FinTech when companies like Plaid.
+Engage students by asking what they envision for the future of FinTech with companies such as Plaid.
 
 * Are these companies striving to democratize financial data and analytics, including trends, consequences, and paradoxical effects?
 
-  * **Answer:** More peer-to-peer payment services driven by Plaid and crypto alt coins.
+  * **Answer:** More peer-to-peer payment services will be driven by Plaid and crypto alt coins.
 
   * **Answer:** Data generators and synthetic financial data will no longer be needed.
 
-  * **Answer:** Daily financial monitoring will focus on a unified view of all accounts rather than a microcosmic deep-dive into one account.
+  * **Answer:** Daily financial monitoring will focus on a unified view of all accounts, rather than a deep-dive into one account.
 
-  * **Answer:** Plaid will become the one-stop-shop for all financial data needs. This includes daily monitoring and ad-hoc reporting. Instead of checking in with a bank app for one's current account balance or a most recent transaction, Plaid will be used.
+  * **Answer:** Plaid will become the one-stop shop for all financial data needs. This includes daily monitoring and ad-hoc reporting. Instead of checking in with a bank app for one's current account balance or a most recent transaction, Plaid will be used.
 
   * **Answer:** Instead of democratizing FinTech, Plaid could become the new centralized entity for FinTech data and decision-making. This could lead to reduced rate limits and more expensive premiums.
 
   * **Answer:** Hackers will be given the tools to attack less sophisticated FinTech applications using Plaid.
 
-If a student or team of students were chosen to conduct a review, instruct them to perform a dry walk-through using the solution. Otherwise, use the solution to complete the dry walk-through yourself.
+If a student, or team of students, were chosen to conduct a review, instruct them to perform a dry walkthrough using the solution. Otherwise, use the solution to complete the dry walkthrough yourself.
 
 * The Plaid SDK functions offer a great way to submit requests without having to create and customize or concatenate request URLs.
 
-* Plaid has a Client object that is used to communicate with the Plaid servers. This object stores the **client id**, **secret**, and **public** keys, and it is used to execute each API request.
+* Plaid has a client object that is used to communicate with the Plaid servers. This object stores the **client id**, **secret**, and **public** keys, and it is used to execute each API request.
 
   ![client_obj_arguments.png](Images/client_obj_arguments.png)
 
@@ -780,9 +780,9 @@ Ask if there are any remaining questions.
 
 ### 16. Recap (10 min)
 
-Woo-hoo! You've reached the end of APIs Day 2. Over the past two days, the class has been bombarded with an array of APIs, ranging from APIs that allow users to play fun games to APIs that provide users with a unified view of data across all financial accounts. The importance of API keys has been drilled home, as needs to store them as environment variables.
+Woo-hoo! You've reached the end of APIs Day 2. Over the past two days, students have been bombarded with an array of APIs, ranging from APIs that allow users to play fun games, to APIs that provide users with a unified view of data across all financial accounts. The importance of API keys has been drilled home, as needs to store them as environment variables.
 
-Recap by asking students to summarize with one word or a three-word phrase what they learned today. Ask for volunteers, and then eventually go round-robin if necessary.
+Recap by asking students to summarize with one word or a three-word phrase, what they learned today. Ask for volunteers, and then do a round robin if necessary.
 
 * **Answer:** Disruptive
 
@@ -796,25 +796,25 @@ Recap by asking students to summarize with one word or a three-word phrase what 
 
 * **Answer:** For the people
 
-* **Answer:** Data Extraction
+* **Answer:** Data extraction
 
-* **Answer:** Development kit
+* **Answer:** Software development kit
 
-Underscore to students that they are progressing in learning how to programmatically submit API calls using the Python `requests` library and SDKs is going to have real-world benefits. These skills are practical and could be employed to solve several FinTech use cases.
+Underscore to students that their progress in learning how to programmatically submit API calls using the Python `requests` library and SDKs will wield real-world benefits. These skills are practical and could be employed to solve several FinTech use cases.
 
-* Software development requires applications to support integration with APIs. Cloud (e.g., Amazon Web Services), big data (e.g., Hadoop), and data science (e.g., Data Science Toolkit ) technologies all require some form of API or SDK be used to use their services, platform, and data.
+* Software development requires applications to support integration with APIs. Cloud (e.g., Amazon Web Services), big data (e.g., Hadoop), and data science (e.g., Data Science Toolkit) technologies all require some form of API or SDK be used to utilize their services, platform, and data.
 
-  * For example, to write a machine-learning algorithm that gets data from the Amazon cloud, an AWS SDK will be needed.
+  * For example, to write a machine-learning algorithm that gets data from the Amazon cloud, an AWS SDK is needed.
 
   * To process social media data in real-time, a streaming service API will be needed. (e.g., Kafka-Python).
 
 Highlight that students have shown themselves to be cutting edge by working with technologies like Plaid, which are disrupting the FinTech data world.
 
-* To be cutting edge, a developer has to keep up with emerging technologies.
+* To be cutting edge, a developer must keep up with emerging technologies.
 
 * This requires developers to be able to write code that connects and integrates multiple APIs and SDKs to create unique interactions.
 
-Reinforce to students that this is exactly what they did today in class. With the skills they've learned today, they'll be able to keep up with emerging technologies.
+Reinforce to students that this is exactly what they did today in class. With the skills they've learned, they'll be able to keep up with emerging technologies.
 
 Communicate to students that the applications they've completed today should be discussed during interviews and added to their resumes.
 
