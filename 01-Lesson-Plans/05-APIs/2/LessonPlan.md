@@ -4,15 +4,15 @@
 
 ### Overview
 
-Today's class will expose students to some exciting and innovative FinTech APIs that have truly disrupted the industry. **Quandl** is an API that provides access to historical stock data, while **Plaid** brokers connections between multiple financial institutions for a unified view of personal financial information and accelerates data extraction from various financial accounts. Both APIs help democratize and decentralize financial data stores and analytic approaches. But that's not all–new APIs and software development kits (SDKs) are released regularly to help enhance and advance the FinTech industry. It's a new world, and one to be excited about!
+Today's class will expose students to some exciting and innovative FinTech APIs that have truly disrupted the industry. **Quandl** is an API that provides access to historical stock data, while **Plaid** connects multiple financial institutions for a unified view of personal financial information. Both APIs help democratize and decentralize financial data stores and analytic approaches. But that's not all–new APIs and software development kits (SDKs) are released regularly to help enhance and advance the FinTech industry. It's a whole new world, and one to be excited about!
 
 This lesson presents students with hands-on experience using APIs in a Python environment, requesting and leveraging API keys, and securely storing API keys and credentials as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to Quandl using the Python `requests` library and Plaid's software development kit, a library packaged to provide developers with access to Plaid's endpoints and functions.
 
 ### Class Objectives
 
-By the end of class, students will be able to:
+By the end of today's class, students will be able to:
 
-* Register for an API key and use the key to fetch authenticated requests using the `requests` library.
+* Register for an API key and use it to fetch authenticated requests using the `requests` library.
 
 * Set/export environment variables in Windows and Mac, and retrieve them in Python.
 
@@ -40,9 +40,9 @@ By the end of class, students will be able to:
 
 * Since this lesson works with API keys, you and the students must not hardcode or print any API keys, or request URLs with keys. All keys must be stored in environment variables and then referred to with an `os.getenv` function call in Python.
 
-* This lesson has a dependency on the Quandl and Plaid APIs being up and running. Visit each site and execute preemptive API calls to ensure connectivity. It is imperative to confirm that the APIs used in this lesson are executing as expected.
+* This lesson is dependent upon the Quandl and Plaid APIs being up and running. Visit each site and execute preemptive API calls to ensure connectivity. It is imperative to confirm that the APIs used in this lesson are executing as expected.
 
-* Some students may have experience working with making API calls. Keep an eye out for any students that are more advanced with APIs and could assist with review activities. Allowing advanced students to conduct reviews and help their peers is a great way to keep them engaged and interested in the material.
+* Some students may have experience working with making API calls. Keep an eye out for these more advanced students so they can potentially assist with review activities; allowing them to help their peers is a great way to keep them engaged and interested in the material.
 
 ### Sample Class Video (Highly Recommended)
 
