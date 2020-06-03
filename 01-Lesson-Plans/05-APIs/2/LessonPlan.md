@@ -16,7 +16,7 @@ By the end of today's class, students will be able to:
 
 * Set/export environment variables in Windows and Mac, and retrieve them in Python.
 
-* Explain the difference between an API and SDK.
+* Explain the difference between an API and a SDK.
 
 * Set authentication for the Plaid SDK.
 
