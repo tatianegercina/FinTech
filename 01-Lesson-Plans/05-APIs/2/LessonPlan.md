@@ -184,13 +184,13 @@ Ask if there are any questions or comments before moving on.
 
 ### 4. Instructor Do: Creating Environment Variables (10 min) (Critical)
 
-In this activity, students will learn how to create a `.env` file to store their keys as environment variables. This demo will also include exporting environment variables so that the variables can be used in Python and other applications and programs.
+In this activity, students will learn how to create a `.env` file to store their keys as environment variables. This demo will also include exporting environment variables, so that they can be used in Python as well as other applications and programs.
 
 **Files:**
 
 * [example.env](Activities/01-Ins_Create_Env_Variables/Unsolved/example.env)
 
-Open the lesson slides, move to the "Environment Variables" section and highlight the following discussion points:
+Open the lesson slides, move to the "Environment Variables" section, and highlight the following discussion points:
 
 * Exporting an environment variable exposes it to all applications and programs sharing the same parent process (e.g., a terminal or Python kernel). Each application and program inherits the variable, which allows developers to make calls using `os.getenv` to access the data stored in the variable.
 
@@ -200,13 +200,13 @@ Open the lesson slides, move to the "Environment Variables" section and highligh
 
 * An environment variable created in Python cannot be accessed by a terminal; in contrast, an environment variable created in a terminal can be accessed by Python.
 
-* You can set environment variables either in Mac or Windows.
+* You can set environment variables in Mac or Windows.
 
 Open a plain text editor, such as VSCode or Sublime Text, and create a new blank file. Perform a live demo of creating and exporting environment variables with the `.env` file by highlighting the following:
 
 * Now, we will create a `.env` file to store the API keys as environment variables.
 
-* To set an environment variable, you have to define a name for that variable; let's start creating a variable to store the Quandl API key.
+* To set an environment variable, you have to define a name for that variable. Let's start creating a variable to store the Quandl API key.
 
 * Set the variable name as `QUANDL_API_KEY` and assign your API key to it.
 
@@ -218,7 +218,7 @@ Open a plain text editor, such as VSCode or Sublime Text, and create a new blank
 
   ![create_env_file](Images/create_env_file.gif)
 
-* Once the `.env` file has been created; it must be loaded into memory by a package like `python-dotenv` so that the environment variables can be sourced. We will be discussing methods of loading a `.env` in the next activity.
+* Once the `.env` file has been created, it must be loaded into memory by a package like `python-dotenv` so that the environment variables can be sourced. We will discuss methods of loading a `.env` in the next activity.
 
 Ask if there are any questions, and then move on to the next activity.
 
