@@ -319,9 +319,9 @@ Ask students if there are any questions before continuing.
 
 ### 6. Student Do: Under Lock and Key (20 min)
 
-The previous modules focused on the instructor demoing how to create, store, and use API keys with environment variables. Students now engage in a bridge activity that involves retrieving a Quandl API key, and submitting a Quandl API request with the key stored as environment variables. This will be the students' first opportunity for hands-on practice with API keys and environment variables.
+The previous modules focused on the instructor demoing how to create, store, and use API keys with environment variables. Students will now engage in a bridge activity that involves retrieving a Quandl API key, and submitting a Quandl API request with the key stored as environment variables. This will be students' first opportunity for hands-on practice with API keys and environment variables.
 
-Working with environment variables can be a little tricky, especially if they are not declared and exported correctly. Make sure both TAs and you are circulating during this activity to help resolve any technical issues students may face.
+Working with environment variables can be a little tricky, especially if they are not declared and exported correctly. Make sure that you and the TAs are circulating during this activity to help resolve any technical issues students face.
 
 If students finish early, use the extra time to review the final two guided review questions from the next activity.
 
@@ -363,9 +363,9 @@ Kick off the activity review session by asking students to summarize the process
 
   * **Answer:** No. The best practice for keeping API keys secure is to store them in environment variables. This practice should always be used.
 
-Open the solution and end the review session with a quick-dry walk-through of the solution.
+Open the solution and end the review session with a quick walkthrough of the solution.
 
-* Once created, the environment variables are then shared with all child processes. For example, when the `load_dotenv()` method is executed, it will ensure the `QUANDL_API_KEY` variable is accessible by all processes running in the environment that executed the python file process.
+* Once created, the environment variables are then shared with all child processes. For example, when the `load_dotenv()` method is executed, it will ensure the `QUANDL_API_KEY` variable is accessible by all processes running in the environment that executed the Python file process.
 
   ```shell
   QUANDL_API_KEY="ENTER YOUR KEY HERE"
@@ -377,7 +377,7 @@ Open the solution and end the review session with a quick-dry walk-through of th
   api_key = os.getenv("QUANDL_API_KEY")
   ```
 
-* Once stored as a Python variable, the environment variable value can be used for processing. In this case, the `QUANDL_API_KEY` is stored as Python variable api_key and then concatenated with the request URL. The concatenated request URL will then be used to submit a request to the Quandl API.
+* Once stored as a Python variable, the environment variable value can be used for processing. In this case, the `QUANDL_API_KEY` is stored as Python variable api_key, and then concatenated with the request URL. The concatenated request URL will then be used to submit a request to the Quandl API.
 
   ```python
   # Define the base request URL
@@ -389,7 +389,7 @@ Open the solution and end the review session with a quick-dry walk-through of th
 
 If time remains, ask two final, guided questions:
 
-* If a user were to export environment variable `QUANDL_API_KEY` using a terminal but then launched Jupyter Lab in a different terminal window, would Jupyter Lab be able to retrieve the environment variable?
+* If a user were to export environment variable `QUANDL_API_KEY` using a terminal, but then launched Jupyter Lab in a different terminal window, would Jupyter Lab be able to retrieve the environment variable?
 
   * **Answer:** No. Environment variables are sourced to current and child processes. Because a new terminal window is used to launch Jupyter Lab, the environment variable `QUANDL_API_KEY` will be out of scope.
 
