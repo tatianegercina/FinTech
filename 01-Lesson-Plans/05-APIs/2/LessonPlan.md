@@ -453,17 +453,17 @@ Ask students if there are any questions before moving on.
 
 ### 10. Instructor Do: Intro to Plaid (10 min)
 
-Navigate to the "Plaid SDK" section of the lesson slides, and introduce the Plaid SDK by highlighting how it is disrupting the FinTech data industry:
+Navigate to the "Plaid SDK" section of the lesson slides. Introduce the Plaid SDK by highlighting how it is disrupting the FinTech data industry:
 
-* According to a [Forbes article from February 2019](https://www.forbes.com/sites/donnafuscaldo/2019/02/06/plaid-and-quovo-just-scratching-the-surface-with-data-aggregation/#6e169e401841), FinTech is transforming into a new data industry that focuses on and specializes in the democratization of financial services. This is mainly due the startup **Plaid**, a company seeking to enrich and empower consumers through financial data and technology.
+* According to a [Forbes article from February 2019](https://www.forbes.com/sites/donnafuscaldo/2019/02/06/plaid-and-quovo-just-scratching-the-surface-with-data-aggregation/#6e169e401841), FinTech is transforming into a new data industry that specializes in the democratization of financial services. This is mainly due the startup **Plaid**, a company seeking to enrich and empower consumers through financial data and technology.
 
-* Whether intentional or not, Plaid is becoming the Magellan of this new FinTech market, circumnavigating the centralized FinTech powers that be and plotting the course for a new, democratized approach to financial services.
+* Whether intentional or not, Plaid is becoming the Magellan of the new FinTech market, circumnavigating the centralized FinTech powers that be and plotting the course for a new, democratized approach to financial services.
 
 * As a FinTech company, Plaid has two customers in mind: the everyday person seeking to take ownership and control over their finances, and the developers trying to design and build robust FinTech applications that enable financial analysis.
 
-* Plaid is tipping the financial scales by breaking down barriers and providing a self-service platform, not for FinTech professionals but FinTech consumers: a platform offering data and analytic needs to promote the decentralization of financial analytics. Plaid bestows upon users the processing power and data access points previously reserved just for financial elites.
+* Plaid is tipping the financial scales by breaking down barriers and providing a self-service platform, not for FinTech professionals but FinTech consumers: one that offers data and analytic tools to promote the decentralization of financial analytics. Plaid bestows upon users the processing power and data access points previously reserved for financial elites.
 
-* What exactly does Plaid do? Plaid brokers connections to users' bank accounts to create a one-stop-shop experience for financial management. Typically when analyzing data across multiple accounts, one would have to visit each financial institution and extract the desired data. Plaid streamlines this process by offering a platform that will broker the request for data extraction, so users do not have to do it manually. Plaid offers analytics and insights products as well, helping users better understand trends in their data.
+* What exactly does Plaid do? Plaid brokers connections to users' bank accounts to create a one-stop shop for financial management. Typically, when analyzing data across multiple accounts, one would have to visit each financial institution and extract the desired data. Plaid streamlines this process by offering a platform that will broker the request for data extraction, so users don't have to do it manually. Plaid offers analytics and insights products as well, helping users better understand trends in their data.
 
 * The Plaid API allows users to:
 
@@ -477,17 +477,17 @@ Navigate to the "Plaid SDK" section of the lesson slides, and introduce the Plai
 
 Up until now, students have been solely conducting quantitative analysis of investments. Facilitate discussion with the following talking points and guided questions:
 
-* Plaid can be used to analyze financial data in a more comprehensive and holistic view. Plaid takes the data from each financial account and consolidates it to create an overarching portfolio that encompasses savings, investments, retirement funds, loans, etc. What types of analysis can be done with these datasets?
+* Plaid can be used to analyze financial data with a more comprehensive and holistic view. Plaid takes data from each financial account and consolidates it, to create an overarching portfolio encompassing savings, investments, retirement funds, loans, etc. What types of analyses can be done with these datasets?
 
   * **Answer:** Net worth analysis would require data to be extracted from all financial accounts.
 
 * Plaid was created as a tool to assist developers in designing FinTech applications. By brokering connections to financial institutions, Plaid allows developers to focus on designing analytic pipelines for consumers that provide insight and drive financial budgeting decisions. If you had access to your savings, investment, and retirement account data, what would you do with it?
 
-  * **Answer:** Calculate the rate of cumulative returns daily, quarterly, and yearly to show cumulative returns over time. This insight could be used to change the types of funds, bonds, and individualized stocks used in each account.
+  * **Answer:** Calculate the rate of cumulative returns daily, quarterly, and yearly, to show cumulative returns over time. This insight could be used to change the types of funds, bonds, and individualized stocks used in each account.
 
   * **Answer:** Calculate beta to compare individualized stock and retirement portfolio volatility.
 
-Explain to students that by leveraging the data provided by Plaid, consumers no longer have to rely on financial services professionals or big companies to give them insights into their data. Furthermore, developers no longer have to concern themselves with data acquisition and brokering communication with financial institutions. Instead, both parties can just use Plaid.
+Explain to students that by leveraging the data provided by Plaid, consumers are no longer reliant on financial services professionals or big companies for insights into their data. Furthermore, developers no longer have to concern themselves with data acquisition and brokering communication with financial institutions. Instead, both parties can just use Plaid.
 
 Answer any questions before moving on.
 
