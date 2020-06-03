@@ -253,7 +253,7 @@ Explain to students that, as long as the free tier is used, there are no charges
 
 Explain to students that it's possible to code a Jupyter notebook from scratch on this Amazon SageMaker's notebook instance, but also, you can open an existing Jupyter notebook. Slack out to students the `monte_carlo.ipynb` starter file, and continue the demo as follows.
 
-* This demo code runs a Monte Carlo simulation that uses the IEX API, so ask students to have their API key at hand.
+* This demo code runs a Monte Carlo simulation that uses the Alpaca API, so ask students to have their API keys at hand.
 
 * In your Amazon SageMaker notebook instance, in left icon menu, click on the _Upload_ icon (arrow up) and select the `monte_carlo.ipynb` notebook to upload.
 
