@@ -112,19 +112,19 @@ Navigate to the "API Keys" section of the lesson slides and introduce students t
 
 * **API keys** are like the keys to a house or a car. Without a key, one cannot gain access or make use of the services provided by an API. APIs that require keys will reject any request that does not include an API key.
 
-* The main reason why companies use API keys is to monitor and control user requests and receive compensation for their services and intellectual property. Because API keys detail permissions and privileges for users, companies can programmatically disable and enable API privileges based on some requests submitted.
+* The main reason why companies use API keys is to monitor and control user requests, and receive compensation for their services and intellectual property. Because API keys detail permissions and privileges for users, companies can programmatically disable and enable API privileges based on the requests submitted.
 
-* Obtaining an API key is like getting keys to a kingdom. Once you're in, you're empowered to build products and submit API requests as you please.
+* Obtaining an API key is like getting the key to a kingdom. Once you're in, you're empowered to build products and submit API requests as you please.
 
-Initiate a facilitated discussion by communicating the following guided questions and discussion points. Choose two or three questions to ask, depending on the available time.
+Now, initiate a facilitated discussion with the following guided questions and discussion points. Choose two or three questions to ask, depending on the time available.
 
 * Ask the students: API keys are submitted with all API requests. Does it seem safe to transmit a unique key over the internet with every request? If no, why not?
 
-  * **Answer:** It is not safe. It is because API keys are transmitted over the internet that they are not considered a proper security layer. If someone were to intercept the client-server communications, they'd be able to retrieve a user's API key.
+  * **Answer:** It is not safe. This is because API keys transmitted over the internet are not considered a proper security layer. If someone were to intercept client-server communications, they'd be able to retrieve a user's API key.
 
 * Ask: If API keys can be intercepted with every submitted request, why use them?
 
-  * **Answer:** API keys are used because they prohibit nonregistered users from making requests. When an API requires a key, a key must be provided for the API to execute. This forces users to register for the API and request an API key, which also allows the owner of the API to monitor that user's usage and charge for services.
+  * **Answer:** API keys are used because they prohibit nonregistered users from making requests. When an API requires a key, a key must be provided for the API to execute. This forces users to register for the API and request an API key, which permits the owner of the API to monitor that person's usage and charge for services.
 
 * Pose the following question: What type of privileges and permissions could be tied to an API key? (Hint: CRUD.)
 
