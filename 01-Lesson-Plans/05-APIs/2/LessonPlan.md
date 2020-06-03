@@ -56,7 +56,7 @@ By the end of today's class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -64,35 +64,35 @@ By the end of today's class, students will be able to:
 
 Day 2 takes students to the next step in using APIs. Students will transition from using the Python `requests` library to using SDKs that provide practical use cases for FinTech analysis.
 
-Welcome students to the second day of APIs, open the lesson slides and move to "The Rise of APIs" section by highlighting the following talking points:
+Welcome students to the second day of APIs. Open the lesson slides, move to "The Rise of APIs" section, and highlight the following points:
 
-* Today's class will be a continuation of the last session; however, there will be more emphasis and focus on effectively using FinTech APIs.
+* While today's class will be a continuation of the last session, there will be a stronger emphasis on how to use FinTech APIs effectively.
 
 * There are several FinTech APIs available that grant users the ability to create and execute analytic pipelines on various forms of financial data.
 
 * Because APIs often offer practical services, they may require subscriptions or payment. Companies use API keys and user accounts to ensure billing and secure transmission of financial and other confidential information.
 
-* You will hands-on experience on using Plaid (a banking API), Quandl (to fetch historical stock data) and Alpaca (a trading API)
+* You will get hands-on experience on using Plaid (a banking API), Quandl (to fetch historical stock data) and Alpaca (a trading API).
 
-Explain to students that the Department of Finance and the Provincial Finance Regulators are responsible for providing a financial regulatory framework for Canada, however, the monetary policy for the Canadian FinTech industry is still under development according to [a report released by the Competition Bureau](https://www.competitionbureau.gc.ca/eic/site/cb-bc.nsf/eng/04322.html).
+Explain to students that the Department of Finance and the Provincial Finance Regulators are responsible for providing a financial regulatory framework for Canada. However, the monetary policy for the Canadian FinTech industry is still under development according to [a report released by the Competition Bureau](https://www.competitionbureau.gc.ca/eic/site/cb-bc.nsf/eng/04322.html).
 
-* As a general regulatory framework, every company interested in providing technology-led financial services should be compliant at least with [The Personal Information Protection and Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/) and the [Canada's Anti-Money Laundering and Anti-Terrorist Financing Regime (AML/CT)](https://www.fintrac-canafe.gc.ca/fintrac-canafe/antimltf-eng).
+* Within the general regulatory framework, any company interested in providing technology-led financial services should, at the minimum, comply with [The Personal Information Protection and Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/) and the [Canada's Anti-Money Laundering and Anti-Terrorist Financing Regime (AML/CT)](https://www.fintrac-canafe.gc.ca/fintrac-canafe/antimltf-eng).
 
-* Those companies interested in offering financial services related to cryptocurrencies or tokes, should follow the guidance published by the Canadian Securities Administrators (CSA) in the [Staff Notice 46-308 about Securities Law Implications for Offerings of Tokens](https://www.securities-administrators.ca/aboutcsa.aspx?id=1704).
+* Companies interested in offering financial services related to cryptocurrencies or tokens should follow the guidance published by the Canadian Securities Administrators (CSA) in the [Staff Notice 46-308 about Securities Law Implications for Offerings of Tokens](https://www.securities-administrators.ca/aboutcsa.aspx?id=1704).
 
-Transition into a dry demonstration (just visit the site) of a practical FinTech API that will be used later in the lesson: Plaid.
+Now, transition into a dry demonstration (just visit the site) of a practical FinTech API that will be used later in the lesson: Plaid.
 
 Navigate to the [Plaid](https://plaid.com/) website and highlight the following:
 
-* Plaid is an API that allows users to connect multiple bank accounts to one platform and provides a unified view of a person's financial ecosystem. This will enable users to manage and analyze their accounts and financial information from one spot.
+* The Plaid API allows users to connect multiple bank accounts to one platform and provides a unified view of a person's financial ecosystem. It enables users to manage and analyze their accounts and financial information from one spot.
 
 * Plaid was designed as a tool for developers to accelerate their FinTech development. Developers can use Plaid to provide services to their users and consumers without having to worry about making API calls to each bank or financial entity.
 
-* Because Plaid handles the behind-the-scenes handshakes with each financial institution, developers can focus on designing and developing a program that will:
+* Because Plaid handles any needs behind-the-scenes with each financial institution, developers can focus on designing and developing a program that will:
 
   1. Make calls to Plaid.
 
-  2. Analyze data by either extracting financial information from Plaid or by using Plaid's out-of-the-box capabilities.
+  2. Analyze data by either extracting financial information from Plaid, or by using Plaid's out-of-the-box capabilities.
 
 * [Plaid is available in Canada since May 2019](https://blog.plaid.com/plaid-in-canada/).
 
