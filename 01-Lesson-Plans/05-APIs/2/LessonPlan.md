@@ -144,21 +144,21 @@ End the activity by asking the students if they have any further questions.
 
 ### 3. Instructor Do: Keys to the FinTech Kingdom (5 min)
 
-Over the next couple of activities, students will be working with APIs that require keys for access. Use this time to engage them with API keys facilitated review discussion.
+Over the next couple of activities, students will work with APIs that require keys for access. Use this time to engage with them on API keys through a facilitated discussion.
 
-Engage the students with the following review questions:
+Ask students the following review questions:
 
 * Do *all* APIs require API keys?
 
-  **Answer:** No. Only some APIs require keys to be used. Others allow users to submit requests for free (with rate-limits).
+  **Answer:** No. Only some APIs require keys to be used. Others allow users to submit requests for free (with rate limits).
 
-* Why require users to have an API key when requests can be sent without APIs?
+* Why require users to have an API key, when requests can be sent without APIs?
 
   **Answer:** API keys allow companies to monitor, analyze, and enforce rate limits.
 
 * What happens when the `?api_key=` tag is used? Is a function executed, or is a parameter passed?
 
-  **Answer:** A parameter is being passed.
+  **Answer:** A parameter is passed.
 
 * Can more than one user have the same API key?
 
@@ -172,9 +172,9 @@ Engage the students with the following review questions:
 
   **Answer:** Yes. Rate limits are tied to API keys. Sharing an API key would mean sharing the total number of requests allowed with another individual. Sharing keys could also result in someone else charging your account for billable services.
 
-Excite students about FinTech APIs by highlighting the following points.
+Get students excited about FinTech APIs by highlighting the following points:
 
-* Many APIs, like Plaid, are disrupting the financial industry and market. Many APIs have grassroots initiatives, meaning they are creating tools and technologies for people rather than companies and corporations. These efforts echo the open-source movement.
+* Many APIs, like Plaid, are disrupting the financial industry. Many APIs have grassroots initiatives, meaning they are creating tools and technologies for people, rather than corporations. These efforts echo the open-source movement.
 
 * Even though many APIs require keys, their services are often free. Obtaining an API key is like getting the keys to a kingdom. Once you're in, you're empowered to build products and submit API requests as you please. There are limitations, but services are often still free.
 
