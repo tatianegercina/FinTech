@@ -236,15 +236,15 @@ In this activity, students will learn how to call API keys as environment variab
 
 Recall students to the concept of environment variables by asking the following question:
 
-* Imagine you signed up for 10 APIs, and each API gave you a key. It'd be challenging to commit each key to memory, so you need to find some way to save the keys. What are some possible approaches?
+* Imagine you signed up for 10 APIs, and each API gave you a key. It would be hard to memorize each key, so you'd need to find some way to save the keys. What are some possible approaches?
 
-  **Answer:** One approach would include tracking the keys in an Excel document. The document could be password protected to preserve confidentiality.
+  **Answer:** One approach could include tracking the keys in an Excel document. The document could be password protected, to preserve confidentiality.
 
   **Answer:** Environment variables could be created, and the keys could be stored in the variables.
 
 Open the solved version of the Jupyter notebook. Next, run the code on every cell and highlight the following:
 
-* Environment variables are variables just like Python variables; however, instead of being created in a Python application, they're created on a user's computer.
+* Environment variables are variables just like Python variables are; however, instead of being created in a Python application, they're created on a user's computer.
 
 * Environment variables are operating-system-level variables that are accessible by all programs and applications with access to that environment.
 
@@ -254,14 +254,14 @@ Open the solved version of the Jupyter notebook. Next, run the code on every cel
 
 * An easy, convenient, and secure way to store any data that needs to be accessed across programs and applications is to use environment variables. This includes API keys, as well as user credentials, and program installation paths (e.g., Python).
 
-* For reading our `.env` file and setting it's defined environment variables in our local environment we import the `load_dotenv()` method from the `python-dotenv` package.
+* For reading our `.env` file and setting its defined environment variables in our local environment, we import the `load_dotenv()` method from the `python-dotenv` package.
 
   ```python
   # Import dotenv package for setting environment variables
   from dotenv import load_dotenv
   ```
 
-* For fetching our environment variables from the local environment and loading them into an in-memory python variable, we are importing the `os` package.
+* For fetching our environment variables from the local environment and loading them into an in-memory python variable, we import the `os` package.
 
   ```python
   # Import os package
@@ -275,7 +275,7 @@ Open the solved version of the Jupyter notebook. Next, run the code on every cel
   load_dotenv()
   ```
 
-* Keep in mind unless a file location `string` is passed `load_dotenv` will look for a `.env` in the root directory from which your Python code is executing.
+* Keep in mind that unless a file location `string` is passed, `load_dotenv` will look for a `.env` in the root directory from which your Python code is executing.
 
 * Once an environment variable is declared, it can be called using the `os.getenv` function. The input to the `os.getenv` function is the name of the environment variable. The output should then be stored as a Python variable to be used at a later time.
 
@@ -284,7 +284,7 @@ Open the solved version of the Jupyter notebook. Next, run the code on every cel
   api_key = os.getenv("QUANDL_API_KEY")
   ```
 
-* A way to check if the environment variable was correctly loaded, is to print the data type of the Python variable.
+* A way to check if the environment variable was correctly loaded is to print the data type of the Python variable.
 
 * If the environment variable exists, Python will return `str` as the data type.
 
@@ -317,7 +317,7 @@ Ask students if there are any questions before continuing.
 
 ---
 
-### 6. Students Do: Under Lock and Key (20 min)
+### 6. Student Do: Under Lock and Key (20 min)
 
 The previous modules focused on the instructor demoing how to create, store, and use API keys with environment variables. Students now engage in a bridge activity that involves retrieving a Quandl API key, and submitting a Quandl API request with the key stored as environment variables. This will be the students' first opportunity for hands-on practice with API keys and environment variables.
 
