@@ -141,7 +141,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 3. Student Do: Create and Personalize a GitHub Repository (15 min)
+### 3. Student Do: Refresher (15 min)
 
 In this activity, students will follow the steps in the other instructor demo to create their repository in GitHub and modify the `README` file to personalize their repo.
 
@@ -149,7 +149,7 @@ In this activity, students will follow the steps in the other instructor demo to
 
 ---
 
-### 4. Instructor Do: Review Create and Personalize a GitHub Repository (5 min)
+### 4. Instructor Do: Review Refresher (5 min)
 
 Review the previous activity with students, highlighting the following points:
 
@@ -294,7 +294,7 @@ Answer any questions before moving on.
 
 ---
 
-### 7. Student Do: GitHub Reorganized (15 min)
+### 7. Student Do: Git CLI (15 min)
 
 In this activity, students will use the git CLI to clone their git repositories to their local file systems, and then add directories to their GitHub repositories.
 
@@ -302,7 +302,7 @@ In this activity, students will use the git CLI to clone their git repositories 
 
 ---
 
-### 8. Instructor Do: Review GitHub Reorganized (10 min)
+### 8. Instructor Do: Review Git CLI (10 min)
 
 In this section, review the previous activity and take some time to answer students' questions.
 
@@ -459,7 +459,7 @@ Slack out the ["Writing an Awesome README File" guide](../Supplemental/Awesome_R
 
 ---
 
-### 10. Student Do: GitHub Welcome (15 min)
+### 10. Student Do: Markdown (15 min)
 
 In this activity, students will visually enhance their README files for their GitHub repositories by adding additional markdown features.
 
@@ -467,7 +467,7 @@ In this activity, students will visually enhance their README files for their Gi
 
 ---
 
-### 11. Instructor Do: Review Git Welcome (5 min)
+### 11. Instructor Do: Review Markdown (5 min)
 
 Take some time to review the previous activity with students, highlighting the following points:
 
@@ -545,7 +545,7 @@ Answer any questions before moving on.
 
 ---
 
-### 14. Student Do: FinTech Case Study (30 min)
+### 14. Student Do: Group Case Study (30 min)
 
 In this activity, students will work in pairs to create a shortened case study report on a particular FinTech company, which will be chosen from a list of case study proposals. Each team will create a shared GitHub repository and write their report in markdown.
 
@@ -553,7 +553,7 @@ In this activity, students will work in pairs to create a shortened case study r
 
 ---
 
-### 15. Instructor Do: Review FinTech Case Study (10 min)
+### 15. Instructor Do: Review Group Case Study (10 min)
 
 Students will now present their findings to the class.
 
