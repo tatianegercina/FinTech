@@ -74,7 +74,7 @@ Welcome students to the second day of APIs. Open the lesson slides, move to "The
 
 * Because APIs often offer practical services, they may require subscriptions or payment. Companies use API keys and user accounts to ensure billing and secure transmission of financial and other confidential information.
 
-* You will get hands-on experience on using Plaid (a banking API), Quandl (to fetch historical stock data) and Alpaca (a trading API).
+* You will get hands-on experience using Plaid (a banking API), Quandl (to fetch historical stock data) and Alpaca (a trading API).
 
 Explain to students that the Department of Finance and the Provincial Finance Regulators are responsible for providing a financial regulatory framework for Canada. However, the monetary policy for the Canadian FinTech industry is still under development according to [a report released by the Competition Bureau](https://www.competitionbureau.gc.ca/eic/site/cb-bc.nsf/eng/04322.html).
 
