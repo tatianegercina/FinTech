@@ -32,7 +32,9 @@ By the end of today's class, students will be able to:
 
 * Slack out the [Alpaca Installation Guide](../Supplemental/AlpacaMarkets_Installation-Guide.md) (again) and the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class.
 
-* This lesson includes the demonstration, and use of, two APIs that require users to have accounts and API keys. You, students, and TAs should all have created accounts and received API keys prior to this lesson. (Students were instructed to sign up at the end of Lesson 5.1.) The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up. There is an activity dedicated to confirming that each student has signed up.
+* This lesson includes the demonstration, and use of, two APIs that require users to have accounts and API keys. You, students, and TAs should all have created accounts and received API keys prior to this lesson. (Students were instructed to sign up at the end of Lesson 5.1.) 
+
+* The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up. There is an activity dedicated to confirming that each student has signed up.
 
   * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
