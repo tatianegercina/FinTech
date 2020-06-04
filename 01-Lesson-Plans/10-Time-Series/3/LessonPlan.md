@@ -1107,7 +1107,7 @@ Rolling Out-of-Sample Model:
 
   ```
 
-* Comparing the two RMSE's, the RMSE from the single training window is 0.73, whereas it is 0.75 from the rolling-out-of-sample model.
+* Comparing the two RMSE's, the RMSE from the single training window is 0.96, whereas it is 1.23 from the rolling-out-of-sample model.
 
   * The rolling-out-of sample approach is an approach more akin to real-life (you likely re-estimate your model when new data becomes available)
 
