@@ -4,15 +4,15 @@
 
 ### Overview
 
-Today's class will focus on the notion of using Monte Carlo simulations to forecast future results and make confident predictions supported by statistical evidence. Monte Carlo simulations are an essential tool in emulating a real-world use case that involves a degree of randomness surrounding an event or outcome. It seeks to iterate `n` number of times to find the most probable result of a variable event as well as the range of effects and their corresponding probabilities of occurring.
+Today's class will focus on the notion of using Monte Carlo simulations to forecast results and make confident predictions supported by statistical evidence. A Monte Carlo simulation is an essential tool for emulating a real-world use case that involves a degree of randomness surrounding an event or outcome. It seeks to iterate `n` a number of times to find the most probable result of a variable event, as well as the range of effects and their corresponding probabilities of occurring.
 
-In particular, stock prices tend to move in such a way that there are varying probabilities to where the price may go or deviate from its average (daily, weekly, monthly). Therefore, this lesson will teach students how to apply the concept of Monte Carlo simulations to predict future stock prices and therefore forecast the potential returns of an initial investment, either as a single stock or as a portfolio.
+For example, stock prices fluctuate, so there are varying probabilities as to where the price may deviate from its average (daily, weekly, monthly). This lesson will teach students how to apply Monte Carlo simulations to predict future stock prices, thus forecasting the potential returns of an initial investment, either as a single stock or as a portfolio.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Define what a simulation is and why it's used.
+* Define what a simulation is, and why it's used.
 
 * Deconstruct the components of the Monte Carlo simulation process: probability distributions and iterations.
 
@@ -32,19 +32,19 @@ By the end of class, students will be able to:
 
 * As a reminder, slack out the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class.
 
-* Today's lesson deals heavily with statistical concepts, particularly probability. Try to be as transparent as possible and be mindful of students who may become easily confused, as this lesson will push the boundaries of most students' comfort levels when it comes to statistics.
+* Today's lesson deals heavily with statistical concepts, especially probability. Be as transparent as possible and mindful of students who may become confused, as this lesson pushes the boundaries of most students' comfort levels when it comes to statistics.
 
-* When overviewing the concept of probability distributions, also make sure to stress the notion of randomness. Probability merely implies that there is a chance that a specific result or event may occur but makes no guarantees, which is why results can differ with each iteration.
+* When overviewing the concept of probability distributions, make sure to stress the notion of randomness. Probability merely implies that there is a chance that a specific result or event may occur, but makes no guarantees, which is why results can differ with each iteration.
 
-* Once students are comfortable with probability distributions, namely normal distributions, students should be able to process the idea that Monte Carlo simulations on stock investments seek to chart the different paths (and probabilities) in which a stock can vary about its average daily return. Overview the code in detail so that this becomes more apparent.
+* Once they're comfortable with probability distributions (namely, normal distributions), students should be able to process the idea that Monte Carlo simulations on stock investments seek to chart the different paths and probabilities in which a stock can vary about its average daily return. Overview the code in detail so that this becomes more apparent.
 
-* Toward the end of class, students will begin applying Monte Carlo simulations to portfolio returns. Therefore, they will need to combine the concepts of portfolio optimization (taught in the Pandas unit) with the concept of portfolio forecasting (taught in today's lesson). Walkthrough the steps in detail as students can easily get lost in this myriad of technical concepts!
+* Toward the end of class, students will begin applying Monte Carlo simulations to portfolio returns. Therefore, they will need to combine the concepts of portfolio optimization (taught in the Pandas unit) with the concept of portfolio forecasting (taught in today's lesson). Walk through the steps in detail, as students could easily get lost in this myriad of technical concepts!
 
 * Note that the results from Monte Carlo simulations may vary from the lesson plan and a new execution in class since stock data is fetched `90` days before the current date.
 
-* In this class, the concept of random numbers and random numbers generators is introduced and applied using `numpy.random`. A random seed (`random.seed(3)`) has been set for all the Instructor's activities to ensure reproducibility, be aware of that during your coding demos and explain to students the purpose of using a random seed for prototyping but not for deploying models.
+* In this class, the concept of random numbers and random numbers generators is introduced and applied using `numpy.random`. A random seed (`random.seed(3)`) has been set for all the Instructor's activities to ensure reproducibility. Be aware of this during your coding demos, and explain the purpose of using a random seed for prototyping but not for deploying models.
 
-* In those Students' activities that use `numpy.random`, there a random seed is not set to allow students to experience randomness.
+* In the student activities using `numpy.random`, there a random seed is not set to allow students to experience randomness.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -58,7 +58,7 @@ By the end of class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -68,43 +68,43 @@ Energize your students and welcome them to the third day of APIs! Today is the d
 
 Cover the following points:
 
-* The previous lessons focused on API calls and showcased the Plaid API to exemplify that you can leverage the power of external datasets and functionality.
+* Previous lessons focused on API calls and showcased the Plaid API to exemplify that you can leverage the power of external datasets and functionality.
 
 * Today you will combine what you've learned so far on using APIs to pull in stock data and forecast single stock and portfolio returns using Monte Carlo simulations.
 
-* Today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. You should feel empowered as you are learning how you can use other curated datasets to analyze and generate insights on their own.
+* Today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. You should feel empowered while learning how to use other curated datasets to analyze and generate insights on their own.
 
-* You should be prepared to push your mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.
+* Be prepared to push your mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.
 
-Open the lesson slides, move to the "Monte Carlo Simulations" section and highlight the following:
+Open the lesson slides, move to the "Monte Carlo Simulations" section, and highlight the following:
 
 * Today, we will combine what we’ve learned so far on using APIs to pull in stock data and forecast single stock/portfolio returns using Monte Carlo simulations.
 
 * Simulations will require a switch from historical analysis to predicting the future.
 
-* By the end of the lesson, Monte Carlo simulations will have predicted future stock prices and therefore forecast the potential stock's returns of an initial investment, either as a single stock investment or as an investment in a portfolio.
+* By the end of the lesson, Monte Carlo simulations will have predicted future stock prices, and therefore forecast the potential stock's returns of an initial investment; either as a single stock investment or as an investment in a portfolio.
 
-Continue with the slides switching to the "Simulations" section, ease students into the notion of this type of simulations by presenting the following questions and answers:
+Continue with the slides, switching to the "Simulations" section. Ease students into the idea of this type of simulation by presenting the following questions and answers:
 
 * What are simulations?
 
-  * At its core, a simulation is a running instance of a model that seeks to emulate an existing process or system.
+  * Answer: At its core, a simulation is a running instance of a model that seeks to emulate an existing process or system.
 
-* What are Monte Carlo simulations?
+* What is a Monte Carlo simulation?
 
-  * A Monte Carlo simulation is a specific type of simulation that uses probability and variables to predict the future potential outcomes of a randomly occurring process.
+  * Answer: A Monte Carlo simulation is a specific type of simulation using probability and variables to predict the future potential outcomes of a randomly occurring process.
 
 * What is probability?
 
-  * The chance of an event happening. For example, the chance of a coin landing on heads is `50%`.
+  * Answer: The chance of an event happening. For example, the chance of a coin landing on heads is `50%`.
 
 * Why use Monte Carlo simulations?
 
-  * Monte Carlo simulations provide a method of testing the range of values and corresponding probabilities that a random process can generate over time—specifically, how far results may deviate from the expected average. Monte Carlo simulations help to understand the risk of uncertainty in prediction and forecasting models, which is particularly helpful when dabbling in the domain of capital investments and stock price uncertainty!
+  * Answer: Monte Carlo simulations provide a method of testing the range of values and corresponding probabilities that a random process can generate over time—specifically, how far results may deviate from the expected average. Monte Carlo simulations help to understand the risk of uncertainty in prediction and forecasting models, which is particularly helpful when dabbling in the domain of capital investments and stock price uncertainty.
 
 * What would be an example of a Monte Carlo simulation?
 
-  * Imagine a scientist wanted to know how often a coin could land on heads for `5` trials of `10` coin flips. Flipping a coin has a `50%` chance of landing on heads and a `50%` chance of landing on tails. Because of the randomly occurring nature of flipping a coin, results could vary: for example, a coin could produce `6` heads and `4` tails; `3` heads and `7` tails; `8` heads and `2` tails, `5` heads and `5` tails, or `4` heads and `6` tails. Therefore, an example Monte Carlo simulation would be to flip a coin `10` times to determine the resulting number of heads and tails, and then do that same process another `5` times to determine the frequency distribution of landing on heads (how many times the coin landed a specific number of heads). The frequency distribution of heads can then be used to calculate the corresponding probability distribution that determines how likely it is for varying numbers (or ranges) of heads to land.
+  * Answer: Imagine a scientist wanted to know how often a coin could land on heads for `5` trials of `10` coin flips. Flipping a coin has a `50%` chance of landing on heads and a `50%` chance of landing on tails. Because of the randomly occurring nature of flipping a coin, results could vary: for example, a coin could produce `6` heads and `4` tails; `3` heads and `7` tails; `8` heads and `2` tails, `5` heads and `5` tails, or `4` heads and `6` tails. Therefore, an example Monte Carlo simulation would be to flip a coin `10` times to determine the resulting number of heads and tails, and then do that same process another `5` times to determine the frequency distribution of landing on heads (how many times the coin landed a specific number of heads). The frequency distribution of heads can then be used to calculate the corresponding probability distribution that determines how likely it is for varying numbers (or ranges) of heads to land.
 
 Ask the students if they can think of any other examples of Monte Carlo simulations. Be sure to have all the students on the same page before moving on.
 
