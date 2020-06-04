@@ -29,7 +29,7 @@ You will gain proficiency in the following tasks:
 
 #### Time-Series Forecasting
 
-In this notebook, you will load historical CAD-Yen exchange rate data and apply time series analysis and modeling to determine whether there is any predictable behavior.
+In this notebook, you will load historical CAD-Yen exchange rate data and apply time series analysis and modelling to determine whether there is any predictable behaviour.
 
 Follow the steps outlined in the time-series starter notebook to complete the following:
 
@@ -38,7 +38,7 @@ Follow the steps outlined in the time-series starter notebook to complete the fo
 3. Forecasting the exchange rate Price using an ARIMA Model.
 4. Forecasting Volatility with GARCH.
 
-Use the results of the time series analysis and modeling to answer the following questions:
+Use the results of the time series analysis and modelling to answer the following questions:
 
 1. Based on your time series analysis, would you buy the yen now?
 2. Is the risk of the yen expected to increase or decrease?
@@ -56,7 +56,7 @@ Follow the steps outlined in the regression_analysis starter notebook to complet
 4. Out-of-sample performance.
 5. In-sample performance.
 
-Use the results of the linear regression analysis and modeling to answer the following question:
+Use the results of the linear regression analysis and modelling to answer the following question:
 
 * Does this model perform better or worse on out-of-sample data compared to in-sample data?
 
