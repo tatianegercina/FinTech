@@ -802,7 +802,7 @@ Ask for any remaining questions before moving on.
 
 **File:**
 
-* [sp500.ipynb](Activities/07-Ins_Rolling_Out_of_Sample/Solved/sp500.ipynb)
+* [tsx.ipynb](Activities/07-Ins_Rolling_Out_of_Sample/Solved/tsx.ipynb)
 
 Point out that up to this point, we have created models as a one-shot affair. Explain that we will go over a procedure that allows an analyst to update the financial model as new data continues to come in.
 
@@ -977,7 +977,7 @@ In this activity, students will perform predictions with linear regression on a 
 
 * [README.md](Activities/08-Stu_Rolled_Gold/README.md)
 
-* [gold_price.csv](Activities/08-Stu_Rolled_Gold/Resources/gold_price.csv)
+* [gold_price.csv](Activities/08-Stu_Rolled_Gold/Resources/gold_cad.csv)
 
 * [gold.ipynb](Activities/08-Stu_Rolled_Gold/Unsolved/gold.ipynb)
 
