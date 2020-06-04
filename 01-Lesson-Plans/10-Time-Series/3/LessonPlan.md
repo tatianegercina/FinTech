@@ -977,7 +977,7 @@ In this activity, students will perform predictions with linear regression on a 
 
 * [README.md](Activities/08-Stu_Rolled_Gold/README.md)
 
-* [gold_price.csv](Activities/08-Stu_Rolled_Gold/Resources/gold_cad.csv)
+* [gold_cad.csv](Activities/08-Stu_Rolled_Gold/Resources/gold_cad.csv)
 
 * [gold.ipynb](Activities/08-Stu_Rolled_Gold/Unsolved/gold.ipynb)
 
