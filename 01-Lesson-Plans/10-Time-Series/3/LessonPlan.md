@@ -251,13 +251,13 @@ Explain that you can also compare the RMSE to the standard deviation to get a be
 
 ### 3. Students Do: House Regression (15 min)
 
-In this activity, students will perform linear regression on the number of rooms in houses versus their prices.
+In this activity, students will perform linear regression on the total square foot in houses versus their prices.
 
 **Files:**
 
 * [README.md](Activities/02-Stu_House_Regression/README.md)
 
-* [USA_Housing.csv](Activities/02-Stu_House_Regression/Resources/USA_Housing.csv)
+* [CA_Housing.csv](Activities/02-Stu_House_Regression/Resources/CA_Housing.csv)
 
 - - -
 
@@ -287,6 +287,8 @@ Open the solution, and complete a dry walkthrough of the code:
   model.fit(X,y)
   predicted_y_values = model.predict(X)
   ```
+
+  ![model_fit.png](Images/model_fit.png)
 
   ![model_predict.png](Images/model_predict.png)
 
