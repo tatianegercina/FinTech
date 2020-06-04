@@ -28,7 +28,7 @@ By the end of this class, students will be able to:
 
 * Be mindful that because each activity is a pre-requisite for the next, today's class may call for greater patience from both instructor and students. Do not rush through activities, and take the time to explain the core concepts and techniques in detail if necessary.
 
-* While it is likely that some students may not fully grasp all of today's material by the end of class, the payoff will be in day 3, when your students will have a chance to create predictive models from start to end.
+* While it is likely that some students may not fully grasp all of today's material by the end of class, the payoff will be on day 3, when your students will have a chance to create predictive models from start to end.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -54,7 +54,7 @@ Welcome students to the second day of the time series unit, and briefly summariz
 
 * A time series can be decomposed into components such as trend, noise, and seasonality.
 
-* Tools such as the Hodrick-Prescott filter, and EWMA can be used to identify trends in a time series.
+* Tools such as the Hodrick-Prescott filter and EWMA can be used to identify trends in a time series.
 
 Describe to students what they will be learning today:
 
@@ -68,7 +68,7 @@ Describe to students what they will be learning today:
 
 ### 2. Instructor Do: Stationarity and Non-Stationarity (10 min)
 
-In this activity, you will define stationarity, a key concept in time series modeling.
+In this activity, you will define stationarity, a key concept in time series modelling.
 
 **Files:**
 
@@ -102,7 +102,7 @@ Explain that stationary is important for the following reasons:
 
 * Knowing whether a process is stationary or non-stationary will help us determine which model to use. For example, ARMA models assume stationarity. ARIMA models, on the other hand, assume non-stationarity. We will encounter both of these models today.
 
-Explain the importance of stationarity in time series modeling:
+Explain the importance of stationarity in time series modelling:
 
 * Stationary processes are easier to model.
 
@@ -245,7 +245,7 @@ Before diving into ARMA, quickly summarize auto-correlation for the class:
 
 * Plotting partial auto-correlation helps identify the **number** of lags that are significant in explaining the data.
 
-Use the slides to introduce the concept of auto-regressive (AR) modeling:
+Use the slides to introduce the concept of auto-regressive (AR) modelling:
 
 * In an AR model, past values are used to predict future values.
 
@@ -461,7 +461,7 @@ Open the notebook and show the plot of the data:
 
 * In this example, the p-value is 0.011 (less than 0.05), suggesting stationarity.
 
-* In addition to the Dickey-Fuller test, since the data appears visually not to have a consistent upward or downward trend, this also suggests stationarity. Because of that, we will try modeling the series without further transformations.
+* In addition to the Dickey-Fuller test, since the data appears visually not to have a consistent upward or downward trend, this also suggests stationarity. Because of that, we will try modelling the series without further transformations.
 
 Next, display the ACF plot and comment on the pattern:
 
@@ -585,7 +585,7 @@ Use the slides to explain the interpretation of AIC and BIC:
 
 * Both of these metrics estimate the quality of a model.
 
-* They weigh goodness of fit against the number of parameters. In other words, AIC and BIC favor the simplest model that best fits the data.
+* They weigh goodness of fit against the number of parameters. In other words, AIC and BIC favour the simplest model that best fits the data.
 
 * This means that they penalize models with a large number of parameters. A model with a large number of parameters may describe that particular dataset well but may lose its predictive power when used on new data.
 
@@ -603,13 +603,13 @@ Discuss the AIC and BIC found in the model summaries:
 
 * In the (2, 1, 4) model, the AIC is slightly lower, and BIC slightly higher.
 
-* Because the first model achieves similar results at a lower order, it is reasonable to favor this model order over the second.
+* Because the first model achieves similar results at a lower order, it is reasonable to favour this model order over the second.
 
 Take a moment to summarize the order of an ARIMA model:
 
 * The ACF and PACF plots can be used in conjunction with AIC and BIC scores to identify the model order.
 
-* AIC and BIC favor models with the best fit and penalize higher order models for their complexity.
+* AIC and BIC favour models with the best fit and penalize higher order models for their complexity.
 
 * Lower AIC and BIC scores are usually better.
 
