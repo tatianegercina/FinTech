@@ -1,6 +1,6 @@
 # Under Lock and Key
 
-You and Harold have developed a Python application that will extract historical stock data from **Quandl** for a given ticker and calculate the Sharpe ratio for that stock. So far, only you two have been using the program, but your manager now wants you to open the application up to the entire team. You know that Quandl allows API calls to be submitted without an API key, but the limit is 50 calls a day. Quandl is diligent in their rate-limiting and keeps services under lock and key.
+You and Harold have developed a Python application that extracts historical stock data from **Quandl** for a given ticker and calculates the Sharpe ratio for that stock. So far, the two of you are the only ones using the program, but now your manager wants you to share the application with the entire team. You know that Quandl allows API calls to be submitted without an API key, but the limit is 50 calls a day. Quandl is diligent in their rate-limiting and keeps services under lock and key.
 
 Since Quandl has cracked down on the number of API calls users can make to the service without an **API Key**, acquire a Quandl API key and save it as an **environment variable**. Create a Python code that retrieves the environment variable and passes the key with the request URL. This will ensure that your team can make more than 50 API calls a day, and Quandl can manage and track rate limits.
 
