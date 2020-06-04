@@ -108,7 +108,7 @@ In this activity, students and the instructor will participate in a facilitated 
 
 Guided questions are provided to help facilitate discussion. Use these questions as time permits.
 
-Navigate to the "API Keys" section of the lesson slides and introduce students to API keys. Highlight the following:
+Navigate to the "API Keys" section of the lesson slides and highlight the following:
 
 * Many companies that offer APIs require users to sign up for API keys. **API keys** are access tokens that serve as a credential (like a user name or password) granting users the privileges and permissions needed to submit API requests. APIs use keys as unique identifiers, in order to recognize which users submitted which requests.
 
