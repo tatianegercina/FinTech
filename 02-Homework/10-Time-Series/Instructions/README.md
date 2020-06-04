@@ -13,7 +13,6 @@ You will gain proficiency in the following tasks:
 1. Time Series Forecasting
 2. Linear Regression Modeling
 
-
 - - -
 
 ### Files
