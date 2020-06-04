@@ -1,12 +1,12 @@
 # Risky Business
 
-Harold has been participating in some risky business. He recently became seriously involved in the cryptocurrency market and has seen some excellent returns. Harold's recent returns have him strutting around the office like he's the best trader. He even had the audacity to bet you $5 that his portfolio returns are better than yours.
+Harold has been participating in some risky business. He recently became seriously involved in the cryptocurrency market and has seen some good returns. Harold's recent returns has him strutting around the office like he's the best trader. He even had the audacity to bet you $5 that his portfolio returns are better than yours.
 
 Using standard deviation and sharpe ratios, do the following:
 
 * Identify which cryptocurrencies have the greatest risk-to-reward ratio.
 
-* Determine which portfolio (yours or Harold's) has made the smartest investments.
+* Determine which portfolio (yours or Harold's) has made the most smart investments.
 
 * Identify which cryptocurrencies have the greatest Sharpe ratios (risk/reward).
 
@@ -20,7 +20,7 @@ Use the starter file and the provided data to complete the following steps:
 
 3. Concat both DataFrames containing daily returns into one DataFrame.
 
-4. Calculate the standard deviation for the combined DataFrame.
+4. Calculate standard deviation for the combined DataFrame.
 
 5. Calculate the Sharpe ratios by computing the quotient of `annualized average return` and `annualized standard deviation`.
 
