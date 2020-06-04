@@ -2,7 +2,7 @@
 
 ### Overview
 
-In the last class, students got their hands dirty using Pandas to read, clean, and analyze financial data over time. Today's lesson will continue this trajectory as students learn how to use Pandas to conduct time series analysis to calculate risks and returns over time. Learning this skill will allow students to manage all of the financial data they will inevitably encounter in FinTech. In this lesson students will also learn how to group data and apply multi-indexing to a DataFrame to improve the analysis and visualization of stock exchange data.
+In the last class, students got their hands dirty using Pandas to read, clean, and analyze financial data over time. Today's lesson will continue this trajectory, as students learn how to use Pandas to conduct time series analysis in order to calculate risks and returns over time. Learning this skill will allow students to manage all of the financial data they will inevitably encounter in FinTech. Students will also learn how to group data and apply multi-indexing to a DataFrame to improve the analysis and visualization of stock exchange data.
 
 ### Class Objectives
 
@@ -30,9 +30,9 @@ By the end of class, students will be able to:
 
 * Throughout the lesson, be sure to underscore how Pandas lessens the burden of analysis by providing financial functions such as `MultiIndex` and `groupby()`. Students will learn the practical applications of these concepts by analyzing cryptocurrencies and stock exchange data. For example, tell students they can use the `groupby` function to automatically consolidate data to calculate an average, rather than organizing two years’ worth of daily returns data for each cryptocurrency in an Excel file. Similarly, instead of having to create a `groupby` function themselves, students get to use the Pandas function for free.
 
-* The sections on grouping and multi-indexing contain abstract concepts that can be difficult to grasp without a visual representation. Therefore, be sure to show the slides before walking through the demos to give students a chance to absorb the information.
+* The sections on grouping and multi-indexing contain abstract concepts that can be difficult to grasp without visual representation. Therefore, be sure to show the slides before walking through the demos to give students a chance to absorb the information.
 
-* Be mindful of the class pacing; the pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage students who are confused about attending office hours.
+* Be mindful of the class pacing; the pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage students who are confused to attend office hours.
 
 * Encourage students to work in pairs or groups on the in-class activities to help facilitate discussions as well as troubleshooting. Collaborative exercises such as student-led activity reviews and discussions have been built into this lesson.
 
@@ -50,7 +50,7 @@ By the end of class, students will be able to:
 
 * Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -130,7 +130,7 @@ As students work on the activity, circulate the room with the TAs to offer assis
 
 If a student finishes the activity early, ask if they are willing to help present the solution by live coding how to sort a DataFrame by more than one column. This live-coding exercise will be completed in the activity review (the next part of the lesson).
 
-If the student agrees, spend up to 5 minutes with them reviewing the following scenario.
+If the student agrees, spend up to five minutes with them reviewing the following scenario.
 
 **Scenario:**
 
@@ -141,7 +141,7 @@ There's a DataFrame named `df` that contains Olympic medal data (gold, silver, a
 * `class_of_medal`
 * `year_medal_won`
 
-Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by the number of medals awarded in descending order. (The medals awarded most should be at the top.)
+Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by number of medals awarded in descending order. (The medals awarded most should be at the top.)
 
 ---
 
@@ -163,11 +163,11 @@ Ask the student to live code a solution to the given scenario. If the student lo
 
 * How does one sort by more than one column?
 
-    **Answer:** List the columns to sort by in a comma-separated list.
+    **Answer:** List the columns to sort by in a comma separated list.
 
 * Can you use a list to tell Pandas to sort some columns by ascending values and others by descending values?
 
-    **Answer:** Yes. The `ascending` parameter can be used to sort columns by ascending values. The default value is `True`. `False` will sort in descending order. The `ascending` parameter accepts a list of Boolean responses when data is sorted by more than one column.
+    **Answer:** Yes. The `ascending` parameter can be used to sort columns by ascending values. Default value is `True`. `False` will sort in descending order. The `ascending` parameter accepts a list of Boolean responses when data is sorted by more than one column.
 
 **Scenario for Student Live Coding:**
 
@@ -370,7 +370,7 @@ If time remains, end the review by calling on students to answer the following r
 
 * Does the concept of grouping to aggregate data make sense?
 
-    **Sample Answer:** Yes. When aggregating data without groups, all of the data is aggregated, grouping and then aggregating allows calculations to be executed against groups (e.g., January's stock data would be grouped and computed separately from February's).
+    **Sample Answer:** Yes. When aggregating data without groups, all of the data is aggregated. Grouping and then aggregating allows calculations to be executed against groups (e.g., January's stock data would be grouped and computed separate from February's).
 
 * How did working with more than one ticker help you in this activity?
 
@@ -412,7 +412,7 @@ Open the lesson slides, move to the "Multi-Indexing" section and provide an over
 
   * This is particularly valuable when working with financial data and dates. While dates are great to index, dates do not always provide all of the detail needed to manipulate and analyze data.
 
-  * For example, when looking at stock prices and purchases over time, it is essential to group data by both date and ticker. In this operation, both date and ticker can be indexes, and by specifying date and ticker, you can slice out the price of a particular stock at a specific point in time.
+  * For example, when looking at stock prices and purchases over time, it is important to group data by both date and ticker. In this operation, both date and ticker can be indexes, and by specifying date and ticker, you can slice out the price of a particular stock at a specific point in time.
 
 * Essentially, multi-indexing improves data storage, lookup, and manipulation/assignment.
 
@@ -539,7 +539,7 @@ Answer any questions before moving on.
 
 ### 11. Instructor Do: Concatenating DataFrames (10 min)
 
-In this section, you will provide an overview of concatenation and then live code on how to concatenate DataFrames. Data for this activity was retrieved from [Kaggle](http://kaggle.com).
+In this section, you will provide an overview of concatenation and then live code how to concatenate DataFrames. Data for this activity was retrieved from [Kaggle](http://kaggle.com).
 
 **Files:**
 
@@ -763,7 +763,7 @@ End the presentation and open the unsolved Jupyter notebook. Live code how to us
 
   ![std_dev_box.png](Images/std_dev_box.png)
 
-Emphasize that the takeaway of these charts is that the greater the spread, the greater the risk—the greater the risk, the greater the potential for earnings and losses.
+Emphasize that the takeaway of these charts is that the greater the spread, the greater the risk. The greater the risk, the greater the potential for earnings and lost.
 
 Answer any questions before moving on.
 
@@ -853,7 +853,7 @@ Open the solution, conduct a dry-walkthrough review  and highlight the following
 
 * The `concat` function can be used to combine portfolio returns. This enables analysis (i.e., standard deviation) of an entire portfolio rather than an individual stock. It also allows data from investments/portfolio A to be compared with investments/portfolio B.
 
-* Harold's portfolio returns are combined with student returns to later calculate standard deviation and Sharpe ratios across the board.
+* Harold's portfolio returns are combined with student returns in order to later calculate standard deviation and Sharpe ratios across the board.
 
   ```python
   # Concat returns DataFrames
@@ -865,7 +865,7 @@ Open the solution, conduct a dry-walkthrough review  and highlight the following
 
 * Standard deviation is required to calculate Sharpe ratios. Standard deviation calculates the average value and compares the distribution of values to that average.
 
-* The `std` function can be used to compute the standard deviation. The output from the function is a series that indicates how far the value is from the mean, in the same units as the base data. The greater the value/deviation, the greater the risk and volatility.
+* The `std` function can be used to compute standard deviation. The output from the function is a series that indicates how far the value is from the mean, in the same units as the base data. The greater the value/deviation, the greater the risk and volatility.
 
   ```python
   # Calculate std dev
