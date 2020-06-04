@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's class will round out time series modeling with GARCH. Students will also gain exposure to the theory and practice of model validation.
+Today's class will round out time series modelling with GARCH. Students will also gain exposure to the theory and practice of model validation.
 
 ### Class Objectives
 
@@ -60,7 +60,7 @@ Welcome students to the last day of the time series unit, and briefly summarize 
 
 * ARMA models use past values and past errors to predict future values. An ARMA model assumes stationarity.
 
-* ARIMA is similar to ARMA, but does not assume stationarity.
+* ARIMA is similar to ARMA but does not assume stationarity.
 
 Describe to students what they will be doing today:
 
