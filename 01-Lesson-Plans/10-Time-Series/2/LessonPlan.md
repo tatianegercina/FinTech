@@ -424,7 +424,7 @@ Finally, highlight a few important features of the model's summary:
   results.summary()
   ```
 
-* The p-value of the first lag is low at 0.012.
+* The p-value of the first lag is high at 0.703.
 
 * The AIC and BIC values should also be noted, lower values reflecting better accuracy. We will cover these values in greater detail later today.
 
@@ -884,7 +884,7 @@ Finally, walk through the steps of plotting the volatility forecast:
 
   ![Images/cad04.png](Images/cad04.png)
 
-* Based on the upward trend in the plot, the volatility of the EUR-USD exchange rate is predicted to increase over the next 5 days.
+* Based on the upward trend in the plot, the volatility of the EUR-USD exchange rate is predicted to fluctuate negatively over the next 5 days.
 
 - - -
 
