@@ -282,15 +282,13 @@ Open the solution, and complete a dry walkthrough of the code:
 
   ```python
   X = df.index.values.reshape(-1,1)
-  y = df['Price']
+  y = df['sale_price']
 
   model.fit(X,y)
   predicted_y_values = model.predict(X)
   ```
 
   ![model_fit.png](Images/model_fit.png)
-
-  ![model_predict.png](Images/model_predict.png)
 
 * The `model.predict()` function can be used to implement predictive analysis. The function will return an array of predicted y-values. This data can then be plotted using a **scatter** plot to highlight the correlation.
 
@@ -299,6 +297,8 @@ Open the solution, and complete a dry walkthrough of the code:
   plt.scatter(X, y)
   plt.plot(X, predicted_y_values, color='red')
   ```
+
+  ![model_predict.png](Images/model_predict.png)
 
   ![scatter_plot.png](Images/scatter_plot.png)
 
