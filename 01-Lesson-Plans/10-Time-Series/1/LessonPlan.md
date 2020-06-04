@@ -64,6 +64,12 @@ By the end of this class, students will be able to:
 
   * [Machine Learning and Human Agility](https://www.youtube.com/watch?v=sWNG3omofoM)
 
+  * [Canada AI](http://canada.ai/)
+
+  * [How Canada Became a Hotspot for Artificial Intelligence Research](https://dmz.ryerson.ca/the-review/artificial-intelligence/)
+
+  * [Canada — A Leader In Artificial Intelligence (AI)](https://www.international.gc.ca/investors-investisseurs/assets/pdfs/download/Niche_Sector-AI.pdf)
+
 ### Sample Class Video (Highly Recommended)
 
 * To watch an example class lecture, go here: [10.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4234324b-3993-4779-a9b6-aad801186c48) Note that this video may not reflect the most recent lesson plan.
