@@ -324,7 +324,7 @@ In this activity, students will practice the basics of time series manipulation 
 
 **File:**
 
-* [amazon_stock_prices.ipynb](Activities/02-Stu_Time_Series_Basics/Solved/amazon_stock_prices.ipynb)
+* [shopify_stock_prices.ipynb](Activities/02-Stu_Time_Series_Basics/Solved/shopify_stock_prices.ipynb)
 
 Quickly walk through the basic steps of working with a time series in pandas. Use this as a refresher on indexing. Try not to dwell on any point for too long, as students will work with these methods repeatedly throughout the week.
 
