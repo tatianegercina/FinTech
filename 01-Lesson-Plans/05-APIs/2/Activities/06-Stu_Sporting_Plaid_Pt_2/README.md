@@ -1,6 +1,6 @@
 # Sporting Plaid (Part 2)
 
-You've joined the **Plaid** ranks and have refused to bend the knee to the privatization of financial data and financial services. Now that you've equipped your Plaid API keys, disrupt the FinTech market even more by designing a prototype that monitors credit card interest payments and provides consumers with an on-demand list of all interest payments within the past 365 days.
+You've joined the **Plaid** ranks, having refused to bend the knee to the privatization of financial data and financial services. Now that you've equipped your Plaid API keys, disrupt the FinTech market even more by designing a prototype that monitors credit card interest payments and provides consumers with an on-demand list of all interest payments within the past 365 days.
 
 ## Instructions
 
@@ -12,7 +12,7 @@ You've joined the **Plaid** ranks and have refused to bend the knee to the priva
 
 4. Use **institution id** `ins_109512` and the `client.Sandbox.public_token.create` function to create a **public token**. Return the following products: **transactions**, **income**, and **assets**.
 
-5. Use the `public_token` and the `client.Item.public_token.exchange` function to acquire an **access token**. Hint: `public_token` can be retrieved by calling the response key "public_token" (i.e. `create_response["public_token"]`).
+5. Use the `public_token` and the `client.Item.public_token.exchange` function to acquire an **access token**. Hint: `public_token` can be retrieved by calling the response key "public_token" (i.e., `create_response["public_token"]`).
 
 6. Parse the JSON output, and store the access token as a Python variable.
 
@@ -22,7 +22,7 @@ You've joined the **Plaid** ranks and have refused to bend the knee to the priva
 
 ### Challenge
 
-The first group to finish can volunteer to conduct a dry walk-through of the solution for the class in the next activity.
+The first group to finish can volunteer to conduct a dry walkthrough of the solution for the class in the next activity.
 
 ### Hints
 
