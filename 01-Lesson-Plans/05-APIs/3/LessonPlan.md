@@ -112,15 +112,15 @@ Ask the students if they can think of any other examples of Monte Carlo simulati
 
 ### 2. Instructor Do: Probability Distribution of Potential Outcomes (10 min)
 
-Monte Carlo simulations seek to explain the probability of potential outcomes for a randomly occurring event. Therefore, this activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like and how to interpret the results.
+Monte Carlo simulations seek to explain the probability of potential outcomes for a randomly occurring event. This activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like, and how to interpret the results.
 
 **Files:**
 
 * [coin_flip_simulation.ipynb](Activities/01-Ins_Probability_Distributions_of_Potential_Outcomes/Solved/coin_flip_simulation.ipynb)
 
-Walkthrough the solution and highlight the following:
+Walk through the solution and highlight the following:
 
-* This solution represents a technical example to the Monte Carlo simulation use case presented in the previous activity (coin flip simulation). Therefore, the program flips a coin `10` times for `5` simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers (or ranges) of heads.
+* This solution represents a technical example to the Monte Carlo simulation use case presented in the previous activity (coin flip simulation). The program flips a coin `10` times for `5` simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers (or ranges) of heads.
 
 * Make sure to import the `random` class from the `numpy` library, which allows for randomizing a particular code process.
 
@@ -134,13 +134,13 @@ Walkthrough the solution and highlight the following:
 
 * The initial step is to configure the simulation parameters.
 
-  * `num_simulations` is be the number of simulations to execute.
+  * `num_simulations` is the number of simulations to execute.
 
   * `num_flips` is the number of coin flips per simulation.
 
   * `coin` is a list to set the possible options of the event. In this case, we can get heads or tails.
 
-  * `probability` is a list with the probability of every option to occur. In this case, heads and tails have the same chance to arise.
+  * `probability` is a list with the probability of every option to occur. In this case, heads and tails have the same chance of occurring.
 
   ```python
   # Set number of simulations and coin flips
@@ -181,11 +181,11 @@ Walkthrough the solution and highlight the following:
 
 * Next, we count the occurrences of the different heads-to-tails combination of every simulation by looping through the DataFrame that contains the coin flip results.
 
-* We use the Pandas `value_counts` function to calculate the frequency distribution of heads-to-tails for every simulation, returns Series object
+* We use the Pandas `value_counts` function to calculate the frequency distribution of heads-to-tails for every simulation, returns Series object.
 
   ![coin-flip-value-counts](Images/coin-flip-value-counts.png)
 
-* Into the `for-loop`, the conditional statements check to make sure that both the `heads` and `tails` keys are present in the series object returned from the `value_counts` function. If one or the other key is not present, the missing key gets a `0` to account for the fact that the event did not occur at all during the simulation (flipped `10` heads or flipped `10` tails).
+* Into the `for-loop`, the conditional statements check to make sure that both the `heads` and `tails` keys are present in the Series object returned from the `value_counts` function. If one or the other key is not present, the missing key gets a `0` to account for the fact that the event did not occur at all during the simulation (flipped `10` heads or flipped `10` tails).
 
   ```python
   # Append results of heads and tails to respective lists
@@ -219,9 +219,9 @@ freq_dist_df["tails"] = tails
 
   ![coin-flip-5-simulations](Images/coin-flip-5-simulations.png)
 
-* An histogram is not a bar graph; frequency values in histogram bars are determined by the area (length times width) of the bar, not by the height of the bar. Histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single data point.
+* A histogram is not a bar graph; frequency values in histogram bars are determined by the area (length times width) of the bar, not by the height of the bar. Histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single data point.
 
-* Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum data points provided. Sometimes this creates ranges deviating from what is being simulated. Therefore, manually setting the `bins` parameter ensures that the histogram accurately represents the edges of each bin, in this case, bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`.
+* Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum data points provided. Sometimes this creates ranges deviating from what is being simulated. Therefore, manually setting the `bins` parameter ensures that the histogram accurately represents the edges of each bin; in this case, bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`.
 
   ![coin-flip-5-simulations-bins](Images/coin-flip-5-simulations-bins.png)
 
@@ -245,7 +245,7 @@ Answer any questions before moving on.
 
 ---
 
-### 3. Students Do: Free Throw Simulation (15 min)
+### 3. Student Do: Free Throw Simulation (15 min)
 
 In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of free throws made out of `10` shots for a player with a `70%` accuracy and determine the likelihood of the player making `9-10` free throws in a single session.
 
@@ -253,7 +253,7 @@ Circulate with TAs during this activity to provide students with assistance. Bel
 
 * Students might face difficulty working with the histograms. Histogram bins have a default value, so if the bins are not appropriately configured, the charts might not look as expected (the bin edges will be off), and the ranges may deviate from what is being simulated.
 
-* Also keep an eye out for any student issues related to missing data; if missed or made data is missing, this is most likely because `0` was not appended for the missing values. This could visually result in one side of the distribution being cut off (producing a non-normal distribution with no values for the first shot attempted).
+* Also keep an eye out for any student issues related to missing data; if data is missing, this is most likely because `0` was not appended for the missing values. This could visually result in one side of the distribution being cut off (producing a non-normal distribution, with no values for the first shot attempted).
 
 **Instructions:**
 
