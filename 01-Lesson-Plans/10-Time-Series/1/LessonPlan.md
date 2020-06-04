@@ -40,7 +40,7 @@ By the end of this class, students will be able to:
 
 * Today's class will be a fairly gentle ramp-up to the rest of the week. It will provide students with the skills to work with time series data in pandas (e.g., slicing rows by date), and it will furnish them with necessary concepts for days 2 and 3. The first half of the day will focus on identifying what time series analysis is and how it is used. The second half will emphasize scaling time series analysis using machine learning algorithms.
 
-* It is important to emphasize the role of machine learning in time series analysis and advanced analytics (the application of advanced statistical models and intelligent algorithms). Today's class and the unit in its entirety will begin the students' journey into **machine learning**. For some students, machine learning is their reason for choosing the curriculum. For others, machine learning may be intimidating and unreachable. Remember to communicate concepts in simple terms, reminding students that machine learning is just the application of statistics using Python libraries in order to analyze data and make predictions regarding behavior and outcomes. Foster confidence and understanding by pacing explanations and demonstrations. Explanatory examples have been provided to assist with this.
+* It is important to emphasize the role of machine learning in time series analysis and advanced analytics (the application of advanced statistical models and intelligent algorithms). Today's class and the unit in its entirety will begin the students' journey into **machine learning**. For some students, machine learning is their reason for choosing the curriculum. For others, machine learning may be intimidating and unreachable. Remember to communicate concepts in simple terms, reminding students that machine learning is just the application of statistics using Python libraries in order to analyze data and make predictions regarding behaviour and outcomes. Foster confidence and understanding by pacing explanations and demonstrations. Explanatory examples have been provided to assist with this.
 
 * The mathematical details of tools such as the Hodrick-Prescott filter are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that it derails the pace of the class.
 
@@ -104,7 +104,7 @@ Open the slides and highlight the following:
 
 * Explain to students that because machine learning algorithms can learn on their own, developers do not need to worry about coding for every scenario.
 
-  * For example, instead of creating a 500 line if-else decision structure in order to identify if a transaction is fraudulent, where every price range and product category is evaluated, a machine learning algorithm can review all transactions ever made by an account owner, classify and cluster transactions,and then predict whether or not the most recent transaction is fraudulent.
+  * For example, instead of creating a 500 line if-else decision structure in order to identify if a transaction is fraudulent, where every price range and product category is evaluated, a machine learning algorithm can review all transactions ever made by an account owner, classify and cluster transactions, and then predict whether or not the most recent transaction is fraudulent.
 
 * Emphasize that machine learning, in a nutshell, is just developing a statistical or algorithmic model of the data that can be used to make predictions or decisions about new data automatically.
 
@@ -130,7 +130,7 @@ Open the slides and highlight the following:
 
 * Communicate to students that the world of **machine learning** is sometimes viewed as nebulous and enigmatic: a niche field of programming involving heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, it is just the application of algorithms, statistics, and statistical libraries to solve data and business problems.
 
-  * Like all other functions, machine learning models are provided as libraries. Common machine learning libraries include **Scikit-Learn**, **TensorFlow**, and **SciPy**. Services like Amazon Web Services and Google Cloud Platform offer proprietary machine learning libraries that can be used within their cloud ecosystems. These libraries, as well as the open source community, make the execution of machine learning models as simple as calling a Pandas function.
+  * Like all other functions, machine learning models are provided as libraries. Common machine learning libraries include **Scikit-Learn**, **TensorFlow**, and **SciPy**. Services like Amazon Web Services and Google Cloud Platform offer proprietary machine learning libraries that can be used within their cloud ecosystems. These libraries, as well as the open-source community, make the execution of machine learning models as simple as calling a Pandas function.
 
   * Summarize the machine learning pipeline and explain to students that all machine learning pipelines follow a **Model -> Fit (Train) -> Predict** paradigm, where a data set/model of data is used to train the algorithm. Once the algorithm has been trained, the model and algorithm can be used to make actual predictions.
 
@@ -142,9 +142,9 @@ Ask students what they think machine learning can do? Ask what ideas they have a
 
   * This allows for the algorithm to perform more robustly and change dynamically based on the data it is processing. These types of algorithms are classified as **intelligent algorithms**.
 
-Define **intelligent algorithms** for students. Explain that **intelligent algorithms** use data to modify behavior. With **intelligent algorithms**, the behavior of the algorithm changes as data is processed and predictions are made.
+Define **intelligent algorithms** for students. Explain that **intelligent algorithms** use data to modify behaviour. With **intelligent algorithms**, the behaviour of the algorithm changes as data is processed and predictions are made.
 
-* **Intelligent algorithms** use pre-existing data to learn and make decisions on how to configure and adapt its behavior for the most accurate and precise prediction.
+* **Intelligent algorithms** use pre-existing data to learn and make decisions on how to configure and adapt its behaviour for the most accurate and precise prediction.
 
 * **Intelligent algorithms** are used to fuel **machine learning**, **predictive analytics**, and **artificial intelligence**.
 
@@ -430,7 +430,7 @@ Finally, explain that the library used in the notebook is more useful as an illu
 
 ### 9. Instructor Do: EWMA and Hodrick-Prescott Filter (15 min)
 
-In this activity, you will introduce EWMA, or exponentially-weighted moving average. You will also introduce the Hodrick-Prescottt filter, a tool that captures trends by minimizing local fluctuations.
+In this activity, you will introduce EWMA, or exponentially-weighted moving average. You will also introduce the Hodrick-Prescott filter, a tool that captures trends by minimizing local fluctuations.
 
 Begin by doing a concept overview of the EWMA and Hodrick-Prescott filters using the slides.  
 
@@ -580,7 +580,7 @@ Before diving into the code, introduce the concept of autocorrelation with the f
 * Hourly temperature is a clear, easy to understand, illustration of the concept autocorrelation.
   
   * What's the temperature an hour into the future? It's very likely to be similar to what it is now (one "lag" away).
-  * What's the temparature at noon today? Likely we'll get good information by looking at what the temperature was at noon yesterday (24 hours, or "lags", ago).
+  * What's the temperature at noon today? Likely we'll get good information by looking at what the temperature was at noon yesterday (24 hours, or "lags", ago).
 
 **File:** [autocorrelation.ipynb](Activities/06-Ins_Auto_Correlation/Solved/autocorrelation.ipynb)
 
@@ -691,7 +691,7 @@ Next, introduce partial autocorrelation functions:
 
 * The idea of PACF is different from autocorrelation function.
 
-* Whereas an auto correlation function measures auto correlation at all specified lags, PACF essentially reduces components of auto correlation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags. That is, autocorrelations at any given lag interval that are significantly dissimilar to previous  intervals are marked as anomalous.
+* Whereas an autocorrelation function measures autocorrelation at all specified lags, PACF essentially reduces components of autocorrelation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags. That is, autocorrelations at any given lag interval that are significantly dissimilar to previous  intervals are marked as anomalous.
 
 Explain that a PACF plot will illustrate the idea in concrete terms:
 
