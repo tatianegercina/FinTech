@@ -588,7 +588,7 @@ Open the notebook and introduce the dataset:
 
   ![Images/train01.png](Images/train01.png)
 
-* It is the familiar S&P 500 stock dataset.
+* It is the familiar OSPTX or TSX composite dataset.
 
 * The returns and lagged returns are computed, as we have done before.
 
@@ -691,7 +691,7 @@ In this activity, students will create GARCH and linear regression models for th
 
 * [README.md](Activities/06-Stu_Ripple/README.md)
 
-* [USD_per_Ripple_XRP_prices.csv](Activities/06-Stu_Ripple/Resources/USD_per_Ripple_XRP_prices.csv)
+* [XRP_CAD.csv](Activities/06-Stu_Ripple/Resources/XRP_CAD.csv)
 
 * [xrp.ipynb](Activities/06-Stu_Ripple/Unsolved/xrp.ipynb)
 
