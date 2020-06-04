@@ -10,7 +10,7 @@ Rally your troops and join Plaid's cause by signing up for their API keys. Sport
 
 2. Create a `.env` file based on the `example.env` starter file to create and export environment variables for **Client ID**, **Public Key**, and **Sandbox Secret Key**.
 
-3. Use the `pip install` command to install the `plaid-python` SDK if you haven't installed jet in your virtual environment.
+3. Use the `pip install` command to install the `plaid-python` SDK if you haven't installed it yet in your virtual environment.
 
 4. Open the Jupyter notebook starter file and import `plaid`, `os,` `datetime`, and `json`, and `dotenv` libraries.
 
@@ -20,7 +20,7 @@ Rally your troops and join Plaid's cause by signing up for their API keys. Sport
 
 ### Challenge
 
-Confirm that the environment variables were imported into Python correctly by checking the type or length of the Python variables were you stored the keys.
+Confirm that the environment variables were imported into Python correctly by checking the type or length of the Python variables where you stored the keys.
 
 ### Hint
 
