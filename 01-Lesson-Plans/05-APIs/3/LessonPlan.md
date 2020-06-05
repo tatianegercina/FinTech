@@ -668,7 +668,7 @@ In this activity, students execute a Monte Carlo simulation to forecast the many
 
 Open the solution and explain the following:
 
-* Performing a Monte Carlo simulation on potential stock price outcomes involves simulating the stock price of `BB` over `253 times 3` trading days using a randomly selected normal distribution of daily returns and then doing the same process `n` number of times. Therefore, the code reflects another `for` loop to account for the extra iteration.
+* Performing a Monte Carlo simulation on potential stock price outcomes involves simulating the stock price of `BB` over `253 times 3` trading days, using a randomly selected normal distribution of daily returns and then doing the same process `n` number of times. Therefore, the code reflects another `for` loop to account for the extra iteration.
 
   ![nested-bb-monte-carlo-simulation](Images/nested-bb-monte-carlo-simulation.png)
 
@@ -676,11 +676,11 @@ Open the solution and explain the following:
 
   ![bb-multiple-stock-trajectories](Images/bb-multiple-stock-trajectories.png)
 
-* The last row of the DataFrame containing the `252 * 3` records of closing prices for each simulation contains the closing prices of `1000` different stock price trajectories on the last day of the project `252 * 3` trading days or a three-year trading period.
+* The last row of the DataFrame containing the `252 * 3` records of closing prices for each simulation contains the closing prices of `1000` different stock price trajectories on the last day of the project `252 * 3` trading days, or a three-year trading period.
 
   ![bb-last-row](Images/bb-last-row.png)
 
-* The frequency distribution histogram showcases the distribution of potential stock price outcomes for `BB` on the last day of the projected three-year trading period. Notice that the distribution is skewed to the right and has a rather large range of values on the tail of the distribution.
+* The frequency distribution histogram showcases the distribution of potential stock price outcomes for `BB` on the last day of the projected three-year trading period. Notice that the distribution is skewed to the right, and has a rather large range of values on the tail of the distribution.
 
   ![bb-frequency-distribution](Images/bb-frequency-distribution.png)
 
