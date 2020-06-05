@@ -930,9 +930,9 @@ Answer any questions before moving on.
 
 Is this the end, or is it just another iteration of a simulation? It's actually the end! Welcome to today's finish line.
 
-The content in this lesson is probably the most challenging material students have digested so far. Students were required to whip out every FinTech skill and asset they've learned. This lesson was involved, including portfolio optimization (calculation of returns, standard deviation, risk, etc.) and portfolio forecasting (Monte Carlo, probability distributions, confidence trajectories, and forecasting). Furthermore, this doesn't even include the Python and Pandas skills they had to leverage!
+The content in this lesson is probably the most challenging material students have digested so far. Students were required to whip out every FinTech skill and asset they've learned. The content was complex, and included portfolio optimization (calculation of returns, standard deviation, risk, etc.) and portfolio forecasting (Monte Carlo, probability distributions, confidence trajectories, and forecasting). This doesn't even include the Python and Pandas skills they had to leverage!
 
-Make sure students can recognize and acknowledge their accomplishments. Communicate and highlight the following:
+Make sure students recognize and acknowledge their accomplishments. Communicate and highlight the following:
 
 * You've added another tool to your API-SDK tool belt: the Alpaca Trade API SDK, which is an excellent resource for historical stock data and financial functions.
 
@@ -948,7 +948,7 @@ Make sure students can recognize and acknowledge their accomplishments. Communic
 
 Give students space to emotionally release. Use this activity as a way to gauge student confidence, frustration, and stress levels.
 
-Ask students to summarize how they're feeling with a one-word emotion. Ask for volunteers first. If no one volunteers initiate the activity by using one word to convey how you're feeling, and then go round-robin. Gauge the students, verbal and nonverbal cues of stress and confusion (e.g., withdrawal from the activity or isolation, irritability or impatience, chronic worrying, pessimistic attitude, and restlessness).
+Ask students to summarize how they're feeling with a one-word emotion. Ask for volunteers first. If no one volunteers, initiate the activity by using one word to convey how you're feeling, and then do a round robin. Gauge students' verbal and nonverbal cues of stress and confusion (e.g., withdrawal from the activity or isolation, irritability or impatience, chronic worrying, pessimistic attitude, and restlessness).
 
   **Answer**: Relieved
 
@@ -962,9 +962,9 @@ Ask students to summarize how they're feeling with a one-word emotion. Ask for v
 
   **Answer:** Doubtful
 
-Indicate to students that no matter what they're feeling, either excited and empowered or stressed and doubtful, they've come a long way. Also, underscore that they're not alone in their feelings or the journey. Portfolio simulations are no joke, and results can easily be misinterpreted or corrupted, which is why the best of the best are the ones executing simulations.
+Indicate to students that no matter what they're feeling, they've come a long way. Also, underscore that they're not alone in their feelings or this journey. Portfolio simulations are no joke, and results can easily be misinterpreted or corrupted, which is why the "best of the best" are the ones executing simulations.
 
-Emphasize that students can reach out individually or attend office hours to ask questions, discuss the activities in the lesson, or just release emotionally.
+Tell students they are welcome to reach out individually or attend office hours to ask questions, discuss lesson activities, or just release emotionally.
 
 Use the remaining time to get a head start on office hours. Allow students to ask questions about this lesson, the overall unit, or the homework.
 
