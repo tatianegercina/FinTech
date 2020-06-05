@@ -275,7 +275,7 @@ Circulate with TAs during this activity to provide students with assistance. Bel
 
 Open the solution and explain the following:
 
-* The process of executing a Monte Carlo simulation remains similar even for a different use case (free throws vs. coin flips). At its core, the basis of Monte Carlo simulations is iteration (running tests and simulations) and saving the results of a random process. Thus, expect the programmatic structure of `for` loops and potentially nested `for` loops.
+* The process of executing a Monte Carlo simulation remains similar, even for a different use case (free throws vs. coin flips). At its core, the basis of Monte Carlo simulations is iteration (running tests and simulations) and saving the results of a random process. Thus, expect the programmatic structure of `for` loops and potentially nested `for` loops.
 
   ```python
   # Set number of simulations and free throws
@@ -350,11 +350,11 @@ In this activity, students are introduced to confidence intervals, which in the 
 
 Open the lesson slides, move to the "Confidence Intervals" section and highlight the following:
 
-* Often in statistics, there is a disconnect between the results of a sample dataset and attempting to apply the results of a sample to the overall population. For example, analyzing the average height of `20` students at a school to assume the exact average height of the entire population of students at the school would be an erroneous assumption. Therefore, confidence intervals suggest a range of values where there is an `X%` chance that the true expected value would lie within the specified range. In this case, a `95%` confidence interval may suggest that there is a `95%` chance that the true average height of students would range in height between `4` ft and `6 ft`, or in other words, the `95%` of the expected height of students should lie within the range of `4` ft and `6 ft`.
+* In statistics, there is often a disconnect between the results of a sample dataset and attempting to apply the results of a sample to the overall population. For example, analyzing the average height of `20` students at a school to assume the exact average height of the entire population of students in the school would be an erroneous assumption. Therefore, confidence intervals suggest a range of values where there is an `X%` chance that the true expected value would lie within the specified range. In this case, a `95%` confidence interval may suggest that there is a `95%` chance that the true average height of students would range in height between `4` ft and `6 ft`, or in other words, the `95%` of the expected height of students should lie within the range of `4` ft and `6 ft`.
 
   ![confidence-interval-probability-distribution](Images/confidence-interval-probability-distribution.png)
 
-* There is a tradeoff between the confidence, or likelihood of occurrence, of the expected result and the range of the upper and lower bounds of the confidence interval; the `X%` of the confidence interval suggests how wide or narrow the value range is. A `90%` confidence interval will have a narrower range and therefore is less confident than a `95%` confidence interval with a larger range.
+* There is a tradeoff between the confidence, or likelihood of occurrence, of the expected result and the range of the upper and lower bounds of the confidence interval; the `X%` of the confidence interval suggests how wide or narrow the value range is. A `90%` confidence interval will have a narrower range and is therefore less confident than a `95%` confidence interval with a larger range.
 
   ![confidence-interval-comparison](Images/confidence-interval-comparison.png)
 
@@ -362,13 +362,13 @@ Open the lesson slides, move to the "Confidence Intervals" section and highlight
 
 * To create a confidence interval, the upper and lower bounds of the confidence interval need to be set as a quantile or percentile range of the frequency distribution.
 
-* A quantile is a measurement in which a frequency distribution is divided into equal groups; thus, each group contains an equal fraction of the total sample. Often, quantiles are expressed in `100` equal parts, otherwise known as *percentiles*. For example, a student in the 95th percentile of height for his school is as tall as or taller than `95%` of the students at the school.
+* A quantile is a measurement in which a frequency distribution is divided into equal groups; thus, each group contains an equal fraction of the total sample. Often, quantiles are expressed in `100` equal parts, otherwise known as *percentiles*. For example, a student in the 95th percentile of height for his school is as tall as, or taller, than `95%` of the students at the school.
 
 * The `quantile` function for `pandas` DataFrames takes in a range of values that represent the lower and upper bounds of the confidence interval.
 
   ![slides_quantiles](Images/slides_quantiles.png)
 
-Open the solved Jupyter notebook, walkthrough the solution and highlight the following:
+Open the solved Jupyter notebook, walk through the solution and highlight the following:
 
 * In this demo, we will define confidence intervals for the example of running `1000` Monte Carlo simulations with `10` coin flips each.
 
@@ -376,7 +376,7 @@ Open the solved Jupyter notebook, walkthrough the solution and highlight the fol
 
   ![coin-flip-quantile-function](Images/coin-flip-quantile-function.png)
 
-* The `pyplot` class from the `matplotlib` library contains a `axvline` function that allows for setting upper and lower bounds to a confidence interval on a plot. The `color` parameter sets the colour of the line.
+* The `pyplot` class from the `matplotlib` library contains a `axvline` function that allows for setting upper and lower bounds to a confidence interval on a plot. The `colour` parameter sets the colour of the line.
 
   ![coin-flip-confidence-interval](Images/coin-flip-confidence-interval.png)
 
@@ -386,7 +386,7 @@ Answer any questions before moving on.
 
 ---
 
-### 6. Students Do: Archery Target Hits (15 min)
+### 6. Student Do: Archery Target Hits (15 min)
 
 In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of potential hits (out of `5` shots) of a target for a beginner archer with a `20%` accuracy and determine the range of hits for the archer that has a `95%` chance of happening in a single session.
 
