@@ -646,7 +646,7 @@ Answer any questions before moving on.
 
 ---
 
-### 13. Students Do: Financial Forecasting Part 2 (15 min)
+### 13. Student Do: Financial Forecasting Part 2 (15 min)
 
 In this activity, students execute a Monte Carlo simulation to forecast the many different possibilities of simulated stock price trajectories, thereby analyzing the frequency and probability of potential stock price outcomes.
 
