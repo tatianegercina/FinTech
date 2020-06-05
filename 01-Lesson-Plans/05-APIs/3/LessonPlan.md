@@ -388,7 +388,7 @@ Answer any questions before moving on.
 
 ### 6. Student Do: Archery Target Hits (15 min)
 
-In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of potential hits (out of `5` shots) of a target for a beginner archer with a `20%` accuracy and determine the range of hits for the archer that has a `95%` chance of happening in a single session.
+In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of potential hits (out of `5` shots) of a target for a beginner archer with a `20%` accuracy, and determine the range of hits for the archer that has a `95%` chance of happening in a single session.
 
 **Instructions:**
 
@@ -424,7 +424,7 @@ Open the solution and explain the following:
 
   ![archery-probability-distribution](Images/archery-probability-distribution.png)
 
-* Because the mean of a normal distribution is considered to be at the `50th` quantile, confidence intervals are usually set around the mean or `0.50` quantile. Therefore, a `95%` confidence interval would have quantiles set at `0.025` and `0.975` rather than something like `0.05` and `1.00`.
+* Because the mean of a normal distribution is considered to be at the `50th` quantile, confidence intervals are usually set around the mean, or `0.50` quantile. Therefore, a `95%` confidence interval would have quantiles set at `0.025` and `0.975` rather than something like `0.05` and `1.00`.
 
   ![archery-quantiles](Images/archery-quantiles.png)
 
@@ -438,25 +438,25 @@ Answer any questions before moving on.
 
 ### 8. Instructor Do: Simulation of Stock Price Trajectory (10 min)
 
-This activity exemplifies the use case where a Monte Carlo simulation can be applied to a historical dataset such as daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution. Stock datasets will be pulled in from the Alpaca API and used to generate a Monte Carlo simulation-based off a normally distributed random process using the dataset's calculated average and standard deviation of daily returns.
+This activity exemplifies the use case where a Monte Carlo simulation can be applied to a historical dataset such as daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution. Stock datasets will be pulled in from the Alpaca API, and used to generate a Monte Carlo simulation based off a normally distributed random process, using the dataset's calculated average and standard deviation of daily returns.
 
 **Files:**
 
 * [stock_price_simulation.ipynb](Activities/05-Ins_Simulation_of_Stock_Price_Trajectory/Solved/stock_price_simulation.ipynb)
 
-Open the lesson slides, move to the "Simulation of Stock Price Trajectory" section and highlight the following:
+Open the lesson slides, move to the "Simulation of Stock Price Trajectory" section, and highlight the following:
 
 * Monte Carlo simulations can be executed not just on random processes with *discrete probabilities* (ex. `70%` to make a free throw and `30%` to miss a free throw), but also on *continuous probabilities* such as normal probability distributions.
 
-* Normal probability distributions showcase the various probabilities of returning a value based on the number of standard deviations it is from the mean (how far the value may lie plus or minus from the average expected value); values far away from the mean are less common while values near the mean are more common.
+* Normal probability distributions showcase the various probabilities of returning a value based on the number of standard deviations it is from the mean (how far the value may lie, plus or minus, from the average expected value). Values far away from the mean are less common, while values near the mean are more common.
 
   ![example-normal-distribution](Images/example-normal-distribution.png)
 
 * Monte Carlo simulation uses this characteristic from the normal distribution to simulate a random process' potential outcomes concerning the variability around its mean. In this sense, Monte Carlo simulations can be applied to a historical dataset of daily closing stock prices to predict probable stock price trajectories.
 
-Open the solved version of the Jupyter notebook, walkthrough the code and highlight the following:
+Open the solved version of the Jupyter notebook, walk through the code and highlight the following:
 
-* In this demo, we will use the Alpaca API SDK to pull the daily closing stock price data from Apple Inc. (`AAPL`). Therefore, we import the necessary libraries and dependencies before proceeding to fetch the data and create some plots.
+* In this demo, we will use the Alpaca API SDK to pull the daily closing stock price data from Apple Inc. (`AAPL`). We will import the necessary libraries and dependencies before proceeding to fetch the data and creating some plots.
 
   ```python
   # Import libraries and dependencies
@@ -468,17 +468,17 @@ Open the solved version of the Jupyter notebook, walkthrough the code and highli
   %matplotlib inline
   ```
 
-* Now that you have imported the `alpaca-trade-api` and it's required dependencies, we are going to list out the available, tradeable assets.
+* Now that you have imported the `alpaca-trade-api` and its required dependencies, we will list out the available, tradeable assets.
 
 * Use the `list_assets()` function from the `tradeapi` object to check the available stock ticker data that can be pulled from the `Alpaca` API. Then iterate over the data to only keep the currently tradeable assets.
 
   ![alpaca-list-assets](Images/alpaca-list-assets.png)
 
-* Create a new empty DataFrame named `asset_info_df`. Convert the python list of assets to a panda's series and then define a new column in your DataFrame named `symbol` with that series.
+* Create a new empty DataFrame named `asset_info_df`. Convert the python list of assets to a Pandas series and then define a new column in your DataFrame named `symbol` with that series.
 
   ![alpaca-list-assets-df](Images/alpaca-list-assets-df.png)
 
-* The `get_barset()` function from the `Alpaca` SDK takes in the following parameters
+* The `get_barset()` function from the `Alpaca` SDK takes in the following parameters:
   * `ticker`,
 
   * `timeframe`,
@@ -497,7 +497,7 @@ Open the solved version of the Jupyter notebook, walkthrough the code and highli
 
   ![alpaca-get-barset](Images/alpaca-get-barset.png)
 
-* The DataFrame object from the Alpaca SDK contains an outer level (`level 0`) that is not needed, drop this level using the `df.droplevel` function. Simulating stock price trajectory involves analyzing the closing prices of a stock. Therefore, it's best to drop the extraneous columns for the `AAPL` price data received from the Alpaca API.
+* The DataFrame object from the Alpaca SDK contains an outer level (`level 0`) that is not needed. Drop this level using the `df.droplevel` function. Simulating stock price trajectory involves analyzing the closing prices of a stock. Therefore, it's best to drop the extraneous columns for the `AAPL` price data received from the Alpaca API.
 
   ![dataframe-drop-columns](Images/dataframe-drop-columns.png)
 
@@ -528,7 +528,7 @@ Answer any questions before moving on.
 
 ---
 
-### 9. Students Do: Financial Forecasting Part 1 (15 min)
+### 9. Student Do: Financial Forecasting Part 1 (15 min)
 
 In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical daily returns.
 
@@ -557,9 +557,9 @@ Open the solution and explain the following:
 
   ![datetime-range](Images/alpaca-data-bb.png)
 
-* Applying a Monte Carlo simulation to forecasting the future daily closing prices of `BB` stock involves multiplying the closing price of each preceding trading day by a randomly generated daily return approximated by a normal probability distribution given the historical average and standard deviation of `BB` daily returns.
+* Applying a Monte Carlo simulation to forecasting the future daily closing prices of `BB` stock involves multiplying the closing price of each preceding trading day by a randomly generated daily return approximated by a normal probability distribution, given the historical average and standard deviation of `BB` daily returns.
 
-* In other words, each `BB` closing price of the preceding trading day is multiplied by a randomly chosen daily return where values closer to the expected daily return have a higher probability of occurring while values farther away from the expected daily return have a lesser probability of occurring.
+* In other words, each `BB` closing price of the preceding trading day is multiplied by a randomly chosen daily return, where values closer to the expected daily return have a higher probability of occurring, while values farther away from the expected daily return have a lesser probability of occurring.
 
   ![bb-normal-distribution](Images/bb-normal-distribution.png)
 
@@ -567,7 +567,7 @@ Open the solution and explain the following:
 
   ![bb-simulated-price-plot](Images/bb-simulated-price-plot.png)
 
-* With a `$10,000` investment is facing brutal negative cumulative returns if invested in `BB` over the next `3` years.
+* A `$10,000` investment is facing brutal negative cumulative returns if invested in `BB` over the next `3` years.
 
   ![bb-cumulative-pnl](Images/bb-cumulative-pnl.png)
 
@@ -583,15 +583,15 @@ Answer any questions before moving on.
 
 ### 12. Instructor Do: Predicting Probable Outcomes of Stock Price Trajectory (10 min)
 
-In this activity, students go one step further to produce not just a single potential price trajectory for a stock over the next `252` trading days, but many potential price trajectories. So that it's possible to analyze the probability distribution of where a stock's price can go, and therefore an interval to which confident predictions can be made regarding the future stock price.
+In this activity students will go one step beyond producing a stock's single potential price trajectory over the next `252` trading days, to predicting many potential price trajectories. So that it's possible to analyze the probability distribution of where a stock's price can go, and therefore an interval to which confident predictions can be made regarding the future stock price.
 
 **Files:**
 
 * [probable_outcomes_of_stock_price.ipynb](Activities/07-Ins_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Solved/probable_outcomes_of_stock_price.ipynb)
 
-Walkthrough the solution and highlight the following:
+Walk through the solution and highlight the following:
 
-* Simulating a single price trajectory for a stock, concerning its average daily return and volatility, is but one pathway of which the stock price could move over time. Therefore, to analyze the possible ranges of where a stock price might end up, multiple simulations of stock price trajectories need to be run.
+* Simulating a single price trajectory for a stock for its average daily return and volatility is just one pathway on which a  stock price could move over time. To analyze the possible ranges of where a stock price might end up, multiple simulations of stock price trajectories need to be run.
 
   ![multiple-stock-simulation](Images/multiple-stock-simulation.png)
 
@@ -601,7 +601,7 @@ Walkthrough the solution and highlight the following:
     for n in range(num_simulations):
     ```
 
-  * For each simulation run, the calculations for stock price growth are based on the last known closing price. The simulation will vary the data from this starting point to see how the data might change in the future.
+  * For each simulation run, the calculations for stock price growth are based on the last known closing price. The simulation will vary the data from this starting point, to see how the data might change in the future.
 
     ```python
     simulated_aapl_prices = [aapl_last_price]
