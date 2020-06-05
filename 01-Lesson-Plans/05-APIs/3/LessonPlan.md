@@ -728,13 +728,13 @@ Ask students if they have any questions or concerns before moving on.
 
 ### 16. Instructor Do: Portfolio Forecasting (10 min)
 
-In this activity, students ascend to the final step and learn to project not one, but many, future stock prices using Monte Carlo simulations to calculate the daily and cumulative returns of a multi-weighted portfolio. Then analyze and plot the frequency and probability distributions of potential ending cumulative returns to assess the investment risk of the portfolio.
+In this activity students will advance to the final step, learning how to project not one, but many, future stock prices using Monte Carlo simulations. They will calculate the daily and cumulative returns of a multi-weighted portfolio, and then analyze and plot the frequency and probability distributions of potential ending cumulative returns to assess the investment risk of the portfolio.
 
 **Files:**
 
 * [portfolio_forecasting.ipynb](Activities/09-Ins_Portfolio_Forecasting/Solved/portfolio_forecasting.ipynb)
 
-Walkthrough the solution and highlight the following:
+Walk through the solution and highlight the following:
 
 * In this demo, we will analyze a portfolio composed of two stocks, Johnson & Johnson (`JNJ`) and Micron Technology, Inc. (`MU`).
 
@@ -750,7 +750,7 @@ Walkthrough the solution and highlight the following:
 
   ![multi-level-index-key-notation](Images/multi-level-index-key-notation.png)
 
-* The Monte Carlo simulation projects the stock price trajectory for `JNJ` and `MU` over the course of `252` trading days and returns a DataFrame of `252` records representing each simulated day's closing price. Simulated stock prices are projected by randomly selecting a daily return based off of a normal probability distribution, derived from sample means and standard deviations, and multiplying `1 + np.random.normal(avg_daily_return, std_dev_daily_return)` by the preceding day's closing price. A DataFrame of `252` simulated trading days is returned, and the daily returns are calculated using the `pct_change` function.
+* The Monte Carlo simulation projects the stock price trajectory for `JNJ` and `MU` over the course of `252` trading days and returns a DataFrame of `252` records, representing each simulated day's closing price. Simulated stock prices are projected by randomly selecting a daily return based off of a normal probability distribution, derived from sample means and standard deviations, and multiplying `1 + np.random.normal(avg_daily_return, std_dev_daily_return)` by the preceding day's closing price. A DataFrame of `252` simulated trading days is returned, and the daily returns are calculated using the `pct_change` function.
 
   ```python
   # Set number of simulations and trading days
@@ -833,7 +833,7 @@ Answer any questions before moving on.
 
 ---
 
-### 17. Students Do: Financial Forecasting Part 3 (15 min)
+### 17. Student Do: Financial Forecasting Part 3 (15 min)
 
 In this activity, students execute a Monte Carlo simulation to forecast the potential ranges of cumulative returns for a portfolio, based on the simulated closing prices of the stocks that comprise it, to determine the investment risk of the portfolio.
 
@@ -918,7 +918,7 @@ Open the solution and explain the following:
 
   ![portfolio-frequency-distribution](Images/portfolio-frequency-distribution.png)
 
-* Calculating a `95%` confidence interval of potential cumulative portfolio returns as well as potential investment performance showcases the range of cumulative portfolio returns and investment results that have a `95%` likelihood of occurring.
+* Calculating a `95%` confidence interval of potential cumulative portfolio returns, as well as potential investment performance, showcases the range of cumulative portfolio returns and investment results that have a `95%` likelihood of occurring.
 
   ![portfolio-confidence-interval](Images/portfolio-confidence-interval.png)
 
