@@ -702,13 +702,13 @@ Answer any questions before moving on.
 
 ### 15. Instructor Do: Intro to Portfolio Forecasting (5 min)
 
-At this point, students have executed Monte Carlo simulations, learned to interpret frequency distributions, probability distributions, and confidence intervals, and realized how to apply Monte Carlo simulations to forecast the future prices (and corresponding returns) of individual stocks. Now, students will take their journey one step further and learn how to apply Monte Carlo simulations to forecast the returns of a portfolio, which can be comprised of either all stocks or a combination of multiple asset classes such as stocks and bonds.
+At this point, students have executed Monte Carlo simulations, learned to interpret frequency distributions, probability distributions, confidence intervals, and realized how to apply Monte Carlo simulations to forecast the future prices (and corresponding returns) of individual stocks. Now, students will take their journey one step further and learn how to apply Monte Carlo simulations to forecast the returns of a portfolio, which can be comprised of either all stocks or a combination of multiple asset classes such as stocks and bonds.
 
 Present the following questions and answers regarding portfolio forecasting:
 
 * What is portfolio forecasting?
 
-  * **Answer:** Portfolio forecasting is the process of projecting the future performance of a portfolio and attempting to analyze its most probable outcome, or in this case, cumulative return as well as the portfolio's range of potential cumulative returns and their corresponding probabilities of occurring.
+  * **Answer:** Portfolio forecasting is the process of projecting the future performance of a portfolio and attempting to analyze its most probable outcome, or in this case, cumulative returns as well as the portfolio's range of potential cumulative returns and their corresponding probabilities of occurring.
 
 * How is portfolio forecasting done?
 
@@ -716,13 +716,13 @@ Present the following questions and answers regarding portfolio forecasting:
 
 * Why is portfolio forecasting performed?
 
-  * **Answer:** Similar to forecasting an individual stock's price trajectory to get a sense of the possibilities and corresponding probabilities of where its price could move, forecasting a portfolio is of the same reasoning. Doing so helps to analyze the potential risk and likelihood that a portfolio's performance can deviate from the expected result.
+  * **Answer:** Similar to forecasting an individual stock's price trajectory to get a sense of the possibilities and corresponding probabilities of where its price could move, forecasting a portfolio follows the same reasoning. Doing so helps analyze the potential risk, and likelihood, that a portfolio's performance can deviate from the expected result.
 
 * Who is performing portfolio forecasting?
 
-  * **Answer:** Portfolio managers, quantitative analysts, retirement planners are just some of many who need to forecast the future performance of a portfolio to gauge the potential risk of investment.
+  * **Answer:** Portfolio managers, quantitative analysts and retirement planners are just some of many who need to forecast the future performance of a portfolio to gauge the potential risk of investment.
 
-Ask the students if they have any questions or concerns before moving on.
+Ask students if they have any questions or concerns before moving on.
 
 ---
 
