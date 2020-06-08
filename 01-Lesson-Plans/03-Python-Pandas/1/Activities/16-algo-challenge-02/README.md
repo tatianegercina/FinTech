@@ -4,9 +4,9 @@ In this activity, you will create a validation function for checking the strengt
 
 Password strengths are as follows:
 
-  * A _very weak_ password contains 6 or fewer characters consisting only of numbers.
+  * A _very weak_ password contains 6 or fewer characters, consisting only of numbers.
 
-  * A _very strong_ password has more than 6 characters consisting of at least one number and at least one letter.
+  * A _very strong_ password has more than 6 characters, consisting of at least one number and at least one letter.
 
   * Any other type of password is of average strength.
 

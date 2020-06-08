@@ -1,6 +1,6 @@
 # Group Dynamics
 
-The cryptocurrency market has experienced yet another wave of activity. Everyone's talking about Bitcoin and Ethereum. Close friends and family are bombarding you with questions, requests for information, and investing advice. However, it's been two years since you last looked at your holdings on your crypto wallet, and your knowledge of current-day crypto trends is lacking.
+The cryptocurrency market has experienced yet another wave of activity–everyone's talking about Bitcoin and Ethereum. Family and close friends are bombarding you with questions, requests for information, and investing advice. However, it's been two years since you looked at your crypto wallet holdings, and your knowledge of current-day crypto trends is lacking.
 
 It's time you brushed up on the price dynamics of each crypto. Conduct a price analysis for Bitcoin, Ethereum, Bitcoin Cash, Ripple, and Litecoin to assess average, high, and low prices for each cryptocurrency. Determine whether or not crypto's performance in the past two years warrants future investment.
 
