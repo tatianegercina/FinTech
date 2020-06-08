@@ -1,3 +1,4 @@
+
 # Variable and Conditional Review
 
 In this activity, you will review variable declaration and conditionals.
@@ -44,13 +45,13 @@ Open the [starter file](Unsolved/condition-control-flow-01.py) and perform the f
 
 19. Write an if statement that checks whether the sum of all the costs is within the budget.
 
-    * If so, print "You're total cost is " concatentated with the `total_cost` variable.
+    * If so, print "Your total cost is " concatentated with the `total_cost` variable.
 
     * Else, print "You're over budget by " concatenated with the difference between `budget` and `total_cost`.
 
 20. Write an if statement that checks whether the `rent_cost` is larger than the sum of the `utilities_cost`, `food_cost`, and `transportation_cost`.
 
-    * If so, print a string that says "The rent is too damn high!".
+    * If so, print a string that says "The rent is too damn high!"
 
     * Else, print a string that says "Ahhh just right!"
 

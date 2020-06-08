@@ -24,13 +24,13 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today’s lesson is students’ introduction to Pandas. Students may be confused as to why they are using Pandas now, having just learned Python. Focus on helping them understand the relationship between Python and Pandas, and how it makes sense at this point to transition to Pandas. Discuss Pandas from a Pythonic point of view and emphasize that Pandas is written in Python. Underscore the fact that Pandas is Python code that a user wrote for financial analytics; instead of hoarding their code in the depths of a hard drive, the creators packaged up the functions and made them available to the public.
+* Today’s lesson will introduce students to Pandas. Students may be confused as to why they are using Pandas now, having just learned Python. Help them understand the relationship between Python and Pandas, and why it makes sense at this point to transition to Pandas. Discuss Pandas from a Pythonic point of view, and emphasize that Pandas is written in Python. Underscore that Pandas is Python code that a user wrote for financial analytics–instead of hoarding their code in the depths of a hard drive, the creators packaged the functions and made them publicly available.
 
-* This lesson first covers technical concepts like reading in CSV files and checking for nulls and then progresses to more advanced skills such as calculating daily and cumulative investment returns. Keep in mind that not all students have a finance background and, as such, may not understand returns right away. Leverage the knowledge of finance-savvy students in the class and encourage them to help their partners if they get stuck. Be sure to allow enough time for students to ask questions at the end of each section.
+* The lesson starts with technical concepts, like reading in CSV files and checking for nulls, and progresses to more advanced skills, such as calculating daily and cumulative investment returns. Keep in mind that not all students have a finance background, and may not understand returns right away. Leverage the knowledge of finance-savvy students in the class and encourage them to help their partners if they get stuck. Be sure to allow enough time for students to ask questions at the end of each section.
 
 * Keep in mind that some students may be confused by the concept of return on investment (ROI) but hesitant to vocalize their uncertainty. Encourage students to work in groups so that they can make sense of the activity and concepts together. TAs should circulate the classroom to assist groups, and you should make yourself available for financial or technical questions. Finally, consider asking the finance-savvy students to provide clarity and assistance for students who need help.
 
-* The activities in this lesson focus on developing and honing skills that are critical for succeeding in this course as well as performing day-to-day tasks within the FinTech professional world. Therefore, encourage students to practice these skills outside of class to gain mastery.
+* The activities in this lesson focus on developing and honing skills that are critical for succeeding in this course, as well as performing daily tasks within the FinTech professional world. Therefore, encourage students to practice these skills outside of class to gain mastery.
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
@@ -46,7 +46,7 @@ By the end of class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -56,21 +56,21 @@ In this section, you will give students a brief history of Pandas and an overvie
 
 Welcome students to the first day of Pandas. Open the lesson slides and briefly review the class objectives.
 
-Move to the "Hello Pandas!" section and highlight the following:
+Then, move to the "Hello Pandas!" section and highlight the following:
 
-* Pandas is currently one of the most powerful libraries in Python for data manipulation and analysis. Because of this, it is one of the most important superpowers you can have as FinTech professionals. Instead of reinventing the wheel and writing your code, you will be able to leverage Pandas' repository of functions.
+* Pandas is currently one of the most powerful libraries in Python for data manipulation and analysis. Because of this, it is one of the most important superpowers a FinTech professional can have. Instead of reinventing the wheel and writing your code, you will be able to leverage Pandas' repository of functions.
 
-* Pandas was created by [Wes McKinney](https://wesmckinney.com/) to offer a flexible, high-performance tool for conducting quantitative analysis of financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
+* Pandas was created by [Wes McKinney](https://wesmckinney.com/) to offer a flexible, high-performance tool for conducting quantitative analyses of financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
 
-* If Python was compared to a garage, Pandas would be the sleek Tesla parked inside. The owner can choose to leverage the speed, power, and efficiency of their Tesla and take it for a spin, or the owner could walk to their destination. While walking would produce the same result as using the Tesla, it would require extra labour and take more time. This lesson will teach you how skillfully utilize the sleek Tesla sitting in your garage.
+* If Python was compared to a garage, Pandas would be the sleek Tesla parked inside. The owner could choose to leverage the speed, power, and efficiency of their Tesla and take it for a spin, or they could walk to their destination. While walking would produce the same result as using the Tesla, it would require extra labour and take more time. This lesson will teach you how to skillfully utilize the sleek Tesla sitting in your garage.
 
-Transition to the "Why Pandas?" section and highlight the following:
+Continue to the "Why Pandas?" slides, and highlight the following:
 
-* Since spreadsheets appeared in [1969 when the plant budgeting operations of AT&T first used LANPAR](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed the finance and quants analysis forever.
+* Since spreadsheets appeared in [1969 when the plant budgeting operations of AT&T first used LANPAR](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed finance and quants analysis forever.
 
 * However, as the volume and complexity of data has increased significantly, spreadsheets are now limited when it comes to data analysis.
 
-Ask the class what the pain points they have experienced while using spreadsheets to handle data. Possible answers include:
+Ask students what pain points they have experienced while using spreadsheets to handle data. Possible answers could include:
 
 * Microsoft Office is expensive.
 
@@ -82,21 +82,21 @@ Ask the class what the pain points they have experienced while using spreadsheet
 
 * Automation and custom function creation is not inherent. Macros and VBA need to be learned.
 
-Ask students if they have experienced any disasters or significant challenges while working in Excel. Possible answers include:
+Now ask students if they have experienced any disasters or significant challenges while working in Excel. Possible answers include:
 
 * Excel hogged so much memory that my laptop crashed.
 
 * Regional sales data for a sales competition was copied and pasted next to the wrong sales representatives. This resulted in the wrong person being identified as the winner.
 
-* In a monthly budget spreadsheet, the Excel formula to calculate the remaining balance in a checking account did not include the entire cell range necessary for the calculation; this resulted in the account has a negative balance.
+* In a monthly budget spreadsheet, the Excel formula to calculate the remaining balance in a chequing account did not include the entire cell range necessary for the calculation; this resulted in the account having a negative balance.
 
-After talking about some of the common pain points of using spreadsheets, introduce Pandas and highlight the following:
+After discussing some of the common pain points of spreadsheets, introduce Pandas and highlight the following:
 
 * Fortunately, we have Pandas to help us manage data on Python.
 
 * Pandas is one of the most powerful open source libraries in Python for analyzing and manipulating data.
 
-* This library was born in 2008 at AQR Capital when Wes McKinney was looking for a high-performance and flexible tool to perform quantitative analysis on financial data.
+* The library was born in 2008 at AQR Capital when Wes McKinney was looking for a high-performing, flexible tool to conduct quantitative analysis on financial data.
 
 * Etymology: The name “Pandas” originates from “panel data structures.”
 
@@ -106,8 +106,7 @@ After talking about some of the common pain points of using spreadsheets, introd
 
 * Pandas functions range from simple arithmetic to complex statistics. This allows users to automate most, if not all, financial calculations. Instead of writing the formula in a cell or calculating by hand, users just need to make a function call (e.g., `pct_change` to calculate daily returns for an investment).
 
-* Python + Pandas = the perfect combination for small experiments or for implementing large-scale production systems to analyze data and
-make smarter decisions.
+* Python + Pandas = the perfect combination for small experiments or for implementing large-scale production systems to analyze data and make smarter decisions.
 
 * Pandas provides many advantages over spreadsheets due to its data structures and built-in functions for analysis.
 
@@ -115,13 +114,13 @@ make smarter decisions.
   * DataFrame (2D structures similar to spreadsheets)
   * Panel (Collection of DataFrames as 3D labelled arrays)
 
-* Pandas offers built-in time series functionality, which is a must for financial and quants analysis
+* Pandas offers built-in time series functionality, which is a must for financial and quants analysis.
 
 Explain to students that they have already installed Pandas through Anaconda, so they don't need to install additional libraries. However, if they have issues running Pandas, they can use a free notebook by [Google Colaboratory](https://colab.research.google.com/) and troubleshoot their installation with a TA during a break or office hours.
 
 Review the [instructions](../../../02-Homework/04-Pandas/Instructions/README.md) for the homework assignment. Focus on getting students excited about learning Pandas by previewing the skills and work they will accomplish by the end of the week. Emphasize calculating investment returns/profit over time, as well as plot visualizations.
 
-If time allows, you can end the discussion by presenting the following Pandas applications discussed in more detail [here](https://data-flair.training/blogs/applications-of-pandas/) to give students a taste of what to expect in the field. Applications to highlight include:
+If time allows, you can end by presenting the following Pandas applications which are discussed in more detail [here](https://data-flair.training/blogs/applications-of-pandas/) to give students a taste of what to expect in the field. Applications to highlight include:
 
 * Stock prediction
 
@@ -157,9 +156,9 @@ Open the lesson slides, move to "The Pandas DataFrame" section and highlight the
 
 * Comma-separated values (CSV) is one of the most common file formats used to share data on finance. You will start working with DataFrames by creating them from CSV files.
 
-Slack out to students the [Pandas DataFrame Documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and the [Pandas Getting Started Guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) and encourage them to review these resources at their pace.
+Slack out to students the [Pandas DataFrame Documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and the [Pandas Getting Started Guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) and encourage them to review these resources at their own pace.
 
-Continue by opening the two CSV files in the "Resources" directory (`sales.csv` and `sales_no_header.csv`) in VSCode or any other plain text editor to show students the format of the data. Point out that one file has a header while the other does not. Refer back to these files during the demo as needed.
+Continue by opening the two CSV files in the "Resources" directory (`sales.csv` and `sales_no_header.csv`) in VSCode or any other plain text editor to show students the format of the data. Point out that one file has a header, while the other does not. Refer back to these files during the demo as needed.
 
 Next, open `reading_csvs.ipynb` Jupyter notebook and walk through the following aspects of the code with your students. Highlight the following in sequential order.
 
@@ -198,11 +197,11 @@ Then highlight the `head` function.
 
   ![dataframe.png](Images/dataframe.png)
 
-Remark to students that this data is a fake dataset about sales.
+Tell students that this data is a fake dataset about sales.
 
-Continue the demo and explain to students that sometimes they may have situations where a given CSV file has no headers; ask the following question to the class:
+Continue the demo and explain to students that sometimes they may have situations where a given CSV file has no headers. Ask the the class the following question:
 
-* How the `read_csv` function may deal with a CSV without a header?
+* How might the `read_csv` function deal with a CSV without a header?
 
   * **Possible Answer:** The `read_csv` function will automatically detect that there is no header and will raise an error.
 
@@ -212,7 +211,7 @@ Continue the demo and explain to students that sometimes they may have situation
 
 Explain to students that if they load CSV files without a header into a DataFrame by passing just the file path to the `read_csv` function, the first row will be taken as the header.
 
-Continue the demo by loading the `sales_no_header` file into a DataFrame, use the `head` method to show demonstrate to students the default behaviour fo the `read_csv` function.
+Continue the demo by loading the `sales_no_header` file into a DataFrame, then use the `head` method to demonstrate to students the default behaviour fo the `read_csv` function.
 
 ![Loading a CSV file with no header](Images/csv_no_header.png)
 
@@ -236,9 +235,9 @@ Now call attention to the `header` parameter for `read_csv` and highlight the fo
 
 Open the Pandas documentation to show students more about the [`read_csv`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) function. Review the many options available in the function signature.
 
-Explain that, while the most common scenario is to provide the path to the file directly. Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files, such as the parameters associated with the file path and header that were used in the demo code.
+Explain that while the most common scenario is to provide the path to the file directly, Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files, such as the parameters associated with the file path and header that were used in the demo code.
 
-Congratulate students on reading their first CSV file into Pandas as this is an exciting moment because students can now harness the power of Pandas to work with tabular data! Ask if there are any questions before moving on.
+Congratulate the class on reading their first CSV file into Pandas! This is an exciting moment because students can now harness the power of Pandas to work with tabular data. Ask if there are any questions before moving on.
 
 ---
 
@@ -315,7 +314,7 @@ Transition to the topic of column manipulation by covering the following talking
 
 * Now it's time to learn how to use the various Pandas functions to perform each of these operations. You need to know how to create and curate DataFrames to fit your needs.
 
-* In the previous activity, you created a Pandas DataFrame from a CSV file and assigned column names to the DataFrame. This was one example of column manipulation. There are also other ways to manipulate columns. This demonstration will cover the common techniques used to do so.
+* In the previous activity, you created a Pandas DataFrame from a CSV file and assigned column names to the DataFrame. This was one example of column manipulation. There are also other ways to manipulate columns, and this demonstration will cover some of the most common techniques.
 
 Open the solution file and demonstrate the fundamentals of column manipulation in Pandas:
 
@@ -370,11 +369,11 @@ Students will now take part in a lecture and discussion about data cleaning. The
 
 * [order_data.csv](Activities/04-Ins_Data_Cleaning/Resources/order_data.csv)
 
-Open the lesson slides, move to the "Data Cleaning" section and highlight the following:
+Open the lesson slides, move to the "Data Cleaning" section, and highlight the following:
 
 * Up to this point, you have been working with clean data already curated for use. But in the real world, data is messy and needs to be prepared for it to be valuable. This process is called **data cleaning**.
 
-* Data cleaning is comprised of three parts:
+* Data cleaning consists of three parts:
 
   1. Data exploration
 
@@ -382,7 +381,7 @@ Open the lesson slides, move to the "Data Cleaning" section and highlight the fo
 
   3. Data cleaning strategies
 
-Explain to students that you will demonstrate each of these parts so that they can confidently clean and prep data for analysis.
+Explain to students that you will demonstrate each of these parts, so that they can confidently clean and prep data for analysis.
 
 Introduce data cleaning by covering these points:
 
@@ -402,7 +401,7 @@ Discuss how data quality is determined.
 
   * There should not be any duplicate rows in a dataset.
 
-* Data quality rules are also defined by business or functional rules. Sometimes data needs to be stored or formatted in a unique way for business needs. For example, an international company might store dates as `DD/MM/YYY`, whereas an American company might store dates as `MM/DD/YYYY`.
+* Data quality rules are also defined by business or functional rules. Sometimes data needs to be stored or formatted in a unique way for business needs. For example, an international company might store dates as `DD/MM/YYYY`, whereas an American company might store dates as `MM/DD/YYYY`.
 
 Mention to students that these rules can all be researched outside of class.
 
@@ -410,11 +409,11 @@ Ask students to propose some reasons why data might become dirty. Then, highligh
 
 * **Typos:** When manually entering data, users can enter typos. If gone unchecked, typos can corrupt data values. There is little that can be be done to get rid of typos, as it is often difficult to identify them.
 
-* **Human error:** Humans can copy and manipulate data incorrectly. For instance, someone might copy and paste data into the wrong Excel file. Or a Python function can incorrectly compute a data value. If these issues are not fixed, data quality issues will arise down the road.
+* **Human error:** Humans can copy and manipulate data incorrectly. For instance, someone might copy and paste data into the wrong Excel file, or a Python function can incorrectly compute a data value. If these issues are not fixed, data quality issues will arise down the road.
 
 * **Poor data management:** Data is poorly managed when it is not cleaned or stored in an effective way. While not all data needs to be cleaned, industry standards and business rules should be consistently implemented to ensure the integrity of data.
 
-Discuss approaches for identifying data quality issues while you switch to Jupyter lab to live coding a few examples.
+Discuss approaches for identifying data quality issues while you switch to Jupyter lab to live code a few examples.
 
 * The first step in assessing data for quality issues is to evaluate a sample of the data visually. This allows programmers to identify obvious quality issues as well as any skewed rows (e.g., a customer address in a first name field).
 
@@ -426,11 +425,11 @@ Discuss approaches for identifying data quality issues while you switch to Jupyt
 
 * The `dtypes` function can be used to return the data type of each Series/column.
 
-    **Note:** It's crucial to review data types after loading data into a DataFrame, as Pandas automatically assigns a data type to a Series. There are instances where Pandas is unable to infer the data type. Students will need to be aware of when this happens so that they can assign the proper data type.
+    **Note:** It's crucial to review data types after loading data into a DataFrame, as Pandas automatically assigns a data type to a Series. There are instances where Pandas is unable to infer the data type. Students will need to be aware of when this happens, so that they can assign the proper data type.
 
   ![LP_Ins_Data_Cleansing_Data_Types.PNG](Images/LP_Ins_Data_Cleansing_Data_Types.PNG)
 
-* Record counts should always be reviewed to ensure the expected number of rows matches the actual.
+* Record counts should always be reviewed, to ensure the expected number of rows matches the actual number.
 
 * The total number of records can be identified using the `count` function. The `count` function counts the number of non-null cells for each column or row in a Pandas DataFrame.
 
@@ -551,9 +550,9 @@ Review data cleaning from a conceptual standpoint, mentioning the following poin
 
 * Data cleaning is important because it removes all of the issues and errors that would block or inhibit computation.
 
-* Without data cleaning, financial data can be calculated and aggregated incorrectly and inaccurately. Data quality issues can skew financial numbers, resulting in numbers being reported either higher or lower than actual. Since numbers drive business decisions in the financial world, the use of incorrect data can have catastrophic implications.
+* Without data cleaning, financial data can be calculated and aggregated incorrectly and inaccurately. Data quality issues can skew financial numbers, with inaccurate numbers being reported. Since numbers drive business decisions in the financial world, the use of incorrect data can have catastrophic implications.
 
-Open the solution file, review the activity solution and highlight the following:
+Open the solution file, review the activity solution, and highlight the following:
 
 * The `shape` function provides a quick and easy way to understand the structure of a DataFrame, including the number of columns and number of tuples/rows in the DataFrame.
 
@@ -594,7 +593,7 @@ Ask students the following question:
 
   * **Answer:** The Series should be dropped.
 
-* Nulls can throw a wrench in an analytic pipeline. The `isnull` function will identify which Series has nulls. If there are nulls, they can be removed or filled. The `dropna` and `fillna` functions provide this functionality, respectively. Note that it's important to understand which fields can have nulls and which one's cannot.
+* Nulls can throw a wrench in an analytic pipeline. The `isnull` function will identify which Series has nulls. If there are nulls, they can be removed or filled. The `dropna` and `fillna` functions provide this functionality, respectively. Note that it's important to understand which fields can have nulls and which cannot.
 
 * Using `mean` with `isnull` will calculate the percentage of nulls for a DataFrame. This is important when considering the distribution of missing values in a DataFrame. The percentage of nulls can impact how the missing values are cleaned.
 
@@ -656,7 +655,7 @@ Ask students the following question:
   csv_data["ebitda"] = csv_data["ebitda"].fillna(0)
   ```
 
-* Finally, to remove duplicate values, the `drop_duplicates` function is used together with the `copy` function to create a newly cleaned DataFramed.
+* Finally, to remove duplicate values, the `drop_duplicates` function is used together with the `copy` function to create a newly cleaned DataFrame.
 
   ```python
   csv_data = csv_data.drop_duplicates().copy()
@@ -838,13 +837,13 @@ Use this part of the lesson to review the previous activity with students.
 
 * [loans.csv](Activities/07-Stu_Indexing/Resources/loans.csv)
 
-Open the solution file and explain the following while doing a dry walk-through:
+Open the solution file and explain the following while doing a dry walkthrough:
 
 * Displaying an index of the first 10 rows is similar to what the `head()` function does; however, utilizing `iloc[]` gives you more control over the index ranges.
 
   ![First 10 Records](Images/first-10-records.png)
 
-* The `iloc[]` function allows for selecting the specific row and column indexes. In this case, the `:` keyword suggests that all rows will be returned from the `0`, `3`, `4`, `8`, `11`, `16` column indexes.
+* The `iloc[]` function allows for selecting the specific row and column indexes. In this case, the `:` keyword suggests that all rows will be returned from the `0`, `3`, `4`, `8`, `11`, and `16` column indexes.
 
   ![Specific Columns](Images/specific-columns.png)
 
@@ -862,7 +861,7 @@ Open the solution file and explain the following while doing a dry walk-through:
 
   ![row-modification-without-warning](Images/row-modification-without-warning.png)
 
-* To get the summary statistics of the 3 year term loans, we use the `describe` function by setting the parameter `include="all"`.
+* To get the summary statistics of the 3-year term loans, we use the `describe` function by setting the parameter `include="all"`.
 
   ```python
   term_df.describe(include="all")
@@ -872,7 +871,7 @@ Open the solution file and explain the following while doing a dry walk-through:
 
   ![Unique Values](Images/unique-values.png)
 
-* To get the summary statistics for 3 year loans of customers with annual income greater than $80,000 or less than $80,000 we filter the DataFrame using `loc` and conditionals.
+* To get the summary statistics for 3-year loans of customers with an annual income greater than $80,000 or less than $80,000 we filter the DataFrame using `loc` and conditionals.
 
   ![Filtering Loans](Images/filtering-loans.png)
 
@@ -900,9 +899,9 @@ Open the unsolved version, live code the demo and explain the following:
 
 * The `plot()` function uses the `matplotlib`, a Python data visualization library, to create the plots.
 
-* To display the plots in the notebook's canvas, you need to set a [Jupyter notebook's magic command](https://ipython.readthedocs.io/en/stable/interactive/magics.html) that whose name is `matplotlib`. A magic command allows us to add interactive elements to a Jupyter notebook, like plots.
+* To display the plots in the notebook's canvas, you need to set a [Jupyter notebook's magic command](https://ipython.readthedocs.io/en/stable/interactive/magics.html) with the name `matplotlib`. A magic command allows us to add interactive elements to a Jupyter notebook, like plots.
 
-* To introduce a magic command, you should start with the percentage symbol `%` followed by the command name and optionally a parameter. In this demo, we pass the `inline` parameter to the `matplotlib` magic command to allow the plots to be displayed in the notebook's canvas.
+* To introduce a magic command, you should start with the percentage symbol `%` followed by the command name and, optionally, a parameter. In this demo, we pass the `inline` parameter to the `matplotlib` magic command to allow the plots to be displayed in the notebook's canvas.
 
   ```python
   %matplotlib inline
@@ -916,11 +915,11 @@ Open the unsolved version, live code the demo and explain the following:
 
   ![set-index](Images/set-index.png)
 
-* Be sure to drop the extra `Date` column after setting it as the index!
+* Be sure to drop the extra `Date` column after setting it as the index.
 
   ![drop-column](Images/drop-column.png)
 
-* Plotting data with datetimes as the index now allows us to see the dates as the x-axis label of the line chart.
+* Plotting data with datetimes as the index allows us to see the dates as the x-axis label of the line chart.
 
   ![line-chart-with-index](Images/line-chart-with-index.png)
 
@@ -938,7 +937,7 @@ Slack out to students the [Pandas Visualization help document](https://pandas.py
 
 ### 14. Student Do: Market Analysis (15 min)
 
-In this activity, students will use Pandas to create three different charts: pie chart, bar chart and scatter plot. This activity will teach students how to create pie charts and scatter plots in addition to bar and line plots.
+In this activity, students will use Pandas to create three different charts: pie chart, bar chart, and scatter plot. This activity will teach students how to create pie charts and scatter plots in addition to bar and line plots.
 
 Circulate the classroom to review student progress as they complete the activity. Guidance may be required, as this is the first time students will be exposed to pie charts and scatter plots.
 
@@ -986,7 +985,7 @@ Open the solution file and explain the following:
   sector_count.plot(kind="pie")
   ```
 
-* A pie chart is best suited for representing the distribution of an entire category, which, in this case, is the distribution of company sectors in the S&P 500. The plot shows that Consumer Discretionary companies hold the most significant weight or proportion among the S&P 500 companies.
+* A pie chart is best suited for representing the distribution of an entire category, which, in this case, is the distribution of company sectors in the S&P 500. The plot shows that consumer discretionary companies hold the most significant weight or proportion among the S&P 500 companies.
 
   ![pie_chart](Images/pie.png)
 
@@ -996,13 +995,13 @@ Open the solution file and explain the following:
   market_cap = sp500_companies_csv.loc[:, ["Symbol", "Market Cap"]]
   ```
 
-* When plotting a DataFrame, set the index to a specific column to ensure the desired chart labels are displayed (ex. the x-axis labels on a line or bar chart).
+* When plotting a DataFrame, set the index to a specific column to ensure the desired chart labels are displayed (for example, the x-axis labels on a line or bar chart).
 
 * Use the `nlargest()` function to return the top `n` number of rows based on a particular DataFrame column.
 
   ![nlargest-function](Images/nlargest-function.png)
 
-* A bar chart is best suited for comparing the values of several variables of the same type, which, in this case, are the market caps of the top 20 companies in the S&P 500. The plot shows the varying market cap values of the top 20 market cap companies in the S&P 500.
+* A bar chart is best suited for comparing the values of several variables of the same type, which in this case are the market caps of the top 20 companies in the S&P 500. The plot shows the varying market cap values of the top 20 market cap companies in the S&P 500.
 
   ![bar_chart](Images/bar.png)
 
@@ -1026,19 +1025,19 @@ The following demo introduces students to calculating daily returns with Pandas.
 
 Open the unsolved version to begin the demo. Incorporate the following points into your demonstration as you live code the solution:
 
-Open the lesson slides and move to the "Results" section, introduce the concept of ROI and highlight the following:
+Open the lesson slides and move to the "Results" section, introduce the concept of ROI, and highlight the following:
 
 * A **return on investment (ROI)** is a percentage calculation that signifies either a profit or loss relative to the initial cost of an investment.
 
-* ROI calculations can be used to standardize and compare the investment performances of varying asset classes such as equities, bonds, real estate, etc.
+* ROI calculations can be used to standardize and compare the investment performances of varying asset classes, such as equities, bonds, real estate, etc.
 
-Explain to students that ROI can be easily calculated in pure Python, show them the code in the slide and switch to the unsolved version of the Jupyter notebook to begin the demo.
+Explain to students that ROI can be easily calculated in pure Python. Show them the code in the slide and switch to the unsolved version of the Jupyter notebook to begin the demo.
 
 Incorporate the following points into your demonstration as you live code the solution:
 
-* Let's imagine that you invested 100 dollars last week in a single stock.
+* Let's imagine that you invested $100 last week in a single stock.
 
-* Suppose that you check the current price of the stock Today and its current price is 110 dollars.
+* Suppose that you check the current price of the stock today and its current price is $110.
 
 * How can you calculate the ROI using Python?
 
@@ -1062,7 +1061,7 @@ Incorporate the following points into your demonstration as you live code the so
 
 Continue the demo and explain to students that you will cover some concepts about returns using sample data from the [S&P/TSX Composite Index](https://en.wikipedia.org/wiki/S%26P/TSX_Composite_Index).
 
-Conduct a dry-walkthrough on the code that loads the S&P TSX data and prepares the DataFrame to start the analysis. After plotting the daily close price, continue the demo and highlight the following:
+Conduct a dry walkthrough on the code that loads the S&P TSX data and prepares the DataFrame to start the analysis. After plotting the daily close price, continue the demo and highlight the following:
 
 * **Daily returns** are a series of returns calculated over several days, with each daily return representing the relative increase or decrease in investment between days.
 
@@ -1092,7 +1091,7 @@ Conduct a dry-walkthrough on the code that loads the S&P TSX data and prepares t
 
   ![cumprod-function](Images/cumprod-function.png)
 
-* Plotting cumulative returns makes it easier to visualize the profitability of a single asset and, in particular, the profitabilities of several asset classes over time. In this case, the plot shows that the S&P TSX lost a good deal of its value in 2015, but started a recovery tendency since 2016.
+* Plotting cumulative returns makes it easier to visualize the profitability of a single asset and, in particular, the profitabilities of several asset classes over time. In this case, the plot shows that the S&P TSX lost a good deal of its value in 2015, but began a recovery tendency in 2016.
 
   ![Plot of Cumulative Returns](Images/cumulative-return-plot.png)
 
@@ -1104,7 +1103,7 @@ Answer any questions before moving on.
 
 ### 17. Student Do: Returns Over Date Ranges (15 min)
 
-In this activity, students will analyze the last years of historical price data for Shopify and plot the daily returns over the previous 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each period to determine whether a short or long-term perspective should be used in prospecting Shopify as a potential investment opportunity.
+In this activity, students will analyze historical price data for Shopify and plot the daily returns over the previous 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each period to determine whether a short or long-term perspective should be used in prospecting Shopify as a potential investment opportunity.
 
 **File:**
 
@@ -1158,7 +1157,7 @@ With the remaining time, open the solution file and discuss the following points
 
   ![datetime-index](Images/datetime-index.png)
 
-* Notice the hard-coding required to create the slice notations for each period. It would be more convenient to be able to choose a date and use a function to go 365 days before that date to create 1-year, 2-year, 3-year, and 4-year time chunks; `datetime` objects will help us do this in the future.
+* Notice the hard coding required to create the slice notations for each period. It would be more convenient to be able to choose a date and use a function to go 365 days before that date to create 1-year, 2-year, 3-year, and 4-year time chunks; `datetime` objects will help us do this in the future.
 
   ```python
   # Slice DataFrame into 1 year timeframe

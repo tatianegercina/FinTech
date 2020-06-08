@@ -4,13 +4,13 @@
 
 ## Background
 
-The investment division of Harold's company has been investing in algorithmic trading strategies. Some of the investment managers love them, some hate them, but they all think their way is best.
+Harold's company has been investing in algorithmic trading strategies. Some of the investment managers love them, some hate them, but they all think their way is best.
 
-You just learned these quantitative analysis techniques with Python and Pandas, so Harold has come to you with a challenge—to help him determine which portfolio is performing the best across many areas: volatility, returns, risk, and Sharpe ratios.
+You just learned these quantitative analysis techniques with Python and Pandas, so Harold has come to you with a challenge—to help him determine which portfolio is performing the best across multiple areas: volatility, returns, risk, and Sharpe ratios.
 
-You will need to create a tool (an analysis notebook) that analyzes and visualizes the major metrics of the portfolios across all of these areas, and determine which portfolio outperformed the others. You will be given the historical daily returns of several portfolios: some from the firm's algorithmic portfolios, some that represent the portfolios of famous "whale" investors like Warren Buffett, and some from the big hedge and mutual funds. You will then use this analysis to create a custom portfolio of stocks and compare its performance to that of the other portfolios, as well as the larger market ([S&P TSX 60 Index](https://en.wikipedia.org/wiki/S%26P/TSX_60)).
+You need to create a tool (an analysis notebook) that analyzes and visualizes the major metrics of the portfolios across all of these areas, and determine which portfolio outperformed the others. You will be given the historical daily returns of several portfolios: some from the firm's algorithmic portfolios, some that represent the portfolios of famous "whale" investors like Warren Buffett, and some from the big hedge and mutual funds. You will then use this analysis to create a custom portfolio of stocks and compare its performance to that of the other portfolios, as well as the larger market ([S&P TSX 60 Index](https://en.wikipedia.org/wiki/S%26P/TSX_60)).
 
-In this homework assignment, you will be accomplishing three main tasks:
+For this homework assignment, you have three main tasks:
 
 1. [Read in and Wrangle Returns Data](#Prepare-the-Data)
 
@@ -84,7 +84,7 @@ Analyze the data to see if any of the portfolios outperform the stock market (i.
 
 #### Rolling Statistics Challenge: Exponentially Weighted Average
 
-An alternative way to calculate a rolling window is to take the exponentially weighted moving average. This is like a moving window average, but it assigns greater importance to more recent observations. Try calculating the [`ewm`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.ewm.html) with a 21-day half-life.
+An alternative method to calculate a rolling window is to take the exponentially weighted moving average. This is like a moving window average, but it assigns greater importance to more recent observations. Try calculating the [`ewm`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.ewm.html) with a 21-day half-life.
 
 ### Sharpe Ratios
 
@@ -94,15 +94,15 @@ Investment managers and their institutional investors look at the return-to-risk
 
 2. Determine whether the algorithmic strategies outperform both the market (S&P TSX 60) and the whales portfolios.
 
-### Create Custom Portfolio
+### Create a Custom Portfolio
 
 Harold is ecstatic that you were able to help him prove that the algorithmic trading portfolios are doing so well compared to the market and whales portfolios. However, now you are wondering whether you can choose your portfolio that performs just as well as the algorithmic portfolios. Investigate by doing the following:
 
-1. Visit [Google Sheets](https://docs.google.com/spreadsheets/) and use the in-built Google Finance function to choose 3-5 stocks for your portfolio.
+1. Visit [Google Sheets](https://docs.google.com/spreadsheets/) and use the built-in Google Finance function to choose 3-5 stocks for your portfolio.
 
 2. Download the data as CSV files and calculate the portfolio returns.
 
-3. Add your portfolio returns to the DataFrame with the other portfolios and rerun the analysis. How does your portfolio fair?
+3. Add your portfolio returns to the DataFrame with the other portfolios and re-run the analysis. How does your portfolio do?
 
 ---
 
@@ -120,11 +120,11 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 
 ## Hints
 
-* After reading each CSV file, don't forget to sort each DataFrame in ascending order by the Date using `sort_index`. This is especially important when working with time series data as we want to make sure Date indexes go from earliest to latest.
+* After reading each CSV file, don't forget to sort each DataFrame in ascending order by the Date using `sort_index`. This is especially important when working with time series data, as we want to make sure Date indexes go from earliest to latest.
 
 * The Pandas functions used in class this week will be useful for this assignment.
 
-* Be sure to use `head()` or `tail()` when you want to look at your data but don't want to print to a large DataFrame.
+* Be sure to use `head()` or `tail()` when you want to look at your data, but don't want to print to a large DataFrame.
 
 ---
 
