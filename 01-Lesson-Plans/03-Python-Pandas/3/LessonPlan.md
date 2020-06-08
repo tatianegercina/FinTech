@@ -141,7 +141,7 @@ There's a DataFrame named `df` that contains Olympic medal data (gold, silver, a
 * `class_of_medal`
 * `year_medal_won`
 
-Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by the number of medals awarded in descending order. (The medals awarded most should be at the top.)
+Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by number of medals awarded in descending order. (The medals awarded most should be at the top.)
 
 ---
 
@@ -163,11 +163,11 @@ Ask the student to live code a solution to the given scenario. If the student lo
 
 * How does one sort by more than one column?
 
-    **Answer:** List the columns to sort by in a comma-separated list.
+    **Answer:** List the columns to sort by in a comma separated list.
 
 * Can you use a list to tell Pandas to sort some columns by ascending values, and others by descending values?
 
-    **Answer:** Yes. The `ascending` parameter can be used to sort columns by ascending values. The default value is `True`. `False` will sort in descending order. The `ascending` parameter accepts a list of Boolean responses when data is sorted by more than one column.
+    **Answer:** Yes. The `ascending` parameter can be used to sort columns by ascending values. Default value is `True`. `False` will sort in descending order. The `ascending` parameter accepts a list of Boolean responses when data is sorted by more than one column.
 
 **Scenario for Student Live Coding:**
 
@@ -412,7 +412,7 @@ Open the lesson slides, move to the "Multi-Indexing" section, and provide an ove
 
   * This is particularly helpful when working with financial data and dates. While dates are great to index, dates do not always provide all of the detail needed to manipulate and analyze data.
 
-  * For example, when looking at stock prices and purchases over time, it is essential to group data by both date and ticker. In this operation, both date and ticker can be indexes, and by specifying date and ticker, you can slice out the price of a particular stock at a specific point in time.
+  * For example, when looking at stock prices and purchases over time, it is important to group data by both date and ticker. In this operation, both date and ticker can be indexes, and by specifying date and ticker, you can slice out the price of a particular stock at a specific point in time.
 
 * Essentially, multi-indexing improves data storage, lookup, and manipulation/assignment.
 
@@ -539,7 +539,7 @@ Answer any questions before moving on.
 
 ### 11. Instructor Do: Concatenating DataFrames (10 min)
 
-In this section, you will provide an overview of concatenation and then live code on how to concatenate DataFrames. Data for this activity was retrieved from [Kaggle](http://kaggle.com).
+In this section, you will provide an overview of concatenation and then live code how to concatenate DataFrames. Data for this activity was retrieved from [Kaggle](http://kaggle.com).
 
 **Files:**
 
@@ -763,7 +763,7 @@ End the presentation and open the unsolved Jupyter notebook. Live code how to us
 
   ![std_dev_box.png](Images/std_dev_box.png)
 
-Emphasize that the takeaway of these charts is that the greater the spread, the greater the risk—the greater the risk, the greater the potential for earnings and losses.
+Emphasize that the takeaway of these charts is that the greater the spread, the greater the risk. The greater the risk, the greater the potential for earnings and lost.
 
 Answer any questions before moving on.
 
@@ -853,7 +853,7 @@ Open the solution, conduct a dry walkthrough review, and highlight the following
 
 * The `concat` function can be used to combine portfolio returns. This enables analysis (i.e., standard deviation) of an entire portfolio rather than an individual stock. It also allows data from investments/portfolio A to be compared with investments/portfolio B.
 
-* Harold's portfolio returns are combined with student returns to later calculate standard deviation and Sharpe ratios across the board.
+* Harold's portfolio returns are combined with student returns in order to later calculate standard deviation and Sharpe ratios across the board.
 
   ```python
   # Concat returns DataFrames
@@ -865,7 +865,7 @@ Open the solution, conduct a dry walkthrough review, and highlight the following
 
 * Standard deviation is required to calculate Sharpe ratios. Standard deviation calculates the average value and compares the distribution of values to that average.
 
-* The `std` function can be used to compute the standard deviation. The output from the function is a series that indicates how far the value is from the mean, in the same units as the base data. The greater the value/deviation, the greater the risk and volatility.
+* The `std` function can be used to compute standard deviation. The output from the function is a series that indicates how far the value is from the mean, in the same units as the base data. The greater the value/deviation, the greater the risk and volatility.
 
   ```python
   # Calculate std dev

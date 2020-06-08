@@ -18,7 +18,7 @@ By the end of class, students will be able to:
 
 * Manipulate data using DataFrame indexes.
 
-* Describe the underlying theory and calculations of returns using Pandas.
+* Describe the basic theory and calculations of returns using Pandas.
 
 * Create basic data visualizations with Pandas' built-in plotting functions.
 
@@ -35,6 +35,7 @@ By the end of class, students will be able to:
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 
 * To watch an example class lecture, go here: [3.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b94c08e1-a82a-4800-a73c-aaa301156f9f) Note that this video may not reflect the most recent lesson plan.
 
@@ -233,7 +234,7 @@ Now call attention to the `header` parameter for `read_csv` and highlight the fo
 
 * A limitation of the `describe` function is that it only calculates summary statistics for numeric values columns.
 
-Open the Pandas documentation to show students more about the [`read_csv`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) function. Review the many options available in the function signature.
+Consult the Pandas documentation to read more about the [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) function. Show the many options available in the function signature.
 
 Explain that while the most common scenario is to provide the path to the file directly, Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files, such as the parameters associated with the file path and header that were used in the demo code.
 
@@ -243,7 +244,7 @@ Congratulate the class on reading their first CSV file into Pandas! This is an e
 
 ### 3. Student Do: Reading Stock Data from a CSV File (10 min)
 
-In this activity, students will get hands-on experience reading CSV files using Pandas. They will use the `read_csv` function, sample data with the `head` function, and create DataFrames with specified column names.
+In this activity, students will get hands-on experience reading CSV files into Pandas. They will use the `read_csv` function, sample data with the `head` function, and create DataFrames with specified column names.
 
 **Files:**
 
@@ -811,7 +812,7 @@ Ask if there are any questions before moving on.
 
 ### 10. Student Do: Three-Year Loans (15 min)
 
-Now that students have the conceptual knowledge to index and lookup data, it's time they get some practice. In this activity, students will use DataFrame indexing on the dataset in `loans.csv` to generate insights about three-year loan customers.
+Now that students have the conceptual knowledge to index and look up data, it's time they get some practice. In this activity, students will use DataFrame indexing on the dataset in `loans.csv` in order to generate insights about three-year loan customers.
 
 Note that the data in `loans.csv` is a compilation of many different columns and loan durations. Students will need to filter the data and use functions on data subsets to answer the activity questions.
 

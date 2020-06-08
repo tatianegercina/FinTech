@@ -12,9 +12,9 @@ Using the starter file, complete the following steps.
 
 3. Perform an initial data exploration by getting the top `10` rows of the DataFrame.
 
-4. Oh no! There are no columns names on the DataFrame. Fix this problem by recreating the DataFrame and setting the columns names to "Date", "Close", "Volume", "Open", "High", "Low".
+4. Oh no! There are no column names on the DataFrame. Fix this problem by recreating the DataFrame and setting the column names to "Date", "Close", "Volume", "Open", "High", "Low".
 
-5. After fixing the names of the columns, get the first `10` rows from the DataFrame.
+5. When the column names are fixed, get the first `10` rows from the DataFrame.
 
 ## Challenge
 
