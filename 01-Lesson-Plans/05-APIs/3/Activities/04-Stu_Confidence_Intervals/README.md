@@ -1,8 +1,8 @@
 # Archery Target Hits
 
-In this activity, a beginner archer has a shot accuracy of approximately `20%` and therefore on average hits the target `1` time for every `5` shots. His archery master wants to assess the beginner archer's *long-term performance* of hitting the target and therefore wants to simulate and predict the beginner archer's performance over many trials. Specifically, the archery master wants to know what the range of hit targets (out of `5` shots) the beginner archer is likely to make for a `95%` confidence interval. In other words, what is the range of targets that the beginner archer will hit out of `5` shots if he is `95%` certain of the outcome?
+In this activity, a beginner archer has a shot accuracy of approximately `20%` and therefore, on average, hits the target `1` time for every `5` shots. His archery master wants to assess the beginner archer's *long-term performance* of hitting the target, thus wanting to simulate and predict the beginner archer's performance over many trials. The archery master wants to know what the range of hit targets (out of `5` shots) the beginner archer is likely to make for a `95%` confidence interval. What is the range of targets that the beginner archer will hit out of `5` shots if he is `95%` certain of the outcome?
 
-Create a Monte Carlo simulation with `1000` simulations of `5` shots to analyze the beginner archer's frequency distribution and the corresponding probability distribution of hit targets to determine the `95%` confidence interval of hit targets.
+Create a Monte Carlo simulation with `1000` simulations of `5` shots to analyze the beginner archer's frequency distribution, and the corresponding probability distribution of hit targets to determine the `95%` confidence interval of hit targets.
 
 ## Instructions
 
@@ -16,7 +16,7 @@ Create a Monte Carlo simulation with `1000` simulations of `5` shots to analyze 
 
     * Create a list `shot` consisting of the strings `hit` and `missed`.
 
-    * Create an empty `pandas` DataFrame to hold the results of each simulation.
+    * Create an empty `Pandas` DataFrame to hold the results of each simulation.
 
     * Create a nested for loop to loop through `5` shots for every simulation of `1000` simulations.
 
