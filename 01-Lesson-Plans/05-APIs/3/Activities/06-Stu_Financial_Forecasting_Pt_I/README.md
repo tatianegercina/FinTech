@@ -10,15 +10,15 @@ Help Harold by creating a Monte Carlo simulation that simulates the next `252 * 
 
   * Import libraries and dependencies
 
-  * Use the `list_assets()` function to confirm that `BB` is an available ticker on the `Alapca` API.
+  * Use the `list_assets()` function to confirm that `BB` is an available ticker on the `Alpaca` API.
 
-  * Use the `get_barset()` function to retrieve `1` year's worth of daily prices for `BB` stock as a `pandas` DataFrame. Use the `datetime` library to specify a `start_date` and `end_date`.
+  * Use the `get_barset()` function to retrieve `1` year's worth of daily prices for `BB` stock as a `Pandas` DataFrame. Use the `datetime` library to specify a `start_date` and `end_date`.
 
   * Drop extraneous `levels` and `columns`, keep only the `close` column of the resulting DataFrame.
 
   * Use the `pct_change` function to calculate the daily returns of `BB` stock.
 
-  * Use the `mean` and `std` functions to calculate the average and volatility of historical `BB` daily returns.
+  * Use the `mean` and `std` functions to calculate the average, and volatility, of historical `BB` daily returns.
 
   * Write a Monte Carlo simulation that loops through `252 * 3` trading days and saves the results:
 
@@ -26,7 +26,7 @@ Help Harold by creating a Monte Carlo simulation that simulates the next `252 * 
 
     * Create a list to hold simulated `BB` closing prices with the last closing price of the sample (data from Alpaca API call) as its first element.
 
-    * For every trading day, calculate a simulated price using the preceding day's closing price multiplied by ```(1 + np.random.normal(avg_daily_return, std_dev_daily_return)```. In other words, multiply the preceding closing price by a randomly generated daily return based on a normal probability distribution of historical `BB` daily returns. Save the results to a `pandas` DataFrame.
+    * For every trading day, calculate a simulated price using the preceding day's closing price multiplied by ```(1 + np.random.normal(avg_daily_return, std_dev_daily_return)```. In other words, multiply the preceding closing price by a randomly generated daily return, based on a normal probability distribution of historical `BB` daily returns. Save the results to a `Pandas` DataFrame.
 
     * Plot the simulated daily closing prices of `BB` stock over the next `3` trading years.
 
@@ -44,7 +44,7 @@ The culminating activity—by this point, you'll be stock price, fortune tellers
 
 ## Hints
 
-* Remember that a normal probability distribution is just a diagram illustrating the probability of potential outcomes as outcomes deviate closer to or away from the expected average.
+* Remember that a normal probability distribution is just a diagram illustrating the probability of potential outcomes as outcomes deviate closer to, or away from, the expected average.
 
 ---
 
