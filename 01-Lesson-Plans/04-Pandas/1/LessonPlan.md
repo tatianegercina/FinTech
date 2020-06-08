@@ -86,7 +86,7 @@ Open the lesson slides, move to the "Introduction to Portfolios" section and ask
 
 * What is a stock portfolio?
 
-  **Answer:** A stock portfolio is an investment portfolio consisting of only equity. A stock portfolio consists of multiple stocks ranging from some or all the eleven sectors of the equity market: financials, utilities, consumer discretionary, consumer staples, energy, health care, industrials, technology, telecom, materials, and real estate.
+  **Answer:** It's is an investment portfolio consisting of only equity. A stock portfolio includes multiple stocks ranging from some or all the eleven sectors of the equity market: financials, utilities, consumer discretionary, consumer staples, energy, health care, industrials, technology, telecom, materials, and real estate.
 
 * Why are stock portfolios better than single stock investments?
 
@@ -304,7 +304,7 @@ Close the presentation, open the unsolved version of the Jupyter notebook and li
 
 Explain to students that overlaying a rolling statistic trend on top of the original data trend makes this feature easier to spot.
 
-Highlight to students that it's possible to overlay two plots using Pandas. They should assign the first plot to a variable that is commonly named as `ax`, next when the second plot is created. They should set the `ax` parameter of the `plot` function to the variable where they save the first plot (e.g. `ax=ax`).
+Highlight to students that it's possible to overlay two plots using Pandas. The first plot is assigned to a variable that is commonly named as `ax`. When the second plot is created, the `ax` parameter of the `plot` function is set as the variable where the first plot was stored (e.g. `ax=ax`).
 
 ![rolling-statistic-overlay](Images/rolling-statistic-overlay.png)
 
