@@ -2,7 +2,7 @@
 
 In this three-part activity, Harold was praised for his projection of `BB` stock price over the next `3` trading years; however, now his manager wants to investigate deeper and ask the following questions:
 
-* What are the probabilities of `20` ranges (or bins) that `BB` stock price could end up?
+* What are the probabilities of `20` ranges (or bins) for `BB` stock price outcomes?
 
 * What range of ending stock price are we `95%` certain that `BB` stock price will result in?
 
@@ -18,7 +18,7 @@ You completed this in the last activity, nice job!
 
   * Data preparation has been done for you to conserve time. Proceed to executing the Monte Carlo simulation.
 
-  * Rewrite the Monte Carlo simulation to include a `for` loop for the number of simulations and append the results of each simulation as a column to a `pandas` DataFrame.
+  * Rewrite the Monte Carlo simulation to include a `for` loop for the number of simulations and append the results of each simulation as a column to a `Pandas` DataFrame.
 
   * Plot the DataFrame containing `252 * 3` results of each simulation to chart `1000` possible trajectories of `BB` stock price. Set the `legends` parameter to `None`.
 
@@ -36,11 +36,11 @@ You completed this in the last activity, nice job!
 
 ## Part 3 Instructions: Portfolio Forecasting
 
-Almost there! Get ready!
+We're amost there, so get ready!
 
 ## Hints
 
-* The basis of this activity is the idea of nested `for` loops for multiple simulations of stock price trajectories and analyzing the frequency or probability distribution of simulated stock price outcomes to make better and more thoughtful predictions about where `BB` stock price could end up.
+* This activity's basis rests in the idea of nested `for` loops, for multiple simulations of stock price trajectories and analyzing the frequency (or probability distribution) of simulated stock price outcomes, to make better predictions on where `BB` stock price could end up.
 
 ---
 
