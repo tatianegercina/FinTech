@@ -360,7 +360,7 @@ Open the lesson slides, move to the "Confidence Intervals" section and highlight
 
 * In the context of Monte Carlo simulations, a confidence interval is a value range of a frequency distribution that contains a specific percentage of all potential outcomes. For example, a `90%` confidence interval would be a range of values of which `90%` of all potential outcomes of the Monte Carlo simulation are contained. Therefore, confidence intervals used with frequency distributions of Monte Carlo simulations calculate the range of potential outcomes and their probabilities of occurring. For example, one could analyze the frequency distribution of potential stock price trajectories and determine that "there is a `90%` chance that the stock price will be between `$10` and `$20` next week."
 
-* To create a confidence interval, the upper and lower bounds of the confidence interval need to be set as a quantile or percentile range of the frequency distribution.
+* To create a confidence interval, the upper and lower bounds of the confidence interval need to be set as a quantile, or percentile range, of the frequency distribution.
 
 * A quantile is a measurement in which a frequency distribution is divided into equal groups; thus, each group contains an equal fraction of the total sample. Often, quantiles are expressed in `100` equal parts, otherwise known as *percentiles*. For example, a student in the 95th percentile of height for his school is as tall as, or taller, than `95%` of the students at the school.
 
