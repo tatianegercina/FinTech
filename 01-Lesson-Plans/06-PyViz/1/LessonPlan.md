@@ -292,7 +292,7 @@ Ask students if they have any questions before moving onto the next activity.
 
 ### 6. Student Do: Plotting a Visual Takeover (15 min)
 
-In this activity, students revisit plots they made earlier in the class using Matplotlib, and they recreate them as hvPlots. This bridge assignment aims to demonstrate the similarities between the hvPlot plot API and Matplotlib's API.
+For this activity, students will revisit plots they made earlier using Matplotlib and recreate them as hvPlots. This bridge assignment aims to demonstrate the similarities between the hvPlot plot API and Matplotlib's API.
 
 **Instructions:**
 
@@ -339,7 +339,7 @@ If time remains, transition into a small review session. Ask the following guide
 
 * Since Matplotlib or Pandas and hvPlot-plotting APIs work the same way, is hvPlot reinventing the wheel by maintaining their visualization technology?
 
-  * **Answer:** No. HvPlot abstracts over Pandas or Matplotlib and inherits the objects and attributes already created by these technologies. HvPlot leverages existing code rather than creating new code from scratch.
+  * **Answer:** No. HvPlot abstracts over Pandas or Matplotlib, and inherits the objects and attributes already created by these technologies. HvPlot leverages existing code rather than creating new code from scratch.
 
 Ask for any remaining questions before moving on.
 
