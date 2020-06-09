@@ -239,6 +239,8 @@ The model predicted this value was not green and it was incorrect.
 <details>
 <summary>How are precision and accuracy different?</summary>
 
+Precision and accuracy are qualitative descriptions of measure of distances between data points.
+
 Precision is a measure of how close elements are to each other. Accuracy is a measure of how close items are to the target. The following image helps to visualize this:
 <img src='Images/acc_prec.png' width = 650>
 </details>
