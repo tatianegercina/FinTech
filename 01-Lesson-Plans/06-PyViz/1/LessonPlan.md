@@ -162,8 +162,7 @@ Ask if there are any questions before moving on.
 
 ### 4. Instructor Do: Intro to HvPlot (5 min)
 
-Students participate in a formal lecture regarding what hvPlot is and what it has to offer in terms of data visualization.
-
+Students will now participate in a lecture on what hvPlot is, and its data visualization offerings.
 
 Navigate to the 6.1 slides, and introduce students to the world of hvPlot interactive graphs!
 
@@ -175,15 +174,15 @@ Navigate to the 6.1 slides, and introduce students to the world of hvPlot intera
 
 * This abstraction also allows hvPlot to transform the static plots (e.g., Matplotlib plots) into interactive sandboxes for data exploration and analysis. HvPlots allow for:
 
-  * Panning
+  * panning
 
-  * Zooming
+  * zooming
 
-  * Hovering
+  * hovering
 
-  * Clicking
+  * clicking
 
-  * Filtering
+  * filtering
 
 Encourage students to review some of the [example plots](https://hvplot.pyviz.org/) on their own time. Make sure to slack out this link.
 
@@ -209,7 +208,7 @@ If time remains, review some of the common hvPlot charts and their interactive f
 
   ![hv_plot_4_networkx.PNG](Images/hv_plot_4_networkx.PNG)
 
-Ask if there are any questions. Then, continue to the next activity.
+Ask for any questions and then continue on to the next activity.
 
 ---
 
