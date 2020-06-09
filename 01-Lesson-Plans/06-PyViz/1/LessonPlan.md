@@ -371,15 +371,15 @@ Transition into a demo of the widget bar by opening the solution file and highli
 
 * The widgets bar includes buttons for the following interactions:
 
-  * Panning
+  * panning
 
-  * Box zoom
+  * box zoom
 
-  * Wheel zoom
+  * wheel zoom
 
-  * Save visualization
+  * save visualization
 
-  * Hover
+  * hover
 
 * Panning allows users to move the data on the screen in all directions. This is particularly valuable when trying to view data across time, outlying data points, or even high volume. Instead of having to zoom out to see all data, panning brings data into the forefront of the visualization as needed.
 
@@ -389,7 +389,7 @@ Transition into a demo of the widget bar by opening the solution file and highli
 
   ![hvplot_box_zoom.gif](Images/hvplot_box_zoom.gif)
 
-* Wheel zoom works similarly to box zoom; however, the click wheel is used magnify data points.
+* Wheel zoom works similarly to box zoom; however, the click wheel is used to magnify data points.
 
   ![hvplot_wheel_zoom.gif](Images/hvplot_wheel_zoom.gif)
 
@@ -407,15 +407,15 @@ Transition into a demo of the widget bar by opening the solution file and highli
 
 * Explain to students that widget activities can be combined. Clicking pan, wheel, and hover buttons enables users to pan, zoom, and get details by hovering all at the same time.
 
-  * Note to students that certain widgets cannot be used with other widgets. For example, users cannot pan and box zoom at the same time. One action has to occur first, and then the second widget option can be chosen.
+  * Point out to students that certain widgets cannot be used with other widgets. For example, users cannot pan and box zoom at the same time. One action has to occur first, and then the second widget option can be chosen.
 
   ![hvplot_all_actions.png](Images/hvplot_all_actions.gif)
 
-Ask if there are any questions, and then continue to the student activity.
+Ask for any questions before continuing to the student activity.
 
 ---
 
-### 10. Students Do: HvPlot Widgets (15 min)
+### 10. Student Do: HvPlot Widgets (15 min)
 
 In this activity, students will play around with the hvPlot widgets to get more accustomed to the different types of interactions supported with hvPlots. Students will use hvPlot visualizations to explore hospital claims data and answer a few basic questions about the data.
 
