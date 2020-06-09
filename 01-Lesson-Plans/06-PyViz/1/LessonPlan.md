@@ -537,7 +537,7 @@ The instructor will ask a student volunteer to conduct a dry walkthrough of the 
 
 * [composing_masterpieces.ipynb](Activities/06-Stu_Composing_Masterpieces/Solved/composing_masterpieces.ipynb)
 
-Initiate the review session by asking the first student who completed the student solution to conduct a dry walkthrough. If no student was identified to perform the walkthrough, conduct a dry walkthrough yourself. If the student needs assistance facilitating the review, ask guided questions such as:
+Initiate the review session by asking the student volunteer to conduct a dry walkthrough. If no student was identified, conduct a dry walkthrough yourself. If the student needs help facilitating the review, ask guided questions such as:
 
 * How many different ways can you compose plots? What are the operators?
 
@@ -545,17 +545,17 @@ Initiate the review session by asking the first student who completed the studen
 
 * What does the `+` operator do?
 
-  * **Answer:** Create a layout where each plot is placed adjacent to another.
+  * **Answer:** It creates a layout where each plot is placed adjacent to the other.
 
 * What does the `*` operator do?
 
-  * **Answer:** Overlay plots where each plot is placed along the same axis.
+  * **Answer:** It overlays plots where each plot is placed along the same axis.
 
 * How many widget bars are created when plotting? One, or one for each plot?
 
   * **Answer:** One.
 
-Indicate to the student to open the solution. The student should highlight the following:
+Ask the student volunteer (or call on a student) to open the solution. They should highlight the following:
 
 * The `+` operator is used to compose plots adjacent to each other. This creates a single plot that contains more than one visualization.
 
@@ -576,7 +576,7 @@ Indicate to the student to open the solution. The student should highlight the f
 
   ![compose_layout.png](Images/compose_layout.png)
 
-* The `*` operator is used to overlay plots along the same axis. This results in one plot with multiple subplots rather than plots that are adjacent to another (like when using the `+` operator).
+* The `*` operator is used to overlay plots along the same axis. This results in one plot with multiple subplots, rather than plots that are adjacent to another (like when using the `+` operator).
 
   ```python
   # Overlay plots
