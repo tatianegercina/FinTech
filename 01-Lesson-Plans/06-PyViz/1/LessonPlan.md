@@ -226,9 +226,9 @@ Open the [starter file](Activities/01-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb), an
   import hvplot.pandas
   ```
 
-* The great thing about hvPlot being abstracted over Pandas is that the two technologies share plotting interfaces. This marriage is the definition of not reinventing the wheel.
+* The great thing about hvPlot being abstracted over Pandas is that the two technologies share plotting interfaces.
 
-  * Emphasize to students that even though hvPlot uses the function `hvplot` and not Pandas `plot`, the `hvplot` function actually makes reference to the Pandas `plot` interface. This allows for hvPlots to be created and manipulated in the same ways as Pandas plots (including plot attributes), just with an interactive component.
+* Emphasize to students that even though hvPlot uses the function `hvplot` and not Pandas `plot`, the `hvplot` function actually makes reference to the Pandas `plot` interface. This allows for hvPlots to be created and manipulated in the same ways as Pandas plots (including plot attributes), just with an interactive component.
 
 * The `hvPlot` function is used to create a standard hvPlot chart. For example, when applied against a DataFrame containing cumulative returns for five different tickers, hvPlot would create a visualization using the metadata and data from the DataFrame. The user needs no configuration.
 
@@ -257,7 +257,7 @@ Open the [starter file](Activities/01-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb), an
   )
   ```
 
-* The `hvPlot` function also has a `bar` attribute for visualization of categorical data. It works the same as the `line` attribute, but it creates a bar visualization rather than a line. It is important to note to students that bar plots require categorical data and not just time series data. Bar plots need to compare the x-axis against the y-axis.
+* The `hvPlot` function also has a `bar` attribute for visualization of categorical data. It works the same as the `line` attribute, but it creates a bar visualization rather than a line. It is important to note to students that bar plots require categorical data, and not just time series data. Bar plots need to compare the x-axis against the y-axis.
 
   ```python
   # Data Prep
@@ -278,9 +278,9 @@ If time remains, choose either the line or bar visualization, and demonstrate to
 
 * Click and drag the visualization to pan to the left and right. Communicate that visualization panning allows for data to be analyzed across time more effectively.
 
-* Select an element on the legend to filter it out. Show that this allows data to be hidden as needed. With just a click, data can be curated to specific analytic needs on the fly.
+* Select an element on the legend to filter it out. Show that this allows data to be hidden as needed. With just one click, data can be curated to specific analytic needs on the fly.
 
-  * Emphasize to students that this is incredibly difficult to do with standard plotting packages like Pandas or Matplotlib. Having this type of functionality included out of the box with hvPlot is not only powerful but groundbreaking! It would take longer to code the filter than it would a user clicking the legend.
+  * Emphasize to students that this is incredibly difficult to do with standard plotting packages like Pandas or Matplotlib. Getting these out-of-the-box features with hvPlot is not just powerful, its groundbreaking! It would take longer to code the filter than it would a user clicking the legend.
 
   * Static visualizations require the underlying data to be changed in order for a visualization to be updated; with interactive visualizations, data can be filtered on demand.
 
@@ -290,7 +290,7 @@ Ask students if they have any questions before moving onto the next activity.
 
 ---
 
-### 6. Students Do: Plotting a Visual Takeover (15 min)
+### 6. Student Do: Plotting a Visual Takeover (15 min)
 
 In this activity, students revisit plots they made earlier in the class using Matplotlib, and they recreate them as hvPlots. This bridge assignment aims to demonstrate the similarities between the hvPlot plot API and Matplotlib's API.
 
