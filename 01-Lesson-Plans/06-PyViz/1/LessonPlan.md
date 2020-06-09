@@ -595,7 +595,7 @@ Ask for any remaining questions before moving on.
 
 ### 15. Instructor Do: Visualization Options (10 min) (Critical)
 
-The goal of this activity is to provide students with a dry walkthrough demonstration of how to use hvPlot plot attributes and options to customize the look and feel of visualizations. This activity will enable students to perfect their visualizations by fine-tuning details such as axis labels and to create attractive color themes and effects.
+The goal of this activity is to provide students with a dry walkthrough demonstration of how to use hvPlot plot attributes and options to customize the look and feel of visualizations. This activity will enable students to perfect their visualizations by fine-tuning details such as axis labels, and to create attractive color themes and effects.
 
 Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/real-estate-sale-history-06c8f).
 
@@ -660,7 +660,7 @@ Open the starter file, and perform a dry walkthrough of the solution, highlighti
 
 If time remains, discuss how to use the `opts` function to switch the x and y axes.
 
-* The `invert_axes` option is used to change the orientation of a visualization. An example of this would be showing a bar chart with bars moving horizontally rather than vertically.
+* The `invert_axes` option is used to change the orientation of a visualization. For example, showing a bar chart with bars moving horizontally rather than vertically.
 
   ```python
   # Invert axes
@@ -677,9 +677,9 @@ Ask if there are any more questions. Then, continue to the student challenge act
 
 ---
 
-### 16. Students Do: Picture Perfect (15 min)
+### 16. Student Do: Picture Perfect (15 min)
 
-By the end of this activity, students will have employed hvPlot customization attributes and options to perfect and add finishing touches to their visualizations.
+By the end of this activity, students will employ hvPlot customization attributes and options to perfect and add finishing touches to their visualizations.
 
 Make sure to slack out to students the [hvPlot customization](https://hvplot.pyviz.org/user_guide/Customization.html) documentation, so they have a complete list of all options available.
 
@@ -693,9 +693,9 @@ Make sure to slack out to students the [hvPlot customization](https://hvplot.pyv
 
 ---
 
-### 17. Students Do: Picture Perfect Activity Review (10 min)
+### 17. Student Do: Picture Perfect Activity Review (10 min)
 
-Students participate in a five-minute turn and teach activity that will focus on showcasing their final, customized visualizations.
+For this activity, students will participate in a five-minute turn and teach to showcase their final, customized visualizations.
 
 **Files:**
 
@@ -713,7 +713,7 @@ Emphasize to students that the activity should focus on how they used the `opts`
 
 If time remains, ask students the following review questions:
 
-* If you were to categorize the different types of customizations covered, what would be the categories?
+* If you were to categorize the different types of customizations covered, what would the categories be?
 
   * **Answer:** Label, axes, color, and orientation.
 
@@ -723,7 +723,7 @@ If time remains, ask students the following review questions:
 
 * Can composed plots be customized?
 
-  * **Answer:** Yes. Composed plots can be customized with the `opts` function. The composing operation will have to be placed within parenthesis for the `opts` function to take effect.
+  * **Answer:** Yes. Composed plots can be customized with the `opts` function. The composing operation will have to be placed within parentheses for the `opts` function to take effect.
 
 Ask for any remaining questions before moving on.
 
@@ -731,9 +731,9 @@ Ask for any remaining questions before moving on.
 
 ### 18. Instructor Do: Recap (5 min)
 
-The day has been a whirlwind of visualizations. Now it's time to take a load off and reflect on what was learned during the day.
+Today has been a whirlwind of visualizations. Now, it's time to take a load off and reflect on what was learned.
 
-Explain to students that interactive plots have made data analysis and data interpretation significantly easier. Financial data is always changing, especially over time.
+Explain to students that interactive plots have made data analysis and interpretation significantly easier. Financial data is always changing, especially over time.
 
 * Being able to interact and explore data with a plot makes it easier to spot changes and trends in data.
 
@@ -743,9 +743,9 @@ Facilitate a recap discussion with students by asking some of the following ques
 
 * In what ways will interactive visualizations help with data analysis?
 
-  * **Answer:** Interactive visualizations provide real-time data manipulation and exploration capabilities. This cuts back on the time and lines of codes needed to filter, slice, and dice the data for data exploration.
+  * **Answer:** Interactive visualizations provide real-time data manipulation and exploration capabilities. This cuts back on the time and lines of codes needed to filter, and slice and dice the data for data exploration.
 
-  * **Answer:** A challenge with static charts is that its difficult to zoom in on or highlight a specific data point or range of data points. Interactive visualizations make zooming in on data points easy.
+  * **Answer:** A challenge with static charts is that it's difficult to zoom in on, or highlight, a specific data point or range of data points. Interactive visualizations make zooming in on data points easy.
 
 * What are three things that you learned today about hvPlot or interactive visualizations?
 
@@ -765,13 +765,13 @@ Facilitate a recap discussion with students by asking some of the following ques
 
 If time remains, emphasize one last time the importance of interactive visualizations.
 
-* Communicate to students that with the rise of data science and data-driven industries is going to result in interactive visualizations becoming a staple of the data world.
+* Communicate to students that with the rise of data science and data-driven industries, interactive visualizations will become a data world staple.
 
-* Explain that as data volumes increase, users will need interactive visualizations to help shift and parse through countless data points. Interactive visualizations are empowering users to dive deep into data themselves to find new and unique structures and patterns that otherwise would have required large data dumps.
+* Explain that as data volumes increase, users will need interactive visualizations to help shift and parse through countless data points. Interactive visualizations empower users to dive deep into data in order to find new and unique structures and patterns that would have required large data dumps otherwise.
 
 * Highlight that without interactive visualizations, users are stuck trying to analyze data in charts and graphs that are too small and static to glean insight from.
 
-* Inform students that interactive data visualization careers are trending; many companies are looking for developers who can wrangle data as well as create fun and attractive visualizations.
+* Inform students that interactive data visualization careers are trending; many companies are looking for developers who can wrangle data, as well as create fun and attractive visualizations.
 
 Ask for any remaining questions before ending the class.
 
