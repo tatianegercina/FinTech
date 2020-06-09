@@ -130,10 +130,9 @@ Ask the students for any questions before moving forward.
 
 ### 3. Instructor Do: Intro to PyViz (5 min)
 
-Students will be introduced to PyViz by way of a facilitated discussion led by the instructor. The discussion will focus on the advantages of using PyViz rather than individual technologies (HoloViews, Matplotlib, D3.js, etc.).
+Students will now be introduced to PyViz with a facilitated instructor-led discussion. This will focus on the advantages of PyViz over individual technologies (HoloViews, Matplotlib, D3.js, etc.).
 
-
-Communicate to students that the Python environment comes packed with a number of different visualization technologies that have all been wrapped together into one platform called PyViz.
+Communicate to students that the Python environment is packed with a number of different visualization technologies that are all wrapped together into one platform, called PyViz.
 
 Navigate to the 6.1 slides, and highlight the following:
 
@@ -141,23 +140,23 @@ Navigate to the 6.1 slides, and highlight the following:
 
 * Each visualization technology in the PyViz ecosystem has the power and features to provide stand-alone visualizations. Each technology also has its strengths and weaknesses, which will be explored later.
 
-* PyViz’s platform allows for different visualization technologies to be integrated to create dashboards (which can be done with PyViz’s Panel software). This is pivotal for FinTech, as PyViz provides all the necessary tools needed to create financial dashboards for personal and corporate use.
+* PyViz’s platform allows the integration of different visualization technologies to create dashboards (which can be done with PyViz’s Panel software). This is pivotal for FinTech, as PyViz provides all the necessary tools needed to create financial dashboards for personal and corporate use.
 
 * For FinTech, using PyViz means you have access to your standard plots as well as finance specific plots, like candlestick charts. Another benefit of PyViz is that the sheer number of plotting technologies means that there's a greater chance of users finding the visualizations they need.
 
 Facilitate discussion by asking the following questions:
 
-* Let’s say I just wanted to use Matplotlib and HoloViews. Why not just download those technologies specifically rather than installing PyViz?
+* Let’s say I just wanted to use Matplotlib and HoloViews. Why not just download those technologies specifically, rather than installing PyViz?
 
   * **Answer:** Matplotlib and HoloViews may not satisfy all of the visualization tools required. For example, Matplotlib and HoloViews provide visualizations, but they do not offer a way to create a dashboard. Installing PyViz will ensure all viable technologies are accessible.
 
-  * **Answer:** Installing PyViz instead of just the individual technologies would mean that you’d get access to the individual technologies as well as the integration architecture that PyViz uses to integrate the libraries.
+  * **Answer:** Installing PyViz instead of just the individual technologies would mean that you’d get access to the individual technologies, as well as the integration architecture that PyViz uses to integrate the libraries.
 
 * What other environment have we worked in that resembles the PyViz environment?
 
   * **Answer:** The Anaconda environment.
 
-Ask if there are any questions; then, move onto the next module.
+Ask if there are any questions before moving on.
 
 ---
 
