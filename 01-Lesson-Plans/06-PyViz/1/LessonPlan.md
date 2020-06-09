@@ -463,7 +463,7 @@ Ask for any remaining questions before moving on.
 
 ### 12. Instructor Do: Composing Plots (10 min)
 
-By the end of this activity, students will have received a dry walkthrough demo on how to combine two plot objects to create a plot with subplots. This activity will teach students how to create plot layouts and overlay visualizations to create a centralized location for comparative data analysis.
+This activity teaches students how to create plot layouts and overlay visualizations to create a centralized location for comparative data analysis. By the end of the activity, students will have received a dry walkthrough demo on how to combine two plot objects to create a plot with subplots. 
 
 **Files:**
 
@@ -475,7 +475,7 @@ Navigate to the 6.1 unit slides, and highlight the following:
 
 * Composing plots is a quick and easy way to create a plot with subplots.
 
-* Plots can be composed and overlaid by using the `+` and `*` operators. HvPlot handles formatting and creating the layout for the new visualization, deciding the best way to visualize the data.
+* Plots can be composed and overlaid by using the `+` and `*` operators. HvPlot handles formatting and creates the layout for the new visualization, deciding the best way to visualize the data.
 
 Open the starter file and facilitate a dry walkthrough demonstration of composing plots using the `+` and `*` operators.
 
@@ -505,11 +505,11 @@ sorted_data.hvplot() * sorted_data_med.hvplot()
 
   ![single_widget_bar.gif](Images/single_widget_bar.gif)
 
-Ask and answer any students' questions. Then, move onto the next activity.
+Answer any questions before moving on to the next activity.
 
 ---
 
-### 13. Students Do: Composing Masterpieces (10 min)
+### 13. Student Do: Composing Masterpieces (10 min)
 
 Students will complete an activity where they use the information learned in the instructor demo to customize their hvPlots. Students will use a range of options to customize the color, labels, and axis alignments.
 
