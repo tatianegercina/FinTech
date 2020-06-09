@@ -6,11 +6,11 @@
 
 ## Background
 
-Harold's company has just started a new Real Estate Investment division to provide customers with a broader range of portfolio options. Harold was tasked with building a prototype dashboard and he needs your help. The real estate team wants to trial this initial offering with investment opportunities for the San Francisco market. If the new service is popular, then they can start to expand to other markets.
+Harold's company has just started a new real estate investment division to provide customers with a broader range of portfolio options. Harold has been tasked with building a prototype dashboard and needs your help. The real estate team wants to trial this initial offering with investment opportunities for the San Francisco market. If the new service is popular they can start expanding to other markets.
 
 The goal of this dashboard is to provide charts, maps, and interactive visualizations that help customers explore the data and determine if they want to invest in rental properties in San Francisco.
 
-In this homework assignment, you will help Harold accomplish the following tasks:
+You need to help Harold accomplish the following tasks:
 
 1. [Complete a notebook of rental analysis](#Rental-Analysis)
 
@@ -29,7 +29,7 @@ In this homework assignment, you will help Harold accomplish the following tasks
 
 ### Rental Analysis
 
-The first step to building the dashboard is to work out all of the calculations and visualizations in an analysis notebook. Once the code is worked out here, it can be copied over to a dashboard code and used with Panel to create the final layout. Use the `rental_analysis.ipynb` to complete the following:
+The first step to building the dashboard is to work out all of the calculations and visualizations in an analysis notebook. Once the code is worked out, it can be copied over to a dashboard code and used with Panel to create the final layout. Use the `rental_analysis.ipynb` to complete the following:
 
 #### Housing Units Per Year
 
@@ -48,7 +48,7 @@ Bar Chart with y-axis limits adjusted
 
 #### Average Gross Rent in San Francisco Per Year
 
-In this section, you want to visualize the average gross rent per year to better understand the trends for rental income over time. You will visualize the average (mean) gross rent per year and visualize it as a line chart.
+In this section, you need to visualize the average gross rent per year to better understand the trends for rental income over time. You will visualize the average (mean) gross rent per year and visualize it as a line chart.
 
 1. Calculate the mean `gross` for each year.
 2. Visualize the mean gross rent per year as a line chart.
@@ -57,33 +57,33 @@ In this section, you want to visualize the average gross rent per year to better
 
 #### Average Sales Price Per Year
 
-In this section, you want to determine the average sales price per year to better understand the sales price of the rental property over time. For example, a customer will want to know if they should expect an increase or decrease in the property value over time so they can determine how long to hold the rental property. You will visualize the average (mean) `sales_price_sqr_foot` and visualize it as a bar chart.
+In this section, you need to determine the average sales price per year to better understand the sales price of the rental property over time. For example, a customer will want to know if they should expect an increase or decrease in the property value over time so they can determine how long to hold onto the rental property. You will visualize the average (mean) `sales_price_sqr_foot` and visualize it as a bar chart.
 
 1. Calculate the mean `gross` for each year.
 2. Visualize the mean gross rent per year as a line chart.
 
   ![average-sales.png](Images/average-sales.png)
 
-#### Average Prices By Neighborhood
+#### Average Prices By Neighbourhood
 
-In this section, you want to compare the average prices by neighborhood.
+In this section, you need to compare the average prices by neighbourhood.
 
-1. Group the data by year and by neighborhood and calculate the average (mean) `sales_price_sqr_foot`.
-2. Visualize the mean `sales_price_sqr_foot` per year with the neighborhood as a dropdown selector. Hint: Use hvplot to obtain the interactive dropdown selector for the neighborhood.
+1. Group the data by year and neighbourhood and calculate the average (mean) `sales_price_sqr_foot`.
+2. Visualize the mean `sales_price_sqr_foot` per year with the neighbourhood as a dropdown selector. Hint: Use hvplot to obtain the interactive dropdown selector for the neighbourhood.
 
   ![avg-price-neighborhood.png](Images/avg-price-neighborhood.png)
 
-#### Top 10 Most Expensive Neighborhoods
+#### Top 10 Most Expensive Neighbourhoods
 
-In this section, you want to figure out which neighborhoods are the most expensive. You will need to calculate the mean sale price for each neighborhood and then sort the values to obtain the top 10 most expensive neighborhoods on average. Plot the results as a bar chart.
+In this section, you want to figure out which neighbourhoods are most expensive. You will need to calculate the mean sale price for each neighbourhood, and then sort the values to obtain the top 10 most expensive neighbourhoods on average. Plot the results as a bar chart.
 
   ![top-10-expensive-neighborhoods.png](Images/top-10-expensive-neighborhoods.png)
 
 #### Parallel Coordinates and Parallel Categories Analysis
 
-In this section, you will use plotly express to create parallel coordinates and parallel categories visualizations so that investors can interactively filter and explore various factors related to the sales price of the neighborhoods.
+In this section, you will use plotly express to create parallel coordinates and parallel categories visualizations so that investors can interactively filter and explore various factors related to the sales price of the neighbourhoods.
 
-Using the DataFrame of Average values per neighborhood (calculated above), create the following visualizations:
+Using the DataFrame of Average values per neighbourhood (calculated above), create the following visualizations:
 
 1. Create a Parallel Coordinates Plot
 
@@ -95,7 +95,7 @@ Using the DataFrame of Average values per neighborhood (calculated above), creat
 
 #### Neighborhood Map
 
-In this final section, you will read in neighborhood location data and build an interactive map with the average prices per neighborhood. Use a scatter mapbox object from plotly express to create the visualization. Remember, you will need your mapbox API key for this.
+In this final section, you will read in neighbourhood location data and build an interactive map with the average prices per neighbourhood. Use a scatter mapbox object from Plotly Express to create the visualization. Remember, you will need your mapbox API key for this.
 
 Remember that in order to create maps visualizations using Plotly Express, you will need to create an account at [mapbox](https://www.mapbox.com/) and [create an access token](https://docs.mapbox.com/help/how-mapbox-works/access-tokens/#creating-and-managing-access-tokens).
 
@@ -105,7 +105,7 @@ Remember that in order to create maps visualizations using Plotly Express, you w
 
 Now that you have worked out all of the code and analysis, you will use the Panel library to build an interactive dashboard for all of the visualizations. There are no hard requirements for the layout of this dashboard, so use your own imagination and creativity!
 
-Create a new `dashboard.ipynb` for your dashboard code. Copy over the code for each visualization and place this into separate functions (1 function per visualization). This will make it easier to build and modify the layout later. Each function should return the plot figure in a format that Panel can use to plot the visualization.
+Create a new `dashboard.ipynb` for your dashboard code. Copy over the code for each visualization and place this into separate functions (one function per visualization). This will make it easier to build and modify the layout later. Each function should return the plot figure in a format that Panel can use to plot the visualization.
 
 Sample Dashboard:
 
