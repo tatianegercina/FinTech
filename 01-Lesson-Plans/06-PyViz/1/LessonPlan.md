@@ -2,21 +2,21 @@
 
 ### Overview
 
-By the end of today's class, students will have gained competency in using hvPlot to create interactive visualizations for data exploration and analysis. The lesson will introduce students to PyViz, a visualization ecosystem built for Python development, and it will focus on the differences and advantages of using interactive plotting technologies (like hvPlot) over technologies that provide static plots (e.g., Pandas and Matplotlib).
+In today's class, students will learn how to use hvPlot to create interactive visualizations for data exploration and analysis. They'll also be introduced to PyViz, a visualization ecosystem built for Python development, with a focus on the differences and advantages of using interactive plotting technologies (like hvPlot) over technologies that provide static plots (e.g., Pandas and Matplotlib).
 
-The goal of this lesson is to educate students on how revolutionary interactive plots are, as well as enable them to create their own interactive visualizations that can be used to provide self-service data analysis and data exploration. Most importantly, today's class will teach students how to tell and interpret stories through data.
+The goal of this lesson is to educate students on how revolutionary interactive plots are, and enable them to create their own interactive visualizations for self-service data analysis and data exploration. Most importantly, today's class will teach students how to tell and interpret stories through data.
 
 ### Class Objectives
 
-By the end of this class, students will be able to:
+By the end of class, students will be able to:
 
 * Comprehend the why, what, and how of data visualization
 
-* Explain the use cases for the different visualization libraries
+* Explain the use cases for different visualization libraries
 
-* Describe PyViz origin story
+* Describe the PyViz origin story
 
-* Set up PyViz ecosystem
+* Set up the PyViz ecosystem
 
 * Create interactive charts using hvPlot
 
@@ -24,17 +24,17 @@ By the end of this class, students will be able to:
 
 * Compose and overlay visualizations using hvPlot
 
-* Customize and Interpret data visualizations
+* Customize and interpret data visualizations
 
 ---
 
 ### Instructor Notes
 
-* As a reminder, slack out the [PyViz Installation Guide](../Supplemental/PyVizInstallationGuide.md). Tell students that they need to have PyViz installed prior to class today and to use office hours to debug any problems.
+* As a reminder, slack out the [PyViz Installation Guide](../Supplemental/PyVizInstallationGuide.md). Tell students that they should already have PyViz installed for class today, and to use office hours to debug any problems.
 
-* Welcome to the first day of programming with PyViz and interactive plotting! You will be guiding students through a series of increasingly complex activities, which serve as the foundation for the next class as well as the homework. The class should feel like an evenly paced introduction to PyViz that provides a challenge and engages students with relatable use cases.
+* Welcome to the first day of programming with PyViz and interactive plotting! You will guide students through a series of increasingly complex activities, which serve as the foundation for the next class, as well as the homework. Today's class should feel like an evenly paced introduction to PyViz that both challenges students and engages them with relatable use cases.
 
-* Today's class will introduce students to fundamental PyViz concepts, including what PyViz is, technologies included within the ecosystem, and factors that make interactive plotting different from static plotting.
+* Today's class will introduce students to what PyViz is, fundamental PyViz concepts and technologies within the ecosystem, and factors that make interactive plotting different from static plotting.
 
 * Look for opportunities to include real-world examples in your lectures to make concepts more concrete and relatable for students. Feel free to draw upon your own experience using interactive visualization technologies in the professional world.
 
@@ -42,9 +42,9 @@ By the end of this class, students will be able to:
 
   * Make sure to emphasize the real-world use cases of visualizing real estate, such as finding the best place to move to, since some students may not find the real estate market as exciting as the stock market.
 
-* A key to today's class is getting students to not only create visualizations but also to explore their visualizations using widgets. Therefore, each assignment will serve two purposes: coding the visualization and analyzing the visualization to make key insights about the data.
+* A key component of today's class will be getting students to not only create visualizations, but to explore their visualizations using widgets. Therefore, each assignment will serve two purposes: coding the visualization, and analyzing the visualization to make key insights about the data.
 
-* Remember that the purpose of this class is not just to teach students how to make interactive plots. Rather, the focus is to teach students how to tell stories through interactive plots, stories that users can deep dive into using the interactive widgets provided by PyViz's technologies.
+* Remember that the purpose of today's class isn't just to teach students how to make interactive plots, but how to use them in order to tell stories, which users can take a deep dive into with the interactive widgets provided by PyViz's technologies.
 
 * Please refer to our [Student FAQ](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
 
@@ -68,13 +68,13 @@ By the end of this class, students will be able to:
 
 ### 1. Instructor Do: Welcome (5 min)
 
-Welcome to Unit 6! Unit 6 is dedicated to introducing and teaching students all they need to know about data visualization using the PyViz visualization platform.
+Welcome to Unit 6! This unit is dedicated to teaching students all they need to know about data visualization using the PyViz visualization platform.
 
 Navigate to the 6.1 slides, and highlight the following:
 
 * Visualizations have already been used in class (Matplotlib plots). However, these visualizations have been static. While static visualizations are helpful in displaying data, the data cannot be interacted with or explored in the same way. For this reason, students will learn how to create interactive plots.
 
-* To create interactive plots, users need to be able to access visualization libraries and packages that offer interactive visualizations. Otherwise, the visualizations would have to be coded manually, which can be extremely cumbersome.
+* To create interactive plots, users must access visualization libraries and packages that offer interactive visualizations. Otherwise, visualizations have to be coded manually, which can be extremely cumbersome.
 
 * PyViz is a data visualization ecosystem made specifically for Python. PyViz itself works as a wrapper around these various technologies.
 
@@ -82,7 +82,7 @@ Navigate to the 6.1 slides, and highlight the following:
 
 * PyViz aims to provide a single stop-and-shop space for all data visualization needs.
 
-* The creators of PyViz recognize that one technology or package cannot solve all data visualization needs, and so, the creators have created PyViz as a means to provide developers with a platform that enables more than one data visualization package being used for a project.
+* The creators of PyViz recognized that one technology or package cannot solve all data visualization needs. PyViz was created to provide developers with a platform that enables more than one data visualization package to be used for a project.
 
 Transition into a demonstration of the types of visualizations that can be made using PyViz:
 
@@ -90,9 +90,9 @@ Transition into a demonstration of the types of visualizations that can be made 
 
 * Interactive visualizations give users the ability to pan, zoom, and filter data elements and values.
 
-* Interactive visualizations also include functionality that allows data to be sorted off different values based off a simple click.
+* Interactive visualizations also include functionality that allows data to be sorted off different values with a single click.
 
-End the module communicating to students that gone are the days where simple line, bar, and histogram charts satisfied data visualization and data analysis needs. Students will now learn how to create interactive and innovative visualizations.
+End by telling students that gone are the days where simple line, bar, and histogram charts satisfied data visualization and data analysis needs. Students will now learn how to create interactive and innovative visualizations.
 
 Ask for any questions before proceeding.
 
@@ -110,7 +110,7 @@ This activity involves a quick demo and a review of the homework.
 
 * [Homework Rental Analysis Solution](https://github.com/coding-boot-camp/FinTech-Lesson-Plans/blob/master/02-Homework/06-PyViz/Solutions/rental_analysis.ipynb)
 
-Navigate to the Unit 6 Homework Instructions, and communicate the following to the students:
+Navigate to the Unit 6 Homework instructions, and communicate the following:
 
 * This week’s homework focuses on visualizing and analyzing real estate data to identify the best properties in Toronto.
 
@@ -120,7 +120,7 @@ Navigate to the Unit 6 Homework Instructions, and communicate the following to t
 
 * In an investment scenario, offering a way to explore the real estate market interactively gives the investor the power to find properties that are of particular interest to them. In scenarios like these, it is the visualizations that help users make decisions.
 
-Demo the homework solution by giving the students a preview of the solution.
+Demo the homework solution by giving students a preview of the solution.
 
 ![homework_demo](Images/homework_demo.gif)
 
