@@ -244,6 +244,19 @@ Precision is a measure of how close elements are to each other.  Accuracy is a m
 </details>
 
 <details>
+<summary>How are bias and variance different?</summary>
+
+Bias and variance are related to precision and accuracy.  While precision and accuracy are qualitative terms describing agreement between a prediction and the target, bias and variance are quantitative terms describing that agreement.
+
+Specifically, bias is the value of the difference between the target and the average of the predictions.  Variance is the value of the difference between the values themselves.
+
+To build on the imagery from precision and accuracy:
+
+<img src='Images/bias_var.png' width = 650>
+
+
+</details>
+<details>
 <summary>How do you use a confusion matrix?</summary>
 
 <blockquote>
