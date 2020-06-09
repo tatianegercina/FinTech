@@ -411,7 +411,7 @@ Transition into a demo of the widget bar by opening the solution file and highli
 
   ![hvplot_all_actions.png](Images/hvplot_all_actions.gif)
 
-Ask for any questions before continuing to the student activity.
+Ask for any questions before moving on.
 
 ---
 
@@ -471,7 +471,7 @@ This activity teaches students how to create plot layouts and overlay visualizat
 
 Navigate to the 6.1 unit slides, and highlight the following:
 
-* One of the most powerful and valuable features that hvPlot provides is the ability to compose multiple visualizations.
+* One of the most valuable and powerful features that hvPlot provides is the ability to compose multiple visualizations.
 
 * Composing plots is a quick and easy way to create a plot with subplots.
 
@@ -511,11 +511,11 @@ Answer any questions before moving on to the next activity.
 
 ### 13. Student Do: Composing Masterpieces (10 min)
 
-Students will complete an activity where they use the information learned in the instructor demo to customize their hvPlots. Students will use a range of options to customize the color, labels, and axis alignments.
+In this activity, students will use information they learned in the instructor demo to customize hvPlots, using a range of options to customize the color, labels, and axis alignments.
 
-Circulate through the room while students are completing the activity. Look to identify a student who completes the activity first or who seems to be helping peers. Ask this student if they'd like to volunteer to do a dry walkthrough activity session.
+Circulate through the room while students work. If there is a student who completes the activity first or seems to be helping peers, ask if they'd like to volunteer to do a dry walkthrough for the review activity.
 
-Encourage other students who finish early to help their classmates with one-on-one troubleshooting.
+Encourage any students who finish early to help their classmates with one-on-one troubleshooting.
 
 Data for this activity was acquired from [catalog.data.gov](https://catalog.data.gov/dataset/usda-rural-development-single-family-section-502-direct-active-loans-by-congressional-dist).
 
