@@ -285,7 +285,7 @@ Answer any questions before moving on.
 
 ### 6. Instructor Do: Variables (10 min)
 
-**Corresponding Activity:** [Ins_Variables](Activities/04_Ins_Variables)
+**Corresponding Activity:** [Ins_Variables](Activities/04-Ins_Variables)
 
 In this section, students will learn how to use variables in Python to perform value assignment and store and recall data.
 
@@ -417,7 +417,7 @@ Answer any questions before moving on.
 
 ### 7. Student Do: Hello Variable World (10 min)
 
-**Corresponding Activity:** [Stu_Variables](Activities/05_Stu_Variables)
+**Corresponding Activity:** [Stu_Variables](Activities/05-Stu_Variables)
 
 In this activity, students will learn how to perform calculations and operations using variables. Students will find the percent increase of Apple stock and complete coding drills.
 
@@ -505,7 +505,7 @@ Ask if there are any questions before moving on.
 
 ### 9. Instructor Do: Conditionals (10 min)
 
-**Corresponding Activity:** [Ins_Conditionals](Activities/06_Ins_Conditionals)
+**Corresponding Activity:** [Ins_Conditionals](Activities/06-Ins_Conditionals)
 
 In this section, students will learn how to apply logic to the values assigned to variables. This establishes a workflow in which a program exhibits a specific behavior based on the evaluation of a condition.
 
@@ -699,7 +699,7 @@ Answer any questions before moving on.
 
 ### 10. Student Do: The Conditional Conundrum (15 min)
 
-**Corresponding Activity:** [Stu_Conditionals](Activities/07_Conditionals)
+**Corresponding Activity:** [Stu_Conditionals](Activities/07-Stu_Conditionals)
 
 In this activity, students will create a Python script that implements conditional statements using the comparison and logical operators.
 
@@ -855,7 +855,7 @@ Answer any questions before moving on.
 
 ### 13. Instructor Do: For Loops (10 min)
 
-**Corresponding Activity:** [Ins_Loops](Activities/08_Ins_Loops)
+**Corresponding Activity:** [Ins_Loops](Activities/08-Ins_Loops)
 
 **Files:**
 
@@ -997,7 +997,7 @@ Answer any questions before moving on.
 
 ### 14. Student Do: Loop De Loop (15 min)
 
-**Corresponding Activity:** [Stu_Loops](Activities/08_Stu_Loops)
+**Corresponding Activity:** [Stu_Loops](Activities/09-Stu_Loops)
 
 In this activity, students will work with for loops in a Python file. The objective is to adapt the for loop concepts and actions in the previous instructor demo by creating a cheerleading Python program that loops through the characters of a string.
 
@@ -1077,7 +1077,7 @@ Answer any questions before moving on.
 
 ### 16. Instructor Do: Pseudocoding (10 min)
 
-**Corresponding Activity:** [Ins_Pseudocoding](Activities/10_Ins_Pseudocoding)
+**Corresponding Activity:** [Ins_Pseudocoding](Activities/10-Ins_Pseudocoding)
 
 In this section, students will be introduced to pseudocoding, which will help them approach coding activities in this course as well as real-world professional settings and job interviews. You will demo how to pseudocode using an example from the previous activity.
 
@@ -1180,7 +1180,7 @@ Answer any questions before moving on.
 
 ### 17. Student Do: Conditionally Yours, Part 1 (10 min)
 
-**Corresponding Activity:** [Stu_Pseudocoding](Activities/11_Stu_Pseudocoding)
+**Corresponding Activity:** [Stu_Pseudocoding](Activities/11-Stu_Pseudocoding)
 
 In this activity, students will pseudocode a solution to recommend whether or not a stock should be purchased, based on a specific threshold of percentage increase or decrease. When students have finished pseudocoding, they will implement their algorithm. The objective of the assignment is for the students to learn how to pseudocode solutions prior to developing them.
 
@@ -1192,7 +1192,7 @@ In this activity, students will pseudocode a solution to recommend whether or no
 
 ### 18. Student Do: Conditionally Yours, Part 2 (15 min)
 
-**Corresponding Activity:** [Stu_Challenge_Activity](Activities/12_Stu_Challenge_Activity)
+**Corresponding Activity:** [Stu_Challenge_Activity](Activities/12-Stu_Challenge_Activity)
 
 In this activity, students will leverage the pseudocode they created in the previous activity to develop a program that will recommend whether or not a stock should be purchased based on a specific threshold of percentage increase or decrease. The objective of the assignment is for the students to learn how to evolve pseudocode into an algorithm or program.
 
