@@ -191,7 +191,7 @@ Ask if there are any questions, and then move on to the student activity.
 
 ### 3. Student Do: Plotting with Plotly (10 min)
 
-Students complete an activity where they create scatter plots using Plotly Express. This activity will reinforce to students that while Plotly Express has the same plotting APIs as other technologies, Plotly Express's provides their own flavors and twists.
+For this activity, students will create scatter plots using Plotly Express. This exercise will reinforce that while Plotly Express has the same plotting APIs as other technologies, Plotly Express' provides their own flavors and twists.
 
 Data for this activity was acquired from [catalog.data.gov](https://catalog.data.gov/dataset/allegheny-county-mortgage-foreclosure-records).
 
@@ -238,17 +238,17 @@ Open the solution and conduct a dry walkthrough.
 
     ![plotly_example_scatter.png](Activities/02-Stu_Plotting_w_Plotly/Images/plotly_example_scatter.png)
 
-Explore the data with the students. Encourage students to follow along and complete the same interactions.
+Explore the data, encouraging students to follow along and complete the same interactions.
 
 * Zoom in on the municipalities with the highest number of foreclosures.
 
   ![explore_highest_foreclosures.gif](Images/explore_highest_foreclosures.gif)
 
-* Zoom in on the City of Clairton data points. Use the box select widget to highlight only the City of Clairton data (which will also fade out any other data points reflected at the time). Deep dive into the data for 2014.
+* Zoom in on the City of Clairton data points. Use the box select widget to highlight only the City of Clairton data (which will also fade out any other data points reflected at the time). Take a deep dive into the 2014 data.
 
-  * Communicate to students that the City of Clairton data for 2014 could be considered an outlier or data quality issue. Interactive visualizations allow users to get a closer look into outlying data points, which could communicate a need for further investigation and data exploration to understand the outlier better.
+  * Communicate to students that the City of Clairton data for 2014 could be considered an outlier, or data quality issue. Interactive visualizations allow users to get a closer look into outlying data points, which could communicate a need for further investigation and data exploration to better understand the outlier.
 
-  * Without the ability to interact with data points via technologies like Plotly Express, spotting outliers could be like spotting a needle in a haystack. The process would be less efficient and arguably less effective.
+  * Without the ability to interact with data points via technologies like Plotly Express, spotting outliers could be like finding a needle in a haystack. The process would be less efficient, and arguably less effective.
 
   ![explore_outlier.gif](Images/explore_outlier.gif)
 
@@ -266,7 +266,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 * [parallel_coordinate.ipynb](Activities/03-Ins_Parallel_Coordinate/Solved/parallel_coordinates.ipynb)
 
-Open the solved solution file and conduct a dry walkthrough. While walking through the solved file, highlight the below discussion points. Make sure to place particular emphasis on the what and why of parallel coordinate plots so students understand their use case and when they should be applied.
+Open the solved solution file and conduct a dry walkthrough. While walking through the solved file, highlight the discussion points below. Make sure to place particular emphasis on the what and why of parallel coordinate plots, so students understand their use case and when they should be applied.
 
 Walkthrough the syntax required to create a parallel coordinate plot:
 
@@ -286,7 +286,7 @@ Walkthrough the syntax required to create a parallel coordinate plot:
 
   ![parallel_coordinates.gif](Images/parallel_coordinates.gif)
 
-* Communicate that parallel coordinate plots allow for multiple variables to be represented in parallel to one another. This is particularly valuable when tracing the relationships between variables and how each variable relates to and affects the other.
+* Communicate that parallel coordinate plots allow for multiple variables to be represented in parallel to one another. This is particularly valuable when tracing the relationships between variables, and how each variable relates to and affects the other.
 
 * By sorting the axes and filtering values, analysts can cluster attributes to assess relationships and trends.
 
