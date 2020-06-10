@@ -469,7 +469,7 @@ This activity teaches students how to create plot layouts and overlay visualizat
 
 * [composing_plots.ipynb](Activities/05-Ins_Composing_Plots/Solved/composing_plots.ipynb)
 
-Navigate to the 6.1 unit slides, and highlight the following:
+Go to the slideshow, navigate to the Composing Plots instructor demo section, and highlight the following:
 
 * One of the most valuable and powerful features that hvPlot provides is the ability to compose multiple visualizations.
 
