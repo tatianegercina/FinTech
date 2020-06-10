@@ -90,7 +90,7 @@ Ask for any questions before moving on.
 
 ### 2. Instructor Do: Plotly Express Demo (10 min)
 
-By the end of this activity, students will have received a live coding demonstration of creating Plotly Express plots. The goal is to demonstrate to students the ease and efficiency of creating plots using the Plotly Express **scatter** plot interface.
+In this activity, students will watch a live coding demonstration on creating Plotly Express plots. The goal is to demonstrate the ease and efficiency of creating plots using the Plotly Express **scatter** plot interface.
 
 Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/choose-maryland-compare-counties-quality-of-life-78090/resource/affe2417-de10-42cd-90cd-9dd9447d6de5).
 
@@ -98,7 +98,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 * [plotly_demo.ipynb](Activities/01-Ins_Plotly_Exp_Demo/Unsolved/plotly_demo.ipynb)
 
-Navigate to the 6.2 slides, and quickly highlight the following:
+Open the slideshow, navigate to [add section name here], and quickly highlight the following:
 
 * Plotly Express works much like hvPlot, giving users a simple `plot` based interface that allows developers to create and customize interactive visualizations.
 
@@ -146,7 +146,7 @@ Open the starter file provided and live code, creating a scatter plot using Plot
 
     ![plotly_scatter.png](Images/plotly_scatter.png)
 
-* Create another scatter plot comparing the cost of living index to the number of housing units sold to determine if the higher cost of living index can be correlated to the number of sales.
+* Create another scatter plot that compares the cost of living index to the number of housing units sold, to determine if the higher cost of living index can be correlated to the number of sales.
 
   * Use **Cost of Living Index** as `x`.
 
@@ -169,19 +169,19 @@ Open the starter file provided and live code, creating a scatter plot using Plot
 
 Use the Plotly Express interactivity features and widget bar to interact with the visualization.
 
-  * Hover over the circles to review actual data
+  * Hover over the circles to review actual data.
 
   * Use the **zoom** widget to zoom in on counties with a cost of living index between 100 and 110.
 
       ![plotly_interaction.gif](Images/plotly_interaction.gif)
 
-If time remains, ask students some of the following questions:
+If time remains, ask students the following questions:
 
 * What story do these visualizations tell about the real estate market in Maryland?
 
   * **Answer** The higher the cost of living, the higher the number of housing units sold. More homes are being sold in areas with a higher cost of the index, which can be related to the quality of the homes, the population size of the counties, etc. It also shows that more and more individuals are gravitating toward the areas with higher cost.
 
-* Which county could be an up-and-coming real-estate opportunity? Why?
+* Which county could be an up-and-coming real estate opportunity? Why?
 
   * **Answer** Baltimore City. Baltimore City has an average real-estate sale price of less than $200,000, and the cost of living index is only 1.3% higher. This county has the lowest prices with decent sales volume. Because of the number of sales, it seems the market is active with buying opportunities. While it might be too late to get involved, it's definitely a hot spot.
 
@@ -189,7 +189,7 @@ Ask if there are any questions, and then move on to the student activity.
 
 - - -
 
-### 3. Students Do: Plotting with Plotly (10 min)
+### 3. Student Do: Plotting with Plotly (10 min)
 
 Students complete an activity where they create scatter plots using Plotly Express. This activity will reinforce to students that while Plotly Express has the same plotting APIs as other technologies, Plotly Express's provides their own flavors and twists.
 
