@@ -28,15 +28,15 @@ By the end of class, students will be able to:
 
 * Because this lesson is using an API, make sure to sign up for a Mapbox API key using this [link](https://account.mapbox.com/auth/signup/). Create a `.env` file to store your API key, and use `python-dotenv` to make it callable in Python.
 
-* Throughout the day, reinforce to students the importance and power of interactive plotting. The widgets, automatic color formatting and skins, and plot types can all be accessed and manipulated with ease. The plots being created by Plotly Express would have taken someone in the past hours to create. Plotly Express does it in seconds.
+* Throughout the day, reinforce to students the importance and power of interactive plotting. The widgets, automatic color formatting and skins, and plot types can all be accessed and manipulated with ease. The plots being created by Plotly Express would have taken a person hours to create in the past; Plotly Express does it in seconds.
 
-* Keep pacing in mind while progressing through the day. Allow students to ask questions. When necessary, ask students to save questions for the review sessions. Encourage students to collaborate on activities.
+* Keep pacing in mind while moving through the lesson. Allow students to ask questions, and when necessary, ask students to hold their questions for the review sessions. Adhere to the Time Tracker as closely as possible. 
 
-* The pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage confused students to attend office hours.
+* The pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer assistance. Encourage students to collaborate on activities, and remind them about attending office hours for support.
 
-* Slack out the PyViz install guide to students so that they have ample time to install and confirm the installation of Plotly Express and its Jupyter plugin.
+* Slack out the PyViz install guide to students so they have ample time to install Plotly Express and its Jupyter plugin.
 
-* Due to the amount of content that needs to be covered in this lesson, there will be no class time dedicated to system checks. Communicate to students that they must have Plotly Express installed and running before coming to class. Any challenges or issues should be worked out with a TA.
+* Due to the amount of content covered in this lesson, there will be no class time dedicated to system checks. Communicate to students that they must have Plotly Express installed and running before coming to class. Any challenges or issues should be worked out with a TA.
 
 * Have your TAs keep track of time with the Time Tracker.
 
@@ -48,7 +48,7 @@ By the end of class, students will be able to:
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson 6.2 Slides](https://docs.google.com/presentation/d/19qivsXUwDt_RDsHQ3qRJzgSXlDLEOJmsXpPqSFhxG9A/edit?usp=sharing).
 
-To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
