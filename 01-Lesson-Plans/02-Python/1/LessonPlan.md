@@ -100,6 +100,8 @@ Slack out the following link to students. Tell them that this is a great resourc
 
 ### 2. Instructor Do: Introduction to JupyterLab (5 min)
 
+**Corresponding Activity:** [Ins_JupyterLab](Activities/01-Ins_JupyterLab)
+
 In this section, you will introduce JupyterLab. Students should already have Anaconda and JupyterLab installed and can proceed to first-time setup. If not, distribute the following installation guidelines to the class.
 
 **Files:**
@@ -171,6 +173,9 @@ Pause here to check if students are able to launch JupyterLab. If any students a
 
 ### 3. Instructor Do: Creating Projects with JupyterLab (10 min)
 
+**Corresponding Activity:** [Ins_Jupyter_Project](Activities/02-Ins_Jupyter_Project)
+
+
 Walk through the following slides and then proceed to the instructor activity on creating projects with JupyterLab.
 
 **Files:**
@@ -214,6 +219,9 @@ Answer any questions before moving on.
 ---
 
 ### 4. Student Do: Creating a JupyterLab Project (10 min)
+
+**Corresponding Activity:** [Stu_Jupyter_Project](Activities/03-Stu_Jupyter_Project)
+
 
 In this activity, students will create a JupyterLab project and run a Python `hello world` print statement in a Python notebook.
 
@@ -276,6 +284,8 @@ Answer any questions before moving on.
 ---
 
 ### 6. Instructor Do: Variables (10 min)
+
+**Corresponding Activity:** [Ins_Variables](Activities/04_Ins_Variables)
 
 In this section, students will learn how to use variables in Python to perform value assignment and store and recall data.
 
@@ -407,6 +417,8 @@ Answer any questions before moving on.
 
 ### 7. Student Do: Hello Variable World (10 min)
 
+**Corresponding Activity:** [Stu_Variables](Activities/05_Stu_Variables)
+
 In this activity, students will learn how to perform calculations and operations using variables. Students will find the percent increase of Apple stock and complete coding drills.
 
 **File:** [hello_variable_world.py](Activities/05-Stu_Variables/Unsolved/Core/hello_variable_world.py)
@@ -492,6 +504,8 @@ Ask if there are any questions before moving on.
 ---
 
 ### 9. Instructor Do: Conditionals (10 min)
+
+**Corresponding Activity:** [Ins_Conditionals](Activities/06_Ins_Conditionals)
 
 In this section, students will learn how to apply logic to the values assigned to variables. This establishes a workflow in which a program exhibits a specific behavior based on the evaluation of a condition.
 
@@ -685,6 +699,8 @@ Answer any questions before moving on.
 
 ### 10. Student Do: The Conditional Conundrum (15 min)
 
+**Corresponding Activity:** [Stu_Conditionals](Activities/07_Conditionals)
+
 In this activity, students will create a Python script that implements conditional statements using the comparison and logical operators.
 
 **Instructions:** [README.md](Activities/07-Stu_Conditionals/README.md)
@@ -839,6 +855,8 @@ Answer any questions before moving on.
 
 ### 13. Instructor Do: For Loops (10 min)
 
+**Corresponding Activity:** [Ins_Loops](Activities/08_Ins_Loops)
+
 **Files:**
 
 * [For Loops Slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g58d1bae602_0_153)
@@ -979,6 +997,8 @@ Answer any questions before moving on.
 
 ### 14. Student Do: Loop De Loop (15 min)
 
+**Corresponding Activity:** [Stu_Loops](Activities/08_Stu_Loops)
+
 In this activity, students will work with for loops in a Python file. The objective is to adapt the for loop concepts and actions in the previous instructor demo by creating a cheerleading Python program that loops through the characters of a string.
 
 **File:** [cheer.py](Activities/09-Stu_Loops/Unsolved/cheer.py)
@@ -1056,6 +1076,8 @@ Answer any questions before moving on.
 ---
 
 ### 16. Instructor Do: Pseudocoding (10 min)
+
+**Corresponding Activity:** [Ins_Pseudocoding](Activities/10_Ins_Pseudocoding)
 
 In this section, students will be introduced to pseudocoding, which will help them approach coding activities in this course as well as real-world professional settings and job interviews. You will demo how to pseudocode using an example from the previous activity.
 
@@ -1158,6 +1180,8 @@ Answer any questions before moving on.
 
 ### 17. Student Do: Conditionally Yours, Part 1 (10 min)
 
+**Corresponding Activity:** [Stu_Pseudocoding](Activities/11_Stu_Pseudocoding)
+
 In this activity, students will pseudocode a solution to recommend whether or not a stock should be purchased, based on a specific threshold of percentage increase or decrease. When students have finished pseudocoding, they will implement their algorithm. The objective of the assignment is for the students to learn how to pseudocode solutions prior to developing them.
 
 **File:** [conditionally_yours.py](Activities/11-Stu_Pseudocoding/Unsolved/conditionally_yours_part_1.py)
@@ -1167,6 +1191,8 @@ In this activity, students will pseudocode a solution to recommend whether or no
 ---
 
 ### 18. Student Do: Conditionally Yours, Part 2 (15 min)
+
+**Corresponding Activity:** [Stu_Challenge_Activity](Activities/12_Stu_Challenge_Activity)
 
 In this activity, students will leverage the pseudocode they created in the previous activity to develop a program that will recommend whether or not a stock should be purchased based on a specific threshold of percentage increase or decrease. The objective of the assignment is for the students to learn how to evolve pseudocode into an algorithm or program.
 
