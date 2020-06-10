@@ -168,7 +168,7 @@ Go to the slideshow, navigate to the hvPlot section, and introduce students to t
 
 * Explain to students that hvPlot is a technology that brings plots to life.
 
-* HvPlot abstracts over Python visualization libraries like Matplotlib, Pandas, and Streamz. The abstraction allows hvPlot to utilize the stand-alone plotting mechanisms of these technologies.
+* HvPlot abstracts over Python visualization libraries like Matplotlib, Pandas, and Streamz. The abstraction allows hvPlot to utilize the standalone plotting mechanisms of these technologies.
 
 * HvPlot provides the FinTech industry with a new way of interacting with financial data. Instead of analyzing ledgers, finance professionals can just explore an interactive plot and digest large datasets visually.
 
