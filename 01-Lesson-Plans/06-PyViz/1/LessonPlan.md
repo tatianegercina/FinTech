@@ -164,7 +164,7 @@ Ask if there are any questions before moving on.
 
 Students will now participate in a lecture on what hvPlot is, and its data visualization offerings.
 
-Navigate to the 6.1 slides, and introduce students to the world of hvPlot interactive graphs!
+Go to the slideshow, navigate to the hvPlot section, and introduce students to the world of hvPlot interactive graphs!
 
 * Explain to students that hvPlot is a technology that brings plots to life.
 
