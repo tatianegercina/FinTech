@@ -58,9 +58,9 @@ The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students back! Indicate that today will start day 2 of interactive visualizations using PyViz.
+Welcome students back! Indicate that this is the start of Day 2 for interactive visualizations using PyViz.
 
-Begin the class explaining to students that **hvPlot** is not the only visualization package that can be used to create interactive visualizations.
+Start the class by explaining that **hvPlot** is not the only visualization package that can be used to create interactive visualizations.
 
 * Plotly Express is a package similar to hvPlot, offering many of the same plots as hvPlot (bar, line, scatter, etc.) but more as well (e.g., parallel coordinates and parallel categories plots).
 
@@ -68,11 +68,11 @@ Begin the class explaining to students that **hvPlot** is not the only visualiza
 
 * Plotly Express is a leader in data visualization and supports multiple programming languages, like Python, JavaScript, and R.
 
-* Emphasize that Plotly Express offers advanced statistical and financial charts that technologies are lacking in technologies like hvPlot.
+* Emphasize that Plotly Express offers advanced statistical and financial charts that are lacking in technologies like hvPlot.
 
-* Indicate that by the end of this class, students will have learned how to create visualizations using Plotly Express and have gained knowledge and skills that data scientists and analysts are using in the industry today.
+* Tell students that by the end of class, they will know how to create visualizations using Plotly Express and gain valuable skills and knowledge that data scientists and analysts are actively using in the industry today.
 
-If time remains, provide students with some sample visualizations of the types of plots being made with Plotly Express. Use this [site](https://plot.ly/python/plotly-express/#visualize-distributions) for examples.
+If time remains, share some sample visualizations of the types of plots being made with Plotly Express. Use this [site](https://plot.ly/python/plotly-express/#visualize-distributions) for examples.
 
 * Use the left navigation pane, and select the following pages. Remember to highlight and focus on how Plotly's unique plot types work toward telling a story.
 
@@ -84,7 +84,7 @@ If time remains, provide students with some sample visualizations of the types o
 
   * [Maps](https://plot.ly/python/plotly-express/#maps)
 
-Ask if there are any questions before moving on.
+Ask for any questions before moving on.
 
 - - -
 
