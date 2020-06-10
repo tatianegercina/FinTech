@@ -70,7 +70,7 @@ By the end of class, students will be able to:
 
 Welcome to Unit 6! This unit is dedicated to teaching students all they need to know about data visualization using the PyViz visualization platform.
 
-Navigate to the 6.1 slides, and highlight the following:
+Open the slideshow, navigate to the PyViz section, and highlight the following:
 
 * Visualizations have already been used in class (Matplotlib plots). However, these visualizations have been static. While static visualizations are helpful in displaying data, the data cannot be interacted with or explored in the same way. For this reason, students will learn how to create interactive plots.
 
