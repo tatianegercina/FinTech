@@ -138,7 +138,7 @@ Navigate to the 6.1 slides, and highlight the following:
 
 * PyViz is a data visualization ecosystem that gives developers an easy way to access multiple data visualization libraries at one time.
 
-* Each visualization technology in the PyViz ecosystem has the power and features to provide stand-alone visualizations. Each technology also has its strengths and weaknesses, which will be explored later.
+* Each visualization technology in the PyViz ecosystem has the power and features to provide standalone visualizations. Each technology also has its strengths and weaknesses, which will be explored later.
 
 * PyViz’s platform allows the integration of different visualization technologies to create dashboards (which can be done with PyViz’s Panel software). This is pivotal for FinTech, as PyViz provides all the necessary tools needed to create financial dashboards for personal and corporate use.
 
