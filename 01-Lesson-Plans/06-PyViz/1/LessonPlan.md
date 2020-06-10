@@ -134,7 +134,7 @@ Students will now be introduced to PyViz with a facilitated instructor-led discu
 
 Communicate to students that the Python environment is packed with a number of different visualization technologies that are all wrapped together into one platform, called PyViz.
 
-Go to the slideshow, navigate to the PyViz Instructor Demo section, and highlight the following:
+Go to the slideshow, navigate to the PyViz Instructor Demo slide, and highlight the following:
 
 * PyViz is a data visualization ecosystem that gives developers an easy way to access multiple data visualization libraries at one time.
 
