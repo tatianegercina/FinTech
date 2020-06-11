@@ -4,7 +4,7 @@ Congratulations! You've been invited to the second round of the REMAX interview 
 
 The interviewers are satisfied with your skills in **hvPlot**, and now want to better understand your competency by using **Plotly Express**. REMAX uses the **Plotly** platform, so the team wants to confirm that you are a good fit for their current development ecosystem.
 
-Using **Plotly Express** and the provided real estate data, correlate the Pennsylvania Allegheny County sales data with foreclosures. Your goal is to demonstrate your understanding of real estate reporting requirements and ability to develop visualizations that tell stories through data, especially relative to market targeting.
+Using **Plotly Express** and the provided real estate data, correlate the Pennsylvania Allegheny County sales data with foreclosures. Your goal is to demonstrate your understanding of real estate reporting requirements as well as your ability to develop visualizations that tell stories through data, especially relative to market targeting.
 
 Complete this activity successfully, and you'll continue onto the next phase of the interview process!
 
