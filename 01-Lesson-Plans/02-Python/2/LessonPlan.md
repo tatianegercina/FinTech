@@ -635,8 +635,6 @@ Answer any questions before moving on.
 
 ### 8. Instructor Do: Introduction to Dictionaries (5 min)
 
-**Corresponding Activity:** [Ins_Nesting](Activities/07-Ins_Nesting)
-
 **File:** [Dicts Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_163)
 
 Use the [slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_163) while you explain the following:
@@ -688,7 +686,7 @@ Answer any questions before moving on.
 
 ### 9. Instructor Do: Dicts (5 min)
 
-**Corresponding Activity:** [Ins_Dictionaries](Activities/09-Ins_Dictionaries)
+**Corresponding Activity:** [Ins_Dictionaries](Activities/05-Ins_Dictionaries)
 
 **File:** [dicts.py](Activities/05-Ins_Dictionaries/Solved/dicts.py)
 
