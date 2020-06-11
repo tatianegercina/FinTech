@@ -312,9 +312,9 @@ Ask if there are any questions before moving on.
 
 ### 6. Student Do: Plotting in Parallel (15 min)
 
-Students complete a bridge activity where they revisit a previously used dataset that was visualized using scatter plots. Students now visualize the data using a parallel coordinates plot.
+Now students will complete a bridge activity where they revisit a previously used dataset that was visualized using scatter plots. Students will visualize the data using a parallel coordinates plot.
 
-This will be the students' first time working with parallel coordinate plots. Instruct TAs to circulate to provide assistance. Encourage students who finish early to assist their classmates.
+This will be the first time students work with parallel coordinate plots. Ask TAs to circulate to provide assistance, and  encourage students who finish early to help their classmates.
 
 **Instructions:**
 
@@ -342,9 +342,9 @@ Kick off the review session by asking some of the questions below.
 
   * **Answer:** Scatter plots visualize the relationship between two data points as an intersection. Parallel coordinate plots visualize the relationship between two data points as parallel axes.
 
-  * **Answer:** **Scatter plots** inherently use two axes. Whereas, parallel coordinates are built for multivariate analysis and can have 2-plus axes.
+  * **Answer:** **Scatter plots** inherently use two axes, while parallel coordinates are built for multivariate analysis and can have two or more axes.
 
-* In terms of interaction, which plot do you feel allows you to gain more value from the interaction?
+* In terms of interaction, which plot allows you to gain more value from the interaction?
 
   * **Answer:** The parallel coordinate plot offers limited opportunities for interaction, which makes the scatter plot more fitted for interacting with plots. However, parallel coordinate plots structurally allow for relationships to be traced more effectively and efficiently.
 
