@@ -599,7 +599,7 @@ Ask for any questions before moving onto the next activity.
 
 ### 13. Student Do: Mapping Adventures (15 min)
 
-Students repeat the steps demonstrated by the instructor in order to create their own Plotly Mapbox scatter plots. Students will integrate Plotly and Mapbox to create their first geographical visualizations.
+In this activity, students shall repeat the steps that were just demonstrated by the instructor in order to create their own Plotly Mapbox scatter plots. Students will integrate Plotly and Mapbox to create their first geographical visualizations.
 
 Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/areas-of-interest-gis).
 
@@ -615,7 +615,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 ### 14. Instructor Do: It's a Map Plot Activity Review (10 min)
 
-This review activity will consist of two parts. The first part will be a dry walkthrough of the Mapping Adventures student assignment. The second will consist of a facilitated discussion and student presentation of the top places they'd go to for Harold's birthday.
+This review activity consists of two parts. The first part is a dry walkthrough of the Mapping Adventures student assignment. The second will consist of a facilitated discussion and student presentation of the top places they'd go to for Harold's birthday.
 
 **Files:**
 
@@ -629,23 +629,21 @@ Open the solution and conduct a dry walkthrough:
 
   ![plotting_adventures.gif](Images/plotting_adventures.gif)
 
-* The scatter mapbox plot can be created using the `scatter_mapbox` function. The function has three key parameters: DataFrame, latitude field, and longitude field. Color is also an acceptable argument, which accepts a DataFrame column as its value.
+* The scatter mapbox plot can be created using the `scatter_mapbox` function. The function has three key parameters: DataFrame, latitude field, and longitude field. Colour is also an acceptable argument, which accepts a DataFrame column as its value.
 
   ![scatter_mapbox.png](Images/scatter_mapbox.png)
 
 Next, transition into the presentation portion of the review.
 
-* Ask if any students would like to present the three places they'd choose to go to. If no one volunteers to present, go around the room round-robin style in place of volunteers.
+* Ask if any students would like to present the three places they would choose to go to. If no one volunteers, go around the room, round-robin style.
 
 Ask for any remaining questions before moving on.
 
 - - -
 
-### 15. Students Do: A Cartographer's Expedition (20 min)
+### 15. Student Do: A Cartographer's Expedition (20 min)
 
-Students create map plots to embark on a virtual expedition through New York City to various places of interest.
-
-Indicate to students that they should work in teams of two or three to plan the trip together.
+In this group activity, students will work in groups of two or three in order to create map plots to embark on a virtual expedition through New York City to various places of interest.
 
 **Instructions:**
 
@@ -665,11 +663,11 @@ In this activity, student groups will present their maps and expeditions to the 
 
 * [cartographers_expedition.ipynb](Activities/09-Stu_Cartographers_Expedition/Solved/cartographers_expedition.ipynb)
 
-Start the activity review by asking if there is a group that wants to volunteer to present their expedition first. Then, ask the following questions. If time remains, ask for a second group to also present.
+Start the activity review by asking if there is a group that wants to volunteer to present their expedition. Then, ask the following questions. If enough time remains, ask a second group to present.
 
-* Ask the group to present their maps and to relay their full expedition.
+* Ask the group to present their maps and relay their full expedition.
 
-  * **Answer:** Airport -> Aqueduct Race Track -> Astoria Park -> Fort Totten -> Juniper Valley Park -> Madison Square
+  * **Answer:** Airport -> Aqueduct Race Track -> Astoria Park -> Fort Totten -> Juniper Valley Park -> Madison Square Garden
 
 * Sometimes, it's difficult to get a good understanding of whether or not two locations are close to each other. Were there any instances where you had to re-choose locations due to them being too far away?
 
@@ -679,7 +677,7 @@ Start the activity review by asking if there is a group that wants to volunteer 
 
   * **Answer:** The data could be sorted by latitude and longitude.
 
-  * **Answer:** Data could have been sliced by borough first, and then places chosen from there.
+  * **Answer:** Data could have been sliced by borough first, with places chosen from there.
 
 * What guided your final decision on locations?
 
@@ -687,7 +685,7 @@ Start the activity review by asking if there is a group that wants to volunteer 
 
 * Were the geographic scatter plots helpful in understanding the distribution of places of interest throughout New York City? How did the visual help cement the image?
 
-  * **Answer:** Yes, the plots were helpful. By color-coding by **PlaceType**, it was easy to see the clusters of each type of place. This helped outline the trek through the boroughs. It was also helpful in noticing trends in the positioning of certain locations (e.g., Ellis and Liberty islands are in the same place, and the forts all seem to be north of Manhattan).
+  * **Answer:** Yes, the plots were helpful. By colour-coding by **PlaceType**, it was easy to see the clusters of each type of place. This helped outline the trek through the boroughs. It was also helpful in noticing trends in the positioning of certain locations (e.g., Ellis and Liberty islands are in the same place, and the forts all seem to be north of Manhattan).
 
 If time remains, ask students to summarize three things they've learned today.
 
@@ -695,7 +693,7 @@ If time remains, ask students to summarize three things they've learned today.
 
 * **Answer:** Map plots can be used to visualize clusters of data points geographically.
 
-* **Answer:** Parallel coordinates and categories plots allow users to visualize correlations but also reorganize variables in order to get a better sense of multivariate relationships.
+* **Answer:** Parallel coordinates and categories plots allow users to visualize correlations, but also reorganize variables in order to get a better sense of multivariate relationships.
 
 Ask for any remaining questions before ending the class.
 
