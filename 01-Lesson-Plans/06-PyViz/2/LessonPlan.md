@@ -597,7 +597,7 @@ Ask for any questions before moving onto the next activity.
 
 - - -
 
-### 13. Student Do: Mapping Adventures (15 min)
+### 13. Student Do: It's a Map Plot (15 min)
 
 In this activity, students shall repeat the steps that were just demonstrated by the instructor in order to create their own Plotly Mapbox scatter plots. Students will integrate Plotly and Mapbox to create their first geographical visualizations.
 
