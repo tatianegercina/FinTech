@@ -2,11 +2,11 @@
 
 Congratulations! You've been invited to the second round of the REMAX interview process for the data analyst role in the Business Intelligence department.
 
-Now satisfied with your skills in **hvPlot**, the interviewers now want to understand your competency better using **Plotly Express**. REMAX  uses the **Plotly** platform, so the team needs to confirm that you'll be a good fit for their current development ecosystem.
+The interviewers are satisfied with your skills in **hvPlot**, and now want to better understand your competency by using **Plotly Express**. REMAX uses the **Plotly** platform, so the team wants to confirm that you are a good fit for their current development ecosystem.
 
-Using **Plotly Express** and the provided real estate data, correlate the Pennsylvania Allegheny County sales data with foreclosures. The goal is to demonstrate to the interviewers that you can understand real estate reporting requirements and develop visualizations that tell stories through data, especially as it relates to market targeting.
+Using **Plotly Express** and the provided real estate data, correlate the Pennsylvania Allegheny County sales data with foreclosures. Your goal is to demonstrate your understanding of real estate reporting requirements and ability to develop visualizations that tell stories through data, especially relative to market targeting.
 
-Complete this activity successfully, and you'll continue onto the next phase of the interview process.
+Complete this activity successfully, and you'll continue onto the next phase of the interview process!
 
 ## Instructions
 
@@ -26,7 +26,7 @@ Complete this activity successfully, and you'll continue onto the next phase of 
 
 ### Challenge
 
-Plot the progression of foreclosures using an area chart to determine if the rate of foreclosures has increased or decreased over the years. Make sure to specify a Series for the `color` and `line_group` attributes.
+Plot the progression of foreclosures using an area chart to determine if the rate of foreclosures has increased or decreased over the years. Make sure to specify a Series for the `colour` and `line_group` attributes.
 
   ![plotly_example_scatter_3.png](Images/plotly_example_scatter_3.png)
 
