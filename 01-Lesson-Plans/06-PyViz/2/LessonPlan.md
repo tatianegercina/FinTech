@@ -518,13 +518,13 @@ To complete this activity, a Mapbox API will be required. A personal key can be 
 
 Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/500-cities-local-data-for-better-health-fc759).
 
-Remember to create your `.env` file to set you Mapbox API key. You can use the `sample.env` file as template.
+Remember to create your `.env` file to set you Mapbox API key. You can use the `sample.env` file as a template.
 
 **Files:**
 
 * [plotly_maps.ipynb](Activities/07-Ins_Mapbox_Demo/Unsolved/plotly_maps.ipynb)
 
-Navigate to the 6.2 slides, and highlight the following:
+Go to the slideshow, navigate to the [section name here] and highlight the following:
 
 * Mapbox API is an open-source API that gives developers a range of mapping visualizations and functions that enable the creation of interactive map plots.
 
@@ -534,9 +534,9 @@ Navigate to the 6.2 slides, and highlight the following:
 
   * These services come with handy tools, such as map styles and vectors, map images and datasets, and live location.
 
-Open the starter file, and live code the following. Make sure to have your Mapbox API key handy. Highlight the discussion points while coding:
+Open the starter file, and live code the following (make sure to have your Mapbox API key handy, and highlight the discussion points while coding):
 
-* Plotly Express has an integration endpoint specific for Mapbox API. This allows Plotly to use the Mapbox Maps API in order to create interactive map visualizations. Plotly Express comes with functions designed specifically for interacting with Mapbox.
+* Plotly Express has an integration endpoint that is specific for Mapbox API. This allows Plotly to use the Mapbox Maps API to create interactive map visualizations. Plotly Express comes with functions designed specifically for interacting with Mapbox.
 
   * Plotly's integration with Mapbbox makes it extremely convenient to use; no other imports are required. All that is needed is the Plotly Express library.
 
@@ -557,7 +557,7 @@ Open the starter file, and live code the following. Make sure to have your Mapbo
 
 * After the token is set with the `set_mapbox_access_token`, the Plotly Express mapbox plot functions can be used to create geographic plots.
 
-Demonstrate how to create a map scatter plot using the Plotly Express `scatter_mapbox` function.
+Demonstrate how to create a map scatter plot using the Plotly Express `scatter_mapbox` function:
 
 * The `scatter_mapbox` function can be used to create a scatter plot that is overlaid on top of a map (provided by Mapbox). This allows for scatter plot data to be analyzed in reference to geographical location.
 
@@ -589,15 +589,15 @@ Demonstrate how to create a map scatter plot using the Plotly Express `scatter_m
 
   * Sampling techniques (e.g., visualizing only top *n* items) to help reduce the amount of data being reflected on the visualization. These approaches will preserve reporting integrity.
 
-Note to students that when datasets become too large to manage or reduce, technologies like [Datashader](http://datashader.org) can also be considered. Datashader specializes in turning large volumes of data into visualizations.
+Inform students that when datasets become too large to manage or reduce, technologies like [Datashader](http://datashader.org) can also be considered. Datashader specializes in turning large volumes of data into visualizations.
 
 * Encourage students to look into technologies like Datashader outside of class.
 
-Ask for any questions before moving onto the student activity.
+Ask for any questions before moving onto the next activity.
 
 - - -
 
-### 13. Students Do: Mapping Adventures (15 min)
+### 13. Student Do: Mapping Adventures (15 min)
 
 Students repeat the steps demonstrated by the instructor in order to create their own Plotly Mapbox scatter plots. Students will integrate Plotly and Mapbox to create their first geographical visualizations.
 
