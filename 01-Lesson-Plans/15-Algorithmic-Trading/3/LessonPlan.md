@@ -43,7 +43,7 @@ By the end of class, students will be able to:
 ---
 
 
-### 1. Instructor Do: Random Forest Trading
+### 1. Instructor Do: Random Forest Trading (15 min)
 
 In this activity, students will learn how to generate a set of trading signals derived from raw BTC/USD data that will be used as features to train a Random Forest machine learning model that will autonomously make predictions and corresponding trades.
 
@@ -237,7 +237,7 @@ Open the solution file and discuss the following:
   (1 + (results['Return'] * results['Predicted Value'])).cumprod().plot()
   ```
 
-* Calculating the cumulative returns of the model by multiplying the daily returns (actual results) against the predicted values shows that the model would have unfortunately lost money from 09-15-2019 to 09-25-2019 trading on BTC/USD hourly prices. This is to be expected, however, as the process for training and using a trading model can be straightforward, but the ability to create a sophisticated trading model that outperforms markets is not - otherwise, there would be no more finance jobs as machines would run the markets!
+* Calculating the cumulative returns of the model by multiplying the daily returns (actual results) against the predicted values shows that the model would have unfortunately lost money from 09-15-2019 to 09-25-2019 trading on BTC/USD hourly prices. This is to be expected, however, as the process for training and using a trading model can be straightforward, but the ability to create a sophisticated trading model that outperforms markets is not--otherwise, there would be no more finance jobs as machines would run the markets!
 
   ![Images/model-cumulative-returns-plot.png](Images/model-cumulative-returns-plot.png)
 
@@ -249,7 +249,7 @@ Open the solution file and discuss the following:
 
 ### 4. Instructor Do: Recap (15 min)
 
-In this activity, instructors will briefly re-cap the process of training and using a Random Forest trading model, discuss the ways in which the model can potentially be improved, and consider deploying the model through alternative means such as AWS' Sagemaker - a machine learning cloud service that enables users to build, train, and deploy machine learning models quickly and conveniently.
+In this activity, instructors will briefly re-cap the process of training and using a Random Forest trading model, discuss the ways in which the model can potentially be improved, and consider deploying the model through alternative means such as AWS' Sagemaker--a machine learning cloud service that enables users to build, train, and deploy machine learning models quickly and conveniently.
 
 Open the slideshow and quickly recap the following. Engage students by having them answer the questions wherever possible:
 
