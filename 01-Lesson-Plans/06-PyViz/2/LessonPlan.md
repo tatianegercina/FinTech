@@ -370,19 +370,19 @@ Ask for any remaining questions before moving on.
 
 ### 9. Instructor Do: Parallel Categories (10 min) (Critical)
 
-In this activity, students continue learning about more advanced statistical plots, like the parallel categories plot by way of an instructor demo. The instructor will demonstrate to students how to create a parallel categories plot, as well as highlight the differences between parallel categories and parallel coordinates.
+In this instructor demo, students will continue learning about more advanced statistical plots, including how to create a parallel categories plot. You will also highlight the differences between parallel categories and parallel coordinates.
 
 **Files:**
 
 * [parallel_categories.ipynb](Activities/05-Ins_Parallel_Categories/Solved/parallel_categories.ipynb)
 
-Navigate to the 6.2 slides, and highlight the following:
+Open the slideshow, navigate to the [section name here] and highlight the following:
 
 * Whereas parallel coordinate plots are used for multivariate analysis and mapping relationships between variables, parallel categories plots are used to perform **multidimensional** analysis.
 
-  * An example of multidimensional analysis would be looking at sales and foreclosures data by housing type, region, and the number of units. Housing type, region, and the number of units would be good dimensions to consider.
+  * An example of multidimensional analysis is looking at sales and foreclosures data by housing type, region, and the number of units. 
 
-* **Dimensions** are considered to be categories**. **Parallel categories plots focus on connecting the dots between each category and assessing the nuances per category and the impact of categories on other categories.
+* **Dimensions** are considered to be categories**. **Parallel categories plots focus on connecting the dots between each category, assessing the nuances per category, and the impact of categories on other categories.
 
 Open the [starter file](Activities/05-Ins_Parallel_Categories/Solved/parallel_categories.ipynb), and live code the following:
 
@@ -427,7 +427,7 @@ Open the [starter file](Activities/05-Ins_Parallel_Categories/Solved/parallel_ca
                             'prop_size': 'Property Size'})
   ```
 
-* Similar to parallel coordinates plot, the parallel categories plot axes can be sorted by clicking and dragging to the desired location.
+* Similar to the parallel coordinates plot, the parallel categories plot axes can be sorted by clicking and dragging to the desired location.
 
   ![sort_categories.gif](Images/sort_categories.gif)
 
@@ -435,13 +435,13 @@ Open the [starter file](Activities/05-Ins_Parallel_Categories/Solved/parallel_ca
 
 ### 10. Student Do: Categorical Property Evaluation (15 min)
 
-Students complete an activity and code out a parallel categories plot. Students will use the plot to visualize the dimensions and categories evaluated during real estate property assessments.
+In this activity, students will code out a parallel categories plot and use it to visualize the dimensions and categories evaluated during real estate property assessments.
 
-Encourage students to work in teams and collaborate on the information-seeking process. Indicate that even when working in teams, each student will still need to complete the activity.
+Encourage students to work in teams and collaborate on the information-seeking process. Inform students that even if they work in groups, each individual will need to complete the activity.
 
-* Instruct the TAs to circulate to provide the teams with any troubleshooting assistance.
+* Instruct the TAs to circulate to provide any troubleshooting assistance.
 
-Additionally, keep an eye out during the activity for students who finish early. Find a student volunteer who is willing to present and describe the story being told by the documentation. Explain to the volunteer that they will have to present their plot to the class and tell the story of the data by interacting with the plot.
+Keep an eye out for students who finish the activity early. Find a student volunteer willing to present in front of the class, and explain that they will need to describe the story of the data by interacting with the plot.
 
 Data for this activity was acquired from [catalog.data.gov](https://catalog.data.gov/dataset/allegheny-county-property-assessments).
 
@@ -455,7 +455,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 - - -
 
-### 11. Students Do: Categorical Property Evaluation Activity Review (10 min)
+### 11. Student Do: Categorical Property Evaluation Activity Review (10 min)
 
 This activity involves student volunteering to tell the story of Alleghany property assessments. A student will present the parallel categories plot from the student activity and provide some findings regarding dimensional patterns.
 
