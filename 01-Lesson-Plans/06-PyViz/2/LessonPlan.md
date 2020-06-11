@@ -457,17 +457,17 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 ### 11. Student Do: Categorical Property Evaluation Activity Review (10 min)
 
-This activity involves student volunteering to tell the story of Alleghany property assessments. A student will present the parallel categories plot from the student activity and provide some findings regarding dimensional patterns.
+For this activity, one student volunteer will present the story of Alleghany property assessments, sharing the parallel categories plot and providing some findings on dimensional patterns.
 
-This activity is a revised version of the turn and teach activity type; however, instead of students working as teams, one student will lead the teaching.
+This is a revised version of a turn-and-teach activity; however, instead of students working in teams, one student will lead the teaching.
 
 **Files:**
 
 * [categorical_property_evaluation.ipynb](Activities/06-Stu_Categorical_Evaluation/Solved/categorical_evaluation.ipynb)
 
-Open the solution and ask the student that volunteered to present the plot and relay their findings. Use the below discussion points to help facilitate the review.
+Open the solution and ask the student volunteer to present the plot and relay their findings. Use the below discussion points to help facilitate the review.
 
-* The parallel categories plot is created using the `parallel_categories` function provided with **Plotly.express** package.
+* The parallel categories plot is created using the `parallel_categories` function provided with the **Plotly.express** package.
 
     ```python
     # Plot data
@@ -480,7 +480,7 @@ Open the solution and ask the student that volunteered to present the plot and r
 
   ![stu_parallel_categories_dimensions.png](Images/stu_parallel_categories_dimensions.png)
 
-* The line coloring of the plot can be changed using the `color` attribute. This will help spot trends in the data.
+* The line colouring of the plot can be changed using the `colour` attribute. This will help spot trends in the data.
 
   ![stu_parallel_categories_color.png](Images/stu_parallel_categories_color.png)
 
@@ -488,13 +488,13 @@ If time remains, initiate the storytelling piece of the review by asking the stu
 
 * Are there any identifiable patterns at the dimension level?
 
-  * **Answer:** Most sales were single-family homes
+  * **Answer:** Most sales were single-family homes.
 
   * **Answer:** Most homes have three bedrooms.
 
-* How many bedrooms and full bathrooms do single-family homes tend to have commonly?
+* How many bedrooms and full bathrooms do single-family homes tend to have?
 
-  * **Answer:** Three bedrooms one bath.
+  * **Answer:** Three bedrooms, one bath.
 
 * What type of patterns can be seen when correlating the total number of rooms and bedrooms?
 
@@ -506,7 +506,7 @@ If time remains, initiate the storytelling piece of the review by asking the stu
 
   * **Answer:** Total number of rooms, bedrooms, and bathrooms are all used to assess a property and its value. The more rooms and bedrooms, the higher the sale price. Most single-family homes being assessed in Allegheny County 2019 have around six total rooms, three bedrooms, and one full bath.
 
-  * **Answer:** The houses evaluated at the highest costs tend to have more than five total rooms.
+  * **Answer:** The houses evaluated at the highest cost tend to have more than five total rooms.
 
 - - -
 
