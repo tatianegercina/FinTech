@@ -346,7 +346,7 @@ Kick off the review session by asking some of the questions below.
 
   * **Answer:** **Scatter plots** inherently use two axes, while parallel coordinates are built for multivariate analysis and can have two or more axes.
 
-* In terms of interaction, which plot allows you to gain more value from the interaction?
+* Which plot allows you to gain more value from the interaction?
 
   * **Answer:** The parallel coordinate plot offers limited opportunities for interaction, which makes the scatter plot more fitted for interacting with plots. However, parallel coordinate plots structurally allow for relationships to be traced more effectively and efficiently.
 
