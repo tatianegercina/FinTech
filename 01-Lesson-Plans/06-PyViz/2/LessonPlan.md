@@ -645,7 +645,7 @@ Ask for any remaining questions before moving on.
 
 ### 15. Student Do: A Cartographer's Expedition (20 min)
 
-In this group activity, students will work in groups of two or three in order to create map plots to embark on a virtual expedition through New York City to various places of interest.
+In this group activity, students will work in groups of two or three to create map plots to embark on a virtual expedition through New York City.
 
 **Instructions:**
 
