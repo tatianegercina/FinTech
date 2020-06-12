@@ -432,7 +432,7 @@ Finally, explain that the library used in the notebook is more useful as an illu
 
 In this activity, you will introduce EWMA, or exponentially-weighted moving average. You will also introduce the Hodrick-Prescott filter, a tool that captures trends by minimizing local fluctuations.
 
-Begin by doing a concept overview of the EWMA and Hodrick-Prescott filters using the slides.  
+Begin by doing a concept overview of the EWMA and Hodrick-Prescott filters using the slides.
 
 **EWMA Slides**
 
@@ -461,7 +461,7 @@ The math slide explains the overall mathematical idea of the Hodrick-Prescott fi
 
 * As discussed previously, a time series can be decomposed into trend, periodicity, and noise.
 
-* If we temporarily disregard noise, then, time series data minus trend equals periodicity. 
+* If we temporarily disregard noise, then, time series data minus trend equals periodicity.
 
 * The left side describes the cyclic element: time series (y) minus trend (tau).
 
@@ -489,11 +489,11 @@ Begin the activity with a brief review of the moving average, before rolling on 
 
 * In pandas, it can be computed with the `rolling()` and `mean()` methods, with the `window` argument specifying the number of prior values to average.
 
-* Yet the EWMA is different, as it gives greater weight to the most recent observations. In finance, this is nice, because it means we're still filtering out noise (like a moving average), yet we're also reacting more quickly to information (the "exponentially weighted" part of EWMA). 
+* Yet the EWMA is different, as it gives greater weight to the most recent observations. In finance, this is nice, because it means we're still filtering out noise (like a moving average), yet we're also reacting more quickly to information (the "exponentially weighted" part of EWMA).
 
 * In pandas, an EWMA can be computed with the `ewm()` and `mean()` methods.
 
-* As mentioned above, in a rolling average, a `window` argument is supplied. By contrast, the `ewm()` method takes a `halflife` argument. 
+* As mentioned above, in a rolling average, a `window` argument is supplied. By contrast, the `ewm()` method takes a `halflife` argument.
   
   * The two are conceptually similar, but not mathematically the same thing. Essentially halflife relates to how much weight we give to the more recent observations: the shorter the halflife, the more weight we're giving to those recent observations (think: shorter half life==reacting more quickly).
 
@@ -542,17 +542,7 @@ In this activity, students will use the Hodrick-Prescott filter to identify macr
 
 Open the solution file, and conduct a brief dry walkthrough of the code.
 
-* Explain that we'll read in data from the Federal Reserve via a csv.
-  
-  * (To prevent in-class bugs, we're using csv's, but for students that want to pull this data real-time, they can use Pandas's `DataReader` package.):
-
-    ```python
-    start = datetime.datetime(2004, 1, 1)
-    end = datetime.datetime(2010, 1, 1)
-    gdp = web.DataReader(['GDP'], 'fred', start, end)
-    ```
-
-    ![datareader.png](Images/datareader.png)
+* Convey to students that we'll read in data form the Federal reserve via a csv.
 
 * Explain using the H-P filter in Python. It is a `statsmodels` module that requires a single line of code. The plots are created simply with pandas's `plot()` method.
 
@@ -640,7 +630,7 @@ Next, explain the code used to calculate the auto correlation:
 
 * Here, the lag is 1, meaning that the series of temperature readings is correlated against a series of temperature readings taken one hour previously.
 
-* The correlation coefficient is 0.99, a very high number. Temperatures, unlike financial markets, are relatively easy to predict. 
+* The correlation coefficient is 0.99, a very high number. Temperatures, unlike financial markets, are relatively easy to predict.
 
 Explain that autocorrelation can be computed at a different lag
 
