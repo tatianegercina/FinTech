@@ -59,7 +59,7 @@ By the end of this class, students will be able to:
 
 ### 1. Instructor Do: Welcome and Review (10 min)
 
-**Corresponding Activity:** [Ins_Refresher](Activities/01-Ins_Refresher)
+**Corresponding Activity:** [01-Ins_Refresher](Activities/01-Ins_Refresher)
 
 In this section, welcome students to class, review the lesson objectives, and complete a review activity.
 
@@ -227,7 +227,7 @@ Ask if there are any questions before moving on.
 
 ### 2. Student Do: Refresher Activity (15 min)
 
-**Corresponding Activity:** [Stu_Refresher](Activities/02-Stu_Refresher)
+**Corresponding Activity:** [02-Stu_Refresher](Activities/02-Stu_Refresher)
 
 In this activity, students will apply skills learned in the previous lessons to a financial use case. They will act as analysts who categorize customers based on revenue and assign each customer a business tier: platinum, gold, silver, or bronze. A personalized message is generated for each customer depending on the assigned business tier.
 
@@ -305,7 +305,7 @@ Ask if there are any questions before moving on.
 
 ### 4. Instructor Do: Time Value of Money (10 min)
 
-**Corresponding Activity:** [Ins_Time_Value_of_Money](Activities/03-Ins_Time_Value_of_Money)
+**Corresponding Activity:** [03-Ins_Time_Value_of_Money](Activities/03-Ins_Time_Value_of_Money)
 
 In this part of the lesson, students will be introduced to the concept of time value of money, as well as how to calculate it.
 
@@ -351,7 +351,7 @@ Answer any questions before moving on.
 
 ### 5. Student Do: Zero-Coupon Bonds (25 min)
 
-**Corresponding Activity:** [Stu_Time_Value_of_Money](Activities/04-Stu_Time_Value_of_Money)
+**Corresponding Activity:** [04-Stu_Time_Value_of_Money](Activities/04-Stu_Time_Value_of_Money)
 
 In this activity, students will apply the concept of time value of money (TVM) to discount the future value of a zero-coupon bond and determine its present value. They will also compare the present value to its current selling price in order to decide whether or not to purchase the bond.
 
@@ -389,7 +389,7 @@ Answer any questions before moving on.
 
 ### 7. Instructor Do: Imports (10 min)
 
-**Corresponding Activity:** [Ins_Imports](Activities/05-Ins_Imports)
+**Corresponding Activity:** [05-Ins_Imports](Activities/05-Ins_Imports)
 
 This section is exciting because it showcases the power of imports in Python.
 
@@ -465,7 +465,7 @@ Answer any questions before moving on.
 
 ### 8. Student Do: Net Present Value (15 min)
 
-**Corresponding Activity:** [Stu_Imports](Activities/06-Stu_Imports)
+**Corresponding Activity:** [06-Stu_Imports](Activities/06-Stu_Imports)
 
 In this activity, students will use the `npv` function from the NumPy Financial library to calculate the net present value of three potential company projects (and their cash flows) and assess which is the optimal project to undertake.
 
@@ -497,7 +497,7 @@ Answer any questions before moving on.
 
 ### 10. Instructor Do: File I/O (10 min)
 
-**Corresponding Activity:** [Ins_File_IO](Activities/07-Ins_File_IO)
+**Corresponding Activity:** [07-Ins_File_IO](Activities/07-Ins_File_IO)
 
 This section of the lesson focuses on file I/O, or input/output, with a Python file.
 
@@ -617,7 +617,7 @@ Answer any questions before moving on.
 
 ### 11. Student Do: E-Commerce Traffic (15 min)
 
-**Corresponding Activity:** [Stu_File_IO](Activities/08-Stu_File_IO)
+**Corresponding Activity:** [08-Stu_File_IO](Activities/08-Stu_File_IO)
 
 In this activity, students will perform file I/O by parsing a text file and calculating the sum and average of customer e-traffic, and then writing the results back to a text file.
 
@@ -690,7 +690,7 @@ Use the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5
 
 ### 15. Instructor Do: CSV Reader (5 min)
 
-**Corresponding Activity:** [Ins_CSV_Reader](Activities/09-Ins_CSV_Reader)
+**Corresponding Activity:** [09-Ins_CSV_Reader](Activities/09-Ins_CSV_Reader)
 
 This part of the lesson focuses on CSV files, or comma-separated values, and how to read and write to CSVs.
 
@@ -737,7 +737,7 @@ Ask if there are any questions before moving on.
 
 ### 16. Student Do: Sales Analysis (15 min)
 
-**Corresponding Activity:** [Stu_CSV_Reader](Activities/10-Stu_CSV_Reader)
+**Corresponding Activity:** [10-Stu_CSV_Reader](Activities/10-Stu_CSV_Reader)
 
 In this activity, students will perform file I/O with a CSV file. Students will read in a CSV file to calculate customer revenue averages and then output results back to a CSV file.
 
