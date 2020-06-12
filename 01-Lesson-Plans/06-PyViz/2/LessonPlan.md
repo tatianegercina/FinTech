@@ -100,7 +100,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 * [plotly_demo.ipynb](Activities/01-Ins_Plotly_Exp_Demo/Unsolved/plotly_demo.ipynb)
 
-Go back to the slideshow, navigate to [add section name here], and quickly highlight the following:
+Go back to the slideshow, navigate to the Plotly Express demo section, and quickly highlight the following:
 
 * Plotly Express works much like hvPlot, giving users a simple `plot` based interface that allows developers to create and customize interactive visualizations.
 
