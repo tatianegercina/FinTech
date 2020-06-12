@@ -1,6 +1,6 @@
 # Linear Regression
 
-In this activity, you will attempt to identify whether a linear relationship exists between the number of of rooms in houses and their prices.
+In this activity, you will attempt to identify whether a linear relationship exists between the total square foot in houses and their sale prices.
 
 ## Instructions
 

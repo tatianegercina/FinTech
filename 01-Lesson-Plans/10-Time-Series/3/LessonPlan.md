@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's class will round out time series modeling with GARCH. Students will also gain exposure to the theory and practice of model validation.
+Today's class will round out time series modelling with GARCH. Students will also gain exposure to the theory and practice of model validation.
 
 ### Class Objectives
 
@@ -60,7 +60,7 @@ Welcome students to the last day of the time series unit, and briefly summarize 
 
 * ARMA models use past values and past errors to predict future values. An ARMA model assumes stationarity.
 
-* ARIMA is similar to ARMA, but does not assume stationarity.
+* ARIMA is similar to ARMA but does not assume stationarity.
 
 Describe to students what they will be doing today:
 
@@ -251,13 +251,13 @@ Explain that you can also compare the RMSE to the standard deviation to get a be
 
 ### 3. Students Do: House Regression (15 min)
 
-In this activity, students will perform linear regression on the number of rooms in houses versus their prices.
+In this activity, students will perform linear regression on the total square foot in houses versus their prices.
 
 **Files:**
 
 * [README.md](Activities/02-Stu_House_Regression/README.md)
 
-* [USA_Housing.csv](Activities/02-Stu_House_Regression/Resources/USA_Housing.csv)
+* [CA_Housing.csv](Activities/02-Stu_House_Regression/Resources/CA_Housing.csv)
 
 - - -
 
@@ -282,13 +282,13 @@ Open the solution, and complete a dry walkthrough of the code:
 
   ```python
   X = df.index.values.reshape(-1,1)
-  y = df['Price']
+  y = df['sale_price']
 
   model.fit(X,y)
   predicted_y_values = model.predict(X)
   ```
 
-  ![model_predict.png](Images/model_predict.png)
+  ![model_fit.png](Images/model_fit.png)
 
 * The `model.predict()` function can be used to implement predictive analysis. The function will return an array of predicted y-values. This data can then be plotted using a **scatter** plot to highlight the correlation.
 
@@ -297,6 +297,8 @@ Open the solution, and complete a dry walkthrough of the code:
   plt.scatter(X, y)
   plt.plot(X, predicted_y_values, color='red')
   ```
+
+  ![model_predict.png](Images/model_predict.png)
 
   ![scatter_plot.png](Images/scatter_plot.png)
 
@@ -586,7 +588,7 @@ Open the notebook and introduce the dataset:
 
   ![Images/train01.png](Images/train01.png)
 
-* It is the familiar S&P 500 stock dataset.
+* It is the familiar OSPTX or TSX composite dataset.
 
 * The returns and lagged returns are computed, as we have done before.
 
@@ -689,7 +691,7 @@ In this activity, students will create GARCH and linear regression models for th
 
 * [README.md](Activities/06-Stu_Ripple/README.md)
 
-* [USD_per_Ripple_XRP_prices.csv](Activities/06-Stu_Ripple/Resources/USD_per_Ripple_XRP_prices.csv)
+* [XRP_CAD.csv](Activities/06-Stu_Ripple/Resources/XRP_CAD.csv)
 
 * [xrp.ipynb](Activities/06-Stu_Ripple/Unsolved/xrp.ipynb)
 
@@ -800,7 +802,7 @@ Ask for any remaining questions before moving on.
 
 **File:**
 
-* [sp500.ipynb](Activities/07-Ins_Rolling_Out_of_Sample/Solved/sp500.ipynb)
+* [tsx.ipynb](Activities/07-Ins_Rolling_Out_of_Sample/Solved/tsx.ipynb)
 
 Point out that up to this point, we have created models as a one-shot affair. Explain that we will go over a procedure that allows an analyst to update the financial model as new data continues to come in.
 
@@ -975,7 +977,7 @@ In this activity, students will perform predictions with linear regression on a 
 
 * [README.md](Activities/08-Stu_Rolled_Gold/README.md)
 
-* [gold_price.csv](Activities/08-Stu_Rolled_Gold/Resources/gold_price.csv)
+* [gold_cad.csv](Activities/08-Stu_Rolled_Gold/Resources/gold_cad.csv)
 
 * [gold.ipynb](Activities/08-Stu_Rolled_Gold/Unsolved/gold.ipynb)
 
@@ -1105,7 +1107,7 @@ Rolling Out-of-Sample Model:
 
   ```
 
-* Comparing the two RMSE's, the RMSE from the single training window is 0.73, whereas it is 0.75 from the rolling-out-of-sample model.
+* Comparing the two RMSE's, the RMSE from the single training window is 0.96, whereas it is 1.23 from the rolling-out-of-sample model.
 
   * The rolling-out-of sample approach is an approach more akin to real-life (you likely re-estimate your model when new data becomes available)
 
