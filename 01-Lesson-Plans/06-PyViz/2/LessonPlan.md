@@ -294,7 +294,7 @@ Walkthrough the syntax required to create a parallel coordinate plot:
 
   * For example, sorting so that **vacantLots** and **sales20092010** are adjacent allows one to see how the number of vacant lots affects the number of sales for that block.
 
-  * An assessment of vacantLots, **unitsPerSquareMile**, and **foreclosures** reveals that if there are more vacant lots on a block, there will be fewer units per square mile and fewer sales.
+  * An assessment of **vacantLots**, **unitsPerSquareMile**, and **foreclosures** reveals that if there are more vacant lots on a block, there will be fewer units per square mile and fewer sales.
 
 Reinforce to students that parallel coordinate plots are used to visualize multivariate analysis by providing example use cases.
 
