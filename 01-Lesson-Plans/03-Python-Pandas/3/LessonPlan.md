@@ -56,6 +56,8 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome and Refresher Demo (5 min)
 
+**Corresponding Activity:** [01-Ins_Welcome](Activities/01-Welcome)
+
 In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns. Data for this activity will be retrieved from Google Sheets via the in-built Google Finance function.
 
 Welcome students to the second day of Pandas and use the slides to explain the focus of today's class.
@@ -153,6 +155,8 @@ Ask students if they have any questions. Then, if time remains, review the agend
 
 ### 2. Instructor Do: Sorting (5 min)
 
+**Corresponding Activity:** [02-Ins_Sorting](Activities/02-Ins_Sorting)
+
 In this part of the lesson, you will demo how to sort DataFrame values in ascending and descending order.
 
 **File:**
@@ -197,6 +201,8 @@ Ask if there are any questions before moving on.
 ---
 
 ### 3. Student Do: Out of Sorts (15 min)
+
+**Corresponding Activity:** [03-Stu_Sorting](Activities/03-Stu_Sorting)
 
 In this activity, students will extract data for a single ticker from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function and calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
 
@@ -283,6 +289,8 @@ Ask if there are any questions before moving on.
 ---
 
 ### 5. Instructor Do: Grouping (10 min)
+
+**Corresponding Activity:** [05-Ins_Groupby](Activities/05-Ins_Groupby)
 
 This section focuses on grouping and aggregating data. Grouping data is particularly valuable when dealing with data for multiple stocks. You will give an overview of grouping and then perform a live demo of how to use the `groupby` function in Pandas. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
@@ -386,6 +394,8 @@ Ask if there are any questions before moving on.
 
 ### 6. Student Do: Group Dynamics (15 min)
 
+**Corresponding Activity:** [06-Stu_Groupby](Activities/06-Stu_Groupby)
+
 In this activity, students will work with historical cryptocurrency data. They will load in cryptocurrency data, group data by each crypto, perform aggregations to analyze price trends, and then plot the results. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
 **File:** [group_dynamics.ipynb](Activities/06-Stu_Groupby/Unsolved/group_dynamics.ipynb)
@@ -488,7 +498,9 @@ If time remains, end the review by calling on students to answer the following r
 
 ### 8. Instructor Do: Multi-Indexing (10 min)
 
-Now that students have learned that indexes can be created by using the `groupby` key, it's important that they know how to directly multi-index DataFrames. Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
+**Corresponding Activity:** [08-Ins_Multi_Indexing](Activities/08-Ins_Multi_Indexing)
+
+Now that students have learned that indexes can be creoupby` key, it's important that they know how to directly multi-index DataFrames. Multi-indexing is a direct way to create multiple indexes in ated by using the `gra DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
 
 **Files:**
 
@@ -591,6 +603,8 @@ Ask if there are any questions before moving on.
 
 ### 9. Student Do: Indexing Fever (15 min)
 
+**Corresponding Activity:** [09-Stu_Multi_Indexing](Activities/09-Stu_Multi_Indexing)
+
 In this activity, students will use hierarchical indexes to gain access to historical stock data. The goal of this activity is for students to take their indexing skills to the next level by using DataFrames with multiple indexes. Students will leverage [Google Sheets](https://docs.google.com/spreadsheets/) to extract Google Finance data to perform data segmentation for a single ticker over multiple months in a year.
 
 **File:** [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Unsolved/Core/indexing_fever.ipynb)
@@ -656,6 +670,8 @@ Ask if there are any questions before moving on.
 ---
 
 ### 12. Instructor Do: Concatenating DataFrames (5 min)
+
+**Corresponding Activity:** [12-Ins_Concat_DataFrame](Activities/12-Ins_Concat_DataFrame)
 
 In this section, you will provide an overview of concatenation and then live code how to concatenate DataFrames. Data for this activity was retrieved from [Kaggle](http://kaggle.com).
 
@@ -745,6 +761,8 @@ Ask if there are any questions before moving on.
 
 ### 13. Student Do: Mastering Concatenation (15 min)
 
+**Corresponding Activity:** [13-Stu_Concat_Dataframes](Activities/13-Stu_Concat_Dataframes)
+
 In this activity, students will get hands-on experience with combining multiple DataFrames using the `concat` function. The goal of the activity is for students to take dues and membership data from two community organizations and combine the data into a single DataFrame.
 
 **File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_Dataframes/Unsolved/mastering_concatenation.ipynb)
@@ -798,6 +816,8 @@ Ask if there are any questions before moving on.
 ---
 
 ### 15. Instructor Do: Standard Deviation and Risk (10 min)
+
+**Corresponding Activity:** [15-Ins_Std_Dev_Risk](Activities/15-Ins_Std_Dev_Risk)
 
 This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate Sharpe ratios in the next activity. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
 
@@ -910,6 +930,8 @@ Ask if there are any questions before moving on.
 
 ### 16. Instructor Do: Sharpe Ratios (5 min)
 
+**Corresponding Activity:** [16-Ins_Sharpe_Ratios](Activities/16-Ins_Sharpe_Ratios)
+
 In this section, students will be introduced to Sharpe ratios and learn why risk-reward ratios are important in finance. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
 
 **Files:**
@@ -958,6 +980,8 @@ Ask if there are any questions before moving on.
 ---
 
 ### 17. Student Do: Risky Business (15 min)
+
+**Corresponding Activity:** [17-Stu_Risky_Business](Activities/17-Stu_Risky_Business)
 
 It's time to put it all together. In this activity, students will prep data and use standard deviation and Sharpe ratios to analyze cryptocurrency portfolio performance. The goal is to calculate which portfolio has the highest risk. Students will also identify which individual cryptos have had the greatest return. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
