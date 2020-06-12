@@ -126,6 +126,8 @@ Slack out the [above link](https://data-flair.training/blogs/applications-of-pan
 
 ### 3. Instructor Do: Reading CSVs (10 min)
 
+**Corresponding Activity:** [01-Ins_Reading_CSVs](Activities/01-Ins_Reading_CSVs)
+
 The goal of this part of the lesson is to get students comfortable with reading CSV files into Pandas. Financial data is commonly converted from other formats (e.g., an Excel file) to CSV so that it can be manipulated by programs like Pandas. Learning how to read CSV data into Pandas is the first step in getting students started with creating automated analytics pipelines.
 
 **Files:**
@@ -209,6 +211,8 @@ Congratulate students on reading their first CSV file into Pandas as this is an 
 
 ### 4. Student Do: Reading Stock Data from a CSV File (10 min)
 
+**Corresponding Activity:** [02-Stu_Reading_CSVs](Activities/02-Stu_Reading_CSVs)
+
 In this activity, students will get hands-on experience reading CSV files into Pandas. They will use the `read_csv` function, sample data with the `head` function, and create DataFrames with specified column names.
 
 **Files:**
@@ -253,6 +257,8 @@ Ask if there are any questions before moving on.
 ---
 
 ### 6. Instructor Do: Column Manipulation (10 min)
+
+**Corresponding Activity:** [03-Ins_Columns](Activities/03-Ins_Columns)
 
 In this part of the lesson, students will learn how to use various Pandas functions to manipulate columns. It's important that students know how to create and curate DataFrames to fit their needs.
 
@@ -307,6 +313,8 @@ Slack out the solution file to students to use as a reference. Now that students
 ---
 
 ### 7. Instructor Do: Data Cleaning (10 min)
+
+**Corresponding Activity:** [04-Ins_Data_Cleaning](Activities/04-Ins_Data_Cleaning)
 
 Students will now take part in a lecture and discussion about data cleaning. They will learn what data cleaning, why it is necessary, and common strategies for cleaning data. This part of the lesson is crucial, as most of the data encountered in the real world is "dirty" and unusable.
 
@@ -531,6 +539,8 @@ Ask if there are any questions before moving on.
 
 ### 8. Student Do: Spring Cleaning (15 min)
 
+**Corresponding Activity:** [05-Stu_Data_Cleaning](Activities/05-Stu_Data_Cleaning)
+
 In this activity, students will perform a series of data quality checks on stock data to ensure the data is ready for analytical use. The objective of this activity is for students to learn how to clean data using Pandas native functions: `count`,`value_counts`,`isnull`,`sum`,`mean`,`contains`, and `replace`.
 
 **File:** [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Unsolved/Core/spring_cleaning.ipynb)
@@ -650,6 +660,8 @@ For more comprehensive data cleaning strategies, slack out the following [link](
 
 ### 10. Instructor Do: Indexing (10 min)
 
+**Corresponding Activity:** [06-Ins_Indexing](Activities/06-Ins_Indexing)
+
 In this part of the lesson, students will learn how to locate and select data within a DataFrame through indexing. Indexing allows us to slice and dice our data so that we can get or set values for any of the cells in our table.
 
 **File:** [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb)
@@ -726,6 +738,8 @@ Ask if there are any questions before moving on.
 
 ### 11. Student Do: Three-Year Loans (15 min)
 
+**Corresponding Activity:** [07-Stu_Indexing](Activities/07-Stu_Indexing)
+
 Now that students have the conceptual knowledge to index and look up data, it's time they get some practice. In this activity, students will use DataFrame indexing on the dataset in `loans.csv` in order to generate insights about three-year loan customers.
 
 Note that the data in `loans.csv` is a compilation of many different columns and loan durations. Students will need to filter the data and use functions on data subsets to answer the activity questions.
@@ -774,6 +788,8 @@ Ask if there are any questions before moving on.
 
 ### 14. Instructor Do: Pandas Visualizations (10 min)
 
+**Corresponding Activity:** [08-Ins_Pandas_Visualization](Activities/08-Ins_Pandas_Visualization)
+
 This part of the lesson is focused on creating charts using Pandas visualization functions. You will demo how to plot data with and without indexes, as well as use line and bar charts.
 
 **File:** [visualization.ipynb](Activities/08-Ins_Pandas_Visualization/Solved/visualization.ipynb)
@@ -811,6 +827,8 @@ Ask if there are any questions before moving on.
 ---
 
 ### 15. Student Do: Market Analysis (15 min)
+
+**Corresponding Activity:** [09-Stu_Pandas_Visualization](Activities/09-Stu_Pandas_Visualization)
 
 In this activity, students will use Pandas to create three different charts: pie chart, bar chart, and scatter plot. This activity will teach students how to create pie charts and scatter plots in addition to bar and line plots.
 
@@ -880,6 +898,8 @@ Ask if there are any questions before moving on.
 
 ### 17. Instructor Do: Returns (10 min)
 
+**Corresponding Activity:** [10-Ins_Returns](Activities/10-Ins_Returns)
+
 The following demo introduces students to calculating daily returns with Pandas. It will also cover return on investment (ROI), the `pct_change` function, and cumulative returns. This section will build upon skills students have already learned: reading in CSV data, manipulating and cleaning DataFrames, and plotting data.
 
 **File:** [returns.ipynb](Activities/10-Ins_Returns/Solved/returns.ipynb)
@@ -943,6 +963,8 @@ Now that students know how to calculate and plot returns, they will practice doi
 ---
 
 ### 18. Student Do: Returns Over Date Ranges (15 min)
+
+**Corresponding Activity:** [11-Stu_Returns](Activities/11-Stu_Returns)
 
 In this activity, students will analyze the last 10 years of historical price data for Advanced Micro Devices (AMD) and plot the daily returns over the last 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each time period to determine whether a short or long-term perspective should be used in prospecting AMD as a potential investment opportunity.
 
