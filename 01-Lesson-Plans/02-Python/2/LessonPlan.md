@@ -84,7 +84,7 @@ Answer any questions before moving on.
 
 ### 2. Instructor Do: Lists (10 min)
 
-**Corresponding Activity:** [Ins_Lists](Activities/01-Ins_Lists)
+**Corresponding Activity:** [01-Ins_Lists](Activities/01-Ins_Lists)
 
 **Files:**
 
@@ -377,7 +377,7 @@ Send out a link to the [Python documentation]((https://docs.python.org/3/tutoria
 
 ### 3. Student Do: Sugar, Flour, Butter! (15 min)
 
-**Corresponding Activity:** [Stu_Lists](Activities/02-Stu_Lists)
+**Corresponding Activity:** [02-Stu_Lists](Activities/02-Stu_Lists)
 
 In this activity, students will work with lists to maintain a grocery list. They will create lists, append to lists, retrieve `n` items from a list, and retrieve values by indexes. The goal of this activity is to get students comfortable with using lists to store and track data so that they can later apply this knowledge to financial information.
 
@@ -513,7 +513,7 @@ Answer any questions before moving on.
 
 ### 5. Instructor Do: Iterate Lists (5 min)
 
-**Corresponding Activity:** [Ins_Iterate_Lists](Activities/03-Ins_Iterate_Lists)
+**Corresponding Activity:** [03-Ins_Iterate_Lists](Activities/03-Ins_Iterate_Lists)
 
 **File:** [iterate_lists.py](Activities/03-Ins_Iterate_Lists/Solved/iterate_lists.py)
 
@@ -569,7 +569,7 @@ Ask if there are any questions before moving on.
 
 ### 6. Student Do: Trading Log (15 min)
 
-**Corresponding Activity:** [Stu_Iterate_Lists](Activities/04-Stu_Iterate_Lists)
+**Corresponding Activity:** [04-Stu_Iterate_Lists](Activities/04-Stu_Iterate_Lists)
 
 In this activity, students will use lists to create a trading log that tracks profits and losses for each market day of the month. They will iterate over the list to calculate the highest and lowest profit and loss days. The goal of this activity is to use for loops and lists in order to track metrics related to trading performance.
 
@@ -686,7 +686,7 @@ Answer any questions before moving on.
 
 ### 9. Instructor Do: Dicts (5 min)
 
-**Corresponding Activity:** [Ins_Dictionaries](Activities/05-Ins_Dictionaries)
+**Corresponding Activity:** [05-Ins_Dictionaries](Activities/05-Ins_Dictionaries)
 
 **File:** [dicts.py](Activities/05-Ins_Dictionaries/Solved/dicts.py)
 
@@ -881,7 +881,7 @@ Answer any questions before moving on.
 
 ### 10. Student Do: Market Capitalization (15 min)
 
-**Corresponding Activity:** [Stu_Dictionaries](Activities/06-Stu_Dictionaries)
+**Corresponding Activity:** [06-Stu_Dictionaries](Activities/06-Stu_Dictionaries)
 
 In this activity, students will practice creating a dictionary, as well as updating, removing, and extracting values in/from the dictionary. The goal is to get students to better understand the advantages of using dictionaries to store, retrieve, and manipulate data.
 
@@ -990,7 +990,7 @@ Answer any questions before moving on.
 
 ### 13. Instructor Do: Nesting (10 min)
 
-**Corresponding Activity:** [Ins_Nesting](Activities/07-Ins_Nesting)
+**Corresponding Activity:** [07-Ins_Nesting](Activities/07-Ins_Nesting)
 
 **Files:**
 
@@ -1237,7 +1237,7 @@ Answer any questions before moving on.
 
 ### 14. Student Do: Weekly Gains (20 min)
 
-**Corresponding Activity:** [Stu_Nesting](Activities/08-Stu_Nesting)
+**Corresponding Activity:** [08-Stu_Nesting](Activities/08-Stu_Nesting)
 
 In this activity, students will work with nested data structures. Students will store daily stock data in a list and then store that list in a dictionary. They will then retrieve stock data from the dictionary for specific days.
 
@@ -1435,7 +1435,7 @@ Answer any questions before moving on.
 
 ## 17. Instructor Do: Functions (5 min)
 
-**Corresponding Activity:** [Ins_Functions](Activities/09-Ins_Functions)
+**Corresponding Activity:** [09-Ins_Functions](Activities/09-Ins_Functions)
 
 **File:** [functions.py](Activities/09-Ins_Functions/Solved/functions.py)
 
@@ -1566,7 +1566,7 @@ Answer any questions before moving on.
 
 ### 18. Student Do: Finally Functioning (20 min)
 
-**Corresponding Activity:** [Stu_Functions](Activities/10-Stu_Functions)
+**Corresponding Activity:** [10-Stu_Functions](Activities/10-Stu_Functions)
 
 In this activity, students will define a function to calculate compound annual growth rate (CAGR) for an investment portfolio. The goal of this activity is for students to use functions to modularize code and reduce redundancy.
 
