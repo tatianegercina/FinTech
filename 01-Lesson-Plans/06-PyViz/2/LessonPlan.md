@@ -60,7 +60,9 @@ The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 Welcome students back! Indicate that this is the start of Day 2 for interactive visualizations using PyViz.
 
-Start the class by explaining that **hvPlot** is not the only visualization package that can be used to create interactive visualizations.
+Open the slideshow, navigate to the Plotly section, and quickly highlight the following:
+
+**hvPlot** is not the only visualization package that can be used to create interactive visualizations.
 
 * Plotly Express is a package similar to hvPlot, offering many of the same plots as hvPlot (bar, line, scatter, etc.) but more as well (e.g., parallel coordinates and parallel categories plots).
 
@@ -98,7 +100,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 * [plotly_demo.ipynb](Activities/01-Ins_Plotly_Exp_Demo/Unsolved/plotly_demo.ipynb)
 
-Open the slideshow, navigate to [add section name here], and quickly highlight the following:
+Go back to the slideshow, navigate to [add section name here], and quickly highlight the following:
 
 * Plotly Express works much like hvPlot, giving users a simple `plot` based interface that allows developers to create and customize interactive visualizations.
 
