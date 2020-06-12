@@ -526,7 +526,7 @@ Remember to create your `.env` file to set you Mapbox API key. You can use the `
 
 * [plotly_maps.ipynb](Activities/07-Ins_Mapbox_Demo/Unsolved/plotly_maps.ipynb)
 
-Go to the slideshow, navigate to the [section name here] and highlight the following:
+Go to the slideshow, navigate to the Mapbox section, and highlight the following:
 
 * Mapbox API is an open-source API that gives developers a range of mapping visualizations and functions that enable the creation of interactive map plots.
 
