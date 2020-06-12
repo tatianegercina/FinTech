@@ -56,7 +56,7 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome and Refresher Demo (5 min)
 
-**Corresponding Activity:** [01-Ins_Welcome](Activities/01-Welcome)
+**Corresponding Activity:** [01-Ins_Welcome](Activities/01-Ins_Welcome)
 
 In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns. Data for this activity will be retrieved from Google Sheets via the in-built Google Finance function.
 
