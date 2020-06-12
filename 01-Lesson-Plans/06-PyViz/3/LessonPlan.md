@@ -2,11 +2,11 @@
 
 ### Overview
 
-In previous classes, students have used static and interactive plots to visualize and communicate financial data. In this lesson, students will leverage pre-existing plots for a Panel dashboard. Students will integrate visualizations and design the layout of a real estate dashboard.
+In previous classes, students used static and interactive plots to visualize and communicate financial data. In this lesson, they will leverage pre-existing plots for a Panel dashboard, and integrate visualizations and design the layout of a real estate dashboard.
 
-Panel is one of the libraries included in the PyViz package. Panel is used to create dashboards for information visualization. One of the things that makes Panel special is that it has support for Python (dashboards can be created using Python), as well as the common visualization packages used in the Python ecosystem.
+Panel is one of the libraries included in the PyViz package, and is used to create dashboards for information visualization. One of the things that makes Panel special is its support for Python (dashboards can be created using Python), as well as the common visualization packages used in the Python ecosystem.
 
-By the end of class, students will be competent in creating and using Panel objects to create dashboards to visualize financial data sets that lend insight to financial trends. Panel will be a key skill for students to have; dashboards are one of the primary mechanisms used to communicate and distribute financial records/ledgers, progress, etc. Knowing Panel will enable students to create dashboards and reports as needed.
+By the end of class, students will be competent in creating and using Panel objects to create dashboards to visualize financial data sets that lend insight to financial trends. Knowledge of Panel is a critical skill, as dashboards are one of the primary mechanisms for communicating and distributing financial records, ledgers, capturing progress, etc. Knowing Panel will enable students to create dashboards and reports as needed.
 
 ### Class Objectives
 
@@ -30,11 +30,13 @@ By the end of class, students will be able to:
 
 * Prepare for the lesson by running the code examples and reviewing the lectures before class. This lesson will be using **Panel**; a library included in the PyViz package. Make sure Panel has been installed and is ready for use. Consult the [PyViz Installation Guide](../Supplemental/PyVizInstallationGuide.md) for help with installation.
 
-* Throughout the lesson, emphasize the importance of dashboards to FinTech. Dashboards offer FinTech a new platform for information and data visualization. Dashboards allow finance professionals to monitor and visualize data trends and changes over time. For example, dashboards are used by investment bankers to track and monitor stocks and trades. They also enable banking consumers to understand and consume their financial data more efficiently. Moreover, dashboards allow account owners a visual of their spending habits (i.e., bills, groceries, entertainment, shopping, etc.). Be mindful of your machine's resource consumption while running the dashboards. Because the server used to host Panel dashboards as web apps are spun up locally, your machine will have to execute the code and host the web app.
+* Throughout the lesson, emphasize the importance of dashboards to FinTech. Dashboards offer FinTech a new platform for information and data visualization, and allow finance professionals to monitor and visualize data trends and changes over time. For example, dashboards are used by investment bankers to track and monitor stocks and trades. They also enable banking consumers to understand and consume their financial data more efficiently. Moreover, dashboards allow account owners a visual of their spending habits (i.e., bills, groceries, entertainment, shopping, etc.). 
 
-* Be mindful of the class pacing; the pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage students in need of support to attend office hours.
+* Be mindful of your machine's resource consumption while running the dashboards. Because the server used to host Panel dashboards as web apps are spun up locally, your machine will have to execute the code and host the web app.
 
-* Encourage students to work in pairs or groups on in-class activities to help facilitate discussions as well as troubleshooting. Collaborative exercises such as student-led activity reviews and discussions are built into this lesson.
+* Watch the class pacing; it should feel urgent, but not rushed. Stick to the Time Tracker as closely as possible. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Encourage students in need of support to attend office hours.
+
+* Encourage students to work in pairs or groups for in-class activities to help facilitate discussions as well as troubleshoot. Collaborative exercises such as student-led activity reviews and discussions are built into this lesson.
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
