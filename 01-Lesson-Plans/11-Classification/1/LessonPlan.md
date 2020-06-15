@@ -69,7 +69,7 @@ By the end of class, students will be able to:
   * Remind students that additional research and practice will be required outside of class in order to reinforce and build competence in learning and evaluating trained models.
 
 ### Sample Class Video (Highly Recommended)
-* To watch an example class lecture, go here: [11.1 Class Video Part 1.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=72314fe6-24a9-4172-bb8b-aadf016874d4) | [11.1 Class Video Part 2.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8c4c5255-0418-48d5-8a9e-aae001123070) Note that this video may not reflect the most recent lesson plan.
+* To watch an example class lecture, go here: [11.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2c11bfa4-4430-4a42-906f-abbd01400914) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
 
@@ -285,9 +285,9 @@ Transition into the next part of the demo by explaining to students that once th
 
 The next step after training the model is **validating** it. A common approach is the Train/Test Split approach. Walk students through how this approach is used.
 
-* In order to validate a model, it must be scored, which the **sklearn** `score` function can do. Either the **testing** or **training** data sets are passed to the `score` function, and the function evaluates the results. 
+* In order to validate a model, it must be scored, which the **sklearn** `score` function can do. Either the **testing** or **training** data sets are passed to the `score` function, and the function evaluates the results.
 
-Explain to students that the scoring process takes the predictions made using the data and compares it to their actual outcomes (i.e., predicted y versus actual y). If the predictions are the same and the score is **1.0**, the model is considered perfectly accurate. In general, the closer the score is to 1.0, the more accurate the model. 
+Explain to students that the scoring process takes the predictions made using the data and compares it to their actual outcomes (i.e., predicted y versus actual y). If the predictions are the same and the score is **1.0**, the model is considered perfectly accurate. In general, the closer the score is to 1.0, the more accurate the model.
 
 * It's important to note to students that two things need to be scored: the **training** AND **test** data.
 
