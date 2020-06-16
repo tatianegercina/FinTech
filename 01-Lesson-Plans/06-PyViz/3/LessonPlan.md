@@ -81,25 +81,25 @@ Share that Panel is an open-source Python library that allows users to integrate
 ### 2. Instructor Do: Intro to Panel (10 mins) (Critical)
 
 
-Continue the discussion about Panel by highlighting the rise of Panel.
+Continue the discussion by highlighting the rise of Panel.
 
-* Digital dashboards have become a staple in the tech world. Dashboards are being used to visualize personal finance, company performance and revenue, and even election results/predictions.
+* Digital dashboards have become a staple in the tech world; they are used to visualize personal finances, company performance and revenue, and even for election predictions and results.
 
-* Dashboards typically were created using visualization technology-specific stacks, like those associated with Cognos, Tableau, and Qlik.
+* Traditionally, visualization technology-specific stacks–like those associated with Cognos, Tableau, and Qlik–were used to create dashboards.
 
-* **Panel**, a PyViz dashboard package, has altered the data visualization arena by providing a programmatic way to create dashboards easily. Now Python developers can create their dashboards without having to learn a new technology stack specific for visualization (i.e., Cognos and Tableau). Panel also allows Python developers to be competitive in the visualization job market, which has been primarily reserved for visualization developers.
+* **Panel**, a PyViz dashboard package, has altered the data visualization arena by providing a programmatic way to easily create dashboards. Now Python developers can create dashboards without having to learn a new technology stack specific for visualization (i.e., Cognos and Tableau). Panel also allows Python developers to be competitive in the visualization job market, which has been primarily reserved for visualization developers.
 
   * Imagine combining **Panel** with other FinTech technologies, such as **Plaid**. A Python developer could use **Plaid** to get financial data, and then the developer could aggregate and summarize the data with a **Panel** dashboard. This unique marriage of **Panel** and **Plaid** is only possible because **Panel** supports Python.
 
 * Panel's integration with PyViz has made it a highly valuable skill in analytics, as well as a staple in the Python data visualization ecosystem. Dashboards are currently being used to drive business decisions, track and monitor KPIs, and improve operational processes.
 
-* Panel allows data scientists and analysts to create and manage dashboards in the same environment they are completing development, using one technology stack. One developer can use the same technology to create both a data pipeline and dashboard visualizations for the data.
+* Panel allows data scientists and analysts to create and manage dashboards in the same environment where they are completing development, using one technology stack. One developer can use the same technology to create both a data pipeline and dashboard visualizations for the data.
 
   * PyViz removes the need to use another technology stack for dashboards/visualizations (i.e., Tableau).
 
-Walkthrough some of these [example](https://gapminder.pyviz.demo.anaconda.com/gapminders) dashboards, using the following discussion points to guide the walkthrough:
+Walk through some of these [example](https://gapminder.pyviz.demo.anaconda.com/gapminders) dashboards, using the following discussion points as a guide:
 
-* PyViz comes with widgets and plugins that allow it to render plots and visualizations from other technologies, like Pandas, Matplotlib, and Plotly. This enables developers to build visualizations in the appropriate technologies and then display them all in one centralized location with a Panel dashboard.
+* PyViz comes with widgets and plugins that allow it to render plots and visualizations from other technologies, like Pandas, Matplotlib, and Plotly. This enables developers to build visualizations in the appropriate technologies, and then display them all in one centralized location with a Panel dashboard.
 
   ![panel_wrapper.png](Images/panel_wrapper.png)
 
@@ -111,13 +111,13 @@ Walkthrough some of these [example](https://gapminder.pyviz.demo.anaconda.com/ga
 
 If time remains, show students the [NYC taxi trips](https://nyc-taxi.pyviz.demo.anaconda.com/dashboard) dashboard, a geospatial map reporting on taxi routes, pick up and drop off locations, and trips by the hour.
 
-* Interact with the visualization using the widget bar (i.e., pan, zoom, hover, etc.). Ask students the following question:
+* Interact with the visualization using the widget bar (i.e., pan, zoom, hover, etc.). Ask students the following questions:
 
   * Jupyter Lab and Panel can both render interactive plots. In what ways do these technologies differ?
 
     * **Answer:** Jupyter Lab renders locally, whereas Panel can render plots over the internet.
 
-  * Ask students what the value is behind having a dashboard that opens over the internet rather than just locally.
+  * What is the value in having a dashboard that opens over the internet, rather than just locally?
 
     * **Answer:** More users can access and leverage the dashboard.
 
