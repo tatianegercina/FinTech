@@ -631,7 +631,7 @@ Open the solution and explain the following:
 
   ![population_crime_dashboard.gif](Images/population_crime_dashboard.gif)
 
-* Integrating Panel columns and tabs with PyViz visualizations create a dashboard that allows users to analyze a number of visualizations at one time from a one-stop-shop.
+* Integrating Panel columns and tabs with PyViz visualizations create a dashboard that allows users to analyze a number of visualizations at one time from a one-stop shop.
 
 If time remains, ask students the following review questions:
 
@@ -639,9 +639,9 @@ If time remains, ask students the following review questions:
 
   * **Answer:** List data structure
 
-* If I wanted to add an object to a row after the row object has been declared, can I?
+* Can I add an object to a row after the row object has been declared?
 
-  * **Answer:** Yes, the row `append` function can be used to insert the new object
+  * **Answer:** Yes, the row `append` function can be used to insert the new object.
 
 * Why do extensions have to be specified when working with **Panel**?
 
@@ -653,13 +653,13 @@ Ask for any remaining questions before moving on.
 
 ### 14. Instructor Do: Dashboards As Web Applications (15 mins) (Critical)
 
-Students learn how to transform their Jupyter notebook dashboards into a **web app**. The instructor will demonstrate how to use the `servable` command to execute and run the dashboard on a server. The instructor will use the same dashboard created from the previous activity.
+Students will now learn how to transform their Jupyter notebook dashboards into a **web app**. The instructor will demonstrate how to use the `servable` command to execute and run the dashboard on a server. The same dashboard will be used that was created in the previous activity.
 
 **Files:**
 
 * [dashboard_webapps.ipynb](Activities/07-Ins_Dashboard_Webapps/Unsolved/dashboard_webapps.ipynb)
 
-Navigate to the 6.3 slides, and communicate the following:
+Go to the slideshow [[open section ]] , and communicate the following:
 
 * One of the advantages of using Panel for dashboarding is that Panel dashboards can be deployed as web apps: dashboard applications that are accessible over the internet, rather than just in a Jupyter notebook. This means that any Jupyter notebook containing a Panel object can be deployed as its own independent **web app**.
 
