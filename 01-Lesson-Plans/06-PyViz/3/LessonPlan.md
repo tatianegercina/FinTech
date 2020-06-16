@@ -127,13 +127,13 @@ Ask for any questions before moving forward.
 
 ### 3. Instructor Do: Getting Started with Panel (10 mins)
 
-Students will receive a small demo on how to use Panel at a high level.
+Students will now receive a short demo on how to use Panel at a high level.
 
 **Files:**
 
 * [getting_started_panel.ipynb](Activities/01-Ins_Getting_Started_Panel/Solved/getting_started_panel.ipynb)
 
-Open the solved file, and give students a high level run down of how Panel works. Begin by showing students how to prep **Panel** within Jupyter Lab:
+Open the solved file, and show how to prep **Panel** within Jupyter Lab:
 
 * Panel can be imported into Python using the import command.
 
@@ -168,7 +168,7 @@ Walk students through how the `interact` function is used to create quick and ea
 
 * Most Panel interact functions accept other functions as arguments. This is because the **interact** widget was designed from a functional programming point of view. This approach heavily relies on developers passing functions to functions, which allows Panel to dynamically render content and plots based on user input/interaction.
 
-  * Imagine creating a dashboard reporting on housing sales by city across 10 years. Instead of having all 10 years of data for every city shown on a plot, you might want to limit the data to a specific year. A **Panel** select list could be used to select the year to report on.
+  * Imagine creating a dashboard that reports housing sales by city over a 10-year period. Instead of having all 10 years of data for every city shown on a plot, you might want to limit the data to a specific year. A **Panel** select list could be used to select the year to report on.
 
     ```python
       # Define function to choose a year
