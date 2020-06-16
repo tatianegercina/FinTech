@@ -466,9 +466,9 @@ Ask if there are any questions before moving forward.
 
 ### 8. Student Do: The Judge's Panel (20 mins)
 
-In this activity, students will execute insert, update, and remove operations on Panel **panels**.
+Encourage students to work together in pairs of two. In this activity, students will execute insert, update, and remove operations on Panel **panels**.
 
-Since students have not been taught how to manipulate **panels** using insert, update, and remove functions, make sure to circulate with TAs to provide assistance. Also, encourage students to work together in pairs of two.
+Since students have not been taught how to manipulate **panels** using insert, update, and remove functions, make sure to circulate with TAs to provide assistance. 
 
 **Instructions:**
 
@@ -509,7 +509,7 @@ Open the solution and explain the following:
 
   ![panel_column.png](Images/panel_columns.png)
 
-* Tab objects allow media/content to be segmented into different views. Tabs are a key feature that allows dashboards to have more than one report. Each tab can be considered a report or view, and each view can have its own reporting/analytic approach for gaining insights.
+* Tab objects allow media/content to be segmented into different views. Tabs are a key feature that allow dashboards to have more than one report. Each tab can be considered a report or view, and each view can have its own reporting/analytic approach for gaining insights.
 
   ```python
   # Create tabs
@@ -533,15 +533,15 @@ Ask for any remaining questions before moving on.
 
 ### 11. Instructor Do: Panel Extensions (10 mins)
 
-In this activity, the instructor leads a facilitated discussion on Panel **extensions**. The goal of this lesson is to get students thinking about what gives Panel the ability to render content from so many different technologies. This activity will solely be a discussion; there is no code.
+In this activity, the instructor leads a facilitated discussion on Panel **extensions**. The goal is to get students thinking about what gives Panel the ability to render content from so many different technologies. This activity will be a discussion only; there is no code.
 
-Navigate to the 6.3 slides, and highlight the following:
+Go to the slideshow, [[INSERT SECTION HERE]] , and highlight the following:
 
 * Panel supports a wide range of visualization technologies. Support for these technologies is managed by Panel **extensions**.
 
 * Panel supports a number of extensions, including Plotly, Bokeh, and Matplotlib. Extensions give Panel the ability to display and use content created by other technologies.
 
-* Each Panel extension has its unique features and color schemes. Some features are shared across extensions. For this reason, multiple extensions may need to be specified if a dashboard leverages more than one technology (i.e., Plotly and Matplotlib).
+* Each Panel extension has its unique features and colour schemes, with some features shared across extensions. For this reason, multiple extensions may need to be specified if a dashboard leverages more than one technology (i.e., Plotly and Matplotlib).
 
 * By specifying the extension, multiple media types can be combined to create an informative and insightful dashboard.
 
