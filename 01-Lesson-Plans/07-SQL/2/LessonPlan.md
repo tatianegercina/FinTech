@@ -779,7 +779,7 @@ Discuss the following points with students:
 
 * Up to this point, the subqueries we've seen have been relatively straightforward. In this activity, we will look at more complicated examples, but don't worry. We can perform complexly nested subqueries using the same principles that we've learned so far.
 
-* Begin with a question: How many people have rented the film *Blanket Beverly*? To answer this question systematically, we must first identify the tables needed for our query.
+* Begin with a question: How many people have rented the film *Agent Truman*? To answer this question systematically, we must first identify the tables needed for our query.
 
 * To help with this process, an **entity relationship diagram (ERD)** is used.
 
@@ -807,7 +807,7 @@ Begin a class discussion to determine how to formulate the rest of the subquery 
 
 * Connect the `film` table using the key `film_id`, which it has in common with the `inventory` table.
 
-* In the last subquery, query the film title, *Blanket Beverly*.
+* In the last subquery, query the film title, *Agent Truman*.
 
 The sample query would be as follows:
 
@@ -830,7 +830,7 @@ The sample query would be as follows:
           (
             SELECT film_id
             FROM film
-            WHERE title = 'BLANKET BEVERLY'
+            WHERE title = 'AGENT TRUMAN'
           )
         )
       )
