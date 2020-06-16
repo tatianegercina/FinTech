@@ -1,6 +1,6 @@
 ## 9.3 Lesson Plan—Project 1 Presentations
 
-In this class, your students will present their project apps to the class! They’ll afterward answer open-floor questions from you, TAs, and classmates. This is a **crucial** lecture for your students, so make sure you follow the advice in this plan.
+In this class, your students will present their project dashboards to the class! They’ll afterward answer open-floor questions from you, TAs, and classmates. This is a **crucial** lecture for your students, so make sure you follow the advice in this plan.
 
 ##### Instructor Priorities
 
@@ -20,7 +20,7 @@ In this class, your students will present their project apps to the class! They�
 
 ### 0. Instructor Do: Set Up Your Equipment (15 minutes before class)
 
-Make sure to come to class and setup your laptop and other equipment. It is recommended that you prepare a list of the GitHub pages links for all deployed repos so that students can quickly launch their apps.
+Make sure to come to class and setup your laptop and other equipment. It is recommended that you prepare a list of the GitHub pages links for all deployed repos so that students can quickly launch their dashboards.
 
 If students have hosted presentations on Google Presentations, compile a list of those as well to avoid switching computers.
 
@@ -34,7 +34,7 @@ Congratulate your class for developing their projects to a state worth presentin
 
 Tell students to deploy their latest changes to GitHub. After this, all it will take is a quick pull to get any changes.
 
-Make sure groups have deployed their app to GitHub Pages, as well. We want to see their projects in action!
+Make sure groups have deployed their dashboard to GitHub Pages, as well. We want to see their projects in action!
 
 Give students a rundown of how their presentations should pan out.
 
