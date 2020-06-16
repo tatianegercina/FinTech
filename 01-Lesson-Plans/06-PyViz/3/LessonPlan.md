@@ -228,15 +228,16 @@ In this activity, students receive a demonstration of how to use and customize P
 
 * [panel_components.ipynb](Activities/02-Ins_Dashboard_Components/Solved/panel_components.ipynb)
 
-Navigate to the 6.3 slides, and highlight the following:
+Go to the slideshow, [[INSERT SECTION HERE]] and highlight the following:
 
 * Dashboard components are used to create the overall layout and structure of a **Panel** dashboard. Dashboard components are what allow media to be rendered on a **Panel** dashboard.
 
-  * Dashboard components are essential objects that hold/store the content being visualized on the Panel dashboard.
+  * Dashboard components are essential objects that store the content being visualized on the Panel dashboard.
 
 * Panel dashboards have two main components: **panes** and **panels** (rows, columns, and tabs).
 
-* **Pane** and **panel** objects work in the same way, in the sense that they wrap around pre-existing objects (plots, text, html). Each specific media type will have a helper function that can be used to convert the content to a Panel object.
+* **Pane** and **panel** objects work in the same way, in that they wrap around pre-existing objects (plots, text, html). Each specific media type will have a helper function that can be used to convert the content to a Panel object.
+
 * For example, there is a `panel.pane.Plotly` function that will create a Plotly pane. There is also `panel.pane.Markdown`.
 
 * Each **pane** type has its own set of **Panel** functions and customization attributes (i.e., height, width, etc).
@@ -312,7 +313,7 @@ Ask if there are any questions before moving forward.
 
 ### 5. Student Do: No Pane, No Gain (20 mins)
 
-In this activity, students will create a Plotly plot and convert it to a Panel **pane**. The goal of this activity is to reinforce to students the importance of Panel **panes** and their role in the dashboard creation process.
+In this activity, students create a Plotly plot and convert it to a Panel **pane**. The goal is to reinforce the importance of Panel **panes** and their role in the dashboard creation process.
 
 **Instructions:**
 
@@ -336,9 +337,9 @@ Open the solution and explain the following:
 
 * There are two ways in which a Panel **pane** can be created. One way is to use panel helper functions like `interact` and `panel.panel`, which converts media types to Panel **panes**. `interact` does this specifically so that it can create an interactive widget.
 
-  * Ask students the following question: What is the purpose behind the `interact` function? What does it do?
+  * Ask students: What is the purpose behind the `interact` function? What does it do?
 
-    * **Answer** The `interact` function creates an interaction sliding widget that serves as a way for users to customize data presented on a plot. The `interact` widget is an alternative to hardcoding argument values, and it serves as a separate mechanism for getting user input.
+    * **Answer:** The `interact` function creates an interaction sliding widget that serves as a way for users to customize data presented on a plot. The `interact` widget is an alternative to hardcoding argument values, and it serves as a separate mechanism for getting user input.
 
   * In order for Panel to create the interaction widget, it has to convert the plot to a **pane** object. The `interact` function handles this conversion behind the scenes.
 
@@ -384,7 +385,7 @@ By the end of this activity, students will have learned how to create and use Pa
 
 Indicate to students that this next activity will focus on creating **panel** objects and using them to create a dashboard layout.
 
-Navigate to the 6.3 slides, and highlight the following:
+Go to the slideshow [[NAVIGATE TO SECTION]], and highlight the following:
 
 * Panel **panels** are similar to **pane** objects, except **panels** have a structure.
 
