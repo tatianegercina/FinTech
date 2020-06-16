@@ -696,7 +696,7 @@ If time remains, ask the following guiding question:
 
   * **Answer:** Panel dashboards allow financial companies to retire one*off/ad hoc reports. Instead of distributing financial reports via email and making graphs and pivot tables in Excel, all reporting can be migrated to Panel dashboards, executed as **web apps**, and made accessible company-wide.
 
-  * **Answer:** Panel's interactive dashboards offer financial companies the opportunity to analyze and gain insights from data using an interactive platform. Instead of analyzing financial reports that contain static/stale data, finance professionals can simply utilize a dashboard to access to the latest data.
+  * **Answer:** Panel's interactive dashboards offer financial companies the opportunity to analyze and gain insights from data using an interactive platform. Instead of analyzing financial reports that contain static/stale data, finance professionals can simply utilize a dashboard to access the latest data.
 
 Ask if there are any questions before moving on.
 
