@@ -181,11 +181,11 @@ If time remains, ask students the following questions:
 
 * What story do these visualizations tell about the real estate market in Maryland?
 
-  * **Answer** The higher the cost of living, the higher the number of housing units sold. More homes are being sold in areas with a higher cost of the index, which can be related to the quality of the homes, the population size of the counties, etc. It also shows that more and more individuals are gravitating toward the areas with higher cost.
+  * **Answer:** The higher the cost of living, the higher the number of housing units sold. More homes are being sold in areas with a higher cost of the index, which can be related to the quality of the homes, the population size of the counties, etc. It also shows that more and more individuals are gravitating toward the areas with higher cost.
 
 * Which county could be an up-and-coming real estate opportunity? Why?
 
-  * **Answer** Baltimore City. Baltimore City has an average real-estate sale price of less than $200,000, and the cost of living index is only 1.3% higher. This county has the lowest prices with decent sales volume. Because of the number of sales, it seems the market is active with buying opportunities. While it might be too late to get involved, it's definitely a hot spot.
+  * **Answer:** Baltimore City. Baltimore City has an average real-estate sale price of less than $200,000, and the cost of living index is only 1.3% higher. This county has the lowest prices with decent sales volume. Because of the number of sales, it seems the market is active with buying opportunities. While it might be too late to get involved, it's definitely a hot spot.
 
 Ask if there are any questions, and then move on to the student activity.
 
