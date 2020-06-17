@@ -1,8 +1,8 @@
 # No Pane, No Gain
 
-It's time to get some experience working with PyViz objects in Panel. Panes are the fundamental building block of any Panel Dashboard, and without Panes, there can be no dashboard, which means no value-added. Use the knowledge and skills learned from the instructor demo to convert a Plotly plot to a Panel **pane** object.
+It's time to get some experience working with PyViz objects in Panel. Panes are the fundamental building block of any Panel Dashboard, and without Panes, there can be no dashboard, which means there's no value added. Use the knowledge and skills learned from the instructor demo to convert a Plotly plot to a Panel **pane** object.
 
-If time remains, complete the challenge activity by converting an hvPlot to a Panel object as well.
+If any time remains, complete the challenge activity by converting an hvPlot to a Panel object.
 
 ## Instructions
 
