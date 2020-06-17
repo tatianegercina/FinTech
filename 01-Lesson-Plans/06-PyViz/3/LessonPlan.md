@@ -402,7 +402,6 @@ Open the starter file, and conduct a dry walkthrough of how to create and use Pa
   import panel as pn
   from panel.interact import interact
   import plotly.express as px
-  import hvplot.pandas
   pn.extension('plotly')
 
   housing_transactions = pd.DataFrame({
