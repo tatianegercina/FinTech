@@ -220,7 +220,7 @@ Ask if students have any questions before continuing.
 
 - - -
 
-### 4. Instructor Do: Panel Dashboard Components (Panes) (10 mins) (Critical)
+### 4. Instructor Do: Panel Dashboard Components – Panes (10 mins) (Critical)
 
 In this activity, students receive a demonstration of how to use and customize Panel's dashboard components.
 
@@ -375,7 +375,7 @@ Ask for any remaining questions before moving on.
 
 - - -
 
-### 7. Instructor Do: Dashboard Components (Panels) (15 mins) (Critical)
+### 7. Instructor Do: Dashboard Components – Panels (15 mins) (Critical)
 
 By the end of this activity, students will have learned how to create and use Panel **panel** objects to create rows, columns, and tabs for dashboard Panels.
 
