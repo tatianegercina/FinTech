@@ -540,7 +540,7 @@ Go to the slideshow, navigate to the panel extensions section, and highlight the
 
 * Panel supports a number of extensions, including Plotly, Bokeh, and Matplotlib. Extensions give Panel the ability to display and use content created by other technologies.
 
-* Each Panel extension has its unique features and colour schemes, with some features shared across extensions. For this reason, multiple extensions may need to be specified if a dashboard leverages more than one technology (i.e., Plotly and Matplotlib).
+* Each Panel extension has unique features and colour schemes, with some features shared across extensions. For this reason, multiple extensions may need to be specified if a dashboard leverages more than one technology (i.e., Plotly and Matplotlib).
 
 * By specifying the extension, multiple media types can be combined to create an informative and insightful dashboard.
 
