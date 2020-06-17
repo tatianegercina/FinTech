@@ -28,8 +28,6 @@ Use Plotly Express and **MapBox** to create a geographical plot that will visual
 
 3. Plot squares that are of interest.
 
-Plot the data with the count of boroughs as the size.
-
 ### Hint
 
 Creating too many map plots in one notebook might create a memory issue. Consider creating a separate notebook for the challenge section. This will require you to read the CSV data in both notebooks.

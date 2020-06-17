@@ -84,7 +84,7 @@ In this section, you want to compare the house value by neighbourhood.
 
 **Hint:** Use `hvplot` to obtain the interactive dropdown selector for the neighbourhood.
 
-  ![avg-price-neighborhood.png](Images/avg-price-neighborhood.png)
+  ![avg-price-neighbourhood.png](Images/avg-price-neighbourhood.png)
 
 #### Number of Dwelling Types per Year
 
@@ -98,15 +98,15 @@ In this section, you want to visualize the number of dwelling types per year in 
 
 In this section, you want to figure out which neighbourhoods are the most expensive. You will need to calculate the mean house value for each neighbourhood and then sort the values to obtain the top 10 most expensive neighbourhoods on average. Plot the results as a bar chart.
 
-![top-10-expensive-neighborhoods.png](Images/top-10-expensive-neighborhoods.png)
+![top-10-expensive-neighbourhoods.png](Images/top-10-expensive-neighbourhoods.png)
 
-#### Neighborhood Map
+#### Neighbourhood Map
 
 In this final section, you will read in neighbourhood location data and build an interactive map with the average prices per neighbourhood. Use a scatter Mapbox object from Plotly express to create the visualization. Remember, you will need your Mapbox API key for this.
 
 Remember that to create maps visualizations using Plotly Express, you will need to create an account at [mapbox](https://www.mapbox.com/) and [create an access token](https://docs.mapbox.com/help/how-mapbox-works/access-tokens/#creating-and-managing-access-tokens).
 
-  ![neighborhood-map.png](Images/neighborhood-map.png)
+  ![neighbourhood-map.png](Images/neighbourhood-map.png)
 
 #### Cost Analysis (Optional Challenge)
 

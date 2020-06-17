@@ -28,7 +28,7 @@ By the end of class, students will be able to:
 
 * Because this lesson is using an API, make sure to sign up for a Mapbox API key using this [link](https://account.mapbox.com/auth/signup/). Create a `.env` file to store your API key, and use `python-dotenv` to make it callable in Python.
 
-* Throughout the day, reinforce to students the importance and power of interactive plotting. The widgets, automatic color formatting and skins, and plot types can all be accessed and manipulated with ease. The plots being created by Plotly Express would have taken a person hours to create in the past; Plotly Express does it in seconds.
+* Throughout the day, reinforce to students the importance and power of interactive plotting. The widgets, automatic colour formatting and skins, and plot types can all be accessed and manipulated with ease. The plots being created by Plotly Express would have taken a person hours to create in the past; Plotly Express does it in seconds.
 
 * Keep pacing in mind while moving through the lesson. Allow students to ask questions, and when necessary, ask students to hold their questions for the review sessions. Adhere to the Time Tracker as closely as possible. 
 
@@ -135,7 +135,7 @@ Open the starter file provided and live code, creating a scatter plot using Plot
 
   * Control the size of the circles by setting the size to equal Number of Housing Units Sold.
 
-  * Color code the plot by County.
+  * Colour code the plot by County.
 
   ```python
   # Create scatter plot comparing average sale price and cost of living index
@@ -156,7 +156,7 @@ Open the starter file provided and live code, creating a scatter plot using Plot
 
   * Use **Average Sale Price** to determine the size of the data circles.
 
-  * Color code the plot by **County**.
+  * Colour code the plot by **County**.
 
   ```python
   # Create scatter plot comparing number of housing units sold with cost of living index
@@ -304,9 +304,9 @@ Break down the anatomy of the plot, emphasizing the components below.
 
 * Point out the verticals on the plot. Each vertical represents a different variable. Because each variable can have a different range of numeric values, the scale of each vertical is specific to that variable. This would mean each vertical could have a different scale.
 
-* Point out the colored lines on the plot. A line is used to represent a row from the DataFrame. A line will connect each attribute for that given row, which enables analysts to spot trends and track the related attributes and values.
+* Point out the coloured lines on the plot. A line is used to represent a row from the DataFrame. A line will connect each attribute for that given row, which enables analysts to spot trends and track the related attributes and values.
 
-  * Each line is color-coded to help assist in tracing the relationships. This is especially valuable when going from looking at data from a row point of view to looking at a visualization.
+  * Each line is colour-coded to help assist in tracing the relationships. This is especially valuable when going from looking at data from a row point of view to looking at a visualization.
 
 Ask if there are any questions before moving on.
 
@@ -484,7 +484,7 @@ Open the solution and ask the student volunteer to present the plot and relay th
 
 * The line colouring of the plot can be changed using the `colour` attribute. This will help spot trends in the data.
 
-  ![stu_parallel_categories_color.png](Images/stu_parallel_categories_color.png)
+  ![stu_parallel_categories_colour.png](Images/stu_parallel_categories_colour.png)
 
 If time remains, initiate the storytelling piece of the review by asking the student some of the following guided questions:
 
