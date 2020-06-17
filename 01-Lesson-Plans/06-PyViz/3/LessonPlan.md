@@ -80,7 +80,6 @@ Share that Panel is an open-source Python library that allows users to integrate
 
 ### 2. Instructor Do: Intro to Panel (10 mins) (Critical)
 
-
 Continue the discussion by highlighting the rise of Panel.
 
 * Digital dashboards have become a staple in the tech world; they are used to visualize personal finances, company performance and revenue, and even for election predictions and results.
@@ -228,7 +227,7 @@ In this activity, students receive a demonstration of how to use and customize P
 
 * [panel_components.ipynb](Activities/02-Ins_Dashboard_Components/Solved/panel_components.ipynb)
 
-Go to the slideshow, [[INSERT SECTION HERE]] and highlight the following:
+Go to the slideshow, navigate to the dashboard components (panes) section, and highlight the following:
 
 * Dashboard components are used to create the overall layout and structure of a **Panel** dashboard. Dashboard components are what allow media to be rendered on a **Panel** dashboard.
 
@@ -385,7 +384,7 @@ By the end of this activity, students will have learned how to create and use Pa
 
 Indicate to students that this next activity will focus on creating **panel** objects and using them to create a dashboard layout.
 
-Go to the slideshow [[NAVIGATE TO SECTION]], and highlight the following:
+Go to the slideshow, navigate to the dashboard components (panels) section, and highlight the following:
 
 * Panel **panels** are similar to **pane** objects, except **panels** have a structure.
 
@@ -535,7 +534,7 @@ Ask for any remaining questions before moving on.
 
 In this activity, the instructor leads a facilitated discussion on Panel **extensions**. The goal is to get students thinking about what gives Panel the ability to render content from so many different technologies. This activity will be a discussion only; there is no code.
 
-Go to the slideshow, [[INSERT SECTION HERE]] , and highlight the following:
+Go to the slideshow, navigate to the panel extensions section, and highlight the following:
 
 * Panel supports a wide range of visualization technologies. Support for these technologies is managed by Panel **extensions**.
 
@@ -659,7 +658,7 @@ Students will now learn how to transform their Jupyter notebook dashboards into 
 
 * [dashboard_webapps.ipynb](Activities/07-Ins_Dashboard_Webapps/Unsolved/dashboard_webapps.ipynb)
 
-Go to the slideshow [[open section ]] , and communicate the following:
+Go to the slideshow, navigate to the dashboards as web applications section, and communicate the following:
 
 * One of the advantages of using Panel for dashboarding is that Panel dashboards can be deployed as web apps: dashboard applications that are accessible over the internet, rather than just in a Jupyter notebook. This means that any Jupyter notebook containing a Panel object can be deployed as its own independent **web app**.
 

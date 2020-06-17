@@ -214,6 +214,8 @@ Ask for any questions and then continue on to the next activity.
 
 ### 5. Instructor Do: HvPlot Demo (10 min)
 
+Students will now be introduced to a working demo of hvPlot.
+
 **Files:**
 
 * [hvPlot.ipynb](Activities/01-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb)
