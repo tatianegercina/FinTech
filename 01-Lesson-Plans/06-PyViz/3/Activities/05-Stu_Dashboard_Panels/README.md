@@ -1,6 +1,6 @@
 # The Judge's Panel
 
-After 3 weeks, you've finally heard back from REMAX regarding your job application! Unfortunately, the hiring manager is requesting that you come back in for one final technical evaluation. The REMAX team has narrowed their choices down to two candidates: you and another developer who has experience working with Tableau.
+It's been three weeks, but you've finally heard back from REMAX regarding your job application! Unfortunately, the hiring manager wants you to do one final technical evaluation. The REMAX team has narrowed their choices down to two candidates: you and another developer who has experience working with Tableau.
 
 In order to make their decision, the REMAX team needs to assess your ability to create an analytic platform (dashboard) that satisfies multiple analytic needs.
 
