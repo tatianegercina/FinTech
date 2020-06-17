@@ -561,6 +561,8 @@ Navigate to the 6.3 slides, and highlight the following:
   pn.extension()
   ```
 
+**NOTE:** It is crucial to note to the class that when use using `hvplot.pandas` the panel extensions should be initialized prior to the `hvplot.pandas` import.  The `hvplot.pandas` library initializes its own extension through Holoviews which will disallow the panel extensions unless the panel extensions are imported first.
+
 Ask if there are any questions before continuing.
 
 - - -
