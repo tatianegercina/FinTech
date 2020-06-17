@@ -80,7 +80,7 @@ Share that Panel is an open-source Python library that allows users to integrate
 
 ### 2. Instructor Do: Intro to Panel (10 mins) (Critical)
 
-Continue the discussion by highlighting the rise of Panel.
+Go to the slideshow, navigate to the Intro to Panel section, and highlight the following:
 
 * Digital dashboards have become a staple in the tech world; they are used to visualize personal finances, company performance and revenue, and even for election predictions and results.
 
