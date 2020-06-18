@@ -36,6 +36,8 @@ By the end of class, students will be able to:
 
 * Encourage students to work in pairs or groups on in-class activities to help facilitate discussions as well as troubleshooting. Collaborative exercises such as student-led activity reviews and discussions are built into this lesson.
 
+* If students have issues with plots rendering blank in the Jupyter Lab preview, have them refer to the [troubleshooting section](../Supplemental/PyVizInstallationGuide.md#troubleshooting) of the Pyviz Installation Guide.
+
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
