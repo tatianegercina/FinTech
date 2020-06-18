@@ -357,7 +357,7 @@ Answer any questions that arise and move to the next activity.
 
 ---
 
-### 7. Student Do: The Voice of the Crisis (15 min)
+### 7. Student Do: The Voice of the Virus (15 min)
 
 In this activity, students will use the News API to retrieve news articles in English and French about the financial crisis of 2008. At the end of the activity, students will create a CSV file that will be used for coming activities.
 
@@ -371,7 +371,7 @@ In this activity, students will use the News API to retrieve news articles in En
 
 ---
 
-### 8. Instructor Do: Review The Voice of the Crisis (5 min)
+### 8. Instructor Do: Review The Voice of the Virus (5 min)
 
 Open the [solution](Activities/07-Stu_Crisis_Voice/Solved/voice_crisis.ipynb) and walk through the code, highlight the following:
 
@@ -532,8 +532,8 @@ Open the solution and walk through the code, highlighting the following:
 * It's important to use the `encoding='utf-8-sig'` to load the CSV file when creating the DataFrame, especially to get all the special characters from the news articles in French.
 
   ```python
-  file_path = Path("Data/crisis_news_en_fr.csv")
-  news_df = pd.read_csv(file_path, encoding='utf-8-sig')
+  file_path = Path("Data/virus_news_en_fr.csv")
+  news_df = pd.read_csv(file_path, encoding="utf-8-sig")
   ```
 
 * The VADER sentiment module is only trained to score sentiment in English, so a new DataFrame with only news in English is created. Students will learn how to score sentiment in multiple languages later.
@@ -605,7 +605,7 @@ Open the solution and walk through the code, highlighting the following:
   )
   ```
 
-  ![Sample sentiments bar chart](Images/crisis_feelings_bar_chart.png)
+  ![Sample sentiments bar chart](Images/virus_feelings_bar_chart.png)
 
 Answer any additional questions before moving to the next activity.
 
