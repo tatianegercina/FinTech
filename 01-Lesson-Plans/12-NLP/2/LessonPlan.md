@@ -319,13 +319,13 @@ Switch back to the Jupyter notebook and mention to students that you will focus 
 
 Start the live-coding demo by highlighting the following:
 
-* The `get_top_headlines()` method fetches top news articles about the keyword defined on the `q` parameter. This example gets top headlines about oil (`q="oil"`) in English (`language="en"`) from the United States (`country="us"`).
+* The `get_top_headlines()` method fetches top news articles about the keyword defined on the `q` parameter. This example gets top headlines about oil (`q="oil"`) in English (`language="en"`) from the Canada (`country="ca"`).
 
   ```python
   oil_headlines = newsapi.get_top_headlines(
     q="oil",
     language="en",
-    country="us"
+    country="ca"
   )
   ```
 
