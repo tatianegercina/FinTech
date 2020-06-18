@@ -36,7 +36,7 @@ By the end of class, students will be able to:
 
 * Slack out the PyViz install guide to students so that they have ample time to install and confirm the installation of Plotly Express and its Jupyter plugin.
 
-* If students have issues with plots rendering blank in the Jupyter Lab preview, have them refer to the [troubleshooting section](../Supplemental/PyVizInstallationGuide.md#troubleshooting) of the Pyviz Installation Guide.
+* If students have issues with plots rendering blank in the Jupyter Lab preview, have them refer to the [troubleshooting section](../Supplemental/PyVizInstallationGuide.md#troubleshooting) of the PyViz Installation Guide.
 
 * Due to the amount of content that needs to be covered in this lesson, there will be no class time dedicated to system checks. Communicate to students that they must have Plotly Express installed and running before coming to class. Any challenges or issues should be worked out with a TA.
 
