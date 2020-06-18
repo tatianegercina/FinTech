@@ -367,7 +367,7 @@ In this activity, students will use the News API to retrieve news articles in En
 
 **Files:**
 
-* [voice_crisis.ipynb](Activities/07-Stu_Virus_Voice/Unsolved/voice_virus.ipynb)
+* [voice_virus.ipynb](Activities/07-Stu_Virus_Voice/Unsolved/voice_virus.ipynb)
 
 ---
 
