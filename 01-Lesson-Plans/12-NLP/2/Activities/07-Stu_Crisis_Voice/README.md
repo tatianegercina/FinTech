@@ -1,18 +1,18 @@
-# The Voice of the Crisis
+# The Voice of the Virus
 
-Despite it happening over a decade ago, the financial crisis of 2008 is still in the news because of its effects on the global economy. In this activity, you will retrieve news articles about this historical economic event in English and French to capture the voice of the crisis in two different languages.
+The COVID-19 or coronavirus of 2020 was a pandemic that shook global economies including Canada's stock market. In this activity, you will retrieve news articles about this historical economic event in English and French to capture the voice of the crisis in two different languages.
 
 ## Instructions
 
 ### Getting News Articles in English
 
-In this section you have to fetch news articles using the News API with the keywords `financial`, `crisis`, and `2008` in English.
+In this section you have to fetch news articles using the News API with the keywords `coronavirus`, `canada`, and `2020` in English.
 
 Refer to [the `everything` endpoint documentation](https://newsapi.org/docs/endpoints/everything) of the News API to find out how you can include these three keywords on the `q` parameter.
 
 ### Getting News Articles in French
 
-Fetching news in French will require keywords in this language, so retrieve the news articles using the News API with the keywords `crise`, `financière`, and `2008`. Be aware of the grave accent on the first `è` in `financière`.
+Fetching news in French will require keywords in this language, so retrieve the news articles using the News API with the keywords `coronavirus`, `canada`, and `2020`.
 
 ### Create a DataFrame with All the Results
 
@@ -41,6 +41,6 @@ Your final DataFrame should look like this:
 
 You can use a `for-loop` with the `create_df()` function inside to iterate across the news articles list to create the DataFrame's structure.
 
-
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
