@@ -363,17 +363,17 @@ In this activity, students will use the News API to retrieve news articles in En
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Crisis_Voice/README.md)
+* [README.md](Activities/07-Stu_Virus_Voice/README.md)
 
 **Files:**
 
-* [voice_crisis.ipynb](Activities/07-Stu_Crisis_Voice/Unsolved/voice_crisis.ipynb)
+* [voice_crisis.ipynb](Activities/07-Stu_Virus_Voice/Unsolved/voice_virus.ipynb)
 
 ---
 
 ### 8. Instructor Do: Review The Voice of the Virus (5 min)
 
-Open the [solution](Activities/07-Stu_Crisis_Voice/Solved/voice_crisis.ipynb) and walk through the code, highlight the following:
+Open the [solution](Activities/07-Stu_Virus_Voice/Solved/voice_virus.ipynb) and walk through the code, highlight the following:
 
 * As can be read on [the News API documentation for the `Everything` endpoint,](https://newsapi.org/docs/endpoints/everything) it is possible to use logical operators to include or exclude keywords.
   ![Documentation for the q parameter of the News API](Images/new_api_q_param.png)
@@ -507,25 +507,25 @@ Answer any questions from the class before moving on.
 
 ---
 
-### 11. Student Do: The Feelings of the Crisis (20 min)
+### 11. Student Do: The Feelings of the Virus (20 min)
 
 In this activity, students will use VADER to score the sentiment of news titles and text to verify whether they have the same sentiment. This activity includes a facilitated discussion in the last four to five minutes to talk about students' findings.
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_Crisis_Feelings/README.MD)
+* [README.md](Activities/11-Stu_Virus_Feelings/README.MD)
 
 **Files:**
 
-* [crisis_feelings.ipynb](Activities/11-Stu_Crisis_Feelings/Unsolved/crisis_feelings.ipynb)
+* [virus_feelings.ipynb](Activities/11-Stu_Virus_Feelings/Unsolved/virus_feelings.ipynb)
 
 ---
 
-### 12. Instructor Do: Review The Feelings of the Crisis (5 min)
+### 12. Instructor Do: Review The Feelings of the Virus (5 min)
 
 **Files:**
 
-* [crisis_feelings.ipynb](Activities/11-Stu_Crisis_Feelings/Solved/crisis_feelings.ipynb)
+* [virus_feelings.ipynb](Activities/11-Stu_Virus_Feelings/Solved/virus_feelings.ipynb)
 
 Open the solution and walk through the code, highlighting the following:
 
