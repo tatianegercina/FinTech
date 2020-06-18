@@ -381,15 +381,15 @@ Open the [solution](Activities/07-Stu_Crisis_Voice/Solved/voice_crisis.ipynb) an
 * All the articles containing the three keywords are retrieved using the `AND` operator, either for English or French news. The queries are sensitive to orthographic signs, so it is important to use the grave accent over the first `è` in `financière`.
 
   ```python
-  # Fetch news about the financial crisis on 2008 in English
-  crisis_news_en = newsapi.get_everything(
-      q="financial AND crisis AND 2008",
+  # Fetch news about Canada and the 2020 coronavirus in English
+  virus_news_en = newsapi.get_everything(
+      q="coronavirus AND canada AND 2020",
       language="en"
   )
 
-  # Fetch news about the financial crisis on 2008 in French
-  crisis_news_fr = newsapi.get_everything(
-      q="crise AND financière AND 2008",
+  # Fetch news about Canada and the 2020 coronavirus in French
+  virus_news_fr = newsapi.get_everything(
+      q="coronavirus AND canada AND 2020",
       language="fr"
   )
   ```
@@ -410,13 +410,13 @@ Review the code for the `create_df()` function highlighting the following:
 
 ```python
 # Create a DataFrame with the news in English
-crisis_en_df = create_df(crisis_news_en["articles"], "en")
+virus_en_df = create_df(virus_news_en["articles"], "en")
 
 # Create a DataFrame with the news in French
-crisis_fr_df = create_df(crisis_news_fr["articles"], "fr")
+virus_fr_df = create_df(virus_news_fr["articles"], "fr")
 
 # Concatenate both DataFrames
-crisis_df = pd.concat([crisis_en_df, crisis_fr_df])
+virus_df = pd.concat([virus_en_df, virus_fr_df])
 ```
 
 Get the `head()` an `tail()` of the DataFrame to show the news articles in both languages.
@@ -426,8 +426,8 @@ Get the `head()` an `tail()` of the DataFrame to show the news articles in both 
 Save the DataFrame as a CSV file for further use in the next activities. Warn students that is important to use the `encoding='utf-8-sig'` parameter when saving the file to preserve special characters, especially in French, in the CSV file.
 
 ```python
-file_path = Path("Data/crisis_news_en_fr.csv")
-crisis_df.to_csv(file_path, index=False, encoding='utf-8-sig')
+file_path = Path("Data/virus_news_en_fr.csv")
+virus_df.to_csv(file_path, index=False, encoding='utf-8-sig')
 ```
 
 Answer any additional questions before moving to the next activity.
