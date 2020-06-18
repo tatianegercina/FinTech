@@ -1,8 +1,8 @@
-# The Feelings of the Crisis
+# The Feelings of the Virus
 
 When you read a news article, normally the headline is the hook to continue reading. However, a negative title could lead you to skip reading an article if you don't want to be in a bad mood. But is this accurate?
 
-In this activity, you are tasked to corroborate that a news title with a negative sentiment leads to a negative content. You will use VADER sentiment to accomplish this work using the news articles that you previously downloaded in The Voice of the Crisis activity.
+In this activity, you are tasked to corroborate that a news title with a negative sentiment leads to a negative content. You will use VADER sentiment to accomplish this work using the news articles that you previously downloaded in The Voice of the Virus activity.
 
 ---
 
@@ -33,7 +33,7 @@ Use the VADER sentiment module from `NLTK` to score the sentiment of every news 
 
 Your final DataFrame should look like this:
 
-![Sample DataFrame with sentiment scores](Images/crisis_feelings_df.png)
+![Sample DataFrame with sentiment scores](Images/virus_feelings_df.png)
 
 ### Analyzing Sentiments Results
 
@@ -41,12 +41,14 @@ How the sentiment of the title and the text differs in news articles?
 
 To answer this question, on this section you will create a bar chart contrasting the normalized sentiment for the title and the text of each news article. Use the build-in `plot()` method of the Pandas DataFrame to create a bar chart like the one bellow. Be aware that you chart might differ from this one because it is made from a different news DataFrame.
 
-![Sample bar chart of news title and text sentiments](Images/crisis_feelings_bar_chart.png)
+![Sample bar chart of news title and text sentiments](Images/virus_feelings_bar_chart.png)
 
 Finally, get the descriptive statistics from the English news DataFrame and discuss the analysis results with your partners.
 
 ### Hints
 
 You can use the [`iterrows()` method](https://stackoverflow.com/a/16476974/4325668) from the Pandas DataFrame to iterate across the rows to score the sentiment for the title and the text of each news article.
+
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
