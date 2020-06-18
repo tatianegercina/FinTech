@@ -2,25 +2,27 @@
 
 ### Overview
 
-Most of this class will center on project work. You and the TAs should check up on each group and make sure they're moving smoothly toward Saturday's presentations.
+Most of this class will center on project work. You and the TAs should check on each group and make sure they're moving smoothly toward Saturday's presentations.
 
-##### Instructor Priorities
+### Class Objectives
 
-* Students should have the entirety of class to work on their projects.
+* Students have the entire class to work on their group projects.
 
-* Make sure your students make measurable progress with their project work.
+* Students should make measurable progress with their project work.
+
+---
 
 ##### Instructor Notes
 
-Your students will be nearing the end of their projects. Even though it's the beginning of the week, you should push students to finish their apps before Thursday so they have optimal time to practice their presentations.
+Your students should be nearing the end of their projects. Even though it's the beginning of the week, you should push students to finish their apps before Thursday, so they have enough time to practice their presentations.
 
-It's crucial that you steer any off-course projects back on track. Come next class, the encroaching Saturday deadline will mire any attempt at a turnaround.
+It's crucial that you help steer any projects back that have fallen off course to get back on track. By the next class, the encroaching Saturday deadline will impede any attempts at a turnaround.
 
 The remaining schedule for Project 1 is as follows:
 
 * Day 4 (today) and Day 5:
 
-  * Students are given all of class to work on projects.
+  * Students have the entire class for project work.
 
 * Day 6:
 
@@ -28,41 +30,33 @@ The remaining schedule for Project 1 is as follows:
 
 ---
 
-### Class Objectives
-
-* Students work on their group projects.
-
----
-
 ### 1. Welcome Class (5 min)
 
-Say your hellos and check if students have any questions about past concepts.
+Welcome students to class, and ask if they have any questions about past concepts.
 
 ### 2. Instructor Do: Ask About Projects (5 min)
 
-Tell your students how you're excited to see the projects they'll present on Saturday. You should talk about how you're impressed with the concepts they've come up with and that they should feel proud about working toward the goals they devised after just spending eight weeks in this course.
+Begin by sharing your excitement on how eager you are to see the projects students are presenting on Saturday. After only spending eight weeks in the course, they've come up with some impressive concepts and should feel proud about all the hard work they've put in. They've come a long way since starting out with just Excel!
 
-Assure them that they've come a long way since starting out with just Excel.
+Ask students to share any feedback they have on the collaboration experience so far, as well as any anxiety they might be feeling as presentation day draws closer.
 
-Ask the class about their thoughts on the collaboration experience so far and about any lingering sources of anxiety they might have as they near closer to presentation day.
+* Provide reassuring answers to any concerns or anxieties that arise. If you've had similar doubts in your education and/or career, share an experience or two on how you overcame them.
 
-* Answer these reassuringly—if you ever had similar doubts, chime in with your experiences on overcoming them.
-
-* If no one says anything, they're likely apprehensive about admitting fears to their classmates. Assure them that if they're anxious about their project work, then no doubt other students feel the same way. Encourage them to share these thoughts—talking about them is an essential step to overcoming them.
+* If no one responds, it's likely because they're wary of sharing any apprehension in front of their peers. Assure them that if they're anxious about their project work, other students feel the same way. Encourage them to share these thoughts—talking is an essential step to overcoming them.
 
 ### 3. Student Do: Project Work (1 hour, 20 minutes)
 
-Have your students sit with their project groups. Tell the class they should try as best they can to finish 95% of their code and design by the end of the next class. That would give them most of Thursday and Friday to spend on presentations.
+Ask students to assemble into their groups, and try as best they can to finish 95% of their code and design by the end of the next class. This will give them most of Thursday and Friday to spend on presentations.
 
-Add that they should come into the next class expecting to devote at least 30 minutes to outlining their presentations. They'll also have time to work on the rest of their project.
+Tell students they should come into the next class expecting to devote at least 30 minutes to outlining their presentations. They'll also have time to work on the rest of their project.
 
-TAs and instructors: For the next 90 minutes, you're senior developers! Walk around the class as mentors for each group's team. Ask them about their progress so far; offer them advice on how they can finish their work in time.
+TAs and instructors: For the next 90 minutes, you're senior developers! Walk around the class as mentors for each group's team. Ask them about their progress so far, and offer advice on how they can finish their work in time.
 
-* Maybe a member of the team finished all the work their role entailed. Perhaps they're waiting for other people to complete a certain task before they can continue. Make sure any students in these situations ask their teammates how else they can help.
+* If any team members have completed the work that their roles entailed, or are waiting for others to complete tasks before they can continue, ask these students to talk with their teammates to see how else they can assist.
 
-* Some students might be stumped by technology that they hadn't gone over in class but are trying to use in their project. See if you can help out. If you're not familiar with the tech, direct the encumbered student to someone on the Boot Camp team who is.
+* Some students might be stumped by technology that hasn't been covered in class that they are trying to use in their project. See if you can help out. If you're not familiar with the tech, direct the student to someone in the Boot Camp team who is.
 
-* In any case, make sure all teams seem prepared to complete their projects by Saturday.
+* Make sure that all teams are on track to complete their projects by Saturday.
 
 ---
 
@@ -74,10 +68,10 @@ TAs and instructors: For the next 90 minutes, you're senior developers! Walk aro
 
 Allow students to continue working on their projects.
 
-* Rotate between groups to offer help to whoever needs it.
+* Rotate between groups and offer help to whoever needs it.
 
 ### End Class
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
