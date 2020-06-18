@@ -2,21 +2,21 @@
 
 #### Overview
 
-In this week, students will begin work on their first Project of the Boot Camp: Use Python to deliver an in-depth analysis of a financial data source of their choosing.
+For this week, students will begin work on their first project of the Boot Camp: Use Python to deliver an in-depth analysis of a financial data source of their choosing.
 
 #### Instructor Notes
 
-The instructional staff should work together prior to class to identify the groups for this project. It often works best to pair students with similar skill levels so that all students are able to contribute equally to the project.
+The instructional staff should work together prior to class to identify the groups for this project. It often works best to pair students with similar skill levels, so everyone can contribute equally to the project.
 
-It is highly recommended to request project proposals from students and then approve their proposals. Students will often struggle with finding data sources and in setting realistic goals, so use this as an opportunity to guide them to unique, interesting, and achievable projects.
+It is highly recommended that students submit their project proposals ahead of time, especially as some may struggle to find data sources and set realistic goals. Use this as an opportunity to guide them to unique, interesting, and achievable projects.
 
 Install the appropriate text editor to help visualize Git histories: [Git History](https://github.com/DonJayamanne/gitHistoryVSCode) in VS Code, [Git Time Machine](https://github.com/pidu/git-timemachine) for Sublime Text, and [git-time-machine](https://atom.io/packages/git-time-machine) for Atom.
 
 Be sure to slack out the [Git Branching Workflow](http://nvie.com/posts/a-successful-git-branching-model/) before the end of class.
 
-Be sure to slack out the [Visual Introduction to Git](https://medium.com/@ashk3l/a-visual-introduction-to-git-9fdca5d3b43a).
+Slack out the [Visual Introduction to Git](https://medium.com/@ashk3l/a-visual-introduction-to-git-9fdca5d3b43a).
 
-* If possible, share the above links both _before_ today's class and again at the end of it.
+* If possible, share the above links both _before_ today's class, and again at the end of it.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -31,32 +31,31 @@ Be sure to slack out the [Visual Introduction to Git](https://medium.com/@ashk3l
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### Class Objectives
 
-* Students must be able to articulate the requirements for Project 1.
-* Students must be able to draw and interpret diagrams of Git branching workflows.
-* Students must be able to create new branches with Git.
-* Students must be able to push local branches to GitHub.
+* Students must be able to: 
+  * articulate the requirements for Project 1.
+  * draw and interpret diagrams of Git branching workflows.
+  * create new branches with Git.
+  * push local branches to GitHub.
 
 ---
 
 ### 1. Instructor Do: Welcome Students (5 min)
 
-Greet the class, and explain that today is the first day of Project 1!
+Greet the class, and welcome everyone to the first day of Project 1!
 
-Congratulate the class on having made it this far!
-
-Explain that, over the next two class weeks, students will work in groups to complete a FinTech Python Project.
+Congratulate students on having made it this far, and explain that over the next two class weeks, students will work in groups to complete a FinTech Python Project.
 
 Point out that this provides students an opportunity to practice both programming and collaborative workflows.
 
-Explain that the first half of today's class will focus on using Git for collaboration, and that students will have the second half to convene with their groups and start thinking about projects.
+Explain that the first half of today's class will focus on using Git for collaboration, while the second half will give students the opportunity to start thinking about projects with their groups.
 
-Break students into their project groups, and give them a few minutes to rearrange their seating before moving on.
+Break students into their project groups, and give them a few minutes to get settled before moving on.
 
 ### 2. Student Do: Create a Repository (10 min)
 
@@ -72,7 +71,7 @@ Refer to `08-project-1/01-Stu_Create-Repository`, which contains the following i
 
 * Once in the repo's settings, select the "Collaborators" menu item on the left.
 
-* From the "Collaborators" page invite your group members to be project collaborators by entering their Github usernames one at a time.
+* From the "Collaborators" page, invite group members to be project collaborators by entering their Github usernames one at a time.
 
 * Each invited group member should receive an email they must open to accept the invitation.
 
@@ -90,7 +89,7 @@ Assure the class that we'll go into further detail about how this is done, but a
 
 Explain that the next step of setting up our project repos for group collaboration is to protect the master branch.
 
-* Protecting the master branch means we will configure the repo to prohibit any team members from pushing code up into the master directly or merging it in without another team member's review.
+* Protecting the master branch means we will configure the repo to prohibit any team members from pushing code up into the master directly, or merging it in without another team member's review.
 
 ### 4. Student Do: Protect Master Branch (5 min)
 
@@ -106,7 +105,7 @@ Refer to `08-project-1/02-Stu_Protect-Master`, which contains the following inst
 
 * Under "Branch Protection Rules" select "master" from the drop-down.
 
-* You should be presented with some options, check off the following:
+* You should be presented with some options. Check off the following:
 
   * "Protect this branch"
 
@@ -124,7 +123,7 @@ Note: For now, we just want to give students a high-level conceptual understandi
 
 Explain the following points about branching:
 
-* Every Git repo starts off with a master branch. This is there to hold the production version of the repo's code. But when we want to work on the code, we start by creating a new feature branch off the master.
+* Every Git repo starts off with a master branch, which is there to hold the production version of the repo's code. But when we want to work on the code, we start by creating a new feature branch off the master.
 
 * If we create a new branch from the master, we essentially create a self-contained copy of all of the master branch's code for us to work in.
 
@@ -134,7 +133,7 @@ Explain the following points about branching:
 
 * With the way our repos are set up now, another group member must look at and approve the pull request before its changes can be merged into the master.
 
-* Once a feature branch has been merged into the master, we delete it and then check back out to the master branch. From there, we'd check back out to a new feature branch and repeat the process for each feature we add.
+* Once a feature branch has been merged into the master, we delete it and then check back out to the master branch. From there, we'd check back out to a new feature branch, and repeat the process for each feature we add.
 
 Slack out the following image for students to have as a visual aid:
 
@@ -146,7 +145,7 @@ Take a moment to answer any questions, but avoid going too in depth. Students wi
 
 In this activity, students will create branches, submit pull requests, and perform code reviews before merging.
 
-Instructional staff should be walking around the class making themselves available for assistance and making sure students understand the instructions.
+Instructional staff should be walking around the class making themselves available for assistance, and ensuring students understand the instructions.
 
 Refer to [03-Stu_Branching-Pushing](Activities/03-Stu_Branching-Pushing/README.md), which contains the following instructions:
 
@@ -154,7 +153,7 @@ Refer to [03-Stu_Branching-Pushing](Activities/03-Stu_Branching-Pushing/README.m
 
 **Part I**: Branching and Submitting a Pull Request
 
-* In this section, we will create a branch, add a feature, and submit a pull request. **Only one group member should complete this section, everyone else should observe.**
+* In this section, we will create a branch, add a feature, and submit a pull request. **Only one group member should complete this section; everyone else should observe.**
 
 * Clone the project repo onto your computer and use the cd (change directory) command to get into it.
 
@@ -186,11 +185,11 @@ Refer to [03-Stu_Branching-Pushing](Activities/03-Stu_Branching-Pushing/README.m
 
 **Part II**: Reviewing a Pull Request
 
-* In this section we will review the pull request from Part I and merge it into the master. **A different project member should complete this section while others observe**.
+* In this section, we will review the pull request from Part I and merge it into the master. **A different project member should complete this section while others observe**.
 
-* Clone the repo to your computer if you haven't already done so and use the cd command to get into it.
+* Clone the repo to your computer if you haven't already done so, and use the cd command to get into it.
 
-* First you will want to test the changes introduced by the `add-new-python-script` branch locally. To examine the new branch on your local machine, run the following commands in your terminal:
+* First, you will want to test the changes introduced by the `add-new-python-script` branch locally. To examine the new branch on your local machine, run the following commands in your terminal:
 
   `git fetch`
 
@@ -198,9 +197,9 @@ Refer to [03-Stu_Branching-Pushing](Activities/03-Stu_Branching-Pushing/README.m
 
 * This code should bring the copy of the `add-new-python-script` branch that's on GitHub onto your computer.
 
-  * Make sure this worked by verifying that there's an `data_collection.py` file in your local repo.
+  * Make sure this worked by verifying that there's a `data_collection.py` file in your local repo.
 
-  * Normally you'd run the code here to make sure everything works properly.
+  * Normally, you'd run the code here to make sure everything works properly.
 
 * Check back out to your local `master` branch by running the following in your terminal:
 
@@ -208,9 +207,9 @@ Refer to [03-Stu_Branching-Pushing](Activities/03-Stu_Branching-Pushing/README.m
 
 * Now go to your GitHub repo's main page and go to the "Pull request" section. Select the `add-new-python-script` pull request from the list.
 
-* At the next page select the option to see the "Files changed."
+* At the next page, select the option to see the "Files changed."
 
-* You should be presented with all of the files that were changed in this PR along with line numbers for any code added or removed.
+* You should be presented with all of the files that were changed in this PR, along with line numbers for any code added or removed.
 
 * If there are any changes you would like made, you can click the line number to leave a comment the PR author will see and should address before approval. Otherwise, click "Review changes" and approve the PR. You should be taken to a screen with an option to "Merge pull request." Click this button.
 
@@ -228,7 +227,7 @@ Step through the [slideshow]() and explain the requirements for Project 1.
 
 * Be sure to slack out the Project's [Technical Requirements](../../../03-Projects/Project-01/TechnicalRequirements.md); the [Project Guidelines](../../../03-Projects/Project-01/ProjectGuidelines.md); the [Presentation Requirements](../../../03-Projects/Project-01/PresentationRequirements.md); the [Presentation Guidelines](../../../03-Projects/Project-01/PresentationGuidelines.md) after going through the slides.
 
-Take a moment to address any remaining student questions before dismissing the class for break.
+Take a moment to address any remaining questions before dismissing the class for break.
 
 ---
 
@@ -240,7 +239,7 @@ Take a moment to address any remaining student questions before dismissing the c
 
 Students should spend the remainder of class working with their groups to develop a project proposal.
 
-Be sure to walk around and offer advice on project scope, finding data sources, and what kinds of questions would be interesting and realistic for students to investigate.
+Walk around and offer advice on project scope, finding data sources, and potential questions that could be interesting and feasible for students to investigate.
 
 ---
 
@@ -248,4 +247,4 @@ Be sure to walk around and offer advice on project scope, finding data sources, 
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
