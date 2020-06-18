@@ -733,7 +733,7 @@ Ask for any remaining questions before moving on.
 
 ### 18. Instructor Do: Recap (5 min)
 
-Today has been a whirlwind of visualizations. Now, it's time to take a load off and reflect on what was learned.
+Today has been a whirlwind of visualizations. Now it's time to take a load off and reflect on what was learned.
 
 Explain to students that interactive plots have made data analysis and interpretation significantly easier. Financial data is always changing, especially over time.
 
