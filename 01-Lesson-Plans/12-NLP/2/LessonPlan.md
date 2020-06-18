@@ -421,7 +421,7 @@ virus_df = pd.concat([virus_en_df, virus_fr_df])
 
 Get the `head()` an `tail()` of the DataFrame to show the news articles in both languages.
 
-![Sample news in English and French](Images/crisis_news_df.png)
+![Sample news in English and French](Images/virus_news_df.png)
 
 Save the DataFrame as a CSV file for further use in the next activities. Warn students that is important to use the `encoding='utf-8-sig'` parameter when saving the file to preserve special characters, especially in French, in the CSV file.
 
