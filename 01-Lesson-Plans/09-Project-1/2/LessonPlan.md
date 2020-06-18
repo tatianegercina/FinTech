@@ -48,7 +48,9 @@ Instead, they should consider:
 
 Offer the following tips:
 
-* The presentation of any project should flow like a story. The narrative should begin by presenting the problem, hint at the potential solution, detail the steps needed to resolve the issue, and end with the resolution of the problem. In other words:
+* The project presentation should flow like a story, with a clear narrative arc: present the problem, hint at the solution, detail the steps needed to resolve the issue, and end with the resolution of the problem. 
+
+In other words:
   
   1. What problem does the app attempt to solve?
   
