@@ -118,7 +118,7 @@ Now you're all set to get started creating visual masterpieces using PyViz techn
 
 If you experience blank plots rendering in your Jupyter Lab preview, try the following steps:
 
-1. First, make sure you are not importing `hvplot.pandas` before a `pn.extension`.  Loading `hvplot.pandas` first initializes a Holoviews extensions and causes the Panel extension to fail.
+1. First, make sure you are not importing `hvplot.pandas` before a `pn.extension()`.  Loading `hvplot.pandas` first initializes a Holoviews extension and causes the Panel extension to fail.
 
 2. Next, clear your browser cache.
 
