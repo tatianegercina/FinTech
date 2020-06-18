@@ -12,11 +12,11 @@ Most of this class will center on project work. You and the TAs should check on 
 
 ---
 
-##### Instructor Notes
+### Instructor Notes
 
 Your students should be nearing the end of their projects. Even though it's the beginning of the week, you should push students to finish their apps before Thursday, so they have enough time to practice their presentations.
 
-It's crucial that you help steer any projects back that have fallen off course to get back on track. By the next class, the encroaching Saturday deadline will impede any attempts at a turnaround.
+It's crucial that you help steer any projects that have fallen off course to get back on track. By the next class, the encroaching Saturday deadline will impede any attempts at a turnaround.
 
 The remaining schedule for Project 1 is as follows:
 
@@ -36,13 +36,13 @@ Welcome students to class, and ask if they have any questions about past concept
 
 ### 2. Instructor Do: Ask About Projects (5 min)
 
-Begin by sharing your excitement on how eager you are to see the projects students are presenting on Saturday. After only spending eight weeks in the course, they've come up with some impressive concepts and should feel proud about all the hard work they've put in. They've come a long way since starting out with just Excel!
+Begin by sharing how eager you are to see the projects students are presenting on Saturday. After only spending eight weeks in the course, they've come up with some impressive concepts and should feel proud about all the hard work they've put in. They've come a long way since starting out with just Excel!
 
-Ask students to share any feedback they have on the collaboration experience so far, as well as any anxiety they might be feeling as presentation day draws closer.
+Ask students to share feedback on their collaboration experiences so far, as well as any anxiety they might be feeling as presentation day draws closer.
 
 * Provide reassuring answers to any concerns or anxieties that arise. If you've had similar doubts in your education and/or career, share an experience or two on how you overcame them.
 
-* If no one responds, it's likely because they're wary of sharing any apprehension in front of their peers. Assure them that if they're anxious about their project work, other students feel the same way. Encourage them to share these thoughts—talking is an essential step to overcoming them.
+* If no one responds, it's likely because they're wary of sharing their feelings in front of their peers. Assure them that if they're anxious about their project work, other students feel the same way. Encourage them to share these thoughts—talking is an essential step to overcoming anxiety.
 
 ### 3. Student Do: Project Work (1 hour, 20 minutes)
 
