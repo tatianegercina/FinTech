@@ -579,7 +579,7 @@ Open the solution and walk through the code, highlighting the following:
 
 * The VADER sentiment score for each news article's title and text is calculated within a `for-loop`; this loop iterates across the `news_en_df` DataFrame using the `iterrows()` method to create the final result's DataFrame structure.
 
-  ![Sentiment scores calculation](Images/crisis_feelings_title_text_code.png)
+  ![Sentiment scores calculation](Images/virus_feelings_title_text_code.png)
 
 * Two DataFrames are created with the resulting VADER sentiment scores for titles and the text. These DataFrames are added as new columns to the `news_en_df` DataFrame using the `join()` function.
 
