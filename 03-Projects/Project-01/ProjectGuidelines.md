@@ -64,9 +64,9 @@ Finally, be sure that your projects meet the [technical requirements](TechnicalR
 
 ## Presentation
 
-After the data has been analyzed to satisfaction, assemble a presentation in order to present the work, explain the process, and discuss conclusions.
+After the data is analyzed to satisfaction, assemble a presentation in order to present the work, explain the process, and discuss conclusions.
 
-This presentation will take the form of a slideshow, and should give classmates and instructional staff an overview of your work. PowerPoint, Keynote, and Google Slides are all acceptable for building slides.
+The presentation will take the form of a slideshow, and should give classmates and instructional staff an overview of your work. PowerPoint, Keynote, and Google Slides are all acceptable for building slides.
 
 As long as the slides meet the [presentation requirements](PresentationRequirements.md), the presentation may be structured however you wish. Many students find the following format helpful [presentation guidelines](PresentationGuidelines.md).
 
