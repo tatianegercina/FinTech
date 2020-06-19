@@ -36,7 +36,7 @@ ORDER BY COUNT(customer_id) DESC;
 
 
 -- BONUS 2
-SELECT CAST(payment_date AS DATE), COUNT(*)
+SELECT CAST(payment_date AS DATE) as payment_date, COUNT(*)
 FROM payment
 GROUP BY CAST(payment_date AS DATE)
 ORDER BY COUNT(*) DESC;
