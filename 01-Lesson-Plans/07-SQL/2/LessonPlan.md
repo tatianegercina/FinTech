@@ -34,7 +34,7 @@ By the end of today's class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1443Hw9n9cfuF_qb9Kme_T_g2GicUCO67MEkXI-7wZUs/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [7.2 Lesson Slides](https://docs.google.com/presentation/d/1dugln26ZuYUntKPSa2BcKO9YnlDPpYyx-NUidIMQXak/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
