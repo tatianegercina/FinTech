@@ -34,7 +34,7 @@ By the end of today's class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1iiQKfL3bG3AHfGNmf8NjLf63T8qsS85ZIwnptNAnQeA/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [7.2 Lesson Slides](https://docs.google.com/presentation/d/1dugln26ZuYUntKPSa2BcKO9YnlDPpYyx-NUidIMQXak/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -351,7 +351,7 @@ Open pgAdmin and walk through the solution, highlighting the following:
   ORDER BY COUNT(*) DESC;
   ```
 
-* The `ORDER BY` clause can be used in either `ASC` (ascending) or `DESC` (descending) order. When used in conjunction with the `LIMIT` clause, results can be filtered down to the desired record count, which in this case will display the top 5 and bottom 5 customer payment counts.
+* The `ORDER BY` clause can be used in either `ASC` (ascending) or `DESC` (descending) order. When used in conjunction with the `LIMIT` clause, results can be filtered down to the desired record count, which in this case will display the top five and bottom five customer payment counts.
 
   ```sql
   SELECT customer_id, SUM(amount) AS total_payment_amount
@@ -571,7 +571,7 @@ Review the solution in pgAdmin and explain the following:
     );
   ```
 
-* The bonus adds additional layers of nested subqueries. It requires querying a `rental_id` from the `payment` table, which is then used to query the `inventory_id` from the `rental` table, which is then used to query the `film_id` from the `inventory table`. Finally, the top level select statement returns the film titles that pertain to the `film_id` queried up the chain of nested subqueries.
+* The bonus adds additional layers of nested subqueries. It requires querying a `rental_id` from the `payment` table, which is then used to query the `inventory_id` from the `rental` table, which is then used to query the `film_id` from the `inventory table`. Finally, the top-level select statement returns the film titles that pertain to the `film_id` queried up the chain of nested subqueries.
 
   ```sql
   SELECT title

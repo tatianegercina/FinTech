@@ -32,7 +32,7 @@ By the end of today's class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1PNx_qkrRTq-5wmpMXD5DeHXbfaGs5ogLdPa2Ee9GqmQ/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [7.3 Lesson Slides](https://docs.google.com/presentation/d/1gkFPaaqcHhKIGOEGcZ7xw1I-vXBn_pvVnM-wnlLjceQ/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -48,11 +48,13 @@ Welcome students and explain that today's lesson will dive into data modeling te
 
 Open the Class Objectives slide and review the objectives for today's class.
 
+---
+
 ### 2. Instructor Do: Data Normalization (15 min)
 
 In this activity, students will be introduced to the three normal forms of data normalization.
 
-**Note:** The data normalization procedures represented in the following slides are provided in the .sql files below. Use them as necessary if students have questions pertaining to the data itself or just want to have the code on hand.
+**Note:** The data normalization procedures represented in the following slides are provided in the .sql files below. Use them as necessary if students have questions pertaining to the data itself, or just want to have the code on hand.
 
 **Files:**
 
@@ -78,7 +80,7 @@ Review the slides on data normalization, and explain the following:
 
 * Notice that `family_id` is added to the Child table. Since this is not a primary key, there can be non-unique values that relate to the Family table.
 
-* **Transitive dependency** is a column value's reliance on another column through a third column. The transitive property states that if X > Y and Y > Z, then we can infer that X > Z. Dependence means that one value relies on another, such as city on ZIP code, or age on birthday.
+* **Transitive dependency** is a column value's reliance on another column through a third column. The transitive property states that if X > Y and Y > Z, then we can infer that X > Z. Dependence means that one value relies on another, such as city on postal code, or age on birthday.
 
 * For example, let's say that a table has three columns: `StoreName`, `OwnerAddress`, and `OwnerName`.
 
@@ -100,6 +102,8 @@ Note that students may find 3NF a bit confusing. Encourage students to learn mor
 
 Slack out [normalization.md](Activities/01-Ins_Data_Normalization/Solved/normalization.md) as a cheat sheet for students before moving on.
 
+---
+
 ### 3. Student Do: Employee Normalizer (15 min)
 
 In this activity, students will practice their data normalization skills using the provided data.
@@ -107,6 +111,8 @@ In this activity, students will practice their data normalization skills using t
 **File:** [employee_normalization.csv](Activities/02-Stu_Data_Normalization/Resources/employee_normalization.csv)
 
 **Instructions:** [README.md](Activities/02-Stu_Data_Normalization/README.md)
+
+---
 
 ### 4. Instructor Do: Review Employee Normalizer (5 min)
 
@@ -184,7 +190,7 @@ Next, using the code from the schema.sql and seed.sql files, create and populate
 
 Explain the bonus section of the activity:
 
-* Data normalization separated our initial unorganized data into several tables; however, if we need to retrieve information represented from the initial dataset, we can perform JOINs on the normalized tables.
+* Data normalization separated our initial unorganized data into several tables; however, if we need to retrieve information represented from the initial dataset, we can perform joins on the normalized tables.
 
   ```sql
   SELECT *
@@ -192,6 +198,8 @@ Explain the bonus section of the activity:
   LEFT JOIN second_nf_employee_email AS b ON a.employee_id = b.employee_id
   LEFT JOIN third_nf_zipcode AS c ON a.zip_code = c.zip_code;
   ```
+
+---
 
 ### 5. Instructor Do: Intro to Foreign Keys (15 min)
 
@@ -207,7 +215,7 @@ In this activity, students will be introduced to the concept of foreign keys—c
 
 Use the slides on foreign keys to explain the concept of foreign keys and how they are used to connect tables:
 
-* A foreign key is a link between tables. The foreign key in the first table points to or is linked to, the primary key in a second table.
+* A foreign key is a link between tables. The foreign key in the first table points to, or is linked to, the primary key in a second table.
 
 * A foreign key also prevents invalid data from being entered into a column. The data being entered MUST be a value from the referenced column.
 
@@ -347,11 +355,13 @@ Students should now understand how to create foreign keys, as well as how to use
 
 Answer any questions students have about foreign keys. Then ask students if they can think of other real-world cases in which the use of foreign keys makes sense. Here are two examples:
 
-* States and countries in addresses: Think back to the `rental` database, where streets, addresses, cities, and countries were stored in different tables. So, for example, if a change occurs to the address of a customer, all information across all tables would need to change. This is called maintaining the **referential integrity**.
+* Provinces and countries in addresses: Think back to the `rental` database, where streets, addresses, cities, and countries were stored in different tables. So, for example, if a change occurs to the address of a customer, all information across all tables would need to change. This is called maintaining the **referential integrity**.
 
 * ID number of employees: In a database where the ID number of an employee is used in multiple tables, what happens if the employee's ID number changes? The ID number would need to be changed across all the tables that contain it.
 
 Emphasize that using foreign keys to build relationships across data is a feature of relational databases, hence the name.
+
+---
 
 ### 6. Student Do: Foreign Keys (15 min)
 
@@ -364,6 +374,8 @@ In this activity, students will create tables with foreign keys.
 * [estates.csv](Activities/04-Stu_Foreign_Keys/Resources/estates.csv)
 
 **Instructions:** [README.md](Activities/04-Stu_Foreign_Keys/README.md)
+
+---
 
 ### 7. Instructor Do: Review Foreign Keys (5 min)
 
@@ -456,6 +468,8 @@ Using the `schema.sql`, `seed.sql` files in pgAdmin, walk through the code and e
   INNER JOIN estate_type ON estates_new.estate_type_id = estate_type.estate_type_id;
   ```
 
+---
+
 ### 8. Instructor Do: Intro to Data Relationships (10 min)
 
 In this activity, students will learn the many different types of data modeling relationships that one table can have with another: one-to-one, one-to-many, and many-to-many.
@@ -472,7 +486,7 @@ Use the `Data Relationships` slides to explain that we will now cover one-to-one
 
 Begin by discussing one-to-one relationships. This example will use members of the Simpson family to illustrate the concept.
 
-* In a one-to-one relationship, each name is associated with one—and only one—Social Security number. In other words, each item in a column is linked to only one item from another column.
+* In a one-to-one relationship, each name is associated with one—and only one—Social Security Number. In other words, each item in a column is linked to only one item from another column.
 
   ![Images/one-to-one.png](Images/one-to-one.png)
 
@@ -480,9 +494,9 @@ Next, discuss one-to-many relationships. We'll continue with our Simpsons exampl
 
   ![Images/one-to-many1.png](Images/one-to-many1.png)
 
-* This example has two tables. The first table lists only addresses. The second table lists each person's Social Security number and address id.
+* This example has two tables. The first table lists only addresses. The second table lists each person's Social Security Number and address id.
 
-* As before, one Social Security number is unique to one individual.
+* As before, one Social Security Number is unique to one individual.
 
 Discuss one-to-many relationships.
 
@@ -512,7 +526,7 @@ Discuss many-to-many relationships.
 
 Ask the class what many-to-many relationships might be found in an online retailer database such as Amazon's: A customer can order many different items, and many different customers can order each item.
 
-Demonstrate the creation of a junction table in Postgres.
+Demonstrate the creation of a junction table in PostgreSQL.
 
 * First, open the [schema.sql](Activities/05-Ins_Data_Relationships/Solved/schema.sql) and [seed.sql](Activities/05-Ins_Data_Relationships/Solved/seed.sql) files and paste in the queries to create and insert data into the `children` and `parents` tables, respectively. There are two separate tables:
 
@@ -567,6 +581,8 @@ Take a moment to summarize the major points of the activity:
 
 Ask if there are any questions before moving on.
 
+---
+
 ### 9. Student Do: Data Relationships (10 min)
 
 In this activity, students will create table schemata for agents and regions, and then create a junction table to display all regions assigned to agents.
@@ -580,6 +596,8 @@ In this activity, students will create table schemata for agents and regions, an
 * [agent_region_junction](Activities/06-Stu_Data_Relationships/Resources/agent_region_junction.csv)
 
 **Instructions:** [README.md](Activities/06-Stu_Data_Relationships/README.md)
+
+---
 
 ### 10. Instructor Do: Review Data Relationships (5 min)
 
@@ -612,7 +630,7 @@ Use the schema.sql and seed.sql files to walk through the creation and populatio
   );
   ```
 
-* Unlike the `agents` and `regions` tables, the `agent_region_junction` table defines foreign key relationships (to the `agents` and `regions` tables) and sets a composite or multi-value key as its primary key.
+* Unlike the `agents` and `regions` tables, the `agent_region_junction` table defines foreign key relationships (to the `agents` and `regions` tables) and sets a composite, or multi-value key, as its primary key.
 
   ```sql
   CREATE TABLE agent_region_junction (
@@ -735,6 +753,8 @@ Explain to students that once the data from the database is in a DataFrame, we c
 
 Answer any questions before moving on.
 
+---
+
 ### 13. Student Do: Feeding Pandas with SQL (5 min)
 
 In this activity, students will read data into a Pandas DataFrame from a PostgreSQL database using SQLAlchemy.
@@ -746,6 +766,8 @@ In this activity, students will read data into a Pandas DataFrame from a Postgre
 **Instructions:**
 
 * [README.md](Activities/08-Stu_Feeding_Pandas_SQL/README.md)
+
+---
 
 ### 14. Instructor Do: Feeding Pandas with SQL Review (5 min)
 
@@ -846,6 +868,8 @@ Walk through the solution and highlight the following:
 
 Answer any questions before moving on.
 
+---
+
 ### 15. Instructor Do: Entity Relationship Diagrams (10 min)
 
 In this activity, students will learn how to interpret and create an Entity Relationship Diagram (ERD)—an asset that delineates the relationship among tables in a database.
@@ -870,8 +894,6 @@ Use the ERD slides and begin the discussion of entity relationship diagrams (ERD
 
 * The following breakdown should provide a better understanding of the differences between the three data models.
 
-  ```
-  |----------------------|------------|---------|----------|
   | Feature              | Conceptual | Logical | Physical |
   |----------------------|------------|---------|----------|
   | Entity Names         | X          | X       |          |
@@ -882,8 +904,6 @@ Use the ERD slides and begin the discussion of entity relationship diagrams (ERD
   | Table Names          |            |         | X        |
   | Column Names         |            |         | X        |
   | Column Data Types    |            |         | X        |
-  |----------------------|------------|---------|----------|
-  ```
 
 Further expand upon the concepts of ERDs by discussing the following example.
 
@@ -913,34 +933,34 @@ Open [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com
 
 With the design tool open in your browser, demonstrate how to begin setting up a simple conceptual data model based on today's activities:
 
-  ```sql
-  Employee
-  -
+```text
+Employee
+-
 
-  Zipcode
-  -
+Postalcode
+-
 
-  Employee_Email
-  -
+Employee_Email
+-
 
-  Owners
-  -
+Owners
+-
 
-  Estates
-  -
+Estates
+-
 
-  Estate_Type
-  -
+Estate_Type
+-
 
-  Agents
-  -
+Agents
+-
 
-  Regions
-  -
+Regions
+-
 
-  Agent_Region_Junction
-  -
-  ```
+Agent_Region_Junction
+-
+```
 
 * The result should appear as follows:
 
@@ -950,12 +970,12 @@ With the design tool open in your browser, demonstrate how to begin setting up a
 
 * Explain to the class that at this point, the conceptual data model contains entities; however, it does not have any entity relationships. In order to create the relationships between tables, use the `rel <entity-name>` syntax to create abstract relationships between tables.
 
-  ```sql
+  ```text
   Employee
-  rel Zipcode
+  rel Postalcode
   -
 
-  Zipcode
+  Postalcode
   -
 
   Employee_Email
@@ -968,7 +988,7 @@ With the design tool open in your browser, demonstrate how to begin setting up a
   Estates
   rel Owners
   rel Estate_Type
-  rel Zipcode
+  rel Postalcode
   -
 
   Estate_Type
@@ -992,21 +1012,21 @@ With the design tool open in your browser, demonstrate how to begin setting up a
 
 Begin transitioning from the conceptual ERD to a logical ERD. Using the following lines, update your current entities with column names using the Quick Database Diagrams tool.
 
-  ```sql
+  ```text
   Employee
-  rel Zipcode
+  rel Postalcode
   -
   employee_id
   name
   age
   address
-  zip_code
+  postal_code
 
-  Zipcode
+  Postalcode
   -
-  zip_code
+  postal_code
   city
-  state
+  Province
 
   Employee_Email
   rel Employee
@@ -1024,13 +1044,13 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
   Estates
   rel Owners
   rel Estate_Type
-  rel Zipcode
+  rel Postalcode
   -
   estate_id
   owner_id
   estate_type
   address
-  zip_code
+  postal_code
 
   Estate_Type
   -
@@ -1071,7 +1091,7 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
   name
   age
   address
-  zip_code FK
+  postal_code FK
   ```
 
 * The following syntax should be added to point the foreign key definition to the specific column of another table.
@@ -1083,10 +1103,10 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
   name
   age
   address
-  zip_code FK - Zipcode.zip_code
+  postal_code FK - Postalcode.postal_code
   ```
 
-* In the line containing `FK - `, the hyphen signifies a one-to-one relationship between the `Employee` and `Zipcode` tables, where each zip code in the `Employee` table is linked to one zip code in the `Zipcode` table.
+* In the line containing `FK - `, the hyphen signifies a one-to-one relationship between the `Employee` and `Postalcode` tables, where each postal code in the `Employee` table is linked to one postal code in the `Postalcode` table.
 
 * Many types of relationships between entities can be illustrated with various symbols. For example, the `Employee_Email` table has a many-to-one relationship with the `Employee` table via the common employee_id (an employee can have multiple email addresses). Therefore, the symbol describing the relationship is `>-`.
 
@@ -1102,20 +1122,20 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
 
 * The complete schema for the logical data model should be as follows:
 
-  ```sql
+  ```text
   Employee
   -
   employee_id PK
   name
   age
   address
-  zip_code FK - Zipcode.zip_code
+  postal_code FK - Postalcode.postal_code
 
-  Zipcode
+  Postalcode
   -
-  zip_code PK
+  postal_code PK
   city
-  state
+  province
 
   Employee_Email
   -
@@ -1135,7 +1155,7 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
   owner_id FK - Owners.owner_id
   estate_type FK - Estate_Type.estate_type_id
   address
-  zip_code FK - Zipcode.zip_code
+  postal_code FK - Postalcode.postal_code
 
   Estate_Type
   -
@@ -1165,20 +1185,20 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
 
 Lastly, transition the logical data model to a physical data model. Using the following lines, update your current entities with data types using the Quick Database Diagrams tool.
 
-```sql
+```text
 Employee
 -
 employee_id INT PK
 name VARCHAR(255)
 age INT
 address VARCHAR(255)
-zip_code INT FK - Zipcode.zip_code
+postal_code INT FK - Postalcode.postal_code
 
-Zipcode
+Postalcode
 -
-zip_code INT PK
+postal_code INT PK
 city VARCHAR(255)
-state VARCHAR(255)
+province VARCHAR(255)
 
 Employee_Email
 -
@@ -1198,7 +1218,7 @@ estate_id INT PK
 owner_id INT FK - Owners.owner_id
 estate_type VARCHAR(255) FK - Estate_Type.estate_type_id
 address VARCHAR(255)
-zip_code INT FK - Zipcode.zip_code
+postal_code INT FK - Postalcode.postal_code
 
 Estate_Type
 -
@@ -1246,6 +1266,8 @@ Slack out [pagila-erd.png](Images/pagila-erd.png) to the class and open it on yo
 
 Answer any questions before moving on.
 
+---
+
 ### 16. Student Do: Designing an ERD, Part 1 (15 min)
 
 In this activity, students will create a conceptual ERD for mortgage lending.
@@ -1263,6 +1285,8 @@ In this activity, students will create a conceptual ERD for mortgage lending.
 * [mortgage.csv](Activities/10-Stu_Designing_ERD/Resources/mortgage.csv)
 
 **Instructions:** [README.md](Activities/10-Stu_Designing_ERD/README.md)
+
+---
 
 ### 17. Instructor Do: Review Designing an ERD, Part 1 (5 min)
 
@@ -1296,6 +1320,8 @@ Ask students if they created any other tables or connections, as there are many 
 
 Answer any questions before moving on.
 
+---
+
 ### 18. Student Do: Designing an ERD, Part 2 (10 min)
 
 In this activity, students will transition their mortgage lending logical ERD to a physical ERD.
@@ -1313,6 +1339,8 @@ In this activity, students will transition their mortgage lending logical ERD to
 * [mortgage.csv](Activities/11-Stu_ERD/Resources/mortgage.csv)
 
 **Instructions:** [README.md](Activities/11-Stu_ERD/README.md)
+
+---
 
 ### 19. Instructor Do: Review Designing an ERD, Part 2 (5 min)
 
@@ -1382,7 +1410,7 @@ Return to pgAdmin in the browser and create a new database called `mortgage_db`.
 
 * Open a query tool and paste in the newly downloaded SQL code to create the tables defined in the diagram. Then execute the code.
 
-* The following lines of code will give the error `there is no unique constraint matching given keys for referenced table "Banks"`. This is because the `bank_routing_number` in the `Banks` table is not a unique primary key, and therefore cannot be referenced. To resolve the issue, the `bank_routing_number` in the Payments table should be converted to a `bank_id` instead; however, in order to avoid changing the underlying data for simplicity, we can just remove these lines.  
+* The following lines of code will give the error `there is no unique constraint matching given keys for referenced table "Banks"`. This is because the `bank_routing_number` in the `Banks` table is not a unique primary key, and therefore cannot be referenced. To resolve the issue, the `bank_routing_number` in the Payments table should be converted to a `bank_id` instead; however, in order to avoid changing the underlying data for simplicity, we can just remove these lines.
 
   ```sql
   ALTER TABLE "Payments" ADD CONSTRAINT "fk_Payments_bank_routing_number" FOREIGN KEY("bank_routing_number")
@@ -1400,6 +1428,8 @@ Return to pgAdmin in the browser and create a new database called `mortgage_db`.
   ```
 
 Answer any questions before moving on.
+
+---
 
 ### 20. Instructor Do: Structured Review (35 mins)
 
