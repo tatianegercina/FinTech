@@ -8,9 +8,9 @@ Each presentation must:
 
 * [ ] Describe the project's core message or hypothesis.
 
-* [ ] Describe the questions the group found of interest, and what motivated you to answer them.
+* [ ] Describe the questions the group found of interest, and why.
 
-* [ ] Summarize where, and how, the data was found to answer these questions.
+* [ ] Summarize how, and where, the data was found to answer these questions.
 
 * [ ] Describe the data exploration and cleanup process (accompanied by Jupyter Notebook).
 
