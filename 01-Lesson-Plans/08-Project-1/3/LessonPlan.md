@@ -2,7 +2,7 @@
 
 ## Overview
 
-The rest of this week is all project work days. Students should work in their groups to complete their projects while instructional staff rotates between groups to check on progress and offer assistance.
+The remainder of this week is all project work days. Students should work in their groups to complete their projects, while instructional staff rotates between groups to check on progress and offer assistance.
 
 ---
 
