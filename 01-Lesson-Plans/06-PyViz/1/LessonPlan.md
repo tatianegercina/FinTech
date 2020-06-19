@@ -56,7 +56,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.1 Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.1 Slides](https://docs.google.com/presentation/d/1xl16wzFm4AY7W2zcU5f3GYPuwOVBgbmsoB9npYUrxtg/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -465,7 +465,7 @@ Ask for any remaining questions before moving on.
 
 ### 12. Instructor Do: Composing Plots (10 min)
 
-This activity teaches students how to create plot layouts and overlay visualizations to create a centralized location for comparative data analysis. By the end of the activity, students will have received a dry walkthrough demo on how to combine two plot objects to create a plot with subplots. 
+This activity teaches students how to create plot layouts and overlay visualizations to create a centralized location for comparative data analysis. By the end of the activity, students will have received a dry walkthrough demo on how to combine two plot objects to create a plot with subplots.
 
 **Files:**
 

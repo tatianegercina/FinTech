@@ -30,7 +30,7 @@ By the end of class, students will be able to:
 
 * Throughout the day, reinforce to students the importance and power of interactive plotting. The widgets, automatic colour formatting and skins, and plot types can all be accessed and manipulated with ease. The plots being created by Plotly Express would have taken a person hours to create in the past; Plotly Express does it in seconds.
 
-* Keep pacing in mind while moving through the lesson. Allow students to ask questions, and when necessary, ask students to hold their questions for the review sessions. Adhere to the Time Tracker as closely as possible. 
+* Keep pacing in mind while moving through the lesson. Allow students to ask questions, and when necessary, ask students to hold their questions for the review sessions. Adhere to the Time Tracker as closely as possible.
 
 * The pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer assistance. Encourage students to collaborate on activities, and remind them about attending office hours for support.
 
@@ -46,7 +46,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-The slides for this lesson can be viewed on Google Drive here: [Lesson 6.2 Slides](https://docs.google.com/presentation/d/19qivsXUwDt_RDsHQ3qRJzgSXlDLEOJmsXpPqSFhxG9A/edit?usp=sharing).
+The slides for this lesson can be viewed on Google Drive here: [Lesson 6.2 Slides](https://docs.google.com/presentation/d/1B5qCzhhp_DdzUVKagMGLqePI6ENWfdKTAqTkBmY5G4Q/edit?usp=sharing).
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -382,7 +382,7 @@ Open the slideshow, navigate to the [section name here] and highlight the follow
 
 * Whereas parallel coordinate plots are used for multivariate analysis and mapping relationships between variables, parallel categories plots are used to perform **multidimensional** analysis.
 
-  * An example of multidimensional analysis is looking at sales and foreclosures data by housing type, region, and the number of units. 
+  * An example of multidimensional analysis is looking at sales and foreclosures data by housing type, region, and the number of units.
 
 * **Dimensions** are considered to be categories**. **Parallel categories plots focus on connecting the dots between each category, assessing the nuances per category, and the impact of categories on other categories.
 

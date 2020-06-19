@@ -30,7 +30,7 @@ By the end of class, students will be able to:
 
 * Prepare for the lesson by running the code examples and reviewing the lectures before class. This lesson will be using **Panel**; a library included in the PyViz package. Make sure Panel has been installed and is ready for use. Consult the [PyViz Installation Guide](../Supplemental/PyVizInstallationGuide.md) for help with installation.
 
-* Throughout the lesson, emphasize the importance of dashboards to FinTech. Dashboards offer FinTech a new platform for information and data visualization, and allow finance professionals to monitor and visualize data trends and changes over time. For example, dashboards are used by investment bankers to track and monitor stocks and trades. They also enable banking consumers to understand and consume their financial data more efficiently. Moreover, dashboards allow account owners a visual of their spending habits (i.e., bills, groceries, entertainment, shopping, etc.). 
+* Throughout the lesson, emphasize the importance of dashboards to FinTech. Dashboards offer FinTech a new platform for information and data visualization, and allow finance professionals to monitor and visualize data trends and changes over time. For example, dashboards are used by investment bankers to track and monitor stocks and trades. They also enable banking consumers to understand and consume their financial data more efficiently. Moreover, dashboards allow account owners a visual of their spending habits (i.e., bills, groceries, entertainment, shopping, etc.).
 
 * Be mindful of your machine's resource consumption while running the dashboards. Because the server used to host Panel dashboards as web apps are spun up locally, your machine will have to execute the code and host the web app.
 
@@ -46,7 +46,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.3 Slides](https://docs.google.com/presentation/d/1xzEteF7tPkqJKHusUOtyAZG85NTJtTAcL1AlG9ZE3sE/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.3 Slides](https://docs.google.com/presentation/d/1Y5C2PV0BJYnZWVk-CXqsHvHAX9zoJRLIEW2tZI2d4go/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -467,7 +467,7 @@ Ask if there are any questions before moving forward.
 
 Encourage students to work together in pairs of two. In this activity, students will execute insert, update, and remove operations on Panel **panels**.
 
-Since students have not been taught how to manipulate **panels** using insert, update, and remove functions, make sure to circulate with TAs to provide assistance. 
+Since students have not been taught how to manipulate **panels** using insert, update, and remove functions, make sure to circulate with TAs to provide assistance.
 
 **Instructions:**
 
