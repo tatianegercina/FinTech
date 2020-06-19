@@ -351,6 +351,8 @@ Open pgAdmin and walk through the solution, highlighting the following:
   ORDER BY COUNT(*) DESC;
   ```
 
+  **Note:** The ORDER BY clause can be used with column aliases as well. It is often a matter of preference for choosing to order by a column alias or the specific calculations that define the alias.
+
 * The `ORDER BY` clause can be used in either `ASC` (ascending) or `DESC` (descending) order. When used in conjunction with the `LIMIT` clause, results can be filtered down to the desired record count, which in this case will display the top five and bottom five customer payment counts.
 
   ```sql
@@ -390,7 +392,7 @@ Open pgAdmin and walk through the solution, highlighting the following:
 * The `CAST` function can be used to convert datetime column values to date datatypes. This effectively shortens the value to just the date portions (rather than date and timestamp), which allows for grouping by common date values.
 
   ```sql
-  SELECT CAST(payment_date AS DATE), COUNT(*)
+  SELECT CAST(payment_date AS DATE) as payment_date, COUNT(*)
   FROM payment
   GROUP BY CAST(payment_date AS DATE)
   ORDER BY COUNT(*) DESC;
