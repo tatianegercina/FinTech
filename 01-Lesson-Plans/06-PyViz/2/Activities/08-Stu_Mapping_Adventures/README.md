@@ -1,8 +1,8 @@
 # It's a Map Plot
 
-It's time to take a break from your day job and to plan an adventure!
+It's time to take a break from your day job and plan an adventure!
 
-Your friends have decided to plan a trip to New York City for Harold's birthday, and you're all looking forward to the time away from the office. In order to plan for the event, you started doing some research regarding points of interest in NYC. You've found one dataset that lists a bunch of cool places to see.
+Your friends have decided to plan a group trip to New York City for Harold's birthday. In planning for the event, you've started doing some research regarding points of interest in NYC. You've found one dataset that lists a bunch of cool places to see.
 
 Use Plotly Express and **MapBox** to create a geographical plot that will visualize each area of interest within the city. If you finish early, complete the challenge section.
 
@@ -12,7 +12,7 @@ Use Plotly Express and **MapBox** to create a geographical plot that will visual
 
 2. Read in the places of interest data.
 
-3. Use the Plotly Express `scatter_mapbox` function to plot interest data, setting the color to **Name**.
+3. Use the Plotly Express `scatter_mapbox` function to plot interest data, setting the colour to **Name**.
 
 4. Use `scatter_mapbox` to plot places of interest by **place type**.
 
@@ -28,12 +28,10 @@ Use Plotly Express and **MapBox** to create a geographical plot that will visual
 
 3. Plot squares that are of interest.
 
-Plot the data with the count of boroughs as the size.
-
 ### Hint
 
 Creating too many map plots in one notebook might create a memory issue. Consider creating a separate notebook for the challenge section. This will require you to read the CSV data in both notebooks.
 
+---
 
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

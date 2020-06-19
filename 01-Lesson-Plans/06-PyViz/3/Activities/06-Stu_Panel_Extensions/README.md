@@ -1,6 +1,6 @@
 # Extending Plotting
 
-It's time to extend your plotting skills. Over the past two lessons, you've learned how to create a range of interactive plots using hvPlot and **Plotly Express**; however, you haven't had one centralized location to embed these plots. Now you do!
+It's time to extend your plotting skills. Over the past two lessons, you've learned how to create a range of interactive plots using hvPlot and **Plotly Express**; however, you haven't had one centralized location to embed these plots. Now, you do!
 
 Use Panel as a foundation for extending your plotting skills by creating a Panel dashboard that leverages **Mapbox** and hvPlot to visualize real estate data geographically. The end product of this activity will be a dashboard that includes both **hvPlot** and **Plotly Express** visualizations.
 
@@ -25,3 +25,7 @@ If you finish early, assist your peers with troubleshooting and debugging.
 ### Hint
 
 Make sure the plots are displayed correctly. This means using the appropriate widths and zooms (i.e., for Mapbox plots). Both of these can be configured using the `width` and `zoom` attributes, respectively.
+
+- - -
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
