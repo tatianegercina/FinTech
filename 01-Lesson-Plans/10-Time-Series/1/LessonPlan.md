@@ -4,7 +4,7 @@
 
 Welcome to Unit 10! Everything students have learned up to this point–from data wrangling and cleaning, to simulations and projected return on investments--has been to prepare students and give them the foundation needed for implementing advanced analytics pipelines using **time series** analysis and **machine learning**.
 
-This unit introduces students to the world of data science and **machine learning**. **Machine learning** is a form of programming that employs algorithms and statistical models to enable insights, predictions, and data-driven decision making. **Machine learning** involves the development of computer applications that have the ability to automatically learn from data and make adjustments to parameters and execution based on experience, with little to no interaction from a developer.
+This unit introduces students to the world of data science and machine learning. Machine learning is a form of programming that employs algorithms and statistical models to enable insights, predictions, and data-driven decision making. Machine learning involves the development of computer applications that have the ability to automatically learn from data and make adjustments to parameters and execution based on experience, with little to no interaction from a developer.
 
 For many students, this unit and the units to follow will be the "bread and butter" of the class. Advanced analytics is taking the data industry by storm, offering developers and companies a means to analyze thousands of large data sets and use computer predictions to drive investments and decision making. Machine learning is especially beneficial in financial services, allowing banks and professionals to analyze large data sets and use technology to make investment recommendations and predictions, a process that typically requires multiple people and hours/days of time. Machine learning has streamlined financial analysis. Work that previously took hours for a single financial professional to complete can now be automated and completed within minutes using machine learning algorithms.
 
@@ -40,7 +40,7 @@ By the end of this class, students will be able to:
 
 * Today's class will be a steady ramp-up to the rest of the week. It will provide students with the skills to work with time series data in Pandas (e.g., slicing rows by date), and furnish them with necessary concepts for days 2 and 3. The first half of the day will focus on identifying what time series analysis is and how it is used, while the second half will emphasize scaling time series analysis using machine learning algorithms.
 
-* Emphasize the role of machine learning in time series analysis and advanced analytics (the application of advanced statistical models and intelligent algorithms). Today's class, and the entire unit, will mark the students' journey into **machine learning**. For some students, machine learning is why they chose this boot camp; others may find the topic intimidating and complex. Communicate concepts in simple terms, reminding students that machine learning is just the application of statistics using Python libraries to analyze data and make predictions regarding behaviour and outcomes. Foster confidence and understanding by pacing explanations and demonstrations; examples are provided to help with this.
+* Emphasize the role of machine learning in time series analysis and advanced analytics (the application of advanced statistical models and intelligent algorithms). Today's class, and the entire unit, will mark the students' journey into machine learning. For some students, machine learning is why they chose this boot camp; others may find the topic intimidating and complex. Communicate concepts in simple terms, reminding students that machine learning is just the application of statistics using Python libraries to analyze data and make predictions regarding behaviour and outcomes. Foster confidence and understanding by pacing explanations and demonstrations; examples are provided to help with this.
 
 * The mathematical details of tools such as the Hodrick-Prescott filter are discussed and provided to give students an understanding of what happens under the hood. Don't get too bogged down in explaining the niceties that it derails the pace of the class.
 
@@ -88,7 +88,7 @@ The Time Tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTra
 
 ### 1. Instructor Do: Welcome (5 min)
 
-Kick things off by welcoming students, then briefly introduce the concepts and skills for today's class and Unit 10. The focus of this activity will be to introduce students to the world of **time series analysis** and **machine learning**, and how they are used together to create and predict trends in various financial markets (i.e., stocks and real estate).
+Kick things off by welcoming students, then briefly introduce the concepts and skills for today's class and Unit 10. The focus of this activity will be to introduce students to the world of time series analysis and machine learning, and how they are used together to create and predict trends in various financial markets (i.e., stocks and real estate).
 
 - - -
 
@@ -98,7 +98,7 @@ Open the slideshow, [[navigate to section X]]] and highlight the following:
 
 * Define **machine learning** as an approach to programming that focuses on designing applications in a way that allows them to learn from their inputs. and make adjustments based on their outputs.
 
-  * A very raw way of thinking about **machine learning** is automated configuration; instead of having to configure inputs and manually make changes to an algorithm, **machine learning** programs automatically adapt to improve outcomes and predictions, as well as accuracy and precision.
+  * A very raw way of thinking about machine learning is automated configuration; instead of having to configure inputs and manually make changes to an algorithm, machine learning programs automatically adapt to improve outcomes and predictions, as well as accuracy and precision.
 
 * Explain to students that because machine learning algorithms can learn on their own, developers do not need to worry about coding for every scenario.
 
@@ -108,7 +108,7 @@ Open the slideshow, [[navigate to section X]]] and highlight the following:
 
 * Explain that machine learning algorithms have transformed a range of industries, including finance, healthcare, agriculture, marketing, homeland security, and space exploration, to name a few. 
 
-**Machine learning** is being used to predict:
+Machine learning is being used to predict:
 
   * Loan eligibility
 
@@ -126,9 +126,9 @@ Open the slideshow, [[navigate to section X]]] and highlight the following:
 
   * Planetary climate and atmosphere conditions/composition, etc.
 
-* Underscore to students that the predictions made by **machine learning** algorithms drive decision making on a global scale. Commercial and government leaders all leverage **machine learning** in some capacity: **machine learning** outcomes are helping industries become more proactive, rather than reactive. 
+* Underscore to students that the predictions made by machine learning algorithms drive decision making on a global scale. Commercial and government leaders all leverage machine learning in some capacity: machine learning outcomes are helping industries become more proactive, rather than reactive. 
 
-* Communicate that **machine learning** is sometimes viewed as somewhat nebulous and enigmatic: a niche field of programming that involves heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, it is just the application of algorithms, statistics, and statistical libraries to solve data and business problems.
+* Communicate that machine learning is sometimes viewed as somewhat nebulous and enigmatic: a niche field of programming that involves heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while machine learning can be challenging, it is just the application of algorithms, statistics, and statistical libraries to solve data and business problems.
 
   * Like all other functions, machine learning models are provided as libraries. Common machine learning libraries include **Scikit-Learn**, **TensorFlow**, and **SciPy**. Services like Amazon Web Services and Google Cloud Platform offer proprietary machine learning libraries that can be used within their cloud ecosystems. These libraries, as well as the open-source community, make the execution of machine learning models as simple as calling a Pandas function.
 
@@ -136,37 +136,37 @@ Open the slideshow, [[navigate to section X]]] and highlight the following:
 
 Now, ask students what they think machine learning can do. Why would someone bother using advanced statistical algorithms, when a developer could just use Monte Carlo simulations to make predictions?
 
-* **Answer** When working with an algorithm, a developer usually has to tweak and configure it to create the most accurate results for a given use case. This requires a lot of manual work.
+* **Answer:** When working with an algorithm, a developer usually has to tweak and configure it to create the most accurate results for a given use case. This requires a lot of manual work.
 
   * Machine learning completely removes this need, as the program continuously learns from data and can make adjustments on the fly. This allows for the algorithm to perform more robustly and change dynamically based on the data it is processing. These types of algorithms are classified as **intelligent algorithms**.
 
 Explain to students that an intelligent algorithm uses data to modify behaviour. As data is processed and predictions are made, the behaviour of the algorithm changes.
 
-* **Intelligent algorithms** use pre-existing data to learn and make decisions on how to configure and adapt behaviour for the most accurate and precise prediction.
+* Intelligent algorithms use pre-existing data to learn and make decisions on how to configure and adapt behaviour for the most accurate and precise prediction.
 
-* **Intelligent algorithms** are used to fuel **machine learning**, **predictive analytics**, and **artificial intelligence**.
+* Intelligent algorithms are used to fuel machine learning, predictive analytics, and artificial intelligence.
 
 Explain the similarities and differences between machine learning, predictive analytics, and artificial intelligence.
 
-* Machine learning has two approaches to using **intelligent algorithms**:
+* Machine learning has two approaches to using intelligent algorithms:
 
   * One approach is **supervised learning**, which involves a programmer feeding the valuable algorithm data to learn from and make predictions.
 
     * Categories of supervised learning include classification (classifying outcomes as classes/groups) and regression (fitting data to predict where a new data point lies), both of which are used for making predictions. With **supervised learning**, potential outcomes need to be known upfront.
 
-  * The other is **unsupervised learning**, where the **intelligent algorithm** learns on the fly without having seen any type of data before. The algorithm will identify all data points, cluster them, and then make predictions. Eventually, the algorithm will learn for itself.
+  * The other is **unsupervised learning**, where the intelligent algorithm learns on the fly, without having seen any type of data before. The algorithm will identify all data points, cluster them, and then make predictions. Eventually, the algorithm will learn for itself.
 
     * Unsupervised learning includes dimensionality reduction and clustering approach (finding groups within a population).
 
-* Predictive analytics is the use of advanced analytics paradigms (machine learning, intelligent algorithms, etc.) to analyze data and forecast outcomes and values. Machine learning is a component of predictive analytics, and predictive analytics is an objective of machine learning.
+* **Predictive analytics** is the use of advanced analytics paradigms (machine learning, intelligent algorithms, etc.) to analyze data and forecast outcomes and values. Machine learning is a component of predictive analytics, and predictive analytics is an objective of machine learning.
 
-* **AI** is the concept that machines can execute tasks and learn while doing so in order to perform more intelligently. Machine learning is a class of **AI**: an application of AI.
+* **AI** is the concept that machines can execute tasks, and learn while doing so, in order to perform more intelligently. Machine learning is a class of AI: an application of AI.
 
-  * The general consensus is that instead of programming machines to perform specific tasks, program machines to learn what tasks to complete and how to complete them.
+  * The general consensus is that instead of programming machines to perform specific tasks, machines should be programmed in order to learn what tasks to complete, and how to complete them.
 
-  * **Machine learning** is not the only application of **AI**. Deep learning is a comparative approach to programming that is distinct from **machine learning** but is still another class of **AI**.
+  * Machine learning is not the only application of AI. Deep learning is a comparative approach to programming that is distinct from machine learning, but is still another class of AI.
 
-If time remains, stimulate excitement by showing students some of the below examples uses cases for machine learning. Show videos in the order they are provided. If time does not remain, slack these links out to students for review.
+If time remains, generate some excitement by showing students some of the machine learning use cases below, showing videos in the order provided. If there is no time, slack links out to students so they can view on their own.
 
 * [How Machines Learn](https://www.youtube.com/watch?v=R9OHn5ZF4Uo) - only play up until 1:11 marker.
 
@@ -174,7 +174,7 @@ If time remains, stimulate excitement by showing students some of the below exam
 
 * [Machine Learning and Human Agility](https://www.youtube.com/watch?v=sWNG3omofoM)
 
-Ask for any questions before moving forward. Assure students that each of these concepts will be explored in more detail over the next several weeks.
+Ask for any questions before moving forward. Assure students that all the concepts discussed will be explored in more detail over the next several weeks.
 
 - - -
 
