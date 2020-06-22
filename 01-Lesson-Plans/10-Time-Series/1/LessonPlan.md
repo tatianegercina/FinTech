@@ -38,17 +38,17 @@ By the end of this class, students will be able to:
 
 ### Instructor Notes
 
-* Today's class will be a fairly gentle ramp-up to the rest of the week. It will provide students with the skills to work with time series data in pandas (e.g., slicing rows by date), and it will furnish them with necessary concepts for days 2 and 3. The first half of the day will focus on identifying what time series analysis is and how it is used. The second half will emphasize scaling time series analysis using machine learning algorithms.
+* Today's class will be a steady ramp-up to the rest of the week. It will provide students with the skills to work with time series data in Pandas (e.g., slicing rows by date), and furnish them with necessary concepts for days 2 and 3. The first half of the day will focus on identifying what time series analysis is and how it is used, while the second half will emphasize scaling time series analysis using machine learning algorithms.
 
-* It is important to emphasize the role of machine learning in time series analysis and advanced analytics (the application of advanced statistical models and intelligent algorithms). Today's class and the unit in its entirety will begin the students' journey into **machine learning**. For some students, machine learning is their reason for choosing the curriculum. For others, machine learning may be intimidating and unreachable. Remember to communicate concepts in simple terms, reminding students that machine learning is just the application of statistics using Python libraries in order to analyze data and make predictions regarding behaviour and outcomes. Foster confidence and understanding by pacing explanations and demonstrations. Explanatory examples have been provided to assist with this.
+* Emphasize the role of machine learning in time series analysis and advanced analytics (the application of advanced statistical models and intelligent algorithms). Today's class, and the entire unit, will mark the students' journey into **machine learning**. For some students, machine learning is why they chose this boot camp; others may find the topic intimidating and complex. Communicate concepts in simple terms, reminding students that machine learning is just the application of statistics using Python libraries to analyze data and make predictions regarding behaviour and outcomes. Foster confidence and understanding by pacing explanations and demonstrations; examples are provided to help with this.
 
-* The mathematical details of tools such as the Hodrick-Prescott filter are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that it derails the pace of the class.
+* The mathematical details of tools such as the Hodrick-Prescott filter are discussed and provided to give students an understanding of what happens under the hood. Don't get too bogged down in explaining the niceties that it derails the pace of the class.
 
-* The goal should be to transmit the mathematical and statistical concepts and approaches at a level required to complete the activity. Students should then independently research and reinforce the concepts outside of class.
+* The goal is to transmit mathematical and statistical concepts at the level that is required to complete the activity. Students should then independently research and reinforce the concepts outside of class.
 
 * The next several units will teach students how to use data science tool kits and machine learning algorithms to automate financial analysis and predict future outcomes. By the end of this unit, students will have designed and executed machine learning algorithms that leverage common time series analysis and linear regression approaches to make robust predictions about investments. Students will also become competent in using standard methods/approaches and tools to evaluate predictions, such as **train test data splitting** and **rolling out of sample method**.
 
-* Slack out some of the following helpful links, and encourage students to conduct research and review supplementary resources outside of class.
+* Slack out the following links, encouraging students to conduct research and review supplementary resources outside of class.
 
   * [What is Time Series Forecasting?](https://machinelearningmastery.com/time-series-forecasting)
 
@@ -82,15 +82,13 @@ To add the slides to the student-facing repository, download the slides as a PDF
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-The time tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTracker.xlsx)
+The Time Tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTracker.xlsx)
 
 - - -
 
 ### 1. Instructor Do: Welcome (5 min)
 
-The instructor will kick off the class by welcoming students and briefly introducing the concepts and skills for Unit 10 and today's class. The focus of this activity will be introducing students to **time series analysis**, **machine learning**, and how the two can be used together to create and predict trends in various financial markets (i.e., stocks and real estate).
-
-Welcome the students back to class. Communicate to them that this unit will commence their journey into the world of time series analysis and machine learning.
+Kick things off by welcoming students, then briefly introduce the concepts and skills for today's class and Unit 10. The focus of this activity will be to introduce students to the world of **time series analysis** and **machine learning**, and how they are used together to create and predict trends in various financial markets (i.e., stocks and real estate).
 
 - - -
 
