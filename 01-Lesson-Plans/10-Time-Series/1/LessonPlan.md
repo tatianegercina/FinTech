@@ -180,21 +180,21 @@ Ask for any questions before moving forward. Assure students that all the concep
 
 ### 3. Instructor Do: Review Homework (10 min)
 
-The instructor will provide a brief walkthrough of the homework solution. Time should be dedicated to allowing students to ask a few questions about the assignment.
+The instructor will now provide a brief walkthrough of the homework, providing enough time for students to ask questions about the assignment.
 
 **File:** [Homework Instructions](../../../02-Homework/10-Time-Series/Instructions/README.md)
 
 Open the homework instructions and highlight the following:
 
-* This week's homework will be a deep dive into the various methods and techniques of analyzing and forecasting time series data. Students will use the **Hodrick-Prescott** filter, as well as **ARMA**, **ARIMA**, and **GARCH** models to complete time-series return forecasting and volatility forecasting. Students will also use a Linear Regression to model the returns data.
+* This week's homework is a deep dive into the various methods and techniques of analyzing and forecasting time series data. Students will use the **Hodrick-Prescott** filter, as well as **ARMA**, **ARIMA**, and **GARCH** models to complete time-series return forecasting and volatility forecasting. Students will also use a linear regression to model the returns data.
 
-* Explain to students that this homework will consist of two parts:
+* Explain to students that this homework consists of two parts:
 
-  * Time-Series Forecasting - forecasting Settle Prices, Settle Returns, and Volatility.
+  * Time series forecasting - forecasting settle prices, settle returns, and volatility.
 
-  * Linear Regression Modeling - predicting returns using linear regression.
+  * Linear regression modeling - predicting returns using linear regression.
 
-* Communicate to students that by the end of the homework, they will have gained proficiency in using time series approaches and models to forecast financial data.
+* Tell students that the homework will help them gain proficiency in using time series approaches and models to forecast financial data.
 
 Ask students if they have any questions before moving on.
 
@@ -204,23 +204,23 @@ Ask students if they have any questions before moving on.
 
 **File:** [datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
 
-Explain to students that over the next several weeks, we will be learning about many different machine learning models and techniques, but we will start with Time Series Models. Time Series Models are very prevalent in the financial world and are very useful models for analyzing time series data.
-
 In this activity, you will introduce the basics of working with time series in Python.
 
-Navigate to the Time Series Basics slides and explain that we will learn the following Pandas techniques to work with time series data:
+Explain to students that over the next several weeks, they will learn about many different machine learning models and techniques, starting with time series models. Ubiquitous in the financial world, time series models are very useful for analyzing time series data.
 
-* Using the `loc[]` accessor to select rows with specified dates. (First Slide)
+Open the slideshow, navigate to the time series basics slides, and explain that we will learn the following Pandas techniques to work with time series data:
 
-* Using the `resample()` method to group rows by day, week, month, year, or any datetime attribute. (Following Slide)
+* Using the `loc[]` accessor to select rows with specified dates. 
 
-In addition, we'll be:
+* Using the `resample()` method to group rows by day, week, month, year, or any datetime attribute.
+
+In addition, we will be:
 
 * Converting a column of dates from string to datetime format.
 
 * Accessing datetime attributes from the index.
 
-The next slide introduces an Instructor Demonstration. Open the notebook and run the following lines of code:
+Open the notebook and run the following lines of code:
 
   ```python
   df = pd.read_csv('maple_syrup_sales.csv')
@@ -228,7 +228,7 @@ The next slide introduces an Instructor Demonstration. Open the notebook and run
   df.info()
   ```
 
-* The CSV, a data set of maple syrup sales figures, is opened with pandas.
+* The CSV, a data set of maple syrup sales figures, is opened with Pandas.
 
 * `df.info()` lists the number of rows, as well as the column data types.
 
@@ -284,7 +284,7 @@ Next, explain that the `resample()` method groups rows by a specified time frame
 
 * This line groups all the rows of a year together then obtains their mean.
 
-* `resample()` is quite similar to pandas's `groupby()` method. Once data has been aggregated, an aggregate function must be called. In this case, the mean was called, but quantities such as the sum, maximum value, or the minimum value can also be obtained with their respective functions.
+* `resample()` is quite similar to Pandas's `groupby()` method. Once data has been aggregated, an aggregate function must be called. In this case, the mean was called, but quantities such as the sum, maximum value, or the minimum value can also be obtained with their respective functions.
 
 * The argument `'A'` in `resample()` specifies the time frame. Here, it is grouping the rows into an annual time frame. Others, such as daily or weekly data, can also be used.
 
@@ -306,7 +306,7 @@ Next, explain that the `resample()` method groups rows by a specified time frame
 
 - - -
 
-### 5. Students Do: Time Series Basics (15 min)
+### 5. Student Do: Time Series Basics (15 min)
 
 In this activity, students will practice the basics of time series manipulation in pandas.
 
