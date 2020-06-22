@@ -605,6 +605,7 @@ After the installation finish, remove the comments from the initial imports.
 import pandas as pd
 import numpy as np
 import hvplot.pandas # <--- Uncomment this line
+import holoviews as hv # <--- Uncomment this line
 from sklearn.datasets.samples_generator import make_moons
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -612,12 +613,13 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 ```
 
-Also, remove the comments from the cell where the plot is created. Note that we are using the `hvplot.show()` method, explain to students that this is the way to proceed to display the plot in Google Colab
+Also, remove the comments from the cell where the plot is created. Note that for hvplots to render correctly inside Google Colab, the line `hv.extension("bokeh")` must be run in each cell where a plot is displayed.
 
 ```python
 # Plotting the nonlinear dummy data
+hv.extension("bokeh")
 plot = df_moons.hvplot.scatter(x="Feature 1", y="Feature 2", by="Target")
-hvplot.show(plot)
+plot
 ```
 
 Delete the cell where you run `pip` and run all the notebook's cells to show students that the plot is now displayed in the notebook just like it was in the Jupyter Notebooks.
