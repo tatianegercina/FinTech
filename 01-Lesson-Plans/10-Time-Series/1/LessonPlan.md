@@ -94,19 +94,21 @@ Kick things off by welcoming students, then briefly introduce the concepts and s
 
 ### 2. Instructor Do: Mysticism of Machine Learning (15 min)
 
-Open the slides and highlight the following:
+Open the slideshow, [[navigate to section X]]] and highlight the following:
 
-* Define **machine learning** as an approach to programming that focuses on designing applications in a way that allows them to learn from their inputs and make adjustments based on their outputs.
+* Define **machine learning** as an approach to programming that focuses on designing applications in a way that allows them to learn from their inputs. and make adjustments based on their outputs.
 
   * A very raw way of thinking about **machine learning** is automated configuration; instead of having to configure inputs and manually make changes to an algorithm, **machine learning** programs automatically adapt to improve outcomes and predictions, as well as accuracy and precision.
 
 * Explain to students that because machine learning algorithms can learn on their own, developers do not need to worry about coding for every scenario.
 
-  * For example, instead of creating a 500 line if-else decision structure in order to identify if a transaction is fraudulent, where every price range and product category is evaluated, a machine learning algorithm can review all transactions ever made by an account owner, classify and cluster transactions, and then predict whether or not the most recent transaction is fraudulent.
+  * For example, rather than creating a 500 line if-else decision structure to identify if a transaction is fraudulent and evaluating every price range and product category, a machine learning algorithm can review all of the account owner's transactions, classify and cluster them, and predict whether or not the most recent transaction is fraudulent.
 
-* Emphasize that machine learning, in a nutshell, is just developing a statistical or algorithmic model of the data that can be used to make predictions or decisions about new data automatically.
+* Emphasize that, in a nutshell, machine learning is about developing a statistical or algorithmic model of data that can be used automatically to make predictions or decisions about new data.
 
-* Explain that machine learning algorithms have been transforming a range of industries, including finance, healthcare, agriculture, marketing, homeland security, and space exploration, to name a few. **Machine learning** is being used to predict
+* Explain that machine learning algorithms have transformed a range of industries, including finance, healthcare, agriculture, marketing, homeland security, and space exploration, to name a few. 
+
+**Machine learning** is being used to predict:
 
   * Loan eligibility
 
@@ -120,35 +122,33 @@ Open the slides and highlight the following:
 
   * Presidential election results
 
-  * Occurrence/effects/impacts of natural storms and disasters
+  * Occurrence/effects/impacts of natural disasters
 
   * Planetary climate and atmosphere conditions/composition, etc.
 
-* Underscore to students that the predictions made by **machine learning** algorithms are driving decision making on a global scale. Commercial and government leaders all leverage **machine learning** in some capacity: **machine learning** outcomes are helping industries become more proactive than reactive. Machine learning is at the forefront of all initiatives to make data-driven decisions.
+* Underscore to students that the predictions made by **machine learning** algorithms drive decision making on a global scale. Commercial and government leaders all leverage **machine learning** in some capacity: **machine learning** outcomes are helping industries become more proactive, rather than reactive. 
 
-* Communicate to students that the world of **machine learning** is sometimes viewed as nebulous and enigmatic: a niche field of programming involving heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, it is just the application of algorithms, statistics, and statistical libraries to solve data and business problems.
+* Communicate that **machine learning** is sometimes viewed as somewhat nebulous and enigmatic: a niche field of programming that involves heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, it is just the application of algorithms, statistics, and statistical libraries to solve data and business problems.
 
   * Like all other functions, machine learning models are provided as libraries. Common machine learning libraries include **Scikit-Learn**, **TensorFlow**, and **SciPy**. Services like Amazon Web Services and Google Cloud Platform offer proprietary machine learning libraries that can be used within their cloud ecosystems. These libraries, as well as the open-source community, make the execution of machine learning models as simple as calling a Pandas function.
 
   * Summarize the machine learning pipeline and explain to students that all machine learning pipelines follow a **Model -> Fit (Train) -> Predict** paradigm, where a data set/model of data is used to train the algorithm. Once the algorithm has been trained, the model and algorithm can be used to make actual predictions.
 
-Ask students what they think machine learning can do? Ask what ideas they have as to why someone would go through the effort of using advanced statistical algorithms when a developer can just use Monte Carlo simulations to make predictions?
+Now, ask students what they think machine learning can do. Why would someone bother using advanced statistical algorithms, when a developer could just use Monte Carlo simulations to make predictions?
 
-* **Answer** Typically, when working with an algorithm, a developer has to tweak and configure the algorithm to create the most accurate and precise results for a given use case. This requires a lot of manual work.
+* **Answer** When working with an algorithm, a developer usually has to tweak and configure it to create the most accurate results for a given use case. This requires a lot of manual work.
 
-  * Machine learning completely removes this need, as the program will continuously learn from data/its results and make adjustments on the fly.
+  * Machine learning completely removes this need, as the program continuously learns from data and can make adjustments on the fly. This allows for the algorithm to perform more robustly and change dynamically based on the data it is processing. These types of algorithms are classified as **intelligent algorithms**.
 
-  * This allows for the algorithm to perform more robustly and change dynamically based on the data it is processing. These types of algorithms are classified as **intelligent algorithms**.
+Explain to students that an intelligent algorithm uses data to modify behaviour. As data is processed and predictions are made, the behaviour of the algorithm changes.
 
-Define **intelligent algorithms** for students. Explain that **intelligent algorithms** use data to modify behaviour. With **intelligent algorithms**, the behaviour of the algorithm changes as data is processed and predictions are made.
-
-* **Intelligent algorithms** use pre-existing data to learn and make decisions on how to configure and adapt its behaviour for the most accurate and precise prediction.
+* **Intelligent algorithms** use pre-existing data to learn and make decisions on how to configure and adapt behaviour for the most accurate and precise prediction.
 
 * **Intelligent algorithms** are used to fuel **machine learning**, **predictive analytics**, and **artificial intelligence**.
 
 Explain the similarities and differences between machine learning, predictive analytics, and artificial intelligence.
 
-* Machine learning has two approaches to using  **intelligent algorithms**:
+* Machine learning has two approaches to using **intelligent algorithms**:
 
   * One approach is **supervised learning**, which involves a programmer feeding the valuable algorithm data to learn from and make predictions.
 
