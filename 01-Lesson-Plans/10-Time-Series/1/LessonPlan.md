@@ -2,21 +2,21 @@
 
 ### Overview
 
-Welcome to Unit 10! Everything students have learned up to this point--from data cleaning and wrangling to simulations and projected return on investments--has been to prepare students and give them the foundation needed for implementing advanced analytics pipelines using **time series** analysis and **machine learning**.
+Welcome to Unit 10! Everything students have learned up to this point–from data wrangling and cleaning, to simulations and projected return on investments--has been to prepare students and give them the foundation needed for implementing advanced analytics pipelines using **time series** analysis and **machine learning**.
 
-Unit 10 introduces students to the world of data science and **machine learning**. **Machine learning** is a form of programming that employs algorithms and statistical models to enable insights, predictions, and data-driven decision making. **Machine learning** involves the development of computer applications that have the ability to automatically learn from data and make adjustments to parameters and execution based on experience, with little to no interaction from a developer.
+This unit introduces students to the world of data science and **machine learning**. **Machine learning** is a form of programming that employs algorithms and statistical models to enable insights, predictions, and data-driven decision making. **Machine learning** involves the development of computer applications that have the ability to automatically learn from data and make adjustments to parameters and execution based on experience, with little to no interaction from a developer.
 
-For many students, this unit and the units to follow will be the bread and butter of the class. Advanced analytics is taking the data industry by storm, offering developers and companies a means to analyze thousands of large data sets and use computer predictions to drive investments and decision making. Machine learning especially benefits financial services, allowing banks and professionals to analyze large data sets and use technology to make investment recommendations and predictions, a process that typically requires multiple hands and hours/days of time. Machine learning has streamlined financial analysis; work that previously took hours for a single financial professional to complete can now be automated and completed within minutes using machine learning algorithms.
+For many students, this unit and the units to follow will be the "bread and butter" of the class. Advanced analytics is taking the data industry by storm, offering developers and companies a means to analyze thousands of large data sets and use computer predictions to drive investments and decision making. Machine learning is especially beneficial in financial services, allowing banks and professionals to analyze large data sets and use technology to make investment recommendations and predictions, a process that typically requires multiple people and hours/days of time. Machine learning has streamlined financial analysis. Work that previously took hours for a single financial professional to complete can now be automated and completed within minutes using machine learning algorithms.
 
 * Make sure to keep students engaged and excited about the content. Machine learning and data science skills are taking over the tech industry; the advanced analytics and machine learning content in these upcoming units will ensure students are competitive in the job market.
 
 * Remember to emphasize the real-world value and application of time series analysis, machine learning, sentiment analysis, and other advanced analytic concepts as they are discussed.
 
-  * Learning how to develop machine learning algorithms is what is required to take programming to the next level in the current day technological ecosystem. By the end of the course, students will have evolved from standard Python developers to FinTech data scientists, capable of designing and developing:
+  * Learning how to develop machine learning algorithms is what is required to take programming to the next level in the current technological ecosystem. By the end of the course, students will have evolved from standard Python developers to FinTech data scientists, capable of designing and developing:
 
-  * Robo-advisors and chat-bots for algorithmic trading, product/investment recommendation, and customer service/support
+  * Robo-advisors and chatbots for algorithmic trading, product/investment recommendation, and customer service/support
 
-  * Sentiment analysis engines to assess and predict economical sentiment for stock and housing markets
+  * Sentiment analysis engines to assess and predict economic sentiment for stock and housing markets
 
   * Models that predict and detect fraudulent financial transactions
 
@@ -26,7 +26,7 @@ Today's class will initiate this journey by introducing students to the basics o
 
 By the end of this class, students will be able to:
 
-* Manipulate time series data sets in pandas.
+* Manipulate time series data sets in Pandas.
 
 * Identify the components of a time series.
 
