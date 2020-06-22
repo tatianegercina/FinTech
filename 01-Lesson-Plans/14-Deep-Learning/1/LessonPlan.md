@@ -1,5 +1,3 @@
-placeholder
-
 ## 14.1 Lesson Plan: Neural Networks
 
 ### Overview
