@@ -308,7 +308,7 @@ Next, explain that the `resample()` method groups rows by a specified time frame
 
 ### 5. Student Do: Time Series Basics (15 min)
 
-In this activity, students will practice the basics of time series manipulation in pandas.
+In this activity, students will practice the basics of time series manipulation in Pandas.
 
 **Files:**
 
@@ -324,7 +324,7 @@ In this activity, students will practice the basics of time series manipulation 
 
 * [shopify_stock_prices.ipynb](Activities/02-Stu_Time_Series_Basics/Solved/shopify_stock_prices.ipynb)
 
-Quickly walk through the basic steps of working with a time series in pandas. Use this as a refresher on indexing. Try not to dwell on any point for too long, as students will work with these methods repeatedly throughout the week.
+Quickly walk through the basic steps of working with a time series in Pandas. Use this as a refresher on indexing. There's no need to dwell on any point for too long, as students will work with these methods repeatedly throughout the week.
 
 * The `parse_dates` and `index_col` arguments are used to format the time series index as datetime. This allows data to be sliced from the DataFrame by date ranges.
 
@@ -342,7 +342,7 @@ Quickly walk through the basic steps of working with a time series in pandas. Us
   df.loc['2018-09':'2018-10']
   ```
 
-* Time series data can be grouped using the resample function. The `resample` function will group the data using the **DateTimeIndex** and the frequency provided (i.e., weekly). This will serve as a resampling of the data. Data can be grouped weekly, monthly, etc. The `resample` function works just like the `groupby` function; however, `resample` is specific for time series data.
+* Time series data can be grouped using the resample function. The `resample` function will group the data using the DateTimeIndex and the frequency provided (i.e., weekly). This will serve as a resampling of the data. Data can be grouped weekly, monthly, etc. The `resample` function works just like the `groupby` function; however, `resample` is specific for time series data.
 
   ```python
   weekly = df['Close'].resample('W').mean()
@@ -360,11 +360,11 @@ Answer any remaining questions before moving on.
 
 * **File:** [decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
 
-Use the slides and define time series decomposition to the class:
+Go to the slideshow, [[open section X]], and define time series decomposition to the class:
 
 * In a nutshell, it is separating time series data into useful and less useful components.
 
-* The useful components can be used to observe patterns and to make predictions.
+* The useful components can be used to observe patterns and make predictions.
 
 List the components of time series decomposition:
 
@@ -402,9 +402,9 @@ Next, explain that the code below decomposes the maple syrup sales data.
   decomposed = seasonal_decompose(df['maple_syrup_sales'], model='multiplicative')
   ```
 
-* The model is specified as multiplicative because the seasonal fluctuation (the spikes) increases with the series.
+* The model is specified as multiplicative, because the seasonal fluctuation (the spikes) increases with the series.
 
-  * Why? If you have a time series with a trend, the amplitude of any seasonal activity  in that series tends to increase over time. In other words, those periodic 'spikes' in a series get 'spikier', the more you progress through time. A multiplicative model specification will better capture and predict this type of activity.
+  * Why? If you have a time series with a trend, the amplitude of any seasonal activity in that series tends to increase over time. In other words, those periodic 'spikes' in a series get 'spikier' the more you progress through time. A multiplicative model specification will better capture and predict this type of activity.
 
 Explain that the time series is decomposed visually by the library:
 
@@ -418,7 +418,7 @@ Explain that the time series is decomposed visually by the library:
 
 * The residual components are the leftovers when trend and seasonality are removed.
 
-Finally, explain that the library used in the notebook is more useful as an illustrative tool than a predictive tool. This is because we're not yet using these tools to actually make predictions about the future; we're just characterizing the data that we've got. We will cover such predictive tools and applications though during this week.
+Finally, explain that the library used in the notebook is more useful as an illustrative tool than a predictive tool. This is because instead of using these tools to make predictions about the future, we're characterizing the data that we've got. We will cover such predictive tools and applications later in the week.
 
 - - -
 
@@ -430,9 +430,9 @@ Finally, explain that the library used in the notebook is more useful as an illu
 
 In this activity, you will introduce EWMA, or exponentially-weighted moving average. You will also introduce the Hodrick-Prescott filter, a tool that captures trends by minimizing local fluctuations.
 
-Begin by doing a concept overview of the EWMA and Hodrick-Prescott filters using the slides.
+Go to the slideshow, [[open section X]] and begin with a concept overview of the EWMA and Hodrick-Prescott filters.
 
-**EWMA Slides**
+**EWMA**
 
 Explain that an exponentially-weighted moving average (EWMA) is similar to a moving average, with a significant difference:
 
@@ -442,7 +442,8 @@ Explain that an exponentially-weighted moving average (EWMA) is similar to a mov
 
 * This strategy may better capture **trends** than a simple moving average.
 
-**Hodrick Prescott Slides**
+**Hodrick-Prescott**
+
 Introduce the topic of the Hodrick-Prescott filter:
 
 * It is a mathematical function used to separate short-term fluctuations, such as ones that occur daily, from longer-term trends.
@@ -451,7 +452,7 @@ Introduce the topic of the Hodrick-Prescott filter:
 
 * Like rolling average and EWMA, it can be used to capture trends.
 
-The math slide explains the overall mathematical idea of the Hodrick-Prescott filter:
+Explain the overall mathematical idea of the Hodrick-Prescott filter:
 
   ![Images/hp01.png](Images/hp01.png)
 
@@ -459,7 +460,7 @@ The math slide explains the overall mathematical idea of the Hodrick-Prescott fi
 
 * As discussed previously, a time series can be decomposed into trend, periodicity, and noise.
 
-* If we temporarily disregard noise, then, time series data minus trend equals periodicity.
+* If we temporarily disregard noise, then, time series data, minus trend, equals periodicity.
 
 * The left side describes the cyclic element: time series (y) minus trend (tau).
 
@@ -479,21 +480,21 @@ Open the notebook and describe the dataset:
 
 * The data tracks the closing price during a two-year period of IVV, an exchange-traded fund (ETF) that tracks the S&P 500 index.
 
-Begin the activity with a brief review of the moving average, before rolling on to EWMA and Hodrick-Prescott (excuse the pun):
+Begin the activity with a brief review of the moving average, before rolling on to EWMA and Hodrick-Prescott:
 
 ![Images/ma01.png](Images/ma01.png)
 
 * In a moving average (also called rolling average), each value is the average of a number of prior values.
 
-* In pandas, it can be computed with the `rolling()` and `mean()` methods, with the `window` argument specifying the number of prior values to average.
+* In Pandas, it can be computed with the `rolling()` and `mean()` methods, with the `window` argument specifying the number of prior values to average.
 
 * Yet the EWMA is different, as it gives greater weight to the most recent observations. In finance, this is nice, because it means we're still filtering out noise (like a moving average), yet we're also reacting more quickly to information (the "exponentially weighted" part of EWMA).
 
-* In pandas, an EWMA can be computed with the `ewm()` and `mean()` methods.
+* In Pandas, an EWMA can be computed with the `ewm()` and `mean()` methods.
 
 * As mentioned above, in a rolling average, a `window` argument is supplied. By contrast, the `ewm()` method takes a `halflife` argument.
   
-  * The two are conceptually similar, but not mathematically the same thing. Essentially halflife relates to how much weight we give to the more recent observations: the shorter the halflife, the more weight we're giving to those recent observations (think: shorter half life==reacting more quickly).
+  * The two are conceptually similar, but not mathematically the same thing. Essentially, halflife relates to how much weight we give to the more recent observations: the shorter the halflife, the more weight we're giving to those recent observations (think: shorter half life = reacting more quickly).
 
 Next, explain the Python code used to run the Hodrick-Prescott filter:
 
@@ -520,9 +521,9 @@ Finally, show the plots of the trend and noise components after filtering:
 
 - - -
 
-### 10. Students Do: You've Got a FRED (15 min)
+### 10. Student Do: You've Got a FRED (15 min)
 
-In this activity, students will use the Hodrick-Prescott filter to identify macroeconomic trends in Canada in the period from 2004 to 2010.
+In this activity, students will use the Hodrick-Prescott filter to identify macroeconomic trends in Canada for the period 2004 to 2010.
 
 **Files:**
 
@@ -532,7 +533,7 @@ In this activity, students will use the Hodrick-Prescott filter to identify macr
 
 - - -
 
-### 11. Instructor Do: Review You've Got a FRED (10 min)
+### 11. Instructor Do: You've Got a FRED Review  (10 min)
 
 **Files:**
 
@@ -542,7 +543,7 @@ Open the solution file, and conduct a brief dry walkthrough of the code.
 
 * Convey to students that we'll read in data form the Federal reserve via a csv.
 
-* Explain using the H-P filter in Python. It is a `statsmodels` module that requires a single line of code. The plots are created simply with pandas's `plot()` method.
+* Explain using the H-P filter in Python. It is a `statsmodels` module that requires a single line of code. The plots are created simply with Pandas's `plot()` method.
 
   ```python
   import statsmodels.api as sm
@@ -559,16 +560,17 @@ If time allows, take a moment to compare and contrast the H-P filter:
 
 ### 12. Instructor Do: Autocorrelation (15 min)
 
-Before diving into the code, introduce the concept of autocorrelation with the first few slides on it:
+Before diving into the code, introduce the concept of autocorrelation:
 
-* Up to this point, when dealing with linear regression, we have tried to identify the relationship between two unrelated variables, such as date vs. weather, or years of experience vs. salary.
+* Up to this point, when dealing with linear regression, we have tried to identify the relationship between two unrelated variables, such as date vs. weather, or years of professional experience vs. salary.
 
-* Autocorrelation, on the other hand, determines to what extent, for example, today's values correlate with yesterday's values.
+* Autocorrelation, on the other hand, determines to what extent today's values correlate with yesterday's values.
 
-* Hourly temperature is a clear, easy to understand, illustration of the concept autocorrelation.
+* Hourly temperature is a clear, easy to understand, illustration of the concept of autocorrelation.
   
   * What's the temperature an hour into the future? It's very likely to be similar to what it is now (one "lag" away).
-  * What's the temperature at noon today? Likely we'll get good information by looking at what the temperature was at noon yesterday (24 hours, or "lags", ago).
+  
+  * What's the temperature at noon today? It is likely we'll get good information by looking at what the temperature was at noon yesterday (24 hours, or "lags", ago).
 
 **File:** [autocorrelation.ipynb](Activities/06-Ins_Auto_Correlation/Solved/autocorrelation.ipynb)
 
