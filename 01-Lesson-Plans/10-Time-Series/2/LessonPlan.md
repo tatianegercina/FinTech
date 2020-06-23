@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's class is the heart of this unit. Students will be introduced to core techniques to model or convert stationary data. They will also learn to use time series models such as ARMA, ARIMA, and GARCH to create forecasts.
+Today's class is the heart of this unit. Students will be introduced to core techniques to model or convert stationary data, as well as learn how to use time series models such as ARMA, ARIMA, and GARCH to create forecasts.
 
 ### Class Objectives
 
@@ -22,13 +22,13 @@ By the end of this class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [imblearn Installation Guide](../../11-Classification/Supplemental/Machine_Learning_Env_Setup_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+* Slack out the [imblearn Installation Guide](../../11-Classification/Supplemental/Machine_Learning_Env_Setup_Guide.md) and ask students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
-* Today's class is the most challenging in this unit. Starting with the concept of stationarity, students will build on previous skills and ideas as they progress through the day. Some of these ideas are counterintuitive. However, they will gain repeated exposure to them from one activity to the next. A major goal for today's class, then, is for students to gain confidence through the process of working through fairly challenging material through multiple exposures.
+* Today's class is the most challenging of the unit. Starting with the concept of stationarity, students will build on previous skills and ideas as they progress through the day. While some ideas will seem counterintuitive, students will be exposed to them in multiple activities. A major goal for today's class is for students to gain confidence by working through this fairly challenging material via repeated exposures.
 
 * Be mindful that because each activity is a pre-requisite for the next, today's class may call for greater patience from both instructor and students. Do not rush through activities, and take the time to explain the core concepts and techniques in detail if necessary.
 
-* While it is likely that some students may not fully grasp all of today's material by the end of class, the payoff will be on day 3, when your students will have a chance to create predictive models from start to end.
+* While it is likely that some students may not fully grasp all of today's material by the end of class, the payoff will be on Day 3, when students will have a chance to create predictive models from start to end.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -42,27 +42,25 @@ By the end of this class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 - - -
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-In this section, you will give a broad overview of today's class.
-
-Welcome students to the second day of the time series unit, and briefly summarize key concepts from day 1:
+Welcome students to the second day of the time series unit, and start with a brief summary of key concepts from Day 1:
 
 * A time series can be decomposed into components such as trend, noise, and seasonality.
 
 * Tools such as the Hodrick-Prescott filter and EWMA can be used to identify trends in a time series.
 
-Describe to students what they will be learning today:
+Then, inform students that today, they will learn how to:
 
-* They will learn how to detect and convert non-stationary data to stationary.
+* Detect and convert non-stationary data to stationary.
 
-* They will learn to model volatility in a time series.
+* Model volatility in a time series.
 
-* They will learn to use powerful time series models, ARMA,  ARIMA, and GARCH, to forecast financial data.
+* Use powerful time series models, ARMA,  ARIMA, and GARCH, to forecast financial data.
 
 - - -
 
