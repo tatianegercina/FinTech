@@ -743,8 +743,11 @@ Walk through the solution code:
 * The bid-ask spread data is sampled at a 10-second interval, and NaN values are dropped.
 
 * The autocorrelation at a lag of 1 is 0.136.
-  * Think of this number as how a time series correlates with what it's value was just previously.
+
+  * Think of this number as how a time series correlates with what its value was just previously.
+  
   * If this value is 0.136, it means, for example, that a high bid-ask spread over the last ten seconds likely indicates a high bid-ask spread for the next ten seconds.
+  
   * Just like correlation, autocorrelation ranges from -1 to 1; this means that while we found a positive and predictable relationship, the evidence is still a little weak.
 
 Review the ACF and PACF plots:
@@ -763,19 +766,19 @@ Review the ACF and PACF plots:
 
 * The ACF and PACF both appear to be significant at a lag of 1, along with possibly the 4th lag.
   
-  * Should we chose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest we use a model that carries the order all the way out to AR(4). Ultimately, however, whether an AR(1) or an AR(4) is more appropriate will really just ultimately depend on how well the two different specifications perform on the data that we have. 
+  * Should we chose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest we use a model that carries the order all the way out to AR(4). Ultimately, however, whether an AR(1) or an AR(4) is more appropriate ultimately depends on how well the two different specifications perform on the data that we have. 
 
-  * While approximately the 13th lag looks significant in the autocorrelation plot, it's not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(); the really beneficial lags are the 1st and the 4th, whereas the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads. 
+  * While approximately the 13th lag looks significant in the autocorrelation plot, it's not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(); the really beneficial lags are the 1st and the 4th, while the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads. 
 
 - - -
 
 ### 15. Instructor Do: Reflect (10 min)
 
-End the class by congratulating students on a tough day of time series analysis. Assure students that no one can master this content in a day; additional review and practice will be needed to reinforce the skills learned.
+End the class by congratulating students on a challenging day of time series analysis! Assure them that no one masters this content in a day; additional review and practice are needed to reinforce these skills.
 
-* Reiterate to students that the main goal of time series and machine learning models, especially within FinTech, is to predict and forecast prices and ROI. Time series analysis helps us to analyze the data to determine the best way to model the data and ultimately forecast future events.
+* Reiterate to students that the main goal of time series and machine learning models, especially within FinTech, is to predict and forecast prices and ROI. Time series analysis helps us analyze the data to determine the best way to model the data and, ultimately, forecast future events.
 
-Ask if there are any questions before moving on. Encourage students to attend office hours and to reach out to teaching staff for any additional questions or help.
+Ask if there are any questions before ending class. Remind students about attending office hours for any additional questions or help.
 
 ### End Class
 
