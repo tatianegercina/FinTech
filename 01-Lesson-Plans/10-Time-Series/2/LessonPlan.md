@@ -292,9 +292,9 @@ Next, explain the features of an MA model:
 
   ![Images/arma03.gif](Images/arma03.gif)
 
-  * Here, the `m` is the mean of the time series.
+  * Here, `epsilon` at `t-1` is the noise, or error, at time `t-1`, or in other words, at a specified lag before the current value.
 
-  * `epsilon` at `t-1` is the noise, or error, at time `t-1`, or in other words, at a specified lag before the current value.
+  * The `m` is the impact, or coefficient, from that previous error of the time series.
 
   * `epsilon` at `t` is the noise, or error, at time `t`.
 
