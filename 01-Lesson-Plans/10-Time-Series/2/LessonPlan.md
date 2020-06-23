@@ -335,7 +335,7 @@ Reiterate that, despite the possibly intimidating mathematical formula, the idea
 
 * [ARMA.ipynb](Activities/03-Ins_ARMA/Solved/ARMA.ipynb)
 
-Now that we have a theoretical understanding of the ARMA model explain that we will go over using it in Python.
+Now that we have a theoretical understanding of the ARMA model, explain that we will now review how to use it in Python.
 
 Open the notebook.
 
@@ -349,7 +349,7 @@ Display the plot and ask the class whether the time series is stationary:
 
 Explain that an ARMA model requires a stationary time series.
 
-* Later today, we will cover a model for non-stationary series.
+* Later today, we will cover a model for a non-stationary series.
 
 Ask the class how one might transform this time series to be stationary:
 
@@ -428,7 +428,7 @@ Finally, highlight a few important features of the model's summary:
 
 - - -
 
-### 7. Students Do: Yields (15 min)
+### 7. Student Do: Yields (15 min)
 
 In this activity, students will create an ARMA model on yield data.
 
