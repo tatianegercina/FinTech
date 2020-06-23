@@ -235,11 +235,11 @@ Summarize the key points and procedures of this activity:
 
 Before diving into ARMA, quickly summarize auto-correlation for the class:
 
-* Autocorrelation is simply seeing to how well a time series correlates with a lagged copy of itself at a specified lag interval.
+* Autocorrelation is simply seeing how well a time series correlates with a lagged copy of itself at a specified lag interval.
 
 * For example, if we have a week's worth of data, the value from each day would be matched up with the value from the previous day, and the two series would be mathematically correlated.
 
-* The main idea, again, is to determine how well past values correlate with future values at a specified lag, whether 1 or another lag period. Financial data, such as stock prices, often auto-correlate best at a lag of 1, but that is not always the case.
+* The main idea, again, is to determine how well past values correlate with future values at a specified lag, whether by 1, or another lag period. Financial data, such as stock prices, often auto-correlate best at a lag of 1, but that is not always the case.
 
 * Plotting partial auto-correlation helps identify the **number** of lags that are significant in explaining the data.
 
@@ -249,13 +249,13 @@ Use the slides to introduce the concept of auto-regressive (AR) modelling:
 
 * An AR model, therefore, assumes some degree of auto-correlation.
 
-  * An AR model may have one significant lag, or it may have multiple.
+  * An AR model may have one significant lag, or multiple lags.
 
 Explain the relationship between an AR model and a linear regression model:
 
 * An AR model **is** a linear regression model.
 
-* In an example of a linear regression model, the number of rooms in houses may be used to predict house prices.
+* In an example of a linear regression model, the number of rooms in a house may be used to predict the price of a house.
 
 * In an example of an AR model, the past prices of a stock may be used to predict future prices.
 
