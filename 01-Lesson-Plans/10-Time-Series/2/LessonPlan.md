@@ -671,11 +671,11 @@ Before introducing GARCH to the class, introduce the topic of volatility:
 
 * Volatility can dictate the larger movements of the market. Higher volatility, for example, tends to accompany lower returns.
 
-* In portfolio management, for example, diversifying the types of assets can help reduce risk in a volatile market, and the forecasting of volatility would help make adjustments to reduce risk.
+* For example, in portfolio management, diversifying the types of assets can help reduce risk in a volatile market, and the forecasting of volatility helps make adjustments to reduce risk.
 
 * Another example is the pricing of derivatives. The price of derivatives, such as options, are influenced much more by volatility than the price of the underlying asset. Characterizing and forecasting volatility is, therefore, a key skill in derivative trading.
 
-* Understanding volatility is also important to banks as loan failures can occur in a cluster. Assets must exceed liabilities, so regulators and banks alike create forecast models for asset volatility.
+* Understanding volatility is also important to banks, as loan failures can occur in a cluster. Assets must exceed liabilities, so regulators and banks alike create forecast models for asset volatility.
 
 Explain that GARCH models volatility. Open the slideshow and summarize the key features of the ARMA model:
 
@@ -695,9 +695,7 @@ Formalize the term volatility:
 
 * GARCH stands for Generalized Autoregressive Conditional Heteroskedasticity, where heteroskedasticity simply means uneven variance.
 
-Use the `Volatile Periods in the US Stock Market` slides to illustrate how volatility clusters and to motivate GARCH models:
-
-This slide shows an example of volatility clusters:
+Go to the slideshow, and navigate to the `Volatile Periods in the US Stock Market` slides to illustrate how volatility clusters and to motivate GARCH models:
 
 * Volatility and returns tend to cluster.
 
@@ -709,15 +707,15 @@ This slide shows an example of volatility clusters:
 
 * The first highlighted box captures the period after the September 11th attacks and the decline of the dotcom bubble, while the second highlights the recession that began in 2008, including the collapse of Lehmann Brothers.
 
-* Scenarios such as political upheavals, natural disasters, and disruptions to oil supply can also cause volatility to cluster.
+* Scenarios such as political upheavals, natural disasters, and disruptions to oil supplies can also cause volatility to cluster.
 
 Explain that the cause of financial market volatility is largely psychological:
 
-* When a big, unexpected event occurs, there is much uncertainty about the future.
+* When a big, unexpected event occurs, it plants uncertainty about the future.
 
-* It takes time for people to figure out the financial impact, and until then, there are disagreements about the impact.
+* It takes time for people to understand the financial impact, and there are also disagreements about the potential impact.
 
-* It is these disagreements that lead to the volatility.
+* It is these disagreements that lead to volatility.
 
 Open the notebook and walk through a code example of using GARCH to predict volatility. First, explain that like an ARMA model, a GARCH model assumes stationarity:
 
@@ -776,7 +774,7 @@ Explain that the model can also be used to plot a forecast of _volatility_:
   final.plot()
   ```
 
-* The forecast will be generated for 3 trading days.
+* The forecast will be generated for three trading days.
 
 * The `forecast()` method generates forecast values.
 
@@ -794,7 +792,7 @@ Show the plot of the volatility forecast:
 
 - - -
 
-### 14. Students Do: Euro-CAD Volatility (10 min)
+### 14. Student Do: Euro-CAD Volatility (10 min)
 
 **Files:**
 
@@ -862,7 +860,7 @@ Next, walk through the code for plotting the volatility forecast:
 
 * The last date of the dataset (which can be identified by `df.tail()`) is 2019-12-08. It is defined as the starting date of the forecast.
 
-* The `forecast_horizon` is defined as 5, meaning the forecast for the next 5 days will be generated.
+* The `forecast_horizon` is defined as 5, meaning the forecast for the next five days will be generated.
 
 * A forecast is generated with the `forecast()` method.
 
@@ -882,11 +880,11 @@ Finally, walk through the steps of plotting the volatility forecast:
 
   ![Images/cad04.png](Images/cad04.png)
 
-* Based on the upward trend in the plot, the volatility of the EUR-USD exchange rate is predicted to fluctuate negatively over the next 5 days.
+* Based on the upward trend in the plot, the volatility of the EUR-USD exchange rate is predicted to fluctuate negatively over the next five days.
 
 - - -
 
-### 16. Instructor Do: Reflect (5 min)
+### 16. Instructor Do: Reflect and End Class (5 min)
 
 Take a few moments to recap and reflect before ending class:
 
@@ -894,12 +892,12 @@ Take a few moments to recap and reflect before ending class:
 
 * We learned how to forecast stock prices and oil futures prices using statistical models (ARMA and ARIMA).
 
-* We learned that understanding volatility is important in financial forecasting, and we learned a useful model to predict volatility (GARCH).
+* We learned that understanding volatility is important in financial forecasting, and employed a useful model to predict volatility (GARCH).
 
-* These time-series models that you learned are used in practice everywhere, from forecasting next year's revenue to quantitative trading. As a result, you have learned a versatile tool for predicting future events.
+* These time-series models are used everywhere, from forecasting next year's revenue to quantitative trading. As a result, you have learned a versatile tool for predicting future events.
 
 ### End Class
 
 - - -
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
