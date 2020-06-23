@@ -12,7 +12,7 @@ In this activity, you will accomplish the following tasks:
 
 * Select all rows from September 2018.
 
-* Select all rows from September 2018 through October.
+* Select all rows from September 2018 through October 2018.
   
 ### Plot Time Series Data
 
@@ -30,4 +30,4 @@ In this activity, you will accomplish the following tasks:
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
