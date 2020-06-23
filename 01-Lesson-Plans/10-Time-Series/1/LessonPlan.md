@@ -590,7 +590,7 @@ To illustrate autocorrelation, explain to students that the `Lag_Temperature` co
 
 * The temperature value from the first row is found in the `Lag_Temperature` column in the second row, for example.
 
-* The temperature data has been shifted down by one time period--in this case an hour.
+* The temperature data has been shifted down by one time period-in this case, one hour.
 
 * The temperature from one hour to the next changes in relatively small increments.
 
@@ -612,7 +612,7 @@ Now show the plotting of temperature over a 48-hour period, with the following o
 
   * Despite significant swings seen in a day, the temperature change between one hour to the next is fairly small.
 
-* For a given temperature reading, say 6 am on January 1st, the most similar temperature reading is seen again 24 hours later.
+* For a given temperature reading, say 6 A.M. on January 1st, the most similar temperature reading is seen again 24 hours later.
 
 You may wish to draw on the following scenario to further illustrate autocorrelation:
 
@@ -632,7 +632,7 @@ Next, explain the code used to calculate the auto correlation:
 
 * The correlation coefficient is 0.99, a very high number. Temperatures, unlike financial markets, are relatively easy to predict.
 
-Explain that autocorrelation can be computed at a different lag
+Explain that autocorrelation can be computed at a different lag.
 
   ```python
   df.Temperature.autocorr(lag=24)
@@ -665,7 +665,7 @@ The `plot_acf()` function visualizes what we have discussed so far:
 
 * As pointed out previously, there is high autocorrelation at a lag of 1, slightly lower at lag 2, and so on. Then a high autocorrelation is found at a lag of 24, and multiples of 24, such as 48.
   
-  * This high autocorrelation at the -24 and -48 hour lag is a good example of seasonality; the weather today at noon is much more likely to be correlated with what the weather was yesterday at noon than, say, what the weather was last midnight.
+  * This high autocorrelation at the -24 and -48 hour lag is a good example of seasonality; the weather today at noon is much more likely to be correlated with what the weather was yesterday at noon than, say, what the weather was yesterday at midnight.
 
 Next, explain that the band in light blue is the confidence interval.
 
@@ -681,7 +681,7 @@ Next, introduce partial autocorrelation functions:
 
 * The idea of PACF is different from autocorrelation function.
 
-* Whereas an autocorrelation function measures autocorrelation at all specified lags, PACF essentially reduces components of autocorrelation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags. That is, autocorrelations at any given lag interval that are significantly dissimilar to previous  intervals are marked as anomalous.
+* Whereas an autocorrelation function measures autocorrelation at all specified lags, PACF essentially reduces components of autocorrelation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags. That is, autocorrelations at any given lag interval that are significantly dissimilar to previous intervals are marked as anomalous.
 
 Explain that a PACF plot will illustrate the idea in concrete terms:
 
@@ -713,7 +713,7 @@ Finally, summarize the key points of the activity:
 
 - - -
 
-### 13. Students Do: Euro ETFs (15 min)
+### 13. Student Do: Euro ETFs (15 min)
 
 In this activity, students will examine a time series of bid-ask spreads of an ETF for autocorrelation.
 
