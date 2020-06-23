@@ -72,13 +72,13 @@ In this activity, you will define stationarity, a key concept in time series mod
 
 * [stationarity.ipynb](Activities/01-Ins_Stationarity/Solved/stationarity.ipynb)
 
-Use the slides to introduce the term `stationarity`:
+Go to the slideshow, navigate to [[section X]] and use the slides to introduce the term `stationarity`:
 
 * In a stationary process, statistical properties such as the mean and variance do not vary across time.
 
-* In other words, the mean and variance in one section in the time series should not differ significantly from the mean and variance in another.
+* In other words, the mean and variance in one section of the time series should not differ significantly from the mean and variance in another.
 
-* A time series that exhibits a trend is therefore non-stationary.
+* A time series that exhibits a trend is, therefore, non-stationary.
 
 Demonstrate a non-stationary time series:
 
@@ -98,7 +98,7 @@ Explain that stationary is important for the following reasons:
 
 * Many time series models assume stationarity, though some do not.
 
-* Knowing whether a process is stationary or non-stationary will help us determine which model to use. For example, ARMA models assume stationarity. ARIMA models, on the other hand, assume non-stationarity. We will encounter both of these models today.
+* Knowing whether a process is stationary or non-stationary helps determine which model to use. For example, ARMA models assume stationarity. ARIMA models, on the other hand, assume non-stationarity. We will encounter both of these models today.
 
 Explain the importance of stationarity in time series modelling:
 
@@ -123,7 +123,7 @@ Open the notebook and show the code to convert from a non-stationary dataset to 
   adfuller(data.Yield)
   ```
 
-* The Augmented Dickey-Fuller tests for stationarity. It is a quick statistical test to tell you if a series is stationary or not.
+* The Augmented Dickey-Fuller tests for stationarity. This is a quick statistical test that tells whether a series is stationary or not.
 
 * The p-value is the second value in the output. A p-value less than 0.05 means that the series is stationary.
 
@@ -141,7 +141,7 @@ Open the notebook and show the code to convert from a non-stationary dataset to 
 
 - - -
 
-### 3. Students Do: Stationarity (15 min)
+### 3. Student Do: Stationarity (15 min)
 
 In this activity, students will perform techniques to make stationary a non-stationary time series.
 
