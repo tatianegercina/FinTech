@@ -4,14 +4,14 @@
 
 ## Background
 
-The financial departments of large companies often deal with foreign currency transactions while doing international business. As a result, they are always looking for anything that can help them better understand the future direction and risk of various currencies. Hedge funds, too, are keenly interested in anything that will give them a consistent edge in predicting currency movements.
+The financial departments of large companies often have to make foreign currency transactions when doing international business, and hedge funds are also interested in anything that will provide an edge in predicting currency movements. Hence, both are always eager to gain a better understanding of the future direction and risk of various currencies. 
 
-In this assignment, you will test the many time-series tools that you have learned in order to predict future movements in the value of the Japanese yen versus the Canadian dollar.
+In this assignment, you will test the many time series tools that you have learned in order to predict future movements in the value of the Canadian dollar versus the Japanese yen.
 
 You will gain proficiency in the following tasks:
 
-1. Time Series Forecasting
-2. Linear Regression Modeling
+1. Time series forecasting
+2. Linear regression modeling
 
 - - -
 
@@ -29,14 +29,14 @@ You will gain proficiency in the following tasks:
 
 #### Time-Series Forecasting
 
-In this notebook, you will load historical CAD-Yen exchange rate data and apply time series analysis and modelling to determine whether there is any predictable behaviour.
+In this notebook, you will load historical CAD-Yen exchange rate data and apply time series analysis and modelling to determine if there is any predictable behaviour.
 
-Follow the steps outlined in the time-series starter notebook to complete the following:
+Follow the steps outlined in the time series starter notebook to complete the following:
 
-1. Decomposition using a Hodrick-Prescott Filter (Decompose the Settle price into trend and noise).
-2. Forecasting Returns using an ARMA Model.
-3. Forecasting the exchange rate Price using an ARIMA Model.
-4. Forecasting Volatility with GARCH.
+1. Decomposition using a Hodrick-Prescott filter (Decompose the settle price into trend and noise).
+2. Forecasting returns using an ARMA model.
+3. Forecasting the exchange rate price using an ARIMA model.
+4. Forecasting volatility with GARCH.
 
 Use the results of the time series analysis and modelling to answer the following questions:
 
@@ -50,8 +50,8 @@ In this notebook, you will build a Scikit-Learn linear regression model to predi
 
 Follow the steps outlined in the regression_analysis starter notebook to complete the following:
 
-1. Data Preparation (Creating Returns and Lagged Returns and splitting the data into training and testing data)
-2. Fitting a Linear Regression Model.
+1. Data preparation (creating returns and lagged returns, and splitting the data into training and testing data)
+2. Fitting a linear regression model.
 3. Making predictions using the testing data.
 4. Out-of-sample performance.
 5. In-sample performance.
@@ -64,8 +64,8 @@ Use the results of the linear regression analysis and modelling to answer the fo
 
 ### Hints and Considerations
 
-* Out-of-sample data is data that the model hasn't seen before (Testing data).
-* In-sample data is data that the model was trained on (Training data).
+* Out-of-sample data is data that the model hasn't seen before (testing data).
+* In-sample data is data that the model was trained on (training data).
 
 - - -
 
@@ -73,6 +73,11 @@ Use the results of the linear regression analysis and modelling to answer the fo
 
 * Create Jupyter Notebooks for the analysis and host the notebooks on GitHub.
 
-* Include a Markdown that summarizes your models and findings and include this report in your GitHub repo.
+* Include a markdown that summarizes your models and findings and include this report in your GitHub repo.
 
 * Submit the link to your GitHub project to Bootcampspot.
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
