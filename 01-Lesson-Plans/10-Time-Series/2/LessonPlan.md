@@ -504,7 +504,7 @@ Explain that the model can be used to make predictions:
 
   ![Images/yields5.png](Images/yields05.png)
 
-* The `forecast()` method is used here to predict yield values for the next 5 days.
+* The `forecast()` method is used here to predict yield values for the next five days.
 
 - - -
 
@@ -585,7 +585,7 @@ Use the slides to explain the interpretation of AIC and BIC:
 
 * They weigh goodness of fit against the number of parameters. In other words, AIC and BIC favour the simplest model that best fits the data.
 
-* This means that they penalize models with a large number of parameters. A model with a large number of parameters may describe that particular dataset well but may lose its predictive power when used on new data.
+* This means that they penalize models with a large number of parameters. A model with a large number of parameters may describe that particular dataset well, but may lose its predictive power when used on new data.
 
 * In this example, we have two models with orders of (2,1,2) and (2,1,4). Because each additional lag adds a variable to the model, AIC and BIC penalize the model with a higher order.
 
@@ -619,7 +619,7 @@ Send the following link to students for more information on the order of an ARIM
 
 - - -
 
-### 11. Students Do: An ARIMA and a Leg (15 min)
+### 11. Student Do: An ARIMA and a Leg (15 min)
 
 **Files:**
 
