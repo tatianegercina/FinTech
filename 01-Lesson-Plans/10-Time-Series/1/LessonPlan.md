@@ -12,7 +12,7 @@ For many students, this unit, and those that follow, will be the "bread and butt
 
 * Remember to emphasize the real-world value and application of time series analysis, machine learning, sentiment analysis, and other advanced analytic concepts as they are discussed.
 
-  * Learning how to develop machine learning algorithms is what is required to take programming to the next level in the current technological ecosystem. By the end of the course, students will have evolved from standard Python developers to FinTech data scientists, capable of designing and developing:
+* Learning how to develop machine learning algorithms is what is required to take programming to the next level in the current technological ecosystem. By the end of the course, students will have evolved from standard Python developers to FinTech data scientists, capable of designing and developing:
 
   * Robo-advisors and chatbots for algorithmic trading, product/investment recommendation, and customer service/support
 
