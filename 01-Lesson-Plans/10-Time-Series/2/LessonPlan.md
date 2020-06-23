@@ -143,7 +143,7 @@ Open the notebook and show the code to convert from a non-stationary dataset to 
 
 ### 3. Student Do: Stationarity (15 min)
 
-In this activity, students will perform techniques to make stationary a non-stationary time series.
+In this activity, students will perform techniques to make a non-stationary time series stationary.
 
 **Files:**
 
@@ -183,7 +183,7 @@ Walk through the first part of the code, in which the diffs are plotted:
 
   ![Images/stationarity02.png](Images/stationarity02.png)
 
-* The series is not quite perfectly stationary. The right side of the plot (between May and November in 2011) shows a higher variance.
+* The series is not quite perfectly stationary. The right side of the plot (between May and November 2011) shows a higher variance.
 
 Walk through the next transformation:
 
@@ -225,7 +225,7 @@ Summarize the key points and procedures of this activity:
 
 * A time series can be made stationary by a variety of techniques.
 
-* Which technique to use can often be determined by examining the non-stationary plot.
+* Which technique to use is often determined by examining the non-stationary plot.
 
 * NaN and infinity values must be dropped along the way.
 
