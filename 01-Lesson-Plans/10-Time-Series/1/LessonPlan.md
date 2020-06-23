@@ -54,7 +54,7 @@ By the end of this class, students will be able to:
 
   * [7 Exciting Uses of Machine Learning in FinTech](https://rubygarage.org/blog/machine-learning-in-fintech)
 
-  * [Understanding Self Learning Monte Carlo](https://www.analyticsindiamag.com/understanding-self-learning-monte-carlo-method/)
+  * [Understanding Self Learning Monte Carlo Method](https://www.analyticsindiamag.com/understanding-self-learning-monte-carlo-method/)
 
   * [Predictive Analytics for FinTech](https://www.prnewswire.com/news-releases/predictive-analytics-for-fintech-an-increasingly-necessary-tool-to-stay-competitive-says-frere-enterprises-300757420.html)
 
