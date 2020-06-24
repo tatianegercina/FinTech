@@ -241,7 +241,7 @@ Before diving into ARMA, quickly summarize auto-correlation for the class:
 
 * Plotting partial auto-correlation helps identify the **number** of lags that are significant in explaining the data.
 
-Use the slides to introduce the concept of auto-regressive (AR) modelling:
+Go to the slideshow, navigate to the ARMA section, and use the slides to introduce the concept of auto-regressive (AR) modelling:
 
 * In an AR model, past values are used to predict future values.
 
