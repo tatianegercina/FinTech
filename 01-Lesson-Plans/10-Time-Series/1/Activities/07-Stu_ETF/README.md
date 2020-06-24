@@ -6,15 +6,15 @@ At a given moment in the exchange-traded fund (ETF) market, there is a price at 
 
 In this activity, you will analyze the autocorrelation of a ETF bid-ask spread.
 
-Open the dataset and parse the `timestamp` column as datetime, and set it as the index.
+1. Open the dataset and parse the `timestamp` column as datetime, and set it as the index.
 
-Resample the dataframe at 10-second intervals and obtain the mean. Drop all NaNs.
+2. Resample the dataframe at 10-second intervals and obtain the mean. Drop all NaNs.
 
-Obtain the autocorrelation value at a lag of 1. If you like, repeat the process for another lag, e.g., 2.
+3. Obtain the autocorrelation value at a lag of 1. If you like, repeat the process for another lag, e.g., 2.
 
-Plot the ACF and PACF.
+4. Plot the ACF and PACF.
 
-How many significant lags do you see in these plots, outside the default confidence interval of 95%?
+5. How many significant lags do you see in these plots, outside the default confidence interval of 95%?
 
 ### Hints
 
