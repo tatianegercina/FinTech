@@ -94,7 +94,7 @@ Kick things off by welcoming students, then briefly introduce the concepts and s
 
 ### 2. Instructor Do: Mysticism of Machine Learning (15 min)
 
-Open the slideshow, [[navigate to section X]]] and highlight the following:
+Open the slideshow, navigate to the section on machine learning, and highlight the following:
 
 * Define **machine learning** as an approach to programming that focuses on designing applications in a way that allows them to learn from their inputs. and make adjustments based on their outputs.
 
