@@ -790,7 +790,7 @@ Show the plot of the volatility forecast:
 
 - - -
 
-### 14. Student Do: Euro-CAD Volatility (10 min)
+### 14. Student Do: EUR-CAD Volatility (10 min)
 
 **Files:**
 
