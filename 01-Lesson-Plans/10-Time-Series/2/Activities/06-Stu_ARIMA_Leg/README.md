@@ -12,6 +12,7 @@ In this activity, you will use an ARIMA model to forecast oil futures prices.
 
 4. Time permitting, test a second model using a different lag value for the model order to see if it has any effect.
 
+----
 
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
