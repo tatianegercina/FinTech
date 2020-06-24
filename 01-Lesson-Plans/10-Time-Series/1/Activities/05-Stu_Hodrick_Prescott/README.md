@@ -8,19 +8,19 @@
 
 ## Instructions
 
-* Read the csv GDP data and set the `DATE` column as a datetime index.
+1. Read the csv GDP data and set the `DATE` column as a datetime index.
 
-* Plot the raw GDP data as a line plot.
+2. Plot the raw GDP data as a line plot.
 
-* Use the `hpfilter` function to decompose the GDP column into the trend and noise components.
+3. Use the `hpfilter` function to decompose the GDP column into the trend and noise components.
 
-* Plot the GDP trend data as a line plot.
+4. Plot the GDP trend data as a line plot.
 
-* Plot the GDP noise as a line plot.
+5. Plot the GDP noise as a line plot.
 
-* Repeat the processes for inflation (keyword `INFLATION_RATE`) and employment (keyword `EMPLOYMENT_RATE`).
+6. Repeat the processes for inflation (keyword `INFLATION_RATE`) and employment (keyword `EMPLOYMENT_RATE`).
 
-* For at least one of these data sets, plot the exponentially-weighted moving averages. How do the results compare to results of the H-P filter?
+7. For at least one of these data sets, plot the exponentially-weighted moving averages. How do the results compare to results of the H-P filter?
 
 ---
 
