@@ -10,9 +10,7 @@ By the end of this class, students will be able to:
 
 * Determine stationarity of a time series.
 
-* Create an ARMA model to forecast financial data.
-
-* Create an ARIMA model to forecast financial data.
+* Create ARMA and ARIMA models to forecast financial data.
 
 * Use ACF and PACF plots to estimate the order of ARMA and ARIMA models.
 
