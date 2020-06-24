@@ -70,9 +70,9 @@ In this activity, you will define stationarity, a key concept in time series mod
 
 * [stationarity.ipynb](Activities/01-Ins_Stationarity/Solved/stationarity.ipynb)
 
-Go to the slideshow, navigate to [[section X]] and use the slides to introduce the term `stationarity`:
+Go to the slideshow, navigate to the Stationarity section, and use the slides to introduce the term `stationarity`:
 
-* In a stationary process, statistical properties such as the mean and variance do not vary across time.
+* In a stationary process, statistical properties such as the mean and variance are constant across time.
 
 * In other words, the mean and variance in one section of the time series should not differ significantly from the mean and variance in another.
 
