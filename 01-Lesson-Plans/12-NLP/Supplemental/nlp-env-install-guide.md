@@ -150,6 +150,13 @@ After running this command, you should see a list with the anaconda packages ins
 
 In case you guess your anaconda environment is broken, deactivate your current virtual environment and create a new one as it was described above.
 
+
+### NewsAPI-Python
+
+In the case where newsapi was installed instead of newsapi-python or newsapi was installed on top of newsapi-python. The recommended fix is to uninstall `newsapi-python` and `newsapi` and then proceed to reinstall `newsapi-python` ***only***.
+
+`newsapi-python` and `newsapi` cannot coexist and strip essential needed classes from the client.
+
 ### Checking the Current Version of a Package
 
 To validate which version of a package is installed in your environment, run the following command in the terminal, just as you did after each package installation in the above instructions.
