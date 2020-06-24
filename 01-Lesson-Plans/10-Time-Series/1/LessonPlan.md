@@ -360,7 +360,7 @@ Answer any remaining questions before moving on.
 
 * **File:** [decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
 
-Go to the slideshow, [[open section X]], and define time series decomposition to the class:
+Go to the slideshow, open the section on time series decomposition, and define time series decomposition to the class:
 
 * In a nutshell, it is separating time series data into useful and less useful components.
 
@@ -430,7 +430,7 @@ Finally, explain that the library used in the notebook is more useful as an illu
 
 In this activity, you will introduce EWMA, or exponentially-weighted moving average. You will also introduce the Hodrick-Prescott filter, a tool that captures trends by minimizing local fluctuations.
 
-Go to the slideshow, [[open section X]] and begin with a concept overview of the EWMA and Hodrick-Prescott filters.
+Go to the slideshow, go to the EWMA section, and start with a concept overview of the EWMA and Hodrick-Prescott filters.
 
 **EWMA**
 
