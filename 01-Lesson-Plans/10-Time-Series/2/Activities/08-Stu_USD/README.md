@@ -1,8 +1,8 @@
-# Euro-CAD Volatility
+# EUR-CAD Volatility
 
 ## Instructions
 
-In this activity, you will use GARCH to forecast volatility of the Euro-CAD exchange rate.
+In this activity, you will use GARCH to forecast volatility of the EUR-CAD exchange rate.
 
 1. Open the terminal, and execute the following command to install the arch module:
 
