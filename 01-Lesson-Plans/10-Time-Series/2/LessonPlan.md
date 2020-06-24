@@ -52,7 +52,7 @@ Welcome students to the second day of the time series unit, and start with a bri
 
 * Tools such as the Hodrick-Prescott filter and EWMA can be used to identify trends in a time series.
 
-Then, inform students that today, they will learn how to:
+Inform students that today they will learn how to:
 
 * Detect and convert non-stationary data to stationary.
 
