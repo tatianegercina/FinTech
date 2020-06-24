@@ -46,6 +46,8 @@ Welcome students to the class and explain that they will be reviewing and practi
 
 ### 2. Instructor Do: Introduce and Review Problem Solving Guidelines (15 min)
 
+**Corresponding Activity:** [01-Ins_Problem_Solving_Guidelines](Activities/01-Ins_Problem_Solving_Guidelines)
+
 In this activity, instructors will introduce the problem-solving guidelines that will help students to effectively outperform in a technical interview.
 
 **Files:**
@@ -69,6 +71,8 @@ In this activity, instructors will introduce the problem-solving guidelines that
 ---
 
 ### 3. Instructor Do: Introduce Partner Interviews (15 min)
+
+**Corresponding Activity:** [02-Ins_Intro_to_Partner_Interviews](Activities/02-Ins_Intro_to_Partner_Interviews)
 
 In this activity, instructors will overview the process of the mock interviews for today's lesson.
 
@@ -101,6 +105,8 @@ Ask the students if they have any questions before moving on.
 
 ### 4. Student Do: First Partner Interviews (30 min)
 
+**Corresponding Activity:** [03-Stu_Partner_Interviews](Activities/03-Stu_Partner_Interviews)
+
 In this activity, students will pair off with each other to perform mock interviews, with one student as the interviewer and the other as the interviewee.
 
 **Files:**
@@ -121,6 +127,8 @@ Slack out the first [interview question](Activities/03-Stu_Partner_Interviews/So
 ---
 
 ### 5. Student Do: Second Partner Interviews (30 min)
+
+**Corresponding Activity:** [03-Stu_Partner_Interviews](Activities/03-Stu_Partner_Interviews)
 
 In this activity, students will switch roles in their mock interviews; the interviewer becomes the interviewee and vice versa.
 
