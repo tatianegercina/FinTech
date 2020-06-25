@@ -28,9 +28,9 @@ By the end of this class, students will be able to:
 
 * Slack out the [imblearn Installation Guide](../../11-Classification/Supplemental/Machine_Learning_Env_Setup_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
-* Through longer activities, students will consolidate their skills from the previous two days, creating financial models in multiple steps, from stationarizing data to identifying model orders to making predictions on future values and volatility. You and your TAs should be on the lookout for your weaker students during the longer activities. Make sure that such students do not flounder.
+* Students will consolidate their skills from the previous two days through longer activities. These include creating financial models in multiple steps,  stationarizing data, and identifying model orders to make predictions on future values and volatility. Make sure that you and your TAs keep an eye out for any weaker students during these activities and assist them as needed.
 
-* Your students will also learn to validate models by training and testing data. Emphasize that this will be a valuable skill in later units as they dive more deeply into machine learning.
+* Students will also learn to validate models by training and testing data. Emphasize that this will be a valuable skill in later units as they dive more deeply into machine learning.
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [10.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=57855d94-d1e5-4334-a4bd-aadb010f656c) Note that this video may not reflect the most recent lesson plan.
@@ -44,7 +44,7 @@ To add the slides to the student-facing repository, download the slides as a PDF
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 - - -
 
