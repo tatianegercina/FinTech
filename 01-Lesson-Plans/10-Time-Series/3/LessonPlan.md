@@ -564,13 +564,13 @@ Explain that we have already seen parsimony in action:
 
 Inform your students that they will now learn to minimize the problems posed by overfitting.
 
-Explain that a common strategy used in machine learning is to split a dataset into a train set and a test set.
+Explain that a common strategy used in machine learning is to split a dataset into a training set and a test set.
 
-* With the training set, the model learns the relevant patterns in the data. The model seeks to minimize errors in the training data.
+* With the training set, the model learns the relevant patterns in the data, and seeks to minimize errors.
 
 * Then the testing set is used to evaluate the model's performance on unseen data.
 
-* If the model underperforms with the testing set, the model can be retrained with better (or more) data, or the model itself can be tweaked.
+* If the model underperforms with the testing set, it can be retrained with better (or more) data, or the model itself can be tweaked.
 
 Remind your students that we have worked with a number of models so far, including ARMA, ARIMA, GARCH, and linear regression:
 
@@ -594,7 +594,7 @@ Open the notebook and introduce the dataset:
 
 * NaN values are deleted from the DataFrame.
 
-* In regression, the lagged returns will be the **independent** variable, and the returns will be the **dependent** variable since we are attempting to answer to what extent, past values affect future values. It is like asking the question: given today's return, what's the expected return going to be tomorrow?
+* In regression, the lagged returns will be the **independent** variable, and the returns will be the **dependent** variable, since we are attempting to answer to what extent past values affect future values. This is like asking the question: given today's return, what's the expected return going to be tomorrow?
 
 Explain that the next step is to split the dataset into `train` and `test` sets:
 
@@ -609,7 +609,7 @@ Explain that the next step is to split the dataset into `train` and `test` sets:
 
 * However, in a time series in which autocorrelation exists, that is not possible. Instead, data points prior to a cutoff point comprise the training set, and all points that come after comprise the testing set.
 
-* Another common practice is to assign 80% of the data to the training set, and 20% to the testing set. Oftentimes, with time-series data, it is good to specify the date ranges explicitly.
+* Another common practice is to assign 80% of the data to the training set, and 20% to the testing set. Often, with time-series data, it is good to specify the date ranges explicitly.
 
 Explain the code with which `train` and `test` sets are divided into dependent and independent variables.
 
@@ -620,7 +620,7 @@ Explain the code with which `train` and `test` sets are divided into dependent a
   y_test = test["Return"]
   ```
 
-* The lagged return values from the train and test sets comprise the independent variables, or `X`.
+* The lagged return values from the train and test sets comprise the independent variables, or `x`.
 
 * The return values comprise the dependent variable, or `y`.
 
@@ -683,7 +683,7 @@ Finally, walk through the error metrics:
 
 - - -
 
-### 11. Students Do: Ripple (15 min)
+### 11. Student Do: Ripple (15 min)
 
 In this activity, students will create GARCH and linear regression models for the price of Ripple (XRP), a cryptocurrency. They will validate the latter model with training and test sets.
 
