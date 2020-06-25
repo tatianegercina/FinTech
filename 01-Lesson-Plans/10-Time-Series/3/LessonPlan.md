@@ -94,11 +94,11 @@ Use the slides to explain the linear equation:
 
   * As x increases, y increases.
 
-  * How fast y increases in relation to x is called the slope.
+  * How fast y increases in relation to x is called the **slope**.
 
   * Slope is represented by the letter `m` in the equation.
 
-  * The value of `y` when `x` is 0 is called the y-intercept. It is represented by the letter `b`.
+  * The value of `y` when `x` is 0 is called the **y-intercept**. It is represented by the letter `b`.
 
 Ask whether, on visual inspection, a trend exists:
 
@@ -110,13 +110,13 @@ Explain that a line that best fits the trend can be drawn:
 
   ![Images/linear_regression02.png](Images/linear_regression02.png)
 
-  * This line is called the best fit line, and computing it is called linear regression.
+  * This line is called the **best fit line**. In computing, it is called **linear regression**.
 
   * The equation is simple but tedious, and is best solved by a computer.
 
 Explain that, in other words, linear regression identifies the line that best predicts `y` based on the value of `x`.
 
-Explain the concept of residuals.
+Now, explain the concept of **residuals**.
 
   * Even a best fit line that captures the data well is seldom, if ever, perfect.
 
