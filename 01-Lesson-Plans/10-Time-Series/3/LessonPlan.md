@@ -249,9 +249,9 @@ Explain that you can also compare the RMSE to the standard deviation to get a be
 
 - - -
 
-### 3. Students Do: House Regression (15 min)
+### 3. Student Do: House Regression (15 min)
 
-In this activity, students will perform linear regression on the total square foot in houses versus their prices.
+In this activity, students will perform linear regression on the cost of housing as compared to total square footage.
 
 **Files:**
 
@@ -306,7 +306,7 @@ Open the solution, and complete a dry walkthrough of the code:
 
   ![model_attributes.png](Images/model_attributes.png)
 
-If time remains, ask students some of the following review questions:
+If time remains, ask students some of review questions:
 
 * What is the purpose behind a linear regression model?
 
