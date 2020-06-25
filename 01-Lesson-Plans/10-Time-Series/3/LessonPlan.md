@@ -126,13 +126,13 @@ Now, explain the concept of **residuals**.
 
 Summarize the key points of linear regression:
 
-  * It models data with a linear trend. It is not useful when the data does not follow a linear trend, e.g., exponential trends.
+  * It models data with a linear trend. It isn't useful when the data does not follow a linear trend, e.g., exponential trends.
 
   * Based on the X values, it predicts Y values.
 
-  * It does not do a good job of describing non-linear patterns. We will cover techniques to model non-linear data later in the course.
+  * It does not do a good job of describing non-linear patterns. (We will cover techniques to model non-linear data later in the course.)
 
-Now that students understand linear regression conceptually, walk through the steps of performing linear regression in Python. Here are some introductory remarks:
+Now that students have a conceptual understanding of linear regression, walk through the steps of performing linear regression in Python. Here are some introductory remarks:
 
   * The CSV contains data on years of job experience and salary.
 
@@ -140,11 +140,11 @@ Now that students understand linear regression conceptually, walk through the st
 
   * We will use Scikit-learn, a machine learning library, to create a linear regression model.
 
-Engage the class by asking, in a linear regression model, which column will be the dependent variable, and which the independent variable.
+Ask the class: In a linear regression model, which column is the dependent variable, and which is the independent variable?
 
-  * `YearsExperience` will be the independent variable, or `x`.
+  * `YearsExperience` is the independent variable, or `x`.
 
-  * `Salary` will be the independent variable, or `y`.
+  * `Salary` is the independent variable, or `y`.
 
 Explain that in order to use Scikit-learn (sklearn) for regression, the independent variable (x) will need to be reformatted:
 
@@ -152,7 +152,7 @@ Explain that in order to use Scikit-learn (sklearn) for regression, the independ
   X = df.YearsExperience.values.reshape(-1, 1)
   ```
 
-  * Scikit-learn cannot take in a pandas Series directly.
+  * Scikit-learn cannot take in a Pandas Series directly.
 
   * `reshape(-1, 1)` reshapes, or formats, the data.
 
@@ -160,7 +160,7 @@ Explain that in order to use Scikit-learn (sklearn) for regression, the independ
 
   * The dependent variable can remain a pandas series, as seen by `y = df.Salary`.
 
-Walk through the boiler plate code:
+Walk through the boilerplate code:
 
   ```python
   model = LinearRegression()
@@ -169,7 +169,7 @@ Walk through the boiler plate code:
 
   * A linear regression model is created (instantiated) using Scikit-learn, and the data are fit into the model.
 
-Explain how to obtain the parameters of the model, its slope and y-intercept:
+Explain how to obtain the parameters of the model, its slope, and y-intercept:
 
   ```python
   print(model.coef_)
@@ -192,15 +192,15 @@ Explain that the power of a linear regression model comes from its ability to de
 
   * In other words, if given an x-value (years of experience) that is not in the data set, the model will predict the corresponding y-value (salary).
 
-Use the slideshow and recapitulate the linear regression plot below, which we have seen previously:
+Go to the slideshow, [[navigate to Section X]]  and recapitulate the linear regression plot below, which we have seen previously:
 
   ![Images/error01.png](Images/error01.png)
 
-* The blue dots are a scatter plot of data points (years of experience vs salary).
+* The blue dots are a scatter plot of data points (years of experience vs. salary).
 
 * The red line is the best fit line. It represents the linear regression model.
 
-* The distance between each data point and the best fit line is referred to as the error.
+* The distance between each data point and the best fit line is referred to as the **error**.
 
 Explain that the linear regression model is mathematically constructed to **minimize** the sum of all the errors after they have been squared.
 
