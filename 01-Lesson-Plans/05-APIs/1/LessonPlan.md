@@ -219,6 +219,8 @@ Ask students if there are any questions before moving on.
 
 ### 4. Students Do: Eavesdropping on the Server (10 min)
 
+**Corresponding Activity:** [01-Stu_Eavesdropping_On_Server](Activities/01-Stu_Eavesdropping_On_Server)
+
 This activity drives home the discussion on the client-server model by having students surf the web with the browser's developer console open. Students will visit websites like Facebook and Yahoo, as well as complete a Google search. They will read the standard output from the console to get a better idea of what data is sent between client and server as students navigate sites. This will communicate to students that every click and API request brokers a connection between client and server, allowing data to be exchanged between the two.
 
 **Instructions:**
@@ -327,6 +329,8 @@ In the next activity, students will leverage the steps from this demonstration i
 
 ### 7. Students Do: I Spy an API (15 min)
 
+**Corresponding Activity:** [02-Stu_I_Spy_An_Api](Activities/02-Stu_I_Spy_An_Api)
+
 It's time students stopped learning about APIs and started playing with some! In this activity, students will go through a list of FinTech APIs and test out their functionality using Postman. This will give students a better understanding of what Postman is and how it should be used, and it will expose students to one of the most common tools used in the FinTech industry.
 
 Instruct TAs to make rounds to ensure all students have Postman installed. Postman should have been installed prior to the class. Have TAs provide assistance and troubleshooting to any students experiencing issues getting started.
@@ -348,6 +352,8 @@ Instruct students to inform the TAs when they are finished. The next activity wi
 - - -
 
 ### 8. Students Do: Parlez-vous le JSON? (5 min)
+
+**Corresponding Activity:** [03-Stu_Parlez_Vous_Le_Json](Activities/03-Stu_Parlez_Vous_Le_Json)
 
 In this activity, students will choose a sub-selection of the JSON output to decipher. They will then explain the sub-selection to a peer. The key to working with APIs is being able to decipher their output. Because API output is commonly in JSON format, students will need practice deciphering JSON structures and syntax.
 
@@ -396,6 +402,8 @@ Before moving forward, ask the students if there are any remaining questions.
 - - -
 
 ### 10. Instructor Do: Python Requests (10 min)
+
+**Corresponding Activity:** [04-Ins_Python_Requests](Activities/04-Ins_Python_Requests)
 
 Submitting APIs with Postman is useful, but API requests are better sent with Python code. Instructors will demonstrate to students how to submit an API request with Python instead of Postman. Emphasis will be placed on the similarities between the two processes, as well as the advantages of sending requests through Python.
 
@@ -517,6 +525,8 @@ Ask if there are any remaining questions before moving forward.
 
 ### 11. Students Do: Ice Breakers on Request (20 min)
 
+**Corresponding Activity:** [05-Stu_Ice_Breakers_on_Request](Activities/05-Stu_Ice_Breakers_on_Request)
+
 In this activity, students are given a list of **request URLs** to execute using the Python `requests` library. Students will also receive the opportunity to put their JSON knowledge to use by interpreting JSON output. Students will interpret the JSON output to find an interesting fact or joke to tell the class.
 
 Walk around with TAs to provide assistance to students with parsing JSON data. Students may need assistance parsing JSON output. Make sure every student has been able to successfully execute a request and find an interesting fact or joke to share, even if the fact has to relate to their own experiences using Python requests.
@@ -632,6 +642,8 @@ Open the solution and conduct a dry walk-through review, highlighting the follow
 
 ### 15. Instructor Do: URL Parameters (5 min)
 
+**Corresponding Activity:** [06-Ins_URL_Parameters](Activities/06-Ins_URL_Parameters)
+
 In this activity, students learn how to customize API requests with parameters through instructor demonstration. The [Numbers API](http://numbersapi.com) will be used for the demonstration, so make sure the API is still up and running prior to class.
 
 **Files:**
@@ -720,6 +732,8 @@ Ask the students if they have any remaining questions before moving on.
 - - -
 
 ### 16. Students Do: House of Requests (25 min)
+
+**Corresponding Activity:** [07-Stu_House_of_Requests](Activities/07-Stu_House_of_Requests)
 
 This activity is dedicated to giving the students an opportunity to use a fun API. Students play a game of blackjack using the Deck of Cards API. The key skills reinforced in this activity include the execution of `GET` requests using the Python `requests library`, extraction of JSON elements, and parameterization of API request URLs.
 
