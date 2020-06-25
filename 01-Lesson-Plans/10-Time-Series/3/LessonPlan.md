@@ -492,7 +492,7 @@ Next, explain that dummy variables are created for each week of the year. Commun
 
   ![get_dummies.png](Images/get_dummies.png)
 
-* Quickly go through the rest of the code, which is boilerplate and includes creating a regression model that is created on lagged returns and returns, making predictions, and then generating r-square value.
+* Quickly go through the rest of the code, which is boilerplate, and includes creating a regression model that is created on lagged returns and returns, making predictions, and then generating r-square value.
 
   ```python
   y = df['Return']
@@ -512,7 +512,7 @@ Next, explain that dummy variables are created for each week of the year. Commun
 
 ### 9. Instructor Do: Overfitting and Parsimony (10 min)
 
-Open the slideshow and introduce the concept of overfitting:
+Open the slideshow, [[navigate to Section X]] and introduce the concept of overfitting:
 
 * Overfitting occurs when a model is too specific to a particular data set.
 
@@ -544,7 +544,7 @@ Next, explain variance and bias, two important concepts in machine learning:
 
 Define the concept of parsimony:
 
-* It is a statistical application of Occam's razor: when two models perform similarly, choose the simpler one.
+* It is a statistical application of Occam's Razor: when two models perform similarly, choose the simpler one.
 
 * Do not make a model more complex than is needed to explain the data. Needlessly complex models may be computationally expensive and hard to interpret.
 
