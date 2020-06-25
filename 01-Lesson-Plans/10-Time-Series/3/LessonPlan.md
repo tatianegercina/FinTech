@@ -364,7 +364,7 @@ Explain that datetime objects have attributes, such as the week of the year.
 
 * More attributes can be found in the [documentation](https://pandas.pydata.org/pandas-docs/version/0.24.2/reference/api/pandas.DatetimeIndex.html)
 
-Explain creating dummy variables. The `pd.get_dummies()` method creates a column for each week of the year, and for each row assigns a numerical value for that week.
+Explain creating dummy variables. The `pd.get_dummies()` method creates a column for each week of the year, and assigns a numerical value for that week for each row.
 
   ```python
   X_binary_encoded = pd.get_dummies(X, columns=['Week_of_Year'])
@@ -382,7 +382,7 @@ Use the slides to show the regression equation that results from the process:
 
 * Each week is given its own weight in the overall equation.
 
-* Because each week is a separate variable in the equation, this is called multiple regression.
+* Because each week is a separate variable in the equation, this is called **multiple regression**.
 
 Additionally, explain that we delete the extraneous column in the data frame created by `pd_get_dummies()`. The argument `axis=1` specifies that it is the column that is dropped. (For rows, it would be `axis=0`.)
 
@@ -417,7 +417,7 @@ Explain that the metrics of the linear regression model are generated:
 
 Note that the r-square value, at `0.23`, is fairly low and that we will cover the interpretation of these numbers in an upcoming activity.
 
-Note also that the trend appears at least somewhat linear for the specified timeline, but that a longer timespan, say from January through December, will not be good for a linear regression model.
+Also note that the trend appears at least somewhat linear for the specified timeline, but that a longer timespan–say from January through December–will not be good for a linear regression model.
 
   * This underscores the importance that linear regression, rather than a mechanical process, requires thinking about the variables.
 
@@ -425,7 +425,7 @@ Note also that the trend appears at least somewhat linear for the specified time
 
 Take a moment to summarize the key points of this activity:
 
-  * The idea is the same as before. We use Scikit-learn to create a model of the independent variable (X) and the dependent variable (y).
+  * The idea is the same as before. We use Scikit-learn to create a model of the independent variable (x) and the dependent variable (y).
 
   * Because datetime data cannot be directly imported into a Scikit-learn model, we've had to create a binary encoding for each row, and drop an unnecessary column.
 
@@ -433,7 +433,7 @@ Answer any questions before moving on.
 
 - - -
 
-### 6. Students Do: Oil Futures (15 min)
+### 6. Student Do: Oil Futures (15 min)
 
 In this activity, students will identify seasonal effects in oil futures prices with linear regression.
 
