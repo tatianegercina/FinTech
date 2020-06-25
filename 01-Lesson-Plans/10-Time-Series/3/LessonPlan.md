@@ -699,7 +699,7 @@ In this activity, students will create GARCH and linear regression models for th
 
 ### 12. Instructor Do: Review Activity (10 min)
 
-A detailed walk-through of the code is given below. However, in the interest of time, use your judgment to highlight the major points and gloss over parts students have seen repeatedly.
+A detailed walkthrough of the code is given below. However, in the interest of time, use your judgment to highlight the major points and gloss over parts students have seen repeatedly.
 
 **File:**
 
@@ -721,7 +721,7 @@ Explain the steps taken to stationarize the time series:
   df = df.replace(-np.inf, np.nan).dropna()
   ```
 
-* Two columns are created: one for daily return values and one for return values at a lag of one day.
+* Two columns are created: one for daily return values, and one for return values at a lag of one day.
 
 * All infinity values are replaced with NaNs, and all NaNs are subsequently dropped. (Occasionally these _infs_ are created when calculating percentage returns).
 
@@ -746,9 +746,9 @@ Explain that the train and test sets are now defined for independent and depende
 
 * `X_train` and `X_test` are transformed into DataFrames in order to reshape them to meet the requirements of Scikit-learn.
 
-* `y_train` and `y_test` can remain as pandas series, however.
+* `y_train` and `y_test` can remain as Pandas series, however.
 
-Briefly go over the boiler plate code to generate a linear regression model with Scikit-learn:
+Briefly go over the boilerplate code to generate a linear regression model with Scikit-learn:
 
   ```python
   from sklearn.linear_model import LinearRegression
@@ -814,7 +814,7 @@ Point out that up to this point, we have created models as a one-shot affair. Ex
 
 * During each iteration, a regression model is created, fitted to the data, and generates predictions.
 
-Open the notebook and inform students that the time series is the SP500 stock data, which they have seen before:
+Open the notebook and inform students that the time series is the S&P 500 stock data, which they have seen before:
 
   ```python
   df['Return'] = df.Close.pct_change() * 100
@@ -840,9 +840,9 @@ Briefly explain how the data is resampled into weekly values.
   weeks = df.index.to_period("w").unique()
   ```
 
-Next, explain the pandas time series techniques used to calculate the training and testing data:
+Next, explain the Pandas time series techniques used to calculate the training and testing data:
 
-* The training period for this dataset will be 26 weeks total while the testing window will be one week. In other words, 26 weeks will be used to create a model that can predict the 27th week.
+* The training period for this dataset will be 26 weeks total, while the testing window will be one week. In other words, 26 weeks will be used to create a model that can predict the 27th week.
 
   ```python
   # Beginning of training window
@@ -969,7 +969,7 @@ Reassure students that they will be able to use this notebook as a reference for
 
 - - -
 
-### 14. Students Do: Rolled Gold (15 min)
+### 14. Student Do: Rolled Gold (15 min)
 
 In this activity, students will perform predictions with linear regression on a rolling out-of-sample basis, in order to predict the price of gold.
 
@@ -989,7 +989,7 @@ In this activity, students will perform predictions with linear regression on a 
 
 * [gold.ipynb](Activities/08-Stu_Rolled_Gold/Solved/gold.ipynb)
 
-Open the notebook and explain that, since regression will later be performed on returns and lagged returns in USD, those columns are created:
+Open the notebook and explain that since regression will later be performed on returns and lagged returns in USD, those columns are created:
 
   ![Images/gold01.png](Images/gold01.png)
 
@@ -1004,11 +1004,11 @@ train = df['2001':'2018']
 test = df['2019']
 ```
 
-*The rest of this section involves the linear regression and training/test window code that they used in the activity just prior.
+* **Instructor Note**: The rest of this section involves the linear regression and training/test window code used in the prior activity.
 
-*Point out that we'll save the out_of_sample_rmse developed from this approach, and later compare it the RMSE developed from the rolling-out-of-sample approach.
+* Point out that we'll save the out_of_sample_rmse developed from this approach, and later compare it the RMSE developed from the rolling-out-of-sample approach.
 
-Next, introduce the preparatory steps for rolling out-of-sample predictions using Scikit-learn:
+* Next, introduce the preparatory steps for rolling out-of-sample predictions using Scikit-learn:
 
   ```python
   all_predictions = pd.DataFrame(columns=["Out-of-Sample Predictions"])
@@ -1024,7 +1024,7 @@ Next, introduce the preparatory steps for rolling out-of-sample predictions usin
 
 * With `df.index.to_period("w").unique()`, the DataFrame index is split into weekly periods.
 
-* The training window is defined as 12 weeks. (3 months)
+* The training window is defined as 12 weeks (3 months).
 
 * The `timeframe` defines the last week of the time series in which the training window will begin.
 
@@ -1066,26 +1066,25 @@ Walk through the iterations that take place inside the for-loop:
 
 * These time demarcations are used to declare the `train` and `test` sets.
 
-* The train and test sets are divided into X and y values.
+* The train and test sets are divided into x and y values.
 
 * Scikit-learn's linear regression model is instantiated and fitted to the training data.
 
-* The test period X values are used to predict y values.
+* The test period x values are used to predict y values.
 
 * The predicted and actual values of the test period are appended to the `all_predictions` and `all_actual` DataFrames created earlier.
-
 
 Next, discuss the out-of-sample error metrics:
 
 * What is going on is that the predicted out-of-sample values are compared to the actual values that occurred in that day. We will compare how this out-of-sample approach predicted, relative to the single training and test window constructed previously.
 
-* To make that comparison, first slice the rolling out-of-sample results to just include 2019.
+* To make that comparison, first slice the rolling out-of-sample results to only include 2019.
 
 ```python
 results_2019 = Results.loc['2019':]
 ```
 
-* This makes a more "apples to apples" comparison between the two time approaches (since we will be comparing over the same dates).
+* This provides an "apples to apples" comparison between the two time approaches (since we will be comparing over the same dates).
 
 Train Test Split Model:
 ![rolling_gold_01.png](Images/rolling_gold_01.png)
@@ -1093,11 +1092,11 @@ Train Test Split Model:
 Rolling Out-of-Sample Model:
 ![rolling_gold_02.png](Images/rolling_gold_02.png)
 
-* Evaluating performance visually, the plot of the out-of-sample results for 2019 shows that gold returns and our model's predictions of gold returns seem to be trending together
+* Evaluating performance visually, the plot of the out-of-sample results for 2019 shows that gold returns, and our model's predictions of gold returns, seem to be trending together.
 
-* The visual results showing the predicted and actual returns from the single training and test window seem also to trend well together.
+* The visual results showing the predicted and actual returns from the single training and test window also seem to trend well together.
 
-* So far, this is a good indication of our model's performance, but we'll have to check the RMSE to get a more solid idea about how well good the predictions from each approach are.
+* So far, this is a good indication of our model's performance, but we'll have to check the RMSE to get a more solid idea about how good the predictions from each approach are.
 
   ```python
   mse = mean_squared_error(
@@ -1109,15 +1108,15 @@ Rolling Out-of-Sample Model:
 
 * Comparing the two RMSE's, the RMSE from the single training window is 0.96, whereas it is 1.23 from the rolling-out-of-sample model.
 
-  * The rolling-out-of sample approach is an approach more akin to real-life (you likely re-estimate your model when new data becomes available)
+  * The rolling-out-of-sample approach is more akin to real-life (you likely re-estimate your model when new data becomes available).
 
-  * In addition to being more realistic, the rolling-out of sample approach is also more rigorous, as you are testing your model many more times across different time periods
+  * In addition to being more realistic, the rolling-out of sample approach is also more rigorous, as you are testing your model many more times across different time periods.
 
   * Therefore, we expect a slightly higher out-of-sample RMSE, which is what we see.
 
   * The fact that the two are close to each other in value, though, does suggest that our model is reasonably stable.
 
-Congratulate the class for making it through their first week of Machine Learning! This is a very valuable skill that is currently changing the face of finance.
+Congratulate the class for making it through their first week of machine learning! This is a very valuable skill that is changing the face of finance.
 
 - - -
 
@@ -1125,7 +1124,7 @@ Congratulate the class for making it through their first week of Machine Learnin
 
 **Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
 
-Explain to students that now that they have completed their first projects and are starting to learn new things such as machine learning, it is time to think about updating resumes to showcase these valuable skills!
+Tell students that now that they have completed their first projects and are studying new subjects, like machine learning, it is time to think about updating resumes to showcase these valuable skills!
 
 Use the following lesson plan to discuss the Career Services content for this week.
 
@@ -1137,4 +1136,4 @@ Use the following lesson plan to discuss the Career Services content for this we
 
 - - -
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
