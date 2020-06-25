@@ -50,9 +50,9 @@ The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-In this section, you will give a broad overview of today's class.
+Welcome students to the last day of the time series unit! In this section, you will give a broad overview of today's class.
 
-Welcome students to the last day of the time series unit, and briefly summarize key concepts from the previous days:
+Briefly summarize key concepts from the previous days:
 
 * Auto-correlation is an important feature of many time series datasets.
 
@@ -60,19 +60,19 @@ Welcome students to the last day of the time series unit, and briefly summarize 
 
 * ARMA models use past values and past errors to predict future values. An ARMA model assumes stationarity.
 
-* ARIMA is similar to ARMA but does not assume stationarity.
+* ARIMA is similar to ARMA, but does not assume stationarity.
 
-Describe to students what they will be doing today:
+Inform students that today, they will learn to: 
 
-* They will learn to quantify the accuracy of a linear regression model.
+* quantify the accuracy of a linear regression model.
 
-* They will learn to use processes to make a time series easier to model.
+* use processes to make a time series easier to model.
 
-* They will encounter the concept of parsimony in models, an important idea in machine learning.
+* validate models by training and testing them.
 
-* They will learn to validate models by training and testing them.
+* create a model that can continuously update itself.
 
-* They will learn to create a model that can continuously update itself.
+* And, they will encounter the concept of parsimony in models, an important idea in machine learning.
 
 - - -
 
