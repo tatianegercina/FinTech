@@ -127,6 +127,8 @@ Ask for any questions before moving forward.
 
 ### 3. Instructor Do: Getting Started with Panel (10 mins)
 
+**Corresponding Activity:** [01-Ins_Getting_Started_Panel](Activities/01-Ins_Getting_Started_Panel)
+
 Students will receive a small demo on how to use Panel at a high level.
 
 **Files:**
@@ -222,6 +224,8 @@ Ask if students have any questions before continuing.
 
 ### 4. Instructor Do: Panel Dashboard Components (Panes) (10 mins) (Critical)
 
+**Corresponding Activity:** [02-Ins_Dashboard_Components](Activities/02-Ins_Dashboard_Components)
+
 In this activity, students receive a demonstration of how to use and customize Panel's dashboard components.
 
 **Files:**
@@ -312,6 +316,8 @@ Ask if there are any questions before moving forward.
 
 ### 5. Student Do: No Pane, No Gain (20 mins)
 
+**Corresponding Activity:** [03-Stu_Dashboard_Components](Activities/03-Stu_Dashboard_Components)
+
 In this activity, students will create a Plotly plot and convert it to a Panel **pane**. The goal of this activity is to reinforce to students the importance of Panel **panes** and their role in the dashboard creation process.
 
 **Instructions:**
@@ -375,6 +381,8 @@ Ask for any remaining questions before moving on.
 - - -
 
 ### 7. Instructor Do: Dashboard Components (Panels) (15 mins) (Critical)
+
+**Corresponding Activity:** [04-Ins_Dashboard_Components_Panels](Activities/04-Ins_Dashboard_Components_Panels)
 
 By the end of this activity, students will have learned how to create and use Panel **panel** objects to create rows, columns, and tabs for dashboard Panels.
 
@@ -463,6 +471,8 @@ Ask if there are any questions before moving forward.
 - - -
 
 ### 8. Student Do: The Judge's Panel (20 mins)
+
+**Corresponding Activity:** [05-Stu_Dashboard_Panels](Activities/05-Stu_Dashboard_Panels)
 
 In this activity, students will execute insert, update, and remove operations on Panel **panels**.
 
@@ -571,6 +581,8 @@ Ask if there are any questions before continuing.
 
 ### 12. Student Do: Extending Plotting (15 mins)
 
+**Corresponding Activity:** [06-Stu_Panel_Extensions](Activities/06-Stu_Panel_Extensions)
+
 In this activity, students will create a dashboard that contains map visualizations and `hvPlot` composed plots. The goal of this activity is to reinforce to students that Panel can support all the visualizations that have been created in class so far.
 
 Data for this activity was retrieved from [ucr.fbi.gov](https://ucr.fbi.gov/crime-in-the-u.s/2015/crime-in-the-u.s.-2015/tables/table-8/table_8_offenses_known_to_law_enforcement_by_state_by_city_2015.xls/view).
@@ -652,6 +664,8 @@ Ask for any remaining questions before moving on.
 - - -
 
 ### 14. Instructor Do: Dashboards As Web Applications (15 mins) (Critical)
+
+**Corresponding Activity:** [07-Ins_Dashboard_Webapps](Activities/07-Ins_Dashboard_Webapps)
 
 Students learn how to transform their Jupyter notebook dashboards into a **web app**. The instructor will demonstrate how to use the `servable` command to execute and run the dashboard on a server. The instructor will use the same dashboard created from the previous activity.
 
