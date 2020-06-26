@@ -24,8 +24,7 @@ Slack out the [Visual Introduction to Git](https://medium.com/@ashk3l/a-visual-i
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1UEkj7rFjMwpNr4eVXyArTdaq3FbhPabwJRRpxlPriZw/edit#slide=id.g473a132ac1_0_7
-).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1dZIZPCR-WpRB3gv1U2_ij3mvN55yeINDPVjLIE3NXpE/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/presentation/d/1UEkj7rFjMwpNr4eVXyArTdaq3FbhPabwJRRpxlPriZw/edit#slide=id.g473a132ac1_0_7).
 
@@ -37,7 +36,7 @@ Slack out the [Visual Introduction to Git](https://medium.com/@ashk3l/a-visual-i
 
 ### Class Objectives
 
-Students must be able to: 
+Students must be able to:
 * Articulate the requirements for Project 1.
 * Draw and interpret diagrams of Git branching workflows.
 * Create new branches with Git.
