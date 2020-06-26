@@ -58,7 +58,7 @@ In this activity, we will create a new branch, implement a feature, and then sub
 
 * Now go to your GitHub repo's main page and go to the "Pull request" section. Select the `add-new-python-script` pull request from the list.
 
-* At the next page, select the option to see the "Files changed."
+* On the next page, select the option to see the "Files changed."
 
 * You should be presented with all of the files that were changed in this PR, along with line numbers for any code added or removed.
 
