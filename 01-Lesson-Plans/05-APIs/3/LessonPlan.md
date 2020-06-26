@@ -114,6 +114,8 @@ Ask the students if they can think of any other examples of Monte Carlo simulati
 
 ### 2. Instructor Do: Probability Distribution of Potential Outcomes (10 min)
 
+**Corresponding Activity:** [01-Ins_Probability_Distributions_of_Potential_Outcomes](Activities/01-Ins_Probability_Distributions_of_Potential_Outcomes)
+
 Monte Carlo simulations seek to explain the probability of potential outcomes for a randomly occurring event. Therefore, this activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like and how to interpret the results.
 
 **Files:**
@@ -239,7 +241,7 @@ freq_dist_df["tails"] = tails
 
   ![coin-flip-1000-simulations](Images/coin-flip-1000-simulations.png)
 
-* Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve nature to the probability of its potential outcomes. This bell curve, a normal distribution, is one in which probability is maximized in the middle of the distribution (these values are more likely) and more minimized in probability the further outcomes deviate left and right from the mean, known as *standard deviation*. 
+* Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve nature to the probability of its potential outcomes. This bell curve, a normal distribution, is one in which probability is maximized in the middle of the distribution (these values are more likely) and more minimized in probability the further outcomes deviate left and right from the mean, known as *standard deviation*.
 * This convergence to the shape of a normal distribution is a well-known phenomenon called the *central limit theorem*: multiple measurements of averages for a variable (in this case the average number of heads from a series of coin toss games) almost always conform to the shape of a normal distribution, even when the underlying variable (whether it was heads or whether it was tails) is not itself normally distributed.
 
   ![normal-distribution](Images/normal-distribution.png)
@@ -249,6 +251,8 @@ Answer any questions before moving on.
 ---
 
 ### 3. Students Do: Free Throw Simulation (15 min)
+
+**Corresponding Activity:** [02-Stu_Probability_Distribution_of_Potential_Outcomes](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes)
 
 In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of free throws made out of 10 shots for a player with a `70%` accuracy and determine the likelihood of the player making `9-10` free throws in a single session.
 
@@ -341,6 +345,8 @@ Open the solution and explain the following:
 
 ### 5. Instructor Do: Confidence Intervals (10 min)
 
+**Corresponding Activity:** [03-Ins_Confidence_Intervals](Activities/03-Ins_Confidence_Intervals)
+
 In this activity, students are introduced to confidence intervals, which in the context of Monte Carlo simulations, are value ranges of potential outcomes with a particular probability of occurring. Confidence intervals in combination with Monte Carlo simulations are useful when trying to predict the likelihood of an outcome falling within a specific range.
 
 **Files:**
@@ -387,6 +393,8 @@ Answer any questions before moving on.
 
 ### 6. Students Do: Archery Target Hits (15 min)
 
+**Corresponding Activity:** [04-Stu_Confidence_Intervals](Activities/04-Stu_Confidence_Intervals)
+
 In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of potential hits (out of `5` shots) of a target for a beginner archer with a `20%` accuracy and determine the range of hits for the archer that has a `95%` chance of happening in a single session.
 
 **Instructions:**
@@ -430,6 +438,8 @@ Open the solution and explain the following:
 ---
 
 ### 8. Instructor Do: Simulation of Stock Price Trajectory (10 min)
+
+**Corresponding Activity:** [05-Ins_Simulation_of_Stock_Price_Trajectory](Activities/05-Ins_Simulation_of_Stock_Price_Trajectory)
 
 This activity exemplifies the use case where a Monte Carlo simulation can be applied to a historical dataset such as daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution. Stock datasets will be pulled in from the Alpaca API and used to generate a Monte Carlo simulation-based off a normally distributed random process using the dataset's calculated average and standard deviation of daily returns.
 
@@ -516,6 +526,8 @@ Answer any questions before moving on.
 
 ### 9. Students Do: Financial Forecasting Part 1 (15 min)
 
+**Corresponding Activity:** [06-Stu_Financial_Forecasting_Pt_I](Activities/06-Stu_Financial_Forecasting_Pt_I)
+
 In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical `TSLA` daily returns.
 
 **Instructions:**
@@ -566,6 +578,8 @@ Answer any questions before moving on.
 ---
 
 ### 12. Instructor Do: Predicting Probable Outcomes of Stock Price Trajectory (10 min)
+
+**Corresponding Activity:** [07-Ins_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory](Activities/07-Ins_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory)
 
 In this activity, students go one step further to produce not just a single potential price trajectory for a stock over the next `252` trading days, but many potential price trajectories. This makes it possible to analyze the probability distribution of where a stock's price can go, and therefore an interval to which confident predictions can be made regarding the future stock price.
 
@@ -629,6 +643,8 @@ Walkthrough the solution and highlight the following:
 ---
 
 ### 13. Students Do: Financial Forecasting Part 2 (15 min)
+
+**Corresponding Activity:** [08-Stu_Financial_Forecasting_Pt_II](Activities/08-Stu_Financial_Forecasting_Pt_II)
 
 In this activity, students execute a Monte Carlo simulation to forecast the many different possibilities of simulated stock price trajectories, thereby analyzing the frequency and probability of potential `TSLA` stock price outcomes.
 
@@ -707,6 +723,8 @@ Ask the students if they have any questions or concerns before moving on.
 ---
 
 ### 16. Instructor Do: Portfolio Forecasting (10 min)
+
+**Corresponding Activity:** [09-Ins_Portfolio_Forecasting](Activities/09-Ins_Portfolio_Forecasting)
 
 In this activity, students ascend to the final step and learn to project not one, but many, future stock prices using Monte Carlo simulations to calculate the daily and cumulative returns of a multi-weighted portfolio. Students will then analyze and plot the frequency and probability distributions of potential ending cumulative returns to assess the investment risk of the portfolio.
 
@@ -810,6 +828,8 @@ Walkthrough the solution and highlight the following:
 ---
 
 ### 17. Students Do: Financial Forecasting Part 3 (15 min)
+
+**Corresponding Activity:** [10-Stu_Financial_Forecasting_Pt_III](Activities/10-Stu_Financial_Forecasting_Pt_III)
 
 In this activity, students execute a Monte Carlo simulation to forecast the potential ranges of cumulative returns for a portfolio, based on the simulated closing prices of the stocks that comprise it, to determine the investment risk of the portfolio.
 
