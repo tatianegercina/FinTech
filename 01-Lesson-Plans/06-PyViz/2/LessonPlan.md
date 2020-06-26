@@ -94,6 +94,8 @@ Ask if there are any questions before moving on.
 
 ### 2. Instructor Do: Plotly Express Demo (10 min)
 
+**Corresponding Activity:** [01-Ins_Plotly_Exp_Demo](Activities/01-Ins_Plotly_Exp_Demo)
+
 By the end of this activity, students will have received a live coding demonstration of creating Plotly Express plots. The goal is to demonstrate to students the ease and efficiency of creating plots using the Plotly Express **scatter** plot interface.
 
 Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/choose-maryland-compare-counties-quality-of-life-78090/resource/affe2417-de10-42cd-90cd-9dd9447d6de5).
@@ -195,6 +197,8 @@ Ask if there are any questions, and then move on to the student activity.
 
 ### 3. Students Do: Plotting with Plotly (10 min)
 
+**Corresponding Activity:** [02-Stu_Plotting_w_Plotly](Activities/02-Stu_Plotting_w_Plotly)
+
 Students complete an activity where they create scatter plots using Plotly Express. This activity will reinforce to students that while Plotly Express has the same plotting APIs as other technologies, Plotly Express's provides their own flavors and twists.
 
 Data for this activity was acquired from [catalog.data.gov](https://catalog.data.gov/dataset/allegheny-county-mortgage-foreclosure-records).
@@ -262,6 +266,8 @@ Ask for any remaining questions before moving on.
 
 ### 5. Instructor Do: Parallel Coordinate Plot (10 min) (Critical)
 
+**Corresponding Activity:** [03-Ins_Parallel_Coordinate](Activities/03-Ins_Parallel_Coordinate)
+
 In this activity, students are introduced to one of the more advanced statistical plots that Plotly has to offer: the parallel coordinate plot. This will be a completely new plot for students, not having been seen in Pandas, Matplotlib, or hvPlot.
 
 Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/2011-housing-market-typology-a6419).
@@ -315,6 +321,8 @@ Ask if there are any questions before moving on.
 - - -
 
 ### 6. Student Do: Plotting in Parallel (15 min)
+
+**Corresponding Activity:** [04-Stu_Parallel_Coordinates](Activities/04-Stu_Parallel_Coordinates)
 
 Students complete a bridge activity where they revisit a previously used dataset that was visualized using scatter plots. Students now visualize the data using a parallel coordinates plot.
 
@@ -373,6 +381,8 @@ Ask for any remaining questions before moving on.
 - - -
 
 ### 9. Instructor Do: Parallel Categories (10 min) (Critical)
+
+**Corresponding Activity:** [05-Ins_Parallel_Categories](Activities/05-Ins_Parallel_Categories)
 
 In this activity, students continue learning about more advanced statistical plots, like the parallel categories plot by way of an instructor demo. The instructor will demonstrate to students how to create a parallel categories plot, as well as highlight the differences between parallel categories and parallel coordinates.
 
@@ -438,6 +448,8 @@ Open the [starter file](Activities/05-Ins_Parallel_Categories/Solved/parallel_ca
 - - -
 
 ### 10. Student Do: Categorical Property Evaluation (15 min)
+
+**Corresponding Activity:** [06-Stu_Categorical_Evaluation](Activities/06-Stu_Categorical_Evaluation)
 
 Students complete an activity and code out a parallel categories plot. Students will use the plot to visualize the dimensions and categories evaluated during real estate property assessments.
 
@@ -515,6 +527,8 @@ If time remains, initiate the storytelling piece of the review by asking the stu
 - - -
 
 ### 12. Instructor Do: Mapbox API Demo (10 min) (Critical)
+
+**Corresponding Activity:** [07-Ins_Mapbox_Demo](Activities/07-Ins_Mapbox_Demo)
 
 In this activity, students observe a demonstration of how to use the Mapbox API with Plotly Express.
 
@@ -602,6 +616,8 @@ Ask for any questions before moving onto the student activity.
 
 ### 13. Students Do: Mapping Adventures (15 min)
 
+**Corresponding Activity:** [08-Stu_Mapping_Adventures](Activities/08-Stu_Mapping_Adventures)
+
 Students repeat the steps demonstrated by the instructor in order to create their own Plotly Mapbox scatter plots. Students will integrate Plotly and Mapbox to create their first geographical visualizations.
 
 Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/areas-of-interest-gis).
@@ -645,6 +661,8 @@ Ask for any remaining questions before moving on.
 - - -
 
 ### 15. Students Do: A Cartographer's Expedition (20 min)
+
+**Corresponding Activity:** [08-Stu_Mapping_Adventures](Activities/08-Stu_Mapping_Adventures)
 
 Students create map plots to embark on a virtual expedition through New York City to various places of interest.
 
