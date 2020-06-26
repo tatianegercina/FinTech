@@ -246,7 +246,7 @@ In this activity, students will build a model to predict the geographical origin
   df = pd.read_csv(data, header=None)
 
   # Create the features set (X) and the target set (y)
-  X = df.iloc[:, 0:67].values
+  X = df.iloc[:, 0:68].values
   y = df.iloc[:, 68:70].values
   ```
 
@@ -267,7 +267,7 @@ In this activity, students will build a model to predict the geographical origin
   nn = Sequential()
 
   # Hidden layer
-  nn.add(Dense(units=8, input_dim=67, activation="relu"))
+  nn.add(Dense(units=8, input_dim=68, activation="relu"))
 
   # Output layer
   nn.add(Dense(units=2, activation="linear"))
@@ -286,7 +286,7 @@ In this activity, students will build a model to predict the geographical origin
   nn = Sequential()
 
   # First hidden layer
-  nn.add(Dense(units=8, input_dim=67, activation="relu"))
+  nn.add(Dense(units=8, input_dim=68, activation="relu"))
 
   # Second hidden layer
   nn.add(Dense(units=4, activation="relu"))
@@ -428,7 +428,7 @@ Open the notebook and walk through the code, stopping for any questions.
   # Create a neural network with 1 hidden layer
   nn = Sequential()
 
-  nn.add(Dense(units=8, input_dim=67, activation="relu"))
+  nn.add(Dense(units=8, input_dim=68, activation="relu"))
   nn.add(Dense(units=2, activation="linear"))
   ```
 
