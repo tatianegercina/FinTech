@@ -174,6 +174,8 @@ Ask if there are any questions or comments before moving on.
 
 ### 4. Instructor Do: Creating Environment Variables (10 min) (Critical)
 
+**Corresponding Activity:** [01-Ins_Create_Env_Variables](Activities/01-Ins_Create_Env_Variables)
+
 In this activity, students will learn how to create a `.env` file to store their keys as environment variables. This demo will also include exporting environment variables so that the variables can be used in Python and other applications and programs.
 
 **Files:**
@@ -215,6 +217,8 @@ Ask if there are any questions, and then move on to the next activity.
 ---
 
 ### 5. Instructor Do: Calling Environment Variables (5 min) (Critical)
+
+**Corresponding Activity:** [02-Ins_Call_Env_Variables](Activities/02-Ins_Call_Env_Variables)
 
 In this activity, students will learn how to call API keys as environment variables using the `dotenv` Python package.
 
@@ -308,6 +312,8 @@ Ask students if there are any questions before continuing.
 ---
 
 ### 6. Students Do: Under Lock and Key (20 min)
+
+**Corresponding Activity:** [03-Stu_Under_Lock_And_Key](Activities/03-Stu_Under_Lock_And_Key)
 
 The previous modules focused on the instructor demoing how to create, store, and use API keys with environment variables. Students now engage in a bridge activity that involves retrieving a Quandl API key, and submitting a Quandl API request with the key stored as an environment variable. This will be the students' first opportunity for hands-on practice with API keys and environment variables.
 
@@ -481,6 +487,8 @@ Answer any questions before moving on.
 
 ### 11. Instructor Do: Plaid Demo (15 min)
 
+**Corresponding Activity:** [04-Ins_Plaid_Demo](Activities/04-Ins_Plaid_Demo)
+
 In this activity, students will receive an instructor-led demo of the Plaid API. The instructor will demonstrate to students how to connect to the Plaid sandbox from a Python environment.
 
 Have the `.env` file prepared with you Plaid API Keys before class so that it does not need to be created during the activity.
@@ -627,6 +635,8 @@ If time remains, ask students for any thoughts and answer any questions before m
 
 ### 12. Students Do: Sporting Plaid—Part 1 (20 min)
 
+**Corresponding Activity:** [05-Stu_Sporting_Plaid_Pt_1](Activities/05-Stu_Sporting_Plaid_Pt_1)
+
 This activity is the first part of a two-part mini-project activity. Students will create environment variables for Plaid API keys and install the Plaid SDK, which will be used in the next activity to extract transaction data.
 
 Instruct TAs to confirm that each student has Plaid API keys and can authenticate with Plaid. Circulate through the room to help troubleshoot any challenges related to environment variables and API keys.
@@ -672,6 +682,8 @@ Ask students if they have any questions before moving on.
 ---
 
 ### 14. Students Do: Sporting Plaid—Part 2 (25 min)
+
+**Corresponding Activity:** [06-Stu_Sporting_Plaid_Pt_2](Activities/06-Stu_Sporting_Plaid_Pt_2)
 
 It's time the students donned some Plaid again, as they will be extracting financial data from the Plaid sandbox. In order to complete this assignment, students will submit requests to the Plaid API and parse JSON output.
 
