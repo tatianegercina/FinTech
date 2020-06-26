@@ -69,7 +69,8 @@ By the end of class, students will be able to:
   * Remind students that additional research and practice will be required outside of class in order to reinforce and build competence in learning and evaluating trained models.
 
 ### Sample Class Video (Highly Recommended)
-* To watch an example class lecture, go here: [11.1 Class Video Part 1.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=72314fe6-24a9-4172-bb8b-aadf016874d4) | [11.1 Class Video Part 2.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8c4c5255-0418-48d5-8a9e-aae001123070) Note that this video may not reflect the most recent lesson plan.
+
+* To watch an example class lecture, go here: [11.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2c11bfa4-4430-4a42-906f-abbd01400914) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
 
