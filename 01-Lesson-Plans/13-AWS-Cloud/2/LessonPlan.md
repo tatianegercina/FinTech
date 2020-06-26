@@ -31,7 +31,8 @@ By the end of class, students will be able to:
 * There are a few activities that require setup. Have the class follow along and ask questions as you go.
 
 ### Sample Class Video (Highly Recommended)
-* To watch an example class lecture, go here: [13.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30a703ee-9c5d-497a-9348-aaee016135c6) Note that this video may not reflect the most recent lesson plan.
+
+* To watch an example class lecture, go here: [13.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=88dce2d4-e8b1-4a5d-a7fc-abd40178e01f) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
 
