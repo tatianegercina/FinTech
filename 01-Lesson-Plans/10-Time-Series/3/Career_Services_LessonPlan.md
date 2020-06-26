@@ -28,7 +28,7 @@ Completing a resume in class will make students **employer-ready**, which means 
 
 ### Instructor Do: Which Resume Is Best? (5 min)
 
-**Files:** [Resume Templates](https://docs.google.com/document/d/1p2IaA5qybg1W71B8eRhDw74INZ_FAXfuSTdpQHqUFTs/edit?usp=sharing)
+**Files:** [Resume Templates](https://docs.google.com/document/d/1StSl3KX4jaAJmG52yrnLzDH2yczce-fA4K4BpyEljPY/edit?usp=sharing)
 
 For the next part of class students will be working on their resumes. Their resumes will help them become employer-ready. Employer-ready means students will be doing the bare minimum of what is required for them to get a job in the FinTech industry.
 
@@ -55,7 +55,7 @@ Remind students that resume templates are employer-driven, meaning that employer
 
 ### Student Activity: Resume Building (25 min)
 
-**Files:** [FinTech Resume Templates](https://docs.google.com/document/d/1p2IaA5qybg1W71B8eRhDw74INZ_FAXfuSTdpQHqUFTs/edit?usp=sharing)
+**Files:** [FinTech Resume Templates](https://docs.google.com/document/d/1StSl3KX4jaAJmG52yrnLzDH2yczce-fA4K4BpyEljPY/edit?usp=sharing)
 
 Have a TA slack out the FinTech resume templates. Students should identify the kind of candidate they will be and pick a template accordingly.
 
