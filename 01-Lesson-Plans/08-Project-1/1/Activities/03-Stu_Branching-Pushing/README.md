@@ -50,7 +50,7 @@ In this activity, we will create a new branch, implement a feature, and then sub
 
   * Make sure this worked by verifying that there's an `data_collection.py` file in your local repo.
 
-  * Normally, you'd run the code here to make sure everything works properly.
+  * Typically, you would run the code here to make sure everything works properly.
 
 * Check back out to your local `master` branch by running the following in your terminal:
 
