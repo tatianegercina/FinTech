@@ -37,11 +37,11 @@ Slack out the [Visual Introduction to Git](https://medium.com/@ashk3l/a-visual-i
 
 ### Class Objectives
 
-* Students must be able to: 
-  * articulate the requirements for Project 1.
-  * draw and interpret diagrams of Git branching workflows.
-  * create new branches with Git.
-  * push local branches to GitHub.
+Students must be able to: 
+* Articulate the requirements for Project 1.
+* Draw and interpret diagrams of Git branching workflows.
+* Create new branches with Git.
+* Push local branches to GitHub.
 
 ---
 
