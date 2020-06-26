@@ -2,7 +2,7 @@
 
 #### Overview
 
-For this week, students will begin work on their first project of the boot camp: Use Python to deliver an in-depth analysis of a financial data source of their choosing.
+This week, students will begin work on their first project of the boot camp: Use Python to deliver an in-depth analysis of a financial data source of their choosing.
 
 #### Instructor Notes
 
