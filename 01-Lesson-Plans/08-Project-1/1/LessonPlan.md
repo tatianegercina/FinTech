@@ -222,7 +222,7 @@ Refer to [03-Stu_Branching-Pushing](Activities/03-Stu_Branching-Pushing/README.m
 
 Point out that students will need a project to work on if they're to be able to practice Git.
 
-Step through the [slideshow]() and explain the requirements for Project 1.
+Step through the [slideshow](https://docs.google.com/presentation/d/1dZIZPCR-WpRB3gv1U2_ij3mvN55yeINDPVjLIE3NXpE/edit?usp=sharing) and explain the requirements for Project 1.
 
 * Be sure to slack out the Project's [Technical Requirements](../../../03-Projects/Project-01/TechnicalRequirements.md); the [Project Guidelines](../../../03-Projects/Project-01/ProjectGuidelines.md); the [Presentation Requirements](../../../03-Projects/Project-01/PresentationRequirements.md); the [Presentation Guidelines](../../../03-Projects/Project-01/PresentationGuidelines.md) after going through the slides.
 
