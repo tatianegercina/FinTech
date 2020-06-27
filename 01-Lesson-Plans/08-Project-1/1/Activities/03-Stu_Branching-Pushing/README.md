@@ -1,6 +1,6 @@
 # Git Branching/Pushing
 
-In this activity, we will create a new branch, implement a feature, and then submit a pull request back into master. We will also cover reviewing pull requests and merging them into master.
+In this activity, we will create a new branch, implement a feature, and then submit a pull request back into the master. We will also cover reviewing pull requests and merging them into the master.
 
 # Instructions
 
@@ -22,11 +22,11 @@ In this activity, we will create a new branch, implement a feature, and then sub
 
 * At the root of the repo, create a new file named `data_collection.py`. Inside this file, add code to import the `requests` library and save.
 
-* In your terminal, add and commit the changes. Then push up your code by running following in your terminal:
+* In your terminal, add and commit the changes. Then push up your code by running the following in your terminal:
 
   `git push origin add-new-python-script`
 
-* This should push up your code to to GitHub on a branch with the same name (`add-new-python-script`).
+* This should push up your code to GitHub on a branch with the same name (`add-new-python-script`).
 
 * Go to the main repo page at github.com and you should see an button that says "Compare & pull request." Click this.
 
@@ -36,9 +36,9 @@ In this activity, we will create a new branch, implement a feature, and then sub
 
 ## Part II: Reviewing a Pull Request
 
-* In this section, we will review the pull request from Part I and merge it into master. **A different project member should complete this section while others observe**.
+* In this section, we will review the pull request from Part I and merge it into the master. **A different project member should complete this section while others observe**.
 
-* Clone the repo to your computer if you haven't already done so and use the cd command to get into it.
+* Clone the repo to your computer if you haven't already done so, and use the cd command to get into it.
 
 * First, you will want to test the changes introduced by the `add-new-python-script` branch locally. To examine the new branch on your local machine, run the following commands in your terminal:
 
@@ -50,7 +50,7 @@ In this activity, we will create a new branch, implement a feature, and then sub
 
   * Make sure this worked by verifying that there's an `data_collection.py` file in your local repo.
 
-  * Normally you'd run the code here to make sure everything works properly.
+  * Typically, you would run the code here to make sure everything works properly.
 
 * Check back out to your local `master` branch by running the following in your terminal:
 
@@ -58,9 +58,9 @@ In this activity, we will create a new branch, implement a feature, and then sub
 
 * Now go to your GitHub repo's main page and go to the "Pull request" section. Select the `add-new-python-script` pull request from the list.
 
-* At the next page select the option to see the "Files changed."
+* On the next page, select the option to see the "Files changed."
 
-* You should be presented with all of the files that were changed in this PR along with line numbers for any code added or removed.
+* You should be presented with all of the files that were changed in this PR, along with line numbers for any code added or removed.
 
 * If there are any changes you would like made, you can click the line number to leave a comment the PR author will see and should address before approval. Otherwise click "Review changes" and approve the PR. You should be taken to a screen with an option to "Merge pull request." Click this button.
 
@@ -69,3 +69,8 @@ In this activity, we will create a new branch, implement a feature, and then sub
   `git branch -D add-new-python-script`
 
 * Ask an instructor or TA if you get stuck or have any questions!
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
