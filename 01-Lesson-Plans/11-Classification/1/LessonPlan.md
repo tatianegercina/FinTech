@@ -505,23 +505,23 @@ Use the remaining time to answer any questions about logistic regression models 
 
 ### 9. Instructor Do: Confusion Matrix & Classification Report (10 min)
 
-Students receive a live demonstration of how to create and use a confusion matrix and classification report to evaluate models for error.
+You will now give a live demonstration of how to create and use a confusion matrix and classification report to evaluate models for error.
 
 **Files:** [confusion_matrix.ipynb](Activities/03-Ins_Confusion_Matrices/Solved/confusion_matrix.ipynb)
 
-Open the starter-file, and highlight the below discussion points while live coding how to use a **confusion matrix**.
+Open the starter-file, and highlight the discussion points below while live coding how to use a **confusion matrix**.
 
-* A **confusion matrix** is used to measure and gauge the success of a model. Confusion matrices reveal the number of true negatives and true positives (actuals) for each categorical class and compare it to the number of predicted values for each class. These values are then individually summed by column and row. The aggregate sums are then compared to gauge accuracy and precision. If the aggregates match, the model can be considered accurate and precise.
+* A confusion matrix is used to measure and gauge the success of a model. Confusion matrices reveal the number of true negatives and true positives (actuals) for each categorical class, and compare it to the number of predicted values for each class. These values are then individually summed by column and row. The aggregate sums are then compared to gauge accuracy and precision. If the aggregates match, the model can be considered accurate and precise.
 
   ![confusion_matrix_table.png](Images/confusion_matrix_table.png)
 
 * Confusion matrices are great because they describe the performance of the classification model. By looking at the confusion matrix, one can determine whether or not the model has been correctly trained to produce comprehensive, accurate, and precise predictions.
 
-* For binary classifiers like the **logistic regression** classifier, a **confusion matrix** would measure the number of positive and negative predictions. These will then be compared in relation to the actuals.
+* For binary classifiers like the logistic regression classifier, a confusion matrix would measure the number of positive and negative predictions. These will then be compared in relation to the actuals.
 
-* So now the question is, how does one get data loaded into a confusion matrix for model evaluation? Most models will come equipped with a confusion matrix module, like the **sklearn** `metrics.confusion_matrix` module. The **sklearn** `confusion_matrix` function accepts two arguments, one data set containing the predicted values and another containing the actual data points.
+* So how does one get data loaded into a confusion matrix for model evaluation? Most models come equipped with a confusion matrix module, like the sklearn `metrics.confusion_matrix` module. The sklearn `confusion_matrix` function accepts two arguments–one data set containing the predicted values, and another containing the actual data points.
 
-Transition to the live coding aspect of the demo, and demonstrate how to use and interpret the **sklearn** `confusion_matrix` function.
+Transition to the live coding aspect of the demo, and demonstrate how to use and interpret the sklearn `confusion_matrix` function.
 
 * The `confusion_matrix` function can be imported into the Python environment from the `metrics` package. Once imported, it can be executed using the actual and predicted data points. The output is a two-dimensional array. Columns reflect binary classes (high credit risk or low credit risk), and the rows represent the number of samples/data points that actually belong to that class.
 
@@ -532,11 +532,11 @@ Transition to the live coding aspect of the demo, and demonstrate how to use and
 
   ![confusion_matrix.png](Images/confusion_matrix.png)
 
-Communicate to students that a **classification report** can also be used to evaluate a model. When evaluating a model, the **accuracy**, **precision**, and **recall** must all be evaluated to ensure the rate of false-positives and false-negatives are minimal. The results from these tests can be stored within a **classification report**, which can be used to assess and evaluate the number of predicted occurrences for each class.
+Communicate to students that a classification report can also be used to evaluate a model. When evaluating a model, the accuracy, precision, and recall must all be evaluated to ensure the rate of false-positives and false-negatives are minimal. The results from these tests can be stored within a classification report, which can be used to assess and evaluate the number of predicted occurrences for each class.
 
-* Classification reports calculate the precision, recall, and f1 score (accuracy in relation to precision and recall). Classification reports can be generated using the **sklearn** `metrics.classification_report` module. All that is required to execute the `classification_report` function is the actual data points and predicted data points.
+* Classification reports calculate the precision, recall, and f1 score (accuracy in relation to precision and recall), and can be generated using the sklearn `metrics.classification_report` module. All that is required to execute the `classification_report` function is the actual data points and predicted data points.
 
-  * The **classification report** will automatically calculate precision, recall, and accuracy.
+  * The classification report will automatically calculate precision, recall, and accuracy.
 
     ```python
     from sklearn.metrics import classification_report
@@ -550,7 +550,7 @@ Finish the activity by asking students if there are any questions, and then tran
 
 ---
 
-### 10. Students Do: Diagnosing the Model (10 min)
+### 10. Student Do: Diagnosing the Model (10 min)
 
 Students complete a bridge activity where they return to the model they created to predict diabetes and will use a **confusion matrix** and **classification report** to evaluate and diagnose the model. Emphasis needs to be placed on how to interpret confusion matrices and classification reports in order to diagnose issues in the model.
 
