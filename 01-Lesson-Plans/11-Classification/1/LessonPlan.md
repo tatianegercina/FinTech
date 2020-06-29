@@ -2,13 +2,13 @@
 
 ### Overview
 
-In the last unit, students learned how to use machine learning to predict and forecast time series outcomes. Students used statistical approaches; such as linear regression, **Hodrick-Prescott filter**, and **GARCH** and **EGARCH** model, to forecast investment returns, volatility, and out-of-sample predictions.
+In the last unit, students learned how to use machine learning to predict and forecast time series outcomes. Students used statistical approaches, such as linear regression, **Hodrick-Prescott filter**, and **GARCH** and **EGARCH** models, to forecast investment returns, volatility, and out-of-sample predictions.
 
-In unit 11, students will dive deeper into statistics and machine learning by working with **classification** algorithms. **Classification** is the act of discovering whether or not a particular feature or element belongs to a given feature class/group. **Classification** derives categorical conclusions based off of classified/modeled data. By the end of this unit, students will be competent in the execution and evaluation of **classification** models (i.e., logistic regression and decision trees) for predicting categorical conclusions and outcomes.
+In Unit 11 students will dive deeper into statistics and machine learning by working with **classification** algorithms. **Classification** is the act of discovering whether or not a particular feature or element belongs to a given feature class/group. **Classification** derives categorical conclusions based off of classified/modelled data. By the end of this unit, students will be competent in the execution and evaluation of **classification** models (i.e., logistic regression and decision trees) for predicting categorical conclusions and outcomes.
 
-Today's class will walk students through two classification models/approaches: Logistic Regression and Support Vector Machines. Both models are used to predict linear outcomes. Students will also learn how to use Scikit-learn, a Python data science package, to train to evaluate models and make them more efficient and effective in determining probability/outcome predictions.
+Today's class will walk students through two classification models/approaches: logistic regression and support vector machines (SVM). Both models are used to predict linear outcomes. Students will also learn how to use Scikit-learn, a Python data science package, to train to evaluate models and make them more efficient and effective in determining probability/outcome predictions.
 
-Before students leave at the end of the class, encourage them to continue independently researching and learning more about the various ways to implement classification models, especially some of the ones not demonstrated in class (i.e., neural networks). Make sure to slack out the below links as supplementary resources.
+Before students leave at the end of the class, encourage them to continue independently researching and learning more about the various ways to implement classification models, especially some of those not demonstrated in class (i.e., neural networks). Slack out the links below as supplementary resources.
 
 * [Ten Applications of AI to FinTech](https://towardsdatascience.com/ten-applications-of-ai-to-fintech-22d626c2fdac)
 
@@ -22,7 +22,7 @@ By the end of class, students will be able to:
 
 * Define classification in the context of machine learning.
 
-* Model and fit several classification models (Logistic Regression and SVM) using Scikit-Learn.
+* Model and fit several classification models (logistic regression and SVM) using Scikit-Learn.
 
 * Evaluate classification algorithms using a confusion matrix and classification report.
 
