@@ -512,7 +512,7 @@ Next, explain that dummy variables are created for each week of the year. Commun
 
 ### 9. Instructor Do: Overfitting and Parsimony (10 min)
 
-Open the slideshow, [[navigate to Section X]] and introduce the concept of overfitting:
+Open the slideshow, navigate to the Overfitting section, and introduce the concept of overfitting:
 
 * Overfitting occurs when a model is too specific to a particular data set.
 
