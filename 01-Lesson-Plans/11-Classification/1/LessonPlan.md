@@ -30,7 +30,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today's class will require students to train and evaluate two different classification models. Because the content will be heavy in statistical analysis and machine learning, it is important that you reinforce concepts with FinTech use cases. Examples will be provided. Whenever appropriate, remind students that **classification** models enable financial companies to make faster and smarter data-driven decisions and outcomes, such as:
+* Today's class will require students to train and evaluate two different classification models. Because the content will be heavy in statistical analysis and machine learning, it is important that you reinforce concepts with FinTech use cases (examples will be provided). Whenever appropriate, remind students that **classification** models enable financial companies to make faster, smarter data-driven decisions and outcomes, such as:
 
   * credit risk and worthiness
 
@@ -40,37 +40,37 @@ By the end of class, students will be able to:
 
   * loan recommendations
 
-* The world of **classification** is vast. All forms and concepts of classification cannot be covered in one class. Ensure to pace the class and be cognizant of how long it takes to explain concepts. The key is to stay rooted in real-world and practical examples of how classification can be used within FinTech. Avoid getting bogged down in the statistical and mathematical detail for the algorithms. The focus should be placed on
+* The world of classification is vast; all forms and concepts of classification cannot be covered in one class. Be sure to pace the class and be cognizant of how long it takes to explain concepts. The key is to stay rooted in real-world, practical examples of how classification can be used in FinTech. Avoid getting bogged down in the statistical and mathematical details for the algorithms. Instead, focus should be placed on:
 
   * What the algorithm/model is
 
-  * What the algorithm/model does and FinTech use case
+  * What the algorithm/model does and its FinTech use case
 
   * How to train/enhance the algorithm/model
 
   * How to test algorithms/models and correctly handle false negatives and positives
 
-* This week's activities will use tools such as **imbalance-learn**, **scikit-learn**, and the **Lending Club**.
+* This week's activities will use tools such as **imbalance-learn**, **Scikit-learn**, and the **Lending Club**.
 
-  * **Imbalance-learn** and **scikit-learn** will need to be added to everyone's Python environments. Modules will need to be installed. Students can consult the [classification ecosystem install guide](../Supplemental/Machine_Learning_Env_Setup_Guide.md) for steps on how to verify both packages have been installed correctly.
+  * **Imbalance-learn** and **Scikit-learn** will need to be added to everyone's Python environments, and modules will need to be installed. Students can consult the [classification ecosystem install guide](../Supplemental/Machine_Learning_Env_Setup_Guide.md) for steps on how to verify that both packages have been installed correctly.
 
-  * **Lending club** will be used as a data source for this unit. Accounts will need to be created in order for data to be accessed.
+  * **Lending Club** will be used as a data source for this unit; accounts must be created for data to be accessed.
 
-  * Slack out the following links to students to use as resources. There will be no time dedicated for in-class installation.
+  * Slack out the following links for students to use as resources. There will be no time dedicated for in-class installation.
 
     * [Imbalance-Learn](https://imbalanced-learn.readthedocs.io/en/stable/)
 
     * [Scikit-Learn](https://scikit-learn.org/stable/)
 
-* Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. You might find that some students need additional assistance with the statistical concepts, and other students might need help with the application of machine learning models.
+* Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Some students may need additional assistance with  statistical concepts, while others might need help with the application of machine learning models.
 
-  * Encourage students to work with partners for all assignments in order to promote collaborative information seeking.
+  * Promote collaborative learning by encouraging students to work with partners for all assignments.
 
-  * Remind students that additional research and practice will be required outside of class in order to reinforce and build competence in learning and evaluating trained models.
+  * Remind students that additional research and practice is required outside of class to reinforce and build competence in learning and evaluating trained models.
 
 ### Sample Class Video (Highly Recommended)
 
-* To watch an example class lecture, go here: [11.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2c11bfa4-4430-4a42-906f-abbd01400914) Note that this video may not reflect the most recent lesson plan.
+* To watch an example class lecture, go here: [11.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2c11bfa4-4430-4a42-906f-abbd01400914). Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
 
@@ -80,7 +80,7 @@ By the end of class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
