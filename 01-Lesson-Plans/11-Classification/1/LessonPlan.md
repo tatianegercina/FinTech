@@ -86,51 +86,53 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome (5 min)
 
-The instructor starts class with an introduction to **classification** and its use cases within FinTech. Students will receive the who, what, when, why, and how of FinTech **classification**.
+Begin class with an introduction to **classification** and its use cases within FinTech, including the who, what, when, why, and how of FinTech classification.
 
-Open the slideshow, and begin the class by welcoming students back to the second week of machine learning!
+Open the slideshow, [[navigate to Section X]] and start class by welcoming students back to the second week of machine learning!
 
-* Explain to students that Unit 11 kicks off the second week of machine learning and advanced analytics. Highlight that this unit will focus on using machine learning algorithms and pipelines to draw categorical conclusions and predictions about probable financial outcomes.
+* Explain that Unit 11 kicks off the second week of machine learning and advanced analytics. Highlight that this unit will focus on using machine learning algorithms and pipelines to draw categorical conclusions and predictions about probable financial outcomes.
 
-* Briefly explain what **classification** is. Indicate that **classification** is used to draw categorical conclusions about data. Instead of forecasting quantitative numbers, **classification** uses a binary (**true-positive**/**true-negative**) approach to predict categorical membership (i.e., will the outcome be of type A or type B).
+* Briefly explain that **classification** is used to draw categorical conclusions about data. Instead of forecasting quantitative numbers, classification uses a binary (**true-positive**/**true-negative**) approach to predict categorical membership (i.e., will the outcome be of type A or type B?).
 
-  * Communicate that **classification** models can be used to identify a loan applicant as creditworthy or credit risk. Tell students that they will be learning how to perform classification using, all of which will be explained in more detail in upcoming activities.
+  * Communicate that classification models can be used to identify a loan applicant as creditworthy or a credit risk. Tell students that they will be learning how to perform classification using, all of which will be explained in more detail in upcoming activities.
 
-    * Logistic/Linear Regression
+    * Logistic/linear regression
 
-    * Support Vector Machines
+    * Support vector machines
 
-* Highlight to students that **classification** models have drastically improved financial efforts to properly classify applicants, predict market decline, and classify fraudulent transactions or suspicious activity.
+* Highlight to students that classification models have drastically improved financial efforts to properly classify applicants, predict market decline, and classify fraudulent transactions or suspicious activity.
 
-  * Most large financial institutions are using some form of machine learning to monitor and predict fraudulent activities. This is how banks know when to flag and decline transactions due to suspicion of fraud.
+  * Most large financial institutions use some form of machine learning to monitor and predict fraudulent activities. This is how banks know when to flag and decline transactions due to suspicion of fraud.
 
-    * Ask students if they have ever received a call from their bank because a transaction was flagged as fraudulent. Explain that the call was triggered by a probability prediction identifying the transaction as fraudulent.
+    * Ask students if they have ever received a call from their bank because a transaction was flagged as fraudulent. If so, explain that the call was triggered by a probability prediction identifying the transaction as fraudulent.
 
-    * For example, FICO credit scoring currently uses a **classification** model for their cognitive fraud analytics platform. Classification engines have allowed the financial industry to become more proactive rather than reactive. Outcomes can be predicted with probable surety, which allows for more effective and efficient mitigation. Slack out the below link as an article of interest for students to review outside of class.
+    * For example, FICO credit scoring currently uses a classification model for their cognitive fraud analytics platform. Classification engines have allowed the financial industry to become more proactive rather than reactive. Outcomes can be predicted with probable surety, which allows for more effective and efficient mitigation. Slack out the link below as an article of interest that students can read outside of class.
 
       * [FICO Falcon: Cognitive Fraud Analytics](https://www.fico.com/en/latest-thinking/product-sheet/fico-falcon-platform-cognitive-fraud-analytics-fraud-focused-machine-learning)
 
-* Indicate to students their mission for the remainder of this week is to build and train robust classification models in order to automate predictive analytics.
+* Tell students that their mission for the remainder of this week is to build and train robust classification models in order to automate predictive analytics.
 
-If time remains, ask students emotionally guided questions to get a feel for their current emotional state and give them a space to address any points of excitement, interests, and/or concerns.
+* **Machine learning** can be used to automate financial pipelines, forecast time series data, market volatility, predict fraud, analyze sentiment, parse documents, automate day trading and make investment recommendations. However, what exactly is **machine learning**?
 
-* **Machine learning** can be used to automate financial pipelines, forecast time series data, and market volatility, predict fraud, analyze sentiment and parse documents, and automate day trading and make investment recommendations. However, what exactly is **machine learning**?
+  * **Answer** Machine learning is an approach to programming that leverages libraries that provide statistical algorithms. The machine learning community has developed tried-and-tested statistical libraries (like **Scikit-learn** and **imbalanced-learn**) that offer statistical functions for algorithmic and statistical modelling.
 
-  * **Answer** Machine learning is an approach to programming that leverages libraries that provide statistical algorithms and libraries. The machine learning community has developed tried and tested statistical libraries (like **scikit-learn** and **imbalanced-learn**) that offer statistical functions for algorithmic and statistical modeling.
+* Last week, students used time series analysis techniques to forecast market returns and volatility. This week we will explore classification and predicting categorical outcomes. 
 
-* Last week, you used time series analysis techniques to forecast market returns and volatility. This week we will be exploring **classification** and predicting categorical outcomes. What are you excited about to learn next?
+If time remains, ask students a few emotionally guided questions (examples provided below) to get a sense of how they are feeling, and give them a space to address any points of excitement, interest, and/or concern.
 
-  * **Answer** How to use a **classification** model to predict fraudulent transactions
+**Ask students: What are you excited to learn about next?**
 
-  * **Answer** How to use a **classification** model to identify the best type of line of credit for a consumer
+  * **Answer** How to use a **classification** model to predict fraudulent transactions.
 
-* Do you have any concerns or questions about the content already covered?
+  * **Answer** How to use a **classification** model to identify the best type of line of credit for a consumer.
 
-  * **Answer** Concerned about not having any background knowledge or experience in statistics
+**Ask students: Do you have any concerns or questions about the content already covered?**
 
-* Underscore to students that the journey into the world of **classification** models and algorithms is both challenging and rewarding.
+  * **Answer** Concerned about not having any background knowledge or experience in statistics.
 
-  * Remind students that everyone in the room will be on the journey together and that resources will be provided to ensure every student has the materials needed to competently train, execute, model, and test classification algorithms.
+* Underscore to students that the journey into the world of classification models and algorithms is both challenging and rewarding.
+
+  * Remind the class that they are on this journey together, and that resources will be provided to ensure every student has the materials needed to competently train, execute, model, and test classification algorithms.
 
 Ask if there are any questions before moving forward.
 
