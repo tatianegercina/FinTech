@@ -437,7 +437,7 @@ Ask if there are any questions before moving forward.
 
 In this activity, students and the instructor will engage in a facilitated discussion evaluating the results of logistic regression predictions. The focus of this activity will be the evaluation of diabetes predictions.
 
-Open the 11.1 slides, and highlight the following:
+Go to the slideshow, [NAVIGATE TO SECTION X] and highlight the following:
 
 * We used a logistic regression model to predict whether or not an individual has diabetes, based on a set of diagnostic metrics provided as a data set. The logistic regression model was validated using a scoring feature, revealing that the model is somewhat accurate. However, can you trust that the prediction is correct?
 
@@ -449,11 +449,11 @@ Open the 11.1 slides, and highlight the following:
 
     * **Answer** No. The prediction is not 100% accurate. There is room for error, as well as false positives.
 
-  * Asks students if they'd rather have a model that incorrectly flags diabetes for patients that didn't actually have the disease, or would you rather miss predicting the disease in some patients? What is better: the **false-positive** or **false-negative**?
+  * Ask students if they'd rather have a model that incorrectly flags diabetes for patients that didn't actually have the disease, or would you rather miss predicting the disease in some patients? What is better: the **false-positive** or **false-negative**?
 
     * **Answer** Neither option is preferred. Both leave opportunities for inaccuracy.
 
-    * **Answer** A model that incorrectly flags diabetes for patients that don't actually have the disease. Additional tests can be ran to refine the prediction and filter out individuals who do not have diabetes. This way, anyone with the potential of having it can be given the treatment and attention they need.
+    * **Answer** A model that incorrectly flags diabetes for patients that don't have the disease (false positive). Additional tests can be ran to refine the prediction and filter out individuals who do not have diabetes. This way, anyone with the potential of having it can be given the treatment they need.
 
 * Explain to students that in order to evaluate a model, they must do more than score/measure the model for accuracy. In addition to **accuracy**, a model must be measured for **precision** and **recall**, both of which can be used to eliminate **false positives** and **false negatives**.
 
