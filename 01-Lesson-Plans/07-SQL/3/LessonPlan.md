@@ -50,6 +50,8 @@ Open the Class Objectives slide and review the objectives for today's class.
 
 ### 2. Instructor Do: Data Normalization (15 min)
 
+**Corresponding Activity:** [01-Ins_Data_Normalization](Activities/01-Ins_Data_Normalization)
+
 In this activity, students will be introduced to the three normal forms of data normalization.
 
 **Note:** The data normalization procedures represented in the following slides are provided in the .sql files below. Use them as necessary if students have questions pertaining to the data itself or just want to have the code on hand.
@@ -101,6 +103,8 @@ Note that students may find 3NF a bit confusing. Encourage students to learn mor
 Slack out [normalization.md](Activities/01-Ins_Data_Normalization/Solved/normalization.md) as a cheat sheet for students before moving on.
 
 ### 3. Student Do: Employee Normalizer (15 min)
+
+**Corresponding Activity:** [02-Stu_Data_Normalization](Activities/02-Stu_Data_Normalization)
 
 In this activity, students will practice their data normalization skills using the provided data.
 
@@ -198,6 +202,8 @@ Explain the bonus section of the activity:
   ```
 
 ### 5. Instructor Do: Intro to Foreign Keys (15 min)
+
+**Corresponding Activity:** [03-Ins_Foreign_Keys](Activities/03-Ins_Foreign_Keys)
 
 In this activity, students will be introduced to the concept of foreign keys—columns designated as matching links or relations to another table.
 
@@ -359,6 +365,8 @@ Emphasize that using foreign keys to build relationships across data is a featur
 
 ### 6. Student Do: Foreign Keys (15 min)
 
+**Corresponding Activity:** [04-Stu_Foreign_Keys](Activities/04-Stu_Foreign_Keys)
+
 In this activity, students will create tables with foreign keys.
 
 **Files**:
@@ -463,6 +471,8 @@ Using the `schema.sql`, `seed.sql` files in pgAdmin, walk through the code and e
   ```
 
 ### 8. Instructor Do: Intro to Data Relationships (10 min)
+
+**Corresponding Activity:** [05-Ins_Data_Relationships](Activities/05-Ins_Data_Relationships)
 
 In this activity, students will learn the many different types of data modeling relationships that one table can have with another: one-to-one, one-to-many, and many-to-many.
 
@@ -575,6 +585,8 @@ Ask if there are any questions before moving on.
 
 ### 9. Student Do: Data Relationships (10 min)
 
+**Corresponding Activity:** [06-Stu_Data_Relationships](Activities/06-Stu_Data_Relationships)
+
 In this activity, students will create table schemata for agents and regions, and then create a junction table to display all regions assigned to agents.
 
 **Files:**
@@ -663,6 +675,8 @@ For the bonus, briefly explain that two left outer joins can be performed to ret
 
 ### 12. Instructor Do: Connecting Pandas with PostgreSQL (10 min)
 
+**Corresponding Activity:** [07-Ins_Connecting_Pandas_SQL](Activities/07-Ins_Connecting_Pandas_SQL)
+
 In this activity, students will learn how to create a connection from Python to PostgreSQL using [SQLAlchemy](https://www.sqlalchemy.org/) to load data into a Pandas DataFrame.
 
 **Files:**
@@ -750,6 +764,8 @@ Explain to students that once the data from the database is in a DataFrame, we c
 Answer any questions before moving on.
 
 ### 13. Student Do: Feeding Pandas with SQL (5 min)
+
+**Corresponding Activity:** [08-Stu_Feeding_Pandas_SQL](Activities/08-Stu_Feeding_Pandas_SQL)
 
 In this activity, students will read data into a Pandas DataFrame from a PostgreSQL database using SQLAlchemy.
 
@@ -861,6 +877,8 @@ Walk through the solution and highlight the following:
 Answer any questions before moving on.
 
 ### 15. Instructor Do: Entity Relationship Diagrams (10 min)
+
+**Corresponding Activity:** [09-Ins_ERD](Activities/09-Ins_ERD)
 
 In this activity, students will learn how to interpret and create an Entity Relationship Diagram (ERD)—an asset that delineates the relationship among tables in a database.
 
@@ -1262,6 +1280,8 @@ Answer any questions before moving on.
 
 ### 16. Student Do: Designing an ERD, Part 1 (15 min)
 
+**Corresponding Activity:** [10-Stu_Designing_ERD](Activities/10-Stu_Designing_ERD)
+
 In this activity, students will create a conceptual ERD for mortgage lending.
 
 **Files:**
@@ -1311,6 +1331,8 @@ Ask students if they created any other tables or connections, as there are many 
 Answer any questions before moving on.
 
 ### 18. Student Do: Designing an ERD, Part 2 (10 min)
+
+**Corresponding Activity:** [11-Stu_ERD](Activities/11-Stu_ERD)
 
 In this activity, students will transition their mortgage lending logical ERD to a physical ERD.
 
