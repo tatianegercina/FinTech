@@ -26,7 +26,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1qaiDAlthQE0ECwlJYmm0zaYtCoBM9C17BUNcdHybFhI/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [11.3 Lesson Slides](https://docs.google.com/presentation/d/1qgF9kuJ_0LUL-1zlqWX11dywAvfAkOQmGiJJ72Omlnc/edit#slide=id.g6ed42bebc2_0_1068).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -44,7 +44,7 @@ First, though, we are going to do a little review of concepts from Day 1 of this
 
 **Files:**
 
-* [Unit 11.3 slides](https://docs.google.com/presentation/d/1DJ8LXYZikGc4K8bnOi57Et64ztWVSxdv9zY7wnxLUsA/edit#slide=id.p)
+* [Unit 11.3 slides](https://docs.google.com/presentation/d/1qgF9kuJ_0LUL-1zlqWX11dywAvfAkOQmGiJJ72Omlnc/edit#slide=id.g6ed42bebc2_0_1068)
 
 ### 2. Instructor Review: Model Evaluation (10 min)
 
