@@ -192,7 +192,7 @@ Explain that the power of a linear regression model comes from its ability to de
 
   * In other words, if given an x-value (years of experience) that is not in the data set, the model will predict the corresponding y-value (salary).
 
-Go to the slideshow, [[navigate to Section X]]  and recapitulate the linear regression plot below, which we have seen previously:
+Go to the slideshow, navigate to the Regression Metrics section, and recapitulate the linear regression plot below, which we have seen previously:
 
   ![Images/error01.png](Images/error01.png)
 
