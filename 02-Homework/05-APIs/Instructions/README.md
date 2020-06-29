@@ -26,6 +26,8 @@ In this homework assignment, you will help Harold complete the following tasks:
 
 ## Instructions
 
+__Note__: The data produced from the api calls will vary depending on the dates used, causing results that vary from those pictured.
+
 ### Budget Analysis
 
 In this section, you will use the Plaid API to obtain transaction and account data for the budget analysis section of the report.
