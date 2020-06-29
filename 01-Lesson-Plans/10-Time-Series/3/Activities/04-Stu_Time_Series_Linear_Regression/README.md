@@ -2,9 +2,9 @@
 
 ### Instructions
 
-In this activity, you will use linear regression to predict oil futures returns with lagged oil futures returns and to investigate seasonal effects in the pricing of oil futures.
+In this activity, you will use linear regression to predict oil futures returns with lagged oil futures returns, and to investigate seasonal effects in the pricing of oil futures.
 
-Follow the directions in the starter Jupyter notebook, but consult the below if necessary.
+Follow the directions in the starter Jupyter notebook, but consult the information below if necessary.
 
 Prepare the data with the following steps:
 
@@ -12,7 +12,7 @@ Prepare the data with the following steps:
 
   * Instead of using settle prices directly, create a column of returns: the percentage change from one day to the next. Multiply the results by 100 for ease of interpretation. This column will be your dependent variable (y).
 
-  * Create a column of **lagged returns**. This is done by using `shift()` to shift down the column of returns by 1. This column will be your independent variable (X).
+  * Create a column of **lagged returns**. This is done by using `shift()` to shift down the column of returns by 1. This column will be your independent variable (x).
 
   * Drop NaN values from the DataFrame with `dropna()`.
 
@@ -39,4 +39,4 @@ Provide and interpret the following metrics:
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
