@@ -140,27 +140,27 @@ Ask if there are any questions before moving forward.
 
 ### 2. Instructor Do: Demo Homework (5 min)
 
-Students will receive a brief demonstration of the Unit 11 homework. The first half of this activity should be dedicated to giving a 5 minute overview. The second half should be to answer one or two questions.
+This section is comprised of a brief demo of the Unit 11 homework. Dedicate most of this time for an overview, followed by enough time to answer one or two questions.
 
 **Homework Instructions:** [README.md](../../../02-Homework/11-Machine-Learning/Instructions/README.md)
 
-Open the homework instructions, and provide a brief dry walkthrough of the instructions.
+Open the homework instructions, and provide a brief dry walkthrough.
 
-* Reveal that this week's homework focuses on creating a classification model focused on predicting and categorizing credit risk.
+* This week's homework focuses on creating a classification model focused on predicting and categorizing credit risk.
 
 * Multiple models will be used for this assignment (i.e., linear regression and decision trees). Explain to students that these models will be made available with the `Scikit-Learn` package, which was also used in Unit 10.
 
-* Underscore to students that the goal behind the assignment is two-fold:
+* Emphasize that the goal behind the assignment is two-fold:
 
   * Create a classification model that will categorize credit risk
 
   * Compare and contrast the various machine learning models that can be used to classify credit risk (i.e., resampling vs. ensemble learning). Each model used in the homework can essentially be used to come up with the same prediction: the goal is to identify which model is more accurate and precise.
 
-* Explain that data for this activity will be from the **Lending Club**, a service that allows users to participate in peer-to-peer lending. **Lending club** has a great wealth of loan performance data that can be used to train machine learning algorithms for **classification**. The homework will include using data points such as loan amount, interest rate, loan balance, etc. to make predictions about credit risk.
+* Explain that data for this activity will be from the Lending Club, a service that allows users to participate in peer-to-peer lending. Lending Club has a great wealth of loan performance data that can be used to train machine learning algorithms for classification. The homework will include using data points such as loan amount, interest rate, loan balance, etc. to make predictions about credit risk.
 
-* Note to students that this homework will use the `imbalanced-learn` and `scikit-learn` tools. These tools need to be properly installed and functional.
+* Note to students that this homework will use the `imbalanced-learn` and `Scikit-learn` tools. These tools need to be properly installed and functional.
 
-End the activity by opening the floor for students to ask questions about the homework. Dedicate the next 5 minutes to answering these questions.
+End the activity by opening the floor for students to ask questions about the homework. Dedicate the next five minutes to answering these questions.
 
 ---
 
@@ -168,33 +168,33 @@ End the activity by opening the floor for students to ask questions about the ho
 
 By the end of this activity, students will be able to summarize what classification is within the machine learning space, as well as name one or two common classification algorithms.
 
-Kick off the activity by asking for a student to try summarizing what **classification** is. If there are no volunteers, ask a specific student.
+Kick off the activity by asking a student to summarize what classification is. If there are no volunteers, ask a specific student.
 
-* **Answer** **Classification** is the prediction of discrete outcomes. Outcomes are identified as labels, which serve to categorize bi-class and multi-class features.
+* **Answer:** Classification is the prediction of discrete outcomes. Outcomes are identified as labels, which serve to categorize bi-class and multi-class features.
 
-* Promote student confidence and engagement by thanking the student for volunteering the summary and emphasizing the parts of the answer that are correct. Use the student's answer as a transition into a formal lecture.
+* Thank the student for their summary, and emphasize any parts of their answer that are correct. Use the student's answer as a transition into a formal lecture.
 
-Navigate to the 11.1 slideshow, and walk through the content on the **Intro to Classification** slide:
+Go to the slideshow, [[navigate to Section X]] and walkthrough the content on the Intro to Classification slide:
 
-* Provide students with the official definition of **classification**, as described by the Oxford English dictionary:
+* Provide students with the official definition of classification, as described by the Oxford English dictionary:
 
-  > The action or process of classifying something according to shared qualities or characteristics
+  > The action or process of classifying something according to shared qualities or characteristics.
 
-* Explain to students that in the scope of machine learning, the act of **classification** takes place through a process of supervised learning, where an algorithm is used that enables an application to analyze historical data sets and learn from the data in order to predict categorical membership and future outcomes.
+* Explain to students that in the scope of machine learning, the act of classification takes place through a process of supervised learning, where an algorithm is used that enables an application to analyze historical data sets and learn from the data in order to predict categorical membership and future outcomes.
 
-  * Remind students that classification is used to forecast and predict financial outcomes, automate underwriting and insurance premiums, detect and categorize health issues/overall health.
+  * Remind students that classification is used to forecast and predict financial outcomes, automate underwriting and insurance premiums, and detect and categorize health issues.
 
-* Underscore to students that there are a number of libraries available that make **classification** as easy as data cleaning. All that is needed is a series of calls to several functions. Assure students that training and running a **classification** model is as simple as:
+* Underscore to students that there are a number of libraries available that make classification as easy as data cleaning. All that is needed is a series of calls to several functions. Assure students that training and running a classification model is as simple as:
 
   1. Prepping and wrangling their data sets (used to train and fit models)
 
   2. Using machine learning libraries and functions that are already available
 
-* Highlight that there are multiple approaches to **classification**. These include **Logistic Regression** and **Support Vector Machines**, all of which will be explained in further detail throughout the day.
+* Highlight that there are multiple approaches to classification. These include logistic regression and support vector machines, all of which will be explained in further detail throughout the day.
 
 If time remains, let students know there is time for one question.
 
-* If there is a question, answer it, and then move onto the next activity. Assure students that the upcoming activities will shed more light on **classification** and that there will be additional time for questions during review sessions.
+* If there is a question, answer it, then move onto the next activity. Assure students that the upcoming activities will shed more light on classification and that there will be additional time for questions during review sessions.
 
 ---
 
