@@ -357,7 +357,7 @@ Ask if there are any questions, and then move to the next activity.
 
 ### 5. Student Do: Predicting Diabetes (15 min)
 
-In this activity, students will use the **sklearn** library to execute **logistic regression** models in order to predict whether or not an individual has diabetes. Students will leverage the material covered in the corresponding instructor demo activity to complete this MSMD activity.
+In this activity, students will use the sklearn library to execute logistic regression models in order to predict whether or not an individual has diabetes. Students will leverage the material covered in the corresponding instructor demo activity to complete this MSMD activity.
 
 **Instructions:**
 
@@ -377,7 +377,7 @@ In this activity, students will use the **sklearn** library to execute **logisti
 
 Open the solution and complete a dry walkthrough of the solution. Answer any questions that students have.
 
-* Reiterate to students that in order to run a logistic regression model, a training and testing data set are required. A single data set can be split into these two subsets using the **sklearn** `train_test_split` function. Explain that these two data sets will be used to validate the accuracy of the model.
+* Reiterate to students that in order to run a logistic regression model, a training and testing data set are required. A single data set can be split into these two subsets using the sklearn `train_test_split` function. Explain that these two data sets will be used to validate the accuracy of the model.
 
   ```python
   # Use the train_test_split function to create training and testing data sets
@@ -386,7 +386,7 @@ Open the solution and complete a dry walkthrough of the solution. Answer any que
   X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1, stratify=y)
   ```
 
-* In order to run a logistic regression model, a logistic regression model object is needed. The **sklearn** `LogisticRegression` module is a common module used.
+* In order to run a logistic regression model, a logistic regression model object is needed. The sklearn `LogisticRegression` module is a common one to use.
 
   ```python
   # Use the LogisticRegression module from the sklearn package to create a model
@@ -398,7 +398,7 @@ Open the solution and complete a dry walkthrough of the solution. Answer any que
 
   ![create_lr_model.png](Images/create_lr_model.png)
 
-* The `LogisticRegression` module supports a number of optimization algorithms for processing, **lbfgs** being just one. The **solver** helps optimize learning and computation.
+* The `LogisticRegression` module supports a number of optimization algorithms for processing, with **lbfgs** being just one. The **solver** helps optimize learning and computation.
 
 * Once a model is created, it has to be trained. After training, the model can be scored, and it can then be used to make predictions for new data points.
 
@@ -419,7 +419,7 @@ Open the solution and complete a dry walkthrough of the solution. Answer any que
 
   ![running_lr.png](Images/running_lr.png)
 
-If time remains, facilitate a discussion around model evaluation using the following questions. Be mindful of pacing. Also, encourage students to ask any of their own questions.
+If time remains, facilitate a discussion around model evaluation with the following questions, being mindful of pacing. Encourage students to ask their own questions as well.
 
 * How well did your model perform?
 
