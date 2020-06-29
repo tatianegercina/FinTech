@@ -234,6 +234,8 @@ Pause for students' questions before moving on to the next activity.
 
 In this activity, students will research and practice undersampling with the imbalanced-learn library.
 
+**Note:** Undersampling the data may take a few minutes depending on students' computer hardware, particularly when using the `ClusterCentroids` method.
+
 **Files:**
 
 [undersampling.ipynb](Activities/05-Stu_Do_Undersampling/Unsolved/undersampling.ipynb)
