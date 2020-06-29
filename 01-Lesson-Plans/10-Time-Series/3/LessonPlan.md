@@ -128,7 +128,7 @@ Summarize the key points of linear regression:
 
   * It models data with a linear trend. It isn't useful when the data does not follow a linear trend, e.g., exponential trends.
 
-  * Based on the X values, it predicts Y values.
+  * Based on the x values, it predicts y values.
 
   * It does not do a good job of describing non-linear patterns. (We will cover techniques to model non-linear data later in the course.)
 
@@ -269,7 +269,7 @@ In this activity, students will perform linear regression on the cost of housing
 
 Open the solution, and complete a dry walkthrough of the code:
 
-* Linear regression models can be implemented using the Scikit-learn package. A LinearRegression module is included and can be imported into the Python environment.
+* Linear regression models can be implemented using the Scikit-learn package. A Linear Regression module is included and can be imported into the Python environment.
 
   ```python
   from sklearn.linear_model import LinearRegression
