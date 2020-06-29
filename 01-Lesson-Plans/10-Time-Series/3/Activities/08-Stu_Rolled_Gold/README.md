@@ -18,13 +18,13 @@ Use Scikit-learn to make out-of-sample predictions for the price of gold on a ro
 
 For example, for an iteration that begins on January 4, 2001, the next 12 weeks should comprise the training period. The week after the training period will be the testing period.
 
-The lagged return values (x) should be regressed against the return values (y).
+* The lagged return values (x) should be regressed against the return values (y).
 
-Compile a DataFrame of actual returns and out-of-sample predicted returns.
+* Compile a DataFrame of actual returns and out-of-sample predicted returns.
 
-Using the 2019 data from the Results DataFrame, compute the out-of-sample RMSE.
+* Using the 2019 data from the Results DataFrame, compute the out-of-sample RMSE.
 
-How does the RMSE for the two models compare?
+* How does the RMSE for the two models compare?
 
 ---
 
