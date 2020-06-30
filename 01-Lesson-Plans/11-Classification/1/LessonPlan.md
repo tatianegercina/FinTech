@@ -635,7 +635,7 @@ Students will now participate in a "bag of tricks" activity, where they apply th
 
 ### 14. Instructor Do: Build Loan Approver Activity Review (10 min)
 
-You will lead a facilitated review discussion on the loan approver. This will be a dry walkthrough, with accompanying guided review questions.
+You will lead a facilitated review discussion on the loan approver. This will be a dry walkthrough, accompanied by guided review questions.
 
 **Files:** [loan_approver.ipynb](Activities/05-Stu_Loan_Approver/Solved/loan_approver.ipynb)
 
@@ -699,29 +699,29 @@ Ask for any remaining questions before moving on.
 
 ### 15. Instructor Do: Support Vector Machines (10 min)
 
-Students receive a demonstration and lecture on how to use the support vector machine algorithm. The goal of this activity is to illustrate to students the different approaches that can be taken to come up with the same classification engine.
+For this activity, students will receive a demonstration and lecture on how to use the support vector machine algorithm. The goal here is to illustrate the different approaches that can be taken to come up with the same classification engine.
 
 **Files:** [support_vector_machine.ipynb](Activities/06-Ins_SVM/Solved/support_vector_machine.ipynb)
 
-Open the slideshow to the SVM section, and highlight the following:
+Open the slideshow, navigate to the SVM section, and highlight the following:
 
-* In the previous activity, a Logistic Regression model was used to classify loan eligibility. Logistic Regression is just one model that can be used to classify data points. Another algorithm that can be used is **support vector machines (SVM)**.
+* In the previous activity, a logistic regression model was used to classify loan eligibility. Logistic regression is just one model that can be used to classify data points. Another algorithm that can be used is support vector machines (SVM).
 
-* Define **SVM** as a **supervised learning** model that can be used for classification and regression analysis. Explain that SVM separates classes of data points into multidimensional space. The space is segmented by a line or plane that groups data points into their respective classes.
+* Define SVM as a supervised learning model that can be used for classification and regression analysis. Explain that SVM separates classes of data points into multidimensional space, which is segmented by a line or plane that groups data points into their respective classes.
 
   ![svm.png](Images/svm.png)
 
-* Unlike **Logistic Regression**, **SVM** can employ both a linear and non-linear approach when predicting outcomes. **SVM** focuses on dimensionality.
+* Unlike logistic regression, SVM can employ both a linear and non-linear approach when predicting outcomes. SVM focuses on dimensionality.
 
   * The number of dimensions needed for the model is dependent on the number of features in the data set. Each feature is a dimension.
 
-* Explain that the **SVM** learning algorithm operates by plotting data points with dimensions. Once all data points are plotted, a **hyperplane** is created.
+* Explain that the SVM learning algorithm operates by plotting data points with dimensions. Once all data points are plotted, a **hyperplane** is created.
 
-* Define a **hyperplane** as a dimensional vector used to separate data points into different classes.
+* Define a hyperplane as a dimensional vector used to separate data points into different classes.
 
-  * A **hyperplane** is a line that delineates data points into their corresponding classes. All items to the left of the line belong to class A. Items to the right belong to class B.
+  * A hyperplane is a line that delineates data points into their corresponding classes. All items to the left of the line belong to class A. Items to the right belong to class B.
 
-  * The goal with hyperplanes is to get the margin of the **hyperplane** equidistance to the data points for all classes. This distance is considered the **margin of separation**.
+  * The goal with hyperplanes is to get the margin of the hyperplane equidistance to the data points for all classes. This distance is considered the **margin of separation**.
 
     * Explain to students that the margin is considered optimal when the distance from the hyperplane and the support vectors are equidistant.
 
@@ -729,27 +729,27 @@ Open the slideshow to the SVM section, and highlight the following:
 
   * The data closest to/within the margin of the hyperplane are called **support vectors**, and they are used to define boundaries of the hyperplane.
 
-    * These points are sometimes the most difficult to classify because they live closest to the margin and could belong to either class.
+    * These points are sometimes the most difficult to classify, because they live closest to the margin and could belong to either class.
 
     ![support_vectors.png](Images/support_vectors.png)
 
-Educate students on the different orientations for **hyperplanes**. Provide an understanding of how the orientation and position of the hyperplane is decided.
+Educate students on the different orientations for hyperplanes. Provide an understanding of how the orientation and position of the hyperplane is decided.
 
 ![hyperplane_orientation.png](Images/hyperplane_orientation.png)
 
 * Hyperplanes can be 2D, clearly delineating classes with non-overlapping data points or outliers.
 
-* Hyperplane also supports what's considered **0 tolerance with perfect partition**, which is a non-linear hyperplane that will position and orient the hyperplane to correctly classify overlapping or outlying data points.
+* Hyperplanes also support what's considered **0 tolerance with perfect partition**, which is a non-linear hyperplane that positions and orients the hyperplane to correctly classify overlapping or outlying data points.
 
   * This hyperplane could be a curved line or a circle, depending on the data points and their proximity to one another.
 
-  * In order to establish **0 tolerance with perfect partition**, the SVM model may introduce a new `z-axis` dimension for non-linear hyperplanes.
+  * In order to establish 0 tolerance with perfect partition, the SVM model may introduce a new `z-axis` dimension for non-linear hyperplanes.
 
-* The `kernel` parameter is used to identify the orientation of the **hyperplane**. **Kernelling** and how to use the `kernel` parameter will be addressed later in the demo.
+* The `kernel` parameter is used to identify the orientation of the hyperplane. **Kernelling**, and how to use the `kernel` parameter, will be addressed later in the demo.
 
-Transition into the live coding exercise by opening the starter file and demonstrating to students how to create an **SVM** model with **sklearn**.
+Transition into the live coding exercise by opening the starter file and demonstrating to students how to create an SVM model with sklearn.
 
-* In order to create an SVM model, the **sklearn** `svm.SVC` module must be imported.
+* In order to create an SVM model, the sklearn `svm.SVC` module must be imported.
 
   ```python
   from sklearn.svm import SVC
@@ -766,13 +766,13 @@ Transition into the live coding exercise by opening the starter file and demonst
 
   ![plot_classification.png](Images/plot_classification.png)
 
-Indicate to students that the `svm.svc` module is used to create an **SVM** model.
+Indicate to students that the `svm.svc` module is used to create an SVM model.
 
-* The SVC constructor supports a number of arguments, with the `kernel` argument being the most important. Provide students with a brief overview of the `kernel` argument and what **kerneling** is.
+* The SVC constructor supports a number of arguments, with the `kernel` argument being the most important. Provide students with a brief overview of the `kernel` argument and what **kernelling** is.
 
 * The `kernel` argument is used to express the dimensionality of the model. It is basically the degree of dimensionality needed to separate the data into classes.
 
-* Communicate to students that a **linear** `kernel` value should be used for data sets with two classes. This will create a **hyperplane** that is a line. Non-linear data will result in a hyperplane that is an actual plane.
+* Communicate to students that a **linear** `kernel` value should be used for data sets with two classes. This will create a hyperplane that is a line. Non-linear data will result in a hyperplane that is an actual plane.
 
 * The `kernel` argument accepts a number of values. These are listed and explained below. Advise students to consult the documentation to get additional detail on these parameter values.
 
@@ -786,7 +786,7 @@ Indicate to students that the `svm.svc` module is used to create an **SVM** mode
     model = SVC(kernel='linear')
     ```
 
-* Once the model has been created, it can be trained using the blob data created in the previous step. The model is trained using the **sklearn** `fit` function.
+* Once the model has been created, it can be trained using the blob data created in the previous step. The model is trained using the sklearn `fit` function.
 
   ```python
   model.fit(X, y)
@@ -794,9 +794,9 @@ Indicate to students that the `svm.svc` module is used to create an **SVM** mode
 
   ![svm_model.png](Images/svm_model.png)
 
-If time permits, illustrate to students how to define a decision boundary. A common practice to identify the decision boundary/hyperplane for the already identified data points prior to making predictions. This provides a visual representation of the already existing classes and their margin of separation.
+If time permits, illustrate to students how to define a decision boundary. A common practice to identify the decision boundary/hyperplane for the already identified data points, prior to making predictions. This provides a visual representation of the already existing classes and their margin of separation.
 
-* Emphasize to students that this practice of plotting the decision boundary is just illustrative. If you are short on time, do not review the code. Just show the students the visualization in the solution notebook. The goal is to illustrate to students what a hyperplane is and the importance of wide margins.
+* Emphasize to students that this practice of plotting the decision boundary is just illustrative. If you are short on time, do not review the code. Just show students the visualization in the solution notebook. The goal is to illustrate what a hyperplane is, and the importance of wide margins.
 
 * Also communicate to students that plotting the decision boundary with contour is only effective when there are two **features** in the data.
 
@@ -823,7 +823,7 @@ If time permits, illustrate to students how to define a decision boundary. A com
 
   ![mesh_grid.png](Images/mesh_grid.png)
 
-* The mesh grid data can then be scored by the classifier using the `decision_function` function. The `decision_function` operates similar to predict; however, instead of providing the classification outcome (i.e., yes or no), the `decision_function` returns the classifier score for the data point (i.e., -1.38402 and 1.323), which can be used to figure out which side of the hyperplane the data point will fall.
+* The mesh grid data can then be scored by the classifier using the `decision_function` function. The `decision_function` operates similar to predict; however, instead of providing the classification outcome (i.e., yes or no), the `decision_function` returns the classifier score for the data point (i.e., -1.38402 and 1.323), which can be used to figure out on which side of the hyperplane the data point will fall.
 
   ```python
   # Use the decision_function function to identify sides of the hyperplane
@@ -841,9 +841,9 @@ If time permits, illustrate to students how to define a decision boundary. A com
 
   ![plotting_hyperplane.png](Images/plotting_hyperplane.png)
 
-Emphasize to students that data will not always be equidistant with a wide margin. Explain that **support vectors** can fall within the margin of the hyperplane. These values should be considered errors, and the classification should not be relied on.
+Emphasize to students that data will not always be equidistant with a wide margin. Explain that support vectors can fall within the margin of the hyperplane. These values should be considered errors, and the classification should not be relied on.
 
-* Remind students that margins should always be maximized
+* Remind students that margins should always be maximized.
 
 * Indicate that when support vectors are too close to the margin, there is a 50% chance the classification can go either way. This is why these results are not reliable.
 
@@ -851,7 +851,7 @@ Emphasize to students that data will not always be equidistant with a wide margi
 
   ![classification_errors.png](Images/classification_errors.png)
 
-Now that the pre-existing data has been visualized into the corresponding classes, separated by a hyperplane, the model can be used to predict the classification of new data points. Just like with the Logistic Regression model, the `predict` function can be used to make label predictions.
+Now that the pre-existing data has been visualized into the corresponding classes and separated by a hyperplane, the model can be used to predict the classification of new data points. Just like with the logistic regression model, the `predict` function can be used to make label predictions.
 
     ```python
     # Create new data set to predict
@@ -867,9 +867,9 @@ Now that the pre-existing data has been visualized into the corresponding classe
 
   ![predictions.png](Images/predictions.png)
 
-* The predictions can then be evaluated using **sklearn's** classification report. As made clear by the precision, recall, and f-1 metrics, the model performed well.
+* The predictions can then be evaluated using sklearn's classification report. As made clear by the precision, recall, and f-1 metrics, the model performed well.
 
-  * Remind students that the SVM model provides higher accuracy than some of the other models. The accuracy of the model is evidenced in the performance metrics.
+* Remind students that the SVM model provides higher accuracy than some of the other models. The accuracy of the model is evidenced in the performance metrics.
 
     ```python
     # Calculate classification report
@@ -880,9 +880,9 @@ Now that the pre-existing data has been visualized into the corresponding classe
 
     ![model_performance.png](Images/model_performance.png)
 
-Explain to students why SVM might be used over a Logistic Regression model.
+Explain to students why SVM might be used over a logistic regression model.
 
-* SVM is more beneficial than Logistic Regression because the model supports the classification of outliers and overlapping data points
+* SVM is more beneficial than logistic regression, because the model supports the classification of outliers and overlapping data points.
 
 * SVM also provides higher accuracy with less computation power.
 
@@ -890,23 +890,23 @@ Instruct students to review the below documentation/articles to get additional d
 
 * [In-depth Parameter Tuning for SVC](https://medium.com/all-things-ai/in-depth-parameter-tuning-for-svc-758215394769)
 
-If time remains, remind students that most of the code they saw today is boilerplate and can be reused with little to no changes. From a high level, the steps to implement an SVM model include:
+If time remains, remind students that most of the code they saw today is boilerplate, and can be reused with little to no changes. From a high level, the steps to implement an SVM model include:
 
-1. Create the model with appropriate `kernel` parameters
+1. Create the model with appropriate `kernel` parameters.
 
-2. Fit the model
+2. Fit the model.
 
-3. Extract min and max decision boundaries and store in a mesh grid
+3. Extract min and max decision boundaries and store in a mesh grid.
 
-4. Execute the `decision_function` to get classifier scores for pre-existing data points
+4. Execute the `decision_function` to get classifier scores for pre-existing data points.
 
-5. Run the `predict` function to classify new data points
+5. Run the `predict` function to classify new data points.
 
 Ask for any questions before moving forward.
 
 ---
 
-### 16. Students Do: SVM Loan Approver (15 min)
+### 16. Student Do: SVM Loan Approver (15 min)
 
 Students are asked to update their loan approver with an SVM model and rerun the evaluation metrics. Students will then compare the performance of the SVM model with the Logistic Regression model.
 
