@@ -908,7 +908,7 @@ Ask for any questions before moving forward.
 
 ### 16. Student Do: SVM Loan Approver (15 min)
 
-Students are asked to update their loan approver with an SVM model and rerun the evaluation metrics. Students will then compare the performance of the SVM model with the Logistic Regression model.
+Students are asked to update their loan approver with an SVM model and rerun the evaluation metrics. Students will then compare the performance of the SVM model with the logistic regression model.
 
 **Instructions:** [README.md](Activities/07-Stu-SVM_Loan_Approver/README.md)
 
@@ -926,7 +926,7 @@ The instructor leads a dry walkthrough of the previous activity.
 
 Open the solution and explain the following:
 
-* The SVM algorithm is an alternative to the Logistic Regression model when it comes to running classification engines. The SVM algorithm is oftentimes more accurate than other models.
+* The SVM algorithm is an alternative to the logistic regression model when it comes to running classification engines. The SVM algorithm is often more accurate than other models.
 
 * The SVM package is a part of the `sklearn.svm` module. The `svc` constructor is used to create and configure the model.
 
@@ -961,7 +961,7 @@ Open the solution and explain the following:
   print(f"Testing Data Score: {classifier.score(X_test, y_test)}")
   ```
 
-* An accurate model can make precise predictions. The **sklearn** `predict` function is used to make predictions off of the new data.
+* An accurate model can make precise predictions. The sklearn `predict` function is used to make predictions off of the new data.
 
   ```python
   # Make predictions using the test data
@@ -972,7 +972,7 @@ Open the solution and explain the following:
 
   ![prediction_results.png](Images/prediction_results.png)
 
-* The last step is to evaluate the model. Just like with the Logistic Regression model, the `confusion_matrix` and `classification_report` libraries can be used to assess metrics and performance.
+* The last step is to evaluate the model. Just like with the logistic regression model, the `confusion_matrix` and `classification_report` libraries can be used to assess metrics and performance.
 
   ```python
   # Evaluate performance
@@ -987,29 +987,29 @@ Open the solution and explain the following:
 
 * Ask students which model performed better in terms of accuracy, precision, and recall.
 
-  * **Answer** The SVM model performed better in terms of accuracy, precision, and recall.
+  * **Answer:** The SVM model performed better in terms of accuracy, precision, and recall.
 
-If time remains, ask students the following guided/review questions.
+If time remains, ask students the following guided review questions.
 
 * Ask students to define what support vector machines are.
 
-  * **Answer** Data points that exist closest to the hyperplane. These points are used to help identify the position and orientation of the hyperplane, and they care called **support vectors**.
+  * **Answer:** Data points that exist closest to the hyperplane. These points are used to help identify the position and orientation of the hyperplane, and they care called support vectors.
 
 * A parameter named `kernel` is used when creating an SVM model. What does this parameter do?
 
-  * **Answer** Identifies the orientation of the **hyperplane**, as either linear or multi-dimensional.
+  * **Answer:** It identifies the orientation of the hyperplane, as either linear or multi-dimensional.
 
-* What is the difference between the `decision_function` function and the `predict` function?
+* What is the difference between the `decision_function` and the `predict` function?
 
-  * **Answer** The `decision_function` function has the classifier calculate the classification score for each data point. These values are used to classify the data points to either class. The output from `decision_function` should not be confused with the output from `predict`. `Predict` provides a classification/label. `Decision_function` returns a scalar value.
+  * **Answer:** The `decision_function` has the classifier calculate the classification score for each data point. These values are used to classify the data points to either class. The output from `decision_function` should not be confused with the output from `predict`. `Predict` provides a classification/label. `Decision_function` returns a scalar value.
 
 * What is `decision_function` used for?
 
-  * **Answer** The `decision_function` function is used to identify the bounds of the **hyperplane**.
+  * **Answer:** The `decision_function` is used to identify the bounds of the hyperplane.
 
 * If data points are overlapping, can their classification be trusted?
 
-  * **Answer** No. Data points that are overlapping have a 50% chance of being classified incorrectly. The goal is to maximize the margin.
+  * **Answer:** No. Data points that are overlapping have a 50% chance of being classified incorrectly. The goal is to maximize the margin.
 
 Ask if there are any questions before moving forward.
 
@@ -1017,25 +1017,25 @@ Ask if there are any questions before moving forward.
 
 ### 18. Instructor Do: Which Model is the Best? (5 min)
 
-Throughout the day, students have implemented Logistic Regression and SVM classification algorithms to determine loan eligibility. Now it is time to evaluate both models and determine which performed better.
+Throughout the day, students have implemented logistic regression and SVM classification algorithms to determine loan eligibility. Now it is time to evaluate both models and determine which performed better.
 
 Engage the class with the following discussion:
 
-* Remind students that there is a wealth of machine learning algorithms that can classify outcomes. Explain that both the Logistic Regression and SVM models were both able to predict outcomes; however, the important question is which model performed best.
+* Remind students that there is a wealth of machine learning algorithms that can classify outcomes. Explain that both the logistic regression and SVM models were both able to predict outcomes; however, the important question is which model performed best.
 
-* Ask students if anyone has any suspicions regarding which algorithm performed best: Logistic Regression or SVM.
+* Ask students if anyone has any idea on which algorithm performed best: logistic regression or SVM.
 
-  * **Answer** SVM
+  * **Answer:** SVM
 
-  * **Answer** Logistic Regression
+  * **Answer:** Logistic regression
 
 * Ask students what they think the best approach would be to evaluate both models.
 
-  * **Answer** Compare the confusion matrices and classification reports.
+  * **Answer:** Compare the confusion matrices and classification reports.
 
 * Open the slideshow and navigate to the last slide, which contains the confusion matrix and classification report for both models. Give students a moment to review, and then ask which model performed best.
 
-  * **Answer** The SVM model performed best. Precision, recall, and accuracy were all higher for the SVM loan approver. Interestingly enough, recall percentage for deny is the same for the SVM and Logistic Regression loan approver, meaning both algorithms correctly predicted the same number of true positive denies.
+  * **Answer:** The SVM model performed best. Precision, recall, and accuracy were all higher for the SVM loan approver. Interestingly enough, recall percentage for deny is the same for the SVM and logistic regression loan approver, meaning both algorithms correctly predicted the same number of true positive denies.
 
   ![which_is_best.png](Images/which_is_best.png)
 
@@ -1043,7 +1043,7 @@ Engage the class with the following discussion:
 
 End the activity by congratulating the students on learning two new machine learning algorithms. Let students know they've done a great job ramping up to new statistical calculations and classification algorithms. This is a significant milestone!
 
-* Remind the students that these algorithms can be used for a range of classification use cases, from fraud detection to medical diagnosis, computer vision, and election results.
+* Remind students that these algorithms can be used for a range of classification use cases, from fraud detection to medical diagnosis, computer vision, and election results.
 
 * Assure students that a lot of the statistical concepts covered will be re-used and re-emphasized in upcoming lessons. This will provide plenty of opportunities to re-enforce the teachings.
 
