@@ -61,7 +61,7 @@ In this section, you will train and compare two different ensemble classifiers t
 
 Be sure to complete the following steps for each model:
 
-1. Train the model using the quarterly data from Lending Club provided in the `Resource` folder.
+1. Train the model using the quarterly data from LendingClub provided in the `Resource` folder.
 
 2. Calculate the balanced accuracy score from `sklearn.metrics`.
 
