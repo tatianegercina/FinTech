@@ -59,6 +59,8 @@ Break students into their project groups, and give them a few minutes to rearran
 
 ### 2. Student Do: Create a Repository (10 min)
 
+**Corresponding Activity:** [01-Stu_Create-Repository](Activities/01-Stu_Create-Repository)
+
 In this activity, each project group will create a project repo and invite all group member as collaborators.
 
 Refer to `08-project-1/01-Stu_Create-Repository`, which contains the following instructions:
@@ -93,6 +95,8 @@ Explain that the next step of setting up our project repos for group collaborati
 * Protecting the master branch means we will configure the repo to prohibit any team members from pushing code up into the master directly or merging it in without another team member's review.
 
 ### 4. Student Do: Protect Master Branch (5 min)
+
+**Corresponding Activity:** [02-Stu_Protect-Master](Activities/02-Stu_Protect-Master)
 
 In this activity, groups will protect their master branches.
 
@@ -144,6 +148,8 @@ Slack out the following image for students to have as a visual aid:
 Take a moment to answer any questions, but avoid going too in depth. Students will utilize branches in the next activity.
 
 ### 6. Student Do: Git Branching, Pushing (15 min)
+
+**Corresponding Activity:** [03-Stu_Branching-Pushing](Activities/03-Stu_Branching-Pushing)
 
 In this activity, students will create branches, submit pull requests, and perform code reviews before merging.
 
