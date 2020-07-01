@@ -168,13 +168,13 @@ End the activity by opening the floor for students to ask questions about the ho
 
 By the end of this activity, students will be able to summarize what classification is within the machine learning space, as well as name one or two common classification algorithms.
 
-Kick off the activity by asking a student to summarize what classification is. If there are no volunteers, ask a specific student.
+Go to the slideshow, and navigate to the Intro to Classification section.
+
+Ask the class if anyone can summarize what classification is. If there are no volunteers, ask a specific student.
 
 * **Answer:** Classification is the prediction of discrete outcomes. Outcomes are identified as labels, which serve to categorize bi-class and multi-class features.
 
 * Thank the student for their summary, and emphasize any parts of their answer that are correct. Use the student's answer as a transition into a formal lecture.
-
-Go to the slideshow, [[navigate to Section X]] and walkthrough the content on the Intro to Classification slide:
 
 * Provide students with the official definition of classification, as described by the Oxford English dictionary:
 
