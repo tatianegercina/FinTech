@@ -1019,7 +1019,7 @@ Throughout the day, students have implemented logistic regression and SVM classi
 
 Engage the class with the following discussion:
 
-* Remind students that there is a wealth of machine learning algorithms that can classify outcomes. Explain that both the logistic regression and SVM models were both able to predict outcomes; however, the important question is which model performed best.
+* Remind students that there is a wealth of machine learning algorithms that can classify outcomes. Explain that both the logistic regression and SVM models were able to predict outcomes. However, the important question is: Which model performed best?
 
 * Ask students if anyone has any idea on which algorithm performed best: logistic regression or SVM.
 
@@ -1031,7 +1031,7 @@ Engage the class with the following discussion:
 
   * **Answer:** Compare the confusion matrices and classification reports.
 
-* Open the slideshow and navigate to the last slide, which contains the confusion matrix and classification report for both models. Give students a moment to review, and then ask which model performed best.
+* Open the slideshow and navigate to the slide with the confusion matrix and classification report for both models. Give students a moment to review, and then ask which model performed best.
 
   * **Answer:** The SVM model performed best. Precision, recall, and accuracy were all higher for the SVM loan approver. Interestingly enough, recall percentage for deny is the same for the SVM and logistic regression loan approver, meaning both algorithms correctly predicted the same number of true positive denies.
 
