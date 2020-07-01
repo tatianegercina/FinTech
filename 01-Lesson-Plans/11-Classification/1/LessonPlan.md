@@ -463,7 +463,7 @@ Ask if there are any questions before moving on.
 
 You will now explain what accuracy, precision, and recall is in relation to logistic regression models, as well as how to measure each metric.
 
-Open the slideshow, [NAVIGATE TO THE X section] on accuracy, precision, and recall, and highlight the following:
+Open the slideshow, go to the accuracy, precision, and recall section, and highlight the following:
 
 * Tell students that accuracy, precision, and recall* are especially important for classification models, which are **binary decision problems**. Binary decision problems have two possible correct answers: **True Positive** and **True Negative**.
 
