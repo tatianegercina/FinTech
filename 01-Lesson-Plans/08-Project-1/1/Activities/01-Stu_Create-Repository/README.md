@@ -17,3 +17,7 @@ In this activity, we will create a Github repository and add group members as co
 ### Hints
 
 * Ask an instructor or TA if you get stuck!
+
+- - -
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

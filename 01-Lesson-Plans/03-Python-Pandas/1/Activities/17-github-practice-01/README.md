@@ -2,7 +2,7 @@
 
 In this activity, you will create a new project in GitHub and practice commonly used Git commands.
 
-Git is a great resource for managing your code and very convenient if you want to change computers. You'll become very familiar with git and GitHub over the course of this class.
+Git is a great resource for managing your code and very convenient if you want to change computers. You'll become very familiar with Git and GitHub over the course of this class.
 
 ## Instructions
 
@@ -26,11 +26,11 @@ Git is a great resource for managing your code and very convenient if you want t
 
     ![Checking the git status](Images/05.PNG)
 
-6. Create a new file named `test.md` and then check your `git status` again. Notice that git is now showing you have an untracked file.
+6. Create a new file named `test.md` and then check your `git status` again. Notice that Git is now showing you have an untracked file.
 
     ![Adding a new file](Images/06.PNG)
 
-7. Use the  `git add .` command to add the contents of the current folder to be tracked by git. The period by itself references the current directory. Now git is waiting for those files to be committed.
+7. Use the  `git add .` command to add the contents of the current folder to be tracked by Git. The period by itself references the current directory. Now Git is waiting for those files to be committed.
 
     ![Tracking a new file](Images/07.PNG)
 
@@ -42,7 +42,7 @@ Git is a great resource for managing your code and very convenient if you want t
 
     ![Pushing up to GitHub](Images/09.PNG)
 
-10. If you made changes to the repository on another computer, you can pull down the changes you've committed with the `git pull origin master` command. But since you haven't made any changes yet, git will tell you that you're already up to date.
+10. If you made changes to the repository on another computer, you can pull down the changes you've committed with the `git pull origin master` command. But since you haven't made any changes yet, Git will tell you that you're already up to date.
 
     ![Pulling down from Github](Images/10.PNG)
 

@@ -6,7 +6,7 @@ In this activity, you'll get more practice with functions. By including a return
 
 Perform the following:
 
-1. Define a function `warble` that takes in a string as an argument, adds " arglebargle" to the end of it, and returns the result.
+1. Define a function `warble` that takes in a string as an argument, adds "arglebargle" to the end of it, and returns the result.
 
 2. Print the result of calling your `warble` function with the argument "hello".
 

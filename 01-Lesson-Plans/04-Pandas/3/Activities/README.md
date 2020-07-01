@@ -2,7 +2,7 @@
 
 ## Overview
 
-This directory contains a collection of annotated interview questions. Each question features a corresponding a README, with details as to what Peer Interviewers should evaluate for; suggested hints; and solutions.
+This directory contains a collection of annotated interview questions. Each question features a corresponding README, with details as to what Peer Interviewers should evaluate for, suggested hints, and solutions.
 
 Review the [Notes to the Interviewer](03-Stu_Partner_Interviews/README.md) prior to performing an interview.
 
@@ -20,7 +20,7 @@ Review the [Notes to the Interviewer](03-Stu_Partner_Interviews/README.md) prior
 
 * [Maximin](03-Stu_Partner_Interviews/Solved/maximin)
 
-* [Most Frequently Element](03-Stu_Partner_Interviews/Solved/most_frequent_element)
+* [Most Frequent Element](03-Stu_Partner_Interviews/Solved/most_frequent_element)
 
 * [Palindrome](03-Stu_Partner_Interviews/Solved/palindrome)
 

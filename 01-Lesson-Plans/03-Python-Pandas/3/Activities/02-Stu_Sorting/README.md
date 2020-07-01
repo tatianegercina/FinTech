@@ -1,6 +1,6 @@
 # Out of Sorts
 
-You're trying to identify the top five performing days for Blackberry investment returns, but you have over a hundred days' worth of data, and nothing is sorted. Sort the stock data in descending order to identify the top five performing days.
+You want to identify the top five performing days for Blackberry investment returns, but have over a hundred days' worth of data, and nothing is sorted. Sort the stock data in descending order to identify the top five performing days.
 
 ## Instructions
 

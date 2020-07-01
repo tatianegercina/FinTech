@@ -1,27 +1,27 @@
 # Presentation Requirements
 
-The presentation requirements for Project 1 are as follows.
+The presentation requirements for Project 1 are as follows:
 
-Your presentation must:
+Each presentation must:
 
-* [ ] Be at least 8 to 10 minutes long (check with the instructor for the official presentation time).
+* [ ] Be 8–10 minutes in length (check with the instructor for the official presentation time).
 
-* [ ] Describe the core message or hypothesis for your project.
+* [ ] Describe the project's core message or hypothesis.
 
-* [ ] Describe the questions you and your group found interesting and what motivated you to answer them.
+* [ ] Describe the questions the group found of interest, and why.
 
-* [ ] Summarize where and how you found the data you used to answer these questions.
+* [ ] Summarize how, and where, the data was found to answer these questions.
 
-* [ ] Describe the data exploration and cleanup process (accompanied by your Jupyter Notebook).
+* [ ] Describe the data exploration and cleanup process (accompanied by Jupyter Notebook).
 
-* [ ] Describe the analysis process (accompanied by your Jupyter Notebook).
+* [ ] Describe the analysis process (accompanied by Jupyter Notebook).
 
-* [ ] Summarize your conclusions. This should include a numerical summary (i.e., what data did your analysis yield), as well as visualizations of that summary (plots of the final analysis data).
+* [ ] Summarize the conclusions. This should include a numerical summary (i.e., what data did the analysis produce), as well as visualizations of that summary (plots of the final analysis data).
 
-* [ ] Discuss the implications of your findings. This is where you get to have an open-ended discussion about what your findings mean.
+* [ ] Discuss the implications of the findings (which shall take the form of an open-ended discussion about what the findings mean).
 
 * [ ] Tell a good story! Storytelling through data analysis is no different than in literature. Find your narrative and use your analysis and visualization skills to highlight conflict and resolution in your data.
 
 ## 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -6,9 +6,9 @@ If you finish early, complete the challenge section. If you're feeling confident
 
 1. Open the starter file, and slice `prop_assessments` DataFrame by **LOCALTOTAL**, **USEDESC**, **TOTALROOMS**, **BEDROOMS**, and **FULLBATHS**.
 
-2. Use the parallel categories function to plot the data. Color code the lines based on the LOCALTOTAL field. Hint: Make sure to include the `dimensions` and `color` attributes.
+2. Use the parallel categories function to plot the data. Colour code the lines based on the LOCALTOTAL field. Hint: Make sure to include the `dimensions` and `colour` attributes.
 
-3. Sort the plot so that BEDROOMS**, **TOTALROOMS, and FULLBATHS are sorted in ascending order.
+3. Sort the plot so that **,BEDROOMS**, **TOTALROOMS**, and **,FULLBATHS**, are sorted in ascending order.
 
 4. Explore the data and try to spot various trends or patterns in the data.
 
@@ -24,8 +24,8 @@ Consider the questions below when thinking about the story.
 
 * Are there any identifiable patterns at the dimension level?
 * How many bedrooms and full bathrooms do single-family homes tend to have?
-* When there are three bedrooms, how many full bathrooms are there usually?
+* How many full bathrooms are usually in a three-bedroom property?
 
+---
 
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

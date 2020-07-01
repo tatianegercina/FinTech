@@ -38,7 +38,7 @@ Open the [starter file](Unsolved/condition-control-flow-02.py) and perform the f
 
 3. Create a variable called `c2_species` and have it equal to "mouse".
 
-4. Create a variable called `c2_profession` and have it equal "Accountant".
+4. Create a variable called `c2_profession` and have it equal to "Accountant".
 
 5. Create a variable called `c2_salary` and have it equal to 70000.
 

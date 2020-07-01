@@ -12,8 +12,6 @@
 
 * [Instructions](../../02-Homework/05-APIs/Instructions/README.md)
 
-- - -
+---
 
-### Copyright
-
-Trilogy Education Services © 2019. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

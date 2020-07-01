@@ -1,6 +1,6 @@
 # Portfolio Planner
 
-This activity is a two-part mini-project where you will work in pairs to research a group of ten stocks and perform an analysis of a $10,000 investment in the portfolio over time.
+This activity is a two-part mini-project where you will work in pairs to research a group of 10 stocks and perform an analysis of a $10,000 investment in the portfolio over time.
 
 ## Part 1: Portfolio Optimization via Risk Evaluation
 
@@ -17,13 +17,13 @@ Harold has been asked to research the following ten stocks:
 * Western Digital (WDC)
 * Westrock (WRK)
 
-Harold has been tasked with sorting stocks by risk/volatility, filtering out the top five stocks with the highest volatility and assigning the remaining stocks portfolio weights of 0.5, 0.2, 0.15, 0.10, and 0.05 (from least risk to most risk). He also needs to show the returns over the time of a hypothetical $10,000 investment in such a portfolio.
+Harold has been tasked with sorting stocks by risk/volatility, filtering out the top five stocks with the highest volatility and assigning the remaining stocks portfolio weights of 0.5, 0.2, 0.15, 0.10, and 0.05 (from least risk to most risk). He also needs to show the returns over time of a hypothetical $10,000 investment in such a portfolio.
 
-Use the Pandas library to help Harold determine the risk profile of the ten stocks, filter out the top-five highly volatile stocks, assign portfolio weights to each corresponding stock, and plot the returns of a $10,000 investment in such a portfolio over time.
+Use the Pandas library to help Harold determine the risk profile of the 10 stocks, filtering out the top five highly volatile stocks, assigning portfolio weights to each corresponding stock, and plotting the returns of a $10,000 investment in such a portfolio over time.
 
 ### Instructions - Part 1
 
-Using the starter file, complete the following steps.
+Using the starter file, complete the following steps:
 
 1. Import libraries and dependencies.
 
@@ -68,9 +68,9 @@ To plot the returns of a $10,000 investment, multiply the initial investment by 
 
 ## Part 2: Portfolio Optimization via Correlation and Return-to-Risk (Sharpe Ratio) Evaluations
 
-Harold has been asked to revisit the ten stocks that were researched in Part 1 of this activity.
+Harold has been asked to revisit the 10 stocks that were researched in Part 1 of this activity.
 
-Specifically, upper management wants Harold to go beyond just evaluating stocks by volatility/risk and create a more optimized portfolio with the following characteristics:
+Specifically, upper management wants Harold to go beyond just evaluating stocks by volatility/risk, and create a more optimized portfolio with the following characteristics:
 
 * Equal-weighted allocations
 
@@ -86,9 +86,9 @@ Use the Pandas library to help Harold construct an optimized portfolio of stocks
 
 Using the starter file, complete the following steps:
 
-1. Reset the DataFrame for daily returns of the ten stocks. Use the `pct_change` function to calculate and reassign a new DataFrame of daily returns.
+1. Reset the DataFrame for daily returns of the 10 stocks. Use the `pct_change` function to calculate and reassign a new DataFrame of daily returns.
 
-2. Use the `corr` function and the `heatmap` function from the `seaborn` library to calculate and visualize the stock return correlations for each stock pair.
+2. Use the `corr` function and the `heatmap` function from the `Seaborn` library to calculate and visualize the stock return correlations for each stock pair.
 
 3. Drop highly correlated stocks and keep only non-correlated stocks from the DataFrame (two stocks should be dropped).
 
@@ -112,7 +112,7 @@ Using the starter file, complete the following steps:
 
 8. Assess the investment potential of the original unoptimized portfolio:
 
-    * Set an equal weight for each stock in an unoptimized portfolio (all ten stocks). Use the `dot` function to multiply weights by each stock's daily returns to output the unoptimized portfolio's daily returns.
+    * Set an equal weight for each stock in an unoptimized portfolio (all 10 stocks). Use the `dot` function to multiply weights by each stock's daily returns to output the unoptimized portfolio's daily returns.
 
     * Calculate the unoptimized stock portfolio's cumulative returns, and then multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
 
@@ -120,7 +120,7 @@ Using the starter file, complete the following steps:
 
 ### Hint
 
-Breathe easy! Take this activity one step at a time. Remember that this is the culminating activity of the Pandas lessons. Think about the bigger picture in terms of what makes a particular stock portfolio a good investment.
+Breathe easy! Take this activity one step at a time. Remember: this is the culminating activity of the Pandas lessons. Think about the bigger picture in terms of what makes a particular stock portfolio a good investment.
 
 ---
 

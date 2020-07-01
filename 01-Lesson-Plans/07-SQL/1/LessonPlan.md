@@ -40,11 +40,11 @@ By the end of today's class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1xv6ebYYBpDpQAlB4EOxWeRcdOdZPDSp5oe8d27baU-w/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [7.1 Lesson Slides](https://docs.google.com/presentation/d/1cpWRm5GiT87x8a1u3Ve_Lgr1fhnup3CGHpcqIJ0rCaE/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, select "Download as," and then choose "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and select "Make a copy...".
 
 * The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
@@ -52,9 +52,9 @@ By the end of today's class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students to class and congratulate them on making it this far in the course! At this point, students are only one unit away from their first project, and so they should feel proud of what they have accomplished so far!
+Welcome students to class and congratulate them on making it this far in the course! At this point, students are only one unit away from their first project, so they should feel proud of what they have accomplished so far!
 
-Open the slideshow and review the learning outcomes, class objectives, and a brief background of the SQL unit:
+Open the slideshow and review the learning outcomes and class objectives. Then, give a brief background of the SQL unit:
 
 * Today's lesson will introduce students to the most popular database management language: SQL.
 
@@ -86,6 +86,8 @@ Slack out the following resources:
 
 * [SQL Installation Guides](../Supplemental/InstallationGuides) outlining how to install PostgreSQL and pgAdmin for either Mac or Windows (if not done already).
 
+---
+
 ### 3. Instructor Do: Create a Database (5 min)
 
 In this activity, you will walk students through the process of creating a database in PostgreSQL.
@@ -114,9 +116,19 @@ At this point, show students that there is a new database listed in the left-han
 
 Answer any questions before moving on.
 
+---
+
 ### 4. Instructor Do: Create a Table (10 min)
 
 In this activity, you will walk students through the process of creating a table and manipulating its contents in PostgreSQL.
+
+**Files:**
+
+* [query.sql](Activities/02-Ins_Creating_Tables/Solved/query.sql)
+
+* [schema.sql](Activities/02-Ins_Creating_Tables/Solved/schema.sql)
+
+* [seed.sql](Activities/02-Ins_Creating_Tables/Solved/seed.sql)
 
 Now that there is a database on the server, it's time to dig into the real meat of SQL and start creating tables within the new database!
 
@@ -140,8 +152,8 @@ CREATE TABLE customer (
   age INT,
   address VARCHAR(50),
   city VARCHAR(50),
-  state CHAR(2),
-  zip_code CHAR(5)
+  province CHAR(2),
+  postal_code CHAR(6)
 );
 ```
 
@@ -159,9 +171,9 @@ CREATE TABLE customer (
 
 * `city VARCHAR(50)` creates a `city` column that represents the city in which the customer lives. The column values can hold character strings of up to 50 characters.
 
-* `state VARCHAR(10)` creates a `state` column that represents the state ticker in which the customer lives. The column values must be character strings of 2 characters.
+* `province CHAR(2)` creates a `province` column that represents the province ticker in which the customer lives. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values *must* be character strings of 2 characters.
 
-* `zip_code CHAR(5)` creates `zip_code` column which represents the postal zip code of the customer. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values *must* be character strings of 5 characters.
+* `postal_code CHAR(6)` creates a `postal_code` column which represents the postal code of the customer. The CHAR datatype ensures that the column values *must* be character strings of 6 characters.
 
 **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
 
@@ -197,12 +209,12 @@ Type the following code, while explaining what it does, line by line:
 
 ```sql
 INSERT INTO customer
-  (first_name, last_name, gender, age, address, city, state, zip_code)
+  (first_name, last_name, gender, age, address, city, province, postal_code)
 VALUES
-  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-  ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
-  ('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
-  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'NL', 'A1A0A4'),
+  ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'QC', 'G1A0B1'),
+  ('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AB', 'T2P1B4'),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'NU', 'X0A0H0');
 
 SELECT *
 FROM customer;
@@ -243,11 +255,15 @@ Explain the following points:
 
 Answer any questions before moving on.
 
+---
+
 ### 5. Student Do: Creating Tables (15 min)
 
 In this activity, students will use pgAdmin to recreate and query a table from an image provided.
 
 **Instructions:** [README.md](Activities/03-Stu_Creating_Tables/README.md)
+
+---
 
 ### 6. Instructor Do: Review Creating Tables (5 min)
 
@@ -259,7 +275,7 @@ In this activity, students will use pgAdmin to recreate and query a table from a
 
 * [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql)
 
-Create a new database named `state_info` in pgAdmin. Then use the the schema.sql and seed.sql files to create and populate the `states` table. Use the query.sql file to walk through the correct queries.
+Create a new database named `state_info` in pgAdmin. Then use the the `schema.sql` and `seed.sql` files to create and populate the `states` table. Use the query.sql file to walk through the correct queries.
 
 * To create a new table, specify the data type for each column.
 
@@ -344,6 +360,8 @@ Now, walk through the solutions for the third and final bonus questions.
 
 Answer any questions before moving on.
 
+---
+
 ### 7. Instructor Do: The Value of Unique Values (5 min)
 
 In this activity, students are introduced to the concept of duplicate and unique values and how to properly remove duplicate records through the use of unique identifiers.
@@ -360,10 +378,10 @@ Using the `customer` table from the `example_db` database, insert the duplicate 
 
  ```sql
 INSERT INTO customer
-  (first_name, last_name, gender, age, address, city, state, zip_code)
+(first_name, last_name, gender, age, address, city, province, postal_code)
 VALUES
-  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'NL', 'A1A0A4'),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'NU', 'X0A0H0');
 
 SELECT *
 FROM customer;
@@ -403,20 +421,20 @@ CREATE TABLE customer (
   age INT,
   address VARCHAR(50),
   city VARCHAR(50),
-  state CHAR(2),
-  zip_code CHAR(5)
+  province CHAR(2),
+  postal_code CHAR(6)
 );
 
 -- Insert duplicated data back into the re-created table
 INSERT INTO customer
-  (first_name, last_name, gender, age, address, city, state, zip_code)
+(first_name, last_name, gender, age, address, city, province, postal_code)
 VALUES
-  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-  ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
-  ('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
-  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673),
-  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'NL', 'A1A0A4'),
+  ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'QC', 'G1A0B1'),
+  ('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AB', 'T2P1B4'),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'NU', 'X0A0H0'),
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'NL', 'A1A0A4'),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'NU', 'X0A0H0');
 
 -- Query all fields from the table
 SELECT *
@@ -470,11 +488,15 @@ Explain the following points:
 
 Answer any remaining questions before moving on.
 
+---
+
 ### 8. Student Do: Making and Using an ID (10 min)
 
 In this activity, students will recreate a table and then query, insert, and update data.
 
 **Instructions:** [README.md](Activities/05-Stu_Making_IDs/README.md)
+
+---
 
 ### 9. Instructor Do: Review Making and Using an ID (10 min)
 
@@ -563,6 +585,8 @@ In the query tool, rerun `SELECT * FROM mortgage` to verify that data has been i
 
 Let the class know that the larger a dataset is, the longer it will take for pgAdmin to import values.
 
+---
+
 ### 12. Student Do: Customer Demographics (10 min)
 
 In this activity, students will create a new table and import data from a CSV file.
@@ -572,6 +596,8 @@ In this activity, students will create a new table and import data from a CSV fi
 * [customer.csv](Activities/07-Stu_Customer_Demographics/Resources/customer.csv)
 
 * **Instructions:** [README.md](Activities/07-Stu_Customer_Demographics/README.md)
+
+---
 
 ### 13. Instructor Do: Review Customer Demographics (5 min)
 
@@ -596,6 +622,8 @@ Walk through the solutions to the bonus questions, touching on the following poi
 * `AND` statements can be used more than once for more specific results.
 
 Answer any questions before moving on.
+
+---
 
 ### 14. Instructor Do: CRUD (5 min)
 
@@ -656,6 +684,8 @@ Introduce the class to an additional method of reading the data: wildcards.
 
 Answer any questions before moving on.
 
+---
+
 ### 15. Student Do: Using CRUD (20 min)
 
 In this activity, students will utilize CRUD operations on the provided data.
@@ -669,6 +699,8 @@ In this activity, students will utilize CRUD operations on the provided data.
 Let the class know that they will be using the `WHERE` clause in this activity.
 
 This activity will require students to do some research. Links are provided to help them search for solutions to problems they are likely to encounter.
+
+---
 
 ### 16. Instructor Do: Review Using CRUD (5 min)
 
@@ -689,6 +721,8 @@ Open a query tool in `sales_db` and copy and paste the code from schema.sql and 
 * An average of all values in a specified column can be calculated using the `AVG()` function.
 
 * Columns can be added to pre-existing tables using the ALTER TABLE statement.
+
+---
 
 ### 17. Instructor Do: Joins (15 min)
 
@@ -779,6 +813,8 @@ Slack out the link to this explanation of Postgres [joins](https://www.tutorials
 
 Demonstrate a couple of different joins that can be performed. Then answer any questions before moving on to the next activity.
 
+---
+
 ### 18. Student Do: Joining the Big Banks (20 min)
 
 In this activity, students will be using joins to query payment information and associated bank information via a common bank routing number.
@@ -790,6 +826,8 @@ In this activity, students will be using joins to query payment information and 
 * [payments.csv](Activities/10-Stu_Joins/Resources/payments.csv)
 
 **Instructions:** [README.md](Activities/10-Stu_Joins/README.md)
+
+---
 
 ### 19. Instructor Do: Review Joining the Big Banks (5 min)
 
@@ -815,7 +853,7 @@ Open the query.sql file and copy the code. Then open a new query tool and paste 
   INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
   ```
 
-* A left join returns all of the records from the left table regardless of matching or unmatching records on the right table.
+* A left join returns all of the records from the left table, regardless of matching or unmatching records on the right table.
 
   ```sql
   SELECT *
@@ -831,7 +869,7 @@ Open the query.sql file and copy the code. Then open a new query tool and paste 
   RIGHT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
   ```
 
-* A full outer join returns all of the records from both the left and right tables, regardless of matching or unmatching in either side.
+* A full outer join returns all of the records from both the left and right tables, regardless of matching or unmatching on either side.
 
   ```sql
   -- Perform a FULL OUTER JOIN
