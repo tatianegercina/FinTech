@@ -437,7 +437,7 @@ Ask if there are any questions before moving forward.
 
 In this activity, students and the instructor will engage in a facilitated discussion evaluating the results of logistic regression predictions. The focus of this activity will be the evaluation of diabetes predictions.
 
-Go to the slideshow, [NAVIGATE TO SECTION X] and highlight the following:
+Go to the slideshow and highlight the following:
 
 * We used a logistic regression model to predict whether or not an individual has diabetes, based on a set of diagnostic metrics provided as a data set. The logistic regression model was validated using a scoring feature, revealing that the model is somewhat accurate. However, can you trust that the prediction is correct?
 
