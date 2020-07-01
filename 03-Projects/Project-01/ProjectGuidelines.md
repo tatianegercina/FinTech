@@ -4,23 +4,23 @@ This document contains guidelines, requirements, and suggestions for Project 1.
 
 ## Team Effort
 
-Before anything, remember that projects are a group effort: Working closely with your teammates is a requirement. This helps teach real-world collaborative workflows and enables you to tackle more difficult problems than you'd be able to working alone.
+First and foremost, remember that projects are a group effort, and working closely with your teammates is a requirement. In addition to learning real-world collaborative workflow, this will allow you to tackle more complex problems than working alone.
 
-In other words, working in groups allows you to **work smart** and **dream big**. Take advantage of it!
+In other words, team collaboration helps you to **work smart** and **dream big**. Take advantage of it!
 
 ## Project Proposal
 
-Before you start writing any code, your group should outline the scope and purpose of your project. This helps provide direction and prevent [scope creep](https://en.wikipedia.org/wiki/Scope_creep).
+Before you start writing any code, your group should outline the scope and purpose of your project. This helps provide direction and prevents [scope creep](https://en.wikipedia.org/wiki/Scope_creep).
 
 Write this as a brief summary of your interests and intent, including:
 
 * The kind of data you'd like to work with and the field you're interested in (e.g., trading, quantitative analysis).
 
-* The kinds of questions you'll be asking of that data.
+* The kind of questions you'll be asking of that data.
 
-* Possible source for such data.
+* Possible sources for such data.
 
-This constitutes your Project Proposal and Outline, and it should look something like this:
+This constitutes your Project Proposal and Outline, which should look similar to this:
 
 > Our project is to uncover patterns in credit card fraud. We'll examine relationships between types of transactions and location; purchase prices and times of day; trends in purchases over the course of the year; and related questions, as the data admits.
 
@@ -28,11 +28,13 @@ This constitutes your Project Proposal and Outline, and it should look something
 
 Once your group has written an outline, it's time to start hunting for data. You are free to use data from any source, but we recommend the following curated sources of high-quality data:
 
-* [data.world](https://data.world/)
+* [data.world](https://data.world/datasets/canada)
 
-* [Kaggle](https://www.kaggle.com/)
+* [Kaggle](https://www.kaggle.com/datasets?search=canada)
 
-* [Data.gov](https://www.data.gov)
+* [TSX Stock Exchange](https://www.tsx.com/trading/market-data-and-statistics)
+
+* [Open Data](https://open.canada.ca/en/open-data)
 
 * [Public APIs](https://github.com/abhishekbanthia/Public-APIs)
 
@@ -40,9 +42,9 @@ Once your group has written an outline, it's time to start hunting for data. You
 
 * [Medium APIs List](https://medium.com/@benjamin_libor/a-curated-collection-of-over-150-apis-to-build-great-products-fdcfa0f361bc)
 
-Chances are you'll have to update your Project Outline as you explore the available data. **This is fine**—adjustments like this are part of the process! Just make sure everyone in the group is up-to-speed on the goals of the project as you make changes.
+Chances are you'll have to update your Project Outline as you explore the available data. **This is fine**—adjustments like this are part of the process! Just make sure everyone in the group is up to speed on the goals of the project as changes are made.
 
-Make sure that your data is not too large for local analysis. **Big Data** datasets are difficult to manage locally, so consider a subset of that data or a different dataset altogether.
+Make sure that your data is not too large for local analysis. **Big Data** datasets are difficult to manage locally, so consider a subset of that data, or a different dataset altogether.
 
 ## Data Cleanup & Analysis
 
@@ -62,11 +64,11 @@ Finally, be sure that your projects meet the [technical requirements](TechnicalR
 
 ## Presentation
 
-After you've analyzed your data to your satisfaction, you'll put together a presentation to show off your work, explain your process, and discuss your conclusions.
+After the data is analyzed to satisfaction, assemble a presentation in order to show the work, explain the process, and discuss conclusions.
 
-This presentation will be delivered as a slideshow, and it should give your classmates and instructional staff an overview of your work. PowerPoint, Keynote, and Google Slides are all acceptable for building slides.
+The presentation will take the form of a slideshow, and should give classmates and instructional staff an overview of your work. PowerPoint, Keynote, and Google Slides are all acceptable for building slides.
 
-As long as your slides meet the [presentation requirements](PresentationRequirements.md), you are free to structure the presentation however you wish, but students are often successful with the format laid out in the [presentation guidelines](PresentationGuidelines.md).
+As long as the slides meet the [presentation requirements](PresentationRequirements.md), the presentation may be structured however you wish. Many students find the following format helpful [presentation guidelines](PresentationGuidelines.md).
 
 ## Submission
 
@@ -74,4 +76,4 @@ In addition to submitting your project on Bootcamp Spot individually, please [fi
 
 - - -
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

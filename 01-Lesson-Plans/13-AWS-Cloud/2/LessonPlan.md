@@ -31,7 +31,8 @@ By the end of class, students will be able to:
 * There are a few activities that require setup. Have the class follow along and ask questions as you go.
 
 ### Sample Class Video (Highly Recommended)
-* To watch an example class lecture, go here: [13.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30a703ee-9c5d-497a-9348-aaee016135c6) Note that this video may not reflect the most recent lesson plan.
+
+* To watch an example class lecture, go here: [13.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=88dce2d4-e8b1-4a5d-a7fc-abd40178e01f) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
 
@@ -254,7 +255,7 @@ While the notebook instance is being created, explain to students that AWS charg
 
 Explain to students that it's possible to code a Jupyter Notebook from scratch on this Amazon SageMaker's notebook instance, but they can also open an existing Jupyter Notebook. Slack out to students the `monte_carlo.ipynb` starter file, and continue the demo as follows.
 
-* This demo code runs a Monte Carlo simulation that uses the IEX API, so ask students to have their API key at hand.
+* This demo code runs a Monte Carlo simulation that uses the Alpaca API, so ask students to have their API keys at hand.
 
 * In your Amazon SageMaker notebook instance, in left icon menu, click on the Upload icon (arrow up) and select the `monte_carlo.ipynb` notebook to upload.
 

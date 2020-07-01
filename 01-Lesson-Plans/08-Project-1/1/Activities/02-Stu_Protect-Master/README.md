@@ -1,4 +1,4 @@
-# Students Do: Protect Master Branch
+# Student Do: Protect Master Branch
 
 In this activity, we will protect our repo's master branch.
 
@@ -10,7 +10,7 @@ In this activity, we will protect our repo's master branch.
 
 * Under "Branch Protection Rules" select "master" from the dropdown.
 
-* You should be presented with some options, check off the following:
+* You should be presented with some options. Check off the following:
 
   * "Protect this branch"
 
@@ -25,3 +25,7 @@ In this activity, we will protect our repo's master branch.
 ### Hints
 
 * Ask an instructor or TA for assistance if you get stuck!
+
+- - -
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
