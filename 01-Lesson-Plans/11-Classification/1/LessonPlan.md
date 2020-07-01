@@ -88,7 +88,7 @@ By the end of class, students will be able to:
 
 Begin class with an introduction to **classification** and its use cases within FinTech, including the who, what, when, why, and how of FinTech classification.
 
-Open the slideshow, [[navigate to Section X]] and start class by welcoming students back to the second week of machine learning!
+Open the slideshow and start class by welcoming students back to the second week of machine learning!
 
 * Explain that Unit 11 kicks off the second week of machine learning and advanced analytics. Highlight that this unit will focus on using machine learning algorithms and pipelines to draw categorical conclusions and predictions about probable financial outcomes.
 
