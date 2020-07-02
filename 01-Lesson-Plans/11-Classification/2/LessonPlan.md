@@ -149,7 +149,7 @@ Continue the demo by loading the dataset on the `loans_df` DataFrame and highlig
     loans_df["month_le"] = label_encoder.transform(loans_df["month"])
     ```
 
-Show the DataFrame's head, and show that there is actually a problem with using `LabelEncoder` for all of the categorical data in this DataFrame. Explain that there is a contextual issue in this particular case: the number assigned to some months doesn't match the actual month number (e.g., `July` is encoded as `5`).
+Display the DataFrame's head, and show that there is actually a problem with using `LabelEncoder` for all of the categorical data in this DataFrame. Explain that there is a contextual issue in this particular case: the number assigned to some months doesn't match the actual month number (e.g., `July` is encoded as `5`).
 
 ![Months' names encoded as numbers with Label Encoder](Images/categorical-data-3.png)
 
@@ -179,7 +179,7 @@ months_num = {
 loans_df["month_num"] = loans_df["month"].apply(lambda x: months_num[x])
 ```
 
-* The resulting DataFrame, contains the encoded months' names with a more meaningful numeric value for this context.
+* The resulting DataFrame contains the encoded months' names with a more meaningful numeric value for this context.
 
     ![Meaningful encoded months' names](Images/categorical-data-4.png)
 
@@ -303,7 +303,7 @@ Walkthrough the solution and highlight the following:
 
   ![Binary Encoding sample](Images/encoding-categorical-1.png)
 
-* Finally, the preprocessed DataFrame is saved as a `CSV` file named `sba_loans_encoded.csv` for forthcoming usage.
+* Finally, the preprocessed DataFrame is saved as a `CSV` file named `sba_loans_encoded.csv` for later usage.
 
 Answer any questions before moving on.
 
