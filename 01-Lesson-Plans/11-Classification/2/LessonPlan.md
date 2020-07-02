@@ -319,7 +319,7 @@ Open the lesson slides, go to the _Walking into the Algorithms Forest_ section, 
 
 * These kinds of algorithms can be used to solve classification or regression problems.
 
-* These algorithms are quite often used in finance for assessing risk, preventing fraud, or fighting money laundering.
+* These algorithms are frequently used in finance for assessing risk, preventing fraud, or fighting money laundering.
 
 * In contrast to linear models, tree-based algorithms can map non-linear relationships in data.
 
@@ -357,9 +357,9 @@ Start by opening the lesson slides, move to the _Decision Trees_ section, and hi
 
 * Decision trees encode a series of `True/False` questions.
 
-* `True/False` questions can be represented with a series of if/else statements
+* `True/False` questions can be represented with a series of if/else statements.
 
-* There are some key concepts that it is important to know while working with decision trees:
+* There are some key concepts that are important to know when working with decision trees:
 
   * **Root Node:** A node that is divided into two or more homogeneous sets and represents the entire population or sample data. 
   * **Parent Node:** A node that is divided into sub-nodes.
@@ -478,7 +478,7 @@ Finally, comment to students that an interesting way to analyze a decision tree 
 
 ![Decision tree visualization](Images/decision-trees-2.png)
 
-Explain to students that a very large and complex tree shape like this probably indicates that the model is overfitted to this specific data and will not generalize well to other models.
+Explain to students that a very large and complex tree shape like this probably indicates that the model is overfitted to this specific data, and will not generalize well to other models.
 
 * To ease the tree visualization, the image can be saved as `PDF` or `PNG`.
 
