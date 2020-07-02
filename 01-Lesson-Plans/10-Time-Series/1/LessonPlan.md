@@ -106,9 +106,7 @@ Open the slideshow, navigate to the section on machine learning, and highlight t
 
 * Emphasize that, in a nutshell, machine learning is about developing a statistical or algorithmic model of data that can be used automatically to make predictions or decisions about new data.
 
-* Explain that machine learning algorithms have transformed a range of industries, including finance, healthcare, agriculture, marketing, homeland security, and space exploration, to name a few. 
-
-Machine learning is being used to predict:
+* Explain that machine learning algorithms have transformed a range of industries, including finance, healthcare, agriculture, marketing, homeland security, and space exploration, to name a few. Machine learning is being used to predict:
 
   * Loan eligibility
 
@@ -223,7 +221,7 @@ In addition, we will be:
 Open the notebook and run the following lines of code:
 
   ```python
-  df = pd.read_csv('maple_syrup_sales.csv')
+  df = pd.read_csv('liquor_sales.csv')
   df.head()
   df.info()
   ```
@@ -241,7 +239,7 @@ Open the notebook and run the following lines of code:
 Explain how to read a time series data set:
 
 ```python
-df2 = pd.read_csv(Path("../Resources/maple_syrup_sales.csv"), parse_dates=True, index_col="datetime")
+df2 = pd.read_csv('liquor_sales.csv', parse_dates=True, index_col='datetime')
 ```
 
 * There are two additional arguments here. The first, `parse_dates=True`, formats the column containing the datetime information as `datetime`.
