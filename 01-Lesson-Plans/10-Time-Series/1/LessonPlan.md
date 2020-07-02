@@ -397,7 +397,7 @@ Show the next image in the notebook:
 Next, explain that the code below decomposes the maple syrup sales data.
 
   ```python
-  decomposed = seasonal_decompose(df['maple_syrup_sales'], model='multiplicative')
+  decomposed = seasonal_decompose(df['liquor_sales'], model='multiplicative')
   ```
 
 * The model is specified as multiplicative, because the seasonal fluctuation (the spikes) increases with the series.
