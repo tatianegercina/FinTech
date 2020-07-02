@@ -68,6 +68,8 @@ Describe to students what they will be learning today:
 
 ### 2. Instructor Do: Stationarity and Non-Stationarity (10 min)
 
+**Corresponding Activity:** [01-Ins_Stationarity](Activities/01-Ins_Stationarity)
+
 In this activity, you will define stationarity, a key concept in time series modeling.
 
 **Files:**
@@ -145,6 +147,8 @@ Open the notebook and show the code to convert from a non-stationary dataset to 
 - - -
 
 ### 3. Students Do: Stationarity (15 min)
+
+**Corresponding Activity:** [02-Stu_Stationarity](Activities/02-Stu_Stationarity)
 
 In this activity, students will perform techniques to make stationary a non-stationary time series.
 
@@ -332,6 +336,8 @@ Reiterate that, despite the possibly intimidating mathematical formula, the idea
 
 ### 6. Instructor Do: ARMA in Practice (10 min)
 
+**Corresponding Activity:** [03-Ins_ARMA](Activities/03-Ins_ARMA)
+
 **File:**
 
   * [ARMA.ipynb](Activities/03-Ins_ARMA/Solved/ARMA.ipynb)
@@ -431,6 +437,8 @@ Finally, highlight a few important features of the model's summary:
 
 ### 7. Students Do: Yields (15 min)
 
+**Corresponding Activity:** [04-Stu_Yields](Activities/04-Stu_Yields)
+
 In this activity, students will create an ARMA model on yield data.
 
 **Files:**
@@ -514,6 +522,8 @@ Explain that the model can be used to make predictions:
 - - -
 
 ### 10. Instructor Do: ARIMA (15 mins)
+
+**Corresponding Activity:** [05-Ins_ARIMA](Activities/05-Ins_ARIMA)
 
 In this activity, in addition to describing the ARIMA model, you will elucidate the use of ACF and PACF plots, as well as AIC and BIC, in identifying the order of an ARIMA model.
 
@@ -622,6 +632,8 @@ Send the following link to students for more information on the order of an ARIM
 
 ### 11. Students Do: An ARIMA and a Leg (15 min)
 
+**Corresponding Activity:** [06-Stu_ARIMA_Leg](Activities/06-Stu_ARIMA_Leg)
+
 **Files:**
 
   * [README.md](Activities/06-Stu_ARIMA_Leg/README.md)
@@ -663,6 +675,8 @@ Answer any remaining questions before moving on.
 - - -
 
 ### 13. Instructor Do: GARCH (15 min)
+
+**Corresponding Activity:** [07-Ins_GARCH](Activities/07-Ins_GARCH)
 
 **File:**
 
@@ -796,6 +810,8 @@ Show the plot of the volatility forecast:
 - - -
 
 ### 14. Students Do: Euro-USD Volatility (10 min)
+
+**Corresponding Activity:** [08-Stu_USD](Activities/08-Stu_USD)
 
 **Files:**
 
