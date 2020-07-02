@@ -197,6 +197,8 @@ Ask students if they have any questions before moving on.
 
 ### 4. Instructor Do: Time Series Basics (10 min)
 
+**Corresponding Activity:** [01-Ins_Time_Series_Basics](Activities/01-Ins_Time_Series_Basics)
+
 **File:** [datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
 
 Explain to students that over the next several weeks, we will be learning about many different machine learning models and techniques, but we will start with Time Series Models. Time Series Models are very prevalent in the financial world and are very useful models for analyzing time series data.
@@ -303,6 +305,8 @@ Next, explain that the `resample()` method groups rows by a specified time frame
 
 ### 5. Students Do: Time Series Basics (15 min)
 
+**Corresponding Activity:** [02-Stu_Time_Series_Basics](Activities/02-Stu_Time_Series_Basics)
+
 In this activity, students will practice the basics of time series manipulation in pandas.
 
 **Files:**
@@ -350,6 +354,8 @@ Answer any remaining questions before moving on.
 - - -
 
 ### 7. Instructor Do: Time Series Decomposition (10 min)
+
+**Corresponding Activity:** [03-Ins_Decomposition](Activities/03-Ins_Decomposition)
 
 * **File:** [decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
 
@@ -420,6 +426,8 @@ Finally, explain that the library used in the notebook is more useful as an illu
 - - -
 
 ### 9. Instructor Do: EWMA and Hodrick-Prescott Filter (15 min)
+
+**Corresponding Activity:** [04-Ins_Hodrick_Prescott](Activities/04-Ins_Hodrick_Prescott)
 
 In this activity, you will introduce EWMA, or exponentially-weighted moving average. You will also introduce the Hodrick-Prescottt filter, a tool that captures trends by minimizing local fluctuations.
 
@@ -515,6 +523,8 @@ Finally, show the plots of the trend and noise components after filtering:
 
 ### 10. Students Do: You've Got a FRED (15 min)
 
+**Corresponding Activity:** [05-Stu_Hodrick_Prescott](Activities/05-Stu_Hodrick_Prescott)
+
 In this activity, students will use the Hodrick-Prescott filter to identify macroeconomic trends in the United States in the period from 2004 to 2010.
 
 **Files:**
@@ -551,6 +561,8 @@ If time allows, take a moment to compare and contrast the H-P filter:
 - - -
 
 ### 12. Instructor Do: Autocorrelation (15 min)
+
+**Corresponding Activity:** [06-Ins_Auto_Correlation](Activities/06-Ins_Auto_Correlation)
 
 Before diving into the code, introduce the concept of autocorrelation with the first few slides on it:
 
@@ -704,6 +716,8 @@ Finally, summarize the key points of the activity:
 - - -
 
 ### 13. Students Do: Euro ETFs (15 min)
+
+**Corresponding Activity:** [07-Stu_ETF](Activities/07-Stu_ETF)
 
 In this activity, students will examine a time series of bid-ask spreads of an ETF for autocorrelation.
 
