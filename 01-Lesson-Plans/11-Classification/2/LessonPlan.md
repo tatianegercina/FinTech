@@ -496,7 +496,7 @@ Answer any questions before moving on.
 
 ---
 
-### 7. Students Do: Predicting Fraudulent Loans Applications (10 min)
+### 7. Student Do: Predicting Fraudulent Loans Applications (10 min)
 
 In this activity, students will create a decision tree model to predict fraudulent loan applications.
 
@@ -533,7 +533,7 @@ Open the solution, and live code the review by highlighting the following:
   from IPython.display import Image
   ```
 
-* The data from the `sba_loans_encoded.csv` file is loaded in a pandas DataFrame called `df_loans`.
+* The data from the `sba_loans_encoded.csv` file is loaded in a Pandas DataFrame called `df_loans`.
 
   ```python
   file_path = Path("../Resources/sba_loans_encoded.csv")
@@ -551,7 +551,7 @@ Open the solution, and live code the review by highlighting the following:
   y = df_loans["Default"].values.reshape(-1, 1)
   ```
 
-* The data is split into training and testing set using the `train_test_split` method from `sklearn`.
+* The data is split into a training and testing set using the `train_test_split` method from `sklearn`.
 
   ```python
   X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
@@ -571,7 +571,7 @@ Open the solution, and live code the review by highlighting the following:
   X_test_scaled = X_scaler.transform(X_test)
   ```
 
-Recall to students that the target data is not scaled since it contains the classes that you want to predict with the decision tree.
+Recall to students that the target data is not scaled, since it contains the classes that you want to predict with the decision tree.
 
 * Once the data is scaled, the decision tree model is created and fitted with the training data.
 
@@ -596,7 +596,7 @@ Recall to students that the target data is not scaled since it contains the clas
 
 Explain to students that despite the model's high accuracy, this model is not predicting all the fraudulent loan applications, as can be seen from the precision and recall values. This is why it is important to include the classification report when evaluating a classification model.
 
-Continue live coding the review by creating the model graph using the `pydotplus` library and highlight the following.
+Continue live coding the review by creating the model graph using the `pydotplus` library, and highlight the following.
 
 ```python
 # Create DOT data
@@ -631,33 +631,33 @@ In this activity, students will be introduced to ensemble learning, weak learner
 
 Navigate to the _Introduction to Ensemble Learning_ section of the slides. Highlight the following:
 
-* Address the class and tell them that if they were to take all of the classification models they have used so far and compared them, they would find that some algorithms performed better than others, as expected.
+* Tell the class that if they took all the classification models they have used thus far and compared them, they'd find that some algorithms performed better than others, which is to be expected.
 
-  * Indicate that even though some of the other algorithms performed worse, they were able to execute independently still and classify labels with decent accuracy.
+  * Indicate that even though some of the other algorithms performed worse, they were still able to execute independently, and classify labels with decent accuracy.
 
-  * Explain to students that they will come across algorithms that actually fail at learning adequately. These algorithms/classifiers are considered **weak learners**.
+  * Explain to students that they will come across algorithms that actually fail at learning adequately. These algorithms/classifiers are considered weak learners.
 
-Communicate that **weak learners** are a consequence of limited data to learn from. This may mean too few features, or the data provided does not allow for data points to be classified.
+Communicate that weak learners are a consequence of limited data to learn from. This may mean too few features, or the data provided does not allow for data points to be classified.
 
-* Provide more context around **weak learners** by defining them as algorithms/classifiers that are unable to learn from the data they are being provided accurately. This is why their predictions are only a little better than random chance. The classifiers can make predictions; however, their predictions are not representative of the relationship between inputs and targets.
+* Provide more context around weak learners by defining them as algorithms/classifiers that are unable to learn from the data they are being provided accurately. This is why their predictions are only a little better than random chance. While the classifiers can make predictions, they are not representative of the relationship between inputs and targets.
 
-* **Weak learners** are described as being only slightly better than random chance.
+* Weak learners are described as being only slightly better than random chance.
 
-Explain to students that **weak learners** are still valuable in machine learning.
+Explain to students that weak learners are still valuable in machine learning.
 
-* **Weak learners** are valuable because there are models that can combine many weak learners to create a more accurate and robust prediction engine. A single **weak learner** will make inaccurate and imprecise predictions. Combined **weak learners** can perform just as well as any other **strong learner**.
+* Weak learners are valuable because there are models that can combine many weak learners to create a more accurate and robust prediction engine. A single weak learner will make inaccurate predictions. Combined weak learners can perform just as well as any other strong learner.
 
-  * Classify this type of learning as an example of **ensemble learning**. **Ensemble models** help improve accuracy and robustness, as well as decrease variance.
+  * Classify this type of learning as an example of ensemble learning. Ensemble models help improve accuracy and robustness, as well as decrease variance.
 
-* Underscore that **weak learners** have to be combined using a specific algorithm. Example algorithms include **GradientBoostedTree** , **XGBoost**, and **Random Forests**.
+* Underscore that weak learners have to be combined using a specific algorithm. Example algorithms include GradientBoostedTree, XGBoost, and Random Forests.
 
-* Ask students if they have any guess as to what can be done to make a **weak learner** perform more accurately?
+* Ask students if they can guess what can be done to make a weak learner perform more accurately?
 
-  * **Answer** Boost **weak learners** with other algorithms for an **ensemble learning** approach.
+  * **Answer** Boost weak learners with other algorithms for an ensemble learning approach.
 
-* Indicate to students that a decision tree could be classified as a **weak learner**. Ask students what they think would make a decision tree a weak learner:
+* Tell students that a decision tree could be classified as a weak learner. Ask students what they think would make a decision tree a weak learner.
 
-  * **Answer** The decision tree having only one split (i.e., a stump)
+  * **Answer** The decision tree having only one split (i.e., a stump).
 
 Continue the presentation by introducing the random forest algorithm and highlight the following:
 
@@ -665,11 +665,11 @@ Continue the presentation by introducing the random forest algorithm and highlig
 
 * In a random forest, each tree is much simpler because it is built from a subset of the data.
 
-* These simple trees are created by randomly sampling the data and creating a decision tree for only that small portion of data. This is known as a **weak classifier** because it is only trained on a small piece of the original data and by itself is only slightly better than a random guess. However, many _slightly better than average_ small decision trees can be combined to create a **strong classifier**, which has much better decision making power.
+* These simple trees are created by randomly sampling the data and creating a decision tree for only that small portion of data. This is known as a weak classifier, because it is only trained on a small piece of the original data and by itself is only slightly better than a random guess. However, many _slightly better than average_ small decision trees can be combined to create a strong classifier, which has much better decision-making power.
 
 * Some of the benefits of the random forest algorithm are:
 
-  * It is robust against overfitting because all of those weak classifiers are trained on different pieces of the data.
+  * It is robust against overfitting, because all of those weak classifiers are trained on different pieces of the data.
 
   * It can be used to rank the importance of input variables in a natural way.
 
