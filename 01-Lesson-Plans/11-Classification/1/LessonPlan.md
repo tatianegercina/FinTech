@@ -2,9 +2,9 @@
 
 ### Overview
 
-In the last unit, students learned how to use machine learning to predict and forecast time series outcomes. Students used statistical approaches, such as linear regression, **Hodrick-Prescott filter**, and **GARCH** and **EGARCH** models, to forecast investment returns, volatility, and out-of-sample predictions.
+In the last unit, students learned how to use machine learning to predict and forecast time series outcomes. Students used statistical approaches, such as linear regression, Hodrick-Prescott filter, and GARCH and EGARCH models, to forecast investment returns, volatility, and out-of-sample predictions.
 
-In Unit 11 students will dive deeper into statistics and machine learning by working with classification algorithms. **Classification** is the act of discovering whether or not a particular feature or element belongs to a given feature class/group. Classification derives categorical conclusions based off of classified/modelled data. By the end of this unit, students will be competent in the execution and evaluation of classification models (i.e., logistic regression and decision trees) for predicting categorical conclusions and outcomes.
+In Unit 11 students will dive deeper into statistics and machine learning by working with classification algorithms. Classification is the act of discovering whether or not a particular feature or element belongs to a given feature class/group. Classification derives categorical conclusions based off of classified/modelled data. By the end of this unit, students will be competent in the execution and evaluation of classification models (i.e., logistic regression and decision trees) for predicting categorical conclusions and outcomes.
 
 Today's class will walk students through two classification models/approaches: logistic regression and support vector machines (SVM). Both models are used to predict linear outcomes. Students will also learn how to use Scikit-learn, a Python data science package, to train to evaluate models and make them more efficient and effective in determining probability/outcome predictions.
 
@@ -50,7 +50,7 @@ By the end of class, students will be able to:
 
   * How to test algorithms/models and correctly handle false negatives and positives
 
-* This week's activities will use tools such as **imbalance-learn**, **Scikit-learn**, and the **Lending Club**.
+* This week's activities will use tools such as imbalance-learn, Scikit-learn, and the LendingClub.
 
   * Imbalance-learn and Scikit-learn will need to be added to everyone's Python environments, and modules will need to be installed. Students can consult the [classification ecosystem install guide](../Supplemental/Machine_Learning_Env_Setup_Guide.md) for steps on how to verify that both packages have been installed correctly.
 
@@ -86,13 +86,13 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome (5 min)
 
-Begin class with an introduction to **classification** and its use cases within FinTech, including the who, what, when, why, and how of FinTech classification.
+Begin class with an introduction to classification and its use cases within FinTech, including the who, what, when, why, and how of FinTech classification.
 
 Open the slideshow and start class by welcoming students back to the second week of machine learning!
 
 * Explain that Unit 11 kicks off the second week of machine learning and advanced analytics. Highlight that this unit will focus on using machine learning algorithms and pipelines to draw categorical conclusions and predictions about probable financial outcomes.
 
-* Briefly explain that classification is used to draw categorical conclusions about data. Instead of forecasting quantitative numbers, classification uses a binary (**true-positive**/**true-negative**) approach to predict categorical membership (i.e., will the outcome be of type A or type B?).
+* Briefly explain that classification is used to draw categorical conclusions about data. Instead of forecasting quantitative numbers, classification uses a binary (true-positive/true-negative) approach to predict categorical membership (i.e., will the outcome be of type A or type B?).
 
   * Communicate that classification models can be used to identify a loan applicant as creditworthy or a credit risk. Tell students that they will be learning how to perform classification using, all of which will be explained in more detail in upcoming activities.
 
@@ -112,7 +112,7 @@ Open the slideshow and start class by welcoming students back to the second week
 
 * Tell students that their mission for the remainder of this week is to build and train robust classification models in order to automate predictive analytics.
 
-* **Machine learning** can be used to automate financial pipelines, forecast time series data, market volatility, predict fraud, analyze sentiment, parse documents, automate day trading and make investment recommendations. However, what exactly is machine learning?
+* Machine learning can be used to automate financial pipelines, forecast time series data, market volatility, predict fraud, analyze sentiment, parse documents, automate day trading and make investment recommendations. However, what exactly is machine learning?
 
   * **Answer:** Machine learning is an approach to programming that leverages libraries that provide statistical algorithms. The machine learning community has developed tried-and-tested statistical libraries (like Scikit-learn and imbalanced-learn) that offer statistical functions for algorithmic and statistical modelling.
 
@@ -227,7 +227,7 @@ After presenting the slideshow, open the Jupyter notebook and complete a dry wal
 
 * Communicate to students that the only way to run a logistic regression model is to first prepare a dataset to be used for training the model. In order for a logistic regression model to learn on its own, it must be given data that is clustered in classes/groups.
 
-  * For example, two classes can be created that represent credit risk: **low risk** (purple) and **high risk** (yellow). Logistic regression can then be used to classify new data points/applicants.
+  * For example, two classes can be created that represent credit risk: low risk (purple) and high risk (yellow). Logistic regression can then be used to classify new data points/applicants.
 
     ```python
     from sklearn.datasets import make_blobs
@@ -247,13 +247,13 @@ After presenting the slideshow, open the Jupyter notebook and complete a dry wal
 
   * Underscore that if `random_state` is not provided, a new randomized data set will be output every time the process is ran.
 
-* Depending on time, further explain that the process of clustering data points into classes/groups is called **centering**.
+* Depending on time, further explain that the process of clustering data points into classes/groups is called centering.
 
   * Explain to students that centering is a part of the pre-process step of advanced analytics that helps dictate the number of classes/groups to create. Centering improves the performance of logistic regression models by ensuring that all data points share the same starting mean value. Data points with the same starting mean value are clustered together.
 
   ![make_blobs_fx.png](Images/make_blobs_fx.png)
 
-* The last step of preprocessing is splitting data into **training** and **testing** data sets. The training subset will be used to train the model and help it self learn. The testing data set will be used to evaluate and test the accuracy of the algorithm and its predictions.
+* The last step of preprocessing is splitting data into training and testing data sets. The training subset will be used to train the model and help it self learn. The testing data set will be used to evaluate and test the accuracy of the algorithm and its predictions.
 
   * Emphasize to students that the training and testing data sets can come from a single data set, or two different ones. The sklearn `model_selection.train_test_split` module can be used to split a single data set into training and testing subsets. This will create four data sets:
 
@@ -273,7 +273,7 @@ After presenting the slideshow, open the Jupyter notebook and complete a dry wal
 
 Transition into the next part of the demo by explaining to students that once the preprocessing work has been completed, the logistic regression model can be ran. Demonstrate and explain how logistic regression models are trained and executed.
 
-* Logistic regression can be implemented using the sklearn `LogisticRegression` class. This module is a part of the **linear model** package, a package commonly chosen by developers to run a linear regression. The object returned from the `LogisticRegression` class will be a **classifier** object, which is used to train, validate, and make predictions.
+* Logistic regression can be implemented using the sklearn `LogisticRegression` class. This module is a part of the linear model package, a package commonly chosen by developers to run a linear regression. The object returned from the `LogisticRegression` class will be a classifier object, which is used to train, validate, and make predictions.
 
   ![logistic_regression_class.png](Images/logistic_regression_class.png)
 
@@ -298,7 +298,7 @@ Explain to students that the scoring process takes the predictions made using th
 
   * Scoring of test data consists of applying the model (which was learned using the training data) against only the test data. The test data is considered new data; the model has not seen or learned from this data. Testing using this test data is akin to an acid test: it’s a way to gauge how accurately the model might make predictions in real life.
 
-  * If the training score is significantly more accurate than the testing score, the model may be overtrained. **Overtraining** the model can result in **overfitting**, where the model learned rules for predictions that apply mostly just for the training data set. The goal is to have the scores as close to each other in accuracy as possible.
+  * If the training score is significantly more accurate than the testing score, the model may be overtrained. Overtraining the model can result in overfitting, where the model learned rules for predictions that apply mostly just for the training data set. The goal is to have the scores as close to each other in accuracy as possible.
 
     ```python
     # Score the model
@@ -398,7 +398,7 @@ Open the solution and complete a dry walkthrough of the solution. Answer any que
 
   ![create_lr_model.png](Images/create_lr_model.png)
 
-* The `LogisticRegression` module supports a number of optimization algorithms for processing, with **lbfgs** being just one. The **solver** helps optimize learning and computation.
+* The `LogisticRegression` module supports a number of optimization algorithms for processing, with lbfgs being just one. The solver helps optimize learning and computation.
 
 * Once a model is created, it has to be trained. After training, the model can be scored, and it can then be used to make predictions for new data points.
 
@@ -453,7 +453,7 @@ Go to the slideshow and highlight the following:
 
     * **Answer:** False positive (a model that incorrectly flags diabetes for patients that don't have the disease). Additional tests can be run to refine the prediction and filter out individuals who do not have diabetes. This way, those that might have it can be given the treatment they need.
 
-* Explain to students that in order to evaluate a model, they must do more than score/measure the model for accuracy. In addition to accuracy, a model must be measured for **precision** and **recall**, both of which can be used to eliminate false positives and false negatives.
+* Explain to students that in order to evaluate a model, they must do more than score/measure the model for accuracy. In addition to accuracy, a model must be measured for precision and recall, both of which can be used to eliminate false positives and false negatives.
 
 Ask if there are any questions before moving on.
 
@@ -465,7 +465,7 @@ You will now explain what accuracy, precision, and recall is in relation to logi
 
 Open the slideshow, go to the accuracy, precision, and recall section, and highlight the following:
 
-* Tell students that accuracy, precision, and recall are especially important for classification models that involve a **binary decision problems**. Binary decision problems have two possible correct answers: **True Positive** and **True Negative**.
+* Tell students that accuracy, precision, and recall are especially important for classification models that involve a binary decision problems. Binary decision problems have two possible correct answers: True Positive and True Negative.
 
   * Inaccurate and imprecise models result in models returning false positives and false negatives.
 
@@ -477,7 +477,7 @@ Open the slideshow, go to the accuracy, precision, and recall section, and highl
 
   * **Calculation:** (TP + TN) / (TP + TN + FP + FN)
 
-* **Precision** is the ratio of correctly predicted positive observations to the total predicted positive observations (i.e., of all the samples classified as having diabetes or credit risk, how many actually have diabetes/are a credit risk).
+* Precision is the ratio of correctly predicted positive observations to the total predicted positive observations (i.e., of all the samples classified as having diabetes or credit risk, how many actually have diabetes/are a credit risk).
 
   * Another example of precision: Of all the individuals that were classified by the model as being a credit risk, how many actually were a credit risk? The question at hand is, did we classify comprehensively and correctly?
 
@@ -507,7 +507,7 @@ You will now give a live demonstration of how to create and use a confusion matr
 
 **Files:** [confusion_matrix.ipynb](Activities/03-Ins_Confusion_Matrices/Solved/confusion_matrix.ipynb)
 
-Open the starter-file, and highlight the discussion points below while live coding how to use a **confusion matrix**.
+Open the starter-file, and highlight the discussion points below while live coding how to use a confusion matrix.
 
 * A confusion matrix is used to measure and gauge the success of a model. Confusion matrices reveal the number of true negatives and true positives (actuals) for each categorical class, and compare it to the number of predicted values for each class. These values are then individually summed by column and row. The aggregate sums are then compared to gauge accuracy and precision. If the aggregates match, the model can be considered accurate and precise.
 
@@ -651,7 +651,7 @@ Begin the review session with a few guided questions:
 
 Open the solution and transition to a dry walkthrough of the activity. Remind students of the following:
 
-* In order to build a supervised model and make predictions, data has to be provided that can be used to predict outcomes. This data set must contain **features** and a **target**.
+* In order to build a supervised model and make predictions, data has to be provided that can be used to predict outcomes. This data set must contain features and a target.
 
   * Features are the fields that relate to credit worthiness (i.e., assets, liabilities, income, and credit score).
 
@@ -713,19 +713,19 @@ Open the slideshow, navigate to the SVM section, and highlight the following:
 
   * The number of dimensions needed for the model is dependent on the number of features in the data set. Each feature is a dimension.
 
-* Explain that the SVM learning algorithm operates by plotting data points with dimensions. Once all data points are plotted, a **hyperplane** is created.
+* Explain that the SVM learning algorithm operates by plotting data points with dimensions. Once all data points are plotted, a hyperplane is created.
 
 * Define a hyperplane as a dimensional vector used to separate data points into different classes.
 
   * A hyperplane is a line that delineates data points into their corresponding classes. All items to the left of the line belong to class A. Items to the right belong to class B.
 
-  * The goal with hyperplanes is to get the margin of the hyperplane equidistance to the data points for all classes. This distance is considered the **margin of separation**.
+  * The goal with hyperplanes is to get the margin of the hyperplane equidistance to the data points for all classes. This distance is considered the margin of separation.
 
     * Explain to students that the margin is considered optimal when the distance from the hyperplane and the support vectors are equidistant.
 
       ![margin_of_separation.png](Images/margin_of_separation.png)
 
-  * The data closest to/within the margin of the hyperplane are called **support vectors**, and they are used to define boundaries of the hyperplane.
+  * The data closest to/within the margin of the hyperplane are called support vectors, and they are used to define boundaries of the hyperplane.
 
     * These points are sometimes the most difficult to classify, because they live closest to the margin and could belong to either class.
 
@@ -737,13 +737,13 @@ Educate students on the different orientations for hyperplanes. Provide an under
 
 * Hyperplanes can be 2D, clearly delineating classes with non-overlapping data points or outliers.
 
-* Hyperplanes also support what's considered **0 tolerance with perfect partition**, which is a non-linear hyperplane that positions and orients the hyperplane to correctly classify overlapping or outlying data points.
+* Hyperplanes also support what's considered zero tolerance with perfect partition, which is a non-linear hyperplane that positions and orients the hyperplane to correctly classify overlapping or outlying data points.
 
   * This hyperplane could be a curved line or a circle, depending on the data points and their proximity to one another.
 
-  * In order to establish 0 tolerance with perfect partition, the SVM model may introduce a new `z-axis` dimension for non-linear hyperplanes.
+  * In order to establish zero tolerance with perfect partition, the SVM model may introduce a new `z-axis` dimension for non-linear hyperplanes.
 
-* The `kernel` parameter is used to identify the orientation of the hyperplane. **Kernelling**, and how to use the `kernel` parameter, will be addressed later in the demo.
+* The `kernel` parameter is used to identify the orientation of the hyperplane. Kernelling, and how to use the `kernel` parameter, will be addressed later in the demo.
 
 Transition into the live coding exercise by opening the starter file and demonstrating to students how to create an SVM model with sklearn.
 
