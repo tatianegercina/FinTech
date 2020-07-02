@@ -333,7 +333,7 @@ Explain that a linear model fit to non-linear data would only be a good approxim
 
 Explain to students that the most used tree-based algorithms are: decision trees, random forests, and gradient boosting trees.
 
-* `sklearn` has two modules that implement tree-based algorithms that we will be covering Today.
+* `sklearn` has two modules that implement tree-based algorithms that we will be covering today.
 
   * [`sklearn.tree`](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.tree) implements decision trees.
 
@@ -355,29 +355,29 @@ In this activity, students will be introduced to decision trees and how they can
 
 Start by opening the lesson slides, move to the _Decision Trees_ section, and highlight the following:
 
-* Decision Trees encode a series of `True/False` questions.
+* Decision trees encode a series of `True/False` questions.
 
 * `True/False` questions can be represented with a series of if/else statements
 
-* There are some key concepts, that it is important to know while working with decision trees:
+* There are some key concepts that it is important to know while working with decision trees:
 
-  * **Root Node:** Represents the entire population or sample data, this node gets divided into two or more homogeneous sets.
+  * **Root Node:** A node that is divided into two or more homogeneous sets and represents the entire population or sample data. 
   * **Parent Node:** A node that is divided into sub-nodes.
   * **Child Node:** Sub-nodes of a parent node.
   * **Decision Node:** A sub-node that is split into further sub-nodes.
   * **Leaf or Terminal Node:** Nodes that do not split.
   * **Branch or Sub-Tree:** A subsection of the entire tree.
-  * **Splitting:** Process of dividing a node into two or more sub-nodes.
-  * **Pruning:** Process of removing sub-nodes of a decision node.
+  * **Splitting:** The process of dividing a node into two or more sub-nodes.
+  * **Pruning:** The process of removing sub-nodes of a decision node.
   * **Tree's Depth:** The number of decision nodes encountered before making a decision.
 
-* Decision trees can become very complex and very deep, depending on how many questions have to be answered. Deep and complex trees tend to overfit to the data and do not generalize well.
+* Decision trees can become very complex and deep, depending on how many questions have to be answered. Deep and complex trees tend to overfit to the data, and do not generalize well.
 
-Close the presentation explain to students that in this demo, you are going to use the loan applications encoded dataset presented before. The goal of this demo is to predict fraudulent loan applications using a decision tree.
+Close the presentation and explain to students that in this demo, you are going to use the loan applications encoded dataset presented before. The goal of this demo is to predict fraudulent loan applications using a decision tree.
 
 Open the unsolved version of the Jupyter notebook to live code the demo and highlight the following:
 
-* In the initial import cell, the `tree` module from `sklearn` is imported since it offers a decision tree implementation for classification problems.
+* In the initial import cell, the `tree` module from `sklearn` is imported, since it offers a decision tree implementation for classification problems.
 
   ```python
   from sklearn import tree
@@ -403,7 +403,7 @@ Open the unsolved version of the Jupyter notebook to live code the demo and high
   df_loans = pd.read_csv(file_path)
   ```
 
-* Once the data is loaded into the `df_loans` DataFrame, the features and target sets are created. The features set `X` contains all the `df_loans` columns except the `bad` column, the `bad` column is the target variable `y`, where `1` means that the loan application was fraudulent, and `0` that it was not.
+* Once the data is loaded into the `df_loans` DataFrame, the features and target sets are created. The features set `X` contains all the `df_loans` columns except the `bad` column. The `bad` column is the target variable `y`, where `1` means that the loan application was fraudulent, and `0` means it was not.
 
   ```python
   # Define features set
@@ -420,7 +420,7 @@ Explain to students that in order to train and validate the decision tree model,
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 ```
 
-Explain to students that in order to improve an algorithm's performance, the features data will be scaled using the `StandardScaler`. There is no need to scale the target data since it contains the labels that we want to predict using the decision tree.
+Explain to students that in order to improve an algorithm's performance, the features data will be scaled using the `StandardScaler`. There is no need to scale the target data, since it contains the labels that we want to predict using the decision tree.
 
 ```python
 # Creating StandardScaler instance
@@ -478,7 +478,7 @@ Finally, comment to students that an interesting way to analyze a decision tree 
 
 ![Decision tree visualization](Images/decision-trees-2.png)
 
-Explain to students, that a very large and complex tree shape like this, probably indicates that the model is overfitted to this specific data and will not generalize well to other models.
+Explain to students that a very large and complex tree shape like this probably indicates that the model is overfitted to this specific data and will not generalize well to other models.
 
 * To ease the tree visualization, the image can be saved as `PDF` or `PNG`.
 
