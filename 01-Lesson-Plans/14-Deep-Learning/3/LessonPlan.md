@@ -1297,78 +1297,11 @@ This activity is a mini-project where students will gain hands-on experience bui
 
 Open the unsolved version of the Jupyter notebook, live code the solution, and highlight the following:
 
-* In real-world applications, you may need to interact with live data that you should retrieve from an API, that's why we used in this activity the Quandl API.
+* We'll first need to import our data using the `read_csv` function.
 
-* As you already know, the safest way to store API keys is using environment variables, so we start by importing our Quandl API key.
+  ![import-data](Images/import-data.png)
 
-  ```python
-  # Import the API key for QUANDL
-  import os
-
-  quandl_key = os.getenv("QUANDL_API_KEY")
-  ```
-
-* In this activity, you were asked to create a model to predict gold prices, so using our API key, we fetch the historical prices of gold up to yesterday using the Quandl end-point for this price and the `requests` library.
-
-  ```python
-  # Set Gold price URL
-  request_url = "https://www.quandl.com/api/v3/datasets/LBMA/GOLD.json?api_key="
-
-  gold_prices_url = request_url + quandl_key
-
-  # Fetch Gold prices from QUANDL
-  import requests
-
-  response_data = requests.get(gold_prices_url).json()
-  ```
-
-* To retrieve the prices of gold, first, we get the keys of the `response_data` dictionary, where we realized that there is only one key called `dataset` that encloses all the data from the API response.
-
-  ![Exploring the gold prices response](Images/explore-gold-prices-response.png)
-
-* After printing the content of the `dataset` key, we can identify that there are two keys with the data we need, these keys are `column_names` and `data`.
-
-  ![Content of the dataset key](Images/dataset-key-content.png)
-
-* As you can imagine, we can also go to the API documentation to understand the structure of the response and identify where the data is that we need. However, when you review the [Quandl API documentation for time-series data](https://docs.quandl.com/docs/in-depth-usage), you can see that the name of the main key of the `json` output is `dataset_data`.
-
-  ![Quandl API docs](Images/quandl-api-docs.png)
-
-* This errata in the documentation could be due to a change in the API that is not updated in the documentation jet, that's why sometimes you will need to manually explore the response of an API to identify where the data you need is located.
-
-* Once we identify where the data we need is, we create a DataFrame. It's essential to explicitly cast the `Date` column to `datetime` data type and set this column as the DataFrame index.
-
-  ```python
-  # Create a DataFrame with Gold prices
-  gold_df = pd.DataFrame(
-      response_data["dataset"]["data"],
-      columns=response_data["dataset"]["column_names"],
-  )
-
-  #Transform the "Date" column to datetime
-  gold_df['Date']= pd.to_datetime(gold_df['Date'])
-
-  # Set the "Date" column as the DataFrame Index
-  gold_df.set_index("Date", inplace=True)
-
-  # Show the DataFrame head
-  gold_df.head()
-  ```
-
-  ![Sample gold prices DataFrame](Images/sample-gold-prices-df.png)
-
-* It's important to clean the data before we start using it for any machine learning model. In this case, we look for missing data by counting all the null values in the DataFrame.
-
-  ![Missing gold prices in the DataFrame](Images/missing-gold-prices.png)
-
-* As you can see, there are `16020` missing prices in the DataFrame, so we will fill these missing values with the gold price of the preceding day using the `fillna()` method of the DataFrame and setting `method=pad`.
-
-  ```python
-  # Filling missing values with the previous ones
-  gold_df = gold_df.fillna(method ='pad')
-  ```
-
-* Once we have cleaned up our data, we will create the features and target set using the custom `window_data()` function we define.
+* Once we have our data, we will create the features and target set using the custom `window_data()` function we define.
 
 * For this demo, we will use a window size of `30` days, and since we want to predict the gold prices in US Dollars, we will pass `1` as the feature and target columns index.
 
