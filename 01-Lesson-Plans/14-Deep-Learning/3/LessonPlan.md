@@ -1030,7 +1030,7 @@ In this activity, students will learn how to build RNN LSTM models for time seri
 
 * [lstm_predictor.ipynb](Activities/04-Ins_LSTM_Time_Series/Solved/lstm_predictor.ipynb)
 
-* [stock_data.csv](Activities/04-Ins_LSTM_Time_Series/Resources/stock_data.csv)
+* [stock_data_cad.csv](Activities/04-Ins_LSTM_Time_Series/Resources/stock_data_cad.csv)
 
 Explain to students that RNN LSTM models can also be used to forecast time-series data, such as stock prices, sales, temperature, or even the heights of ocean tides or sound waves!
 
@@ -1538,4 +1538,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-Trilogy Education Services © 2020. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

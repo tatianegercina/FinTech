@@ -25,6 +25,7 @@ By the end of class, students will be able to:
 * This class uses the new TensorFlow 2.0 framework for the activities, so be sure to test the install and setup for this before class.
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [14.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2bd77952-1001-4f38-9c08-aaf8002299ae) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
@@ -565,17 +566,18 @@ Run all the cells by clicking on the _Runtime_ menu and choose the _Run all_ opt
 ![Images/colab02.png](Images/colab16.png)
 
 * Though the notebook should still run all cells as intended, the defaults can be updated to avoid potential issues in the future.  This can be done by running the following code, selecting `y` when prompted, and then restarting the runtime:
+
 ```python
 !pip uninstall tensorflow
 !pip install tensorflow==2.0.0
 ```
 
 * Students can check then verify their Tensorflow version using the following code:
+
 ```python
 import tensorflow as tf
 print(tf.__version__)
 ```
-
 
 Explain to students that it's possible to install new libraries in Google Colab by running the following command
 
@@ -668,4 +670,4 @@ Ask volunteers to give examples of ways they changed the architecture, and why. 
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

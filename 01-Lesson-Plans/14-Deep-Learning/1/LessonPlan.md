@@ -41,6 +41,7 @@ By the end of class, students will be able to:
 * In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/v1/). Be sure to practice the demo before class. If you are not familiar with this project, we encourage you to [watch this video](https://youtu.be/3BhkeY974Rg).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [14.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d6cecb1c-4ed3-4cf1-83e6-aaf500da5859) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
@@ -48,7 +49,6 @@ By the end of class, students will be able to:
 The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/11gh-YowNqHBx_WEm-OBHJypKImSc51zo71vEYohNdqY/edit?usp=sharing).
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files.  You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
-
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy."
 
@@ -1030,4 +1030,4 @@ Congratulate students on learning a new skill that will add value to their profe
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
