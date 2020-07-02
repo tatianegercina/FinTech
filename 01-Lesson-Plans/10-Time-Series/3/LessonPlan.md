@@ -78,6 +78,8 @@ Describe to students what they will be doing today:
 
 ### 2. Instructor Do: Introduction to Linear Regression (15 min)
 
+**Corresponding Activity:** [01-Ins_Linear_Regression](Activities/01-Ins_Linear_Regression)
+
 **File:**
 
 * [linear_regression.ipynb](Activities/01-Ins_Linear_Regression/Solved/linear_regression.ipynb)
@@ -251,6 +253,8 @@ Explain that you can also compare the RMSE to the standard deviation to get a be
 
 ### 3. Students Do: House Regression (15 min)
 
+**Corresponding Activity:** [02-Stu_House_Regression](Activities/02-Stu_House_Regression)
+
 In this activity, students will perform linear regression on the number of rooms in houses versus their prices.
 
 **Files:**
@@ -323,6 +327,8 @@ Ask if students have any questions before moving forward.
 - - -
 
 ### 5. Instructor Do: Time Series Linear Regression (15 min)
+
+**Corresponding Activity:** [03-Ins_Time_Series_Linear_Regression](Activities/03-Ins_Time_Series_Linear_Regression)
 
 **Files:**
 
@@ -432,6 +438,8 @@ Answer any questions before moving on.
 - - -
 
 ### 6. Students Do: Oil Futures (15 min)
+
+**Corresponding Activity:** [04-Stu_Time_Series_Linear_Regression](Activities/04-Stu_Time_Series_Linear_Regression)
 
 In this activity, students will identify seasonal effects in oil futures prices with linear regression.
 
@@ -555,6 +563,8 @@ Explain that we have already seen parsimony in action:
 - - -
 
 ### 10. Instructor Do: Train, Test, Split (10 min)
+
+**Corresponding Activity:** [05-Ins_Train_Test](Activities/05-Ins_Train_Test)
 
 **File:**
 
@@ -683,6 +693,8 @@ Finally, walk through the error metrics:
 
 ### 11. Students Do: Ripple (15 min)
 
+**Corresponding Activity:** [06-Stu_Ripple](Activities/06-Stu_Ripple)
+
 In this activity, students will create GARCH and linear regression models for the price of Ripple (XRP), a cryptocurrency. They will validate the latter model with training and test sets.
 
 **Files:**
@@ -797,6 +809,8 @@ Ask for any remaining questions before moving on.
 - - -
 
 ### 13. Instructor Do: Rolling Out-of-Sample (15 min)
+
+**Corresponding Activity:** [07-Ins_Rolling_Out_of_Sample](Activities/07-Ins_Rolling_Out_of_Sample)
 
 **File:**
 
@@ -968,6 +982,8 @@ Reassure students that they will be able to use this notebook as a reference for
 - - -
 
 ### 14. Students Do: Rolled Gold (15 min)
+
+**Corresponding Activity:** [08-Stu_Rolled_Gold](Activities/08-Stu_Rolled_Gold)
 
 In this activity, students will perform predictions with linear regression on a rolling out-of-sample basis, in order to predict the price of gold.
 
