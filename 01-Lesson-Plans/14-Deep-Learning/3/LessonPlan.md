@@ -1107,7 +1107,7 @@ def window_data(df, window, feature_col_number, target_col_number):
 
   * `target_col_number`: The column number from the original DataFrame where the target is located.
 
-Explain to students, that we will predict closing prices using a `5` days windows of previous _T-Bonds_ closing prices, so that, we will create the `X` and `y` vectors by calling the `window_data` function and defining a window size of `5` and setting the features and target column numbers to `2` (this is the column with the _T-Bonds_ closing prices).
+Explain to students, that we will predict closing prices using a `5` days windows of previous _TSX_ closing prices, so that, we will create the `X` and `y` vectors by calling the `window_data` function and defining a window size of `5` and setting the features and target column numbers to `2` (this is the column with the _TSX_ closing prices).
 
 ![Data Prep 2](Images/data-prep-2.png)
 
@@ -1124,17 +1124,31 @@ y_test = y[split:]
 
 Once the training and test datasets are created, explain to students that we need to scale the data before training the LSTM model. We will use the `MinMaxScaler` from `sklearn` to scale all values between `0` and `1`. Note that because this is a regression problem (we are predicting a closing price), we scale both the features **AND** the target data. If the output target were categorical, the `y` data would not need to be scaled.
 
+**Note:** It is important to separate out the scalers for each respective train and test datasets so as to avoid combining both train and test data within a single scaler object. Failing to do so may cause scaling issues when outputting the prediction results later down the line.
+
 ```python
 # Use the MinMaxScaler to scale data between 0 and 1.
 from sklearn.preprocessing import MinMaxScaler
+x_train_scaler = MinMaxScaler()
+x_test_scaler = MinMaxScaler()
+y_train_scaler = MinMaxScaler()
+y_test_scaler = MinMaxScaler()
 
-scaler = MinMaxScaler()
-scaler.fit(X)
-X_train = scaler.transform(X_train)
-X_test = scaler.transform(X_test)
-scaler.fit(y)
-y_train = scaler.transform(y_train)
-y_test = scaler.transform(y_test)
+# Fit the scaler for the Training Data
+x_train_scaler.fit(X_train)
+y_train_scaler.fit(y_train)
+
+# Scale the training data
+X_train = x_train_scaler.transform(X_train)
+y_train = y_train_scaler.transform(y_train)
+
+# Fit the scaler for the Testing Data
+x_test_scaler.fit(X_test)
+y_test_scaler.fit(y_test)
+
+# Scale the y_test data
+X_test = x_test_scaler.transform(X_test)
+y_test = y_test_scaler.transform(y_test)
 ```
 
 Explain to students that the LSTM API from Keras needs to receive the features data as a _vertical vector_  so we need to reshape the `X` data in the form `reshape((X_train.shape[0], X_train.shape[1], 1))`. Both sets, training, and testing are reshaped.
@@ -1241,8 +1255,8 @@ Explain to students that after training the model, it's time to evaluate our mod
 
   ```python
   # Recover the original prices instead of the scaled version
-  predicted_prices = scaler.inverse_transform(predicted)
-  real_prices = scaler.inverse_transform(y_test.reshape(-1, 1))
+  predicted_prices = y_test_scaler.inverse_transform(predicted)
+  real_prices = y_test_scaler.inverse_transform(y_test.reshape(-1, 1))
   ```
 
 * To plot the predicted vs. the real values, we will create a DataFrame.
