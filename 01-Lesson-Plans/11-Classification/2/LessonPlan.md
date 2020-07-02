@@ -87,7 +87,7 @@ Explain to students that while many datasets contain categorical features such a
 
 Explain to students that in order to use text or categorical data in machine learning algorithms, these kinds of data values should be converted to numerical representations.
 
-Additionally, many machine learning algorithms and models are sensitive to input features with wide ranges of numbers. A best practice for preparing the numerical input data is to normalize all of the data to the same scale. This prevents any single feature from dominating the others.
+Additionally, many machine learning algorithms and models are sensitive to input features with wide ranges of numbers. A best practice for preparing the numerical input data is to normalize all of the data to the same scale; this prevents any single feature from dominating the others.
 
 Tell students that we will use `Pandas` and the `preprocessing` library of `sklearn` to encode text and categorical data as numbers, and to normalize all numerical inputs to the same scale. These preprocessing steps are critical for many machine learning algorithms.
 
@@ -121,19 +121,19 @@ Continue the demo by loading the dataset on the `loans_df` DataFrame and highlig
 
 * In order to use this dataset to train a machine learning model, these three features need to be converted to numerical values.
 
-* There are different methods to deal with text and categorical data, one of the simplest is _integer encoding_, where every different text value or label is represented as an integer.
+* There are different methods to deal with text and categorical data. One of the simplest is _integer encoding_, where every different text value or label is represented as an integer.
 
-* The `preprocessing` library of `sklearn`, contains some functions to encode text labels.
+* The `preprocessing` library of `sklearn` contains some functions to encode text labels.
 
-* The `LabelEncoder` function, encodes text labels with integer values between `0` and the total number of classes minus `1`.
+* The `LabelEncoder` function encodes text labels with integer values between `0` and the total number of classes minus `1`.
 
-* To start using the `LabelEncoder` method, first an instance should be created.
+* To start using the `LabelEncoder` method, an instance should be created first.
 
     ```python
     label_encoder = LabelEncoder()
     ```
 
-* Once the `LabelEncoder` instance is created, it should be trained (fit) with the text data you want to encode. The fit step is learning how many classes to use for the encoding. The first example shows how the `LabelEncoder` can be fitted with one column of a DataFrame.
+* Once the `LabelEncoder` instance is created, it should be trained (fit) with the text data that needs to be encoded. The fit step is learning how many classes to use for the encoding. The first example shows how the `LabelEncoder` can be fitted with one column of a DataFrame.
 
     ```python
     label_encoder.fit(loans_df["month"])
