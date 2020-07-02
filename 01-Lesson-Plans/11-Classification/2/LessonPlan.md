@@ -717,7 +717,7 @@ The data is loaded into a Pandas DataFrame and then scaled and split into traini
   rf_model = RandomForestClassifier(n_estimators=500, random_state=78)
   ```
 
-  * `n_estimators`: This is the number of random forest to be created by the algorithm, in general, a higher number makes the predictions stronger and more stable. However, a very large number can result in higher training time. A good approach is to start low and increase the number if the model performance is not adequate.
+  * `n_estimators`: This is the number of random forest to be created by the algorithm. In general, a higher number makes the predictions stronger and more stable. However, a very large number can result in higher training time. A good approach is to start low and increase the number if the model performance is not adequate.
 
     * A [research study](https://doi.org/10.1007/978-3-642-31537-4_13) suggests that a range between `64` and `128` trees in a forest could be used for initial modeling.
 
@@ -752,15 +752,15 @@ The data is loaded into a Pandas DataFrame and then scaled and split into traini
 
   ![Random forest evaluation results](Images/random-forest-1.png)
 
-After observing the results, it can be concluded that this model may not be the best one for preventing fraudulent loan applications. Explain to students that there are several strategies that may improve this model such as:
+After observing the results, it can be concluded that this model may not be the best one for preventing fraudulent loan applications. Explain to students that there are several strategies that may improve this model, such as:
 
-* Reduce the number of features using PCA.
+* Reducing the number of features using principal component analysis (PCA).
 
-* Create new features based on new data from the problem domain.
+* Creating new features based on new data from the problem domain.
 
-* Increase the number of estimators.
+* Increasing the number of estimators.
 
-Finally, explain to students that a byproduct of the Random Forest algorithm is a ranking of feature importance (i.e., which features have the most impact on the decision).
+Finally, explain to students that a byproduct of the random forest algorithm is a ranking of feature importance (i.e., which features have the most impact on the decision).
 
 * The `RandomForestClassifier` of `sklearn` provides an attribute called `feature_importances_`, where you can see which features were the most significant.
 
@@ -774,7 +774,7 @@ Answer any questions before moving on.
 
 ---
 
-### 11. Students Do: Predicting Fraud with Random Forests (10 min)
+### 11. Student Do: Predicting Fraud with Random Forests (10 min)
 
 In this activity, students are going to explore how the random forest algorithm can be used to identify fraudulent loan applications. Students will use the `sba_loans_encoded.csv` file that they created before to train the model.
 
@@ -798,9 +798,9 @@ In this activity, students are going to explore how the random forest algorithm 
 
 * [sba_loans_encoded.csv](Activities/06-Stu_Random_Forest/Resources/sba_loans_encoded.csv)
 
-Walkthrough the solution and highlight the following:
+Walk through the solution and highlight the following:
 
-* The data used in this activity is the same that students used in the decision tree exercise, so data preprocessing is the same.
+* This activity uses the same data that students used in the decision tree exercise, so data preprocessing is the same.
 
 * The random forest model instance is created defining `n_estimators = 500` and `random_state = 78`.
 
@@ -824,19 +824,19 @@ Explain to students that defining the `random_state` parameter is important to c
 
 Explain to students that it can be observed that model´s accuracy is better than the one obtained using decision trees (`0.89`), in combination to the confusion matrix results and the precision and recall values, we could conclude that using random forest is better to predict fraudulent loan applications.
 
-* The features importance is retrieved from the random forest model using the `feature_importances_` attribute, finally the top 10 most important features are displayed.
+* The features importance is retrieved from the random forest model using the `feature_importances_` attribute. Finally, the top 10 most important features are displayed.
 
   ![Top 10 important features](Images/stu-random-forest-2.png)
 
-Finally, ask a couple of students about their insights in the _Analysis Questions_ sections. You can comment on the following about each question.
+Engage the class by calling on a couple of students to share their insights in the _Analysis Questions_ section. Guidance is provided below.
 
-* **Question 1:** Would you trust in this model to deploy a fraud detection solution in a bank?
+* **Question 1:** Would you trust this model to deploy a fraud detection solution in a bank?
 
-  * **Sample Answer:** Model's accuracy is better than using decision trees, so if we want to deploy a fraud detection solution for loans in a Bank, we would trust in random forest more than in decision trees.
+  * **Sample Answer:** This model's accuracy is better than using decision trees, so if we want to deploy a fraud detection solution for loans in a bank, we would trust in random forest more than in decision trees.
 
-* **Question 2:** What are your insights about the top 10 most importance features?
+* **Question 2:** What are your insights about the top 10 most important features?
 
-  * **Sample Answer:** It seems that the Bank is not relevant for the model, so we can create a new random forest model by only taking these top 10 features. Also, for piloting this model in a business environment, we will only need to fetch new data about these 10 features.
+  * **Sample Answer:** It seems that the bank is not relevant for the model, so we can create a new random forest model by only taking these top 10 features. Also, for piloting this model in a business environment, we will only need to fetch new data about these 10 features.
 
 Answer any questions before moving on.
 
