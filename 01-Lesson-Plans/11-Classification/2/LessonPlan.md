@@ -4,13 +4,11 @@
 
 ### Overview
 
-By the end of today's class, students will recognize the benefits of using tree-based algorithms for classifications problems. Also, students will gain hands-on experience with random forests and ensemble methods such as bagging and boosting.
-
-Today's lesson also introduces students to dealing with categorical data in machine learning. Students will be able to identify when it is worth to use categorical data as a feature in a model.
+In today's class, students will learn the benefits of using tree-based algorithms for classifications problems, and gain hands-on experience with random forests and ensemble methods, like bagging and boosting. Students will also be introduced to dealing with categorical data in machine learning, and learn how to identify when it is worth to use categorical data as a feature in a model.
 
 ### Class Objectives
 
-By the end of the class, students will be able to:
+By the end of today's class, students will be able to:
 
 * Identify when categorical variables are useful for a machine learning algorithm.
 
@@ -24,19 +22,19 @@ By the end of the class, students will be able to:
 
 * Understand the implications of overfitting and how boosting and bagging can help to deal with it.
 
-* Apply Gradient Tree Boosting models in classification problems.
+* Apply gradient tree boosting models in classification problems.
 
 ---
 
 ### Instructor Notes
 
-* Today's class is focused on teaching students how tree-based algorithms can be used for classification problems. Students start with an introduction to decision trees and are then introduced to Ensemble Learning algorithms such as Random Forests and Gradient Boosted Trees.
+* Today's class is focused on teaching students how tree-based algorithms can be used for classification problems. Students will start with an introduction to decision trees and then be introduced to ensemble learning algorithms such as random forests and gradient boosted trees.
 
-* tree-based algorithms have a wide range of applications, but today's class will use them for risk analysis scenarios.
+* Tree-based algorithms have a wide range of applications, but today's class will use them for risk analysis scenarios.
 
-* Some of the demos in Today's class will use a lot of memory to train the models which may throw warning messages in Jupyter. Reassure students that these warnings are typically not critical and can mostly be ignored.
+* Some of the demos in today's class will use a lot of memory to train the models, which may throw warning messages in Jupyter. Reassure students that these warnings are typically not critical, and can mostly be ignored.
 
-* Overfitting is a common problem in machine learning that will be discussed today, so take your time to understand its implications and how the techniques covered in this class can help to avoid it.
+* Overfitting is a common problem in machine learning that will be discussed today. Take your time to understand its implications, and how the techniques covered in today's class can help to avoid it.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -50,19 +48,19 @@ By the end of the class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Day 2 introduces students to tree-based algorithms and Ensemble Learners such as Random Forests and Gradient Boosted Trees. Students will get experience applying this new family of machine learning algorithms to a variety of classification problems. This will also tie in with day 3 as a potential solution to imbalanced classes, which will be seen later in the lesson.
+Day 2 introduces students to tree-based algorithms and ensemble learners such as random forests and gradient boosted trees. Students will get experience applying this new family of machine learning algorithms to a variety of classification problems. This will also tie in with Day 3 as a potential solution to imbalanced classes, which will be seen later in the lesson.
 
-Open the lesson slides and welcome students to day 2 by highlighting the following:
+Open the lesson slides and welcome students to Day 2 by highlighting the following:
 
 * Today, a new family of machine learning algorithms is going to be introduced: _tree-based algorithms_.
 
-* tree-based algorithms are supervised learning methods that are mostly used for classifications and regression problems.
+* Tree-based algorithms are supervised learning methods that are mostly used for classifications and regression problems.
 
 * This class will cover the following algorithms and methods:
 
@@ -71,7 +69,7 @@ Open the lesson slides and welcome students to day 2 by highlighting the followi
   * Weak learners
   * Ensemble methods
 
-Ask for any additional questions before moving on.
+Ask if there are any questions before moving on.
 
 ---
 
@@ -91,7 +89,7 @@ Explain to students that in order to use text or categorical data in machine lea
 
 Additionally, many machine learning algorithms and models are sensitive to input features with wide ranges of numbers. A best practice for preparing the numerical input data is to normalize all of the data to the same scale. This prevents any single feature from dominating the others.
 
-Tell students that we will use `pandas` and the `preprocessing` library of `sklearn` to encode text and categorical data as numbers and to normalize all numerical inputs to the same scale. These preprocessing steps are critical for many machine learning algorithms.
+Tell students that we will use `Pandas` and the `preprocessing` library of `sklearn` to encode text and categorical data as numbers, and to normalize all numerical inputs to the same scale. These preprocessing steps are critical for many machine learning algorithms.
 
 Open the Jupyter notebook and highlight the following:
 
@@ -105,7 +103,7 @@ Open the Jupyter notebook and highlight the following:
 
 * [The `StandardScaler` function](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) will be used to standardize numerical features.
 
-Explain to students that they will use simulated data about loans. There is a total of 500 records in the dataset where each row represents a loan application along an arbitrary year. Every column represents the following data about each loan application.
+Explain to students that they will use simulated data about loans. There is a total of 500 records in the dataset, where each row represents a loan application along an arbitrary year. Every column represents the following data about each loan application.
 
 * `amount`: The loan amount in USD.
 * `term`: The loan term in months.
