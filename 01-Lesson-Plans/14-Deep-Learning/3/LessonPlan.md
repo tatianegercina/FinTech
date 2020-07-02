@@ -1347,25 +1347,28 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 * Before training the RNN LSTM model, we use the `MinMaxScaler` from `sklearn` to scale the training and testing data between `0` and `1`. Note that we scaled the features and the target sets.
 
   ```python
-  # Importing the MinMaxScaler from sklearn
+  # Use the MinMaxScaler to scale data between 0 and 1.
   from sklearn.preprocessing import MinMaxScaler
+  x_train_scaler = MinMaxScaler()
+  x_test_scaler = MinMaxScaler()
+  y_train_scaler = MinMaxScaler()
+  y_test_scaler = MinMaxScaler()
 
-  # Create a MinMaxScaler object
-  scaler = MinMaxScaler()
+  # Fit the scaler for the Training Data
+  x_train_scaler.fit(X_train)
+  y_train_scaler.fit(y_train)
 
-  # Fit the MinMaxScaler object with the features data X
-  scaler.fit(X)
+  # Scale the training data
+  X_train = x_train_scaler.transform(X_train)
+  y_train = y_train_scaler.transform(y_train)
 
-  # Scale the features training and testing sets
-  X_train = scaler.transform(X_train)
-  X_test = scaler.transform(X_test)
+  # Fit the scaler for the Testing Data
+  x_test_scaler.fit(X_test)
+  y_test_scaler.fit(y_test)
 
-  # Fit the MinMaxScaler object with the target data Y
-  scaler.fit(y)
-
-  # Scale the target training and testing sets
-  y_train = scaler.transform(y_train)
-  y_test = scaler.transform(y_test)
+  # Scale the y_test data
+  X_test = x_test_scaler.transform(X_test)
+  y_test = y_test_scaler.transform(y_test)
   ```
 
 * As you already know, the LSTM API from Keras needs to receive the features data as a _vertical vector_, so we reshape the `X` data with `reshape((X_train.shape[0], X_train.shape[1], 1))`. Both sets, training, and testing should be reshaped.
@@ -1437,8 +1440,8 @@ predicted = model.predict(X_test)
 
   ```python
   # Recover the original prices instead of the scaled version
-  predicted_prices = scaler.inverse_transform(predicted)
-  real_prices = scaler.inverse_transform(y_test.reshape(-1, 1))
+  predicted_prices = y_test_scaler.inverse_transform(predicted)
+  real_prices = y_test_scaler.inverse_transform(y_test.reshape(-1, 1))
   ```
 
 * Finally, we will create a DataFrame with the decoded values to create a line chart to contrast the predicted vs. the actual values.
