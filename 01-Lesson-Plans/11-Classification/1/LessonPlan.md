@@ -120,13 +120,13 @@ Open the slideshow and start class by welcoming students back to the second week
 
 If time remains, ask students a few emotionally guided questions (examples provided below) to get a sense of how they are feeling, and give them a space to address any points of excitement, interest, and/or concern.
 
-**Ask students**: What are you excited to learn about next?
+Ask the class: What are you excited to learn about next?
 
   * **Answer:** How to use a classification model to predict fraudulent transactions.
 
   * **Answer:** How to use a classification model to identify the best type of line of credit for a consumer.
 
-**Ask students: Do you have any concerns or questions about the content already covered?**
+Ask the class: Do you have any concerns or questions about the content already covered?
 
   * **Answer:** Concerned about not having any background knowledge or experience in statistics.
 
@@ -643,11 +643,11 @@ Begin the review session with a few guided questions:
 
 * Using the confusion matrix and classification report to evaluate the model, would you trust the predictions made by this model to decide when you should and should not loan out money? Should a bank trust it?
 
-  * **Answer** The model in its current state is not optimized for accuracy and should not be trusted to make predictions.
+  * **Answer:** The model in its current state is not optimized for accuracy and should not be trusted to make predictions.
 
 * What can we do to improve the accuracy of the model?
 
-  * **Answer** Train the model with more data.
+  * **Answer:** Train the model with more data.
 
 Open the solution and transition to a dry walkthrough of the activity. Remind students of the following:
 
