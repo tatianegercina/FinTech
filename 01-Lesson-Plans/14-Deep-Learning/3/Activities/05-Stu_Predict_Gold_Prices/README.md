@@ -10,7 +10,7 @@ To ensure models' reproducibility, set the random seed for `numpy` and `tensorfl
 
 ### Import Data
 
-Use the `read_csv` function to import the `gold_cad.csv` data into a Pandas DataFrame.
+Use the `read_csv` function to import the `gold_cad.csv` data into a Pandas DataFrame. Remember to use the `parse_dates` and `index_col` parameters to convert datetime strings to datetime objects and set the index, respectively.
 
 #### Create the Features `X` and Target `y` Data
 
