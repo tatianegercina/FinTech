@@ -8,35 +8,13 @@ In this activity, you will gain hands-on experience by building an RNN LSTM for 
 
 To ensure models' reproducibility, set the random seed for `numpy` and `tensorflow` libraries.
 
-### Data Preparation
+### Import Data
 
-In this section, you will retrieve the Gold historical prices from the London Bullion Market Association using the [Quandl API](https://www.quandl.com/data/LBMA/GOLD-Gold-Price-London-Fixing). Be sure to have your Quandl API key at hand.
-
-#### Data Retrieval
-
-* Import your Quandl API key from an environment variable named `quandl_key`.
-
-* Open the ["Gold Price: London Fixing" at the Quandl website](https://www.quandl.com/data/LBMA/GOLD-Gold-Price-London-Fixing), and set the URL to retrieve the historical prices of gold in `json` format.
-
-* Use the `requests` library to retrieve the historical prices of gold in `json` format.
-
-* Explore the `json` response data and create a Pandas DataFrame containing the historical prices of gold in all the different currencies provided by the API, and set the data as the index of the DataFrame.
-
-* Your DataFrame should look like the following sample:
-
-  ![Sample gold prices DataFrame](Images/sample-gold-prices-df.png)
-
-**Note:** Remember that while working with time-series data, it's important to transform dates data to `datetime` data type explicitly. Review the [Quandl API documentation for time-series data](https://docs.quandl.com/docs/time-series) if needed.
-
-#### Data Cleaning
-
-Before you continue, corroborate if there are any `null` or missing values in the DataFrame, if so, fill the missing values with the previous price in the series.
-
-**Note:** You may want to review the [Working with missing data guide](https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html) from the Pandas documentation.
+Use the `read_csv` function to import the `gold_cad.csv` data into a Pandas DataFrame.
 
 #### Create the Features `X` and Target `y` Data
 
-Use the `window_data()` function below to create the features set `X` and the target vector `y`. Define a window size of `30` days and use the column of the closing gold price (`USD (PM)`) for the feature and target column; this will allow your model to predict gold prices in USD.
+Use the `window_data()` function below to create the features set `X` and the target vector `y`. Define a window size of `30` days and use the column of the closing gold price for the feature and target column; this will allow your model to predict gold prices in CAD.
 
 ```python
 def window_data(df, window, feature_col_number, target_col_number):
@@ -135,9 +113,9 @@ Use the `evaluate()` method of the model using the testing data.
 
 * Your DataFrame should look like the sample below:
 
-  ![Sample actual vs. predicted gold prices](Images/sample-gold-prices-predictions-df.png)
+  ![Sample actual vs. predicted gold prices](Images/sample-gold-prices-predictions-df-v2.png)
 
 * Use the `plot()` method from the DataFrame to create a line chart to contrast the actual vs. the predicted gold prices.
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
