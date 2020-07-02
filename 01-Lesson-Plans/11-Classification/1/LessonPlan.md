@@ -156,7 +156,7 @@ Open the homework instructions, and provide a brief dry walkthrough.
 
   * Compare and contrast the various machine learning models that can be used to classify credit risk (i.e., resampling vs. ensemble learning). Each model used in the homework can essentially be used to come up with the same prediction: the goal is to identify which model is more accurate and precise.
 
-* Explain that data for this activity will be from the Lending Club, a service that allows users to participate in peer-to-peer lending. Lending Club has a great wealth of loan performance data that can be used to train machine learning algorithms for classification. The homework will include using data points such as loan amount, interest rate, loan balance, etc. to make predictions about credit risk.
+* Explain that data for this activity will be from the LendingClub, a service that allows users to participate in peer-to-peer lending. LendingClub has a great wealth of loan performance data that can be used to train machine learning algorithms for classification. The homework will include using data points such as loan amount, interest rate, loan balance, etc. to make predictions about credit risk.
 
 * Note to students that this homework will use the `imbalanced-learn` and `Scikit-learn` tools. These tools need to be properly installed and functional.
 
