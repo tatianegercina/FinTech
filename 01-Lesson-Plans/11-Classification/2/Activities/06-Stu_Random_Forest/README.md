@@ -1,12 +1,12 @@
-# Students Do: Predicting Fraud with Random Forests
+# Student Do: Predicting Fraud with Random Forests
 
-In this activity, you are going to explore how random forest algorithms can be used to identify fraudulent loan applications. You will use the `sba_loans_encoded.csv` file that you created before to train the model.
+In this activity, you will explore how random forest algorithms can be used to identify fraudulent loan applications. You will use the `sba_loans_encoded.csv` file that you created before to train the model.
 
 ## Instructions
 
 ### Loading and Preprocessing Loans Encoded Data
 
-1. Load the `sba_loans_encoded.csv` in a pandas DataFrame called `df_loans`.
+1. Load the `sba_loans_encoded.csv` in a Pandas DataFrame called `df_loans`.
 
 2. Define the features set by copying the `df_loans` DataFrame and dropping the `Default` column.
 
@@ -14,7 +14,7 @@ In this activity, you are going to explore how random forest algorithms can be u
 
 4. Split the data into training and testing sets.
 
-5. Use the `StandardScaler` to scale the features data, remember that only `X_train` and `X_testing` DataFrames should be scaled.
+5. Use the `StandardScaler` to scale the features data. Remember that only `X_train` and `X_testing` DataFrames should be scaled.
 
 ### Fitting the Random Forest Model
 
@@ -26,7 +26,7 @@ In this activity, you are going to explore how random forest algorithms can be u
 
 ### Model Evaluation
 
-8. Evaluate model's results by using `sklearn` to calculate the confusion matrix, the accuracy score, and the classification report.
+8. Evaluate the model's results by using `sklearn` to calculate the confusion matrix, the accuracy score, and the classification report.
 
 ### Feature Importance
 
@@ -36,10 +36,10 @@ In this activity, you are going to explore how random forest algorithms can be u
 
 10. Analyze the model's evaluation results and answer the following questions:
 
-* **Question 1:** Would you trust in this model to deploy a fraud detection solution in a bank?
+* **Question 1:** Would you trust this model to deploy a fraud detection solution in a bank?
 
-* **Question 2:** What are your insights about the top 10 most importance features?
+* **Question 2:** What are your insights on the top 10 features?
 
 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
