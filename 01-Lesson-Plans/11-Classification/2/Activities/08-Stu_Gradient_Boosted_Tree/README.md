@@ -20,8 +20,6 @@ It's time to power up your decision tree machine-learning algorithm with a boost
 
 8. Evaluate the model using the confusion matrix and classification report. Did the model perform as you expected? How did it execute compared to the other decision-tree algorithms?
 
-
-
-
+---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
