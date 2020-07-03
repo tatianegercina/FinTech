@@ -55,7 +55,7 @@ You can use the Pythons' [`calendar` module](https://docs.python.org/3/library/c
 
 https://www.aba.com/member-tools/industry-solutions/insights/state-card-fraud-2018
 
-
+----
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 
