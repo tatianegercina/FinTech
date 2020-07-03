@@ -828,7 +828,7 @@ Explain to students that it can be observed that model´s accuracy is better tha
 
   ![Top 10 important features](Images/stu-random-forest-2.png)
 
-Engage the class by calling on a couple of students to share their insights in the _Analysis Questions_ section. Guidance is provided below.
+Engage the class by calling on a couple of students to share their insights in the Analysis Questions section. Guiding questions are provided below.
 
 * **Question 1:** Would you trust this model to deploy a fraud detection solution in a bank?
 
@@ -848,53 +848,53 @@ Answer any questions before moving on.
 
 ### 14. Instructor Do: Boosting and Bagging (15 min)
 
-Students are given a formal lecture on **boosting**, **bagging**, its benefits, and its application in advanced analytics. Guided questions are provided to promote student engagement and to re-enforce content.
+Students are given a formal lecture on boosting, bagging, and its benefits/application in advanced analytics. Guided questions are provided to promote student engagement and to re-enforce content.
 
-Navigate to the **boosting** and **bagging** section of the slideshow. Highlight the following:
+Go to the slideshow and navigate to the boosting and bagging section, highlighting the following:
 
-* **Boosting** is both a process and a set of algorithms. Boosting is the process of combining a set of **weak learners** into a **strong learner**.
+* Boosting is a set of algorithms as well as the process of combining a set of weak learners into a strong learner.
 
-  * **Boosting** algorithms work by taking the predictions of each **weak learner** and aggregating them to produce a more accurate and precise prediction. The goal of a boosting algorithm is to combine **weak learners** into **ensemble learners**.
+  * Boosting algorithms work by taking the predictions of each weak learner and aggregating them to produce a more accurate and precise prediction. The goal of a boosting algorithm is to combine weak learners into ensemble learners.
 
-    * For this reason, **boosting algorithms** are considered **meta-algorithms**. Instead of working with and affecting data, **boosting algorithms** work with and affect other algorithms.
+    * For this reason, boosting algorithms are considered meta-algorithms. Instead of working with and affecting data, boosting algorithms work with and affect other algorithms.
 
-  * **Boosting** algorithms use weighted averages (the higher the average, the more inaccurate the prediction) to determine what values are misclassified. The algorithm will iterate until there are no weighted predictions.
+  * Boosting algorithms use weighted averages (the higher the average, the more inaccurate the prediction) to determine what values are misclassified. The algorithm will iterate until there are no weighted predictions.
 
-    * Other algorithms (i.e., **bagging**) create new base learners as older ones prove ineffective.
+    * Other algorithms (i.e., bagging) create new base learners as older ones prove ineffective.
 
     ![boosting_flow.jpg](Images/boosting_flow.jpg)
 
-  * **Boosting** algorithms are so powerful and performant that they have been stealing the spotlight at Kaggle machine learning algorithms competitions. **Boosting** algorithms like XGBoost have consistently outperformed other algorithms in competitions, on multiple occasions. XGBoost's success has put **boosting** algorithms in the spotlight.
+  * Boosting algorithms are so powerful and performant that they have been stealing the spotlight at Kaggle machine learning algorithms competitions. Boosting algorithms like XGBoost have consistently outperformed other algorithms in competitions, on multiple occasions. XGBoost's success has put boosting algorithms in the spotlight.
 
-Highlight to students that **boosting** is not the only way to make a **weak learner** more robust and accurate. Another approach is called **bagging**.
+Highlight to students that boosting is not the only way to make a weak learner more robust and accurate. Another approach is called bagging.
 
-* **Bagging** is another method used to improve the accuracy and robustness of a model.
+* Bagging is another method used to improve the accuracy and robustness of a model.
 
-* Where **boosting** takes multiple algorithms and coordinates them as an ensemble and runs the algorithms iteratively to identify the best prediction, **bagging** focuses on re-sampling data and running with different models on the fly in order to formulate the most accurate and precise prediction.
+* Where boosting takes multiple algorithms, coordinates them as an ensemble, and runs the algorithms iteratively to identify the best prediction, bagging focuses on re-sampling data and running with different models on the fly, to formulate the most accurate and precise prediction.
 
-* Each classifier used in the **bagging** process runs independently of the others. Once all classifiers are finished predicting, the **bagging** algorithm will aggregate results.
+* Each classifier used in the bagging process runs independently of the others. Once all classifiers are finished predicting, the bagging algorithm will aggregate results.
 
-  * Results for a **bagging** algorithm are then aggregated via a voting process. Each classifier will vote for a label, and then the **bagging** algorithm will aggregate votes and classify the label with the most votes as the prediction.
+  * Results for a bagging algorithm are then aggregated via a voting process. Each classifier will vote for a label, and then the bagging algorithm will aggregate votes and classify the label with the most votes as the prediction.
 
-* One of the key differences between **boosting** and **bagging** is that **boosting** algorithms will weigh predictions based on accuracy, and as long as data points are weighted as inaccurate, **boosting** algorithms will continue to run. Instead of weighing predictions, **bagging** algorithms resample and replace data in order to improve model fitting and accuracy.
+* A key difference between boosting and bagging is that boosting algorithms will weigh predictions based on accuracy, and as long as data points are weighted as inaccurate, boosting algorithms will continue to run. Instead of weighing predictions, bagging algorithms resample and replace data in order to improve model fitting and accuracy.
 
   * Summarize the comparison again to help reinforce the differences:
 
     * Bagging combines predictions from multiple models, taking the most frequent prediction among the models as the most likely prediction. Bagging resamples and replaces data in order to improve model fitting and accuracy.
 
-    * Boosting also resamples and replaces data in order to train the best model. The difference is that boosting resamples with greater frequency those samples that previously had the highest error.
+    * Boosting also resamples and replaces data in order to train the best model. The difference is that boosting resamples, with greater frequency, the samples that previously had the highest error.
 
     ![bagging_flow.png](Images/bagging_flow.png)
 
-If time remains, engage students with the below questions. If there are no conversations, go round-robin.
+If time remains, engage students with the questions below. 
 
 * Ask if there is a volunteer who would like to summarize the difference between boosting and bagging algorithms.
 
-  * **Answer** Bagging averages predictions from multiple models and/or multiple re-samples of the data. Boosting is similar, but iteratively resamples more of those observations with previously higher error rates. Both methods average model predictions in order to train the best overall model.
+  * **Answer:** Bagging averages predictions from multiple models and/or multiple re-samples of the data. Boosting is similar, but iteratively resamples more of those observations with previously higher error rates. Both methods average model predictions in order to train the best overall model.
 
-* Ask if another volunteer would like to explain what **boosting** and **bagging** algorithms are used for.
+* Ask if another volunteer would like to explain what boosting and bagging algorithms are used for.
 
-  * **Answer** **Boosting** and **bagging** algorithms are used to improve the accuracy and robustness of **weak learners**. Each class of algorithm converts **weak learners** into **strong learners** through **ensemble learning**.
+  * **Answer:** Boosting and bagging algorithms are used to improve the accuracy and robustness of weak learners. Each class of algorithm converts weak learners into strong learners through ensemble learning.
 
 Ask students if they have any questions before moving on.
 
@@ -902,17 +902,17 @@ Ask students if they have any questions before moving on.
 
 ### 15. Instructor Do: Gradient Boosted Tree (10 min)
 
-The instructor will provide a demonstration on how to use **boosting** in **sklearn** to improve the performance of a decision tree.
+The instructor will provide a demonstration on how to use boosting in sklearn to improve the performance of a decision tree.
 
 **File:** [gradient_boosted_tree.ipynb](Activities/07-Ins_Gradient_Boosted_Tree/Solved/gradient_boosted_tree.ipynb)
 
-Open the unsolved file, and live code the following. Make sure to touch upon the below discussion points while coding.
+Open the unsolved file, and live code the following. Make sure to touch upon the discussion points below while coding.
 
-* It is important to remember that **boosting** involves a set of meta-algorithms that are used to improve the performance of **weak learners**.
+* It is important to remember that boosting involves a set of meta-algorithms that are used to improve the performance of weak learners.
 
-* There are a number of algorithms/libraries available. This activity and the next will focus on how to use the **sklearn** `GradientBoostingClassifier` algorithm.
+* There are a number of algorithms/libraries available. This activity, and the next, will focus on how to use the sklearn `GradientBoostingClassifier` algorithm.
 
-* The `GradientBoostingClassifier` is a part of the `sklearn.ensemble` package. Like any other **sklearn** library, it has to be imported into the Python environment.
+* The `GradientBoostingClassifier` is a part of the `sklearn.ensemble` package. Like any other sklearn library, it has to be imported into the Python environment.
 
     ```python
     import pandas as pd
@@ -926,9 +926,9 @@ Open the unsolved file, and live code the following. Make sure to touch upon the
 
 * The `GradientBoostingClassifier` has four main arguments: `n_estimators`, `learning_rate`, `max_depth`, and `random_state`. Explain each of these parameters while configuring them.
 
-  * The `n_estimators` parameter configures the number of **weak learners** being used with the **boosting** algorithm. The higher the value of `n_estimators`, the more trees that will be created to train the algorithm. The more trees, the better the performance.
+  * The `n_estimators` parameter configures the number of weak learners being used with the boosting algorithm. The higher the value of `n_estimators`, the more trees that will be created to train the algorithm. The more trees, the better the performance.
 
-  * `Learning_rate` controls overfitting. Smaller values should be used when setting `learning_rate`. `Learning_rate` will work with `n_estimators` to identify the number of **weak learners** to train.
+  * `Learning_rate` controls overfitting. Smaller values should be used when setting `learning_rate`. `Learning_rate` will work with `n_estimators` to identify the number of weak learners to train.
 
     * The values should be between 0 and 1.
 
@@ -966,7 +966,7 @@ Explain that using the `GradientBoostingClassifier` is like using any other mach
 
     ![iterate_learning_rate.png](Images/iterate_learning_rate.png)
 
-* The **learning rate** of `0.75` resulted in the highest test accuracy. Create a new classifier using this learning rate. Then, fit the model, score it, and then make predictions using the test data.
+* The learning rate of `0.75` resulted in the highest test accuracy. Create a new classifier using this learning rate. Then, fit the model, score it, and then make predictions using the test data.
 
     ```python
     # Choose a learning rate and create classifier
@@ -998,7 +998,7 @@ Explain that using the `GradientBoostingClassifier` is like using any other mach
   Accuracy Score : 0.568
   ```
 
-* Evaluate the performance of the model by generating a **confusion matrix** and **classification report**.
+* Evaluate the performance of the model by generating a confusion matrix and classification report.
 
     ```python
     # Generate the confusion matrix
@@ -1040,9 +1040,9 @@ Ask if there any questions before moving on.
 
 ---
 
-### 16. Students Do: Turbo Boost (10 min)
+### 16. Student Do: Turbo Boost (10 min)
 
-Students will complete an MSMD activity where they use the **sklearn** `GradientBoostedClassifier` **boosting** algorithm to detect fraudulent loan applications using **ensemble learning**.
+Students will complete an MSMD activity where they use the sklearn `GradientBoostedClassifier` boosting algorithm to detect fraudulent loan applications using ensemble learning.
 
 **Instructions:**
 
@@ -1064,7 +1064,7 @@ Open the solution and explain the following:
 
 * The `GradientBoostedClassifier` model was able to produce incredibly high accuracy scores, higher than some of the algorithms we have seen. What about the `GradientBoostedClassifier` makes it better performance than some other algorithms?
 
-  * **Answer** `GradientBoostClassifier` is an **ensemble learning** algorithm. It pools **weak learners** together and executes them in parallel in order to refit the model as needed. Because it leverages multiple algorithms and runs them in parallel, `GradientBoostClassifier` is a more robust algorithm than average.
+  * **Answer:** `GradientBoostClassifier` is an ensemble learning algorithm. It pools weak learners together and executes them in parallel in order to refit the model as needed. Because it leverages multiple algorithms and runs them in parallel, `GradientBoostClassifier` is a more robust algorithm than average.
 
     ![gradient_boosting_classifier.png](Images/gradient_boosting_classifier.png)
 
@@ -1076,7 +1076,7 @@ Open the solution and explain the following:
 
 * What are the three main parameters for the `GradientBoostClassifier` model?
 
-  * **Answer** **n_estimators**, **learning_rate**, and **max_depth**.
+  * **Answer:** n_estimators, learning_rate, and max_depth.
 
     * `n_estimators` determines the number of trees/weak learners to use.
 
@@ -1084,9 +1084,9 @@ Open the solution and explain the following:
 
     * `max_depth` dictates the size of each tree.
 
-* Remind students that **boosting** algorithms are supervised learning algorithms, and they are built and trained just like any other algorithm. They can perform better than other algorithms because they make iterative predictions using more than one classifier.
+* Remind students that boosting algorithms are supervised learning algorithms, and they are built and trained just like any other algorithm. They can perform better than other algorithms because they make iterative predictions using more than one classifier.
 
-Use the rest of the time for students to ask questions. If there are no questions, ask students how they are feeling about decision trees and **boosting** algorithms.
+Use the rest of the time for students to ask questions. If there are no questions, ask students how they are feeling about decision trees and boosting algorithms.
 
 Move onto the next activity.
 
