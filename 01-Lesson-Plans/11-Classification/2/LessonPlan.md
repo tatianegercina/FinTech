@@ -58,9 +58,9 @@ Day 2 introduces students to tree-based algorithms and ensemble learners such as
 
 Open the lesson slides and welcome students to Day 2 by highlighting the following:
 
-* Today, a new family of machine learning algorithms is going to be introduced: _tree-based algorithms_.
+* Today, a new family of machine learning algorithms will be introduced: tree-based algorithms.
 
-* Tree-based algorithms are supervised learning methods that are mostly used for classifications and regression problems.
+* Tree-based algorithms are supervised learning methods that are mostly used for classification and regression problems.
 
 * This class will cover the following algorithms and methods:
 
@@ -212,7 +212,7 @@ Remind students that they have already seen binary encoded data with the Pandas 
   loans_binary_encoded.to_csv(file_path, index=False)
   ```
 
-Tell students that the final step we need to perform is scaling and normalization. Many machine learning algorithms will perform better with a normalized (scaled) dataset.
+Tell students that the final step we need to perform is scaling and normalization. Many machine learning algorithms perform better with a normalized (scaled) dataset.
 
 Explain to students that some models are sensitive to very large numerical values and may not be able to converge due to those features. It is always a good idea to have features all on the same scale, so they have equal importance to the model.
 
@@ -313,7 +313,7 @@ Answer any questions before moving on.
 
 In this lesson, students will be introduced to tree-based algorithms and the `sklearn` modules that implement this algorithmic family.
 
-Open the lesson slides, go to the _Walking into the Algorithms Forest_ section, and highlight the following:
+Open the lesson slides, go to the Walking into the Algorithms Forest section, and highlight the following:
 
 * Tree-based algorithms are part of the supervised machine learning methods.
 
@@ -345,7 +345,7 @@ Answer any questions before moving on.
 
 ### 6. Instructor Do: Decision Trees (10 min)
 
-In this activity, students will be introduced to decision trees and how they can use them for classification problems.
+In this activity, students are introduced to decision trees and how to use them for classification problems.
 
 **Files:**
 
@@ -353,7 +353,7 @@ In this activity, students will be introduced to decision trees and how they can
 
 * [loans_data_encoded.csv](Activities/03-Ins_Decision-Trees/Resources/loans_data_encoded.csv)
 
-Start by opening the lesson slides, move to the _Decision Trees_ section, and highlight the following:
+Open the lesson slides, move to the Decision Trees section, and highlight the following:
 
 * Decision trees encode a series of `True/False` questions.
 
@@ -629,7 +629,7 @@ Answer any questions before moving on.
 
 In this activity, students will be introduced to ensemble learning, weak learners, and random forests.
 
-Navigate to the _Introduction to Ensemble Learning_ section of the slides. Highlight the following:
+Navigate to the Introduction to Ensemble Learning section of the slides. Highlight the following:
 
 * Tell the class that if they took all the classification models they have used thus far and compared them, they'd find that some algorithms performed better than others, which is to be expected.
 
@@ -653,11 +653,11 @@ Explain to students that weak learners are still valuable in machine learning.
 
 * Ask students if they can guess what can be done to make a weak learner perform more accurately?
 
-  * **Answer** Boost weak learners with other algorithms for an ensemble learning approach.
+  * **Answer:** Boost weak learners with other algorithms for an ensemble learning approach.
 
 * Tell students that a decision tree could be classified as a weak learner. Ask students what they think would make a decision tree a weak learner.
 
-  * **Answer** The decision tree having only one split (i.e., a stump).
+  * **Answer:** The decision tree having only one split (i.e., a stump).
 
 Continue the presentation by introducing the random forest algorithm and highlight the following:
 
