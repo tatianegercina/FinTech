@@ -512,7 +512,7 @@ In this activity, students will create a decision tree model to predict fraudule
 
 ---
 
-### 8. Instructor Do: Review Predicting Fraudulent Loans Applications (10 min)
+### 8. Instructor Do: Review Predicting Fraudulent Loan Applications (10 min)
 
 **Files:**
 
