@@ -1,4 +1,4 @@
-# Student Do: Predicting Fraudulent Loans Applications
+# Student Do: Predicting Fraudulent Loan Applications
 
 According to the American Bankers Association, [every dollar of fraud costs banks and credit unions roughly $2.92](https://www.aba.com/member-tools/industry-solutions/insights/state-card-fraud-2018). That's a reason why predicting fraud using machine learning techniques is a [broad area of research](https://scholar.google.com.mx/scholar?q=fraud+detection+machine+learning&btnG=&oq=fraud+detection+) and a great [business opportunity for FinTech startups](https://www.eu-startups.com/2019/06/paris-based-fintech-bleckwen-raises-e8-8-million-for-its-fraud-detection-software-to-prevent-financial-crime/).
 
