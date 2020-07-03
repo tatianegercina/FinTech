@@ -834,7 +834,7 @@ Engage the class by calling on a couple of students to share their insights in t
 
   * **Sample Answer:** This model's accuracy is better than using decision trees, so if we want to deploy a fraud detection solution for loans in a bank, we would trust in random forest more than in decision trees.
 
-* **Question 2:** What are your insights about the top 10 most important features?
+* **Question 2:** What are your insights on the top 10 features?
 
   * **Sample Answer:** It seems that the bank is not relevant for the model, so we can create a new random forest model by only taking these top 10 features. Also, for piloting this model in a business environment, we will only need to fetch new data about these 10 features.
 
