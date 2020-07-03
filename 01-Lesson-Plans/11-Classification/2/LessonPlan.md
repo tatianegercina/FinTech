@@ -932,7 +932,7 @@ Open the unsolved file, and live code the following. Make sure to touch upon the
 
     * The values should be between 0 and 1.
 
-    * A common technique is to loop through a range of **learning rates**, creating and fitting the classifier with each value in the range. Once the classifier is created, it can be scored. The **learning rate** with the highest test accuracy should be used.
+    * A common technique is to loop through a range of learning rates, creating and fitting the classifier with each value in the range. Once the classifier is created, it can be scored. The learning rate with the highest test accuracy should be used.
 
   * The `max_depth` argument identifies the size/depth of each decision tree being used. `Max_depth` will dictate the number of levels between leaf nodes and the root.
 
@@ -940,7 +940,7 @@ Explain that using the `GradientBoostingClassifier` is like using any other mach
 
 * The `GradientBoostingClassifier` will require values for arguments `n_estimators`, `learning_Rate`, and `max_depth`. The defaults will be used for `n_estimators` and `max_depth`.
 
-* In order to determine the optimal `learning_rate`, a loop is used to iterate over each possible `learning_rate`, and then the model is built and scored using that value. The **learning rate** with the highest test accuracy should be chosen.
+* In order to determine the optimal `learning_rate`, a loop is used to iterate over each possible `learning_rate`, and then the model is built and scored using that value. The learning rate with the highest test accuracy should be chosen.
 
     ```python
     # Create a classifier object
@@ -966,7 +966,7 @@ Explain that using the `GradientBoostingClassifier` is like using any other mach
 
     ![iterate_learning_rate.png](Images/iterate_learning_rate.png)
 
-* The learning rate of `0.75` resulted in the highest test accuracy. Create a new classifier using this learning rate. Then, fit the model, score it, and then make predictions using the test data.
+* The learning rate of `0.75` resulted in the highest test accuracy. Create a new classifier using this learning rate. Then, fit the model, score it, and make predictions using the test data.
 
     ```python
     # Choose a learning rate and create classifier
@@ -1062,7 +1062,9 @@ Students will complete an MSMD activity where they use the sklearn `GradientBoos
 
 Open the solution and explain the following:
 
-* The `GradientBoostedClassifier` model was able to produce incredibly high accuracy scores, higher than some of the algorithms we have seen. What about the `GradientBoostedClassifier` makes it better performance than some other algorithms?
+* The `GradientBoostedClassifier` model was able to produce incredibly high accuracy scores, higher than some of the algorithms we have seen. 
+
+* What about the `GradientBoostedClassifier` makes it perform better than some other algorithms?
 
   * **Answer:** `GradientBoostClassifier` is an ensemble learning algorithm. It pools weak learners together and executes them in parallel in order to refit the model as needed. Because it leverages multiple algorithms and runs them in parallel, `GradientBoostClassifier` is a more robust algorithm than average.
 
@@ -1072,7 +1074,7 @@ Open the solution and explain the following:
 
   * Explain that this is because the classes are imbalanced, meaning that the algorithm was able to make predictions for one class better than it was for another, and as a result, the algorithm developed bias.
 
-  * Let students know that they will learn what imbalanced classes are and how to deal with them in the next class.
+  * Let students know that they will learn what imbalanced classes are, and how to deal with them, in the next class.
 
 * What are the three main parameters for the `GradientBoostClassifier` model?
 
@@ -1094,17 +1096,17 @@ Move onto the next activity.
 
 ### 18. Instructor Do: The Trees Versus the World (10 min)
 
-In this activity, the instructor will conduct a facilitated discussion in the class where students will be able to compare the strengths and weaknesses of decision trees, random forests, and classical classifiers (Logistic Regression, SVM, KNN).
+In this activity, the instructor will conduct a facilitated discussion in the class where students will be able to compare the strengths and weaknesses of decision trees, random forests, and classical classifiers (logistic regression, SVM, KNN).
 
-Open the lesson slides, go to _The Trees Vs. The World_ section and start the discussion by asking the class the following question:
+Go to the lesson slides, navigate to The Trees vs. The World section, and start the discussion by asking the class the following question:
 
-* Why do you think it is worth to learn about classification algorithms?
+* Why do you think it is worth it to learn about classification algorithms?
 
-Ask a couple of students to answer the question, provide your feedback by continuing with the first slide of the section, and mentioning that classification algorithms are a matter worthy of study since classification is a multidisciplinary challenge.
+Ask a couple of students to answer the question. Provide feedback by continuing with the first slide of the section, and mention that classification algorithms are a matter worthy of study, since classification is a multidisciplinary challenge.
 
-* **Finance and Banking:** Fraud detection, money laundry, credit risk assessment.
+* **Finance and Banking:** Fraud detection, money laundering, credit risk assessment.
 
-* **Retail and Marketing:** customized products offers, products recommendation, direct marketing optimization.
+* **Retail and Marketing:** Customized product offers, product recommendations, direct marketing optimization.
 
 * **Politics:** Vote intention, party affinity.
 
@@ -1114,27 +1116,30 @@ Ask a couple of students to answer the question, provide your feedback by contin
 
 * **Education:** Programs affinity, customized curricula, desertion prevention.
 
-Follow the discussion by asking students the next question:
+Continue the discussion by asking students the next question:
 
 * Are tree-based algorithms the strongest for classification?
 
-Ask for one volunteer to answer the question, after listening to student's answer, comment to students some the strengths of tree-based algorithms:
+Ask for one volunteer to answer the question. After the student answers, share some of the strengths of tree-based algorithms:
+
+Tree-based algorithms... 
 
 * Are easy to represent, making a complex model much easier to interpret.
 
-* Can be used for any type of data: Numerical (e.g., loan’s amount) or categorical (e.g., bank’s name that issues a
+* Can be used for any type of data: numerical (e.g., loan amount) or categorical (e.g., name of bank that issues a
 loan).
+
 * Require little data preparation.
 
 * Can handle data that are not normally distributed.
 
 * Can avoid overfitting.
 
-Continue the presentation by showing to students, some of the cases when classical classifiers perform better than tree-based algorithms:
+Continue the presentation by showing some of the cases when classical classifiers perform better than tree-based algorithms:
 
 * Generally speaking, classical classifiers may be faster.
 
-* Logistic regression may outperform Decision trees or random forests having a large number of features with low noise.
+* Logistic regression may outperform decision trees or random forests having a large number of features with low noise.
 
 * SVM also supports linear and non-linear models.
 
@@ -1142,15 +1147,15 @@ Continue the presentation by showing to students, some of the cases when classic
 
 * KNN (a method we'll cover in coming weeks) naturally supports incremental learning (data streams).
 
-Close the discussion by asking this final question:
+Close the discussion by asking a final question:
 
 * Which algorithm should I use for classification?
 
-Ask for one or two students to voluntary answer the question, and conclude by highlighting the following:
+Ask for one or two volunteers to answer the question, and conclude by highlighting the following:
 
-* There is no definitive answer to this question, the best answer is _it depends_.
+* There is no definitive answer to this question, but the best answer is _it depends_.
 
-* The best algorithm for a classification problem will be determined by different factors such as:
+* The best algorithm for a classification problem will be determined by different factors, such as:
 
   * Type of data (categorical, numerical, a combination of both).
 
@@ -1164,7 +1169,9 @@ Ask for one or two students to voluntary answer the question, and conclude by hi
 
   * Dataset size (number of records or samples)
 
-Congratulate students on learning about a new family of machine learning algorithms, answer any questions before ending the class.
+Congratulate students on learning about a new family of machine learning algorithms! 
+
+Answer any questions before ending the class.
 
 ### End Class
 
