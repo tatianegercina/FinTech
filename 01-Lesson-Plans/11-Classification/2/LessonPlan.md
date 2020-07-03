@@ -4,7 +4,7 @@
 
 ### Overview
 
-In today's class, students will learn the benefits of using tree-based algorithms for classification problems, and gain hands-on experience with random forests and ensemble methods, like bagging and boosting. Students will also be introduced to dealing with categorical data in machine learning, and learn how to identify when it is worth to use categorical data as a feature in a model.
+In today's class, students will learn the benefits of using tree-based algorithms for classification problems, and gain hands-on experience with random forests and ensemble methods, like bagging and boosting. Students will also be introduced to dealing with categorical data in machine learning, and learn how to identify when it is worth using categorical data as a feature in a model.
 
 ### Class Objectives
 
