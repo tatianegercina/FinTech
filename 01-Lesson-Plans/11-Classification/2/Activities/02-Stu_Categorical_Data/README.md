@@ -2,7 +2,7 @@
 
 In this activity, you are tasked with encoding some categorical and text features of a dataset that contains `2,097` loan applications. In later activities, you will use this dataset to predict fraudulent transactions.
 
-## Dataset Description.
+## Dataset Description
 
 The data provided is based on the dataset used in the research paper titled [“Should This Loan be Approved or Denied?”: A Large Dataset with Class Assignment Guidelines](https://doi.org/10.1080/10691898.2018.1434342), published by Min Li, Amy Mickel, and Stanley Taylor of  California State University in the Journal of Statistics Education.
 
