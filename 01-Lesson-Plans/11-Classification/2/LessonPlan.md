@@ -1094,7 +1094,7 @@ Move onto the next activity.
 
 ---
 
-### 18. Instructor Do: The Trees Versus the World (10 min)
+### 18. Instructor Do: The Trees vs. the World (10 min)
 
 In this activity, the instructor will conduct a facilitated discussion in the class where students will be able to compare the strengths and weaknesses of decision trees, random forests, and classical classifiers (logistic regression, SVM, KNN).
 
