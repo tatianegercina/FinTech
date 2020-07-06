@@ -107,15 +107,15 @@ Tell the class that although we highlighted particular metrics for each example,
 
 ### 5. Instructor Do: Imbalanced Data (5 min)
 
-Continue in the slides to the imbalanced data slide.
+Go to the slideshow and navigate to the imbalanced data slide.
 
 * Imbalanced data describes cases when one or more classes in the data are much more or less frequent than the other class(es). We will be working with binary (two-class) classification tasks for simplicity, but imbalanced data is a problem in multi-class tasks as well.
 
-* Imbalanced data is problematic for two main reasons. First, it can cause your model to be biased towards the majority class. Basically, the model will be better at predicting the majority class compared to the minority class because model fitting algorithms are designed to minimize the number of total incorrect classifications. For a concrete example, imagine a data set with two classes A and B. There are 100 instances of A in the training sample, and only 10 instances of B. Imagine a naive model that always picks A. If the data were perfectly balanced, this would result in an accuracy of 50%. However, because this data is imbalanced, this naive model would achieve an accuracy of 100/110 or over 90%! If the two classes are not easily separable, the resulting model will lean towards the naive model and be much better at predicting the majority class than the minority class.
+* Imbalanced data is problematic for two main reasons. First, it can cause your model to be biased towards the majority class. Basically, the model will be better at predicting the majority class compared to the minority class, because model fitting algorithms are designed to minimize the number of total incorrect classifications. For a concrete example, imagine a data set with two classes, A and B. There are 100 instances of A in the training sample, and only 10 instances of B. Imagine a naive model that always picks A. If the data were perfectly balanced, this would result in an accuracy of 50%. However, because this data is imbalanced, this naive model would achieve an accuracy of 100/110, or over 90%! If the two classes are not easily separable, the resulting model will lean towards the naive model, and be much better at predicting the majority class than the minority class.
 
-* As you have seen in the previous activity, imbalanced classes like cancer/non-cancer can cause metrics like accuracy to be unreliable as a proxy for the "goodness" of a model. The example above illustrates why.
+* As you have seen in the previous activity, imbalanced classes like cancer/non-cancer can cause metrics like accuracy to be unreliable as a proxy for the "goodness" of a model. The above example illustrates why.
 
-* The rest of the class will go over strategies to deal with imbalanced classes. We will work mostly with over and under-sampling methods, in which we sample the minority class with greater than random chance or sample the majority class with less than random chance. We will also explain why ensemble methods may be more suitable for imbalanced data than other classification methods and introduce a classification report specifically created for imbalanced data.
+* The remainder of class will cover strategies to deal with imbalanced classes. The majority of time will be spent working with over and undersampling methods, where we sample the minority class with greater than random chance, or sample the majority class with less than random chance. We will also explain why ensemble methods may be more suitable for imbalanced data than other classification methods, and introduce a classification report specifically created for imbalanced data.
 
 ### 6. Instructor Do: Oversampling (10 min)
 
@@ -125,21 +125,21 @@ Continue in the slides to the imbalanced data slide.
 
 Continue through the slides to the oversampling slide.
 
-* Oversampling is intuitive - if we think one class has too few instances in the training sample, then we should choose more instances from that class for training than we normally would.
+* Oversampling is intuitive. If we think one class has too few instances in the training sample, then we should choose more instances from that class for training than we normally would.
 
-* There are a few ways we can do this; we will talk about two types of oversampling techniques, random and SMOTE (Synthetic Minority Oversampling Technique). Random oversampling replicates the existing training set, randomly choosing additional instances of the minority class with replacement until the minority class is equal to the majority class in size. SMOTE generates synthetic data by first identifying cluster centers in the minority data and then randomly introducing variations to those centers to create new instances.
+* There are a few ways to do this; we will talk about two types of oversampling techniques, random and Synthetic Minority Oversampling Technique (SMOTE). Random oversampling replicates the existing training set, randomly choosing additional instances of the minority class with replacement until the minority class is equal to the majority class in size. SMOTE generates synthetic data by first identifying cluster centers in the minority data, and then randomly introducing variations to those centers to create new instances.
 
 * Random oversampling is more likely to create overfitting problems in the model, due to the lack of variation in the repeated instances.
 
-Open the notebook and walk through the cells one by one.
+Open the notebook and walk through the cells, one by one.
 
-* First, we implement random oversampling on the generated dataset. One important note is that prior to the oversampling process, we want to split up the data into training and test sets as we would normally do. This is because even though we would like the *training* set to be oversampled to account for imbalance, we should always make sure that the *test* set to be "real" - that is, data that actually is actually observed. We would not want to oversample the entire dataset.
+* First, we implement random oversampling on the generated dataset. One important note is that prior to the oversampling process, we want to split up the data into training and test sets as we normally would. This is because even though we would like the *training* set to be oversampled to account for imbalance, we should always make sure that the *test* set is "real"-that is, data that actually is actually observed. We would not want to oversample the entire dataset.
 
 * This initial train-test split gives us the following imbalanced data.
 
 ![overs_1](Images/overs_1.PNG)
 
-* Note that we specify a random_state parameter for the random oversampler so that the sampling is replicable - if we want to repeat the same "random" oversampling, we just need to specify the same random_state in the future.
+* Note that we specify a random_state parameter for the random oversampler so that the sampling is replicable-if we want to repeat the same "random" oversampling, we just need to specify the same random_state in the future.
 
 * After oversampling, we can see that the two classes are now balanced.
 
@@ -147,7 +147,7 @@ Open the notebook and walk through the cells one by one.
 
 * We apply logistic regression to the training set and then use the model to predict the values of y from the test set. The confusion matrix and the accuracy score should be familiar to students, but we introduce another function useful for imbalanced evaluation: the imbalanced classification report, which includes more evaluation metrics and produces them separately for the two classes.
 
-* We can see below that the minority class has low precision and, therefore, a lower F1 score despite oversampling. This may be due to overfitting in the training set.
+* We can see below that the minority class has low precision and, therefore, a lower F1 score, despite oversampling. This may be due to overfitting in the training set.
 
 ![overs_3](Images/overs_3.PNG)
 
@@ -159,9 +159,9 @@ Pause for any questions before moving on to the implementation of SMOTE oversamp
 
 ![overs_4](Images/overs_4.PNG)
 
-* There are several reasons why we should not necessarily read too much into the results from this example. First, the data is artificially generated in the first place; real-life data would not normally have these properties. Second, the test set is relatively small, and individual instances being correct or wrong, especially in the minority class, can lead to large changes in the evaluation metrics.
+* There are several reasons why we should not necessarily read too much into the results from this example. First, the data is artificially generated in the first place. In the real world, data would not normally have these properties. Second, the test set is relatively small, and individual instances being correct or wrong, especially in the minority class, can lead to large changes in the evaluation metrics.
 
-Pause for questions before moving on to the next activity.
+Answer any questions before moving on to the next activity.
 
 ### 7. Students Do: More Loans (15 min)
 
