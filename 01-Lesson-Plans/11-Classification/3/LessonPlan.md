@@ -215,7 +215,7 @@ Ask students how they interpreted the evaluation metrics. What are some reasons 
 
 Continue in the slides to the undersampling slide.
 
-* If we have imbalanced classes, we can purposefully use more of the minority class for training - this is oversampling. However, we can also take fewer instances of the majority class than would be indicated by a proportional sampling method - this is called undersampling.
+* If we have imbalanced classes, we can purposefully use more of the minority class for training-this is oversampling. However, we can also take fewer instances of the majority class than would be indicated by a proportional sampling method-this is called undersampling.
 
 * In undersampling, we take only as many instances of the majority class as there are instances in the minority class training set.
 
@@ -231,7 +231,7 @@ Continue in the slides to the undersampling slide.
 
 Pause for students' questions before moving on to the next activity.
 
-### 10. Students Do: Undersampling (15 min)
+### 10. Student Do: Undersampling (15 min)
 
 In this activity, students will research and practice undersampling with the imbalanced-learn library.
 
@@ -263,7 +263,7 @@ Open the solved notebook and go through the code. Since the structure of this ac
 
 ![unders_2](Images/unders_2.PNG)
 
-Ask students which sampling method they prefer for this data given the evaluation results they have seen. Is there ever an argument for using a sampling methodology that results in worse evaluation metrics?
+Ask students which sampling method they prefer for this data, given the evaluation results they have seen. Is there ever an argument for using a sampling methodology that results in worse evaluation metrics?
 
 * Holding all else equal, we would want to use the sampling methodology that results in the best evaluation metrics. However, we have not tried alternative models that might provide better fits for this dataset. If the training set seems large enough to use undersampling, we might want to try different models, such as tree-based or ensemble classifiers, before determining that oversampling is the better methodology.
 
