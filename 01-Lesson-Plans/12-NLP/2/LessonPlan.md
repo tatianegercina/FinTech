@@ -243,6 +243,7 @@ Open the [solution](Activities/04-Stu_Bossy_Words/Solved/bossy_words.ipynb) and 
   ```
 
 * In the challenge section, the most tricky part could be to code the search by any of the terms passed as a parameter. The clue is to use the [`any()` function](https://stackoverflow.com/a/16505590/4325668) in the condition of the `found_terms` comprehension list, as explained on [this article](https://stackoverflow.com/a/25102099/4325668).
+
   ```python
   def retrieve_docs(terms):
     result_docs = []
@@ -921,4 +922,4 @@ Explain that NLP and sentiment analysis is still a cutting-edge research area. I
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

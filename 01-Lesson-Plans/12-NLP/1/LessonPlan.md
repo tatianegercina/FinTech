@@ -41,6 +41,7 @@ By the end of the class, students will be able to:
 * Have your TAs keep track of time with the [Time Tracker.](TimeTracker.xlsx)
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [12.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f93c7d61-c53a-4af6-ac24-aae6002c227f) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
@@ -137,7 +138,6 @@ Ask students to give an example of one type of analysis that they can do with th
 ### 4. Student Do: Tokenizing Reuters (15 min)
 
 In this activity, students will practice sentence and word tokenization on some articles from the Reuters Corpus and place the results in a Pandas DataFrame.
-
 
 **Instructions:**
 
@@ -525,4 +525,4 @@ def process_text_bg(doc):
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
