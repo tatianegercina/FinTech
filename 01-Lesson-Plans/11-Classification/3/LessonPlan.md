@@ -17,9 +17,9 @@ By the end of class, students will be able to:
 
 * Today's class is somewhat heavy on theory. Students must also understand the occasional need to implement sampling strategies used in activities. It may be useful to check for understanding by posing questions about hypothetical use cases and data sets.
 
-* Be sure to spend some time on the implementations of SMOTE and cluster centroids undersampling, and encourage students to read the documentation for these modules so that they understand how it works under the hood.
+* Spend time on the SMOTE implementations and cluster centroids undersampling, and encourage students to read the documentation for these modules so that they understand how it works under the hood.
 
-* Be sure to make good use of the slides, since concepts like confusion matrices or the precision-recall curve may be easier to understand visually.
+* Be sure to make use of the slides, since certian concepts like confusion matrices or the precision-recall curve will be easier to understand visually.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -55,31 +55,31 @@ This activity will give students a chance to refresh the concepts of model evalu
 
 * [review_model_eval.ipynb](Activities/01-Ins_Review_Eval_Metrics/Solved/review_model_eval.ipynb)
 
-Walkthrough the first few blocks of the notebook.
+Walk through the first few blocks of the notebook.
 
 * We created two classes in this data, with two important features. First, one class is much larger than the other. Second, the classes have significant variation, so neither is cleanly distinguishable from the other.
 
  ![eval_1.png](Images/eval_1.PNG)
 
-* Using a logistic regression model, we try to predict the class, purple or yellow, with the coordinates of a point.
+* Using a logistic regression model, we will try to predict the class, purple or yellow, with the coordinates of a point.
 
 Ask a student to help you interpret the output of the confusion matrix. Refer to the slide to reveal the correct answer.
 
 ![eval_2png](Images/eval_2.PNG)
 
-* Looking only at this matrix, it seems that the model does reasonably well. While there are some false positives, the vast majority of data points are classified correctly.
+* Looking only at this matrix, it appears that the model does reasonably well. While there are some false positives, the vast majority of data points are classified correctly.
 
-Move on to the next block, and ask a student to define the three metrics that are shown here. Once again, refer to the slide to confirm the student's answers.
+Move on to the next block, and ask a student to define the three metrics that are shown. Once again, refer to the slide to confirm the student's answers.
 
 ![eval_3png](Images/eval_2.PNG)
 
-* Precision is the proportion of predicted positives that are accurate. Recall is the proportion of actual positive that were predicted as positive. The F1 metric is a blended average of the two.
+* Precision is the proportion of predicted positives that are accurate. Recall is the proportion of actual positives that were predicted as positive. The F1 metric is a blended average of the two.
 
 Ask students to evaluate the performance of this model. How do they think it did?
 
-* While the confusion matrix and evaluation metrics do give us some insight into performance, this is a bit of a trick question. Whether or not the model is "good" depends on the context. What are we trying to predict? What are the cost of false positives or false negatives?
+* While the confusion matrix and evaluation metrics provide some insight into performance, this is a bit of a trick question. Whether or not the model is "good" depends on the context. What are we trying to predict? What are the cost of false positives or false negatives?
 
-### 3. Students Do: Hypothetical Models (15 min)
+### 3. Student Do: Hypothetical Models (15 min)
 
 In this activity, students will discuss the relative importance of false positives/negatives and weigh the pros and cons of using each evaluation metric for a set of hypothetical classification models.
 
