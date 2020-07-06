@@ -28,13 +28,13 @@ By the end of this class, students will be able to:
 
 * Slack out the [imblearn Installation Guide](../../11-Classification/Supplemental/Machine_Learning_Env_Setup_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
-* Students will consolidate their skills from the previous two days through longer activities. These include creating financial models in multiple steps,  stationarizing data, and identifying model orders to make predictions on future values and volatility. Make sure that you and your TAs keep an eye out for any weaker students during these activities and assist them as needed.
+* Students will consolidate their skills from the previous two days through longer activities. These include creating financial models in multiple steps, stationarizing data, and identifying model orders to make predictions on future values and volatility. Make sure that you and your TAs keep an eye out for any weaker students during these activities and assist them as needed.
 
 * Students will also learn to validate models by training and testing data. Emphasize that this will be a valuable skill in later units as they dive more deeply into machine learning.
 
 ### Sample Class Video (Highly Recommended)
-* To watch an example class lecture, go here: [10.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=57855d94-d1e5-4334-a4bd-aadb010f656c) Note that this video may not reflect the most recent lesson plan.
 
+* To watch an example class lecture, go here: [10.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=57855d94-d1e5-4334-a4bd-aadb010f656c) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
 
@@ -86,111 +86,111 @@ In this activity, you will explain linear regression to the class and demonstrat
 
 Use the slides to explain the linear equation:
 
-  ```
-  y = mx + b
-  ```
+```
+y = mx + b
+```
 
-  * This equation describes, or models, the relationship between variables x and y.
+* This equation describes, or models, the relationship between variables x and y.
 
-  * As x increases, y increases.
+* As x increases, y increases.
 
-  * How fast y increases in relation to x is called the **slope**.
+* How fast y increases in relation to x is called the **slope**.
 
-  * Slope is represented by the letter `m` in the equation.
+* Slope is represented by the letter `m` in the equation.
 
-  * The value of `y` when `x` is 0 is called the **y-intercept**. It is represented by the letter `b`.
+* The value of `y` when `x` is 0 is called the **y-intercept**. It is represented by the letter `b`.
 
 Ask whether, on visual inspection, a trend exists:
 
-  ![Images/linear_regression01.png](Images/linear_regression01.png)
+![Images/linear_regression01.png](Images/linear_regression01.png)
 
-  * `y` increases as `x` increases.
+* `y` increases as `x` increases.
 
 Explain that a line that best fits the trend can be drawn:
 
-  ![Images/linear_regression02.png](Images/linear_regression02.png)
+![Images/linear_regression02.png](Images/linear_regression02.png)
 
-  * This line is called the **best fit line**. In computing, it is called **linear regression**.
+* This line is called the **best fit line**. In computing, it is called **linear regression**.
 
-  * The equation is simple but tedious, and is best solved by a computer.
+* The equation is simple but tedious, and is best solved by a computer.
 
 Explain that, in other words, linear regression identifies the line that best predicts `y` based on the value of `x`.
 
 Now, explain the concept of **residuals**.
 
-  * Even a best fit line that captures the data well is seldom, if ever, perfect.
+* Even a best fit line that captures the data well is seldom, if ever, perfect.
 
-  * A residual is the difference between the **predicted** value of `y` and its **actual** value.
+* A residual is the difference between the **predicted** value of `y` and its **actual** value.
 
-  * Linear regression seeks to minimize the **square** value of residuals.
+* Linear regression seeks to minimize the **square** value of residuals.
 
 Summarize the key points of linear regression:
 
-  * It models data with a linear trend. It isn't useful when the data does not follow a linear trend, e.g., exponential trends.
+* It models data with a linear trend. It isn't useful when the data does not follow a linear trend, e.g., exponential trends.
 
-  * Based on the x values, it predicts y values.
+* Based on the x values, it predicts y values.
 
-  * It does not do a good job of describing non-linear patterns. (We will cover techniques to model non-linear data later in the course.)
+* It does not do a good job of describing non-linear patterns. (We will cover techniques to model non-linear data later in the course.)
 
 Now that students have a conceptual understanding of linear regression, walk through the steps of performing linear regression in Python. Here are some introductory remarks:
 
-  * The CSV contains data on years of job experience and salary.
+* The CSV contains data on years of job experience and salary.
 
-  ![Images/linear_regression03.png](Images/linear_regression03.png)
+![Images/linear_regression03.png](Images/linear_regression03.png)
 
-  * We will use Scikit-learn, a machine learning library, to create a linear regression model.
+* We will use Scikit-learn, a machine learning library, to create a linear regression model.
 
 Ask the class: In a linear regression model, which column is the dependent variable, and which is the independent variable?
 
-  * `YearsExperience` is the independent variable, or `x`.
+* `YearsExperience` is the independent variable, or `x`.
 
-  * `Salary` is the independent variable, or `y`.
+* `Salary` is the independent variable, or `y`.
 
 Explain that in order to use Scikit-learn (sklearn) for regression, the independent variable (x) will need to be reformatted:
 
-  ```python
-  X = df.YearsExperience.values.reshape(-1, 1)
-  ```
+```python
+X = df.YearsExperience.values.reshape(-1, 1)
+```
 
-  * Scikit-learn cannot take in a Pandas Series directly.
+* Scikit-learn cannot take in a Pandas Series directly.
 
-  * `reshape(-1, 1)` reshapes, or formats, the data.
+* `reshape(-1, 1)` reshapes, or formats, the data.
 
-  * `X.shape` returns `(30,1)`, meaning that `X` has 30 rows and 1 column of data.
+* `X.shape` returns `(30,1)`, meaning that `X` has 30 rows and 1 column of data.
 
-  * The dependent variable can remain a pandas series, as seen by `y = df.Salary`.
+* The dependent variable can remain a pandas series, as seen by `y = df.Salary`.
 
 Walk through the boilerplate code:
 
-  ```python
-  model = LinearRegression()
-  model.fit(X,y)
-  ```
+```python
+model = LinearRegression()
+model.fit(X,y)
+```
 
-  * A linear regression model is created (instantiated) using Scikit-learn, and the data are fit into the model.
+* A linear regression model is created (instantiated) using Scikit-learn, and the data are fit into the model.
 
 Explain how to obtain the parameters of the model, its slope, and y-intercept:
 
-  ```python
-  print(model.coef_)
-  print(model.intercept_)
-  ```
+```python
+print(model.coef_)
+print(model.intercept_)
+```
 
-  * Again, Scikit-learn creates a linear equation model based on the data (y = mx + b).
+* Again, Scikit-learn creates a linear equation model based on the data (y = mx + b).
 
-  * `model.coef_` is the slope of the equation.
+* `model.coef_` is the slope of the equation.
 
-  * `model.intercept_` is the y-intercept.
+* `model.intercept_` is the y-intercept.
 
 Explain that the power of a linear regression model comes from its ability to describe and to predict.
 
-  ```python
-  predicted_y_values = model.predict(X)
-  ```
+```python
+predicted_y_values = model.predict(X)
+```
 
-  * This line creates an array of predicted y values based on x values.
+* This line creates an array of predicted y values based on x values.
 
-  * In other words, if given an x-value (years of experience) that is not in the data set, the model will predict the corresponding y-value (salary).
+* In other words, if given an x-value (years of experience) that is not in the data set, the model will predict the corresponding y-value (salary).
 
 Go to the slideshow, navigate to the Regression Metrics section, and recapitulate the linear regression plot below, which we have seen previously:
 
@@ -399,11 +399,11 @@ Explain that the rest of the code is familiar from previous examples:
   predictions = model.predict(X_binary_encoded)
   ```
 
-  * The `Temperature` column is specified as the dependent variable array `y`. The `copy()` method is used to create a copy of a Pandas object, to ensure that no unwanted changes are made to the original data.
+* The `Temperature` column is specified as the dependent variable array `y`. The `copy()` method is used to create a copy of a Pandas object, to ensure that no unwanted changes are made to the original data.
 
-  * A model is created and fits the independent and dependent variables.
+* A model is created and fits the independent and dependent variables.
 
-  * An array of predictions is created using `model.predict()`.
+* An array of predictions is created using `model.predict()`.
 
 Explain that the metrics of the linear regression model are generated:
 
@@ -419,15 +419,15 @@ Note that the r-square value, at `0.23`, is fairly low and that we will cover th
 
 Also note that the trend appears at least somewhat linear for the specified timeline, but that a longer timespan–say from January through December–will not be good for a linear regression model.
 
-  * This underscores the importance that linear regression, rather than a mechanical process, requires thinking about the variables.
+* This underscores the importance that linear regression, rather than a mechanical process, requires thinking about the variables.
 
-  * It also highlights the importance of plotting the data before reaching a conclusion!
+* It also highlights the importance of plotting the data before reaching a conclusion!
 
 Take a moment to summarize the key points of this activity:
 
-  * The idea is the same as before. We use Scikit-learn to create a model of the independent variable (x) and the dependent variable (y).
+* The idea is the same as before. We use Scikit-learn to create a model of the independent variable (x) and the dependent variable (y).
 
-  * Because datetime data cannot be directly imported into a Scikit-learn model, we've had to create a binary encoding for each row, and drop an unnecessary column.
+* Because datetime data cannot be directly imported into a Scikit-learn model, we've had to create a binary encoding for each row, and drop an unnecessary column.
 
 Answer any questions before moving on.
 
@@ -467,11 +467,11 @@ Explain that we need a column of returns, and lagged returns, which will be regr
   df = df.dropna()
   ```
 
-  * Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called autoregression and will be further discussed on day 2.
+* Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called autoregression and will be further discussed on day 2.
 
-  * A column of lagged returns is created by shifting each value downward by 1 row.
+* A column of lagged returns is created by shifting each value downward by 1 row.
 
-  * NaN values must be dropped.
+* NaN values must be dropped.
 
 Go over the steps of preparing the data to use in Scikit-learn:
 
@@ -480,9 +480,9 @@ Go over the steps of preparing the data to use in Scikit-learn:
   X['Week_of_year'] = X.index.weekofyear
   ```
 
-  * Creating the `X` data frame with `to_frame()` shapes the data in requisite shape, and it returns a usable datetime index.
+* Creating the `X` data frame with `to_frame()` shapes the data in requisite shape, and it returns a usable datetime index.
 
-  * The `weekofyear` attribute is used to create a column for the week of the year.
+* The `weekofyear` attribute is used to create a column for the week of the year.
 
 Next, explain that dummy variables are created for each week of the year. Communicate that the function creates dummy variables for each week. That is, it assigns a value of 0 or 1 for each week. For a date that falls on week 7, for example, it will assign 1 for week 7 and 0 to all other weeks.
 
@@ -526,7 +526,7 @@ Open the slideshow, navigate to the Overfitting section, and introduce the conce
 
 Explain that overfitting typically involves an excessive number of variables in a model.
 
-*  With more parameters, the model can memorize the rare patterns of the training data, resulting in a rigid model that does not generalize well.
+* With more parameters, the model can memorize the rare patterns of the training data, resulting in a rigid model that does not generalize well.
 
 Explain that a useful analogy might be to memorize the answers to a math test without learning the underlying principles.
 
@@ -788,11 +788,11 @@ Go over the metrics of the in-sample and out-of-sample predictions:
   in_sample_rmse = np.sqrt(in_sample_mse)
   ```
 
-  * The RMSE is obtained by comparing predicted and actual data.
+* The RMSE is obtained by comparing predicted and actual data.
 
-  * The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data but is higher in this case.
+* The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data but is higher in this case.
 
-  * This could be due to the fact that our out-of-sample period is small, so just by chance, the model happened to do better out-of-sample than in-sample.
+* This could be due to the fact that our out-of-sample period is small, so just by chance, the model happened to do better out-of-sample than in-sample.
 
 Ask for any remaining questions before moving on.
 
