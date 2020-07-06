@@ -496,7 +496,7 @@ Answer any questions before moving on.
 
 ---
 
-### 7. Student Do: Predicting Fraudulent Loans Applications (10 min)
+### 7. Student Do: Predicting Fraudulent Loan Applications (10 min)
 
 In this activity, students will create a decision tree model to predict fraudulent loan applications.
 
