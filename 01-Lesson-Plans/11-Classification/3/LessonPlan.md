@@ -187,7 +187,7 @@ Introduce students to the dataset they will use for this activity. Each row repr
 
 Since this activity is almost a replica of the oversampling demonstration, you can likely go through this review quickly.
 
-* First, we need to identify the variable that we are trying to predict, which is whether a person defaults on their credit card loan in the next month - this variable is default_next_month. We create the dependent and independent variables in the following code:
+* First, we need to identify the variable that we are trying to predict, which is whether a person defaults on their credit card loan in the next month. This variable is default_next_month. We create the dependent and independent variables in the following code:
 
 ```python
 x_cols = [i for i in df.columns if i != 'default_next_month']
