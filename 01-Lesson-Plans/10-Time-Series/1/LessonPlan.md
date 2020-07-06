@@ -226,7 +226,7 @@ Open the notebook and run the following lines of code:
   df.info()
   ```
 
-* The CSV, a data set of maple syrup sales figures, is opened with Pandas.
+* The CSV, a data set of liquor sales figures, is opened with Pandas.
 
 * `df.info()` lists the number of rows, as well as the column data types.
 
@@ -250,7 +250,7 @@ Demonstrate that the data frame is now a true time series:
 
 * `df2.info()` shows that the index is a `DatetimeIndex`.
 
-* Plotting the `maple_syrup_sales` column automatically formats the x-axis as dates.
+* Plotting the `liquor_sales` column automatically formats the x-axis as dates.
 
 ![Images/datetime01.png](Images/datetime02.png)
 
@@ -267,7 +267,7 @@ first_year = df2.loc['1980']
 * Specific months or days of a particular year can be accessed this way as well, using the following syntax:
 
 ```python
-sepcific_date1 = df2.loc['1980-11']
+specific_date1 = df2.loc['1980-11']
 specific_date2 = df2.loc['November 1, 2016']
 specific_date3 = df2.loc['2016-Nov-1']
 ```
@@ -374,7 +374,7 @@ List the components of time series decomposition:
 
 * Residual: How much noise exists in the data?
 
-Open the notebook and explain that it is a chart of monthly maple syrup sales in Canada between 1980 and 2007.
+Open the notebook and explain that it is a chart of monthly liquor sales in Canada between 1980 and 2007.
 
   ![Images/decomposition01.png](Images/decomposition01.png)
 
@@ -390,11 +390,11 @@ Show the next image in the notebook:
 
   ![Images/decomposition02.png](Images/decomposition02.png)
 
-* It plots maple syrup sales data from a 26-month period.
+* It plots liquor sales data from a 26-month period.
 
 * It shows a sales spike during each holiday season.
 
-Next, explain that the code below decomposes the maple syrup sales data.
+Next, explain that the code below decomposes the liquor sales data.
 
   ```python
   decomposed = seasonal_decompose(df['liquor_sales'], model='multiplicative')
