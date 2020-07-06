@@ -2,7 +2,7 @@
 
 ### Overview
 
-Day 3 will focus on a problem that students will often encounter in classification problems: imbalanced data. This occurs when the classes they are trying to predict are represented very unequally in the data. For example, in most fraud detection problems, transactions involving fraud are much rarer than non-fraudulent transactions. We will approach this problem in two ways - through careful examination of how we use model evaluation metrics, and deliberately under or over-sampling to make the training data more equally proportioned. Students will get the opportunity in this class to practice both theory and implementation.
+Day 3 focuses on a problem that students often encounter in classification problems: imbalanced data. This occurs when the classes they are trying to predict are represented unequally in the data. For example, in most fraud detection problems, transactions involving fraud are much more rare than non-fraudulent transactions. We will approach this problem in two ways-through careful examination of how we use model evaluation metrics, and deliberately under or oversampling to make the training data more equally proportioned. Students will get the opportunity in this class to practice both theory and implementation.
 
 ### Class Objectives
 
@@ -10,18 +10,19 @@ By the end of class, students will be able to:
 
 * Define model evaluation metrics and understand the pros and cons of each metric as applied to different classification problems.
 * Define class imbalance and understand why it presents a problem for classification models.
-* Demonstrate the ability to under- and over-sample data with imbalanced classes.
+* Demonstrate the ability to under- and oversample data with imbalanced classes.
 * Demonstrate the ability to plot a precision-recall curve and use it to compare different models.
 
 ### Instructor Notes
 
-* Today's class is relatively heavy on theory, and students must understand why they might sometimes need to implement the sampling strategies used in activities. It may be useful to check for understanding by posing questions about hypothetical use cases and data sets.
+* Today's class is somewhat heavy on theory. Students must also understand the occasional need to implement sampling strategies used in activities. It may be useful to check for understanding by posing questions about hypothetical use cases and data sets.
 
-* Be sure to spend some time on the implementations of SMOTE and cluster centroids undersampling, and encourage students to read the documentation for these modules so that they understand how it's working under the hood.
+* Be sure to spend some time on the implementations of SMOTE and cluster centroids undersampling, and encourage students to read the documentation for these modules so that they understand how it works under the hood.
 
-* It is important for this class to make use of the slides, since concepts like confusion matrices or the precision-recall curve may be easier for many students to understand visually.
+* Be sure to make good use of the slides, since concepts like confusion matrices or the precision-recall curve may be easier to understand visually.
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [11.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=51d87669-ec9e-4420-8606-aae300f75ceb) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
@@ -32,7 +33,7 @@ By the end of class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
