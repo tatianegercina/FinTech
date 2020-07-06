@@ -89,21 +89,21 @@ In this activity, students will discuss the relative importance of false positiv
 
 ### 4. Instructor Do: Review Hypothetical Models (10 min)
 
-Open the slides and walk through each scenario with the students.
+Open the slides and walk through each scenario with the class.
 
-Ask a volunteer to talk the class through each scenario before outlining our answers below.
+Ask a volunteer to talk the class through each scenario before outlining the answers below.
 
-* In the first case, if we define spam emails as positives, false positives are more costly than false negatives (a spam email getting through is not the end of the world, while an important email that gets flagged as spam might be disastrous for the user). Precision and specificity are important to consider for this reason. Spam emails probably make up a relatively small (but not tiny) proportion of all emails. Because of this, a high accuracy or F1 score might be misleading.
+* In the first case, if we define spam emails as positives, false positives are more costly than false negatives (a spam email getting through is not the end of the world, while an important email that gets flagged as spam might be disastrous for the user). Precision and specificity are important to consider for this reason. Spam emails likely make up a relatively small (but not tiny) proportion of all emails. Because of this, a high accuracy or F1 score might be misleading.
 
 * False positives and false negatives should probably be weighted fairly evenly in this situation, but true positives are likely to be a small proportion of true negatives. In this situation, high accuracy may still be misleading, but all other evaluation metrics should be examined for different models to understand the relative strengths and weaknesses of each.
 
-* For the third example, there does not seem to be any obvious reason why false negatives or positives should be weighted more than the other. Assuming a random, representative sample, we would expect the two classes to be roughly equal in size. Therefore, accuracy or the F1 score would likely be an effective summary metric to compare models.
+* For the third example, there does not seem to be any obvious reason why false negatives or positives should be weighted more than the other. Assuming a random, representative sample, we would expect the two classes to be roughly equal in size. Therefore, accuracy, or the F1 score, would likely be an effective summary metric to compare models.
 
-* In the fourth example, if we define rain as positive, false negatives are likely to be more costly than false positives. This makes recall a metric of special interest since the classes are likely to be imbalanced, but not overwhelmingly so (in most climates, sizable minority days probably have rain). The F1 score is likely a useful measure to compare metrics.
+* In the fourth example, if we define rain as positive, false negatives are likely to be more costly than false positives. This makes recall a metric of special interest, since the classes are likely to be imbalanced, but not overwhelmingly so (in most climates, sizable minority days probably have rain). The F1 score is likely a useful measure to compare metrics.
 
 * For the final example, false negatives are likely to be viewed as more costly than false positives, as VCs invest with the knowledge that the majority of companies will fail but get large returns from those that don't. Recall is likely to be the metric of most interest in this case.
 
-Tell the class that though we highlighted particular metrics for each of these examples, it is always beneficial to look at the confusion matrix and all the metrics to understand the strengths and weaknesses of any particular model, even if some may be more useful than others for any given data.
+Tell the class that although we highlighted particular metrics for each example, it is always beneficial to look at the confusion matrix (in addition to all the metrics) to understand the strengths and weaknesses of any particular model, even if some may be more useful than others for any given data.
 
 ### 5. Instructor Do: Imbalanced Data (5 min)
 
