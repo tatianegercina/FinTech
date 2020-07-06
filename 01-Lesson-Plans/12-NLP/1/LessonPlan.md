@@ -36,7 +36,7 @@ By the end of the class, students will be able to:
 
 * Each step in this lesson ties into the next, and every section is critical to learn for students to be able to implement the NLP workflow. Pause and ask for questions often.
 
-* Students may expect to start off doing cool things like text modeling or sentiment analysis, and that's OK—these are coming in the next couple of lessons! However, it's good to remind them that preprocessing text, like any other kind of data, is critical to prevent the garbage in, garbage out phenomenon.
+* Students may expect to start off doing cool things like text modelling or sentiment analysis, and that's OK—these are coming in the next couple of lessons! However, it's good to remind them that preprocessing text, like any other kind of data, is critical to prevent the garbage in, garbage out phenomenon.
 
 * Have your TAs keep track of time with the [Time Tracker.](TimeTracker.xlsx)
 
@@ -84,7 +84,7 @@ Open the slides and be sure to hit on the following talking points. Pause after 
 
 * NLP spans a wide field of research that intersects computer science, statistics, linguistics, and other disciplines. Understanding and generating human language are two large tasks that encompass many smaller tasks—voice recognition, optical character recognition, summarization, topic representation, etc., etc.
 
-* Finance-specific use cases have mostly been centered around using NLP for quantitative trading. Other settings include fraud detection and chatbots for client interaction (which we will introduce in the next unit).
+* Finance-specific use cases have mostly been centred around using NLP for quantitative trading. Other settings include fraud detection and chatbots for client interaction (which we will introduce in the next unit).
 
 * The NLP workflow is characterized by four steps: preprocessing, extraction, analysis, and representation. It's not unlike a typical machine learning workflow for any type of data. However, unstructured text data can take much more work to get into usable form than structured, numerical data.
 
@@ -192,7 +192,7 @@ for story in sentence_tokenized:
 
 ### 6. Instructor Do: Stopwords (10 min)
 
-This activity introduces the concept and implementation of stopwords. In English, there are many words that are important to grammar and expression but have no topical significance—these include some of the most common words in the language, such as "is," "her," "for," etc. In NLP, these words are called stopwords. For many use cases in which we hope to summarize the contents of a corpus—such as frequency analysis or topic modeling, for example—we want to take these words out in preprocessing so they don't distract from the topically important words and phrases. We will also take a look at a way of stripping out non-alphabetic characters, which we might want to do for a similar reason.
+This activity introduces the concept and implementation of stopwords. In English, there are many words that are important to grammar and expression but have no topical significance—these include some of the most common words in the language, such as "is," "her," "for," etc. In NLP, these words are called stopwords. For many use cases in which we hope to summarize the contents of a corpus—such as frequency analysis or topic modelling, for example—we want to take these words out in preprocessing so they don't distract from the topically important words and phrases. We will also take a look at a way of stripping out non-alphabetic characters, which we might want to do for a similar reason.
 
 **Files:**
 
