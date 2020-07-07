@@ -377,15 +377,15 @@ Dal Pozzolo, A., Caelen, O., Johnson, R.A., Bontempi, G. (2015). Calibrating Pro
 
 Dal Pozzolo, A., Caelen, O., Le Borgne, Y., Waterschoot, S., Bontempi, G. (2014). Learned lessons in credit card fraud detection from a practitioner perspective, Expert systems with applications. 41 (10), 4915-4928. Pergamon.
 
-Dal Pozzolo, A., Boracchi, G., Caelen, O., Alippi, C., Bontempi, G., (2018). Credit card fraud detection: a realistic modeling and a novel learning strategy, IEEE transactions on neural networks and learning systems, 29 (8) 3784-3797. IEEE.
+Dal Pozzolo, A., Boracchi, G., Caelen, O., Alippi, C., Bontempi, G., (2018). Credit card fraud detection: a realistic modeling and a novel learning strategy, IEEE transactions on neural networks and learning systems, 29 (8), 3784-3797. IEEE.
 
-Dal Pozzolo, A., Adaptive Machine learning for credit card fraud detection. ULB MLG PhD. thesis (supervised by G. Bontempi).
+Dal Pozzolo, A., Adaptive Machine learning for credit card fraud detection. ULB MLG (PhD thesis, supervised by G. Bontempi).
 
-Carcillo, F., Dal Pozzolo, A., Le Borgne, Y., Caelen, O., Mazzer, Y., Bontempi, G. (2018). Scarff: a scalable framework for streaming credit card fraud detection with Spark. Information fusion. 41, 182-194. Elsevier.
+Carcillo, F., Dal Pozzolo, A., Le Borgne, Y., Caelen, O., Mazzer, Y., Bontempi, G. (2018). Scarff: A scalable framework for streaming credit card fraud detection with Spark. Information fusion. 41, 182-194. Elsevier.
 
-Carcillo, F., Le Borgne, Y., Caelen, O., Bontempi, G. (2018). Streaming active learning strategies for real-life credit card fraud detection: assessment and visualization, International Journal of Data Science and Analytics, 5,4 (285-300). Springer International Publishing.
+Carcillo, F., Le Borgne, Y., Caelen, O., Bontempi, G. (2018). Streaming active learning strategies for real-life credit card fraud detection: Assessment and visualization. International Journal of Data Science and Analytics, 5,4 (285-300). Springer International Publishing.
 
-Bertrand, L., Le Borgne, Y., He, L., Oblé, F., Bontempi, G. (2019). Deep-Learning Domain Adaptation Techniques for Credit Cards Fraud Detection, INNSBDDL: Recent Advances in Big Data and Deep Learning, pp 78-88.
+Bertrand, L., Le Borgne, Y., He, L., Oblé, F., Bontempi, G. (2019). Deep-Learning Domain Adaptation Techniques for Credit Cards Fraud Detection, INNSBDDL: Recent Advances in Big Data and Deep Learning (78-88). Springer.
 
 Fabrizio, C., Le Borgne, Y., Olivier C., Oblé, F., Bontempi, G. (2019). Combining Unsupervised and Supervised Learning in Credit Card Fraud Detection Information Sciences.
 
@@ -395,7 +395,7 @@ Fabrizio, C., Le Borgne, Y., Olivier C., Oblé, F., Bontempi, G. (2019). Combini
 
 [cc_fraud.ipynb](Activities/09-Stu_Do_Credit_Card_Fraud/Solved/cc_fraud.ipynb)
 
-For this review, go around the class and ask students which methods they tried, both in terms of sampling strategies, as well as different algorithms. Which ones worked the best? Which didn't work so well? Which results were surprising?
+For this review, ask students which methods they tried, both in terms of sampling strategies, as well as different algorithms. Which ones worked the best? Which didn't work so well? Which results were surprising?
 
 After surveying the class, open the solved notebook and walk through our solution. Stress that this is only one (most likely non-optimal) way of solving the problem.
 
@@ -403,7 +403,7 @@ After surveying the class, open the solved notebook and walk through our solutio
 
 * We chose a balanced random forest implementation for the ensemble model. The performance seems comparable to the logistic regression after resampling.
 
-* The PR curve looks very similar, with the logistic regression results seemingly a little better at thresholds that produce higher recall - i.e., lower thresholds for predicting the fraud class.
+* The PR curve looks very similar, with the logistic regression results seemingly a little better at thresholds that produce higher recall-i.e., lower thresholds for predicting the fraud class.
 
 Ask students if there are any questions about this activity before ending the class.
 
@@ -421,10 +421,10 @@ Suggested Format:
 
 * Allow students to start the homework with extra TA support.
 
-Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
+Take your time on these questions! This is a great time to reinforce concepts and address any misunderstandings.
 
 ### End Class
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
