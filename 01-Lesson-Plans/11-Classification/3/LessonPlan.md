@@ -275,7 +275,7 @@ Ask students which sampling method they prefer for this data, given the evaluati
 
 ### 13. Instructor Do: Combination Sampling (10 min)
 
-One of the downsides of oversampling with SMOTE is that, because it doesn't see the overall distribution of the data, it can create new points from the data that are heavily influenced by outliers and therefore very noisy. As we've mentioned before, undersampling is not always an option due to small sample sizes. One way of dealing with these challenges is by using a combination sampling strategy.
+A downside of oversampling with SMOTE is that because it doesn't see the overall distribution of the data, it can create new data points that are heavily influenced by outliers, and therefore very noisy. As mentioned before, undersampling is not always an option due to small sample sizes. One way of dealing with these challenges is by using a combination sampling strategy.
 
 **Files:**
 
@@ -295,13 +295,13 @@ Pause for questions, then open the solved notebook and go through the code.
 
 ![comb_1](Images/comb_1.PNG)
 
-* Now compare the SMOTE-sampled data to the SMOTEENN sampled data, which is significantly more differentiated and removes some of the outliers from each class.
+* Now compare the SMOTE-sampled data to the SMOTEENN sampled data, which is much more differentiated and removes some of the outliers from each class.
 
 ![comb_2](Images/comb_2.PNG)
 
-Walkthrough the rest of the code and pause for questions before moving on to the next activity.
+Walk through the rest of the code and pause for questions before moving on to the next activity.
 
-### 14. Students Do: Combination Sampling (15 min)
+### 14. Student Do: Combination Sampling (15 min)
 
 In this activity, students will research and practice combination sampling with the imbalanced-learn library.
 
@@ -331,19 +331,19 @@ Open the solved notebook and go through the code. Since the structure of this ac
 
 Open the slides to precision-recall curves and cover the following points.
 
-* In addition to changing the training sample to deal with imbalanced classes, we can also change the models that we use. Ensemble learners, which overweight instances of data that are infrequently seen or hard to classify; are better suited to imbalanced data. When we want to compare multiple models, classification metrics can become hard to use as different models have different strengths.
+* In addition to changing the training sample to deal with imbalanced classes, we can also change the models we use. Ensemble learners, which overweight instances of data that are infrequently seen or hard to classify; are better suited to imbalanced data. When we want to compare multiple models, classification metrics can become hard to use, as different models have different strengths.
 
 * One alternative is the precision recall curve.
 
-* Recalling that models classify binary outcomes by setting a threshold for the likelihood of the positive class - this is usually set at 50% but can be higher or lower depending on whether false positives or negatives are more costly.
+* Recalling that models classify binary outcomes by setting a threshold for the likelihood of the positive class-this is usually set at 50%, but can be higher or lower, depending on whether false positives or negatives are more costly.
 
-* The precision recall curve plots the precision and recall scores for a given model at different thresholds. For almost all models, an increase in precision (the % of predicted positives that are classified correctly) leads to a fall in recall (the % of actually true positives that are classified correctly).
+* The precision recall curve plots the precision and recall scores for a given model at different thresholds. For almost all models, an increase in precision (the % of predicted positives that are classified correctly) leads to a fall in recall (the % of actual true positives that are correctly classified).
 
 * A model that has a curve which curves above another model (or, to put it another way, has a greater area under its PR curve), is the superior model.
 
 Pause for questions, then continue on to the notebook.
 
-* We compare two models - one is the logistic regression model using SMOTE oversampled data, and the other is the balanced random forest classifier (an ensemble learner which oversamples the smaller class) using the original training data. The classification metrics are shown below.
+* We compare two models-one is the logistic regression model using SMOTE oversampled data, and the other is the balanced random forest classifier (an ensemble learner which oversamples the smaller class) using the original training data. The classification metrics are shown below.
 
 Logistic Regression:
 
@@ -359,9 +359,9 @@ Balanced Random Forest:
 
 ![pr_1.png](Images/pr_1.PNG)
 
-### 17. Students Do: Credit Card Fraud (15 min)
+### 17. Student Do: Credit Card Fraud (15 min)
 
-In this activity, students will practice resampling techniques and use different models to classify credit card transactions as fraud or not fraud.
+In this activity, students will practice resampling techniques and use different models to classify credit card transactions as fraudulent or not fraudulent.
 
 **Files:**
 
@@ -373,15 +373,15 @@ In this activity, students will practice resampling techniques and use different
 
 https://www.kaggle.com/mlg-ulb/creditcardfraud/downloads/creditcardfraud.zip/3
 
-Andrea Dal Pozzolo, Olivier Caelen, Reid A. Johnson and Gianluca Bontempi. Calibrating Probability with Undersampling for Unbalanced Classification. In Symposium on Computational Intelligence and Data Mining (CIDM), IEEE, 2015
+Dal Pozzolo, Andrea; Olivier Caelen, Reid A. Johnson and Gianluca Bontempi. (2015). Calibrating Probability with Undersampling for Unbalanced Classification. In Symposium on Computational Intelligence and Data Mining (CIDM), IEEE. 
 
-Dal Pozzolo, Andrea; Caelen, Olivier; Le Borgne, Yann-Ael; Waterschoot, Serge; Bontempi, Gianluca. Learned lessons in credit card fraud detection from a practitioner perspective, Expert systems with applications,41,10,4915-4928,2014, Pergamon
+Dal Pozzolo, Andrea; Caelen, Olivier; Le Borgne, Yann-Ael; Waterschoot, Serge; Bontempi, Gianluca. Learned lessons in credit card fraud detection from a practitioner perspective, Expert systems with applications,41,10,4915-4928,2014, Pergamon.
 
-Dal Pozzolo, Andrea; Boracchi, Giacomo; Caelen, Olivier; Alippi, Cesare; Bontempi, Gianluca. Credit card fraud detection: a realistic modeling and a novel learning strategy, IEEE transactions on neural networks and learning systems,29,8,3784-3797,2018,IEEE
+Dal Pozzolo, Andrea; Boracchi, Giacomo; Caelen, Olivier; Alippi, Cesare; Bontempi, Gianluca. Credit card fraud detection: a realistic modeling and a novel learning strategy, IEEE transactions on neural networks and learning systems, 29, 8, 3784-3797, 2018, IEEE.
 
-Dal Pozzolo, Andrea Adaptive Machine learning for credit card fraud detection ULB MLG PhD thesis (supervised by G. Bontempi)
+Dal Pozzolo, Andrea; Adaptive Machine learning for credit card fraud detection. ULB MLG PhD. thesis (supervised by G. Bontempi).
 
-Carcillo, Fabrizio; Dal Pozzolo, Andrea; Le Borgne, Yann-Aël; Caelen, Olivier; Mazzer, Yannis; Bontempi, Gianluca. Scarff: a scalable framework for streaming credit card fraud detection with Spark, Information fusion,41, 182-194,2018,Elsevier
+Carcillo, Fabrizio; Dal Pozzolo, Andrea; Le Borgne, Yann-Aël; Caelen, Olivier; Mazzer, Yannis; Bontempi, Gianluca. Scarff: a scalable framework for streaming credit card fraud detection with Spark, Information fusion,41, 182-194,2018, Elsevier.
 
 Carcillo, Fabrizio; Le Borgne, Yann-Aël; Caelen, Olivier; Bontempi, Gianluca. Streaming active learning strategies for real-life credit card fraud detection: assessment and visualization, International Journal of Data Science and Analytics, 5,4,285-300,2018,Springer International Publishing
 
@@ -395,7 +395,7 @@ Fabrizio Carcillo, Yann-Aël Le Borgne, Olivier Caelen, Frederic Oblé, Gianluca
 
 [cc_fraud.ipynb](Activities/09-Stu_Do_Credit_Card_Fraud/Solved/cc_fraud.ipynb)
 
-For this review, go around the class and ask students which methods they tried, both in terms of sampling strategies as well as different algorithms. Which ones worked the best? Which didn't work so well? Which results were surprising?
+For this review, go around the class and ask students which methods they tried, both in terms of sampling strategies, as well as different algorithms. Which ones worked the best? Which didn't work so well? Which results were surprising?
 
 After surveying the class, open the solved notebook and walk through our solution. Stress that this is only one (most likely non-optimal) way of solving the problem.
 
