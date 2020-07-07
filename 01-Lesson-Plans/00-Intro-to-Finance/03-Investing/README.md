@@ -108,6 +108,8 @@ In sum, within MPT, we often analyze the volatility (large short-term movements 
 
 Last, one of the most central ideas of MPT is the concept of an Efficient Frontier. When you have a lot of different individual investment choices, you can basically build any number of different portfolios, each a different combination of these individual assets. When plotting each potential portfolio's projected returns on one axis, and its projected risk (volatility) on the other, we can show a set of different portfolio options. From here, we can draw a curve, that for each level of risk, tells us the best portfolio (highest return) to select. This curve is the **Efficient Frontier**: the portfolio that provides the best return for a given tolerance of risk. The Efficient Frontier is used frequently in quantitative equity portfolio management: stock managers will select how much money to invest in each individual stock ("portfolio weightings") so that the expected return of the resulting portfolio is as high as possible for a given level of risk.
 
+For those interested in taking a deeper dive into the updated Post-Modern Portfolio theory, definitely take a [look into the Wikipedia article](https://en.wikipedia.org/wiki/Post-modern_portfolio_theory) as delves into many of the fundamental statistical issues with MPT.
+
 ### Student Activity:
 
 See instructions in the [activity file](Activities/03-Stu_Portfolio_Comparisons/README.md).
