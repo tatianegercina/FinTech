@@ -197,6 +197,8 @@ If time remains, let students know there is time for one question.
 
 ### 4. Instructor Do: Making Predictions with Logistic Regression (10 min)
 
+**Corresponding Activity:** [01-Ins_Logistic_Regression](Activities/01-Ins_Logistic_Regression)
+
 Having been introduced to classification, students will now receive a demonstration of how to use logistic regression to make linear predictions for categorical outcomes. This demo will contain two parts: a brief explanation of preprocessing and a more in-depth explanation of model fitting and execution.
 
 Walkthrough the slideshow and highlight the following points:
@@ -354,6 +356,8 @@ Ask if there are any questions, and then move to the next activity.
 
 ### 5. Students Do: Predicting Diabetes (15 min)
 
+**Corresponding Activity:** [02-Stu_Diabetes](Activities/02-Stu_Diabetes)
+
 In this activity, students will use the **sklearn** library to execute **logistic regression** models in order to predict whether or not an individual has diabetes. Students will leverage the material covered in the corresponding instructor demo activity to complete this MSMD activity.
 
 **Instructions:**
@@ -502,6 +506,8 @@ Use the remaining time to answer any questions about logistic regression models 
 
 ### 9. Instructor Do: Confusion Matrix & Classification Report (10 min)
 
+**Corresponding Activity:** [03-Ins_Confusion_Matrices](Activities/03-Ins_Confusion_Matrices)
+
 Students receive a live demonstration of how to create and use a confusion matrix and classification report to evaluate models for error.
 
 **Files:** [confusion_matrix.ipynb](Activities/03-Ins_Confusion_Matrices/Solved/confusion_matrix.ipynb)
@@ -548,6 +554,8 @@ Finish the activity by asking students if there are any questions, and then tran
 ---
 
 ### 10. Students Do: Diagnosing the Model (10 min)
+
+**Corresponding Activity:** [04-Stu_Diagnosing_the_Model](Activities/04-Stu_Diagnosing_the_Model)
 
 Students complete a bridge activity where they return to the model they created to predict diabetes and will use a **confusion matrix** and **classification report** to evaluate and diagnose the model. Emphasis needs to be placed on how to interpret confusion matrices and classification reports in order to diagnose issues in the model.
 
@@ -617,6 +625,8 @@ Ask if there are any questions before moving forward.
 ---
 
 ### 12. Student Do: Build Loan Approver (15 min)
+
+**Corresponding Activity:** [05-Stu_Loan_Approver](Activities/05-Stu_Loan_Approver)
 
 Students will participate in a bag of tricks activity where they apply the machine learning concepts, and technical skills learned thus far to create a model for approving loans.
 
@@ -695,6 +705,8 @@ Ask for any remaining questions before moving on.
 ---
 
 ### 15. Instructor Do: Support Vector Machines (10 min)
+
+**Corresponding Activity:** [06-Ins_SVM](Activities/06-Ins_SVM)
 
 Students receive a demonstration and lecture on how to use the support vector machine algorithm. The goal of this activity is to illustrate to students the different approaches that can be taken to come up with the same classification engine.
 
@@ -904,6 +916,8 @@ Ask for any questions before moving forward.
 ---
 
 ### 16. Students Do: SVM Loan Approver (15 min)
+
+**Corresponding Activity:** [07-Stu-SVM_Loan_Approver](Activities/07-Stu-SVM_Loan_Approver)
 
 Students are asked to update their loan approver with an SVM model and rerun the evaluation metrics. Students will then compare the performance of the SVM model with the Logistic Regression model.
 
