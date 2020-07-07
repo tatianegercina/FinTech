@@ -794,11 +794,11 @@ Show the plot of the volatility forecast:
 
 **Files:**
 
-* [README.md](Activities/08-Stu_USD/README.md)
+* [README.md](Activities/08-Stu_CAD/README.md)
 
-* [euro_cad.csv](Activities/08-Stu_USD/Resources/euro_cad.csv)
+* [euro_cad.csv](Activities/08-Stu_CAD/Resources/euro_cad.csv)
 
-* [cad.ipynb](Activities/08-Stu_USD/Unsolved/cad.ipynb)
+* [cad.ipynb](Activities/08-Stu_CAD/Unsolved/cad.ipynb)
 
 - - -
 
@@ -806,7 +806,7 @@ Show the plot of the volatility forecast:
 
 **Files:**
 
-* [cad.ipynb](Activities/08-Stu_USD/Solved/cad.ipynb)
+* [cad.ipynb](Activities/08-Stu_CAD/Solved/cad.ipynb)
 
 Open the notebook and display the plot of the exchange rate:
 
