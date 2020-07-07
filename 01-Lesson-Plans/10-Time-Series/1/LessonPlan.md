@@ -539,7 +539,7 @@ In this activity, students will use the Hodrick-Prescott filter to identify macr
 
 Open the solution file, and conduct a brief dry walkthrough of the code.
 
-* Convey to students that we'll read in data form the Federal reserve via a csv.
+* Convey to students that we'll read in data via a csv.
 
 * Explain using the H-P filter in Python. It is a `statsmodels` module that requires a single line of code. The plots are created simply with Pandas's `plot()` method.
 
@@ -764,9 +764,9 @@ Review the ACF and PACF plots:
 
 * The ACF and PACF both appear to be significant at a lag of 1, along with possibly the 4th lag.
   
-  * Should we chose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest we use a model that carries the order all the way out to AR(4). Ultimately, however, whether an AR(1) or an AR(4) is more appropriate ultimately depends on how well the two different specifications perform on the data that we have. 
+  * Should we chose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest we use a model that carries the order all the way out to AR(4). Ultimately, however, whether an AR(1) or an AR(4) is more appropriate ultimately depends on how well the two different specifications perform on the data that we have.
 
-  * While approximately the 13th lag looks significant in the autocorrelation plot, it's not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(); the really beneficial lags are the 1st and the 4th, while the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads. 
+  * While approximately the 13th lag looks significant in the autocorrelation plot, it's not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(); the really beneficial lags are the 1st and the 4th, while the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads.
 
 - - -
 
