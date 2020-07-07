@@ -409,11 +409,11 @@ Ask students if there are any questions about this activity before ending the cl
 
 ### 19. Instructor Do: Structured Review (35 mins)
 
-**Note:** If you are teaching this Lesson on a weeknight, please save this 35-minute review for the next Saturday class.
+**Note:** If you are teaching this lesson on a weeknight, save this 35-minute review for the next Saturday class.
 
-Please use the entire time to review questions with the students before officially ending class.
+Please use the entire time to review questions with students before officially ending class.
 
-Suggested Format:
+Suggested format:
 
 * Ask students for specific activities to revisit.
 
