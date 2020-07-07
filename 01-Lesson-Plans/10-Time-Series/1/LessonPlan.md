@@ -519,7 +519,7 @@ Finally, show the plots of the trend and noise components after filtering:
 
 - - -
 
-### 10. Student Do: You've Got a FRED (15 min)
+### 10. Student Do: CA Macroeconomics (15 min)
 
 In this activity, students will use the Hodrick-Prescott filter to identify macroeconomic trends in Canada for the period 2004 to 2010.
 
@@ -527,15 +527,15 @@ In this activity, students will use the Hodrick-Prescott filter to identify macr
 
 * [README.md](Activities/05-Stu_Hodrick_Prescott/README.md)
 
-* [FRED.ipynb](Activities/05-Stu_Hodrick_Prescott/Unsolved/FRED.ipynb)
+* [ca_macroeconomics.ipynb](Activities/05-Stu_Hodrick_Prescott/Unsolved/ca_macroeconomics.ipynb)
 
 - - -
 
-### 11. Instructor Do: You've Got a FRED Review  (10 min)
+### 11. Instructor Do: CA Macroeconomics Review  (10 min)
 
 **Files:**
 
-* [FRED.ipynb](Activities/05-Stu_Hodrick_Prescott/Solved/FRED.ipynb)
+* [FRED.ipynb](Activities/05-Stu_Hodrick_Prescott/Solved/ca_macroeconomics.ipynb)
 
 Open the solution file, and conduct a brief dry walkthrough of the code.
 
