@@ -76,6 +76,8 @@ Ask for any additional questions before moving on.
 
 ### 2. Instructor Do: Dealing with Text and Categorical Data in Machine Learning (10 min)
 
+**Corresponding Activity:** [01-Ins-Categorical-Data](Activities/01-Ins-Categorical-Data)
+
 In this activity, students will learn how categorical data should be preprocessed to be used in machine learning algorithms.
 
 **Files:**
@@ -247,6 +249,8 @@ Answer any questions before moving on.
 
 ### 3. Student Do: Encoding Categorical Data for Machine Learning (10 min)
 
+**Corresponding Activity:** [02-Stu_Categorical_Data](Activities/02-Stu_Categorical_Data)
+
 In this activity, students are tasked to encode some categorical and text features of a dataset that contains `2097` loan applications. In forthcoming activities, they will use this dataset to predict defaulted loan applications.
 
 **Instructions:**
@@ -345,6 +349,8 @@ Answer any questions before moving on.
 ---
 
 ### 6. Instructor Do: Decision Trees (10 min)
+
+**Corresponding Activity:** [03-Ins_Decision-Trees](Activities/03-Ins_Decision-Trees)
 
 In this activity, students will be introduced to decision trees and how they can use them for classification problems.
 
@@ -500,6 +506,8 @@ Answer any questions before moving on.
 ---
 
 ### 7. Students Do: Predicting Fraudulent Loans Applications (10 min)
+
+**Corresponding Activity:** [04-Stu_Predicting_Fraud](Activities/04-Stu_Predicting_Fraud)
 
 In this activity, students will create a decision tree model to predict fraudulent loan applications.
 
@@ -688,6 +696,8 @@ Answer any questions before moving on.
 
 ### 10. Instructor Do: Random Forest (10 min)
 
+**Corresponding Activity:** [05-Ins_Random_Forest](Activities/05-Ins_Random_Forest)
+
 In this activity, students will learn how to implement a random forest using `sklearn`.
 
 **Files:**
@@ -778,6 +788,8 @@ Answer any questions before moving on.
 ---
 
 ### 11. Students Do: Predicting Fraud with Random Forests (10 min)
+
+**Corresponding Activity:** [06-Stu_Random_Forest](Activities/06-Stu_Random_Forest)
 
 In this activity, students are going to explore how the random forest algorithm can be used to identify fraudulent loan applications. Students will use the `sba_loans_encoded.csv` file that they created before to train the model.
 
@@ -904,6 +916,8 @@ Ask students if they have any questions before moving on.
 ---
 
 ### 15. Instructor Do: Gradient Boosted Tree (10 min)
+
+**Corresponding Activity:** [07-Ins_Gradient_Boosted_Tree](Activities/07-Ins_Gradient_Boosted_Tree)
 
 The instructor will provide a demonstration on how to use **boosting** in **sklearn** to improve the performance of a decision tree.
 
@@ -1044,6 +1058,8 @@ Ask if there any questions before moving on.
 ---
 
 ### 16. Students Do: Turbo Boost (10 min)
+
+**Corresponding Activity:** [08-Stu_Gradient_Boosted_Tree](Activities/08-Stu_Gradient_Boosted_Tree)
 
 Students will complete an MSMD activity where they use the **sklearn** `GradientBoostedClassifier` **boosting** algorithm to detect fraudulent loan applications using **ensemble learning**.
 
