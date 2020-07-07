@@ -1,4 +1,4 @@
-# Canada Macroeconomics
+# CA Macroeconomics
 
 ## Introduction
 
