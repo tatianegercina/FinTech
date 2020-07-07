@@ -1,10 +1,8 @@
-# You've Got a FRED
+# Canada Macroeconomics
 
 ## Introduction
 
 * In this activity, you will use the Hodrick-Prescott filter to examine macro economic trends in Canada between 2004 and 2010.
-
-* Federal Reserve Economic Data (FRED), is a database of macroeconomic data held within the United States.
 
 ## Instructions
 
