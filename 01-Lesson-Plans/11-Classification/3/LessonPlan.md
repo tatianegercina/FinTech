@@ -48,6 +48,8 @@ First, though, we are going to do a little review of concepts from Day 1 of this
 
 ### 2. Instructor Review: Model Evaluation (10 min)
 
+**Corresponding Activity:** [01-Ins_Review_Eval_Metrics](Activities/01-Ins_Review_Eval_Metrics)
+
 This activity will give students a chance to refresh the concepts of model evaluation, which we first went over on the first day of this unit.
 
 **Files:**
@@ -79,6 +81,8 @@ Ask students to evaluate the performance of this model. How do they think it did
 * While the confusion matrix and evaluation metrics do give us some insight into performance, this is a bit of a trick question. Whether or not the model is "good" depends on the context. What are we trying to predict? What are the cost of false positives or false negatives?
 
 ### 3. Students Do: Hypothetical Models (15 min)
+
+**Corresponding Activity:** [02-Stu_Do_Hypothetical_Models](Activities/02-Stu_Do_Hypothetical_Models)
 
 In this activity, students will discuss the relative importance of false positives/negatives and weigh the pros and cons of using each evaluation metric for a set of hypothetical classification models.
 
@@ -117,6 +121,8 @@ Continue in the slides to the imbalanced data slide.
 * The rest of the class will go over strategies to deal with imbalanced classes. We will work mostly with over and under-sampling methods, in which we sample the minority class with greater than random chance or sample the majority class with less than random chance. We will also explain why ensemble methods may be more suitable for imbalanced data than other classification methods and introduce a classification report specifically created for imbalanced data.
 
 ### 6. Instructor Do: Oversampling (10 min)
+
+**Corresponding Activity:** [03-Ins_Do_Oversampling](Activities/03-Ins_Do_Oversampling)
 
 **Files:**
 
@@ -163,6 +169,8 @@ Pause for any questions before moving on to the implementation of SMOTE oversamp
 Pause for questions before moving on to the next activity.
 
 ### 7. Students Do: More Loans (15 min)
+
+**Corresponding Activity:** [04-Stu_Do_More_Loans](Activities/04-Stu_Do_More_Loans)
 
 In this activity, students will practice using random and SMOTE oversampling in combination with logistic regression to predict whether or not someone is likely to default on their credit card loans in a given month given demographic information.
 
@@ -232,6 +240,8 @@ Pause for students' questions before moving on to the next activity.
 
 ### 10. Students Do: Undersampling (15 min)
 
+**Corresponding Activity:** [05-Stu_Do_Undersampling](Activities/05-Stu_Do_Undersampling)
+
 In this activity, students will research and practice undersampling with the imbalanced-learn library.
 
 **Files:**
@@ -272,6 +282,8 @@ Ask students which sampling method they prefer for this data given the evaluatio
 
 ### 13. Instructor Do: Combination Sampling (10 min)
 
+**Corresponding Activity:** [06-Ins_Do_Combination_Sampling](Activities/06-Ins_Do_Combination_Sampling)
+
 One of the downsides of oversampling with SMOTE is that, because it doesn't see the overall distribution of the data, it can create new points from the data that are heavily influenced by outliers and therefore very noisy. As we've mentioned before, undersampling is not always an option due to small sample sizes. One way of dealing with these challenges is by using a combination sampling strategy.
 
 **Files:**
@@ -300,6 +312,8 @@ Walkthrough the rest of the code and pause for questions before moving on to the
 
 ### 14. Students Do: Combination Sampling (15 min)
 
+**Corresponding Activity:** [07-Stu_Do_Combination_Sampling](Activities/07-Stu_Do_Combination_Sampling)
+
 In this activity, students will research and practice combination sampling with the imbalanced-learn library.
 
 **Files:**
@@ -321,6 +335,8 @@ Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for 
 Open the solved notebook and go through the code. Since the structure of this activity is very similar to the oversampling activity, you should focus on the evaluation metrics from the combination sampling method.
 
 ### 16. Instructor Do: Precision-Recall Curve (10 min)
+
+**Corresponding Activity:** [08-Ins_Do_Precision_Recall_Curve](Activities/08-Ins_Do_Precision_Recall_Curve)
 
 **Files:**
 
@@ -357,6 +373,8 @@ Balanced Random Forest:
 ![pr_1.png](Images/pr_1.PNG)
 
 ### 17. Students Do: Credit Card Fraud (15 min)
+
+**Corresponding Activity:** [09-Stu_Do_Credit_Card_Fraud](Activities/09-Stu_Do_Credit_Card_Fraud)
 
 In this activity, students will practice resampling techniques and use different models to classify credit card transactions as fraud or not fraud.
 
