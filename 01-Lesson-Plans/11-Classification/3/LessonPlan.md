@@ -107,7 +107,7 @@ Tell the class that although we highlighted particular metrics for each example,
 
 ### 5. Instructor Do: Imbalanced Data (5 min)
 
-Go to the slideshow and navigate to the imbalanced data slide.
+Go to the slideshow and navigate to the Imbalanced Data section.
 
 * Imbalanced data describes cases when one or more classes in the data are much more or less frequent than the other class(es). We will be working with binary (two-class) classification tasks for simplicity, but imbalanced data is a problem in multi-class tasks as well.
 
