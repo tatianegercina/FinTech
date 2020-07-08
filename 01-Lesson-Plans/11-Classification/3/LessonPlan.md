@@ -281,7 +281,7 @@ A downside of oversampling with SMOTE is that because it doesn't see the overall
 
 [combination_sampling.ipynb](Activities/06-Ins_Do_Combination_Sampling/Solved/combination_sampling.ipynb)
 
-Advance through the slides to the combination sampling slide.
+Go to the slideshow and navigate to the Combination Sampling slides.
 
 * The downsides of SMOTE can be overcome with an additional step.
 
@@ -329,7 +329,7 @@ Open the solved notebook and go through the code. Since the structure of this ac
 
 [pr_curve.ipynb](Activities/08-Ins_Do_Precision_Recall_Curve/Solved/pr_curve.ipynb)
 
-Open the slides to precision-recall curves and cover the following points.
+Navigate to the Precision-Recall Curve section of the slideshow and cover the following points.
 
 * In addition to changing the training sample to deal with imbalanced classes, we can also change the models we use. Ensemble learners, which overweight instances of data that are infrequently seen or hard to classify; are better suited to imbalanced data. When we want to compare multiple models, classification metrics can become hard to use, as different models have different strengths.
 
