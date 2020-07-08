@@ -4,7 +4,7 @@ In this activity, you will weigh the pros and cons of using each evaluation metr
 
 ## Instructions
 
-For each of the following scenarios, think about a model that you might create to predict the outcome of interest. With a partner, discuss what is being predicted and which evaluation metrics might be most important to use to compare the effectiveness of models.
+Working with a partner, review the following scenarios and think about what type of model you could create to predict the outcome of interest. Discuss what is being predicted, and which evaluation metrics would be the most productive for comparing the effectiveness of models.
 
 1. A company wants to block phishing messages—predict whether an email is spam or not spam.
 
@@ -18,8 +18,8 @@ For each of the following scenarios, think about a model that you might create t
 
 ## Hint
 
-Think about the likelihood of each class in addition to the costliness of false positives or negatives.
+Think about the likelihood of each class, in addition to the costliness of false positives or negatives.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
