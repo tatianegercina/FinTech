@@ -4,7 +4,7 @@
 
 ### Overview
 
-In this module, we will begin introducing some of the core concepts related to investing, why we want to invest, and some of the ways we can compare potential investments.
+In this module, we will introduce some core concepts related to investing, the purpose of investing, and some ways to compare potential investments.
 
 ### Module Objectives
 
@@ -14,7 +14,7 @@ By the end of this module, you will be able to:
 
 * Understand the importance of the time value of money, and how to discount a future value to a present one
 
-* Understand the key concepts of Modern Portfolio Theory and how we can look at the efficient frontier to optimize a portfolio's risk-return profile
+* Understand the key concepts of Modern Portfolio Theory, including how to optimize a portfolio's risk-return profile using the Efficient Frontier 
 
 
 ### Reading: Inflation and Investing
