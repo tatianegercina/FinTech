@@ -53,3 +53,7 @@ How do insurers determine the price of premiums and the dollar amount that they 
 Finally, we have the real-estate markets - where tracts of land or buildings are purchased, sold, and rented out amongst market participants. States and countries have vastly differing rules and regulations regarding the ownership and transferal of real-estate. Additionally, investments in real-estate have a tendency to be illiquid (if you had to sell your house *tomorrow*, do you think you'd get a good price?) and long-term. These are some of the reasons why real-estate markets have historically been more resistant to technological change. However, change most certainly has arrived in the form of PropTech - technologies used to aid in the valuation, sale, management, and other informational purposes in the market.
 
 If you were looking to make a real estate investment, how would you go about deciding which plot of land would be the best value for your money? How would you know what the property is *actually* worth? As discussed in the previous lesson, this is another great opportunity to utilize a time value of money equation! If we have a belief about what the future value of the property is worth, we can *discount* the value back to today's dollars, in order to understand what a good price for the property could be.
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
