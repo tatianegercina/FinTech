@@ -148,7 +148,7 @@ Consult the [imbalanced-learn](https://imbalanced-learn.readthedocs.io/en/stable
 If you have issues running or updating anaconda, you can check if the package is correctly installed by running the following command in your terminal.
 
 ```shell
-conda list | grep anaconda
+conda list anaconda
 ```
 
 After running this command, you should see a list with the anaconda packages installed in your environment, at least the packages in the red square should be listed.
