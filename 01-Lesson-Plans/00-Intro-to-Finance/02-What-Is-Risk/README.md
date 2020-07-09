@@ -62,3 +62,7 @@ Essentially, the CAPM states that an investor expects an equity return to be at 
 ### Student Activity: Ratio Deep Dive
 
 See instructions in [activity file](Activities/03-Stu_Ratio_Deep_Dive/README.md)
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
