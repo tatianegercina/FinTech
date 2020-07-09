@@ -18,7 +18,7 @@ In this activity, you will use GARCH to forecast volatility of the EUR-CAD excha
 
 6. Annualize the forecast from the step above for interpretability.
 
-7. Plot the forecast of the annual EUR to USD volatility over the next five days. Is risk expected to increase or decrease over the next five days?
+7. Plot the forecast of the annual EUR to USD volatility over the next five days.
 
 ---
 
