@@ -4,8 +4,6 @@ In this three-part activity, Harold has been asked to revisit the Monte Carlo si
 
 Upper management wants answers to the following questions:
 
-* What is the expected range of projected cumulative returns of the given portfolio?
-
 * What is the `95%` confidence interval of projected cumulative returns of the given portfolio?
 
 * What is the `95%` confidence interval of projected cumulative investment for the given portfolio?
