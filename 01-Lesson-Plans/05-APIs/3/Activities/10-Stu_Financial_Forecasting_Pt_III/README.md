@@ -1,10 +1,9 @@
 # Financial Forecasting Part III
 
-In this three-part activity, Harold has been asked to revisit the Monte Carlo simulation for future stock prices of `TSLA`. Given the volatility of projected future `TSLA` stock prices, upper management wants to test the returns of a portfolio containing both `TSLA` and `SPHD` — an S&P 500 High Dividend Low Volatility ETF — to buffer against `TSLA` stock's volatility; they are thinking of allocating `25%` of capital to `TSLA` and the other `75%` to `SPHD`. 
+In this three-part activity, Harold has been asked to revisit the Monte Carlo simulation for future stock prices of `TSLA`. Given the volatility of projected future `TSLA` stock prices, upper management wants to test the returns of a portfolio containing both `TSLA` and `SPHD` — an S&P 500 High Dividend Low Volatility ETF — to buffer against `TSLA` stock's volatility; they are thinking of allocating `25%` of capital to `TSLA` and the other `75%` to `SPHD`.
 
 Upper management wants answers to the following questions:
 
-  * What is the expected range of projected cumulative returns of the given portfolio?
   * What is the `95%` confidence interval of projected cumulative returns of the given portfolio?
   * What is the `95%` confidence interval of projected cumulative investment for the given portfolio?
 
