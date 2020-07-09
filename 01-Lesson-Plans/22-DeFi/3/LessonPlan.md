@@ -692,9 +692,90 @@ Walkthrough the following recall questions with the class to review the various 
 
 ---
 
-### 11. Student Do: Project Work Session (85 mins)
+### 11. Student Do: Project Work Session (50 mins)
 
 Welcome the students back to class, and allow them to use this activity time to work on their projects.
+
+
+### 12. Instructor Do: Career Services (35 min)
+
+**Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
+
+* In this Career Services section, you will discuss with the students the importance of writing a high-quality and effective `README` for each project.
+
+* There's no universal standard in what to include in a `README`, but we do know from speaking to employers the kinds of things they're looking for, and the sort of `READMEs` that are effective.
+
+#### Instructor Do: Introduction to READMEs (5 min)
+
+* Ask the class the following questions (☝️) and call on students for the answers (🙋):
+
+  * ☝️What is a `README` file?
+
+  * 🙋A text file written using Markdown that describes the repository, what it does, how to use it, who built it etc.
+
+  * ☝️ Why are they important when job-seeking?
+
+  * 🙋 It is the first impression recruiters and prospective employers will have of our projects.
+
+  * ☝️And what should we include in order to make it a good, high-quality `README` that we would want employers to see?
+
+  * 🙋A `README` should include a project title, technologies, installation guide, screen shots / examples, instructions on how to use it, contributors, and a license.
+
+* Show students how to pin a repository in GitHub. Navigate to `www.github.com/<yourUsername>` and click `Customize your pins`:
+
+![customize.png](Images/customize.png)
+
+* Then select the pins you would like to show on the main page of your profile:
+
+![pins.png](Images/pins.png)
+
+* Let students know this allows recruiters to more easily find the repositories you want them to look at!
+
+#### Students Do: Compare and Review (10 min)
+
+* In this activity, students will compare three `README` files and write down the differences they note between them.
+
+* Using `09-Stu_Compare_README`, ask students to compare [SAMPLE_1.md](Activities/09-Stu_Compare_README/Resources/sample_1/README.md),
+[SAMPLE_2.md](Activities/09-Stu_Compare_README/Resources/sample_2/README.md),
+and [SAMPLE_3.md](Activities/09-Stu_Compare_README/Resources/sample_3/README.md) and note the differences they see.
+
+* Slack out the instruction file for the activity and these three sample files.
+
+#### Instructor Do: Review ReadMe (5 min)
+
+* Ask the class the following questions (☝️) and call on students for the answers (🙋):
+
+* Pull up `sample_1/README.md` to show to students.
+
+  * ☝️ What did we think of this README?
+
+  * 🙋 Terrible!
+    * No creative title
+    * No subsections containing relevant data
+    * The developer refers to themself as "me"
+    * No images
+
+* Pull up `sample_2/README.md` and `sample_3/README.md` to compare.
+
+  * ☝️ Which of the two do we prefer?
+
+  * 🙋 Number 3!
+
+  * ☝️ OK, and why?
+
+  * 🙋 It's better because it has a unique app title and subsections but:
+    * the images are broken
+    * No installation guide
+    * No license
+    * No LinkedIn
+
+#### Students Do: Create Readme (15 min)
+
+* For the remaining 15 minutes, ask students update their Project #2 `README` according to standards set in the [awesome README guide](../Supplemental/Awesome_README_Guide.md). They should feel free to add other elements that they think will be useful for people to know about their project.
+
+* If they finish early, or have already updated their Project #1 and Project #2 `README` files, ask students to move on to updating any homework `README` files that need additional details.
+
+
 
 ---
 

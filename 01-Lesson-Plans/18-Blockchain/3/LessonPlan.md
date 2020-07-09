@@ -740,13 +740,120 @@ Ensure that:
 
 ### 17. Instructor Do: Career Services Lesson (35 min)
 
-**Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
+**Note**: If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
 
-Use the following lesson plan to discuss the Career Services content for this week.
+**A note on skill diversity**: The FinTech student demographic is highly diverse. It consists of students with a high degree of financial background, students with some programming experience, and students with little or no experience in either field. Because of this, students may complete different activities during this section.
 
-**Files:**
+#### 17.1 Instructor Do: FinTech and LinkedIn Profiles (5 min)
 
-* [Career Services Lesson Plan](Career_Services_LessonPlan.md)
+* Whether students are transitioning into a career in FinTech or already work in FinTech, they will need to update their LinkedIn profiles with the new skillset that they’ve acquired in class. The FinTech industry is relatively new, so the majority of employers look for candidates who have a data background and a passion for finance when hiring. If you can display this on your LinkedIn profile, you are more likely to get noticed by recruiters.
+
+* Ask the class the following questions (☝️) and call on students for the answers (🙋):
+
+  * ☝️ Why is a LinkedIn profile so important?
+
+  * 🙋 Recruiters and prospective employers will use to both find candidates and review candidates.
+
+  * ☝️ Who can we submit our LinkedIn profile to for review?
+
+  * 🙋 Career Materials Advisor (formerly, Profile Coach)
+
+  * ☝️ Where can we submit this to a Career Materials Advisor (formerly, Profile Coach)
+
+  * 🙋 BootcampSpot
+
+* Check who already has a resume submitted.
+
+  * ☝️ Who has completed their LinkedIn profile and already submitted it to a Career Material Advisor on BootcampSpot?
+
+    * 🙋 If students have not created a LinkedIn profile, they should follow the instructor-led lesson plan from Section 17.2
+
+    * 🙋 If students have created a LinkedIn profile, but not yet submitted it to a Career Material Advisor, they should submit it online and then skip to the BONUS activity at the end of the lesson plan.
+
+    * 🙋 If students have created a resume and already submitted it, they should skip to the BONUS activity.
+
+#### 17.2 Instructor Do: FinTech and LinkedIn Profiles (10 min)
+
+* You might use your own LinkedIn profile as an example or select one that you think is a good candidate with the following criteria. Alternatively, you may use this example account: [https://www.linkedin.com/in/george*smith-401147bb/](https://www.linkedin.com/in/george-smith-401147bb/)
+
+* Run through each of the sections and use the following comments to demonstrate what makes an employer-ready LinkedIn profile:
+
+  * **Profile picture:** Every student should have a profile picture on their LinkedIn. Each profile picture should follow the following criteria:
+
+    * Solid background: A solid background promotes professionalism. White helps the candidate stick out. Stay away from darker colors like black or dark reds and blues.
+
+    * Approachable pose: Make sure candidates look approachable. A smile in a profile picture means recruiters are more likely to respond because they see someone who can be a part of the team they are building.
+
+    * Size: All LinkedIn pictures should be 400x400 pixels to fit properly.
+
+* **Career summary:** A career summary is a great place for students to introduce their passion for the FinTech industry. Most employers are looking for candidates who have a strong data background and an affinity for finance. A career summary has the following components:
+
+  * Introduction to the candidate’s professional background.
+
+  * Experience level.
+
+  * The value the candidate hopes to bring to the team.
+
+  * A demonstration of the candidate’s passion for finance.
+
+  * The following career summary covers the bullet points mentioned above. Feel free to break down the career summary and match up each bullet point to each section of the career summary:
+
+  > Data analyst with a passion and talent for machine learning, application building, algorithm analysis, and analytical skills. Specializes in finance and analytic trends ranging from startups to Fortune 500 companies, including Bank of America and Google. Creative thinker with a love for finance who hopes to help any company make data-driven decisions that are best for product growth.
+
+* **Work experience:** Students might have questions about how to word their previous work experience onto a LinkedIn profile. This answer will vary based on the type of student.
+
+  * Transitioning from a different career: A student who is completely new to the FinTech industry is going to want to focus on the projects that are being done in class as their professional background. While interviewing, they can refer to their classroom projects as projects.
+
+  * Previous FinTech experience: An experienced student will want to add to the skill set already on their LinkedIn profiles by highlighting projects and emphasizing new technologies they might not have previously included. They also might want to add sentences that revolve around a passion for finance.
+
+* **Education:** It’s important to add certifications and education to a LinkedIn profile. Students should include the following components:
+
+    * School name
+
+    * Degree or certification received
+
+    * Dates
+
+* **Skills:** The skills section also should include keywords that can help recruiters find candidate profiles.
+
+  * Make sure that students add all the tech skills that they are comfortable with adding to their LinkedIn.
+
+  * The skills below are tech skills that they will have acquired by the end of the class.
+
+  _Python, Python APIs, Python Visualization libraries, Plotly.py, time series analysis and prediction, SQL, natural language processing, Amazon Web Services, SageMaker, Lex, algorithmic trading (trading bot), machine learning, Scikit-Learn, robo advising, blockchain, cryptocurrency, blockchain with Python, Solidity, smart contracts._
+
+#### 17.3 Student Do: LinkedIn Update
+
+* Give students 20 minutes to open up their LinkedIn profiles and make any updates that need to be made. After they’ve updated their profiles, have them connect to at least five people in the class.
+
+* Encourage students to write recommendations for their peers they have already worked with on a project.
+
+* Once students feel confident in their LinkedIn profiles, have them submit their profiles for review by a Career Material Advisor in BootcampSpot.
+
+**BONUS: Technical Interviewing Prep**
+This activity will not be instructor-led, and is only for those students who have completed their LinkedIn profile and submitted it to a Career Material Advisor. Slack out the following instructions and link.
+
+```md
+Part of interviewing for a FinTech role often means completing a technical assessment. Oftentimes, these technical assessments aren't directly FinTech concept related, but aim to test our ability in problem-solved and programming.
+
+In the following challenge, you will utilize an online technical asssessment platform that mirrors platforms used by recruiters and hiring managers to test technical ability. You will complete a timed algorithm challenge in Python called `checkPalindrome`.
+
+Once complete, you can review the solution, which your instructional team will send out at the end of class.
+
+Activity Link: [CodeSignal Challenge: checkPalindrome](https://app.codesignal.com/public-test/4LTGiCdRb57ktqHE6/HDiuX3vXiKB9ez)
+```
+
+**Note**: Do not Slack out the solution until the end of class.
+
+```python
+def checkPalindrome(str):
+
+    reversedStr = str[::-1]
+
+    if (str == reversedStr):
+        return True
+    return False
+```
 
 ---
 

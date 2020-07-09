@@ -1139,13 +1139,100 @@ Congratulate the class for making it through their first week of Machine Learnin
 
 **Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
 
-Explain to students that now that they have completed their first projects and are starting to learn new things such as machine learning, it is time to think about updating resumes to showcase these valuable skills!
+**A note on skill diversity:** The FinTech student demographic is highly diverse. It consists of students with a high degree of financial background, students with some programming experience, and students with little or no experience in either field. Because of this, students may complete different activities during this section.
+
+#### 16.1 Instructor Do: FinTech Resumes (5 min)
+
+* Explain to students that now that they have completed their first projects and are starting to learn new things such as machine learning, it is time to think about updating resumes to showcase these valuable skills!
+
+* Ask the class the following questions (☝️) and call on students for the answers (🙋):
+
+  * ☝️ Why are projects so important to show case?
+
+  * 🙋 A portfolio demonstrating capability in the FinTech field is something every employer is looking for.
+
+  * ☝️ Who can we submit our resume to for review?
+
+  * 🙋 Career Materials Advisor (formerly, Profile Coach)
+
+  * ☝️ Where can we submit this to a Career Materials Advisor (formerly, Profile Coach)
+
+  * 🙋 BootcampSpot
+
+**Note:** Check who already has a resume submitted.
+
+* ☝️ Who has completed their resume and already submitted it to a Career Material Advisor on BootcampSpot?
+
+  * 🙋 If students have not created a resume, they should follow the instructor-led lesson plan from Section 16.2
+
+  * 🙋 If students have created a resume, but not yet submitted it to a Career Material Advisor, they should submit it online and then skip to the **BONUS** activity at the end of the lesson plan.
+
+  * 🙋 If students have created a resume and already submitted it, they should skip to the **BONUS** activity.
+
+#### 16.2 Students Do: Identify Resume Type (5 min)
+
+* Let students know we realize not everybody in the class has the same objectives or background. There is a variety of experience that can fall into the following categories:
+
+  * **Entry level (no experience):** An entry-level student will be a student who is taking this course to break into the FinTech industry with no work experience. Their background will have nothing to do with FinTech. The work that they are doing in this class is the only work that they can put on their resume to get a job in the FinTech industry. They should use the entry-level/mid-level (no experience) template to either make a new resume or to incorporate components into their previous resume that might be missing.
+
+  * **Mid-level (no experience):** A mid-level student with no experience will be a student who has worked in a different industry before but their experience has nothing to do with the FinTech industry. They should use the entry-level/
+    mid-level (no experience) template to either make a new resume or incorporate components into their previous resume that might be missing.
+
+  * **Mid-level (relevant experience):** A mid-level student with experience will be a student who has worked in the FinTech industry and took this course to gain specific skills that can either advance their career or fill gaps in their knowledge. This student will have seven years of experience or less in the FinTech or data industries. They should use the mid-level (experience) template to either add to their existing resume or to start scratch.
+
+  * **Senior level (no experience):** A senior-level candidate with no experience will be a candidate who has 10 years or more experience in a different industry but no relevant FinTech (in-field) experience. This student should use the senior level (no experience) template to either update their existing resume or to create a new resume.
+
+  * **Senior level (experience):** A senior-level candidate with in-field experience will need to incorporate skills that they learned in the classroom to their resume. This student should use the senior level (experience) template to either update their existing resume or to create a new resume.
+
+* Students should be encouraged to create a resume that fits their skill and/or experience level. Doing so will give them the greatest chance at gaining employment or seeking that promotion they're after.
 
 Use the following lesson plan to discuss the Career Services content for this week.
 
-**Files:**
+#### 16.3 Students Do: Build Resume (25 min)
 
-* [Career Services Lesson Plan](Career_Services_LessonPlan.md)
+**Files:** [Resume Templates](https://docs.google.com/document/d/1p2IaA5qybg1W71B8eRhDw74INZ_FAXfuSTdpQHqUFTs/edit?usp=sharing)
+
+* For the next part of class students will be working on their resumes.
+
+* Slack out the resume template file above and ask students to select the template that best fits their need. If they already have a resume, encourage them to adapt it to include all the sections from the appropriate template.
+
+* All students should submit their completed resume to a profile coach on BCS by the end of class. If students do not complete their resume on time, tell them to submit their resume to BCS by the end of the week. This allows students to get feedback on the work they have done. Profile coaches should respond to students within 96 hours with feedback on their resume.
+
+#### BONUS: Technical Interviewing Prep
+
+This activity will not be instructor-led, and is only for those students who have completed their resume and submitted it to a Career Material Advisor. Slack out the following instructions and link.
+
+```markdown
+Part of interviewing for a FinTech role often means completing a technical assessment. Oftentimes, these technical assessments aren't directly FinTech concept related, but aim to test our ability in problem-solved and programming.
+
+In the following challenge, you will utilize an online technical asssessment platform that mirrors platforms used by recruiters and hiring managers to test technical ability. You will complete a timed algorithm challenge in Python called `fizzBuzz`.
+
+Once complete, you can review the solution, which your instructional team will send out at the end of class.
+
+Activity Link: [CodeSignal Challenge: FizzBuzz](https://app.codesignal.com/public-test/vNbgtoSmvDrajGvgo/sne7eLC3dN4kFy)
+```
+
+**Note:** Do not Slack out the solution until the end of class.
+
+```python
+def fizzBuzz(n):
+
+    fizzbuzzArr = []
+
+    for num in range(1, n + 1):
+        if num % 15 is 0:
+            fizzbuzzArr.append("FizzBuzz")
+            continue
+        elif num % 3 is 0:
+            fizzbuzzArr.append("Fizz")
+            continue
+        elif num % 5 is 0:
+            fizzbuzzArr.append("Buzz")
+            continue
+        fizzbuzzArr.append(str(num))
+    return fizzbuzzArr
+```
+
 
 ### End Class
 
