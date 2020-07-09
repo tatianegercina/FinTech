@@ -111,3 +111,7 @@ Last, one of the most central ideas of MPT is the concept of an Efficient Fronti
 ### Student Activity:
 
 See instructions in the [activity file](Activities/03-Stu_Portfolio_Comparisons/README.md).
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
