@@ -535,7 +535,7 @@ In this activity, students will use the Hodrick-Prescott filter to identify macr
 
 **Files:**
 
-* [FRED.ipynb](Activities/05-Stu_Hodrick_Prescott/Solved/ca_macroeconomics.ipynb)
+* [ca_macroeconomics.ipynb](Activities/05-Stu_Hodrick_Prescott/Solved/ca_macroeconomics.ipynb)
 
 Open the solution file, and conduct a brief dry walkthrough of the code.
 
