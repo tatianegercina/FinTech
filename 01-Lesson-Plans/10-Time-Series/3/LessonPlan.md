@@ -814,7 +814,7 @@ Point out that up to this point, we have created models as a one-shot affair. Ex
 
 * During each iteration, a regression model is created, fitted to the data, and generates predictions.
 
-Open the notebook and inform students that the time series is the S&P 500 stock data, which they have seen before:
+Open the notebook and inform students that the time series is the TSX stock data, which they have seen before:
 
   ```python
   df['Return'] = df.Close.pct_change() * 100
@@ -989,7 +989,7 @@ In this activity, students will perform predictions with linear regression on a 
 
 * [gold.ipynb](Activities/08-Stu_Rolled_Gold/Solved/gold.ipynb)
 
-Open the notebook and explain that since regression will later be performed on returns and lagged returns in USD, those columns are created:
+Open the notebook and explain that since regression will later be performed on returns and lagged returns in CAD, those columns are created:
 
   ![Images/gold01.png](Images/gold01.png)
 
