@@ -28,7 +28,7 @@ To understand what money is, we first need to define the concept of **value**, w
 
   * Store of value: Money should "generally" be stable, relative to most of the goods and services it is exchanged for.
 
-We refer to physical money as **currency**. Historically, money has taken many different forms, including precious metals, gems, and seashells, which we refer to as **commodity money**. Later, we began to create money representing discrete portions of those commodities which we call **representative money**.
+We refer to physical money as **currency**. Historically, money has taken many different forms, including precious metals, gems, and seashells, which we refer to as **commodity money**. Later, we began to create money representing discrete portions of those commodities, which we call **representative money**.
 
 Most countries have moved away from representative money in favor of **fiat money**, which derives its value only from a government promise to back its value. While fiat money has no intrinsic value, it is beneficial as a medium of exchange within a country. For more on this topic, investigate the [Breton-Woods System](https://en.wikipedia.org/wiki/Bretton_Woods_system) and [Nixon Shock](https://en.wikipedia.org/wiki/Nixon_shock).
 
