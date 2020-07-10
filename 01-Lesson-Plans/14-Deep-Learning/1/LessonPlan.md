@@ -354,7 +354,7 @@ Explain to students that we will start coding a neural network with a single neu
 
 * This dummy dataset contains 1000 samples with two features that are split into two groups.
 
-* As part of our data preprocessing, we transform `y` into a vertical vector.
+* As part of our data preprocessing, we transform `y` into a vertical vector. Remember that the `reshape` function is used to reshape or format the data.
 
   ```python
   # Transforming y to a vertical vector
@@ -533,6 +533,8 @@ model_moon = neuron.fit(X_moon_train_scaled, y_moon_train, epochs=100, shuffle=T
 * The model is evaluated and predictions are made with ten new dummy samples, it can be corroborated that results aren't as good as the ones obtained with linear data, this is because using only one-single neuron is not unveiling the power of neural networks to find nonlinear patterns.
 
   ![Non-linear data evaluation](Images/non_linear_loss_accuracy.png)
+
+  ![make-predictions](Images/make-predictions.png)
 
 Explain to students that in the next activity, they will learn how they can create more complex networks that can handle more complexity and nonlinearity in the data.
 
