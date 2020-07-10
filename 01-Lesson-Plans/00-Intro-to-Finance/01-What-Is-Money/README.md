@@ -10,7 +10,7 @@ This module provides an introduction to the concepts of value, money, and financ
 
 By the end of this module, you will be able to:
 
-* Define value, as well as money, and how they differ from currency
+* Define value, and money, and how they differ from currency
 
 * Identify the major features of money
 
@@ -26,11 +26,11 @@ To understand what money is, we first need to define the concept of **value**, w
 
   * Medium of exchange: A useful form of money is accepted by a large number of participants in a market.
 
-  * Store of value: Money should "generally" be stable relative to most of the goods and services it is exchanged for.
+  * Store of value: Money should "generally" be stable, relative to most of the goods and services it is exchanged for.
 
-Money has had many forms throughout history, and we refer to physical money as currency. Some earlier forms include precious metals, gems, and seashells, which we refer to as commodity money. Later, we began to create money that represented discrete portions of those commodities which we call representative money.
+We refer to physical money as **currency**. Historically, money has taken many different forms, including precious metals, gems, and seashells, which we refer to as **commodity money**. Later, we began to create money representing discrete portions of those commodities which we call **representative money**.
 
-In more recent years, most countries have moved away from representative money in favor of fiat money, which derives its value only from a government promise to back its value. While fiat money has no intrinsic value, it is beneficial as a medium of exchange within a country. For more on this topic, investigate the [Breton-Woods System](https://en.wikipedia.org/wiki/Bretton_Woods_system) and [Nixon Shock](https://en.wikipedia.org/wiki/Nixon_shock).
+Most countries have moved away from representative money in favor of **fiat money**, which derives its value only from a government promise to back its value. While fiat money has no intrinsic value, it is beneficial as a medium of exchange within a country. For more on this topic, investigate the [Breton-Woods System](https://en.wikipedia.org/wiki/Bretton_Woods_system) and [Nixon Shock](https://en.wikipedia.org/wiki/Nixon_shock).
 
 Even more recently is the development of cryptocurrencies, which have exploded as a medium of exchange. Cryptocurrencies derive their usefulness as money from highly secure networks of computers solving difficult math problems. They are primarily a response to the 2008 Great Recession in which several governments printed a glut of new money (thus causing a fall in value from the excess supply). This was to an effort necessary to jumpstart the economy again, but it had the side effect of creating doubt in the role of government in managing the value of its own currency.
 
