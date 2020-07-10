@@ -20,7 +20,7 @@ By the end of this module, you will be able to:
 
 ### Reading: Money and Value
 
-To discuss the definition of money, we first need to define the concept of **value**, which is the perceived benefit derived from a good or service. For example, one may value apples for their intrinsic capacity as food. **Money** is a way in which we can measure value, and serves three main functions:
+To understand what money is, we first need to define the concept of **value**, which is the perceived benefit derived from a good or service. For example, one may value apples for their intrinsic capacity as food. **Money** is a way in which we can measure value, and serves three main functions:
 
   * Unit of account: Money can serve as a direct numerical measurement of value for a good or service, acting as a standard description of value.
 
