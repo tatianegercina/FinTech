@@ -32,7 +32,7 @@ We refer to physical money as **currency**. Historically, money has taken many d
 
 Most countries have moved away from representative money in favor of **fiat money**, which derives its value only from a government promise to back its value. While fiat money has no intrinsic value, it is beneficial as a medium of exchange within a country. For more on this topic, investigate the [Breton-Woods System](https://en.wikipedia.org/wiki/Bretton_Woods_system) and [Nixon Shock](https://en.wikipedia.org/wiki/Nixon_shock).
 
-Even more recently is the development of cryptocurrencies, which have exploded as a medium of exchange. Cryptocurrencies derive their usefulness as money from highly secure networks of computers solving difficult math problems. They are primarily a response to the 2008 Great Recession in which several governments printed a glut of new money (thus causing a fall in value from the excess supply). This was to an effort necessary to jumpstart the economy again, but it had the side effect of creating doubt in the role of government in managing the value of its own currency.
+Even more recently is the development of cryptocurrencies, which derive their utility as money from highly secure networks of computers solving difficult math problems. Cryptocurrency emerged largely as a response to the Great Recession of 2008, where governments printed a glut of new money, thus causing a fall in value due to the excess supply. While this effort was needed to jumpstart the global economy, it had the side effect of sowing doubt in the ability of governments to effectively manage the value of their own currency.
 
 Most currencies also have three other properties, which are not necessary, but useful:
 
