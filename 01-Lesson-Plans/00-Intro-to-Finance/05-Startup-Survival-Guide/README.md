@@ -18,9 +18,9 @@ By the end of this module, you will be able to:
 
 [[ADD SUBTITLE HERE]]
 
-Do you like to create new things? To push the boundaries of what people thought was possible? To create value for others with your ideas? If so, you may want to consider working for a startup!
+Do you like to create new things? Push the boundaries of what people thought was possible? Create value for others with your ideas? If so, you may want to consider working for a startup!
 
-Startups are nascent entrepreneurial companies looking to bring a new product or service to market, and differ from “lifestyle businesses” in their goal to rapidly scale and disrupt an existing market. If things go well they are often purchased by a larger company, or undergo an Initial Public Offering (IPO) to become a public company.
+Startups are nascent entrepreneurial companies looking to bring a new product or service to market, and differ from “lifestyle businesses” in their goal to rapidly scale and disrupt an existing market. If things go well, they are often purchased by a larger company, or undergo an Initial Public Offering (IPO) to become a public company.
 
 Startups also raise capital differently than other businesses. In this module, we will explore some of the most common funding methods, as well as the types of stock and remuneration offered by these companies.
 
