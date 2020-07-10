@@ -1,6 +1,6 @@
 # Students Do: Predicting Gold Closing Prices
 
-In this activity, you will gain hands-on experience by building an RNN LSTM for predicting gold closing prices using time-series data.
+In this activity, you will gain hands-on experience by building an RNN LSTM for predicting gold closing prices in CAD using time-series data.
 
 ## Instructions
 

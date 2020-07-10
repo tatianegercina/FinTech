@@ -1291,7 +1291,7 @@ Answer any questions before moving on.
 
 ### 10. Students Do: Predicting Gold Closing Prices (30 min)
 
-This activity is a mini-project where students will gain hands-on experience building an RNN LSTM model for time-series data predicting gold closing prices.
+This activity is a mini-project where students will gain hands-on experience building an RNN LSTM model for time-series data predicting gold closing prices in CAD.
 
 **Instructions:**
 
@@ -1317,7 +1317,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
 * Once we have our data, we will create the features and target set using the custom `window_data()` function we define.
 
-* For this demo, we will use a window size of `30` days, and since we want to predict the gold prices in US Dollars, we will pass `1` as the feature and target columns index.
+* For this demo, we will use a window size of `30` days, and since we want to predict the gold prices in CAD, we will pass `1` as the feature and target columns index.
 
   ```python
   # Define the window size
