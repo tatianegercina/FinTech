@@ -44,7 +44,7 @@ Most currencies also have three other useful properties:
 
 ### Student Activity: Phone a Friend
 
-See instructions in [activity file](Activities/01-Stu_Phone_a_Friend/README.md)
+See instructions in [activity file](Activities/01-Stu_Phone_a_Friend/README.md).
 
 ### Reading: Financial Statements Used in Accounting
 
@@ -68,7 +68,7 @@ The third and final statement, the **cash flow statement**, is used to understan
 
 ### Student Activity: Find a Set of Financial Statements
 
-See instructions in [activity file](Activities/02-Stu_Find_a_Statement/README.md)
+See instructions in [activity file](Activities/02-Stu_Find_a_Statement/README.md).
 
 
 ---
