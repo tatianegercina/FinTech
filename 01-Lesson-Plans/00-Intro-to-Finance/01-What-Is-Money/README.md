@@ -4,7 +4,7 @@
 
 ### Overview
 
-This module will introduce you to the concepts of value, money, and financial statements.
+This module provides an introduction to the concepts of value, money, and financial statements.
 
 ### Module Objectives
 
