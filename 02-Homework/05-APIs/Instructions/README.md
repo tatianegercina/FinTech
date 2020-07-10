@@ -41,24 +41,25 @@ Follow the steps outlined in the budget starter notebook (`account_summary.ipynb
     ```python
     INSTITUTION_ID = "ins_109508"
     ```
-
+    
+    
 3. Perform basic budget analysis on the sandbox transaction and generate the following plots:
 
-    * Spending Categories Pie Chart.
+    * Spending Categories Pie Chart:
 
       ![Expenses per category](Images/spending-pie.png)
 
-    * Spending Per Month Bar Chart.
+    * Spending Per Month Bar Chart:
 
       ![Expenses per month](Images/spending-month.png)
 
 4. Use the API to fetch income data from the sandbox and print the following:
 
-* Last Year's Income Before Tax.
+    * Last Year's Income Before Tax.
 
-* Current Monthly Income.
+    * Current Monthly Income.
 
-* Projected Year's Income Before Tax.
+    * Projected Year's Income Before Tax.
 
 ### Retirement Planner
 
@@ -90,11 +91,11 @@ Use the Monte Carlo simulation data to answer the following questions:
 
 2. Given an initial investment of `$20,000`, what is the expected return in dollars at the `10th`, `50th`, and `90th` percentiles?
 
-3. Given the current projected annual income from the Plaid analysis, will a `4%` withdrawal rate meet or exceed that value at the `10th` percentile? Note: This is basically determining if retirement income is equivalent to current income.
+3. Given the current projected annual income from the Plaid analysis, will a `4%` withdrawal rate meet or exceed that value at the `10th` percentile? *Note:* This is basically determining if retirement income is equivalent to current income.
 
 4. How would a `50%` increase in the initial investment amount affect the `4%` retirement withdrawal? In other words, what happens if the initial investment had been bigger?
 
-5. (Optional Challenge) Use the Monte Carlo data and calculate the cumulative returns at the `5%`, `50%`, and `95%` quartiles and plot this data as a line chart to see how the cumulative returns change over the life of the investment.
+5. **Optional Challenge:** Use the Monte Carlo data and calculate the cumulative returns at the `5%`, `50%`, and `95%` quartiles and plot this data as a line chart to see how the cumulative returns change over the life of the investment.
 
     ![projected-returns.png](Images/projected-returns.png)
 
@@ -104,11 +105,11 @@ In this section, you will compile a financial report to demo your calculations t
 
 1. **Budget Analysis:** Summarize the transaction data from the budget analysis and include images for each chart and table produced.
 
-2. *Retirement Planning:* Summarize the retirement portfolio analysis and include the charts for the Monte Carlo simulation.
+2. **Retirement Planning:** Summarize the retirement portfolio analysis and include the charts for the Monte Carlo simulation.
 
-### Optional Challenge — Early Retirement
+### Optional Challenge — *Early Retirement*
 
-Harold was really impressed with your work on this planner, but commented that `30` years seems like such a long time to wait to retire! Harold starts wondering if the retirement plan could be adjusted to retire earlier than normal. Try adjusting the portfolio to either include more risk (a higher stock than bond ratio) or to have a larger initial investment and rerun the retirement analysis to see what it would take to retire in `5` years instead of `30`!
+Harold was really impressed with your work on this planner, but commented that `30` years seems like such a long time to wait to retire! Harold starts wondering if the retirement plan could be adjusted to retire earlier than normal. Try adjusting the portfolio to either include more risk (a higher stock than bond ratio) or to have a larger initial investment. Then, rerun the retirement analysis to see what it would take to retire in `5` years instead of `30`!
 
 ---
 
@@ -124,7 +125,7 @@ Harold was really impressed with your work on this planner, but commented that `
 
 ### Hints and Considerations
 
-* For the Monte Carlo simulation, start out by running `100` simulations for one year of returns, and when you have the code worked out, run the simulation at `100–500` simulations for `30` years (this takes a long time).
+* For the Monte Carlo simulation, running 100-500 simulations on 30 years of data can take a very long time, so start out by running `100` simulations for just one year of returns, then, when you have the code worked out, run the full number of simulations.
 
 ---
 
