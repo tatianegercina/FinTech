@@ -530,7 +530,7 @@ model_moon = neuron.fit(X_moon_train_scaled, y_moon_train, epochs=100, shuffle=T
 
   ![Non-linear data plots](Images/neuron_plot_non_linear.png)
 
-* The model is evaluated and predictions are made with ten new dummy samples, it can be corroborated that results aren't as good as the ones obtained with linear data, this is because using only one-single neuron is not unveiling the power of neural networks to find nonlinear patterns.
+* The model is evaluated and predictions are made with ten new dummy samples. Predictions and actual results are then combined in a single DataFrame, with the `ravel` function used to flatten the prediction data so that it can be properly inserted into the DataFrame. it can be corroborated that results aren't as good as the ones obtained with linear data, this is because using only one-single neuron is not unveiling the power of neural networks to find nonlinear patterns.
 
   ![Non-linear data evaluation](Images/non_linear_loss_accuracy.png)
 
