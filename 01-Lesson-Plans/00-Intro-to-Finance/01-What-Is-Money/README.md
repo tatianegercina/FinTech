@@ -34,41 +34,43 @@ Most countries have moved away from representative money in favor of **fiat mone
 
 Even more recently is the development of cryptocurrencies, which derive their utility as money from highly secure networks of computers solving difficult math problems. Cryptocurrency emerged largely as a response to the Great Recession of 2008, where governments printed a glut of new money, thus causing a fall in value due to the excess supply. While this effort was needed to jumpstart the global economy, it had the side effect of sowing doubt in the ability of governments to effectively manage the value of their own currency.
 
-Most currencies also have three other properties, which are not necessary, but useful:
+Most currencies also have three other useful properties:
 
-  - Fungibility: Each unit of currency is interchangeable
+  * Fungibility: Each unit of currency is interchangeable.
 
-  - Scarcity: The currency is not easy for everyone to create more of, as generating more currency can debase its value
+  * Scarcity: Currency is not easy to create more of, and generating more can debase its value.
 
-  - Portability: Currency should be easy to transport and exchange between parties.
+  * Portability: Currency is easy to transport and exchange between parties.
 
 ### Student Activity: Phone a Friend
 
-See instructions in [activity file](Activities/01-Stu_Phone_a_Friend/README.md)
+See instructions in [activity file](Activities/01-Stu_Phone_a_Friend/README.md).
 
 ### Reading: Financial Statements Used in Accounting
 
-A **company** is a group of people endeavoring the advancement of a commercial or industrial purpose - that is, they are working together to create something of value. Companies can be public or private, with public companies being ones in which ownership can be purchased on an exchange. Both public and private companies are regulated by their industry, type, and scale by different departments of government. They raise financial capital through various means in order to provide goods or services. The two main fundraising vehicles are the issuance of bonds (selling debt, equivalent to taking out a loan) or selling shares (selling equity/ownership in the company). Smaller companies such as startups generally raise money through seed, angel, or venture capital (VC) investment.
+A **company** is a group of people that are working together to create something of value. Companies can be public or private, with public companies being ones in which ownership can be purchased on an exchange. Both are regulated by their industry, type, and scale by different departments of government. They raise financial capital through various means in order to provide goods or services. The two main fundraising vehicles are the issuance of bonds (selling debt, equivalent to taking out a loan) or selling shares (selling equity/ownership in the company). Smaller companies such as startups generally raise money through seed, angel, or venture capital (VC) investment.
 
-Regardless of size, all companies require accounting, which is the practice by which governments, companies, and organizations measure their financial state. As a company grows, it is subject to ever more strict accounting standards, and public companies are required to report their accounting every year through official 10K (annual), and 10Q (quarterly) reports.
+Regardless of size, all companies require accounting, which is the practice by which governments, companies, and organizations measure their financial state. As a company grows, it is subject to stricter accounting standards, and public companies are required to report their accounting every year through official 10K (annual), and 10Q (quarterly) reports.
 
-Accounting reports generally require three documents which we will cover here. However, there is far more to learn in a full accounting course! Those documents are the balance sheet, the income statement, and the cash flow statement.
+Accounting reports generally require three documents: the balance sheet, the income statement, and the cash flow statement. (However, there is far more to learn in a full accounting course!)
 
-The **balance sheet** is a statement of who owns what capital in the form of assets and liabilities. It tracks the fundamental accounting equation: Assets = Liabilities + Equity.  Assets are the physical and nonphysical resources owned by the company that adds a *positive* value to the balance sheet. They include things such as cash, real estate, and copyrights. Liabilities are similar to assets but are resources that add negative value to the balance sheets. These are items such as loans, wages owed, or the purchase of another company. Finally, equity is the leftover if all of the company's assets were sold, and debts were paid off (i.e., Equity = Assets - Liabilities). An example would be that if you were to purchase a home worth $200,000, and took out a loan for $160,000. Your equity in the home would be the $40,000 down payment. If the value of the house were to increase over the loan period, your loan is already contracted to a specific value, and thus your *equity* would increase. For those interested, there is also an [expanded accounting equation](https://www.investopedia.com/terms/e/expanded-accounting-equation.asp) that takes into account other features of a company's balance sheet.
+A **balance sheet** is a statement of who owns what capital in the form of assets and liabilities. It tracks this fundamental accounting equation: Assets = Liabilities + Equity. Assets are the physical, and nonphysical, resources owned by the company that adds a *positive* value to the balance sheet. They include things such as cash, real estate, and copyrights. Liabilities are similar to assets, but are resources that add negative value to the balance sheets. These are items such as loans, wages owed, or the purchase of another company. Finally, equity is what remains if/when all of the company's assets are sold, and debts are paid off (i.e., Equity = Assets - Liabilities). 
 
-The **income statement** is a statement of the total revenues and expenses for the company. It will also often be referred to as the P&L (pronounced P-N-L) statement. Where the balance sheet tracks all of what the company owns, as well as who owns it (i.e., assets and liabilities), the income statement tracks the company's performance in terms of money made (or lost!).
+As an example, let's say you purchased a home worth $200,000, and took out a loan for $160,000. Your equity in the home would be the $40,000 down payment. If the value of the house were to increase over the loan period, your loan would be contracted to a specific value, thus increasing your *equity*. For those interested, there is also an [expanded accounting equation](https://www.investopedia.com/terms/e/expanded-accounting-equation.asp) that takes into account other features of a company's balance sheet.
 
-In the income statement, it all boils down to Net Income, which equals revenues (money made from selling things) minus expenses. Expenses for a company include typical things like the costs of purchasing from their suppliers (categorized as “cost of goods sold”), salaries and employee compensation (categorized as “general and administrative”), or real estate lease costs. For firms that borrow and thus have debt on the balance sheet, they also have to subtract the expense of paying interest on those loans. There is another expense known as depreciation, but this is an accounting concept that we don’t need to visit in detail (basically, it’s an expense whereby you subtract out the costs of buying large equipment or real estate over time, rather than all upfront. This has to do with tax rules).
+An **income statement** is a statement of the total revenues and expenses for the company. It is also often referred to as the P&L (pronounced "P-N-L") statement. Where the balance sheet tracks all of what the company owns, as well as who owns it (i.e., assets and liabilities), the income statement tracks the company's performance in terms of money made (or lost!).
 
-The income statement gives investors a “bottom-line” answer as to whether the company earned (or lost) money, and if so, how much. For that reason, the income statement is often used in what is known as **Fundamental Analysis**, which we will discuss in a later section. We will often calculate the earnings-per-share (EPS) by dividing the total earnings of the company by the number of shares available.
+In the income statement, it all boils down to net income, which equals revenues (money made from selling things) minus expenses. Expenses for a company include typical things like the costs of purchasing from their suppliers (categorized as “cost of goods sold”), salaries, and employee compensation (categorized as “general and administrative”), or real estate lease costs. For firms that borrow (and thus have debt on the balance sheet), they also have to subtract the expense of paying interest on those loans. There is another expense known as depreciation, but this is an accounting concept that we don’t need to visit in detail (basically, it’s an expense whereby you subtract out the costs of buying large equipment or real estate over time, rather than all upfront. This has to do with tax rules).
+
+The income statement gives investors a “bottom-line” answer as to whether the company earned (or lost) money, and if so, how much. For that reason, the income statement is often used in what is known as **fundamental analysis**, which we will discuss in a later section. We will often calculate the earnings-per-share (EPS) by dividing the total earnings of the company by the number of shares available.
 
 The third and final statement, the **cash flow statement**, is used to understand the short-term viability of a company through demonstrating how changes in the balance sheet and income statement affect cash coming into and out of a company. In general, one can derive a cash flow statement from the combination of the balance sheet and income statement. The three major parts of the statement are the cash from operating activities, investing activities, and financing activities. For more on cash flow statements and what is contained in those activities, check out the [Investopedia page](https://www.investopedia.com/investing/what-is-a-cash-flow-statement/).
 
-### Student Activity: Find a set of Financial Statements
+### Student Activity: Find a Set of Financial Statements
 
 See instructions in [activity file](Activities/02-Stu_Find_a_Statement/README.md)
 
 
 ---
 
-© 2020 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U brand. All Rights Reserved.
