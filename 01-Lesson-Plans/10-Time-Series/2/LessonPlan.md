@@ -878,7 +878,7 @@ Finally, walk through the steps of plotting the volatility forecast:
 
   ![Images/cad04.png](Images/cad04.png)
 
-* Based on the plot, the volatility of the EUR-USD exchange rate is predicted to fluctuate with a slight upward trend over the next five days.
+* Based on the plot, the volatility of the EUR-CAD exchange rate is predicted to fluctuate with a slight upward trend over the next five days.
 
 - - -
 
