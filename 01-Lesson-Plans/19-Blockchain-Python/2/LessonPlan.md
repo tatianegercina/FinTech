@@ -294,7 +294,7 @@ from bit import wif_to_key
 
 This will allow us to work with our testnet private key.
 
-* WIF means "wallet import format" -- it's a special format bitcoin uses to designate the types of keys it generates.
+* WIF means "wallet import format" -- it's a special format bitcoin uses to designate the types of keys it generates. The tool we used to generate our Bitcoin addresses already formats your private keys in WIF, to make it easy to import into other wallets like `bit`.
 
 Now, we can initialize the key in an object like so:
 
