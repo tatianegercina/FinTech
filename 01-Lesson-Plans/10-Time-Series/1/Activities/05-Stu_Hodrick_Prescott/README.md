@@ -2,7 +2,7 @@
 
 ## Introduction
 
-* In this activity, you will use the Hodrick-Prescott filter to examine macro economic trends in Canada between 2004 and 2010.
+* In this activity, you will use the Hodrick-Prescott filter to examine macroeconomic trends in Canada between 2004 and 2010.
 
 ## Instructions
 
