@@ -568,7 +568,7 @@ Before diving into the code, introduce the concept of autocorrelation:
   
   * What's the temperature an hour into the future? It's very likely to be similar to what it is now (one "lag" away).
   
-  * What's the temperature at noon today? It is likely we'll get good information by looking at what the temperature was at noon yesterday (24 hours, or "lags", ago).
+  * What's the temperature at noon today? It is likely we'll get good information by looking at what the temperature was at noon yesterday (24 hours, or "lags," ago).
 
 **File:** [autocorrelation.ipynb](Activities/06-Ins_Auto_Correlation/Solved/autocorrelation.ipynb)
 
@@ -681,7 +681,7 @@ Next, introduce partial autocorrelation functions:
 
 * Whereas an autocorrelation function measures autocorrelation at all specified lags, PACF essentially reduces components of autocorrelation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags. That is, autocorrelations at any given lag interval that are significantly dissimilar to previous intervals are marked as anomalous.
 
-Explain that a PACF plot will illustrate the idea in concrete terms:
+Explain that a PACF plot illustrates this idea in concrete terms:
 
   ```python
   plot_pacf(df.Temperature, lags=48, zero=False)
@@ -764,9 +764,9 @@ Review the ACF and PACF plots:
 
 * The ACF and PACF both appear to be significant at a lag of 1, along with possibly the 4th lag.
   
-  * Should we chose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest we use a model that carries the order all the way out to AR(4). Ultimately, however, whether an AR(1) or an AR(4) is more appropriate ultimately depends on how well the two different specifications perform on the data that we have.
+  * Should we choose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest using a model that carries the order all the way out to AR(4). However, whether an AR(1) or an AR(4) is more appropriate ultimately depends on how well the two different specifications perform on the data that we have.
 
-  * While approximately the 13th lag looks significant in the autocorrelation plot, it's not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(); the really beneficial lags are the 1st and the 4th, while the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads.
+  * While approximately the 13th lag looks significant in the autocorrelation plot, it is not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(); the really beneficial lags are the 1st and the 4th, while the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads.
 
 - - -
 
