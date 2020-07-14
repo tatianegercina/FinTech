@@ -620,8 +620,6 @@ In this activity, students will be introduced to tone analysis and how they can 
 
 * [tone_analysis.ipynb](Activities/13-Ins_Tone_Analysis/Solved/tone_analysis.ipynb)
 
-* [keys.sh](Activities/13-Ins_Tone_Analysis/Solved/keys.sh)
-
 Start by opening the lesson slides, go to the Tone Analysis section, and highlight the following:
 
 * Tone analysis offers new possibilities for sentiment analysis since it goes beyond the simple classic classification as positive, negative or neutral and looks to understand human emotions.
