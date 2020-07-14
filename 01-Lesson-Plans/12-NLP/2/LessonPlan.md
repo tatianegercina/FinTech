@@ -35,6 +35,7 @@ By the end of the class, students will be able to:
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [12.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c900d473-28d8-4d5d-8f33-aae700f22c46) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
@@ -269,7 +270,6 @@ In this activity, students will learn how to retrieve news articles from the [Ne
 **Files:**
 
 * [sentiment_analysis_data.ipynb](Activities/06-Ins_Sentiment_Analysis_Data/Solved/sentiment_analysis_data.ipynb)
-* [keys.sh](Activities/06-Ins_Sentiment_Analysis_Data/Solved/keys.sh)
 
 Explain to students that there are several ways to retrieve data for sentiment analysis, such as web scraping, manual corpus creation from document digitization, document transformations (e.g., from PDF, word processors, or spreadsheets to raw text) and using APIs. Among these data-retrieval mechanisms, APIs is one of the most used, so in this activity, students will learn how to retrieve news articles using the [News API](https://newsapi.org/) and its [Python library](https://newsapi.org/docs/client-libraries/python).
 
@@ -358,23 +358,23 @@ Answer any questions that arise and move to the next activity.
 
 ---
 
-### 7. Student Do: The Voice of the Virus (15 min)
+### 7. Student Do: The Voice of the Blockchain (15 min)
 
-In this activity, students will use the News API to retrieve news articles in English and French about the financial crisis of 2008. At the end of the activity, students will create a CSV file that will be used for coming activities.
+In this activity, students will use the News API to retrieve news articles in English and French about blockchain in Canada for 2020. At the end of the activity, students will create a CSV file that will be used for coming activities.
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Virus_Voice/README.md)
+* [README.md](Activities/07-Stu_Blockchain_Voice/README.md)
 
 **Files:**
 
-* [voice_virus.ipynb](Activities/07-Stu_Virus_Voice/Unsolved/voice_virus.ipynb)
+* [voice_blockchain.ipynb](Activities/07-Stu_Blockchain_Voice/Unsolved/voice_blockchain.ipynb)
 
 ---
 
-### 8. Instructor Do: Review The Voice of the Virus (5 min)
+### 8. Instructor Do: Review The Voice of the Blockchain (5 min)
 
-Open the [solution](Activities/07-Stu_Virus_Voice/Solved/voice_virus.ipynb) and walk through the code, highlight the following:
+Open the [solution](Activities/07-Stu_Blockchain_Voice/Solved/voice_blockchain.ipynb) and walk through the code, highlight the following:
 
 * As can be read on [the News API documentation for the `Everything` endpoint,](https://newsapi.org/docs/endpoints/everything) it is possible to use logical operators to include or exclude keywords.
   ![Documentation for the q parameter of the News API](Images/new_api_q_param.png)
@@ -382,15 +382,15 @@ Open the [solution](Activities/07-Stu_Virus_Voice/Solved/voice_virus.ipynb) and 
 * All the articles containing the three keywords are retrieved using the `AND` operator, either for English or French news. The queries are sensitive to orthographic signs, so it is important to use the grave accent over the first `è` in `financière`.
 
   ```python
-  # Fetch news about Canada and the 2020 coronavirus in English
-  virus_news_en = newsapi.get_everything(
-      q="coronavirus AND canada AND 2020",
+  # Fetch news about Canada and Blockchain in 2020 in the English language
+  blockchain_news_en = newsapi.get_everything(
+      q="blockchain AND canada AND 2020",
       language="en"
   )
 
-  # Fetch news about Canada and the 2020 coronavirus in French
-  virus_news_fr = newsapi.get_everything(
-      q="coronavirus AND canada AND 2020",
+  # Fetch news about Canada and Blockchain in 2020 in the French language
+  blockchain_news_fr = newsapi.get_everything(
+      q="blockchain AND canada AND 2020",
       language="fr"
   )
   ```
@@ -411,24 +411,24 @@ Review the code for the `create_df()` function highlighting the following:
 
 ```python
 # Create a DataFrame with the news in English
-virus_en_df = create_df(virus_news_en["articles"], "en")
+blockchain_en_df = create_df(blockchain_news_en["articles"], "en")
 
 # Create a DataFrame with the news in French
-virus_fr_df = create_df(virus_news_fr["articles"], "fr")
+blockchain_fr_df = create_df(blockchain_news_fr["articles"], "fr")
 
 # Concatenate both DataFrames
-virus_df = pd.concat([virus_en_df, virus_fr_df])
+blockchain_df = pd.concat([blockchain_en_df, blockchain_fr_df])
 ```
 
 Get the `head()` an `tail()` of the DataFrame to show the news articles in both languages.
 
-![Sample news in English and French](Images/virus_news_df.png)
+![Sample news in English and French](Images/blockchain_news_df.png)
 
 Save the DataFrame as a CSV file for further use in the next activities. Warn students that is important to use the `encoding='utf-8-sig'` parameter when saving the file to preserve special characters, especially in French, in the CSV file.
 
 ```python
-file_path = Path("Data/virus_news_en_fr.csv")
-virus_df.to_csv(file_path, index=False, encoding='utf-8-sig')
+file_path = Path("Data/blockchain_news_en_fr.csv")
+blockchain_df.to_csv(file_path, index=False, encoding='utf-8-sig')
 ```
 
 Answer any additional questions before moving to the next activity.
@@ -508,32 +508,32 @@ Answer any questions from the class before moving on.
 
 ---
 
-### 11. Student Do: The Feelings of the Virus (20 min)
+### 11. Student Do: The Feelings of the Blockchain (20 min)
 
 In this activity, students will use VADER to score the sentiment of news titles and text to verify whether they have the same sentiment. This activity includes a facilitated discussion in the last four to five minutes to talk about students' findings.
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_Virus_Feelings/README.MD)
+* [README.md](Activities/11-Stu_Blockchain_Feelings/README.MD)
 
 **Files:**
 
-* [virus_feelings.ipynb](Activities/11-Stu_Virus_Feelings/Unsolved/virus_feelings.ipynb)
+* [blockchain_feelings.ipynb](Activities/11-Stu_Blockchain_Feelings/Unsolved/blockchain_feelings.ipynb)
 
 ---
 
-### 12. Instructor Do: Review The Feelings of the Virus (5 min)
+### 12. Instructor Do: Review The Feelings of the Blockchain (5 min)
 
 **Files:**
 
-* [virus_feelings.ipynb](Activities/11-Stu_Virus_Feelings/Solved/virus_feelings.ipynb)
+* [blockchain_feelings.ipynb](Activities/11-Stu_Blockchain_Feelings/Solved/blockchain_feelings.ipynb)
 
 Open the solution and walk through the code, highlighting the following:
 
 * It's important to use the `encoding='utf-8-sig'` to load the CSV file when creating the DataFrame, especially to get all the special characters from the news articles in French.
 
   ```python
-  file_path = Path("Data/virus_news_en_fr.csv")
+  file_path = Path("Data/blockchain_news_en_fr.csv")
   news_df = pd.read_csv(file_path, encoding="utf-8-sig")
   ```
 
@@ -606,7 +606,7 @@ Open the solution and walk through the code, highlighting the following:
   )
   ```
 
-  ![Sample sentiments bar chart](Images/virus_feelings_bar_chart.png)
+  ![Sample sentiments bar chart](Images/blockchain_feelings_bar_chart.png)
 
 Answer any additional questions before moving to the next activity.
 
