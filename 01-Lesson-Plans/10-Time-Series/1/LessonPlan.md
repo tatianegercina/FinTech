@@ -14,7 +14,7 @@ For many students, this unit, and those following, are the "bread and butter" of
 
 * Learning how to develop machine learning algorithms is required to take programming to the next level in the current technological ecosystem. By the end of the course, students will have evolved from standard Python developers to FinTech data scientists, capable of designing and developing:
 
-  * Robo-advisors and chatbots for algorithmic trading, product/investment recommendation, and customer service/support
+  * Robo-advisors and chatbots for algorithmic trading, product/investment recommendations, and customer service/support
 
   * Sentiment analysis engines to assess and predict economic sentiment for stock and housing markets
 
@@ -38,7 +38,7 @@ By the end of this class, students will be able to:
 
 ### Instructor Notes
 
-* Today's class will be a steady ramp-up to the rest of the week. It will provide students with the skills to work with time series data in Pandas (e.g., slicing rows by date), and furnish them with necessary concepts for days 2 and 3. The first half of the day will focus on identifying what time series analysis is and how it is used, while the second half will emphasize scaling time series analysis using machine learning algorithms.
+* Today's class is a steady ramp-up to the rest of the week. It will provide students with the skills to work with time series data in Pandas (e.g., slicing rows by date), and furnish them with necessary concepts for Days 2 and 3. The first half of the day will focus on identifying what time series analysis is and how it is used, while the second half will emphasize scaling time series analysis using machine learning algorithms.
 
 * This entire unit marks the journey into machine learning. Emphasize the role of machine learning in time series analysis and advanced analytics (the application of advanced statistical models and intelligent algorithms). For some students, machine learning is why they chose this boot camp, while others may find the topic intimidating and complex. Communicate concepts in simple terms, reminding students that machine learning is just the application of statistics using Python libraries to analyze data and make predictions regarding behaviour and outcomes. Foster confidence and understanding by pacing explanations and demonstrations; examples are provided to help with this.
 
@@ -96,7 +96,7 @@ Kick things off by welcoming students, then briefly introduce the concepts and s
 
 Open the slideshow, navigate to the section on machine learning, and highlight the following:
 
-* Define **machine learning** as an approach to programming that focuses on designing applications in a way that allows them to learn from their inputs. and make adjustments based on their outputs.
+* Define **machine learning** as an approach to programming that focuses on designing applications in a way that allows them to learn from their inputs, and make adjustments based on their outputs.
 
   * A very raw way of thinking about machine learning is automated configuration; instead of having to configure inputs and manually make changes to an algorithm, machine learning programs automatically adapt to improve outcomes and predictions, as well as accuracy and precision.
 
@@ -136,7 +136,7 @@ Now, ask students what they think machine learning can do. Why would someone bot
 
 * **Answer:** When working with an algorithm, a developer usually has to tweak and configure it to create the most accurate results for a given use case. This requires a lot of manual work.
 
-  * Machine learning completely removes this need, as the program continuously learns from data and can make adjustments on the fly. This allows for the algorithm to perform more robustly and change dynamically based on the data it is processing. These types of algorithms are classified as **intelligent algorithms**.
+  * Machine learning completely removes this need, as the program continuously learns from data and makes adjustments on the fly. This allows for the algorithm to perform more robustly and change dynamically, based on the data it is processing. These types of algorithms are classified as **intelligent algorithms**.
 
 Explain to students that an intelligent algorithm uses data to modify behaviour. As data is processed and predictions are made, the behaviour of the algorithm changes.
 
@@ -152,7 +152,7 @@ Explain the similarities and differences between machine learning, predictive an
 
     * Categories of supervised learning include classification (classifying outcomes as classes/groups) and regression (fitting data to predict where a new data point lies), both of which are used for making predictions. With supervised learning, potential outcomes need to be known upfront.
 
-  * The other is **unsupervised learning**, where the intelligent algorithm learns on the fly, without having seen any type of data before. The algorithm will identify all data points, cluster them, and then make predictions. Eventually, the algorithm will learn for itself.
+  * The other is **unsupervised learning**, where the intelligent algorithm learns on the fly, without having seen any type of data before. The algorithm identifies all data points, clusters them, and then makes predictions. Eventually, the algorithm learns for itself.
 
     * Unsupervised learning includes dimensionality reduction and clustering approach (finding groups within a population).
 
@@ -166,7 +166,7 @@ Explain the similarities and differences between machine learning, predictive an
 
 If time remains, generate some excitement by showing students some of the machine learning use cases below, showing videos in the order provided. If there is no time, slack links out to students so they can view on their own.
 
-* [How Machines Learn](https://www.youtube.com/watch?v=R9OHn5ZF4Uo) - only play up until 1:11 marker.
+* [How Machines Learn](https://www.youtube.com/watch?v=R9OHn5ZF4Uo) - only play up until the 1:11 marker.
 
 * [A.I. Experiments: Visualizing High Dimensional Space](https://www.youtube.com/watch?v=wvsE8jm1GzE)
 
