@@ -1,18 +1,18 @@
-# The Voice of the Virus
+# The Voice of the Blockchain
 
-The COVID-19 or coronavirus of 2020 was a pandemic that shook global economies including Canada's stock market. In this activity, you will retrieve news articles about this historical economic event in English and French to capture the voice of the crisis in two different languages.
+Canada lies at the frontier of the blockchain sector with increasing adoption rates and favorable regulations. In this activity you will retrieve news articles regarding blockchain in Canada for both English and French languages to capture the voice of the blockchain.
 
 ## Instructions
 
 ### Getting News Articles in English
 
-In this section you have to fetch news articles using the News API with the keywords `coronavirus`, `canada`, and `2020` in English.
+In this section you have to fetch news articles using the News API with the keywords `blockchain`, `canada`, and `2020` in English.
 
 Refer to [the `everything` endpoint documentation](https://newsapi.org/docs/endpoints/everything) of the News API to find out how you can include these three keywords on the `q` parameter.
 
 ### Getting News Articles in French
 
-Fetching news in French will require keywords in this language, so retrieve the news articles using the News API with the keywords `coronavirus`, `canada`, and `2020`.
+Fetching news in French will require keywords in this language, so retrieve the news articles using the News API with the keywords `blockchain`, `canada`, and `2020`.
 
 ### Create a DataFrame with All the Results
 
@@ -43,4 +43,4 @@ You can use a `for-loop` with the `create_df()` function inside to iterate acros
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
