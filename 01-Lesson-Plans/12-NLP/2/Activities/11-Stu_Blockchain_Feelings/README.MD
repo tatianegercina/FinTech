@@ -10,7 +10,7 @@ In this activity, you are tasked to corroborate that a news title with a negativ
 
 ### Load the News Articles from the CSV File as a DataFrame
 
-Pick the CSV file you created on The Voice of the Crisis activity and load it as a DataFrame. Remember to specify the `encoding='utf-8-sig'` parameter.
+Pick the CSV file you created on The Voice of the Blockchain activity and load it as a DataFrame. Remember to specify the `encoding='utf-8-sig'` parameter.
 
 The VADER sentiment module is only trained to score sentiment in English, so create a new DataFrame with news in English only. You will learn how to score sentiment in multiple languages later.
 
