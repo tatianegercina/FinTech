@@ -230,7 +230,7 @@ Open the notebook and run the following lines of code:
 
 * `df.info()` lists the number of rows, as well as the column data types.
 
-* The `datetime` column type is listed as `object`. In Pandas the `object` datatype name typically means the values held inside are strings.
+* The `datetime` column type is listed as `object`. In Pandas, the `object` datatype name typically means the values held inside are strings.
 
   ![Images/datetime00.png](Images/datetime00.png)
 
@@ -264,7 +264,7 @@ Having properly formatted and indexed the time series, explain next how to selec
 first_year = df2.loc['1980']
 ```
 
-* Specific months or days of a particular year can be accessed this way as well, using the following syntax:
+* Specific months, or days, of a particular year can be accessed this way as well, using the following syntax:
 
 ```python
 specific_date1 = df2.loc['1980-11']
@@ -280,7 +280,7 @@ Next, explain that the `resample()` method groups rows by a specified time frame
   yearly_average = df2.resample('A').mean()
   ```
 
-* This line groups all the rows of a year together then obtains their mean.
+* This line groups all the rows of a year together, then obtains their mean.
 
 * `resample()` is quite similar to Pandas's `groupby()` method. Once data has been aggregated, an aggregate function must be called. In this case, the mean was called, but quantities such as the sum, maximum value, or the minimum value can also be obtained with their respective functions.
 
@@ -296,7 +296,7 @@ Next, explain that the `resample()` method groups rows by a specified time frame
   df2.index.weekofyear
   ```
 
-* For example, the index of the data frame, which is formatted as datetime, stores information on the specific year, month, and even the week of the year for each row.
+* For example, the index of the data frame, which is formatted as datetime, stores information on the specific year, month, and even the week of the year, for each row.
 
 * More attributes can be found by consulting the [documentation](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html).
 
@@ -426,9 +426,9 @@ Finally, explain that the library used in the notebook is more useful as an illu
 
 ### 9. Instructor Do: EWMA and Hodrick-Prescott Filter (15 min)
 
-In this activity, you will introduce EWMA, or exponentially-weighted moving average. You will also introduce the Hodrick-Prescott filter, a tool that captures trends by minimizing local fluctuations.
+In this activity, you will introduce exponentially-weighted moving average (EWMA). You will also introduce the Hodrick-Prescott filter, a tool that captures trends by minimizing local fluctuations.
 
-Go to the slideshow, go to the EWMA section, and start with a concept overview of the EWMA and Hodrick-Prescott filters.
+Go to the slideshow, navigate to the EWMA section, and start with a concept overview of the EWMA and Hodrick-Prescott filters.
 
 **EWMA**
 
@@ -458,7 +458,7 @@ Explain the overall mathematical idea of the Hodrick-Prescott filter:
 
 * As discussed previously, a time series can be decomposed into trend, periodicity, and noise.
 
-* If we temporarily disregard noise, then, time series data, minus trend, equals periodicity.
+* If we temporarily disregard noise, then time series data, minus trend, equals periodicity.
 
 * The left side describes the cyclic element: time series (y) minus trend (tau).
 
