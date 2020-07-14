@@ -35,7 +35,7 @@ Once you finished the function do the following:
 
 Your final DataFrame should look like this:
 
-![Final news DataFrame example](Images/crisis_news_df.png)
+![Final news DataFrame example](Images/blockchain_news_df.png)
 
 ### Hints
 
