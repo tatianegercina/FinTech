@@ -11,7 +11,7 @@ In this assignment, you will test the many time series tools that you have learn
 You will gain proficiency in the following tasks:
 
 1. Time series forecasting
-2. Linear regression modeling
+2. Linear regression modelling
 
 - - -
 
@@ -29,11 +29,11 @@ You will gain proficiency in the following tasks:
 
 #### Time-Series Forecasting
 
-In this notebook, you will load historical CAD-Yen exchange rate data and apply time series analysis and modelling to determine if there is any predictable behaviour.
+In this notebook, you will load historical CAD-JPY exchange rate data and apply time series analysis and modelling to determine if there is any predictable behaviour.
 
 Follow the steps outlined in the time series starter notebook to complete the following:
 
-1. Decomposition using a Hodrick-Prescott filter (Decompose the settle price into trend and noise).
+1. Decomposition using a Hodrick-Prescott filter (decompose the settle price into trend and noise).
 2. Forecasting returns using an ARMA model.
 3. Forecasting the exchange rate price using an ARIMA model.
 4. Forecasting volatility with GARCH.
