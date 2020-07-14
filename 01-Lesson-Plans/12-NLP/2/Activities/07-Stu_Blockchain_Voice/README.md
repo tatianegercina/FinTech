@@ -4,6 +4,10 @@ Canada lies at the frontier of the blockchain sector with increasing adoption ra
 
 ## Instructions
 
+### Loading Environment Variables
+
+Create a .env file based on the the [example.env](Unsolved/example.env) starter file to create and export environment variables for the News API Key. Then, read and set the environment variables defined in your .env using the load_dotenv method.
+
 ### Getting News Articles in English
 
 In this section you have to fetch news articles using the News API with the keywords `blockchain`, `canada`, and `2020` in English.
