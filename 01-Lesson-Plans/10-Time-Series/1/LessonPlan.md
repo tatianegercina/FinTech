@@ -168,7 +168,7 @@ If time remains, generate some excitement by showing students some of the machin
 
 * [How Machines Learn](https://www.youtube.com/watch?v=R9OHn5ZF4Uo) - only play up until the 1:11 marker.
 
-* [A.I. Experiments: Visualizing High Dimensional Space](https://www.youtube.com/watch?v=wvsE8jm1GzE)
+* [A.I. Experiments: Visualizing High-Dimensional Space](https://www.youtube.com/watch?v=wvsE8jm1GzE)
 
 * [Machine Learning and Human Agility](https://www.youtube.com/watch?v=sWNG3omofoM)
 
