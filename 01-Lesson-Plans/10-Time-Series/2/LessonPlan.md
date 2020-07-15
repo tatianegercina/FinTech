@@ -831,7 +831,7 @@ df.head()
 
   * These hourly returns are scaled up to daily, by multiplying by 24 (currency markets trade 24 hours per day).
 
-  * The resample('D') function then calculates the daily average percentage return.
+  * The resample ('D') function then calculates the daily average percentage return.
 
 * The plot of the resulting stationarized series also confirms the clustering of volatility seen in 2015, 2016, and 2017:
 
