@@ -10,13 +10,7 @@ A few years ago, Jamie Dimon, JP Morgan's CEO famously said that any employee of
 
 Nevertheless, like every other established business, they are worried about being “Amazon-ed” and rendered irrelevant by some transformative new business model. So they are trying everything they can think of to transform themselves first, including eating their words and joining the cryptocurrency bandwagon (sort of) with JPM Coin.
 
-This is a very big deal for several reasons:
-
-1. Given the Dimon’s earlier statement, the JPM Coin initiative goes a long way towards legitimizing cryptocurrency, especially since
-
-2. JPM Coin uses Quorum, which is built on Ethereum, a leading cryptocurrency platform. Of particular note is the ability of Ethereum to support smart contracts. The fact that JP Morgan chose an Ethereum based platform also legitimizes this platform, even though there was a major theft of $50 million from smart contracts based on this platform.
-
-3. JP Morgan is the first major bank to announce anything like this.
+Given Dimon’s earlier statement, the JPM Coin initiative goes a long way towards legitimizing cryptocurrency. Not only is JP Morgan the first major bank to announce anything like this, but the fact that the JPM Coin uses Quorum, which is built on the leading cryptocurrency platform, Ethereum, further legitimizes this platform and its use of smart contracts.
 
 ## Why This May Be Interesting
 
