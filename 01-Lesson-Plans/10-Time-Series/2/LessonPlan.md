@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's class is the heart of this unit. Students will be introduced to core techniques to model or convert stationary data, as well as learn how to use time series models such as ARMA, ARIMA, and GARCH to create forecasts.
+Today's class is the heart of this unit. Students will be introduced to core techniques to model or convert stationary data, and learn how to create forecasts using time series models such as ARMA, ARIMA, and GARCH.
 
 ### Class Objectives
 
@@ -315,7 +315,7 @@ Ask your students to identify the features of the ARMA model:
 
 * On the left side of the equation, `y` at time `t`, is the current value.
 
-* The first term on the right side, `mu`, is added to `alpha 1` `y` at time `t-1`, is from the AR model. It is a past (lagged) value times a coefficient.
+* The first term on the right side, `mu`, is added to `alpha 1` `y` at time `t-1`, is from the AR model. It is a past (lagged) value, times a coefficient.
 
 * The next term, `m``epsilon` at time `t-1`, is the mean of the time series multiplied by the error (epsilon) at time `t-1`.
 
@@ -410,7 +410,7 @@ Explain that the model's `forecast()` method can be used to make predictions:
 
   ![Images/arma_model04.png](Images/arma_model04.png)
 
-* The `steps=10` argument specifies two weeks (ten trading days) as the interval of prediction.
+* The `steps=10` argument specifies two weeks (10 trading days) as the interval of prediction.
 
 * The predicted values (in this case, stock returns) are formatted as a DataFrame and plotted.
 
@@ -422,7 +422,7 @@ Finally, highlight a few important features of the model's summary:
 
 * The p-value of the first lag is high at 0.703.
 
-* The AIC and BIC values should also be noted, lower values reflecting better accuracy. We will cover these values in greater detail later today.
+* The AIC and BIC values should also be noted, with lower values reflecting better accuracy. We will cover these values in greater detail later today.
 
 - - -
 
