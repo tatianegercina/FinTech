@@ -609,7 +609,7 @@ Take a moment to summarize the order of an ARIMA model:
 
 * Lower AIC and BIC scores are usually better.
 
-* These quantities can also be used to estimate the order of an ARMA model. An ARMA model, however, does not have a differencing order because it assumes that the time series is stationary and therefore does not need to be differenced.
+* These quantities can also be used to estimate the order of an ARMA model. An ARMA model, however, does not have a differencing order because it assumes that the time series is stationary, and therefore does not need to be differenced.
 
 Send the following link to students for more information on the order of an ARIMA model:
 
@@ -675,7 +675,7 @@ Before introducing GARCH to the class, introduce the topic of volatility:
 
 * Understanding volatility is also important to banks, as loan failures can occur in a cluster. Assets must exceed liabilities, so regulators and banks alike create forecast models for asset volatility.
 
-Explain that GARCH models volatility. Open the slideshow and summarize the key features of the ARMA model:
+Explain that GARCH models volatility. Open the slideshow [[navigate to Section X]] and summarize the key features of the ARMA model:
 
 * An autoregressive component in which future values are predicted based on past values. In this model, values are a function of time.
 
@@ -691,9 +691,9 @@ Formalize the term volatility:
 
 * Volatility, then, is a function of time.
 
-* GARCH stands for Generalized Autoregressive Conditional Heteroskedasticity, where heteroskedasticity simply means uneven variance.
+* GARCH stands for Generalized Autoregressive Conditional Heteroskedasticity, where heteroskedasticity simply means "uneven variance."
 
-Go to the slideshow, and navigate to the `Volatile Periods in the US Stock Market` slides to illustrate how volatility clusters and to motivate GARCH models:
+Go to the slideshow, and navigate to the `Volatile Periods in the US Stock Market` slides to illustrate how volatility clusters, and to motivate GARCH models:
 
 * Volatility and returns tend to cluster.
 
@@ -703,7 +703,7 @@ Go to the slideshow, and navigate to the `Volatile Periods in the US Stock Marke
 
   ![Images/garch01.png](Images/garch01.png)
 
-* The first highlighted box captures the period after the September 11th attacks and the decline of the dotcom bubble, while the second highlights the recession that began in 2008, including the collapse of Lehmann Brothers.
+* The first highlighted box captures the period after the September 11th attacks and the decline of the dot com bubble, while the second highlights the recession that began in 2008, including the collapse of Lehmann Brothers.
 
 * Scenarios such as political upheavals, natural disasters, and disruptions to oil supplies can also cause volatility to cluster.
 
@@ -730,7 +730,7 @@ Explain the data preparation steps:
   returns = returns.dropna()
   ```
 
-* The closing prices are stationarized as returns and multiplied by 100 for ease of view.
+* The closing prices are stationarized as returns, and multiplied by 100 for ease of view.
 
 * Numbers that are NaNs are dropped.
 
