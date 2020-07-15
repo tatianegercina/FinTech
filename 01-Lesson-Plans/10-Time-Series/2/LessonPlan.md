@@ -794,6 +794,8 @@ Show the plot of the volatility forecast:
 
 ### 14. Student Do: EUR-CAD Volatility (10 min)
 
+In this activity, students will use GARCH to forecast volatility of the EUR-CAD exchange rate.
+
 **Files:**
 
 * [README.md](Activities/08-Stu_CAD/README.md)
