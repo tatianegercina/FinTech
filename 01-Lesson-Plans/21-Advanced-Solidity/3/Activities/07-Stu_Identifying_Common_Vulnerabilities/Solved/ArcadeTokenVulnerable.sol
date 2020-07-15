@@ -26,4 +26,12 @@ contract ArcadeTokenVulnerable {
         require(msg.sender == owner, "You do not have permission to mint tokens!");
         balances[recipient] += value;
     }
+
+    function withdrawBalance() public{
+        uint amount = userBalance[msg.sender];
+        userBalance[msg.sender] = 0;
+        if( ! (msg.sender.call.value(amount)() ) ){
+            revert()
+        }
+    }
 }

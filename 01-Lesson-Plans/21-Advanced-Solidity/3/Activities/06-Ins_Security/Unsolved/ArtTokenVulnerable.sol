@@ -1,8 +1,8 @@
 pragma solidity ^0.5.0;
 
-contract ArcadeTokenVulnerable {
+contract ArtTokenVulnerable {
     address payable owner = msg.sender;
-    string public symbol = "ARCD";
+    string public symbol = "ART";
     uint public exchange_rate = 100;
 
     mapping(address => uint) balances;
