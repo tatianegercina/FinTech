@@ -661,7 +661,7 @@ In remix create a new file called `ArcadeTokenVulnerable.sol` and populate it wi
 
 * This contract is similar to one we wrote back when we first learned how tokens worked.
 
-* Remember how in the past we had an integer underflow/overflow vulnerability that allowed us to hack our token balances is that prsent in this contract as well?
+* Remember how in the past we had an integer underflow/overflow vulnerability that allowed us to hack our token balances is that present in this contract as well?
 
 In remix highlight the `transfer` function.
 
@@ -672,7 +672,7 @@ function transfer(address recipient, uint value) public {
 }
 ```
 
-* The answer is yes, because we're not using SafeMath. So we can take this transfer function and turn it into this.
+* The answer is yes, because we're not using SafeMath.
 
 * This function would allow us to send tokens without having balance and would cause the hacker's balance to increase to the maximum value that `uint` allowed.
 
