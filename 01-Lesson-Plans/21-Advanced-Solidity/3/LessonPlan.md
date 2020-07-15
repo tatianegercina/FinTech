@@ -637,7 +637,7 @@ In this activity, you will demonstrate how to analyze, identify and fix common s
 
 **Files:**
 
-* [ArcadeTokenVulnerable.sol](Activities/06-Ins_Security/Solved/ArcadeTokenVulnerable.sol)
+* [ArtTokenVulnerable.sol](Activities/06-Ins_Security/Solved/ArtTokenVulnerable.sol)
 
 Security is a fundamental topic regarding anything to do with technology, especially software that works directly with monetary value. Stress the importance of security:
 
@@ -655,7 +655,7 @@ Briefly discuss the Ethereum DAO hack:
 
 * Thus, it is important to learn how to spot these vulnerabilities.
 
-In remix create a new file called `ArcadeTokenVulnerable.sol` and populate it with the [file linked above](Activities/06-Ins_Security/Unsolved/ArtTokenVulnerable.sol).
+In remix create a new file called `ArtTokenVulnerable.sol` and populate it with the [file linked above](Activities/06-Ins_Security/Unsolved/ArtTokenVulnerable.sol).
 
 * Now, it's time to look at an example of what a vulnerable contract could look like.
 
@@ -681,7 +681,7 @@ At the top of the contract add the`SafeMath` import and use the safemath `uint` 
 ```solidity
 import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
 
-contract ArcadeTokenVulnerable {
+contract ArtTokenVulnerable {
     using SafeMath for uint;
 ```
 
@@ -689,8 +689,8 @@ Then redfine the inside of your `transfer` function to use the `add` and `sub` m
 
 ```solidity
 function transfer(address recipient, uint value) public {
-      balances[msg.sender] = balances[msg.sender].sub(value);
-      balances[recipient] = balances[recipient].add(value);
+    balances[msg.sender] = balances[msg.sender].sub(value);
+    balances[recipient] = balances[recipient].add(value);
 }
 ```
 
@@ -702,15 +702,14 @@ Next highlight the `withdrawBalance()` function.
 
 ```solidity
 function withdrawBalance() public{
-
-        if( ! (msg.sender.call.value(userBalance[msg.sender])() ) ){
-            revert();
-        }
-        userBalance[msg.sender] = 0;
+    if( ! (msg.sender.call.value(userBalance[msg.sender])() ) ){
+        revert();
+    }
+    userBalance[msg.sender] = 0;
 }
 ```
 
-* This function sends the amount of userBalance[msg.sender] ether to `msg.sender`.
+* This function sends the amount of `userBalance[msg.sender]`s ether to `msg.sender`.
 
 * With the current structure of this function if `msg.sender` is a contract, it will call its fallback function.
 
