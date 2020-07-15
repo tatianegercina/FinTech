@@ -619,6 +619,8 @@ Send the following link to students for more information on the order of an ARIM
 
 ### 11. Student Do: An ARIMA and a Leg (15 min)
 
+In this activity, students will use an ARIMA model to forecast the prices of oil futures.
+
 **Files:**
 
 * [README.md](Activities/06-Stu_ARIMA_Leg/README.md)
