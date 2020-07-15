@@ -2,9 +2,9 @@
 
 ## Instructions
 
-You have been given a dataset on [yields](https://en.wikipedia.org/wiki/Yield_(finance)).
+You have been given a dataset on [yields](https://en.wikipedia.org/wiki/Yield_(finance)). Your task is to create an ARMA model of the data.
 
-1. Your task is to create an ARMA model of the data. First, you'll need to determine whether the time series is stationary. Does the plot suggest stationarity? If it is non-stationary, make the necessary transformations.
+1. First, you'll need to determine whether the time series is stationary. Does the plot suggest stationarity? If it is non-stationary, make the necessary transformations.
 
 2. Next, create ACF and PACF plots. Can either plot be used to determine the lag to use for the ARMA model?
 
