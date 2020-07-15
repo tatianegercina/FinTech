@@ -1,6 +1,10 @@
 pragma solidity ^0.5.0;
 
+import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
+
 contract ArcadeTokenVulnerable {
+    using SafeMath for uint;
+
     address payable owner = msg.sender;
     string public symbol = "ARCD";
     uint public exchange_rate = 100;
@@ -12,8 +16,8 @@ contract ArcadeTokenVulnerable {
     }
 
     function transfer(address recipient, uint value) public {
-        balances[msg.sender] -= value;
-        balances[recipient] += value;
+        balances[msg.sender] = balances[msg.sender].sub(value);
+        balances[recipient] = balances[recipient].add(value);
     }
 
     function purchase() public payable {

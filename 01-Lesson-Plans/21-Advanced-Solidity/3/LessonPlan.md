@@ -655,13 +655,15 @@ Briefly discuss the Ethereum DAO hack:
 
 * Thus, it is important to learn how to spot these vulnerabilities.
 
-Now, it's time to look at an example of what a vulnerable contract could look like. In remix create a new file called `ArcadeTokenVulnerable.sol` and populate it with the [file linked above](Activities/06-Ins_Security/Solved/ArcadeTokenVulnerable.sol).
+In remix create a new file called `ArcadeTokenVulnerable.sol` and populate it with the [file linked above](Activities/06-Ins_Security/Unsolved/ArtTokenVulnerable.sol).
 
-* This contract is similar to one we wrote back when we first learned how tokens worked?
+* Now, it's time to look at an example of what a vulnerable contract could look like.
 
-* Remember how we had an integer underflow/overflow vulnerability that allowed us to hack our token balances?
+* This contract is similar to one we wrote back when we first learned how tokens worked.
 
-For example:
+* Remember how in the past we had an integer underflow/overflow vulnerability that allowed us to hack our token balances is that prsent in this contract as well?
+
+In remix highlight the `transfer` function.
 
 ```solidity
 function transfer(address recipient, uint value) public {
@@ -670,13 +672,70 @@ function transfer(address recipient, uint value) public {
 }
 ```
 
+* The answer is yes, because we're not using SafeMath. So we can take this transfer function and turn it into this.
+
 * This function would allow us to send tokens without having balance and would cause the hacker's balance to increase to the maximum value that `uint` allowed.
+
+At the top of the contract add the`SafeMath` import and use the safemath `uint` alias.
+
+```solidity
+import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
+
+contract ArcadeTokenVulnerable {
+    using SafeMath for uint;
+```
+
+Then redfine the inside of your `transfer` function to use the `add` and `sub` methods.
+
+```solidity
+function transfer(address recipient, uint value) public {
+      balances[msg.sender] = balances[msg.sender].sub(value);
+      balances[recipient] = balances[recipient].add(value);
+}
+```
+
+* We can switch our `transfer` function to use the `add` and `sub` SafeMath methods to prevent integer overflow attacks.
 
 * Let's see what else we can find in this contract!
 
--------
-@TODO Add other Vulnerabilities
-_______
+Next highlight the `withdrawBalance()` function.
+
+```solidity
+function withdrawBalance() public{
+
+        if( ! (msg.sender.call.value(userBalance[msg.sender])() ) ){
+            revert();
+        }
+        userBalance[msg.sender] = 0;
+}
+```
+
+* This function sends the amount of userBalance[msg.sender] ether to `msg.sender`.
+
+* With the current structure of this function if `msg.sender` is a contract, it will call its fallback function.
+
+* Because of how state is poorly tracked in this function it allows users to syphon off funds and revert the state to say that the user still has a balance
+
+* This is a prime example of a re-entrancy attack. Luckily theirs a simple fix for this.
+
+Inside the `widthdrawBalance` function define a new `uint` named amount and use it to save the current `msg.sender`'s `userBalance`. Then set the `userBalance` to 0.
+
+```solidity
+function withdrawBalance(){
+    uint amount = userBalance[msg.sender];
+    userBalance[msg.sender] = 0;
+    if( ! (msg.sender.call.value(amount)() ) ){
+            revert();
+    }
+}
+```
+
+* To protect against re-entrancy the state variable has to be change before the call.
+
+* We are going to define a new `uint` named amount and use it to save the current `msg.sender`'s `userBalance`.
+
+* Then we are going to set the `userBalance` to 0.
+
 
 End the activity with a few brief review questions.
 
