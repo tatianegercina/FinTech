@@ -1,3 +1,77 @@
+# Part I: Blockchain Case Study
+
+## Background
+
+As a FinTech professional, it is important to be aware of the advancements happening within the FinTech blockchain space. The blockchain domain is rapidly changing, and even those in a highly technical role must stay abreast of what is happening in the digital finance landscape as many FinTech companies are using and creating tools and services that are powered by blockchain.
+
+One of the key methods used to conduct corporate analysis is the **case study**. Case studies are often 50–100 pages or more, but your task is to create a more focused case study that analyzes how a Canadian FinTech blockchain company is using technology to solve a standing financial problem in Canada.
+
+In this homework assignment, you will:
+
+* Select a Canadian FinTech blockchain company that interests you.
+
+* Research the domain and company.
+
+* Write a detailed case study of the company.
+
+* Upload your case study to your git repository.
+
+This assignment will challenge you to learn more about Canadian advancements in the blockchain industry.
+
+## Instructions
+
+### 1. Choose a FinTech domain that you find relevant or interesting
+
+**Note:** We covered a number of FinTech domains in class this week. If you already have a Canadian company in mind that you want to research, skip ahead to Step 3.
+
+* Payments/Billing
+
+* Capital Investment
+
+* Investment Management
+
+* Wealth Management
+
+* Enterprise Solutions
+
+* Insurance (InsurTech)
+
+* Mortgage/Real Estate
+
+* Personal Finance/Deposits/Online Banking
+
+* Lending
+
+* Blockchain and Cryptocurrencies
+
+* Regulation Technology (RegTech)
+
+* Open Banking
+
+* Robo-advising
+
+Remember that because FinTech is an evolving field, different FinTech reports may use different names and definitions for various domains and sectors (e.g., CB Insights, Investopedia, Accenture). In addition, you may come across lists of FinTech domains online that are either longer or shorter than the list above; there is no one comprehensive list.
+
+### 2. Choose a Canadian company (or project) within  your chosen FinTech domain
+
+Use online research to identify the trends in your domain in the Canadian market, and choose a Canadian company that is successful or otherwise interesting to you. For example, if you chose Wealth Management, you may want to look at online journals, periodicals, reports, and websites about the future of Wealth Management, or how FinTech is changing or disrupting Wealth Management in Canada.
+
+Your company could be:
+
+* A new, emerging Canadian FinTech company that is doing well in a particular domain. Examples include Coinsquare, Borrowell, Shopify, or Finaeo.
+
+* A large incumbent financial or technology company that is doing something interesting and new with technology. Examples include National Bank of Canada Blockchain, Goldman Sachs’ Marcus, JP Morgan’s JPMCoin, Facebook Libra, and Apple Card.
+
+* A smaller start-up that is not yet wildly successful, but that you find promising and interesting. This may include a FinTech company in your local area or a company with a new idea that you would like to learn more about.
+
+### 3. Conduct your research, using the case study template as a guide
+
+We recommend that you use the case study template below in order to focus your research. You may lengthen, shorten, or––if necessary––remove sections from the template to accommodate the information available about your company.
+
+**Note** If you have chosen a project within a larger company (such as the Apple Credit Card), you may want to focus your research on the origins and scope of the project rather than on the company itself.
+
+---
+
 # Proof of Authority Development Chain
 
 For this assignment, you will take on the role of a new developer at a small bank.
