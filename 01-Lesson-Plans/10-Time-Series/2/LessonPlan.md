@@ -64,7 +64,7 @@ Inform students that today they will learn how to:
 
 ### 2. Instructor Do: Stationarity and Non-Stationarity (10 min)
 
-In this activity, you will define stationarity, a key concept in time series modelling.
+In this section, you will introduce the class to stationarity, a key concept in time series modelling.
 
 **Files:**
 
