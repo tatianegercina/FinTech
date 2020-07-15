@@ -28,7 +28,7 @@ By the end of this class, students will be able to:
 
 * Slack out the [imblearn Installation Guide](../../11-Classification/Supplemental/Machine_Learning_Env_Setup_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
-* Students will consolidate their skills from the previous two days through longer activities. These include creating financial models in multiple steps, stationarizing data, and identifying model orders to make predictions on future values and volatility. Make sure that you and your TAs keep an eye out for any weaker students during these activities and assist them as needed.
+* Students will consolidate their skills from the previous two days through longer activities. These include creating financial models in multiple steps, stationarizing data, and identifying model orders to make predictions on future values and volatility. Make sure that you and your TAs keep an eye out for any weaker students during these activities, and assist as needed.
 
 * Students will also learn to validate models by training and testing data. Emphasize that this will be a valuable skill in later units as they dive more deeply into machine learning.
 
@@ -40,7 +40,7 @@ By the end of this class, students will be able to:
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1dpPDlLWNX3j-riUXrBoXQEOUn1l025swCYmP1aGKc1M/edit?usp=sharing).
 
-To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository, along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -64,15 +64,15 @@ Briefly summarize key concepts from the previous days:
 
 Inform students that today, they will learn to:
 
-* quantify the accuracy of a linear regression model.
+* Quantify the accuracy of a linear regression model.
 
-* use processes to make a time series easier to model.
+* Use processes to make a time series easier to model.
 
-* validate models by training and testing them.
+* Validate models by training and testing them.
 
-* create a model that can continuously update itself.
+* Create a model that can continuously update itself.
 
-* And, they will encounter the concept of parsimony in models, an important idea in machine learning.
+* They will also encounter the concept of parsimony in models, an important idea in machine learning.
 
 - - -
 
@@ -158,7 +158,7 @@ X = df.YearsExperience.values.reshape(-1, 1)
 
 * `X.shape` returns `(30,1)`, meaning that `X` has 30 rows and 1 column of data.
 
-* The dependent variable can remain a pandas series, as seen by `y = df.Salary`.
+* The dependent variable can remain a Pandas series, as seen by `y = df.Salary`.
 
 Walk through the boilerplate code:
 
@@ -235,7 +235,7 @@ Having explained the general concepts, go over the code implementations of these
 
 * After importing the pertinent `sklearn` modules, the R2, MSE, and RMSE are calculated.
 
-* The RMSE is simply the square root of the mean squared error. A lower RMSE score (near 0) is ideal and means the model is fit well to the data.
+* The RMSE is simply the square root of the mean squared error. A lower RMSE score (near 0) is ideal, and means the model is fit well to the data.
 
 Explain that you can also compare the RMSE to the standard deviation to get a better feel for the model fit.
 
