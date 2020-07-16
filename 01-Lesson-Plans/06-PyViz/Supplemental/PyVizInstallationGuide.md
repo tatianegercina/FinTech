@@ -56,7 +56,7 @@ Follow the next steps to install PyViz and all its dependencies in your Python v
     * Install the Jupyter Lab extensions
 
       ```shell
-      jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.1 --no-build
+      jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
 
       jupyter labextension install jupyterlab-plotly@4.6.0 --no-build
 
