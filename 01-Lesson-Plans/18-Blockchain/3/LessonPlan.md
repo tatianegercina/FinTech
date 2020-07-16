@@ -496,6 +496,7 @@ Use this time to ensure that all students have properly configured two nodes wit
 Answer any questions before moving on.
 
 ---
+
 ### 11. BREAK (40 min)
 
 ---
@@ -808,11 +809,11 @@ Ensure that:
 
 * **Education:** It’s important to add certifications and education to a LinkedIn profile. Students should include the following components:
 
-    * School name
+  * School name
 
-    * Degree or certification received
+  * Degree or certification received
 
-    * Dates
+  * Dates
 
 * **Skills:** The skills section also should include keywords that can help recruiters find candidate profiles.
 
@@ -861,4 +862,4 @@ def checkPalindrome(str):
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
