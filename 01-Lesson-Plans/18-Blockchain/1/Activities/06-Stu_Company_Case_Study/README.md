@@ -6,16 +6,16 @@ Now that you have learned more about blockchain, it's time to think about compan
 
 * Get into small groups of up to three people for discussion.
 
-* Go to the example [TokenFunder case study](Resources/TokenFunder.md) and read the case study to get a feel for what you'll need to research and describe.
+* Go to the example [TokenFunder Case Study](Resources/TokenFunder_Case_Study.md) and read the case study to get a feel for what you'll need to research and describe.
 
 * Then, choose a Canadian blockchain company to research and discuss with your group the following findings:
 
-    * What the company is.
-    
-    * Why it matters that the company is using blockchain to tackle a financial problem.
-    
-    * Why the company is interesting.
-    
+  * What the company is.
+  
+  * Why it matters that the company is using blockchain to tackle a financial problem.
+  
+  * Why the company is interesting.
+  
 ## Hint
 
 * Some may not directly reference concrete blockchain projects, so you'll want to focus more on the companies that have started implementations versus the ones supporting research and development.

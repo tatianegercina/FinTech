@@ -8,7 +8,7 @@ The blockchain domain is rapidly changing, and even those in a highly technical 
 
 2. In your local git repository, create a directory for both of the Blockchain activities. Use folder names that correspond to the activities: **Blockchain Case Study** and **POA Development Chain**.
 
-4. Push the above changes to GitHub.
+3. Push the above changes to GitHub.
 
 ## Blockchain Case Study
 

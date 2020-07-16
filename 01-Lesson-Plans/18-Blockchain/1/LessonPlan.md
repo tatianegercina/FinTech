@@ -791,45 +791,33 @@ Answer any questions before moving on.
 
 ---
 
-### 17. Student Do: Use Case Brainstorm (10 min)
+### 17. Student Do: Company Case Study (10 min)
 
-Now that the students have learned about the features of Ethereum and how it acts as a decentralized world computer, it is an excellent time to brainstorm different use cases given these features.
+Now that the students have learned more about the features of blockchain and their potential uses, it is an excellent time to research companies that are using blockchain technology to tackle real world financial problems.
 
-Students will get into groups and come up with different decentralized application ideas, as well as discuss gaps they may be familiar with.
+Students will get into groups and research a Canadian FinTech company that is using blockchain to make an impact in the blockchain space.
 
 Have TAs circulate throughout the class, facilitating discussion and ensuring students are not lost.
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Use_Case_Brainstorm/README.md)
+* [README.md](Activities/06-Stu_Company_Case_Study/README.md)
 
 ---
 
-### 18. Instructor Do: Use Case Review (10 min)
+### 18. Instructor Do: Company Case Study Review (10 min)
 
-Ask different groups what their most exciting use case was and have them describe them to the class.
+Ask different groups what their most exciting company case study was and have them describe it to the class.
 
-Facilitate the discussion toward the benefits of decentralizing specific applications.
+Facilitate the discussion toward how the company uses its blockchain technology and the benefits it may have in solving a financial problem.
 
-* What are the main benefits of decentralizing your application?
+* How does the company utilize their blockchain technology? How does it work?
 
-  **Answer:** The application can only go down if the entire Ethereum network goes down.
+* What is the financial benefit that this company may have by utilizing their blockchain technology?
 
-  **Answer:** The application can run without a central server.
+* Are there any regulatory concerns, blockers, or negative impacts that may arise surrounding the company's blockchain technology?
 
-  **Answer:** The application could potentially live forever (as long as Ethereum exists).
-
-  **Answer:** The application is pay-per-use, much like a decentralized AWS Lambda.
-
-* If the students chose a game-based use case, ask what type of assets they have represented?
-
-* Is there a limit to what you can build with Ethereum's Turing complete smart contracts?
-
-  **Answer:** No, in theory, you could build any application just as you would with any other general-purpose programming language.
-
-Reinforce the idea that Ethereum's smart contracts are just programs that run on a distributed, decentralized computer.
-
-Explain to students that anyone can upload and pay to run code in a secure sandboxed computer environment, allowing for a safer, immutable web, and for building powerful financial applications.
+Explain to students that the world of blockchain is continually expanding and changing. Therefore, it is necessary to keep up with the advancements companies are pioneering in the blockchain space as well as the regulatory or legal concerns surrounding them.
 
 Answer any questions before moving on.
 
@@ -856,4 +844,4 @@ Students have learned tons of new information today. Facilitate a discussion aro
 ### End Class
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
