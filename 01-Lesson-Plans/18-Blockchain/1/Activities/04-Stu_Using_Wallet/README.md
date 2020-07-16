@@ -54,4 +54,4 @@ Take note of the transactions that have processed on the network for later; you 
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -24,4 +24,4 @@ Write down your answers to the above questions and be prepared to share them wit
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
