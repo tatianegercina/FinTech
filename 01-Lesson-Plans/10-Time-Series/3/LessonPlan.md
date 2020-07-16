@@ -518,7 +518,7 @@ Open the slideshow, navigate to the Overfitting section, and introduce the conce
 
 * An overfitted model memorizes the random patterns of the training data too well. It memorizes the quirks of a dataset without identifying the underlying patterns.
 
-* Consequently, such a model will perform poorly when it encounters new data with similar underlying patterns, but with different quirks.
+* Consequently, such a model will perform poorly when encountering new data with similar underlying patterns but different quirks.
 
 * In other words, overfit models learn the noise found in the training data, rather than just the signal.
 
@@ -528,11 +528,11 @@ Explain that overfitting typically involves an excessive number of variables in 
 
 * With more parameters, the model can memorize the rare patterns of the training data, resulting in a rigid model that does not generalize well.
 
-Explain that a useful analogy might be to memorize the answers to a math test without learning the underlying principles.
+A useful analogy to explain this: Say someone memorized the answers to a math test, without learning the underlying principles.
 
-* The learning that takes place is useful in one particular setting but is less generalizable to other contexts.
+* The learning that takes place is useful in one particular setting, but is less generalizable to other contexts.
 
-Next, explain variance and bias, two important concepts in machine learning:
+Next, explain bias and variance, two important concepts in machine learning:
 
 * Bias and variance are errors in predicting data from underfitting and overfitting, respectively.
 
@@ -576,7 +576,7 @@ Remind your students that we have worked with a number of models so far, includi
 
 * Models were trained on the entire dataset, then made predictions.
 
-* We will now split a dataset into training and testing data and run a linear regression on them.
+* We will now split a dataset into training and testing data, and run a linear regression on them.
 
 Open the notebook and introduce the dataset:
 
@@ -635,7 +635,7 @@ Explain the following block of code:
   predictions = model.predict(X_test)
   ```
 
-* With Scikit-learn, a model is created, fitted to the training set.
+* With Scikit-learn, a model is created, and fitted to the training set.
 
 * Then the model predicts y-values based on the testing set.
 
@@ -699,7 +699,7 @@ In this activity, students will create GARCH and linear regression models for th
 
 ### 12. Instructor Do: Review Activity (10 min)
 
-A detailed walkthrough of the code is given below. However, in the interest of time, use your judgment to highlight the major points and gloss over parts students have seen repeatedly.
+A detailed walkthrough of the code is given below. However, in the interest of time, use your judgment to highlight the major points and skim over parts students have seen repeatedly.
 
 **File:**
 
@@ -790,7 +790,7 @@ Go over the metrics of the in-sample and out-of-sample predictions:
 
 * The RMSE is obtained by comparing predicted and actual data.
 
-* The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data but is higher in this case.
+* The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data, but is higher in this case.
 
 * This could be due to the fact that our out-of-sample period is small, so just by chance, the model happened to do better out-of-sample than in-sample.
 
