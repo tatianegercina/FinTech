@@ -32,10 +32,10 @@ Next, assign dummy variables to the weeks of the year:
 
   7. Provide and interpret the following metrics:
 
-    * R2 score
-    * Mean squared error
-    * Root mean squared error
-    * Standard deviation of futures return
+      * R2 score
+      * Mean squared error
+      * Root mean squared error
+      * Standard deviation of futures return
 
 ---
 
