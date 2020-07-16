@@ -23,7 +23,6 @@ contract ArtTokenVulnerable {
     }
 
     function mint(address recipient, uint value) public {
-        require(msg.sender == owner, "You do not have permission to mint tokens!");
         balances[recipient] += value;
     }
 

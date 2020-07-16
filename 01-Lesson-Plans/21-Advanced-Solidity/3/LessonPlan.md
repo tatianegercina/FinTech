@@ -637,7 +637,7 @@ In this activity, you will demonstrate how to analyze, identify and fix common s
 
 **Files:**
 
-* [ArtTokenVulnerable.sol](Activities/06-Ins_Security/Solved/ArtTokenVulnerable.sol)
+* [ArtTokenVulnerable.sol](Activities/06-Ins_Security/Unsolved/ArtTokenVulnerable.sol)
 
 Security is a fundamental topic regarding anything to do with technology, especially software that works directly with monetary value. Stress the importance of security:
 
@@ -717,7 +717,7 @@ function withdrawBalance() public{
 
 * This is a prime example of a re-entrancy attack. Luckily theirs a simple fix for this.
 
-Inside the `widthdrawBalance` function define a new `uint` named amount and use it to save the current `msg.sender`'s `userBalance`. Then set the `userBalance` to 0.
+Inside the `widthdrawBalance` function define a new `uint` named `amount` and use it to save the current `msg.sender`'s `userBalance`. Then set the `userBalance` to 0.
 
 ```solidity
 function withdrawBalance(){
@@ -731,10 +731,36 @@ function withdrawBalance(){
 
 * To protect against re-entrancy the state variable has to be change before the call.
 
-* We are going to define a new `uint` named amount and use it to save the current `msg.sender`'s `userBalance`.
+* We are going to define a new `uint` named `amount` and use it to save the current `msg.sender`'s `userBalance`.
 
 * Then we are going to set the `userBalance` to 0.
 
+The final vulnerability that we're going to fix isn't a complicated but one that is extremely important. Highlight the `mint` function and pose the following question to the class.
+
+```solidity
+function mint(address recipient, uint value) public {
+    balances[recipient] += value;
+}
+```
+
+* Do you see anything wrong with the the current state of the mint function?
+
+* **Answer**: Currently our mint function does not check to see if you are the owner of the contract. This allows anyone to mint new tokens and increase their balance.
+
+* We can fix this easily by adding a simple `require` statement.
+
+Modify the mint function to add the following require statement that checks if the current `msg.sender` is the owner of the contract.
+
+```solidity
+function mint(address recipient, uint value) public {
+    require(msg.sender == owner, "You do not have permission to mint tokens!");
+    balances[recipient] += value;
+}
+```
+
+* And just like that we've fixed a major vulnerability in our code.
+
+* We should now have a much more secure contract!
 
 End the activity with a few brief review questions.
 
@@ -772,7 +798,7 @@ Send out the instructions and have TAs circulate the class.
 
 * [ArcadeTokenVulnerable.sol](Activities/07-Stu_Identifying_Common_Vulnerabilities/Solved/ArcadeTokenVulnerable.sol)
 
-Ensure that students are identifying one of the three mentioned vulnerabilities and are taking the proper steps to address each one.
+Ensure that students are identifying the three mentioned vulnerabilities and are taking the proper steps to address each one.
 
 ### 15. Instructor Do: Review Smart Contract Security (5 min)
 
