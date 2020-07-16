@@ -814,7 +814,7 @@ Now that students have scanned their contracts, ask them the following questions
 
   **Answer:** There may be a bug in our logic that the tool cannot pick up, so we should still have a 3rd party security team test and audit these contracts before deploying to production/mainnet.
 
-Now that students have scanned and fixed their contracts, it's time for them to dive a bit deeper into some common vulnerabilities. Present the MythX/Mythril tool to the class by opening the [MythX](https://mythx.io/) website.
+Now that students have analyzed and fixed their contracts, it's time for them to dive a bit deeper into some common vulnerabilities. Present the MythX/Mythril tool to the class by opening the [MythX](https://mythx.io/) website.
 
 * MythX is a service that is based on an open-source command-line tool, [Mythril](https://github.com/ConsenSys/mythril), that allows Solidity developers to scan for common low-level vulnerabilities in their contracts. The tool has integrations with many IDEs, including Remix itself!
 
