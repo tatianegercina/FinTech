@@ -11,6 +11,16 @@ that will lock the contract for 24 hours after withdrawing.
 
 * Right before the `msg.sender.transfer` call at the end of the `withdraw` function, update the `unlock_time` to `now + 24 hours;`
 
+* For this contract, add the ability to test the timelock functionality by adding a new variable called `uint fakenow = now;` at the top of the contract, then replace every other instance of `now` with `fakenow`.
+
+* Add this function to "fast forward" time by 100 days when the contract is deployed (requires setting up `fakenow`):
+
+  ```solidity
+  function fastforward() public {
+      fakenow += 100 days;
+  }
+  ```
+
 * Voila! Congratulate yourself on learning how to work with rudimentary time calculations in the native Solidity syntax!
 
 ## Hints

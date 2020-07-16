@@ -14,8 +14,14 @@ contract JointSavings {
 
   uint unlock_time;
 
+  uint fakenow = now;
+
+  function fastforward() public {
+    fakenow += 100 days;
+  }
+
   function withdraw(uint amount) public {
-    require(unlock_time < now, "Account is locked!");
+    require(unlock_time < fakenow, "Account is locked!");
     require(msg.sender == account_one || msg.sender == account_two, "You don't own this account!");
 
     if (last_to_withdraw != msg.sender) {
@@ -26,7 +32,7 @@ contract JointSavings {
     last_withdraw_amount = amount;
 
     if (amount > address(this).balance / 3) {
-      unlock_time = now + 24 hours;
+      unlock_time = fakenow + 24 hours;
     }
 
     msg.sender.transfer(amount);
