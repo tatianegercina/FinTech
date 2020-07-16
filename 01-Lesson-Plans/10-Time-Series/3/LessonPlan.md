@@ -1157,7 +1157,7 @@ Congratulate the class for making it through their first week of machine learnin
 
 * Let students know that we realize that they have varying objectives and professional backgrounds. These differing experiences may fall into the following categories:
 
-  * **Entry level (no experience):** This is an entry-level student who wants to break into the FinTech industry, with no relevant work experience. The work they complete in this class comprise the only skills that they can put on their resume to get a job in FinTech. They should use the entry-level/mid-level (no experience) template to either make a new resume, or to incorporate components into their previous resume that might be missing.
+  * **Entry level (no experience):** This is an entry-level student who wants to break into the FinTech industry, with no relevant work experience. The skills learned in this class comprise the only FinTech experience they can put on their resume to get a job in the field. They should use the entry-level/mid-level (no experience) template to either make a new resume, or to incorporate components into their previous resume that might be missing.
 
   * **Mid-level (no experience):** This is a mid-level student with no experience who has worked in an industry outside and unrelated to FinTech. They should use the entry-level/mid-level (no experience) template to either make a new resume, or incorporate components into their previous resume that might be missing.
 
