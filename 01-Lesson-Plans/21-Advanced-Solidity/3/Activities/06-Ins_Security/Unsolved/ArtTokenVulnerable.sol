@@ -1,8 +1,8 @@
 pragma solidity ^0.5.0;
 
-contract ArcadeTokenVulnerable {
+contract ArtTokenVulnerable {
     address payable owner = msg.sender;
-    string public symbol = "ARCD";
+    string public symbol = "ART";
     uint public exchange_rate = 100;
 
     mapping(address => uint) balances;
@@ -23,7 +23,14 @@ contract ArcadeTokenVulnerable {
     }
 
     function mint(address recipient, uint value) public {
-        require(msg.sender == owner, "You do not have permission to mint tokens!");
         balances[recipient] += value;
+    }
+
+    function withdrawBalance() public{
+        if( ! (msg.sender.call.value(balances[msg.sender])() ) ){
+            revert()
+        }
+
+        balances[msg.sender] = 0;
     }
 }
