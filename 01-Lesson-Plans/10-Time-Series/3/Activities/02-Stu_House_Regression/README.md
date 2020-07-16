@@ -1,22 +1,22 @@
 # Linear Regression
 
-In this activity, you will attempt to identify whether a linear relationship exists between the total square feet in houses and their housing sale prices.
+In this activity, you will attempt to identify whether a linear relationship exists between housing sales prices and total square footage.
 
 ## Instructions
 
-* Read the CSV file into Pandas.
+1. Read the CSV file into Pandas.
 
-* Create a scatter plot of the total square feet vs. the house sale price.
+2. Create a scatter plot of the total square feet vs. the house sale price.
 
-* Create a linear regression model using Scikit-learn.
+3. Create a linear regression model using Scikit-learn.
 
-* Fit the model to the data.
+4. Fit the model to the data.
 
-* Make predictions and save the results in a variable called `predicted_y_values`.
+5. Make predictions and save the results in a variable called `predicted_y_values`.
 
-* Plot the line of best fit along with the data (see starter code for instructions).
+6. Plot the line of best fit along with the data (see starter code for instructions).
 
-* Obtain the slope and the y-intercept, and r-square values of the model.
+7. Obtain the slope and the y-intercept, and r-square values of the model.
 
 ---
 
