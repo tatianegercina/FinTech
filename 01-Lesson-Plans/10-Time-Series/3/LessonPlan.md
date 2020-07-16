@@ -467,7 +467,7 @@ Explain that we need a column of returns, and lagged returns, which will be regr
   df = df.dropna()
   ```
 
-* Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called autoregression and will be further discussed on day 2.
+* Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called autoregression, and will be further discussed on Day 2.
 
 * A column of lagged returns is created by shifting each value downward by 1 row.
 
@@ -484,7 +484,7 @@ Go over the steps of preparing the data to use in Scikit-learn:
 
 * The `weekofyear` attribute is used to create a column for the week of the year.
 
-Next, explain that dummy variables are created for each week of the year. Communicate that the function creates dummy variables for each week. That is, it assigns a value of 0 or 1 for each week. For a date that falls on week 7, for example, it will assign 1 for week 7 and 0 to all other weeks.
+Next, explain that dummy variables are created for each week of the year. Communicate that the function creates dummy variables for each week. That is, it assigns a value of 0 or 1 for each week. For a date that falls on week 7, for example, it will assign 1 for week 7, and 0 to all other weeks.
 
   ```python
   X_binary_encoded = pd.get_dummies(X, columns=['Week_of_year'])
