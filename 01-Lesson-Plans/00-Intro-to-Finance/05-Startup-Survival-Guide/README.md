@@ -64,7 +64,7 @@ The end of many interview processes involves some negotiation of payment. When w
 
 * Restricted Stock Units (RSUs): an RSU is another stock-like compensation method that essentially assigns a certain number of shares to be given to the employee after a given amount of time, known as the **vesting period**.
 
-Owning equity in a company that is in the process of growing is intrinsically a long-term and illiquid risk. Most people will work for three to five years as their equity in a company fluctuates in value, and wait even longer before the asset can be liquidated for cash. However, this risk also comes with the opportunity for outsized returns-if a company becomes highly valued (a "unicorn"!) then the equity could be worth millions overnight.
+Owning equity in a company that is in the process of growing is intrinsically a long-term and illiquid risk. Most people will work for three to five years as their equity in a company fluctuates in value, and wait even longer before the asset can be liquidated for cash. However, this risk also comes with the opportunity for outsized returns–if a company becomes highly valued (a "unicorn"!) then the equity could be worth millions overnight.
 
 ---
 
