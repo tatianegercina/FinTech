@@ -43,6 +43,7 @@ By the end of the class, students will be able to:
 * The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [20.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f4c7bd0f-b479-4cc6-8180-ab28004ce744) Note that this video may not reflect the most recent lesson plan.
 
 ---
@@ -388,6 +389,28 @@ function withdraw(uint amount) public {
 
 * Using this logic, the withdraw function will first check if the `unlock_time` has passed, by checking if it is less than now. Then, just before withdrawing, it sets the new `unlock_time` to be 24 hours from now.
 
+* For this contract, we can also test the timelock functionality by adding a new variable called `uint fakenow = now;` as the first line of the contract, then replace every other instance of `now` with `fakenow`.
+
+Demonstrate the following `fastforward` function to manipulate `fakenow` during testing:
+
+  * First, we need to create `fakenow` at the top of our contract, under the rest of the variable definitions:
+
+    ```solidity
+    uint fakenow = now;
+    ```
+
+  * Then, we can add this function to "fast forward" time by 100 days using a transaction after the contract is deployed (requires setting up `fakenow`):
+
+    ```solidity
+    function fastforward() public {
+        fakenow += 100 days;
+    }
+    ```
+
+  * Then, we just replace every other instance of `now` with `fakenow`, and we can fast forward through time manually!
+
+  * Once you are satisfied with your contract's logic, revert the `fakenow` testing logic.
+
 Now it's time for the students to create the timelock!
 
 ---
@@ -689,7 +712,21 @@ Now, have students do the same.
 Once everyone has deposited funds into their contract successfully, have them try
 withdrawing.
 
+During the withdraw, a MetaMask popup will appear that shows `0` Eth in the total, along with some gas fee, like so:
+
+![Withdraw Appears to have no Ether](Images/withdraw-no-eth.png)
+
+Explain to students that this is expected behavior:
+
+  * Here, we are not sending any Ether to the contract. You are in fact simply paying gas for a transaction that is requesting the contract to send you the Ether. You will only see a value here when sending Ether to a payable function. Once this transaction can be fulfilled, then your wallet balance will be updated.
+
+  * However, if you withdraw too much and hit the threshold you set, you will lock the wallet for the amount of time you set, and will no longer be able to transact for that period of time! In this case, we set it to 24 hours
+
+  * You can also use the `fakenow` time trick to test the logic and fastforward through time manually, but don't do this in production!
+
+
 Remind students that we will need to convert the Ether units to Wei units when withdrawing!
+
 We can use [eth-converter.com](https://eth-converter.com) for easy conversion.
 
 Have students continue interacting with the various functions in their contracts.
