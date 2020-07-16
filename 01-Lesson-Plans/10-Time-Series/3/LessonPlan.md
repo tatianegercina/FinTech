@@ -804,11 +804,11 @@ Ask for any remaining questions before moving on.
 
 * [tsx.ipynb](Activities/07-Ins_Rolling_Out_of_Sample/Solved/tsx.ipynb)
 
-Point out that up to this point, we have created models as a one-shot affair. Explain that we will go over a procedure that allows an analyst to update the financial model as new data continues to come in.
+Point out that up to this point, we have created models in a one-shot event. We will now review a procedure that allows an analyst to update the financial model as new data continues to come in.
 
 * In this activity, we will cover a more sophisticated iterative approach to the train-test-split technique in the previous activity.
 
-* During each iteration, there will be a training window, a temporal segment of the entire dataset. That window will be followed by a testing period.
+* During each iteration there will be a training window, a temporal segment of the entire dataset. That window will be followed by a testing period.
 
 * In the first iteration of this activity, for example, the training window will be the first 26 weeks. The testing period will be the 27th week. In the second iteration, the training window will be weeks 2 through 27, and the testing period will be the 28th week.
 
@@ -1006,7 +1006,7 @@ test = df['2019']
 
 * **Instructor Note**: The rest of this section involves the linear regression and training/test window code used in the prior activity.
 
-* Point out that we'll save the out_of_sample_rmse developed from this approach, and later compare it the RMSE developed from the rolling-out-of-sample approach.
+* Point out that we'll save the out_of_sample_rmse developed from this approach, and compare it later to the RMSE developed from the rolling-out-of-sample approach.
 
 * Next, introduce the preparatory steps for rolling out-of-sample predictions using Scikit-learn:
 
@@ -1108,9 +1108,9 @@ Rolling Out-of-Sample Model:
 
 * Comparing the two RMSE's, the RMSE from the single training window is 0.96, whereas it is 1.23 from the rolling-out-of-sample model.
 
-  * The rolling-out-of-sample approach is more akin to real-life (you likely re-estimate your model when new data becomes available).
+  * The rolling-out-of-sample approach is more akin to real life (you likely re-estimate your model when new data becomes available).
 
-  * In addition to being more realistic, the rolling-out of sample approach is also more rigorous, as you are testing your model many more times across different time periods.
+  * In addition to being more realistic, the rolling-out-of-sample approach is also more rigorous, as you are testing your model many more times across different time periods.
 
   * Therefore, we expect a slightly higher out-of-sample RMSE, which is what we see.
 
@@ -1123,23 +1123,23 @@ Congratulate the class for making it through their first week of machine learnin
 
 **Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
 
-**A note on skill diversity:** The FinTech student demographic is highly diverse. It consists of students with a high degree of financial background, students with some programming experience, and students with little or no experience in either field. Because of this, students may complete different activities during this section.
+**A note on skill diversity:** The FinTech student demographic is highly diverse. It consists of students with a solid background in finance, students with some programming experience, and students with little or no experience in either field. Because of this, students may complete different activities during this section.
 
 #### 16.1 Instructor Do: FinTech Resumes (5 min)
 
-* Explain to students that now that they have completed their first projects and are starting to learn new things such as machine learning, it is time to think about updating resumes to showcase these valuable skills!
+* Explain to students that now that they have completed their first projects and are learning new things such as machine learning, it is time to think about updating resumes to showcase these valuable skills!
 
 * Ask the class the following questions (☝️) and call on students for the answers (🙋):
 
-  * ☝️ Why are projects so important to show case?
+  * ☝️ Why are projects so important to showcase?
 
   * 🙋 A portfolio demonstrating capability in the FinTech field is something every employer is looking for.
 
   * ☝️ Who can we submit our resume to for review?
 
-  * 🙋 Career Materials Advisor (formerly, Profile Coach)
+  * 🙋 Career Material Advisor (formerly known as a Profile Coach)
 
-  * ☝️ Where can we submit this to a Career Materials Advisor (formerly, Profile Coach)
+  * ☝️ Where can we submit this to a Career Material Advisor (formerly, Profile Coach)?
 
   * 🙋 BootcampSpot
 
@@ -1147,13 +1147,13 @@ Congratulate the class for making it through their first week of machine learnin
 
 * ☝️ Who has completed their resume and already submitted it to a Career Material Advisor on BootcampSpot?
 
-  * 🙋 If students have not created a resume, they should follow the instructor-led lesson plan from Section 16.2
+  * 🙋 If students have not created a resume, they should follow the instructor-led lesson plan from Section 16.2.
 
   * 🙋 If students have created a resume, but not yet submitted it to a Career Material Advisor, they should submit it online and then skip to the **BONUS** activity at the end of the lesson plan.
 
   * 🙋 If students have created a resume and already submitted it, they should skip to the **BONUS** activity.
 
-#### 16.2 Students Do: Identify Resume Type (5 min)
+#### 16.2 Student Do: Identify Resume Type (5 min)
 
 * Let students know we realize not everybody in the class has the same objectives or background. There is a variety of experience that can fall into the following categories:
 
