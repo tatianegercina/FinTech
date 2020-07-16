@@ -1,6 +1,6 @@
 # Unit 18 | Homework Assignment: Building the Blockchain
 
-The blockchain domain is rapidly changing, and even those in a highly technical role must stay abreast of what is happening in the digital finance landscape as many FinTech companies are using and creating tools and services that are powered by blockchain. As a FinTech professional in these changing times, it is important to not only be aware of the advancements happening within the FinTech blockchain space, but also understand the process for developing your very own blockchain. 
+The blockchain domain is rapidly changing, and even those in a highly technical role must stay abreast of what is happening in the digital finance landscape as many FinTech companies are using and creating tools and services that are powered by blockchain. As a FinTech professional in these changing times, it is important to not only be aware of the advancements happening within the FinTech blockchain space, but also understand the process for developing your very own blockchain.
 
 ## Before You Begin
 
@@ -16,13 +16,13 @@ Your task is to create a case study that analyzes how a Canadian FinTech blockch
 
 In this homework assignment, you will:
 
-    * Select a Canadian FinTech blockchain company that interests you.
+* Select a Canadian FinTech blockchain company that interests you.
 
-    * Research the domain and company.
+* Research the domain and company.
 
-    * Write a detailed case study of the company.
+* Write a detailed case study of the company.
 
-    * Upload your case study to your git repository.
+* Upload your case study to your git repository.
 
 Reference the example [JPM Coin Case Study](Resources/JPM_Coin_Case_Study.md) to get an understanding of the format and content that you'll need to write.
 
