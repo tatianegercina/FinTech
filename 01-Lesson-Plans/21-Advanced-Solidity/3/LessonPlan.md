@@ -663,6 +663,8 @@ In remix create a new file called `ArtTokenVulnerable.sol` and populate it with 
 
 * Remember how in the past we had an integer underflow/overflow vulnerability that allowed us to hack our token balances is that present in this contract as well?
 
+  * The answer is yes, because we're not using SafeMath.
+
 In remix highlight the `transfer` function.
 
 ```solidity
@@ -672,9 +674,7 @@ function transfer(address recipient, uint value) public {
 }
 ```
 
-* The answer is yes, because we're not using SafeMath.
-
-* This function would allow us to send tokens without having balance and would cause the hacker's balance to increase to the maximum value that `uint` allowed.
+* This function would allow us to send tokens without having a balance and would cause the hacker's balance to increase to the maximum value that `uint` allowed.
 
 At the top of the contract add the`SafeMath` import and use the safemath `uint` alias.
 
@@ -735,7 +735,7 @@ function withdrawBalance(){
 
 * Then we are going to set the `userBalance` to 0.
 
-The final vulnerability that we're going to fix isn't a complicated but one that is extremely important. Highlight the `mint` function and pose the following question to the class.
+ Now highlight the `mint` function and pose the following question to the class.
 
 ```solidity
 function mint(address recipient, uint value) public {
@@ -746,6 +746,8 @@ function mint(address recipient, uint value) public {
 * Do you see anything wrong with the the current state of the mint function?
 
 * **Answer**: Currently our mint function does not check to see if you are the owner of the contract. This allows anyone to mint new tokens and increase their balance.
+
+* This final vulnerability that we're going to fix isn't complicated but one that is extremely important to fix.
 
 * We can fix this easily by adding a simple `require` statement.
 
@@ -766,21 +768,21 @@ End the activity with a few brief review questions.
 
 * What is the solution we used to fix our underflow/overflow issues?
 
-  **Answer:** OpenZeppelin's SafeMath library!
+  * **Answer:** OpenZeppelin's SafeMath library!
 
 * Who is ultimately responsible for the cybersecurity of an organization?
 
-  **Answer:** Everyone is responsible for carrying the burden of security!
+  * **Answer:** Everyone is responsible for carrying the burden of security!
 
 * Why not just offload this stuff to the security team?
 
-  **Answer:** The security team is already going to be overwhelmed with many other things to patch and is fighting a constant upward-hill battle.
+  * **Answer:** The security team is already going to be overwhelmed with many other things to patch and is fighting a constant upward-hill battle.
 
-  **Answer:** Every little bit of effort towards security helps.
+  * **Answer:** Every little bit of effort towards security helps.
 
-  **Answer:** We can't be lazy when developing and leave security as an afterthought.
+  * **Answer:** We can't be lazy when developing and leave security as an afterthought.
 
-  **Answer:** Because that's how the technology industry became so vulnerable in the first place!
+  * **Answer:** Because that's how the technology industry became so vulnerable in the first place!
 
 Now it's time for the students to analyze some contracts of their own. Let them know that this is an important step to not only becoming a knowledgeable smart contract engineer but in general a more security minded programmer.
 
