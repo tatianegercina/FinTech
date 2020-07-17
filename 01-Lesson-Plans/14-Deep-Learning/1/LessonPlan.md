@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's class introduces students to neural networks, a new type of machine learning algorithm that can be used for classification and regression problems, but are uniquely able to learn very complex, nonlinear models. Neural networks are inspired by and analagous to neurons in the human brain, as they scale in similar ways to adapt to complex environments where they operate. While neural networks are very flexible in their applications, they are not necessarily meant to be "plug-and-play." From preprocessing input data to constructing a neural network architecture, students will learn the process to build and use neural networks successfully.
+Today's class introduces students to neural networks, a new type of machine learning algorithm that can be used for classification and regression problems, but are uniquely able to learn very complex, nonlinear models. Inspired by and analagous to neurons in the human brain, neural networks scale in similar ways to adapt to the complex environments in which they operate. While flexible in their applications, neural networks are not necessarily meant to be "plug-and-play." From preprocessing input data to constructing a neural network architecture, students will learn the process to build and use neural networks successfully.
 
 ### Class Objectives
 
@@ -14,25 +14,25 @@ By the end of class, students will be able to:
 
 * Understand how the choice of inputs and hidden layers apply to problems with regression and classification.
 
-* Experiment with building neural network architectures using TensorFlow playground.
+* Experiment with building neural network architectures using TensorFlow Playground.
 
 * Preprocess data for neural network models.
 
 * Identify the Python libraries available to build neural networks.
 
-* Describe what the pros and cons of using Keras for building neural networks are.
+* Describe the pros and cons of using Keras for building neural networks.
 
 * Implement neural networks with the TensorFlow Keras API.
 
 ### Instructor Notes
 
-* Today's activities will be concept-heavy, so students should be prepared to discuss and think, and not merely to practice steps for implementation.
+* Today's activities will be concept heavy, so students should be prepared to discuss and think, and not just practice steps for implementation.
 
 * Allow students to ask questions, and when necessary, have students save questions for the review sessions or office hours.
 
-* Today should also be fun since we will be playing with neural nets in several ways to experiment with input, architecture, and algorithms.
+* Today should also be fun, since we will be playing with neural nets in several ways to experiment with input, architecture, and algorithms.
 
-* A thorough understanding of neural networks would require math that is beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
+* A thorough understanding of neural networks would require math that is beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms to implement a neural network. While some details will need to be glossed over, additional materials will be provided for those students who are inclined to dig deeper.
 
 * In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/v1/). Be sure to practice the demo before class. If you are not familiar with this project, we encourage you to [watch this video](https://youtu.be/3BhkeY974Rg).
 
@@ -48,15 +48,15 @@ To add the slides to the student-facing repository, download the slides as a PDF
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy."
 
-The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Open the lesson slides and welcome students to the first day of deep learning! Indicate that today's class will begin with an introduction to the basic unit of neural networks before moving on to constructing simple neural nets.
+Open the lesson slides and welcome students to the first day of deep learning! Indicate that today's class will begin with an introduction to the basic unit of neural networks, before moving on to constructing simple neural nets.
 
-As an ice-breaking activity, open the class by asking the following questions to students:
+As an icebreaker activity, open the class with an interactive Q&A with the class, calling on a different students to provide answers:
 
 * What do you think a neural network is?
 
@@ -64,7 +64,7 @@ As an ice-breaking activity, open the class by asking the following questions to
 
   * **Sample Answer:** It's a method to create artificial intelligence software.
 
-  * **Sample Answer:** Neural networks are machine learning algorithms that can learn to solve a problem.
+  * **Sample Answer:** It's a type of machine learning algorithm that can learn to solve a problem.
 
 * Do you know some cool applications of neural networks?
 
@@ -76,7 +76,7 @@ As an ice-breaking activity, open the class by asking the following questions to
 
   * **Sample Answer:** Automated trading based on artificial intelligence.
 
-Ask for two or three volunteers to share their insights, and explain to students that today they will answer these questions.
+Thank students for their insights, and explain that today's class will answer these questions.
 
 Ask if there are any questions before moving on.
 
