@@ -116,57 +116,57 @@ Continue to the slide "The Future is Here: Applications of Neural Nets" and high
 
 * Memories from the past that were captured in black and white can take a new perspective through automatic image colorization.
 
-* Neural networks are also being used in wildlife conservation efforts. The National Oceanic and Atmospheric Administration in the US has been tracking the North Atlantic right whale population by using neural networks for image recognition.
+* Neural networks have a wide range of applications, including wildlife conservation efforts. The National Oceanic and Atmospheric Administration in the US is tracking the North Atlantic right whale population by using neural networks for image recognition.
 
-As you continue to the slide called "Neural Networks Applications in Finance," explain to students that the financial sector is leading in the use of neural networks, and highlight the following applications:
+Continue to the slide called "Neural Networks Applications in Finance." Explain that the financial sector is a leader in the use of neural networks, and highlight the following applications:
 
 * **Fraud detection:** According to Javelin Strategy & Research, errors on fraud detection can cost a bank $118 billion in lost revenue.
 
-* **Risk Management:** The banking sector, insurance, and stock exchanges are building more robust and efficient techniques for credit management thanks to neural networks.
+* **Risk management:** The banking sector, insurance, and stock exchanges are building more robust and efficient techniques for credit management, thanks to neural networks.
 
-* **Money Laundering Prevention:** Money laundering activity around the world is estimated to be between 2% to 5% of global GDP; financial institutions are using neural nets to serve as a new weapon in their fight against financial crime.
+* **Money laundering prevention:** Money laundering activity around the world is estimated to be between 2% to 5% of global GDP; financial institutions are using neural nets to serve as a new weapon in their fight against financial crime.
 
-* **Algorithmic Trading:** Thanks to algorithmic trading, you can automate your trading strategies and increase your trading profits.
+* **Algorithmic trading:** Thanks to algorithmic trading, you can automate your trading strategies and increase your trading profits.
 
 Explain to students that there are several deep mathematical concepts behind neural networks that are beyond the scope of today's class.
 
-Explain to students that this week, we will give an intuitive introduction to the components that make up a neural network and how they work together to learn.
+Tell them that this week, we will give an intuitive introduction to the components that make up a neural network, and how they work together to learn.
 
 Open your web browser and navigate to [the Teachable Machine website](https://teachablemachine.withgoogle.com/v1/). This web application shows the fundamental mechanism of a neural network by training a model that recognizes gestures from your webcam to predict one of three classes.
 
-Once you open the Teachable Machine website, follow the next steps to conduct the demo.
+Once you open the Teachable Machine website, follow these next steps to conduct the demo.
 
-* Click on the _skip the tutorial_ option to start the demo.
+1. Click on the _skip the tutorial_ option to start the demo.
 
   ![Teachable Machine - Step 1](Images/intro_nns_1.png)
 
-* Allow the web application to use your webcam and microphone.
+2. Allow the web application to use your webcam and microphone.
 
   ![Teachable Machine - Step 2](Images/intro_nns_2.png)
 
-* Explain to students that now you are going to train the neural network model.
+  Explain to students that you are now going to train the neural network model.
 
-* Raise your left hand and press the _TRAIN GREEN_ button for few seconds and explain to students that your current image is the input data for the neural network. It's learning that these visual patterns correspond to a cute kitten.
+3. Raise your left hand and press the _TRAIN GREEN_ button for few seconds. Explain to students that your current image is the input data for the neural network. It's learning that these visual patterns correspond to a cute kitten.
 
   ![Teachable Machine - Step 3](Images/intro_nns_3.gif)
 
-* Continue to train the purple class by posing seriously to the camera. Press the _TRAIN PURPLE_ button for a few seconds, and explain to students that now the neural network is learning that your poker face corresponds to a furry dog.
+4. Continue to train the purple class by posing seriously for the camera. Press the _TRAIN PURPLE_ button for a few seconds, and explain to students that now the neural network is learning that your poker face corresponds to a furry dog.
 
   ![Teachable Machine - Step 4](Images/intro_nns_4.gif)
 
-* Finally, train the orange class by making a funny face and pressing the _TRAIN ORANGE_ button for few seconds. Explain to students that you are telling the neural network that this funny pose corresponds to a little bunny.
+5. Finally, train the orange class by making a funny face and pressing the _TRAIN ORANGE_ button for few seconds. Explain to students that you are telling the neural network that this funny pose corresponds to a little bunny.
 
   ![Teachable Machine - Step 5](Images/intro_nns_5.gif)
 
-Now that you have trained the model, play around by making several poses and faces to the camera:
+Now that you have trained the model, play around by making several poses and faces for the camera.
 
-* Rise your right hand and explain to students that despite that the neural network was trained to recognize your left hand raised, these kinds of models are continuously learning and are capable of recognizing and learning new patterns.
+6. Raise your right hand, and explain that even though the neural network was trained to recognize your left hand raised, these kinds of models are continuously learning and are capable of recognizing and learning new patterns.
 
-* Make a tricky test by partially raising your left hand; explain to students that the neural network gets confused but is still learning as can be seen on the confidence bars; finally, the model can decide on your partially raised hand.
+7. Now make a tricky test by only partially raising your left hand. Explain that the neural network gets confused, but is still learning, as seen on the confidence bars. Finally, the model can decide on your partially raised hand.
 
 ![Teachable Machine - Step 6](Images/intro_nns_6.gif)
 
-Explain to students that this funny experiment is just an example of the power of neural networks, instead of matching gestures with silly pets, you can use this kind of technology for business applications like building security systems.
+Explain to students that this funny experiment is just an example of the power of neural networks. Instead of matching gestures with silly pets, you can use this kind of technology for business applications, like building security systems.
 
 Answer any questions before moving on.
 
@@ -176,7 +176,7 @@ Answer any questions before moving on.
 
 After going more in-depth with neural networks, this activity will explain to students how single artificial neurons work.
 
-Open the lesson slides. Move to the "Anatomy of a Neuron" Section and highlight the following:
+Open the lesson slides, move to the "Anatomy of a Neuron" section, and highlight the following:
 
 * Neurons are the most fundamental units of a neural network.
 
@@ -186,7 +186,7 @@ Open the lesson slides. Move to the "Anatomy of a Neuron" Section and highlight 
 
   ![Perceptron](Images/perceptron.png)
 
-* The perceptron mimics the functioning of a biological neuron, it receives input data signals (_X<sub>n</sub>_) that can take boolean or numeric values.
+* The perceptron mimics the functioning of a biological neuron, receiving input data signals (_X<sub>n</sub>_) that can take boolean or numeric values.
 
 * Every input data signal is weighted according to the relevance of each one under the context of the problem the perceptron was designed.
 
@@ -194,23 +194,23 @@ Open the lesson slides. Move to the "Anatomy of a Neuron" Section and highlight 
 
 * The _bias_ is added as a particular input labeled as _X<sub>0</sub>=1_ with a negative weight.
 
-After this brief technical introduction to the perceptron, continue with the following quotidian example to illustrate how the perceptron works.
+After this brief technical introduction to the perceptron, continue with the following example to illustrate how the perceptron works.
 
 * Consider the task of predicting whether or not a person would watch a random movie on Netflix using the behavioral data available.
 
-* Let us assume the decision depends on `3` binary inputs (binary for simplicity).
+* Let's assume the decision depends on `3` binary inputs (binary for simplicity).
 
-* In this perceptron model, _w<sub>0</sub>_ is called the bias because it represents the prejudice that can influence the final decision.
+* In this perceptron model, _w<sub>0</sub>_ is called the bias, because it represents the prejudice that can influence the final decision.
 
-* A cinephile may have a low threshold and will be willing to watch any movie regardless of its genre, release date, or the awards the film received (`bias = 0`).
+* A cinephile may have a low threshold and be willing to watch any movie regardless of its genre, release date, or awards the film received (`bias = 0`).
 
-* In contrast, a father that wants to spend time with his daughter watching a movie may choose the latest children's film by default (`bias = 2`).
+* In contrast, a father that wants to spend time watching a movie with his kid may choose the latest children's film by default (`bias = 2`).
 
 * In the case of the father, the model may give a lot of importance (high weight) to the `isNewRelease` and `isForChildren` inputs, and penalize the weights of the `isAwardWinning` input.
 
-* The key point is the weights and the bias will depend on the data available, the viewing history in this case.
+* The key point is the weights, and the bias will depend on the data available, which is the viewing history in this case.
 
-Continue to through the slides and highlight the following:
+Continue to go through the slides and highlight the following:
 
 * In real life, if you want to choose a movie, you are not as strict as the perceptron could be.
 
@@ -220,7 +220,7 @@ Continue to through the slides and highlight the following:
 
 * Using this model, the decision for a movie with `isNewRelease = 1` will be _Yes!_, and the decision for a movie with `isNewRelease = 0` will be _No!_.
 
-* This decision may be too harsh since we are losing the chance of enjoying classic movies, or the Oscar awarded films from last year; this is where the activation function comes to the scene.
+* This decision may be too harsh, since we are losing the chance of enjoying classic movies, or the Oscar-awarded films from last year; this is where the activation function comes to the scene.
 
 Move to the slide entitled _Activation Function_ and highlight the following:
 
@@ -236,9 +236,9 @@ Move to the slide entitled _Activation Function_ and highlight the following:
 
 * Instead of a _yes/no_ decision, with an activation function, we get the probability of yes, similar to using logistic regression.
 
-* Following our example, using an activation function we can get a decision similar to real life, the final decision of watching a movie is a probability based on the input variables (what we know about the movie) and influenced by the bias (our personal preferences).
+* Following our example, using an activation function we can get a decision similar to real life. The final decision of watching a movie is a probability based on the input variables (what we know about the movie) and influenced by the bias (our personal preferences).
 
-Explain to students that now you are going to demo how a single neuron works using the _TensorFlow Playground_.
+Tell students that you are now going to demo how a single neuron works using the _TensorFlow Playground_.
 
 Click on the [pre-configured link](https://playground.tensorflow.org/#activation=sigmoid&batchSize=10&dataset=gauss&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=1&seed=0.13671&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=true&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false) in the slide to open the _TensorFlow Playground_, slack out the link to students, and highlight the following.
 
@@ -248,7 +248,7 @@ Click on the [pre-configured link](https://playground.tensorflow.org/#activation
 
 Take a moment to explain the layout of the page to the class.
 
-* The _play_ button in the top left corner of the page, starts training the network.
+* The _play_ button in the top left corner of the page starts training the network.
 
   ![tf_play.png](Images/tf_play.png)
 
@@ -266,7 +266,7 @@ Take a moment to explain the layout of the page to the class.
 
   ![Neuron's features](Images/neuron_features.png)
 
-* **Hidden Layers** are layers of neurons that take the output of the layer before them as inputs, allowing the network to identify "higher-order" patterns and correlations among input features. For now, we'll use only one hidden layer with a single neuron, which results in a very simple architecture.
+* **Hidden Layers** are layers of neurons that take the output of the layer before them as inputs, allowing the network to identify "higher order" patterns and correlations among input features. For now, we'll use only one hidden layer with a single neuron, which results in a very simple architecture.
 
   ![tfp_hidden_layer.png](Images/tfp_hidden_layer.png)
 
@@ -276,17 +276,17 @@ Take a moment to explain the layout of the page to the class.
 
 Emphasize that this data set is **linearly separable**; that is, we can easily draw a straight line between the two classes in this data.
 
-Click on the _Play_ button to start training the network, and call attention to the output image on the right-hand side of the page. Point out that, right after the play button is pressed, the fit _changed_ over time.
+Click on the _Play_ button to start training the network, and call attention to the output image on the right-hand side of the page. Point out that right after the play button is pressed, the fit _changed_ over time.
 
 * The network draws a linear decision boundary, as expected.
 
   ![Neuron's demo](Images/tfp_neuron_demo.gif)
 
-Recall to students that this is not new, a variety of `sklearn` classifiers already covered in class can draw this boundary just fine. Logistic regression is one example.
+Recall to students that this is not new. A variety of `sklearn` classifiers already covered in class can draw this boundary just fine; logistic regression is one example.
 
 * This example shows that neural networks can easily solve linear problems, but doesn't demonstrate their efficacy at nonlinear modeling problems.
 
-* The real power of neural networks can be seen when we add more than one neuron, especially dealing with nonlinear data. This is going to be explored later in Today's class.
+* The real power of neural networks can be seen when we add more than one neuron, especially dealing with nonlinear data. This is going to be explored later in today's class.
 
 Answer any questions before moving on.
 
