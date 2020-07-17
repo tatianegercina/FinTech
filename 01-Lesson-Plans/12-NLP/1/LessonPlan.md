@@ -93,6 +93,8 @@ Ask students if they have any questions about NLP in general or the direction of
 
 ### 3. Instructor Do: Tokenization (10 min)
 
+**Corresponding Activity:** [01-Ins_Tokenization](Activities/01-Ins_Tokenization)
+
 This activity introduces students to tokenization, the process with which we break down documents into smaller units of analysis. Tokenizing is crucial because many of the NLP techniques we'll learn about, including frequency analysis and sentiment analysis, use word-, phrase-, or sentence-level chunks instead of the entire document. Students will use NLTK (Natural Language Toolkit) functions to split documents into sentences and words. Students will also be introduced to the corpora made available by NLTK, specifically the Reuters Corpus, a collection of financial news stories.
 
 **Files:**
@@ -135,6 +137,8 @@ Ask students to give an example of one type of analysis that they can do with th
 ---
 
 ### 4. Student Do: Tokenizing Reuters (15 min)
+
+**Corresponding Activity:** [02-Stu_Tokenizing_Reuters](Activities/02-Stu_Tokenizing_Reuters)
 
 In this activity, students will practice sentence and word tokenization on some articles from the Reuters Corpus and place the results in a Pandas DataFrame.
 
@@ -192,6 +196,8 @@ for story in sentence_tokenized:
 
 ### 6. Instructor Do: Stopwords (10 min)
 
+**Corresponding Activity:** [03-Ins_Stopwords](Activities/03-Ins_Stopwords)
+
 This activity introduces the concept and implementation of stopwords. In English, there are many words that are important to grammar and expression but have no topical significance—these include some of the most common words in the language, such as "is," "her," "for," etc. In NLP, these words are called stopwords. For many use cases in which we hope to summarize the contents of a corpus—such as frequency analysis or topic modeling, for example—we want to take these words out in preprocessing so they don't distract from the topically important words and phrases. We will also take a look at a way of stripping out non-alphabetic characters, which we might want to do for a similar reason.
 
 **Files:**
@@ -245,6 +251,8 @@ Finally, have students take a look at the results of regex cleaning, followed by
 
 ### 7. Student Do: Crude Stopwords (15 min)
 
+**Corresponding Activity:** [04-Stu_Crude_Stopwords](Activities/04-Stu_Crude_Stopwords)
+
 In this activity, students will practice creating a function that strips non-letter characters from a document and then applies stopwording.
 
 **Instructions:**
@@ -292,6 +300,8 @@ Tell students that the extent to which we want to add stopwords is a trade-off. 
 
 ### 10. Instructor Do: Lemmatization (5 min)
 
+**Corresponding Activity:** [05-Ins_Lemmatization](Activities/05-Ins_Lemmatization)
+
 Lemmatization is a technique that transforms various morphologies of a word into its base form. This may sound fancy, but it's pretty intuitive. If we're looking to summarize a document with the most frequent words in it, words like "stock" and "stocks" should, for the most part, mean the same thing. This is also true for words like "run" and "ran." NLTK's lemmatizer takes words in different forms (past tense, plural, etc.) and transforms them into the base form (present tense, singular).
 
 **Files:**
@@ -311,6 +321,8 @@ Note that it's possible to lemmatize every part of speech for any given word—a
 ---
 
 ### 11. Student Do: Lemmatize (15 min)
+
+**Corresponding Activity:** [06-Stu_Lemmatize](Activities/06-Stu_Lemmatize)
 
 In this activity, create a function that performs stopwording, regex cleaning of non-letter characters, word tokenizing, and lemmatization on each word in the article.
 
@@ -346,6 +358,8 @@ def process_text(article):
 ---
 
 ### 13. Instructor Do: Ngram Counter (10 min)
+
+**Corresponding Activity:** [07-Ins_Ngram_Count](Activities/07-Ins_Ngram_Count)
 
 In this section, we introduce the idea of frequency analysis and ngrams. Like the terms we've thrown about earlier, these are fancy names for pretty basic concepts. Frequency analysis, at its simplest, is simply counting words and phrases. At the most basic level, the words that occur most often in a document (assuming they are not stopwords) will probably give you a good idea of what the document is about. This applies to the corpus level, as well. Ngrams are multiple word sequences—the n stands for the number of consecutive words (or tokens) that are included. So a bigram, for example, is two consecutive tokens strung together. We can think of creating ngrams as another way of tokenizing a document.
 
@@ -387,6 +401,8 @@ Ask students to notice that the counts of the most common ngrams are much smalle
 ---
 
 ### 14. Student Do: Counter (15 min)
+
+**Corresponding Activity:** [08-Stu_Counter](Activities/08-Stu_Counter)
 
 In this activity, students will create a function that preprocesses and outputs a list of the most common words in a corpus.
 
@@ -450,6 +466,8 @@ def bigram_counter(corpus):
 
 ### 16. Instructor Do: Word Cloud (10 min)
 
+**Corresponding Activity:** [09-Ins_Word_Cloud](Activities/09-Ins_Word_Cloud)
+
 Frequency analysis is a useful technique, but counts of words or ngrams are difficult and boring to read through for an audience. If only there was a visualization that can achieve the same purpose, but with some color and flair. Enter the word clouds! These visualizations are now pretty common and get their share of flack for not being the most rigorous of methods for visualizing text frequency, but there are still few better alternatives for quickly and viscerally summarizing a text.
 
 **Files:**
@@ -482,6 +500,8 @@ There are many ways to customize your word cloud. Some of the most basic include
 ---
 
 ### 17. Student Do: Gas Cloud (15 min)
+
+**Corresponding Activity:** [10-Stu_Gas_Cloud](Activities/10-Stu_Gas_Cloud)
 
 In this activity, students will practice creating a word cloud from a subset of the Reuters Corpus.
 
