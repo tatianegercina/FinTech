@@ -537,17 +537,15 @@ Answer any questions before moving on.
 
 ---
 
-### 5. Instructor Do: Connecting neurons (15 min)
+### 5. Instructor Do: Connecting Neurons (15 min)
 
-In this activity, students will learn how to build more complex neural networks using Keras.
+Explain to students that they will now learn how to build more complex neural networks using Keras.
 
 **Files:**
 
 * [connecting_neurons.ipynb](Activities/02-Ins_Connecting_Neurons/Solved/connecting_neurons.ipynb)
 
-Explain to students that now they will learn how to create more complex neural networks.
-
-For this demo, comment to the class that you are going to use nonlinear dummy data to show how neural networks deal with it.
+For this demo, tell the class that you are going to use nonlinear dummy data to show how neural networks deal with it.
 
 Open the unsolved version of the Jupyter Notebook, live code the demo, and highlight the following:
 
@@ -571,7 +569,7 @@ Open the unsolved version of the Jupyter Notebook, live code the demo, and highl
 
   ![Non-linear data plot](Images/nn_1.png)
 
-* The data is split into training and testing sets, and it is scaled before building and testing the neural network.
+* The data is split into training and testing sets, and is scaled before building and testing the neural network.
 
   ```python
   # Create training and testing sets
@@ -590,11 +588,11 @@ Open the unsolved version of the Jupyter Notebook, live code the demo, and highl
   X_moon_test_scaled = X_moon_scaler.transform(X_moon_test)
   ```
 
-Explain to students that now you are going to create a more complex neural network by adding a hidden layer with six neurons.
+Explain to students that you are now going to create a more complex neural network by adding a hidden layer with six neurons.
 
 ![Neural net sample](Images/simple-nn.png)
 
-Explain to students that the rule-of-thumb for a neural network is to have triple the amount of nodes in the hidden layer as the number of inputs, this is not true of deep learning, but it's an excellent point to start prototyping a neural network.
+Explain to students that the rule of thumb for a neural network is to have triple the amount of nodes in the hidden layer as the number of inputs. This is not true of deep learning, but it's an excellent point to start prototyping a neural network.
 
 Start building the neural network and highlight the following.
 
@@ -627,7 +625,7 @@ Start building the neural network and highlight the following.
   nn.add(Dense(units=number_classes, activation="sigmoid"))
   ```
 
-* After presenting the model summary, it's compiled and trained with `100` epochs to compare the results with the previous example where only one neuron was used.
+* After presenting the model summary, it's compiled and trained with `100` epochs to compare the results with the previous example, where only one neuron was used.
 
 ```python
 # Compile model
@@ -649,25 +647,25 @@ Ask students the following question:
 
   * **Sample Answer:** We can add a second hidden layer.
 
-  * **Sample Answer:**  We may test with different activation functions.
+  * **Sample Answer:**  We can test with different activation functions.
 
-Collect a couple of answers from the class and highlight the following:
+Collect a few answers from the class and highlight the following:
 
 * Adding more neurons to the model is a possible solution; however, we can overfit the model.
 
-* Adding a second layer is also a suitable solution; this is part of deep learning, and it is going to be covered, next class.
+* Adding a second layer is also suitable; this is part of deep learning, and will be covered in the next class.
 
-* Testing with different activation functions is one of the most used initial solutions, especially when dealing with nonlinear data.
+* Testing with different activation functions is one of the most frequently used initial solutions, especially when dealing with nonlinear data.
 
 * Using more epochs for training is another strategy to improve the model's accuracy.
 
-Explain to students that modeling neural networks is part science and part art; the best model will be the result of several tests by playing around with the number of neurons and testing different activation functions.
+Explain to students that modelling neural networks is part science and part art; the best model will be the result of several tests by playing around with the number of neurons and testing different activation functions.
 
 Answer any questions before moving on.
 
 ---
 
-### 6. Student Do: Preventing credit card defaults with neural networks (20 min)
+### 6. Student Do: Preventing Credit Card Defaults with Neural Networks (20 min)
 
 In this activity, students will train a neural network model to predict whether a credit card holder will default in the next month.
 
@@ -681,7 +679,7 @@ In this activity, students will train a neural network model to predict whether 
 
 ---
 
-### 7. Instructor Do: Review Preventing credit card defaults with neural networks (10 min)
+### 7. Instructor Do: Review Preventing Credit Card Defaults with Neural Networks (10 min)
 
 **Files:**
 
@@ -703,7 +701,7 @@ Walk through the solution and highlight the following:
   nn.add(Dense(1, activation='sigmoid'))
   ```
 
-* The first layer has the `23` features as input dimensions, following the rule-of-thumb mentioned before, the triple amount of nodes were defined in the hidden network (`69` units).
+* The first layer has the `23` features as input dimensions, following the rule of thumb mentioned before; the triple amount of nodes were defined in the hidden network (`69` units).
 
 * The model is compiled and trained using `100` epochs. Due to the number of records, the training process takes a few minutes to finish.
 
@@ -711,9 +709,9 @@ Walk through the solution and highlight the following:
 
   ![Model evaluation](Images/cc-results.png)
 
-* The accuracy is not great, but it also is not as harmful enough to discard the model. It could be used in a real-world scenario to run a pilot project.
+* The accuracy is not great, but it also is not harmful enough to discard the model. It could be used in a real world scenario to run a pilot project.
 
-Explain to students that for the challenge section, different approaches could be taken, for this demo, the `tanh` activation function is used in the output layer, and the model is trained with `50` epochs.
+Explain to students that for the challenge section, different approaches could be taken. For this demo, the `tanh` activation function is used in the output layer, and the model is trained with `50` epochs.
 
 ```python
 # Define the model
@@ -749,7 +747,7 @@ In this section, we will go over some necessary transformations of data before i
 
 * [04-Ins/preparing_data.ipynb](Activities/04-Ins_Preparing_Data/Solved/preparing_data.ipynb)
 
-Open the lesson slides, move to the "Preparing Data for Neural Networks" Section and highlight the following:
+Open the lesson slides, move to the "Preparing Data for Neural Networks" section, and highlight the following:
 
 * Like any machine learning model, neural networks require some preprocessing of data to be used effectively.
 
@@ -757,7 +755,7 @@ Open the lesson slides, move to the "Preparing Data for Neural Networks" Section
 
 * To solve the first problem, we apply one-hot encoding to categorical values to transform them into binary variables. To deal with the second, we use standardization.
 
-* One hot encoding involves taking a categorical variable, such as color with labels "red," "white," and "blue," and creating three new variables of the colors, with each instance of the data now showing a `1` if it corresponds to that color and `0` if it does not.
+* One hot encoding involves taking a categorical variable, such as colour with labels "red," "white," and "blue," and creating three new variables of the colours, with each instance of the data now showing a `1` if it corresponds to that colour, and `0` if it does not.
 
 * Scikit-learn offers an implementation of one-hot encoding in the [`OneHotEncoder` module](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html).
 
@@ -769,7 +767,7 @@ Open the unsolved Jupyter Notebook and ask students to follow along as you live 
 
 * The `class` column is going to be used to demonstrate how one-hot-encoding works in `sklearn`.
 
-* An instance of the `OneHotEncoder` module is created
+* An instance of the `OneHotEncoder` module is created.
 
   ```python
   enc = OneHotEncoder()
@@ -804,11 +802,11 @@ Ask the class to restate what we have accomplished with one-hot encoding.
 
 * **Sample Answer**: We've transformed one categorical variable into many binary (numerical) variables, each corresponding to a category.
 
-Switch back to the lesson slides, continue with the slide entitled "Data Standardization" and highlight the following:
+Go back to the lesson slides, and move to the slide entitled "Data Standardization," highlighting the following:
 
 * Another critical preprocessing task is to standardize the numerical variables in the dataset.
 
-* Standardization involves de-meaning the variables, that is, make it so that each numerical variable has a mean of `0`, and constant variance of `1`.
+* Standardization involves de-meaning the variables. That is, making it so that each numerical variable has a mean of `0`, and constant variance of `1`.
 
 * This makes it so that the variables all have approximately the same size, and reduces the likelihood that outliers or variables in different units will negatively affect model performance.
 
@@ -842,7 +840,7 @@ Ask students if they have any questions before moving on to the next activity.
 
 ---
 
-### 10. Students Do: Smartphone Activity Detector (30 min)
+### 10. Student Do: Smartphone Activity Detector (30 min)
 
 In this activity, students will create a neural network to predict the activity of the user based on their smartphone's accelerometer data.
 
