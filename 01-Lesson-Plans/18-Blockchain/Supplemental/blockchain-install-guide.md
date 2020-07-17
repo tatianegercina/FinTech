@@ -44,11 +44,11 @@ When an app is not registered with Apple, it can be automatically blocked by the
 
 2. Look to the top-left of the screen and click on the Apple Logo and navigate to System Preferences > Security & Privacy.
 
-  ![system-preferences](Images/system-preferences.png)
+    ![system-preferences](Images/system-preferences.png)
 
 3. Click in the General tab and allow your MyCrypto application security access to be opened in the "Allow Apps Downloaded From" section. Your screen should look similar to the image below.
 
-  ![catalina-allow-unidentified-app](Images/catalina-allow-unidentified-app.jpg)
+    ![catalina-allow-unidentified-app](Images/catalina-allow-unidentified-app.jpg)
 
 ## Installing Go Ethereum Tools
 
