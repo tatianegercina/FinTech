@@ -269,17 +269,17 @@ Let the class know that the remainder of the class will be spent on practicing w
 
 ### 11. Student Do: Correlating Returns (15 min)
 
-**Corresponding Activity:** [06-Stu_Correlating_Returns](Activities/06-Stu_Correlating_Returns)
+**Corresponding Activity:** [05-Stu_Correlating_Returns](Activities/05-Stu_Correlating_Returns)
 
 In this activity, students will create a sentiment index from News API headlines and correlate it to S&P 500 daily returns, looking for a text topic that generates the highest correlation.
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Correlating_Returns/README.md)
+* [README.md](Activities/05-Stu_Correlating_Returns/README.md)
 
 **Files:**
 
-* [correlating_returns.ipynb](Activities/06-Stu_Correlating_Returns/Unsolved/correlating_returns.ipynb)
+* [correlating_returns.ipynb](Activities/05-Stu_Correlating_Returns/Unsolved/correlating_returns.ipynb)
 
 ---
 
@@ -287,7 +287,7 @@ In this activity, students will create a sentiment index from News API headlines
 
 **Files:**
 
-* [correlating_returns.ipynb](Activities/06-Stu_Correlating_Returns/Solved/correlating_returns.ipynb)
+* [correlating_returns.ipynb](Activities/05-Stu_Correlating_Returns/Solved/correlating_returns.ipynb)
 
 Open the solved notebook. First, ask a volunteer to walk through the code in the headline download function below, explaining the input and output.
 
