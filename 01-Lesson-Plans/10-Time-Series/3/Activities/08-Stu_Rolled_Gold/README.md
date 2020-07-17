@@ -4,7 +4,7 @@ In this activity, you will compare a linear regression model with a train/test s
 
 ## Instructions
 
-The dataset lists the price of gold in the years 2001–2019. Use the closing price in US dollars ("USD (PM)") to generate your train and test datasets.
+The dataset lists the price of gold in the years 2001–2019. Use the closing price in CAD to generate your train and test datasets.
 
 ### Train Test Spit Model
 

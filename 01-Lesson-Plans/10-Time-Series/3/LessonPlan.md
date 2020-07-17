@@ -1119,6 +1119,7 @@ Rolling Out-of-Sample Model:
 Congratulate the class for making it through their first week of machine learning! This is a very valuable skill that is changing the face of finance.
 
 - - -
+
 ### 16. Instructor Do: Career Services Lesson (35 min)
 
 **Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
@@ -1216,9 +1217,7 @@ def fizzBuzz(n):
     return fizzbuzzArr
 ```
 
-
 ### End Class
-
 
 - - -
 
