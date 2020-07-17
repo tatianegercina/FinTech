@@ -86,7 +86,7 @@ Ask if there are any questions before moving on.
 
 In this activity, students will be introduced to neural networks and some of their applications.
 
-Open the lesson slides and move to the Neural Networks are Cool! Section.
+Open the lesson slides and move to the Neural Networks are Cool! section.
 
 Start the presentation by showing students the following image from the [Rorschach Inkblot Test](https://en.wikipedia.org/wiki/Rorschach_test), and ask them the next question:
 
@@ -94,32 +94,31 @@ Start the presentation by showing students the following image from the [Rorscha
 
   ![Rorschach Test Card](Images/Rorschach_blot_05.jpg)
 
-Allow students to play around for a few seconds sharing what they see, continue the presentation by telling students that there is no precise answer to this question.
+Give students a few moments to call out what they see. Then, continue the presentation by telling students that there is no "right answer" to this question.
 
-Continue to the "How our brain works" slide, and explain to students that any similarity they could find between the image and a real object is possible because our brain uses thousands of neuron connections to find a match between the visual input and a mental representation of an object.
+Continue to the "How our Brain Works" slide, and explain to students that any similarity they could find between the image and a real object is possible because our brain uses thousands of neural connections to find a match between the visual input and a mental representation of an object.
 
-Continue to the next slide, and explain to students that this power of our brain to process information and make predictions or interpretations is the fact that inspires neurophysiologists and mathematicians to start the development of artificial neural networks (ANN).
+Continue to the next slide, and explain to students that this power of our brain to process information, and make predictions and interpretations, is what inspired neurophysiologists and mathematicians to start developing artificial neural networks (ANN).
 
 * In the same way biological neurons receive input signals through the dendrites, an ANN can receive input variables and process those inputs using an activation function to compute an output, akin to the neuron nucleus in the brain.
 
-* The concept of ANNs was presented for the first time in 1943 when [Warren McCulloch and Walter Pitts](https://doi.org/10.1007/BF02478259
-) created a computational model for neural networks that they implemented using electrical circuits.
+* The concept of ANNs was presented for the first time in 1943, when [Warren McCulloch and Walter Pitts](https://doi.org/10.1007/BF02478259) created a computational model for neural networks that they implemented using electrical circuits.
 
-* From that initial idea of a single neuron, the concept evolved the last decades to more complex models that propose creating connections between neurons to the point of creating what we know today as neural networks.
+* This concept evolved over the last several decades to more complex models that proposed building connections between neurons, to the modern day creation of what we now call neural networks.
 
-Continue to the slide "The Future is here: applications of neural nets" and highlight the following:
+Continue to the slide "The Future is Here: Applications of Neural Nets" and highlight the following:
 
 * Neural networks are here to stay, and applications become more common every day.
 
 * Companies like Google and Tesla are using neural networks to develop self-driving cars.
 
-* Using the power of neural networks, today you can talk in any language thanks to the automated translation of instant messaging applications like Skype.
+* Using the power of neural networks, people can now converse in any language, thanks to the automated translation of instant messaging applications like Skype.
 
 * Memories from the past that were captured in black and white can take a new perspective through automatic image colorization.
 
-* Neural networks are also used to create a better world, not only for humans but also for wildlife thanks to projects like one led by the U.S. National Oceanic and Atmospheric Administration to save whales by tracking the North Atlantic right whales population using neural networks for image recognition.
+* Neural networks are also being used in wildlife conservation efforts. The National Oceanic and Atmospheric Administration in the US has been tracking the North Atlantic right whale population by using neural networks for image recognition.
 
-As you continue to the slide called "Neural Networks Applications in Finance", explain to students that the financial sector is leading in the use of neural networks, and highlight the following applications:
+As you continue to the slide called "Neural Networks Applications in Finance," explain to students that the financial sector is leading in the use of neural networks, and highlight the following applications:
 
 * **Fraud detection:** According to Javelin Strategy & Research, errors on fraud detection can cost a bank $118 billion in lost revenue.
 
