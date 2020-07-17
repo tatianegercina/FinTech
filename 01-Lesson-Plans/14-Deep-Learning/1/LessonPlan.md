@@ -2,11 +2,7 @@
 
 ### Overview
 
-Today's class introduces students to neural networks, a new member of the machine learning algorithms that can be used for classification and regression problems but are perhaps uniquely able to learn very complex, nonlinear models.
-
-Conceptually, neural networks were inspired by neurons in the human brain, and have a similar property of scaling to meet the complex environments where they operate.
-
-Neural networks are very flexible in their applications, but they are not necessarily meant to be "plug-and-play". From preprocessing input data to constructing a neural network architecture, students will learn the process to build and use neural networks successfully.
+Today's class introduces students to neural networks, a new type of machine learning algorithm that can be used for classification and regression problems, but are uniquely able to learn very complex, nonlinear models. Neural networks are inspired by and analagous to neurons in the human brain, as they scale in similar ways to adapt to complex environments where they operate. While neural networks are very flexible in their applications, they are not necessarily meant to be "plug-and-play." From preprocessing input data to constructing a neural network architecture, students will learn the process to build and use neural networks successfully.
 
 ### Class Objectives
 
