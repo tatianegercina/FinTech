@@ -73,6 +73,8 @@ Ask students to check out spaCy's documentation at https://spacy.io/usage
 
 ### 3. Instructor Do: POS Tagging and Dependency Parsing (10 min)
 
+**Corresponding Activity:** [01-Ins_POS_Tagging](Activities/01-Ins_POS_Tagging)
+
 This activity introduces students to two important concepts that add grammatical features to text. Part-of-speech tagging is intuitive—each word in a sentence is designated a grammatical part of speech, such as noun, verb, or adjective. Dependency parsing follows this step. Adjectives describe nouns, and adverbs describe verbs, nouns can be the subject or object of verbs, and so forth. Each sentence is made of not just the words that it contains but also the relationships that are implicit between them, and a dependency parser is an NLP tool that tries to make these relationships explicit.
 
 **Files:**
@@ -102,6 +104,8 @@ Go through the demo line by line, pausing for questions and highlighting these p
 ---
 
 ### 4. Student Do: Describing America (15 min)
+
+**Corresponding Activity:** [02-Stu_Describing_America](Activities/02-Stu_Describing_America)
 
 In this activity, students will use the inaugural address corpus from NLTK and spaCy's parsing and tagging modules to analyze the words that presidents have used to describe America.
 
@@ -167,6 +171,8 @@ def describe_america(text):
 
 ### 6. Instructor Do: Named Entity Recognition (10 min)
 
+**Corresponding Activity:** [03-Ins_NER](Activities/03-Ins_NER)
+
 This activity introduces students to named entity recognition (NER), a process that extracts specific types of nouns ("named entities") from the text. Named entities are often proper nouns, but NER tools can also extract things like currency, dates, and times. Like POS tagging and dependency parsing, NER gives us a way of being more precise with our text analysis, only extracting the words that meet a specific grammatical or semantic criteria.
 
 **Files:**
@@ -197,6 +203,8 @@ Before moving on to the next student activity, ask the class to search for spaCy
 ---
 
 ### 7. Student Do: NER Clouds (15 min)
+
+**Corresponding Activity:** [04-Stu_NER_Clouds](Activities/04-Stu_NER_Clouds)
 
 In this activity, students will extract named entities of their own choosing from the Reuters Corpus and build a word cloud from these entities.
 
@@ -260,6 +268,8 @@ Let the class know that the remainder of the class will be spent on practicing w
 ---
 
 ### 11. Student Do: Correlating Returns (15 min)
+
+**Corresponding Activity:** [06-Stu_Correlating_Returns](Activities/06-Stu_Correlating_Returns)
 
 In this activity, students will create a sentiment index from News API headlines and correlate it to S&P 500 daily returns, looking for a text topic that generates the highest correlation.
 
