@@ -2,6 +2,8 @@
 
 The blockchain domain is rapidly changing, and even those in a highly technical role must stay abreast of what is happening in the digital finance landscape as many FinTech companies are using and creating tools and services that are powered by blockchain. As a FinTech professional in these changing times, it is important to not only be aware of the advancements happening within the FinTech blockchain space, but also understand the process for developing your very own blockchain.
 
+This homework will be a two-part series in which you will first create a case study on a Canadian FinTech blockchain company. Then, you wil develop your very own blockchain.
+
 ## Before You Begin
 
 1. Create a new GitHub repo called `blockchain-homework`. Then, clone it to your computer.
@@ -12,7 +14,7 @@ The blockchain domain is rapidly changing, and even those in a highly technical 
 
 ## Blockchain Case Study
 
-Your task is to create a case study that analyzes how a Canadian FinTech blockchain company is using technology to solve a standing financial problem in Canada.
+For this part one assignment, your task is to create a case study that analyzes how a Canadian FinTech blockchain company is using technology to solve a standing financial problem in Canada.
 
 In this homework assignment, you will:
 
@@ -30,7 +32,7 @@ This assignment will challenge you to learn more about Canadian advancements in 
 
 ## Proof of Authority Development Chain
 
-For this assignment, you will take on the role of a new developer at a small bank.
+For this part two assignment, you will take on the role of a new developer at a small bank.
 
 Your mission, should you choose to accept it, will be to set up a testnet blockchain for your organization.
 
