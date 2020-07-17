@@ -24,7 +24,7 @@ In this homework assignment, you will:
 
 * Upload your case study to your git repository.
 
-Reference the example [JPM Coin Case Study](Resources/JPM_Coin_Case_Study.md) to get an understanding of the format and content that you'll need to write.
+Reference the example [TokenFunder Case Study](Resources/TokenFunder_Case_Study.md) to get an understanding of the format and content that you'll need to write.
 
 This assignment will challenge you to learn more about Canadian advancements in the blockchain industry.
 
