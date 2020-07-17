@@ -300,27 +300,27 @@ In this activity, students are introduced to Keras and how they can use this lib
 
 * [artificial-neuron.ipynb](Activities/01-Evr_Keras_Intro/Solved/artificial-neuron.ipynb)
 
-Open the lesson slides, go to the "Activating Your First Artificial Neuron" Section and highlight the following:
+Open the lesson slides, go to the "Activating Your First Artificial Neuron" section, and highlight the following:
 
 * There are two ways to code a neuron:
 
   * You can do all the math and code it from scratch using Python, Pandas, and NumPy.
 
-  * Or, you can use an industry-standard API or framework to speed up your implementation and focus your efforts on improving your model and have a better understanding of the business problem you want to solve.
+  * Or, you can use an industry-standard API or framework to speed up your implementation and focus your efforts on improving your model and gaining a better understanding of the business problem you want to solve.
 
-* We are going to use [TensorFlow](https://www.tensorflow.org/) and [Keras](https://keras.io/) to build our Neural Networks.
+* We are going to use [TensorFlow](https://www.tensorflow.org/) and [Keras](https://keras.io/) to build our neural networks.
 
-* TensorFlow is an end-to-end open-source platform for machine learning, that allows us to run our code across multiple platforms in a highly efficient way.
+* TensorFlow is an end-to-end, open-source platform for machine learning which allows us to run our code across multiple platforms in a highly efficient way.
 
 * Keras is an abstraction layer on top of TensorFlow that makes it easier to build models. You can relate this to using Plotly Express to create charts instead of using the more verbose Matplotlib library.
 
 * Using Keras and TensorFlow, we can use the standard `model -> fit -> predict` interface that students are used to seeing.
 
-Ask students if they have already installed TensorFlow, if some students don't, slack out the [installation guide](../Supplemental/deep_learning_installation_guide.md) and have your TAs to assist students in the process while you continue to the demo.
+Ask students if they have already installed TensorFlow. If some students have not, slack out the [installation guide](../Supplemental/deep_learning_installation_guide.md) and have TAs assist students in the process while you continue the demo.
 
-This demo is an _Everyone Do_ activity where students are encouraged to follow your steps as you code, slack out the unsolved version of the Jupyter Notebook before continuing.
+This demo is an _Everyone Do_ activity; students are encouraged to follow your steps as you code. Slack out the unsolved version of the Jupyter Notebook before continuing.
 
-Open the unsolved version of the Jupyter Notebook, explain to students that you are going to demo how a neural network with a single neuron can be made using Keras, encourage the class to replicate your live coding and highlight the following:
+Open the unsolved version of the Jupyter notebook and tell students you are going to demo how a neural network with a single neuron can be made using Keras. Encourage students to replicate your live coding, and highlight the following:
 
 * We are going to use Keras through TensorFlow, so we import the Keras modules as follows:
 
@@ -331,15 +331,15 @@ Open the unsolved version of the Jupyter Notebook, explain to students that you 
 
 * There are two types of models in Keras.
 
-  * The `Sequential` model is a linear stack of layers, where data flows from one layer to the next as we saw in the TensorFlow playground.
+  * The `Sequential` model is a linear stack of layers, where data flows from one layer to the next, as we saw in the TensorFlow Playground.
 
-  * The functional `Model` class, allows the creation of sophisticated and more customizable models.
+  * The functional `Model` class allows the creation of sophisticated and more customizable models.
 
 * The `Sequential` model is going to be used in this class.
 
 * The `Dense` class is used to add layers to the neural network.
 
-Explain to students that we will start coding a neural network with a single neuron, to solve a binary classification problem similar to the example presented in the TensorFlow playground demo.
+Tell students that we will start coding a neural network with a single neuron to solve a binary classification problem similar to the example presented in the TensorFlow Playground demo.
 
 * A dummy dataset is created for this demo using the `make_blobs` function from `sklearn`.
 
@@ -349,7 +349,7 @@ Explain to students that we will start coding a neural network with a single neu
 
 * This dummy dataset contains 1000 samples with two features that are split into two groups.
 
-* As part of our data preprocessing, we transform `y` into a vertical vector. Remember that the `reshape` function is used to reshape or format the data.
+* As part of our data preprocessing, we transform `y` into a vertical vector. Remember that the `reshape` function is used to reshape, or format, the data.
 
   ```python
   # Transforming y to a vertical vector
@@ -376,7 +376,7 @@ Explain to students that we will start coding a neural network with a single neu
   X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
   ```
 
-Explain to students that before using a neural network, it is crucial to normalize or standardize the data.
+Explain to students that before using a neural network, it is crucial to normalize, or standardize, the data.
 
 * Neural networks typically perform better when each of the input features are on the same scale. This makes it easier for the neural network to stabilize and adjust the weights in the network.
 
@@ -394,7 +394,7 @@ Explain to students that before using a neural network, it is crucial to normali
   X_test_scaled = X_scaler.transform(X_test)
   ```
 
-Once the data is scaled, explain to students that now we are going to create our first neural network.
+Once the data is scaled, explain to students that we are now going to create our first neural network.
 
 * An instance of the `Sequential` model is created in the `neuron` variable.
 
@@ -416,11 +416,11 @@ Once the data is scaled, explain to students that now we are going to create our
   neuron.add(Dense(units=number_hidden_nodes, activation="relu", input_dim=number_inputs))
   ```
 
-Explain to students, that as it was mentioned before, the `Dense()` class is used to add layers to the neural networks; since this is the first layer, we define the number of inputs in the `input_dim` parameter and the number of neurons in the first hidden layer in the `units` parameter.
+Tell students that as mentioned earlier, the `Dense()` class is used to add layers to the neural networks. Since this is the first layer, we define the number of inputs in the `input_dim` parameter, and the number of neurons in the first hidden layer in the `units` parameter.
 
 * The `activation` parameter defines the activation function that is going to be used to process the values of the input features as they are passed to the first hidden layer. In this demo, the [rectified linear unit (relu) function is used](https://keras.io/activations/#relu).
 
-* It's recommendable to add an activation function in this first layer, to add nonlinearity to our network, and enable it to learn nonlinear relationships while the neural network is trained.
+* It's recommended to add an activation function in this first layer, to add nonlinearity to our network, and enable it to learn nonlinear relationships while the neural network is trained.
 
 * We finish creating our neural network by adding the output layer.
 
@@ -445,7 +445,7 @@ Explain to students that once the structure of the model has been defined, it is
 neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
 ```
 
-* The `binary_crossentropy` loss function is used since this is a binary classification problem.
+* The `binary_crossentropy` loss function is used, since this is a binary classification problem.
 
 * Optimizers are algorithms that shape and mold a neural network while it's trained to its most accurate possible form by updating the model in response to the output of the loss function. The `adam` optimizer is used in this demo.
 
@@ -457,7 +457,7 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
   model = neuron.fit(X_train_scaled, y_train, epochs=100)
   ```
 
-* Training consists of using the optimizer and loss function to update weights during each iteration of your training cycle. This training uses 100 iterations or epochs.
+* Training consists of using the optimizer and loss function to update weights during each iteration of the training cycle. This training uses 100 iterations, or epochs.
 
 * After each epoch, the results of the loss function and the accuracy are displayed.
 
@@ -479,7 +479,7 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
 
   ![Neuron predictions](Images/neuron_predictions.png)
 
-Explain to students that using this simple one-neuron neural network is just an example to show them how a neural network can be constructed using Keras. This model is as effective as logistic regression for linear data, now the question that arises is, how good could this model be for nonlinear data?
+Explain to students that using this simple one-neuron neural network is just an example to show them how a neural network can be constructed using Keras. This model is as effective as logistic regression for linear data. The question that arises now is: How good could this model be for nonlinear data?
 
 Continue the demo to demonstrate what happens when we use this model with nonlinear data.
 
@@ -521,17 +521,17 @@ X_moon_test_scaled = X_moon_scaler.transform(X_moon_test)
 model_moon = neuron.fit(X_moon_train_scaled, y_moon_train, epochs=100, shuffle=True)
 ```
 
-* After training the model with the nonlinear data, it can be seen that the performance is worse than in the previous example - the accuracy is especially lower.
+* After training the model with the nonlinear data, it can be seen that the performance is worse than in the previous example; and the accuracy is especially lower.
 
   ![Non-linear data plots](Images/neuron_plot_non_linear.png)
 
-* The model is evaluated and predictions are made with ten new dummy samples. Predictions and actual results are then combined in a single DataFrame, with the `ravel` function used to flatten the prediction data so that it can be properly inserted into the DataFrame. it can be corroborated that results aren't as good as the ones obtained with linear data, this is because using only one-single neuron is not unveiling the power of neural networks to find nonlinear patterns.
+* The model is evaluated and predictions are made with 10 new dummy samples. Predictions and actual results are then combined in a single DataFrame, with the `ravel` function used to flatten the prediction data so that it can be properly inserted into the DataFrame. It can be corroborated that results aren't as good as the ones obtained with linear data; this is because using only one single neuron is not unleashing the power of neural networks to find nonlinear patterns.
 
   ![Non-linear data evaluation](Images/non_linear_loss_accuracy.png)
 
   ![make-predictions](Images/make-predictions.png)
 
-Explain to students that in the next activity, they will learn how they can create more complex networks that can handle more complexity and nonlinearity in the data.
+Explain to students that in the next activity, they will learn how to create more complex networks that can handle more complexity and nonlinearity in the data.
 
 Answer any questions before moving on.
 
