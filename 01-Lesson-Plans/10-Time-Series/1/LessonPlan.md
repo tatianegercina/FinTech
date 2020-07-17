@@ -6,7 +6,7 @@ Welcome to Unit 10! Everything students have learned up to this point–from dat
 
 This unit introduces students to the world of data science and machine learning. Machine learning is a form of programming that employs algorithms and statistical models to enable insights, predictions, and data-driven decision making. In machine learning, computer applications are able to automatically learn from data and make adjustments to parameters and execution based on experience, with little to no interaction from a developer.
 
-For many students, this unit, and those following, are the "bread and butter" of the class. Advanced analytics is taking the data industry by storm, offering developers and companies a means to analyze thousands of large data sets and use computer predictions to drive investments and decision making. Machine learning is a boon in financial services, streamlining the analysis of large data sets and investment recommendations. These are processes that previously required multiple people and hours or days of work; but now, a single financial professional can use machine learning algorithms to complete similar tasks within minutes.
+For many students, this unit, and the following machine learning-based units, are the "bread and butter" of the class. Advanced analytics is taking the data industry by storm, offering developers and companies a means to analyze thousands of large data sets and use computer predictions to drive investments and decision making. Machine learning is a boon in financial services, streamlining the analysis of large data sets and investment recommendations. These are processes that previously required multiple people and hours or days of work; but now, a single financial professional can use machine learning algorithms to complete similar tasks within minutes.
 
 * Keep students engaged and excited about the content. Machine learning and data science skills are taking over the tech industry; the advanced analytics and machine learning content in these units will ensure students are competitive in the job market.
 
@@ -102,7 +102,7 @@ Open the slideshow, navigate to the section on machine learning, and highlight t
 
 * Explain to students that because machine learning algorithms can learn on their own, developers do not need to worry about coding for every scenario.
 
-  * For example, rather than creating a 500 line if-else decision structure to identify if a transaction is fraudulent and evaluating every price range and product category, a machine learning algorithm can review all of the account owner's transactions, classify and cluster them, and predict whether or not the most recent transaction is fraudulent.
+  * For example, rather than creating a 500 line if-else decision structure to identify if a transaction is fraudulent and evaluating every price range and product category, a machine learning algorithm can train itself by reviewing all of the account owner's historical transactions, classify and cluster them, and then predict whether or not the most recent transaction is fraudulent.
 
 * Emphasize that, in a nutshell, machine learning is about developing a statistical or algorithmic model of data that can be used automatically to make predictions or decisions about new data.
 
@@ -158,7 +158,7 @@ Explain the similarities and differences between machine learning, predictive an
 
 * **Predictive analytics** is the use of advanced analytics paradigms (machine learning, intelligent algorithms, etc.) to analyze data and forecast outcomes and values. Machine learning is a component of predictive analytics, and predictive analytics is an objective of machine learning.
 
-* **AI** is the concept that machines can execute tasks, and learn while doing so, in order to perform more intelligently. Machine learning is a class of AI: an application of AI.
+* **AI** is the concept that machines can execute tasks, and learn while doing so, in order to perform more intelligently. Machine learning is a class of AI, and more specifically, an application or implementation of AI.
 
   * The general consensus is that instead of programming machines to perform specific tasks, machines should be programmed in order to learn what tasks to complete, and how to complete them.
 
@@ -766,7 +766,7 @@ Review the ACF and PACF plots:
   
   * Should we choose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest using a model that carries the order all the way out to AR(4). However, whether an AR(1) or an AR(4) is more appropriate ultimately depends on how well the two different specifications perform on the data that we have.
 
-  * While approximately the 13th lag looks significant in the autocorrelation plot, it is not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(); the really beneficial lags are the 1st and the 4th, while the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads.
+  * While approximately the 13th lag looks significant in the autocorrelation plot, it is not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(). Therefore, the really beneficial lags are the 1st and the 4th, while the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads.
 
 - - -
 

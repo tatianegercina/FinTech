@@ -693,7 +693,7 @@ Formalize the term volatility:
 
 * Volatility, then, is a function of time.
 
-* GARCH stands for Generalized Autoregressive Conditional Heteroskedasticity, where heteroskedasticity simply means "uneven variance."
+* GARCH stands for Generalized Autoregressive Conditional Heteroscedasticity, where heteroscedasticity simply means "uneven variance."
 
 Go to the slideshow, and navigate to the `Volatile Periods in the US Stock Market` slides to illustrate how volatility clusters, and to motivate GARCH models:
 
