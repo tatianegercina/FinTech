@@ -1076,7 +1076,7 @@ Walk through the iterations that take place inside the for-loop:
 
 Next, discuss the out-of-sample error metrics:
 
-* What is going on is that the predicted out-of-sample values are compared to the actual values that occurred in that day. We will compare how this out-of-sample approach predicted, relative to the single training and test window constructed previously.
+* What is going on is that the predicted out-of-sample values are compared to the actual values that occurred in that day. We will then compare how this out-of-sample approach predicted, relative to the single training and test window constructed previously.
 
 * To make that comparison, first slice the rolling out-of-sample results to only include 2019.
 
@@ -1119,11 +1119,12 @@ Rolling Out-of-Sample Model:
 Congratulate the class for making it through their first week of machine learning! This is a very valuable skill that is changing the face of finance.
 
 - - -
+
 ### 16. Instructor Do: Career Services Lesson (35 min)
 
 **Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
 
-**A note on skill diversity:** The FinTech student demographic is highly diverse. It consists of students with a solid background in finance, students with some programming experience, and students with little or no experience in either field. Because of this, students may complete different activities during this section.
+**A note on skill diversity:** The FinTech student demographic is highly diverse, consisting of students with a solid background in finance, students with some programming experience, and students with little or no experience in either field. Because of this, students may complete different activities during this section.
 
 #### 16.1 Instructor Do: FinTech Resumes (5 min)
 
@@ -1216,9 +1217,7 @@ def fizzBuzz(n):
     return fizzbuzzArr
 ```
 
-
 ### End Class
-
 
 - - -
 

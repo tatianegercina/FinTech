@@ -1,5 +1,7 @@
 # Ripple Volatility
 
+In this activity, you will create GARCH and linear regression models for the price of Ripple (XRP), a cryptocurrency. Then, you will validate the latter model with training and test sets.
+
 ## Instructions
 
 1. Use Scikit-learn to create a linear regression model, with the closing price returns as the dependent variable, and one-day lagged returns as the independent variable.
