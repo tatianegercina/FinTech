@@ -4,11 +4,11 @@
 
 In the last unit, students learned how to use machine learning to predict and forecast time series outcomes. Students used statistical approaches, such as linear regression, Hodrick-Prescott filter, and GARCH and EGARCH models, to forecast investment returns, volatility, and out-of-sample predictions.
 
-In Unit 11 students will dive deeper into statistics and machine learning by working with classification algorithms. Classification is the act of discovering whether or not a particular feature or element belongs to a given feature class/group. Classification derives categorical conclusions based off of classified/modelled data. By the end of this unit, students will be competent in the execution and evaluation of classification models (i.e., logistic regression and decision trees) for predicting categorical conclusions and outcomes.
+In Unit 11, students will dive deeper into statistics and machine learning by working with classification algorithms. Classification is the act of discovering whether or not a particular feature or element belongs to a given feature class/group. Classification derives categorical conclusions based off of classified/modelled data. By the end of this unit, students will be competent in the execution and evaluation of classification models (i.e., logistic regression and decision trees) for predicting categorical conclusions and outcomes.
 
 Today's class will walk students through two classification models/approaches: logistic regression and support vector machines (SVM). Both models are used to predict linear outcomes. Students will also learn how to use Scikit-learn, a Python data science package, to train to evaluate models and make them more efficient and effective in determining probability/outcome predictions.
 
-Before students leave at the end of the class, encourage them to continue independently researching and learning more about the various ways to implement classification models, especially some of those not demonstrated in class (i.e., neural networks). Slack out the links below as supplementary resources.
+Before the end of the class, encourage students to continue independently researching and learning more about the various ways to implement classification models, especially some of those not demonstrated in class (i.e., neural networks). Slack out the links below as supplementary resources.
 
 * [Ten Applications of AI to FinTech](https://towardsdatascience.com/ten-applications-of-ai-to-fintech-22d626c2fdac)
 
