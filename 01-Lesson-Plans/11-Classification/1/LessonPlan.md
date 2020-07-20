@@ -100,7 +100,7 @@ Open the slideshow and start class by welcoming students back to the second week
 
     * Support vector machines
 
-* Highlight to students that classification models have drastically improved financial efforts to properly classify applicants, predict market decline, and classify fraudulent transactions or suspicious activity.
+* Highlight to students that classification models have vastly improved financial efforts to properly classify applicants, predict market decline, and classify fraudulent transactions or suspicious activity.
 
   * Most large financial institutions use some form of machine learning to monitor and predict fraudulent activities. This is how banks know when to flag and decline transactions due to suspicion of fraud.
 
@@ -112,11 +112,11 @@ Open the slideshow and start class by welcoming students back to the second week
 
 * Tell students that their mission for the remainder of this week is to build and train robust classification models in order to automate predictive analytics.
 
-* Machine learning can be used to automate financial pipelines, forecast time series data, market volatility, predict fraud, analyze sentiment, parse documents, automate day trading and make investment recommendations. However, what exactly is machine learning?
+* Machine learning can be used to automate financial pipelines, forecast time series data and market volatility, predict fraud, analyze sentiment, parse documents, automate day trading and make investment recommendations. But, what exactly is machine learning?
 
   * **Answer:** Machine learning is an approach to programming that leverages libraries that provide statistical algorithms. The machine learning community has developed tried-and-tested statistical libraries (like Scikit-learn and imbalanced-learn) that offer statistical functions for algorithmic and statistical modelling.
 
-* Last week, students used time series analysis techniques to forecast market returns and volatility. This week we will explore classification and predicting categorical outcomes. 
+* Last week, students used time series analysis techniques to forecast market returns and volatility. This week, we will explore classification and predicting categorical outcomes. 
 
 If time remains, ask students a few emotionally guided questions (examples provided below) to get a sense of how they are feeling, and give them a space to address any points of excitement, interest, and/or concern.
 
@@ -128,7 +128,7 @@ Ask the class: What are you excited to learn about next?
 
 Ask the class: Do you have any concerns or questions about the content already covered?
 
-  * **Answer:** Concerned about not having any background knowledge or experience in statistics.
+  * **Answer:** I am concerned about not having any background knowledge or experience in statistics.
 
 * Underscore to students that the journey into the world of classification models and algorithms is both challenging and rewarding.
 
@@ -148,7 +148,7 @@ Open the homework instructions, and provide a brief dry walkthrough.
 
 * This week's homework focuses on creating a classification model focused on predicting and categorizing credit risk.
 
-* Multiple models will be used for this assignment (i.e., linear regression and decision trees). Explain to students that these models will be made available with the `Scikit-Learn` package, which was also used in Unit 10.
+* Multiple models will be used for this assignment (i.e., linear regression and decision trees). Explain to students that these models will be made available with the `Scikit-learn` package, which was also used in Unit 10.
 
 * Emphasize that the goal behind the assignment is two-fold:
 
@@ -156,11 +156,11 @@ Open the homework instructions, and provide a brief dry walkthrough.
 
   * Compare and contrast the various machine learning models that can be used to classify credit risk (i.e., resampling vs. ensemble learning). Each model used in the homework can essentially be used to come up with the same prediction: the goal is to identify which model is more accurate and precise.
 
-* Explain that data for this activity will be from the LendingClub, a service that allows users to participate in peer-to-peer lending. LendingClub has a great wealth of loan performance data that can be used to train machine learning algorithms for classification. The homework will include using data points such as loan amount, interest rate, loan balance, etc. to make predictions about credit risk.
+* Explain that data for this activity will be from the LendingClub, a service that allows users to participate in peer-to-peer lending. LendingClub has a wealth of loan performance data that can be used to train machine learning algorithms for classification. The homework will include using data points such as loan amount, interest rate, loan balance, etc. to make predictions about credit risk.
 
 * Note to students that this homework will use the `imbalanced-learn` and `Scikit-learn` tools. These tools need to be properly installed and functional.
 
-End the activity by opening the floor for students to ask questions about the homework. Dedicate the next five minutes to answering these questions.
+End the activity by opening the floor to students for five minutes to address any questions about the homework. 
 
 ---
 
