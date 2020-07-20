@@ -9,8 +9,8 @@ CREATE TABLE customer (
   age INT,
   address VARCHAR(50),
   city VARCHAR(50),
-  state CHAR(2),
-  zip_code CHAR(5)
+  province CHAR(2),
+  postal_code CHAR(6)
 );
 
 -- Re-create the table "customer"
@@ -23,6 +23,6 @@ CREATE TABLE customer (
   age INT,
   address VARCHAR(50),
   city VARCHAR(50),
-  state CHAR(2),
-  zip_code CHAR(5)
+  province CHAR(2),
+  postal_code CHAR(6)
 );

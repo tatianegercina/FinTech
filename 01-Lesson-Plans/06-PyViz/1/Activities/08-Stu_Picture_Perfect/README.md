@@ -10,9 +10,9 @@ It's time to put some finishing touches to your masterpiece to make it picture p
 
 3. Add a title to all of your visualizations.
 
-4. Invert any bar chart visualizations using dates so that data over time is seen horizontally rather than vertically. Hint: date values will be on the y axis.
+4. Invert any bar chart visualizations using dates, so that data over time is seen horizontally rather than vertically. Hint: date values will be on the y axis.
 
-5. Increase the height or width of any plots rendered too small.
+5. Increase the height or width of any plots that have rendered too small.
 
 If you complete the activity early, continue on to the optional challenge section.
 
@@ -31,3 +31,7 @@ hvPlot also offers color customization. Follow the below steps to add additional
 The `opts` function can be used customize composite plot (i.e `(plot_state_avgs * plot_2015_2016 * plot_2010_2014).opts(width=900)`)
 
 The [hvPlot documentation](https://hvplot.pyviz.org/user_guide/Customization.html) can be referenced for additional details regarding options and how they work.
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

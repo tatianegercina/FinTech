@@ -77,7 +77,7 @@ An out-of-date Anaconda environment can create issues when trying to install new
 5. Install the `asyncio` and `streamz` packages.
 
     ```shell
-    pip install iexfinance
+    pip install asyncio
     ```
 
     ```shell
