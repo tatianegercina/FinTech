@@ -193,21 +193,23 @@ If there is time, ask the class what they think about the numbers identified as 
 
 ### 4. Student Do: Bossy Words (20 min)
 
+**Corresponding Activity:** [02-Stu_Bossy_Words](Activities/02-Stu_Bossy_Words)
+
 In this activity, students will use the knowledge from previous lessons to create a word cloud based on TF–IDF weights. The main objective of this activity is to let students see the differences between term relevance and term occurrence in word clouds.
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Bossy_Words/README.md)
+* [README.md](Activities/02-Stu_Bossy_Words/README.md)
 
 **Files:**
 
-* [bossy_words.ipynb](Activities/04-Stu_Bossy_Words/Unsolved/bossy_words.ipynb)
+* [bossy_words.ipynb](Activities/02-Stu_Bossy_Words/Unsolved/bossy_words.ipynb)
 
 ---
 
 ### 5. Instructor Do: Review Bossy Words (10 min)
 
-Open the [solution](Activities/04-Stu_Bossy_Words/Solved/bossy_words.ipynb) and review the code by highlighting the following:
+Open the [solution](Activities/02-Stu_Bossy_Words/Solved/bossy_words.ipynb) and review the code by highlighting the following:
 
 * The `reuters.categories()` method retrieves all the categories for a given document as is explained in the [Reuters Corpus documentation](https://www.nltk.org/book/ch02.html#reuters-corpus).
 
