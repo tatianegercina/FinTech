@@ -920,7 +920,7 @@ Next, walk through the process of building and training the model. Highlight the
   model.add(Dense(100, activation='relu', input_dim=X_train_scaled.shape[1]))
   ```
 
-* In this case, the choice of 100 nodes is somewhat arbitrary, but it provides enough complexity to sufficiently predict the activity type. Because this number was much less than the number of input features, it is very likely that many of the input features are not useful or needed to predict the activity type. Further experimentation with dimensionality reduction techniques such as PCA could show that a smaller number of input features could be used.
+* In this case, the choice of 100 nodes is somewhat arbitrary, but provides enough complexity to sufficiently predict the activity type. Because this number was much less than the number of input features, it is very likely that many of the input features are not needed to predict the activity type. Further experimentation with dimensionality reduction techniques such as PCA could show that a smaller number of input features could be used.
 
 * The final output layer consists of 12 nodes (one node for each activity type) with a softmax activation type. This choice matches the one-hot encoding that was used on the target labels.
 
@@ -946,7 +946,7 @@ Take a moment to show the model summary and the number of total trainable parame
 
 Show students the code to fit the model and explain that the model converges to a high accuracy very quickly.
 
-Warn students that large neural networks like this are often prone to over-fitting. Adjusting the network architecture and the number of training epochs may help prevent overfitting. Neural Network architectures should always be validated to ensure that they are not over-fitting to the training data and thus performing poorly on new data values.
+Warn students that large neural networks like this are often prone to overfitting. Adjusting the network architecture and the number of training epochs may help prevent overfitting. Neural network architectures should always be validated to ensure that they are not overfitting to the training data, and thus performing poorly on new data values.
 
 Show how the classification report can be used to evaluate the model performance for each activity type.
 
@@ -973,7 +973,7 @@ walking_downstairs       0.99      0.99      0.99       230
       weighted avg       0.97      0.97      0.97      1942
 ```
 
-Explain to students that this is a really good example of how neural networks can be used to transform FinTech. Consider providing an example such as the following:
+Explain to students that this is a really good example of how neural networks can be used to transform FinTech. Consider providing an example, such as the following:
 
 > A hypothetical FinTech company is interested in providing a mobile application for micro renewable energy investments yielding ~4-8% per year with small investments. The company wants to remind users to make additional investments when they are the most likely to see and respond to the smartphone notifications. A neural network activity predictor could be used to detect the optimal activity types in which a user responds to the notification.
 
@@ -991,9 +991,9 @@ In this activity, the instructor will conduct a demonstration of the homework.
 
 * [README.md](../../../02-Homework/14-Deep-Learning/Instructions/README.md)
 
-Open the lesson slides, move to the "Homework Demo" Section, and highlight the following:
+Open the lesson slides, move to the "Homework Demo" section, and highlight the following:
 
-* Cryptocurrencies are gaining the attention of investors; however, due to its volatile nature, conventional indicators and metrics are not always suitable.
+* Cryptocurrencies are gaining the attention of investors; however, due to their volatile nature, conventional indicators and metrics are not always suitable.
 
 * The [Crypto Fear and Greed Index (FNG)](https://alternative.me/crypto/fear-and-greed-index/) is an instrument used to assess cryptocurrencies.
 
@@ -1001,7 +1001,7 @@ Open the lesson slides, move to the "Homework Demo" Section, and highlight the f
 
 * In this Unit's homework assignment, you will build and evaluate deep learning models, using both the FNG values and simple closing prices, to determine if the FNG indicator provides a better signal for cryptocurrencies than the normal closing price data.
 
-Open the homework solutions and explain to students that in this unit, they will learn how to deal with time series using Long short-term memory (LSTM) recurrent neural networks (RNN); this special type of neural network will be a key part in developing the homework's solution.
+Open the homework solutions and explain to students that in this unit, they will learn how to deal with time series using Long Short-Term Memory (LSTM) and recurrent neural networks (RNN); this special type of neural network will be key in developing the homework's solution.
 
 Answer any questions before moving on.
 
@@ -1009,15 +1009,15 @@ Answer any questions before moving on.
 
 ### 13. Instructor Do: Reflect (5 min)
 
-This day may be hard for students since several new concepts were covered, spend a few minutes with the class reflecting on what they learn today.
+Students may have found today's class challenging, as several new concepts were covered; spend a few minutes with the class reflecting on what they learned.
 
-* Recall to students that modeling neural networks is part art and part science, so they should be patient while defining models.
+* Recall to students that modelling neural networks is part art and part science, so they should be patient while defining models.
 
-* There are several frameworks to implement neural networks.  Keras is a business class framework they can trust for prototyping or deploying production models.
+* There are several frameworks to implement neural networks. Keras is a business class framework they can trust for prototyping or deploying production models.
 
 * Mastering neural networks take time; however, thanks to frameworks like Keras, you don't need to have a Ph.D. to start using neural networks to solve real-world problems.
 
-* Neural networks are not the panacea; they are just other options in the machine learning realm; in the end, the only way to find a solution is by testing and benchmarking different algorithms.
+* Neural networks should not be seen as a panacea, but as options to use in the machine learning realm. In the end, the only way to find a solution is by testing and benchmarking different algorithms.
 
 Congratulate students on learning a new skill that will add value to their professional portfolio; answer any questions before ending the class.
 
