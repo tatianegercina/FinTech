@@ -76,7 +76,7 @@ By the end of this class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/105B6Pc9nCEYrKqKfy3AuKI67k2SHIH7ZyF4UibAvUf8/edit?usp=sharing).
+The slides for this lesson can be viewed on Google Drive here: [10.1 Lesson Slides](https://docs.google.com/presentation/d/1l4BluLrzy1FYO_Ep1JBKDedbbNuEytxRqeHlqueWtXg/edit?usp=sharing).
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -124,7 +124,7 @@ Open the slideshow, navigate to the section on machine learning, and highlight t
 
   * Planetary climate and atmosphere conditions/composition, etc.
 
-* Underscore to students that the predictions made by machine learning algorithms drive decision making on a global scale. Commercial and government leaders all leverage machine learning in some capacity: machine learning outcomes are helping industries become more proactive, rather than reactive. 
+* Underscore to students that the predictions made by machine learning algorithms drive decision making on a global scale. Commercial and government leaders all leverage machine learning in some capacity: machine learning outcomes are helping industries become more proactive, rather than reactive.
 
 * Communicate that machine learning is sometimes viewed as somewhat nebulous and enigmatic: a niche field of programming that involves heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while machine learning can be challenging, it is just the application of algorithms, statistics, and statistical libraries to solve data and business problems.
 
@@ -208,7 +208,7 @@ Explain to students that over the next several weeks, they will learn about many
 
 Open the slideshow, navigate to the time series basics slides, and explain that we will learn the following Pandas techniques to work with time series data:
 
-* Using the `loc[]` accessor to select rows with specified dates. 
+* Using the `loc[]` accessor to select rows with specified dates.
 
 * Using the `resample()` method to group rows by day, week, month, year, or any datetime attribute.
 
@@ -491,7 +491,7 @@ Begin the activity with a brief review of the moving average, before rolling on 
 * In Pandas, an EWMA can be computed with the `ewm()` and `mean()` methods.
 
 * As mentioned above, in a rolling average, a `window` argument is supplied. By contrast, the `ewm()` method takes a `halflife` argument.
-  
+
   * The two are conceptually similar, but not mathematically the same thing. Essentially, halflife relates to how much weight we give to the more recent observations: the shorter the halflife, the more weight we're giving to those recent observations (think: shorter half life = reacting more quickly).
 
 Next, explain the Python code used to run the Hodrick-Prescott filter:
@@ -565,9 +565,9 @@ Before diving into the code, introduce the concept of autocorrelation:
 * Autocorrelation, on the other hand, determines to what extent today's values correlate with yesterday's values.
 
 * Hourly temperature is a clear, easy to understand, illustration of the concept of autocorrelation.
-  
+
   * What's the temperature an hour into the future? It's very likely to be similar to what it is now (one "lag" away).
-  
+
   * What's the temperature at noon today? It is likely we'll get good information by looking at what the temperature was at noon yesterday (24 hours, or "lags," ago).
 
 **File:** [autocorrelation.ipynb](Activities/06-Ins_Auto_Correlation/Solved/autocorrelation.ipynb)
@@ -662,7 +662,7 @@ The `plot_acf()` function visualizes what we have discussed so far:
 * This plot, in other words, shows autocorrelation at lags up to 48, which was specified in the argument `lags=48`.
 
 * As pointed out previously, there is high autocorrelation at a lag of 1, slightly lower at lag 2, and so on. Then a high autocorrelation is found at a lag of 24, and multiples of 24, such as 48.
-  
+
   * This high autocorrelation at the -24 and -48 hour lag is a good example of seasonality; the weather today at noon is much more likely to be correlated with what the weather was yesterday at noon than, say, what the weather was yesterday at midnight.
 
 Next, explain that the band in light blue is the confidence interval.
@@ -743,9 +743,9 @@ Walk through the solution code:
 * The autocorrelation at a lag of 1 is 0.136.
 
   * Think of this number as how a time series correlates with what its value was just previously.
-  
+
   * If this value is 0.136, it means, for example, that a high bid-ask spread over the last ten seconds likely indicates a high bid-ask spread for the next ten seconds.
-  
+
   * Just like correlation, autocorrelation ranges from -1 to 1; this means that while we found a positive and predictable relationship, the evidence is still a little weak.
 
 Review the ACF and PACF plots:
@@ -763,7 +763,7 @@ Review the ACF and PACF plots:
 * The ACF and PACF plots here have a similar appearance, although that is not always the case.
 
 * The ACF and PACF both appear to be significant at a lag of 1, along with possibly the 4th lag.
-  
+
   * Should we choose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest using a model that carries the order all the way out to AR(4). However, whether an AR(1) or an AR(4) is more appropriate ultimately depends on how well the two different specifications perform on the data that we have.
 
   * While approximately the 13th lag looks significant in the autocorrelation plot, it is not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(). Therefore, the really beneficial lags are the 1st and the 4th, while the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads.
