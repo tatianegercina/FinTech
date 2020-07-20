@@ -463,9 +463,9 @@ Ask if there are any questions before moving on.
 
 You will now explain what accuracy, precision, and recall is in relation to logistic regression models, as well as how to measure each metric.
 
-Open the slideshow, go to the accuracy, precision, and recall section, and highlight the following:
+Open the slideshow, go to the Accuracy, Precision, and Recall section, and highlight the following:
 
-* Tell students that accuracy, precision, and recall are especially important for classification models that involve a binary decision problems. Binary decision problems have two possible correct answers: True Positive and True Negative.
+* Tell students that accuracy, precision, and recall are especially important for classification models that involve a binary decision problem. Binary decision problems have two possible correct answers: True Positive and True Negative.
 
   * Inaccurate and imprecise models result in models returning false positives and false negatives.
 
@@ -479,7 +479,7 @@ Open the slideshow, go to the accuracy, precision, and recall section, and highl
 
 * Precision is the ratio of correctly predicted positive observations to the total predicted positive observations (i.e., of all the samples classified as having diabetes or credit risk, how many actually have diabetes/are a credit risk).
 
-  * Another example of precision: Of all the individuals that were classified by the model as being a credit risk, how many actually were a credit risk? The question at hand is, did we classify comprehensively and correctly?
+  * Another example of precision: Of all the individuals that were classified by the model as being a credit risk, how many actually were a credit risk? The question at hand is, did we classify correctly and comprehensively?
 
   * A similar example would be: Of all the loans predicted to be in good standing, how many actually are? Of the loans predicted to be at risk, are they actually at risk?
 
