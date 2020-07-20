@@ -991,7 +991,7 @@ If time remains, ask students the following guided review questions.
 
 * Ask students to define what support vector machines are.
 
-  * **Answer:** Data points that exist closest to the hyperplane. These points are used to help identify the position and orientation of the hyperplane, and they care called support vectors.
+  * **Answer:** Data points that exist closest to the hyperplane. These points are used to help identify the position and orientation of the hyperplane, and they are called support vectors.
 
 * A parameter named `kernel` is used when creating an SVM model. What does this parameter do?
 
@@ -1021,7 +1021,7 @@ Engage the class with the following discussion:
 
 * Remind students that there is a wealth of machine learning algorithms that can classify outcomes. Explain that both the logistic regression and SVM models were able to predict outcomes. However, the important question is: Which model performed best?
 
-* Ask students if anyone has any idea on which algorithm performed best: logistic regression or SVM.
+* Ask students which algorithm performed best: logistic regression or SVM.
 
   * **Answer:** SVM
 
