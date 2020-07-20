@@ -701,7 +701,7 @@ For this activity, students will receive a demonstration and lecture on how to u
 
 **Files:** [support_vector_machine.ipynb](Activities/06-Ins_SVM/Solved/support_vector_machine.ipynb)
 
-Open the slideshow, navigate to the SVM section, and highlight the following:
+Open the slideshow, navigate to the Support Vector Machines (SVM) section, and highlight the following:
 
 * In the previous activity, a logistic regression model was used to classify loan eligibility. Logistic regression is just one model that can be used to classify data points. Another algorithm that can be used is support vector machines (SVM).
 
@@ -719,7 +719,7 @@ Open the slideshow, navigate to the SVM section, and highlight the following:
 
   * A hyperplane is a line that delineates data points into their corresponding classes. All items to the left of the line belong to class A. Items to the right belong to class B.
 
-  * The goal with hyperplanes is to get the margin of the hyperplane equidistance to the data points for all classes. This distance is considered the margin of separation.
+  * The goal with hyperplanes is to get the margin of the hyperplane equidistant to the data points for all classes. This distance is considered the margin of separation.
 
     * Explain to students that the margin is considered optimal when the distance from the hyperplane and the support vectors are equidistant.
 
@@ -792,9 +792,9 @@ Indicate to students that the `svm.svc` module is used to create an SVM model.
 
   ![svm_model.png](Images/svm_model.png)
 
-If time permits, illustrate to students how to define a decision boundary. A common practice to identify the decision boundary/hyperplane for the already identified data points, prior to making predictions. This provides a visual representation of the already existing classes and their margin of separation.
+If time permits, illustrate to students how to define a decision boundary. A common practice is to identify the decision boundary/hyperplane for the already identified data points, prior to making predictions. This provides a visual representation of the already existing classes and their margin of separation.
 
-* Emphasize to students that this practice of plotting the decision boundary is just illustrative. If you are short on time, do not review the code. Just show students the visualization in the solution notebook. The goal is to illustrate what a hyperplane is, and the importance of wide margins.
+* Emphasize to students that this practice of plotting the decision boundary is just illustrative. If you are short on time, do not review the code; just show students the visualization in the solution notebook. The goal is to illustrate what a hyperplane is, and the importance of wide margins.
 
 * Also communicate to students that plotting the decision boundary with contour is only effective when there are two features in the data.
 
@@ -906,7 +906,7 @@ Ask for any questions before moving forward.
 
 ### 16. Student Do: SVM Loan Approver (15 min)
 
-Students are asked to update their loan approver with an SVM model and rerun the evaluation metrics. Students will then compare the performance of the SVM model with the logistic regression model.
+Students will update their loan approver with an SVM model and rerun the evaluation metrics. They will then compare the performance of the SVM model with the logistic regression model.
 
 **Instructions:** [README.md](Activities/07-Stu-SVM_Loan_Approver/README.md)
 
