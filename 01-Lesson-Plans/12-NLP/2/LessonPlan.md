@@ -91,11 +91,13 @@ This activity looks to challenge students to think outside of the box and encour
 
 ### 3. Instructor Do: Terms Relevance (Understanding TF–IDF) (15 min)
 
+**Corresponding Activity:** [01-Ins_Terms_Relevance](Activities/01-Ins_Terms_Relevance)
+
 This activity introduces term relevance from the perspective of TF–IDF (term frequency-inversee document frequency). Also, students will learn how TF–IDF can be implemented using `sklearn`.
 
 Do not invest to much time on the TF–IDF formulas, just explain how they work in general and invest a little more time on the rationale behind these measures and their implementation using `sklearn`.
 
-* [03_Ins_Terms_Relevance.ipynb](Activities/03-Ins_Terms_Relevance/Solved/03_Ins_Terms_Relevance.ipynb)
+* [01_Ins_Terms_Relevance.ipynb](Activities/01-Ins_Terms_Relevance/Solved/01_Ins_Terms_Relevance.ipynb)
 
 Open the lesson slides and move to the **Terms Relevance (Understanding TF–IDF)** section, highlighting the following points:
 
@@ -115,7 +117,7 @@ Open the lesson slides and move to the **Terms Relevance (Understanding TF–IDF
 
 * The **bag-of-words model** is a technique in NLP to represent the important words or tokens in a document without worrying about sentence structure. A bag-of-words model can then be used to compare documents based on the number of important words that they share.
 
-After finishing the lecture slides, switch to the code demo and show how TF–IDF can be calculated with Python using the `sklearn` library; open the [Jupyter starter file](Activities/03-Ins_Terms_Relevance/Unsolved/03_Ins_Terms_Relevance.ipynb) and highlight the following points:
+After finishing the lecture slides, switch to the code demo and show how TF–IDF can be calculated with Python using the `sklearn` library; open the [Jupyter starter file](Activities/01-Ins_Terms_Relevance/Unsolved/01_Ins_Terms_Relevance.ipynb) and highlight the following points:
 
 * `nltk` and `nltk.corpus` are used to retrieve the [Reuters Corpus](https://www.nltk.org/book/ch02.html#reuters-corpus).
 
