@@ -365,21 +365,23 @@ Answer any questions that arise and move to the next activity.
 
 ### 7. Student Do: The Voice of the Crisis (15 min)
 
+**Corresponding Activity:** [04-Stu_Crisis_Voice](Activities/04-Stu_Crisis_Voice)
+
 In this activity, students will use the News API to retrieve news articles in English and French about the financial crisis of 2008. At the end of the activity, students will create a CSV file that will be used for coming activities.
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Crisis_Voice/README.md)
+* [README.md](Activities/04-Stu_Crisis_Voice/README.md)
 
 **Files:**
 
-* [voice_crisis.ipynb](Activities/07-Stu_Crisis_Voice/Unsolved/voice_crisis.ipynb)
+* [voice_crisis.ipynb](Activities/04-Stu_Crisis_Voice/Unsolved/voice_crisis.ipynb)
 
 ---
 
 ### 8. Instructor Do: Review The Voice of the Crisis (5 min)
 
-Open the [solution](Activities/07-Stu_Crisis_Voice/Solved/voice_crisis.ipynb) and walk through the code, highlight the following:
+Open the [solution](Activities/04-Stu_Crisis_Voice/Solved/voice_crisis.ipynb) and walk through the code, highlight the following:
 
 * As can be read on [the News API documentation for the `Everything` endpoint,](https://newsapi.org/docs/endpoints/everything) it is possible to use logical operators to include or exclude keywords.
   ![Documentation for the q parameter of the News API](Images/new_api_q_param.png)
