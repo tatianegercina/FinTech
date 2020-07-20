@@ -324,9 +324,9 @@ Start the live-coding demo by highlighting the following:
 
   ```python
   oil_headlines = newsapi.get_top_headlines(
-    q="oil",
-    language="en",
-    country="ca"
+      q="oil",
+      language="en",
+      country="ca"
   )
   ```
 
@@ -508,25 +508,25 @@ Answer any questions from the class before moving on.
 
 ---
 
-### 11. Student Do: The Feelings of the Blockchain (20 min)
+### 11. Student Do: Blockchain Sentiment (20 min)
 
 In this activity, students will use VADER to score the sentiment of news titles and text to verify whether they have the same sentiment. This activity includes a facilitated discussion in the last four to five minutes to talk about students' findings.
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_Blockchain_Feelings/README.MD)
+* [README.md](Activities/11-Stu_Blockchain_Sentiment/README.md)
 
 **Files:**
 
-* [blockchain_feelings.ipynb](Activities/11-Stu_Blockchain_Feelings/Unsolved/blockchain_feelings.ipynb)
+* [blockchain_feelings.ipynb](Activities/11-Stu_Blockchain_Sentiment/Unsolved/blockchain_feelings.ipynb)
 
 ---
 
-### 12. Instructor Do: Review The Feelings of the Blockchain (5 min)
+### 12. Instructor Do: Review Blockchain Sentiment (5 min)
 
 **Files:**
 
-* [blockchain_feelings.ipynb](Activities/11-Stu_Blockchain_Feelings/Solved/blockchain_feelings.ipynb)
+* [blockchain_feelings.ipynb](Activities/11-Stu_Blockchain_Sentiment/Solved/blockchain_feelings.ipynb)
 
 Open the solution and walk through the code, highlighting the following:
 
@@ -579,8 +579,6 @@ Open the solution and walk through the code, highlighting the following:
   ```
 
 * The VADER sentiment score for each news article's title and text is calculated within a `for-loop`; this loop iterates across the `news_en_df` DataFrame using the `iterrows()` method to create the final result's DataFrame structure.
-
-  ![Sentiment scores calculation](Images/virus_feelings_title_text_code.png)
 
 * Two DataFrames are created with the resulting VADER sentiment scores for titles and the text. These DataFrames are added as new columns to the `news_en_df` DataFrame using the `join()` function.
 
