@@ -96,7 +96,7 @@ This activity introduces term relevance from the perspective of TF–IDF (term f
 
 Do not invest to much time on the TF–IDF formulas, just explain how they work in general and invest a little more time on the rationale behind these measures and their implementation using `sklearn`.
 
-* [03_Ins_Terms_Relevance.ipynb](Activities/03-Ins_Terms_Relevance/Solved/03_Ins_Terms_Relevance.ipynb)
+* [01_Ins_Terms_Relevance.ipynb](Activities/01-Ins_Terms_Relevance/Solved/terms_relevance.ipynb)
 
 Open the lesson slides and move to the **Terms Relevance (Understanding TF–IDF)** section, highlighting the following points:
 
@@ -116,7 +116,7 @@ Open the lesson slides and move to the **Terms Relevance (Understanding TF–IDF
 
 * The **bag-of-words model** is a technique in NLP to represent the important words or tokens in a document without worrying about sentence structure. A bag-of-words model can then be used to compare documents based on the number of important words that they share.
 
-After finishing the lecture slides, switch to the code demo and show how TF–IDF can be calculated with Python using the `sklearn` library; open the [Jupyter starter file](Activities/03-Ins_Terms_Relevance/Unsolved/03_Ins_Terms_Relevance.ipynb) and highlight the following points:
+After finishing the lecture slides, switch to the code demo and show how TF–IDF can be calculated with Python using the `sklearn` library; open the [Jupyter starter file](Activities/01-Ins_Terms_Relevance/Unsolved/terms_relevance.ipynb) and highlight the following points:
 
 * `nltk` and `nltk.corpus` are used to retrieve the [Reuters Corpus](https://www.nltk.org/book/ch02.html#reuters-corpus).
 
@@ -196,17 +196,17 @@ In this activity, students will use the knowledge from previous lessons to creat
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Bossy_Words/README.md)
+* [README.md](Activities/02-Stu_Bossy_Words/README.md)
 
 **Files:**
 
-* [bossy_words.ipynb](Activities/04-Stu_Bossy_Words/Unsolved/bossy_words.ipynb)
+* [bossy_words.ipynb](Activities/02-Stu_Bossy_Words/Unsolved/bossy_words.ipynb)
 
 ---
 
 ### 5. Instructor Do: Review Bossy Words (10 min)
 
-Open the [solution](Activities/04-Stu_Bossy_Words/Solved/bossy_words.ipynb) and review the code by highlighting the following:
+Open the [solution](Activities/02-Stu_Bossy_Words/Solved/bossy_words.ipynb) and review the code by highlighting the following:
 
 * The `reuters.categories()` method retrieves all the categories for a given document as is explained in the [Reuters Corpus documentation](https://www.nltk.org/book/ch02.html#reuters-corpus).
 
@@ -269,7 +269,7 @@ In this activity, students will learn how to retrieve news articles from the [Ne
 
 **Files:**
 
-* [sentiment_analysis_data.ipynb](Activities/06-Ins_Sentiment_Analysis_Data/Solved/sentiment_analysis_data.ipynb)
+* [sentiment_analysis_data.ipynb](Activities/03-Ins_Sentiment_Analysis_Data/Solved/sentiment_analysis_data.ipynb)
 
 Explain to students that there are several ways to retrieve data for sentiment analysis, such as web scraping, manual corpus creation from document digitization, document transformations (e.g., from PDF, word processors, or spreadsheets to raw text) and using APIs. Among these data-retrieval mechanisms, APIs is one of the most used, so in this activity, students will learn how to retrieve news articles using the [News API](https://newsapi.org/) and its [Python library](https://newsapi.org/docs/client-libraries/python).
 
@@ -296,7 +296,7 @@ You are almost ready to code! Before starting the demo, ask students to install 
   pip install newsapi-python
   ```
 
-Open [the unsolved Jupyter notebook](Activities/06-Ins_Sentiment_Analysis_Data/Unsolved/sentiment_analysis_data.ipynb) and live code the demo by highlighting the following:
+Open [the unsolved Jupyter notebook](Activities/03-Ins_Sentiment_Analysis_Data/Unsolved/sentiment_analysis_data.ipynb) and live code the demo by highlighting the following:
 
 * The `NewsApiClient` class should be imported to interact with the News API service.
 
@@ -364,17 +364,17 @@ In this activity, students will use the News API to retrieve news articles in En
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Blockchain_Voice/README.md)
+* [README.md](Activities/04-Stu_Blockchain_Voice/README.md)
 
 **Files:**
 
-* [voice_blockchain.ipynb](Activities/07-Stu_Blockchain_Voice/Unsolved/voice_blockchain.ipynb)
+* [voice_blockchain.ipynb](Activities/04-Stu_Blockchain_Voice/Unsolved/voice_blockchain.ipynb)
 
 ---
 
 ### 8. Instructor Do: Review The Voice of the Blockchain (5 min)
 
-Open the [solution](Activities/07-Stu_Blockchain_Voice/Solved/voice_blockchain.ipynb) and walk through the code, highlight the following:
+Open the [solution](Activities/04-Stu_Blockchain_Voice/Solved/voice_blockchain.ipynb) and walk through the code, highlight the following:
 
 * As can be read on [the News API documentation for the `Everything` endpoint,](https://newsapi.org/docs/endpoints/everything) it is possible to use logical operators to include or exclude keywords.
   ![Documentation for the q parameter of the News API](Images/new_api_q_param.png)
@@ -441,7 +441,7 @@ In this activity, students will understand how VADER sentiment works and how to 
 
 **Files:**
 
-* [vader_sentiment.ipynb](Activities/09-Ins_Vader_Sentiment/Solved/vader_sentiment.ipynb)
+* [vader_sentiment.ipynb](Activities/05-Ins_Vader_Sentiment/Solved/vader_sentiment.ipynb)
 
 Open the lesson slides, move to the Intro to VADER Sentiment section, and highlight the following:
 
@@ -514,11 +514,11 @@ In this activity, students will use VADER to score the sentiment of news titles 
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_Blockchain_Sentiment/README.md)
+* [README.md](Activities/06-Stu_Blockchain_Sentiment/README.md)
 
 **Files:**
 
-* [blockchain_feelings.ipynb](Activities/11-Stu_Blockchain_Sentiment/Unsolved/blockchain_feelings.ipynb)
+* [blockchain_sentiment.ipynb](Activities/06-Stu_Blockchain_Sentiment/Unsolved/blockchain_sentiment.ipynb)
 
 ---
 
@@ -526,7 +526,7 @@ In this activity, students will use VADER to score the sentiment of news titles 
 
 **Files:**
 
-* [blockchain_feelings.ipynb](Activities/11-Stu_Blockchain_Sentiment/Solved/blockchain_feelings.ipynb)
+* [blockchain_sentiment.ipynb](Activities/06-Stu_Blockchain_Sentiment/Solved/blockchain_sentiment.ipynb)
 
 Open the solution and walk through the code, highlighting the following:
 
@@ -616,7 +616,7 @@ In this activity, students will be introduced to tone analysis and how they can 
 
 **Files:**
 
-* [tone_analysis.ipynb](Activities/13-Ins_Tone_Analysis/Solved/tone_analysis.ipynb)
+* [tone_analysis.ipynb](Activities/07-Ins_Tone_Analysis/Solved/tone_analysis.ipynb)
 
 Start by opening the lesson slides, go to the Tone Analysis section, and highlight the following:
 
@@ -662,7 +662,7 @@ Now that the Tone Analyzer instance is ready to use, ask students to get their A
 
   ![Tone Analyser credentials](Images/get_tone_analyzer_key.png)
 
-Ask students to create two environment variables, one for the API key and the other for the URL. Open the [unsolved Jupyter notebook](Activities/13-Ins_Tone_Analysis/Solved/tone_analysis.ipynb) and switch to the code demo, highlighting the following:
+Ask students to create two environment variables, one for the API key and the other for the URL. Open the [unsolved Jupyter notebook](Activities/07-Ins_Tone_Analysis/Solved/tone_analysis.ipynb) and switch to the code demo, highlighting the following:
 
 * The IBM Watson Python library needs to be installed using `pip` as follows. This demo runs using version 3.
 
