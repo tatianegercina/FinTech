@@ -170,11 +170,11 @@ By the end of this activity, students will be able to summarize what classificat
 
 Go to the slideshow, and navigate to the Intro to Classification section.
 
-Ask the class if anyone can summarize what classification is. If there are no volunteers, ask a specific student.
+Ask the class if anyone can summarize what classification is. If there are no volunteers, call on a student.
 
 * **Answer:** Classification is the prediction of discrete outcomes. Outcomes are identified as labels, which serve to categorize bi-class and multi-class features.
 
-* Thank the student for their summary, and emphasize any parts of their answer that are correct. Use the student's answer as a transition into a formal lecture.
+* Thank the student for their summary, emphasizing the parts of their answer that are correct. Use the student's answer as a transition into a formal lecture.
 
 * Provide students with the official definition of classification, as described by the Oxford English dictionary:
 
@@ -190,9 +190,9 @@ Ask the class if anyone can summarize what classification is. If there are no vo
 
   2. Using machine learning libraries and functions that are already available
 
-* Highlight that there are multiple approaches to classification. These include logistic regression and support vector machines, all of which will be explained in further detail throughout the day.
+* Highlight that there are multiple approaches to classification. These include logistic regression and support vector machines, all of which will be explained in further detail today.
 
-If time remains, let students know there is time for one question.
+* If time remains, let students know there is time for one question.
 
 * If there is a question, answer it, then move onto the next activity. Assure students that the upcoming activities will shed more light on classification and that there will be additional time for questions during review sessions.
 
