@@ -267,12 +267,14 @@ Ask if there are any questions before moving on.
 
 ### 6. Instructor Do: Getting Data for Sentiment Analysis (15 min)
 
+**Corresponding Activity:** [03-Ins_Sentiment_Analysis_Data](Activities/03-Ins_Sentiment_Analysis_Data)
+
 In this activity, students will learn how to retrieve news articles from the [News API](https://newsapi.org/) and its [Python library](https://newsapi.org/docs/client-libraries/python).
 
 **Files:**
 
-* [sentiment_analysis_data.ipynb](Activities/06-Ins_Sentiment_Analysis_Data/Solved/sentiment_analysis_data.ipynb)
-* [keys.sh](Activities/06-Ins_Sentiment_Analysis_Data/Solved/keys.sh)
+* [sentiment_analysis_data.ipynb](Activities/03-Ins_Sentiment_Analysis_Data/Solved/sentiment_analysis_data.ipynb)
+* [keys.sh](Activities/03-Ins_Sentiment_Analysis_Data/Solved/keys.sh)
 
 Explain to students that there are several ways to retrieve data for sentiment analysis, such as web scraping, manual corpus creation from document digitization, document transformations (e.g., from PDF, word processors, or spreadsheets to raw text) and using APIs. Among these data-retrieval mechanisms, APIs is one of the most used, so in this activity, students will learn how to retrieve news articles using the [News API](https://newsapi.org/) and its [Python library](https://newsapi.org/docs/client-libraries/python).
 
@@ -299,7 +301,7 @@ You are almost ready to code! Before starting the demo, ask students to install 
   pip install newsapi-python
   ```
 
-Open [the unsolved Jupyter notebook](Activities/06-Ins_Sentiment_Analysis_Data/Unsolved/sentiment_analysis_data.ipynb) and live code the demo by highlighting the following:
+Open [the unsolved Jupyter notebook](Activities/03-Ins_Sentiment_Analysis_Data/Unsolved/sentiment_analysis_data.ipynb) and live code the demo by highlighting the following:
 
 * The `NewsApiClient` class should be imported to interact with the News API service.
 
