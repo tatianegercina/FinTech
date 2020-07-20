@@ -530,7 +530,7 @@ Transition to the live coding aspect of the demo, and demonstrate how to use and
 
   ![confusion_matrix.png](Images/confusion_matrix.png)
 
-Communicate to students that a classification report can also be used to evaluate a model. When evaluating a model, the accuracy, precision, and recall must all be evaluated to ensure the rate of false-positives and false-negatives are minimal. The results from these tests can be stored within a classification report, which can be used to assess and evaluate the number of predicted occurrences for each class.
+Communicate to students that a classification report can also be used to evaluate a model. When evaluating a model, the accuracy, precision, and recall must all be evaluated to ensure that the rate of false positives and false negatives are minimal. The results from these tests can be stored within a classification report, which can be used to assess and evaluate the number of predicted occurrences for each class.
 
 * Classification reports calculate the precision, recall, and f1 score (accuracy in relation to precision and recall), and can be generated using the sklearn `metrics.classification_report` module. All that is required to execute the `classification_report` function is the actual data points and predicted data points.
 
@@ -550,7 +550,7 @@ Finish the activity by asking students if there are any questions, and then tran
 
 ### 10. Student Do: Diagnosing the Model (10 min)
 
-Students complete a bridge activity where they return to the model they created to predict diabetes, using a confusion matrix and classification report to evaluate and diagnose the model. Emphasis needs to be placed on how to interpret confusion matrices and classification reports in order to diagnose issues in the model.
+Students will complete a bridge activity where they return to the model they created to predict diabetes using a confusion matrix and classification report to evaluate and diagnose the model. Emphasis needs to be placed on how to interpret confusion matrices and classification reports in order to diagnose issues in the model.
 
 **Files**
 
@@ -582,7 +582,7 @@ Engage the class with a brief Q&A session, asking students if they have any ques
 
 Transition to the dry walkthrough by opening the solution file, and highlight the discussion points below. Go through this section quickly, as students should be well versed in creating confusion matrices and classification reports.
 
-* A confusion matrix is a table that describes the performance of a model by looking at the total number of outcomes for each class. Confusion matrices look at the total number of actual outcomes and juxtapose them with predicted outcomes.
+* A confusion matrix is a table that describes the performance of a model by looking at the total number of outcomes for each class. Confusion matrices look at the total number of actual outcomes, and juxtapose them with predicted outcomes.
 
  * For example, with a confusion matrix, you can aggregate the number of actual positives and compare it to the number of predicted positives—the closer the values, the better the model. The same can be said with negative outcomes.
 
@@ -619,7 +619,7 @@ Ask if there are any questions before moving forward.
 
 ### 12. Student Do: Build Loan Approver (15 min)
 
-Students will now participate in a "bag of tricks" activity, where they apply the machine learning concepts, and technical skills learned thus far to create a model for approving loans.
+Students will now participate in a "bag of tricks" activity, where they apply the machine learning concepts and technical skills learned thus far to create a model for approving loans.
 
 **Instructions:** [README.md](Activities/05-Stu_Loan_Approver/README.md)
 
@@ -637,13 +637,13 @@ You will lead a facilitated review discussion on the loan approver. This will be
 
 **Files:** [loan_approver.ipynb](Activities/05-Stu_Loan_Approver/Solved/loan_approver.ipynb)
 
-In order to ensure the pacing of the activity, do not ask all of the questions below; instead, use them as prompts to engage students and increase discussion.
+In order to ensure the pacing of the activity, do not ask all of the questions below; instead, use them as prompts to engage students and promote discussion.
 
 Begin the review session with a few guided questions:
 
 * Using the confusion matrix and classification report to evaluate the model, would you trust the predictions made by this model to decide when you should and should not loan out money? Should a bank trust it?
 
-  * **Answer:** The model in its current state is not optimized for accuracy and should not be trusted to make predictions.
+  * **Answer:** In its current state, the model is not optimized for accuracy and should not be trusted to make predictions.
 
 * What can we do to improve the accuracy of the model?
 
@@ -657,7 +657,7 @@ Open the solution and transition to a dry walkthrough of the activity. Remind st
 
   * The target is the predicted outcome (i.e., approve or deny status.)
 
-* Since features can vary in scale and range, they have been normalized (i.e., a candidate's income can be a value 100,000; however, their credit score's max value can only be 900). This ensures that differences in scale do not sway predictions. Values have been normalized between 0 and 1.
+* Since features can vary in scale and range, they have been normalized (i.e., a candidate's income can be a value of 100,000; however, their credit score's max value can only be 900). This ensures that differences in scale do not sway predictions. Values have been normalized between 0 and 1.
 
 * Sklearn's `LogisticRegression` module can be used to create a logistic regression model. This model is needed in order to classify categorical outcomes.
 
