@@ -444,11 +444,13 @@ Answer any additional questions before moving to the next activity.
 
 ### 9. Instructor Do: Intro to VADER Sentiment (15 min)
 
+**Corresponding Activity:** [05-Ins_Vader_Sentiment](Activities/05-Ins_Vader_Sentiment)
+
 In this activity, students will understand how VADER sentiment works and how to interpret sentiment polarity; also students will learn how to score sentiment using the VADER module of NLTK.
 
 **Files:**
 
-* [vader_sentiment.ipynb](Activities/09-Ins_Vader_Sentiment/Solved/vader_sentiment.ipynb)
+* [vader_sentiment.ipynb](Activities/05-Ins_Vader_Sentiment/Solved/vader_sentiment.ipynb)
 
 Open the lesson slides, move to the Intro to VADER Sentiment section, and highlight the following:
 
