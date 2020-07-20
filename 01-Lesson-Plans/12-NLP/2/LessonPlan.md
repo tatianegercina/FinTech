@@ -625,13 +625,15 @@ Answer any additional questions before moving to the next activity.
 
 ### 13. Instructor Do: Tone Analysis (20 min)
 
+**Corresponding Activity:** [07-Ins_Tone_Analysis](Activities/07-Ins_Tone_Analysis)
+
 In this activity, students will be introduced to tone analysis and how they can score the tone of human speech using the **IBM Watson Tone Analyzer service** and its Python library.
 
 **Files:**
 
-* [tone_analysis.ipynb](Activities/13-Ins_Tone_Analysis/Solved/tone_analysis.ipynb)
+* [tone_analysis.ipynb](Activities/07-Ins_Tone_Analysis/Solved/tone_analysis.ipynb)
 
-* [keys.sh](Activities/13-Ins_Tone_Analysis/Solved/keys.sh)
+* [keys.sh](Activities/07-Ins_Tone_Analysis/Solved/keys.sh)
 
 Start by opening the lesson slides, go to the Tone Analysis section, and highlight the following:
 
@@ -677,7 +679,7 @@ Now that the Tone Analyzer instance is ready to use, ask students to get their A
 
   ![Tone Analyser credentials](Images/get_tone_analyzer_key.png)
 
-Ask students to create two environment variables, one for the API key and the other for the URL. Open the [unsolved Jupyter notebook](Activities/13-Ins_Tone_Analysis/Solved/tone_analysis.ipynb) and switch to the code demo, highlighting the following:
+Ask students to create two environment variables, one for the API key and the other for the URL. Open the [unsolved Jupyter notebook](Activities/07-Ins_Tone_Analysis/Solved/tone_analysis.ipynb) and switch to the code demo, highlighting the following:
 
 * The IBM Watson Python library needs to be installed using `pip` as follows. This demo runs using version 3.
 
