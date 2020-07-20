@@ -8,7 +8,7 @@ In Unit 11, students will dive deeper into statistics and machine learning by wo
 
 Today's class will walk students through two classification models/approaches: logistic regression and support vector machines (SVM). Both models are used to predict linear outcomes. Students will also learn how to use Scikit-learn, a Python data science package, to train to evaluate models and make them more efficient and effective in determining probability/outcome predictions.
 
-Before the end of the class, encourage students to continue independently researching and learning more about the various ways to implement classification models, especially some of those not demonstrated in class (i.e., neural networks). Slack out the links below as supplementary resources.
+Before class ends, encourage students to continue independently researching and learning more about the various ways to implement classification models, especially some of those not demonstrated in class (i.e., neural networks). Slack out the links below as supplementary resources.
 
 * [Ten Applications of AI to FinTech](https://towardsdatascience.com/ten-applications-of-ai-to-fintech-22d626c2fdac)
 
@@ -22,7 +22,7 @@ By the end of class, students will be able to:
 
 * Define classification in the context of machine learning.
 
-* Model and fit several classification models (logistic regression and SVM) using Scikit-Learn.
+* Model and fit several classification models (logistic regression and SVM) using Scikit-learn.
 
 * Evaluate classification algorithms using a confusion matrix and classification report.
 
@@ -30,7 +30,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today's class will require students to train and evaluate two different classification models. Because the content will be heavy in statistical analysis and machine learning, it is important that you reinforce concepts with FinTech use cases (examples will be provided). Whenever appropriate, remind students that classification models enable financial companies to make faster, smarter data-driven decisions and outcomes, such as:
+* Today's class will require students to train and evaluate two different classification models. Because content is heavy in statistical analysis and machine learning, it is important that you reinforce concepts with FinTech use cases (examples will be provided). Whenever appropriate, remind students that classification models enable financial companies to make faster, smarter data-driven decisions and outcomes, such as:
 
   * credit risk and worthiness
 
@@ -40,7 +40,7 @@ By the end of class, students will be able to:
 
   * loan recommendations
 
-* The world of classification is vast; all forms and concepts of classification cannot be covered in one class. Be sure to pace the class and be cognizant of how long it takes to explain concepts. The key is to stay rooted in real-world, practical examples of how classification can be used in FinTech. Avoid getting bogged down in the statistical and mathematical details for the algorithms. Instead, focus should be placed on:
+* The world of classification is vast; it's impossible to cover all forms and concepts of classification in one lesson. Be sure to pace the class and stay cognizant of how long it takes to explain concepts. The key is to stay rooted in real world, practical examples of how classification can be used in FinTech. Don't get bogged down in the statistical and mathematical details for the algorithms. Instead, place the focus on:
 
   * What the algorithm/model is
 
@@ -54,13 +54,13 @@ By the end of class, students will be able to:
 
   * Imbalance-learn and Scikit-learn will need to be added to everyone's Python environments, and modules will need to be installed. Students can consult the [classification ecosystem install guide](../Supplemental/Machine_Learning_Env_Setup_Guide.md) for steps on how to verify that both packages have been installed correctly.
 
-  * Lending Club will be used as a data source for this unit; accounts must be created for data to be accessed.
+  * LendingClub will be used as a data source for this unit; accounts must be created for data to be accessed.
 
-  * Slack out the following links for students to use as resources. There will be no time dedicated for in-class installation.
+  * Slack out the following links for students to use as resources; no time is dedicated for installation in class.
 
-    * [Imbalance-Learn](https://imbalanced-learn.readthedocs.io/en/stable/)
+    * [Imbalance-learn](https://imbalanced-learn.readthedocs.io/en/stable/)
 
-    * [Scikit-Learn](https://scikit-learn.org/stable/)
+    * [Scikit-learn](https://scikit-learn.org/stable/)
 
 * Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Some students may need additional assistance with  statistical concepts, while others might need help with the application of machine learning models.
 
