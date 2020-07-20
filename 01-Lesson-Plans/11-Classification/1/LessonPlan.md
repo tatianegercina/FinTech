@@ -202,9 +202,9 @@ Ask the class if anyone can summarize what classification is. If there are no vo
 
 Having been introduced to classification, students will now receive a demonstration of how to use logistic regression to make linear predictions for categorical outcomes. This demo will contain two parts: a brief explanation of preprocessing, and a more in-depth explanation of model fitting and execution.
 
-Walkthrough the slideshow and highlight the following points:
+Walk through the slideshow and highlight the following points:
 
-* Communicate that logistic regression is a statistical method for predicting binary outcomes from data. With linear regression, our linear model may provide a numerical output, such as age. With logistic regression, the numerical value for age could be translated to a probability between 0 and 1. This discrete output could then be labeled as "young" vs. "old". The same approach can be used to predict the probability of creditworthiness based on credit score, number of missed payments, number of public records, and credit age.
+* Tell students that logistic regression is a statistical method for predicting binary outcomes from data. With linear regression, our linear model may provide a numerical output, such as age. With logistic regression, the numerical value for age could be translated to a probability between 0 and 1. This discrete output could then be labeled as "young" vs. "old." The same approach can be used to predict the probability of creditworthiness based on credit score, the number of missed payments, the number of public records, and credit age.
 
   ![logistic_1.png](Images/logistic_1.png)
   ![logistic_2.png](Images/logistic_2.png)
@@ -223,7 +223,7 @@ Walkthrough the slideshow and highlight the following points:
 
 * We can use logistic regression to predict which category or class to classify a new data point.
 
-After presenting the slideshow, open the Jupyter notebook and complete a dry walkthrough of running logistic regression with Scikit-Learn (sklearn). Quickly run through the following bullet points, emphasizing that classification algorithms require data to be clustered into classes/groups.
+After presenting the slideshow, open the Jupyter notebook and complete a dry walkthrough of running logistic regression with Scikit-learn (sklearn). Quickly run through the following bullet points, emphasizing that classification algorithms require data to be clustered into classes/groups.
 
 * Communicate to students that the only way to run a logistic regression model is to first prepare a dataset to be used for training the model. In order for a logistic regression model to learn on its own, it must be given data that is clustered in classes/groups.
 
@@ -253,7 +253,7 @@ After presenting the slideshow, open the Jupyter notebook and complete a dry wal
 
   ![make_blobs_fx.png](Images/make_blobs_fx.png)
 
-* The last step of preprocessing is splitting data into training and testing data sets. The training subset will be used to train the model and help it self learn. The testing data set will be used to evaluate and test the accuracy of the algorithm and its predictions.
+* The last step of preprocessing is splitting data into training and testing data sets. The training subset will be used to train the model, and help it learn. The testing data set will be used to evaluate and test the accuracy of the algorithm and its predictions.
 
   * Emphasize to students that the training and testing data sets can come from a single data set, or two different ones. The sklearn `model_selection.train_test_split` module can be used to split a single data set into training and testing subsets. This will create four data sets:
 
@@ -292,7 +292,7 @@ The next step after training the model is validating it. A common approach is th
 
 Explain to students that the scoring process takes the predictions made using the data and compares it to their actual outcomes (i.e., predicted y versus actual y). If the predictions are the same and the score is 1.0, the model is considered perfectly accurate. Generally, the closer the score is to 1.0, the more accurate the model.
 
-* It's important to note to students that two things need to be scored: the training AND test data.
+* It's important to tell students that two things need to be scored: the training AND test data.
 
   * When scoring the training data, the accuracy of the model is applied against the training data it was created with. Usually, the more data that is trained, the higher the accuracy score.
 
@@ -339,7 +339,7 @@ If time remains, show students the results of the predictions made using the tes
 
   ![predict_test.png](Images/predict_test.png)
 
-Ask students if there are any questions before moving on. This was a dense activity, so there will most likely be a number of questions. Try and answer one or two questions if timing permits. If not, ask students to save questions for review, and reiterate the following:
+Ask students if there are any questions before moving on. This was a dense activity, so there will most likely be a number of questions. Try and answer one or two questions if time permits. If not, ask students to save questions for review, and reiterate the following:
 
 * When running a logistic regression model, or any model, follow these simple steps:
 
