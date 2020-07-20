@@ -519,15 +519,17 @@ Answer any questions from the class before moving on.
 
 ### 11. Student Do: The Feelings of the Crisis (20 min)
 
+**Corresponding Activity:** [06-Stu_Crisis_Feelings](Activities/06-Stu_Crisis_Feelings)
+
 In this activity, students will use VADER to score the sentiment of news titles and text to verify whether they have the same sentiment. This activity includes a facilitated discussion in the last four to five minutes to talk about students' findings.
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_Crisis_Feelings/README.MD)
+* [README.md](Activities/06-Stu_Crisis_Feelings/README.MD)
 
 **Files:**
 
-* [crisis_feelings.ipynb](Activities/11-Stu_Crisis_Feelings/Unsolved/crisis_feelings.ipynb)
+* [crisis_feelings.ipynb](Activities/06-Stu_Crisis_Feelings/Unsolved/crisis_feelings.ipynb)
 
 ---
 
@@ -535,7 +537,7 @@ In this activity, students will use VADER to score the sentiment of news titles 
 
 **Files:**
 
-* [crisis_feelings.ipynb](Activities/11-Stu_Crisis_Feelings/Solved/crisis_feelings.ipynb)
+* [crisis_feelings.ipynb](Activities/06-Stu_Crisis_Feelings/Solved/crisis_feelings.ipynb)
 
 Open the solution and walk through the code, highlighting the following:
 
