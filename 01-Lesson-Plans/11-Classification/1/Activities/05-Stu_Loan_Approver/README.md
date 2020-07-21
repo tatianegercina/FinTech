@@ -1,4 +1,4 @@
-## Loan Approver
+## Build Loan Approver
 
 In this activity, you will build a logistic regression model that can be used to predict the loan status (approve or deny) given a set of input features.
 
@@ -21,5 +21,7 @@ In this activity, you will build a logistic regression model that can be used to
 8. Generate the confusion matrix for the test data predictions.
 
 9. Generate the classification report for the test data.
+
+---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
