@@ -26,6 +26,6 @@ In this activity, you will build a Support Vector Machine (SVM) classifier that 
 
   ![orig_loan_approv_metrics.png](Images/orig_loan_approv_metrics.png)
 
-
+---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
