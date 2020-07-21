@@ -451,7 +451,7 @@ Go to the slideshow and highlight the following:
 
   * Ask the class: Would they rather have a model that incorrectly flags diabetes for patients that didn't actually have the disease, or would they rather miss predicting the disease in some patients? What is better: the false-positive or false-negative?
 
-    * **Answer:** False positive (a model that incorrectly flags diabetes for patients that don't have the disease). Additional tests can be run to refine the prediction and filter out individuals who do not have diabetes. This way, those that might have it can be given the treatment they need.
+    * **Answer:** False positive (a model that incorrectly flags diabetes for patients that don't have the disease). Additional tests can be run to refine the prediction and filter out individuals who do not have diabetes. That way, people who have it can get the treatment they need.
 
 * Explain to students that in order to evaluate a model, they must do more than score/measure the model for accuracy. In addition to accuracy, a model must be measured for precision and recall, both of which can be used to eliminate false positives and false negatives.
 
