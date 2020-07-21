@@ -1,12 +1,12 @@
-# Unit 11—Risky Business
+# Risky Business
 
 ![Credit Risk](Images/credit-risk.jpg)
 
 ## Background
 
-Mortgages, student and auto loans and debt consolidation are just a few examples of credit and loans that people seek online. Peer-to-peer lending services such as Loans Canada or Mogo allow investors to loan other people money without using a bank. However, investors always want to mitigate risk, so you have been asked by a client to help them use machine learning techniques to predict credit risk.
+Mortgages, student and auto loans, and debt consolidation are just a few examples of credit and loans that people seek online. Peer-to-peer lending services such as Loans Canada and Mogo let investors loan people money without using a bank. However, because investors always want to mitigate risk, a client has asked that you help them predict credit risk with machine learning techniques.
 
-In this assignment, you will build and evaluate several machine learning models to predict credit risk using data you'd typically see from peer-to-peer lending services. Credit risk is an inherently imbalanced classification problem (the number of good loans is much larger than the number of at-risk loans), so you will need to employ different techniques for training and evaluating models with imbalanced classes. You will use the imbalanced-learn and Scikit-learn libraries to build and evaluate models using the two following techniques:
+In this assignment you will build and evaluate several machine learning models to predict credit risk using data you'd typically see from peer-to-peer lending services. Credit risk is an inherently imbalanced classification problem (the number of good loans is much larger than the number of at-risk loans), so you will need to employ different techniques for training and evaluating models with imbalanced classes. You will use the imbalanced-learn and Scikit-learn libraries to build and evaluate models using the two following techniques:
 
 1. [Resampling](#Resampling)
 2. [Ensemble Learning](#Ensemble-Learning)
@@ -27,15 +27,16 @@ In this assignment, you will build and evaluate several machine learning models 
 
 #### Resampling
 
-You will use the [imbalanced learn](https://imbalanced-learn.readthedocs.io) library to resample the Lending Club data and build and evaluate logistic regression classifiers using the resampled data.
+Use the [imbalanced learn](https://imbalanced-learn.readthedocs.io) library to resample the LendingClub data and build and evaluate logistic regression classifiers using the resampled data.
 
-You will:
+You need to:
 
 1. Oversample the data using the `Naive Random Oversampler` and `SMOTE` algorithms.
 
 2. Undersample the data using the `Cluster Centroids` algorithm.
 
-3. Over- and under-sample using a combination `SMOTEENN` algorithm.
+3. Over- and undersample using a combination `SMOTEENN` algorithm.
+
 
 For each of the above, you will need to:
 
@@ -47,19 +48,20 @@ For each of the above, you will need to:
 
 4. Print the `imbalanced classification report` from `imblearn.metrics`.
 
-Use the above to answer the following:
 
-> Which model had the best balanced accuracy score?
+Use the above to answer the following questions:
+
+* Which model had the best balanced accuracy score?
 >
-> Which model had the best recall score?
+* Which model had the best recall score?
 >
-> Which model had the best geometric mean score?
+* Which model had the best geometric mean score?
 
 #### Ensemble Learning
 
 In this section, you will train and compare two different ensemble classifiers to predict loan risk and evaluate each model. You will use the `balanced random forest classifier` and the `easy ensemble AdaBoost classifier`.
 
-Be sure to complete the following steps for each model:
+Complete the following steps for each model:
 
 1. Train the model using the quarterly data from LendingClub provided in the `Resource` folder.
 
@@ -71,7 +73,8 @@ Be sure to complete the following steps for each model:
 
 5. For the balanced random forest classifier only, print the feature importance sorted in descending order (most important feature to least important) along with the feature score.
 
-Use the above to answer the following:
+
+Use the above to answer the following questions:
 
 * Which model had the best balanced accuracy score?
 
@@ -85,7 +88,7 @@ Use the above to answer the following:
 
 ### Hints and Considerations
 
-Use the quarterly data from the LendingClub data that is provided in the `Resources` folder. Keep the file in the zipped format and use the starter code to read the file.
+Use the quarterly data from the LendingClub data provided in the `Resources` folder. Keep the file in the zipped format and use the starter code to read the file.
 
 Refer to the [imbalanced-learn](https://imbalanced-learn.readthedocs.io/en/stable/) and [scikit-learn](https://scikit-learn.org/stable/) official documentation for help with training the models. Remember that these models all use the model->fit->predict API.
 
