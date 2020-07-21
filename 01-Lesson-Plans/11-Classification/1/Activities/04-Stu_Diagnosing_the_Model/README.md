@@ -1,6 +1,6 @@
 ## Diagnosing the Model
 
-In a previous activity, you created a logistic regression model to predict whether or not someone has diabetes. Using the `confusion_matrix` and `classification_report` functions provided by **sklearn**, you will evaluate that model and determine its accuracy with an acceptable rate of false positives and false negatives. 
+In a previous activity, you created a logistic regression model to predict whether or not someone has diabetes. Using the `confusion_matrix` and `classification_report` functions provided by **sklearn**, you will evaluate that model and determine its accuracy and precision with an acceptable rate of false positives and false negatives. 
 
 ### Instructions
 
