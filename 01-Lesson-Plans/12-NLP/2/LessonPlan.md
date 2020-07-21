@@ -274,7 +274,6 @@ In this activity, students will learn how to retrieve news articles from the [Ne
 **Files:**
 
 * [sentiment_analysis_data.ipynb](Activities/03-Ins_Sentiment_Analysis_Data/Solved/sentiment_analysis_data.ipynb)
-* [keys.sh](Activities/03-Ins_Sentiment_Analysis_Data/Solved/keys.sh)
 
 Explain to students that there are several ways to retrieve data for sentiment analysis, such as web scraping, manual corpus creation from document digitization, document transformations (e.g., from PDF, word processors, or spreadsheets to raw text) and using APIs. Among these data-retrieval mechanisms, APIs is one of the most used, so in this activity, students will learn how to retrieve news articles using the [News API](https://newsapi.org/) and its [Python library](https://newsapi.org/docs/client-libraries/python).
 
@@ -293,7 +292,7 @@ Guide students on the account process creation by following these steps:
 
   ![News API account page](Images/news_api_account_details.png)
 
-Ask students to create an environment variable called `news_api` by adding their API key to the `keys.sh` script and executing it on the terminal window as they did on the APIs unit.
+Ask students to create an environment variable called `news_api` by adding their API key to a `.env` file.
 
 You are almost ready to code! Before starting the demo, ask students to install the [News API Python library](https://newsapi.org/docs/client-libraries/python) on their virtual environment by executing the following command.
 
@@ -632,8 +631,6 @@ In this activity, students will be introduced to tone analysis and how they can 
 **Files:**
 
 * [tone_analysis.ipynb](Activities/07-Ins_Tone_Analysis/Solved/tone_analysis.ipynb)
-
-* [keys.sh](Activities/07-Ins_Tone_Analysis/Solved/keys.sh)
 
 Start by opening the lesson slides, go to the Tone Analysis section, and highlight the following:
 
