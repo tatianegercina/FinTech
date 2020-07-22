@@ -20,7 +20,7 @@ By the end of today's class, students will be able to:
 
 * Identify the pros and cons of tree-based algorithms.
 
-* Understand the implications of overfitting and how boosting and bagging can help to deal with it.
+* Understand the implications of overfitting and how boosting and bagging can assist with it.
 
 * Apply gradient tree boosting models in classification problems.
 
@@ -54,7 +54,7 @@ By the end of today's class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Day 2 introduces students to tree-based algorithms and ensemble learners such as random forests and gradient boosted trees. Students will get experience applying this new family of machine learning algorithms to a variety of classification problems. This will also tie in with Day 3 as a potential solution to imbalanced classes, which will be seen later in the lesson.
+Day 2 introduces students to tree-based algorithms and ensemble learners, such as random forests and gradient boosted trees. Students will get experience applying this new family of machine learning algorithms to a variety of classification problems. This will also tie in with Day 3 as a potential solution to imbalanced classes, which will be seen later in the lesson.
 
 Open the lesson slides and welcome students to Day 2 by highlighting the following:
 
@@ -85,11 +85,11 @@ Set up this activity by explaining that before we dig into the tree-based algori
 
 Explain to students that while many datasets contain categorical features such as gender labels or risk categories, machine learning algorithms only work with numerical data.
 
-Explain to students that in order to use text or categorical data in machine learning algorithms, these kinds of data values should be converted to numerical representations.
+Tell students that in order to use text or categorical data in machine learning algorithms, these kinds of data values should be converted to numerical representations.
 
 Additionally, many machine learning algorithms and models are sensitive to input features with wide ranges of numbers. A best practice for preparing the numerical input data is to normalize all of the data to the same scale; this prevents any single feature from dominating the others.
 
-Tell students that we will use `Pandas` and the `preprocessing` library of `sklearn` to encode text and categorical data as numbers, and to normalize all numerical inputs to the same scale. These preprocessing steps are critical for many machine learning algorithms.
+Tell students that we will use Pandas and the preprocessing library of `sklearn` to encode text and categorical data as numbers, and to normalize all numerical inputs to the same scale. These preprocessing steps are critical for many machine learning algorithms.
 
 Open the Jupyter notebook and highlight the following:
 
