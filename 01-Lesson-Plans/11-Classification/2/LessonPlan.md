@@ -717,7 +717,7 @@ The data is loaded into a Pandas DataFrame and then scaled and split into traini
 
   * `n_estimators`: This is the number of random forest to be created by the algorithm. In general, a higher number makes the predictions stronger and more stable. However, a very large number can result in higher training time. A good approach is to start low and increase the number if the model performance is not adequate.
 
-    * A [research study](https://doi.org/10.1007/978-3-642-31537-4_13) suggests that a range between `64` and `128` trees in a forest could be used for initial modeling.
+    * A [research study](https://doi.org/10.1007/978-3-642-31537-4_13) suggests that a range between `64` and `128` trees in a forest could be used for initial modelling.
 
   * `random_state`: This parameter defines the seed used by the random number generator. It is important to define a random state when comparing multiple models.
 
