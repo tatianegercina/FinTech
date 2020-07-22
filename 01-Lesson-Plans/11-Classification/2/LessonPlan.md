@@ -557,7 +557,7 @@ Open the solution, and live code the review by highlighting the following:
   X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
   ```
 
-* In order to improve algorithm's performance, the features data is scaled using the `StandardScaler`  method from `sklearn`.
+* In order to improve the algorithm's performance, the features data is scaled using the `StandardScaler`  method from `sklearn`.
 
   ```python
   # Create the StandardScaler instance
@@ -619,7 +619,7 @@ Image(graph.create_png())
 
 * Having imbalanced target classes is a common problem in classification machine learning algorithms when there is a disproportionate ratio of observations in each class.
 
-Explain to students that they will learn how to deal with imbalanced classes in the next class and that there are other tree algorithms such as ensemble learners that can be better at modeling imbalanced classes.
+Explain to students that they will learn how to deal with imbalanced classes in the next class, and that there are other tree algorithms such as ensemble learners that can be better at modelling imbalanced classes.
 
 Answer any questions before moving on.
 
