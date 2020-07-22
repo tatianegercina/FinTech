@@ -246,7 +246,7 @@ Answer any questions before moving on.
 
 ### 3. Student Do: Encoding Categorical Data for Machine Learning (10 min)
 
-In this activity, students are tasked with encoding some categorical and text features of a dataset that contains `2097` loan applications. In forthcoming activities, they will use this dataset to predict defaulted loan applications.
+In this activity, students are tasked with encoding some categorical and text features of a dataset that contains 2,097 loan applications. In forthcoming activities, they will use this dataset to predict defaulted loan applications.
 
 **Instructions:**
 
