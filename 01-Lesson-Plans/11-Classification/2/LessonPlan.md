@@ -327,11 +327,11 @@ Explain to students that in linear models, the relationship among input variable
 
 * Predicting the price of a house based on its size is an example of a linear problem. This is because, as a general rule, the size of the house is directly proportional to the price of the house.
 
-* Predicting if a credit application is going to be fraudulent or not may be an example of a non-linear problem due to the complex relationship between the input features and the output prediction.
+* Predicting if a credit application is going to be fraudulent or not may be an example of a non-linear problem, due to the complex relationship between the input features and the output prediction.
 
 Explain that a linear model fit to non-linear data would only be a good approximation of points near the line and a bad approximation for points that vary from the line.
 
-Explain to students that the most used tree-based algorithms are: decision trees, random forests, and gradient boosting trees.
+Explain to students that the most used tree-based algorithms are decision trees, random forests, and gradient boosting trees.
 
 * `sklearn` has two modules that implement tree-based algorithms that we will be covering today.
 
