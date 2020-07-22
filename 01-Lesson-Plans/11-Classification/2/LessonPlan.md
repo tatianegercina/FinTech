@@ -908,9 +908,9 @@ Open the unsolved file, and live code the following. Make sure to touch upon the
 
 * It is important to remember that boosting involves a set of meta-algorithms that are used to improve the performance of weak learners.
 
-* There are a number of algorithms/libraries available. This activity, and the next, will focus on how to use the sklearn `GradientBoostingClassifier` algorithm.
+* There are a number of algorithms/libraries available. This activity, and the next, will focus on how to use the `sklearn` `GradientBoostingClassifier` algorithm.
 
-* The `GradientBoostingClassifier` is a part of the `sklearn.ensemble` package. Like any other sklearn library, it has to be imported into the Python environment.
+* The `GradientBoostingClassifier` is a part of the `sklearn.ensemble` package. Like any other `sklearn` library, it has to be imported into the Python environment.
 
     ```python
     import pandas as pd
