@@ -1,6 +1,6 @@
 # Student Do: Encoding Categorical Data for Machine Learning
 
-In this activity, you are tasked with encoding some categorical and text features of a dataset that contains `2,097` loan applications. In later activities, you will use this dataset to predict fraudulent transactions.
+In this activity, you are tasked with encoding some categorical and text features of a dataset that contains 2,097 loan applications. In later activities, you will use this dataset to predict fraudulent transactions.
 
 ## Dataset Description
 
