@@ -820,7 +820,7 @@ Explain to students that defining the `random_state` parameter is important to c
 
   ![Random forest evaluation results](Images/stu-random-forest-1.png)
 
-Explain to students that it can be observed that model´s accuracy is better than the one obtained using decision trees (`0.89`), in combination to the confusion matrix results and the precision and recall values, we could conclude that using random forest is better to predict fraudulent loan applications.
+Tell students that it can be observed that the model´s accuracy is better than the one obtained using decision trees (`0.89`), in combination to the confusion matrix results and the precision and recall values, we could conclude that using random forest is better to predict fraudulent loan applications.
 
 * The features importance is retrieved from the random forest model using the `feature_importances_` attribute. Finally, the top 10 most important features are displayed.
 
