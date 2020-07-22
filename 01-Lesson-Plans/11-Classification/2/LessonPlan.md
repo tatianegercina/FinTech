@@ -631,21 +631,19 @@ In this activity, students will be introduced to ensemble learning, weak learner
 
 Navigate to the Introduction to Ensemble Learning section of the slides. Highlight the following:
 
-* Tell the class that if they took all the classification models they have used thus far and compared them, they'd find that some algorithms performed better than others, which is to be expected.
+* Tell the class that if they took all the classification models they've used thus far and compared them, they'd find that some algorithms performed better than others, which is to be expected.
 
-  * Indicate that even though some of the other algorithms performed worse, they were still able to execute independently, and classify labels with decent accuracy.
+  * Indicate that even though some of the other algorithms performed worse, they were still able to execute independently and classify labels with decent accuracy.
 
-  * Explain to students that they will come across algorithms that actually fail at learning adequately. These algorithms/classifiers are considered weak learners.
+  * Tell students that they will come across algorithms that actually fail at learning adequately. These algorithms/classifiers are considered weak learners.
 
-Communicate that weak learners are a consequence of limited data to learn from. This may mean too few features, or the data provided does not allow for data points to be classified.
+  * Communicate that weak learners are a consequence of limited data to learn from. This may mean too few features, or the data provided does not allow for data points to be classified.
 
 * Provide more context around weak learners by defining them as algorithms/classifiers that are unable to learn from the data they are being provided accurately. This is why their predictions are only a little better than random chance. While the classifiers can make predictions, they are not representative of the relationship between inputs and targets.
 
 * Weak learners are described as being only slightly better than random chance.
 
-Explain to students that weak learners are still valuable in machine learning.
-
-* Weak learners are valuable because there are models that can combine many weak learners to create a more accurate and robust prediction engine. A single weak learner will make inaccurate predictions. Combined weak learners can perform just as well as any other strong learner.
+* Explain to students that weak learners are still valuable in machine learning, because there are models that can combine many weak learners to create a more accurate and robust prediction engine. A single weak learner will make inaccurate predictions. Combined weak learners can perform just as well as any other strong learner.
 
   * Classify this type of learning as an example of ensemble learning. Ensemble models help improve accuracy and robustness, as well as decrease variance.
 
@@ -665,9 +663,9 @@ Continue the presentation by introducing the random forest algorithm and highlig
 
 * In a random forest, each tree is much simpler because it is built from a subset of the data.
 
-* These simple trees are created by randomly sampling the data and creating a decision tree for only that small portion of data. This is known as a weak classifier, because it is only trained on a small piece of the original data and by itself is only slightly better than a random guess. However, many _slightly better than average_ small decision trees can be combined to create a strong classifier, which has much better decision-making power.
+* These simple trees are created by randomly sampling the data and creating a decision tree for just that small portion of data. This is known as a weak classifier, because it is only trained on a small piece of the original data, and by itself is only slightly better than a random guess. However, many _slightly better than average_ small decision trees can be combined to create a strong classifier, which has much better decision-making power.
 
-* Some of the benefits of the random forest algorithm are:
+* Some benefits of the random forest algorithm are:
 
   * It is robust against overfitting, because all of those weak classifiers are trained on different pieces of the data.
 
