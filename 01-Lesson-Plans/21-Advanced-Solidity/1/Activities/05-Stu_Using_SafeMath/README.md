@@ -9,7 +9,7 @@ In this activity, you will implement the SafeMath library and use it for all mat
 * Add the following import statement just below the `pragma` and above the `contract` definition:
 
   ```solidity
-  import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
+  import "github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol";
   ```
 
   * You can find this URL later by a quick internet search for "OpenZeppelin SafeMath" and copying the "raw" URL to the contract from GitHub. You may do this with any other contract library in the future as well.

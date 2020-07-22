@@ -478,7 +478,7 @@ Import the SafeMath library at above the contract definition like so:
 ```solidity
 pragma solidity ^0.5.0;
 
-import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
+import "github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol";
 
 contract ArcadeToken {
     // ...
@@ -494,7 +494,7 @@ Next, in the first line of the contract, add `using SafeMath for uint;` to link 
 ```solidity
 pragma solidity ^0.5.0;
 
-import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
+import "github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol";
 
 contract ArcadeToken {
     using SafeMath for uint;
