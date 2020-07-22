@@ -93,7 +93,7 @@ Tell students that we will use Pandas and the preprocessing library of `sklearn`
 
 Open the Jupyter notebook and highlight the following:
 
-* On the _initial imports_ cell, two functions from the `preprocessing` library of `sklearn` are imported.
+* On the _initial imports_ cell, two functions from the preprocessing library of `sklearn` are imported.
 
   ```python
   from sklearn.preprocessing import LabelEncoder, StandardScaler
@@ -123,7 +123,7 @@ Continue the demo by loading the dataset on the `loans_df` DataFrame and highlig
 
 * There are different methods to deal with text and categorical data. One of the simplest is _integer encoding_, where every different text value or label is represented as an integer.
 
-* The `preprocessing` library of `sklearn` contains some functions to encode text labels.
+* The preprocessing library of `sklearn` contains some functions to encode text labels.
 
 * The `LabelEncoder` function encodes text labels with integer values between `0` and the total number of classes minus `1`.
 
