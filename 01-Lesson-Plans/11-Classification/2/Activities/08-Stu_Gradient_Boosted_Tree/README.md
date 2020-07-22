@@ -14,7 +14,7 @@ It's time to power up your decision tree machine-learning algorithm with a boost
 
 5. Use the `predict` function to make predictions.
 
-6. Use the `accuracy_score` function to check the accuracy of the predictions. Hint: `accuracy_score(y_test, predictions)`.
+6. Use the `accuracy_score` function to check the accuracy of the predictions. Hint: `accuracy_score (y_test, predictions)`.
 
 7. Generate a confusion matrix and classification report.
 
