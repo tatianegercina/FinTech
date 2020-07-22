@@ -900,7 +900,7 @@ Ask students if they have any questions before moving on.
 
 ### 15. Instructor Do: Gradient Boosted Tree (10 min)
 
-The instructor will provide a demonstration on how to use boosting in sklearn to improve the performance of a decision tree.
+The instructor will provide a demonstration on how to use boosting in `sklearn` to improve the performance of a decision tree.
 
 **File:** [gradient_boosted_tree.ipynb](Activities/07-Ins_Gradient_Boosted_Tree/Solved/gradient_boosted_tree.ipynb)
 
@@ -1040,7 +1040,7 @@ Ask if there any questions before moving on.
 
 ### 16. Student Do: Turbo Boost (10 min)
 
-Students will complete an MSMD activity where they use the sklearn `GradientBoostedClassifier` boosting algorithm to detect fraudulent loan applications using ensemble learning.
+Students will complete an MSMD activity where they use the `sklearn` `GradientBoostedClassifier` boosting algorithm to detect fraudulent loan applications using ensemble learning.
 
 **Instructions:**
 
