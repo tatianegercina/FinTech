@@ -36,7 +36,7 @@ In this activity, you will explore how tree-based algorithms can be used to iden
 
 ### Analysis Question
 
-10. Finally, analyze the model's evaluation results and answer the following question: Would you trust in this model to deploy a loan application approval solution in a bank?
+10. Finally, analyze the model's evaluation results and answer the following question: Would you trust this model to deploy a loan application approval solution in a bank?
 
 ----
 
