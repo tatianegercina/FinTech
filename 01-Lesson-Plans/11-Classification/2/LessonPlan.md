@@ -1108,7 +1108,7 @@ Ask a couple of students to provide answers to the question. Give feedback by co
 
 * **Politics:** Vote intention, party affinity.
 
-* **Health:** Trials tests, ills diagnosis.
+* **Health:** Trials tests, illness diagnosis.
 
 * **Security:** Intruders detection, predictive maintenance.
 
