@@ -30,7 +30,7 @@ In this activity, you will explore how random forest algorithms can be used to i
 
 ### Feature Importance
 
-9. In this section, you are asked to fetch the features' importance from the random forest model and display the top 10 most important features.
+9. Now fetch the features' importance from the random forest model, and display the top 10 most important features.
 
 ### Analysis Questions
 
@@ -40,6 +40,6 @@ In this activity, you will explore how random forest algorithms can be used to i
 
 * **Question 2:** What are your insights on the top 10 features?
 
-
+---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
