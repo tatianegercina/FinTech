@@ -629,7 +629,7 @@ Answer any questions before moving on.
 
 In this activity, students will be introduced to ensemble learning, weak learners, and random forests.
 
-Navigate to the Introduction to Ensemble Learning section of the slides. Highlight the following:
+Go to the slideshow and navigate to the Introduction to Ensemble Learning section. Highlight the following:
 
 * Tell the class that if they took all the classification models they've used thus far and compared them, they'd find that some algorithms performed better than others, which is to be expected.
 
