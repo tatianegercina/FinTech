@@ -826,7 +826,7 @@ Tell students that it can be observed that the model´s accuracy is better than 
 
   ![Top 10 important features](Images/stu-random-forest-2.png)
 
-Engage the class by calling on a couple of students to share their insights in the Analysis Questions section. Guiding questions are provided below.
+Engage students by calling on a few people to share their insights from the Analysis Questions section. Guiding questions are provided below.
 
 * **Question 1:** Would you trust this model to deploy a fraud detection solution in a bank?
 
@@ -848,7 +848,7 @@ Answer any questions before moving on.
 
 Students are given a formal lecture on boosting, bagging, and its benefits/application in advanced analytics. Guided questions are provided to promote student engagement and to re-enforce content.
 
-Go to the slideshow and navigate to the boosting and bagging section, highlighting the following:
+Go to the slideshow and navigate to the Boosting and Bagging section, highlighting the following:
 
 * Boosting is a set of algorithms as well as the process of combining a set of weak learners into a strong learner.
 
@@ -886,11 +886,11 @@ Highlight to students that boosting is not the only way to make a weak learner m
 
 If time remains, engage students with the questions below. 
 
-* Ask if there is a volunteer who would like to summarize the difference between boosting and bagging algorithms.
+* Ask a student to summarize the difference between boosting and bagging algorithms.
 
   * **Answer:** Bagging averages predictions from multiple models and/or multiple re-samples of the data. Boosting is similar, but iteratively resamples more of those observations with previously higher error rates. Both methods average model predictions in order to train the best overall model.
 
-* Ask if another volunteer would like to explain what boosting and bagging algorithms are used for.
+* Ask another student to explain what boosting and bagging algorithms are used for.
 
   * **Answer:** Boosting and bagging algorithms are used to improve the accuracy and robustness of weak learners. Each class of algorithm converts weak learners into strong learners through ensemble learning.
 
@@ -1100,7 +1100,7 @@ Go to the lesson slides, navigate to The Trees vs. The World section, and start 
 
 * Why do you think it is worth it to learn about classification algorithms?
 
-Ask a couple of students to answer the question. Provide feedback by continuing with the first slide of the section, and mention that classification algorithms are a matter worthy of study, since classification is a multidisciplinary challenge.
+Ask a couple of students to provide answers to the question. Give feedback by continuing with the first slide of the section, and mention that classification algorithms are a matter worthy of study, since classification is a multidisciplinary challenge.
 
 * **Finance and Banking:** Fraud detection, money laundering, credit risk assessment.
 
@@ -1149,7 +1149,7 @@ Close the discussion by asking a final question:
 
 * Which algorithm should I use for classification?
 
-Ask for one or two volunteers to answer the question, and conclude by highlighting the following:
+Ask one or two volunteers to answer the question, and conclude by highlighting the following:
 
 * There is no definitive answer to this question, but the best answer is _it depends_.
 
