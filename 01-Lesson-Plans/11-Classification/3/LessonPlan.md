@@ -229,7 +229,7 @@ Continue in the slides to the undersampling slide.
 
 * In cluster centroid undersampling, the algorithm first creates `n` clusters in the majority class training data using the K-means clustering strategy, where `n` is equal to the number of minority class training instances, and then takes the centroids of those clusters to be the majority class training set. This is meant to ensure that the sampled data is "representative" of the majority set, as compared to a random set.
 
-Pause for students' questions before moving on to the next activity.
+Address any questions before moving on to the next activity.
 
 ### 10. Student Do: Undersampling (15 min)
 
@@ -317,11 +317,11 @@ Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for 
 
 ### 15. Instructor Review: Combination Sampling (5 min)
 
+Open the solved notebook and go through the code. Since the structure of this activity is very similar to the oversampling activity, you should focus on the evaluation metrics from the combination sampling method.
+
 **Files:**
 
 [combination_sampling.ipynb](Activities/07-Stu_Do_Combination_Sampling/Solved/combination_sampling.ipynb)
-
-Open the solved notebook and go through the code. Since the structure of this activity is very similar to the oversampling activity, you should focus on the evaluation metrics from the combination sampling method.
 
 ### 16. Instructor Do: Precision-Recall Curve (10 min)
 
@@ -331,13 +331,13 @@ Open the solved notebook and go through the code. Since the structure of this ac
 
 Navigate to the Precision-Recall Curve section of the slideshow and cover the following points.
 
-* In addition to changing the training sample to deal with imbalanced classes, we can also change the models we use. Ensemble learners, which overweight instances of data that are infrequently seen or hard to classify; are better suited to imbalanced data. When we want to compare multiple models, classification metrics can become hard to use, as different models have different strengths.
+* In addition to changing the training sample to deal with imbalanced classes, we can also change the models we use. Ensemble learners, which overweight instances of data that are infrequently seen or hard to classify, are better suited to imbalanced data. When we want to compare multiple models, classification metrics can become hard to use, as different models have different strengths.
 
-* One alternative is the precision recall curve.
+* One alternative is the precision-recall curve.
 
 * Recalling that models classify binary outcomes by setting a threshold for the likelihood of the positive class-this is usually set at 50%, but can be higher or lower, depending on whether false positives or negatives are more costly.
 
-* The precision recall curve plots the precision and recall scores for a given model at different thresholds. For almost all models, an increase in precision (the % of predicted positives that are classified correctly) leads to a fall in recall (the % of actual true positives that are correctly classified).
+* The precision-recall curve plots the precision and recall scores for a given model at different thresholds. For almost all models, an increase in precision (the % of predicted positives that are classified correctly) leads to a fall in recall (the % of actual true positives that are correctly classified).
 
 * A model that has a curve which curves above another model (or, to put it another way, has a greater area under its PR curve), is the superior model.
 
@@ -379,7 +379,7 @@ Dal Pozzolo, A., Caelen, O., Le Borgne, Y., Waterschoot, S., Bontempi, G. (2014)
 
 Dal Pozzolo, A., Boracchi, G., Caelen, O., Alippi, C., Bontempi, G., (2018). Credit card fraud detection: a realistic modeling and a novel learning strategy, IEEE transactions on neural networks and learning systems, 29 (8), 3784-3797. IEEE.
 
-Dal Pozzolo, A., Adaptive Machine learning for credit card fraud detection. ULB MLG (PhD thesis, supervised by G. Bontempi).
+Dal Pozzolo, A., Adaptive Machine learning for credit card fraud detection. (2015) ULB MLG (PhD thesis, supervised by G. Bontempi).
 
 Carcillo, F., Dal Pozzolo, A., Le Borgne, Y., Caelen, O., Mazzer, Y., Bontempi, G. (2018). Scarff: A scalable framework for streaming credit card fraud detection with Spark. Information fusion. 41, 182-194. Elsevier.
 
@@ -397,7 +397,7 @@ Fabrizio, C., Le Borgne, Y., Olivier C., Oblé, F., Bontempi, G. (2019). Combini
 
 For this review, ask students which methods they tried, both in terms of sampling strategies, as well as different algorithms. Which ones worked the best? Which didn't work so well? Which results were surprising?
 
-After surveying the class, open the solved notebook and walk through our solution. Stress that this is only one (most likely non-optimal) way of solving the problem.
+After surveying the class, open the solved notebook and walk through the solution. Stress that this is only one way (most likely non-optimal) of solving the problem.
 
 * We found the SMOTEENN sampling method to generate the best classification metrics when restricting the model to logistic regression. Note, however, that oversampling also produced high precision and recall scores for both classes, indicating that fraudulent and non-fraudulent transactions are relatively easily separable using these features.
 
