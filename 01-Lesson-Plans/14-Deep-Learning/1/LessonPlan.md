@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's class introduces students to neural networks, a new type of machine learning algorithm that can be used for classification and regression problems, but are uniquely able to learn very complex, nonlinear models. Inspired by and analagous to neurons in the human brain, neural networks scale in similar ways to adapt to the complex environments in which they operate. While flexible in their applications, neural networks are not necessarily meant to be "plug-and-play." From preprocessing input data to constructing a neural network architecture, students will learn the process to build and use neural networks successfully.
+Today's class introduces students to neural networks, a new type of machine learning algorithm that can be used for classification and regression problems, but are uniquely able to learn very complex, nonlinear models. Inspired by and analogous to neurons in the human brain, neural networks scale in similar ways to adapt to the complex environments in which they operate. While flexible in their applications, neural networks are not necessarily meant to be "plug-and-play." From preprocessing input data to constructing a neural network architecture, students will learn the process to build and use neural networks successfully.
 
 ### Class Objectives
 
@@ -687,6 +687,13 @@ In this activity, students will train a neural network model to predict whether 
 
 Walk through the solution and highlight the following:
 
+* Since we want to test different parameter combinations in our models, setting the random seed of Tensor flow to allow results reproducibility is a common practice that helps to reduce unexpected variations across models execution.
+
+  ```python
+  # Set a random seed for TensorFlow to allow reproducible testing results
+  tf.random.set_seed(126)
+  ```
+
 * After the data is read in a DataFrame, it is split and scaled using the `StandardScaler()` function from `sklearn`.
 
 * The neural network is defined, adding two layers as follows.
@@ -711,25 +718,25 @@ Walk through the solution and highlight the following:
 
 * The accuracy is not great, but it also is not harmful enough to discard the model. It could be used in a real world scenario to run a pilot project.
 
-Explain to students that for the challenge section, different approaches could be taken. For this demo, the `tanh` activation function is used in the output layer, and the model is trained with `50` epochs.
+Explain to students that for the challenge section, different approaches could be taken. For this demo, the `tanh` activation function is used in the hidden layer, and the `hard_sigmoid` function is used in the output layer. The model uses `120` hidden nodes, and it's trained with `100` epochs.
 
 ```python
 # Define the model
 number_inputs = 23
-number_hidden_nodes = 69
+number_hidden_nodes = 120
 
 nn_2 = Sequential()
-nn_2.add(Dense(units=number_hidden_nodes, input_dim=number_inputs, activation='relu'))
-nn_2.add(Dense(units=1, activation='tanh'))
+nn_2.add(Dense(units=number_hidden_nodes, input_dim=number_inputs, activation="tanh"))
+nn_2.add(Dense(units=1, activation="hard_sigmoid"))
 
 # Compile model
-nn_2.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+nn_2.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
 
 # Fit the model
-model_2 = nn_2.fit(X_train_scaled, y_train, epochs=50)
+model_2 = nn_2.fit(X_train_scaled, y_train, epochs=100)
 ```
 
-* As it can be seen in the model's evaluation, the accuracy improves a little bit. Having more epochs does not always make accuracy better.
+* As can be seen in the model's evaluation, the accuracy improves a little bit. Changing the activation functions and adding more hidden nodes seems to be a good approach to enhance our model.
 
 Answer any questions before moving on.
 
