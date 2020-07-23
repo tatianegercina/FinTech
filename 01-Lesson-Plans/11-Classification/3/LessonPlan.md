@@ -39,8 +39,9 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students back to Day 3 of classification and machine learning! We've reviewed some techniques on how to create classification models, and are now ready to take the next step and talk about real-world problems. A prominent issue in many classification tasks is class imbalance, which occurs when the training data used to build a classification model is unevenly split. Fraud detection, churn prediction, and medical diagnoses are a few examples; ask students if they can think of any more. We will discuss the challenges this creates for model creation and evaluation, and then review "how-to" techniques for dealing with these challenges.
-But first, let's do a quick review of concepts from Day 1 of the unit, where we discussed the confusion matrix and some metrics for evaluating models.
+Welcome students back to Day 3 of classification and machine learning! We've reviewed some techniques on how to create classification models, and are ready to dive into some real-world problems. A prominent issue with many classification tasks is class imbalance, which occurs when the training data used to build a classification model is unevenly split. Fraud detection, churn prediction, and medical diagnoses are a few examples; ask students if they can think of any more. We will discuss the challenges this creates for model creation and evaluation, and review "how-to" techniques for dealing with these challenges.
+
+But first, let's do a quick review of concepts from Day 1 of the unit, where we covered the confusion matrix and some metrics for evaluating models. Open the slideshow, navigate to the Review of Classification Metrics section, and review the slides with the class. 
 
 **Files:**
 
@@ -48,7 +49,7 @@ But first, let's do a quick review of concepts from Day 1 of the unit, where we 
 
 ### 2. Instructor Review: Model Evaluation (10 min)
 
-This activity will give students a chance to refresh the concepts of model evaluation, which we first went over on the first day of this unit.
+This activity gives students a chance to refresh the concepts of model evaluation, which we covered on Day 1 of this unit.
 
 **Files:**
 
@@ -56,7 +57,7 @@ This activity will give students a chance to refresh the concepts of model evalu
 
 Walk through the first few blocks of the notebook.
 
-* We created two classes in this data, with two important features. First, one class is much larger than the other. Second, the classes have significant variation, so neither is cleanly distinguishable from the other.
+* We created two classes in this data, with two important features. First, one class is much larger than the other. Second, the classes have significant variation, so neither is clearly distinguishable from the other.
 
  ![eval_1.png](Images/eval_1.PNG)
 
