@@ -165,7 +165,9 @@ Answer any questions before moving on to the next activity.
 
 ### 7. Student Do: More Loans (15 min)
 
-In this activity, students will practice using random and SMOTE oversampling in combination with logistic regression to predict if someone is likely to default on their credit card loans in a given month.
+Students will practice using random and SMOTE oversampling, in combination with logistic regression, to predict the likelihood of someone defaulting on their credit card loans in a given month.
+
+Introduce students to the dataset they will use for this activity. Each row represents a person with a credit card account. ln_balance_limit is the log of the maximum balance they can have on the card; 1 is female, 0 is male. The education is denoted: 1 = graduate school; 2 = university; 3 = high school; 4 = others; 1 is married and 0 single for marriage; default_next_month is whether the person defaults in the following month (1 yes, 0 no).
 
 **Files:**
 
@@ -177,15 +179,13 @@ In this activity, students will practice using random and SMOTE oversampling in 
 
 Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of the probability of default of credit card clients. Expert Systems with Applications, 36(2), 2473-2480. (https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients#)
 
-Introduce students to the dataset they will use for this activity. Each row represents a person with a credit card account. ln_balance_limit is the log of the maximum balance they can have on the card; 1 is female, 0 is male. The education is denoted: 1 = graduate school; 2 = university; 3 = high school; 4 = others; 1 is married and 0 single for marriage; default_next_month is whether the person defaults in the following month (1 yes, 0 no).
-
 ### 8. Instructor Review: More Loans (5 min)
 
 **Files:**
 
 [more_loans.ipynb](Activities/04-Stu_Do_More_Loans/Solved/more_loans.ipynb)
 
-Since this activity is almost a replica of the oversampling demonstration, you can likely go through this review quickly.
+Since this activity is almost a replica of the oversampling demo, you will likely be able to go through this review quickly.
 
 * First, we need to identify the variable that we are trying to predict, which is whether a person defaults on their credit card loan in the next month. This variable is default_next_month. We create the dependent and independent variables in the following code:
 
@@ -207,9 +207,9 @@ SMOTE Oversampling
 
 ![stovers_2](Images/stovers_2.PNG)
 
-Ask students how they interpreted the evaluation metrics. What are some reasons why the evaluation metrics using both oversampling methods might both be relatively low?
+Ask students how they interpreted the evaluation metrics. What are some reasons why the evaluation metrics using both oversampling methods might be relatively low?
 
-* SMOTE is not guaranteed to outperform random oversampling in all applications. The threat of overfitting due to repeated samples with random oversampling is not as great when the imbalance in classes is not as extreme, as is the case in this data set. Moreover, the fact that SMOTE samples are mostly artificial can actually decrease model performance if the generated data does not have the same structure as the observed data does.
+* SMOTE is not guaranteed to outperform random oversampling in all applications. The threat of overfitting due to repeated samples with random oversampling is not as great when the imbalance in classes is not as extreme, as is the case in this data set. Moreover, the fact that SMOTE samples are mostly artificial can actually decrease model performance, if the generated data does not have the same structure as the observed data does.
 
 ### 9. Instructor Do: Undersampling (10 min)
 
