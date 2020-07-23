@@ -56,6 +56,8 @@ If using Anaconda Prompt, the commands to set your environmental variables are:
 
 **Note:** Unless you are setting these environment variables globally or permanently, they will need to be set each time you want to access the Kraken API via the ccxt library.
 
+**Note** If you are having API request issues with kraken, as an alternative go to the [Bitfinex Cryptocurrency Exchange](https://bitfinex.com/) and sign up for an account.You can requet a simple API key in the same manner.
+
 ## Troubleshooting
 
 It can be frustrating when packages do not install correctly, therefore use the below approaches to troubleshoot any installation or usage issues.
