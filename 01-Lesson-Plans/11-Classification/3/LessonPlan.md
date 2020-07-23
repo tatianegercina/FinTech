@@ -81,7 +81,7 @@ Ask students to evaluate the performance of this model. How do they think it did
 
 ### 3. Student Do: Hypothetical Models (15 min)
 
-In this activity, students will discuss the relative importance of false positives/negatives and weigh the pros and cons of using each evaluation metric for a set of hypothetical classification models.
+In this activity, students will discuss the relative importance of false positives/negatives, and weigh the pros and cons of using each evaluation metric for a set of hypothetical classification models.
 
 **Instructions:**
 
@@ -89,7 +89,7 @@ In this activity, students will discuss the relative importance of false positiv
 
 ### 4. Instructor Do: Review Hypothetical Models (10 min)
 
-Open the slideshow, navigate to the Hypothetical Models slide, and walk through each scenario with the class.
+Open the slideshow, navigate to the Hypothetical Models slide, and walk through each of the five scenarios with the class.
 
 Pick a volunteer to talk the class through each scenario before outlining the answers below.
 
