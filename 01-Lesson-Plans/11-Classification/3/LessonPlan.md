@@ -165,7 +165,7 @@ Answer any questions before moving on to the next activity.
 
 ### 7. Student Do: More Loans (15 min)
 
-Students will practice using random and SMOTE oversampling, in combination with logistic regression, to predict the likelihood of someone defaulting on their credit card loans in a given month.
+In this activity, students will practice using random and SMOTE oversampling (in combination with logistic regression) to predict the likelihood of someone defaulting on their credit card loans in a given month.
 
 Introduce students to the dataset they will use for this activity. Each row represents a person with a credit card account. ln_balance_limit is the log of the maximum balance they can have on the card; 1 is female, 0 is male. The education is denoted: 1 = graduate school; 2 = university; 3 = high school; 4 = others; 1 is married and 0 single for marriage; default_next_month is whether the person defaults in the following month (1 yes, 0 no).
 
