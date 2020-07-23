@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's lesson focuses on a problem that students often encounter in classification problems: imbalanced data. This occurs when the classes being predicted are represented unequally in the data. For example, in most fraud detection problems, transactions involving fraud are much more rare than non-fraudulent transactions. This problem will be approached in two ways-through careful examination of how we use model evaluation metrics, and deliberately under or oversampling to make the training data more equally proportioned. Students will get opportunities in today's class to practice both theory and implementation.
+Today's lesson will focus on a common issue that students face with classification problems: imbalanced data. This occurs when the classes being predicted are represented unequally in the data. For example, in most fraud detection problems, transactions involving fraud are much more rare than non-fraudulent transactions. This problem will be approached in two ways-through careful examination of how we use model evaluation metrics, and deliberately under or oversampling to make the training data more equally proportioned. Students will get opportunities in today's class to practice both theory and implementation.
 
 ### Class Objectives
 
@@ -39,9 +39,8 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome the students back to the third day of classification and machine learning! Now that we have talked about some techniques to create classification models, we are ready to take the next step and talk about real-world problems. One prominent problem in many classification tasks is class imbalance, which occurs when the training data used to build a classification model is unevenly split. Examples include fraud detection, churn prediction, and medical diagnoses. Ask students if they can think of any more. We will talk about the challenges this creates for model creation and evaluation, and then get into "how-to" techniques for dealing with these challenges.
-
-But first we will start with a quick review of concepts from Day 1 of the unit, where we discussed the confusion matrix and some metrics for evaluating models.
+Welcome students back to Day 3 of classification and machine learning! We've reviewed some techniques on how to create classification models, and are now ready to take the next step and talk about real-world problems. A prominent issue in many classification tasks is class imbalance, which occurs when the training data used to build a classification model is unevenly split. Fraud detection, churn prediction, and medical diagnoses are a few examples; ask students if they can think of any more. We will discuss the challenges this creates for model creation and evaluation, and then review "how-to" techniques for dealing with these challenges.
+But first, let's do a quick review of concepts from Day 1 of the unit, where we discussed the confusion matrix and some metrics for evaluating models.
 
 **Files:**
 
