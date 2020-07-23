@@ -432,6 +432,7 @@ Move to the `fetch_data` function and prompt the class to help complete the func
 def fetch_data():
     """Fetches the latest prices."""
     print("Fetching data...")
+    load_dotenv()
     kraken_public_key = os.getenv("KRAKEN_PUBLIC_KEY")
     kraken_secret_key = os.getenv("KRAKEN_SECRET_KEY")
     kraken = ccxt.kraken({"apiKey": kraken_public_key, "secret": kraken_secret_key})
@@ -872,6 +873,7 @@ Open the notebook and quickly show that hvplot has a special data streaming inte
 
 ```python
 import os
+from dotenv import load_dotenv
 import ccxt
 import pandas as pd
 import hvplot.streamz
@@ -942,6 +944,7 @@ Use the Rolling Window section to explain that a rolling window of data can be u
 * New data is fetched from the Kraken exchange via the CCXT API and processed as a new DataFrame `df` that matches the format of the `example` DataFrame. This new DataFrame is then emitted to the Stream, and hvplot uses the streaming DataFrame to update the plot.
 
   ```python
+  load_dotenv()
   kraken = ccxt.kraken(
       {"apiKey": os.getenv("kraken_key"), "secret": os.getenv("kraken_secret")}
   )

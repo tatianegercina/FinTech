@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 import numpy as np
 import pandas as pd
 import ccxt
@@ -75,6 +76,7 @@ def build_dashboard(data, signals):
 
 def fetch_data():
     """Fetches the latest prices."""
+    load_dotenv()
     kraken_public_key = os.getenv("KRAKEN_PUBLIC_KEY")
     kraken_secret_key = os.getenv("KRAKEN_SECRET_KEY")
     kraken = ccxt.kraken({"apiKey": kraken_public_key, "secret": kraken_secret_key})
@@ -84,6 +86,24 @@ def fetch_data():
     df = pd.DataFrame({"close": [close]})
     df.index = pd.to_datetime([datetime])
     return df
+
+
+    """ALTERNATIVE BITFINEX API
+    load_dotenv()
+    bitfinex_public_key = os.getenv('BITFINEX_PUBLIC_KEY')
+    bitfinex_secret_key = os.getenv('BITFINEX_SECRET_KEY')
+
+    exchange = ccxt.bitfinex({
+        'apiKey': bitfinex_public_key,
+        'secret': bitfinex_secret_key
+    })
+
+    close = bitfinex.fetch_ticker("BTC/USD")["close"]
+    datetime = bitfinex.fetch_ticker("BTC/USD")["datetime"]
+    df = pd.DataFrame({"close": [close]})
+    df.index = pd.to_datetime([datetime])
+    return df
+    """
 
 
 def generate_signals(df):
