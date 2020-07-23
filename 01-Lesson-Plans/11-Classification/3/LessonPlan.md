@@ -107,7 +107,7 @@ Tell the class that although we highlighted particular metrics for each example,
 
 ### 5. Instructor Do: Imbalanced Data (5 min)
 
-Go to the slideshow and navigate to the Imbalanced Data section.
+Go to the slideshow, navigate to the Imbalanced Data section, and review the slides.
 
 * Imbalanced data describes cases when one or more classes in the data are much more or less frequent than the other class(es). We will be working with binary (two-class) classification tasks for simplicity, but imbalanced data is a problem in multi-class tasks as well.
 
@@ -133,7 +133,7 @@ Continue through the slides to the oversampling slide.
 
 Open the notebook and walk through the cells, one by one.
 
-* First, we implement random oversampling on the generated dataset. One important note is that prior to the oversampling process, we want to split up the data into training and test sets as we normally would. This is because even though we would like the *training* set to be oversampled to account for imbalance, we should always make sure that the *test* set is "real"-that is, data that actually is actually observed. We would not want to oversample the entire dataset.
+* First, we implement random oversampling on the generated dataset. One important note is that prior to the oversampling process, we want to split up the data into training and test sets, as we normally would. This is because even though we would like the *training* set to be oversampled to account for imbalance, we should always make sure that the *test* set is "real"-that is, data that is actually observed. We would not want to oversample the entire dataset.
 
 * This initial train-test split gives us the following imbalanced data.
 
@@ -145,7 +145,7 @@ Open the notebook and walk through the cells, one by one.
 
 ![overs_2](Images/overs_2.PNG)
 
-* We apply logistic regression to the training set and then use the model to predict the values of y from the test set. The confusion matrix and the accuracy score should be familiar to students, but we introduce another function useful for imbalanced evaluation: the imbalanced classification report, which includes more evaluation metrics and produces them separately for the two classes.
+* We apply logistic regression to the training set, and then use the model to predict the values of y from the test set. The confusion matrix and the accuracy score should be familiar to students, but we introduce another function useful for imbalanced evaluation: the imbalanced classification report, which includes more evaluation metrics and produces them separately for the two classes.
 
 * We can see below that the minority class has low precision and, therefore, a lower F1 score, despite oversampling. This may be due to overfitting in the training set.
 
