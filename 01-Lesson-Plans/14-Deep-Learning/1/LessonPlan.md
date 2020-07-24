@@ -762,7 +762,7 @@ Open the lesson slides, move to the "Preparing Data for Neural Networks" section
 
 * To solve the first problem, we apply one-hot encoding to categorical values to transform them into binary variables. To deal with the second, we use standardization.
 
-* One hot encoding involves taking a categorical variable, such as colour with labels "red," "white," and "blue," and creating three new variables of the colours, with each instance of the data now showing a `1` if it corresponds to that colour, and `0` if it does not.
+* One-hot encoding involves taking a categorical variable, such as colours with the labels "red," "white," and "blue," and creating three new variables of the colours, with each instance of the data now showing a `1` if it corresponds to that colour, and `0` if it does not.
 
 * Scikit-learn offers an implementation of one-hot encoding in the [`OneHotEncoder` module](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html).
 
@@ -809,7 +809,7 @@ Ask the class to restate what we have accomplished with one-hot encoding.
 
 * **Sample Answer**: We've transformed one categorical variable into many binary (numerical) variables, each corresponding to a category.
 
-Go back to the lesson slides, and move to the slide entitled "Data Standardization," highlighting the following:
+Go back to the lesson slides, and move to the slide entitled "Data Standardization." Highlight the following:
 
 * Another critical preprocessing task is to standardize the numerical variables in the dataset.
 
