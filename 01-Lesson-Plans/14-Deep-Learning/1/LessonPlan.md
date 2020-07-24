@@ -88,7 +88,7 @@ In this activity, students will be introduced to neural networks and some of the
 
 Open the lesson slides and move to the Neural Networks are Cool! section.
 
-Start the presentation by showing students the following image from the [Rorschach Inkblot Test](https://en.wikipedia.org/wiki/Rorschach_test), and ask them the next question:
+Start the presentation by showing students the following image from the [Rorschach Inkblot Test](https://en.wikipedia.org/wiki/Rorschach_test), and then ask this question:
 
 * What do you see in this image?
 
