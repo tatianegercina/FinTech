@@ -144,6 +144,8 @@ Answer any questions before moving on.
 
 ### 3. Students Do: Creating an Admin user on IAM (10 min)
 
+**Corresponding Activity:** [01-Stu_IAM_User](Activities/01-Stu_IAM_User)
+
 In this activity, students will create an administrator user to manage their AWS account.
 
 **Instructions:**
@@ -163,6 +165,8 @@ Answer any questions before moving on.
 ---
 
 ### 5. Everyone Do: Create an Amazon SageMaker Notebook Instance (20 min)
+
+**Corresponding Activity:** [02-Evr_SageMaker](Activities/02-Evr_SageMaker)
 
 In this activity, students will learn how to create an instance of Amazon SageMaker, and how to use Jupyter notebooks on the AWS cloud.
 
@@ -275,6 +279,8 @@ End the demo and answer any questions before moving on.
 ---
 
 ### 6. Everyone Do: Create and Deploy a Machine Learning Model in Amazon SageMaker (30 min)
+
+**Corresponding Activity:** [03-Evr_SageMaker_Deployment](Activities/03-Evr_SageMaker_Deployment)
 
 In this activity, students will learn how to create, train, deploy, and evaluate a machine learning model in Amazon SageMaker.
 
@@ -560,6 +566,8 @@ Answer any questions before moving on.
 ---
 
 ### 9. Students Do: Credit Risk Evaluation with Amazon SageMaker (30 min)
+
+**Corresponding Activity:** [04-Stu_Credit_Risk_Classification](Activities/04-Stu_Credit_Risk_Classification)
 
 In this activity, students will train and deploy a binary classification model to predict the *credit risk* of a person using the [German Credit Risk dataset](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) and the SageMaker built-in `Linear Learner` algorithm.
 
