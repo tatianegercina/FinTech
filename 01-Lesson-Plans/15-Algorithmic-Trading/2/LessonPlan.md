@@ -636,11 +636,114 @@ Explain that we can use these ideas to modify our trading dashboard so that the 
 
 ---
 
-### 9. Instructor Do: Review (1 hour)
+### 9. Everyone Do: Async Trading (15 min)
+
+In this activity, students will code along with the instructor to update their live trading code to fetch data asynchronously with [asyncio](https://docs.python.org/3/library/asyncio.html).
+
+**Files:** [jarvis.py](Activities/06-Evr_Async_Trading/Unsolved/jarvis.py)
+
+Open the starter code and live code the solution with the class. Explain any new concepts as you go, and be sure to proceed slowly and frequently pause to make sure that students can keep up.
+
+Start by skimming the code with the class and showing the `# @TODO:` comments where the code will need to be updated. Explain that the goal is to use asyncio so that the dashboard can be loaded and updated without blocking the page from loading.
+
+Import the necessary libraries to use asyncio, hvplot, and panel.
+
+```python
+import asyncio
+
+import hvplot.pandas
+import panel as pn
+
+pn.extension()
+```
+
+Update the code for the `initialize`, `build_dashboard`, and `update_dashboard` functions and highlight the following:
+
+```python
+# Initialize the dashboard
+    dashboard = build_dashboard()
+
+    # @TODO: We will complete the rest of this later!
+    return account, df, dashboard
+
+
+def build_dashboard():
+    """Build the dashboard."""
+    loading_text = pn.widgets.StaticText(name="Trading Dashboard", value="Loading...")
+    dashboard = pn.Column(loading_text)
+    print("init dashboard")
+    return dashboard
+```
+
+* The `initialize` function uses the `build_dashboard` function to build and return a simple dashboard that initially contains static text.
+
+* The `update_dashboard` function is used to update the Panel dashboard with a line chart. It uses new data that is available after fetching from the CCXT API.
+
+* Because the dashboard is just a container for plots, the dashboard contents can be replaced with new plots using `dashboard[0] = dv.hvplot()`.
+
+Complete the main function and explain the following to the class:
+
+```python
+account, df, dashboard = initialize(10000)
+dashboard.servable()
+
+
+async def main():
+    loop = asyncio.get_event_loop()
+
+    while True:
+        global account
+        global df
+        global dashboard
+
+        new_df = await loop.run_in_executor(None, fetch_data)
+        df = df.append(new_df, ignore_index=True)
+
+        min_window = 22
+        if df.shape[0] >= min_window:
+            signals = generate_signals(df)
+            account = execute_trade_strategy(signals, account)
+
+        update_dashboard(df, dashboard)
+
+        await asyncio.sleep(1)
+
+
+# Python 3.7+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+```
+
+* The dashboard is initialized as Static text and then served immediately. Afterward, we can use an asynchronous main function to fetch new data and update the dashboard without blocking the page from loading.
+
+  ```python
+  account, df, dashboard = initialize(10000)
+  dashboard.servable()
+  ```
+
+* In this example, we choose to make the main function async so that it does not block the dashboard from loading. The code awaits both the `fetch_data` function and the `asyncio.sleep` function.
+
+  * **Note:** The `requests` library that is used in the `fetch_data` function is considered a blocking library. Blocking libraries like this must be called using a special function called `run_in_executor`. More information about this can be found in the official [asyncio documents](https://docs.python.org/3/library/asyncio-eventloop.html#executing-code-in-thread-or-process-pools), but this code can be used anytime that the requests library is used. Alternatively, there is an asyncio-compatible library called [aiohttp-requests](https://pypi.org/project/aiohttp-requests/) that can be used instead.
+
+* Once the new data is fetched, the `update_dashboard` function is called to update the plots. This function replaces the dashboard plots for now, but this will be improved later in class.
+
+* Finally, the main function is executed with a special asyncio function called `run_until_complete`. This is just one way to run the asynchronous code in the event loop.
+
+  ```python
+  # Python 3.7+
+  loop = asyncio.get_event_loop()
+  loop.run_until_complete(main())
+  ```
+
+Wrap up this activity by acknowledging that asynchronous code is very challenging to write. However, the code provided in this example can be used as a template that can be reused for many different algorithmic trading applications.
+
+---
+
+### 10. Instructor Do: Review (1 hour)
 
 Use this review time to touch base on any knowledge-gaps that the students may have. Feel free to utilize previous activities and homeworks for this purpose.
 
-### 10. Instructor Do: Reflect (15 min)
+### 11. Instructor Do: Reflect (15 min)
 
 This activity will conclude today's lesson and provide a chance for students to reflect on what they've learned throughout the day.
 
