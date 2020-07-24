@@ -44,17 +44,17 @@ Next, head to the API settings of your Kraken account and generate new API keys.
 
   ![kraken-api-keys](Images/kraken-api-keys.png)
 
-Then, after generating your API keys, open a terminal and set the `KRAKEN_PUBLIC_KEY` and `KRAKEN_SECRET_KEY` environment variables, respectively. There is no need to include quotes around your api keys when setting the environment variables.
-
-If using Bash prompt, the commands to set your environmental variables are:
-
-  ![ccxt-environment-variables-Bash](Images/ccxt-environment-variables.png)
-
-If using Anaconda Prompt, the commands to set your environmental variables are:
-
-  ![ccxt-environment-variables-Anaconda](Images/ccxt-environment-variables-Anaconda.png)
+Then, after generating your API keys, create a new `.env` file for your given project and set the `KRAKEN_PUBLIC_KEY` and `KRAKEN_SECRET_KEY` environment variables, respectively. 
 
 **Note:** Unless you are setting these environment variables globally or permanently, they will need to be set each time you want to access the Kraken API via the ccxt library.
+
+### Alternative API Bitfinex
+
+If you are having API request issues with Kraken, as an alternative go to the [Bitfinex Cryptocurrency Exchange](https://bitfinex.com/) and sign up for an account. You can requet a simple API key in the same manner. 
+
+Then, after generating your API keys, create a new `.env` file for your given project and set the `BITFINEX_PUBLIC_KEY` and `BITFINEX_SECRET_KEY` environment variables, respectively. 
+
+![Bitfinex Website](Images/bitfinex-website.png)
 
 ## Troubleshooting
 
