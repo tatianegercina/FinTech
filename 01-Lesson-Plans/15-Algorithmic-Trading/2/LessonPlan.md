@@ -632,11 +632,15 @@ Explain that we can use these ideas to modify our trading dashboard so that the 
 
 ---
 
-### 8. Instructor Do: Review (1 hour)
+### 8. BREAK (15 min)
+
+---
+
+### 9. Instructor Do: Review (1 hour)
 
 Use this review time to touch base on any knowledge-gaps that the students may have. Feel free to utilize previous activities and homeworks for this purpose.
 
-### 9. Instructor Do: Reflect (15 min)
+### 10. Instructor Do: Reflect (15 min)
 
 This activity will conclude today's lesson and provide a chance for students to reflect on what they've learned throughout the day.
 
