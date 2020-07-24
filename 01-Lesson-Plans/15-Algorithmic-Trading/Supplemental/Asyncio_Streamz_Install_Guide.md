@@ -1,10 +1,10 @@
 # Asyncio & Streamz Installation Guide
 
-This guide serves as a step by step process for setting up and validating the asyncio and streamz Python libraries. Without these libraries, class activities and their associated code will not be able to perform the necessary operations for asynchronous programming and data streaming, respectively.
+This guide serves as a step by step process for setting up and validating the asyncio. Without this library, class activities and their associated code will not be able to perform the necessary operations for asynchronous programming.
 
 ## Installation
 
-Open a terminal, and execute the following commands to install `asyncio` and `streamz`, respectively.
+Open a terminal, and execute the following commands to install `asyncio`.
 
 * Use the `pip install` command to download the `asyncio` module.
 
@@ -13,6 +13,8 @@ Open a terminal, and execute the following commands to install `asyncio` and `st
   ```
 
   ![asyncio-install](Images/asyncio-install.png)
+
+**Note** For additional functionality you could also install the `streamz` library. Streamz allows for real-time data streamining to our existing dashboards.
 
 * Use the `conda install` command to download the `streamz` module.
 
