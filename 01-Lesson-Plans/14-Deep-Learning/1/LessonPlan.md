@@ -26,13 +26,13 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today's activities will be concept heavy, so students should be prepared to discuss and think, and not just practice steps for implementation.
+* Today's activities will be concept heavy, so rather than just practicing steps for implementation, students should be prepared to think and openly discuss the material.
 
 * Allow students to ask questions, and when necessary, have students save questions for the review sessions or office hours.
 
 * Today should also be fun, since we will be playing with neural nets in several ways to experiment with input, architecture, and algorithms.
 
-* A thorough understanding of neural networks would require math that is beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms to implement a neural network. While some details will need to be glossed over, additional materials will be provided for those students who are inclined to dig deeper.
+* A thorough understanding of neural networks requires math that is beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms to implement a neural network. While some details will need to be glossed over, additional materials will be provided for those students who want to dig deeper.
 
 * In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/v1/). Be sure to practice the demo before class. If you are not familiar with this project, we encourage you to [watch this video](https://youtu.be/3BhkeY974Rg).
 
@@ -54,9 +54,9 @@ The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Open the lesson slides and welcome students to the first day of deep learning! Indicate that today's class will begin with an introduction to the basic unit of neural networks, before moving on to constructing simple neural nets.
+Open the lesson slides and welcome students to the first day of deep learning! Explain that today's class will begin with an introduction to the basic unit of neural networks, before moving on to construct simple neural nets.
 
-As an icebreaker activity, open the class with an interactive Q&A with the class, calling on a different students to provide answers:
+As an icebreaker, open the class with an interactive Q&A, calling on a different students to provide answers:
 
 * What do you think a neural network is?
 
@@ -76,7 +76,7 @@ As an icebreaker activity, open the class with an interactive Q&A with the class
 
   * **Sample Answer:** Automated trading based on artificial intelligence.
 
-Thank students for their insights, and explain that today's class will answer these questions.
+Thank students for their insights, and tell them that today's class will answer these questions.
 
 Ask if there are any questions before moving on.
 
