@@ -6,7 +6,7 @@
 
 Today's class will expand upon students' component knowledge of algorithmic trading and abstract one level higher to create a full-fledged trading framework encapsulated in a single application. In particular, students will learn how to wrap their previous code (data collection, signal generation, backtesting, evaluation, and dashboard creation) into functions that will be called via a single workflow. In other words, students will automate the manual component calculations done in the previous class to produce an end-to-end trading dashboard containing all relevant metrics and functionality.
 
-Students will learn how to "go live" with their trading frameworks by establishing a connection to a financial trading API, such as the Kraken Cryptocurrency Exchange API, which provides 24-hour market access and generous API request privileges.
+Students will learn how to "go live" with their trading frameworks by establishing a connection to a financial trading API, such as the Kraken or Bitfinex Cryptocurrency Exchange API, which both provide 24-hour market access and generous API request privileges.
 
 ### Class Objectives
 
@@ -16,7 +16,7 @@ By the end of class, students will be able to:
 
 * Abstract their previous day's algorithmic trading calculations into functions and execute an end-to-end implementation of a working trading framework.
 
-* Utilize live financial data by connecting their trading frameworks to the Kraken Cryptocurrency Exchange API.
+* Utilize live financial data by connecting their trading frameworks to the Kraken or Bitfinex Cryptocurrency Exchange API.
 
 * Persist or save their trading data to a database such as SQLite.
 
@@ -270,7 +270,7 @@ Explain that the next several activities will continue to build and iterate on t
 
 ### 5. Instructor Do: Trading with CCXT (15 min)
 
-In this section, students will become familiar with the expansive CCXT library, which provides an API for over 120 cryptocurrency exchanges. In particular, students will work with the Kraken API and extract both historical and current price data.
+In this section, students will become familiar with the expansive CCXT library, which provides an API for over 120 cryptocurrency exchanges. In particular, students will work with the Kraken or Bitfinex API and extract both historical and current price data.
 
 **File:** [ccxt_demo.ipynb](Activities/03-Ins_Going_Live/Solved/ccxt_demo.ipynb)
 
@@ -278,7 +278,7 @@ Open the solution file and review the following:
 
 * CCXT provides a common API for over 120 cryptocurrency exchanges.
 
-* To use a specific exchange, the API keys for that exchange must be set. In this example, the Kraken exchange is used and requires those keys to be exported before running the notebook.
+* To use a specific exchange, the API keys for that exchange must be set. In this example, the Kraken exchange is used and requires those keys to be exported before running the notebook. If you are ever having problems with kraken requests not going through you can also leverage the bitfinex API as a drop-in alterative.
 
   ```python
   # Import environment variables
@@ -346,7 +346,7 @@ Take a moment to explain the differences in evaluating a trading strategy and go
 
 Explain that while today's lesson only focuses on fetching pricing data from the Kraken API, the CCXT library also allows a user to perform tasks such as checking account balances/status, fetching any open orders, or even placing and executing trades.
 
-  **Note:** The following functions return minimal/empty datasets due to the fact that the Kraken account used in this lesson is not funded with capital.
+  **Note:** The following functions return minimal/empty datasets due to the fact that the Kraken account used in this lesson is not funded with capital. The same would be true for using another API such as Bitfinex.
 
   ![additional-functions](Images/additional-functions.png)
 
@@ -356,7 +356,7 @@ Answer any remaining questions before moving on.
 
 ### 6. Everyone Do: Going Live with CCXT (15 min)
 
-In this activity, students will code along with the instructor to update a version of the algorithmic trading framework to use the Kraken exchange from the CCXT API.
+In this activity, students will code along with the instructor to update a version of the algorithmic trading framework to use the Kraken or Bitfinex exchange from the CCXT API.
 
 **File:**
 
