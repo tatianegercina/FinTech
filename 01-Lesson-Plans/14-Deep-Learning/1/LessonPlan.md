@@ -433,7 +433,7 @@ Tell students that as mentioned earlier, the `Dense()` class is used to add laye
   neuron.add(Dense(units=number_classes, activation="sigmoid"))
   ```
 
-* We use the `sigmoid` activation function in this layer since this is the output layer, there are no inputs to define, we only specify the number of `units` we want.
+* We use the `sigmoid` activation function in this layer since this is the output layer and there are no inputs to define; we only specify the number of `units` we want.
 
 * The `summary()` method shows the architecture of the neural network model.
 
@@ -481,7 +481,7 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
 
 Explain to students that using this simple one-neuron neural network is just an example to show them how a neural network can be constructed using Keras. This model is as effective as logistic regression for linear data. The question that arises now is: How good could this model be for nonlinear data?
 
-Continue the demo to demonstrate what happens when we use this model with nonlinear data.
+Continue the demo to show what happens when we use this model with nonlinear data.
 
 * A nonlinear dummy dataset is created using the `make_moons()` function from `sklearn`, and a DataFrame is created to plot the data.
 
@@ -499,7 +499,7 @@ Continue the demo to demonstrate what happens when we use this model with nonlin
 
   ![Non-linear data plot](Images/non_linear_data_plot.png)
 
-Since students are already familiar with the neural network creation workflow, explain that you are going to follow a similar process as before, but now, you are going to use the nonlinear data to train the same model.
+Since students are already familiar with the neural network creation workflow, explain that you are going to follow a similar process as before, but will now use the nonlinear data to train the same model.
 
 ```python
 # Create training and testing sets
