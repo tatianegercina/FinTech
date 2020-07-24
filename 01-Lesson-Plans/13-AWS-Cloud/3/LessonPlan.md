@@ -82,6 +82,8 @@ Answer any additional questions before moving forward.
 
 ### 2. Instructor Do: Intro to Amazon Lex (15 min)
 
+**Corresponding Activity:** [01-Ins_Intro_Lex](Activities/01-Ins_Intro_Lex)
+
 In this activity, students will be introduced to Amazon Lex; they will learn how to create a bot using the Amazon Lex console that returns parameters to the client by configuring a single intent, some slots, and a confirmation prompt.
 
 **Files:**
@@ -216,6 +218,8 @@ Answer any pending questions before continuing.
 
 ### 3. Students Do: Simple Crypto Conversation (15 min)
 
+**Corresponding Activity:** [02-Stu_Simple_Crypto_Conversation](Activities/02-Stu_Simple_Crypto_Conversation)
+
 In Today's class, students will create a bot that converts a given amount on US Dollars to its value in bitcoin `BTC`, ethereum `ETH`, or ripple `XRP`. In this activity, students will start creating the bot by defining an intent, some sample utterances, and two slots to convert from US Dollars to `BTC`.
 
 **Instructions:**
@@ -251,6 +255,8 @@ Answer any questions before moving on.
 ---
 
 ### 5. Instructor Do: Intro to AWS Lambda (15 min)
+
+**Corresponding Activity:** [03-Ins_Intro_Lambda](Activities/03-Ins_Intro_Lambda)
 
 This activity will introduce AWS Lambda to students. Also, students will learn how they can integrate Lambda functions into an Amazon Lex bot. The full code of the lambda function can be found in the _Solved_ directory.
 
@@ -475,6 +481,8 @@ Answer any pending questions from the class before moving forward.
 
 ### 6. Student Do: Understanding Lambdas (15 min)
 
+**Corresponding Activity:** [04-Stu_Understanding_Lambdas](Activities/04-Stu_Understanding_Lambdas)
+
 In this activity, students will inspect the code of a Lambda function to have a better understanding of how it works. Students will create their own Lambda function by importing the provided code and will build a new version of their bot. Be sure to slack out the `lambda_function.py` code to students before starting the activity.
 
 **Instructions:**
@@ -524,6 +532,8 @@ Be sure to answer any remaining questions, then move to the next activity.
 ---
 
 ### 8. Instructor Do: Testing AWS Lambda Functions (15 min)
+
+**Corresponding Activity:** [05-Ins_Testing_Lambdas](Activities/05-Ins_Testing_Lambdas)
 
 In this activity, students will learn how to test AWS Lambda functions that validate Amazon Lex intents.
 
@@ -623,6 +633,8 @@ Answer any remaining questions and continue to the next activity.
 ---
 
 ### 9. Student Do: Buggy Lambdas (15 min)
+
+**Corresponding Activity:** [06-Stu_Buggy_Lambdas](Activities/06-Stu_Buggy_Lambdas)
 
 In this activity, students will test their Lambdas and will practice their ability to find runtime errors. Slack out the instructions to students together with the starter test event.
 
@@ -749,6 +761,8 @@ Answer any pending questions before continuing.
 ---
 
 ### 13. Students Do: Crypto Converter (20 min)
+
+**Corresponding Activity:** [07-Stu_Crypto_Converter](Activities/07-Stu_Crypto_Converter)
 
 In this activity, students will extend their cryptocurrency converter by adding a custom slot to allow users to select between Bitcoin, Ethereum, or Ripple to convert from US Dollars. Also, business logic to identify the cryptocurrency chosen by the user and make the conversion will be added to the Lambda function.
 
