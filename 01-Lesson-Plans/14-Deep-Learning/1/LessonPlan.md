@@ -588,11 +588,11 @@ Open the unsolved version of the Jupyter Notebook, live code the demo, and highl
   X_moon_test_scaled = X_moon_scaler.transform(X_moon_test)
   ```
 
-Explain to students that you are now going to create a more complex neural network by adding a hidden layer with six neurons.
+Tell students that you are now going to create a more complex neural network by adding a hidden layer with six neurons.
 
 ![Neural net sample](Images/simple-nn.png)
 
-Explain to students that the rule of thumb for a neural network is to have triple the amount of nodes in the hidden layer as the number of inputs. This is not true of deep learning, but it's an excellent point to start prototyping a neural network.
+Explain that the rule of thumb for a neural network is to have triple the amount of nodes in the hidden layer as the number of inputs. This is not true of deep learning, but it's an excellent point to start prototyping a neural network.
 
 Start building the neural network and highlight the following.
 
@@ -687,7 +687,7 @@ In this activity, students will train a neural network model to predict whether 
 
 Walk through the solution and highlight the following:
 
-* Since we want to test different parameter combinations in our models, setting the random seed of Tensor flow to allow results reproducibility is a common practice that helps to reduce unexpected variations across models execution.
+* Since we want to test different parameter combinations in our models, setting the random seed of Tensorflow to allow results reproducibility is a common practice that helps to reduce unexpected variations across models execution.
 
   ```python
   # Set a random seed for TensorFlow to allow reproducible testing results
