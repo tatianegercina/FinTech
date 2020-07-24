@@ -94,13 +94,13 @@ Start the presentation by showing students the following image from the [Rorscha
 
   ![Rorschach Test Card](Images/Rorschach_blot_05.jpg)
 
-Give students a few moments to call out what they see. Then, continue the presentation by telling students that there is no "right answer" to this question.
+Give students a few moments to call out what they see. Then, continue the presentation by telling students that there is no right answer to this question.
 
 Continue to the "How our Brain Works" slide, and explain to students that any similarity they could find between the image and a real object is possible because our brain uses thousands of neural connections to find a match between the visual input and a mental representation of an object.
 
-Continue to the next slide, and explain to students that this power of our brain to process information, and make predictions and interpretations, is what inspired neurophysiologists and mathematicians to start developing artificial neural networks (ANN).
+Continue to the next slide, and tell students that the power of the human brain to process information, and make predictions and interpretations, is what inspired neurophysiologists and mathematicians to start developing artificial neural networks (ANN).
 
-* In the same way biological neurons receive input signals through the dendrites, an ANN can receive input variables and process those inputs using an activation function to compute an output, akin to the neuron nucleus in the brain.
+* In the same way that biological neurons receive input signals through the dendrites, an ANN can receive input variables and process those inputs using an activation function to compute an output, akin to the neuron nucleus in the brain.
 
 * The concept of ANNs was presented for the first time in 1943, when [Warren McCulloch and Walter Pitts](https://doi.org/10.1007/BF02478259) created a computational model for neural networks that they implemented using electrical circuits.
 
@@ -124,7 +124,7 @@ Continue to the slide called "Neural Networks Applications in Finance." Explain 
 
 * **Risk management:** The banking sector, insurance, and stock exchanges are building more robust and efficient techniques for credit management, thanks to neural networks.
 
-* **Money laundering prevention:** Money laundering activity around the world is estimated to be between 2% to 5% of global GDP; financial institutions are using neural nets to serve as a new weapon in their fight against financial crime.
+* **Money laundering prevention:** International money laundering is estimated to cost between 2% to 5% of global GDP; financial institutions are using neural nets to serve as a new weapon in their fight against financial crime.
 
 * **Algorithmic trading:** Thanks to algorithmic trading, you can automate your trading strategies and increase your trading profits.
 
@@ -150,7 +150,7 @@ Once you open the Teachable Machine website, follow these next steps to conduct 
 
   ![Teachable Machine - Step 3](Images/intro_nns_3.gif)
 
-4. Continue to train the purple class by posing seriously for the camera. Press the _TRAIN PURPLE_ button for a few seconds, and explain to students that now the neural network is learning that your poker face corresponds to a furry dog.
+4. Continue to train the purple class by posing seriously for the camera. Press the _TRAIN PURPLE_ button for a few seconds, and explain to students that the neural network is now learning that your poker face corresponds to a furry dog.
 
   ![Teachable Machine - Step 4](Images/intro_nns_4.gif)
 
