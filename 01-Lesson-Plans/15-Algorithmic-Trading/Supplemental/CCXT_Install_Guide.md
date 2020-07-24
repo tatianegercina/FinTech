@@ -52,7 +52,7 @@ Then, after generating your API keys, create a new `.env` file for your given pr
 
 If you are having API request issues with Kraken, as an alternative go to the [Bitfinex Cryptocurrency Exchange](https://bitfinex.com/) and sign up for an account. You can requet a simple API key in the same manner. 
 
-Then, after generating your API keys, create a new `.env` file for your given project and set the `BITFINEX_PUBLIC_KEY` and `BITFINEX_SECRET_KEY` environment variables, respectively. For the purpose of our usage with `Bitfinex` you can selected `No` on prohibited user as you would not be making trades but just requesting data, this will allow usage of the API data request freely. 
+Then, after generating your API keys, create a new `.env` file for your given project and set the `BITFINEX_PUBLIC_KEY` and `BITFINEX_SECRET_KEY` environment variables, respectively. For the purpose of our usage with `Bitfinex` you can select `No` on prohibited user as you would not be making trades but just requesting data, this will allow usage of the API data request freely. 
 
 ![Bitfinex Website](Images/bitfinex-website.png)
 
@@ -96,4 +96,4 @@ An out-of-date Anaconda environment can create issues when trying to install new
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
