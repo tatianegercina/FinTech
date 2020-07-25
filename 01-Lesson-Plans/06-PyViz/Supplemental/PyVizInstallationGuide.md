@@ -4,7 +4,7 @@ PyViz is a Python visualization package that provides a single platform to acces
 
 Follow the steps below to install and set up PyViz in your Python environment. These steps should be completed outside of class.
 
-**NOTE:** Make sure that you are using your conda environment that has anaconda installed. If necessary, create a new environment for this lesson using:
+**NOTE:** Make sure that you are using your conda environment that has anaconda installed. Create a new environment for this lesson using:
 
 ```shell
 conda create -n pyvizenv python=3.7 anaconda
