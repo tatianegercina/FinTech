@@ -194,7 +194,7 @@ Open the lesson slides, move to the "Anatomy of a Neuron" section, and highlight
 
 * The _bias_ is added as a particular input labeled as _X<sub>0</sub>=1_ with a negative weight.
 
-After this brief technical introduction to the perceptron, continue with the following example to illustrate how the perceptron works.
+After this brief technical introduction to the perceptron, continue with the following example to illustrate how the perceptron works. Navigate to the "How Perceptron Works" section in the slideshow for the corresponding slides. 
 
 * Consider the task of predicting whether or not a person would watch a random movie on Netflix using the behavioral data available.
 
