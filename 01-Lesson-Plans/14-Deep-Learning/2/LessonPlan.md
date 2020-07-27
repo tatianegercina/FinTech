@@ -660,9 +660,9 @@ Open the [_Text Classification with Movie Reviews_ notebook](https://colab.resea
 
 Walk students through the notebook, pausing to highlight the various sections of code.
 
-Ask one student to volunteer to summarize for the class what this model is doing and the steps it takes to do it.
+Ask a student to summarize what this model is doing and the steps it takes to do it.
 
-Ask volunteers to give examples of ways they changed the architecture, and why. Compare final accuracy and loss metrics.
+Ask other students to give examples of ways they changed the architecture, and why. Compare final accuracy and loss metrics.
 
 ---
 
