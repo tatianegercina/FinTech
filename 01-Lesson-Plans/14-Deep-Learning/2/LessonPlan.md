@@ -98,7 +98,7 @@ Add a third hidden layer with four neurons to the model and highlight the follow
 
 ![playground_3_layers](Images/playground_3_layers.PNG)
 
-* Adding more layers than is necessary may cause overfitting, since the model might fit a far more complex function than the one that actually generated the data.
+* Adding more layers than necessary may cause overfitting, since the model might fit a far more complex function than the one that actually generated the data.
 
 Ask for volunteers to answer the questions below as a check for understanding.
 
@@ -186,7 +186,7 @@ If you are confident with the code, open the unsolved notebook, and have everyon
 
   ![deep1](Images/deep1.PNG)
 
-* Defining a deep neural net is very easy - all we have to do is add another layer of hidden neurons, using the same activation function as the first, and normally with fewer neurons than the first hidden layer. Of course, we can and should experiment with many different potential architectures if our goal is to minimize the loss metric.
+* Defining a deep neural net is very easy. All we have to do is add another layer of hidden neurons, using the same activation function as the first, and normally with fewer neurons than the first hidden layer. Of course, we can, and should, experiment with many different potential architectures if our goal is to minimize the loss metric.
 
   ```python
   # Define the model - deep neural net
@@ -320,8 +320,6 @@ Ask students for any questions before moving on.
 
 ### 6. Instructor Do: Model Persistence (10 min)
 
-**Corresponding Activity:** [03-Ins_Model_Persistence](Activities/03-Ins_Model_Persistence)
-
 To use a neural net model in a production setting, we often need to save the model and have it predict outcomes on unseen data at a future date. In this demo, we will show students how to persist in a neural net model.
 
 **Files:**
@@ -355,11 +353,9 @@ Open the solved notebook and go through each cell, stopping for questions.
 
   ```python
   # Save weights
-  file_path = "../Resources/model.h5"
+  file_path = Path("../Resources/model.h5")
   nn.save_weights(file_path)
   ```
-
-**Note:** To save the model, we set a relative file path using a string variable since the `patlib` library has some known issues when working with Keras functions to save and load models.
 
 * To load the models, we need to call the `model_from_json` function from Keras.
 
@@ -373,8 +369,8 @@ Open the solved notebook and go through each cell, stopping for questions.
   loaded_model = model_from_json(model_json)
 
   # load weights into new model
-  file_path = "../Resources/model.h5"
-  loaded_model.load_weights(file_path)
+  file_path = Path("../Resources/model.h5")
+  loaded_model.load_weights("../Resources/model.h5")
   ```
 
 * Finally, we can use the loaded model's `predict()` function to make predictions on unseen data.
@@ -386,8 +382,6 @@ Ask students for questions before moving on to the practice activity.
 ---
 
 ### 7. Student Do: After Training (15 min)
-
-**Corresponding Activity:** [04-Stu_After_Training](Activities/04-Stu_After_Training)
 
 In this activity, students will create a deep learning model from the music geographies data, save it, and load it to evaluate its performance on unseen data.
 
@@ -449,7 +443,7 @@ Open the notebook and walk through the code, stopping for any questions.
       json_file.write(nn_json)
 
   # Save weights
-  file_path = "../Resources/model.h5"
+  file_path = Path("../Resources/model.h5")
   nn.save_weights(file_path)
   ```
 
@@ -466,7 +460,7 @@ Open the notebook and walk through the code, stopping for any questions.
   loaded_model = model_from_json(model_json)
 
   # Load weights into new model
-  file_path = "../Resources/model.h5"
+  file_path = Path("../Resources/model.h5")
   loaded_model.load_weights(file_path)
   ```
 
