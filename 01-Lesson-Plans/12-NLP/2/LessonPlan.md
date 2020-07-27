@@ -35,6 +35,7 @@ By the end of the class, students will be able to:
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [12.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c900d473-28d8-4d5d-8f33-aae700f22c46) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
@@ -95,7 +96,7 @@ This activity introduces term relevance from the perspective of TF–IDF (term f
 
 Do not invest to much time on the TF–IDF formulas, just explain how they work in general and invest a little more time on the rationale behind these measures and their implementation using `sklearn`.
 
-* [03_Ins_Terms_Relevance.ipynb](Activities/03-Ins_Terms_Relevance/Solved/03_Ins_Terms_Relevance.ipynb)
+* [01_Ins_Terms_Relevance.ipynb](Activities/01-Ins_Terms_Relevance/Solved/terms_relevance.ipynb)
 
 Open the lesson slides and move to the **Terms Relevance (Understanding TF–IDF)** section, highlighting the following points:
 
@@ -115,7 +116,7 @@ Open the lesson slides and move to the **Terms Relevance (Understanding TF–IDF
 
 * The **bag-of-words model** is a technique in NLP to represent the important words or tokens in a document without worrying about sentence structure. A bag-of-words model can then be used to compare documents based on the number of important words that they share.
 
-After finishing the lecture slides, switch to the code demo and show how TF–IDF can be calculated with Python using the `sklearn` library; open the [Jupyter starter file](Activities/03-Ins_Terms_Relevance/Unsolved/03_Ins_Terms_Relevance.ipynb) and highlight the following points:
+After finishing the lecture slides, switch to the code demo and show how TF–IDF can be calculated with Python using the `sklearn` library; open the [Jupyter starter file](Activities/01-Ins_Terms_Relevance/Unsolved/terms_relevance.ipynb) and highlight the following points:
 
 * `nltk` and `nltk.corpus` are used to retrieve the [Reuters Corpus](https://www.nltk.org/book/ch02.html#reuters-corpus).
 
@@ -195,17 +196,17 @@ In this activity, students will use the knowledge from previous lessons to creat
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Bossy_Words/README.md)
+* [README.md](Activities/02-Stu_Bossy_Words/README.md)
 
 **Files:**
 
-* [bossy_words.ipynb](Activities/04-Stu_Bossy_Words/Unsolved/bossy_words.ipynb)
+* [bossy_words.ipynb](Activities/02-Stu_Bossy_Words/Unsolved/bossy_words.ipynb)
 
 ---
 
 ### 5. Instructor Do: Review Bossy Words (10 min)
 
-Open the [solution](Activities/04-Stu_Bossy_Words/Solved/bossy_words.ipynb) and review the code by highlighting the following:
+Open the [solution](Activities/02-Stu_Bossy_Words/Solved/bossy_words.ipynb) and review the code by highlighting the following:
 
 * The `reuters.categories()` method retrieves all the categories for a given document as is explained in the [Reuters Corpus documentation](https://www.nltk.org/book/ch02.html#reuters-corpus).
 
@@ -243,6 +244,7 @@ Open the [solution](Activities/04-Stu_Bossy_Words/Solved/bossy_words.ipynb) and 
   ```
 
 * In the challenge section, the most tricky part could be to code the search by any of the terms passed as a parameter. The clue is to use the [`any()` function](https://stackoverflow.com/a/16505590/4325668) in the condition of the `found_terms` comprehension list, as explained on [this article](https://stackoverflow.com/a/25102099/4325668).
+
   ```python
   def retrieve_docs(terms):
     result_docs = []
@@ -267,8 +269,7 @@ In this activity, students will learn how to retrieve news articles from the [Ne
 
 **Files:**
 
-* [sentiment_analysis_data.ipynb](Activities/06-Ins_Sentiment_Analysis_Data/Solved/sentiment_analysis_data.ipynb)
-* [keys.sh](Activities/06-Ins_Sentiment_Analysis_Data/Solved/keys.sh)
+* [sentiment_analysis_data.ipynb](Activities/03-Ins_Sentiment_Analysis_Data/Solved/sentiment_analysis_data.ipynb)
 
 Explain to students that there are several ways to retrieve data for sentiment analysis, such as web scraping, manual corpus creation from document digitization, document transformations (e.g., from PDF, word processors, or spreadsheets to raw text) and using APIs. Among these data-retrieval mechanisms, APIs is one of the most used, so in this activity, students will learn how to retrieve news articles using the [News API](https://newsapi.org/) and its [Python library](https://newsapi.org/docs/client-libraries/python).
 
@@ -295,7 +296,7 @@ You are almost ready to code! Before starting the demo, ask students to install 
   pip install newsapi-python
   ```
 
-Open [the unsolved Jupyter notebook](Activities/06-Ins_Sentiment_Analysis_Data/Unsolved/sentiment_analysis_data.ipynb) and live code the demo by highlighting the following:
+Open [the unsolved Jupyter notebook](Activities/03-Ins_Sentiment_Analysis_Data/Unsolved/sentiment_analysis_data.ipynb) and live code the demo by highlighting the following:
 
 * The `NewsApiClient` class should be imported to interact with the News API service.
 
@@ -319,13 +320,13 @@ Switch back to the Jupyter notebook and mention to students that you will focus 
 
 Start the live-coding demo by highlighting the following:
 
-* The `get_top_headlines()` method fetches top news articles about the keyword defined on the `q` parameter. This example gets top headlines about oil (`q="oil"`) in English (`language="en"`) from the United States (`country="us"`).
+* The `get_top_headlines()` method fetches top news articles about the keyword defined on the `q` parameter. This example gets top headlines about oil (`q="oil"`) in English (`language="en"`) from the Canada (`country="ca"`).
 
   ```python
   oil_headlines = newsapi.get_top_headlines(
-    q="oil",
-    language="en",
-    country="us"
+      q="oil",
+      language="en",
+      country="ca"
   )
   ```
 
@@ -357,23 +358,23 @@ Answer any questions that arise and move to the next activity.
 
 ---
 
-### 7. Student Do: The Voice of the Crisis (15 min)
+### 7. Student Do: The Voice of the Blockchain (15 min)
 
-In this activity, students will use the News API to retrieve news articles in English and French about the financial crisis of 2008. At the end of the activity, students will create a CSV file that will be used for coming activities.
+In this activity, students will use the News API to retrieve news articles in English and French about blockchain in Canada for 2020. At the end of the activity, students will create a CSV file that will be used for coming activities.
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Crisis_Voice/README.md)
+* [README.md](Activities/04-Stu_Blockchain_Voice/README.md)
 
 **Files:**
 
-* [voice_crisis.ipynb](Activities/07-Stu_Crisis_Voice/Unsolved/voice_crisis.ipynb)
+* [voice_blockchain.ipynb](Activities/04-Stu_Blockchain_Voice/Unsolved/voice_blockchain.ipynb)
 
 ---
 
-### 8. Instructor Do: Review The Voice of the Crisis (5 min)
+### 8. Instructor Do: Review The Voice of the Blockchain (5 min)
 
-Open the [solution](Activities/07-Stu_Crisis_Voice/Solved/voice_crisis.ipynb) and walk through the code, highlight the following:
+Open the [solution](Activities/04-Stu_Blockchain_Voice/Solved/voice_blockchain.ipynb) and walk through the code, highlight the following:
 
 * As can be read on [the News API documentation for the `Everything` endpoint,](https://newsapi.org/docs/endpoints/everything) it is possible to use logical operators to include or exclude keywords.
   ![Documentation for the q parameter of the News API](Images/new_api_q_param.png)
@@ -381,15 +382,15 @@ Open the [solution](Activities/07-Stu_Crisis_Voice/Solved/voice_crisis.ipynb) an
 * All the articles containing the three keywords are retrieved using the `AND` operator, either for English or French news. The queries are sensitive to orthographic signs, so it is important to use the grave accent over the first `è` in `financière`.
 
   ```python
-  # Fetch news about the financial crisis on 2008 in English
-  crisis_news_en = newsapi.get_everything(
-      q="financial AND crisis AND 2008",
+  # Fetch news about Canada and Blockchain in 2020 in the English language
+  blockchain_news_en = newsapi.get_everything(
+      q="blockchain AND canada AND 2020",
       language="en"
   )
 
-  # Fetch news about the financial crisis on 2008 in French
-  crisis_news_fr = newsapi.get_everything(
-      q="crise AND financière AND 2008",
+  # Fetch news about Canada and Blockchain in 2020 in the French language
+  blockchain_news_fr = newsapi.get_everything(
+      q="blockchain AND canada AND 2020",
       language="fr"
   )
   ```
@@ -410,24 +411,24 @@ Review the code for the `create_df()` function highlighting the following:
 
 ```python
 # Create a DataFrame with the news in English
-crisis_en_df = create_df(crisis_news_en["articles"], "en")
+blockchain_en_df = create_df(blockchain_news_en["articles"], "en")
 
 # Create a DataFrame with the news in French
-crisis_fr_df = create_df(crisis_news_fr["articles"], "fr")
+blockchain_fr_df = create_df(blockchain_news_fr["articles"], "fr")
 
 # Concatenate both DataFrames
-crisis_df = pd.concat([crisis_en_df, crisis_fr_df])
+blockchain_df = pd.concat([blockchain_en_df, blockchain_fr_df])
 ```
 
 Get the `head()` an `tail()` of the DataFrame to show the news articles in both languages.
 
-![Sample news in English and French](Images/crisis_news_df.png)
+![Sample news in English and French](Images/blockchain_news_df.png)
 
 Save the DataFrame as a CSV file for further use in the next activities. Warn students that is important to use the `encoding='utf-8-sig'` parameter when saving the file to preserve special characters, especially in French, in the CSV file.
 
 ```python
-file_path = Path("Data/crisis_news_en_fr.csv")
-crisis_df.to_csv(file_path, index=False, encoding='utf-8-sig')
+file_path = Path("Data/blockchain_news_en_fr.csv")
+blockchain_df.to_csv(file_path, index=False, encoding='utf-8-sig')
 ```
 
 Answer any additional questions before moving to the next activity.
@@ -440,7 +441,7 @@ In this activity, students will understand how VADER sentiment works and how to 
 
 **Files:**
 
-* [vader_sentiment.ipynb](Activities/09-Ins_Vader_Sentiment/Solved/vader_sentiment.ipynb)
+* [vader_sentiment.ipynb](Activities/05-Ins_Vader_Sentiment/Solved/vader_sentiment.ipynb)
 
 Open the lesson slides, move to the Intro to VADER Sentiment section, and highlight the following:
 
@@ -507,33 +508,33 @@ Answer any questions from the class before moving on.
 
 ---
 
-### 11. Student Do: The Feelings of the Crisis (20 min)
+### 11. Student Do: Blockchain Sentiment (20 min)
 
 In this activity, students will use VADER to score the sentiment of news titles and text to verify whether they have the same sentiment. This activity includes a facilitated discussion in the last four to five minutes to talk about students' findings.
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_Crisis_Feelings/README.MD)
+* [README.md](Activities/06-Stu_Blockchain_Sentiment/README.md)
 
 **Files:**
 
-* [crisis_feelings.ipynb](Activities/11-Stu_Crisis_Feelings/Unsolved/crisis_feelings.ipynb)
+* [blockchain_sentiment.ipynb](Activities/06-Stu_Blockchain_Sentiment/Unsolved/blockchain_sentiment.ipynb)
 
 ---
 
-### 12. Instructor Do: Review The Feelings of the Crisis (5 min)
+### 12. Instructor Do: Review Blockchain Sentiment (5 min)
 
 **Files:**
 
-* [crisis_feelings.ipynb](Activities/11-Stu_Crisis_Feelings/Solved/crisis_feelings.ipynb)
+* [blockchain_sentiment.ipynb](Activities/06-Stu_Blockchain_Sentiment/Solved/blockchain_sentiment.ipynb)
 
 Open the solution and walk through the code, highlighting the following:
 
 * It's important to use the `encoding='utf-8-sig'` to load the CSV file when creating the DataFrame, especially to get all the special characters from the news articles in French.
 
   ```python
-  file_path = Path("Data/crisis_news_en_fr.csv")
-  news_df = pd.read_csv(file_path, encoding='utf-8-sig')
+  file_path = Path("Data/blockchain_news_en_fr.csv")
+  news_df = pd.read_csv(file_path, encoding="utf-8-sig")
   ```
 
 * The VADER sentiment module is only trained to score sentiment in English, so a new DataFrame with only news in English is created. Students will learn how to score sentiment in multiple languages later.
@@ -579,8 +580,6 @@ Open the solution and walk through the code, highlighting the following:
 
 * The VADER sentiment score for each news article's title and text is calculated within a `for-loop`; this loop iterates across the `news_en_df` DataFrame using the `iterrows()` method to create the final result's DataFrame structure.
 
-  ![Sentiment scores calculation](Images/crisis_feelings_title_text_code.png)
-
 * Two DataFrames are created with the resulting VADER sentiment scores for titles and the text. These DataFrames are added as new columns to the `news_en_df` DataFrame using the `join()` function.
 
   ```python
@@ -605,7 +604,7 @@ Open the solution and walk through the code, highlighting the following:
   )
   ```
 
-  ![Sample sentiments bar chart](Images/crisis_feelings_bar_chart.png)
+  ![Sample sentiments bar chart](Images/blockchain_feelings_bar_chart.png)
 
 Answer any additional questions before moving to the next activity.
 
@@ -617,9 +616,7 @@ In this activity, students will be introduced to tone analysis and how they can 
 
 **Files:**
 
-* [tone_analysis.ipynb](Activities/13-Ins_Tone_Analysis/Solved/tone_analysis.ipynb)
-
-* [keys.sh](Activities/13-Ins_Tone_Analysis/Solved/keys.sh)
+* [tone_analysis.ipynb](Activities/07-Ins_Tone_Analysis/Solved/tone_analysis.ipynb)
 
 Start by opening the lesson slides, go to the Tone Analysis section, and highlight the following:
 
@@ -665,7 +662,7 @@ Now that the Tone Analyzer instance is ready to use, ask students to get their A
 
   ![Tone Analyser credentials](Images/get_tone_analyzer_key.png)
 
-Ask students to create two environment variables, one for the API key and the other for the URL. Open the [unsolved Jupyter notebook](Activities/13-Ins_Tone_Analysis/Solved/tone_analysis.ipynb) and switch to the code demo, highlighting the following:
+Ask students to create two environment variables, one for the API key and the other for the URL. Open the [unsolved Jupyter notebook](Activities/07-Ins_Tone_Analysis/Solved/tone_analysis.ipynb) and switch to the code demo, highlighting the following:
 
 * The IBM Watson Python library needs to be installed using `pip` as follows. This demo runs using version 3.
 
@@ -921,4 +918,4 @@ Explain that NLP and sentiment analysis is still a cutting-edge research area. I
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
