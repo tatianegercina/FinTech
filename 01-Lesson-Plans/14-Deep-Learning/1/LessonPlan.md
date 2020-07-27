@@ -116,7 +116,7 @@ Continue to the slide "The Future is Here: Applications of Neural Nets" and high
 
 * Memories from the past that were captured in black and white can take a new perspective through automatic image colorization.
 
-* Neural networks have a wide range of applications, including wildlife conservation efforts. The National Oceanic and Atmospheric Administration in the US is tracking the North Atlantic right whale population by using neural networks for image recognition.
+* Neural networks have a wide range of applications, including wildlife conservation efforts. The National Oceanic and Atmospheric Administration in the US is tracking the endangered North Atlantic right whale population by using neural networks for image recognition.
 
 Continue to the slide called "Neural Networks Applications in Finance." Explain that the financial sector is a leader in the use of neural networks, and highlight the following applications:
 
