@@ -222,7 +222,7 @@ Continue to go through the slides and highlight the following:
 
 * This decision may be too harsh, since we are losing the chance of enjoying classic movies, or the Oscar-awarded films from last year; this is where the activation function comes to the scene.
 
-Move to the slide entitled _Activation Function_ and highlight the following:
+Move on to the section of the slideshow entitled "Activation Function" and highlight the following:
 
 * The neurons we use nowadays to build neural networks are an updated version of the perceptron proposed in 1969.
 
