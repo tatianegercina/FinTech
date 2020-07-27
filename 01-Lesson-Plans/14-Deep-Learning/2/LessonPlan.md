@@ -494,7 +494,7 @@ In this activity, students will learn how to create and share Jupyter Notebooks 
 
 Explain to students that Colaboratory is a Google-sponsored environment for running Jupyter Notebooks on the Cloud. It is specifically tailored for running and sharing deep learning experiments. Colab Notebooks have access to specialized computing architectures such as Google's self-developed Tensor Processing Units (TPUs), in addition to general-purpose memory and RAM. TPUs are designed specifically by Google to train and run TensorFlow models.
 
-[Open this three-minute introductory video](https://youtu.be/inN8seMm7UI) and reproduce it in the class. After playing the video, highlight the following:
+[Open this three-minute introductory video](https://youtu.be/inN8seMm7UI) and play it for the class. After playing the video, highlight the following:
 
 * Colab allows us to do machine learning on the web using Google Cloud resources.
 
@@ -504,7 +504,7 @@ Explain to students that Colaboratory is a Google-sponsored environment for runn
 
 * More importantly, you get access to cloud computing resources, including RAM, memory, and Google's proprietary hardware solution for deep learning-Tensor Processor Units (TPUs).
 
-Navigate to the [Colab website](https://colab.research.google.com), slack out the URL to students, and explain the following points about Colaboratory to students:
+Navigate to the [Colab website](https://colab.research.google.com), slack out the URL to students, and explain the following points about Colab to students:
 
 * To use Colab, students will need a Google account.
 
@@ -544,7 +544,7 @@ Type the following command in the first cell, and click on the _Run_ button, or 
 
   ![Images/colab05.gif](Images/colab05.gif)
 
-* You can also import Jupyter Notebooks from your local drive. Click on the _File_ menu and choose the _Upload_ notebook... option, then browse your local drive for the Jupyter notebook you want to upload.
+* You can also import Jupyter Notebooks from your local drive. Click on the _File_ menu and choose the _Upload notebook_ option, then browse your local drive for the Jupyter Notebook you want to upload.
 
   ![Images/colab06.png](Images/colab06.png)
 
