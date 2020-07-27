@@ -868,4 +868,4 @@ Students have learned tons of new information today. Facilitate a discussion aro
 ### End Class
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
