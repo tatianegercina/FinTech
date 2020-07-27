@@ -112,6 +112,8 @@ Explain to students that they will learn how to perform this analysis using pyth
 
 ### 3. Everyone Do: Measuring Performance with the ROC Curve and AUC (15 min)
 
+**Corresponding Activity:** [01-Evr_ROC_AUC](Activities/01-Evr_ROC_AUC)
+
 This is an everyone do activity, where students will learn how to create the ROC Curve and compute the AUC using Python.
 
 **Files:**
@@ -447,6 +449,8 @@ Answer any questions before moving on.
 
 ### 5. Instructor Do: RNNs for NLP - Sentiment Analysis (15 min)
 
+**Corresponding Activity:** [02-Ins_Sentiment_Analysis](Activities/02-Ins_Sentiment_Analysis)
+
 In this activity, students will learn how to define an LSTM RNN model for sentiment analysis using Keras. Also, data preparation for using LSTM models for natural language processing is introduced.
 
 **Files:**
@@ -638,6 +642,8 @@ Answer any questions before moving on.
 ---
 
 ### 6. Students Do: Sentiment Analysis - RNNs Vs. Vader (40 min)
+
+**Corresponding Activity:** [03-Stu_RNN_Vader](Activities/03-Stu_RNN_Vader)
 
 In this activity, students will use two different models to score sentiment. The goal is to put the performance metrics and techniques students have learned into action to decide which model performs better between VADER and RNN LSTM.
 
@@ -1020,6 +1026,8 @@ Answer any questions before moving on.
 
 ### 9. Instructor Do: RNN LSTM and Time Series (15 min)
 
+**Corresponding Activity:** [04-Ins_LSTM_Time_Series](Activities/04-Ins_LSTM_Time_Series)
+
 In this activity, students will learn how to build RNN LSTM models for time series forecasting using Keras.
 
 **Files:**
@@ -1272,6 +1280,8 @@ Answer any questions before moving on.
 ---
 
 ### 10. Students Do: Predicting Gold Closing Prices (30 min)
+
+**Corresponding Activity:** [05-Stu_Predict_Gold_Prices](Activities/05-Stu_Predict_Gold_Prices)
 
 This activity is a mini-project where students will gain hands-on experience building an RNN LSTM model for time-series data predicting gold closing prices.
 
