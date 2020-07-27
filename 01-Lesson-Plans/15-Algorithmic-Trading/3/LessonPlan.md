@@ -45,6 +45,8 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Random Forest Trading (15 min)
 
+**Corresponding Activity:** [01-Ins_Trading_Signal_Features](Activities/01-Ins_Trading_Signal_Features)
+
 In this activity, students will learn how to generate a set of trading signals derived from raw BTC/USD data that will be used as features to train a Random Forest machine learning model that will autonomously make predictions and corresponding trades.
 
 **File:** [trading_signal_features.ipynb](Activities/01-Ins_Trading_Signal_Features/Solved/trading_signal_features.ipynb)
@@ -119,6 +121,8 @@ At the end of the discussion, ask students whether or not they understand what t
 ---
 
 ### 2. Instructor Do: Random Forest Trading (15 min)
+
+**Corresponding Activity:** [02-Ins_Random_Forest_Training](Activities/02-Ins_Random_Forest_Training)
 
 In this activity, students will learn how to use the set of trading signal features they generated in the previous activity to train a Random Forest machine learning model.
 
@@ -195,6 +199,8 @@ Then, open the solution file and discuss the following:
 ---
 
 ### 3. Instructor Do: Random Forest Trading (15 min)
+
+**Corresponding Activity:** [03-Ins_Random_Forest_Trading](Activities/03-Ins_Random_Forest_Trading)
 
 In this activity, students will re-deploy a pre-trained Random Forest model to make predictions (positive or negative daily return) given the x test dataset of BTC/USD closing prices. Then, students will compare the actual results vs. the predicted results and backtest the Random Forest model given a capital allocation of $100,000.
 
