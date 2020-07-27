@@ -115,6 +115,8 @@ Answer any questions before moving on.
 
 ### 3. Everyone Do: Deep Learning with Keras (15 min)
 
+**Corresponding Activity:** [01-Ins_Deep_Learning](Activities/01-Ins_Deep_Learning)
+
 In this activity, students will build a deep learning model to predict the quality score of different wines.
 
 **Files:**
@@ -220,6 +222,8 @@ Answer any questions before moving on.
 
 ### 4. Student Do: Sound of Music (20 min)
 
+**Corresponding Activity:** [02-Stu_Sound_of_Music](Activities/02-Stu_Sound_of_Music)
+
 In this activity, students will build a model to predict the geographical origins of a musical composition.
 
 **Instructions:**
@@ -319,6 +323,8 @@ Ask students for any questions before moving on.
 
 ### 6. Instructor Do: Model Persistence (10 min)
 
+**Corresponding Activity:** [03-Ins_Model_Persistence](Activities/03-Ins_Model_Persistence)
+
 To use a neural net model in a production setting, we often need to save the model and have it predict outcomes on unseen data at a future date. In this demo, we will show students how to persist in a neural net model.
 
 **Files:**
@@ -381,6 +387,8 @@ Ask students for questions before moving on to the practice activity.
 ---
 
 ### 7. Student Do: After Training (15 min)
+
+**Corresponding Activity:** [04-Stu_After_Training](Activities/04-Stu_After_Training)
 
 In this activity, students will create a deep learning model from the music geographies data, save it, and load it to evaluate its performance on unseen data.
 
@@ -484,6 +492,8 @@ Answer any questions before moving on.
 ---
 
 ### 10. Everyone Do: Colaboratory, a Cloud-based Environment for Sharing ML Projects (20 min)
+
+**Corresponding Activity:** [05-Evr_Colab](Activities/05-Evr_Colab)
 
 **Files:**
 
@@ -643,6 +653,8 @@ Stop for questions before moving on to the next activity.
 ---
 
 ### 11. Student Do: Deep Learning on the Web (30 min)
+
+**Corresponding Activity:** [06-Stu_Colab](Activities/06-Stu_Colab)
 
 In this activity, students will use the text classification demo notebook to understand and modify a deep learning classification model with Colab.
 
