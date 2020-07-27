@@ -221,7 +221,7 @@ Answer any questions before moving on.
 
 ### 4. Student Do: Sound of Music (20 min)
 
-In this activity, students will build a model to predict the geographical origins of a musical composition.
+In this activity, students will build a deep learning model to predict the geographical origins of a musical composition.
 
 **Instructions:**
 
