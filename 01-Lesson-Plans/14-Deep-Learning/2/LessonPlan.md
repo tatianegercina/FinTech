@@ -1,8 +1,8 @@
-## 14.2 Lesson Plan: Deep learning
+## 14.2 Lesson Plan: Deep Learning
 
 ### Overview
 
-In this lesson, students will be introduced to deep learning basic concepts. Also, they will create deep learning models using Keras and deploy machine learning models in the cloud using Google Colaboratory.
+In this lesson, students will be introduced to basic concepts in deep learning. They will create deep learning models using Keras and deploy machine learning models in the cloud using Google Colaboratory.
 
 ### Class Objectives
 
@@ -20,7 +20,7 @@ By the end of class, students will be able to:
 
 * Slack out the [Streamz Installation Guide](../../15-Algorithmic-Trading/Supplemental/Asyncio_Streamz_Install_Guide.md) and the [CCXT Installation Guide](../../15-Algorithmic-Trading/Supplemental/CCXT_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
-* Deep learning has a lot of technical concepts that are beyond the scope of this lesson. Students should be able to obtain a high-level understanding of deep neural network architectures through a series of hands-on activities.
+* While deep learning has many technical concepts that are beyond the scope of this lesson, students should be able to gain a high-level understanding of deep neural network architectures through a series of hands-on activities.
 
 * This class uses the new TensorFlow 2.0 framework for the activities, so be sure to test the install and setup for this before class.
 
@@ -36,7 +36,7 @@ To add the slides to the student-facing repository, download the slides as a PDF
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -48,21 +48,21 @@ Welcome students to the second day of the deep learning unit! Open the lesson sl
 
 * Generally speaking, deep learning models are neural networks with more than one hidden layer.
 
-* Deep neural networks are much more effective than traditional machine learning approaches at discovering nonlinear relationships among data and thus are often the best-performing choice for complex or unstructured data like images, text, and voice.
+* Deep neural networks are much more effective than traditional machine learning approaches at discovering nonlinear relationships among data, which means they are often the best choice for complex or unstructured data, like images, text, and voice.
 
-Explain to students that deep neural networks allow creating computational models composed of multiple layers that can learn representations of data with multiple levels of abstraction.
+Tell students that deep neural networks allow the creation of computational models that are multilayered and able to learn representations of data with multiple levels of abstraction.
 
 * For example, in image recognition, each layer can identify different features of an input image to decide what it's about.
 
-Explain to students that deep neural networks are fun! Open the [Quick, Draw! web application](https://quickdraw.withgoogle.com) in your browser and slack out the URL to students. Explain to students that they are going to play a Pictionary-like game using the power of deep learning.
+Tell students that deep neural networks are fun! Open the [Quick, Draw! web application](https://quickdraw.withgoogle.com) in your browser and slack out the URL to students. Explain to students that they are going to play a Pictionary-like game using the power of deep learning.
 
 * _Quick, Draw!_ is an application that can identify an image from a trace.
 
-* The game asks you to draw something in less than 20 seconds while the deep learning algorithm tries to guess what the trace could be.
+* The game asks you to draw something in less than 20 seconds, while the deep learning algorithm tries to guess what the trace could be.
 
   ![Quick,Draw! demo](Images/quick-draw.gif)
 
-Draw a couple of traces in the game, and tell students that this is an example of the power of neural networks in real-time. Explain that even though this is just an example of a game, deep learning has been the tool that has really allowed machine learning to transform FinTech. Advances in deep learning are powering applications that were once considered science fiction.
+Draw a couple of traces in the game, and tell students that this is an example of the power of neural networks in real-time. Explain that even though this is just one example of a game, deep learning is the tool that has allowed machine learning to transform FinTech. Advances in deep learning are powering applications that were once considered science fiction.
 
 Ask if there are any questions before moving on.
 
@@ -315,69 +315,6 @@ In this activity, students will build a model to predict the geographical origin
 Explain to students, that in this instance, we may prefer the first (shallow) model due to better performance on validation (or test) data, unless there is some way of preprocessing the data or tuning the model that would limit the effects of overfitting, like performing PCA or adding more nodes to the hidden layer.
 
 Ask students for any questions before moving on.
-
----
-
-### 6. Instructor Do: Model Persistence (10 min)
-
-To use a neural net model in a production setting, we often need to save the model and have it predict outcomes on unseen data at a future date. In this demo, we will show students how to persist in a neural net model.
-
-**Files:**
-
-* [model_persistence.ipynb](Activities/03-Ins_Model_Persistence/Solved/model_persistence.ipynb)
-
-Open the solved notebook and go through each cell, stopping for questions.
-
-* Let us say we have created a model that seems to do well on the training and test data. Now we want to put it into production so that it can be used to make actual predictions. To do this, we need to save the model somewhere so that it can be called when needed.
-
-* In the first few blocks of code, we have defined a model to predict the quality of wine similar to the one we created in the last demo.
-
-* To save the model, we take advantage of the `to_json()` function, which represents the parameters and hyperparameters of the model in a `JSON` format. Students should be familiar with this format as it is a common API output standard.
-
-  ```python
-  # Save model as JSON
-  nn_json = nn.to_json()
-
-  file_path = Path("../Resources/model.json")
-  with open(file_path, "w") as json_file:
-      json_file.write(nn_json)
-  ```
-
-* Once the model is saved, it can be read and accessed again by code. However, it is now also viewable by humans, since JSON is human-readable. Open the file that the model was saved to, and ask students to identify parameters.
-
-![json_model](Images/json_model.PNG)
-
-* Note that the model does not contain the weights that were trained, i.e., the parameters within each neuron that dictate how variables are used to predict outcomes. We also need to save the model weights, this time in an HDF file.
-
-* [Hierarchical Data Format (HDF or h5)](https://en.wikipedia.org/wiki/Hierarchical_Data_Format) files, contain multidimensional arrays of data.
-
-  ```python
-  # Save weights
-  file_path = Path("../Resources/model.h5")
-  nn.save_weights(file_path)
-  ```
-
-* To load the models, we need to call the `model_from_json` function from Keras.
-
-  ```python
-  # Load the saved model to make predictions from tensorflow.keras.models import model_from_json
-
-  # load json and create model
-  file_path = Path("../Resources/model.json")
-  with open("../Resources/model.json", "r") as json_file:
-      model_json = json_file.read()
-  loaded_model = model_from_json(model_json)
-
-  # load weights into new model
-  file_path = Path("../Resources/model.h5")
-  loaded_model.load_weights("../Resources/model.h5")
-  ```
-
-* Finally, we can use the loaded model's `predict()` function to make predictions on unseen data.
-
-  ![Predicted values](Images/predicted_values.png)
-
-Ask students for questions before moving on to the practice activity.
 
 ---
 
