@@ -188,6 +188,8 @@ Answer any questions before moving on.
 
 ### 4. Students Do: Use Case Study (10 min)
 
+**Corresponding Activity:** [01-Stu_Use_Case_Study](Activities/01-Stu_Use_Case_Study)
+
 Students will complete a thought experiment in which the students will get together in small groups and examine an example use case application
 for different cryptocurrency and blockchain projects.
 
@@ -343,6 +345,8 @@ Answer any questions before moving on.
 
 ### 7. Student Do: Peoplechain (15 min)
 
+**Corresponding Activity:** [02-Stu_Peoplechain](Activities/02-Stu_Peoplechain)
+
 For this activity, students will emulate the public, censor resistant, and borderless nature of the blockchain by creating a distributed ledger like system breaking up into groups and using themselves as network participants.
 
 #### Activity Logistics
@@ -420,6 +424,8 @@ Answer any questions before moving on.
 ---
 
 ### 9. Student Do: Basic Terminology (10 min)
+
+**Corresponding Activity:** [03-Stu_Basic_Terminology](Activities/03-Stu_Basic_Terminology)
 
 For this activity, students will Google common terminology used in blockchain development.
 
@@ -522,6 +528,8 @@ Answer any questions before moving on.
 ---
 
 ### 12. Everyone Do: Using a Wallet (15 min)
+
+**Corresponding Activity:** [04-Stu_Using_Wallet](Activities/04-Stu_Using_Wallet)
 
 In this activity, students will learn how a cryptocurrency wallet works using [MyCrypto Desktop App](https://download.mycrypto.com/); students will be requesting `testnet` tokens and sending transactions to their fellow students.
 
@@ -675,7 +683,9 @@ Answer any questions before moving on.
 
 ---
 
-### 14. Student Do: Visualizing Transactions (10 min)
+### 14. Student Do: Visualizing Transactions
+
+**Corresponding Activity:** [05-Stu_Visualizing_Transactions](Activities/05-Stu_Visualizing_Transactions)
 
 For this activity, students will visualize transactions using the same technique used in the demo.
 
@@ -792,6 +802,8 @@ Answer any questions before moving on.
 ---
 
 ### 17. Student Do: Use Case Brainstorm (10 min)
+
+**Corresponding Activity:** [06-Stu_Use_Case_Brainstorm](Activities/06-Stu_Use_Case_Brainstorm)
 
 Now that the students have learned about the features of Ethereum and how it acts as a decentralized world computer, it is an excellent time to brainstorm different use cases given these features.
 
