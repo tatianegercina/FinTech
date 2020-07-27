@@ -299,6 +299,8 @@ Answer any questions before moving on.
 
 ### 4. Everyone Do: Activating your first artificial neuron (15 min)
 
+**Corresponding Activity:** [01-Evr_Keras_Intro](Activities/01-Evr_Keras_Intro)
+
 In this activity, students are introduced to Keras and how they can use this library to start building neural networks.
 
 **Files:**
@@ -542,6 +544,8 @@ Answer any questions before moving on.
 
 ### 5. Instructor Do: Connecting neurons (15 min)
 
+**Corresponding Activity:** [02-Ins_Connecting_Neurons](Activities/02-Ins_Connecting_Neurons)
+
 In this activity, students will learn how to build more complex neural networks using Keras.
 
 **Files:**
@@ -672,6 +676,8 @@ Answer any questions before moving on.
 
 ### 6. Student Do: Preventing credit card defaults with neural networks (20 min)
 
+**Corresponding Activity:** [03-Stu_CC_Default](Activities/03-Stu_CC_Default)
+
 In this activity, students will train a neural network model to predict whether a credit card holder will default in the next month.
 
 **Instructions:**
@@ -752,6 +758,8 @@ Answer any questions before moving on.
 ---
 
 ### 9. Instructor Do: Preparing Data for Neural Networks (15 min)
+
+**Corresponding Activity:** [04-Ins_Preparing_Data](Activities/04-Ins_Preparing_Data)
 
 In this section, we will go over some necessary transformations of data before it can be fed into a neural network.
 
@@ -853,6 +861,8 @@ Ask students if they have any questions before moving on to the next activity.
 ---
 
 ### 10. Students Do: Smartphone Activity Detector (30 min)
+
+**Corresponding Activity:** [05-Stu_Smartphone](Activities/05-Stu_Smartphone)
 
 In this activity, students will create a neural network to predict the activity of the user based on their smartphone's accelerometer data.
 
