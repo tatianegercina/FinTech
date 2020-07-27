@@ -186,6 +186,8 @@ Answer any questions before moving on.
 
 ### 3. Students Do: Turn and Teach Consensus Algorithms (15 min)
 
+**Corresponding Activity:** [01-Stu_Consensus_Algos](Activities/01-Stu_Consensus_Algos)
+
 In this activity, students will turn and teach the three consensus algorithms just covered.
 
 Have the students get into groups of three (one student per algorithm).
@@ -324,6 +326,8 @@ Answer any questions before moving on.
 ---
 
 ### 6. Students Do: Creating a Genesis Block (10 min)
+
+**Corresponding Activity:** [02-Stu_Genesis_Creation](Activities/02-Stu_Genesis_Creation)
 
 In this activity, students will create their genesis configuration, just like was demonstrated.
 
@@ -465,6 +469,8 @@ Answer any questions before moving on.
 
 ### 9. Students Do: Creating two nodes with accounts (15 min)
 
+**Corresponding Activity:** [03-Stu_Nodes_Accounts](Activities/03-Stu_Nodes_Accounts)
+
 In this activity, students will create their nodes and accounts for their custom blockchain network.
 
 Have the TAs circulate and ensure that students are successfully following the instructions and initializing their nodes.
@@ -583,6 +589,8 @@ Answer any questions before moving on.
 ---
 
 ### 13. Students Do: Bringing the blockchain to life (15 min)
+
+**Corresponding Activity:** [04-Stu_Starting_Chain](Activities/04-Stu_Starting_Chain)
 
 In this activity, students will launch their chains using the same techniques presented in the demo.
 
@@ -711,6 +719,8 @@ Answer any questions before moving on.
 ---
 
 ### 16. Students Do: Transacting on their chains (10 min)
+
+**Corresponding Activity:** [05-Stu_Transact](Activities/05-Stu_Transact)
 
 In this activity, students will to connect MyCrypto to their chain and send a transaction!
 
@@ -861,4 +871,4 @@ def checkPalindrome(str):
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
