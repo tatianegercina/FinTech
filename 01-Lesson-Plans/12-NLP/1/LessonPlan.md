@@ -36,12 +36,11 @@ By the end of the class, students will be able to:
 
 * Each step in this lesson ties into the next, and every section is critical to learn for students to be able to implement the NLP workflow. Pause and ask for questions often.
 
-* Students may expect to start off doing cool things like text modelling or sentiment analysis, and that's OK—these are coming in the next couple of lessons! However, it's good to remind them that preprocessing text, like any other kind of data, is critical to prevent the garbage in, garbage out phenomenon.
+* Students may expect to start off doing cool things like text modeling or sentiment analysis, and that's OK—these are coming in the next couple of lessons! However, it's good to remind them that preprocessing text, like any other kind of data, is critical to prevent the garbage in, garbage out phenomenon.
 
 * Have your TAs keep track of time with the [Time Tracker.](TimeTracker.xlsx)
 
 ### Sample Class Video (Highly Recommended)
-
 * To watch an example class lecture, go here: [12.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f93c7d61-c53a-4af6-ac24-aae6002c227f) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
@@ -72,12 +71,6 @@ Take a few answers from volunteers (or call on a couple of students).
 
 * Computers don't understand the stories in the way that we do, but they can identify key features—like the ones given by students—and make decisions based on those features.
 
-Recall students that they have to download all the NLTK data (document corpus, stopwords) as it's indicated in the installation guide. If any student has issues with the NLTK data, slack out the following command and ask TAs to assist students in trouble.
-
-```shell
-python -c "import nltk;nltk.download('all')"
-```
-
 Hopefully, your students are excited and ready to dive into the content at this point! Open the slides for this lesson and begin the next section.
 
 ---
@@ -90,7 +83,7 @@ Open the slides and be sure to hit on the following talking points. Pause after 
 
 * NLP spans a wide field of research that intersects computer science, statistics, linguistics, and other disciplines. Understanding and generating human language are two large tasks that encompass many smaller tasks—voice recognition, optical character recognition, summarization, topic representation, etc., etc.
 
-* Finance-specific use cases have mostly been centred around using NLP for quantitative trading. Other settings include fraud detection and chatbots for client interaction (which we will introduce in the next unit).
+* Finance-specific use cases have mostly been centered around using NLP for quantitative trading. Other settings include fraud detection and chatbots for client interaction (which we will introduce in the next unit).
 
 * The NLP workflow is characterized by four steps: preprocessing, extraction, analysis, and representation. It's not unlike a typical machine learning workflow for any type of data. However, unstructured text data can take much more work to get into usable form than structured, numerical data.
 
@@ -108,7 +101,7 @@ This activity introduces students to tokenization, the process with which we bre
 
 * Unsolved: [tokenization.ipynb](Activities/01-Ins_Tokenization/Unsolved/tokenization.ipynb)
 
-Depending on your comfort level, either walk through the solved version or live-code with the unsolved template. Point out that NLTK includes several collections of documents that can be accessed through the corpus module. One of these is the Reuters news corpus, which includes financial news stories and is grouped by topic, or "category."
+Depending on your comfort level, either walk through the solved version or live-code with the unsolved template. Point out that NLTK includes several collections of documents that can be accessed through the corpus module (students may have to download these collections if they did not download all the NLTK data as indicated at the start of this lesson plan). One of these is the Reuters news corpus, which includes financial news stories and is grouped by topic, or "category."
 
 Highlight how we can find articles by topic and then use a single article for practicing tokenization by using the corpus object:
 
@@ -144,6 +137,7 @@ Ask students to give an example of one type of analysis that they can do with th
 ### 4. Student Do: Tokenizing Reuters (15 min)
 
 In this activity, students will practice sentence and word tokenization on some articles from the Reuters Corpus and place the results in a Pandas DataFrame.
+
 
 **Instructions:**
 
@@ -198,7 +192,7 @@ for story in sentence_tokenized:
 
 ### 6. Instructor Do: Stopwords (10 min)
 
-This activity introduces the concept and implementation of stopwords. In English, there are many words that are important to grammar and expression but have no topical significance—these include some of the most common words in the language, such as "is," "her," "for," etc. In NLP, these words are called stopwords. For many use cases in which we hope to summarize the contents of a corpus—such as frequency analysis or topic modelling, for example—we want to take these words out in preprocessing so they don't distract from the topically important words and phrases. We will also take a look at a way of stripping out non-alphabetic characters, which we might want to do for a similar reason.
+This activity introduces the concept and implementation of stopwords. In English, there are many words that are important to grammar and expression but have no topical significance—these include some of the most common words in the language, such as "is," "her," "for," etc. In NLP, these words are called stopwords. For many use cases in which we hope to summarize the contents of a corpus—such as frequency analysis or topic modeling, for example—we want to take these words out in preprocessing so they don't distract from the topically important words and phrases. We will also take a look at a way of stripping out non-alphabetic characters, which we might want to do for a similar reason.
 
 **Files:**
 
@@ -531,4 +525,4 @@ def process_text_bg(doc):
 
 ---
 
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
