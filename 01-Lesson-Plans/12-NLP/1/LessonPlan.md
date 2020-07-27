@@ -102,7 +102,13 @@ This activity introduces students to tokenization, the process with which we bre
 
 * Unsolved: [tokenization.ipynb](Activities/01-Ins_Tokenization/Unsolved/tokenization.ipynb)
 
-Depending on your comfort level, either walk through the solved version or live-code with the unsolved template. Point out that NLTK includes several collections of documents that can be accessed through the corpus module (students may have to download these collections if they did not download all the NLTK data as indicated at the start of this lesson plan). One of these is the Reuters news corpus, which includes financial news stories and is grouped by topic, or "category."
+Depending on your comfort level, either walk through the solved version or live-code with the unsolved template. Point out that NLTK includes several collections of documents that can be accessed through the corpus module. One of these is the Reuters news corpus, which includes financial news stories and is grouped by topic, or "category."
+
+Recall students that they have to download these documents collections as it's indicated in the installation guide. If any student has issues with the NLTK data, slack out the following command and ask TAs to assist students in trouble.
+
+```shell
+python -c "import nltk;nltk.download('all')"
+``
 
 Highlight how we can find articles by topic and then use a single article for practicing tokenization by using the corpus object:
 
