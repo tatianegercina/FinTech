@@ -358,9 +358,11 @@ Open the solved notebook and go through each cell, stopping for questions.
 
   ```python
   # Save weights
-  file_path = Path("../Resources/model.h5")
+  file_path = "../Resources/model.h5"
   nn.save_weights(file_path)
   ```
+
+**Note:** To save the model, we set a relative file path using a string variable since the `patlib` library has some known issues when working with Keras functions to save and load models.
 
 * To load the models, we need to call the `model_from_json` function from Keras.
 
@@ -374,8 +376,8 @@ Open the solved notebook and go through each cell, stopping for questions.
   loaded_model = model_from_json(model_json)
 
   # load weights into new model
-  file_path = Path("../Resources/model.h5")
-  loaded_model.load_weights("../Resources/model.h5")
+  file_path = "../Resources/model.h5"
+  loaded_model.load_weights(file_path)
   ```
 
 * Finally, we can use the loaded model's `predict()` function to make predictions on unseen data.
@@ -450,7 +452,7 @@ Open the notebook and walk through the code, stopping for any questions.
       json_file.write(nn_json)
 
   # Save weights
-  file_path = Path("../Resources/model.h5")
+  file_path = "../Resources/model.h5"
   nn.save_weights(file_path)
   ```
 
@@ -467,7 +469,7 @@ Open the notebook and walk through the code, stopping for any questions.
   loaded_model = model_from_json(model_json)
 
   # Load weights into new model
-  file_path = Path("../Resources/model.h5")
+  file_path = "../Resources/model.h5"
   loaded_model.load_weights(file_path)
   ```
 
