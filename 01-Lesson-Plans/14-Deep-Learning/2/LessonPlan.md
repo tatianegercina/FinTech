@@ -312,7 +312,7 @@ In this activity, students will build a model to predict the geographical origin
 
   ![music3](Images/music3.PNG)
 
-Explain to students, that in this instance, we may prefer the first (shallow) model due to better performance on validation (or test) data, unless there is some way of preprocessing the data or tuning the model that would limit the effects of overfitting, like performing PCA or adding more nodes to the hidden layer.
+Tell students that in this instance, we may prefer the first (shallow) model due to better performance on validation (or test) data, unless there is some way of preprocessing the data or tuning the model that would limit the effects of overfitting, like performing PCA or adding more nodes to the hidden layer.
 
 Ask students for any questions before moving on.
 
@@ -332,7 +332,7 @@ Open the solved notebook and go through each cell, stopping for questions.
 
 * In the first few blocks of code, we have defined a model to predict the quality of wine similar to the one we created in the last demo.
 
-* To save the model, we take advantage of the `to_json()` function, which represents the parameters and hyperparameters of the model in a `JSON` format. Students should be familiar with this format as it is a common API output standard.
+* To save the model, we take advantage of the `to_json()` function, which represents the parameters and hyperparameters of the model in a `JSON` format. Students should be familiar with this format, as it is a common API output standard.
 
   ```python
   # Save model as JSON
@@ -492,9 +492,9 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to create and share Jupyter Notebooks on Google Colaboratory (aka Colab), a cloud platform oriented toward machine learning.
 
-Explain to students that Colaboratory is a Google-sponsored environment for running Jupyter Notebooks on the Cloud. It is specifically tailored for running and sharing deep learning experiments. Colab Notebooks have access to specialized computing architectures such as Google's self-developed Tensor Processing Units (TPUs) in addition to general-purpose memory and RAM. TPUs designed specifically by Google to train and run TensorFlow models.
+Explain to students that Colaboratory is a Google-sponsored environment for running Jupyter Notebooks on the Cloud. It is specifically tailored for running and sharing deep learning experiments. Colab Notebooks have access to specialized computing architectures such as Google's self-developed Tensor Processing Units (TPUs), in addition to general-purpose memory and RAM. TPUs are designed specifically by Google to train and run TensorFlow models.
 
-[Open this three minutes introductory video](https://youtu.be/inN8seMm7UI) and reproduce it in the class. After playing the video, highlight the following:
+[Open this three-minute introductory video](https://youtu.be/inN8seMm7UI) and reproduce it in the class. After playing the video, highlight the following:
 
 * Colab allows us to do machine learning on the web using Google Cloud resources.
 
@@ -502,9 +502,9 @@ Explain to students that Colaboratory is a Google-sponsored environment for runn
 
 * Colab makes it easy to share projects and results with potential employers, and you can save Notebooks right to your Google Drive.
 
-* More importantly, you get access to cloud computing resources, including RAM, memory, and Google's proprietary hardware solution for deep learning - Tensor Processor Units (TPUs).
+* More importantly, you get access to cloud computing resources, including RAM, memory, and Google's proprietary hardware solution for deep learning-Tensor Processor Units (TPUs).
 
-Navigate to the [Colab website](https://colab.research.google.com), slack out the URL to students and explain the following points about Colaboratory to students:
+Navigate to the [Colab website](https://colab.research.google.com), slack out the URL to students, and explain the following points about Colaboratory to students:
 
 * To use Colab, students will need a Google account.
 
@@ -518,7 +518,7 @@ Navigate to the [Colab website](https://colab.research.google.com), slack out th
 
 * Now you are ready to start using Colab.
 
-Type the following command in the first cell, and click on the _Run_ button or press `SHIFT` + `ENTER` on your keyboard to execute the code in the cell.
+Type the following command in the first cell, and click on the _Run_ button, or press `SHIFT` + `ENTER` on your keyboard to execute the code in the cell.
 
   ```python
   print("Hello Colab!")
@@ -540,19 +540,19 @@ Type the following command in the first cell, and click on the _Run_ button or p
 
   ![Images/colab13.png](Images/colab13.png)
 
-* To locate in Google Drive where your notebook is stored, click on the _File_ menu, and continue by choosing the _Locate in Drive_ option.
+* To locate where your notebook is stored in Google Drive, click on the _File_ menu, and continue by choosing the _Locate in Drive_ option.
 
   ![Images/colab05.gif](Images/colab05.gif)
 
-* You can also import Jupyter Notebooks from your local drive. Click on the _File_ menu and choose the _Upload notebook...` option, then browse your local drive for the Jupyter notebook you want to upload.
+* You can also import Jupyter Notebooks from your local drive. Click on the _File_ menu and choose the _Upload_ notebook... option, then browse your local drive for the Jupyter notebook you want to upload.
 
   ![Images/colab06.png](Images/colab06.png)
 
-For this demo, a notebook with dummy data is going to be used. Slack out the notebook for this activity to students, while you import the file to Colab.
+For this demo, a notebook with dummy data will be used. Slack out the notebook for this activity to students, while you import the file to Colab.
 
 * Once the file is imported, a new window showing the notebook will be opened.
 
-Explain to students that this particular example is using `hvplot` which is not installed by default in Colab. To avoid potential errors, these lines are just commented out for now.
+Explain to students that this particular example uses `hvplot` which is not installed by default in Colab. To avoid potential errors, these lines are just commented out for now.
 
   ![Images/colab07.png](Images/colab07.png)
 
@@ -562,30 +562,30 @@ Run all the cells by clicking on the _Runtime_ menu and choose the _Run all_ opt
 
 * After a few seconds, all of the cells will run on the Google cloud!
 
-* The default settings for Google Colab currently install TensorFlow v1, though this will change in the near future.  Students may get the following error after running their imports, despite having upgraded or installed Tensorflow v2:
+* The default settings for Google Colab currently install TensorFlow v1, though this will change in the near future. Students may get the following error after running their imports, despite having upgraded or installed Tensorflow v2:
 ![Images/colab02.png](Images/colab16.png)
 
-* Though the notebook should still run all cells as intended, the defaults can be updated to avoid potential issues in the future.  This can be done by running the following code, selecting `y` when prompted, and then restarting the runtime:
+* Though the notebook should still run all cells as intended, the defaults can be updated to avoid potential issues in the future. This can be done by running the following code, selecting `y` when prompted, and then restarting the runtime:
 
 ```python
 !pip uninstall tensorflow
 !pip install tensorflow==2.0.0
 ```
 
-* Students can check then verify their Tensorflow version using the following code:
+* Students can check, then verify, their Tensorflow version using the following code:
 
 ```python
 import tensorflow as tf
 print(tf.__version__)
 ```
 
-Explain to students that it's possible to install new libraries in Google Colab by running the following command
+Explain to students that it's possible to install new libraries in Google Colab by running the following command.
 
 ```python
 !pip install <library_name>
 ```
 
-Add a new code text below the title cell of the notebook, type and execute the following code to install `hvplot` and make it run in Google Colab. Note that `bokeh` is also installed to ensure we are using the last version.
+Add a new code text below the title cell of the notebook, type and execute the following code to install `hvplot` and make it run in Google Colab. Note that `bokeh` is also installed, to ensure we are using the last version.
 
 ```python
 !pip install hvplot
@@ -594,7 +594,7 @@ Add a new code text below the title cell of the notebook, type and execute the f
 
 ![Images/colab09.gif](Images/colab09.gif)
 
-* Once you have installed these libraries, you may be asked to restart the restart your runtime.
+* Once you have installed these libraries, you may be asked to restart your runtime.
 
   ![Images/colab10.png](Images/colab10.png)
 
@@ -624,7 +624,7 @@ plot = df_moons.hvplot.scatter(x="Feature 1", y="Feature 2", by="Target")
 plot
 ```
 
-Delete the cell where you run `pip` and run all the notebook's cells to show students that the plot is now displayed in the notebook just like it was in the Jupyter Notebooks.
+Delete the cell where you run `pip` and run all the notebook's cells to show students that the plot is now displayed in the notebook, just like it was in the Jupyter Notebooks.
 
 ![Images/colab14.gif](Images/colab14.gif)
 
@@ -634,9 +634,9 @@ Explain to students that there are plenty of examples created by the Colab commu
 
 * These projects can be useful for learning by example, a source of inspiration for your projects, or just a helpful repository of code to copy snippets from.
 
-Type `Classify movie reviews using tf.keras` in the Seedbank search box and press `ENTER` to look for this project.
+Type `Classify movie reviews using tf.keras` in the Seedbank search box, and press `ENTER` to look for this project.
 
-Once the project appears in the search results, open it and click on the _Run seed in Colab_ button; explain to students that this is how they can import a _seed project_ to their Colab workspace, and start studying it and customizing the code.
+Once the project appears in the search results, open it and click on the _Run seed in Colab_ button. Tell students that this is how they can import a _seed project_ to their Colab workspace, start studying it, and customizing the code.
 
 ![Images/colab15.gif](Images/colab15.gif)
 
