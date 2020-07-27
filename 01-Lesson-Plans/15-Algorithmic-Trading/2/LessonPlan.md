@@ -91,6 +91,8 @@ Answer any questions before moving on.
 
 ### 2. Student Do: Trading Functions (10 min)
 
+**Corresponding Activity:** [01-Stu_Trading_Functions](Activities/01-Stu_Trading_Functions)
+
 In this activity, students will be given a random sequence of trading function names. They will be asked to propose the correct order of the functions if they were to be implemented in an algorithmic trading application. Note that there is not a single precise order, so treat this as a thought exercise to help drive engagement and discussion around the use of frameworks to encapsulate and abstract code.
 
 **Files:**
@@ -130,6 +132,8 @@ Ask any questions before moving on.
 ---
 
 ### 4. Everyone Do: Algorithmic Trading Framework (20 min)
+
+**Corresponding Activity:** [02-Evr_Algo_Trading_Framework](Activities/02-Evr_Algo_Trading_Framework)
 
 In this activity, students will code along with the instructor and port over their previous algorithmic trading code into the new algorithmic trading framework.
 
@@ -270,6 +274,8 @@ Explain that the next several activities will continue to build and iterate on t
 
 ### 5. Instructor Do: Trading with CCXT (15 min)
 
+**Corresponding Activity:** [03-Ins_Going_Live](Activities/03-Ins_Going_Live)
+
 In this section, students will become familiar with the expansive CCXT library, which provides an API for over 120 cryptocurrency exchanges. In particular, students will work with the Kraken or Bitfinex API and extract both historical and current price data.
 
 **File:** [ccxt_demo.ipynb](Activities/03-Ins_Going_Live/Solved/ccxt_demo.ipynb)
@@ -355,6 +361,8 @@ Answer any remaining questions before moving on.
 ---
 
 ### 6. Everyone Do: Going Live with CCXT (15 min)
+
+**Corresponding Activity:** [04-Evr_Going_Live](Activities/04-Evr_Going_Live)
 
 In this activity, students will code along with the instructor to update a version of the algorithmic trading framework to use the Kraken or Bitfinex exchange from the CCXT API.
 
@@ -514,6 +522,8 @@ Explain that the beauty of a robust application framework is that the abstractio
 
 ### 7. Instructor Do: Asyncio (10 min)
 
+**Corresponding Activity:** [05-Ins_Asyncio](Activities/05-Ins_Asyncio)
+
 In this demonstration, students will learn how to create asynchronous functions that do not block the dashboard from loading.
 
 Note that a complete explanation of asyncio is out-of-scope for this lesson, so refer students to the [official documents](https://docs.python.org/3/library/asyncio.html) and office hours if they want to learn more.
@@ -637,6 +647,8 @@ Explain that we can use these ideas to modify our trading dashboard so that the 
 ---
 
 ### 9. Everyone Do: Async Trading (15 min)
+
+**Corresponding Activity:** [06-Evr_Async_Trading](Activities/06-Evr_Async_Trading)
 
 In this activity, students will code along with the instructor to update their live trading code to fetch data asynchronously with [asyncio](https://docs.python.org/3/library/asyncio.html).
 
