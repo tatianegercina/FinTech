@@ -1,8 +1,8 @@
-## 14.2 Lesson Plan: Deep learning
+## 14.2 Lesson Plan: Deep Learning
 
 ### Overview
 
-In this lesson, students will be introduced to deep learning basic concepts. Also, they will create deep learning models using Keras and deploy machine learning models in the cloud using Google Colaboratory.
+In this lesson, students will be introduced to basic concepts in deep learning. They will create deep learning models using Keras and deploy machine learning models in the cloud using Google Colaboratory.
 
 ### Class Objectives
 
@@ -20,7 +20,7 @@ By the end of class, students will be able to:
 
 * Slack out the [Streamz Installation Guide](../../15-Algorithmic-Trading/Supplemental/Asyncio_Streamz_Install_Guide.md) and the [CCXT Installation Guide](../../15-Algorithmic-Trading/Supplemental/CCXT_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
-* Deep learning has a lot of technical concepts that are beyond the scope of this lesson. Students should be able to obtain a high-level understanding of deep neural network architectures through a series of hands-on activities.
+* While deep learning has many technical concepts that are beyond the scope of this lesson, students should be able to gain a high-level understanding of deep neural network architectures through a series of hands-on activities.
 
 * This class uses the new TensorFlow 2.0 framework for the activities, so be sure to test the install and setup for this before class.
 
@@ -36,7 +36,7 @@ To add the slides to the student-facing repository, download the slides as a PDF
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -48,21 +48,21 @@ Welcome students to the second day of the deep learning unit! Open the lesson sl
 
 * Generally speaking, deep learning models are neural networks with more than one hidden layer.
 
-* Deep neural networks are much more effective than traditional machine learning approaches at discovering nonlinear relationships among data and thus are often the best-performing choice for complex or unstructured data like images, text, and voice.
+* Deep neural networks are much more effective than traditional machine learning approaches at discovering nonlinear relationships among data, which means they are often the best choice for complex or unstructured data, like images, text, and voice.
 
-Explain to students that deep neural networks allow creating computational models composed of multiple layers that can learn representations of data with multiple levels of abstraction.
+Tell students that deep neural networks allow the creation of computational models that are multilayered and able to learn representations of data with multiple levels of abstraction.
 
 * For example, in image recognition, each layer can identify different features of an input image to decide what it's about.
 
-Explain to students that deep neural networks are fun! Open the [Quick, Draw! web application](https://quickdraw.withgoogle.com) in your browser and slack out the URL to students. Explain to students that they are going to play a Pictionary-like game using the power of deep learning.
+Tell students that deep neural networks are fun! Open the [Quick, Draw! web application](https://quickdraw.withgoogle.com) in your browser and slack out the URL to students. Explain to students that they are going to play a Pictionary-like game using the power of deep learning.
 
 * _Quick, Draw!_ is an application that can identify an image from a trace.
 
-* The game asks you to draw something in less than 20 seconds while the deep learning algorithm tries to guess what the trace could be.
+* The game asks you to draw something in less than 20 seconds, while the deep learning algorithm tries to guess what the trace could be.
 
   ![Quick,Draw! demo](Images/quick-draw.gif)
 
-Draw a couple of traces in the game, and tell students that this is an example of the power of neural networks in real-time. Explain that even though this is just an example of a game, deep learning has been the tool that has really allowed machine learning to transform FinTech. Advances in deep learning are powering applications that were once considered science fiction.
+Draw a couple of traces in the game, and tell students that this is an example of the power of neural networks in real-time. Explain that even though this is just one example of a game, deep learning is the tool that has allowed machine learning to transform FinTech. Advances in deep learning are powering applications that were once considered science fiction.
 
 Ask if there are any questions before moving on.
 
