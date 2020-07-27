@@ -76,13 +76,13 @@ Using the slides, move to the _Understanding Deep Learning_ section and highligh
 
 * The number of layers that are included in a neural network model determine whether it is a "deep" learning model or not. While definitions vary, networks with more than one "hidden" layer can be classified as "deep." The prevalence of these deep learning models have been facilitated in recent years by the abundance and decreasing cost of computing power.
 
-* The advantages of adding layers lie in the fact that each additional layer of neurons makes it possible to model more complex relationships and concepts. Imagine we are trying to classify whether a picture contains a cat. Conceptually, the first step in solving this problem might involve checking whether there exists some animal in the picture. Drilling deeper, the model might detect the presence of paws, pointed ears, etc. This breaking down of the problem continues until we reach the raw input of the model, which are the individual pixels in the picture. If this problem is correctly specified, each conceptual layer would need its own layer of neurons.
+* The advantages of adding layers lie in the fact that each additional layer of neurons makes it possible to model more complex relationships and concepts. Imagine trying to classify whether a picture contains a cat. Conceptually, the first step in solving this problem might involve checking whether there is an animal of some form in the picture. Drilling deeper, the model might detect the presence of paws, pointed ears, etc. This drilling down continues until we reach the raw input of the model, which are the individual pixels in the picture. If this problem is correctly specified, each conceptual layer would need its own layer of neurons.
 
 * Deep learning models are capable of solving very complex problems where classical models would fail. Deep learning makes it possible to solve difficult problems with high accuracy, like image classification or natural language processing.
 
-Open the TensorFlow playground [using this link](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8&seed=0.14370&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=true&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false), click on the _Play_ button to run the simulation, and use the model to demonstrate the effects of adding layers of neurons to a neural network and go through the following talking points.
+Open the TensorFlow playground [using this link](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8&seed=0.14370&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=true&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false), click on the _Play_ button to run the simulation, and use the model to demonstrate the effects of adding layers of neurons to a neural network, and go through the following talking points.
 
-* We can see the benefits of adding additional layers in the TensorFlow playground - this is apparent with the more complex classification datasets, such as _spiral_. We see a lack of convergence below with one layer of neurons.
+* We can see the benefits of adding additional layers in the TensorFlow playground. This is apparent with the more complex classification datasets, such as _spiral_. We see a lack of convergence below with one layer of neurons.
 
 ![playground_1_layers](Images/playground_1_layers.PNG)
 
@@ -108,7 +108,7 @@ Ask for volunteers to answer the questions below as a check for understanding.
 
 * What is one way we can see whether a neural network may have too many layers of neurons?
 
-    **Sample Answer**: Signs of overfitting - for example, test accuracy is far lower than training accuracy.
+    **Sample Answer**: Signs of overfitting-for example, test accuracy is far lower than training accuracy.
 
 Answer any questions before moving on.
 
