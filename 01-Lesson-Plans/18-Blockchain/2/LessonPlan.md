@@ -102,6 +102,8 @@ Answer any questions before moving on.
 
 ### 2. Students Do: Cryptography Use Cases (10 min)
 
+**Corresponding Activity:** [01-Stu_Cryptography_Use_Cases](Activities/01-Stu_Cryptography_Use_Cases)
+
 In this activity, students will be researching in groups some applications of cryptography in the wild.
 
 Explain to the students that getting good at this type of research is key to succeeding in an emerging field like the blockchain industry.
@@ -171,6 +173,8 @@ Answer any questions before moving on.
 ---
 
 ### 4. Instructor Do: Hashing Demo (10 min)
+
+**Corresponding Activity:** [02-Ins_Hashing](Activities/02-Ins_Hashing)
 
 In this activity, students will learn how hashing works by using several different strings and comparing the results to show that given the same input, you will output the same hash.
 
@@ -242,6 +246,8 @@ Answer any questions before moving on.
 ---
 
 ### 5. Students Do: Hashing with Hashlib (10 min)
+
+**Corresponding Activity:** [03-Stu_Hashlib](Activities/03-Stu_Hashlib)
 
 In this activity, students will now hash two equivalent messages and compare the outputs. Then, they will modify one of the messages and compare them again.
 
@@ -360,6 +366,8 @@ Answer any questions before moving on.
 ---
 
 ### 8. Students Do: Encrypting and Decrypting Messages (10 min)
+
+**Corresponding Activity:** [04-Stu_Encrypting_Decrypting](Activities/04-Stu_Encrypting_Decrypting)
 
 In this activity, students will now use the same tool to encrypt and decrypt messages with a partner.
 
@@ -495,6 +503,8 @@ Answer any questions before moving on.
 
 ### 11. Students Do: Asymmetric Encryption (10 min)
 
+**Corresponding Activity:** [05-Stu_Asymmetric_Encryption](Activities/05-Stu_Asymmetric_Encryption)
+
 Students will get into groups of two people, and they will encrypt and decrypt messages between each other using asymmetric encryption instead of symmetric.
 
 Have TAs circulate and ensure that students are successfully encrypting and decrypting each other's messages.
@@ -608,6 +618,8 @@ Answer any questions before moving on.
 
 ### 15. Students Do: Signing and Verifying Messages (10 min)
 
+**Corresponding Activity:** [06-Stu_Signing_Verifying](Activities/06-Stu_Signing_Verifying)
+
 In this activity, students will get with a partner and sign and verify messages between each other.
 
 Have TAs circulate through the class and ensure that students are successfully verifying messages.
@@ -689,6 +701,8 @@ Now, it's time to have the students try it for themselves. Answer any questions 
 ---
 
 ### 18. Students Do: Build a Blockchain Online (10 min)
+
+**Corresponding Activity:** [07-Stu_Blockchain_Online](Activities/07-Stu_Blockchain_Online)
 
 In this activity, students will be repeating the blockchain online activity at their computers.
 
