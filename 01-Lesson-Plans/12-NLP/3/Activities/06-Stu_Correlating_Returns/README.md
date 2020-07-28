@@ -4,6 +4,7 @@ In this activity, you will create a sentiment index from News API headlines and 
 
 ## Instructions
 
+* Create a .env file based on the the [example.env](Unsolved/example.env) starter file to create and export environment variables for News API and IEXFinance keys. Then, read and set the environment variables defined in your .env using the load_dotenv method.
 * Download returns data for the past month for AAPL.
 * Get news headlines for at least five topics of your choice and apply sentiment analysis to the headlines.
 * Correlate the headlines' sentiment to S&P 500 returns for each topic. Which one had the highest correlation?
@@ -41,4 +42,4 @@ def headline_sentiment_summarizer_avg(headlines):
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

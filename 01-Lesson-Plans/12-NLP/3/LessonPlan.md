@@ -330,6 +330,8 @@ topic_sentiments.corr().style.background_gradient()
 
   ![corr1](Images/corr1.png)
 
+  Note: Your actual correlation table values may differ from the above.
+
 Ask students whether they found topic sentiments that are more closely correlated with AAPL returns. Ask volunteers whether they might expect correlations between sentiment and returns to remain stable over time for a given topic or stock pairing.
 
 ---
@@ -360,4 +362,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
