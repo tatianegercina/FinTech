@@ -116,7 +116,7 @@ Explain to students that they will learn how to perform this analysis using Pyth
 
 ### 3. Everyone Do: Measuring Performance with the ROC Curve and AUC (15 min)
 
-This is an everyone do activity, where students will learn how to create the ROC Curve and compute the AUC using Python.
+In this everyone do activity, students will learn how to create the ROC curve and compute the AUC using Python.
 
 **Files:**
 
@@ -126,7 +126,7 @@ This is an everyone do activity, where students will learn how to create the ROC
 
 * [Dataset: transactions.csv](Activities/01-Evr_ROC_AUC/Resources/transactions.csv)
 
-Explain to students this is a collaborative activity where everyone is going to follow you in the process of creating the ROC Curve and calculating the AUC of a deep learning model.
+Tell students that this is a collaborative activity where everyone will follow you in the process of creating the ROC curve and calculating the AUC of a deep learning model.
 
 Slack out the unsolved version of the Jupyter notebook to students, and ask them to follow you as you live code the solution.
 
@@ -178,9 +178,9 @@ Continue the data preprocessing and highlight the following:
 
 * We split the initial training set to create a new training set to fit the model, and a validation test for which data is going to be used during the training process to verify the model's metrics.
 
-* Now it's time to define our deep neural network, we will use a `Sequential` model and two `Dense` layers.
+* Now that it's time to define our deep neural network, we will use a `Sequential` model and two `Dense` layers.
 
-* First of all, we will define the number of inputs and the number of hidden nodes for each layer.
+* First, we will define the number of inputs and the number of hidden nodes for each layer.
 
   ```python
   # Model set-up
@@ -207,13 +207,13 @@ Continue the data preprocessing and highlight the following:
   model.add(Dense(1, activation="sigmoid"))
   ```
 
-Explain to students that we are using the `sigmoid` activation function since we have a binary output, `1` for fraud or `0` for no-fraud.
+Explain to students that we are using the `sigmoid` activation function since we have a binary output, `1` for fraud, or `0` for no-fraud.
 
-Next, the model is compiled. Explain to students that the `binary_crossentropy` loss function is used since we want to create a binary classification model.
+Next, the model is compiled. Explain to students that the `binary_crossentropy` loss function is used, since we want to create a binary classification model.
 
-Point out that we are defining some metrics to assess the model. These metrics are part of [the Keras metrics module](https://www.tensorflow.org/api_docs/python/tf/keras/metrics?version=stable) and are the same metrics students are already familiar with from previous units when binary classification was introduced. The only new metric is `AUC`, which will be explained next in the model's evaluation.
+Point out that we are defining some metrics to assess the model. These metrics are part of [the Keras metrics module](https://www.tensorflow.org/api_docs/python/tf/keras/metrics?version=stable) and are the same metrics students are already familiar with from previous units when binary classification was introduced. The only new metric is `AUC`, which will be explained next, in the model's evaluation.
 
-Explain to students that the `name` parameter is used to quickly identify each parameter during the training process and the model evaluation phase.
+Tell students that the `name` parameter is used to quickly identify each parameter during the training process and the model evaluation phase.
 
 ```python
 # Compile the model
@@ -233,7 +233,7 @@ model.compile(
 )
 ```
 
-Time to fit the model! Explain to students that we will use a `batch_size = 1000` to speed-up the training process along `50` epochs. Point out that you are introducing the `validation_data` parameter to the `fit` method, explain to students that this parameter specifies a dataset that is used to validate the model's performance along the training process, excluding the validation data sample as training data.
+Time to fit the model! Tell students that we will use a `batch_size = 1000` to speed up the training process along `50` epochs. Point out that you are introducing the `validation_data` parameter to the `fit` method. Explain to students that this parameter specifies a dataset that is used to validate the model's performance along the training process, excluding the validation data sample as training data.
 
 ```python
 # Training the model
@@ -255,33 +255,33 @@ Execute the compilation code and highlight the following.
 
 * Note that the training runs on `160203` samples and the validation on `53402` samples.
 
-* As you can see, each epoch takes around `2` seconds, so running `50` epochs will take close to two minutes, so be patient.
+* As you can see, each epoch takes around `2` seconds, so running `50` epochs will take close to two minutes; so be patient.
 
 * Also note that all the metrics are calculated on each epoch for the training and validation data. The validation metrics have the `val_` prefix.
 
 * The model training results will be saved in the `training_history` variable for further analysis.
 
-Continue the demo with the model performance assessment, explain to students that you will start by plotting two metrics that they are already familiar with: `loss` and `accuracy`. Highlight the following.
+Continue the demo with the model performance assessment. Tell students you will start by plotting two metrics that they are already familiar with: `loss` and `accuracy`. Highlight the following.
 
 * The metrics results of the training process are stored in the `history` dictionary of the `training_history` object.
 
 * You can access each metric using the names we define when compiling the model.
 
-* To plot the metrics results, we are going to create a DataFrame using the `history` dictionary and plotting using the `plot()` method of the Pandas DataFrame.
+* To plot the metrics results, we will create a DataFrame using the `history` dictionary and plotting using the `plot()` method of the Pandas DataFrame.
 
   ![roc-auc-3](Images/roc-auc-3.png)
 
   ![roc-auc-4](Images/roc-auc-4.png)
 
-Explain to students that the third metric to plot is `AUC` that stands for "Area Under the ROC Curve." Highlight the following.
+Tell students that the third metric to plot is `AUC`. This stands for "Area Under the ROC curve." Highlight the following.
 
 ![roc-auc-5](Images/roc-auc-5.png)
 
-* The `AUC` value is better in the validation data and improves as the accuracy also increases.
+* The `AUC` value is better in the validation data, and improves as the accuracy increases.
 
 * `AUC` may be desirable since it is scale-invariant. It measures how well predictions are ranked instead of their absolute values.
 
-* `AUC` is classification-threshold-invariant. It measures the quality of the model's predictions regardless of the threshold.
+* `AUC` is classification-threshold-invariant. It measures the quality of the model's predictions, regardless of the threshold.
 
 Continue to the ROC curve plot. Explain to students that [`sklearn` has a method in the `metrics` module called `roc_curve`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_curve.html) that calculates the values needed to plot the ROC curve for binary classification models. We will also use the `auc` method from `sklearn` in this part of the demo.
 
@@ -300,7 +300,7 @@ Highlight the following as you continue live coding the demo.
   test_predictions = model.predict(X_test, batch_size=1000)
   ```
 
-* The `roc_curve` method takes as parameters the actual labels and the predicted labels, to compute the false positive rate (`fpr`), true positive rate (`tpr`), and `thresholds`.
+* The `roc_curve` method takes the actual labels and the predicted labels as parameters to compute the false positive rate (`fpr`), true positive rate (`tpr`), and `thresholds`.
 
   ```python
   # Calculate the ROC curve and AUC for the training set
@@ -323,19 +323,19 @@ Highlight the following as you continue live coding the demo.
   roc_df_test = pd.DataFrame({"FPR Test": fpr_test, "TPR Test": tpr_test,})
   ```
 
-* We will plot the ROC curve using the `plot()` method from the Pandas DataFrame, we also include the `AUC` value in the title for further analysis.
+* We will plot the ROC curve using the `plot()` method from the Pandas DataFrame. We also include the `AUC` value in the title for further analysis.
 
   ![roc-auc-6](Images/roc-auc-6.png)
 
 * Plotting the training and testing data ROC curves is a visual technique to validate how the model behaves with different data. It is also a way to see if the results with test data are relatively similar to train data or not.
 
-* In this case, both curves are quite similar; usually, this is the expected behavior of the training and testing ROC curves.
+* In this case, both curves are quite similar; usually, this is the expected behaviour of the training and testing ROC curves.
 
-Continue the demo by coding the model's evaluation using the `evaluate()` method. Explain to students that the evaluation results will be stored in the `scores` object that it's going to be used to create a `metrics` dictionary with the evaluation results.
+Continue the demo by coding the model's evaluation using the `evaluate()` method. Explain to students that the evaluation results will be stored in the `scores` object that is going to be used to create a `metrics` dictionary with the evaluation results.
 
 ![roc-auc-7](Images/roc-auc-7.png)
 
-Point out to students that these are the results from the model's evaluation and that we will use these values for further analysis.
+Point out to students that these are the results from the model's evaluation; we will use these values for further analysis.
 
 Continue the model's evaluation by creating a confusion matrix using the metrics obtained from the validation. A Pandas DataFrame is used to display the matrix.
 
