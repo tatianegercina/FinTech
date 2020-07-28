@@ -72,7 +72,7 @@ Take a few answers from volunteers (or call on a couple of students).
 
 * Computers don't understand the stories in the way that we do, but they can identify key features—like the ones given by students—and make decisions based on those features.
 
-Recall students that they have to download all the NLTK data (document corpus, stopwords) as it's indicated in the installation guide. If any student has issues with the NLTK data, slack out the following command and ask TAs to assist students in trouble.
+Recall students that they have to download all the NLTK data (document corpus and stopwords) as it's indicated in the installation guide. If any student has issues with the NLTK data, slack out the following command and ask TAs to assist students in trouble.
 
 ```shell
 python -c "import nltk;nltk.download('all')"
