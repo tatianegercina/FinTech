@@ -108,6 +108,16 @@ This activity introduces students to tokenization, the process with which we bre
 
 * Unsolved: [tokenization.ipynb](Activities/01-Ins_Tokenization/Unsolved/tokenization.ipynb)
 
+Open the lesson slides, move to the "Tokenization" section, and highlight the following.
+
+* Tokenization is the process of segmenting running text into words, sentences, or phrases.
+
+* To allow an algorithm to process text, we need to segment it into units that we called _tokens_.
+
+* A _token_ is a group of characters that have meaning. It can be words, sentences, or phrases.
+
+* Tokenization is similar to using the `split()` method from string variables in python.
+
 Depending on your comfort level, either walk through the solved version or live-code with the unsolved template. Point out that NLTK includes several collections of documents that can be accessed through the corpus module. One of these is the Reuters news corpus, which includes financial news stories and is grouped by topic, or "category."
 
 Highlight how we can find articles by topic and then use a single article for practicing tokenization by using the corpus object:
@@ -198,13 +208,23 @@ for story in sentence_tokenized:
 
 ### 6. Instructor Do: Stopwords (10 min)
 
-This activity introduces the concept and implementation of stopwords. In English, there are many words that are important to grammar and expression but have no topical significance—these include some of the most common words in the language, such as "is," "her," "for," etc. In NLP, these words are called stopwords. For many use cases in which we hope to summarize the contents of a corpus—such as frequency analysis or topic modelling, for example—we want to take these words out in preprocessing so they don't distract from the topically important words and phrases. We will also take a look at a way of stripping out non-alphabetic characters, which we might want to do for a similar reason.
+This activity introduces the concept and implementation of stopwords. These are words that, for analysis purposes, do not have informational content.
 
 **Files:**
 
 Solved: [stopwords.ipynb](Activities/03-Ins_Stopwords/Solved/stopwords.ipynb)
 
-Walkthrough, the notebook, taking care to allow time for students to look at the output of each step.
+Open the lesson slides, move to the "Stopwords" section, and highlight the following:
+
+* In English, many words are important to grammar and expression but have no topical significance—these include some of the most common words in the language, such as "the," "there," "in," etc. In NLP, these words are called _stopwords_.
+
+* For many use cases in which we hope to summarize the contents of a corpus—such as frequency analysis or topic modelling, for example—we want to take these words out in preprocessing so they don't distract from the topically important words and phrases.
+
+* Today, you will learn how to stripe out non-alphabetic characters, which we might want to do for a similar reason.
+
+* Stopwords are often removed because they don’t distinguish between relevant and irrelevant content.
+
+Walkthrough, the Jupyter notebook, taking care to allow time for students to look at the output of each step.
 
 For simplicity's sake, we're only going to use one sentence from the article to demonstrate stopwording. Note that these techniques can be applied to entire documents or corpora, as well.
 
@@ -298,13 +318,19 @@ Tell students that the extent to which we want to add stopwords is a trade-off. 
 
 ### 10. Instructor Do: Lemmatization (5 min)
 
-Lemmatization is a technique that transforms various morphologies of a word into its base form. This may sound fancy, but it's pretty intuitive. If we're looking to summarize a document with the most frequent words in it, words like "stock" and "stocks" should, for the most part, mean the same. This is also true for words like "run" and "ran." NLTK's lemmatizer takes words in different forms (past tense, plural, etc.) and transforms them into the base form (present tense, singular).
+In this lesson, students will learn about _lemmatization_, a technique that standardizes the morphology of words.
 
 **Files:**
 
-Solved: [lemmatization.ipynb](Activities/05-Ins_Lemmatization/Solved/lemmatization.ipynb)
+* Solved: [lemmatization.ipynb](Activities/05-Ins_Lemmatization/Solved/lemmatization.ipynb)
 
-Note that the lemmatizer is smart enough to not only transform those words that have simple plural forms, but also those words like "goose" that have complex plurals.
+Open the lesson slides, move to the "Lemmatization" section, and highlight the following.
+
+* Lemmatization is a technique that transforms various morphologies of a word into its base form. This may sound fancy, but it's pretty intuitive.
+
+* If we're looking to summarize a document with the most frequent words in it, words like "stock" and "stocks" should, for the most part, mean the same. This is also true for words like "run" and "ran." NLTK's lemmatizer takes words in different forms (past tense, plural, etc.) and transforms them into the base form (present tense, singular).
+
+Open the Jupyter notebook, conduct a dry walkthrough. Note that the lemmatizer is smart enough to transform those words that have simple plural forms and those words like "goose" that have complex plurals.
 
 ![lemma1](Images/lemma1.PNG)
 
@@ -351,13 +377,25 @@ def process_text(article):
 
 ---
 
-### 13. Instructor Do: Ngram Counter (10 min)
+### 13. Instructor Do: N-Gram Counter (10 min)
 
-In this section, we introduce the idea of frequency analysis and ngrams. Like the terms we've thrown about earlier, these are fancy names for pretty basic concepts. Frequency analysis, at its simplest, is simply counting words and phrases. At the most basic level, the words that occur most often in a document (assuming they are not stopwords) will probably give you a good idea of what the document is about. This applies to the corpus level, as well. Ngrams are multiple word sequences—the n stands for the number of consecutive words (or tokens) that are included. So a bigram, for example, is two consecutive tokens strung together. We can think of creating ngrams as another way of tokenizing a document.
+In this section, we introduce the idea of frequency analysis and n-grams. Like the terms we've thrown about earlier, these are fancy names for pretty basic concepts.
 
 **Files:**
 
-Solved: [ngram_count.ipynb](Activities/07-Ins_Ngram_Count/Solved/ngram_count.ipynb)
+* Solved: [ngram_count.ipynb](Activities/07-Ins_Ngram_Count/Solved/ngram_count.ipynb)
+
+Open the lesson slides, move to the "N-Grams" section, and highlight the following.
+
+* Frequency analysis, at its simplest, is merely counting words and phrases. At the most basic level, the words that occur most often in a document (assuming they are not stopwords) will probably give you a good idea of what the document is about.
+
+* This applies to the corpus level, as well. _N-Grams_ are multiple word sequences—the `n` stands for the number of consecutive words (or tokens) that are included. So a bi-gram, for example, is two consecutive tokens strung together. We can think of creating n-grams as another way of tokenizing a document.
+
+* Using an n-gram can be helpful in identifying the multi-word expressions or phrases.
+
+* N-grams can be used to calculate how often words follow one another and are applied in generating text. (predictive keyboard)
+
+* N-grams are helpful in applications like sentiment analysis, where the ordering of the words is important to the context.
 
 Open the solved notebook and explain the following:
 
