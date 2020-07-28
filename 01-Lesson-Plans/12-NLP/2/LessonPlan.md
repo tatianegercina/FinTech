@@ -427,7 +427,8 @@ Get the `head()` an `tail()` of the DataFrame to show the news articles in both 
 Save the DataFrame as a CSV file for further use in the next activities. Warn students that is important to use the `encoding='utf-8-sig'` parameter when saving the file to preserve special characters, especially in French, in the CSV file.
 
 ```python
-file_path = Path("Data/blockchain_news_en_fr.csv")
+# Save to CSV
+file_path = Path("../Resources/blockchain_news_en_fr.csv")
 blockchain_df.to_csv(file_path, index=False, encoding='utf-8-sig')
 ```
 
@@ -520,6 +521,8 @@ In this activity, students will use VADER to score the sentiment of news titles 
 
 * [blockchain_sentiment.ipynb](Activities/06-Stu_Blockchain_Sentiment/Unsolved/blockchain_sentiment.ipynb)
 
+* [blockchain_news_en_fr.csv](Activities/06-Stu_Blockchain_Sentiment/Resources/blockchain_news_en_fr.csv)
+
 ---
 
 ### 12. Instructor Do: Review Blockchain Sentiment (5 min)
@@ -533,7 +536,7 @@ Open the solution and walk through the code, highlighting the following:
 * It's important to use the `encoding='utf-8-sig'` to load the CSV file when creating the DataFrame, especially to get all the special characters from the news articles in French.
 
   ```python
-  file_path = Path("Data/blockchain_news_en_fr.csv")
+  file_path = Path("../Resources/blockchain_news_en_fr.csv")
   news_df = pd.read_csv(file_path, encoding="utf-8-sig")
   ```
 
