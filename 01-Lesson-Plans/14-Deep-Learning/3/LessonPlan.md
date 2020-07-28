@@ -10,7 +10,7 @@ Today's class will introduce students to recurrent neural networks (RNN).
 
 By the end of the class, students will be able to:
 
-* Identify the differences between ANN (artificial neural network), RNN, and LSTM (long short-term memory) RNN models.
+* Identify the differences between an ANN (artificial neural network), RNN, and LSTM (long short-term memory) RNN models.
 
 * Prepare data to fit LSTM RNN models.
 
@@ -26,7 +26,7 @@ By the end of the class, students will be able to:
 
 * Today's class is brief but may be challenging for students. Take extra time during the activities today to ensure that students can follow along.
 
-* A few students may want to go even deeper into the theory and math behind RNNs, but it would be best to direct those in-depth discussions to office hours. Encourage students to review the reference links and to think about ways that they might be able to incorporate RNNs into their projects.
+* A few students may want to take a deeper dive into the theory and math behind RNNs; save those in-depth discussions for office hours. Encourage students to review the reference links and think about ways that they might be able to incorporate RNNs into their projects.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -48,7 +48,7 @@ By the end of the class, students will be able to:
 
 Welcome students to the third day of deep learning!
 
-Open the lesson slides, and briefly cover today's agenda and class objectives. Explain to students that they will learn about recurrent neural networks (RNN), a type of neural network that can remember the past and combine that knowledge with new inputs to make decisions.
+Open the lesson slides, and briefly cover today's agenda and class objectives. Tell students that they will learn about recurrent neural networks (RNN), a type of neural network that can remember the past and combines that knowledge with new inputs to make decisions.
 
 ---
 
@@ -56,11 +56,11 @@ Open the lesson slides, and briefly cover today's agenda and class objectives. E
 
 In this activity, students will learn how to assess the performance of a binary classification model by interpreting the ROC curve and AUC.
 
-Explain to students that they will start Today's class by learning some advanced evaluation metrics, such as the ROC curve and AUC, that will be used to evaluate deep learning models.
+Tell students that today's class will begin with advanced evaluation metrics, such as the ROC curve and AUC, that are used to evaluate deep learning models.
 
-Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" section and highlight the following:
+Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" section, and highlight the following:
 
-* The confusion matrix is one method that can be used to assess the performance of a binary classification model.
+* The confusion matrix is one method that is used to assess the performance of a binary classification model.
 
   ![Confusion matrix components](Images/confusion-matrix.png)
 
@@ -74,13 +74,13 @@ Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" s
 
   * FN (False Negatives): Refers to the positive values that were incorrectly classified as negative by the model.
 
-* The ROC Curve and AUC are a couple of techniques that use the values from the confusion matrix to check and visualize the performance of a classification model
+* ROC stands for "Receiver Operating Characteristic." 
 
-* ROC stands for "Receiver Operating Characteristic."
+* The ROC curve and AUC are a couple of techniques that use the values from the confusion matrix to check and visualize the performance of a classification model.
 
 * The ROC curve shows the performance of a classification model as its discrimination threshold is varied.
 
-* To plot a ROC curve, we use two parameters: true positive rate (`TPR` - also known as recall) and the false positive rate (`FPR`).
+* To plot a ROC curve, we use two parameters: true positive rate (`TPR`-also known as recall) and false positive rate (`FPR`).
 
 * The `TPR` is calculated as follows:
 
@@ -90,7 +90,7 @@ Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" s
 
   ![rnn-sentiment-7](Images/rnn-sentiment-7.png)
 
-* Every point in the ROC curve represents the `TPR` Vs. `FPR` at different thresholds. The following image is a typical ROC Curve.
+* Every point in the ROC curve represents the `TPR` vs. `FPR` at different thresholds. The following image is a typical ROC curve.
 
   ![ROC Curve](Images/roc-curve.png)
 
@@ -100,7 +100,7 @@ Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" s
 
 * The value of `AUC` ranges from `0` to `1`. A model whose predictions are `100%` wrong has an `AUC = 0.0`; in contrast, a model whose predictions are `100%` correct has an `AUC = 1.0`.
 
-* An `AUC=1` is a paradox since it means that the model is perfect, but you may not trust in your model since it could be overfitted. A model with this `AUC` value correctly distinguishes between positive and negative classes.
+* An `AUC=1` is a paradox, since it means that the model is perfect, but you may not trust in your model since it could be overfitted. A model with this `AUC` value correctly distinguishes between positive and negative classes.
 
 * An `AUC=0.50` means that the model is unable to distinguish between positive and negative classes.
 
@@ -110,7 +110,7 @@ Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" s
 
   ![Different AUC values](Images/auc-for-roc-curves.png)
 
-Explain to students that they will learn how to perform this analysis using python next. Answer any questions before moving on.
+Explain to students that they will learn how to perform this analysis using Python next. Answer any questions before moving on.
 
 ---
 
