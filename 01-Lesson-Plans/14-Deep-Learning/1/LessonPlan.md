@@ -813,7 +813,7 @@ Go back to the lesson slides, and move to the slide entitled "Data Standardizati
 
 * Another critical preprocessing task is to standardize the numerical variables in the dataset.
 
-* Standardization involves de-meaning the variables. That is, making it so that each numerical variable has a mean of `0`, and constant variance of `1`.
+* Standardization involves demeaning the variables, or making it so that each numerical variable has a mean of `0`, and constant variance of `1`.
 
 * This makes it so that the variables all have approximately the same size, and reduces the likelihood that outliers or variables in different units will negatively affect model performance.
 
