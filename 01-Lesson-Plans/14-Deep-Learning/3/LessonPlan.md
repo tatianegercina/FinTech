@@ -451,7 +451,7 @@ Answer any questions before moving on.
 
 ### 5. Instructor Do: RNNs for NLP - Sentiment Analysis (15 min)
 
-In this activity, students will learn how to define an LSTM RNN model for sentiment analysis using Keras. Also, data preparation for using LSTM models for natural language processing is introduced.
+In this activity, students will learn how to define an LSTM RNN model for sentiment analysis using Keras. Data preparation to use LSTM models for natural language processing is also introduced.
 
 **Files:**
 
@@ -459,11 +459,11 @@ In this activity, students will learn how to define an LSTM RNN model for sentim
 
 * [austin_coffee_shops_reviews.csv](Activities/02-Ins_Sentiment_Analysis/Resources/austin_coffee_shops_reviews.csv)
 
-Explain to students that you will start exploring the LSTM RNNs by creating a model for sentiment analysis using the Keras API of TensorFlow.
+Explain to students that you will start exploring LSTM RNNs by creating a model for sentiment analysis using the Keras API of TensorFlow.
 
 Open the unsolved Jupyter notebook, live code the solution, and highlight the following.
 
-* For this demo, we are going to use a dataset that contains `6878` customer reviews of Coffee Shops in Austin, Texas. The reviews were taken from Yelp; however, the names of the Coffee Shops were anonymized for privacy reasons.
+* For this demo, we will use a dataset that contains `6878` customer reviews of coffee shops in Austin, Texas. The reviews were taken from Yelp, and the names of the coffee shops were anonymized for privacy reasons.
 
 * The dataset has the following columns:
 
@@ -507,7 +507,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 * We will use `lower=True` argument to convert all the text into lowercase to ensure data consistency.
 
-* The `Tokenizer` object generates a dictionary that creates a list of words (tokens) that maps every unique word in the text with a unique integer. This list is going to be an encoded dictionary of the universe of particular words in the dataset; this dictionary is similar to the bag of words technique described in the NLP Unit.
+* The `Tokenizer` object generates a dictionary that creates a list of words (tokens) that maps every unique word in the text with a unique integer. This list is going to be an encoded dictionary of the universe of particular words in the dataset and is similar to the bag of words technique described in the NLP Unit.
 
   ```python
   # Print the first five elements of the encoded vocabulary
@@ -555,7 +555,7 @@ Highlight the following about these new types of layers.
 
 * [`LSTM` layer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM?version=stable): It's used to add an LSTM layer to the model.
 
-Explain to students that the `Embedding` layer requires at least three parameters as follows. The `vocabulary_size` refers to the size of the vocabulary in the text that is going to be processed; this variable is set at the total number of words in the `tokenizer` dictionary plus `1`. The second parameter needed by this layer is the `input_length`; this parameter is set at `140` (`max_words` variable) that is the value defined for padding the reviews. Finally, the third parameter is the `embedding_size`; this parameter specifies how many dimensions will be used to represent each word. As a rule-of-thumb, a multiple of eight could be used; for this demo, tuning the model value to `64` delivered the best result.
+Explain to students that the `Embedding` layer requires at least three parameters as follows. The `vocabulary_size` refers to the size of the vocabulary in the text that is going to be processed; this variable is set at the total number of words in the `tokenizer` dictionary plus `1`. The second parameter needed by this layer is the `input_length`; this parameter is set at `140` (`max_words` variable), which is the value defined for padding the reviews. Finally, the third parameter is the `embedding_size`; this parameter specifies how many dimensions will be used to represent each word. As a rule of thumb, a multiple of eight could be used; for this demo, tuning the model value to `64` delivered the best result.
 
 ```python
 # Model set-up
@@ -564,7 +564,7 @@ max_words = 140
 embedding_size = 64
 ```
 
-After setting these initial variables, the model's structure is defined. Explain to students that the LSTM RNN model will have two layers, start coding the model structure and comment on the following.
+After setting these initial variables, the model's structure is defined. Explain to students that the LSTM RNN model will have two layers; start coding the model structure and comment on the following.
 
 ```python
 # Define the LSTM RNN model
@@ -582,11 +582,11 @@ model.add(Dense(1, activation="sigmoid"))
 
 * The model is defined as a `Sequential` instance.
 
-* The first layer is an `Embedding` type, this layer processes the integer-encoded sequence of each review comment to create a dense vector representation that will be used by the `LSTM` layer.
+* The first layer is an `Embedding` type. This layer processes the integer-encoded sequence of each review comment to create a dense vector representation that will be used by the `LSTM` layer.
 
 * Next, we add an `LSTM` layer with `280` units (the double of the `max_words` variable as initial test value). This layer transforms the dense vector into a single vector that contains information about the entire sequence that will be used by the activation function in the `Dense` layer to score the sentiment.
 
-* Potentially, adding more `LSTM` layers and input units can lead to better results.
+* Adding more `LSTM` layers and input units can potentially lead to better results.
 
 * Finally, we add a `Dense` output layer with a sigmoid activation function to predict the probability of a review being positive.
 
@@ -602,7 +602,7 @@ model.compile(
 )
 ```
 
-Time to fit the model! Explain to students that we will use a `batch_size = 1000` to speed-up the training process along `10` epochs.
+Time to fit the model! Explain to students that we will use a `batch_size = 1000` to speed up the training process along `10` epochs.
 
 ```python
 # Training the model
@@ -622,7 +622,7 @@ Execute the compilation code and highlight the following.
 
 * Note that the training runs on `5158` samples.
 
-* As you can see, each epoch takes around `20` seconds, so running `10` epochs will take close to five minutes, so be patient.
+* As you can see, each epoch takes around `20` seconds, so running `10` epochs will take close to five minutes; so be patient.
 
 Once the training process ends, it's time to test our model by making some predictions. To do that, explain to students that we are going to use a sample of ten integer-encoded review comments from the testing set.
 
@@ -641,9 +641,9 @@ Answer any questions before moving on.
 
 ---
 
-### 6. Students Do: Sentiment Analysis - RNNs Vs. Vader (40 min)
+### 6. Student Do: Sentiment Analysis - RNNs vs. VADER (40 min)
 
-In this activity, students will use two different models to score sentiment. The goal is to put the performance metrics and techniques students have learned into action to decide which model performs better between VADER and RNN LSTM.
+In this activity, students will use two different models to score sentiment. The goal is to put the performance metrics and techniques students have learned into action, to decide which model performs better between VADER and RNN LSTM.
 
 **Instructions:**
 
@@ -657,7 +657,7 @@ In this activity, students will use two different models to score sentiment. The
 
 ---
 
-### 7. Instructor Do: Review Sentiment Analysis - RNNs Vs. Vader (10 min)
+### 7. Instructor Do: Review Sentiment Analysis - RNNs Vs. VADER (10 min)
 
 **Files:**
 
@@ -669,13 +669,13 @@ In this activity, students will use two different models to score sentiment. The
 
 Open the unsolved version of the Jupyter notebook, live code the solution, and highlight the following:
 
-* Scoring sentiment is adding value to financial decisions nowadays, that's why it's essential to know how to score sentiment using different models.
+* Scoring sentiment is adding value to financial decisions these days. That's why it's essential to know how to score sentiment using different models.
 
 * We used a dataset about movie reviews in this activity, but we can also use news feeds, blogs, or social media to score sentiment.
 
-* The goal of this activity is to compare the performance of VADER sentiment Vs. an RNN LSTM model to decide which one could be better to score sentiment.
+* The goal of this activity is to compare the performance of VADER sentiment vs. an RNN LSTM model to decide which one could be better to score sentiment.
 
-* As you already know, VADER is a natural language processing technique, whereas RNN LSTM models are a kind of deep neural networks. To compare these two models, we will use some metrics that could help us to assess which model performs better.
+* As you already know, VADER is a natural language processing technique, whereas RNN LSTM models are a kind of deep neural network. To compare these two models, we will use some metrics that could help us assess which model performs better.
 
 * First at all, to compare models, it's essential to set the random seed of `numpy` and `tensorflow` to ensure reproducibility.
 
@@ -707,9 +707,9 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
   X_train, X_val, y_train, y_val = train_test_split(X_train, y_train)
   ```
 
-* First, we will score the sentiment using VADER, the same technique we learn in the NLP unit.
+* First, we will score the sentiment using VADER, the same technique we learned in the NLP unit.
 
-* As a good practice, we will download or update the VADER lexicon.
+* As a good practice, we will download, or update, the VADER lexicon.
 
   ```python
   # Download/Update the VADER Lexicon
@@ -733,7 +733,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
 * We will use the `y_vader_pred` list to save the sentiment scored by VADER as `1` for positive, and `0` for negative.
 
-* To plot the ROC Curve, we need the predicted probability of a review to be positive, so we will use the `y_vader_prob` list to store the value of the `pos` polarity score computed by VADER for each review comment.
+* To plot the ROC curve, we need the predicted probability of a review to be positive, so we will use the `y_vader_prob` list to store the value of the `pos` polarity score computed by VADER for each review comment.
 
 * Using a `for` loop, we iterate across all the review comments in the `X` set to score the sentiment using VADER.
 
@@ -750,7 +750,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
 * Since we want to compare these two models on scoring sentiment as positive or negative, we need a way to interpret the polarity scores given by VADER.
 
-* Following some recommendations of NLP researchers, we define a threshold of `0.1` to label a review as positive, if the `compound` score is greater than or equal to `0.1`, the review comment will be positive (append `1` to `y_vader_pred`); if the `compound` score is below `0.1`, the review comment will be negative (append `0` to `y_vader_pred`).
+* Following some recommendations of NLP researchers, we define a threshold of `0.1` to label a review as positive. If the `compound` score is greater than or equal to `0.1`, the review comment will be positive (append `1` to `y_vader_pred`); if the `compound` score is below `0.1`, the review comment will be negative (append `0` to `y_vader_pred`).
 
 * Once we score the sentiment using VADER, we need to normalize the values of the `y_vader_prob` list. We will use the min-max normalization algorithm.
 
@@ -773,7 +773,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
     for x in y_vader_prob]
   ```
 
-* Either method you use, will lead to the same results of normalizing the values between `0` and `1`. We will consider the first approach for this demo.
+* Either method you use will lead to the same results of normalizing the values between `0` and `1`. We will consider the first approach for this demo.
 
 * At this time, we have the original sentiments in `y_test`, the predicted sentiment classes in `y_vader_pred`, and the sentiment predictions in `y_vader_prob`. Now we will continue to score sentiment using an RNN LSTM model.
 
@@ -829,7 +829,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
   X_train_rnn, X_val_rnn, y_train_rnn, y_val_rnn = train_test_split(X_train_rnn, y_train_rnn)
   ```
 
-* Now we can define the structure of the RNN LSTM model since we will use an `Embedding` layer, we need to set the `input_dim` parameter to the size of the vocabulary, and define an embedding size, so we set the following initial configuration variables.
+* Now we can define the structure of the RNN LSTM model. Since we will use an `Embedding` layer, we need to set the `input_dim` parameter to the size of the vocabulary, and define an embedding size, so we set the following initial configuration variables.
 
   ```python
   # Model set-up
@@ -837,7 +837,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
   embedding_size = 64
   ```
 
-* We will define an RNN LSTM model with three layers as follows:
+* We will define an RNN LSTM model with three layers, as follows:
 
   * _Layer 1:_ Add an `Embedding` layer using the `vocabulary_size` and `embedding_size` variables as the first two parameters, and setting `input_length=max_words` (the same size as the padding).
 
@@ -895,7 +895,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
   )
   ```
 
-At this point in the solution's review, switch to the solved version to continue by doing a dry walkthrough of the code since fitting the model takes up to 10 minutes. Highlight the following.
+At this point in the solution's review, switch to the solved version to continue by doing a dry walkthrough of the code, since fitting the model takes up to 10 minutes. Highlight the following.
 
 * Once the model training finishes, we predict the classes using the testing data to start the model comparison.
 
@@ -910,7 +910,7 @@ At this point in the solution's review, switch to the solved version to continue
 
   ![Comparing models accuracy](Images/vader-rnn-accuracy.png)
 
-* At this point, the RNN LSTM model looks better since it has higher accuracy, let's take a look at the confusion matrices of these two models; we use the `confusion_matrix` method from `sklearn` for this task.
+* At this point, the RNN LSTM model looks better since it has higher accuracy. Let's take a look at the confusion matrices of these two models; we use the `confusion_matrix` method from `sklearn` for this task.
 
 * Using the `confusion_matrix` method, and passing as parameters the sentiments from the testing data and the sentiments scored by both models, we gather the data needed to create and display a confusion matrix using a Pandas DataFrame.
 
@@ -926,7 +926,7 @@ At this point in the solution's review, switch to the solved version to continue
 
 * Again, the RNN LSTM model performs better, especially by observing the F1-score.
 
-* Finally, we make a visual analysis of model performance by plotting the ROC curve and computing the AUC. We use the `roc_curve` and `auc` methods from `sklearn`
+* Finally, we make a visual analysis of model performance by plotting the ROC curve and computing the AUC. We use the `roc_curve` and `auc` methods from `sklearn`.
 
   ```python
   # Import the roc_curve and auc metrics from sklearn
@@ -1008,11 +1008,11 @@ At this point in the solution's review, switch to the solved version to continue
 
 * Now we have enough metrics to have a conclusion about these two models' performance.
 
-* After reviewing the results, we can conclude that the RNN LSTM model has a better performance to score sentiment. The RNN model has a higher accuracy and `F1` score values. Also, its ROC Curve plot has a better shape whose area under the curve (AUC) is very close to `1`.
+* After reviewing the results, we can conclude that the RNN LSTM model has a better performance to score sentiment. The RNN model has a higher accuracy and `F1` score values. Also, its ROC curve plot has a better shape whose area under the curve (AUC) is very close to `1`.
 
 * Comparing models is a crucial part of making a decision using machine learning algorithms, since you may want to be sure to deploy the best model for your data and the context of your business scenario.
 
-* You can use the techniques you employ in this activity to compare any binary classification algorithms, such as models to score the decision of buy or sell in a trading algorithm, or the decision to increase or decrease the selling price of a house in real estate.
+* You can use the techniques employed in this activity to compare any binary classification algorithms, such as models to score the decision of buy or sell in a trading algorithm, or the decision to increase or decrease the selling price of a house in real estate.
 
 Answer any questions before moving on.
 
