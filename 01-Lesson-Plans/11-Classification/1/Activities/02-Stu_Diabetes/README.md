@@ -16,12 +16,12 @@ In this activity, you will use the Pima Diabetes dataset to train a logistic reg
 
 6. Print the scores for the training and the testing data.
 
-7. Use the testing data to make predictions and compare those the the actual testing data values.
+7. Use the testing data to make predictions and compare those to the actual testing data values.
 
 ### Hints
 
-If you get stuck, refer back to the instructor demo notebook for examples of how to complete each step. You got this!
+If you get stuck, refer back to the instructor demo notebook for examples of how to complete each step.
 
+----
 
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

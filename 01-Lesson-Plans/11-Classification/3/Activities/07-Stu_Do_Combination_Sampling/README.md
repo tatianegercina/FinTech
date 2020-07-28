@@ -10,4 +10,4 @@ In this activity, you will practice combination sampling with the imbalanced-lea
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

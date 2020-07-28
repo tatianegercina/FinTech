@@ -1,10 +1,10 @@
 # Credit Card Fraud
 
-In this activity, you will practice resampling techniques and use different models to classify credit card transactions as fraud or not fraud. 
+In this activity, you will practice resampling techniques and use different models to classify credit card transactions as fraudulent or not fraudulent. 
 
 ## Instructions
 
-* Implement one undersampling, one oversampling, and one combination sampling technique using the algorithm of your choice. 
+* Implement one undersampling, one oversampling, and one combination sampling technique, using the algorithm of your choice. 
 
 * Compare results of the sampling techniques using a logistic regression classifier, and choose the "best" resampling technique. 
 
@@ -20,4 +20,4 @@ model = LogisticRegression(solver='lbfgs', random_state=1, max_iter=2000)
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
