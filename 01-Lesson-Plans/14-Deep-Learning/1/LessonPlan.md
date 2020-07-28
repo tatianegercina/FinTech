@@ -641,7 +641,7 @@ model_moon = nn.fit(X_moon_train_scaled, y_moon_train, epochs=100)
 
 Ask students the following question:
 
-* How do you think we can improve the model accuracy?
+* How do you think we can improve the model's accuracy?
 
   * **Sample Answer:** We can add more neurons to the hidden layer.
 
