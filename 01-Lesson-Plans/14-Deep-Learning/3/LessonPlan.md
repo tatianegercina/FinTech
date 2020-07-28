@@ -10,7 +10,7 @@ Today's class will introduce students to recurrent neural networks (RNN).
 
 By the end of the class, students will be able to:
 
-* Identify the differences between an ANN (artificial neural network), RNN, and LSTM (long short-term memory) RNN models.
+* Identify the differences between an artificial neural network (ANN), RNN, and long short-term memory (LSTM) RNN models.
 
 * Prepare data to fit LSTM RNN models.
 
@@ -58,7 +58,7 @@ In this activity, students will learn how to assess the performance of a binary 
 
 Tell students that today's class will begin with advanced evaluation metrics, such as the ROC curve and AUC, that are used to evaluate deep learning models.
 
-Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" section, and highlight the following:
+Open the lesson slides and navigate to the _Introducing the ROC Curve and AUC" section_ and highlight the following:
 
 * The confusion matrix is one method that is used to assess the performance of a binary classification model.
 
@@ -74,7 +74,7 @@ Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" s
 
   * FN (False Negatives): Refers to the positive values that were incorrectly classified as negative by the model.
 
-* ROC stands for "Receiver Operating Characteristic." 
+* ROC stands for "Receiver Operating Characteristic." AUC stands for "Area Under the ROC Curve."
 
 * The ROC curve and AUC are a couple of techniques that use the values from the confusion matrix to check and visualize the performance of a classification model.
 
@@ -273,7 +273,7 @@ Continue the demo with the model performance assessment. Tell students you will 
 
   ![roc-auc-4](Images/roc-auc-4.png)
 
-Tell students that the third metric to plot is `AUC`. This stands for "Area Under the ROC curve." Highlight the following.
+Tell students that the third metric to plot is `AUC`. Highlight the following.
 
 ![roc-auc-5](Images/roc-auc-5.png)
 
@@ -355,9 +355,9 @@ Answer any questions before moving on.
 
 In this lecture, students will be introduced to the general concepts behind RNNs and LSTMs. The complex math behind these types of neural networks is beyond the scope of this lesson, but additional resources will be shared for those students interested in learning more about them.
 
-Use the _Intro to Recurrent Neural Networks_ section of the lesson slides to highlight the following:
+Go to the _Intro to Recurrent Neural Networks_ section of the lesson slides to highlight the following:
 
-* RNNs are suitable for sequential pattern recognition, some examples include:
+* RNNs are suitable for sequential pattern recognition. Some examples include:
 
   * Natural Language Processing
 
@@ -371,33 +371,33 @@ Before going deep into RNNs, it's essential to understand the general difference
 
 * ANNs can be used to identify the type of car from a still image. However, can we predict the direction of a car in movement?
 
-  * **Answer:** The short answer for this question is _No_; if you try to predict the direction of a car only with the information of a still image, you don't have enough information to make a prediction beyond of a _random guess_.
+  * **Answer:** The short answer for this question is no. If you try to predict the direction of a car only with the information of a still image, you don't have enough information to make a prediction beyond a random guess.
 
-Explain to the class that without knowledge of where the car has been, you wouldn’t have enough data to predict where the car is going.
+Tell the class that without knowing where the car has been, you won’t have enough data to predict where the car is going.
 
 Highlight the following reasons that ANNs are not suitable for detecting patterns over time:
 
-* If we record in movement, we may have enough information to make a better prediction since we can have a sequence of images representing the car's movement.
+* If we record in movement, we may have enough information to make a better prediction, since we would have a sequence of images representing the car's movement.
 
-* A new challenge arises, ANNs don't have a memory mechanism to store the different states of a sequence of images _per se_.
+* But then a new challenge arises; ANNs don't have a memory mechanism to store the different states of a sequence of images.
 
-* This is where RNNs comes into action! RNNs are good at modeling sequence data thanks to their sequential memory.
+* This is where RNNs comes into action! RNNs are good at modelling sequence data, thanks to their sequential memory.
 
 * Following the example in the slides, using RNNs, we can predict that the car is moving to the right.
 
-Explain to class, that in contrast to an ANN, an RNN is able to remember previous data thanks to a feedback loop. This feedback loop allows information to flow from one step to the next along the sequence.
+Tell students that in contrast to an ANN, an RNN is able to remember previous data, thanks to a feedback loop. This feedback loop allows information to flow from one step to the next along the sequence.
 
 ![ANNs Vs. RNNs](Images/ann_vs_rnn.png)
 
-* For the car-in-motion example, the feedback loop of the RNN allows us to save the position of the car from one step to the next one as long as we have sequence data about the car's position.
+* For the car-in-motion example, the feedback loop of the RNN allows us to save the position of the car from one step to the next one, as long as we have sequence data about the car's position.
 
 Use an example from Natural Language Processing to explain how RNNs work:
 
-* When a person reads a sentence such as `I want to invest for retirement`, the brain starts to make associations among the words as the person reads the sentence.
+* Say that a person reads the following sentence aloud: `I want to invest for retirement`. Upon hearing this sentence, the brain starts to make associations amongst the words.
 
   ![RNN words](Images/rnn-words.png)
 
-* The brain is able to decode the phrase and understand it because the architecture of our brain has memory to capture the sequence of the words in time. RNNs attempt to replicate this behavior.
+* The brain is able to decode the phrase and understand it, because the brain's architecture contains memory that captures the sequence of the words in real time. RNNs attempt to replicate this behavior.
 
 * If we pass the sentence to an RNN, the sentence is split into individual words and the following steps are performed:
 
@@ -411,7 +411,7 @@ Use an example from Natural Language Processing to explain how RNNs work:
 
     ![RNN prediction](Images/rnn_prediction.png)
 
-Explain to students that the memory in an RNN has limitations; they only remember the most recent few steps of a sequence.
+Explain to students that the memory in an RNN does have limitations; they only remember the most recent steps of a sequence.
 
 * The vanishing gradient in the hidden states illustrates this issue known as _short-term memory_.
 
@@ -419,15 +419,15 @@ Explain to students that the memory in an RNN has limitations; they only remembe
 
 * It can be seen that the RNN remembers a lot from the _brown state_, but just a little from the _red state_.
 
-* This _short-term-memory_ issue is solved by using Long-Short-Term Memory Recurrent Neural Networks (aka LSTM or LSTM-RNN).
+* This _short-term memory_ issue is solved by using Long Short-Term Memory Recurrent Neural Networks (aka LSTM or LSTM-RNN).
 
-Explain to the class that we are not going over the math complexity of LSTMs. However, the key point is to know that an LSTM RNN works like an original RNN. The key difference is that an LSTM can selectively decide which types of longer-term events are worth remembering and which are OK to forget.
+Explain to the class that we are not going to go over the mathematical complexity of LSTMs. The key point to know is that an LSTM RNN works like an original RNN. The key difference is that an LSTM can selectively decide which types of longer-term events are worth remembering, and which are OK to forget.
 
 * Thanks to LSTMs, we will be able to use the power of RNNs in longer time windows.
 
 * LSTMs are capable of learning long-term dependencies using a mechanism called _gates_.
 
-Open your web browser and navigate to the [Talk to Transformer](https://talktotransformer.com/) website; slack out the URL to the students and explain to them that you will show them how RNNs can be used for automatic text generation, this is part of the _magic_ behind intelligent bots.
+Open your web browser and navigate to the [Talk to Transformer](https://talktotransformer.com/) website; slack out the URL to the students and explain that you will show them how RNNs can be used for automatic text generation. This is part of the magic behind intelligent bots.
 
 ![Automatic text generator](Images/auto_text_gen.gif)
 
@@ -443,7 +443,7 @@ Once you open the _Talk to Transformer_ website, highlight the following:
 
 * This is just an example of how RNNs and LSTMs can be used for NLP.
 
-For those students that may be interested in learning more about this matter, slack out the [Recurrent Neural Networks cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks) hosted by Stanford University.
+For those students that may be interested in learning more, slack out the [Recurrent Neural Networks cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks) hosted by Stanford University.
 
 Answer any questions before moving on.
 
