@@ -1,4 +1,4 @@
-# Student Do: Sentiment Analysis - RNNs vs. Vader
+# Student Do: Sentiment Analysis - RNNs vs. VADER
 
 In this activity, you will use two different models to score sentiment, putting the performance metrics and techniques you've learned into action to decide which model performs better: VADER or RNN LSTM.
 
