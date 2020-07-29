@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's class will introduce students to **algorithmic trading** in Python. Traditional trading, or the manual purchase and sale of assets such as stocks, has begun to shift to more automated methods due to the advancements in network speed, computing power, and available financial trading APIs. Therefore, students will learn the fundamentals of algorithmic trading and deconstruct the process of producing a functional algorithmic trading model.
+Today's class will introduce students to **algorithmic trading** in Python. Traditional trading, or the manual purchase and sale of assets such as stocks, has begun to shift to more automated methods due to the advancements in network speed, computing power, and available financial trading APIs. Therefore, students will learn the fundamentals of algorithmic trading, and deconstruct the process of producing a functional algorithmic trading model.
 
 In particular, students will learn how to generate trading signals from raw data, backtest a trading strategy using such signals, produce evaluation metrics regarding overall portfolio and per-trade performance, and construct a trading dashboard similar to commercial online trading platforms. By the end of this unit, students will also incorporate machine learning to automate and improve portfolio management and trade performance for maximum profitability with minimal risk.
 
@@ -12,9 +12,9 @@ In particular, students will learn how to generate trading signals from raw data
 
 By the end of class, students will be able to:
 
-* Delineate what algorithmic trading is, how it came to be, and why it's valuable.
+* Explain what algorithmic trading is, its origins, and value.
 
-* Deconstruct the process for algorithmic trading: obtaining the data, making a trading decision, and evaluating the results.
+* Deconstruct the algorithmic trading process, including obtaining data, making trading decisions, and evaluating results.
 
 * Compare the differences between technical analysis and fundamental analysis.
 
