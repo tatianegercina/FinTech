@@ -4,6 +4,8 @@ In this activity, you will be building the Accident Report System command line i
 
 ## Instructions
 
+* Remember your deployed `CryptoFax` contract from earlier, before we can use our new Accident Report dApp we have to make sure that the contract is deployed and that we have registered a new vehicle with the `registerVehicle` function.
+
 * Make sure you have the `python-dotenv` package installed. This can be done by running the following command:
 
 ```bash
