@@ -371,7 +371,7 @@ Before going deep into RNNs, it's essential to understand the general difference
 
 * ANNs can be used to identify the type of car from a still image. However, can we predict the direction of a car in movement?
 
-  * **Answer:** The short answer for this question is no. If you try to predict the direction of a car only with the information of a still image, you don't have enough information to make a prediction beyond a random guess.
+  * **Answer:** The short answer to this question is no. If you try to predict the direction of a car only with the information of a still image, you don't have enough information to make a prediction beyond a random guess.
 
 Tell the class that without knowing where the car has been, you won’t have enough data to predict where the car is going.
 
