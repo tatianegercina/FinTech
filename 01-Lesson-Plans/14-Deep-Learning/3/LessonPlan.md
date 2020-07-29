@@ -657,7 +657,7 @@ In this activity, students will use two different models to score sentiment. The
 
 ---
 
-### 7. Instructor Do: Review Sentiment Analysis - RNNs Vs. VADER (10 min)
+### 7. Instructor Do: Review Sentiment Analysis - RNNs vs. VADER (10 min)
 
 **Files:**
 
