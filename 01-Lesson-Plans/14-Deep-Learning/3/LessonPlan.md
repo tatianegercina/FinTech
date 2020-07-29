@@ -1032,11 +1032,11 @@ In this activity, students will learn how to build RNN LSTM models for time seri
 
 * [stock_data_cad.csv](Activities/04-Ins_LSTM_Time_Series/Resources/stock_data_cad.csv)
 
-Explain to students that RNN LSTM models can also be used to forecast time-series data, such as stock prices, sales, temperature, or even the heights of ocean tides or sound waves!
+Explain to students that RNN LSTM models can also be used to forecast time-series data, such as stock prices, sales, temperature, and even the heights of ocean tides or sound waves!
 
 Open the unsolved version of the Jupyter notebook; live code the solution and highlight the following:
 
-* At a glance, forecasting time series data using RNN LSTM models could be seen as a three step process:
+* At a glance, forecasting time series data using RNN LSTM models could be seen as a three-step process:
 
   * **Step 1:** Data preparation.
 
@@ -1051,7 +1051,7 @@ Open the unsolved version of the Jupyter notebook; live code the solution and hi
   1. Load and clean the data (clean if needed).
   2. Window the data.
   3. Split the data into training and testing datasets.
-  4. Scale and Normalize the data with `StandardScaler` or `MinMaxScaler`.
+  4. Scale and normalize the data with `StandardScaler` or `MinMaxScaler`.
   5. Reshape the inputs for the model.
 
  When prototyping models, it's a common practice to set the random seed to ensure reproducibility; the random seed is set for `numpy` and `tensorflow` as follows.
@@ -1070,7 +1070,7 @@ Open the unsolved version of the Jupyter notebook; live code the solution and hi
 
 Explain to students that the first step towards preparing the data is to create the input features vectors `X` and the target vector `y`.
 
-Explain to students that we will use the `window_data()` function to create these vectors and highlight the following.
+Tell students that we will use the `window_data()` function to create these vectors and highlight the following.
 
 ```python
 def window_data(df, window, feature_col_number, target_col_number):
@@ -1107,7 +1107,7 @@ def window_data(df, window, feature_col_number, target_col_number):
 
   * `target_col_number`: The column number from the original DataFrame where the target is located.
 
-Explain to students, that we will predict closing prices using a `5` days windows of previous _TSX_ closing prices, so that, we will create the `X` and `y` vectors by calling the `window_data` function and defining a window size of `5` and setting the features and target column numbers to `2` (this is the column with the _TSX_ closing prices).
+Tell students that we will predict closing prices using a `5` day window of previous _TSX_ closing prices, creating the `X` and `y` vectors by calling the `window_data` function, defining a window size of `5`, and setting the features and target column numbers to `2` (this is the column with the _TSX_ closing prices).
 
 ![Data Prep 2](Images/data-prep-2.png)
 
@@ -1122,9 +1122,9 @@ y_train = y[: split - 1]
 y_test = y[split:]
 ```
 
-Once the training and test datasets are created, explain to students that we need to scale the data before training the LSTM model. We will use the `MinMaxScaler` from `sklearn` to scale all values between `0` and `1`. Note that because this is a regression problem (we are predicting a closing price), we scale both the features **AND** the target data. If the output target were categorical, the `y` data would not need to be scaled.
+Once the training and test datasets are created, tell students that we need to scale the data before training the LSTM model. We will use the `MinMaxScaler` from `sklearn` to scale all values between `0` and `1`. Note that because this is a regression problem (we are predicting a closing price), we scale both the features **AND** the target data. If the output target were categorical, the `y` data would not need to be scaled.
 
-**Note:** It is important to separate out the scalers for each respective train and test datasets so as to avoid combining both train and test data within a single scaler object. Failing to do so may cause scaling issues when outputting the prediction results later down the line.
+**Note:** It is important to separate out the scalers for each respective train and test datasets to avoid combining both train and test data within a single scaler object. Failing to do so may cause scaling issues when outputting the prediction results later.
 
 ```python
 # Use the MinMaxScaler to scale data between 0 and 1.
@@ -1151,7 +1151,7 @@ X_test = x_test_scaler.transform(X_test)
 y_test = y_test_scaler.transform(y_test)
 ```
 
-Explain to students that the LSTM API from Keras needs to receive the features data as a _vertical vector_  so we need to reshape the `X` data in the form `reshape((X_train.shape[0], X_train.shape[1], 1))`. Both sets, training, and testing are reshaped.
+Explain to students that the LSTM API from Keras needs to receive the features data as a _vertical vector_ so we need to reshape the `X` data in the form `reshape((X_train.shape[0], X_train.shape[1], 1))`. Both sets, training, and testing are reshaped.
 
 ```python
 # Reshape the features for the model
@@ -1213,9 +1213,9 @@ model.add(Dense(1))
 
 * For this demo, we will use a dropout value of `0.2`, which means that on each epoch, we will randomly drop `20%` of the units.
 
-* The number of units in each `LSTM` layer, is equal to the size of the time window, in this demo, we are taking five previous `T-Bonds` closing prices to predict the next closing price.
+* The number of units in each `LSTM` layer is equal to the size of the time window. In this demo, we are taking five previous `T-Bonds` closing prices to predict the next closing price.
 
-Explain to students that the optimizer and loss parameters need to be specified to compile the model. For a regression problem, a good starting choice for these parameters is to use `adam` for the optimizer and `mean_squre_error` for the loss function. Further information about these can be found on [the Keras API for TensorFlow website](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM).
+Explain to students that the optimizer and loss parameters need to be specified to compile the model. For a regression problem, a good starting point for these parameters is to use `adam` for the optimizer and `mean_squre_error` for the loss function. Further information about these can be found on [the Keras API for TensorFlow website](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM).
 
 ```python
 # Compile the model
@@ -1269,17 +1269,17 @@ Explain to students that after training the model, it's time to evaluate our mod
 
 After creating the plot, ask students the following question and conduct a brief discussion about the results:
 
-* Will you trust in this model to predict prices?
+* Can you trust this model to predict prices?
 
-  * **Sample Answer:** It's difficult to trust in this model as is because the error between the real and predicted values looks big.
+  * **Sample Answer:** It's difficult to trust this model as is, because the error between the real and predicted values looks big.
 
 Explain that if you wanted to use this model despite the initial error size, it might be useful to re-run the notebook using different iterations of training and testing data. Be sure to re-run the experiment without the random seed to gain additional randomness in the experiment.
 
 Finally, explain to students that this model could be enhanced as follows:
 
-* We can test different window sizes, for example, from `5` to `10`.
+* We can test different window sizes. For example, from `5` to `10`.
 
-* We can test different dropout parameters, for example, between `0.2` and `0.5`.
+* We can test different dropout parameters. For example, between `0.2` and `0.5`.
 
 * We may want to add or remove additional LSTM layers.
 
@@ -1289,7 +1289,7 @@ Answer any questions before moving on.
 
 ---
 
-### 10. Students Do: Predicting Gold Closing Prices (30 min)
+### 10. Student Do: Predicting Gold Closing Prices (30 min)
 
 This activity is a mini-project where students will gain hands-on experience building an RNN LSTM model for time-series data predicting gold closing prices in CAD.
 
@@ -1331,7 +1331,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
   X, y = window_data(gold_df, window_size, feature_column, target_column)
   ```
 
-* Next, to avoid the dataset being randomized, we manually create the training and testing sets using array slicing and defining the 70% of the data for training and the remainder for testing.
+* Next, to avoid the dataset being randomized, we manually create the training and testing sets using array slicing and defining 70% of the data for training and the remainder for testing.
 
   ```python
   # Manually splitting the data
@@ -1379,7 +1379,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
   X_test = X_test.reshape((X_test.shape[0], X_test.shape[1], 1))
   ```
 
-* We finally get the data ready to be used by our model, so we will define a three layers RNN LSTM model using `30` units in each layer since this is the size of our time windows, and a dropout fraction of `20%`.
+* We finally get the data ready to be used by our model, so we will define a three-layered RNN LSTM model using `30` units in each layer, since this is the size of our time windows, and a dropout fraction of `20%`.
 
   ```python
   # Define the LSTM RNN model.
@@ -1427,7 +1427,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
   ![Mean square error of the model](Images/rnn-lstm-gold-mse.png)
 
-* It seems that the model is not too bad since the MSE is close to zero. Now, we will make predictions using the testing data for further analysis.
+* It seems that the model is not too bad, since the MSE is close to zero. Now, we will make predictions using the testing data for further analysis.
 
 ```python
 # Make predictions using the testing data X_test
@@ -1462,7 +1462,7 @@ predicted = model.predict(X_test)
 
 * Some other tests can be done, such as varying the time window size, the number of layers in the model, or using different batch sizes for training.
 
-* This fine-tuning of a model's parameters is part of the job that should be done to find the model that fits best to a particular business problem.
+* This fine-tuning of a model's parameters should be done in order to find the model that fits best to a particular business problem.
 
 Answer any questions before moving on.
 
@@ -1470,11 +1470,11 @@ Answer any questions before moving on.
 
 ### 12. Instructor Do: Structured Review (35 mins)
 
-**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
+**Note:** If you are teaching this lesson on a weeknight, save this 35-minute review for the next Saturday class.
 
 Please use the entire time to review questions with the students before officially ending class.
 
-Suggested Format:
+Suggested format:
 
 * Ask students for specific activities to revisit.
 
@@ -1482,7 +1482,7 @@ Suggested Format:
 
 * Allow students to start the homework with extra TA support.
 
-Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
+Take your time on these questions! This is a great time to reinforce concepts and address any misunderstandings.
 
 ### End Class
 
