@@ -1291,7 +1291,7 @@ Answer any questions before moving on.
 
 ### 10. Student Do: Predicting Gold Closing Prices (30 min)
 
-This activity is a mini-project where students will gain hands-on experience building an RNN LSTM model for time-series data predicting gold closing prices in CAD.
+This activity is a mini-project where students will gain hands-on experience building an RNN LSTM model for time-series data to predict gold closing prices in CAD.
 
 **Instructions:**
 
