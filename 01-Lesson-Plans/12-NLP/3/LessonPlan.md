@@ -35,6 +35,7 @@ By the end of the class, students will be able to:
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [12.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7400a964-c443-4056-8722-aae900471381) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
@@ -52,6 +53,8 @@ By the end of the class, students will be able to:
 ### 1. Instructor Do: Welcome Class (5 min)
 
 Welcome students back to class. Today's class will introduce a few new concepts but will also help put everything together that we have learned in this unit. We will work with spaCy, another useful tool for general-purpose natural language processing (NLP), and go through a few activities that make use of this tool and others from this unit. The activities today should be rewarding and fun, and students are encouraged to think about out-of-the-box approaches to meet the requirements. Pause for questions about either the homework or previous lessons, then open the slides and continue to the introduction on spaCy.
+
+Recall students that it's crucial to install the `spacy` library and the English language linguistic model, as explained in the unit's installation guide since we're going to use them in Today's activities.
 
 ---
 
@@ -263,6 +266,8 @@ Let the class know that the remainder of the class will be spent on practicing w
 
 In this activity, students will create a sentiment index from News API headlines and correlate it to S&P 500 daily returns, looking for a text topic that generates the highest correlation.
 
+Explain to students that they will need their Alpaca API keys to complete this exercise and add them to the `.env` file together with the News API key.
+
 **Instructions:**
 
 * [README.md](Activities/06-Stu_Correlating_Returns/README.md)
@@ -286,21 +291,27 @@ Open the solved notebook. First, ask a volunteer to walk through the code in the
 ```python
 def get_headlines(keyword):
     all_headlines = []
-    all_dates = []
-    date = '2019-07-24'
-    while date > '2019-06-25':
-        articles = (newsapi.get_everything(q=keyword,
-                                              from_param=date,
-                                              to=date,
-                                              language='en',
-                                              sort_by='relevancy',
-                                              page=1))
+    all_dates = []    
+    date = datetime.strptime(current_date[:10], "%Y-%m-%d")
+    end_date = datetime.strptime(past_date[:10], "%Y-%m-%d")
+    print(f"Fetching news about '{keyword}'")
+    print("*" * 30)
+    while date > end_date:
+        print(f"retrieving news from: {date}")
+        articles = newsapi.get_everything(
+            q=keyword,
+            from_param=str(date),
+            to=str(date),
+            language="en",
+            sort_by="relevancy",
+            page=1,
+        )
         headlines = []
-        for i in range(0, len(articles['articles'])):
-            headlines.append(articles['articles'][i]['title'])
+        for i in range(0, len(articles["articles"])):
+            headlines.append(articles["articles"][i]["title"])
         all_headlines.append(headlines)
         all_dates.append(date)
-        date = datetime.strftime(datetime.strptime(date, '%Y-%m-%d') - timedelta(days=1), '%Y-%m-%d')
+        date = date - timedelta(days=1)
     return all_headlines, all_dates
 ```
 
@@ -308,31 +319,31 @@ Walkthrough the next few blocks of code, which contain the keywords we chose to 
 
 * The function below calculates an average sentiment score for each day for each topic. We chose to take the average of the compound sentiment score as implemented by VADER.
 
-```python
-def headline_sentiment_summarizer_avg(headlines):
-    sentiment = []
-    for day in headlines:
-        day_score = []
-        for h in day:
-            if h == None:
-                continue
-            else:
-                day_score.append(sid.polarity_scores(h)['compound'])
-        sentiment.append(sum(day_score) / len(day_score))
-    return sentiment
-```
+  ```python
+  def headline_sentiment_summarizer_avg(headlines):
+      sentiment = []
+      for day in headlines:
+          day_score = []
+          for h in day:
+              if h == None:
+                  continue
+              else:
+                  day_score.append(sid.polarity_scores(h)['compound'])
+          sentiment.append(sum(day_score) / len(day_score))
+      return sentiment
+  ```
 
-* After calculating the sentiment scores and merging it with the stock return that we get from the IEX API, we generate the correlation coefficients between each variable in the DataFrame. One useful trick when looking for strong correlations, especially when there are many variables of interest, is to use the Pandas style module to visualize the DataFrame as a heat map.
+* After calculating the sentiment scores and merging it with the stock return that we get from the Alpaca API, we generate the correlation coefficients between each variable in the DataFrame. One useful trick when looking for strong correlations, especially when there are many variables of interest, is to use the Pandas style module to visualize the DataFrame as a heat map.
 
-```python
-topic_sentiments.corr().style.background_gradient()
-```
+  ```python
+  topic_sentiments.corr().style.background_gradient()
+  ```
 
   ![corr1](Images/corr1.png)
 
-  Note: Your actual correlation table values may differ from the above.
+  **Note:** Your actual correlation table values may differ from the above.
 
-Ask students whether they found topic sentiments that are more closely correlated with AAPL returns. Ask volunteers whether they might expect correlations between sentiment and returns to remain stable over time for a given topic or stock pairing.
+Ask students whether they found topic sentiments that are more closely correlated with `AAPL` returns. Ask volunteers whether they might expect correlations between sentiment and returns to remain stable over time for a given topic or stock pairing.
 
 ---
 
