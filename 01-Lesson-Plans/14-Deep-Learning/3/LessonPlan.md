@@ -58,7 +58,7 @@ In this activity, students will learn how to assess the performance of a binary 
 
 Tell students that today's class will begin with advanced evaluation metrics, such as the ROC curve and AUC, that are used to evaluate deep learning models.
 
-Open the lesson slides and navigate to the _Introducing the ROC Curve and AUC" section_ and highlight the following:
+Open the lesson slides and navigate to the _Introducing the ROC Curve and AUC section_ and highlight the following:
 
 * The confusion matrix is one method that is used to assess the performance of a binary classification model.
 
