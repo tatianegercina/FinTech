@@ -682,7 +682,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 12. Student Do: The Big Short Part III (15 mins)
+### 12. Student Do: The Big Short, Part III (15 mins)
 
 Now that students have developed a Short Dual Moving Average trading strategy and backtested their strategy against historical VNQ prices, students can now calculate the portfolio and trade evaluation metrics to ascertain the performance of their short strategy.
 
@@ -692,7 +692,7 @@ Now that students have developed a Short Dual Moving Average trading strategy an
 
 ---
 
-### 13. Instructor Do: The Big Short Part III Review (10 mins)
+### 13. Instructor Do: The Big Short, Part III Review (10 mins)
 
 **Files:**
 
@@ -724,17 +724,17 @@ Ask for any remaining questions before moving on.
 
 ### 14. Everyone Do: Trading Dashboard (15 min)
 
-In this activity, instructors will walk students through creating a trading dashboard with Panel using the evaluation metrics generated from prior activities. At this point, students should already have exposure to creating dashboards using Panel.
+In this activity, instructors will walk students through creating a trading dashboard with Panel, using the evaluation metrics generated from prior activities. At this point, students should already have exposure to creating dashboards using Panel.
 
 The purpose of this activity is to show students how to create a trading dashboard using the already shown (Unit 6) Panel dashboard library. In particular, students will once again define rows, columns, and tabs, as well as serve the trading dashboard as an actual web application.
 
 **Files:** [trading_dashboard.ipynb](Activities/08-Ins_Trading_Dashboard/Solved/trading_dashboard.ipynb)
 
-Before moving onto the walkthrough, quickly review the following:
+Before diving into the walkthrough, quickly review the following:
 
 * What is Panel?
 
-  **Answer:** Panel is a high-level dashboarding library that allows a user to create custom interactive web apps and dashboards by connecting user-defined widgets, plots, images, tables, or text. Also, Panel works with other visualization libraries such as Plotly Express or Hvplot via extensions.
+  **Answer:** Panel is a high-level dashboarding library that allows users to create custom interactive web apps and dashboards by connecting user-defined widgets, plots, images, tables, or text. Panel also works with other visualization libraries such as Plotly Express or Hvplot via extensions.
 
 * What is a dashboard?
 
@@ -742,7 +742,7 @@ Before moving onto the walkthrough, quickly review the following:
 
 * Why use a dashboard?
 
-  **Answer:** Having a single interactive interface for key information and visualizations allows a user to monitor the health of an existing process, business function, or application, and therefore aids in measuring performance and identifying any discrepancies that may arise.
+  **Answer:** Having a single interactive interface for key information and visualizations allows users to monitor the health of an existing process, business function, or application, and therefore aids in measuring performance and identifying any discrepancies that may arise.
 
 Open the solution file and highlight the following:
 
@@ -755,7 +755,7 @@ Open the solution file and highlight the following:
   pn.extension()
   ```
 
-* Before creating the Panel dashboard, we will need first to define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvplot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
+* Before creating the Panel dashboard, we will first need to define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvplot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
 
   ![hvplot-price-chart](Images/hvplot-price-chart.png)
 
@@ -780,7 +780,7 @@ Open the solution file and highlight the following:
   )
   ```
 
-* Lastly, the `servable` function then serves or initializes the dashboard. There are two ways to use the `servable` function, either in a Jupyter notebook file where the dashboard is displayed within the notebook file itself, or using the terminal command `panel serve --show trading_dashboard.ipynb` which creates a web application of the dashboard via the default localhost port 5006.
+* Lastly, the `servable` function then serves, or initializes, the dashboard. There are two ways to use the `servable` function, either in a Jupyter notebook file where the dashboard is displayed within the notebook file itself, or using the terminal command `panel serve - show trading_dashboard.ipynb` which creates a web application of the dashboard via the default localhost port 5006.
 
   ![panel-trading-dashboard-servable](Images/panel-trading-dashboard-servable.png)
 
@@ -792,9 +792,9 @@ Ask if there are any questions before moving forward.
 
 ### 15. Instructor Do: Reflect (15 min)
 
-This activity will conclude today's lesson on Algorithmic Trading Day 1 and provide a chance for students to reflect upon what they've learned throughout the day.
+This activity will conclude today's Day 1 of Algorithmic Trading lesson, and give students a chance to reflect upon what they've learned throughout the day.
 
-The purpose of this activity is to allow students a chance to take a step back and digest the concepts that have been taught today by engaging students in such a way that students drive the conversation, thereby reinforcing their learning by "teaching" the class.
+The purpose of this activity is to let students take a step back and digest the concepts that have been taught today. The goal is to engage students in a way that they are driving the conversation, thereby reinforcing their learning by "teaching" the class.
 
 Recap the skills and concepts learned throughout the lesson, and engage students by having them lead the discussion as much as possible:
 
@@ -810,16 +810,16 @@ Recap the skills and concepts learned throughout the lesson, and engage students
 
   * What kinds of trade evaluation metrics exist?
 
-* Ask if any volunteers would like to anything that has not been previously stated.
+* Ask if any volunteers would like to add anything that has not already been discussed.
 
 Finish the recap with a few statements of encouragement:
 
 * Tell students they should give themselves a round of applause. They are on their way to becoming their own investment fund managers!
 
-* Remind students that by learning how to trade algorithmically, they are now already way ahead of those who only know how to invest manually. Therefore, they now have the tools to do both and can choose which method they prefer, either algorithmically, manually or a hybrid of both.
+* Remind students that by learning how to trade algorithmically, they are now already way ahead of those who only know how to invest manually. Therefore, they now have the tools to do both, and can choose which method they prefer, either algorithmically, manually, or a hybrid of both.
 
 * The next step is to create an algorithmic trading framework on Day 2, in which students will take what they've learned today to create a full-fledged trading application that they can use in real-world scenarios. Students should be pumped for this!
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
