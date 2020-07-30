@@ -59,11 +59,11 @@ The Time Tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTra
 
 ### 1. Instructor Do: Welcome Class (10 min)
 
-In this activity, students are introduced to algorithmic trading and its utility in FinTech. This section provides a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and simplify participation in the market through the execution of a single program.
+In this activity, students will be introduced to algorithmic trading and its utility in FinTech. This section provides a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and simplify participation in the market through the execution of a single program.
 
-Welcome students to the first day of algorithmic trading and explain the following:
+Welcome students to the first day of algorithmic trading! Cover the following points.
 
-* Introduce students to algorithmic trading first by describing how cumbersome it can be to make trades manually. Explain that a typical day for traders involves:
+* It can be very cumbersome to make trades manually. A typical day for traders involves:
 
   * Tracking the transactional history of many stocks.
 
@@ -73,17 +73,17 @@ Welcome students to the first day of algorithmic trading and explain the followi
 
   * Keeping emotions in check.
 
-* Also explain that human emotions play a key role in the success or failure of a trade/trader. Because the market is constantly changing with varying degrees of volatility, it's easy for humans to get emotional when trading. The trades that traders make can drastically impact their profitability and livelihood. Furthermore, because traders often deal with other people's money, such as retirement funds, impulsive trading decisions can have the ability to disrupt the economic foundation of countless lives.
+* Explain that human emotions play a key role in the success or failure of a trade/trader. Because the market can be volatile and is constantly changing, it's easy for humans to get emotional when trading. A trader's livelihood can be positively or adversely impacted by the trades they make. Also, because traders mostly deal with other people's money, such as retirement funds, impulsive trading decisions can potentially disrupt the economic foundation of countless lives.
 
-* The sheer number of moving parts and details that need to be considered can make it difficult for the human mind to make profitable trades consistently. This is where **algorithmic trading** comes in.
+* The sheer number of moving parts and details involved can make it difficult for people to make profitable trades consistently. This is where algorithmic trading comes in.
 
-* Algorithmic trading is the concept of utilizing machines to automate the process of buying and selling assets. Machines running algorithms can make predictions about ROI, risk, and analyze transactions much faster than a human brain. Because computers run off of logic rather than emotions, traders don't have to worry about their emotions getting in the way.
+* Algorithmic trading is the concept of utilizing machines to automate the process of buying and selling assets. Machines running algorithms can make predictions about ROI, risk, and analyze transactions much faster than a human brain. Because computers run off of logic rather than emotions, traders don't have to worry about their feelings getting in the way.
 
   * Underscore to students that there are many different algorithmic trading strategies, even ones that can leverage machine learning. Also, an algorithm does not necessarily have to evaluate the basis of a candidate trade in the same way: algorithms can be used to predict the best investments based on profit-to-risk ratios, volume, and volatility, or any number of varying attributes.
 
-* Using algorithmic trading models in conjunction with portfolio management also allows for automatic rebalancing of assets (capital) within the portfolio, thereby aiding in portfolio optimization. Algorithmic trading models automatically buy and sell assets within the portfolio according to the optimal weights for each asset calculated by the model.
+* Using algorithmic trading models in conjunction with portfolio management also allows for automatic rebalancing of assets (capital) within the portfolio, thereby aiding in portfolio optimization. Algorithmic trading models automatically buy and sell assets within the portfolio, according to the optimal weights for each asset calculated by the model.
 
-* If time remains, summarize to students that all **algorithmic trading** involves is the execution of specific trading actions based on specific criteria, such as the ratio of profit-to-risk for the given scenario. In this regard, all a human has to do is click a button to execute the algorithm.
+* If time remains, summarize for students that all algorithmic trading involves is the execution of specific trading actions based on specific criteria, such as the ratio of profit-to-risk for the given scenario. This way, all a human has to do is click a button to execute the algorithm.
 
 * Lastly, if there is time, explain to students that the use of algorithmic trading has given certain firms a competitive advantage compared to those still using manual, human labor. They're able to make smarter, more agile decisions based on real-time predictions and historical analysis, not to mention that less time is wasted on implementing and repeating manual processes.
 
