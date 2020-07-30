@@ -8,7 +8,7 @@ If you had an algorithm to monitor and *short* the market in 2008, could you hav
 
 Using the [starter file](Unsolved/the_big_short.ipynb), complete the following steps:
 
-1. Create a Dual Moving Average Crossover Trading Signal that indicates shorting opportunities.
+  1. Create a Dual Moving Average Crossover Trading Signal that indicates shorting opportunities.
 
   i.    Create a filtered DataFrame containing just the `Date` and `Close` columns of the VNQ stock data.
 
@@ -24,7 +24,7 @@ Using the [starter file](Unsolved/the_big_short.ipynb), complete the following s
 
   vii.  Use the `diff` function on the `Signal` column and assign the values to a `Entry/Exit` column to indicate trade entry and exit points in time.
 
-2. Plot the entry and exit points of your Short Dual Moving Average Crossover signal.
+  2. Plot the entry and exit points of your Short Dual Moving Average Crossover signal.
 
   i.    Create scatter plots for the entry and exit points. Use the colour green to indicate the entry points. Use a second scatter plot with red markers to indicate the exit points.
 
