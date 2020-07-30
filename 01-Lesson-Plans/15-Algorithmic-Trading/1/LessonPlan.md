@@ -157,21 +157,21 @@ Answer any questions before moving on.
 
 ### 4. Instructor Do: Trading Signals (10 mins)
 
-In this activity, students will learn what differentiates technical analysis from fundamental analysis, what a technical indicator is, what trading signals are, and how to use these signals to devise a trading strategy (actions based on the occurrence of a trading signal). In particular, students will learn how to generate a dual moving average crossover trading signal, implement the logic/strategy to perform the buy or sell orders, and overlay the points at which the algorithm places the buy and sell orders on top of the plot for closing prices of AAPL stock.
+In this activity, students will learn what differentiates technical analysis from fundamental analysis, what a technical indicator is, what trading signals are, and how to use these signals to devise a trading strategy (actions based on the occurrence of a trading signal). Students will focus on how to generate a dual moving average crossover trading signal, implement the logic/strategy to perform the buy or sell orders, and overlay the points at which the algorithm places the buy and sell orders on top of the plot for closing prices of AAPL stock.
 
 **Files:** [dual_ma_crossover.ipynb](Activities/02-Ins_Trading_Signals/Solved/dual_ma_crossover.ipynb)
 
 Navigate to the trading signals section of the slides, and highlight the following:
 
-* Technical analysis is an (often) short-term trading discipline in which investments (such as stocks) are evaluated based on their price action or movement.
+* Technical analysis is an (often) short-term trading discipline, in which investments (such as stocks) are evaluated based on their price action or movement.
 
-* Fundamental analysis is an investment discipline in which investments (such as stocks) are evaluated based on their intrinsic qualities such as financial (income statement, balance sheet, and cash flow statement) or economic data about the underlying company.
+* Fundamental analysis is an investment discipline in which investments (such as stocks) are evaluated based on their intrinsic qualities, such as financial (income statement, balance sheet, and cash flow statement) or economic data about the underlying company.
 
-Engage students by asking if anyone has any guesses or knowledge of what the following terms are. Make sure to communicate to students that they are not expected to have the answers yet.
+Ask students if anyone can guess or knows what the following terms are, making sure that they're aware that this is a fun exercise; they aren't expected to know the answers yet.
 
 * What is a technical indicator?
 
-  **Answer:** Falling under the umbrella of technical analysis, a technical indicator is a data-driven metric that uses trading data such as closing price and volume to analyze the short or long-term price movements occurring over a specified period. For example, a 20-day simple moving average is a technical indicator representing a rolling 20-day mean of a stock's closing prices.
+  **Answer:** Falling under the umbrella of technical analysis, a technical indicator is a data-driven metric that uses trading data, such as closing price and volume, to analyze the short or long-term price movements occurring over a specified period. For example, a 20-day simple moving average is a technical indicator representing a rolling 20-day mean of a stock's closing prices.
 
 * What is a trading signal?
 
@@ -373,7 +373,7 @@ Open the solution file and review the following:
 
     ![short-exit.png](Images/short-exit.png)
 
-* Plotting the closing prices of VNQ, a 50-day moving average, and a 100-day moving average overlaid with marker symbols indicating short position entry and exit trades shows that an algorithm utilizing a short position dual moving average crossover strategy during the 2008 recession would have made money, rather than lose money, like most other investors experienced during that time.
+* Plotting the closing prices of VNQ, a 50-day moving average, and a 100-day moving average overlaid with marker symbols indicating short position entry and exit trades, shows that an algorithm utilizing a short position dual moving average crossover strategy during the 2008 recession would have made money, rather than lose money, like most other investors experienced during that time.
 
   ![short-dual-ma-crossover-plot](Images/short-dual-ma-crossover-plot.png)
 
