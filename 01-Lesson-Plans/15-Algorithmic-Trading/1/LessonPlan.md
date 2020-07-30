@@ -119,15 +119,15 @@ Ask if there are any questions before moving on.
 
 ### 3. Everyone Do: Demystifying Algorithmic Trading (10 min)
 
-The goal of this activity is to demystify algorithmic trading by showing a simplified trading strategy in code. While this particular strategy isn't something that anyone would want to trade with, it serves to show how a trading strategy can be written in code. The following lessons will build on this core concept using more realistic strategies.
+The goal of this activity is to demystify algorithmic trading by showing a simplified trading strategy in code. While this particular strategy isn't something that anyone would want to trade with, it shows how a trading strategy can be written in code. The following lessons will build upon this core concept, using more realistic strategies.
 
 **Files:** [simple_trading_algorithm.ipynb](Activities/01-Evr_Simple_Trading_Algorithm/Solved/simple_trading_algorithm.ipynb)
 
 Open the solution file and discuss the following:
 
-* Trading algorithms are often misconstrued to be highly complex and esoteric, left only for the quantitative analysts/traders of prominent big banks and hedge funds; however, when breaking down the core components of a trading algorithm, there are three fundamental parts: obtaining the data, making a trading decision, and evaluating the results.
+* Trading algorithms are often misconstrued as highly complex and esoteric, reserved for the quantitative analysts/traders of prominent big banks and hedge funds. However, when breaking down the core components of a trading algorithm, there are three fundamental parts: obtaining the data, making a trading decision, and evaluating the results.
 
-* Often, stock data is provided from brokerage services than can be obtained via API calls. For this particular example, however, we've produced a hard-coded DataFrame consisting of 10 trading days worth of closing prices for AMD. The `bdate_range` function produces a datetime index using only "business day" datetime objects.
+* Often, stock data is provided from brokerage services that can be obtained via API calls. For this particular example, however, we've produced a hard-coded DataFrame consisting of 10 trading days worth of closing prices for AMD. The `bdate_range` function produces a datetime index using only "business day" datetime objects.
 
   ![amd-closing-prices-dataframe](Images/amd-closing-prices-dataframe.png)
 
@@ -145,7 +145,7 @@ Open the solution file and discuss the following:
 
 End the discussion with the following:
 
-* Ask the class if they would use this particular trading strategy with their own money and why they would or wouldn't use it. Call for a few volunteers to provide their answers.
+* Ask students if they would or would not use this particular trading strategy with their own money, and why. Call on a few volunteers to provide their answers.
 
 * Ask how they might formally evaluate the algorithm and then share some of the following ideas for evaluation: risk metrics such as sharp ratios, performing quantitative analysis, using data visualizations.
 
