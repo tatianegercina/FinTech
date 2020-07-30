@@ -50,7 +50,7 @@ To add the slides to the student-facing repository, download the slides as a PDF
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-The time tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTracker.xlsx)
+The Time Tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTracker.xlsx)
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [15.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6702e079-360f-4970-b75a-aafe00f8da33) Note that this video may not reflect the most recent lesson plan.
@@ -59,7 +59,7 @@ The time tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTra
 
 ### 1. Instructor Do: Welcome Class (10 min)
 
-In this activity, students are introduced to what algorithmic trading is and why it's useful for FinTech professionals. In particular, this section is a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and simplify participation in the market through the execution of a single program.
+In this activity, students are introduced to algorithmic trading and its utility in FinTech. This section provides a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and simplify participation in the market through the execution of a single program.
 
 Welcome students to the first day of algorithmic trading and explain the following:
 
