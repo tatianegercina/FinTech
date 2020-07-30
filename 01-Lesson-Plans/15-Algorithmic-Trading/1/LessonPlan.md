@@ -175,9 +175,9 @@ Engage students by asking if anyone has any guesses or knowledge of what the fol
 
 * What is a trading signal?
 
-  **Answer:** A trading signal is the point at which a technical indicator, such as the crossover of two moving averages (short MA and long MA), suggests an opportunity for action--namely whether an individual trader or algorithmic trading program should issue a buy or sell order for a security (such as a stock) at that point in time.
+  **Answer:** A trading signal is the point at which a technical indicator, such as the crossover of two moving averages (short MA and long MA), suggests an opportunity for action. Namely, whether an individual trader or algorithmic trading program should issue a buy or sell order for a security (such as a stock) at that point in time.
 
-Transition to explaining to students how technical indicators and trading signals are used in practice, particularly as it relates to the dual moving average crossover trading strategy.
+Transition to explaining how technical indicators and trading signals are used in practice, particularly as it relates to the dual moving average crossover trading strategy.
 
 * Emphasize to students that technical indicators and trading signals are used when implementing trading strategies. The goal of a trading signal is to identify opportunities to get ahead of the trend.
 
@@ -185,7 +185,7 @@ Transition to explaining to students how technical indicators and trading signal
 
     * Use this as an opportunity to remind students that moving averages are calculated using historical quote data. Moving averages are just the average security price over/for a given time period.
 
-* Explain the difference between short term and long term moving averages. Highlight that short term moving average and long term moving averages both track the average price of a security over time; however, long term moving averages are tracked with a greater window than short term.
+* Explain the difference between short term and long term moving averages. Highlight that short term moving averages and long term moving averages both track the average price of a security over time; however, long term moving averages are tracked with a greater window than short term.
 
 * Underscore that short term and long term moving averages, when plotted, will travel in the same direction. At some point, they will cross. The value at the time of the crossover is considered the crossover point. Crossover points are a type of technical indicator.
 
@@ -201,15 +201,15 @@ Elaborate on the role of trading signals in placing trades. Emphasize how buy an
 
   * The technical indicator would suggest that the underlying stock price will rise in the short-term. The trading signal would signal to buy.
 
-* Ask students the following: if **dual moving average crossover** is used, what would be the trading signal for the following scenario:
+* Ask students the following: if dual moving average crossover is used, what would the trading signal be for this scenario:
 
-  * The short window moving average crosses under a long window moving average and continues to be less than the long window moving average (stock will fall in the short-term).
+  * The short window moving average crosses under a long window moving average, and continues to be less than the long window moving average (stock will fall in the short-term).
 
   * **Answer** The signal would be to issue a sell order. Sell orders would be issued at the points in which the short window moving average crosses under the long window moving average.
 
 Open the solution file and highlight the following points:
 
-* By default, a Pandas DataFrame shows a limited number of rows and columns in order to conserve screen space (ex. the `...`); however, because we'll need to see the specific points at which a trading signal is active and the corresponding trade entry and exit points, it is a good idea to increase the Pandas DataFrame display size to show all of it's contents.
+* By default, a Pandas DataFrame shows a limited number of rows and columns in order to conserve screen space (ex. the `...`); however, because we'll need to see the specific points at which a trading signal is active and the corresponding trade entry and exit points, it is a good idea to increase the Pandas DataFrame display size to show all of its contents.
 
   ![dataframe-options](Images/dataframe-options.png)
 
@@ -222,7 +222,7 @@ Open the solution file and highlight the following points:
     signals_df['SMA100'] = signals_df['close'].rolling(window=long_window).mean()
     ```
 
-* After the averages have been identified, logic has to be defined to return an active/inactive trade signal 1 or -1 when the short MA crosses above/under the long MA. and calculating the points at which the entry or exit position should be made 1 or -1.
+* After the averages have been identified, logic has to be defined to return an active/inactive trade signal 1 or -1 when the short MA crosses above/under the long MA, and calculating the points at which the entry or exit position should be made 1 or -1.
 
   ![dual-ma-signal](Images/dual-ma-signal.png)
 
