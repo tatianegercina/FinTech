@@ -303,7 +303,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 5. Student Do: The Big Short (15 mins)
+### 5. Student Do: The Big Short, Part I (15 mins)
 
 In this activity, students will take what they've learned about generating trading signals and implementing a corresponding trading strategy, and perform the inverse: create a trading strategy that profits off of price declines by shorting (selling) and covering (buying) the stock.
 
@@ -317,7 +317,7 @@ In this activity, students will take what they've learned about generating tradi
 
 ---
 
-### 6. Instructor Do: The Big Short Review (10 mins)
+### 6. Instructor Do: The Big Short, Part I Review (10 mins)
 
 **File:** [the_big_short.ipynb](Activities/03-Stu_Trading_Signals/Solved/the_big_short.ipynb)
 
