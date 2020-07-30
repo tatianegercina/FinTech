@@ -205,7 +205,7 @@ Elaborate on the role of trading signals in placing trades. Emphasize how buy an
 
   * The short window moving average crosses under a long window moving average, and continues to be less than the long window moving average (stock will fall in the short-term).
 
-  * **Answer** The signal would be to issue a sell order. Sell orders would be issued at the points in which the short window moving average crosses under the long window moving average.
+  * **Answer:** The signal would be to issue a sell order. Sell orders would be issued at the points in which the short window moving average crosses under the long window moving average.
 
 Open the solution file and highlight the following points:
 
@@ -600,17 +600,17 @@ Go to the slideshow and navigate to the evaluation slide. Communicate the follow
 
 * Evaluating the performance of a portfolio is of utmost importance, regardless if it is a human or an algorithm making trades. The following metrics can be used to evaluate a portfolio.
 
-  * **Cumulative Return**: The total/aggregated amount of gains and losses for an investment. Cumulative return is measured across time, and not for a particular time period.
+  * **Cumulative Return:** The total/aggregated amount of gains and losses for an investment. Cumulative return is measured across time, and not for a particular time period.
 
-  * **Annual Return**: A time-weighted annual percentage, representing the return on an investment over a period of time.
+  * **Annual Return:** A time-weighted annual percentage, representing the return on an investment over a period of time.
 
-  * **Annual Volatility**: The annualized degree of variation in trading prices over time.
+  * **Annual Volatility:** The annualized degree of variation in trading prices over time.
 
-  * **Sharpe Ratio**: The return of investment compared to its risk, measured by the difference between the return on investment and the risk-free return.
+  * **Sharpe Ratio:** The return of investment compared to its risk, measured by the difference between the return on investment and the risk-free return.
 
-  * **Downside Deviation/Return**: The measure of risk for returns that are below the minimum acceptable return.
+  * **Downside Deviation/Return:** The measure of risk for returns that are below the minimum acceptable return.
 
-  * **Sortino Ratio**: The quotient of harmful volatility and overall volatility. The Sortino ratio focuses on downside deviation, rather than the standard deviation.
+  * **Sortino Ratio:** The quotient of harmful volatility and overall volatility. The Sortino ratio focuses on downside deviation, rather than the standard deviation.
 
 * These metrics can be calculated for a portfolio through historical backtesting, or they can be used to measure the performances of specific securities before engaging in a trade.
 
@@ -640,7 +640,7 @@ Transition to a dry walkthrough of the code used to calculate each of these metr
 
 * Ask students if anyone remembers how to calculate a Sharpe ratio.
 
-  **Answer**: Calculate the annual average daily return, then divide that by the standard deviation of daily returns. The standard deviation of daily returns will need to be multiplied by the square root of the number of trading days.
+  **Answer:** Calculate the annual average daily return, then divide that by the standard deviation of daily returns. The standard deviation of daily returns will need to be multiplied by the square root of the number of trading days.
 
   ```python
   sharpe_ratio = (signals_df['Portfolio Daily Returns'].mean() * 252) / (signals_df['Portfolio Daily Returns'].std() * np.sqrt(252))
