@@ -381,19 +381,19 @@ Open the solution file and review the following:
 
 ### 7. Instructor Do: Backtesting (10 mins)
 
-In this activity, students will learn how to test the performance of an algorithmic trading strategy using historical stock data, a process otherwise known as backtesting. In particular, students will use historical stock data to measure the profit/loss of executed trades for a given trading strategy and visualize the overall change in portfolio value over time.
+In this activity, students will learn how to test the performance of an algorithmic trading strategy using historical stock data, a process otherwise known as backtesting. Students will use historical stock data to measure the profit/loss of executed trades for a given trading strategy, and visualize the overall change in portfolio value over time.
 
 **Files:** [backtesting.ipynb](Activities/04-Ins_Backtesting/Solved/backtesting.ipynb)
 
-First, present the following discussion points and use the questions below to elicit student engagement:
+Present the following discussion points to the class:
 
 * Backtesting is the process for measuring the overall performance of a trading strategy using historical stock prices to simulate executed trades dictated by the calculated trading signals and trade decision logic.
 
 * Ask students to guess why backtesting is important?
 
-  **Answer:** Backtesting helps to assess the validity or profitability of a trading strategy over time and provides a benchmark for how it may perform going forward.
+  **Answer:** Backtesting helps assess the validity or profitability of a trading strategy over time and provides a benchmark for how it may perform going forward.
 
-* Underscore to students that while backtesting is important, the results of the backtest correspond to historical prices and not future prices. Therefore, backtesting may provide a reliable benchmark for the stock prices that have already occurred but may prove to be less reliable as new stock data arises.
+* Underscore that while backtesting is important, the results of the backtest correspond to historical prices and not future prices. Therefore, backtesting may provide a reliable benchmark for the stock prices that have already occurred, but may prove to be less reliable as new stock data arises.
 
 Next, open the solution file and present the following:
 
@@ -428,7 +428,7 @@ Walk students through each step required to implement manual backtesting. Highli
 
   ![active-positions](Images/active-positions.png)
 
-* Similar to using the `diff` function on the `Signal` column to calculate entry and exit points, using the `diff` function on the `Position` column calculates the entry and exit points for the specified share size, in this case, 500 shares.
+* Similar to using the `diff` function on the `Signal` column to calculate entry and exit points, using the `diff` function on the `Position` column calculates the entry and exit points for the specified share size; in this case, 500 shares.
 
   ```python
   # Find the points in time where a 500 share position is bought or sold
@@ -437,7 +437,7 @@ Walk students through each step required to implement manual backtesting. Highli
 
   ![entry-exit-positions](Images/entry-exit-positions.png)
 
-* In the next step, a new column `Portfolio Holdings` is created by multiplying the closing prices of AAPL by the cumulative sum for entry and exit positions of 500 shares--indicating the value of the investment made for each trade over time.
+* In the next step, a new column `Portfolio Holdings` is created by multiplying the closing prices of AAPL by the cumulative sum for entry and exit positions of 500 shares-indicating the value of the investment made for each trade over time.
 
   ```python
   # Multiply share price by entry/exit positions and get the cumulatively sum
@@ -455,7 +455,7 @@ Walk students through each step required to implement manual backtesting. Highli
 
   ![erroneous-portoflio-holdings.png](Images/erroneous-portfolio-holdings.png)
 
-* Next, another new column `Portfolio Cash` is created by subtracting the initial capital allocation of $100,000 by the product of APPL closing prices and entry/exit share size positions--indicating the remaining cash value of the simulated portfolio relative to the performance of trades over time. Notice that now, parentheses are used around the product of AAPL closing prices and entry/exit share size positions when calculating the remaining portfolio cash. This is because while the investment value of each trade changes over time, the *cost-basis* of each trade remains the same.
+* Next, another new column `Portfolio Cash` is created by subtracting the initial capital allocation of $100,000 by the product of AAPL closing prices and entry/exit share size positions-indicating the remaining cash value of the simulated portfolio relative to the performance of trades over time. Notice that now, parentheses are used around the product of AAPL closing prices and entry/exit share size positions when calculating the remaining portfolio cash. This is because while the investment value of each trade changes over time, the *cost-basis* of each trade remains the same.
 
   ```python
   # Subtract the initial capital by the portfolio holdings to get the amount of liquid cash in the portfolio
