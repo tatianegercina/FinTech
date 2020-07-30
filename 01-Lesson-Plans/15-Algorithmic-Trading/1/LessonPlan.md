@@ -305,7 +305,7 @@ Ask if there are any questions before moving on.
 
 ### 5. Student Do: The Big Short (15 mins)
 
-In this activity, students will take what they've learned about generating trading signals and implementing a corresponding trading strategy, and instead now perform the inverse: create a trading strategy that profits off of price declines by shorting (selling) and covering (buying) the stock.
+In this activity, students will take what they've learned about generating trading signals and implementing a corresponding trading strategy, and perform the inverse: create a trading strategy that profits off of price declines by shorting (selling) and covering (buying) the stock.
 
 **Files:**
 
@@ -325,7 +325,7 @@ Take a moment to explain that generating a short position dual moving average cr
 
 * Calculating a short window rolling moving average and a long window rolling moving average of closing prices.
 
-* Defining logic for an active trade signal as 1 when the short MA crosses under the long MA and 0 when the short MA crosses above the long MA.
+* Defining logic for an active trade signal as 1 when the short MA crosses under the long MA, and 0 when the short MA crosses above the long MA.
 
 * Calculating the points at which an entry or exit position should be made using 1 or -1.
 
@@ -373,7 +373,7 @@ Open the solution file and review the following:
 
     ![short-exit.png](Images/short-exit.png)
 
-* Plotting the closing prices of VNQ, a 50-day moving average, and a 100-day moving average overlaid with marker symbols indicating short position entry and exit trades shows that an algorithm utilizing a short position dual moving average crossover strategy during the 2008 recession would have **made** money rather than **lose** money like most other investors during that time.
+* Plotting the closing prices of VNQ, a 50-day moving average, and a 100-day moving average overlaid with marker symbols indicating short position entry and exit trades shows that an algorithm utilizing a short position dual moving average crossover strategy during the 2008 recession would have made money, rather than lose money, like most other investors experienced during that time.
 
   ![short-dual-ma-crossover-plot](Images/short-dual-ma-crossover-plot.png)
 
