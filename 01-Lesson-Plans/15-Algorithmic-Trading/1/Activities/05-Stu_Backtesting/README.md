@@ -1,6 +1,6 @@
-# The Big Short Part II
+# The Big Short, Part II
 
-The real estate bubble that led to the financial crisis in 2008 resulted in one of the worst economic disasters since the Great Depression of 1929. During this period, housing prices fell precipitously, causing massive ripples throughout the U.S. economy and ultimately causing the stock market to crash. Some keen investors profited off of the recession by *shorting* the market or placing bets that the market would fall. Most, however, lost substantial value from their investment portfolios, including much-needed retirement accounts and savings accounts.
+The real estate bubble that led to the 2008 financial crisis resulted in one of the worst economic disasters since the Great Depression. During this period, housing prices plummeted, throwing the US economy into freefall and causing the stock market to crash. Some keen investors profited off of the recession by *shorting* the market or placing bets that the market would fall. Most, however, lost substantial value from their investment portfolios, including much needed retirement and savings accounts.
 
 Now that you have developed a Short Position Dual Moving Average Crossover Trading Strategy and determined that the algorithm could have *made* money during the 2008 financial recession, it is now time to determine *how much* money could have been made.
 
