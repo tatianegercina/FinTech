@@ -495,9 +495,9 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 8. Student Do: The Big Short Part II (15 mins)
+### 8. Student Do: The Big Short, Part II (15 mins)
 
-In this activity, students will now take the Short Position Dual Moving Average Crossover trading strategy they made in the previous student activity and now run a backtest to quantify the performance of their trading strategy.
+In this activity, students will take the Short Position Dual Moving Average Crossover trading strategy that they made in the previous student activity, and run a backtest to quantify the performance of their trading strategy.
 
 **Files:**
 
@@ -509,13 +509,13 @@ In this activity, students will now take the Short Position Dual Moving Average 
 
 ---
 
-### 9. Instructor Do: The Big Short Part II Review (10 mins)
+### 9. Instructor Do: The Big Short, Part II Review (10 mins)
 
 **File:** [the_big_short.ipynb](Activities/05-Stu_Backtesting/Solved/the_big_short_part_2.ipynb)
 
 Open the solution file and review the following:
 
-* The plot of the Short Position Dual Moving Average Crossover trading strategy showed that it was possible to *make* money from shorting VNQ (a real estate ETF) stock during the financial recession in 2008. Now, through backtesting the particular strategy, we will be able to see *how much* money can be made.
+* The plot of the Short Position Dual Moving Average Crossover trading strategy showed that it was possible to *make* money from shorting VNQ (a real estate ETF) stock during the financial recession in 2008. Now, through backtesting this particular strategy, we will be able to see *how much* money can be made.
 
   ![short-dual-ma-crossover-code2](Images/short-dual-ma-crossover-code2.png)
 
@@ -539,7 +539,7 @@ Open the solution file and review the following:
 
   ![short-dual-ma-backtesting-positions](Images/short-dual-ma-backtesting-positions.png)
 
-* The calculations for portfolio holdings and show that as the stock price decreases, the value of the portfolio holdings increase (become less negative).
+* The calculations for portfolio holdings show that as the stock price decreases, the value of the portfolio holdings increase (become less negative).
 
   ```python
   # Multiply share price by entry/exit positions and get the cumulatively sum
@@ -578,7 +578,7 @@ Open the solution file and review the following:
 
   ![short-portfolio-returns](Images/short-portfolio-returns.png)
 
-* Finally, plotting the Short Position Dual Moving Average crossover trading strategy against its backtesting results show that the algorithm would have *made* money by shorting VNQ stock during the 2008 financial crisis and by approximately $6,500 on an initial capital allocation of $100,000. Specifically, the ending portfolio value for the algorithm was $106,587.2295, and results in cumulative returns of 6.5872%.
+* Finally, plotting the Short Position Dual Moving Average crossover trading strategy against its backtesting results shows that the algorithm would have *made* money by shorting VNQ stock during the 2008 financial crisis and by approximately $6,500 on an initial capital allocation of $100,000. Specifically, the ending portfolio value for the algorithm was $106,587.2295, and results in cumulative returns of 6.5872%.
 
   ![short-backtest-results-code](Images/short-backtest-results-code.png)
 
@@ -596,27 +596,27 @@ Students will receive a dry walkthrough of the various evaluation metrics that c
 
 **Files:** [trading_algorithm_evaluation.ipynb](Activities/06-Ins_Evaluations/Solved/trading_algorithm_evaluation.ipynb)
 
-Navigate to the **evaluation** slide of the Unit 15.1 slideshow. Communicate the following:
+Go to the slideshow and navigate to the evaluation slide. Communicate the following:
 
 * Evaluating the performance of a portfolio is of utmost importance, regardless if it is a human or an algorithm making trades. The following metrics can be used to evaluate a portfolio.
 
-  * **Cumulative Return**- the total/aggregated amount of gains and losses for an investment. Cumulative return is measured across time and not for a given time period.
+  * **Cumulative Return**: The total/aggregated amount of gains and losses for an investment. Cumulative return is measured across time, and not for a particular time period.
 
-  * **Annual Return**- a time-weighted annual percentage representing the return on an investment over a period of time.
+  * **Annual Return**: A time-weighted annual percentage, representing the return on an investment over a period of time.
 
-  * **Annual Volatility**- the annualized degree of variation in trading prices over time.
+  * **Annual Volatility**: The annualized degree of variation in trading prices over time.
 
-  * **Sharpe Ratio**- The return of investment compared to its risk, measured by the difference between the return on investment and the risk-free return.
+  * **Sharpe Ratio**: The return of investment compared to its risk, measured by the difference between the return on investment and the risk-free return.
 
-  * **Downside Deviation/Return**- The measure of risk for returns that are below the minimum acceptable return.
+  * **Downside Deviation/Return**: The measure of risk for returns that are below the minimum acceptable return.
 
-  * **Sortino Ratio**-  The quotient of harmful volatility and overall volatility. The Sortino ratio focuses on downside deviation rather than the standard deviation.
+  * **Sortino Ratio**: The quotient of harmful volatility and overall volatility. The Sortino ratio focuses on downside deviation, rather than the standard deviation.
 
 * These metrics can be calculated for a portfolio through historical backtesting, or they can be used to measure the performances of specific securities before engaging in a trade.
 
 Transition to a dry walkthrough of the code used to calculate each of these metrics. Open the solution and highlight the following:
 
-* One of the advantages of using an algorithm for trading is that evaluation metrics can be calculated using the algorithm as well. This allows for each metric to be calculated within seconds. Having an algorithm calculate the evaluation metrics diminishes the chances of human error and improves the overall accuracy and time it takes to evaluate a portfolio/security/trade comprehensively.
+* One of the advantages of using an algorithm for trading is that evaluation metrics can be calculated using the algorithm as well. This allows for each metric to be calculated within seconds. Having an algorithm calculate the evaluation metrics diminishes the chances of human error, and improves the overall accuracy and time that it takes to evaluate a portfolio/security/trade comprehensively.
 
 * Point out to students the code to calculate cumulative returns.
 
@@ -626,7 +626,7 @@ Transition to a dry walkthrough of the code used to calculate each of these metr
 
 * Show students the code to calculate annual returns. Highlight that when calculating annual returns, the average of daily return has to be calculated first, and then that value can be multiplied by the number of trading days within a year to derive an annualized value.
 
-  **Note:** Sometimes it is more appropriate to use the formula for Compound Annual Growth Rate (CAGR) to account for compounding effects when dealing with investments over long durations of time. To get a better feel for what this means, visit the illustrative excel spreadsheet [here](../Supplemental/Simple_vs_Compound_Returns.xlsx)
+  **Note:** Sometimes it is more appropriate to use the formula for Compound Annual Growth Rate (CAGR) to account for compounding effects when dealing with investments over long durations of time. To get a better feel for what this means, visit the illustrative Excel spreadsheet [here](../Supplemental/Simple_vs_Compound_Returns.xlsx).
 
   ```python
   annual_returns = signals_df['Portfolio Daily Returns'].mean() * 252
@@ -640,19 +640,19 @@ Transition to a dry walkthrough of the code used to calculate each of these metr
 
 * Ask students if anyone remembers how to calculate a Sharpe ratio.
 
-  **Answer** Calculate the annual average daily return and then divide that by the standard deviation of daily returns. The standard deviation of daily returns will need to be multiplied by the square root of the number of trading days.
+  **Answer**: Calculate the annual average daily return, then divide that by the standard deviation of daily returns. The standard deviation of daily returns will need to be multiplied by the square root of the number of trading days.
 
   ```python
   sharpe_ratio = (signals_df['Portfolio Daily Returns'].mean() * 252) / (signals_df['Portfolio Daily Returns'].std() * np.sqrt(252))
   ```
 
-* Indicate that the downside returns or downside deviation metric is calculated by squaring daily returns less than 0.
+* Indicate that the downside returns, or downside deviation metric, is calculated by squaring daily returns less than 0.
 
   ```python
   sortino_ratio_df.loc[sortino_ratio_df['Portfolio Daily Returns'] < target, 'Downside Returns'] = sortino_ratio_df['Portfolio Daily Returns']**2
   ```
 
-* Sortino ratios are calculated using the downside return. Sortino ratios are calculated by dividing the average daily return by the square root of the average downside return.
+* Sortino ratios are calculated by dividing the average daily return by the square root of the average downside return.
 
   ```python
   down_stdev = np.sqrt(sortino_ratio_df['Downside Returns'].mean()) * np.sqrt(252)
@@ -674,15 +674,15 @@ Transition to a dry walkthrough of the code used to calculate each of these metr
 
 If time remains, finish the walkthrough by reminding students that even when trading with an algorithm, trades and portfolios need to be evaluated. Algorithms are not infallible. Touch upon the following:
 
-* Algorithms have to be tweaked and fine-tuned over time, especially as trading strategies evolve or are replaced. Because a machine will be handling the trading process, the algorithm must have metrics to use that will help measure performance, detect and mitigate risk, and track trends in returns on the fly.
+* Algorithms have to be tweaked and fine tuned over time, especially as trading strategies evolve or are replaced. Because a machine will be handling the trading process, the algorithm must have metrics to use that will help measure performance, detect and mitigate risk, and track trends in returns on the fly.
 
 * Evaluation metrics are also important for traders to have available, even if a machine is doing all of the trading and calculations. By analyzing evaluation metrics, humans can spot nuances in the data that the algorithm might not have been programmed/trained to detect. This could lead to new features for the algorithm, as well as an increased investment opportunity for the trader.
 
-Ask if there are any questions before moving forward.
+Ask if there are any questions before moving on.
 
 ---
 
-### 12. Students Do: The Big Short Part III (15 mins)
+### 12. Student Do: The Big Short Part III (15 mins)
 
 Now that students have developed a Short Dual Moving Average trading strategy and backtested their strategy against historical VNQ prices, students can now calculate the portfolio and trade evaluation metrics to ascertain the performance of their short strategy.
 
