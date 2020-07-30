@@ -4,35 +4,31 @@ The real estate bubble that led to the 2008 financial crisis resulted in one of 
 
 Now that you have developed a Short Position Dual Moving Average Crossover Trading Strategy and determined that the algorithm could have *made* money during the 2008 financial recession, it is now time to determine *how much* money could have been made.
 
-## Part 1 Instructions: The Big Short Part I
-
-You completed this in the last activity, nice job!
-
-## Part 2 Instructions: The Big Short Part II
+## Instructions
 
 The pre-requisite steps for developing the Short Position Dual Moving Average Crossover trading strategy have already been provided for you. Therefore, continue onwards to the backtesting parts of the notebook file.
 
 Using the [starter file](Unsolved/the_big_short_part_2.ipynb), complete the following steps:
 
-* Set an `initial_capital` variable to 100000, representing the simulated starting portfolio value.
+1. Set an `initial_capital` variable to 100000, representing the simulated starting portfolio value.
 
-* Set a negative `share_size` value of -500.
+2. Set a negative `share_size` value of -500.
 
-* Create a new column `Position` by multiplying the `share_size` by the values in the `Signal` column.
+3. Create a new column `Position` by multiplying the `share_size` by the values in the `Signal` column.
 
-* Create a new column `Entry/Exit Position` by using the `diff` function on the `Position` column.
+4. Create a new column `Entry/Exit Position` by using the `diff` function on the `Position` column.
 
-* Create a new column `Portfolio Holdings` by multiplying the `Close` prices of VNQ by the cumulative sum of the values of the `Entry/Exit Position` column.
+5. Create a new column `Portfolio Holdings` by multiplying the `Close` prices of VNQ by the cumulative sum of the values of the `Entry/Exit Position` column.
 
-* Create a new column `Portfolio Cash` by subtracting the `initial_capital` by cumulative sum of the product of the `Close` prices of VNQ and the values of the `Entry/Exit Position` column.
+6. Create a new column `Portfolio Cash` by subtracting the `initial_capital` by cumulative sum of the product of the `Close` prices of VNQ and the values of the `Entry/Exit Position` column.
 
-* Create a new column `Portfolio Total` by adding the values of the `Portfolio Cash` and `Portfolio Holdings` columns.
+7. Create a new column `Portfolio Total` by adding the values of the `Portfolio Cash` and `Portfolio Holdings` columns.
 
-* Create a new column `Portfolio Daily Returns` by using the `pct_change` function on the `Portfolio Total` column.
+8. Create a new column `Portfolio Daily Returns` by using the `pct_change` function on the `Portfolio Total` column.
 
-* Create a new column `Portfolio Cumulative Returns` by using the `cum_prod` function on the `Portfolio Daily Returns` column.
+9. Create a new column `Portfolio Cumulative Returns` by using the `cum_prod` function on the `Portfolio Daily Returns` column.
 
-* Use the `figure` and `axes` objects of the `matplotlib` library to plot the Short Position Dual Moving Average Crossover trading strategy against its backtesting results.
+10. Use the `figure` and `axes` objects of the `matplotlib` library to plot the Short Position Dual Moving Average Crossover trading strategy against its backtesting results.
 
 ## Hint
 
@@ -40,4 +36,4 @@ Remember that shorting a stock means to sell shares of a stock and then buy or c
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
