@@ -10,27 +10,27 @@ Using the [starter file](Unsolved/the_big_short.ipynb), complete the following s
 
 1. Create a Dual Moving Average Crossover Trading Signal that indicates shorting opportunities.
 
-  * Create a filtered DataFrame containing just the `Date` and `Close` columns of the VNQ stock data.
+  i.    Create a filtered DataFrame containing just the `Date` and `Close` columns of the VNQ stock data.
 
-  * Set the `Date` column as the index to the DataFrame.
+  ii.   Set the `Date` column as the index to the DataFrame.
 
-  * Set a `short_window` and `long_window` to `50` and `100`, respectively.
+  iii.  Set a `short_window` and `long_window` to `50` and `100`, respectively.
 
-  * Create a 50-day moving average, and a 100-day moving average, from the VNQ closing prices using the `rolling` and `mean` functions.
+  iv.   Create a 50-day moving average, and a 100-day moving average, from the VNQ closing prices using the `rolling` and `mean` functions.
 
-  * Initialize a new DataFrame column `Signal` and set the values to 0.
+  v.    Initialize a new DataFrame column `Signal` and set the values to 0.
 
-  * Use the NumPy `where` function to set the signal column to `1.0` when the SMA50 is less than SMA100 and `0.0` otherwise.
+  vi.   Use the NumPy `where` function to set the signal column to `1.0` when the SMA50 is less than SMA100 and `0.0` otherwise.
 
-  * Use the `diff` function on the `Signal` column and assign the values to a `Entry/Exit` column to indicate trade entry and exit points in time.
+  vii.  Use the `diff` function on the `Signal` column and assign the values to a `Entry/Exit` column to indicate trade entry and exit points in time.
 
 2. Plot the entry and exit points of your Short Dual Moving Average Crossover signal.
 
-  * Create scatter plots for the entry and exit points. Use the colour green to indicate the entry points. Use a second scatter plot with red markers to indicate the exit points.
+  i.    Create scatter plots for the entry and exit points. Use the colour green to indicate the entry points. Use a second scatter plot with red markers to indicate the exit points.
 
-  * Create line plots for the VNQ closing prices, the 50-day moving average, and the 100-day moving average.
+  ii.   Create line plots for the VNQ closing prices, the 50-day moving average, and the 100-day moving average.
 
-  * Create a composite plot that overlays all of the above into a single plot.
+  iii.  Create a composite plot that overlays all of the above into a single plot.
 
 ---
 
