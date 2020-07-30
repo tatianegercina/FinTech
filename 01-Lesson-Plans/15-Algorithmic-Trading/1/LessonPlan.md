@@ -93,9 +93,9 @@ Answer any questions before moving on.
 
 ### 2. Instructor Do: Intro to Algorithmic Trading (10 mins)
 
-In this activity, students will learn the basics of what algorithmic trading is and how it came to be, how it is performed, and what kind of individuals and skillsets are required for potential participants looking to break into the field.
+In this activity, students will learn the basics of algorithmic trading and its origins, how it is performed, and the skillsets that are required for people   looking to break into the field.
 
-Navigate to the slideshow and present the following questions and answers about algorithmic trading:
+Go to the slideshow, navigate to [[section X]] and present the following Q&A about algorithmic trading:
 
 * What is algorithmic trading?
 
@@ -107,11 +107,11 @@ Navigate to the slideshow and present the following questions and answers about 
 
 * Why use algorithmic trading?
 
-  **Answer:** While there are many benefits to using algorithmic trading over traditional/manual trading, the two main benefits are: one, algorithmic trading can be backtested using historical and real-time data to see if it is a profitable trading strategy and, two, it reduces the possibility of human error in which traders mistime trades based on emotional and psychological factors.
+  **Answer:** While there are many benefits to using algorithmic trading over traditional/manual trading, there are two main benefits. One, algorithmic trading can be backtested using historical and real-time data to see if it is a profitable trading strategy and, two, it reduces the possibility of human error in which traders mistime trades, which are often based on emotional/psychological factors.
 
 * Who performs algorithmic trading?
 
-  **Answer:** Anyone that can code can create their own algorithmic trading bot. Traditionally, Quantitative analysts or quant traders create algorithmic trading models and are often required to have at least a master's or Ph.D. degree level with a familiar background in statistics. However, with human-friendly programming languages like Python, analytical tools, and machine learning libraries, anyone can learn to build a very powerful algorithmic trader.
+  **Answer:** Anyone that can code can create their own algorithmic trading bot. Traditionally, quantitative analysts or quant traders create algorithmic trading models and are often required to have at least a master's or Ph.D. degree with a background in statistics. However, with accessible programming languages like Python, analytical tools, and machine learning libraries, anyone can learn to build a very powerful algorithmic trader.
 
 Ask if there are any questions before moving on.
 
