@@ -4,9 +4,9 @@
 
 ### Overview
 
-Today's class will introduce students to **algorithmic trading** in Python. Traditional trading, or the manual purchase and sale of assets such as stocks, has begun to shift to more automated methods due to the advancements in network speed, computing power, and available financial trading APIs. Therefore, students will learn the fundamentals of algorithmic trading, and deconstruct the process of producing a functional algorithmic trading model.
+Today's class introduces students to algorithmic trading in Python. Traditional trading, or the manual purchase and sale of assets such as stocks, has begun to shift to more automated methods, due to advancements in network speed, computing power, and available financial trading APIs. Students will learn the fundamentals of algorithmic trading, and deconstruct the process of producing a functional algorithmic trading model.
 
-In particular, students will learn how to generate trading signals from raw data, backtest a trading strategy using such signals, produce evaluation metrics regarding overall portfolio and per-trade performance, and construct a trading dashboard similar to commercial online trading platforms. By the end of this unit, students will also incorporate machine learning to automate and improve portfolio management and trade performance for maximum profitability with minimal risk.
+In particular, students will learn how to generate trading signals from raw data, backtest a trading strategy using these signals, produce evaluation metrics regarding overall portfolio and per-trade performance, and construct a trading dashboard similar to commercial online trading platforms. By the end of this unit, students will also incorporate machine learning to automate and improve portfolio management, and trade performance for maximum profitability with minimal risk.
 
 ### Class Objectives
 
@@ -32,13 +32,13 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today's lesson will consist of elements taught in the Pandas and PyViz units; the lesson will include data analysis, utilization of trading APIs for asset pricing data, and the visualization of trading performance and transaction analysis using a Panel dashboard.
+* Today's lesson consists of elements taught in the Pandas and PyViz units; it includes data analysis, utilization of trading APIs for asset pricing data, and the visualization of trading performance and transaction analysis using a Panel dashboard.
 
-* The goal of this unit is to educate students on trading, as well as how to use code to automate trading. Trading may be new for many students, so it is important that adequate information is provided regarding what trading is and all of the steps involved in creating entry and exit strategies, as well as which FinTech APIs integrate well with Python for automated trading.
+* The goal of this unit is to educate students on trading, as well as how to use code to automate trading. Trading may be new for many students, so it is important to provide a clear picture of what trading is, all the steps involved in creating entry and exit strategies, and which FinTech APIs integrate well with Python for automated trading.
 
-* Not everyone will have a background in trading, so be thorough when explaining specific trading terminology, concepts, and strategies. Instead of painting the entire picture for students, focus on the individual steps required to execute a trade, and then apply coding concepts (i.e., iterations) to illustrate how the step can be automated using Python code. Definitions for key trading terminology will be provided.
+* Since students' experience with trading will differ, be thorough when explaining specific trading terminology, concepts, and strategies. Focus on the individual steps required to execute a trade, and then apply coding concepts (i.e., iterations) to illustrate how the step can be automated using Python code. Definitions for key trading terminology will be provided.
 
-* Review sessions will be geared towards allowing students to ask as many questions as possible. Questions should be prioritized over instructor posed review questions. While we want to provide as much opportunity as possible for students to ask questions, it is also important that the class is paced so that all material is covered.
+* Review sessions are geared towards allowing students to ask as many questions as possible. Students' questions should be prioritized over instructor-initiated review questions. While fielding student questions is important, be sure to keep careful eye on the class pacing, so that all material is covered.
 
 * Encourage students to review supplementary resources, to reach out to TAs individually for assistance, and to attend office hours to address any unanswered questions or confusion.
 
