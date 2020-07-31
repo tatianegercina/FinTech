@@ -91,7 +91,7 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Instructor Do: Intro to Algorithmic Trading (10 mins)
+### 2. Instructor Do: Algorithmic Trading: The Basics (10 mins)
 
 In this activity, students will learn the basics of algorithmic trading and its origins, how it is performed, and the skillsets that are required for people   looking to break into the field.
 
