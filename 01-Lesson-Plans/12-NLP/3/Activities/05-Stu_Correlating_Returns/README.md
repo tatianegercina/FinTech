@@ -1,10 +1,10 @@
 # Correlating Returns
 
-In this activity, you will create a sentiment index from News API headlines and correlate it to Apple (AAPL) daily returns, looking for text topics that generate the highest correlation.
+In this activity, you will create a sentiment index from News API headlines and correlate it to Apple (`AAPL`) daily returns, looking for text topics that generate the highest correlation.
 
 ## Instructions
 
-* Download returns data for the past month for AAPL using the Alpaca API.
+* Download returns data for the past month for `AAPL` using the Alpaca API.
 
 * Get news headlines for at least five topics of your choice and apply sentiment analysis to the headlines.
 
@@ -43,4 +43,4 @@ def headline_sentiment_summarizer_avg(headlines):
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
