@@ -102,6 +102,46 @@ conda list spacy
 
 ![SpaCy verification](Images/spacy-verify.png)
 
+## `alpaca-trade-api` SDK Installation
+
+In this unit you will use the Alpaca SKD you installed in the Financial APIs unit. If you are creating a new virtual environment for this unit, please reinstall the `alpaca-trade-api` SDK.
+
+You can install this library running the following command in your terminal:
+
+```shell
+pip install alpaca-trade-api
+```
+
+### Verify the `alpaca-trade-api` SDK Installation
+
+Once the `alpaca-trade-api` library download is complete, verify the installation completed successfully.
+
+* Open the terminal and use the `conda-list` function with a `grep` argument to identify if the `alpaca-trade-api` library installed successfully.
+
+```shell
+conda list | grep alpaca-trade-api
+```
+
+## `python-dotenv` Library Installation
+
+The `python-dotenv` library allows you to read key-value pairs from a `.env` file and adds them as environment variables.
+
+You can install this library running the following command in your terminal:
+
+```shell
+pip install python-dotenv
+```
+
+### Verify the `python-dotenv` Library Installation
+
+Once the `python-dotenv` library download is complete, verify the installation completed successfully.
+
+* Open the terminal and use the `conda-list` function with a `grep` argument to identify if the `python-dotenv` library installed successfully.
+
+```shell
+conda list | grep python-dotenv
+```
+
 ## Troubleshooting
 
 It can be frustrating when packages do not install correctly. Use the below approaches to troubleshoot installation issues and get your machine learning libraries up and running!
@@ -150,7 +190,6 @@ After running this command, you should see a list with the anaconda packages ins
 
 In case you guess your anaconda environment is broken, deactivate your current virtual environment and create a new one as it was described above.
 
-
 ### NewsAPI-Python
 
 In the case where newsapi was installed instead of newsapi-python or newsapi was installed on top of newsapi-python. The recommended fix is to uninstall `newsapi-python` and `newsapi` and then proceed to reinstall `newsapi-python` ***only***.
@@ -175,7 +214,6 @@ This is the output you should see on the terminal window.
 
 ![Package version check](Images/spacy-verify.png)
 
-
 ### Package is not Installed in Windows
 
 Sometimes you can get the following message when you install a package using `conda install`
@@ -192,3 +230,7 @@ If you ever see this message, try running the Git Bash terminal as `Administrato
 2. Go over the `More` option.
 
 3. Chose the `Run as administrator` option.
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
