@@ -730,7 +730,7 @@ The purpose of this activity is to show students how to create a trading dashboa
 
 **Files:** [trading_dashboard.ipynb](Activities/08-Ins_Trading_Dashboard/Solved/trading_dashboard.ipynb)
 
-Before diving into the walkthrough, quickly review the following:
+Before diving into the walkthrough, navigate to the "Trading Dashboards" section of the slideshow and quickly review the following:
 
 * What is Panel?
 
