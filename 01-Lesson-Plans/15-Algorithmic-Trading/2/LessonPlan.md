@@ -18,7 +18,7 @@ By the end of class, students will be able to:
 
 * Utilize live financial data by connecting their trading frameworks to the Kraken Cryptocurrency Exchange API.
 
-* Persist or save their trading data to a database such as SQLite.
+* Persist or save trading data to a database such as SQLite.
 
 * Perform asynchronous tasks and loops using asyncio.
 
