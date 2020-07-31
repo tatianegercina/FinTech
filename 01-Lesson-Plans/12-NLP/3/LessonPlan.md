@@ -498,13 +498,17 @@ Ask students to talk about their own strategies for selecting entity types and w
 
 In this activity, we'll ask students to remind themselves of the tools and techniques they've learned in this unit and talk about how we can use them to create numerical features (structured data) from the text (unstructured data).
 
-Ask the class to recall the lessons of this unit. Call on volunteers to list some of the tools and techniques that we have learned in this unit.
+Open the lesson slides, move to the "Text as Feature" section, and start a facilitated discussion by asking the class to recall this unit's lessons. Call on volunteers to list some of the tools and techniques that we have learned in this unit.
 
-* Techniques include preprocessing, tokenizing, and lemmatizing text; aggregating word counts; creating ngrams; normalizing to TF-IDF weights; sentiment analysis; parsing and pos-tagging text; and named entity recognition. Tools include the libraries NLTK, word cloud, and spaCy.
+After listening to students' comments, continue the presentation by highlighting the tools and techniques we have learned up to this point.
 
-We have learned a lot! Tell the class that it is often not enough to transform text data in the ways that we have done. In order to use this data for classification or prediction, we need to make them features—numerical representations of unstructured text. Ask the class for examples of features that can be created from text documents.
+* In this unit, you added to your toolbox several techniques: preprocessing, tokenizing, and lemmatizing text; aggregating word counts; creating n-grams; normalizing to TF-IDF weights; sentiment analysis; parsing and pos-tagging text, and named entity recognition. These tools include the libraries NLTK, word cloud, and spaCy.
 
-* Some examples of features include: length of document, count of a key word; count of named entities, sentiment scores, percent of words that are adjectives, and total TF-IDF score. These features can then be used, for example, to classify a document to a category or predict the effect of an earnings call on a stock price.
+We have learned a lot! Tell the class that it is often not enough to transform text data in the ways that we have done. To use this data for classification or prediction, we need to make them features—numerical representations of unstructured text. Ask the class for examples of features that can be created from text documents.
+
+* Some examples of features include the length of the document, count of a keyword, count of named entities, sentiment scores, percent of words that are adjectives, and total TF-IDF score.
+
+* These features can then be used, for example, to classify a document to a category or predict the effect of an earnings call on a stock price.
 
 Let the class know that the remainder of the class will be spent on practicing ways to engineer features from text and then correlating those features to variables of interest in the real world: stock prices, earning results, or investment decisions, for example.
 
@@ -530,7 +534,7 @@ In this activity, students will create a sentiment index from News API headlines
 
 **Files:**
 
-* [correlating_returns.ipynb](Activities/05-Stu_Correlating_Returns/Solved/correlating_returns.ipynb)
+* [correlating_returns.ipynb](Activities/06-Stu_Correlating_Returns/Solved/correlating_returns.ipynb)
 
 Open the solved notebook. First, ask a volunteer to walk through the code in the headline download function below, explaining the input and output.
 
@@ -539,21 +543,27 @@ Open the solved notebook. First, ask a volunteer to walk through the code in the
 ```python
 def get_headlines(keyword):
     all_headlines = []
-    all_dates = []
-    date = '2019-07-24'
-    while date > '2019-06-25':
-        articles = (newsapi.get_everything(q=keyword,
-                                              from_param=date,
-                                              to=date,
-                                              language='en',
-                                              sort_by='relevancy',
-                                              page=1))
+    all_dates = []    
+    date = datetime.strptime(current_date[:10], "%Y-%m-%d")
+    end_date = datetime.strptime(past_date[:10], "%Y-%m-%d")
+    print(f"Fetching news about '{keyword}'")
+    print("*" * 30)
+    while date > end_date:
+        print(f"retrieving news from: {date}")
+        articles = newsapi.get_everything(
+            q=keyword,
+            from_param=str(date),
+            to=str(date),
+            language="en",
+            sort_by="relevancy",
+            page=1,
+        )
         headlines = []
-        for i in range(0, len(articles['articles'])):
-            headlines.append(articles['articles'][i]['title'])
+        for i in range(0, len(articles["articles"])):
+            headlines.append(articles["articles"][i]["title"])
         all_headlines.append(headlines)
         all_dates.append(date)
-        date = datetime.strftime(datetime.strptime(date, '%Y-%m-%d') - timedelta(days=1), '%Y-%m-%d')
+        date = date - timedelta(days=1)
     return all_headlines, all_dates
 ```
 
@@ -561,29 +571,31 @@ Walkthrough the next few blocks of code, which contain the keywords we chose to 
 
 * The function below calculates an average sentiment score for each day for each topic. We chose to take the average of the compound sentiment score as implemented by VADER.
 
-```python
-def headline_sentiment_summarizer_avg(headlines):
-    sentiment = []
-    for day in headlines:
-        day_score = []
-        for h in day:
-            if h == None:
-                continue
-            else:
-                day_score.append(sid.polarity_scores(h)['compound'])
-        sentiment.append(sum(day_score) / len(day_score))
-    return sentiment
-```
+  ```python
+  def headline_sentiment_summarizer_avg(headlines):
+      sentiment = []
+      for day in headlines:
+          day_score = []
+          for h in day:
+              if h == None:
+                  continue
+              else:
+                  day_score.append(sid.polarity_scores(h)['compound'])
+          sentiment.append(sum(day_score) / len(day_score))
+      return sentiment
+  ```
 
 * After calculating the sentiment scores and merging it with the stock return that we get from the Alpaca API, we generate the correlation coefficients between each variable in the DataFrame. One useful trick when looking for strong correlations, especially when there are many variables of interest, is to use the Pandas style module to visualize the DataFrame as a heat map.
 
-```python
-topic_sentiments.corr().style.background_gradient()
-```
+  ```python
+  topic_sentiments.corr().style.background_gradient()
+  ```
 
   ![corr1](Images/corr1.png)
 
-Ask students whether they found topic sentiments that are more closely correlated with AAPL returns. Ask volunteers whether they might expect correlations between sentiment and returns to remain stable over time for a given topic or stock pairing.
+  **Note:** Your actual correlation table values may differ from the above.
+
+Ask students whether they found topic sentiments that are more closely correlated with `AAPL` returns. Ask volunteers whether they might expect correlations between sentiment and returns to remain stable over time for a given topic or stock pairing.
 
 ---
 
