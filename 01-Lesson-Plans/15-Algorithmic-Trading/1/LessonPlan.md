@@ -95,7 +95,7 @@ Answer any questions before moving on.
 
 In this activity, students will learn the basics of algorithmic trading and its origins, how it is performed, and the skillsets that are required for people   looking to break into the field.
 
-Go to the slideshow, navigate to [[section X]] and present the following Q&A about algorithmic trading:
+Go to the slideshow, navigate to "Algorithmic Trading: The Basics" and present the following Q&A about algorithmic trading:
 
 * What is algorithmic trading?
 
@@ -107,7 +107,7 @@ Go to the slideshow, navigate to [[section X]] and present the following Q&A abo
 
 * Why use algorithmic trading?
 
-  **Answer:** While there are many benefits to using algorithmic trading over traditional/manual trading, there are two main benefits. One, algorithmic trading can be backtested using historical and real-time data to see if it is a profitable trading strategy and, two, it reduces the possibility of human error in which traders mistime trades, which are often based on emotional/psychological factors.
+  **Answer:** While there are many reasons for using algorithmic trading over traditional/manual trading, there are two main benefits. One, algorithmic trading can be backtested using historical and real-time data to see if it is a profitable trading strategy and, two, it reduces the possibility of human error in which traders mistime trades, which are often based on emotional/psychological factors.
 
 * Who performs algorithmic trading?
 
