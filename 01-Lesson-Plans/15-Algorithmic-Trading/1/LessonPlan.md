@@ -123,7 +123,7 @@ The goal of this activity is to demystify algorithmic trading by showing a simpl
 
 **Files:** [simple_trading_algorithm.ipynb](Activities/01-Evr_Simple_Trading_Algorithm/Solved/simple_trading_algorithm.ipynb)
 
-Open the solution file and discuss the following:
+Navigate to the "Demystifying Algorithmic Trading" section of the slideshow, open the solution file, and discuss the following:
 
 * Trading algorithms are often misconstrued as highly complex and esoteric, reserved for the quantitative analysts/traders of prominent big banks and hedge funds. However, when breaking down the core components of a trading algorithm, there are three fundamental parts: obtaining the data, making a trading decision, and evaluating the results.
 
