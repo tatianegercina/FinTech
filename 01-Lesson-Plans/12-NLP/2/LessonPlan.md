@@ -695,10 +695,10 @@ Ask students to create two environment variables, one for the API key and the ot
 
 * `IAMAuthenticator` is used to authenticate your Python application to access the IBM cloud services.
 
-* The Tone Analyzer response is given in JSON format, so the [`json_normalize` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.io.json.json_normalize.html) is imported from Pandas to transform the JSON response to a DataFrame.
+* The Tone Analyzer response is given in JSON format, so the [`json_normalize` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.json_normalize.html) is imported from Pandas to transform the JSON response to a DataFrame.
 
   ```python
-  from pandas.io.json import json_normalize
+  from pandas import json_normalize
   ```
 
 * The Tone Analyzer service is initialized as follows.
