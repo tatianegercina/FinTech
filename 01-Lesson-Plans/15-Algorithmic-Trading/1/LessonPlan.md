@@ -818,7 +818,7 @@ Finish the recap with a few statements of encouragement:
 
 * Remind students that by learning how to trade algorithmically, they are now already way ahead of those who only know how to invest manually. Therefore, they now have the tools to do both, and can choose which method they prefer, either algorithmically, manually, or a hybrid of both.
 
-* The next step is to create an algorithmic trading framework on Day 2, in which students will take what they've learned today to create a full-fledged trading application that they can use in real-world scenarios. Students should be pumped for this!
+* In the next class, students will take what they've learned today to create a full-fledged trading application that they can use in real-world scenarios. They should be pumped for this!
 
 ---
 
