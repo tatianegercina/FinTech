@@ -385,7 +385,7 @@ In this activity, students will learn how to test the performance of an algorith
 
 **Files:** [backtesting.ipynb](Activities/04-Ins_Backtesting/Solved/backtesting.ipynb)
 
-Present the following discussion points to the class:
+Navigate to the "Backtesting" section of the slideshow, and present the following discussion points:
 
 * Backtesting is the process for measuring the overall performance of a trading strategy using historical stock prices to simulate executed trades dictated by the calculated trading signals and trade decision logic.
 
