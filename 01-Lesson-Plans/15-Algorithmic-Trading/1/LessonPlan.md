@@ -596,7 +596,7 @@ Students will receive a dry walkthrough of the various evaluation metrics that c
 
 **Files:** [trading_algorithm_evaluation.ipynb](Activities/06-Ins_Evaluations/Solved/trading_algorithm_evaluation.ipynb)
 
-Go to the slideshow and navigate to the evaluation slide. Communicate the following:
+Go to the slideshow, navigate to the "Evaluation Metrics" section, and communicate the following:
 
 * Evaluating the performance of a portfolio is of utmost importance, regardless if it is a human or an algorithm making trades. The following metrics can be used to evaluate a portfolio.
 
