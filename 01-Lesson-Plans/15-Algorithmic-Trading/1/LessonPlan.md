@@ -69,7 +69,7 @@ Welcome students to the first day of algorithmic trading! Cover the following po
 
   * Identifying the best opportunity to buy, sell, and hold.
 
-  * Maintaining knowledge about the highs and lows for each individual stock, as well as their overall portfolio value and profit/loss.
+  * Maintaining knowledge about the highs and lows for individual stocks, their overall portfolio value, and profit/loss.
 
   * Keeping emotions in check.
 
