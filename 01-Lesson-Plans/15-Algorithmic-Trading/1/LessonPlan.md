@@ -61,7 +61,7 @@ The Time Tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTra
 
 In this activity, students will be introduced to algorithmic trading and its utility in FinTech. This section provides a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and simplify participation in the market through the execution of a single program.
 
-Welcome students to the first day of algorithmic trading! Cover the following points.
+Welcome students to the first day of algorithmic trading! Go to the slideshow, navigate to the "Intro to Algorithmic Trading" section, and cover the following points.
 
 * It can be very cumbersome to make trades manually. A typical day for traders involves:
 
