@@ -510,7 +510,7 @@ Let the class know that the remainder of the class will be spent on practicing w
 
 ---
 
-### 11. Student Do: Correlating Returns (15 min)
+### 11. Student Do: Correlating Returns (20 min)
 
 **Corresponding Activity:** [05-Stu_Correlating_Returns](Activities/05-Stu_Correlating_Returns)
 
@@ -587,7 +587,7 @@ Ask students whether they found topic sentiments that are more closely correlate
 
 ---
 
-### 13. Instructor Do: Machine Learning Review (50 min)
+### 13. Instructor Do: Machine Learning Review (40 min)
 
 The remainder of today's class is intended to review any topics, activities, or concepts covered in any of the previous machine learning units.
 
