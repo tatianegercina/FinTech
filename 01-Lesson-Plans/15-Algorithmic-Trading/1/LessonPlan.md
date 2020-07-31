@@ -161,7 +161,7 @@ In this activity, students will learn what differentiates technical analysis fro
 
 **Files:** [dual_ma_crossover.ipynb](Activities/02-Ins_Trading_Signals/Solved/dual_ma_crossover.ipynb)
 
-Navigate to the trading signals section of the slides, and highlight the following:
+Navigate to the "Trading Signals" section of the slides, and highlight the following:
 
 * Technical analysis is an (often) short-term trading discipline, in which investments (such as stocks) are evaluated based on their price action or movement.
 
