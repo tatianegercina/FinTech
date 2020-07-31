@@ -234,9 +234,9 @@ Answer any questions before moving on.
 
 ---
 
-### 4. Student Do: Describing America (15 min)
+### 4. Student Do: Describing America (20 min)
 
-In this activity, students will use the inaugural address corpus from NLTK and spaCy's parsing and tagging modules to analyze the words that presidents have used to describe America.
+In this activity, students will use the inaugural address corpus from NLTK and spaCy's parsing and POS-tagging modules to analyze the words that U.S. Presidents have delivered in their inaugural addresses.
 
 **Instructions:**
 
@@ -256,45 +256,162 @@ In this activity, students will use the inaugural address corpus from NLTK and s
 
 Open the solved notebook and go over each section of the activity and each code block in turn.
 
-* For the first part of this activity, we want to create a function that returns the most common adjective from each inaugural address. We can make use of the Counter function for this:
+* In the first part of this activity, we use the functions provided by the `inaugural` module to retrieve the document IDs and the text of each inaugural address from the inaugural address corpus.
 
-```python
-def most_freq_adj(text):
-    doc = nlp(text)
-    adjs = [token.text.lower() for token in doc if token.pos_ == 'ADJ']
-    return Counter(adjs).most_common(1)
-```
+  ```python
+  # Retrieve the IDs of inaugural addresses
+  ids = inaugural.fileids()
 
-* In the second part of this activity, we want to first discover the most used adjectives in the whole corpus. We make a small change to the function above so that it returns all adjectives in each text instead of just the most common. Then, we simply make use of the Counter function over all the adjectives.
+  # Retrieve the text of inaugural addresses
+  texts = [inaugural.raw(id) for id in ids]
+  ```
 
-* Next, we want to track the usage of these frequent adjectives in speeches over time. To do this, we first need to count the occurrence of each word in each speech, which we can do with a function like this:
+* Note that we use a list comprehension to create the list containing the text of each inaugural address.
 
-```python
-def get_counts(text, word):
-    tok = word_tokenize(text)
-    tok = [word.lower() for word in tok]
-    return tok.count(word)
-```
+* In the second part of the activity, it's worth highlighting that we use POS-tagging to identify the adjectives in the text passed as an argument. All the adjectives are stored in a list created using list comprehension.
 
-* Once we get the counts for each word, we can put the three lists in a DataFrame. In order to create a chart over time, though, we need an x-axis with dates. Luckily, the years of the speeches are part of each fileid—we can extract those years and turn it into a DateTime index with two lines of code:
+  ```python
+  # Creates a list with all the adjectives in the text
+  adjs = [token.text.lower() for token in doc if token.pos_ == 'ADJ']
+  ```
 
-```python
-dates = [i.split('-')[0] for i in ids]
-adj_df.index = pd.to_datetime(dates)
-```
+* In the same function, the `Counter` module from the `collections` library is used to pick the most frequent adjective in each text using the `most_common()` function passing `1` as an argument.
 
-* The chart of word occurrences should look something like this:
+  ```python
+  # Retrieves the most frequent adjective in the `adjs` list using the Counter module
+  most_common_adj = Counter(adjs).most_common(1)
+  ```
 
-![describe](Images/describe1.png)
+* To create a list with the most common adjective on each inaugural address, we use the `most_freq_adj()` function into a list comprehension.
 
-* For the third part of this activity, we need to make use of the spaCy's dependency parsing. The function that we define to extract words that describe "America" is below. Notice that we extract any adjectives that have a "head" (in this case, the word is describing the word America).
+  ```python
+  adjs = [most_freq_adj(text) for text in texts]
+  ```
 
-```python
-def describe_america(text):
-    doc = nlp(text)
-    adjs = [token.text.lower() for token in doc if (token.pos_ == 'ADJ' and token.head.text == 'America')]
-    return adjs
-```
+* This second part of the activity concludes by creating a DataFrame to store the most common adjective per inaugural address.
+
+  ```python
+  # Create a DataFrame `df_adjs` with the most common adjective for each inaugural address.
+  df_adjs = pd.DataFrame(
+      {
+          'doc_id':ids,
+          'adjective':adjs
+      }
+  )
+  ```
+
+  ![most-common-adjs](Images/most-common-adjs.png)
+
+* In the third part of the activity, our goal is to analyze the most frequent adjectives over time. First, we use the `all_adj()` function to create a Python list `all_adjectives` containing all the adjectives into all the inaugural addresses.
+
+  ```python
+  # Create an empty list to store all the adjectives
+  all_adjectives = []
+
+  # Use a for-loop to retrieve all the adjectives on each inaugural address and concatenate the adjectives fetched to `all_adjectives`
+  for text in texts:
+      all_adjectives = all_adjectives + all_adj(text)
+  ```
+
+* Note that we use a `for-loop` to create the `all_adjectives` Python list. Inside the loop, we use the plus (`+`) operator to concatenate all the adjectives found in a text using the `all_adj()` function provided. We use the plus operator instead of the `append()` list method to create a list of concatenated single values instead of a list or lists.
+
+* Next, we use the `most_common()` function from the `Counter` module to fetch the three most frequent adjectives used in the U.S. Presidential inaugural address. The `most_common()` function returns a Python list that you should store in a variable called `most_freq_adjectives`.
+
+  ```python
+  # Retrieve the three most frequent adjectives
+  most_freq_adjectives = Counter(all_adjectives).most_common(3)
+  ```
+
+* In order to create the lists having the counts of the three most frequent adjectives, we use the `get_word_counts()` function into list comprehensions. 
+
+  ```python
+  # Use list comprehensions to create a list with the counts of each top adjective in the inaugural addresses
+  great_counts = [get_word_counts(text,'great') for text in texts]
+  other_counts = [get_word_counts(text,'other') for text in texts]
+  own_counts = [get_word_counts(text,'own') for text in texts]
+  ```
+
+* Fetching the years and the Presidents' last names from the document IDs may be tricky, but this task is easy to face using list comprehensions and the `slipt()` string's method.
+
+  ```python
+  # Create a list `dates` with the year for each inaugural address using the file IDs
+  dates = [id.split('-')[0] for id in ids]
+
+  # Create a list `presidents` with the last name of each president
+  presidents = [id.split('-')[1].split('.')[0] for id in ids]
+  ```
+
+* Now that we have all the data about the most used adjectives in the inaugural addresses over time, we create a DataFrame and plot a line chart to analyze how U.S. presidents used them their speech visually.
+
+  ```python
+  # Set DataFrame data
+  adjectives_data = {
+      'president': presidents,
+      'great':great_counts,
+      'other':other_counts,
+      'own': own_counts
+  }
+
+  # Create the DataFrame
+  df_adjectives = pd.DataFrame(adjectives_data, index=pd.to_datetime(dates).year)
+  ```
+
+  ![adjectives-df](Images/adjectives-df.png)
+
+  ```python
+  # Use the `df_adjectives` DataFrame to plot frequencies of each adjective over time
+  df_adjectives.plot(
+      title = "Most Common Adjectives Used in the U.S. Presidential Inaugural Addresses",
+      figsize = (10, 5)
+  )
+  ```
+
+  ![adjectives-plot](Images/adjectives-plot.png)
+
+* Finally, in the fourth part of this activity, you are asked to create a function `describe_america()` to retrieve all the adjectives in a given text. This can be done using the same logic from the helper functions by using a comprehension list.
+
+  ```python
+  def describe_america(text):
+      """
+      This function retrieves the adjectives in the text that describe the head word 'America'.
+
+      Args:
+          text (string): The text to analyze.
+
+      Returns:
+          adjs (list): A list of the adjectives that describe the head word 'America' in the text.
+      """
+
+      # Use the spaCy English language model to tokenize the text and parse each token
+      doc = nlp(text)
+
+      # Create a list with all the adjectives in the text that describe the head word 'America'
+      adjs = [token.text.lower() for token in doc if (token.pos_ == 'ADJ' and token.head.text == 'America')]
+
+      return adjs
+  ```
+
+* The activity ends by using the `describe_america()` function you defined to create a list with all the adjectives used in the inaugural address to describe the word `America``.
+
+  ```python
+  # Create an empty list to store de adjectives
+  america_adjectives = []
+
+  # Use a for-loop to retrieve all the adjectives that describe the word 'America' on each inaugural address and concatenate the adjectives fetched to `america_adjectives`
+  for text in texts:
+      america_adjectives = america_adjectives + describe_america(text)
+
+  # Print the list of the adjectives describing the word 'America'
+  print(america_adjectives)
+  ```
+
+  ```text
+  ['productive', 'strong', 'stronger', 'rich']
+  ````
+
+Explain to students that this kind of textual analysis could have different applications in the FinTech industry, such as analyzing social media feeds to listen to customers or benchmarking competitors.
+
+Answer any questions before moving on.
 
 ---
 
@@ -396,7 +513,7 @@ Let the class know that the remainder of the class will be spent on practicing w
 
 ---
 
-### 11. Student Do: Correlating Returns (15 min)
+### 11. Student Do: Correlating Returns (20 min)
 
 In this activity, students will create a sentiment index from News API headlines and correlate it to S&P 500 daily returns, looking for a text topic that generates the highest correlation.
 
@@ -481,7 +598,7 @@ Ask students whether they found topic sentiments that are more closely correlate
 
 ---
 
-### 13. Instructor Do: Machine Learning Review (50 min)
+### 13. Instructor Do: Machine Learning Review (40 min)
 
 The remainder of today's class is intended to review any topics, activities, or concepts covered in any of the previous machine learning units.
 
