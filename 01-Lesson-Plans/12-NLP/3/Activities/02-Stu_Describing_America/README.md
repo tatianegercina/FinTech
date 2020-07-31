@@ -6,7 +6,7 @@ You will use [the inaugural address corpus](https://www.nltk.org/book/ch02.html#
 
 ## Initial considerations
 
-In the `Initial imports` cell from the starter Jupyter notebook, we are importing two modules that are worth highlighting.
+In the `Initial imports` cell from the starter Jupyter notebook, we import two modules that are worth highlighting.
 
 * The `Counter` module from the `collections` library will allow you to track how many times equivalent values are into a list.
 
@@ -34,7 +34,7 @@ Use the `fileids()` and `raw()` functions to retrieve the following data from th
 
 In this section, you will retrieve the most frequent adjective used in every inaugural address. A function called `most_freq_adj()` is provided to help you to complete this task.
 
-* Analyze the code of the `most_freq_adj` function and make some test to figure out how it works. This function uses the `Counter` module, you can learn more about it in [this page of the Python documentation](https://docs.python.org/3.7/library/collections.html#collections.Counter).
+* Analyze the code of the `most_freq_adj` function and make some tests to figure out how it works. This function uses the `Counter` module. You can learn more about it in [this page of the Python documentation](https://docs.python.org/3.7/library/collections.html#collections.Counter).
 
 * Use the `most_freq_adj` to create a Python list containing the most common adjective from each inaugural address. Remember that you store all the inaugural addresses in the `texts` Python list.
 
@@ -42,7 +42,7 @@ In this section, you will retrieve the most frequent adjective used in every ina
 
 ### 3. Analyze adjectives over time
 
-In this section, you will analyze how many times the most common adjectives were used by U.S. Presidents in their inaugural addresses over time.
+In this section, you will analyze how many times U.S. Presidents used the most common adjectives in their inaugural addresses over time.
 
 Two helper functions are provided to aid you in this task.
 
@@ -50,7 +50,7 @@ Two helper functions are provided to aid you in this task.
 
 2. `get_word_counts()`: This function counts the occurrences of a word in a text.
 
-Use these functions to analyze the adjectives usage over time as follows.
+Use these functions to analyze the usage of the adjective over time as follows.
 
 * Use the `all_adj()` function provided to create a Python list `all_adjectives` containing all the adjectives into all the inaugural addresses.
 
@@ -62,7 +62,7 @@ Use these functions to analyze the adjectives usage over time as follows.
 
 * Create a Python list `presidents` to store the last name of each U.S. President whose inaugural address is in the `inaugural` corpus. You can retrieve the Presidents last name from the document IDs you store as string values in the `ids` list and using [the `split()` function](https://docs.python.org/3.7/library/stdtypes.html#str.split).
 
-* Create a DataFrame `df_adjectives` with the Presidents last names and the adjectives counts as columns, and set the `dates` list as the index.
+* Create a DataFrame `df_adjectives` with the Presidents' last names and the adjectives counts as columns, and set the `dates` list as the index.
 
 * Create a line plot using the `df_adjectives` DataFrame to visualize the usage of the most common adjective over time in the U.S. presidential inaugural addresses.
 

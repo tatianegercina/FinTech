@@ -86,15 +86,15 @@ Open the lesson slides, move to the "POS Tagging and Dependency Parsing" section
 
 * Part-of-Speech (POS) tagging is intuitive. Each word in a sentence is designated a grammatical part of speech, such as noun, verb, or adjective. POS tagging categorizes each word in a sentence by its grammatical role in the sentence.
 
-* For example, in the following slide we have the sentence `Jose made a book collector happy the other day`. POS tagging will tokenize the sentence and add a `label` next to each token, such as `noun`, `verb`, or `adverb` in this example.
+* For example, in the following slide, we have the sentence `Jose made a book collector happy the other day`. POS tagging will tokenize the sentence and add a `label` next to each token, such as `noun`, `verb`, or `adverb` in this example.
 
   ![pos-tagging-slides-example](Images/pos-tagging-slides-example.png)
 
-* Dependency parsing follows POS tagging. In grammar, dependency is the notion that words are connected to each other by directed links. For example, adjectives describe nouns, and adverbs describe verbs, nouns can be the subject or object of verbs, and so forth.
+* Dependency parsing follows POS tagging. In grammar, a dependency is a notion that words are connected to each other by directed links. For example, adjectives describe nouns, and adverbs describe verbs, nouns can be the subject or object of verbs, and so forth.
 
 * Each sentence is made of not just the words that it contains but also the relationships that are implicit between them. A dependency parser is an NLP tool that tries to make these relationships explicit.
 
-* For example, in the slide you can note that in the sentence's fragment `a book collector`, the noun `book` has a relationship with `collector` and modifies its meaning and semantics.
+* For example, in the slide, you can note that in the sentence's fragment `a book collector`, the noun `book` has a relationship with `collector` and modifies its meaning and semantics.
 
   ![dependency-parsing-slides-example](Images/dependency-parsing-slides-example.png)
 
@@ -146,7 +146,7 @@ Open the Jupyter notebook, and go through the demo line by line, pausing for que
   . PUNCT
   ```
 
-Slack out the this link to the class: https://spacy.io/api/annotation#pos-tagging. Explain to students that in this pages, they can find a complete list that describes all the POS tags.
+Slack out this link to the class: https://spacy.io/api/annotation#pos-tagging. Explain to students that in this page, they can find a complete list that describes all the POS tags.
 
 * Using the POS-tags, we can filter the words using a list comprehension with a conditional, for example, to identify all the nouns in a sentence or text.
 
@@ -162,7 +162,7 @@ Slack out the this link to the class: https://spacy.io/api/annotation#pos-taggin
   ['cow', 'moon']
   ```
 
-* Similar to POS-tags, we can print the grammar dependencies of each word. using the `dep_` attribute.
+* Similar to POS-tags, we can print the grammar dependencies of each word using the `dep_` attribute.
 
   ```python
   # Print grammar dependencies
@@ -228,7 +228,7 @@ Slack out the this link to the class: https://spacy.io/api/annotation#pos-taggin
   ['brown']
   ```
 
-Explain to students that this type of text analysis has different applications in th FinTech industry, such as analyzing financial news, investing memorandums, financial analysis reports, and even social media feeds.
+Explain to students that this type of text analysis has different applications in the FinTech industry, such as analyzing financial news, investing memorandums, financial analysis reports, and even social media feeds.
 
 Answer any questions before moving on.
 
