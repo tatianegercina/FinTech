@@ -745,7 +745,7 @@ The purpose of this activity is to showcase the value in persisting data, as doi
 **File:**
 * [jarvis.py](Activities/07-Evr_Persisting_Real_Time_Data/Unsolved/jarvis.py)
 
-Tell students that the next enhancement to make to the trading algorithm is to persist the live data to a database. Persisting the live data allows the framework to recover from data errors, and allows us to collect and use historical data without running into memory issues.
+Tell students that the next enhancement to make to the trading algorithm is to persist the live data to a database. Persisting the live data allows the framework to recover from data errors, and lets us collect and use historical data without running into memory issues.
 
 Quickly discuss the following before proceeding to the walkthrough:
 
@@ -755,7 +755,7 @@ Quickly discuss the following before proceeding to the walkthrough:
 
 * Why is it important to persist data?
 
-  **Answer:** Persisting data is generally a best practice, as it provides a method for data recovery should an application ever fail; data stored in transient in-memory data structures will be lost forever if the application itself terminates. Also, persisting data to a database allows for separate data analysis to be done at a later time, if desired.
+  **Answer:** Persisting data is generally a best practice, as it provides a method for data recovery if an application fails; data stored in transient in-memory data structures will be permanently lost if the application itself terminates. Also, persisting data to a database allows for separate data analysis to be done at a later time, if desired.
 
 With the class, update the starter code to use an SQLite database to persist the data. Be sure to highlight the following points about SQLite:
 
@@ -856,19 +856,19 @@ Ask if there are any questions before moving on.
 
 In this activity, students will learn how to use the Streamz library to create a dedicated pipeline for continuous streaming data.
 
-The purpose of this activity is to show students how to update a visualization as data continues to flow without the need for reconstructing the visual component each time.
+The purpose of this activity is to show students how to update a visualization as data continues to flow, without the need for reconstructing the visual component each time.
 
 **File:** [streamz.ipynb](Activities/08-Ins_Streaming/Solved/streamz.ipynb)
 
 Begin this demonstration by asking the students if they noticed anything strange about the `update_dashboard` code. Point out that the dashboard is simply replaced with each new piece of data. While this approach is fine for a simple dashboard example, it can create problems for a complex dashboard.
 
-Explain that a better approach to replacing the plots each time is to update the plots with new data. Explain that Panel, hvplot, and Plotly all provide tools to update plots in an efficient way using live data streams. In this example, we will use the `Streamz` library with hvplot to update our plots to allow for live data streams.
+Explain that a better approach to replacing the plots each time is to update them with new data; Panel, hvPlot, and Plotly all provide tools to update plots in an efficient way using live data streams. In this example, we will use the `Streamz` library with hvPlot to update our plots to allow for live data streams.
 
-Explain to students that hvplot uses the `Streamz` library to build a pipeline or buffer to manage continuous streams of data. A `stream` can be thought of as a data reservoir that live data can be sent to. Hvplot can then connect to this stream and update its plots when new data arrives.
+Explain to students that hvPlot uses the `Streamz` library to build a pipeline or buffer to manage continuous streams of data. A `stream` can be thought of as a data reservoir that live data can be sent to. HvPlot can then connect to this stream and update its plots when new data arrives.
 
-Acknowledge that while data pipelines and buffers are very advanced subjects, the Streamz library makes it very simple to create a user Streamz with Pandas and hvplot.
+Acknowledge that while data pipelines and buffers are very advanced subjects, the Streamz library makes it very simple to create a user Streamz with Pandas and hvPlot.
 
-Open the notebook and quickly show that hvplot has a special data streaming interface to the Streamz library that can be imported:
+Open the notebook and quickly show that hvPlot has a special data streaming interface to the Streamz library that can be imported:
 
 ```python
 import os
@@ -879,7 +879,7 @@ from streamz import Stream
 from streamz.dataframe import DataFrame
 ```
 
-Use the first section of the notebook to demonstrate how to create a streaming DataFrame and plot the data with Streamz and hvplot. Highlight the following points:
+Use the first section of the notebook to demonstrate how to create a streaming DataFrame and plot the data with Streamz and hvPlot. Highlight the following points:
 
 * The Streamz library provides a [DataFrame-like interface](https://streamz.readthedocs.io/en/latest/dataframes.html) that can accept streams and an example to form a streaming DataFrame.
 
@@ -891,13 +891,13 @@ Use the first section of the notebook to demonstrate how to create a streaming D
 
 * The `example` in the above code is just a template for what the live data will look like. In this example, the live data will have `x` and `y` columns of data.
 
-* A streaming DataFrame has limited functions similar to a real Pandas DataFrame, but it uses a stream to hold live streaming data. A streaming DataFrame can be considered a wrapper around a normal DataFrame that hvplot can use to automatically update its plots with streaming data. In this example, hvplot will update its scatter plot whenever it receives new live data that matches the format of the `example` DataFrame.
+* A streaming DataFrame has limited functions similar to a real Pandas DataFrame, but it uses a stream to hold live streaming data. A streaming DataFrame can be considered a wrapper around a normal DataFrame that hvPlot can use to automatically update its plots with streaming data. In this example, hvPlot will update its scatter plot whenever it receives new live data that matches the format of the `example` DataFrame.
 
   ```python
   sdf.hvplot.scatter(x="x", y="y")
   ```
 
-* Live data is added to the streaming DataFrame using `stream.emit`. In this example, a DataFrame is created 20 different times and each time is emitted to the streaming DataFrame. Hvplot knows to update its scatter plot with each new data that is emitted.
+* Live data is added to the streaming DataFrame using `stream.emit`. In this example, a DataFrame is created 20 different times, and each time is emitted to the streaming DataFrame. HvPlot knows to update its scatter plot with each new data that is emitted.
 
   ```python
   def emit(i):
@@ -910,7 +910,7 @@ Use the first section of the notebook to demonstrate how to create a streaming D
 
   ![streamz_demo_1.gif](Images/streamz_demo_1.gif)
 
-Use the Rolling Window section to explain that a rolling window of data can be used with hvplot to make the plot more efficient. Highlight the following:
+Use the Rolling Window section to explain that a rolling window of data can be used with hvPlot to make the plot more efficient. Highlight the following:
 
 * You can specify the rolling window of data to plot using the `backlog` parameter. This is just how much total data the plot will remember and use at any given time.
 
@@ -939,7 +939,7 @@ Use the Rolling Window section to explain that a rolling window of data can be u
   sdf = DataFrame(stream, example=example)
   ```
 
-* New data is fetched from the Kraken exchange via the CCXT API and processed as a new DataFrame `df` that matches the format of the `example` DataFrame. This new DataFrame is then emitted to the stream, and hvplot uses the streaming DataFrame to update the plot.
+* New data is fetched from the Kraken exchange via the CCXT API and processed as a new DataFrame `df` that matches the format of the `example` DataFrame. This new DataFrame is then emitted to the stream, and hvPlot uses the streaming DataFrame to update the plot.
 
   ```python
   kraken = ccxt.kraken(
@@ -966,7 +966,7 @@ In this activity, students will code along with the instructor to update the tra
 
 **File:** [jarvis.py](Activities/09-Evr_Streaming_Dashboard/Unsolved/jarvis.py)
 
-Explain to students that the previous iteration of the trading dashboard was replaced each time that new data arrived. For a single plot, this was fine, but for a complex dashboard, each replacement would reset the entire dashboard and negatively impact the user experience. Explain that we can avoid some of these issues by updating the example to use the Streamz library with hvplot.
+Explain to students that the previous iteration of the trading dashboard was replaced each time that new data arrived. For a single plot, this was fine, but for a complex dashboard, each replacement would reset the entire dashboard and negatively impact the user experience. Explain that we can avoid some of these issues by updating the example to use the Streamz library with hvPlot.
 
 Open the starter code and highlight the sections that will be replaced or updated. Then, start by updating the imports and the initialize function:
 
@@ -1048,7 +1048,7 @@ def build_dashboard(data, signals):
     return dashboard
 ```
 
-* The above code was adapted to use the limited Streamz DataFrame interface with hvplot. Because of this, using streaming data may impact or limit the complexity of the final plots.
+* The above code was adapted to use the limited Streamz DataFrame interface with hvPlot. Because of this, using streaming data may impact or limit the complexity of the final plots.
 
 Show that the `generate_signals` function also needs to be modified slightly to convert the index to match the `example` DataFrame used in the initialize function.
 
@@ -1110,9 +1110,9 @@ async def main():
         await asyncio.sleep(1)
 ```
 
-* The `emit` function is used to continuously inject data into the streaming data pipeline managed by the Stream object. These streaming DataFrames are connected to the dashboard visualizations and automatically update the charts when new data is emitted.
+* The `emit` function is used to continuously inject data into the streaming data pipeline managed by the stream object. These streaming DataFrames are connected to the dashboard visualizations and automatically update the charts when new data is emitted.
 
-* The result of these changes is that the dashboard no longer has to replace each visualization from scratch. This allows users to scroll on the page and switch between tabs without losing their place. This would not have been possible without the streaming data visualizations that hvplot and Streamz provides.
+* The result of these changes is that the dashboard no longer has to replace each visualization from scratch. This allows users to scroll on the page and switch between tabs without losing their place. This would not have been possible without the streaming data visualizations that hvPlot and Streamz provide.
 
 Congratulate students on completing the final dashboard! They now have a robust algorithmic trading framework that can be used to build and deploy a wide variety of trading algorithms!
 
@@ -1120,9 +1120,7 @@ Congratulate students on completing the final dashboard! They now have a robust 
 
 ### 13. Instructor Do: Reflect (10 min)
 
-This activity will conclude today's lesson and provide a chance for students to reflect on what they've learned throughout the day.
-
-The purpose of this activity is to allow students a chance to take a step back and digest the concepts that have been taught today. The idea is to engage students so that they drive the conversation, thereby reinforcing their learning by "teaching" the class.
+This activity concludes the lesson and allows students a chance to take a step back and digest the concepts that have been taught today. The idea is to engage students so that they drive the conversation, thereby reinforcing their learning by "teaching" the class.
 
 Recap the skills and concepts learned throughout the lesson, and engage students by having them lead the discussion as much as possible:
 
@@ -1142,13 +1140,13 @@ Recap the skills and concepts learned throughout the lesson, and engage students
 
   * What is data persistence? Why is it important?
 
-    **Answer:** Data persistence is the concept of storing, or "persisting," data in a reliable location such as a database. It is often important for failure prevention/disaster recovery in the event that an application fails, meaning that an application can pick up where it last failed due to the most recent "save" point. In today's trading framework, it also allows us to offload some of the memory requirements to the database.
+    **Answer:** Data persistence is the concept of storing, or "persisting," data in a reliable location, such as a database. It is often used for failure prevention/disaster recovery if an application fails, allowing an application to pick up where it last failed, thanks to the most recent "save" point. In today's trading framework, it also allows us to offload some of the memory requirements to the database.
 
   * What is the Streamz library? What benefit did it provide to our algorithmic trading application?
 
-    **Answer:** The Streamz library, combined with hvplot, allows streaming data visualizations for the dashboard, thereby mitigating the need to rebuild the dashboard each time.
+    **Answer:** The Streamz library, combined with hvPlot, allows streaming data visualizations for the dashboard, thereby mitigating the need to rebuild the dashboard each time.
 
-* Ask if any volunteers would like to add anything that has not been previously stated.
+* Ask the class if anyone would like to add anything that has not been previously discussed.
 
 Then, get students to reflect on what they've learned so far:
 
@@ -1162,7 +1160,7 @@ Finish the recap with a few statements of encouragement:
 
 * Tell students to give themselves a round of applause–they now have the tools necessary to engage in live algorithmic trading!
 
-* Remind students that should they choose, they can continue to build out their trading applications to make them even more robust and scalable. This will be particularly impressive to potential employers, as not many individuals have an algorithmic trading application under their belts!
+* Remind students that they can continue to build out their trading applications to make them even more robust and scalable. This will be particularly impressive to potential employers, as not many individuals have an algorithmic trading application under their belts!
 
 ---
 
