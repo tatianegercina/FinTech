@@ -527,7 +527,7 @@ Note that a complete explanation of asyncio is out-of-scope for this lesson, so 
 
 * [async_dashboard.py](Activities/05-Ins_Asyncio/Solved/async_dashboard.py)
 
-Explain to students that now that we have a basic live trading script working, we want to include live visualizations as well. However, there are some problems with plotting live data that needs to be addressed first.
+Explain to students that now that we have a basic live trading script working, we want to include live visualizations as well. However, there are some problems with plotting live data that need to be addressed first.
 
 Start by running the `blocked_dashboard.py` code to show the long loading time.
 
@@ -556,13 +556,13 @@ serve_dashboard()
 
 * The serve_dashboard function serves up a simple dashboard of text.
 
-* Python is a synchronous language. That means that it runs one line of code and waits on that code to finish before moving on to run the next line of code. In this example, the `fetch_data` function takes 5 seconds to run before the code that serves the dashboard can run. This effectively blocks the page from loading until the data returns.
+* Python is a synchronous language. That means that it runs one line of code and waits on that code to finish before moving on to run the next line of code. In this example, the `fetch_data` function takes five seconds to run before the code that serves the dashboard can run. This effectively blocks the page from loading until the data returns.
 
 * In practice, fetching data can take a lot longer than expected. Database queries, network delays, and other factors can create delays in the request. With code like this, the user experience suffers because the page cannot load until the data returns.
 
 Open `asyncio_demo.ipynb` and highlight the following points about the asyncio library:
 
-* Python provides a library called `asyncio` to write concurrent or asynchronous code.
+* Python provides a library called `asyncio` to write concurrent, or asynchronous, code.
 
 * Asynchronous code means that Python doesn't have to wait on that line to finish running before moving on to the next line of code.
 
