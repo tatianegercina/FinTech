@@ -366,7 +366,7 @@ In this activity, students will code along with the instructor to update a versi
 
 Live code the solution to this activity with the entire class. Use the code to explain new concepts to students, and engage the class with questions when appropriate. Be sure to go slow and give students plenty of time to keep up.
 
-Start the activity with a brief overview of the framework to show which sections will need to be updated to "go live".
+Start the activity with a brief overview of the framework, to show which sections will need to be updated to "go live."
 
 * **NOTE:** Each section that needs to be updated will have a `# @TODO:` comment to make it easier to find those sections.
 
@@ -395,9 +395,9 @@ def main():
         time.sleep(1)
 ```
 
-* The main function uses a loop to fetch new data every 1 second. This loop can easily be modified to fetch data at any interval required for the trading algorithm.
+* The main function uses a loop to fetch new data every one second. This loop can easily be modified to fetch data at any interval required for the trading algorithm.
 
-* The loop refers to `global` variables for the account and DataFrame. This is required because the `account` and `df` variables are initialized outside of the loop. We will see later in today's class why initializing certain variables like this will be advantageous.
+* The loop refers to `global` variables for the account and DataFrame. This is required because the `account` and `df` variables are initialized outside of the loop. We will see later in today's class why initializing certain variables like this is advantageous.
 
 * New data is fetched from the Kraken API using the `fetch_data` function and then appended to the main `df` DataFrame.
 
@@ -420,7 +420,7 @@ def initialize(cash=None):
     return account, df
 ```
 
-* The initialize function is used to create all of the initial variables and data containers that the function may need. By initializing all of the functions in a single function, it makes it easy to update and change the initial values or data types used.
+* The initialize function is used to create all of the initial variables and data containers that the function may need. By initializing all of the functions in a single function, it's easy to update and change the initial values or data types used.
 
 * The account balance is a simple Python dictionary to keep track of the cash balance and the number of shares owned.
 
@@ -476,7 +476,7 @@ def generate_signals(df):
     return signals
 ```
 
-Move on to the `execute_trade_strategy` and show how we can use the account balance and the latest data retrieved to make a trading decision.
+Move on to the `execute_trade_strategy`, and show how we can use the account balance and the latest data retrieved to make a trading decision.
 
 ```python
 def execute_trade_strategy(signals, account):
@@ -501,7 +501,7 @@ def execute_trade_strategy(signals, account):
 
 * This function only prints the trade decision, but an API call can be used here to place a real order.
 
-Run the complete trading script in the terminal to show that the data being fetched until there is enough data collected to generate signals and execute the trading strategy.
+Run the complete trading script in the terminal to show that the data is being fetched until there is enough data collected to generate signals and execute the trading strategy.
 
 ```shell
 python jarvis.py
