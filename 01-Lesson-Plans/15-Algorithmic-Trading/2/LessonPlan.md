@@ -272,7 +272,7 @@ Explain that the next several activities will continue to build and iterate on t
 
 ### 5. Instructor Do: Trading with CCXT (15 min)
 
-In this section, students will become familiar with the expansive CCXT library, which provides an API for over 120 cryptocurrency exchanges. In particular, students will work with the Kraken API and extract both historical and current price data.
+In this section, students will become familiar with the expansive CCXT library, which provides an API for over 120 cryptocurrency exchanges. Students will work with the Kraken API and extract both historical and current price data.
 
 **File:** [ccxt_demo.ipynb](Activities/03-Ins_Going_Live/Solved/ccxt_demo.ipynb)
 
@@ -280,7 +280,7 @@ Open the solution file and review the following:
 
 * CCXT provides a common API for over 120 cryptocurrency exchanges.
 
-* To use a specific exchange, the API keys for that exchange must be set. In this example, the Kraken exchange is used and requires those keys to be exported before running the notebook.
+* To use a specific exchange, the API keys for that exchange must be set. In this example, the Kraken exchange is used, and requires those keys to be exported before running the notebook.
 
   ```python
   # Import environment variables
@@ -340,7 +340,7 @@ Take a moment to explain the differences in evaluating a trading strategy and go
   current_price = exchange.fetch_ticker('BTC/USD')
   ```
 
-* The `info` column contains the original exchange API data that usually just be treated as duplicate information and deleted.
+* The `info` column contains the original exchange API data that usually is just treated as duplicate information and deleted.
 
   ```python
   del current_price['info']
@@ -348,7 +348,7 @@ Take a moment to explain the differences in evaluating a trading strategy and go
 
 Explain that while today's lesson only focuses on fetching pricing data from the Kraken API, the CCXT library also allows a user to perform tasks such as checking account balances/status, fetching any open orders, or even placing and executing trades.
 
-  **Note:** The following functions return minimal/empty datasets due to the fact that the Kraken account used in this lesson is not funded with capital.
+  **Note:** The following functions return minimal/empty datasets, due to the fact that the Kraken account used in this lesson is not funded with capital.
 
   ![additional-functions](Images/additional-functions.png)
 
