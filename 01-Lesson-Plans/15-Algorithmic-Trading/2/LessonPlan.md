@@ -639,11 +639,11 @@ In this activity, students will code along with the instructor to update their l
 
 **Files:** [jarvis.py](Activities/06-Evr_Async_Trading/Unsolved/jarvis.py)
 
-Open the starter code and live code the solution with the class. Explain any new concepts as you go, and be sure to proceed slowly and frequently pause to make sure that students can keep up.
+Open the starter code and live code the solution with the class. Proceed slowly, explain new concepts as you go, and take frequent pauses to make sure that students can keep up.
 
 Start by skimming the code with the class and showing the `# @TODO:` comments where the code will need to be updated. Explain that the goal is to use asyncio so that the dashboard can be loaded and updated without blocking the page from loading.
 
-Import the necessary libraries to use asyncio, hvplot, and panel.
+Import the necessary libraries to use asyncio, hvPlot, and Panel.
 
 ```python
 import asyncio
@@ -711,7 +711,7 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
 
-* The dashboard is initialized as Static text and then served immediately. Afterward, we can use an asynchronous main function to fetch new data and update the dashboard without blocking the page from loading.
+* The dashboard is initialized as static text and then served immediately. Afterward, we can use an asynchronous main function to fetch new data and update the dashboard without blocking the page from loading.
 
   ```python
   account, df, dashboard = initialize(10000)
@@ -722,7 +722,7 @@ loop.run_until_complete(main())
 
   * **Note:** The `requests` library that is used in the `fetch_data` function is considered a blocking library. Blocking libraries like this must be called using a special function called `run_in_executor`. More information about this can be found in the official [asyncio documents](https://docs.python.org/3/library/asyncio-eventloop.html#executing-code-in-thread-or-process-pools), but this code can be used anytime that the requests library is used. Alternatively, there is an asyncio-compatible library called [aiohttp-requests](https://pypi.org/project/aiohttp-requests/) that can be used instead.
 
-* Once the new data is fetched, the `update_dashboard` function is called to update the plots. This function replaces the dashboard plots for now, but this will be improved later in class.
+* Once the new data is fetched, the `update_dashboard` function is called to update the plots. This function replaces the dashboard plots for now, but will be improved later in class.
 
 * Finally, the main function is executed with a special asyncio function called `run_until_complete`. This is just one way to run the asynchronous code in the event loop.
 
