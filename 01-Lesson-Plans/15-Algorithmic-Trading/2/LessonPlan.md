@@ -95,9 +95,11 @@ Answer any questions before moving on.
 
 In this activity, students will be given a random sequence of trading function names. They will be asked to propose the correct order of the functions if they were to be implemented in an algorithmic trading application. Note that there is no single correct order, so treat this as a thought exercise to help drive engagement and discussion around the use of frameworks to encapsulate and abstract code.
 
-**Files:**
+**Instructions:**
 
 * [README.md](Activities/01-Stu_Trading_Functions/README.md)
+
+**Files:**
 
 * [jarvis.py](Activities/01-Stu_Trading_Functions/Unsolved/jarvis.py)
 
