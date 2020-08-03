@@ -2,15 +2,15 @@
 
 ### Overview
 
-For the past three weeks, students have been immersed into the world of Python and common Python libraries that are included in the Anaconda environment (i.e., Pandas and Matplotlib). They've also learned some key techniques for analyzing financial data, such as calculating daily returns and risk-reward ratios. It's now time for students to take it to the next level and enter into the world of APIs. There are a number of FinTech APIs available that will allow students to perform more powerful analytics. They will also expose students to datasets they would not typically be able to easily access or consolidate. Now, students will learn the basics of APIs and API requests so that they can begin incorporating APIs into their work.
+For the past three weeks, students have been immersed into the world of Python and common Python libraries that are included in the Anaconda environment (i.e., Pandas and Matplotlib). They've also learned some key techniques for analyzing financial data, such as calculating daily returns and risk-reward ratios. It's now time for students to take it to the next level and enter into the world of application programming interfaces (APIs). There are a number of FinTech APIs available that will allow students to perform more powerful analytics. They will also expose students to datasets they would not typically be able to easily access or consolidate. Now, students will learn the basics of APIs and API requests so that they can begin incorporating APIs into their work.
 
-Today's class will teach students what application programming interfaces (APIs) are, what they're used for, and why they are valuable. Students will also learn, from a high level, what the client-server model is and how it works. Students will submit API calls with Postman (a development environment for APIs) and Python, and they'll learn how to decipher and parse API JSON output. Lastly, students will submit API calls with parameters in order to improve response time and filter and narrow down API output. Learning how to make API calls and parse API output using Postman and Python will prepare students for getting their hands dirty with APIs in the professional world.
+Today's class will teach students what APIs are, what they're used for, and why they are valuable. Students will also learn, from a high level, what the client-server model is and how it works. Students will submit API calls with Postman (a development environment for APIs) and Python, and they'll learn how to decipher and parse API JSON output. Lastly, students will submit API calls with parameters in order to improve response time and filter and narrow down API output. Learning how to make API calls and parse API output using Postman and Python will prepare students for getting their hands dirty with APIs in the professional world.
 
 Before students leave at the end of the class, instruct them to sign up for the APIs that are going to be used in the next class. These APIs will require that students have API keys. Links are provided below. Remember to slack the links to the students so they have a resource to sign up with.
 
 * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
-* [Plaid](https://dashboard.plaid.com/signup)
+* [Alpaca Markets](https://app.alpaca.markets)
 
 ### Class Objectives
 
@@ -38,13 +38,15 @@ By the end of class, students will be able to:
 
 * The first half of the lesson will include instructor demonstrations of submitting requests to different FinTech APIs using Postman. Each demo should be focused on showcasing FinTech APIs and getting students excited about contributing to the wealth of APIs that are already out there. Make sure to create accounts for these APIs:
 
-  * Postman
+  * [Postman](https://www.postman.com/)
 
-  * World of Bank
+  * [World Bank](https://datahelpdesk.worldbank.org/knowledgebase/articles/889386-developer-information-overview)
 
-  * Quandl
+  * [Quandl](https://www.quandl.com/)
 
-* Students should have already downloaded Postman the night before. Use the welcome activity to identify any students who may not have already downloaded Postman, and have the TAs help them get it installed.
+  * [Alpaca](https://alpaca.markets/)
+
+* Students should have already downloaded Postman prior to class. Use the welcome activity to identify any students who may not have already downloaded Postman, and have the TAs help them get it installed.
 
 * The welcome class module will be dedicated to demoing some of the previously mentioned FinTech APIs.
 
@@ -54,9 +56,10 @@ Be sure to set the pace for the class. Encourage students to attend office hours
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [5.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=01b5d2b5-75ae-4414-a9ec-aaaf00fb4e47) Note that this video may not reflect the most recent lesson plan.
 
 ---
@@ -70,6 +73,8 @@ Be sure to set the pace for the class. Encourage students to attend office hours
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+
+---
 
 ### 1. Instructor Do: Welcome (5 mins)
 
