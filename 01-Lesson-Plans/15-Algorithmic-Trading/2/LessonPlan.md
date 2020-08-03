@@ -97,7 +97,7 @@ In this activity, students will be given a random sequence of trading function n
 
 **Files:**
 
-* [Instructions](Activities/01-Stu_Trading_Functions/README.md)
+* [README.md](Activities/01-Stu_Trading_Functions/README.md)
 
 * [jarvis.py](Activities/01-Stu_Trading_Functions/Unsolved/jarvis.py)
 
