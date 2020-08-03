@@ -38,7 +38,7 @@ By the end of class, students will be able to:
 
 * Since students' experience with trading will differ, be thorough when explaining specific trading terminology, concepts, and strategies. Focus on the individual steps required to execute a trade, and then apply coding concepts (i.e., iterations) to illustrate how the step can be automated using Python code. Definitions for key trading terminology will be provided.
 
-* Review sessions are geared towards allowing students to ask as many questions as possible. Students' questions should be prioritized over instructor-posed review questions. Be sure to keep careful eye on the class pacing, so that all material is covered.
+* Review sessions are geared towards allowing students to ask as many questions as possible. Students' questions should be prioritized over instructor-posed review questions. While we want to provide as much opportunity as possible for students to ask questions, also make sure to keep careful eye on the class pacing, so that all material is covered.
 
 * Encourage students to review supplementary resources, to reach out to TAs individually for assistance, and to attend office hours to address any unanswered questions or confusion.
 
