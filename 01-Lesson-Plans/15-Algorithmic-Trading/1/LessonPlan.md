@@ -485,7 +485,7 @@ Walk students through each step required to implement manual backtesting. Highli
 
   ![portfolio-daily-and-cumulative-returns](Images/portfolio-daily-and-cumulative-returns.png)
 
-* Finally, once again using the `hvplot` library, we can plot the entry and exit positions of the backtesting results of a simulated portfolio of $100,000. Results show that the trading strategy increased the simulated portfolio of $100,000 to slightly above $130,000.
+* Finally, once again using the `hvPlot` library, we can plot the entry and exit positions of the backtesting results of a simulated portfolio of $100,000. Results show that the trading strategy increased the simulated portfolio of $100,000 to slightly above $130,000.
 
   ![backtest-code](Images/backtest-code.png)
 
@@ -734,7 +734,7 @@ Before diving into the walkthrough, navigate to the "Trading Dashboards" section
 
 * What is Panel?
 
-  **Answer:** Panel is a high-level dashboarding library that allows users to create custom interactive web apps and dashboards by connecting user-defined widgets, plots, images, tables, or text. Panel also works with other visualization libraries such as Plotly Express or Hvplot via extensions.
+  **Answer:** Panel is a high-level dashboarding library that allows users to create custom interactive web apps and dashboards by connecting user-defined widgets, plots, images, tables, or text. Panel also works with other visualization libraries such as Plotly Express or hvPlot via extensions.
 
 * What is a dashboard?
 
@@ -746,7 +746,7 @@ Before diving into the walkthrough, navigate to the "Trading Dashboards" section
 
 Open the solution file and highlight the following:
 
-* Make sure to import the necessary libraries and dependencies to use the Panel dashboard and Hvplot visualizations. The `pn.extension()` function automatically detects the need for Panel to load additional extensions; in this case, Panel will load the extension for Hvplot.
+* Make sure to import the necessary libraries and dependencies to use the Panel dashboard and hvPlot visualizations. The `pn.extension()` function automatically detects the need for Panel to load additional extensions; in this case, Panel will load the extension for hvPlot.
 
   ```python
   import panel as pn
@@ -755,7 +755,7 @@ Open the solution file and highlight the following:
   pn.extension()
   ```
 
-* Before creating the Panel dashboard, we will first need to define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvplot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
+* Before creating the Panel dashboard, we will first need to define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvPlot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
 
   ![hvplot-price-chart](Images/hvplot-price-chart.png)
 
