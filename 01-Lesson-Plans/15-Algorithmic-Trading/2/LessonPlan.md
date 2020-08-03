@@ -57,7 +57,7 @@ By the end of class, students will be able to:
 
 In this section, students will review the algorithmic trading concepts taught in the previous class to prepare them for today's consolidation of multiple trading functions (signal generation, backtesting, trade evaluation, etc.) into a single trading framework. This section is a key opportunity to quickly revisit the core components related to algorithmic trading before transitioning to the design of an algorithmic trading framework.
 
-Welcome students to the second day of algorithmic trading! Begin by calling on volunteers to answer the following review questions:
+Welcome students to the second day of algorithmic trading! Begin by navigating to the first slides of the deck, and calling on volunteers to answer the following review questions:
 
 * What is algorithmic trading?
 
