@@ -862,13 +862,13 @@ The purpose of this activity is to show students how to update a visualization a
 
 Begin this demonstration by asking the students if they noticed anything strange about the `update_dashboard` code. Point out that the dashboard is simply replaced with each new piece of data. While this approach is fine for a simple dashboard example, it can create problems for a complex dashboard.
 
-Explain that a better approach to replacing the plots each time is to update the plots with new data. Explain that Panel, hvplot, and Plotly all provide tools to update plots in an efficient way using live data streams. In this example, we will use the `streamz` library with hvplot to update our plots to allow for live data streams.
+Explain that a better approach to replacing the plots each time is to update the plots with new data. Explain that Panel, hvplot, and Plotly all provide tools to update plots in an efficient way using live data streams. In this example, we will use the `Streamz` library with hvplot to update our plots to allow for live data streams.
 
-Explain to students that hvplot uses the `Streamz` library to build a pipeline or buffer to manage continuous streams of data. A `Stream` can be thought of as a data reservoir that live data can be sent to. Hvplot can then connect to this Stream and update its plots when new data arrives.
+Explain to students that hvplot uses the `Streamz` library to build a pipeline or buffer to manage continuous streams of data. A `stream` can be thought of as a data reservoir that live data can be sent to. Hvplot can then connect to this stream and update its plots when new data arrives.
 
-Acknowledge that while data pipelines and buffers are very advanced subjects, the streamz library makes it very simple to create a use streamz with Pandas and hvplot.
+Acknowledge that while data pipelines and buffers are very advanced subjects, the Streamz library makes it very simple to create a user Streamz with Pandas and hvplot.
 
-Open the notebook and quickly show that hvplot has a special data streaming interface to the streamz library that can be imported:
+Open the notebook and quickly show that hvplot has a special data streaming interface to the Streamz library that can be imported:
 
 ```python
 import os
@@ -879,9 +879,9 @@ from streamz import Stream
 from streamz.dataframe import DataFrame
 ```
 
-Use the first section of the notebook to demonstrate how to create a streaming DataFrame and plot the data with streamz and hvplot. Highlight the following points:
+Use the first section of the notebook to demonstrate how to create a streaming DataFrame and plot the data with Streamz and hvplot. Highlight the following points:
 
-* The streamz library provides a [DataFrame-like interface](https://streamz.readthedocs.io/en/latest/dataframes.html) that can accept Stream and an example to form a streaming DataFrame.
+* The Streamz library provides a [DataFrame-like interface](https://streamz.readthedocs.io/en/latest/dataframes.html) that can accept streams and an example to form a streaming DataFrame.
 
   ```python
   stream = Stream()
@@ -891,13 +891,13 @@ Use the first section of the notebook to demonstrate how to create a streaming D
 
 * The `example` in the above code is just a template for what the live data will look like. In this example, the live data will have `x` and `y` columns of data.
 
-* A streaming DataFrame has limited functions similar to a real Pandas DataFrame, but it uses a Stream to hold live streaming data. A streaming DataFrame can be considered a wrapper around a normal DataFrame that hvplot can use to update its plots with streaming data automatically. In this example, hvplot will update its scatter plot whenever it receives new live data that matches the format of the `example` DataFrame.
+* A streaming DataFrame has limited functions similar to a real Pandas DataFrame, but it uses a stream to hold live streaming data. A streaming DataFrame can be considered a wrapper around a normal DataFrame that hvplot can use to automatically update its plots with streaming data. In this example, hvplot will update its scatter plot whenever it receives new live data that matches the format of the `example` DataFrame.
 
   ```python
   sdf.hvplot.scatter(x="x", y="y")
   ```
 
-* Live data is added to the streaming DataFrame using `stream.emit`. In this example, a DataFrame is created 20 different times and each time emitted to the streaming DataFrame. Hvplot knows to update its scatter plot with each new data that is emitted.
+* Live data is added to the streaming DataFrame using `stream.emit`. In this example, a DataFrame is created 20 different times and each time is emitted to the streaming DataFrame. Hvplot knows to update its scatter plot with each new data that is emitted.
 
   ```python
   def emit(i):
@@ -918,7 +918,7 @@ Use the Rolling Window section to explain that a rolling window of data can be u
   sdf.hvplot.scatter(x="x", y="y", backlog=10)
   ```
 
-* Even with 100 total emits, the backlog of 10 means that only the newest ten data points are remembered.
+* Even with 100 total emits, the backlog of 10 means that only the newest 10 data points are remembered.
 
   ```python
   for i in range(100):
@@ -927,7 +927,7 @@ Use the Rolling Window section to explain that a rolling window of data can be u
 
   ![streamz_demo_2.gif](Images/streamz_demo_2.gif)
 
-* Finally, show how streamz can be used with CCXT and Kraken to fetch data from an API and update a plot:
+* Finally, show how Streamz can be used with CCXT and Kraken to fetch data from an API and update a plot:
 
   ![streamz_demo_3.gif](Images/streamz_demo_3.gif)
 
@@ -939,7 +939,7 @@ Use the Rolling Window section to explain that a rolling window of data can be u
   sdf = DataFrame(stream, example=example)
   ```
 
-* New data is fetched from the Kraken exchange via the CCXT API and processed as a new DataFrame `df` that matches the format of the `example` DataFrame. This new DataFrame is then emitted to the Stream, and hvplot uses the streaming DataFrame to update the plot.
+* New data is fetched from the Kraken exchange via the CCXT API and processed as a new DataFrame `df` that matches the format of the `example` DataFrame. This new DataFrame is then emitted to the stream, and hvplot uses the streaming DataFrame to update the plot.
 
   ```python
   kraken = ccxt.kraken(
@@ -966,7 +966,7 @@ In this activity, students will code along with the instructor to update the tra
 
 **File:** [jarvis.py](Activities/09-Evr_Streaming_Dashboard/Unsolved/jarvis.py)
 
-Explain to students that the previous iteration of the trading dashboard was replaced each time that new data arrived. For a single plot, this was ok, but for a complex dashboard, each replacement would reset the entire dashboard and negatively impact the user experience. Explain that we can avoid some of these issues by updating the example to use the streamz library with hvplot.
+Explain to students that the previous iteration of the trading dashboard was replaced each time that new data arrived. For a single plot, this was fine, but for a complex dashboard, each replacement would reset the entire dashboard and negatively impact the user experience. Explain that we can avoid some of these issues by updating the example to use the Streamz library with hvplot.
 
 Open the starter code and highlight the sections that will be replaced or updated. Then, start by updating the imports and the initialize function:
 
@@ -1016,7 +1016,7 @@ def initialize(cash=None):
 
 * The format for each `example` DataFrame can be worked out ahead of time using a normal DataFrame and Jupyter notebook with historical data.
 
-* The trading framework will now initialize Stream objects to manage the data pipeline. These streaming data pipelines are then used to build the dashboard with streaming visualizations.
+* The trading framework will now initialize stream objects to manage the data pipeline. These streaming data pipelines are then used to build the dashboard with streaming visualizations.
 
 Show that the `update_dashboard` function can be removed and the `build_dashboard` code modified to use the streaming DataFrames:
 
@@ -1048,7 +1048,7 @@ def build_dashboard(data, signals):
     return dashboard
 ```
 
-* The above code was adapted to use the limited streamz DataFrame interface with hvplot. Because of this, using streaming data may impact or limit the complexity of the final plots.
+* The above code was adapted to use the limited Streamz DataFrame interface with hvplot. Because of this, using streaming data may impact or limit the complexity of the final plots.
 
 Show that the `generate_signals` function also needs to be modified slightly to convert the index to match the `example` DataFrame used in the initialize function.
 
@@ -1112,7 +1112,7 @@ async def main():
 
 * The `emit` function is used to continuously inject data into the streaming data pipeline managed by the Stream object. These streaming DataFrames are connected to the dashboard visualizations and automatically update the charts when new data is emitted.
 
-* The result of these changes is that the dashboard no longer has to replace each visualization from scratch. This allows users to scroll on the page and switch between tabs without losing their place. This would not have been possible without the streaming data visualizations that hvplot and streamz provides.
+* The result of these changes is that the dashboard no longer has to replace each visualization from scratch. This allows users to scroll on the page and switch between tabs without losing their place. This would not have been possible without the streaming data visualizations that hvplot and Streamz provides.
 
 Congratulate students on completing the final dashboard! They now have a robust algorithmic trading framework that can be used to build and deploy a wide variety of trading algorithms!
 
@@ -1122,7 +1122,7 @@ Congratulate students on completing the final dashboard! They now have a robust 
 
 This activity will conclude today's lesson and provide a chance for students to reflect on what they've learned throughout the day.
 
-The purpose of this activity is to allow students a chance to take a step back and digest the concepts that have been taught today by engaging students in such a way that students drive the conversation, thereby reinforcing their learning by "teaching" the class.
+The purpose of this activity is to allow students a chance to take a step back and digest the concepts that have been taught today. The idea is to engage students so that they drive the conversation, thereby reinforcing their learning by "teaching" the class.
 
 Recap the skills and concepts learned throughout the lesson, and engage students by having them lead the discussion as much as possible:
 
@@ -1142,28 +1142,28 @@ Recap the skills and concepts learned throughout the lesson, and engage students
 
   * What is data persistence? Why is it important?
 
-    **Answer:** Data persistence is the concept of storing or "persisting" data in a reliable location such as a database. It is often important for failure prevention/disaster recovery in the event that an application fails, meaning that an application can pick up where it last failed due to the most recent "save" point. In today's trading framework, it also allows us to offload some of the memory requirements to the database.
+    **Answer:** Data persistence is the concept of storing, or "persisting," data in a reliable location such as a database. It is often important for failure prevention/disaster recovery in the event that an application fails, meaning that an application can pick up where it last failed due to the most recent "save" point. In today's trading framework, it also allows us to offload some of the memory requirements to the database.
 
-  * What is the streamz library? What benefit did it provide to our algorithmic trading application?
+  * What is the Streamz library? What benefit did it provide to our algorithmic trading application?
 
-    **Answer:** The streamz library combined with hvplot allows streaming data visualizations for the dashboard, thereby mitigating the need to re-build the dashboard each time.
+    **Answer:** The Streamz library, combined with hvplot, allows streaming data visualizations for the dashboard, thereby mitigating the need to rebuild the dashboard each time.
 
 * Ask if any volunteers would like to add anything that has not been previously stated.
 
-Then, get students reflecting on what they've learned so far:
+Then, get students to reflect on what they've learned so far:
 
 * Ask students how might they apply what they've learned so far in Unit 15. Will they go on to manage their investments through automation?
 
-* Ask students how they now feel regarding algorithmic trading (comfortable or uncomfortable?).
+* Ask students how they now feel about algorithmic trading (comfortable or uncomfortable?).
 
-* Ask students to identify two potential things they'd like to practice more from today's lesson that they might have struggled with conceptually.
+* Ask students to identify two things today that they struggled with conceptually that they'd like to practice more.
 
 Finish the recap with a few statements of encouragement:
 
-* Tell students they should give themselves another round of applause. Students now have the tools necessary to engage in live algorithmic trading!
+* Tell students to give themselves a round of applause–they now have the tools necessary to engage in live algorithmic trading!
 
-* Remind students that should they choose, they can continue to build out their trading applications to make them even more robust and scalable. In particular, this will be especially impressive to potential employers as not many individuals have an algorithmic trading application under their belts!
+* Remind students that should they choose, they can continue to build out their trading applications to make them even more robust and scalable. This will be particularly impressive to potential employers, as not many individuals have an algorithmic trading application under their belts!
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
