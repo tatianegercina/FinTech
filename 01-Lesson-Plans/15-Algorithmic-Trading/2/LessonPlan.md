@@ -55,9 +55,9 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (10 min)
 
-In this section, students will review the algorithmic trading concepts taught in the previous class to prepare them for today's consolidation of multiple trading functions (signal generation, backtesting, trade evaluation, etc.) into a single trading framework. This section is a key opportunity to quickly re-visit the core components related to algorithmic trading before transitioning to the design of an algorithmic trading framework.
+In this section, students will review the algorithmic trading concepts taught in the previous class to prepare them for today's consolidation of multiple trading functions (signal generation, backtesting, trade evaluation, etc.) into a single trading framework. This section is a key opportunity to quickly revisit the core components related to algorithmic trading before transitioning to the design of an algorithmic trading framework.
 
-Welcome students to the second day of algorithmic trading and ask for any volunteers that can answer the following review questions:
+Welcome students to the second day of algorithmic trading! Begin by calling on volunteers to answer the following review questions:
 
 * What is algorithmic trading?
 
@@ -65,7 +65,7 @@ Welcome students to the second day of algorithmic trading and ask for any volunt
 
 * What is a trading signal?
 
-  **Answer:** A trading signal is the point at which a technical indicator, such as the crossover of two moving averages (short MA and long MA), suggests an opportunity for action--namely whether an individual trader or algorithmic trading program should issue a buy or sell order for a security (such as a stock) at that point in time.
+  **Answer:** A trading signal is the point at which a technical indicator, such as the crossover of two moving averages (short MA and long MA), suggests an opportunity for action; namely, whether an individual trader or algorithmic trading program should issue a buy or sell order for a security (such as a stock) at that point in time.
 
 * What is backtesting?
 
@@ -79,13 +79,13 @@ Welcome students to the second day of algorithmic trading and ask for any volunt
 
   **Answer:** Like other dashboards, a *trading dashboard* consolidates and presents multiple facets of information about the performance of an algorithmic trading application, allowing a user to interact with the data via tables and plots (visualizations).
 
-Then, create some excitement around the day by mentioning the following points:
+Now, create some excitement around the day by mentioning the following points:
 
-* The goal of today's lesson is to take what students learned in day one and put the concepts together to build an end-to-end full-stack trading application that is capable of pulling financial data, generating signals, backtesting, executing a trading strategy, evaluating results, and generating dashboard visualizations in a single workflow.
+* Today's goal is for students to take the concepts learned on Day One, and put them together to build an end-to-end, full-stack trading application that is capable of pulling financial data, generating signals, backtesting, executing a trading strategy, evaluating results, and generating dashboard visualizations in a single workflow.
 
-* Creating a trading application from scratch should hopefully dispel the esoteric nature of developing algorithmic trading applications similar to those offered from commercial services, and allows for the ability to add additional features in the future, should students desire to do so.
+* The hope is that creating a trading application from scratch will dispel the somewhat esoteric nature of developing algorithmic trading applications (like those offered commercially), and will allow students to add on additional features in the future, if they desire.
 
-* By the end of today's lesson, students should have a working trading application that they can demo to future employers, as well as use as the foundation for their custom trading application if they decide to further expand upon it.
+* By the end of today's lesson, students should have a working trading application that they can use as the foundation for their very own custom trading application, as well as demo to future employers.
 
 Answer any questions before moving on.
 
