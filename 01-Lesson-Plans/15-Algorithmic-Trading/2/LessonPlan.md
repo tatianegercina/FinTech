@@ -85,7 +85,7 @@ Now, create some excitement around the day by mentioning the following points:
 
 * The hope is that creating a trading application from scratch will dispel the somewhat esoteric nature of developing algorithmic trading applications (like those offered commercially), and will allow students to add on additional features in the future, if they desire.
 
-* By the end of today's lesson, students should have a working trading application that they can use as the foundation for their very own custom trading application, as well as demo to future employers.
+* By the end of today's lesson, students should have a working trading application that they can demo to future employers, and use as the foundation for their very own custom trading application.
 
 Answer any questions before moving on.
 
@@ -93,7 +93,7 @@ Answer any questions before moving on.
 
 ### 2. Student Do: Trading Functions (10 min)
 
-In this activity, students will be given a random sequence of trading function names. They will be asked to propose the correct order of the functions if they were to be implemented in an algorithmic trading application. Note that there is not a single precise order, so treat this as a thought exercise to help drive engagement and discussion around the use of frameworks to encapsulate and abstract code.
+In this activity, students will be given a random sequence of trading function names. They will be asked to propose the correct order of the functions if they were to be implemented in an algorithmic trading application. Note that there is no single correct order, so treat this as a thought exercise to help drive engagement and discussion around the use of frameworks to encapsulate and abstract code.
 
 **Files:**
 
@@ -109,7 +109,7 @@ After displaying a few student solutions, explain the following points:
 
 * Even without code, a framework provides an abstraction that is easy to read, understand, and use. This is a very powerful programming technique that is analogous to providing an API to the code.
 
-* By encapsulating the code in functions, we can swap code out when necessary. For example, fetching data from a file or an API can easily be changed inside of the `fetch_data` function without affecting how the functions are called.
+* By encapsulating the code in functions, we can swap code out when necessary. For example, fetching data from a file or an API can easily be changed inside of the `fetch_data` function, without affecting how the functions are called.
 
 Open the solution and highlight the solution that was provided:
 
@@ -123,7 +123,7 @@ evaluate_metrics()
 build_dashboard()
 ```
 
-* The true order of this solution may change once the code and behavior of each function are provided, but even without code, the call order will typically follow a pattern of initializing data containers, fetching data, transforming, or using the data, and displaying the data.
+* The true order of this solution may change once the code and behaviour of each function are provided, but even without code, the call order will typically follow a pattern of initializing data containers, fetching data, transforming or using the data, and displaying the data.
 
 * By placing the call order in the main function, it can be easy to control and update the function call order in a single place in the program.
 
@@ -143,7 +143,7 @@ In this activity, students will code along with the instructor and port over the
 
 Explain to students that the algorithmic trading code from the previous day can also be abstracted and ported over to the new trading framework. By abstracting the code, it makes it easier to change and adapt the algorithms and strategies used.
 
-Open the Jupyter Notebook with the source code to be ported and highlight the following:
+Open the Jupyter Notebook with the source code to be ported, and highlight the following:
 
 * Jupyter naturally provides a method of chunking code into cells, which can make the code more readable and reusable; in programming, a better practice is to chunk code together into functions. This provides a layer of abstraction that makes the code easier to modify and reuse.
 
@@ -216,13 +216,13 @@ def generate_signals(data_df):
 
 * It is helpful to encapsulate all of the signal generation into a single function. Signal generation may occur separately from the data fetching process, depending on the interval or amount of data needed to generate the signals. For example, in a live trading scenario, you may need to fetch a single record of data multiple times before there is enough data to generate the signals. Separating these functions makes it easier to manage that process.
 
-Prompt students to help complete the `execute_backtest` and `evaluate_metrics` sections and explain the following:
+Prompt students to help complete the `execute_backtest` and `evaluate_metrics` sections, and explain the following:
 
 * Backtesting and evaluating a trading algorithm is sometimes used only in the initial design of an algorithmic trading system. Therefore, it is helpful to separate these into their own functions.
 
 * Backtesting may also be done outside of the trading framework as a separate function. By encapsulating backtesting into a function, it can be added or removed as needed.
 
-Next, complete the `build_dashboard` function and discuss the following:
+Next, complete the `build_dashboard` function, and discuss the following:
 
 ```python
 def build_dashboard(signals_df, portfolio_evaluation_df):
@@ -266,7 +266,7 @@ main()
 
 As a final recap of this activity, explain to students that abstraction and encapsulation are techniques that every good programmer uses to make their code more readable and reusable. Striving to write code in this manner will make it easier to share code, and it shows a level of programming self-mastery that senior developers will recognize.
 
-Explain that the next several activities will continue to build and iterate on the trading framework until everyone has a live algorithmic trading application working that can be used for real trading!
+Explain that the next several activities will continue to build and iterate on the trading framework, until everyone has a live algorithmic trading application working that can be used for real trading!
 
 ---
 
