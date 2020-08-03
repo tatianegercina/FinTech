@@ -654,7 +654,7 @@ import panel as pn
 pn.extension()
 ```
 
-Update the code for the `initialize`, `build_dashboard`, and `update_dashboard` functions and highlight the following:
+Update the code for the `initialize`, `build_dashboard`, and `update_dashboard` functions, and highlight the following:
 
 ```python
 # Initialize the dashboard
@@ -718,7 +718,7 @@ loop.run_until_complete(main())
   dashboard.servable()
   ```
 
-* In this example, we choose to make the main function async so that it does not block the dashboard from loading. The code awaits both the `fetch_data` function and the `asyncio.sleep` function.
+* In this example, we choose to make the main function async, so that it does not block the dashboard from loading. The code awaits both the `fetch_data` function and the `asyncio.sleep` function.
 
   * **Note:** The `requests` library that is used in the `fetch_data` function is considered a blocking library. Blocking libraries like this must be called using a special function called `run_in_executor`. More information about this can be found in the official [asyncio documents](https://docs.python.org/3/library/asyncio-eventloop.html#executing-code-in-thread-or-process-pools), but this code can be used anytime that the requests library is used. Alternatively, there is an asyncio-compatible library called [aiohttp-requests](https://pypi.org/project/aiohttp-requests/) that can be used instead.
 
@@ -740,22 +740,22 @@ Wrap up this activity by acknowledging that asynchronous code is very challengin
 
 In this activity, students will learn how to persist their real-time data to a database. Students will code along with the instructor to update the trading framework to persist data with a SQLite database.
 
-The purpose of this activity is to showcase the value in persisting data as doing so allows an application to pick up where it left off should a failure occur.
+The purpose of this activity is to showcase the value in persisting data, as doing so allows an application to pick up where it left off, should a failure occur.
 
 **File:**
 * [jarvis.py](Activities/07-Evr_Persisting_Real_Time_Data/Unsolved/jarvis.py)
 
-Explain to the class that the next enhancement to make to the trading algorithm is to persist the live data to a database. Persisting the live data allows the framework to recover from data errors, and it allows us to collect and use historical data without running into memory issues.
+Tell students that the next enhancement to make to the trading algorithm is to persist the live data to a database. Persisting the live data allows the framework to recover from data errors, and allows us to collect and use historical data without running into memory issues.
 
-Quickly discuss the following before proceeding onward to the walkthrough:
+Quickly discuss the following before proceeding to the walkthrough:
 
 * What is data persistence?
 
-  **Answer:** Data persistence is the concept of saving data to a database to have a reliable copy of data that is *persisted* rather than transiently stored as in-memory data structures.
+  **Answer:** Data persistence is the concept of saving data to a database to have a reliable copy of data that is *persisted*, rather than transiently stored as in-memory data structures.
 
 * Why is it important to persist data?
 
-  **Answer:** Persisting data is generally a best practice as it provides a method for data recovery should an application ever fail; data stored in transient in-memory data structures will be lost forever if the application itself terminates. Also, persisting data to a database allows for separate data analysis to be done at a later time, if desired.
+  **Answer:** Persisting data is generally a best practice, as it provides a method for data recovery should an application ever fail; data stored in transient in-memory data structures will be lost forever if the application itself terminates. Also, persisting data to a database allows for separate data analysis to be done at a later time, if desired.
 
 With the class, update the starter code to use an SQLite database to persist the data. Be sure to highlight the following points about SQLite:
 
@@ -783,7 +783,7 @@ def initialize(cash=None):
 
 * In Python, a SQLite database can be created using `sqlite3.connect` with a filename for the database. The entire database is contained locally on disk in this file.
 
-* With the database connection `db`, a cursor can be used to execute raw SQL directly on the database. In this example, a cursor is used to drop the table called `data` if it already exists.
+* With the database connection `db`, a cursor can be used to execute raw SQL directly on the database. In this example, a cursor is used to drop the table called `data`, if it already exists.
 
   ```python
   with db:
