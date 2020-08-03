@@ -4,9 +4,9 @@
 
 ### Overview
 
-Today's class will expand upon students' component knowledge of algorithmic trading and abstract one level higher to create a full-fledged trading framework encapsulated in a single application. In particular, students will learn how to wrap their previous code (data collection, signal generation, backtesting, evaluation, and dashboard creation) into functions that will be called via a single workflow. In other words, students will automate the manual component calculations done in the previous class to produce an end-to-end trading dashboard containing all relevant metrics and functionality.
+Today's class will expand upon students' component knowledge of algorithmic trading and abstract one level higher to create a full-fledged trading framework encapsulated in a single application. Students will learn how to wrap their previous code (data collection, signal generation, backtesting, evaluation, and dashboard creation) into functions that will be called via a single workflow, automating the manual component calculations done in the previous class to produce an end-to-end trading dashboard containing all relevant metrics and functionality.
 
-Students will learn how to "go live" with their trading frameworks by establishing a connection to a financial trading API, such as the Kraken Cryptocurrency Exchange API, which provides 24-hour market access and generous API request privileges. They will use asynchronous programming and data pipelines with their live data feed to build a robust trading dashboard with streaming data visualizations.
+Students will also learn how to "go live" with their trading frameworks by establishing a connection to a financial trading API, such as the Kraken Cryptocurrency Exchange API, which provides 24-hour market access and generous API request privileges. They will use asynchronous programming and data pipelines with their live data feed to build a robust trading dashboard with streaming data visualizations.
 
 ### Class Objectives
 
@@ -28,13 +28,13 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today's lesson will tie together the concepts and coding solutions from the previous day into a single robust trading framework that can produce an end-to-end implementation of a trading dashboard with working metrics.
+* Today's lesson will tie together the concepts and coding solutions from Day 1 of this unit into a single robust trading framework that can produce an end-to-end implementation of a trading dashboard with working metrics.
 
 * This lesson will primarily focus on developing the *infrastructure* of the trading framework and, therefore, will not contain as much domain-specific trading knowledge.
 
-* Review sessions will be geared towards allowing students to ask as many questions as possible. Questions should be prioritized over instructor posed review questions. While we want to provide as much opportunity as possible for students to ask questions, it is also important that the class is paced so that all material is covered.
+* Review sessions will be geared towards allowing students to ask as many questions as possible. Students' questions should be prioritized over instructor-posed review questions. While we want to provide as much opportunity as possible for students to ask questions, also be sure to keep a careful eye on the class pacing, so that all material is covered.
 
-* Encourage students to review supplementary resources, to reach out to TAs individually for assistance, and to attend office hours to address any unanswered questions or confusion.
+* Encourage students to review supplementary resources, to reach out to TAs individually for assistance, and to attend office hours to address any unanswered questions or for additional support.
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
