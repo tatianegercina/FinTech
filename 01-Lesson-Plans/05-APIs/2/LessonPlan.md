@@ -86,15 +86,15 @@ In this activity, students and the instructor will participate in a facilitated 
 
 Guided questions are provided to help facilitate discussion. Use these questions as time permits.
 
-Navigate to the `API Keys` section of the 5.2 slides and introduce students to API keys.
+Navigate to the "API Keys" section of the 5.2 slides and introduce students to API keys.
 
-* Many companies that offer APIs require users to sign up for API keys. **API keys are access tokens that serve as a form of credential (like a user name or password) that grants users privileges and permissions needed to submit API requests. API keys are unique identifiers used by APIs to recognize which users submitted which requests.
+* Many companies that offer APIs require users to sign up for API keys. API keys are access tokens that serve as a form of credential (like a user name or password) that grants users privileges and permissions needed to submit API requests. API keys are unique identifiers used by APIs to recognize which users submitted which requests.
 
-* **API keys are like the keys to a house or a car. Without a key, one cannot gain access or make use of the services provided by an API. APIs that require keys will reject any request that does not include an API key.
+* API keys are like the keys to a house or a car. Without a key, one cannot gain access or make use of the services provided by an API. APIs that require keys will reject any request that does not include an API key.
 
   ![API Key](Images/api-key.png)
 
-* Explain the main reason why companies use API keys is to monitor and control user requests and receive compensation for their services and intellectual property. Because API keys detail permissions and privileges for users, companies can programmatically disable and enable API privileges based on a number of requests submitted.
+* The main reason why companies use API keys is to monitor and control user requests and receive compensation for their services and intellectual property. Because API keys detail permissions and privileges for users, companies can programmatically disable and enable API privileges based on a number of requests submitted.
 
 Initiate a facilitated discussion by communicating the following guided questions and discussion points. Choose two or three questions to ask, depending on the available time.
 
@@ -154,9 +154,9 @@ Engage the students with the following review questions:
 
 Excite students about FinTech APIs by highlighting the following points.
 
-* Communicate that many APIs, like Plaid, are disrupting the financial industry and market. Many APIs have grassroots initiatives, meaning they are creating tools and technologies for people rather than companies and corporations. These efforts echo the open-source movement.
+* Many APIs, like Alpaca, are disrupting the financial industry and market. Many APIs have grassroots initiatives, meaning they are creating tools and technologies for people rather than companies and corporations. These efforts echo the open-source movement.
 
-* Reiterate that even though many APIs require keys, their services are often free. Obtaining an API key is like getting the keys to a kingdom. Once you're in, you're empowered to build products and submit API requests as you please. There are limitations, but services are often still free.
+* Even though many APIs require keys, their services are often free. Obtaining an API key is like getting the keys to a kingdom. Once you're in, you're empowered to build products and submit API requests as you please. There are limitations, but services are often still free.
 
 Ask if there are any questions or comments before moving on.
 
