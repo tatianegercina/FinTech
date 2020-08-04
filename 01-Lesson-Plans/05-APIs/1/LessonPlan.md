@@ -156,19 +156,23 @@ Students will receive a demo of the homework from the instructor.
 
 * [README.md](../../../02-Homework/05-APIs/Instructions/README.md)
 
-Explain to student's that this unit's homework focuses on exposing them to some of the most valuable and cutting edge APIs in FinTech. The homework tasks students with creating Python applications that integrate multiple APIs in order to create innovative and powerful FinTech solutions.
+Explain to students that this unit's homework focuses on exposing them to some of the most valuable and cutting edge APIs in FinTech. The homework tasks students with creating Python applications that integrate multiple APIs to create innovative and powerful FinTech solutions.
 
-Walk through the homework instructions, and highlight the following:
+Walkthrough the homework instructions and highlight the following:
 
-* The first component of the homework is focused on budget analysis. Students will use an API called **PLAID** to analyze personal financial data. PLAID can be used to securely access any type of banking, credit, or investment account, which opens doors to new services for customers that are not typically available without PLAID. The greatest thing about it is that you can confidently use PLAID knowing you can integrate it with other technologies and apps without security being compromised; PLAID handles the security and provisions access to personal financial accounts.
+* In this unit's homework, you will create two financial analysis tools using the Alpaca API and the Free Crypto API, a personal financial planner, and a retirement planning tool.
 
-* With financial data available and accessible via PLAID, students will transition to using the financial data retrieved via PLAID to forecast financial goals. This section uses a Monte Carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution will be sufficient to cover their future income.
+* The personal financial planner will allow you to visualize personal expenses from the last 90 days to assess the current financial health by comparing the monthly household income versus the monthly expenses.
 
-* Lastly, students will analyze the output of the retirement planner activity and summarize assumptions and findings in a markdown file. This file will need to be uploaded to the GitHub repository.
+* Using the financial planner, you also will be able to analyze savings composed by investments in shares and cryptocurrencies.
 
-Ask the students if there are any questions related to the homework.
+* After creating the personal financial planner, you will transition to forecast financial goals. This section uses a Monte Carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution will cover their future income.
 
-- - -
+* Lastly, you will analyze the retirement planner activity output and summarize assumptions and findings in a financial analysis report created using markdown that you will upload to your GitHub repository.
+
+Ask the students if there are any questions related to the homework before continue with the next activity.
+
+---
 
 ### 3. Instructor Do: Client-Server Model (5 min)
 
