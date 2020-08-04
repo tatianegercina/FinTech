@@ -174,7 +174,7 @@ In this activity, students will learn how to create a `.env` file to store their
 
 Open the lesson slides, move to the "Environment Variables" section and highlight the following discussion points:
 
-* Exporting an environment variable exposes it to all applications and programs sharing the same parent process (e.g., a terminal or Python kernel). Each application and program inherits the variable, which allows developers to make calls using `os.getenv` to access the data stored in the variable.
+* Exporting an environment variable exposes it to all applications and programs sharing the same parent process (e.g., a terminal or Python kernel). Each application and program inherits the variable, which allows developers to make calls using `os.getenv()` to access the data stored in the variable.
 
 * A common way to export environment variables is to create a `.env` file. The `.env` file will define the environment variables that you would like to export within the environment of your local projects. The `.env` approach is faster than exporting the variables individually.
 
@@ -278,7 +278,7 @@ Open the solved version of the Jupyter notebook. Next, run the code on every cel
   ```
 
   ```text
-  NoneType
+  str
   ```
 
 * If an environment variable does not exist, Python will return `NoneType` as the data type. An empty environment variable will cause an API call to fail.
@@ -323,7 +323,7 @@ If students finish early, use the extra time to review the final two guided revi
 
 ---
 
-### 7. Instructor Do: Under Lock and Key Activity Review (5 min)
+### 7. Instructor Do: Under Lock and Key Activity Review (10 min)
 
 **Files:**
 
@@ -365,7 +365,7 @@ Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ip
 * Once stored as a Python variable, the environment variable value can be used for processing. In this case, the `QUANDL_API_KEY` is stored as Python variable `api_key` and then concatenated with the request URL. The concatenated request URL will then be used to submit a request to the Quandl API.
 
   ```python
-  request_url = "https://www.quandl.com/api/v3/datasets/WIKI/AMD.json?api_key="
+  request_url = "https://www.quandl.com/api/v3/datasets/WIKI/MSFT.json?api_key="
 
   # Concatenate request_url and api_key, then store as new variable
   request_url_rfd = request_url + api_key
@@ -385,7 +385,11 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 8. Instructor Do: Intro to SDKs (5 min) (Critical)
+### 8. BREAK (15 min)
+
+---
+
+### 9. Instructor Do: Intro to SDKs (10 min) (Critical)
 
 The past two lessons have focused on students using the Python requests library to submit API requests. Students will now learn how to use proprietary software development kits (SDKs) to submit API calls and streamline development efforts.
 
@@ -395,7 +399,7 @@ Navigate to the 5.2 slides for SDKs, and initiate a facilitated discussion by hi
 
 * SDKs offer programmatic ways to access API endpoints without using the requests library. Instead of using the requests library to execute API calls, users would use functions provided by the SDK. For example, an SDK would provide a GET function similar to the `requests.get` function offered by the Python requests library. The SDK might also provide additional attributes and functions for filtering and calculating data.
 
-* Example companies that offer SDKs are Quandl, Plaid, Investors Exchange, Google, and AWS.
+* Example companies that offer SDKs are Quandl, Alpaca, Investors Exchange, Google, and AWS.
 
 * Pose the following question to facilitate discussion:
 
@@ -405,13 +409,17 @@ Navigate to the 5.2 slides for SDKs, and initiate a facilitated discussion by hi
 
 * Working with SDKs removes the need to build API request URLs. Instead of using request URLs to make parameterized API calls, SDK functions and attributes are used.
 
-  ```
-  quandl.get("WIKI/AAPL", rows=5)
+* The following code depicts an example of the differences between using a request URL and an SDK.
 
-  vs.
+  ```python
+  # Using the Python requests library
+  requests.get("https://www.quandl.com/api/v3/datasets/WIKI/AMD?api_key=1A3")
 
-  requests.get("https://www.quandl.com/api/v3/datasets/WIKI/AMD")
+  # Using the Quandl SDK
+  quandl.get("WIKI/AMD", rows=5)
   ```
+
+Explain to students that in the code above, they can note that using an SDK looks more straightforward and cleaner. Still, also, it's more secure since SDKs add an additional layer of security by avoiding passing sensitive parameters, like API keys, as plain text in a request URL.
 
 Ask students the following guided question:
 
@@ -425,11 +433,9 @@ Ask students the following guided question:
 
   **Answer:** A FinTech SDK might provide a function that calculates Sharpe ratios, which means users would not need to create this functionality themselves; they'd be able to use the SDK to extract historical stock data AND calculate Sharpe ratios. The requests library would only support data extraction.
 
+Explain to students that in the FinTech industry, they will face APIs that provide SDKs and some others that not. That's why they need to understand how to access an API via a request URL using the Python requests library, and how to install and operate an SDK.
+
 Ask students if there are any questions before moving on.
-
----
-
-### 9. BREAK (15 min)
 
 ---
 
