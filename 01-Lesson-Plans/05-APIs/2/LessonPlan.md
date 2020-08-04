@@ -72,21 +72,9 @@ Welcome students to the second day of APIs, open the lesson slides and move to "
 
 * Because APIs often offer practical services, they may require subscriptions or payment. Companies use API keys and user accounts to ensure billing and secure transmission of financial and other confidential information.
 
-* You will hands-on experience on using Plaid (a banking API), Quandl (to fetch historical stock data) and Alpaca (a trading API)
+* You will hands-on experience on using Quandl (to fetch historical stock data) and Alpaca (a trading API)
 
-Transition into a dry demonstration (just visit the site) of a practical FinTech API that will be used later in the lesson: Plaid.
-
-Navigate to the [Plaid](https://plaid.com/) website and highlight the following:
-
-* Plaid is an API that allows users to connect multiple bank accounts to one platform and provides a unified view of a person's financial ecosystem. This will enable users to manage and analyze their accounts and financial information from one spot.
-
-* Plaid was designed as a tool for developers to accelerate their FinTech development. Developers can use Plaid to provide services to their users and consumers without having to worry about making API calls to each bank or financial entity.
-
-* Because Plaid handles the behind-the-scenes handshakes with each financial institution, developers can focus on designing and developing a program that will:
-
-  1. Make calls to Plaid.
-
-  2. Analyze data by either extracting financial information from Plaid or by using Plaid's out-of-the-box capabilities.
+Recall students that they will need their API keys for Today's activities.
 
 Answer any questions before moving on.
 
