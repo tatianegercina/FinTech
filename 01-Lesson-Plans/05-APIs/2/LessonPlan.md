@@ -4,9 +4,9 @@
 
 ### Overview
 
-Today's class will focus on exposing students to the exciting and innovative FinTech APIs that have been disrupting the industry. There are so many groundbreaking APIs in the FinTech industry that it's almost impossible not to get excited about them. APIs used in this lesson include **Quandl**, an API that provides access to historical stock data, and **Plaid**, an API that brokers connections between multiple financial institutions to create a unified view of personal, financial information and accelerate the extraction of data from multiple financial accounts. Both of these services help democratize and decentralize financial data stores and analytic approaches. And this is just the beginning. New APIs and SDKs (software development kits) are released regularly, which means there's always new technologies to use to enhance and advance the FinTech industry. It's a new world, and it's a world to be excited about!
+Today's class will focus on exposing students to the exciting and innovative FinTech APIs that have been disrupting the industry. There are so many groundbreaking APIs in the FinTech industry that it's almost impossible not to get excited about them. APIs used in this lesson include **Quandl**, an API that provides access to historical stock data, and **Alpaca**, an API for stock trading. Both of these services help democratize and decentralize financial data stores and analytic approaches. And this is just the beginning. New APIs and SDKs (software development kits) are released regularly, which means there's always new technologies to use to enhance and advance the FinTech industry. It's a new world, and it's a world to be excited about!
 
-This lesson presents students with hands-on experience using APIs in a Python environment, requesting and leveraging API keys, and securely storing API keys and credentials as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to Quandl using the Python `requests` library and Plaid's software development kit, a library packaged to provide developers with access to Plaid's endpoints and functions.
+This lesson presents students with hands-on experience using APIs in a Python environment, requesting and leveraging API keys, and securely storing API keys and credentials as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to Quandl using the Python `requests` library and Alpacas's software development kit, a library packaged to provide developers with access to Alpacas's endpoints and functions.
 
 ### Class Objectives
 
@@ -18,25 +18,25 @@ By the end of class, students will be able to:
 
 * Explain the difference between an API and SDK.
 
-* Set authentication for the Plaid SDK.
+* Set authentication for a Python SDK.
 
-* Use a Python SDK to fetch data from Plaid.
+* Use a Python SDK to fetch financial data.
 
-* Use SDKs to analyze personal financial data.
+* Use SDKs to analyze financial data.
 
 ### Instructor Notes
 
-* Slack out the [Alpaca Installation Guide](../Supplemental/AlpacaMarkets_Installation-Guide.md) (again) and the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete both installations and verify them with a TA before the end of the next class.
+* Slack out the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installations and verify them with a TA before the end of the next class.
 
-* This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created accounts and received API keys prior to this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up. Students were instructed to sign up at the end of 5.1. There will be an activity dedicated to confirming that each student has signed up.
+* This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created accounts and received API keys prior to this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up if the haven't. Students were instructed to sign up at the end of Lesson 5.1. There will be an activity dedicated to confirming that each student has signed up.
 
   * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
-  * [Plaid](https://dashboard.plaid.com/signup)
+  * [Alpaca](https://app.alpaca.markets/signup)
 
-* Since this lesson will work with API keys, it is important that you and the students do not hardcode or print any API keys or request URLs with keys. All keys must be stored in environment variables and then referred to with an `os.getenv` function call in Python.
+* Since this lesson will work with API keys, it is important that you and the students do not hardcode or print any API keys or request URLs with keys. All keys must be stored in environment variables and then referred to using the `python-dotenv` Python library.
 
-* This lesson has a dependency on the Quandl and Plaid APIs being up and running. Visit each site and execute preemptive API calls to ensure connectivity. It is imperative to confirm that the APIs used in this lesson are executing as expected.
+* This lesson has a dependency on the Quandl and Alpaca APIs being up and running. Visit each site and execute preemptive API calls to ensure connectivity. It is imperative to confirm that the APIs used in this lesson are executing as expected.
 
 * Some students may have experience working with making API calls. Keep an eye out for any students who might be advanced with APIs and could help with review activities. Allowing advanced students to conduct reviews and help their peers is a great way to keep them engaged and interested in the material.
 
@@ -47,6 +47,7 @@ By the end of class, students will be able to:
 * To watch an example class lecture, go here: [5.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=50ef1953-f071-47b8-8bb3-aab10107ea41) Note that this video may not reflect the most recent lesson plan.
 
 ---
+
 ### Class Slides and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [5.2 Slides](https://docs.google.com/presentation/d/1wz8HZNlLWsPJ6ZmNiARjUH7vEOxrkTJ76cIFgMuwfW8/edit?usp=sharing).
@@ -58,6 +59,7 @@ By the end of class, students will be able to:
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
+
 ### 1. Instructor Do: Welcome Class (5 min)
 
 Day 2 takes students to the next step in using APIs. Students will transition from using the Python `requests` library to using SDKs that provide practical use cases for FinTech analysis.
