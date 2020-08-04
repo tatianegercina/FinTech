@@ -1,4 +1,4 @@
-## 15.3 Lesson Plan:
+## 15.3 Lesson Plan: Machine Learning Trading
 
 ---
 
