@@ -244,7 +244,12 @@ Open the slideshow, [NAVIGATE TO SECTION X], and quickly recap the following. En
 
 * What was the process for implementing a machine learning trading model?
 
-  **Answer** The process for implementing a machine learning model, regardless of domain, generally includes the following: preparing the data, splitting the data into train and test datasets, fitting the x and y train data to the model, making predictions from the x test data, and comparing the predicted results to the y test data (actual results) to evaluate the performance of the overall model.
+  **Answer** The process for implementing a machine learning model, regardless of domain, generally includes the following: 
+    1. Preparing the data
+    2. Splitting the data into train and test datasets
+    3. Fitting the x and y train data to the model
+    4. Making predictions from the x test data 
+    5. Comparing the predicted results to the y test data (actual results) to evaluate the performance of the overall model.
 
 * What was the main takeaway from today's lesson?
 
