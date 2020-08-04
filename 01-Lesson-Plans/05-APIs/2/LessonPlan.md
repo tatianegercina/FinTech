@@ -479,151 +479,180 @@ Ask any question students may have, and be sure that all the students have creat
 
 ---
 
-### 11. Instructor Do: Plaid Demo (15 min)
+### 11. Instructor Do: Alpaca Demo (15 min)
 
-**Corresponding Activity:** [04-Ins_Plaid_Demo](Activities/04-Ins_Plaid_Demo)
+**Corresponding Activity:** [04-Ins_Alpaca_Demo](Activities/04-Ins_Alpaca_Demo)
 
-In this activity, students will receive an instructor-led demo of the Plaid API. The instructor will demonstrate to students how to connect to the Plaid sandbox from a Python environment.
+In this activity, students will receive an instructor-led demo of the Alpaca SDK. The instructor will demonstrate to students how to connect to the Alpaca paper account from a Python environment.
 
-Have the `.env` file prepared with you Plaid API Keys before class so that it does not need to be created during the activity.
+Have the `.env` file prepared with you Alpaca API Keys before class so that it does not need to be created during the activity.
 
 **Files:**
 
-* [plaid_demo.ipynb](Activities/04-Ins_Plaid_Demo/Solved/plaid_demo.ipynb)
+* [alpaca-demo.ipynb](Activities/04-Ins_Alpaca_Demo/Solved/alpaca-demo.ipynb)
 
-Emphasize to students that one of the cool things about Plaid is that it provides developers with a sandbox for users to get started running. The sandbox contains account data that can be used to test connectivity to Plaid, as well as test some of Plaid's functionality.
+Emphasize to students that one of the cool things about Alpaca is that it provides developers with a paper trading account for users to get started running. The paper account provides a real-time simulation environment where they can test their code using free, real-time market data.
 
-Explain to students that the sandbox is excellent because it gives developers a space to play with Plaid without having to connect to personal bank accounts. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
+Explain to students that the paper account is excellent because it gives developers a space to play with Alpaca without having to incur on charges. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
 
-Continue the demo by leading students on the environment preparation by highlighting the following:
+Open the unsolved version of the Jupyter notebook and live code the demo. Continue by leading students on the environment preparation by highlighting the following:
 
-* Before start using the Plaid SDK, you should install it in your virtual environment using pip-install.
-
-  ```shell
-  pip install plaid-python
-  ```
-
-* Once you installed the Plaid SDK, the next step is to prepare your environment variables.
-
-* Plaid uses three types of API keys (**client id**, **public key**, and **sandbox secret key**). Each of these needs to be saved as environment variables in a `.env` file.
-
-* To retrieve your keys, log into the [Plaid Dashboard](https://dashboard.plaid.com/account/keys); on the main menu, click on "Team Settings" and choose the "Keys" option.
-
-  ![retrieve_plaid_keys](Images/retrieve_plaid_keys.png)
-
-* Copy your `client_id`, `public_key`, and sandbox secret.
-
-  ![plaid_keys](Images/plaid_keys.png)
-
-* Create a `.env` file and define the following variables to store your Plaid keys as environment variables.
-
-  ```shell
-  PLAID_CLIENT_ID="ENTER YOUR KEY HERE"
-  PLAID_PUBLIC_KEY="ENTER YOUR KEY HERE"
-  PLAID_SBX_SECRET_KEY="ENTER YOUR KEY HERE"
-  ```
-
-Explain to students that now it's time to start using the Plaid SDK from Python. Open the unsolved version of the Jupyter notebook, live code the solution and highlight the following:
-
-* After the Plaid SDK is installed, it can be imported into Python using the `import` command. Also, other libraries needed for this activity are imported, including `os`, `json`, `datetime` and `dotenv`.
+* To start using the Alpaca SDK, you need to import the `tradeapi` class from the `alpaca_trade_api` library and some other well-known libraries we already used.
 
   ```python
   # Initial imports
-  import plaid
   import os
-  import datetime
-  import json
+  import requests
+  import pandas as pd
   from dotenv import load_dotenv
+  import alpaca_trade_api as tradeapi
+
+  %matplotlib inline
   ```
 
-* The environment variables from the `.env` must be loaded and set with the `load_dotenv()` method.
+* Since we are going to make an authenticated connection to the Alpaca API through its SDK, we need to store our Alpaca API and secret keys into out `.env` files and named them as `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` respectively.
+
+* After importing the required Python libraries, we have to load the environment variables using the `load_dotenv()` function and store the Alpaca keys as Python variables.
 
   ```python
+  # Load .env enviroment variables
   load_dotenv()
+
+  # Set Alpaca API key and secret
+  alpaca_api_key = os.getenv("ALPACA_API_KEY")
+  alpaca_secret_key = os.getenv("ALPACA_SECRET_KEY")
   ```
 
-  ```text
-  True
-  ```
+* Now you we ready to connect to Alpaca! To use the Alpaca SDK, we need to create an object that will encapsulate the entire Alpaca functionality.
 
-* Once the environment variables are available, we can retrieve the Plaid keys to store them as Python variables.
+* To generate the alpaca object to retrieve stock market data, we will use the `tradeapi.REST()` function by passing the Alpaca keys as arguments and setting the API version we want to use. The current Alpaca API version is 2.0.
 
   ```python
-  # Extract API keys from environment variables
-  PLAID_CLIENT_ID = os.getenv('PLAID_CLIENT_ID')
-  PLAID_PUBLIC_KEY = os.getenv('PLAID_PUBLIC_KEY')
-  PLAID_SBX_SECRET_KEY = os.getenv('PLAID_SBX_SECRET_KEY')
+  # Create the Alpaca API object
+  alpaca = tradeapi.REST(
+      alpaca_api_key,
+      alpaca_secret_key,
+      api_version="v2")
   ```
 
-* To make a request to the Plaid API, a `client` object needs to be created. This object will serve as the client in the client-server model.
+* Now, let's fetch the current closing price of Facebook (`FB`) and Twitter (`TWTR`), two technology stocks that may be interesting to invest in. First, we need to set a variable with the current date into the ISO format.
 
   ```python
-  # Create client object
-  client = plaid.Client(
-      client_id=PLAID_CLIENT_ID,
-      secret=PLAID_SBX_SECRET_KEY,
-      public_key=PLAID_PUBLIC_KEY,
-      environment="sandbox"
-  )
+  # Format current date as ISO format
+  today = pd.Timestamp("2020-07-14", tz="America/New_York").isoformat()
   ```
 
-* The `client` object will specify the API keys, as well as the desired Plaid environment. Plaid offers three different environments for developers: sandbox, development, and production. The sandbox and development environments are unrestricted; however, Plaid bills for the use of the production environment.
+**Note:** While you follow this example, you may want to change the date to today.
 
-* We can fetch data from Plaid using the `get()` function. The Plaid sandbox comes preloaded with financial data ready and available for use. Sandbox data includes institution data, account information, transactions, investment records, and more. However, to extract data, there are a few data attributes that are needed first.
-
-* To generate a list of all of the institutions that have been loaded into the sandbox, we can use the `Institutions.get()` function, which accepts the number of institutions to fetch as an argument.
-
-  ![plaid_fetch_institutions](Images/plaid_fetch_institutions.png)
-
-* Knowing the institutions available in the sandbox allows one to extract account data for that institution. To extract account data, Plaid will need to perform another level of authentication. This level of authentication requires the generation and exchange of a **public token** for an **access token**.
-
-* You can create a public token using an `institution_id` from the sandbox (e.g., `ins_112060`). The `client.Sandbox.public_token.create()` function will create and return a public token for `1st Bank (Broadus, MT) - Personal`. The function accepts two arguments: institution and products. Products can be understood as the types of datasets Plaid has available. These include, but are not limited to, transactions, income, and assets.
+* Using the Alpaca API, we can retrieve stock data from up to `200` ticker names. We need to pass the symbols as a Python list. Let's create a list of the tech companies we want to invest in.
 
   ```python
-  # Select an institution for processing
-  INSTITUTION_ID = "ins_112060"
-
-  # Create public token to be exchanged for institution access token
-  create_tkn_response = client.Sandbox.public_token.create(
-      INSTITUTION_ID,
-      ['transactions','income','assets']
-  )
-
-  # Exchange public token for access token
-  exchange_response = client.Item.public_token.exchange(create_tkn_response['public_token'])
-
-  # Store access token as variable
-  access_token = exchange_response['access_token']
+  # Set the tickers
+  tickers = ["FB", "TWTR"]
   ```
 
-* Public tokens can be exchanged for access tokens. Access tokens are needed to be able to access account details such as transactions. The exchange serves as an additional round of security. The `client.Item.public_token.exchange()` function handles the exchange and returns an access token, item id, and request-id. The `client.Item.public_token.exchange()` function accepts one argument: the `public_token` returned in `create_tkn_response`.
-
-  ![token_exchange.png](Images/token_exchange.png)
-
-* The exchange response will contain the access token needed to get data from the `item` object.
+* Another important parameter we need to define to fetch stock data is the time frame we want to use. We can set the `timeframe` parameter in minutes (`1Min`, `5Min`, `15Min`) or one day (`1D`). We will create a variable called `timeframe` to set this parameter as `1D`.
 
   ```python
-  # Store access token as variable
-  access_token = exchange_response['access_token']
+  # Set timeframe to one day ('1D') for the Alpaca API
+  timeframe = "1D"
   ```
 
-* Once the access token is in hand, you can start using Plaid to its fullest potential. You'll have access to a bunch of different accounts and transactions, all available for use. All that is needed is that access token.
+* We are all set! Let's fetch the current closing prices for `FB` and `TWTR` using the `alpaca.get_barset()` function. Alpaca Python SDK automatically converts the result JSON response to a Pandas DataFrame if you use the `df` property.
 
-* Fetch all accounts at an institution
+  ```python
+  # Get current closing prices for FB and TWTR
+  df_portfolio = alpaca.get_barset(
+      tickers,
+      timeframe,
+      start = today,
+      end = today
+  ).df
 
-  ![get_accounts.png](Images/get_accounts.png)
+  # Display sample data
+  df_portfolio
+  ```
 
-* You can fetch transactions for a date range. Python date objects can be used to specify start and end dates.
+  ![fetch-current-alpaca-stock-data](Images/fetch-current-alpaca-stock-data.png)
 
-  ![get_transactions.png](Images/get_transactions.png)
+Explain to students that the `get_barset()` function from the `Alpaca` SDK takes in the following parameters that can be used to refine the query results: `symbols`, `timeframe`, `limit`, `start`, `end`, `after`, and `until`.
 
-Take some time to emphasize what it means to have this type of data provided by Plaid. Use FinTech use cases to help ground the discussion.
+Slack out the following links and encourage students to learn more about the details of this function:
 
-* Imagine wanting to create some type of monitoring tool that flags transactions based on specific rules (e.g., time of day, amount, time since the last transaction). Banks provide some of this functionality with their mobile apps, but rarely do they ever allow users to create custom rules. A developer could create an app that does just this, and he or she could use Plaid as their foundation. The sandbox data in Plaid could be used to begin development and testing. Furthermore, once the app is ready for production, Plaid can be the mechanism that consumers use to connect their accounts.
+1. [Alpaca bars API documentation:](https://alpaca.markets/docs/api-documentation/api-v2/market-data/bars/) Here you can learn more about the values that can be set to each parameter.
 
-* Imagine wanting to create a digital dashboard for personal spending. Plaid is what can make this happen, providing the outlet for connecting to personal accounts, as well as a means to consolidate and extract data for aggregation. This means that as developers, we can provide our consumers with the look, feel, and functionality that we want: a digital financial dashboard for the people, by the people.
+2. [Market Data Examples:](https://alpaca.markets/docs/api-documentation/how-to/market-data/) This page provides code examples of the `get_bartset()` function in several programming languages.
 
-If time remains, ask students for any thoughts and answer any questions before moving on.
+Continue the demo highlighting the following.
+
+* Note in the previous code, that to retrieve the current closing price of `FB` and `TWTR`, we set the `start` and `end` day as today's date. Suppose you want to analyze the daily returns of these tech companies to start assessing if they are a good investment option, and you want to retrieve the closing prices from the last year. As you may guess, it's as simple as setting the `start` and `end` parameters to one year period.
+
+  ```python
+  # Format start and end dates as ISO format for one year period
+  start = pd.Timestamp("2019-07-14", tz="America/New_York").isoformat()
+  end = pd.Timestamp("2020-07-14", tz="America/New_York").isoformat()
+  ```
+
+* We take advantage of the benefits of using an SDK, and we create a new DataFrame using the `alpaca_getbarset()` method by modifying the start and end dates.
+
+  ```python
+  # Get closing prices for FB and TWTR from the last year
+  df_portfolio_year = alpaca.get_barset(
+      tickers,
+      timeframe,
+      start = start,
+      end = end
+  ).df
+
+  # Display sample data
+  df_portfolio_year.head(10)
+  ```
+
+  ![fetch-yearly-alpaca-stock-data](Images/fetch-yearly-alpaca-stock-data.png)
+
+* To analyze the closing prices, let's create a new DataFrame containing only the closing prices from Facebook and Twitter over the last year.
+
+  ```python
+  # Create and empty DataFrame for closing prices
+  df_closing_prices = pd.DataFrame()
+
+  # Fetch the closing prices of FB and TWTR
+  df_closing_prices["FB"] = df_portfolio_year["FB"]["close"]
+  df_closing_prices["TWTR"] = df_portfolio_year["TWTR"]["close"]
+
+  # Drop the time component of the date
+  df_closing_prices.index = df_closing_prices.index.date
+
+  # Display sample data
+  df_closing_prices.head(10)
+  ```
+
+  ![fetch-yearly-closing-prices](Images/fetch-yearly-closing-prices.png)
+
+* Note that the DataFrame created by the Alpaca API is multi-indexed, to pick the `FB` and `TWTR` closing prices from the `df_portfolio_year` DataFrame we used column keys.
+
+* Finally, we compute the daily returns using the Pandas `pct_change()` function and plot the results.
+
+  ```python
+  # Compute daily returns
+  df_daily_returns = df_closing_prices.pct_change().dropna()
+
+  # Display sample data
+  df_daily_returns.head()
+  ```
+
+  ![fb-twtr-daily-returns](Images/fb-twtr-daily-returns.png)
+
+  ```python
+  # Plot daily returns
+  df_daily_returns.plot(title="Daily Returns of FB and TWTR over the Last Year")
+  ```
+
+  ![fb-twtr-daily-returns-plot](Images/fb-twtr-daily-returns-plot.png)
+
+* It seems like Twitter had some bad times throughout the last year, but now, both stocks look like an attractive investment option, don't you think?
+
+Ask students for any thoughts and answer any questions before moving on.
 
 ---
 
