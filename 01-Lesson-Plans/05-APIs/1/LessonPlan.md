@@ -186,8 +186,6 @@ Navigate to the 5.1 slides for the client-server model, and highlight the follow
 
   ![client_server_model.jpg](Images/client_server_model.png)
 
-  Image acquired from [Shutterstock](https://www.shutterstock.com/image-vector/vector-concept-client-server-model-safe-483125932?src=cvaByXWnT8wlRtaTVaTE7Q-1-0).
-
 * Define the client-server model as a structure that outlines the relationship and flow of communication between two components: a client and a server.
 
   * A **client** is any tool or application that is used to connect to or communicate with a server. This includes internet browsers, mobile devices, and command line terminals, just to name a few. Clients submit requests to servers, and clients receive responses from servers.
@@ -224,7 +222,7 @@ Ask students the following questions. (If time did not permit for the ping demo,
 
 Ask students if there are any questions before moving on.
 
-- - -
+---
 
 ### 4. Students Do: Eavesdropping on the Server (10 min)
 
@@ -236,7 +234,7 @@ This activity drives home the discussion on the client-server model by having st
 
 * [README.md](Activities/01-Stu_Eavesdropping_On_Server/README.md)
 
-- - -
+---
 
 ### 5. Instructor Do: Eavesdropping on the Server Activity Review (5 min)
 
@@ -278,7 +276,7 @@ Engage students by asking some of the following review questions:
 
 Ask for any remaining questions before moving on.
 
-- - -
+---
 
 ### 6. Instructor Do: Postman (5 min)
 
@@ -294,7 +292,7 @@ Briefly recap on how APIs have been submitted so far. Ask the students:
 
 * We submitted Quandl API requests earlier in the class. What tool did we use to submit the API call?
 
-**Answer**: An internet browser.
+  **Answer**: An internet browser.
 
 Explain to students that an internet browser is a sufficient tool to submit API requests. But a service like Postman is much more efficient and effective.
 
@@ -334,7 +332,7 @@ Ask if there are any questions before moving onto the next module.
 
 In the next activity, students will leverage the steps from this demonstration in order to make their first API call using Postman. Students will make a Get request to **Quandl** for **AAPL** historical stock data.
 
-- - -
+---
 
 ### 7. Students Do: I Spy an API (15 min)
 
@@ -358,7 +356,7 @@ Instruct students to inform the TAs when they are finished. The next activity wi
 
 * [README.md](Activities/02-Stu_I_Spy_An_Api/README.md)
 
-- - -
+---
 
 ### 8. Students Do: Parlez-vous le JSON? (5 min)
 
@@ -372,7 +370,7 @@ Walk around and instruct TAs to circulate during this activity so that students 
 
 * [README.md](Activities/03-Stu_Parlez_Vous_Le_Json/README.md)
 
-- - -
+---
 
 ### 9. Instructor Do: Parlez-vous le JSON Activity Review (5 min)
 
@@ -388,7 +386,7 @@ Open Postman and submit the below request to Quandl. Then, conduct a live deciph
 
   ![decipher_json.png](Images/decipher_json.png)
 
-* JSON Objects are contained within curly braces `{}`. These objects often contain multiple name-value pairs, like a row (e.g., {"ticker":"GOOG","close_price":192.57}).
+* JSON Objects are contained within curly braces `{}`. These objects often contain multiple name-value pairs, like a row (e.g., `{"ticker":"GOOG","close_price":192.57}`).
 
 * JSON Arrays are identified by brackets `[]`. An example of a JSON Array is the `column_names` object returned from the Quandl API call.
 
@@ -408,7 +406,7 @@ If time permits, ask the students  the following questions. Sample answers have 
 
 Before moving forward, ask the students if there are any remaining questions.
 
-- - -
+---
 
 ### 10. Instructor Do: Python Requests (10 min)
 
@@ -530,7 +528,7 @@ Demonstrate with live code how to use the Python `requests` library, and use the
 
 Ask if there are any remaining questions before moving forward.
 
-- - -
+---
 
 ### 11. Students Do: Ice Breakers on Request (20 min)
 
@@ -548,7 +546,7 @@ Walk around with TAs to provide assistance to students with parsing JSON data. S
 
 * [README.md](Activities/05-Stu_Ice_Breakers_on_Request/README.md)
 
-- - -
+---
 
 ### 12. Students Do: Engagement Activity (15 min)
 
@@ -576,7 +574,7 @@ If time remains, tell students about some of the APIs you've worked with and how
 
 Ask students if there are any comments or questions they'd like to make regarding their experiences working with APIs so far. Then transition into a formal review of the Python Requests activity.
 
-- - -
+---
 
 ### 13. Instructor Do: Ice Breakers on Request Activity Review (10 min)
 
@@ -643,11 +641,11 @@ Open the solution and conduct a dry walk-through review, highlighting the follow
 
   ![access_json_data.png](Images/access_json_data.png)
 
-- - -
+---
 
 ### 14. BREAK (15 min)
 
-- - -
+---
 
 ### 15. Instructor Do: URL Parameters (5 min)
 
@@ -738,7 +736,7 @@ Ask the class the following question:
 
 Ask the students if they have any remaining questions before moving on.
 
-- - -
+---
 
 ### 16. Students Do: House of Requests (25 min)
 
@@ -756,7 +754,7 @@ Students can play the game against a classmate or imaginary dealer. Students are
 
 * [README.md](Activities/07-Stu_House_of_Requests/README.md)
 
-- - -
+---
 
 ### 17. Instructor Do: House of Requests Activity Review (5 min)
 
@@ -842,7 +840,7 @@ Transition the class into a review session. Ask the following questions:
 
 Ask if there are any remaining questions or comments before continuing.
 
-- - -
+---
 
 ### 18. Instructor Do: Recap (10 min)
 
@@ -858,26 +856,26 @@ Guide students and the recap session. Use the below sample statements and questi
 
 * What APIs were the most useful? In what ways could you continue to use these APIs, especially in everyday life?
 
-* Ask students to identify two things they'd like to practice on from today's lesson that they might have struggled with conceptually. Encourage them to do additional practice and reading outside of class to reinforce the knowledge and skill.
+Ask students to identify two things they'd like to practice on from today's lesson that they might have struggled with conceptually. Encourage them to do additional practice and reading outside of class to reinforce the knowledge and skill.
 
 Finish the recap with a few statements of encouragement.
 
-* Tell students they need to give themselves, yet again, a round of applause. They've added yet another valuable tool to their developer's toolkit.
+Tell students they need to give themselves, yet again, a round of applause. They've added yet another valuable tool to their developer's toolkit.
 
-* Remind students that completing this amount of work in this time period already means they've proven their aptitude. It's just growth from here.
+Remind students that completing this amount of work in this time period already means they've proven their aptitude. It's just growth from here.
 
-* The next step for APIs is to work with authenticated APIs, as well as software development kits (SDKs) like PLAID, a personal finance API that can connect to multiple accounts. This is where the class will get heavy into accessing and using financial data via APIs.
+The next step for APIs is to work with authenticated APIs, as well as software development kits (SDKs) like Alpaca, an API for stock trading. This is where the class will get heavy into accessing and using financial data via APIs.
 
-Before students leave for the end of the day, give them a small homework assignment. Instruct students to sign up for the below APIs. Students will need to sign up for these APIs before coming to the next class; these APIs will be used in Unit 5.2. Slack out the links so that students will have them. Students who do not have access will not be able to complete all of Unit 5.2's activities.
+Before students leave for the end of the day, give them a small homework assignment. Instruct students to sign up for the below APIs. Students will need to sign up for these APIs before coming to the next class; these APIs will be used in Lesson 5.2. Slack out the links so that students will have them. Students who do not have access will not be able to complete all of Lesson 5.2's activities.
 
-* Emphasize to students that they should be signing up for free, development accounts. There is no need to purchase any services.
+Emphasize to students that they should be signing up for free development accounts following the install guide. There is no need to purchase any services.
 
 * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
-* [Plaid](https://dashboard.plaid.com/signup)
+* [Alpaca](https://app.alpaca.markets/signup)
 
 ### End Class
 
-- - -
+---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
