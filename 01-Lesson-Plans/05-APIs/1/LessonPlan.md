@@ -90,11 +90,7 @@ Be sure to have the following websites loaded prior to class so that the demo ca
 
 * [WrapAPI](https://wrapapi.com/)
 
-**Files:**
-
-* [welcome-slides](https://docs.google.com/presentation/d/1ApEeROS2N3M-KeyLhqW15avfwwWhcf4GGmEMyfWFRSY/edit?usp=sharing)
-
-Start the class off with a review of the introductory slide about APIs. Highlight the following:
+Open the lesson slides, move to the "Introduction to APIs section", and highlight the following:
 
 * Application programming interfaces, or APIs, are functions and procedures that enable users to gain access to features and data of an underlying system.
 
@@ -106,25 +102,25 @@ Start the class off with a review of the introductory slide about APIs. Highligh
 
 Introduce Quandl and briefly demonstrate to students how to use an internet browser to submit a Quandl API call.
 
-* Quandl is a data mart of financial data. Quandl collects data from various sources, consolidates the data, and then makes it available to users. **Quandl** is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Quandl's data can be accessed by users via their API. The API supports multiple programming languages, including Python.
+* Quandl is a data mart of financial data. Quandl collects data from various sources, consolidates the data, and then makes it available to users. Quandl is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Quandl's data can be accessed by users via their API. The API supports multiple programming languages, including Python.
 
   ![quandl_flow.gif](Images/quandl_flow.gif)
 
-Navigate to the [Quandle API Overview](https://www.quandl.com/tools/api) page, and scroll down to the **API Features** section.
+Navigate to the [Quandl API Overview](https://www.quandl.com/tools/api) page, and scroll down to the **API Features** section.
 
-* Show students the URL used to submit a Quandl API request. Underscore the fact that API requests work just like regular URLs. Also indicate that the **request URL** can be configured to specify the output format (e.g., CSV, JSON, or XML); state that JSON will be used for this class.
+Show students the URL used to submit a Quandl API request. Underscore the fact that API requests work just like regular URLs. Also indicate that the **request URL** can be configured to specify the output format (e.g., CSV, JSON, or XML); highlight that JSON will be used for this class.
 
-  ![quandl_url.png](Images/quandl_url.png)
+![quandl_url.png](Images/quandl_url.png)
 
-* Submit the Quandl API request to get AAPL's stock prices using an internet browser and the link below. Show students the data, and bring attention to the AAPL stock prices in the output.
+Submit Quandl API to get OPEC oil prices using an internet browser and the link below. Show students the data, and bring attention to the OPEC oil prices in the output. Note that you need to include your Quandl API key as a parameter in the URL to make the API call work.
 
-  ```
-  https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=<instructor's API key>
-  ```
+```text
+https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=[YOUR-KEY-HERE]
+```
 
   ![quandl_request_output.png](Images/quandl_request_output.png)
 
-Finish the demo of Quandl with the following reflective question:
+Finish the demo of Quandl with the following reflective questions:
 
 * We've extracted historical stock data in the past using the Nasdaq website. How does using the `Quandl` API compare? How is it different?
 
@@ -134,19 +130,23 @@ Finish the demo of Quandl with the following reflective question:
 
   **Answer:** Quandl would be the best tool to use to automate extraction of historical stock data. It would be easier than automating the nasdaq.com process.
 
-If time remains, communicate to students that if they wanted to automate the Nasdaq process, they could use the really cool [WrapAPI](https://wrapapi.com/). Open the site and show students the Yelp GIFs.
+If time remains, communicate to students that if they wanted to automate the Nasdaq process, they could use the cool [WrapAPI](https://wrapapi.com/). Open the site and show students the Yelp GIFs.
 
-* Explain that the WrapAPI provides a functionality that allows users to record a series of actions on a website and automate them. This includes actions like signing into Facebook and extracting data from nasdaq.com. It can also scrape data from a website!
+* Explain that WrapAPI provides a functionality that allows users to record a series of actions on a website and automate them. This includes actions like signing into Facebook and extracting data from nasdaq.com. It can also scrape data from a website!
 
 * Convey what's happening in each GIF.
 
-  1. Actions are recorded using the Chrome extension
+  1. Actions are recorded
 
-  2. Data is fetched with the WraAPI Builder.
+  2. Actions and requests are executed
 
-* The WrapAPI could be used to submit Quandl API requests via a web browser as well. WrapAPI could automate the process of copying and pasting the request URL into the browser.
+  3. Action and request output is reviewed
 
-Before ending this activity, let students know that this is just the beginning in terms of available APIs for use. Ask if there are any questions prior to moving onto the next activity.
+* WrapAPI could be used to submit Quandl API requests via a web browser as well. WrapAPI could automate the process of copying and pasting the request URL into the browser.
+
+Before ending this activity, let students know that this is just the beginning in terms of available APIs for use. Ask if there are any questions before moving on to the next activity.
+
+---
 
 ### 2. Instructor Do: Review Homework (10 min)
 
