@@ -439,45 +439,43 @@ Ask students if there are any questions before moving on.
 
 ---
 
-### 10. Instructor Do: Intro to Plaid (10 min)
+### 10. Instructor Do: Intro to Alpaca (10 min)
 
-Navigate to the "Plaid SDK" section of the lesson slides, and introduce the Plaid SDK by highlighting how it is disrupting the FinTech data industry:
+Navigate to the "Introduction to Alpaca" section of the lesson slides, and introduce the Alpaca by highlighting how it is disrupting the FinTech data industry:
 
-* According to a [Forbes article from February 2019](https://www.forbes.com/sites/donnafuscaldo/2019/02/06/plaid-and-quovo-just-scratching-the-surface-with-data-aggregation/#6e169e401841), FinTech is transforming into a new data industry that focuses on and specializes in the democratization of financial services. This is mainly due the startup **Plaid**, a company seeking to enrich and empower consumers through financial data and technology.
+* According to a [Forbes article from February 2019](https://www.forbes.com/sites/donnafuscaldo/2019/02/06/plaid-and-quovo-just-scratching-the-surface-with-data-aggregation/#6e169e401841), FinTech is transforming into a new data industry that focuses on and specializes in the democratization of financial services. This is mainly due to startups like **Alpaca**, are seeking to enrich and empower consumers through financial data and technology.
 
-* Whether intentional or not, Plaid is becoming the Magellan of this new FinTech market, circumnavigating the centralized FinTech powers that be and plotting the course for a new, democratized approach to financial services.
+* SDKs provide out-of-the-box functions that can be used with the API so that developers do not have to worry about reinventing the wheel. [Alpaca](https://alpaca.markets/) exemplifies a great API that eases the work through its SDK.
 
-* As a FinTech company, Plaid has two customers in mind: the everyday person seeking to take ownership and control over their finances, and the developers trying to design and build robust FinTech applications that enable financial analysis.
+* Alpaca is a trading API that encapsulates the banking, security, and regulatory complexity, allowing FinTech startups to build brokerage apps on top for free quickly.
 
-* Plaid is tipping the financial scales by breaking down barriers and providing a self-service platform, not for FinTech professionals but FinTech consumers: a platform offering data and analytic needs to promote the decentralization of financial analytics. Plaid bestows upon users the processing power and data access points previously reserved just for financial elites.
+* In addition to its trading capabilities, Alpaca is an example of a financial API that you can use, as a FinTech professional, to fetch current stock market data free of charge from five different exchanges (IEX, NYSE National, NYSE Chicago, Nasdaq BX, and Nasdaq PSX). Today, you will learn how to use Alpaca to retrieve stock data that can be used to develop financial applications.
 
-* What exactly does Plaid do? Plaid brokers connections to users' bank accounts to create a one-stop-shop experience for financial management. Typically when analyzing data across multiple accounts, one would have to visit each financial institution and extract the desired data. Plaid streamlines this process by offering a platform that will broker the request for data extraction, so users do not have to do it manually. Plaid offers analytics and insights products as well, helping users better understand trends in their data.
+Recall to students that to access the Alpaca API, they need to install the `alpaca-trade-api` SDK and set their API and the secret keys in a `.env` file as it's indicated in the introduction lesson.
 
-* The Plaid API allows users to:
+Take a couple of minutes to verify if everyone in the class is ready with the Alpaca SDK installed and the Alpaca keys on-hand. Ask your TAs to kindly assist any student who may not be prepared to continue, in the meantime, open the Alpaca website and highlight the following.
 
-  * Connect multiple bank accounts to the Plaid platform.
+* To start using Alpaca, you need to sing up to have access to your Alpaca keys.
 
-  * Get account balances.
+* Once you are already signed up, you can log in to the Alpaca dashboard to fetch your keys.
 
-  * Extract data from Plaid at the institution and account level.
+Continue by login into the Alpaca dashboard using your personal account.
 
-  * Create an asset report.
+![alpaca-login](Images/alpaca-login.gif)
 
-Up until now, students have been solely conducting quantitative analysis of investments. Facilitate discussion with the following talking points and guided questions:
+After logging into your Alpaca dashboard, explain to students that they will find a section named "Your API Keys" where they view their keys by clicking on the "View" button.
 
-* Plaid can be used to analyze financial data in a more comprehensive and holistic view. Plaid takes the data from each financial account and consolidates it to create an overarching portfolio that encompasses savings, investments, retirement funds, loans, etc. What types of analysis can be done with these datasets?
+![alpaca-keys-section](Images/alpaca-keys-section.png)
 
-  * **Answer:** Net worth analysis would require data to be extracted from all financial accounts.
+Explain to students that the first time that they click on the "View" button, they will see their `API Key ID` and `Secret Key`. This is the only time when they will see both keys, so it's crucial to record the keys into their `.env` file.
 
-* Plaid was created as a tool to assist developers in designing FinTech applications. By brokering connections to financial institutions, Plaid allows developers to focus on designing analytic pipelines for consumers that provide insight and drive financial budgeting decisions. If you had access to your savings, investment, and retirement account data, what would you do with it?
+![alpaca-keys](Images/alpaca-keys.png)
 
-  * **Answer:** Calculate the rate of cumulative returns daily, quarterly, and yearly to show cumulative returns over time. This insight could be used to change the types of funds, bonds, and individualized stocks used in each account.
+The secret key will disappear when they log out or navigate to a different page of the Alpaca dashboard. If they lost their `Secret Key`, it can be regenerated by clicking on the "View" button to show the `API Key ID`. Next, they need to click on the "Regenerate Key" button to create a brand new pair of keys. It's important to remark that the previous keys will be invalidated.
 
-  * **Answer:** Calculate beta to compare individualized stock and retirement portfolio volatility.
+![alpaca-keys-regeneration](Images/alpaca-keys-regeneration.gif)
 
-Explain to students that by leveraging the data provided by Plaid, consumers no longer have to rely on financial services professionals or big companies to give them insights into their data. Furthermore, developers no longer have to concern themselves with data acquisition and brokering communication with financial institutions. Instead, both parties can just use Plaid.
-
-Answer any questions before moving on.
+Ask any question students may have, and be sure that all the students have created their keys and installed the Alpaca SDK before continue to the next activity.
 
 ---
 
