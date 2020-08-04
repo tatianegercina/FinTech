@@ -34,7 +34,7 @@ In this activity, students will learn how to generate a set of trading signals d
 
 **File:** [trading_signal_features.ipynb](Activities/01-Ins_Trading_Signal_Features/Solved/trading_signal_features.ipynb)
 
-First, quickly introduce the following:
+Go to the slideshow, navigate to the Random Forest Trading section, and quickly introduce the following:
 
 * Now that students have learned to generate trading signals, backtest trading strategies, and evaluate results, it is time to incorporate machine learning into the mix! Students will now have the opportunity to use a machine learning model (Random Forest) to correctly predict next day positive or negative returns based on multiple trading signals.
 
