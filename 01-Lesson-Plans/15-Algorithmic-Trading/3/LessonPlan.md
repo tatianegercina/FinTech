@@ -111,7 +111,7 @@ In this activity, students will learn how to use the set of trading signal featu
 
 Before proceeding with the coding activity, open the slides, [NAVIGATE TO SECTION X], and briefly re-cap the use of machine learning models in regards to trading:
 
-* How will we incorporate a machine learning model in terms of trading?
+* How can a machine learning model be applied to trading?
 
   **Answer:** Machine learning models must be trained before they can make predictions. Using the trading signals generated from the previous activity, the Random Forest model will train itself using the trading signals as independent variables that determine a dependent variable (a positive or negative return for the next day). The model can then be saved as a pre-trained model for later use, and loaded again for easy deployment.
 
