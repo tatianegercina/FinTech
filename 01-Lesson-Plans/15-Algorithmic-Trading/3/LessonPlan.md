@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's lesson shows students how to use machine learning models in their algorithmic trading framework.
+Today's lesson will show students how to use machine learning models in their algorithmic trading framework.
 
 ### Class Objectives
 
@@ -24,7 +24,7 @@ By the end of class, students will be able to:
 
 * Students may be at or near their learning capacity by this point in the course, but encourage them to use today's material as a guide for incorporating machine learning models into an algorithmic trading strategy. These ideas can potentially be used in their projects.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -36,9 +36,9 @@ In this activity, students will learn how to generate a set of trading signals d
 
 First, quickly introduce the following:
 
-* Now that students have learned to generate trading signals, backtest their trading strategies, and evaluate their results, it is now time to incorporate machine learning into the mix! Students will now have the opportunity to use a machine learning model (Random Forest) to correctly predict next day positive or negative returns based on multiple trading signals.
+* Now that students have learned to generate trading signals, backtest trading strategies, and evaluate results, it is time to incorporate machine learning into the mix! Students will now have the opportunity to use a machine learning model (Random Forest) to correctly predict next day positive or negative returns based on multiple trading signals.
 
-* The Random Forest model will require multiple features, or in this case, multiple trading signals to train itself on. Therefore, students will learn to generate multiple trading signals using various technical indicators such as an exponential moving average of closing prices, exponential moving average of daily return volatility, and Bollinger Bands, which is are a set of lines representing a (positive and negative) standard deviation away from a simple moving average (SMA) of the asset's closing price.
+* The Random Forest model will require multiple features, or in this case, multiple trading signals, to train itself on. Therefore, students will learn to generate multiple trading signals using various technical indicators such as an exponential moving average of closing prices, exponential moving average of daily return volatility, and Bollinger Bands, which is a set of lines representing a (positive and negative) standard deviation away from a simple moving average (SMA) of the asset's closing price.
 
 Then, open the solution file and discuss the following:
 
@@ -73,9 +73,9 @@ Then, open the solution file and discuss the following:
   btc_df
   ```
 
-* Now that the data is prepared, it is now time to move onto generating the multiple trading signals! Students should draw from their experiences from the previous unit 15 lessons where they generated a dual moving average crossover trading signal, as the process is similar.
+* Now that the data is prepared, it is now time to move onto generating the multiple trading signals! Students should draw from their experiences from previous Unit 15 lessons where they generated a dual moving average crossover trading signal, as the process is similar.
 
-* In contrast to a simple moving average (SMA), an exponential moving average (EMA) represents a moving average with more weight or focus given to the most recent of prices. Therefore, a short window EMA describes "faster" price action than its long window EMA or "slower" counterpart. The logic then dictates such that when the fast EMA is greater than the slow EMA, a long trade opportunity exists, as price action should rise in the short-term, while a short trade opportunity arises for the opposite scenario in which the slow EMA is greater than the fast EMA.
+* In contrast to a simple moving average (SMA), an exponential moving average (EMA) represents a moving average with more weight or focus given to the most recent prices. Therefore, a short window EMA describes "faster" price action than its long window EMA, or "slower" counterpart. The logic then dictates such that when the fast EMA is greater than the slow EMA, a long trade opportunity exists, as price action should rise in the short-term, while a short trade opportunity arises for the opposite scenario in which the slow EMA is greater than the fast EMA.
 
   * Students should be aware that these trading signals will incorporate a long, short, or hold strategy (rather than just long or hold, or short or hold), which is why the `crossover_signal` is calculated as the result of adding both the `crossover_long` and `crossover_short` signals together.
 
@@ -93,13 +93,13 @@ Then, open the solution file and discuss the following:
 
   ![ema-std-plot](Images/ema-std-plot.png)
 
-* Lastly, a Bollinger Band describes a middle, upper, and lower band, in which the middle is a simple moving average (SMA) of closing prices, while the upper and lower bands describe the rolling standard deviation above and below the SMA, respectively. Therefore, when the asset closing price is less than the lower band, a long opportunity exists as the signal suggests that the price action will tend to move upwards and more in line with where the price *should* be (within the negative standard deviation). A short opportunity exists for the opposite scenario in which the asset closing price is greater than the upper band, suggesting that the price action will tend to move lower and within the positive standard deviation.
+* Lastly, a Bollinger Band describes a middle, upper, and lower band, in which the middle is a simple moving average (SMA) of closing prices, while the upper and lower bands describe the rolling standard deviation above and below the SMA, respectively. Therefore, when the asset closing price is less than the lower band, a long opportunity exists as the signal suggests that the price action will tend to move upwards and more in line with where the price *should* be (within the negative standard deviation). A short opportunity exists for the opposite scenario, in which the asset closing price is greater than the upper band, suggesting that the price action will tend to move lower and within the positive standard deviation.
 
   ![bollinger-band.png](Images/bollinger-band.png)
 
   ![bollinger-band-plot.png](Images/bollinger-band-plot.png)
 
-At the end of the discussion, ask students whether or not they understand what the trading signals are suggesting. This is important as these trading signals will end up training the Random Forest model; therefore it is crucial for them to understand the basis upon which the model will be trained.
+At the end of the discussion, ask students whether or not they understand what the trading signals are suggesting. This is important, as these trading signals will end up training the Random Forest model; therefore, it is crucial for them to understand the basis upon which the model will be trained.
 
 ---
 
