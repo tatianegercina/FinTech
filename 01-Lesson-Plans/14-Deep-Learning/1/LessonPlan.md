@@ -96,7 +96,7 @@ Start the presentation by showing students the following image from the [Rorscha
 
 Give students a few moments to call out what they see. Then, continue the presentation by telling students that there is no right answer to this question.
 
-Continue to the "How our Brain Works" slide, and explain to students that any similarity they could find between the image and a real object is possible because our brain uses thousands of neural connections to find a match between the visual input and a mental representation of an object.
+Continue to the "How Our Brain Works" slide, and explain to students that any similarity they could find between the image and a real object is possible because our brain uses thousands of neural connections to find a match between the visual input and a mental representation of an object.
 
 Continue to the next slide, and tell students that the power of the human brain to process information, and make predictions and interpretations, is what inspired neurophysiologists and mathematicians to start developing artificial neural networks (ANN).
 
