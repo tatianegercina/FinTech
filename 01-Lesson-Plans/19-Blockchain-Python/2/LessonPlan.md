@@ -129,6 +129,8 @@ Now, let's start learning why Bitcoin is still a top player, and why it might st
 
 ### 3. Students Do: Wallet Check (10 min)
 
+**Corresponding Activity:** [01-Stu_Wallet_Check](Activities/01-Stu_Wallet_Check)
+
 In this activity, students will ensure that they have funded their wallet (using their mnemonic phrase and the BIP39 tool)
 with testnet bitcoins, and prepare their testnet bitcoin private key.
 
@@ -231,6 +233,8 @@ Ask the students:
  As long as all of the inputs are correctly signed, the transaction is good to go!
 
 ### 6. Students Do: Visualizing UTXOs (15 min)
+
+**Corresponding Activity:** [02-Stu_Visualizing_UTXOs](Activities/02-Stu_Visualizing_UTXOs)
 
 In this activity, you will have the students explore different transactions using the Blockcypher block explorer.
 
@@ -359,7 +363,11 @@ Ask the students:
  **Answer:** UTXOs!
 
 Now it's time to send a multi-output transaction ourselves!
+
 ### 12. Instructor Do: Multi Output Transaction Demo (10 min)
+
+**Corresponding Activity:** [03-Ins_Multi_Output_Tx](Activities/03-Ins_Multi_Output_Tx)
+
 Now it's time to demonstrate how a multi-output transaction is built.
 
 **Files:**
@@ -427,6 +435,8 @@ Ask the students:
 Now, time for the students to send their own multi-output transactions!
 
 ### 13. Students Do: Sending a multi-output transaction (15 min)
+
+**Corresponding Activity:** [04-Stu_Multi_Output_Tx](Activities/04-Stu_Multi_Output_Tx)
 
 In this activity, students will write their own Python program that will send a multi-output transaction.
 
@@ -545,6 +555,8 @@ We are going to use it to build a multi-coin crypto wallet later, and these func
 
 ### 16. Students Do: Fetching Network Data (10 min)
 
+**Corresponding Activity:** [05-Stu_Fetching_Network_Data](Activities/05-Stu_Fetching_Network_Data)
+
 Now, the students will practice using the functions you just demonstrated.
 
 **Instructions:**
@@ -579,4 +591,4 @@ Ask the students the following questions:
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
