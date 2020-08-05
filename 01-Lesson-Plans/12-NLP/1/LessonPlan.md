@@ -522,7 +522,7 @@ There are many ways to customize your word cloud. Some of the most basic include
 
 ### 17. Student Do: Gas Cloud (15 min)
 
-In this activity, students will practice creating a word cloud from a subset of the Reuters corpus.
+In this activity, students will practice creating a word cloud from a subset of the Reuters Corpus.
 
 **Instructions:**
 
