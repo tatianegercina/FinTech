@@ -32,7 +32,7 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* There is plenty of jargon in NLP. While we try to explain things in plain English as often as possible, some terms, like **token** or **corpus** are inescapable. One way to keep the new terms straight is by writing them down on a slide or whiteboard, so that students can refer to them as needed.
+* There is plenty of jargon in NLP. While we try to explain things in plain English as often as possible, some terms, like **tokenization** or **corpus** are inescapable. One way to keep the new terms straight is by writing them down on a slide or whiteboard, so that students can refer to them as needed.
 
 * Each step in this lesson ties into the next, and it is critical that students comprehend each section so they can implement the NLP workflow. Check in with students frequently to see if they have questions.
 
@@ -88,19 +88,19 @@ Open the slides, [NAVIGATE TO SECTION X], and hit the following talking points. 
 
 * Our objectives today are focused on preprocessing—the stage of the NLP workflow when written documents are transformed into units of data that are more easily processed by a computer.
 
-* NLP spans a wide field of research that intersects computer science, statistics, linguistics, and other disciplines. Understanding and generating human language are two large tasks that encompass many smaller tasks—voice recognition, optical character recognition, summarization, topic representation, etc., etc.
+* NLP spans a wide field of research that intersects computer science, statistics, linguistics, and other disciplines. Understanding and generating human language are two large tasks that encompass many smaller tasks—voice recognition, optical character recognition, summarization, topic representation, etc.
 
 * Finance-specific use cases have mostly been centred around using NLP for quantitative trading. Other settings include fraud detection and chatbots for client interaction (which we will introduce in the next unit).
 
 * The NLP workflow is characterized by four steps: preprocessing, extraction, analysis, and representation. It's not unlike a typical machine learning workflow for any type of data. However, unstructured text data can take much more work to get into usable form than structured, numerical data.
 
-Ask students if they have any questions about NLP in general or the direction of today's class. If not, it's time to move on to the first topic: tokenization.
+Ask students if they have any questions about NLP in general, or the direction of today's class. If not, it's time to move on to the first topic: tokenization.
 
 ---
 
 ### 3. Instructor Do: Tokenization (10 min)
 
-This activity introduces students to tokenization, the process with which we break down documents into smaller units of analysis. Tokenizing is crucial because many of the NLP techniques we'll learn about, including frequency analysis and sentiment analysis, use word-, phrase-, or sentence-level chunks instead of the entire document. Students will use NLTK (Natural Language Toolkit) functions to split documents into sentences and words. Students will also be introduced to the corpora made available by NLTK, specifically the Reuters Corpus, a collection of financial news stories.
+This activity introduces students to tokenization, the process with which we break down documents into smaller units of analysis. Tokenizing is crucial because many of the NLP techniques we'll learn about, including frequency analysis and sentiment analysis, use word, phrase, or sentence-level chunks, instead of the entire document. Students will use NLTK (Natural Language Toolkit) functions to split documents into sentences and words. Students will also be introduced to the corpora made available by NLTK, specifically the Reuters Corpus, a collection of financial news stories.
 
 **Files:**
 
@@ -114,9 +114,9 @@ Open the lesson slides, move to the "Tokenization" section, and highlight the fo
 
 * To allow an algorithm to process text, we need to segment it into units that we called _tokens_.
 
-* A _token_ is a group of characters that have meaning. It can be words, sentences, or phrases.
+* A _token_ is a group of characters that have meaning. Tokens can be words, sentences, or phrases.
 
-* Tokenization is similar to using the `split()` method from string variables in python.
+* Tokenization is similar to using the `split()` method from string variables in Python.
 
 Depending on your comfort level, either walk through the solved version or live-code with the unsolved template. Point out that NLTK includes several collections of documents that can be accessed through the corpus module. One of these is the Reuters news corpus, which includes financial news stories and is grouped by topic, or "category."
 
