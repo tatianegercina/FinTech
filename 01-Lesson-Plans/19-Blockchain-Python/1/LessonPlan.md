@@ -828,4 +828,4 @@ Before the next class, request some test bitcoins of your own to prepare to send
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
