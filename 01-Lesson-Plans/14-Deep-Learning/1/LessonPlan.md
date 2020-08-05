@@ -106,7 +106,7 @@ Continue to the next slide, and tell students that the power of the human brain 
 
 * This concept evolved over the last several decades to more complex models that proposed building connections between neurons, to the modern day creation of what we now call neural networks.
 
-Continue to the slide "The Future is Here: Applications of Neural Nets" and highlight the following:
+Continue to the slide "The Future Is Here: Applications of Neural Nets" and highlight the following:
 
 * Neural networks are here to stay, and applications become more common every day.
 
