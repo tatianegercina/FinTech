@@ -109,7 +109,7 @@ In this activity, students will learn how to use the set of trading signal featu
 
 **File:** [random_forest_training.ipynb](Activities/02-Ins_Random_Forest_Training/Solved/random_forest_training.ipynb)
 
-Before proceeding with the coding activity, open the slides, [NAVIGATE TO SECTION X], and briefly re-cap the use of machine learning models in regards to trading:
+Before proceeding with the coding activity, open the slides, and briefly recap the use of machine learning models in regards to trading:
 
 * How can a machine learning model be applied to trading?
 
