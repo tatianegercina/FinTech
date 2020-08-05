@@ -510,19 +510,19 @@ Show the class the example machine code.
 
 ### 10. Students Do: Contextualizing Solidity Worksheet (10 min)
 
-**Corresponding Activity:** [05_Stu_Contextualizing_Solidity_Worksheet](Activities/05_Stu_Contextualizing_Solidity_Worksheet)
+**Corresponding Activity:** [04_Stu_Contextualizing_Solidity_Worksheet](Activities/04_Stu_Contextualizing_Solidity_Worksheet)
 
 Students will fill in a simple chart (pipeline) of the various levels of the EVM's architecture with the names of the various levels and their real-world implementation.
 
 **Instructions:**
 
-* [README.md](Activities/05_Stu_Contextualizing_Solidity_Worksheet/README.md)
+* [README.md](Activities/04_Stu_Contextualizing_Solidity_Worksheet/README.md)
 
 **Files:**
 
-* [WorkSheet - Solved](Activities/05_Stu_Contextualizing_Solidity_Worksheet/Solved/evm_worksheet.md)
+* [WorkSheet - Solved](Activities/04_Stu_Contextualizing_Solidity_Worksheet/Solved/evm_worksheet.md)
 
-* [WorkSheet - Unsolved](Activities/05_Stu_Contextualizing_Solidity_Worksheet/Unsolved/evm_worksheet.md)
+* [WorkSheet - Unsolved](Activities/04_Stu_Contextualizing_Solidity_Worksheet/Unsolved/evm_worksheet.md)
 
 ---
 
@@ -749,7 +749,7 @@ Answer any questions before moving on.
 
 ### 14. Student Do: State Of The Dapps (20 min)
 
-**Corresponding Activity:** [06-Stu_State_of_the_Dapps](Activities/06-Stu_State_of_the_Dapps)
+**Corresponding Activity:** [05-Stu_State_of_the_Dapps](Activities/05-Stu_State_of_the_Dapps)
 
 In this activity, students will visit [The State Of The Dapps website](https://www.stateofthedapps.com/) to explore the many dApps that exist in the blockchain ecosystem. Students will work in groups up to three people to research and to analyze a dApps from any sector from their interest.
 
@@ -759,7 +759,7 @@ Have TAs circulate the classroom to help students and foster collaboration in ea
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_State_of_the_Dapps/README.md)
+* [README.md](Activities/05-Stu_State_of_the_Dapps/README.md)
 
 ---
 
@@ -833,4 +833,4 @@ By the end of this Unit, students will be writing their custom smart contracts a
 
 ### End Class
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
