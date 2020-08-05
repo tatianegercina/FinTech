@@ -56,7 +56,7 @@ The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 Open the lesson slides and welcome students to the first day of deep learning! Explain that today's class will begin with an introduction to the basic unit of neural networks, before moving on to construct simple neural nets.
 
-As an icebreaker, open the class with an interactive Q&A, calling on a different students to provide answers:
+As an icebreaker, open the class with an interactive Q&A, calling on different students to provide answers:
 
 * What do you think a neural network is?
 
