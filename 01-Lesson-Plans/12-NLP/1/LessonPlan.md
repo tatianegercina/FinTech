@@ -120,7 +120,7 @@ Open the lesson slides, move to the "Tokenization" section, and highlight the fo
 
 Depending on your comfort level, either walk through the solved version or live-code with the unsolved template. Point out that NLTK includes several collections of documents that can be accessed through the corpus module. One of these is the Reuters news corpus, which includes financial news stories and is grouped by topic, or "category."
 
-Highlight how we can find articles by topic and then use a single article for practicing tokenization by using the corpus object:
+Highlight how we can find articles by topic, and then use a single article for practicing tokenization by using the corpus object:
 
 ```python
 reuters.fileids(categories='crude')
@@ -139,7 +139,7 @@ article.split('.')
 sent.split(' ')
 ```
 
-However, these simple methods aren't very good at covering many potential types of boundaries. For example, sentences don't just end with periods—sometimes they have exclamation marks, question marks, or no punctuation at all. It's possible, but annoying, to account for all these cases. Luckily, NLTK provides us with tokenization methods that do this for us. Walkthrough the sent_tokenize and word_tokenize methods.
+However, these simple methods aren't very good at covering many potential types of boundaries. For example, sentences don't just end with periods—sometimes they have exclamation marks, question marks, or no punctuation at all. It's possible, but annoying, to account for all these cases. Luckily, NLTK provides us with tokenization methods that do this for us. Walk through the sent_tokenize and word_tokenize methods.
 
 Note that even with NLTK's functions, we won't get perfect results all the time. For example, while NLTK's word_tokenizer is pretty good at separating words and punctuation that are not separated by spaces, it does not separate words with forward slashes like "supply/demand" below.
 
@@ -522,7 +522,7 @@ There are many ways to customize your word cloud. Some of the most basic include
 
 ### 17. Student Do: Gas Cloud (15 min)
 
-In this activity, students will practice creating a word cloud from a subset of the Reuters Corpus.
+In this activity, students will practice creating a word cloud from a subset of the Reuters corpus.
 
 **Instructions:**
 
