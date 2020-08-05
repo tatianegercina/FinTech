@@ -236,7 +236,7 @@ Open the solution file and discuss the following:
 
 In this activity, instructors will briefly recap the process of training and using a Random Forest trading model, discuss the ways in which the model can potentially be improved, and consider deploying the model through alternative means such as AWS' Sagemaker-a machine learning cloud service that enables users to build, train, and deploy machine learning models quickly and conveniently.
 
-Open the slideshow, [NAVIGATE TO SECTION X], and quickly recap the following. Engage students by having them answer the questions wherever possible:
+Open the slideshow and quickly recap the following. Engage students by having them answer the questions wherever possible:
 
 * What did we learn today?
 
