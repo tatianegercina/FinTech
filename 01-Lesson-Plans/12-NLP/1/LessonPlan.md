@@ -4,7 +4,7 @@
 
 ### Please take the Mid-Course Instructional Staff Survey if you haven't yet
 
-As a company, Trilogy places a high value on transparency and data-driven change. As we grow, we know there will be areas that need improvement, and unless we ask questions, it’s hard for us to understand where to focus our efforts. Your candid input truly matters to us, as you are key members of the Trilogy team. In addition to the individual feedback at the end of lesson plans, we would appreciate your feedback at the following link if you have not already taken the mid-course survey:
+As a company, Trilogy places a high value on transparency and data-driven change. As we grow, we know there will be areas that need improvement, and unless we ask questions, it’s hard for us to understand where to focus our efforts. Your candid input truly matters to us, as you are key members of the Trilogy team. In addition to the individual feedback at the end of lesson plans, we would appreciate your feedback at the following link, if you have not already taken the mid-course survey:
 
 [Instructional Staff Survey](https://docs.google.com/forms/d/e/1FAIpQLSfYVe6jUQwDoXferzGqfd3LZ1k0i_RWzgwccd1f5arSXg2pzA/viewform)
 
