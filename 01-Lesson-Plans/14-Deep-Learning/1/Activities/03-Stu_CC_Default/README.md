@@ -34,10 +34,12 @@ You are tasked to create a neural network model to predict if a credit card hold
 
 For this challenge section, you have to figure out how the model you created could be modified to improve the accuracy.
 
-1. Review the Keras documentation about activation functions, and decide if there is anything that could be used instead of `sigmoid`.
+1. Review the [Keras documentation about activation functions](https://www.tensorflow.org/api_docs/python/tf/keras/activations), and decide if there is any function that can be used instead of `sigmoid`.
 
-2. Change any other parameter that you believe could improve the model's accuracy.
+2. Change any other parameter that you believe could improve the model's accuracy, for example, the number of epochs or the number of hidden nodes.
 
 3. Evaluate the model's accuracy and loss and write down your conclusions.
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
