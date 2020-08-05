@@ -658,7 +658,7 @@ Ask students for any thoughts and answer any questions before moving on.
 
 ---
 
-### 12. Students Do: Investment Value (30 min)
+### 12. Students Do: Investment Value (25 min)
 
 **Corresponding Activity:** [05-Stu_Investment_Value](Activities/05-Stu_Investment_Value)
 

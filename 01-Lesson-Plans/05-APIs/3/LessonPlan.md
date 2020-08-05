@@ -14,7 +14,7 @@ By the end of class, students will be able to:
 
 * Define what a simulation is and why it's used.
 
-* Deconstruct the components of the Monte Carlo simulation process: probability distributions and iterations.
+* Identify the components of the Monte Carlo simulation process: probability distributions and iterations.
 
 * Interpret probability distributions (normal, bell curve) and random number generators.
 
@@ -34,7 +34,7 @@ By the end of class, students will be able to:
 
 * Today's lesson deals heavily with statistical concepts, particularly probability. Try to be as clear as possible and be mindful of students who may become easily confused, as this lesson will push the boundaries of most students' comfort levels when it comes to statistics.
 
-* When overviewing the concept of probability distributions, also make sure to stress the notion of randomness. Probability merely implies that there is a chance that a specific result or event may occur but makes no guarantees, which is why results can differ with each iteration.
+* When reviewing the concept of probability distributions, also make sure to highlight the notion of randomness. Probability merely implies that there is a chance that a specific result or event may occur but makes no guarantees, which is why results can differ with each iteration.
 
 * Once students are comfortable with probability distributions, namely normal distributions, students should be able to process the idea that Monte Carlo simulations on stock investments seek to chart the different paths (and probabilities) in which a stock can vary about its average daily return. Overview the code in detail so that this becomes more apparent.
 
@@ -70,9 +70,9 @@ Energize your students and welcome them to the third day of APIs! Today is the d
 
 Cover the following points:
 
-* The previous lessons focused on API calls and showcased the Plaid API to exemplify that you can leverage the power of external datasets and functionality.
+* The previous lessons focused on API calls and showcased the Alpaca API to exemplify that you can leverage the power of external datasets and functionality.
 
-* Today you will combine what you've learned so far on using APIs to pull in stock data and forecast single stock and portfolio returns using Monte Carlo simulations.
+* Today you will combine what you've learned so far on using Alpaca to pull in stock data and forecast single stock and portfolio returns using Monte Carlo simulations.
 
 * Today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. You should feel empowered as you are learning how you can use other curated datasets to analyze and generate insights on their own.
 
