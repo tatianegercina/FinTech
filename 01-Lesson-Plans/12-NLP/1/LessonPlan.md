@@ -241,7 +241,7 @@ Two important notes: First, we choose to instantiate the list of stopwords as a 
 
 ![stopwords1](Images/stopwords1.PNG)
 
-Have students take a look at the result after the sentence has been "stopworded." Are there other words in there that are not informative? If so, we can define our list of custom stopwords and join these to the NLTK list when we perform this step of preprocessing:
+Have students take a look at the result after the sentence has been "stopworded." Does it contain other words that are not informative? If so, we can define our list of custom stopwords and join these to the NLTK list when we perform this step of preprocessing:
 
 ```python
 sw_addon = {'said', 'mln', 'kilolitres','kl'}
@@ -252,9 +252,9 @@ Note that the union function here combines the unique elements of the two sets.
 
 ![stopwords2](Images/stopwords2.PNG)
 
-Once again, have students take a look at the result. We've gotten rid of the words that are uninformative, but what about the numbers and punctuation at the end? For most use cases, these characters are also of little use. It's possible to get rid of them using the stopword methodology, but this would involve entering every combination of numbers and punctuation that exists in the corpus, and that's unrealistic.
+Once again, have students take a look at the result. We've gotten rid of the words that are uninformative, but what about the numbers and punctuation at the end? For most use cases, these characters are also of little use. It's possible to get rid of them using the stopword methodology, but this would involve entering every combination of numbers and punctuation that exists in the corpus, which is unrealistic.
 
-Instead, we're going to make use of regular expressions. Direct students to this resource for learning more about regular expressions and how they're implemented in Python: https://docs.python.org/3/library/re.html. For now, though, go through the following code:
+Instead, we're going to make use of regular expressions. Direct students to this resource for learning more about regular expressions, and how they're implemented in Python: https://docs.python.org/3/library/re.html. For now, though, go through the following code:
 
 ```python
 regex = re.compile("[^a-zA-Z ]")
@@ -304,7 +304,7 @@ def clean_text(article):
  return output
 ```
 
-Read the list of additional words that we decided to drop in the second solved implementation. Ask students if they agree with these and which words they might add or drop from this list.
+Read the list of additional words that we decided to drop in the second solved implementation. Ask students if they agree with these, and which words they might add or drop from this list.
 
 ![crude_stopwords](Images/crude_stopwords.PNG)
 
