@@ -289,7 +289,7 @@ In this activity, students will practice creating a function that strips non-let
 
 * [crude_stopwords.ipynb](Activities/04-Stu_Crude_Stopwords/Solved/crude_stopwords.ipynb)
 
-Reiterate that stopwording is very domain and circumstance specific. Using the same set of stopwords for every corpus is rarely a good idea. The NLTK set is a good start, but the chances are that you'll want to augment it with your own set after inspecting the results.
+Reiterate that stopwording is very domain (and circumstance) specific. Using the same set of stopwords for every corpus is rarely a good idea. The NLTK set is a good start, but chances are that you'll want to augment it with your own set after inspecting the results.
 
 Note the order in which we apply the regex cleaning, word tokenizing, and stopwording.
 
@@ -308,7 +308,7 @@ Read the list of additional words that we decided to drop in the second solved i
 
 ![crude_stopwords](Images/crude_stopwords.PNG)
 
-Tell students that the extent to which we want to add stopwords is a trade-off. The more stopwords, the fewer words we have to look through in a final analysis. However, this also raises the chances that we delete informative words.
+Tell students that the extent to which we want to add stopwords is a trade-off. The more stopwords, the fewer words we have to look through in a final analysis. However, the likelihood of deleting informative words increases.
 
 ---
 
@@ -324,13 +324,13 @@ In this lesson, students will learn about _lemmatization_, a technique that stan
 
 * Solved: [lemmatization.ipynb](Activities/05-Ins_Lemmatization/Solved/lemmatization.ipynb)
 
-Open the lesson slides, move to the "Lemmatization" section, and highlight the following.
+Open the lesson slides, navigate to the "Lemmatization" section, and highlight the following.
 
 * Lemmatization is a technique that transforms various morphologies of a word into its base form. This may sound fancy, but it's pretty intuitive.
 
 * If we're looking to summarize a document with the most frequent words in it, words like "stock" and "stocks" should, for the most part, mean the same. This is also true for words like "run" and "ran." NLTK's lemmatizer takes words in different forms (past tense, plural, etc.) and transforms them into the base form (present tense, singular).
 
-Open the Jupyter notebook, conduct a dry walkthrough. Note that the lemmatizer is smart enough to transform those words that have simple plural forms and those words like "goose" that have complex plurals.
+Open the Jupyter notebook and conduct a dry walkthrough. Note that the lemmatizer is smart enough to transform those words that have simple plural forms, and words like "goose" that have complex plurals.
 
 ![lemma1](Images/lemma1.PNG)
 
@@ -338,7 +338,7 @@ The lemmatizer does not automatically lemmatize any part of speech; the default 
 
 ![lemma2](Images/lemma2.PNG)
 
-Note that it's possible to lemmatize every part of speech for any given word—all we need to do is apply the lemmatize function to the word with a different pos argument on each pass. In practice, however, noun lemmatizations are usually enough, since the most informative words for most NLP analyses are nouns. It's also important to note that lemmatization is not a step one would want to apply for any kind of analysis—measures of sentiment would be biased if the words were adjective-lemmatized beforehand, for example.
+Note that it's possible to lemmatize every part of speech for any given word. All we need to do is apply the lemmatize function to the word with a different pos argument on each pass. In practice, however, noun lemmatizations are usually enough, since the most informative words for most NLP analyses are nouns. It's also important to note that lemmatization is not a step that one would want to apply for any kind of analysis; measures of sentiment would be biased if the words were adjective-lemmatized beforehand, for example.
 
 ---
 
@@ -395,7 +395,7 @@ Open the lesson slides, move to the "N-Grams" section, and highlight the followi
 
 * N-grams can be used to calculate how often words follow one another and are applied in generating text. (predictive keyboard)
 
-* N-grams are helpful in applications like sentiment analysis, where the ordering of the words is important to the context.
+* N-grams are helpful in applications like sentiment analysis, where the ordering of words is important to the context.
 
 Open the solved notebook and explain the following:
 
@@ -418,7 +418,7 @@ print(dict(word_counts))
 
 * We will be using the ngram function from NLTK (Natural Language Toolkit) to break up the list of words into ngrams.
 
-* The ngram function takes two arguments. The first is the list of tokenized words, and the second is the number of words we want in each token—the "n" in ngram. We can use the same Counter function as before on the results to produce the counts of each ngram and get the most common ngrams.
+* The ngram function takes two arguments. The first is the list of tokenized words, and the second is the number of words that we want in each token—the "n" in ngram. We can use the same Counter function as before on the results to produce the counts of each ngram and get the most common ngrams.
 
 ```python
 bigram_counts = Counter(ngrams(processed, n=2))
@@ -426,7 +426,7 @@ bigram_counts = Counter(ngrams(processed, n=2))
 
 Ask students to notice that the counts of the most common ngrams are much smaller than those of the most common words.
 
-* This should be intuitive—most words are used in very different contexts, so two-word combinations should be less frequent, on average, than the words that make them up. This is one reason that higher-n ngrams are rarely used in practice. Unless the corpus is very large or very repetitive, there are few three-, four-, or five-word sequences that are used frequently.
+* This should be intuitive—most words are used in very different contexts, so two-word combinations should be less frequent, on average, than the words that make them up. This is one reason that higher-n ngrams are rarely used in practice. Unless the corpus is very large or very repetitive, there are few three, four, or five-word sequences that are used frequently.
 
 ---
 
@@ -456,7 +456,7 @@ Open the solved notebook and explain the following:
 
 Go over the first word counter function below line by line, highlighting the following points:
 
-* Given a list of articles as a corpus, we have two options. We can either treat each article separately clean and count words for each in turn or we can combine all the articles into one big string and preprocess and count that string all at once. Since the latter is more efficient, both computationally and in terms of lines of code written, we choose that method, which is implemented in the function below.
+* Given a list of articles as a corpus, we have two options. We can either treat each article separately, clean and count words for each in turn, or we can combine all the articles into one big string and preprocess and count that string all at once. Since the latter is more efficient, both computationally and in terms of lines of code written, we choose that method, which is implemented in the function below.
 
 ```python
 def word_counter(corpus):
@@ -469,7 +469,7 @@ def word_counter(corpus):
 
 * The join() method can be used to combine multiple strings into one long string.
 
-* We next run the defined process_text function over this string to get the list of words needed for the Counter function. Once the most frequent words are selected with most_common, all we need to do is to put them into a DataFrame.
+* Next, we run the defined process_text function over this string to get the list of words needed for the Counter function. Once the most frequent words are selected with most_common, all we need to do is to put them into a DataFrame.
 
 * One way of transforming the dictionary is to turn it into a list of tuples first with the .items() method.
 
@@ -489,15 +489,15 @@ def bigram_counter(corpus):
 
 ### 16. Instructor Do: Word Cloud (10 min)
 
-Frequency analysis is a useful technique, but counts of words or ngrams are difficult and boring to read through for an audience. If only there was a visualization that can achieve the same purpose, but with some color and flair. Enter the word clouds! These visualizations are now pretty common and get their share of flack for not being the most rigorous of methods for visualizing text frequency, but there are still few better alternatives for quickly and viscerally summarizing a text.
+Frequency analysis is a useful technique, but counts of words or ngrams are difficult and boring to read through for an audience. If _only_ there was a visualization that could achieve the same purpose, but with some colour and flair. Enter the word clouds! These visualizations are pretty commonplace, and while they get some flak for lacking methological rigor when it comes to visualizing text frequency, there are few better alternatives for efficiently summarizing text.
 
 **Files:**
 
 [wordcloud.ipynb](Activities/09-Ins_Word_Cloud/Solved/wordcloud.ipynb)
 
-First, we need to import the word cloud library, which will do most of the heavy lifting for this activity. Note that we also import matplotlib's pyplot module; although we won't be using pyplot substantively, because the word cloud library is built on top of the matplotlib library, there are some useful matplotlib functions that we can use to create our word cloud.
+First, we need to import the word cloud library, which will do most of the heavy lifting for this activity. Note that we also import matplotlib's pyplot module; although we won't use pyplot substantively, because the word cloud library is built on top of the matplotlib library, there are some useful matplotlib functions that we can use to create our word cloud.
 
-We can copy most of the preprocessing code from previous activities. Alert students to one small but important change—whereas before we were returning a list of words, this time, we want to return one string instead. So, as the last step, we use a join to create that string. We still want to lemmatize and stopword, so word tokenizing is necessary as an intermediate step. But, since the word cloud function takes only a single string as an argument, we must join these words back together in the preprocessing function.
+We can copy most of the preprocessing code from previous activities. Alert students to one small but important change—whereas before we were returning a list of words, this time, we want to return one string instead. So as the last step, we use a join to create that string. We still want to lemmatize and stopword, so word tokenizing is necessary as an intermediate step. But since the word cloud function only takes a single string as an argument, we must join these words back together in the preprocessing function.
 
 ```python
 def process_text(doc):
@@ -510,7 +510,7 @@ def process_text(doc):
  return ' '.join(output)
 ```
 
-Creating the word cloud itself is easy—two lines will do it. Tell students that the word cloud function does a lot of things in the background that we've done explicitly, like tokenizing and counting words, and then sizes each word that is displayed based on the frequency with which it appears in the text. Do the words that show up largest here make sense for the topic, "gold"? (It's possible that you'd want to add some additional stopwords here since some of the largest words don't seem informative in this context.)
+Creating the word cloud itself is easy—two lines will do it. Tell students that the word cloud function does a lot of things in the background that we've done explicitly, like tokenizing and counting words, and then sizes each word that is displayed based on the frequency with which it appears in the text. Do the words that show up largest here make sense for the topic, "gold"? (It's possible that you'd want to add some additional stopwords here, since some of the largest words don't seem informative in this context.)
 
 ![cloud1](Images/cloud1.PNG)
 
