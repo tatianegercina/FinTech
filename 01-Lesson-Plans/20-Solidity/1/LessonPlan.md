@@ -137,6 +137,8 @@ Answer any questions before moving on.
 
 ### 3. Student Do: Smart Contracts in Action (15 min)
 
+**Corresponding Activity:** [01-Stu_Smart_Contracts_Research](Activities/01-Stu_Smart_Contracts_Research)
+
 In this activity, students will work in groups up to three people to analyze several use cases to explore that correspond with popular types of smart contracts like tokens, notaries, supply chain, digital marketplaces, etc.
 
 Circulate through the room while students are completing the activity. Look to identify students who are actively engaging peers and digging deeper. Keep these students in mind for later, as they may be helpful to distribute among groups.
@@ -250,6 +252,8 @@ Answer any questions before moving on.
 ---
 
 ### 6. Instructor Do: Intro to Remix and Ganache (15 min)
+
+**Corresponding Activity:** [02-Ins_Intro_to_Remix_and_Ganache](Activities/02-Ins_Intro_to_Remix_and_Ganache)
 
 In this activity, the instructor will demo the tools used by smart contract engineers to develop, compile, and deploy code on the Ethereum blockchain. Students will gain familiarity with tools from the `Truffle Suite`, namely `Ganache`, the one-click development blockchain.
 
@@ -402,6 +406,8 @@ Explain to the students that:
 
 ### 07. Students Do: Setting up Remix and Ganache (15 min)
 
+**Corresponding Activity:** [03_Stu_Setting_up_Remix_And_Ganache](Activities/03_Stu_Setting_up_Remix_And_Ganache)
+
 Students will setup Ganache, create a workspace for `fintech`, set the `RPC port` to `8545`, and import their `mnemonic` into Ganache's settings to keep their wallets consistent in their test blockchain. Then, they will explore the Remix IDE with the time left.
 
 **Instructions:**
@@ -504,17 +510,19 @@ Show the class the example machine code.
 
 ### 10. Students Do: Contextualizing Solidity Worksheet (10 min)
 
+**Corresponding Activity:** [04_Stu_Contextualizing_Solidity_Worksheet](Activities/04_Stu_Contextualizing_Solidity_Worksheet)
+
 Students will fill in a simple chart (pipeline) of the various levels of the EVM's architecture with the names of the various levels and their real-world implementation.
 
 **Instructions:**
 
-* [README.md](Activities/05_Stu_Contextualizing_Solidity_Worksheet/README.md)
+* [README.md](Activities/04_Stu_Contextualizing_Solidity_Worksheet/README.md)
 
 **Files:**
 
-* [WorkSheet - Solved](Activities/05_Stu_Contextualizing_Solidity_Worksheet/Solved/evm_worksheet.md)
+* [WorkSheet - Solved](Activities/04_Stu_Contextualizing_Solidity_Worksheet/Solved/evm_worksheet.md)
 
-* [WorkSheet - Unsolved](Activities/05_Stu_Contextualizing_Solidity_Worksheet/Unsolved/evm_worksheet.md)
+* [WorkSheet - Unsolved](Activities/04_Stu_Contextualizing_Solidity_Worksheet/Unsolved/evm_worksheet.md)
 
 ---
 
@@ -741,6 +749,8 @@ Answer any questions before moving on.
 
 ### 14. Student Do: State Of The Dapps (20 min)
 
+**Corresponding Activity:** [05-Stu_State_of_the_Dapps](Activities/05-Stu_State_of_the_Dapps)
+
 In this activity, students will visit [The State Of The Dapps website](https://www.stateofthedapps.com/) to explore the many dApps that exist in the blockchain ecosystem. Students will work in groups up to three people to research and to analyze a dApps from any sector from their interest.
 
 Students will be encouraged to use MetaMask when possible, and write down a short report on their research.
@@ -749,7 +759,7 @@ Have TAs circulate the classroom to help students and foster collaboration in ea
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_State_of_the_Dapps/README.md)
+* [README.md](Activities/05-Stu_State_of_the_Dapps/README.md)
 
 ---
 
@@ -823,4 +833,4 @@ By the end of this Unit, students will be writing their custom smart contracts a
 
 ### End Class
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
