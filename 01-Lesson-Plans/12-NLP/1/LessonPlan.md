@@ -171,7 +171,7 @@ In this activity, students will practice sentence and word tokenization on some 
 
 * [tokenizing_reuters.ipynb](Activities/02-Stu_Tokenizing_Reuters/Solved/tokenizing_reuters.ipynb)
 
-Begin by explaining that when we perform NLP tasks, we're often doing it on many documents at once. This is one reason why keeping everything in a DataFrame is a good idea: it allowed us to keep track of the various versions of any given document, and it allows us to add metadata—such as the file ID of the article in this case—to each document in a corpus.
+Begin by explaining that when we perform NLP tasks, we're often doing it on many documents at once. This is one reason why keeping everything in a DataFrame is a good idea: it allows us to keep track of the various versions of any given document, and add metadata—such as the file ID of the article in this case—to each document in a corpus.
 
 Open the [solved file](Activities/02-Stu_Tokenizing_Reuters/Solved/tokenizing_reuters.ipynb), and discuss the following points:
 
@@ -224,11 +224,11 @@ Open the lesson slides, move to the "Stopwords" section, and highlight the follo
 
 * Stopwords are often removed because they don’t distinguish between relevant and irrelevant content.
 
-Walkthrough, the Jupyter notebook, taking care to allow time for students to look at the output of each step.
+Walkthrough the Jupyter notebook, taking care to allow time for students to look at the output of each step.
 
 For simplicity's sake, we're only going to use one sentence from the article to demonstrate stopwording. Note that these techniques can be applied to entire documents or corpora, as well.
 
-Ask students to familiarize themselves with NLTK's list of stopwords. What others can they think of that might be added? Could stopwords for one domain be ill-suited for another (for example, might you want to ignore certain words in finance documents that you wouldn't want to ignore in documents about history)?
+Ask students to familiarize themselves with NLTK's list of stopwords. What others can they think of that might be added? Could stopwords for one domain be ill-suited for another (for example, might you want to ignore certain words in finance documents, that you wouldn't want to ignore in documents about history)?
 
 We can strip a word_tokenized list of stopwords with the following list comprehension:
 
@@ -237,7 +237,7 @@ sw = set(stopwords.words('english'))
 first_result = [word.lower() for word in words if word.lower() not in sw]
 ```
 
-Two important notes here: First, we choose to instantiate the list of stopwords as a set because a set is more efficient computationally than a list when we want to determine whether or not a word exists in it. This is not a big difference when we only want to do this once, but if you have large numbers of documents and words, the time efficiency can become significant. Second, we want to use the .lower() string function to make all words in the list lowercase when we evaluate them because stopwords are only in lowercase. We can output the words either in their regular case or in all lowercase—usually, the latter is preferred because this is one more way of normalizing words. This becomes important if we're doing something like frequency analysis because words like "orange" and "Orange," in most cases, mean the same thing regardless of capitalization.
+Two important notes: First, we choose to instantiate the list of stopwords as a set, because a set is more efficient computationally than a list when we want to determine if a word exists in it or not. This isn't a big difference when we only want to do this once, but with large numbers of documents and words, time efficiency can become significant. Second, we want to use the .lower() string function to make all words in the list lowercase when we evaluate them, because stopwords are only in lowercase. We can output the words either in their regular case, or in all lowercase. Usually, the latter is preferred, because this is one more way of normalizing words. This becomes important when doing something like frequency analysis, because words like "orange" and "Orange," in most cases, mean the same thing regardless of capitalization.
 
 ![stopwords1](Images/stopwords1.PNG)
 
