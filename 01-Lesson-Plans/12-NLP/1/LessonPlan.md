@@ -2,21 +2,21 @@
 
 ---
 
-### Please take the Mid-Course Instructional Staff Survey if You Haven't Yet
+### Please take the Mid-Course Instructional Staff Survey if you haven't yet
 
-Trilogy, as a company, values transparency and data-driven change quite highly. As we grow, we know there will be areas that need improvement. It’s hard for us to understand what these areas are unless we’re asking questions. Your candid input truly matters to us, as you are key members of the Trilogy team. In addition to the individual feedback at the end of lesson plans, we would appreciate your feedback at the following link if you have not already taken the mid-course survey:
+As a company, Trilogy places a high value on transparency and data-driven change. As we grow, we know there will be areas that need improvement, and unless we ask questions, it’s hard for us to understand where to focus our efforts. Your candid input truly matters to us, as you are key members of the Trilogy team. In addition to the individual feedback at the end of lesson plans, we would appreciate your feedback at the following link if you have not already taken the mid-course survey:
 
 [Instructional Staff Survey](https://docs.google.com/forms/d/e/1FAIpQLSfYVe6jUQwDoXferzGqfd3LZ1k0i_RWzgwccd1f5arSXg2pzA/viewform)
 
 ### Overview
 
-Welcome to the natural language processing unit! NLP is an exciting area of machine learning research and is used in a variety of contexts, from algorithmic trading to chatbots. Today's class will explore what NLP is and give students a solid foundation on preprocessing documents for NLP, as well as introduce them to some simple analytical methods.
+Welcome to the natural language processing unit! Natural language processing (NLP) is an exciting area of machine learning research and is used in a variety of contexts, from algorithmic trading to chatbots. Today's class will explore what NLP is and give students a solid foundation on preprocessing documents for NLP, as well as introduce them to some simple analytical methods.
 
 ### Class Objectives
 
 By the end of the class, students will be able to:
 
-* Understand what NLP is, why we use it.
+* Understand what NLP is and why we use it.
 
 * Understand and be able to implement the NLP workflow.
 
@@ -32,11 +32,11 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* There is plenty of jargon in NLP. While we try to explain things in plain English as often as possible, some terms of art such as **token** or **corpus** are inescapable. One option for helping keep all the new terms straight is writing down unfamiliar terms on a slide or whiteboard so that students can refer to it as needed.
+* There is plenty of jargon in NLP. While we try to explain things in plain English as often as possible, some terms, like **token** or **corpus** are inescapable. One way to keep the new terms straight is by writing them down on a slide or whiteboard, so that students can refer to them as needed.
 
-* Each step in this lesson ties into the next, and every section is critical to learn for students to be able to implement the NLP workflow. Pause and ask for questions often.
+* Each step in this lesson ties into the next, and it is critical that students comprehend each section so they can implement the NLP workflow. Check in with students frequently to see if they have questions.
 
-* Students may expect to start off doing cool things like text modelling or sentiment analysis, and that's OK—these are coming in the next couple of lessons! However, it's good to remind them that preprocessing text, like any other kind of data, is critical to prevent the garbage in, garbage out phenomenon.
+* Students may expect to start off by doing cool things like text modelling or sentiment analysis, which is fine; these are coming in the next couple of lessons! However, it's good to remind them that preprocessing text, like any other kind of data, is critical to prevent the garbage in, garbage out phenomenon.
 
 * Have your TAs keep track of time with the [Time Tracker.](TimeTracker.xlsx)
 
@@ -58,21 +58,21 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students back to class and explain that today is the start of the NLP unit. We'll talk about what NLP is and how it's used in finance in just a little bit but first pose the following question.
+Welcome students back to class and explain that today is the start of the NLP unit. We'll talk about what NLP is and how it's used in finance in just a little bit. But first, pose the following question to the class.
 
-* When was the last time that a student made a decision—could be financial, career, or purchase—based on what they read in a news story? What about the story that made them want to make that decision?
+* When was the last time that anyone made a financial, career, or purchasing decision based on a news story? What in the story helped influence that decision?
 
- **Sample answer**: I bought 10 shares of TSLA because of a news article about sales of the Model 3. The tone of the story—optimistic—as well as the specific numbers they cited made me bullish about the company.
+ **Sample answer**: I bought 10 shares of TSLA because of a news article about sales of the Model 3. The optimistic tone of the story and the specific numbers they cited made me feel bullish about the company.
 
 Take a few answers from volunteers (or call on a couple of students).
 
 * Common answers might include statistics cited in a story, something novel that was described, or the tone in which the author wrote about something.
 
-* Scaling this process with computers—reading and understanding the text of documents—is a key task in NLP and is a central use case in financial applications.
+* Scaling this process with computers—reading and understanding the text of documents—is a key task in NLP, and is a central use case in financial applications.
 
 * Computers don't understand the stories in the way that we do, but they can identify key features—like the ones given by students—and make decisions based on those features.
 
-Recall students that they have to download all the NLTK data (document corpus and stopwords) as it's indicated in the installation guide. If any student has issues with the NLTK data, slack out the following command and ask TAs to assist students in trouble.
+Remind students that they have to download all the NLTK data (document corpus and stopwords) as indicated in the installation guide. If anyone has issues with the NLTK data, slack out the following command and ask TAs to assist students who need help.
 
 ```shell
 python -c "import nltk;nltk.download('all')"
@@ -84,7 +84,7 @@ Hopefully, your students are excited and ready to dive into the content at this 
 
 ### 2. Instructor Do: Intro to NLP (10 min)
 
-Open the slides and be sure to hit on the following talking points. Pause after each slide for questions.
+Open the slides, [NAVIGATE TO SECTION X], and hit the following talking points. Pause after each slide for questions.
 
 * Our objectives today are focused on preprocessing—the stage of the NLP workflow when written documents are transformed into units of data that are more easily processed by a computer.
 
