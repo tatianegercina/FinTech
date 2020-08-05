@@ -94,6 +94,8 @@ Let's get the class excited about smart contracts.
 
 ### 2. Instructor Do: First Contract (10 min)
 
+**Corresponding Activity:** [01-Ins_First_Contract](Activities/01-Ins_First_Contract)
+
 In this activity, you will demonstrate how to construct a basic contract in Solidity that sets an arbitrary `string` and an `address`.
 
 **Files:**
@@ -192,6 +194,8 @@ Explain that we will continue to iterate on this example throughout the lesson t
 ---
 
 ### 3. Students Do: Build a Basic Contract (15 min)
+
+**Corresponding Activity:** [02-Stu_Building_a_Basic_Contract](Activities/02-Stu_Building_a_Basic_Contract)
 
 In this exercise, students will use their data type cheat sheet to build a basic contract that stores simple variables that represent a rewards/bank account balance.
 
@@ -314,6 +318,8 @@ Add a function to fetch all of the variables in one shot:
 ---
 
 ### 6. Students Do: Adding a Getter and Setter (15 min)
+
+**Corresponding Activity:** [03-Stu_Adding_a_Getter_and_Setter](Activities/03-Stu_Adding_a_Getter_and_Setter)
 
 In this exercise, students will be adding a `Getter` and a `Setter` function to the `SimpleCustomerAccount` contract that they just wrote.
 
@@ -554,6 +560,8 @@ Great! Now we have a fully functioning Savings account contract. We can use this
 
 ### 11. Students Do: Implementing ether Management functions (15 min)
 
+**Corresponding Activity:** [04-Stu_Implement_Ether_functions](Activities/04-Stu_Implement_Ether_functions)
+
 In this exercise, students will be implementing a `joint savings account` contract using the ether management functions from the previous activity. By the end of this activity, students will be able to deposit and withdraw ether from their contract's address.
 
 **Instructions:**
@@ -609,6 +617,8 @@ Ask for any remaining questions before moving on.
 ---
 
 ### 13. Instructor Do: Conditionals in Solidity (10 min)
+
+**Corresponding Activity:** [05-Ins_Conditionals](Activities/05-Ins_Conditionals)
 
 In this demonstration, we will be discussing how conditionals in Solidity are formatted differently from Python.
 
@@ -717,6 +727,8 @@ Now it's time for the students to use some conditionals in Solidity!
 
 ### 14. Students Do: Using If/Else in Solidity (10 min)
 
+**Corresponding Activity:** [06-Stu_If_Else](Activities/06-Stu_If_Else)
+
 In this activity, students will add to their `JointSavings` contract functionality that uses if/else statements.
 
 In this case, we are adding an `address` called `last_used` to keep track of which was the last withdraw address. `If` the latest address is different from the `last_used`, then update `last_used`.
@@ -766,6 +778,8 @@ Ask for any remaining questions before moving on.
 ---
 
 ### 16. Everyone Do: Restricting the Withdraw Function with Require (20 min) (Critical)
+
+**Corresponding Activity:** [07-Ins_Restricting_Withdraw_With_Require](Activities/07-Ins_Restricting_Withdraw_With_Require)
 
 In this activity, we will be replacing our `if` conditional statement with a `require` function.
 
@@ -834,11 +848,13 @@ Now we have a fully working `JointSavings` account with withdrawing protection o
 
 ### 17. Everyone Do: Deploying a Contract in Remix (10 min)
 
+**Corresponding Activity:** [08-Ins_Deploying_Contracts_in_Remix](Activities/08-Ins_Deploying_Contracts_in_Remix)
+
 In this activity, students will take their `JointSavings` account contract, compile and deploy it on their local `testnet`.
 
 **Files:**
 
-* [JointSavings.sol](Activities/07-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
+* [JointSavings.sol](Activities/08-Ins_Deploying_Contracts_in_Remix/Solved/JointSavings.sol)
 
 Let's compile and deploy our contract to test it out!
 
