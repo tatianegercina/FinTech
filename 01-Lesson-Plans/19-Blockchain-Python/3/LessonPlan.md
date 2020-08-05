@@ -148,6 +148,8 @@ Now, it's time to have the class convert their mnemonics to a master seed.
 
 ### 3. Students Do: Converting Mnemonic to Seed (10 min)
 
+**Corresponding Activity:** [03-Stu_Converting_Mnemonic.md](Activities/03-Stu_Converting_Mnemonic.md)
+
 In this activity, students will download a local copy of the BIP39 online tool
 and paste their mnemonics into it to convert to a master seed.
 
@@ -226,6 +228,8 @@ Ask the students:
 Now, time for the students to derive some keys of their own!
 
 ### 6. Students Do: Deriving BIP32 Keys (HD Wallets) (10 min)
+
+**Corresponding Activity:** [01-Stu_BIP32_Derivation](Activities/01-Stu_BIP32_Derivation)
 
 Have the students derive some Bitcoin keys and check their addresses.
 They should all have empty balances, as we are generating mainnet Bitcoin keys, not the testnet keys used earlier this week.
@@ -320,6 +324,8 @@ Explain to the students that this is the sister-standard that contains the list 
 That was quite a lot, let's have the students get some practice generating keys for multiple coins!
 
 ### 9. Students Do: Deriving Multiple Coins with BIP44 (10 min)
+
+**Corresponding Activity:** [02-Stu_BIP44_Derivation](Activities/02-Stu_BIP44_Derivation)
 
 Now it's time for the students to derive multiple coins from their mnemonics.
 
@@ -709,6 +715,8 @@ and software, and when to use each!
 
 ### 18. Students Do: "If I Were an Exchange" Thought Experiment (15 min)
 
+**Corresponding Activity:** [04-Stu_If_I_Were_Exchange](Activities/04-Stu_If_I_Were_Exchange)
+
 In this activity, students will break into small groups and design an exchange given the different wallet standards
 and software/hardware implementations.
 
@@ -777,4 +785,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
