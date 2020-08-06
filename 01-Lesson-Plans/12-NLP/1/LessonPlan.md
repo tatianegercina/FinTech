@@ -26,7 +26,7 @@ By the end of the class, students will be able to:
 
 * Experiment with a few ways of counting tokens and displaying the most frequent ones.
 
-* Define the concept of ngrams and implement with Scikit-learn.
+* Define the concept of n-grams and implement with Scikit-learn.
 
 * Create a word cloud to show the most frequent terms in a text.
 
@@ -414,19 +414,19 @@ print(dict(word_counts))
 
 * Although counts of words can sometimes be very informative, they rarely have context. Informative terms often contain two or more words, so being able to look at frequent multi-word terms is also useful.
 
-* Ngrams are multiple word sequences—the n stands for the number of consecutive words (or tokens) that are included. So a bigram, for example, is two consecutive tokens strung together.
+* N-grams are multiple word sequences—the n stands for the number of consecutive words (or tokens) that are included. So a bigram, for example, is two consecutive tokens strung together.
 
-* We will be using the ngram function from NLTK (Natural Language Toolkit) to break up the list of words into ngrams.
+* We will be using the n-gram function from NLTK (Natural Language Toolkit) to break up the list of words into n-grams.
 
-* The ngram function takes two arguments. The first is the list of tokenized words, and the second is the number of words that we want in each token—the "n" in ngram. We can use the same Counter function as before on the results to produce the counts of each ngram and get the most common ngrams.
+* The n-gram function takes two arguments. The first is the list of tokenized words, and the second is the number of words that we want in each token—the "n" in n-gram. We can use the same Counter function as before on the results to produce the counts of each n-gram and get the most common n-grams.
 
 ```python
 bigram_counts = Counter(ngrams(processed, n=2))
 ```
 
-Ask students to notice that the counts of the most common ngrams are much smaller than those of the most common words.
+Ask students to notice that the counts of the most common n-grams are much smaller than those of the most common words.
 
-* This should be intuitive—most words are used in very different contexts, so two-word combinations should be less frequent, on average, than the words that make them up. This is one reason that higher-n ngrams are rarely used in practice. Unless the corpus is very large or very repetitive, there are few three, four, or five-word sequences that are used frequently.
+* This should be intuitive—most words are used in very different contexts, so two-word combinations should be less frequent, on average, than the words that make them up. This is one reason that higher-n n-grams are rarely used in practice. Unless the corpus is very large or very repetitive, there are few three, four, or five-word sequences that are used frequently.
 
 ---
 
@@ -473,7 +473,7 @@ def word_counter(corpus):
 
 * One way of transforming the dictionary is to turn it into a list of tuples first with the .items() method.
 
-* The bigram Counter function, shown below, is very similar. The difference is that instead of going right to the Counter function after we preprocess the text, we apply the ngram function first, with two as the n argument.
+* The bigram Counter function, shown below, is very similar. The difference is that instead of going right to the Counter function after we preprocess the text, we apply the n-gram function first, with two as the n argument.
 
 ```python
 def bigram_counter(corpus):
@@ -489,7 +489,7 @@ def bigram_counter(corpus):
 
 ### 16. Instructor Do: Word Cloud (10 min)
 
-Frequency analysis is a useful technique, but counts of words or ngrams are difficult and boring to read through for an audience. If _only_ there was a visualization that could achieve the same purpose, but with some colour and flair. Enter the word clouds! These visualizations are pretty commonplace, and while they get some flak for lacking methological rigor when it comes to visualizing text frequency, there are few better alternatives for efficiently summarizing text.
+Frequency analysis is a useful technique, but counts of words or n-grams are difficult and tedious to read for an audience. If _only_ there was a visualization that could achieve the same purpose, but with some colour and flair. Enter word clouds! These visualizations are pretty commonplace, and while they get some flak for lacking methodological rigor when it comes to visualizing text frequency, there are few better alternatives for efficiently summarizing text.
 
 **Files:**
 
