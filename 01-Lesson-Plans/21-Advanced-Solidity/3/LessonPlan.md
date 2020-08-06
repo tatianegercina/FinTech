@@ -563,7 +563,7 @@ Now it's time for the students to make their own `ArcadeTokenSale`!
 
 ### 9. Students Do: Building an ArcadeTokenSale with OpenZeppelin (20 min)
 
-**Corresponding Activity:** [05-Stu_ArcadeToke06nSale](Activities/05-Stu_ArcadeTokenSale)
+**Corresponding Activity:** [05-Stu_ArcadeTokenSale](Activities/05-Stu_ArcadeTokenSale)
 
 In this activity, students will be creating and deploying an `ArcadeTokenSale` contract with an `ArcadeTokenSaleDeployer` contract.
 
