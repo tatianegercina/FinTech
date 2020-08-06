@@ -70,11 +70,13 @@ Review the following recall questions with the class.
 
 ### 2. Instructor Do: Auction Contracts in Solidity (10 min)
 
+**Corresponding Activity:** [01-Ins_Auction_Contracts_in_Solidity](Activities/01-Ins_Auction_Contracts_in_Solidity)
+
 In this activity, the Instructor will demonstrate the various Auction contracts available from the Solidity example documentation, and modify it to fit our needs. Students will be introduced to the story of the "Martian Land Foundation" and how we will be "tokenizing" martian land and auctioning it to the public, raising funds for the Martian Land Foundation's terraforming projects, and allowing every-day citizens to claim their spot on humanity's next frontier.
 
 **Files:**
 
-* [AuctionContract.sol](Activities/02-Ins_Auction_Contracts_in_Solidity/Solved/MartianAuction.sol)
+* [AuctionContract.sol](Activities/01-Ins_Auction_Contracts_in_Solidity/Solved/MartianAuction.sol)
 
 Begin the activity by introducing the class to the backstory of the `Martian Land Foundation`.
 
@@ -358,21 +360,23 @@ Congratulations, we have just built a `MartianAuction` contract; you may have ve
 
 ### 3. Students Do: Writing an Auction Contract (15 min)
 
+**Corresponding Activity:** [02-Stu_Writing_an_Auction_Contract](Activities/02-Stu_Writing_an_Auction_Contract)
+
 In this activity, students will take a SimpleAuction contract from the Solidity documentation, modify it for their own needs (remove the time-related features), and prepare it for use within another contract.
 
 **Instructions:**
 
-* [README.md](Activities/03-Stu_Writing_an_Auction_Contract/README.md)
+* [README.md](Activities/02-Stu_Writing_an_Auction_Contract/README.md)
 
 **Files:**
 
-* [MartianAuction.sol](Activities/03-Stu_Writing_an_Auction_Contract/Unsolved/MartianAuction.sol)
+* [MartianAuction.sol](Activities/02-Stu_Writing_an_Auction_Contract/Unsolved/MartianAuction.sol)
 
 ### 4. Instructor Do: Writing an Auction Contract Review (15 min)
 
 **Files:**
 
-* [MartianAuction.sol](Activities/03-Stu_Writing_an_Auction_Contract/Solved/MartianAuction.sol)
+* [MartianAuction.sol](Activities/02-Stu_Writing_an_Auction_Contract/Solved/MartianAuction.sol)
 
 Review the code from the previous activity with the class.
 
@@ -398,13 +402,15 @@ Now discuss the following recall questions:
 
 ### 5. Instructor Do: The MartianMarket (ERC721 + Auctions) (15 min) (Critical)
 
+**Corresponding Activity:** [03-Ins_Martian_Market](Activities/03-Ins_Martian_Market)
+
 In this activity, you will be demonstrating combining the ERC721 standard with the modified `MartianAuction` contract that was built in the previous activity.
 
 **Files:**
 
-* [MartianAuction.sol](Activities/05-Ins_Martian_Market/Resources/MartianAuction.sol)
+* [MartianAuction.sol](Activities/03-Ins_Martian_Market/Resources/MartianAuction.sol)
 
-* [MartianMarket.sol](Activities/05-Ins_Martian_Market/Solved/MartianMarket.sol)
+* [MartianMarket.sol](Activities/03-Ins_Martian_Market/Solved/MartianMarket.sol)
 
 First, explain to the students:
 
@@ -414,7 +420,7 @@ First, explain to the students:
 
 * The Martian Land Foundation can end the auctions at any time.
 
-Open up [Remix](https://remix.ethereum.org) and create a new file called `MartianMarket.sol` and populate it with the contents of the [starter code](Activities/05-Ins_Martian_Market/Unsolved/MartianMarket.sol).
+Open up [Remix](https://remix.ethereum.org) and create a new file called `MartianMarket.sol` and populate it with the contents of the [starter code](Activities/03-Ins_Martian_Market/Unsolved/MartianMarket.sol).
 
 The beginning of the contract should look something like:
 
@@ -572,11 +578,13 @@ Finally, we need to create our last function, `bid`:
 
 * We must be careful about this syntax, as it only forwards `2300` gas. Since that's enough to complete our function, we're okay. Otherwise, we'd have to add `.call` right before `.value()`, but that syntax doesn't protect against reentrancy attacks, so we'd need to be very careful about modifying the state of our contract in that case.
 
-Make sure your contract compiles and matches the [solution](Activities/05-Ins_Martian_Market/Solved/MartianMarket.sol). The next activity includes a frontend that expects the same ABI.
+Make sure your contract compiles and matches the [solution](Activities/03-Ins_Martian_Market/Solved/MartianMarket.sol). The next activity includes a frontend that expects the same ABI.
 
 Voila! Now it's time for the students to build out the same system.
 
 ### 6. Students Do: Building the MartianMarket (20 min)
+
+**Corresponding Activity:** [04-Stu_Building_Martian_Market](Activities/04-Stu_Building_Martian_Market)
 
 In this activity, students will be building the ERC721 + Auction based `MartianMarket`.
 
@@ -584,21 +592,21 @@ Have TAs circulate the room and ensure students can complete the activity.
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Building_Martian_Market/README.md)
+* [README.md](Activities/04-Stu_Building_Martian_Market/README.md)
 
 **Files:**
 
-* [MartianMarket.sol](Activities/06-Stu_Building_Martian_Market/Unsolved/MartianMarket.sol)
+* [MartianMarket.sol](Activities/04-Stu_Building_Martian_Market/Unsolved/MartianMarket.sol)
 
-* [MartianAuction.sol](Activities/06-Stu_Building_Martian_Market/Resources/MartianAuction.sol)
+* [MartianAuction.sol](Activities/04-Stu_Building_Martian_Market/Resources/MartianAuction.sol)
 
 ### 7. Instructor Do: MartianMarket Review (10 min)
 
 **Files:**
 
-* [MartianMarket.sol](Activities/06-Stu_Building_Martian_Market/Solved/MartianMarket.sol)
+* [MartianMarket.sol](Activities/04-Stu_Building_Martian_Market/Solved/MartianMarket.sol)
 
-* [MartianAuction.sol](Activities/06-Stu_Building_Martian_Market/Resources/MartianAuction.sol)
+* [MartianAuction.sol](Activities/04-Stu_Building_Martian_Market/Resources/MartianAuction.sol)
 
 Open the solution and review the `MartianMarket` code. Make sure to explain the following:
 
@@ -624,23 +632,25 @@ Ask for any remaining questions before moving on.
 
 ### 8. Students Do: Deploying the MartianMarket (20 min)
 
+**Corresponding Activity:** [05-Stu_Deploying_Martian_Market](Activities/05-Stu_Deploying_Martian_Market)
+
 In this challenge activity, students will create a landing page and deploy the MartianMarket dApp to Github Pages. The frontend will be provided in a similar fashion to `CryptoRight`. Students will leverage their skills to put together their dApp, create a detailed landing page, and deploy to GitHub Pages.
 
 Send the instructions and have TAs circulate the class.
 
 **Instructions:**
 
-* [README.md](Activities/08-Stu_Deploying_Martian_Market/README.md)
+* [README.md](Activities/05-Stu_Deploying_Martian_Market/README.md)
 
 **Files:**
 
-* [index.html](Activities/08-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/index.html)
+* [index.html](Activities/05-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/index.html)
 
-* [dapp.js](Activities/08-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/dapp.js)
+* [dapp.js](Activities/05-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/dapp.js)
 
-* [MartianMarket.json](Activities/08-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/MartianMarket.json)
+* [MartianMarket.json](Activities/05-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/MartianMarket.json)
 
-* [MartianAuction.json](Activities/08-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/MartianAuction.json)
+* [MartianAuction.json](Activities/05-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/MartianAuction.json)
 
 Ensure the following:
 
