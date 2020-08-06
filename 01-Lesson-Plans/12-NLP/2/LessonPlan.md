@@ -4,9 +4,9 @@
 
 ### Overview
 
-Today's class will introduce students to **sentiment analysis**, one of the most popular applications of natural language processing (NLP). Normally sentiment analysis is related to marketing, however it's receiving big attention on FinTech because of its huge spectrum of applications ranging from customer service, competition benchmarking, investment assistance, and news and social media analysis.
+Today's class will introduce students to sentiment analysis, one of the most popular applications of natural language processing (NLP). While sentiment analysis is normally tied to marketing, it has received major attention in FinTech due to its wide array of applications, which range from customer service, competition benchmarking, investment assistance, to news and social media analysis.
 
-In this lesson, students will gain practical experience using the `NLTK` Python library and the **IBM Tone Analyzer** cloud service to analyze sentiments on news feeds.
+In this lesson, students will gain practical experience using the `NLTK` Python library and the IBM Tone Analyzer cloud service to analyze sentiments on news feeds.
 
 ### Class Objectives
 
@@ -20,19 +20,19 @@ By the end of the class, students will be able to:
 
 * Apply natural language processing through `NLTK` and `VADER` to classify news sentiment as positive, negative, or neutral.
 
-* Conduct tone analysis using the **IBM Tone Analyzer** cloud service.
+* Conduct tone analysis using the IBM Tone Analyzer cloud service.
 
 ### Instructor Notes
 
-* Slack out the [Create and Activate an AWS Account Guide](../../13-AWS-Cloud/Supplemental/1-Create-and-Activate-an-AWS-Account.md). Tell students to complete the AWS account creation and verify it with a TA before the end of the next class. This should help catch account creation issues outside class time.
+* Slack out the [Create and Activate an AWS Account Guide](../../13-AWS-Cloud/Supplemental/1-Create-and-Activate-an-AWS-Account.md). Tell students to complete the AWS account creation and verify it with a TA before the end of the next class. This should help catch account creation issues outside of class time.
 
-* Sentiment analysis is a wide area that has a broad range of tools; this class will cover only a gentle introduction to sentiment analysis fundamentals.
+* Sentiment analysis is a wide area with a broad range of tools; this class will serve as a brief introduction to sentiment analysis fundamentals.
 
-* This lesson includes the use and demonstration of the [News API](https://newsapi.org/), a free API for developers that retrieves metadata for headlines and news. This service requires user registration. The process is quite easy, but have your TAs assist students during the instructor demo activity to be sure students get their API keys.
+* Today's lesson includes the use and demonstration of the [News API](https://newsapi.org/), a free API for developers that retrieves metadata for headlines and news, which requires user registration. While the process is quite easy, have your TAs assist students during the instructor demo activity to ensure students get their API keys.
 
-* Students will use the **IBM Tone Analyzer** cloud service in this class. The registration process could be time-consuming, so be sure to get familiar with the process on your own before class to assist students on the process.
+* Students will use the IBM Tone Analyzer cloud service in this class. Registration may be time consuming, so be sure to get familiar with the process on your own before class, so you can assist students as needed.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
+* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
 
@@ -44,7 +44,7 @@ By the end of the class, students will be able to:
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy."
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy..."
 
 * The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
