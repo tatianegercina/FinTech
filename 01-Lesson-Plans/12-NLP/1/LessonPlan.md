@@ -208,7 +208,7 @@ for story in sentence_tokenized:
 
 ### 6. Instructor Do: Stopwords (10 min)
 
-This activity introduces the concept and implementation of stopwords. These are words that, for analysis purposes, do not have informational content.
+This activity introduces the concept and implementation of stopwords. These are words that, for purpose of analysis, do not have informational content.
 
 **Files:**
 
