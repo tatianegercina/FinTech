@@ -20,7 +20,7 @@ By the end of the class, students will be able to:
 
 * Understand and be able to implement the NLP workflow.
 
-* Demonstrate an ability to tokenize texts into sentences and words, including handling punctuations and non-alphabetic characters gracefully.
+* Demonstrate an ability to tokenize texts into sentences and words, including handling punctuation and non-alphabetic characters gracefully.
 
 * Implement lemmatization and stopwording with the understanding of pros and cons of various choices.
 
