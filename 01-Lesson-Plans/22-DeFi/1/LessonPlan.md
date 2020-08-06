@@ -92,6 +92,8 @@ Now that the class has been refreshed on fungibility set the stage for today's l
 
 ### 2. Instructor Do: ERC721 Non-Fungible Tokens and Events (15 min)
 
+**Corresponding Activity:** [01-Ins_ERC721_Non-Fungible_Tokens_and_Events](Activities/01-Ins_ERC721_Non-Fungible_Tokens_and_Events)
+
 In this activity, the class will be reintroduced to the ERC721 standard, review fungible vs. non-fungible, and demonstrate implementing ERC721 using OpenZeppelin. You will explain the concept of events in solidity and demonstrate defining new events (appraisal, etc.) and associating them with unique ERC721 tokens.
 
 **Files:**
@@ -271,6 +273,8 @@ This is coming from the OpenZeppelin library and is safe to ignore.
 
 ### 3. Students Do: Building the CryptoFax Car Token (20 min)
 
+**Corresponding Activity:** [02-Stu_Building_CryptoFax_Car_Token](Activities/02-Stu_Building_CryptoFax_Car_Token)
+
 In this activity, students will implement a non-fungible car token containing an immutable vehicle history using the ERC721 OpenZeppelin contract. This contract will require them to apply their knowledge of SafeMath counters, structs, and events.
 
 **Instructions:**
@@ -406,6 +410,8 @@ Return to the slides and discuss the following review questions with the class:
     * **Answer**: A token that represents a certification that a person has earned.
 
 ### 5. Instructor Do: IPFS: The InterPlanetary File System (15 min)
+
+**Corresponding Activity:** [03-Ins_IPFS_The_InterPlanetary_File_System](Activities/03-Ins_IPFS_The_InterPlanetary_File_System)
 
 In this activity, students are introduced to the `IPFS` technology and how it can be used to store immutable, hash-based content-routed data. Students will see first hand that when combined with blockchain, IPFS can store large datasets with the same degree of integrity as on-chain data.
 
@@ -553,6 +559,8 @@ Congratulate them, that was a lot of new information to take in; then briefly in
 
 ### 6. Students Do: IPFS + Blockchain (15 min)
 
+**Corresponding Activity:** [04-Stu_IPFS_+_Blockchain](Activities/04-Stu_IPFS_+_Blockchain)
+
 In this activity, students will upload a Car TokenURI to IPFS via Pinata and link them to a transaction via their ERC721 contracts.
 
 **Instructions:**
@@ -604,6 +612,8 @@ Discuss the following review questions with the class about the general concepts
 ---
 
 ### 9. Instructor Do: The Accident Report System (15 min) (Critical)
+
+**Corresponding Activity:** [05-Ins_Filters_Web3_IPFS](Activities/05-Ins_Filters_Web3_IPFS)
 
 Now that students understand that IPFS is a content-routed system that works against hashes instead of IP addresses, it's time to put the systems together to make an Accident Report System.
 
@@ -944,6 +954,8 @@ python accident.py get 1
 Voila! A complete vehicle accident report system that permanently stores accident reports to the blockchain and IPFS. Now it's time for the students to build the same system.
 
 ### 10. Students Do: Building the Accident Report System (20 min)
+
+**Corresponding Activity:** [06-Stu_Accident_Report_System](Activities/06-Stu_Accident_Report_System)
 
 In this activity, students will build the same Accident Report System, leveraging IPFS and event filters.
 
