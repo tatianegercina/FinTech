@@ -80,6 +80,8 @@ Ask for any remaining questions before moving along.
 
 ### 3. Instructor Do: Globally Available Variables and Attributes in Solidity (10 min)
 
+**Corresponding Activity:** [01-Ins_Global_Attributes](Activities/01-Ins_Global_Attributes)
+
 In this activity, we will cover some globally available attributes and variables in Solidity, such as `block` and `msg` in order to save the details of who last withdrew, when, and how much was withdrawn. We'll also add the ability to save the same details, but for deposits.
 
 **Files:**
@@ -248,6 +250,8 @@ Great! Now it's time for the students to modify their contracts and add some mor
 
 ### 4. Students Do: Using Global Variables (10 min)
 
+**Corresponding Activity:** [02-Stu_Global_Variables](Activities/02-Stu_Global_Variables)
+
 In this activity, students will be adding the same details using `msg` and `block` variables in their contracts.
 
 **Instructions:**
@@ -291,6 +295,8 @@ Ask for further questions before moving on.
 ---
 
 ### 6. Instructor Do: Telling time in Solidity (10 min)
+
+**Corresponding Activity:** [03-Ins_Time_Solidity](Activities/03-Ins_Time_Solidity)
 
 In this activity, we'll be adding a bit more logic to create a withdraw threshold.
 
@@ -417,6 +423,8 @@ Now it's time for the students to create the timelock!
 
 ### 7. Students Do: Creating a Timelock (10 min)
 
+**Corresponding Activity:** [04-Stu_Timelock](Activities/04-Stu_Timelock)
+
 In this activity, students will add the same timelock to their `JointSavings` contracts.
 
 **Instructions:**
@@ -481,6 +489,8 @@ Have students navigate back to their [Remix IDE](https://remix.ethereum.org) and
 
 ### 11. Instructor Do: Adding a Withdraw Threshold (10 min)
 
+**Corresponding Activity:** [05-Ins_Adding_Withdraw_Threshold](Activities/05-Ins_Adding_Withdraw_Threshold)
+
 In this activity, we will add a simple `if` statement that checks if we are withdrawing over 1/3 of the balance, and updates the timelock if over that threshold.
 
 * We are going to add a threshold that triggers this timelock only when we withdraw over a third of the balance. We will still allow the withdraw, but further withdrawals will be locked for 24 hours after that.
@@ -521,6 +531,8 @@ Now, have the students add the same threshold to their contracts!
 
 ### 12. Students Do: Adding the Withdraw Threshold (10 min)
 
+**Corresponding Activity:** [06-Stu_Threshold](Activities/06-Stu_Threshold)
+
 In this activity, students will follow the same steps to add the threshold to their withdraw function's timelock.
 
 **Instructions:**
@@ -552,6 +564,8 @@ Ask for any remaining questions before moving on.
 ---
 
 ### 14. Instructor Do: Intro to Constructors (10 min) (Critical)
+
+**Corresponding Activity:** [07-Ins_Constructors](Activities/06-Stu_Threshold)
 
 In this activity, we will be removing hardcoded address values and setting them in a `constructor` function instead.
 
@@ -609,6 +623,8 @@ Now it's time for the students to add their constructors!
 
 ### 15. Students Do: Adding a Constructor to the contract (15 min)
 
+**Corresponding Activity:** [08-Stu_Adding_Constructor](Activities/08-Stu_Adding_Constructor)
+
 In this activity, students will replace their hardcoded values with a constructor in order to make their contracts
 reusable and more production-ready.
 
@@ -662,6 +678,8 @@ Ask for any remaining questions before moving on.
 
 ### 17. Everyone Do: Deploying and Testing the Contract (15 min) (Critical)
 
+**Corresponding Activity:** [09-Ins_Deploying_Testing](Activities/09-Ins_Deploying_Testing)
+
 In this activity, you will have the class follow along and deploy the current contract, setting the account owners in the
 constructor in the deployment tab of Remix.
 
@@ -669,9 +687,9 @@ Ensure that everyone has the same contract setup that looks just like the soluti
 
 **Files:**
 
-* [Solved - JointSavings.sol](Activities/09-Ins_Deploying_Testing/Solved/JointSavings.sol)
+* [Solved - JointSavings.sol (With fakenow)](Activities/09-Ins_Deploying_Testing/Solved/JointSavings.sol)
 
-* [Solved (Without fakenow)](Activities/17-Ins_Deploying_Testing/Solved/JointSavings.sol)
+* [Solved - JointSavings-FakenowRemoved.sol (Without fakenow)](Activities/09-Ins_Deploying_Testing/Solved/JointSavings-FakenowRemoved.sol)
 
 First, open up `Ganache` and ensure that your local network is running.
 
@@ -732,7 +750,7 @@ We can use [eth-converter.com](https://eth-converter.com) for easy conversion.
 
 Have students continue interacting with the various functions in their contracts.
 
-After everyone is satisfied with their contract logic, have students remove the `fakenow` trick and replace them with the proper `now`. Send out the [final contract](Activities/17-Ins_Deploying_Testing/Solved/JointSavings.sol) to the students for comparison.
+After everyone is satisfied with their contract logic, have students remove the `fakenow` trick and replace them with the proper `now`. Send out the [final contract](Activities/09-Ins_Deploying_Testing/Solved/JointSavings-FakenowRemoved.sol) to the students for comparison.
 
 Get the class excited, as they have just built a complex smart contract that can be deployed to any Ethereum network, building their own rules!
 
@@ -788,4 +806,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
