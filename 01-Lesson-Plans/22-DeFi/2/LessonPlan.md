@@ -66,6 +66,8 @@ During the previous class, students were introduced to the concept of DeFi (shor
 
 ### 2. Instructor Do: Building to a Smart Contract Specification (15 min)
 
+**Corresponding Activity:** [01-Ins_Building_to_a_Smart_Contract_Specification](Activities/01-Ins_Building_to_a_Smart_Contract_Specification)
+
 The instructor will discuss the process of breaking down the elements of a smart contract specification, such as it's interface, and how to turn it into functioning code. The EIP provides an example interface file for testing the contract linked below.
 
 **Files:**
@@ -546,6 +548,8 @@ On the last line inside the body of the `transferCopyrightOwnership` function `e
 
 ### 3. Student Do: Building to a Smart Contract Specification (15 min)
 
+**Corresponding Activity:** [02-Stu_Matching_a_Contract_Specification](Activities/02-Stu_Matching_a_Contract_Specification)
+
 In this activity, students will take a simple, smart contract specification, in this particular case, the ERC333 example contract specification and implement it.
 
 **Instructions:**
@@ -663,6 +667,8 @@ Ask the class the following review questions.
 
 ### 5. Instructor Do: Frontend Introduction (10 min)
 
+**Corresponding Activity:** [03-Ins_Integrating_Frontend_Intro](Activities/03-Ins_Integrating_Frontend_Intro)
+
 In this activity, you will demonstrate combining the `CryptoRight` contract with a pre-made frontend.
 
 **Files:**
@@ -759,6 +765,8 @@ Now it's time for students to integrate the frontend with their contracts!
 
 ### 6. Student Do: Integrating a Pre-Built Frontend (15 min)
 
+**Corresponding Activity:** [04-Stu_Integrating_Frontend](Activities/04-Stu_Integrating_Frontend)
+
 In this activity, students will integrate the same frontend code with their `CryptoRight` contracts, and upload a few sample copyrights using the interface.
 
 Send out the instructions and have TAs circulate the class.
@@ -800,6 +808,8 @@ Open the solution and explain the following:
 Ask for any remaining questions before moving on.
 
 ### 8. Instructor Do: Intro to Github Pages (10 min)
+
+**Corresponding Activity:** [05-Ins_Intro_Github_Pages](Activities/05-Ins_Intro_Github_Pages)
 
 In this activity, you will demonstrate the elegant but straightforward Github themes that GitHub Pages provides by creating a landing page for this dApp that explains its purpose and the technology it is written with and linking to the subfolder.
 
@@ -912,6 +922,8 @@ Click on the link that you generated to take you to your dApp, and ensure MetaMa
 Voila! Now it's time to have students create their own landing pages!
 
 ### 9. Students Do: Create a Landing Page with GitHub Pages (15 min)
+
+**Corresponding Activity:** [06-Stu_Github_Pages](Activities/06-Stu_Github_Pages)
 
 Now it's time for the students to create their own landing pages!
 
