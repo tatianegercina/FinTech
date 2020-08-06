@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's class is an opportunity for students to review and practice fundamental programming skills in Solidity through a series of code drills.
+This lesson is **Supplemental** it is not part of the regular lesson plan nor are you required to teach it, this lesson can be used as structured review during office hours or pushed to student facing repo. This lesson is an opportunity for students to review and practice fundamental programming skills in Solidity through a series of code drills.
 
 ### Instructor Notes
 
