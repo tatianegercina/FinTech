@@ -389,7 +389,7 @@ Open the lesson slides, move to the "N-Grams" section, and highlight the followi
 
 * Frequency analysis, at its simplest, is merely counting words and phrases. At the most basic level, the words that occur most often in a document (assuming they are not stopwords) will probably give you a good idea of what the document is about.
 
-* This applies to the corpus level, as well. _N-Grams_ are multiple word sequences—the `n` stands for the number of consecutive words (or tokens) that are included. So a bi-gram, for example, is two consecutive tokens strung together. We can think of creating n-grams as another way of tokenizing a document.
+* This applies to the corpus level, as well. _N-Grams_ are multiple word sequences—the `n` stands for the number of consecutive words (or tokens) that are included. So a bigram, for example, is two consecutive tokens strung together. We can think of creating n-grams as another way of tokenizing a document.
 
 * Using an n-gram can be helpful in identifying the multi-word expressions or phrases.
 
