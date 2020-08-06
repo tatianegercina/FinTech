@@ -84,7 +84,7 @@ Hopefully, your students are excited and ready to dive into the content at this 
 
 ### 2. Instructor Do: Intro to NLP (10 min)
 
-Open the slides, [NAVIGATE TO SECTION X], and hit the following talking points. Pause after each slide for questions.
+Open the slides, navigate to the "Intro to NLP" section, and hit the following talking points. Pause after each slide for questions.
 
 * Our objectives today are focused on preprocessing—the stage of the NLP workflow when written documents are transformed into units of data that are more easily processed by a computer.
 
