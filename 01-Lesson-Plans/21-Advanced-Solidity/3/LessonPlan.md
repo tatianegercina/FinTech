@@ -163,6 +163,8 @@ Explain to the class that tokenomics still play a huge rule in `crowdsales`. Inv
 
 ### 3. Students Do: Crowdsale Exploration and Discussion (10 min)
 
+**Corresponding Activity:** [01-Stu_Crowdsale_Exploration_and_Discussion](Activities/01-Stu_Crowdsale_Exploration_and_Discussion)
+
 Students will be provided a list of crowdsales from which they will explore and research some of the most popular crowdsales in history.
 
 **Instructions:**
@@ -202,6 +204,8 @@ Discuss the following review questions with the class.
   * **Answer** Increased control over a crowdfunding platform; you essentially become the crowdfunding platform.
 
 ### 5. Instructor Do: Preparing a token for a Crowdsale (10 min)
+
+**Corresponding Activity:** [02-Ins_Preparing_a_token_for_a_Crowdsale](Activities/02-Ins_Preparing_a_token_for_a_Crowdsale)
 
 In this activity, students will be introduced to the ERC20Mintable contract from OpenZeppelin, and how they can use it to prepare a token that can work in a crowdsale.
 
@@ -326,6 +330,8 @@ In the next activity, the students will now be implementing their own `ERC20Mint
 
 ### 6. Students Do: ERC20 Mintable Token Design (10 min)
 
+**Corresponding Activity:** [03-Stu_ERC20Mintable_Token_Design](Activities/03-Stu_ERC20Mintable_Token_Design)
+
 In this activity, students will build a mintable ERC20 token and prepare it for a crowdsale.
 
 **Instructions:**
@@ -369,6 +375,8 @@ Review the previous activity with the class by discussing the following recall q
   * **Answer** To add dependencies to a function.
 
 ### 8. Instructor Do: OpenZeppelin Crowdsales (15 min) (Critical)
+
+**Corresponding Activity:** [04-Ins_Crowdsales](Activities/04-Ins_Crowdsales)
 
 In this activity, you will demonstrate OpenZeppelin's Crowdsale contract library by creating an `ArcadeTokenSale` and an `ArcadeTokenSaleDeployer` contract that will mint tokens automatically when users send Ether to the `ArcadeTokenSale`.
 
@@ -555,6 +563,8 @@ Now it's time for the students to make their own `ArcadeTokenSale`!
 
 ### 9. Students Do: Building an ArcadeTokenSale with OpenZeppelin (20 min)
 
+**Corresponding Activity:** [05-Stu_ArcadeTokenSale](Activities/05-Stu_ArcadeTokenSale)
+
 In this activity, students will be creating and deploying an `ArcadeTokenSale` contract with an `ArcadeTokenSaleDeployer` contract.
 
 Send the instructions to the students and have TAs circulate the class.
@@ -632,6 +642,8 @@ Ask the following recall questions:
 Explain to the students that for the rest of the class, we will be examining the security of the crowdsale we just built, and learning about the common vulnerabilities that smart contract developers should avoid.
 
 ### 13. Instructor Do: Solidity Security (15 min) (Critical)
+
+**Corresponding Activity:** [06-Ins_Security](Activities/06-Ins_Security)
 
 In this activity, you will demonstrate how to analyze, identify and fix common security vulnerabilities in Solidity contracts. Download the example contract, open the [Remix IDE](https://remix.ethereum.org), and explain the following.
 
@@ -788,6 +800,8 @@ Now it's time for the students to analyze some contracts of their own. Let them 
 
 ### 14. Students Do: Bug Hunt - Identifying Common Vulnerabilities (15 min)
 
+**Corresponding Activity:** [07-Stu_Identifying_Common_Vulnerabilities](Activities/07-Stu_Identifying_Common_Vulnerabilities)
+
 In this activity, students will spend the time looking through a vulnerable smart contract to identify various vulnerabilities.
 
 Send out the instructions and have TAs circulate the class.
@@ -825,6 +839,8 @@ Now that students have analyzed and fixed their contracts, it's time for them to
 In the next activity students will take a look at some of the registries containing common smart contract vulnerabilities where tools like MythX pull their data from.
 
 ### 16. Students Do: Exploring Common Smart Contract Vulnerabilities (SWCs) (10 min)
+
+**Corresponding Activity:** [08-Stu_SWC_Exploration](Activities/08-Stu_SWC_Exploration)
 
 In this activity, students will use the remaining time to explore the most common smart contract vulnerabilities by checking out the [SWC Registry](https://swcregistry.io/) and the [SWC Coverage](https://mythx.io/swc-coverage/) that MythX supports.
 
@@ -872,4 +888,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
