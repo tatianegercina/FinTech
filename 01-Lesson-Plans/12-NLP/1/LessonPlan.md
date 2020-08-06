@@ -94,7 +94,7 @@ Open the slides, navigate to the "Intro to NLP" section, and hit the following t
 
 * The NLP workflow is characterized by four steps: preprocessing, extraction, analysis, and representation. It's not unlike a typical machine learning workflow for any type of data. However, unstructured text data can take much more work to get into usable form than structured, numerical data.
 
-Ask students if they have any questions about NLP in general, or the direction of today's class. If not, it's time to move on to the first topic: tokenization.
+Ask students if they have any questions about NLP in general, or the direction of today's class. If not, it's time to move on to the next topic: tokenization.
 
 ---
 
