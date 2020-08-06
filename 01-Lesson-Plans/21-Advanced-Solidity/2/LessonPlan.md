@@ -131,13 +131,13 @@ Remind the students that we have already discussed many examples of `fungible` t
 
 ### 3. Students Do: Use Case Thought Experiment (15 min)
 
-**Corresponding Activity:** [01_Stu_Use_Case_Thought_Experiment](Activities/01_Stu_Use_Case_Thought_Experiment)
+**Corresponding Activity:** [01-Stu_Use_Case_Thought_Experiment](Activities/01-Stu_Use_Case_Thought_Experiment)
 
 In this activity, students will break into groups of 3 - 5 people and brainstorm ways to leverage fungible and non-fungible tokens.
 
 **Instructions:**
 
-* [README.md](Activities/01_Stu_Use_Case_Thought_Experiment/README.md)
+* [README.md](Activities/01-Stu_Use_Case_Thought_Experiment/README.md)
 
 ### 4. Instructor Do: Fungible vs. Non-Fungible Review (10 min)
 
@@ -213,14 +213,14 @@ Core EIPs follow a slightly different process from the rest of the EIP categorie
 
 ### 6. Students Do: ERC Standards Exploration (15 min)
 
-**Corresponding Activity:** [02_Stu_ERC_Standards_Exploration](Activities/02_Stu_ERC_Standards_Exploration)
+**Corresponding Activity:** [02-Stu_ERC_Standards_Exploration](Activities/02-Stu_ERC_Standards_Exploration)
 
 In this activity, students will be exploring the various ERC standards that are currently being developed, and that have been accepted as final.
 
 Send out the instructions and have TAs circulate the class.
 **Instructions:**
 
-* [README.md](Activities/02_Stu_ERC_Standards_Exploration/README.md)
+* [README.md](Activities/02-Stu_ERC_Standards_Exploration/README.md)
 
 Explain to the students:
 
