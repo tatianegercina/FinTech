@@ -52,15 +52,15 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Intro to Sentiment Analysis (10 min)
 
-Welcome students to the second day on NLP, this lesson will introduce the fundamentals of **sentiment analysis**, one of the most popular and growing areas of NLP where there are some new tools almost every day. Beyond the buzz, on this initial lecture, students will learn what sentiment analysis is as well as how a computer can understand people's feelings.
+Welcome students to Day 2 of the unit on NLP! This lesson will introduce the fundamentals of sentiment analysis, one of the most popular and quickly growing areas within NLP. Beyond all the bells and whistles, students will learn the fundamentals of sentiment analysis, as well as how a computer can understand people's feelings.
 
-Follow the _Intro to Sentiment Analysis_ section on lesson slides by highlighting the following points:
+Go to the slideshow, navigate to the "Intro to Sentiment Analysis" section, and highlight the following points:
 
-* Sentiment analysis is part of NLP. Despite it being quite popular in marketing, it has several applications on FinTech.
+* Sentiment analysis is part of NLP. Despite it being quite popular in marketing, it has several applications in FinTech.
 
-* Sentiment analysis is a growing area, so some students could have experience with it or have heard about tools to analyze sentiments from social media and other texts. This lesson will introduce the foundations that will allow students to understand how sentiment analysis works so they will be able to choose the tools that best fit their analysis purposes.
+* Sentiment analysis is a growing area, so some students may have experience with it, or have heard about tools to analyze sentiments from social media and other texts. This lesson will help students understand how sentiment analysis works, so they can choose the tools that best fit their analysis purposes.
 
-* Sentiment analysis is not infallible, so take the last three or four minutes of the presentation to discuss with students how sentiment analysis is used in FinTech and the challenges of this NLP area.
+* Sentiment analysis is not infallible, so save the last few minutes of the presentation to discuss how sentiment analysis is used in FinTech and the challenges of this NLP area.
 
 ---
 
