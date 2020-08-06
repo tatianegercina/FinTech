@@ -131,11 +131,13 @@ Remind the students that we have already discussed many examples of `fungible` t
 
 ### 3. Students Do: Use Case Thought Experiment (15 min)
 
+**Corresponding Activity:** [01_Stu_Use_Case_Thought_Experiment](Activities/01_Stu_Use_Case_Thought_Experiment)
+
 In this activity, students will break into groups of 3 - 5 people and brainstorm ways to leverage fungible and non-fungible tokens.
 
 **Instructions:**
 
-* [README.md](Activities/02_Stu_Use_Case_Thought_Experiment/README.md)
+* [README.md](Activities/01_Stu_Use_Case_Thought_Experiment/README.md)
 
 ### 4. Instructor Do: Fungible vs. Non-Fungible Review (10 min)
 
@@ -211,12 +213,14 @@ Core EIPs follow a slightly different process from the rest of the EIP categorie
 
 ### 6. Students Do: ERC Standards Exploration (15 min)
 
+**Corresponding Activity:** [02_Stu_ERC_Standards_Exploration](Activities/02_Stu_ERC_Standards_Exploration)
+
 In this activity, students will be exploring the various ERC standards that are currently being developed, and that have been accepted as final.
 
 Send out the instructions and have TAs circulate the class.
 **Instructions:**
 
-* [README.md](Activities/03_Stu_ERC_Standards_Exploration/README.md)
+* [README.md](Activities/02_Stu_ERC_Standards_Exploration/README.md)
 
 Explain to the students:
 
@@ -280,11 +284,13 @@ Before the break, we discussed various ERC token standards and what the students
 
 ### 10. Instructor Do: OpenZeppelin's ERC Library (15 min) (Critical)
 
+**Corresponding Activity:** [03-Ins_OpenZeppelin_ERC20](Activities/03-Ins_OpenZeppelin_ERC20)
+
 In this activity, you will demonstrate the ERC20 contract provided by the OpenZeppelin library, and re-implement the ArcadeToken using the official ERC20 standard.
 
 **Files:**
 
-* [ArcadeTokenERC20.sol](Activities/04-Ins_OpenZeppelin_ERC20/Solved/ArcadeTokenERC20.sol)
+* [ArcadeTokenERC20.sol](Activities/03-Ins_OpenZeppelin_ERC20/Solved/ArcadeTokenERC20.sol)
 
 Explain why we are starting with ERC20 to the students:
 
@@ -474,17 +480,19 @@ Now it's time for the students to implement their own ERC20 tokens!
 
 ### 11. Students Do: Building an ERC20 Token with OpenZeppelin (20 min)
 
+**Corresponding Activity:** [04-Stu_ERC20](Activities/04-Stu_ERC20)
+
 In this activity, students will implement the ArcadeToken using the ERC20 standard, provided by the OpenZeppelin library.
 
 Send out the instructions and have TAs circulate the class.
 
 **Instructions:**
 
-* [README.md](Activities/05-Stu_ERC20/README.md)
+* [README.md](Activities/04-Stu_ERC20/README.md)
 
 **Files:**
 
-* [ArcadeTokenERC20.sol](Activities/05-Stu_ERC20/Unsolved/ArcadeTokenERC20.sol)
+* [ArcadeTokenERC20.sol](Activities/04-Stu_ERC20/Unsolved/ArcadeTokenERC20.sol)
 
 Ensure that students are properly passing parameters to the `ERC20Detailed` constructor and that they are properly using the `onlyOwner` modifier.
 
@@ -492,7 +500,7 @@ Ensure that students are properly passing parameters to the `ERC20Detailed` cons
 
 **Files:**
 
-* [ArcadeTokenERC20.sol](Activities/05-Stu_ERC20/Solved/ArcadeTokenERC20.sol)
+* [ArcadeTokenERC20.sol](Activities/04-Stu_ERC20/Solved/ArcadeTokenERC20.sol)
 
 Open the solution and explain the following:
 
@@ -508,11 +516,13 @@ Ask for any remaining questions before moving on.
 
 ### 13. Everyone Do: Deploying the token to a Testnet (10 min)
 
+**Corresponding Activity:** [05-Evr_Deploying_ERC20](Activities/05-Evr_Deploying_ERC20)
+
 In this activity, you will lead a code along, where the entire class will deploy their tokens to the Kovan testnet.
 
 **Files:**
 
-* [ArcadeTokenERC20.sol](Activities/06-Evr_Deploying_ERC20/Resources/ArcadeTokenERC20.sol)
+* [ArcadeTokenERC20.sol](Activities/05-Evr_Deploying_ERC20/Resources/ArcadeTokenERC20.sol)
 
 First, assign a number to every student in the class. This will be the number that they will append to their `symbol` as a way of quickly identifying which `ArcadeToken` was deployed by each student.
 
@@ -574,11 +584,13 @@ Now time for the exciting part, actually using our tokens!
 
 ### 14. Students Do: Sending and Receiving ERC20 tokens (15 min)
 
+**Corresponding Activity:** [06-Stu_Sending_Receiving_ERC20](Activities/06-Stu_Sending_Receiving_ERC20)
+
 In this activity, students will pair up and exchange each other's tokens on the testnet. They will also explore the transactions and the contract on the Etherscan block explorer, which provides more detail for ERC20-compliant smart contracts.
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Sending_Receiving_ERC20/README.md)
+* [README.md](Activities/06-Stu_Sending_Receiving_ERC20/README.md)
 
 Have TAs circulate the room and ensure that students can call their contract functions properly, and mint and transfer tokens to each other.
 
