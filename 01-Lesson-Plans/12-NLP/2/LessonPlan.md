@@ -66,17 +66,17 @@ Go to the slideshow, navigate to the "Intro to Sentiment Analysis" section, and 
 
 ### 2. Instructor Do: Listen to the FinTech (5 min)
 
-The purpose of this activity is to encourage students to have an open discussion led by the instructor about the applications they envision for sentiment analysis in the FinTech industry.
+This activity should encourage students to engage in an open, instructor-lead discussion about the applications they envision for sentiment analysis in FinTech.
 
-The introduction to sentiment analysis will offer some context to students about this area of NLP; follow lesson slides and facilitate an open discussion, asking the following questions:
+The introduction to sentiment analysis will offer some context to students about this area of NLP. Go to the slideshow, navigate to the "Listen to the FinTech" section, and facilitate an open discussion, asking the following questions:
 
 * Can a stock feel sadness if it opens with losses today?
 
-  * **Answer:** A stock cannot have feelings, but we can use sentiment analysis to understand the sentiments expressed about a stock in news headlines to support investment decisions.
+  * **Answer:** While a stock doesn't have feelings, we can use sentiment analysis to understand the sentiments expressed about a stock in news headlines to support investment decisions.
 
 * Is it possible for your bank account to suggest a travel destination based on your tweets from last year?
 
-  * **Answer:** If you allow your bank to follow you on Twitter, it's possible it can score the sentiment of your tweets, even the tone you express in your posts. Your bank can give you some travel recommendations to boost your mood for the weekend or to spend some time with your family if it seems you were tweeting too much about how angry you were in the last months.
+  * **Answer:** If you let your bank follow you on Twitter, it's possible that it could score the sentiment of your tweets, including the tone expressed in your posts. Your bank could also give you some travel recommendations to boost your mood, or even suggest that you spend time with your family if you were tweeting about how angry you were feeling recently.
 
 * Can an auction website prevent fraud by analyzing the conversation between a potential buyer and a dealer?
 
@@ -84,7 +84,7 @@ The introduction to sentiment analysis will offer some context to students about
 
 * What about your privacy in this sentiment analysis revolution?
 
-  * **Answer:** This is definitely a major concern, you should have consent from people to analyze the sentiment of their written communications and a storage and security infrastructure in compliance with user privacy regulations.
+  * **Answer:** This is definitely a major concern. Companies should get consent from people to analyze the sentiment of their written communications, and a storage and security infrastructure in compliance with user privacy regulations.
 
 This activity looks to challenge students to think outside of the box and encourages them to dream about future applications of sentiment analysis in FinTech.
 
