@@ -793,4 +793,4 @@ and [SAMPLE_3.md](Activities/09-Stu_Compare_README/Resources/sample_3/README.md)
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
