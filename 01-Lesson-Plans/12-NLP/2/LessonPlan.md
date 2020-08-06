@@ -94,11 +94,11 @@ This activity looks to challenge students to think outside of the box and encour
 
 This activity introduces term relevance from the perspective of TF–IDF (term frequency-inversee document frequency). Also, students will learn how TF–IDF can be implemented using `sklearn`.
 
-Do not invest to much time on the TF–IDF formulas, just explain how they work in general and invest a little more time on the rationale behind these measures and their implementation using `sklearn`.
+Do not invest too much time on the TF–IDF formulas, just explain how they work in general and invest a little more time on the rationale behind these measures and their implementation using `sklearn`.
 
 * [01_Ins_Terms_Relevance.ipynb](Activities/01-Ins_Terms_Relevance/Solved/terms_relevance.ipynb)
 
-Open the lesson slides and move to the **Terms Relevance (Understanding TF–IDF)** section, highlighting the following points:
+Open the lesson slides, navigate to the "Terms Relevance (Understanding TF–IDF)" section, and highlight the following:
 
 * In a world of words, analyzing text can be confusing because of speech's complexity. That is why measuring term relevance is useful—it offers a way to understand how important a word is to a document in a collection of documents or a corpus.
 
