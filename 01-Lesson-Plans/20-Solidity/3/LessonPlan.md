@@ -687,9 +687,9 @@ Ensure that everyone has the same contract setup that looks just like the soluti
 
 **Files:**
 
-* [Solved - JointSavings.sol](Activities/09-Ins_Deploying_Testing/Solved/JointSavings.sol)
+* [Solved - JointSavings.sol (With fakenow)](Activities/09-Ins_Deploying_Testing/Solved/JointSavings.sol)
 
-* [Solved (Without fakenow)](Activities/17-Ins_Deploying_Testing/Solved/JointSavings.sol)
+* [Solved - JointSavings-FakenowRemoved.sol (Without fakenow)](Activities/09-Ins_Deploying_Testing/Solved/JointSavings-FakenowRemoved.sol)
 
 First, open up `Ganache` and ensure that your local network is running.
 
@@ -750,7 +750,7 @@ We can use [eth-converter.com](https://eth-converter.com) for easy conversion.
 
 Have students continue interacting with the various functions in their contracts.
 
-After everyone is satisfied with their contract logic, have students remove the `fakenow` trick and replace them with the proper `now`. Send out the [final contract](Activities/17-Ins_Deploying_Testing/Solved/JointSavings.sol) to the students for comparison.
+After everyone is satisfied with their contract logic, have students remove the `fakenow` trick and replace them with the proper `now`. Send out the [final contract](Activities/09-Ins_Deploying_Testing/Solved/JointSavings-FakenowRemoved.sol) to the students for comparison.
 
 Get the class excited, as they have just built a complex smart contract that can be deployed to any Ethereum network, building their own rules!
 
