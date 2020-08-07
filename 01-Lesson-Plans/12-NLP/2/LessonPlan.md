@@ -907,9 +907,9 @@ Inform students that they will use this cloud service in the next class. Slack o
 
 ### 14. Instructor Do: Recap (10 min)
 
-Take a moment to congratulate the students on wrapping up a really fun and intense week of natural language processing. Remind them that NLP and, in particular, sentiment analysis have a lot of interesting applications in FinTech, such as market prediction or product benchmarking.
+Take a moment to congratulate students on wrapping up a really fun and intense week of natural language processing. Remind them that NLP, and sentiment analysis in particular, have many interesting applications in FinTech, such as market prediction and product benchmarking.
 
-Recap by asking students to summarize with one word or a three-word phrase what they learned today. Ask for volunteers, and then eventually go round-robin if necessary.
+Recap by challenging students to summarize in a three-word phrase or less, what they learned today. Ask for volunteers, and then go round-robin if necessary.
 
 **Answer:** Finance has emotions
 
@@ -921,9 +921,9 @@ Recap by asking students to summarize with one word or a three-word phrase what 
 
 **Answer:** Sentiments visualization
 
-Emphasize to students how they used some of the skills they already master to work on today's activities; sentiment analysis is a multidisciplinary area that requires not only algorithms to score sentiments of human speech, but also data cleaning and meaningful data visualizations to present results and share insights.
+Emphasize to students how they used some skills they've already mastered to work on today's activities. Sentiment analysis is a multidisciplinary area that requires not only algorithms to score sentiments of human speech, but also data cleaning and meaningful data visualizations to present results and share insights.
 
-Explain that NLP and sentiment analysis is still a cutting-edge research area. In particular, new deep-learning techniques such as recurrent neural networks have transformed NLP and pushed it toward what we only imaged before as science fiction. Encourage students to keep learning and trying new libraries and technologies as this specialization of machine learning continues to expand.
+Explain that NLP and sentiment analysis is still a cutting-edge research area. New deep-learning techniques, such as recurrent neural networks, have transformed NLP and pushed it into the realms of what was previously thought of as science fiction. Encourage students to keep learning and trying new libraries and technologies, as this specialization of machine learning continues to expand.
 
 ### END CLASS
 
