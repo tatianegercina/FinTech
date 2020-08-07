@@ -127,11 +127,13 @@ Use the `evaluate()` method of the model using the testing data.
 
 #### Plotting Predicted Vs. Real Prices
 
-* Create a Pandas DataFrame with two columns as follows to plot the predicted vs. the actual gold prices.
+Create a Pandas DataFrame with an index and two columns as follows to plot the predicted vs. the actual gold prices.
 
-  * Column 1: Actual prices (testing data)
+* Index: The datetime index from the DataFrame created previously. 
 
-  * Column 2: Predicted prices
+* Column 1: Actual prices (testing data)
+
+* Column 2: Predicted prices
 
 * Your DataFrame should look like the sample below:
 
