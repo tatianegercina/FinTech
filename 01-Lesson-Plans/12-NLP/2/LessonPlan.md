@@ -196,7 +196,7 @@ If there is time, ask the class what they think about the numbers identified as 
 
 ### 4. Student Do: Bossy Words (20 min)
 
-In this activity, students will use the knowledge from previous lessons to create a word cloud based on TF–IDF weights. The main objective of this activity is to let students see the differences between term relevance and term occurrence in word clouds.
+In this activity, students will use their knowledge from previous lessons to create a word cloud based on TF–IDF weights. The main objective of this activity is to let students see the differences between term relevance and term occurrence in word clouds.
 
 **Instructions:**
 
@@ -247,7 +247,7 @@ Open the [solution](Activities/02-Stu_Bossy_Words/Solved/bossy_words.ipynb) and 
   )
   ```
 
-* In the challenge section, the most tricky part could be to code the search by any of the terms passed as a parameter. The clue is to use the [`any()` function](https://stackoverflow.com/a/16505590/4325668) in the condition of the `found_terms` comprehension list, as explained on [this article](https://stackoverflow.com/a/25102099/4325668).
+* In the challenge section, the most tricky part could be to code the search by any of the terms passed as a parameter. The clue is to use the [`any()` function](https://stackoverflow.com/a/16505590/4325668) in the condition of the `found_terms` comprehension list, as explained in [this article](https://stackoverflow.com/a/25102099/4325668).
 
   ```python
   def retrieve_docs(terms):
@@ -277,7 +277,7 @@ In this activity, students will learn how to retrieve news articles from the [Ne
 
 Explain to students that there are several ways to retrieve data for sentiment analysis, such as web scraping, manual corpus creation from document digitization, document transformations (e.g., from PDF, word processors, or spreadsheets to raw text) and using APIs. Among these data-retrieval mechanisms, APIs is one of the most used, so in this activity, students will learn how to retrieve news articles using the [News API](https://newsapi.org/) and its [Python library](https://newsapi.org/docs/client-libraries/python).
 
-Open the [News API](https://newsapi.org/) website and explain that it's an easy-to-use API that returns JSON metadata for headlines and articles that are live all over the web right now, so the results retrieved at this moment could be different from the results retrieved in 20 minutes.
+Open the [News API](https://newsapi.org/) website, and explain that it is an easy-to-use API that returns JSON metadata for headlines and articles that are live on the web, so results retrieved at this moment could be different from results retrieved in 20 minutes.
 
 Slack out the News API web address to students (https://newsapi.org/) and ask them to create an account by clicking on the "Get API Key" button on the upper right corner.
 
@@ -285,14 +285,14 @@ Slack out the News API web address to students (https://newsapi.org/) and ask th
 
 Guide students on the account process creation by following these steps:
 
-* On the registration form, the "I am an individual" option should be selected to create a free developer account. It is also important to select the last two checkboxes since this is a free service.
+* On the registration form, the "I am an individual" option should be selected to create a free developer account. It is also important to select the last two checkboxes, since this is a free service.
   ![News API registration form](Images/news_api_registration_form.png)
 
 * Once the account is created, the API key is shown on [the Account page](https://newsapi.org/account).
 
   ![News API account page](Images/news_api_account_details.png)
 
-Ask students to create an environment variable called `news_api` by adding their API key to the `keys.sh` script and executing it on the terminal window as they did on the APIs unit.
+Ask students to create an environment variable called `news_api` by adding their API key to the `keys.sh` script and executing it on the terminal window as they did in the APIs unit.
 
 You are almost ready to code! Before starting the demo, ask students to install the [News API Python library](https://newsapi.org/docs/client-libraries/python) on their virtual environment by executing the following command.
 
@@ -317,10 +317,12 @@ Open [the unsolved Jupyter notebook](Activities/03-Ins_Sentiment_Analysis_Data/U
 Switch to [the News API documentation](https://newsapi.org/docs/endpoints) and explain that there are three different endpoints. Encourage students to review the API documentation to learn more about all the different request parameters they have available:
 
 * Top Headlines: Returns breaking news headlines; the most relevant request parameters are `q` for the search terms, `language` and `country`.
+
 * Everything: Retrieves news and articles from over 30,000 different sources; the most relevant request parameters are `q` for the search terms, `language` and `sort_by`.
+
 * Sources: Returns information about the most important article sources that this service indexes.
 
-Switch back to the Jupyter notebook and mention to students that you will focus on using the Top Headlines and Everything endpoints, slack out the [News API Python Client Library reference page](https://newsapi.org/docs/client-libraries/python) and encourage them to learn more about this library and its options.
+Switch back to the Jupyter notebook and mention to students that you will focus on using the Top Headlines and Everything endpoints. Slack out the [News API Python Client Library reference page](https://newsapi.org/docs/client-libraries/python) and encourage them to learn more about this library and its options.
 
 Start the live-coding demo by highlighting the following:
 
@@ -346,7 +348,7 @@ Show students how they can create a DataFrame using the response Python dictiona
 
   ![Creating a DataFrame from the response python dictionary](Images/news_api_df.png)
 
-Live code the `newsapi.get_everything()` demo by highlighting that it's also possible to send more than one keyword as search term, as with this example to fetch news about Facebook Libra using `q="facebook libra"` as a parameter:
+Live code the `newsapi.get_everything()` demo by highlighting that it's also possible to send more than one keyword as a search term, as with this example to fetch news about Facebook Libra using `q="facebook libra"` as a parameter:
 
 * Separating two keywords by a blank space is equivalent to use `q="facebook AND libra"`.
 
@@ -358,7 +360,7 @@ Live code the `newsapi.get_everything()` demo by highlighting that it's also pos
   )
   ```
 
-Answer any questions that arise and move to the next activity.
+Answer any questions that arise before moving on to the next activity.
 
 ---
 
