@@ -92,31 +92,33 @@ This activity looks to challenge students to think outside of the box and encour
 
 ### 3. Instructor Do: Terms Relevance (Understanding TF–IDF) (15 min)
 
-This activity introduces term relevance from the perspective of TF–IDF (term frequency-inversee document frequency). Also, students will learn how TF–IDF can be implemented using `sklearn`.
+This activity introduces terms relevance from the perspective of term frequency-inverse document frequency (TF–IDF). Also, students will learn how TF–IDF can be implemented using `sklearn`.
 
-Do not invest too much time on the TF–IDF formulas, just explain how they work in general and invest a little more time on the rationale behind these measures and their implementation using `sklearn`.
+**Note:** Do not invest too much time on the TF–IDF formulas. Just explain how they work in general, and invest a bit more time on the rationale behind these measures and their implementation using `sklearn`.
 
 * [01_Ins_Terms_Relevance.ipynb](Activities/01-Ins_Terms_Relevance/Solved/terms_relevance.ipynb)
 
 Open the lesson slides, navigate to the "Terms Relevance (Understanding TF–IDF)" section, and highlight the following:
 
-* In a world of words, analyzing text can be confusing because of speech's complexity. That is why measuring term relevance is useful—it offers a way to understand how important a word is to a document in a collection of documents or a corpus.
+* In a world of words, analyzing text can be confusing due to the complexity of language. That is why measuring term relevance is useful—it offers a way to understand how important a word is to a document in a collection of documents or a corpus.
+
+[[The following is a list/guide of ... ]]
 
 * A **corpus** (_corpora_ in plural) is a large, structured, and organized collection of text documents that normally focuses on a specific matter; there are monolingual or single-language corpora, and multilingual or multiple-language corpora.
 
 * **TF–IDF** is a weighting factor intended to measure how important a word is to a document in a corpus.
 
-* **TF** indicates that if a word appears multiple times in a document, it can be concluded that it is relevant and more meaningful than other words in the same text.
+* **TF** indicates that if a word appears multiple times in a document, it is deemed relevant and more meaningful than other words in the same text.
 
-* **IDF** comes to action when you are analyzing several documents. If a word also appears many times among a collection of documents, maybe it's just a frequent word and not a relevant one.
+* **IDF** comes into play when analyzing several documents. If a word also appears many times among a collection of documents, it could be a frequent word, and not necessarily a relevant one.
 
-* A high weight in TF–IDF is reached by terms with high TF and a low document frequency of the term in the corpus; normally these are more interesting terms to analyze.
+* A high weight in TF–IDF is reached by terms with a high TF and a low document frequency of the term in the corpus; these are often more interesting terms to analyze.
 
-* A low weight in TF–IDF is reached by terms with low TF and a high document frequency of the term in the corpus; normally these are quite common terms across the corpus that could be less interesting to analyze.
+* A low weight in TF–IDF is reached by terms with a low TF and a high document frequency of the term in the corpus; normally these are quite common terms across the corpus that could be less interesting to analyze.
 
 * The **bag-of-words model** is a technique in NLP to represent the important words or tokens in a document without worrying about sentence structure. A bag-of-words model can then be used to compare documents based on the number of important words that they share.
 
-After finishing the lecture slides, switch to the code demo and show how TF–IDF can be calculated with Python using the `sklearn` library; open the [Jupyter starter file](Activities/01-Ins_Terms_Relevance/Unsolved/terms_relevance.ipynb) and highlight the following points:
+After finishing the lecture slides for this section, switch to the code demo. Show how TF–IDF can be calculated with Python using the `sklearn` library; open the [Jupyter starter file](Activities/01-Ins_Terms_Relevance/Unsolved/terms_relevance.ipynb) and highlight the following points:
 
 * `nltk` and `nltk.corpus` are used to retrieve the [Reuters Corpus](https://www.nltk.org/book/ch02.html#reuters-corpus).
 
@@ -132,7 +134,7 @@ Continue the explanation by live coding the solution and highlight the following
 
 * The `reuters.fileids()` method retrieves a list with all a document's unique identifiers in the corpus.
 
-* After selecting a single document from the Reuters Corpus, an instance of the `CountVectorizer()` class is created. The `stop_words='english'` parameter will ignore all English-language stopwords when vectorizing the text.
+* After selecting a single document from the Reuters Corpus, an instance of the `CountVectorizer()` class is created. The `stop_words='english'` parameter will ignore all English language stopwords when vectorizing the text.
 
   ```python
   vectorizer = CountVectorizer(stop_words='english')
@@ -150,7 +152,9 @@ Continue the explanation by live coding the solution and highlight the following
   words = vectorizer.get_feature_names()
   ```
 
-When the `X` matrix is printed, you will notice that it contains raw data that shows the counting of each term represented by a tuple `(n, t)  c`; `t` is the term's numeric identifier, `n` refers to the _nth_ document where the term `t` was found, and `c` is the term's counting on the document `n`. Since we have only one document in this example, the first term is always `0`.
+When the `X` matrix is printed, you will notice that it contains raw data that shows the counting of each term represented by a tuple `(n, t)  c`; `t` is the term's numeric identifier, `n` refers to the _nth_ document where the term `t` was found, and `c` is the term's counting on the document `n`. 
+
+Since we have only one document in this example, the first term is always `0`.
   ![Raw term-document matrix data](Images/raw_bag_of_words.png)
 
 * A more human-readable version of the bag of words is created with the following DataFrame.
@@ -184,7 +188,7 @@ To calculate the TF–IDF, a set of 1,000 documents from the Reuters Corpus is u
 * Finally, a DataFrame is created for a human-readable TF–IDF matrix. The mean value of the TF–IDF is used to create the DataFrame.
   ![TF-IDF DataFrame](Images/tf_idf_df.png)
 
-Conclude the activity by presenting the highest and lowest ten TF–IDF scores. Explain that highest values normally represent less common and more interesting terms for analysis; they have a high term frequency in some documents and a low document frequency in the collection of documents.
+  Conclude the activity by presenting the 10 highest and lowest TF–IDF scores. Explain that highest values normally represent less common and more interesting terms for analysis; they have a high-term frequency in some documents and a low document frequency in the collection of documents.
 
 If there is time, ask the class what they think about the numbers identified as terms (tokens) by the algorithm. In fact, the importance of these terms resides in the context of the documents; for example, a year or an amount could be relevant if you are talking about a historical fact.
 
