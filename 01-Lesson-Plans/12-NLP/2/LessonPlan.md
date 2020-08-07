@@ -366,7 +366,7 @@ Answer any questions that arise before moving on to the next activity.
 
 ### 7. Student Do: The Voice of the Blockchain (15 min)
 
-In this activity, students will use the News API to retrieve news articles in English and French about blockchain in Canada for 2020. At the end of the activity, students will create a CSV file that will be used for coming activities.
+In this activity, students will use the News API to retrieve news articles in English and French about blockchain in Canada for 2020. At the end of the activity, students will create a CSV file that will be used for later activities.
 
 **Instructions:**
 
@@ -380,7 +380,7 @@ In this activity, students will use the News API to retrieve news articles in En
 
 ### 8. Instructor Do: Review The Voice of the Blockchain (5 min)
 
-Open the [solution](Activities/04-Stu_Blockchain_Voice/Solved/voice_blockchain.ipynb) and walk through the code, highlight the following:
+Open the [solution](Activities/04-Stu_Blockchain_Voice/Solved/voice_blockchain.ipynb) and walk through the code, highlighting the following:
 
 * As can be read on [the News API documentation for the `Everything` endpoint,](https://newsapi.org/docs/endpoints/everything) it is possible to use logical operators to include or exclude keywords.
   ![Documentation for the q parameter of the News API](Images/new_api_q_param.png)
@@ -401,13 +401,13 @@ Open the [solution](Activities/04-Stu_Blockchain_Voice/Solved/voice_blockchain.i
   )
   ```
 
-Review the code for the `create_df()` function highlighting the following:
+Review the code for the `create_df()` function, highlighting the following:
 
 * A list of dictionaries is used to create the DataFrame structure, so an empty list `articles` is created before starting the iteration across all the news articles.
 
 * A `for-loop` is used to iterate across the `news` list to fetch every article's data and to keep only the fields of interest.
 
-* A new element is appended to the list on every iteration with an additional key for the language.
+* A new element is appended to the list on every iteration, with an additional key for the language.
 
 * A `try-except` block is used to bypass any list-attribute error.
 
@@ -426,7 +426,7 @@ blockchain_fr_df = create_df(blockchain_news_fr["articles"], "fr")
 blockchain_df = pd.concat([blockchain_en_df, blockchain_fr_df])
 ```
 
-Get the `head()` an `tail()` of the DataFrame to show the news articles in both languages.
+Get the `head()` and `tail()` of the DataFrame to show the news articles in both languages.
 
 ![Sample news in English and French](Images/blockchain_news_df.png)
 
@@ -444,19 +444,19 @@ Answer any additional questions before moving to the next activity.
 
 ### 9. Instructor Do: Intro to VADER Sentiment (15 min)
 
-In this activity, students will understand how VADER sentiment works and how to interpret sentiment polarity; also students will learn how to score sentiment using the VADER module of NLTK.
+In this activity, students will understand how VADER sentiment works, and how to interpret sentiment polarity. Students will also learn how to score sentiment using the VADER module of NLTK.
 
 **Files:**
 
 * [vader_sentiment.ipynb](Activities/05-Ins_Vader_Sentiment/Solved/vader_sentiment.ipynb)
 
-Open the lesson slides, move to the Intro to VADER Sentiment section, and highlight the following:
+Open the lesson slides, move to the "Intro to VADER Sentiment" section, and highlight the following:
 
-* VADER (Valence Aware Dictionary and Sentiment Reasoner) is a tool used to score the sentiment of human speech as positive, neutral, or negative based on a set of rules and a [lexicon](https://dictionary.cambridge.org/dictionary/english/lexicon) (a list of words).
+* VADER (Valence Aware Dictionary and Sentiment Reasoner) is a tool used to score the sentiment of human speech as positive, neutral, or negative, based on a set of rules and a [lexicon](https://dictionary.cambridge.org/dictionary/english/lexicon) (a list of words).
 
 * VADER calculates the polarity of sentiment using its built-in rules and a predefined lexicon that was manually tagged as positive or negative according to semantic orientation.
 
-* VADER generates four scores for each analyzed text: positive (`pos`), neutral (`neu`), negative (`neg`) and `compound`.
+* VADER generates four scores for each analyzed text: positive (`pos`), neutral (`neu`), negative (`neg`), and `compound`.
 
 * The `pos`, `neu` and `neg` scores assess the sentiment from 0 to 1.
 
@@ -517,7 +517,7 @@ Answer any questions from the class before moving on.
 
 ### 11. Student Do: Blockchain Sentiment (20 min)
 
-In this activity, students will use VADER to score the sentiment of news titles and text to verify whether they have the same sentiment. This activity includes a facilitated discussion in the last four to five minutes to talk about students' findings.
+In this activity, students will use VADER to score the sentiment of news titles and text to verify whether they have the same sentiment. This last few minutes of this activity consists of a facilitated discussion to discuss students' findings.
 
 **Instructions:**
 
