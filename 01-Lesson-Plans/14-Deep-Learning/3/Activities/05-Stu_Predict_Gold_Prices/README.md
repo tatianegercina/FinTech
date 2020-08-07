@@ -107,6 +107,8 @@ Use the `evaluate()` method of the model using the testing data.
 
 * Create a Pandas DataFrame with two columns (as follows) to plot the predicted vs. actual gold prices.
 
+  * Index: Use the datetime index from your original DataFrame.
+
   * Column 1: Actual prices (testing data)
 
   * Column 2: Predicted prices
