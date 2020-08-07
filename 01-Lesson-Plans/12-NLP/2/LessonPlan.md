@@ -909,7 +909,7 @@ Inform students that they will use this cloud service in the next class. Slack o
 
 Take a moment to congratulate students on wrapping up a really fun and intense week of natural language processing. Remind them that NLP, and sentiment analysis in particular, have many interesting applications in FinTech, such as market prediction and product benchmarking.
 
-Recap by challenging students to summarize in a three-word phrase or less, what they learned today. Ask for volunteers, and then go round-robin if necessary.
+Recap by challenging students to summarize, in a three-word phrase or less, what they learned today. Ask for volunteers, and then go round-robin if necessary.
 
 **Answer:** Finance has emotions
 
