@@ -137,7 +137,7 @@ Create a Pandas DataFrame with an index and two columns as follows to plot the p
 
 * Your DataFrame should look like the sample below:
 
-  ![Sample actual vs. predicted gold prices](Images/sample-gold-prices-predictions-df.png)
+  ![Sample actual vs. predicted gold prices](Images/sample-gold-prices-predictions-df.PNG)
 
 * Use the `plot()` method from the DataFrame to create a line chart to contrast the actual vs. the predicted gold prices.
 
