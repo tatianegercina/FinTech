@@ -54,7 +54,7 @@ By the end of the class, students will be able to:
 
 Welcome students to Day 2 of the unit on NLP! This lesson will introduce the fundamentals of sentiment analysis, one of the most popular and quickly growing areas within NLP. Beyond all the bells and whistles, students will learn the fundamentals of sentiment analysis, as well as how a computer can understand people's feelings.
 
-Go to the slideshow, navigate to the "Intro to Sentiment Analysis" section, and highlight the following points:
+Go to the slideshow, navigate to the "Sentiment Analysis" section, and highlight the following points:
 
 * Sentiment analysis is part of NLP. Despite it being quite popular in marketing, it has several applications in FinTech.
 
