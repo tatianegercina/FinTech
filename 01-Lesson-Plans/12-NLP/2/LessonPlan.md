@@ -546,7 +546,7 @@ Open the solution and walk through the code, highlighting the following:
   news_df = pd.read_csv(file_path, encoding="utf-8-sig")
   ```
 
-* The VADER sentiment module is only trained to score sentiment in English, so a new DataFrame with only news in English is created. Students will learn how to score sentiment in multiple languages later.
+* The VADER sentiment module is only trained to score sentiment in English, so a new DataFrame limited to news in English is created. Students will learn how to score sentiment in multiple languages later.
 
   ```python
   news_en_df = news_df[news_df["language"] == "en"]
@@ -621,35 +621,37 @@ Answer any additional questions before moving to the next activity.
 
 ### 13. Instructor Do: Tone Analysis (20 min)
 
-In this activity, students will be introduced to tone analysis and how they can score the tone of human speech using the **IBM Watson Tone Analyzer service** and its Python library.
+In this activity, students will be introduced to tone analysis and how they can score the tone of human speech using the IBM Watson Tone Analyzer service and its Python library.
 
 **Files:**
 
 * [tone_analysis.ipynb](Activities/07-Ins_Tone_Analysis/Solved/tone_analysis.ipynb)
 
-Start by opening the lesson slides, go to the Tone Analysis section, and highlight the following:
+Start by opening the lesson slides, go to the "Tone Analysis" section, and highlight the following:
 
-* Tone analysis offers new possibilities for sentiment analysis since it goes beyond the simple classic classification as positive, negative or neutral and looks to understand human emotions.
+* Tone analysis offers new possibilities for sentiment analysis since it goes beyond the simple classic classification as positive, negative, or neutral, and looks to understand human emotions.
 
-* Tone analysis is a complex and costly task since it requires training algorithms with thousands of documents that need to be previously tagged to understand the emotion behind the words.
+* Tone analysis is a complex and costly task, since it requires training algorithms with thousands of documents that need to be previously tagged to understand the emotion behind the words.
 
 * IBM Watson Tone Analyzer is a cloud service to analyze tone on text communications. This service is available for English and French languages.
 
 * IBM Watson Tone Analyzer can be used via its Python API.
 
-After the brief definition of tone analysis and the intro to IBM Watson Tone Analyzer, slack out [the URL for this service](https://cloud.ibm.com/catalog/services/tone-analyzer) and guide students on creating their IBM Cloud account and setting up their Tone Analyzer instance. Ask TAs to assist students on creating their personal IBM Cloud account and follow the lesson slides as a guided tour by highlighting the following:
+After the brief definition of tone analysis and the intro to IBM Watson Tone Analyzer, slack out [the URL for this service](https://cloud.ibm.com/catalog/services/tone-analyzer) and guide students on creating their IBM Cloud account and setting up their Tone Analyzer instance. Ask TAs to assist students on creating their personal IBM Cloud accounts. 
 
-* Students will use the Lite plan of Tone Analyzer, it allows 2,500 API calls per month for free, and no credit card is required to use it.
+Navigate to the [XYZ section of the slideshow,] and highlight the following:
+
+* Students will use the Lite plan of Tone Analyzer, as no credit card is required to use it, and it allows 2,500 API calls per month for free.
 
 * Students only need to fill out their personal account information on the registration form.
 
   ![IBM Cloud registration form](Images/ibm_cloud_registration_form.png)
 
-* Students will receive an email and have to click on the "Confirm account" button to start using the Tone Analyzer service.
+* Students will then receive an email, and have to click on the "Confirm account" button to start using the Tone Analyzer service.
 
   ![IBM Cloud confirmation e-mail sample](Images/ibm_cloud_registration_form.png)
 
-* After the new IBM Cloud account is confirmed, students will see their dashboard. The "Create resource" button should be clicked to continue.
+* After the new IBM Cloud account is confirmed, students will see their dashboard. Click the "Create resource" button to continue.
 
   ![IBM Cloud dashboard](Images/ibm_cloud_dashboard.png)
 
@@ -665,21 +667,21 @@ Now that the Tone Analyzer instance is ready to use, ask students to get their A
 
   ![Tone Analyzer instance sample](Images/show_tone_analyzer_credentials.png)
 
-* Students will find their credentials under the section titled Step 1: Using the general-purpose endpoint via the POST request method.
+* Students will find their credentials under the section titled, Step 1: Using the general-purpose endpoint via the POST request method.
 
 * Students will see the API key and the instance URL as it's shown below. The URL can differ from the image, but it ends with `/api`.
 
   ![Tone Analyser credentials](Images/get_tone_analyzer_key.png)
 
-Ask students to create two environment variables, one for the API key and the other for the URL. Open the [unsolved Jupyter notebook](Activities/07-Ins_Tone_Analysis/Solved/tone_analysis.ipynb) and switch to the code demo, highlighting the following:
+Ask students to create two environment variables; one for the API key, and the other for the URL. Open the [unsolved Jupyter notebook](Activities/07-Ins_Tone_Analysis/Solved/tone_analysis.ipynb) and switch to the code demo, highlighting the following:
 
-* The IBM Watson Python library needs to be installed using `pip` as follows. This demo runs using version 3.
+* The IBM Watson Python library needs to be installed using `pip` as follows. This demo runs using Version 3.
 
   ```bash
   pip install --upgrade "ibm-watson>=3.0.3"
   ```
 
-* To use the Tone Analyzer service the following libraries should be imported.
+* To use the Tone Analyzer service, the following libraries should be imported.
 
   ```python
   from ibm_watson import ToneAnalyzerV3
@@ -688,7 +690,7 @@ Ask students to create two environment variables, one for the API key and the ot
 
 * `ToneAnalyzerV3` is the main library to access to the Tone Analyzer via Python.
 
-* `IAMAuthenticator` is used to authenticate your Python application to access the IBM cloud services.
+* `IAMAuthenticator` is used to authenticate the Python application to access the IBM cloud services.
 
 * The Tone Analyzer response is given in JSON format, so the [`json_normalize` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.io.json.json_normalize.html) is imported from Pandas to transform the JSON response to a DataFrame.
 
@@ -714,11 +716,11 @@ Ask students to create two environment variables, one for the API key and the ot
 
 * The IBM Watson Tone Analyzer has two main methods:
 
-  * `tone()`: The general tone analysis, aimed to score tone on short text (such as reviews, emails, or social media) or even larger texts (such as articles or blog post)
+  * `tone()`: The general tone analysis, aimed to score tone on short text (such as reviews, emails, or social media) or even larger texts (such as articles or blog posts).
 
-  * `tone_chat()`: The customer engagement tone analysis, designed to monitor customer service and support conversations based on utterances between an agent and a customer
+  * `tone_chat()`: The customer engagement tone analysis, designed to monitor customer service and support conversations based on utterances between an agent and a customer.
 
-The `tone()` method is presented first. Explain students that it only needs to receive a text to score, however, additional parameters could be used to define the `content_language` (only `en` for English or `fr` for `french` are available in the current version) or the `accept_language`, that is the language to be used for the name of tones.
+The `tone()` method is presented first. Tell students that it only needs to receive a text to score, however, additional parameters could be used to define the `content_language` (only `en` for `English` or `fr` for `French` are available in the current version) or the `accept_language`, that is, the language to be used for the name of tones.
 
 ```python
 # Define text to analyze
@@ -740,7 +742,7 @@ tone_analysis = tone_analyzer.tone(
 print(json.dumps(tone_analysis, indent=2))
 ```
 
-* On the `JSON` response, the tone is given for the entire document on the `document_tone` element as well as for each sentence of the document on the `sentences_tone` element.
+* On the `JSON` response, the tone is given for the entire document on the `document_tone` element, as well as for each sentence of the document on the `sentences_tone` element.
 
   ```json
   {
@@ -805,7 +807,7 @@ print(json.dumps(tone_analysis, indent=2))
 
   ![Sample document tone as DataFrame](Images/document_tone_df.png)
 
-Next, the `tone_chat()` method is presented. Explain to students that this method is intended to analyze tone from customer engagement conversations between an agent and a customer, where all the utterances are passed as parameter to score the tone of each one.
+Next, the `tone_chat()` method is presented. Explain to students that this method is intended to analyze tone from customer engagement conversations between an agent and a customer, where all the utterances are passed as parameters to score the tone of each one.
 
 ```python
 # Define conversational utterances
@@ -899,7 +901,7 @@ print(json.dumps(utterance_analysis, indent=2))
 
   ![Sample utterances tone](Images/char_tone_df.png)
 
-Inform students that they will use this cloud service in the next class. Slack out the Tone Analyzer docs for the [`tone()`](https://cloud.ibm.com/docs/services/tone-analyzer?topic=tone-analyzer-utgpe) and [`tone_chat()`](https://cloud.ibm.com/docs/services/tone-analyzer?topic=tone-analyzer-utco) methods, and close the activity by answering any remaining question.
+Inform students that they will use this cloud service in the next class. Slack out the Tone Analyzer docs for the [`tone()`](https://cloud.ibm.com/docs/services/tone-analyzer?topic=tone-analyzer-utgpe) and [`tone_chat()`](https://cloud.ibm.com/docs/services/tone-analyzer?topic=tone-analyzer-utco) methods, and close the activity by answering any remaining questions.
 
 ---
 
