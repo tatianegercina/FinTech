@@ -226,11 +226,11 @@ Having explained the general concepts, go over the code implementations of these
   from sklearn.metrics import mean_squared_error, r2_score
   import numpy as np
 
-  score = model.score(X_binary_encoded, y)
-  r2 = r2_score(y, predictions)
-  mse = mean_squared_error(y, predictions)
+  score = model.score(X, y, sample_weight=None)
+  r2 = r2_score(y, predicted_y_values)
+  mse = mean_squared_error(y, predicted_y_values)
   rmse = np.sqrt(mse)
-  np.std(y)
+  std = np.std(y)
   ```
 
 * After importing the pertinent `sklearn` modules, the R2, MSE, and RMSE are calculated.
@@ -239,13 +239,13 @@ Having explained the general concepts, go over the code implementations of these
 
 Explain that you can also compare the RMSE to the standard deviation to get a better feel for the model fit.
 
-* Ideally, the RMSE will not exceed the standard deviation of the temperature data.
+* Ideally, the RMSE will not exceed the standard deviation of the salary data.
 
-* The standard deviation of the temperature, calculated by `np.std()`, is 3.84.
+* The standard deviation of salaries, calculated by `np.std()`, is 26953.65.
 
-* The RMSE, or the standard deviation of the error, is 6.38.
+* The RMSE, or the standard deviation of the error, is 385592.04.
 
-* The RMSE exceeds the standard deviation, indicating that the model may not be very helpful. In other words, on average, there are wider swings in the error than the measured temperatures.
+* The RMSE exceeds the standard deviation, indicating that the model may not be very helpful. In other words, on average, there are wider swings in the error than the recorded salaries.
 
 - - -
 
