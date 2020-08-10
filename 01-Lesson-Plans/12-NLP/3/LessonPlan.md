@@ -8,7 +8,7 @@ This lesson introduces the concepts of part-of-speech (POS) tagging and named en
 
 ### Class Objectives
 
-By the end of the class, students will be able to:
+By the end of today's class, students will be able to:
 
 * Understand spaCy capabilities and where to find documentation.
 
@@ -28,9 +28,9 @@ By the end of the class, students will be able to:
 
 * It may not be immediately obvious to students why POS tagging and named entity extraction are important techniques in natural language processing. While their outputs will not always be directly used for analysis, these processes are critical for sifting through text to its most important or pertinent aspects.
 
-* Be sure to emphasize the use of correct preprocessing, which is different for every use case—in this class, hardly any preprocessing will be needed.
+* Be sure to emphasize the use of correct preprocessing, which is different for every use case. In this class, hardly any preprocessing will be needed.
 
-* The activities today may be challenging for students, as they introduce unfamiliar concepts and are very open-ended. Be sure to provide support along with your TAs, and spend some time in review to ask why students made certain choices in their projects.
+* Today's activities may be challenging for students as they introduce unfamiliar concepts and are very open ended. Be sure to provide support along with your TAs, and spend time in review and asking students to explain their rationales regarding project work.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
