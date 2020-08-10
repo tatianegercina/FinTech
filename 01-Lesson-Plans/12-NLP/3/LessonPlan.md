@@ -238,7 +238,7 @@ Answer any questions before moving on.
 
 ### 4. Student Do: Describing America (20 min)
 
-In this activity, students will use the inaugural address corpus from NLTK and spaCy's parsing and POS-tagging modules to analyze the words that US Presidents have delivered in their inaugural addresses.
+In this activity, students will use the inaugural address corpus from NLTK and spaCy's parsing and POS-tagging modules to analyze the words that US presidents have delivered in their inaugural addresses.
 
 **Instructions:**
 
@@ -333,7 +333,7 @@ Open the solved notebook and go over each section of the activity and code block
   own_counts = [get_word_counts(text,'own') for text in texts]
   ```
 
-* Fetching the years and the Presidents' last names from the document IDs may be tricky, but this task is easy to do using list comprehensions and the `slipt()` string's method.
+* Fetching the years and the presidents' last names from the document IDs may be tricky, but this task is easy to do using list comprehensions and the `slipt()` string's method.
 
   ```python
   # Create a list `dates` with the year for each inaugural address using the file IDs
