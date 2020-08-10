@@ -1,6 +1,6 @@
 # The Voice of the Blockchain
 
-Canada lies at the frontier of the blockchain sector with increasing adoption rates and favorable regulations. In this activity you will retrieve news articles regarding blockchain in Canada for both English and French languages to capture the voice of the blockchain.
+Canada lies at the frontier of the blockchain sector with increasing adoption rates and favorable regulations. For this activity, you will retrieve news articles in English and French regarding blockchain in Canada, to capture the voice of the blockchain.
 
 ## Instructions
 
@@ -10,7 +10,7 @@ Create a .env file based on the the [example.env](Unsolved/example.env) starter 
 
 ### Getting News Articles in English
 
-In this section you have to fetch news articles using the News API with the keywords `blockchain`, `canada`, and `2020` in English.
+In this section, you will fetch news articles using the News API with the keywords `blockchain`, `canada`, and `2020` in English.
 
 Refer to [the `everything` endpoint documentation](https://newsapi.org/docs/endpoints/everything) of the News API to find out how you can include these three keywords on the `q` parameter.
 
@@ -30,12 +30,12 @@ The resulting DataFrame should have the following columns:
 * Date: The date when the article was published on the format `YYYY-MM-DD` (eg. 2019-07-11)
 * Language: A string specifying the news language (`en` for English, `fr` for French)
 
-Once you finished the function do the following:
+Once you have finished the function, do the following:
 
-* Use the `create_df()` function to create a DataFrame for the English news and another for the French news.
-* Concatenate both DataFrames having the English news at the top and the French news at the bottom.
-* Save the final DataFrame as a CSV file for further analysis in the forthcoming activities.
-* In order to preserve special characters, especially those in French, it's important to save the CSV using the `encoding='utf-8-sig'` parameter.
+1. Use the `create_df()` function to create a DataFrame for the English news, and another for the French news.
+2. Concatenate both DataFrames, with the English news at the top and the French news at the bottom.
+3. Save the final DataFrame as a CSV file for further analysis in the forthcoming activities.
+4. In order to preserve special characters, especially those in French, it's important to save the CSV using the `encoding='utf-8-sig'` parameter.
 
 Your final DataFrame should look like this:
 
