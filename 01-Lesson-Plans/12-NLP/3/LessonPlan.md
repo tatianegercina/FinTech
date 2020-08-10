@@ -238,7 +238,7 @@ Answer any questions before moving on.
 
 ### 4. Student Do: Describing America (20 min)
 
-In this activity, students will use the inaugural address corpus from NLTK and spaCy's parsing and POS-tagging modules to analyze the words that U.S. Presidents have delivered in their inaugural addresses.
+In this activity, students will use the inaugural address corpus from NLTK and spaCy's parsing and POS-tagging modules to analyze the words that US Presidents have delivered in their inaugural addresses.
 
 **Instructions:**
 
@@ -256,7 +256,7 @@ In this activity, students will use the inaugural address corpus from NLTK and s
 
 * [describing_america.ipynb](Activities/02-Stu_Describing_America/Solved/describing_america.ipynb)
 
-Open the solved notebook and go over each section of the activity and each code block in turn.
+Open the solved notebook and go over each section of the activity and code block in turn.
 
 * In the first part of this activity, we use the functions provided by the `inaugural` module to retrieve the document IDs and the text of each inaugural address from the inaugural address corpus.
 
@@ -315,9 +315,9 @@ Open the solved notebook and go over each section of the activity and each code 
       all_adjectives = all_adjectives + all_adj(text)
   ```
 
-* Note that we use a `for-loop` to create the `all_adjectives` Python list. Inside the loop, we use the plus (`+`) operator to concatenate all the adjectives found in a text using the `all_adj()` function provided. We use the plus operator instead of the `append()` list method to create a list of concatenated single values instead of a list or lists.
+* Note that we use a `for loop` to create the `all_adjectives` Python list. Inside the loop, we use the plus (`+`) operator to concatenate all the adjectives found in a text using the `all_adj()` function provided. We use the plus operator instead of the `append()` list method, to create a list of concatenated single values instead of a list, or lists.
 
-* Next, we use the `most_common()` function from the `Counter` module to fetch the three most frequent adjectives used in the U.S. Presidential inaugural address. The `most_common()` function returns a Python list that you should store in a variable called `most_freq_adjectives`.
+* Next, we use the `most_common()` function from the `Counter` module to fetch the three most frequent adjectives used in the US Presidential inaugural address. The `most_common()` function returns a Python list that you should store in a variable called `most_freq_adjectives`.
 
   ```python
   # Retrieve the three most frequent adjectives
@@ -333,7 +333,7 @@ Open the solved notebook and go over each section of the activity and each code 
   own_counts = [get_word_counts(text,'own') for text in texts]
   ```
 
-* Fetching the years and the Presidents' last names from the document IDs may be tricky, but this task is easy to face using list comprehensions and the `slipt()` string's method.
+* Fetching the years and the Presidents' last names from the document IDs may be tricky, but this task is easy to do using list comprehensions and the `slipt()` string's method.
 
   ```python
   # Create a list `dates` with the year for each inaugural address using the file IDs
@@ -343,7 +343,7 @@ Open the solved notebook and go over each section of the activity and each code 
   presidents = [id.split('-')[1].split('.')[0] for id in ids]
   ```
 
-* Now that we have all the data about the most used adjectives in the inaugural addresses over time, we create a DataFrame and plot a line chart to analyze how U.S. presidents used them their speech visually.
+* Now that we have all the data about the most used adjectives in the inaugural addresses over time, we create a DataFrame and plot a line chart to analyze how US presidents used them in their speech visually.
 
   ```python
   # Set DataFrame data
@@ -363,7 +363,7 @@ Open the solved notebook and go over each section of the activity and each code 
   ```python
   # Use the `df_adjectives` DataFrame to plot frequencies of each adjective over time
   df_adjectives.plot(
-      title = "Most Common Adjectives Used in the U.S. Presidential Inaugural Addresses",
+      title = "Most Common Adjectives Used in the US Presidential Inaugural Addresses",
       figsize = (10, 5)
   )
   ```
@@ -396,7 +396,7 @@ Open the solved notebook and go over each section of the activity and each code 
 * The activity ends by using the `describe_america()` function you defined to create a list with all the adjectives used in the inaugural address to describe the word `America``.
 
   ```python
-  # Create an empty list to store de adjectives
+  # Create an empty list to store the adjectives
   america_adjectives = []
 
   # Use a for-loop to retrieve all the adjectives that describe the word 'America' on each inaugural address and concatenate the adjectives fetched to `america_adjectives`
@@ -411,7 +411,7 @@ Open the solved notebook and go over each section of the activity and each code 
   ['productive', 'strong', 'stronger', 'rich']
   ````
 
-Explain to students that this kind of textual analysis could have different applications in the FinTech industry, such as analyzing social media feeds to listen to customers or benchmarking competitors.
+Explain to students that this kind of textual analysis could have different applications in the FinTech industry, such as analyzing social media feeds to listen to customers, or benchmarking competitors.
 
 Answer any questions before moving on.
 
