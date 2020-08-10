@@ -517,7 +517,7 @@ Answer any questions from the class before moving on.
 
 ### 11. Student Do: Blockchain Sentiment (20 min)
 
-In this activity, students will use VADER to score the sentiment of news titles and text to verify whether they have the same sentiment. This last few minutes of this activity consists of a facilitated discussion to discuss students' findings.
+In this activity, students will use VADER to score the sentiment of news titles and text to verify whether they have the same sentiment. The last few minutes of this activity consists of a facilitated discussion to discuss students' findings.
 
 **Instructions:**
 
