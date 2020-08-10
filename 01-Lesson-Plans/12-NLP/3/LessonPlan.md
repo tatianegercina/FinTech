@@ -78,7 +78,7 @@ Ask students to check out spaCy's documentation at https://spacy.io/usage.
 
 ### 3. Instructor Do: POS Tagging and Dependency Parsing (10 min)
 
-This activity introduces students to two essential concepts that add grammatical features to text, Part-of-Speech (POS) tagging, and dependency parsing.
+This activity introduces students to two essential concepts that add grammatical features to text: Part-of-Speech (POS) tagging, and dependency parsing.
 
 **Files:**
 
@@ -88,15 +88,15 @@ Open the lesson slides, move to the "POS Tagging and Dependency Parsing" section
 
 * Part-of-Speech (POS) tagging is intuitive. Each word in a sentence is designated a grammatical part of speech, such as noun, verb, or adjective. POS tagging categorizes each word in a sentence by its grammatical role in the sentence.
 
-* For example, in the following slide, we have the sentence `Jose made a book collector happy the other day`. POS tagging will tokenize the sentence and add a `label` next to each token, such as `noun`, `verb`, or `adverb` in this example.
+* For example, in the following slide we have the sentence: `Jose made a book collector happy the other day`. POS tagging tokenizes the sentence and adds a `label` next to each token, such as `noun`, `verb`, or `adverb`, for this example.
 
   ![pos-tagging-slides-example](Images/pos-tagging-slides-example.png)
 
-* Dependency parsing follows POS tagging. In grammar, a dependency is a notion that words are connected to each other by directed links. For example, adjectives describe nouns, and adverbs describe verbs, nouns can be the subject or object of verbs, and so forth.
+* Dependency parsing follows POS tagging. In grammar, a dependency is a notion that words are connected to each other by directed links. For example, adjectives describe nouns, adverbs describe verbs, nouns can be the subject or object of verbs, and so forth.
 
-* Each sentence is made of not just the words that it contains but also the relationships that are implicit between them. A dependency parser is an NLP tool that tries to make these relationships explicit.
+* Each sentence is made of not only the words that it contains, but also the relationships that are implicit between them. A dependency parser is an NLP tool that tries to make these relationships explicit.
 
-* For example, in the slide, you can note that in the sentence's fragment `a book collector`, the noun `book` has a relationship with `collector` and modifies its meaning and semantics.
+* For example, in the slide, you can note that in the sentence's fragment `a book collector`, the noun `book` has a relationship with `collector`, and modifies its meaning and semantics.
 
   ![dependency-parsing-slides-example](Images/dependency-parsing-slides-example.png)
 
@@ -104,7 +104,7 @@ Open the lesson slides, move to the "POS Tagging and Dependency Parsing" section
 
 Open the Jupyter notebook, and go through the demo line by line, pausing for questions and highlighting these points.
 
-* We start by importing the `spcacy` library and loading the language model before using spaCy's various NLP tools. If the text we wanted to analyze were in a different language, we would need to load a different model.
+* We start by importing the `spaCy` library and loading the language model before using spaCy's various NLP tools. If the text we wanted to analyze were in a different language, we would need to load a different model.
 
   ```python
   # Import spaCy library
@@ -121,14 +121,14 @@ Open the Jupyter notebook, and go through the demo line by line, pausing for que
   sentence = "The brown cow jumped over the round moon."
   ```
 
-* We use the spaCy language model object `nlp` to tokenize each word and store the POS-tags and dependency data inside each token.
+* We use the spaCy language model object `nlp` to tokenize each word, and store the POS tags and dependency data inside each token.
 
   ```python
   # Tokenize text and parse each token
   tokens = nlp(sentence)
   ```
 
-* To access the POS-tags, we need to iterate through each token and access its `pos_` attribute. Note that each token was parsed using the language model to determine the corresponding tag (presented in uppercase).
+* To access the POS tags, we need to iterate through each token and access its `pos_` attribute. Note that each token was parsed using the language model to determine the corresponding tag (presented in uppercase).
 
   ```python
   # Print POS-Tags for each token
@@ -148,9 +148,9 @@ Open the Jupyter notebook, and go through the demo line by line, pausing for que
   . PUNCT
   ```
 
-Slack out this link to the class: https://spacy.io/api/annotation#pos-tagging. Explain to students that in this page, they can find a complete list that describes all the POS tags.
+Slack out this link to the class: https://spacy.io/api/annotation#pos-tagging. Tell students that on this page they will find a complete list describing all the POS tags.
 
-* Using the POS-tags, we can filter the words using a list comprehension with a conditional, for example, to identify all the nouns in a sentence or text.
+* Using the POS tags, we can filter the words using a list comprehension with a conditional; for example, to identify all the nouns in a sentence or text.
 
   ```python
   # Retrieve all the nouns in the sentence using a list comprehension
@@ -164,7 +164,7 @@ Slack out this link to the class: https://spacy.io/api/annotation#pos-tagging. E
   ['cow', 'moon']
   ```
 
-* Similar to POS-tags, we can print the grammar dependencies of each word using the `dep_` attribute.
+* Similar to POS tags, we can print the grammar dependencies of each word using the `dep_` attribute.
 
   ```python
   # Print grammar dependencies
@@ -184,11 +184,11 @@ Slack out this link to the class: https://spacy.io/api/annotation#pos-tagging. E
   . punct
   ```
 
-* However, because dependencies are relationships, the list view will not tell us much. Instead, we can use `displacy`, a module that visualizes attributes generated by spaCy, to view the relationships of words in a sentence.
+* However, because dependencies are relationships, the list view won't tell us much. Instead, we can use `displaCy`, a module that visualizes attributes generated by spaCy, to view the relationships of words in a sentence.
 
   ```python
-  # Import the displacy module from spaCy
-  from spacy import displacy
+  # Import the displaCy module from spaCy
+  from spaCy import displacy
 
   # Show the dependency tree
   displacy.render(tokens, style="dep")
@@ -196,7 +196,7 @@ Slack out this link to the class: https://spacy.io/api/annotation#pos-tagging. E
 
   ![dependencies-graph](Images/dependencies-graph.png)
 
-* Dependency parsing extracts a dependency parse of a sentence that represents its grammatical structure and defines the relationships between “head” words and words, which modify those heads. We can retrieve the head word of each token using the `head` attribute.
+* Dependency parsing extracts a dependency parse of a sentence that represents its grammatical structure, and defines the relationships between “head” words and words which modify those heads. We can retrieve the head word of each token using the `head` attribute.
 
   ```python
   # Print the POS-tag and head word of each token
@@ -216,7 +216,7 @@ Slack out this link to the class: https://spacy.io/api/annotation#pos-tagging. E
   . PUNCT jumped
   ```
 
-* If we want to check what word a token is describing or otherwise related to, we can also use the .`head` attribute. For example, using conditionals in a list comprehension, we can filter for adjectives that describe a particular word like `cow`.
+* If we want to check what word a token is describing or otherwise related to, we can also use the .`head` attribute. For example, using conditionals in a list comprehension, we can filter for adjectives that describe a particular word, like `cow`.
 
   ```python
   # Retrieve the adjectives that describe the word "cow"
