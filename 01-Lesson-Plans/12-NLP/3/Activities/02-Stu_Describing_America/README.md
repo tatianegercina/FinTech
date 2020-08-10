@@ -1,10 +1,10 @@
 # Describing America
 
-Somehow, the speech delivered by country leaders when they start duties on their charge could shape the line they will follow during their term. In this activity, you will use NLTK and spaCy to analyze the inaugural addresses delivered by the Presidents from the United States since 1798.
+The first speech delivered by the new leader of a nation is meant to set the tone for their term as commander in chief. For this activity, you will use NLTK and spaCy to analyze the inaugural addresses delivered by the presidents of the United States since 1789.
 
-You will use [the inaugural address corpus](https://www.nltk.org/book/ch02.html#inaugural-address-corpus) from the NLTK library to identify what were the most common adjectives used by U.S. Presidents and how these adjectives describe America.
+You will use [the inaugural address corpus](https://www.nltk.org/book/ch02.html#inaugural-address-corpus) from the NLTK library to identify the most common adjectives used by US presidents, and how these adjectives describe America.
 
-## Initial considerations
+## Initial Considerations
 
 In the `Initial imports` cell from the starter Jupyter notebook, we import two modules that are worth highlighting.
 
@@ -16,11 +16,11 @@ In the `Initial imports` cell from the starter Jupyter notebook, we import two m
 
 Open the starter Jupyter notebook and complete the following tasks.
 
-### 1. Retrieve the documents IDs and text of the U.S. presidential inaugural addresses
+### 1. Retrieve the Document IDs and Text of the US Presidential Inaugural Addresses
 
-In the `inaugural` module, the `fileids()` function retrieves each document's name, where the year of the inaugural address and the President's last name can be identified. This document name represents a unique identifier (ID) for each text in the corpus.
+In the `inaugural` module, the `fileids()` function retrieves each document's name, where the year of the inaugural address and the president's last name can be identified. This document name represents a unique identifier (ID) for each text in the corpus.
 
-The `raw()` function receives as argument the ID for any given inaugural address and returns the text of the speech delivered by the President.
+The `raw()` function receives as argument the ID for any given inaugural address and returns the text of the speech delivered by the president.
 
 Use the `fileids()` and `raw()` functions to retrieve the following data from the `inaugural` corpus.
 
@@ -42,7 +42,7 @@ In this section, you will retrieve the most frequent adjective used in every ina
 
 ### 3. Analyze adjectives over time
 
-In this section, you will analyze how many times U.S. Presidents used the most common adjectives in their inaugural addresses over time.
+In this section, you will analyze how many times US presidents used the most common adjectives in their inaugural addresses over time.
 
 Two helper functions are provided to aid you in this task.
 
