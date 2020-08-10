@@ -1,17 +1,17 @@
-# Who are the Bossy Words?
+# Bossy Words?
 
-In this activity, students will use TF–IDF to find the most relevant words from a collection of news articles that talk about money in the [Reuters Corpus](https://www.nltk.org/book/ch02.html#reuters-corpus) bundled in `NLTK`. Once they find the most relevant words, they will visualize the words using a word cloud.
+In this activity, you will use TF–IDF to find the most relevant words from a collection of news articles that talk about money in the [Reuters Corpus](https://www.nltk.org/book/ch02.html#reuters-corpus) bundled in `NLTK`. Once you find the most relevant words, you will visualize the words using a word cloud.
 
 ## Instructions
 
 ### Getting the News About Money
 
-You will analyze only news that talk about **money**. There are two categories on the Reuters Corpus that talk about money: `money-fx` and `money-supply`. In this section, you will filter the news by these categories.
+You will only analyze news that talks about **money**. There are two categories in the Reuters Corpus that do this: `money-fx` and `money-supply`. In this section, you will filter the news by these categories.
 
 Take a look into the [Reuters Corpus documentation](https://www.nltk.org/book/ch02.html#reuters-corpus) and check how you can retrieve the categories of a document using the `reuters.categories()` method; write some lines of code to retrieve all the news articles that are under the `money-fx` or the `money-supply` categories.
 
 **Hint:**
-You can use a comprehension list or a for-loop to accomplish this task.
+You can use a comprehension list or a for loop to accomplish this task.
 
 ### Calculating the TF–IDF Weights
 
@@ -25,7 +25,7 @@ You should obtain a DataFrame like this:
 
 ### Retrieving the Top Words
 
-In order to create the word cloud you should get the top words, in this case we will use a thumb rule that has been empirically tested by some NLP experts that states that words with a frequency between 10 and 30 might be the most relevant in a corpus.
+In order to create the word cloud you should get the top words; in this case, we will use a thumb rule that has been empirically tested by some NLP experts which states that words with a frequency between 10 and 30 might be the most relevant in a corpus.
 
 Following this rule, create a new DataFrame containing only those words with the mentioned frequency.
 
@@ -33,21 +33,21 @@ You should get a DataFrame like this:
 
 ![Top words DataFrame example](Images/tf_idf_top_words_frequency_df.png)
 
-### Creating Word Cloud
+### Creating a Word Cloud
 
 Now you have all the pieces needed to create a word cloud based on TF–IDF weights, so use the `WordCloud` library to create it.
 
-Your word cloud should be like this:
+Your word cloud should look like this:
 
 ![Sample word cloud](Images/tf_idf_word_cloud.png)
 
-## Challenge: Looking for Documents that Contains Top Words
+## Challenge: Looking for Documents that Contain Top Words
 
-If you have time you can work on the following challenge section.
+If you have time, you can work on the following challenge section.
 
-As a challenge, search for articles that contain the most relevant words. Create a function called `retrieve_docs(terms)` that receive a list of terms as a parameter and extract from the working corpus all those news articles that contain the search terms. In this function you should use the `reuters.words()` method to retrieve the tokenized version of each article as can be seen on the [Reuters Corpus documentation](https://www.nltk.org/book/ch02.html#reuters-corpus).
+As a challenge, search for articles that contain the most relevant words. Create a function called `retrieve_docs(terms)` that receive a list of terms as a parameter, and extract from the working corpus all those news articles that contain the search terms. In this function, you should use the `reuters.words()` method to retrieve the tokenized version of each article as can be seen on the [Reuters Corpus documentation](https://www.nltk.org/book/ch02.html#reuters-corpus).
 
-Once you create the function answer the following questions:
+Once you create the function, answer the following questions:
 
 * Question 1: How many articles talk about yen?
 * Question 2: How many articles talk about Japan or banks?
@@ -55,8 +55,8 @@ Once you create the function answer the following questions:
 
 ## Hints
 
-* In the challenge, you might find quite useful [this post on StackOverflow](https://stackoverflow.com/a/25102099/4325668) to find any occurrence of the search terms. You should also lowercase all the words to ease your terms search.
+* For the challenge, you might find it quite useful to check [this post on StackOverflow](https://stackoverflow.com/a/25102099/4325668) to locate any occurrence of the search terms. You should also lowercase all the words to ease your terms search.
 
+---
 
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
