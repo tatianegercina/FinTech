@@ -444,7 +444,7 @@ for ent in doc.ents:
 print([ent.text for ent in doc.ents if ent.label_ == 'GPE'])
 ```
 
-Before moving on to the next student activity, ask the class to search for spaCy documentation (https://spacy.io/api/annotation#named-entities) to find out what entity types exist and what each label means.
+Before moving on to the next student activity, ask the class to search for spaCy documentation (https://spacy.io/api/annotation#named-entities) to find out what entity types exist, and what each label means.
 
 ---
 
@@ -503,7 +503,7 @@ Open the lesson slides, move to the "Text as Feature" section, and start a facil
 
 After listening to students' comments, continue the presentation by highlighting the tools and techniques we have learned up to this point.
 
-* In this unit, you added to your toolbox several techniques: preprocessing, tokenizing, and lemmatizing text; aggregating word counts; creating n-grams; normalizing to TF-IDF weights; sentiment analysis; parsing and pos-tagging text, and named entity recognition. These tools include the libraries NLTK, word cloud, and spaCy.
+* In this unit, you added several techniques to your toolbox: preprocessing, tokenizing, and lemmatizing text; aggregating word counts; creating n-grams; normalizing to TF-IDF weights; sentiment analysis; parsing and pos-tagging text, and named entity recognition. These tools include the libraries NLTK, word cloud, and spaCy.
 
 We have learned a lot! Tell the class that it is often not enough to transform text data in the ways that we have done. To use this data for classification or prediction, we need to make them features—numerical representations of unstructured text. Ask the class for examples of features that can be created from text documents.
 
@@ -511,7 +511,7 @@ We have learned a lot! Tell the class that it is often not enough to transform t
 
 * These features can then be used, for example, to classify a document to a category or predict the effect of an earnings call on a stock price.
 
-Let the class know that the remainder of the class will be spent on practicing ways to engineer features from text and then correlating those features to variables of interest in the real world: stock prices, earning results, or investment decisions, for example.
+Tell students that the remainder of the class will be spent on practicing ways to engineer features from text and then correlating those features to variables of interest in the real world: stock prices, earning results, or investment decisions, for example.
 
 ---
 
@@ -568,7 +568,7 @@ def get_headlines(keyword):
     return all_headlines, all_dates
 ```
 
-Walkthrough the next few blocks of code, which contain the keywords we chose to look for. Ask the class what other keywords they used and why they thought those topics might be correlated with Apple stock.
+Walk through the next few blocks of code, which contain the keywords we chose to look for. Ask the class what other keywords they used and why they thought those topics might be correlated with Apple stock.
 
 * The function below calculates an average sentiment score for each day for each topic. We chose to take the average of the compound sentiment score as implemented by VADER.
 
@@ -608,7 +608,7 @@ The remainder of today's class is intended to review any topics, activities, or 
 
 ### 15. Instructor Do: Structured Review (35 min)
 
-Note: If you are teaching this lesson on a weeknight, save this 35 minute review for the next Saturday class.
+Note: If you are teaching this lesson on a weeknight, save this 35-minute review for the next Saturday class.
 
 Use the entire time to review questions with the students before ending class.
 
