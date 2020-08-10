@@ -1,6 +1,6 @@
 # Blockchain Sentiment
 
-When you read a news article, normally the headline is the hook to continue reading. However, a negative title could lead you to skip reading an article if you don't want to be in a bad mood. But is this accurate?
+Headlines of news articles usually serve as the hook to compel people to keep reading. However, negative titles could prevent people from reading news, if they don't want to get depressed. But wait-is this accurate?
 
 In this activity, you are tasked to corroborate that a news title with a negative sentiment leads to a negative content. You will use VADER sentiment to accomplish this work using the news articles that you previously downloaded in The Voice of the Blockchain activity.
 
