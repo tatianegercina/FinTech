@@ -39,11 +39,11 @@ Your final DataFrame should look like this:
 
 How does the sentiment of the title and the text differ in news articles?
 
-To answer this question, in this section you will create a bar chart contrasting the normalized sentiment for the title and the text of each news article. Use the build-in `plot()` method of the Pandas DataFrame to create a bar chart like the one bellow. Be aware that your chart might differ from this one, since it is made from a different news DataFrame.
+To answer this question, in this section you will create a bar chart contrasting the normalized sentiment for the title and the text of each news article. Use the build-in `plot()` method of the Pandas DataFrame to create a bar chart like the one below. Be aware that your chart might differ from this one, since it is made from a different news DataFrame.
 
 ![Sample bar chart of news title and text sentiments](Images/blockchain_feelings_bar_chart.png)
 
-Finally, get the descriptive statistics from the English news DataFrame and discuss the analysis results with your partners.
+Finally, get the descriptive statistics from the English news DataFrame, and discuss the analysis results with your partners.
 
 ### Hints
 
