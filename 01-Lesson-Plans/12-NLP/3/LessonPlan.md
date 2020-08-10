@@ -317,7 +317,7 @@ Open the solved notebook and go over each section of the activity and code block
 
 * Note that we use a `for loop` to create the `all_adjectives` Python list. Inside the loop, we use the plus (`+`) operator to concatenate all the adjectives found in a text using the `all_adj()` function provided. We use the plus operator instead of the `append()` list method, to create a list of concatenated single values instead of a list, or lists.
 
-* Next, we use the `most_common()` function from the `Counter` module to fetch the three most frequent adjectives used in the US Presidential inaugural address. The `most_common()` function returns a Python list that you should store in a variable called `most_freq_adjectives`.
+* Next, we use the `most_common()` function from the `Counter` module to fetch the three most frequent adjectives used in the US presidential inaugural address. The `most_common()` function returns a Python list that you should store in a variable called `most_freq_adjectives`.
 
   ```python
   # Retrieve the three most frequent adjectives
