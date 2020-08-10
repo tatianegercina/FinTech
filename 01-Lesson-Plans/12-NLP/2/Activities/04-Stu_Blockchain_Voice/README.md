@@ -43,7 +43,7 @@ Your final DataFrame should look like this:
 
 ### Hints
 
-You can use a `for-loop` with the `create_df()` function inside to iterate across the news articles list to create the DataFrame's structure.
+You can use a `for loop` with the `create_df()` function inside to iterate across the news articles list to create the DataFrame's structure.
 
 ---
 
