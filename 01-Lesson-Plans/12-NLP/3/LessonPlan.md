@@ -30,7 +30,7 @@ By the end of today's class, students will be able to:
 
 * Be sure to emphasize the use of correct preprocessing, which is different for every use case. In this class, hardly any preprocessing will be needed.
 
-* Today's activities may be challenging for students as they introduce unfamiliar concepts and are very open ended. Be sure to provide support along with your TAs, and spend time in review and asking students to explain their rationales regarding project work.
+* Today's activities may be challenging for students as they introduce unfamiliar concepts and are very open ended. Be sure to provide support along with your TAs, and spend time in review, asking students to explain their rationales in regards to project work.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
@@ -52,25 +52,27 @@ By the end of today's class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students back to class. Today's class will introduce a few new concepts but will also help put everything together that we have learned in this unit. We will work with spaCy, another useful tool for general-purpose natural language processing (NLP), and go through a few activities that make use of this tool and others from this unit. The activities today should be rewarding and fun, and students are encouraged to think about out-of-the-box approaches to meet the requirements. Pause for questions about either the homework or previous lessons, then open the slides and continue to the introduction on spaCy.
+Welcome students back to class. In addition to introducing some new concepts, we will synthesize everything we've learned thus far in the unit. We will work with spaCy, another useful tool for general-purpose natural language processing (NLP), and do a few activities using this tool and others from this unit. The activities today should be fun and rewarding; encourage students to think of creative approaches that are "outside the box" to meet the requirements. Take a moment to pause to address any questions about the homework or prior lessons, before continuing on to the introduction to spaCy.
 
-Recall students that it's crucial to install the `spacy` library and the English language linguistic model, as explained in the unit's installation guide since we're going to use them in Today's activities.
+Quickly inform students that it's crucial to install the `spaCy` library and the English language linguistic model, as explained in the unit's installation guide, since we're going to use them for today's activities.
 
 ---
 
 ### 2. Instructor Do: Intro to spaCy (5 min)
 
-Tell students that to implement POS tagging and named entity recognition (more on these later), we will be using spaCy.
+Start by opening the slides and navigating to [Section X]. 
 
-* SpaCy is different from NLTK in that it is mainly statistical-based instead of rule-based, meaning that spaCy's core functions depend on language models learned from tagged text instead of programmed rules. This makes spaCy more flexible and in many cases, more accurate than some of the NLTK tools.
+Tell students that in order to implement POS tagging and named entity recognition (more on these later), we will be using spaCy.
 
-* We will be using spaCy for part-of-speech tagging, named entity recognition, and dependency parsing. These tasks are more suitable for model-based solutions because they are complex and depend highly on context.
+* SpaCy is different from NLTK in that it is mainly statistically based, instead of rule based, meaning that spaCy's core functions depend on language models learned from tagged text instead of programmed rules. This makes spaCy more flexible, and in many cases, more accurate than some of the NLTK tools.
 
-* SpaCy also provides tools for tasks like tokenization and lemmatization, which we've already learned with NLTK, and creating word vectors, which is beyond the scope of this unit but is a foundation for deep learning for NLP.
+* We will be using spaCy for part-of-speech tagging, named entity recognition, and dependency parsing. These tasks are more suitable for model-based solutions, because they are complex and depend highly on context.
+
+* SpaCy also provides tools for tasks like tokenization and lemmatization, which we've already learned with NLTK, and creating word vectors, which is beyond this unit's scope but is a foundation for deep learning for NLP.
 
 * In comparison to NLTK, spaCy's language models trade off accuracy for speed, so if the corpus is large, then students may prefer a simpler, rule-based solution.
 
-Ask students to check out spaCy's documentation at https://spacy.io/usage
+Ask students to check out spaCy's documentation at https://spacy.io/usage.
 
 ---
 
