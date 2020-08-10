@@ -602,11 +602,11 @@ Ask students whether they found topic sentiments that are more closely correlate
 
 ### 13. Instructor Do: Machine Learning Review (40 min)
 
-The remainder of today's class is intended to review any topics, activities, or concepts covered in any of the previous machine learning units.
+The remainder of today's class should be dedicated for the review of any topics, activities, or concepts covered in any of the previous machine learning units.
 
 ---
 
-### 15. Instructor Do: Structured Review (35 min)
+### 14. Instructor Do: Structured Review (35 min)
 
 Note: If you are teaching this lesson on a weeknight, save this 35-minute review for the next Saturday class.
 
