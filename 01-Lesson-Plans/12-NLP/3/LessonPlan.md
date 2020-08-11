@@ -238,7 +238,7 @@ Answer any questions before moving on.
 
 ### 4. Student Do: Describing America (20 min)
 
-In this activity, students will use the inaugural address corpus from NLTK and spaCy's parsing and POS-tagging modules to analyze the words that US presidents have delivered in their inaugural addresses.
+In this activity, students will use the inaugural address corpus from NLTK and spaCy's parsing and POS-tagging modules to analyze inaugural addresses delivered by US presidents.
 
 **Instructions:**
 
