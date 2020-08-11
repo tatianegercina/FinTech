@@ -751,7 +751,7 @@ Explain that hvplot uses the Streamz library to build a pipeline or buffer to ma
 
 ---
 
-### 10. Instructor Do: Structured Review (1 hour)
+### 10. Instructor Do: Structured Review (50 min)
 
 Use this review time to touch base on any knowledge-gaps that the students may have. Feel free to utilize previous activities and homeworks for this purpose.
 
@@ -765,7 +765,7 @@ Suggested format:
 
 Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
 
-### 11. Instructor Do: Reflect (15 min)
+### 11. Instructor Do: Reflect (10 min)
 
 This activity will conclude today's lesson and provide a chance for students to reflect on what they've learned throughout the day.
 
