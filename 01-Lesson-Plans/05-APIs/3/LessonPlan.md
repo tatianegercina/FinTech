@@ -138,6 +138,9 @@ Answer any questions before moving on.
 
 ### 3. Instructor Do: Getting into Probability Distributions Using Python (15 min)
 
+**Corresponding Activity:**
+[01-Ins_Getting_into_Probability_Distributions](Activities/01-Ins_Getting_into_Probability_Distributions)
+
 In this activity, students will learn how to retrieve historical stock data using Alpaca and visualize its distribution.
 
 **Files:**
@@ -281,25 +284,19 @@ Answer any questions before moving on.
 
 ---
 
-### 3. Students Do: Free Throw Simulation (15 min)
+### 3. Students Do: Decisive Distributions (20 min)
 
 **Corresponding Activity:** [02-Stu_Probability_Distribution_of_Potential_Outcomes](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes)
 
-In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of free throws made out of 10 shots for a player with a `70%` accuracy and determine the likelihood of the player making `9-10` free throws in a single session.
-
-Circulate with TAs during this activity to provide students with assistance. Below are a couple of scenarios to watch out for.
-
-* Students might face difficulty working with the histograms. Histogram bins have a default value, so if the bins are not appropriately configured, the charts might not look as expected (the bin edges will be off), and the ranges may deviate from what is being simulated.
-
-* Also keep an eye out for any student issues related to missing data; if 'missed free throws' or 'made free throws' data is missing, this is most likely because 0 was not appended for the missing values. This could visually result in one side of the distribution being cut off (producing a non-normal distribution with no values for the first shot attempted).
+In this activity students will gain hands-on experience fetching historical stock data and plotting distributions to make investment decisions.
 
 **Instructions:**
 
-* [README.md](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes/README.md)
+* [README.md](Activities/02-Stu_Decisive_Distributions/README.md)
 
 **Files:**
 
-* [free_throw_simulation.ipynb](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes/Unsolved/free_throw_simulation.ipynb)
+* [Decisive_Distributions.ipynb](Activities/02-Stu_Decisive_Distributions/Unsolved/Decisive_Distributions.ipynb)
 
 ---
 
