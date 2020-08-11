@@ -27,7 +27,7 @@ Using this, you can build a cheatsheet to get your `geth` nodes up and running a
 * Use the first node's enode address as the bootnode for the second node and run on a separate port:
 
   ```bash
-  geth --datadir node2 --unlock "SEALER_ONE_ADDRESS" --mine --port 30304 --bootnodes enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:3geth --datadir node2 --unlock "SEALER_ONE_ADDRESS" --mine --port 30304 --bootnodes0303
+  geth --datadir node2 --unlock "SEALER_ONE_ADDRESS" --mine --port 30304 --bootnodes enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303
   ```
 
   The command will look something like this:
