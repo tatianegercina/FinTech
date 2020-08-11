@@ -18,8 +18,6 @@ By the end of class, students will be able to:
 
 * Utilize live financial data by connecting their trading frameworks to the Kraken or Bitfinex Cryptocurrency Exchange API.
 
-* Persist or save their trading data to a database such as SQLite.
-
 * Perform asynchronous tasks and loops using asyncio.
 
 * Implement asyncio with their trading frameworks to fetch data and update the dashboard in parallel.
