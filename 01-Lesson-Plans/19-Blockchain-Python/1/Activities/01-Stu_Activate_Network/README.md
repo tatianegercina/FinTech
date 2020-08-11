@@ -19,7 +19,6 @@ Using this, you can build a cheatsheet to get your `geth` nodes up and running a
   * Add the flag `--allow-insecure-unlock`.
   * Enter your password if prompted.
 
-
 * Copy the enode address from this node.
 
   For example:
@@ -36,7 +35,6 @@ Using this, you can build a cheatsheet to get your `geth` nodes up and running a
   ```bash
   geth --datadir node2 --unlock "7a4f862ab163fc62dce2cfbb734ddac153c5e8cc" --mine --port 30304 --bootnodes enode://b044f481e52f03950ed88ad18f550ace268ad4e4e1647f80c5808d6ea2c4e7f550d8ed25a14608afa6e5828f1b69fdfcf5d7775394f7c38d8592f600e4a37e90@127.0.0.1:30303
   ```
-
   Using the first node as a bootnode will enable the nodes to communicate with each other, and discover new nodes later.
 
   The chain should be up and running after you start the second node.
