@@ -8,6 +8,8 @@ You are a smart contract engineer on a team of elite developers hired by the Mar
 
 * Inside the `MartianAuction` contract above the contract's constructor define some initial variables that will be used to track the state of the auction.
 
+  * An `address deployer` that will be used to track the address of the contract that deploys the `MartianAuction`.
+
   * An `address payable public beneficiary` will be used to track the beneficiary of the contract.
 
   * An `address public highestBidder` will be used to keep track of the address of the current highest bidder.
@@ -54,7 +56,7 @@ You are a smart contract engineer on a team of elite developers hired by the Mar
 
   *  Define a `require` statement that will check if the auction has ended by negating the `ended` variable with the `!` operator.
 
-  * Below that define a second `require` statement that checks to see if `msg.sender` is equal to `beneficiary`.
+  * Below that define a second `require` statement that checks to see if `msg.sender` is equal to `deployer`.
 
   * Then set the `ended` variable equal to `true`.
 

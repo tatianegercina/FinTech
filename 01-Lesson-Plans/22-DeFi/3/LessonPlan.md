@@ -74,7 +74,7 @@ In this activity, the instructor will demonstrate the various auction contracts 
 
 **Files:**
 
-* [AuctionContract.sol](Activities/02-Ins_Auction_Contracts_in_Solidity/Solved/MartianAuction.sol)
+* [MartianAuction.sol](Activities/02-Ins_Auction_Contracts_in_Solidity/Solved/MartianAuction.sol)
 
 Begin the activity by introducing the class to the backstory of the `Martian Land Foundation`.
 
@@ -106,6 +106,8 @@ pragma solidity >=0.4.22 <0.6.0;
 
 contract MartianAuction {
 
+    address deployer;
+
     // Current state of the auction.
     address payable public beneficiary;
     address public highestBidder;
@@ -116,6 +118,8 @@ contract MartianAuction {
 * Inside our contract, we are going to start by defining some initial variables that will track the state of our auction.
 
 * This consists of:
+
+  * An `address deployer` that will be used to track the address of the contract that deploys the `MartianAuction`.
 
   * An `address payable public beneficiary` to track the beneficiary of the contract.
 
@@ -163,11 +167,14 @@ Define the contracts `constructor` and set the public `beneficiary` variable to 
     constructor(
         address payable _beneficiary
     ) public {
+        deployer = msg.sender;
         beneficiary = _beneficiary;
     }
 ```
 
-* Upon deployment of a new instance of the `MartianAuction` contract, a beneficiary, or the person hosting the auction, must be set. Here we are going to define a constructor that will set the beneficiary.
+* Upon deployment of a new instance of the `MartianAuction` contract, a beneficiary, or the person hosting the auction, must be set. Here we are defining a constructor that will set the beneficiary.
+
+* We also set the `deployer` address to the `msg.sender` in order to track the address of the contract that will be deploying this one. This is so we can make sure that certain privileged functions (like ending the auction) can only be called from the parent contract that created this one.
 
 Add a new `public` function definition named `bid` for users to bid on the auction.
 
@@ -348,7 +355,7 @@ Inside the body of the `auctionEnd` contract:
 
   * First, we will check for the condition of whether or not the auction has ended by negating the `ended` variable with the `!` operator.
 
-  * A second require is defined to check if the `msg.sender` attempting to end the auction is equal to the `beneficiary` running the auction.
+  * A second require is defined to check if the `msg.sender` attempting to end the auction is equal to the `deployer` running the auction.
 
   * Next, we are going to set `ended` equal to true, to end the auction if it hasn't already.
 
