@@ -96,31 +96,49 @@ Continue with the slides switching to the "Simulations" section, ease students i
 
   * A Monte Carlo simulation is a specific type of simulation that uses probability and variables to predict the future potential outcomes of a randomly occurring process.
 
-* What is probability?
-
-  * The chance of an event happening. For example, the chance of a coin landing on heads is `50%`.
-
 * Why use Monte Carlo simulations?
 
   * Monte Carlo simulations provide a method of testing the range of values and corresponding probabilities that a random process can generate over time—specifically, how far results may deviate from the expected average. Monte Carlo simulations help to understand the risk of uncertainty in prediction and forecasting models, which is particularly helpful when dabbling in the domain of capital investments and stock price uncertainty!
-
-* What would be an example of a Monte Carlo simulation?
-
-  * Imagine a scientist wanted to know how often a coin could land on heads for `5` trials of `10` coin flips. Flipping a coin has a `50%` chance of landing on heads and a `50%` chance of landing on tails. Because of the randomly occurring nature of flipping a coin, results could vary: for example, a coin could produce `6` heads and `4` tails; `3` heads and `7` tails; `8` heads and `2` tails, `5` heads and `5` tails, or `4` heads and `6` tails. Therefore, an example Monte Carlo simulation would be to flip a coin `10` times to determine the resulting number of heads and tails, and then do that same process another `5` times to determine the frequency distribution of landing on heads (how many times the coin landed a specific number of heads). The frequency distribution of heads can then be used to calculate the corresponding probability distribution that determines how likely it is for varying numbers (or ranges) of heads to land.
 
 Ask the students if they can think of any other examples of Monte Carlo simulations. Be sure to have all the students on the same page before moving on.
 
 ---
 
-### 2. Instructor Do: Probability Distribution of Potential Outcomes (10 min)
-
-**Corresponding Activity:** [01-Ins_Probability_Distributions_of_Potential_Outcomes](Activities/01-Ins_Probability_Distributions_of_Potential_Outcomes)
+### 2. Instructor Do: Understanding Probability and Probability Distributions (15 min)
 
 Monte Carlo simulations seek to explain the probability of potential outcomes for a randomly occurring event. Therefore, this activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like and how to interpret the results.
 
+Open the lesson slides, move to the "Understanding Probability and Probability Distributions" section, and highlight the following:
+
+* Imagine you are a scientist who wants to know how often a coin could land on heads for `5` trials of `10` coin flips. Flipping a coin has a `50%` chance of landing on heads and a `50%` chance of landing on tails.
+
+* Because of the randomly occurring nature of flipping a coin, results could vary: for example, a coin could produce `6` heads and `4` tails; `3` heads and `7` tails; `8` heads and `2` tails, `5` heads and `5` tails, or `4` heads and `6` tails.
+
+In short words, probability is the chance of an event happening. Probability merely implies that there is a chance that a specific result or event may occur but makes no guarantees; there will always be a risk of the event not occurring. Probability can be calculated whenever an outcome is uncertain, such as picking the specific color of a candy in its bag, the behavior of a stock, or the outcome of a bet.
+
+* Therefore, an example Monte Carlo simulation would be to flip a coin `10` times to determine the resulting number of heads and tails, and then do that same process another `5` times to determine the frequency distribution of landing on heads (how many times the coin landed a specific number of heads). The frequency distribution of heads can then be used to calculate the corresponding probability distribution that determines how likely it is for varying numbers (or ranges) of heads to land.
+
+* Monte Carlo simulations help us visualize the effect of a probability distribution over time. But what is a probability distribution?
+
+* A probability distribution is a mathematical function that describes the likelihood of possible outcomes for a given range of values. For example we can define a function to calculate the likelihood of getting `7` heads on `10` coin flips.
+
+* The most common probability distribution is the *normal distribution*, and it's found throughout the real-world. A normal distribution is commonly referred to as “the bell curve” and describes a dataset where values farther from its mean occur less frequently than values closer to its mean.
+
+* When numerical data is considered to be normally distributed, the probability of any data point follows the `68-95-99.7` rule, stating that 68.27%, 95.45%, and 99.73% (effectively 100%) of possible values lie within one, two, and three standard deviations of the mean, respectively.
+
+* Normal distributions are particularly useful in finance because they adequately approximate the volatility of stock prices, forex rates and other commodities. For example, the daily price change (in percent) from a high volatility stock such as Tesla and a low volatility stock such as Coca-Cola can both demonstrate normal distributions despite the differences in company size, customer base, stock price and market share. We can visualize the normal distribution of these stocks using Pandas as follows.
+
+Explain to students that we are going to use probability distributions to visually analyze the outcomes forecasted by Monte Carlo simulations, but first, it's time to learn how to fetch stock data and visualize its distribution using Python.
+
+Answer any questions before moving on.
+
+---
+
+### 3. Instructor Do: Getting into Probability Distributions Using Python (15 min)
+
 **Files:**
 
-* [coin_flip_simulation.ipynb](Activities/01-Ins_Probability_Distributions_of_Potential_Outcomes/Solved/coin_flip_simulation.ipynb)
+* [stock_price_normal_distribution.ipynb](Activities/01-Understanding_Probability_and_Probability_Distributions/Solved/stock_price_normal_distribution.ipynb)
 
 Walkthrough the solution and highlight the following:
 
