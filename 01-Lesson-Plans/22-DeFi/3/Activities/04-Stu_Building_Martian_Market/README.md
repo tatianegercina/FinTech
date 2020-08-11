@@ -60,6 +60,8 @@ In this activity, you will combine an ERC721 token contract with the `MartianAuc
 
 * Deploy the contract to your `Ganache` blockchain, and copy the address for later. Congratulate yourself on combining some very complex smart contracts to create a powerful market system!
 
+  * **Note:** You may need to increase the `Gas Limit` to deploy this contract. If the default `3000000` does not work, try `5000000`.
+
 ## Challenge
 
 * If time remains, copy your deployed contract's address over to a note file, and copy the `MartianMarket` and `MartianAuction` ABI's from Remix into separate `json` files. This will prepare you for the next activity, where you will be working with this contract's frontend!
