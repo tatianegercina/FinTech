@@ -18,8 +18,6 @@ By the end of class, students will be able to:
 
 * Utilize live financial data by connecting their trading frameworks to the Kraken Cryptocurrency Exchange API.
 
-* Persist or save trading data to a database such as SQLite.
-
 * Perform asynchronous tasks and loops using asyncio.
 
 * Implement asyncio with their trading frameworks to fetch data and update the dashboard in parallel.
@@ -738,7 +736,9 @@ loop.run_until_complete(main())
   loop.run_until_complete(main())
   ```
 
-Wrap up this activity by acknowledging that asynchronous code is very challenging to write. However, the code provided in this example can be used as a template that can be reused for many different algorithmic trading applications.
+Wrap up this activity by acknowledging that asynchronous code is very challenging to write. However, the code provided in this example can be used as a template that can be reused for many different algorithmic trading applications. Furthermore, other libraries exist that can help make their asyncronous dashboards even better.  One such library is Streamz.  
+
+Explain that hvplot uses the Streamz library to build a pipeline or buffer to manage continuous streams of data. A Stream can be thought of as a data reservoir that live data can be sent to. Hvplot can then connect to this Stream and update its plots when new data arrives.  Students will have aleady installed Streamz if they followed the [Asyncio_Streamz_Install_Guide](../Supplemental/Asyncio_Streamz_Install_Guide.md).  For students that want to know more, slack out the [`Streamz` documentation](https://streamz.readthedocs.io/en/latest/).
 
 ---
 
