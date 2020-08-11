@@ -300,74 +300,91 @@ In this activity students will gain hands-on experience fetching historical stoc
 
 ---
 
-### 4. Instructor Do: Review Free Throw Simulation (5 min)
+### 4. Instructor Do: Review Decisive Distributions (10 min)
 
 **Files:**
 
-* [free_throw_simulation.ipynb](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes/Solved/free_throw_simulation.ipynb)
+* [Decisive_Distributions.ipynb](Activities/02-Stu_Decisive_Distributions/Solved/Decisive_Distributions.ipynb)
 
-Open the solution and explain the following:
+Open the solved version of the Jupyter notebook and explain the following:
 
-* The process of executing a Monte Carlo simulation remains similar even for a different use case (free throws vs. coin flips). At its core, the basis of Monte Carlo simulations is iteration (running tests and simulations) and saving the results of a random process. Thus, expect the programmatic structure of `for` loops and potentially nested `for` loops.
+* After importing the required libraries and the Alpaca keys, the next step is to read stock data from over one year.
 
-  ```python
-  # Set number of simulations and free throws
-  num_simulations = 1000
-  num_throws = 10
-
-  # Set a list object acting as a throw: made basket or missed basket
-  throw = ["made", "missed"]
-
-  # Set probability of events
-  probability = [0.7, 0.3]
-
-  # Create an empty DataFrame to hold simulation results
-  monte_carlo = pd.DataFrame()
-
-  # Run n number of simulations
-  for n in range(num_simulations):
-
-      # Print simulation iteration
-      # print(f"Running Simulation {n+1}...")
-
-      # Set an empty list to hold throw results
-      throws = []
-
-      # Shoot the ball `10` times
-      for i in range(num_throws):
-
-          # Randomly choose between `made` and `missed` with a `70%` chance to make the throw and a `30%` chance the throw is missed
-          free_throw = random.choice(throw, p=probability)
-
-          # Print throw result
-          # print(f"  Throw {i+1}: {free_throw}")
-
-          # Append throw result to list
-          throws.append(free_throw)
-
-      # Append column for each simulation and throw results
-      monte_carlo[f"Simulation {n}"] = pd.Series(throws)
-
-  # Print the DataFrame
-  monte_carlo
-  ```
-
-* The `choice` function from the `random` class of the `numpy` library has a `p` parameter that allows for setting a nonuniform probability to events. In this case, a player has a `70%` chance of making a shot and consequently, a `30%` chance of missing the shot. Therefore, the `choice` function below reflects this.
+  **Note:** Analysis and results may vary if you change these dates, we recommend you to validate if you can reach similar results if you decide to run the code with different dates in the class.
 
   ```python
-  # Randomly choose between `made` and `missed` with a `70%` chance to make the throw and a `30%` chance the throw is missed
-  free_throw = random.choice(throw, p=probability)
+  # Set timeframe to '1D'
+  timeframe = "1D"
+
+  # Set start and end datetimes of 1 year, between now and 365 days ago.
+  start_date = pd.Timestamp("2019-05-01", tz="America/New_York").isoformat()
+  end_date = pd.Timestamp("2020-05-01", tz="America/New_York").isoformat()
+
+  # Set the stock tickers
+  tickers = ["SPY", "LUV", "DIS", "AAPL", "SBUX", "WORK"]
+
+  # Get 1 year's worth of historical data for all stocks
+  df_ticker = api.get_barset(
+      tickers,
+      timeframe,
+      start=start_date,
+      end=end_date,
+  ).df
   ```
 
-* Because the random process has nonuniform probability (`70%` chance to make a shot and `30%` chance to miss a shot) the corresponding frequency and probability distributions of made free throws show that a majority of the distribution lies within the `7, 8, 9, and 10` range, while the rest of the distribution is spread out within the `0, 1, 2, 3, 4, 5, 6` range. Unlike the bell curve of a normal distribution, this is called a skewed (in this case, left-skewed) distribution.
+* Until now, we retrieved stock data from one or two tickers, note that it's possible to fetch data from several tickers by only adding the symbols to the `tickers` list.
 
-  ![free-throws-frequency-distribution](Images/free-throws-frequency-distribution.png)
+* Next, we create a new DataFrame containing only closing prices since we want to analyze their distribution to compare stock volatility.
 
-  ![free-throws-probability-distribution](Images/free-throws-probability-distribution.png)
+  ```python
+  # Create and empty DataFrame for closing prices
+  df_closing_prices = pd.DataFrame()
 
-* The probability distribution of free throws made will change slightly with every run of the program; however, in this current run, the probability distribution shows that the likelihood of the player making `9-10` shots in a single session is approximately `15%`.
+  # Fetch the closing prices for all the tickers
+  for ticker in tickers:
+      df_closing_prices[ticker] = df_ticker[ticker]["close"]
 
-  ![free-throws-probability-distribution-focus](Images/free-throws-probability-distribution-focus.png)
+  # Drop the time component of the date
+  df_closing_prices.index = df_closing_prices.index.date
+
+  # Display sample data
+  df_closing_prices.head()
+  ```
+
+  ![tickers-closing-prices](Images/tickers-closing-prices.png)
+
+* In this analysis, the key to visually assess stock volatility is to compute the daily returns of closing prices, so we use the `pct_change()` function.
+
+  ```python
+  # Compute daily returns
+  df_daily_returns = df_closing_prices.pct_change().dropna()
+  ```
+
+* The first tool we use to analyze stock volatility is a histogram. This plot will allow us to have a picture of the probability distribution. We set the argument `alpha=06` in the histogram to make the plot more comfortable to read.
+
+  ```python
+  # Visualize the distribution of daily returns across all stocks using a histogram plot
+  df_daily_returns.plot.hist(alpha=0.5)
+  ```
+
+  ![tickers-histogram](Images/tickers-histogram.png)
+
+* By observing the histogram, you can note that stock data for all the tickers is normally distributed, however, it's a bit hard to read this plot to decide the most and the least volatile stock.
+
+* Let's create a density plot to have a better understanding of stock volatility.
+
+  ```python
+  # Visualize the distribution of daily returns across all stocks using a density plot
+  df_daily_returns.plot.density()
+  ```
+
+  ![tickers-density-plot](Images/tickers-density-plot.png)
+
+* This is quite better, right! From the density plot, we can observe that the most volatile stock is `WORK`, and the lest one is `SPY`. Using these two plots, we can start deciding an investing strategy by setting different weights for each ticker in a portfolio.
+
+* It would be great to forecast the future outcomes of a portfolio, right? That's where Monte Carlo simulations come into action.
+
+Answer any questions before moving on.
 
 ---
 
