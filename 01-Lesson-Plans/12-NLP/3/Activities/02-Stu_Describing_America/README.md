@@ -1,6 +1,6 @@
 # Describing America
 
-The first speech delivered by the new leader of a nation is meant to set the tone for their term as commander in chief. For this activity, you will use NLTK and spaCy to analyze the inaugural addresses delivered by the presidents of the United States since 1789.
+The first speech delivered by the president of the United States is meant to set the tone for their term as commander in chief. For this activity, you will use NLTK and spaCy to analyze the inaugural addresses delivered by US presidents since 1789.
 
 You will use [the inaugural address corpus](https://www.nltk.org/book/ch02.html#inaugural-address-corpus) from the NLTK library to identify the most common adjectives used by US presidents, and how these adjectives describe America.
 
@@ -38,7 +38,7 @@ In this section, you will retrieve the most frequent adjective used in every ina
 
 * Use the `most_freq_adj` to create a Python list containing the most common adjective from each inaugural address. Remember that you store all the inaugural addresses in the `texts` Python list.
 
-* Create a DataFrame `df_adjs` with the most common adjective for each inaugural address. Define two columns, `doc_id` with all the document IDs you store in the `ids` Python list, and `adjective` containing the most common adjective from each inaugural address.
+* Create a DataFrame `df_adjs` with the most common adjective for each inaugural address. Define two columns: `doc_id`, with all the document IDs you store in the `ids` Python list, and `adjective`, containing the most common adjective from each inaugural address.
 
 ### 3. Analyze adjectives over time
 
@@ -50,27 +50,27 @@ Two helper functions are provided to aid you in this task.
 
 2. `get_word_counts()`: This function counts the occurrences of a word in a text.
 
-Use these functions to analyze the usage of the adjective over time as follows.
+Use these functions to analyze the usage of the adjective over time, as follows:
 
 * Use the `all_adj()` function provided to create a Python list `all_adjectives` containing all the adjectives into all the inaugural addresses.
 
-* Use the `most_common()` function from the `Counter` module to fetch the three most frequent adjectives used in the U.S. Presidential inaugural address. The `most_common()` function returns a Python list that you should store in a variable called `most_freq_adjectives`.
+* Use the `most_common()` function from the `Counter` module to fetch the three most frequent adjectives used in US presidential inaugural addresses. The `most_common()` function returns a Python list that you should store in a variable called `most_freq_adjectives`.
 
-* Use the `get_word_counts()` function provided to compute the counts of each of the three most frequent adjectives in the U.S. presidential inaugural addresses. Store the adjective counts in three different Python lists called `great_counts`, `other_counts`, and `own_counts`.
+* Use the `get_word_counts()` function provided to compute the counts of each of the three most frequent adjectives in the US presidential inaugural addresses. Store the adjective counts in three different Python lists called `great_counts`, `other_counts`, and `own_counts`.
 
 * Create a Python list `dates` to store the year when every inaugural address was delivered. You can retrieve the year of each inaugural address from the document IDs you store as string values in the `ids` list and using [the `split()` function](https://docs.python.org/3.7/library/stdtypes.html#str.split).
 
-* Create a Python list `presidents` to store the last name of each U.S. President whose inaugural address is in the `inaugural` corpus. You can retrieve the Presidents last name from the document IDs you store as string values in the `ids` list and using [the `split()` function](https://docs.python.org/3.7/library/stdtypes.html#str.split).
+* Create a Python list `presidents` to store the last name of each US president whose inaugural address is in the `inaugural` corpus. You can retrieve the last name from the document IDs you store as string values in the `ids` list and using [the `split()` function](https://docs.python.org/3.7/library/stdtypes.html#str.split).
 
-* Create a DataFrame `df_adjectives` with the Presidents' last names and the adjectives counts as columns, and set the `dates` list as the index.
+* Create a DataFrame `df_adjectives` with the presidents' last names and the adjectives counts as columns, and set the `dates` list as the index.
 
-* Create a line plot using the `df_adjectives` DataFrame to visualize the usage of the most common adjective over time in the U.S. presidential inaugural addresses.
+* Create a line plot using the `df_adjectives` DataFrame to visualize the usage of the most common adjectives over time in the US presidential inaugural addresses.
 
 ### 4. Adjectives describing America
 
 In this section, you will use spaCy to analyze all the documents in the inaugural corpus to identify the adjectives that describe the head word `America`.
 
-* Use spaCy to create a function `describe_america()` that returns the adjectives in all the inaugural addresses that describe de head word `America`
+* Use spaCy to create a function `describe_america()` that returns the adjectives in all the inaugural addresses that describe the head word `America`.
 
 * Use the `describe_america()` function you defined to create a Python list containing all the adjectives describing the word `America` into all the inaugural addresses in the corpus.
 
