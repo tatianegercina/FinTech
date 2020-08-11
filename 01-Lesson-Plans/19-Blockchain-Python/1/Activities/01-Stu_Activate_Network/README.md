@@ -39,7 +39,7 @@ Using this, you can build a cheatsheet to get your `geth` nodes up and running a
 
   The chain should be up and running after you start the second node.
 
-  **NOTE:**: If you receive the error - _Fatal: Error starting protocol stack: Access is denied._ - complete the following additional steps:
+  **NOTE**: If you receive the error - _Fatal: Error starting protocol stack: Access is denied._ - complete the following additional steps:
   * Add the flags `--allow-insecure-unlock` and `--ipcdisable`
   * Enter your password if prompted. 
   * It may be difficult to see the password prompt (as seen in the image below), however you must still input the password and hit enter for the chain to begin mining.
