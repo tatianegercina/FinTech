@@ -8,7 +8,7 @@ In this activity, you will create a sentiment index from News API headlines and 
 
 2. Get news headlines for at least five topics of your choice and apply sentiment analysis to the headlines.
 
-3. Correlate the headlines' sentiment to S&P 500 returns for each topic. Which one had the highest correlation?
+3. Correlate the headlines sentiment to S&P 500 returns for each topic. Which one had the highest correlation?
 
 ## Hint
 
