@@ -106,7 +106,7 @@ Ask the students if they can think of any other examples of Monte Carlo simulati
 
 ### 2. Instructor Do: Understanding Probability and Probability Distributions (15 min)
 
-Monte Carlo simulations seek to explain the probability of potential outcomes for a randomly occurring event. Therefore, this activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like and how to interpret the results.
+In this activity, you will explain to students how Monte Carlo simulations seek to explain the probability of potential outcomes for a randomly occurring event.
 
 Open the lesson slides, move to the "Understanding Probability and Probability Distributions" section, and highlight the following:
 
@@ -126,6 +126,8 @@ In short words, probability is the chance of an event happening. Probability mer
 
 * When numerical data is considered to be normally distributed, the probability of any data point follows the `68-95-99.7` rule, stating that 68.27%, 95.45%, and 99.73% (effectively 100%) of possible values lie within one, two, and three standard deviations of the mean, respectively.
 
+  ![normal-distribution](Images/normal-distribution.png)
+
 * Normal distributions are particularly useful in finance because they adequately approximate the volatility of stock prices, forex rates and other commodities. For example, the daily price change (in percent) from a high volatility stock such as Tesla and a low volatility stock such as Coca-Cola can both demonstrate normal distributions despite the differences in company size, customer base, stock price and market share. We can visualize the normal distribution of these stocks using Pandas as follows.
 
 Explain to students that we are going to use probability distributions to visually analyze the outcomes forecasted by Monte Carlo simulations, but first, it's time to learn how to fetch stock data and visualize its distribution using Python.
@@ -136,133 +138,144 @@ Answer any questions before moving on.
 
 ### 3. Instructor Do: Getting into Probability Distributions Using Python (15 min)
 
+In this activity, students will learn how to retrieve historical stock data using Alpaca and visualize its distribution.
+
 **Files:**
 
-* [stock_price_normal_distribution.ipynb](Activities/01-Understanding_Probability_and_Probability_Distributions/Solved/stock_price_normal_distribution.ipynb)
+* [stock_price_normal_distribution.ipynb](Activities/01-Ins_Getting_into_Probability_Distributions/Solved/stock_price_normal_distribution.ipynb)
 
-Walkthrough the solution and highlight the following:
+Open the unsolved version of the Jupyter notebook, live code the solution and highlight the following:
 
-* This solution represents a technical example to the Monte Carlo simulation use case presented in the previous activity (coin flip simulation). Therefore, the program flips a coin `10` times for `5` simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers (or ranges) of heads.
+* Before getting started with Monte Carlo simulations, it's important to learn how you can visually analyze the distribution of data using Python.
 
-* Make sure to import the `random` class from the `numpy` library, which allows for randomizing a particular code process.
+* Today, we will work with stock data to forecast possible outcomes using Monte Carlo simulations, as a first step, let's learn how to use histograms and density plots to see the probability distributions in action.
+
+* Let's start by importing the required libraries and loading our Alpaca keys from the environment variables stored in the `.env.` file.
 
   ```python
   # Import libraries and dependencies
-  from numpy import random
+  import os
   import pandas as pd
+  import alpaca_trade_api as tradeapi
+
+  # Load .env environment variables
+  from dotenv import load_dotenv
+  load_dotenv()
 
   %matplotlib inline
   ```
 
-* The initial step is to configure the simulation parameters.
-
-  * `num_simulations` is be the number of simulations to execute.
-
-  * `num_flips` is the number of coin flips per simulation.
-
-  * `coin` is a list to set the possible options of the event. In this case, we can get heads or tails.
-
-  * `probability` is a list with the probability of every option to occur. In this case, heads and tails have the same chance to arise.
+* Next, we create the Alpaca API object.
 
   ```python
-  # Set number of simulations and coin flips
-  num_simulations = 5
-  num_flips = 10
+  # Set Alpaca API key and secret
+  alpaca_api_key = os.getenv("ALPACA_API_KEY")
+  alpaca_secret_key = os.getenv("ALPACA_SECRET_KEY")
 
-  # Set a list object acting as a coin: heads or tails
-  coin = ["heads", "tails"]
-
-  # Set probability of events
-  probability = [0.5, 0.5]
+  # Create the Alpaca API object
+  alpaca = tradeapi.REST(
+      alpaca_api_key,
+      alpaca_secret_key,
+      api_version="v2"
+  )
   ```
 
-* Next, we create an empty DataFrame to store the simulation results.
+* Let's continue by fetching stock price data over one year for Tesla (`TSLA`) and Coca-Cola (`KO`) using the Alpaca SDK.
+
+**Note:** Analysis and results may vary if you change these dates, we recommend you to validate if you can reach similar results if you decide to run the code with different date in the class.
 
   ```python
-  # Create an empty DataFrame to hold simulation results
-  monte_carlo = pd.DataFrame()
+  # Set the Tesla and Coca-Cola tickers
+  ticker = ["TSLA","KO"]
+
+  # Set timeframe to '1D'
+  timeframe = "1D"
+
+  # Set start and end datetimes of 1 year, between now and 365 days ago.
+  start_date = pd.Timestamp("2019-05-01", tz="America/New_York").isoformat()
+  end_date = pd.Timestamp("2020-05-01", tz="America/New_York").isoformat()
+
+  # Get 1 year's worth of historical data for Tesla and Coca-Cola
+  df_ticker = alpaca.get_barset(
+      ticker,
+      timeframe,
+      start=start_date,
+      end=end_date
+  ).df
+
+  # Display sample data
+  df_ticker.head(10)
   ```
 
-* The simulation process is executed by two nested `for-loops`, one to control the number of simulations, another to control the number of coin flips.
+  ![tsla-ko-yearly-stock-prices](Images/tsla-ko-yearly-stock-prices.png)
 
-  ![coin_flips_sims](Images/coin_flips_sims.png)
-
-* In the inner loop, the `choice` function from the `random` class, combined with the `p` parameter for setting the probability of random events, is used to randomly choose between the two outcomes of a coin: heads or tails. Therefore, in this case, the `p` parameter is set to `[0.5, 0.5]` to represent a `50%` chance of a coin landing on heads and a `50%` chance of a coin landing on tails.
-
-  ![random_choice_function](Images/random_choice_function.png)
-
-* The resulting heads and tails outputs for each simulation of `10` coin flips are saved as individual columns to a Pandas DataFrame.
-
-  ![add_coin_flip_sim_results](Images/add_coin_flip_sim_results.png)
-
-* Finally, we display the simulations results in the notebook.
-
-  ![show_coin_flip_results](Images/show_coin_flip_results.png)
-
-  ![coin-flip-dataframe.png](Images/coin-flip-dataframe.png)
-
-* Next, we count the occurrences of the different heads-to-tails combination of every simulation by looping through the DataFrame that contains the coin flip results.
-
-* We use the Pandas `value_counts` function to calculate the frequency distribution of heads-to-tails for every simulation, returns Series object
-
-  ![coin-flip-value-counts](Images/coin-flip-value-counts.png)
-
-* Into the `for-loop`, the conditional statements check to make sure that both the `heads` and `tails` keys are present in the series object returned from the `value_counts` function. If one or the other key is not present, the missing key gets a `0` to account for the fact that the event did not occur at all during the simulation (flipped `10` heads or flipped `10` tails).
+* To analyze the probability distribution of these stock prices, we will create a new DataFrame containing only the closing prices over one year, and we will compute the daily returns.
 
   ```python
-  # Append results of heads and tails to respective lists
-  # If `heads` and `tails key is present in the Series, append both results
-  if 'heads' in value_count.index and 'tails' in value_count.index:
-      heads.append(value_count['heads'])
-      tails.append(value_count['tails'])
+  # Create and empty DataFrame for closing prices
+  df_closing_prices = pd.DataFrame()
 
-  # If `heads` key is not present in the Series, append heads list with 0
-  # And append tails list with tails result (simulation must have returned all tails)
-  elif 'heads' not in value_count.index:
-      heads.append(0)
-      tails.append(value_count['tails'])
+  # Fetch the closing prices of KO and TSLA
+  df_closing_prices["KO"] = df_ticker["KO"]["close"]
+  df_closing_prices["TSLA"] = df_ticker["TSLA"]["close"]
 
-  # If `tails` key is not present in the Series, append tails list with 0
-  # And append heads list with heads result (simulation must have returned all heads)
-  elif 'tails' not in value_count.index:
-      tails.append(0)
-      heads.append(value_count['heads'])
+  # Drop the time component of the date
+  df_closing_prices.index = df_closing_prices.index.date
+
+  # Compute daily returns
+  df_daily_returns = df_closing_prices.pct_change().dropna()
+
+  # Display sample data
+  df_daily_returns.head(10)
   ```
 
-* Once the `for-loop` ends, we add two columns to the empty DataFrame we set before the loop to add the heads and tails lists that we populated during the iterations of the loop.
+  ![tsla-ko-closing-prices](Images/tsla-ko-closing-prices.png)
 
-```python
-# Create columns from heads and tails lists
-freq_dist_df["heads"] = heads
-freq_dist_df["tails"] = tails
-```
+* At a glance, we can get an idea of how the values are distributed by generating the descriptive statistics of a DataFrame using the `describe()` function.
 
-* Using the `plot` function with the `kind` parameter set to `hist` produces a histogram that showcases the frequency distribution of landed heads.
+  ```python
+  # Generate descriptive statistics
+  df_daily_returns.describe()
+  ```
 
-  ![coin-flip-5-simulations](Images/coin-flip-5-simulations.png)
+  ![descriptive-stats](Images/descriptive-stats.png)
 
-* An histogram is not a bar graph; frequency values in histogram bars are determined by the area (length times width) of the bar, not by the height of the bar. Histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single data point.
+* Observing the standard deviation (`std`), you can verify how far the values are from the mean. A bigger standard deviation indicates that values are further away from the mean, so the stock prices tend to be more volatile. On the contrary, with lower standard deviation, values are closer to the mean, and stock prices would be less volatile.
 
-* Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum data points provided. Sometimes this creates ranges deviating from what is being simulated. Therefore, manually setting the `bins` parameter ensures that the histogram accurately represents the edges of each bin, in this case, bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`.
+* We can also visually analyze the probability distribution by plotting a histogram.
 
-  ![coin-flip-5-simulations-bins](Images/coin-flip-5-simulations-bins.png)
+  ```python
+  # Visualize distribution of Tesla percent change in closing price using a histogram plot
+  df_daily_returns["TSLA"].plot.hist()
+  ```
 
-* Setting the `density` parameter to `True` for the histogram plot function creates a frequency density histogram which can be used to showcase the probability distribution of potential outcomes. In this case, it can be interpreted that for an experiment of `5` simulations of `10` coin flips, we can expect approximately `20%` of our simulations to land between `4` and `5` heads and another `20%` of our simulations to land between `5` and `6` heads. In addition, it could be said that `40%` of our simulations could land between `4` and `6` heads.
+  ![Tesla Closing Pct Change Distribution](Images/Tesla_Closing_Distribution.png)
 
-  ![coin-flip-density-histogram](Images/coin-flip-density-histogram.png)
+  ```python
+  # Visualize distribution of Coca-Cola percent change in closing price using a histogram plot
+  df_daily_returns["KO"].plot.hist()
+  ```
 
-* Unfortunately, the probability distribution of potential outcomes generated for a small number of simulations should not be trusted. This is because a small number of simulations cannot test every possible outcome and, therefore, may generate biased results that are not indicative of the true nature of the random process in the long term. Thus, increasing the simulation count to `100` provides a more reliable and continuous range of probable outcomes.
+  ![Coca-Cola Closing Pct Change Distribution](Images/CCola_Closing_Distribution.png)
 
-  ![coin-flip-100-simulations](Images/coin-flip-100-simulations.png)
+* Notice how in both histogram plots, the distributions resemble our "bell curve" shape of a normal distribution? That's because the percent change in daily price for both companies have similar probability distributions - smaller changes in daily price are *far* more likely than large swings in daily price (although they are not impossible!).
 
-* Increasing the simulation count yet again to `1000` produces even more potential outcomes and should be considered even more reliable in the long term. It can be seen that landing heads `5-6` times is the most likely outcome in the long term.
+* Besides a histogram, we can use a density plot to visualize a smoother shape of the probability distribution.
 
-  ![coin-flip-1000-simulations](Images/coin-flip-1000-simulations.png)
+  ```python
+  # Visualize the distribution of percent change in closing price for both stocks using a density plot
+  df_daily_returns.plot.density()
+  ```
 
-* Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve nature to the probability of its potential outcomes. This bell curve, a normal distribution, is one in which probability is maximized in the middle of the distribution (these values are more likely) and more minimized in probability the further outcomes deviate left and right from the mean, known as *standard deviation*.
-* This convergence to the shape of a normal distribution is a well-known phenomenon called the *central limit theorem*: multiple measurements of averages for a variable (in this case the average number of heads from a series of coin toss games) almost always conform to the shape of a normal distribution, even when the underlying variable (whether it was heads or whether it was tails) is not itself normally distributed.
+  ![Density Distribution of both stocks](Images/Density_Distribution.png)
 
-  ![normal-distribution](Images/normal-distribution.png)
+* A density plot is a variation of the histogram that uses a statistical technique called [kernel smoother](https://en.wikipedia.org/wiki/Kernel_smoother) to plot values in the form of a smooth shape. An advantage of density plots over histograms is that they allow a more straightforward determination of the distribution shape since they are not affected by the number of bins.
+
+* When we overlay the two distributions together using the density plot, we can see that Coca-Cola's distribution has a higher frequency of small daily changes compared to Tesla. This is due to the volatility of a stock - the less volatile the stock, the smaller the standard deviation value. A smaller standard deviation means that the stock is less likely to have large (positive or negative) changes in value.
+
+* Probability distributions such as the normal distribution help us make educated guesses about what might happen to a stock or commodity in the future. When it comes to the Monte Carlo simulations, the model will randomly select changes that fit within the normal distribution to simulate real-world data best!
+
+Explain to students, that despite most pricing distributions are not perfectly normal, as a FinTech professional it's important to understand what a normal distribution is since it's the most common type of distribution assumed in technical analysis of a stock, commodity, or other assets.
 
 Answer any questions before moving on.
 
