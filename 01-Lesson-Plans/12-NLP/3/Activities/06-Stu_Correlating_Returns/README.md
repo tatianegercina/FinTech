@@ -4,11 +4,11 @@ In this activity, you will create a sentiment index from News API headlines and 
 
 ## Instructions
 
-* Download returns data for the past month for `AAPL` using the Alpaca API.
+1. Download returns data for the past month for `AAPL` using the Alpaca API.
 
-* Get news headlines for at least five topics of your choice and apply sentiment analysis to the headlines.
+2. Get news headlines for at least five topics of your choice and apply sentiment analysis to the headlines.
 
-* Correlate the headlines' sentiment to S&P 500 returns for each topic. Which one had the highest correlation?
+3. Correlate the headlines' sentiment to S&P 500 returns for each topic. Which one had the highest correlation?
 
 ## Hint
 
@@ -18,7 +18,7 @@ In this activity, you will create a sentiment index from News API headlines and 
 
 ## Troubleshooting Notes
 
-The Vader sentiment library may need to have the input text converted to plain ASCII text. The following code can be used to convert a string or byte to plain ASCII text.
+The VADER sentiment library may need to have the input text converted to plain ASCII text. The following code can be used to convert a string or byte to plain ASCII text.
 
 ```python
 plain_ascii = raw_text.encode('utf-8', 'ignore').decode('ascii', 'ignore')
