@@ -1,9 +1,10 @@
-pragma solidity 0.5.0;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract MartianAuction {
+    address deployer;
+    address payable public beneficiary;
 
     // Current state of the auction.
-    address payable public beneficiary;
     address public highestBidder;
     uint public highestBid;
 
@@ -29,6 +30,7 @@ contract MartianAuction {
     constructor(
         address payable _beneficiary
     ) public {
+        deployer = msg.sender; // set as the MartianMarket
         beneficiary = _beneficiary;
     }
 
@@ -99,7 +101,7 @@ contract MartianAuction {
 
         // 1. Conditions
         require(!ended, "auctionEnd has already been called.");
-        require(msg.sender == beneficiary, "You are not the auction beneficiary");
+        require(msg.sender == deployer, "You are not the auction deployer!");
 
         // 2. Effects
         ended = true;
