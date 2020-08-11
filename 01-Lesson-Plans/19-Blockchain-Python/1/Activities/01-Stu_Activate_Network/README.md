@@ -15,6 +15,10 @@ Using this, you can build a cheatsheet to get your `geth` nodes up and running a
   We enable the `--rpc` flag on the first node to talk to it later. This defaults to port `8545`.
   We need to unlock the node's account to enable it to sign blocks.
 
+  **NOTE**: If you receive the error - _Fatal: Account unlock with HTTP access is forbidden!_ - complete the following additional steps:
+  * Add the flag `--allow-insecure-unlock`.
+  * Enter your password if prompted.
+
 * Copy the enode address from this node.
 
   For example:
