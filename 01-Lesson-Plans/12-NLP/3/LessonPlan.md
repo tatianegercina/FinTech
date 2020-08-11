@@ -60,7 +60,7 @@ Quickly inform students that it's crucial to install the `spaCy` library and the
 
 ### 2. Instructor Do: Intro to spaCy (5 min)
 
-Start by opening the slides and navigating to [Section X]. 
+Open the slideshow and navigate to the "spaCy" section, and highlight the following. 
 
 Tell students that in order to implement POS tagging and named entity recognition (more on these later), we will be using spaCy.
 
