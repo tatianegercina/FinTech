@@ -804,76 +804,154 @@ This activity exemplifies the use case where a Monte Carlo simulation can be app
 
 Walkthrough the solution and highlight the following:
 
-* Monte Carlo simulations can be executed not just on random processes with *discrete probabilities* (ex. `70%` to make a free throw and `30%` to miss a free throw), but also on *continuous probabilities* such as normal probability distributions.
+* As we learned before, Monte Carlo simulations can be executed on *continuous probabilities* such as normal probability distributions.
 
-* Normal probability distributions showcase the various probabilities of returning a value based on the number of standard deviations it is from the mean (how far the value may lie plus or minus from the average expected value); values far away from the mean are less common while values near the mean are more common. A Monte Carlo simulation uses this characteristic to simulate a random process' potential outcomes with respect to the variability around its mean.
+* Normal probability distributions showcase the various probabilities of returning a value based on the number of standard deviations it is from the mean (how far the value may lie plus or minus from the average expected value); values far away from the mean are less common while values near the mean are more common. A Monte Carlo simulation uses this characteristic to simulate a random process's potential outcomes with respect to its mean variability.
 
-  ![example-normal-distribution](Images/example-normal-distribution.png)
+  ![example-normal-distribution](Images/normal-distribution.png)
 
-* The daily closing stock price data will be pulled using the `Alpaca-trade-api` SDK that connects to the `Alpaca` API. Therefore, make sure to import the necessary libraries and dependencies before proceeding.
+* In this demo, we will run a Monte Carlo simulation using a historical dataset of daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution.
+
+* The daily closing stock price data will be pulled using the `alpaca-trade-api` SDK. Therefore, we need to import the necessary libraries and dependencies before proceeding.
 
   ```python
   # Import libraries and dependencies
+  import os
   import numpy as np
   import pandas as pd
-  import os
-  import matplotlib.pyplot as plt
   import alpaca_trade_api as tradeapi
 
   %matplotlib inline
   ```
 
-* Now that you have imported the `alpaca-trade-api` and it's required dependencies we are going to list out the available, tradeable assets.
-
-* Use the `list_assets()` function from the `tradeapi` object to check the available stock ticker data that can be pulled from the `Alpaca` API. Then iterate over the data to only keep the currently tradeable assets.
-
-  ![alpaca-list-assets](Images/alpaca-list-assets.png)
-
-* Create a new empty DataFrame named `asset_info_df`. Convert the python list of assets to a panda's series and then define a new column in your DataFrame named `symbol` with that series.
-
-  ![alpaca-list-assets-df](Images/alpaca-list-assets-df.png)
-
-* The `get_barset()` function from the `Alpaca` SDK takes in the following parameters
-  * `ticker`,
-  * `timeframe`,
-  * `limit`,
-  * `start`,
-  * `end`,
-  * `after`,
-  * `until`
-
-* And returns an object containing a DataFrame of `AAPL` daily stock prices. The `start_date` and `end_date` variables, in this case, are set to `365` days from the `current date` and the `current date`, respectively. To correctly fetch the stock data, the Alpaca SDK works with dates in ISO format, so we transform the `start_date` and the `end_date` using the `Timestamp` and `isoformat` functions from Pandas.
-
-  ![alpaca-get-barset](Images/alpaca-get-barset.png)
-
-* The DataFrame object from the Alpaca SDK contains an outer level (`level 0`) that is not needed, drop this level using the `df.droplevel` function.
-
-* Simulating stock price trajectory involves analyzing the closing prices of a stock. Therefore, it's best to drop the extraneous columns for the `AAPL` price data received from the `Alpaca` API.
-
-  ![dataframe-drop-columns](Images/dataframe-drop-columns.png)
-
-* To simulate `AAPL` stock prices for the next `252` trading days, the simulation must be framed in the context of a stock's *growth*. Therefore, the `pct_change` function is used to calculate the last year of daily returns for `AAPL`, and the `mean` and `std` functions are used to calculate the average daily return and the volatility of daily returns.
-
-  ![aapl-daily-return-mean-and-std](Images/aapl-daily-return-mean-and-std.png)
-
-* The following code snippet exemplifies the simulation of stock price trajectory. The simulation calculates the next day's simulated closing price by multiplying the preceding day's closing price by a random selection of a range of values defined by the normal probability distribution of `AAPL` daily returns, given by the *mean* and *standard deviation* of daily returns.
+* We use the `get_barset()` function from the `Alpaca` SDK to retrieve a DataFrame of `AAPL` daily stock prices. The `start_date` and `end_date` variables, in this case, are set to five years from the current date and the current date, respectively. To fetch the stock data correctly, the Alpaca SDK works with dates in ISO format, so we transform the `start_date` and the `end_date` using the `Timestamp` and `isoformat` functions from Pandas.
 
   ```python
-  # Simulate the returns for 252 days
-  for i in range(num_trading_days):
-      # Calculate the simulated price using the last price within the list
-      simulated_price = simulated_aapl_prices[-1] * (1 + np.random.normal(avg_daily_return, std_dev_daily_return))
-      # Append the simulated price to the list
-      simulated_aapl_prices.append(simulated_price)
+  # Set the ticker
+  ticker = "AAPL"
+
+  # Set timeframe to '1D'
+  timeframe = "1D"
+
+  # Set start and end datetimes of 5 years from Today
+  start_date = pd.Timestamp("2019-05-04", tz="America/New_York").isoformat()
+  end_date = pd.Timestamp("2020-05-04", tz="America/New_York").isoformat()
+
+  # Get 1 year's worth of historical data for AAPL
+  df = api.get_barset(
+      ticker,
+      timeframe,
+      start=start_date,
+      end=end_date,
+  ).df
   ```
 
-* Plotting the DataFrame of simulated `AAPL` closing prices for the next `252` trading days shows one potential pathway for how `AAPL` stock prices may behave in the next year.
+* Next, we configure and run `500` Monte Carlo simulations to forecast the stock daily returns over the next `252` trading days.
 
-  ![appl-simulated-prices-plot](Images/appl-simulated-prices-plot.png)
+  ```python
+  # Set number of simulations
+  num_sims = 500
 
-* Calculating the daily returns and cumulative returns of `AAPL` simulated prices allow for plotting the profits and losses of a potential investment in `AAPL` over the next trading year.
+  # Configure a Monte Carlo simulation to forecast one year daily returns
+  MC_AAPL = MCSimulation(
+      portfolio_data = ticker_data,
+      num_simulation = num_sims,
+      num_trading_days = 252
+  )
 
-  ![aapl-cumulative-pnl-plot.png](Images/aapl-cumulative-pnl-plot.png)
+  # Run Monte Carlo simulations to forecast one year daily returns
+  MC_AAPL.calc_cumulative_return()
+  ```
+
+* Plotting the DataFrame of simulated `AAPL` daily returns for the next `252` trading days shows one potential pathway for how `AAPL` stock prices may behave in the next year. We start creating a DataFrame with the mean, median, minimum, and maximum daily return value to generate the plot.
+
+  ```python
+  # Compute summary statistics from the simulated daily returns
+  simulated_returns_data = {
+      "mean": list(MC_AAPL.simulated_return.mean(axis=1)),
+      "median": list(MC_AAPL.simulated_return.median(axis=1)),
+      "min": list(MC_AAPL.simulated_return.min(axis=1)),
+      "max": list(MC_AAPL.simulated_return.max(axis=1))
+  }
+
+  # Create a DataFrame with the summary statistics
+  df_simulated_returns = pd.DataFrame(simulated_returns_data)
+
+  # Display sample data
+  df_simulated_returns.head()
+  ```
+
+  ![aapl-stats-df](Images/aapl-stats-df.png)
+
+  ```python
+  # Use the `plot` function to visually analyze the trajectory of AAPL stock daily returns on a 252 trading day simulation
+  df_simulated_returns.plot(title="Simulated Daily Returns Behavior of AAPL Stock Over the Next Year")
+  ```
+
+  ![aapl-daily-returns-plot](Images/aapl-daily-returns-plot.png)
+
+* It is also interesting to visually analyze what would be the possible outcomes of an initial investment. Let's calculate the simulated profits and losses of an initial investment of $10,000 in `AAPL` stocks.
+
+  ```python
+  # Set initial investment
+  initial_investment = 10000
+
+  # Multiply an initial investment by the daily returns of simulative stock prices to return the progression of daily returns in terms of money
+  cumulative_pnl = initial_investment * df_simulated_returns
+
+  # Display sample data
+  cumulative_pnl.head()
+  ```
+
+  ![aapl-outcomes-df](Images/aapl-outcomes-df.png)
+
+* After computed the possible outcomes, we can create a line plot to analyze their behavior visually.
+
+  ```python
+  # Use the 'plot' function to create a chart of the simulated profits/losses
+  cumulative_pnl.plot(title="Simulated Outcomes Behavior of AAPL Stock Over the Next Year")
+  ```
+
+  ![aapl-outcomes-plot](Images/aapl-outcomes-plot.png)
+
+* Finally, we calculate the range of the possible outcomes of our $10,000 investments in `AAPL` stocks with a `95%` confidence interval by fetching the summary statistics from the Monte Carlo simulation results.
+
+```python
+# Fetch summary statistics from the Monte Carlo simulation results
+tbl = MC_AAPL.summarize_cumulative_return()
+
+# Print summary statistics
+print(tbl)
+```
+
+```text
+count           500.000000
+mean              1.231607
+std               0.362491
+min               0.546586
+25%               0.970280
+50%               1.160347
+75%               1.443191
+max               2.859506
+95% CI Lower      0.687664
+95% CI Upper      2.052604
+Name: 252, dtype: float64
+```
+
+```python
+# Use the lower and upper `95%` confidence intervals to calculate the range of the possible outcomes of our $10,000 investments in AAPL stocks
+ci_lower = round(tbl[8]*10000,2)
+ci_upper = round(tbl[9]*10000,2)
+
+# Print results
+print(f"There is a 95% chance that an initial investment of $10,000 in the portfolio"
+      f" over the next year will end within in the range of"
+      f" ${ci_lower} and ${ci_upper}.")
+```
+
+```text
+There is a 95% chance that an initial investment of $10,000 in the portfolio over the next year will end within in the range of $6876.64 and $20526.04.
+```
 
 Answer any questions before moving on.
 
