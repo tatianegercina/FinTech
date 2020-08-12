@@ -802,6 +802,8 @@ This activity exemplifies the use case where a Monte Carlo simulation can be app
 
 * [stock_price_simulation.ipynb](Activities/05-Ins_Simulation_of_Stock_Price_Trajectory/Solved/stock_price_simulation.ipynb)
 
+* [MCForecastTools.py](Activities/05-Ins_Simulation_of_Stock_Price_Trajectory/Solved/MCForecastTools.py)
+
 Walkthrough the solution and highlight the following:
 
 * As we learned before, Monte Carlo simulations can be executed on *continuous probabilities* such as normal probability distributions.
@@ -863,7 +865,7 @@ Walkthrough the solution and highlight the following:
   MC_AAPL.calc_cumulative_return()
   ```
 
-* Plotting the DataFrame of simulated `AAPL` daily returns for the next `252` trading days shows one potential pathway for how `AAPL` stock prices may behave in the next year. We start creating a DataFrame with the mean, median, minimum, and maximum daily return value to generate the plot.
+* Plotting the DataFrame of simulated `AAPL` daily returns for the next `252` trading days shows one potential pathway for how `AAPL` stock prices may behave in the next year. We start creating a DataFrame with the mean, median, minimum, and maximum daily return value to generate the plot. Note that we used the argument `axis=1` to compute the statistics by column.
 
   ```python
   # Compute summary statistics from the simulated daily returns
@@ -959,17 +961,19 @@ Answer any questions before moving on.
 
 ### 11. Students Do: Financial Forecasting (15 min)
 
-**Corresponding Activity:** [06-Stu_Financial_Forecasting_Pt_I](Activities/06-Stu_Financial_Forecasting_Pt_I)
+**Corresponding Activity:** [06-Stu_Financial_Forecasting](Activities/06-Stu_Financial_Forecasting_Pt_I)
 
-In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical `TSLA` daily returns.
+In this activity, students execute a Monte Carlo simulation to forecast stock price behavior of historical `TSLA` daily returns.
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Financial_Forecasting_Pt_I/README.md)
+* [README.md](Activities/06-Stu_Financial_Forecasting/README.md)
 
 **Files:**
 
-* [financial_forecasting_part_1.ipynb](Activities/06-Stu_Financial_Forecasting_Pt_I/Unsolved/financial_forecasting_part_1.ipynb)
+* [financial_forecasting.ipynb](Activities/06-Stu_Financial_Forecasting/Unsolved/financial_forecasting.ipynb)
+
+* [MCForecastTools.py](Activities/06-Stu_Financial_Forecasting/Unsolved/MCForecastTools.py)
 
 ---
 
@@ -977,30 +981,72 @@ In this activity, students execute a Monte Carlo simulation to forecast stock pr
 
 **Files:**
 
-* [financial_forecasting_part_1.ipynb](Activities/06-Stu_Financial_Forecasting_Pt_I/Solved/financial_forecasting_part_1.ipynb)
+* [financial_forecasting_part_1.ipynb](Activities/06-Stu_Financial_Forecasting/Solved/financial_forecasting.ipynb)
+
+* [MCForecastTools.py](Activities/06-Stu_Financial_Forecasting/Solved/MCForecastTools.py)
 
 Open the solution and explain the following:
 
 * Make sure that the `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` environment variables are properly set in your projects `.env` file so that the `alpaca-trade-api` SDK can communicate to the `Alpaca` API.
-  ![alpaca-api-error](Images/alpaca-api-error.png)
 
-* The `get_historical_data` function in conjunction with the `datetime` library pulls stock data from the `Alpaca` API using a dynamic datetime range. Specifically, `start_date` and `end_date` variables are not hard-coded.
+* The `get_barset()` function pulls three years worth stock data from the Alpaca API.
 
-  ![datetime-range](Images/alpaca-data-tsla.png)
+  ```python
+  # Set the ticker
+  ticker = "TSLA"
 
-* Applying a Monte Carlo simulation to forecasting the future daily closing prices of `TSLA` stock involves multiplying the closing price of each preceding trading day by a randomly generated daily return approximated by a normal probability distribution given the historical average and standard deviation of `TSLA` daily returns.
+  # Set timeframe to '1D'
+  timeframe = "1D"
 
-* In other words, each `TSLA` closing price of the preceding trading day is multiplied by a randomly chosen daily return where values closer to the expected daily return have a higher probability of occurring while values farther away from the expected daily return have a lesser probability of occurring.
+  # Set start and end datetimes of 3 years from Today
+  start_date = pd.Timestamp("2017-05-04", tz="America/New_York").isoformat()
+  end_date = pd.Timestamp("2020-05-04", tz="America/New_York").isoformat()
 
-  ![tsla-normal-distribution](Images/tsla-normal-distribution.png)
+  # Get 1 year's worth of historical data for TSLA
+  ticker_data = api.get_barset(
+      ticker,
+      timeframe,
+      start=start_date,
+      end=end_date
+  ).df
+  ```
 
-* Simulations for the next `252` trading days show that `TSLA` stock is forecast to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years.
+* Next, we configure and run `1000` Monte Carlo simulations to forecasting the future daily closing prices of `TSLA`.
 
-  ![tsla-simulated-price-plot](Images/tsla-simulated-price-plot.png)
+  ```python
+  # Set number of simulations
+  num_sims = 1000
 
-  ![tsla-cumulative-pnl](Images/tsla-cumulative-pnl.png)
+  # Configure a Monte Carlo simulation to forecast three years daily returns
+  MC_TSLA = MCSimulation(
+      portfolio_data = ticker_data,
+      num_simulation = num_sims,
+      num_trading_days = 252*3
+  )
+  ```
 
-* It should be stated that although the forecast for the next `3` years of `TSLA` stock prices show considerable declines, it does not mean that it is guaranteed. A forecast/prediction is only as good as the foundation of information from which it was made, and even then, by the nature of random events -- *anything* can happen.
+* Simulations for the next `252` trading days show that `TSLA` stock is forecast to continue to decline, with a `$10,000` investment facing brutal negative returns if invested in `TSLA` over the next three years.
+
+  ![tsla-simulated-outcomes](Images/tsla-simulated-outcomes.png)
+
+* It should be stated that although the forecast for the next `3` years of `TSLA` stock prices show considerable declines, it does not mean that it is guaranteed.
+
+* As you can observe, the range of the possible outcomes of our $10,000 investments in `TSLA` stocks drops to around $3,000 and jumps over $200,000. A forecast/prediction is only as good as the foundation of information from which it was made, and even then, by the nature of random events -- *anything* can happen.
+
+```python
+# Use the lower and upper `95%` confidence intervals to calculate the range of the possible outcomes of our $10,000 investments in AAPL stocks
+ci_lower = round(tbl[8]*10000,2)
+ci_upper = round(tbl[9]*10000,2)
+
+# Print results
+print(f"There is a 95% chance that an initial investment of $10,000 in the portfolio"
+      f" over the next year will end within in the range of"
+      f" ${ci_lower} and ${ci_upper}.")
+```
+
+```text
+There is a 95% chance that an initial investment of $10,000 in the portfolio over the next year will end within in the range of $2851.84 and $251789.23.
+```
 
 Answer any questions before moving on.
 
@@ -1016,9 +1062,9 @@ Make sure students can recognize and acknowledge their accomplishments. Communic
 
 * You've added another tool to your API-SDK tool belt: the Alpaca Trade API SDK, which is an excellent resource for historical stock data and financial functions.
 
-* You've taken yet another deep dive into statistics, learning how to create, calculate, and interpret probability distributions. This includes using mean, **standard deviation**, **daily returns**, Numpy's random data generators, and histograms to implement and visualize portfolio simulations.
+* You've taken yet another deep dive into statistics, learning how to create, calculate, and interpret probability distributions. This includes using mean, **standard deviation**, **daily returns**, and charts to implement and visualize portfolio simulations.
 
-* You've plotted the price trajectory of stock prices and returns using single and multiple Monte Carlo simulations.
+* You've plotted the price trajectory of stock prices and returns using multiple Monte Carlo simulations.
 
 * You've forecast average daily return volatility at the stock and portfolio level.
 
@@ -1052,4 +1098,4 @@ Use the remaining time to get a head start on office hours. Allow students to as
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
