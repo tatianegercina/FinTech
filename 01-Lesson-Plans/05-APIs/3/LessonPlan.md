@@ -393,6 +393,12 @@ Answer any questions before moving on.
 
 Now that students understand what a probability distribution is and how to recognize a normal distribution in financial data, in this activity, students will learn about Monte Carlo simulations. Although there are many use-cases for Monte Carlo simulations, in finance, we use Monte Carlo simulations for portfolio forecasting.
 
+**Files:**
+
+* [portfolio_forecasting.ipynb](Activities/03-Ins_Portfolio_Forecasting_Monte_Carlo/Solved/portfolio_forecasting.ipynb)
+
+* [MCForecastTools.py](Activities/03-Ins_Portfolio_Forecasting_Monte_Carlo/Solved/MCForecastTools.py)
+
 Open the lesson slides, move to the "Portfolio Forecasting Using Monte Carlo Simulations" section, and highlight the following:
 
 * Portfolio forecasting is the process of projecting a portfolio's future performance and attempting to analyze its most probable outcome.
@@ -485,7 +491,7 @@ Since the waiting time for running the Monte Carlo simulation could be long, ope
   # Printing the simulation input data
   MC_fiveyear.portfolio_data.head()
   ```
-    
+
   ![MCSimulation input data](Images/MCSimulation_input_data.png)
 
 **Note:** If you ever get an error when trying to create your `MCSimulation` instance, make sure to read the error message and ensure that your Alpaca API query was successful.
@@ -582,7 +588,25 @@ Answer any questions before moving on.
 
 ---
 
+### 8. Students Do: Three Stock Monte (30 min)
 
+**Corresponding Activity:** [04-Stu_Three_Stock_Monte](3/Activities/04-Stu_Three_Stock_Monte)
+
+In this activity students will use the `MCForecastTools` toolkit to determine how much of each stock is worth to purchase in a portfolio in order to maximize your chances of profit.
+
+You can have students working in pairs for this activity.
+
+**Instructions:**
+
+* [README.md](Activities/04-Stu_Three_Stock_Monte/README.md)
+
+**Files:**
+
+* [Three_Stock_Monte.ipynb](Activities/04-Stu_Three_Stock_Monte/Unsolved/Three_Stock_Monte.ipynb)
+
+* [MCForecastTools.py](Activities/04-Stu_Three_Stock_Monte/Unsolved/MCForecastTools.py)
+
+---
 
 ### 5. Instructor Do: Confidence Intervals (10 min)
 
