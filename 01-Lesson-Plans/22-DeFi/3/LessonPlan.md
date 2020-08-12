@@ -752,9 +752,9 @@ Welcome the students back to class, and allow them to use this activity time to 
 
 * In this activity, students will compare three `README` files and write down the differences they note between them.
 
-* Using `09-Stu_Compare_README`, ask students to compare [SAMPLE_1.md](Activities/09-Stu_Compare_README/Resources/sample_1/README.md),
-[SAMPLE_2.md](Activities/09-Stu_Compare_README/Resources/sample_2/README.md),
-and [SAMPLE_3.md](Activities/09-Stu_Compare_README/Resources/sample_3/README.md) and note the differences they see.
+* Using `06-Stu_Compare_README`, ask students to compare [SAMPLE_1.md](Activities/06-Stu_Compare_README/SAMPLE_1.md),
+[SAMPLE_2.md](Activities/06-Stu_Compare_README/SAMPLE_2.md),
+and [SAMPLE_3.md](Activities/06-Stu_Compare_README/SAMPLE_3.md) and note the differences they see.
 
 * Slack out the instruction file for the activity and these three sample files.
 
@@ -788,7 +788,7 @@ and [SAMPLE_3.md](Activities/09-Stu_Compare_README/Resources/sample_3/README.md)
 
 #### Students Do: Create Readme (15 min)
 
-* For the remaining 15 minutes, ask students update their Project #2 `README` according to standards set in the [awesome README guide](../Supplemental/Awesome_README_Guide.md). They should feel free to add other elements that they think will be useful for people to know about their project.
+* For the remaining 15 minutes, ask students update their Project #2 `README`. They should feel free to add other elements that they think will be useful for people to know about their project.
 
 * If they finish early, or have already updated their Project #1 and Project #2 `README` files, ask students to move on to updating any homework `README` files that need additional details.
 
