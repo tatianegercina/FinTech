@@ -138,8 +138,7 @@ Answer any questions before moving on.
 
 ### 3. Instructor Do: Getting into Probability Distributions Using Python (15 min)
 
-**Corresponding Activity:**
-[01-Ins_Getting_into_Probability_Distributions](Activities/01-Ins_Getting_into_Probability_Distributions)
+**Corresponding Activity:** [01-Ins_Getting_into_Probability_Distributions](Activities/01-Ins_Getting_into_Probability_Distributions)
 
 In this activity, students will learn how to retrieve historical stock data using Alpaca and visualize its distribution.
 
@@ -284,7 +283,7 @@ Answer any questions before moving on.
 
 ---
 
-### 3. Students Do: Decisive Distributions (20 min)
+### 4. Students Do: Decisive Distributions (20 min)
 
 **Corresponding Activity:** [02-Stu_Probability_Distribution_of_Potential_Outcomes](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes)
 
@@ -300,7 +299,7 @@ In this activity students will gain hands-on experience fetching historical stoc
 
 ---
 
-### 4. Instructor Do: Review Decisive Distributions (10 min)
+### 5. Instructor Do: Review Decisive Distributions (10 min)
 
 **Files:**
 
@@ -387,6 +386,203 @@ Open the solved version of the Jupyter notebook and explain the following:
 Answer any questions before moving on.
 
 ---
+
+### 6. Instructor Do: Portfolio Forecasting Using Monte Carlo Simulations (20 min)
+
+**Corresponding Activity:** [03-Ins_Portfolio_Forecasting_Monte_Carlo](3/Activities/03-Ins_Portfolio_Forecasting_Monte_Carlo)
+
+Now that students understand what a probability distribution is and how to recognize a normal distribution in financial data, in this activity, students will learn about Monte Carlo simulations. Although there are many use-cases for Monte Carlo simulations, in finance, we use Monte Carlo simulations for portfolio forecasting.
+
+Open the lesson slides, move to the "Portfolio Forecasting Using Monte Carlo Simulations" section, and highlight the following:
+
+* Portfolio forecasting is the process of projecting a portfolio's future performance and attempting to analyze its most probable outcome.
+
+* Portfolio forecasting can be done using Monte Carlo simulations to forecast the potential price trajectories of the individual stocks that comprise the portfolio. In our case, we will estimate the cumulative return, as well as the portfolio's range of potential cumulative returns, including their corresponding probabilities of occurring. Doing so helps to analyze the potential risk and likelihood that a portfolio's performance can deviate from the expected result.
+
+* Portfolio forecasting is utilized across the FinTech industry - portfolio managers, quantitative analysts, and retirement planners are just some of many who need to forecast the future performance of a portfolio to gauge the potential risk of investment. Regardless if a portfolio contains stocks, bonds, cryptocurrencies or any other commodities, as long as we can retrieve historical price data, we can use the Monte Carlo simulation to project future performance.
+
+Explain to students, that in order to perform portfolio forecasting in Python, we will need two things, historical financial data from our portfolio to input into the simulation and a framework to run our Monte Carlo simulation. Highlight the following:
+
+* For our historical portfolio data, we can either read in spreadsheet data into a Pandas DataFrame using the `pd.read_csv()` method, or query historical price information using a financial API. For this lesson, we will query our historical financial data using the Alpaca API.
+
+* As for the Monte Carlo framework, you can go through its algorithm and implement it manually using Python. You can also use a library that encapsulates the logic of the Monte Carlo method and focuses your efforts on analyzing the predicted outcomes.
+
+* To carry out portfolio forecasting, we provide you with a library called `MCForecastTools` that contains functions to help build Monte Carlo simulations and will allow you to test several future scenarios by setting different parameters.
+
+Since the waiting time for running the Monte Carlo simulation could be long, open the solved version of the Jupyter notebook, follow the code on each cell and highlight the following.
+
+* Let's pretend that we are looking to add Microsoft (`MSFT`) and Coca-Cola (`KO`) stock to our portfolio if we were to invest $10,000 worth of stock today, how much would it be worth in `5` years? `10` years? Let's find out.
+
+* After importing our dependencies and setting up the Alpaca API instance, our next step is to query the Alpaca API to retrieve the closing stock price of Microsoft and Coca-Cola over the past `3` years.
+
+  ```python
+  # Set timeframe to '1D'
+  timeframe = "1D"
+
+  # Set start and end datetimes between now and 3 years ago.
+  start_date = pd.Timestamp("2017-05-01", tz="America/New_York").isoformat()
+  end_date = pd.Timestamp("2020-05-01", tz="America/New_York").isoformat()
+
+  # Set the ticker information
+  tickers = ["MSFT","KO"]
+
+  # Get 3 year's worth of historical price data for Microsoft and Coca-Cola
+  df_ticker = api.get_barset(
+      tickers,
+      timeframe,
+      start=start_date,
+      end=end_date
+  ).df
+
+  # Display sample data
+  df_ticker.head()
+  ```
+
+  ![Alpaca 3-year query](Images/Alpaca_query.png)
+
+* If we look at the index of our DataFrame, we can see that we correctly queried daily stock price from May of 2017 through May of 2020. Now that we have the historical stock information, it is time to build our Monte Carlo simulation instance. Let's take a look at the documentation of the `MCSimulation` module of the `MCForecastTools` library by executing the following command in our notebook:
+
+  ```python
+  # Print the documentation of the MCSimulation module of the MCForecastTools library
+  ?MCSimulation
+  ```
+
+  ![MCSimulation docstring](Images/MCSimulation_docstring.png)
+
+* The `MCSimulation` module contains multiple functions and parameters that help us easily configure, run, and evaluate a Monte Carlo simulation using the stock information we previously queried from Alpaca.
+
+* According to the documentation, the `MCSimulation` module requires us to provide a few parameters to configure it properly:
+
+  * **portfolio_data** - our Pandas DataFrame containing historical stock information from our *potential* stock portfolio.
+
+  * **weights** - a list of weights that tell the `MCSimulation` what percentage of our investment goes to each stock.
+
+    * For example, if `weights = [.75,.25]`, than the `MCSimulation` assumes that $7,500 of our $10,000 investment will go to Coca-Cola stock, while $2,500 will go to Microsoft stock.
+
+  * **num_simulation** - the number of simulated samples we want to create.
+
+    * At a minimum, we should try to use `500` samples. However, if we have the computational resources and time, we should try to simulate `1000` samples to ensure that our analysis results are more reliable.
+
+  * **num_trading_days** - the number of trading days to simulate
+
+    * For example, if we wanted to simulate stock price returns after `5` years, we need to multiply 252 (the number of trading days in a year) times five (`252*5`).
+
+* Knowing this information, let's try to create our first instance of `MCSimulation` using a `60/40` split of our $10,000 investment (60% of our $10,000 for buying Coca-Cola stock, 40% for buying Microsoft stock):
+
+  ```python
+  # Configuring a Monte Carlo simulation to forecast five years cumulative returns
+  MC_fiveyear = MCSimulation(
+      portfolio_data = df_ticker,
+      weights = [.60,.40],
+      num_simulation = 500,
+      num_trading_days = 252*5
+  )
+  ```
+
+* After creating the `MCSimulation` instance, the daily returns are computed. A new DataFrame is created where the instance automatically created a `daily_return` column that calculates the percent change of closing prices for each stock. The `daily_return` column will be the normally distributed variable we use as input for the Monte Carlo simulation. We can look to this new DataFrame using the `portfolio_data` attribute and linking it to the `head()` function.
+
+  ```python
+  # Printing the simulation input data
+  MC_fiveyear.portfolio_data.head()
+  ```
+    
+  ![MCSimulation input data](Images/MCSimulation_input_data.png)
+
+**Note:** If you ever get an error when trying to create your `MCSimulation` instance, make sure to read the error message and ensure that your Alpaca API query was successful.
+
+* Using our `MCSimulation` instance, we can run the Monte Carlo simulation using the `calc_cumulative_return()` function.
+
+  ```python
+  # Running a Monte Carlo simulation to forecast five years cumulative returns
+  MC_fiveyear.calc_cumulative_return()
+  ```
+
+  ![5.4-Running-Monte-Carlo-Simulation](Images/Running-Monte-Carlo-Simulation.gif)
+
+* After running all the simulations, a new DataFrame is created.
+
+  ![Monte Carlo simulation output](Images/MCSimulation_simoutput.png)
+
+* At first glance, this DataFrame may not look like anything special, and that is okay. We want to check if the dimensions of the DataFrame make sense to confirm the simulation worked as intended. The `1261` rows represent our `252` trading days times `5` years (plus a starting value of 1), and the `500` columns represent the `500` simulated samples - it looks like the simulation ran correctly!
+
+**Important:** The simulation process includes using a random number generator, so your simulated values will vary from this example. However, the functions in the code and the interpretations of the data will be the same.
+
+Explain to students that in order to visualize and analyze the data generated by the Monte Carlo simulation, we can use the other built-in functions of the `MCSimulation` module. First, we take a look at the `500` samples across the entire simulated time using the `plot_simulation()` function.
+
+```python
+# Plot simulation outcomes
+line_plot = MC_fiveyear.plot_simulation()
+
+# Save the plot for future usage
+line_plot.get_figure().savefig("MC_fiveyear_sim_plot.png", bbox_inches="tight")
+```
+
+![MC five year simulation plot](Images/MC_fiveyear_sim_plot.png)
+
+Highlight to students that if they want to use this plot for a report or presentation, they can save it as an image using the `get_figure()` function and linking the `savefig()` function.
+
+Continue the demo by highlighting the following about the analysis of the Monte Carlo simulation results.
+
+* Looking at our line plot, we see the trajectory of each and every sample across all of the simulated trading days. The x-axis of our plot shows the training days, while the y-axis is the portfolio's cumulative return. When we are looking at cumulative returns, a value of `1` indicates no change in the portfolio value.
+
+* According to our plot, we can see there are some cumulative returns of `2`, `6`, or even `12` times the original value, but it is hard for us to tell what the distribution of values looks like from this perspective. Alternatively, we can look at the distribution of cumulative returns using the `plot_distribution()` function.
+
+  ```python
+  # Plot probability distribution and confidence intervals
+  dist_plot = MC_fiveyear.plot_distribution()
+
+  # Save the plot for future usage
+  dist_plot.get_figure().savefig('MC_fiveyear_dist_plot.png',bbox_inches='tight')
+  ```
+
+  ![MC five year distribution plot](Images/MC_fiveyear_dist_plot.png)
+
+* Our new plot visualizes the final cumulative return across all the `500` simulated samples using a histogram. In this plot, our x-axis represents the final cumulative return values. In contrast, the y-axis represents the frequency of each "bin" of final cumulative values out of the total `500` simulations.
+
+* The red bars in this plot help us to visualize the **95% confidence interval**. The **95% confidence interval** represents the range of values we can expect to observe `95%` of the time. When it comes to our Monte Carlo simulations, we simulated a normal distribution; therefore the `95%` confidence interval approximates that most of our simulated returns will come from the center of the bell curve rather than the far tail ends.
+
+* According to our plot, we can see that `95%` of the time, we can expect a cumulative return of approximately one to seven times our original investment amount. To calculate these approximate returns directly, we can use the following code.
+
+* First, we compute the summary statistics from the Monte Carlo simulations results using the `summarize_cumulative_return()` function.
+
+  ```python
+  # Fetch summary statistics from the Monte Carlo simulation results
+  tbl = MC_fiveyear.summarize_cumulative_return()
+
+  # Print summary statistics
+  print(tbl)
+  ```
+
+  ![MCSimulation calc table](Images/MCSimulation_calc_tbl.png)
+
+* Next, we use the lower and upper `95%` confidence intervals to calculate the range of the possible outcomes of our $10,000 investments in Coca-Cola and Microsoft stocks.
+
+  ```python
+  # Use the lower and upper `95%` confidence intervals to calculate the range of the possible outcomes of our $10,000 investments in Coca-Cola and Microsoft stocks
+  ci_lower = round(tbl[8]*10000,2)
+  ci_upper = round(tbl[9]*10000,2)
+
+  # Print results
+  print(f"There is a 95% chance that an initial investment of $10,000 in the portfolio"
+        f" over the next 5 years will end within in the range of"
+        f" ${ci_lower} and ${ci_upper}")
+  ```
+
+  ![MCSimulation print statement](Images/MCSimulation_calc_result.png)
+
+* Looking at our calculated portfolio values, we see that there is a `95%` chance that our investment will grow over the next `5` years at a fairly substantial rate. Although this is fantastic news, it is important to note that stocks have observed historical growth and volatility from `2017` to `2020`. As a result, our input data (and subsequent probability distribution) may be overestimating the `95%` confidence interval of final cumulative return when simulating data over a more extended period of time. Therefore a good rule of thumb is to query and provide `1` year of historical portfolio data for every `1` or `2` years of simulated data.
+
+Explain to students that as they become more familiar with programming and running Monte Carlo simulations in Python, they can tweak the code provided in the `MCForecastTools` library to create more robust simulations and more powerful visualizations!
+
+Answer any questions before moving on.
+
+---
+
+### 7. BREAK (40 MIN)
+
+---
+
+
 
 ### 5. Instructor Do: Confidence Intervals (10 min)
 
@@ -615,10 +811,6 @@ Open the solution and explain the following:
 * It should be stated that although the forecast for the next `3` years of `TSLA` stock prices show considerable declines, it does not mean that it is guaranteed. A forecast/prediction is only as good as the foundation of information from which it was made, and even then, by the nature of random events -- *anything* can happen.
 
 Answer any questions before moving on.
-
----
-
-### 11. BREAK (40 min)
 
 ---
 
