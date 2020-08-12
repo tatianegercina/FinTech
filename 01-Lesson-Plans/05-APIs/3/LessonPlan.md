@@ -584,7 +584,7 @@ Answer any questions before moving on.
 
 ---
 
-### 7. BREAK (40 MIN)
+### 7. BREAK (40 min)
 
 ---
 
@@ -609,6 +609,186 @@ You can have students working in pairs for this activity.
 ---
 
 ### 9. Instructors Do: Review Three Stock Monte (10 min)
+
+**Files:**
+
+* [Three_Stock_Monte.ipynb](Activities/04-Stu_Three_Stock_Monte/Solved/Three_Stock_Monte.ipynb)
+
+* [MCForecastTools.py](Activities/04-Stu_Three_Stock_Monte/Solved/MCForecastTools.py)
+
+Congratulate students on having successfully built, analyzed, and visualized their own Monte Carlo simulation data!
+
+Open the solved version of the Jupyter notebook and explain the following:
+
+* After importing our dependencies and setting up the Alpaca API instance, our next step is to query the Alpaca API to retrieve the closing stock price of AT&T (`T`), Nike (`NKE`), and Exxon Mobil (`XOM`) over the past five years.
+
+  ```python
+  # Set timeframe to '1D'
+  timeframe = "1D"
+
+  # Set start and end datetimes between now and 3 years ago.
+  start_date = pd.Timestamp("2015-05-01", tz="America/New_York").isoformat()
+  end_date = pd.Timestamp("2020-05-01", tz="America/New_York").isoformat()
+
+  # Set the ticker information
+  tickers = ["T","NKE","XOM"]
+
+  # Get 3 year's worth of historical price data for Microsoft and Coca-Cola
+  df_ticker = api.get_barset(
+      tickers,
+      timeframe,
+      start=start_date,
+      end=end_date
+  ).df
+  ```
+
+* Next, we forecast five-year portfolio growth with evenly-distributed stock investments using the `MCForecastTools` library. Note that we set the argument `weights = [.33,.33,.33]` to have the same proportion of each stock in the portfolio.
+
+  ```python
+  # Configure a Monte Carlo simulation to forecast five years cumulative returns
+  MC_even_dist = MCSimulation(
+      portfolio_data = df_ticker,
+      weights = [.33,.33,.33],
+      num_simulation = 1000,
+      num_trading_days = 252*5
+  )
+  ```
+
+* Once we set the parameters for our Monte Carlo simulation, we forecast five years of cumulative returns running `1000` simulations using the `calc_cumulative_return()` function.
+
+  ```python
+  # Run a Monte Carlo simulation to forecast five years cumulative returns
+  MC_even_dist.calc_cumulative_return()
+  ```
+
+* After running the simulation, we can visually analyze the forecasted outcomes for the next five years (`1260` trading days). We can also visualize the probability distribution to have an idea of the range of the possible outcomes.
+
+  ![three-monte-plots](Images/three-monte-plots.png)
+
+* After observing the `95%` confidence intervals in the probability distribution plot, we can deduce that our initial investment will drop by `50%` or increase by `320%`.
+
+  ![three-monte-confidence-intervals](Images/three-monte-confidence-intervals.png)
+
+* To have an accurate estimate of the range of the possible outcomes, we use the `summarize_cumulative_return()` function to fetch the summary statistics.
+
+  ```python
+  # Fetch summary statistics from the Monte Carlo simulation results
+  even_tbl = MC_even_dist.summarize_cumulative_return()
+
+  # Print summary statistics
+  print(even_tbl)
+  ```
+
+  ```text
+  count           1000.000000
+  mean               1.248977
+  std                0.654414
+  min                0.260045
+  25%                0.807732
+  50%                1.102806
+  75%                1.503041
+  max                4.605321
+  95% CI Lower       0.441835
+  95% CI Upper       3.108547
+  Name: 1260, dtype: float64
+  ```
+
+* We use the lower and upper `95%` confidence intervals to calculate the range of the possible outcomes of our $15,000 investments.
+
+  ```python
+  # Use the lower and upper `95%` confidence intervals to calculate the range of the possible outcomes of our $15,000 investments in stocks
+  even_ci_lower = round(even_tbl[8]*15000,2)
+  even_ci_upper = round(even_tbl[9]*15000,2)
+
+  # Print results
+  print(f"There is a 95% chance that an initial investment of $15,000 in the portfolio"
+        f" over the next 5 years will end within in the range of"
+        f" ${even_ci_lower} and ${even_ci_upper}.")
+  ```
+
+  ```text
+  There is a 95% chance that an initial investment of $15,000 in the portfolio over the next five years will end within the range of $6627.52 and $46628.21.
+  ```
+
+Recall students that the simulation process includes using a random number generator, so their simulated values will vary from this example.
+
+The reminder steps of this activity consist of simulating different scenarios by changing the proportion of stocks in each scenario. One essential part of these simulations is to set the `weights` argument of the `MCSimulation()` function to the correct values.
+
+For example, to simulate five-year portfolio growth with `60%` AT&T stock, you need to set-up the `MCSimulation` function as follows.
+
+```python
+# Configure a Monte Carlo simulation to forecast five years cumulative returns with 60% AT&T stock
+MC_att = MCSimulation(
+    portfolio_data = df_ticker,
+    weights = [.20,.60,.20],
+    num_simulation = 1000,
+    num_trading_days = 252*5)
+```
+
+We set `0.60` in the second position of the array since `T` is the second top column in the `portfolio_data` DataFrame.
+
+Another important aspect of the solution is to create a variable to store the summary statistics for each scenario and the lower and upper `95%` confidence intervals. In the solution file, you will see that we created the following variables.
+
+1. `even_tbl`, `even_ci_lower`, `even_ci_upper`: Stores the statistics of the Monte Carlo simulation with the evenly-weighted stocks.
+
+2. `att_tbl`, `att_ci_lower`, `att_ci_upper`: Stores the statistics of the Monte Carlo simulation with `60%` AT&T stock.
+
+3. `nike_tbl`, `nike_ci_lower`, `nike_ci_upper`: Stores the statistics of the Monte Carlo simulation with `60%` Nike stock.
+
+4. `exxon_tbl`, `exxon_ci_lower`, `exxon_ci_upper`: Stores the statistics of the Monte Carlo simulation with `60%` Exxon Mobil stock.
+
+Finally, to summarize the findings across all four simulations, we use the variables created for each scenario to print the resulting range of the possible outcomes of our $15,000 investments in stocks.
+
+```python
+# Even weighted stocks
+print("Even weighted stocks")
+print(f"There is a 95% chance that an initial investment of $15,000 in the portfolio"
+      f" over the next 5 years will end within in the range of"
+      f" ${even_ci_lower} and ${even_ci_upper}.")
+print("*"*50)
+
+# 60% for AT&T
+print("60% for AT&T")
+print(f"There is a 95% chance that an initial investment of $15,000 in the portfolio"
+      f" over the next 5 years will end within in the range of"
+      f" ${att_ci_lower} and ${att_ci_upper}.")
+print("*"*50)
+
+# 60% for Nike
+print("60% for Nike")
+print(f"There is a 95% chance that an initial investment of $15,000 in the portfolio"
+      f" over the next 5 years will end within in the range of"
+      f" ${nike_ci_lower} and ${nike_ci_upper}.")
+print("*"*50)
+
+# 60% for Exxon
+print("60% for Exxon")
+print(f"There is a 95% chance that an initial investment of $15,000 in the portfolio"
+      f" over the next 5 years will end within in the range of"
+      f" ${exxon_ci_lower} and ${exxon_ci_upper}.")
+print("*"*50)
+```
+
+```text
+Even weighted stocks
+There is a 95% chance that an initial investment of $15,000 in the portfolio over the next 5 years will end within in the range of $6627.52 and $46628.21.
+**************************************************
+60% for AT&T
+There is a 95% chance that an initial investment of $15,000 in the portfolio over the next 5 years will end within in the range of $6834.9 and $33414.49.
+**************************************************
+60% for Nike
+There is a 95% chance that an initial investment of $15,000 in the portfolio over the next 5 years will end within in the range of $4652.03 and $94005.81.
+**************************************************
+60% for Exxon
+There is a 95% chance that an initial investment of $15,000 in the portfolio over the next 5 years will end within in the range of $5184.4 and $27741.01.
+**************************************************
+```
+
+Explain to students that after looking across all four simulations, the portfolio breakdown with the highest chance of success seems to be the portfolio with a majority of Nike stock. Although all four portfolios have a chance to lose money, the Nike portfolio is roughly the same level of risk with far more upside potential.
+
+Get your students excited about the fact that in this activity, they had an opportunity to use one of the data modeling tools used throughout the FinTech industry for price forecasting and stocks' performance. Highlight that as they progress through the course, they will learn about even more robust models and analytic techniques to help them throughout their careers as FinTech professionals!
+
+Answer any questions before moving on.
 
 ---
 
