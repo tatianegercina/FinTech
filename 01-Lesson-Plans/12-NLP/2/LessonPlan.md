@@ -66,9 +66,11 @@ Go to the slideshow, navigate to the "Sentiment Analysis" section, and highlight
 
 ### 2. Instructor Do: Listen to the FinTech (5 min)
 
-This activity should encourage students to engage in an open, instructor-led discussion about the applications they envision for sentiment analysis in FinTech.
+This part of the class is meant to encourage students to engage in an open, instructor-led discussion about the applications they envision for sentiment analysis in FinTech.
 
-The introduction to sentiment analysis will offer some context to students about this area of NLP. Go to the slideshow, navigate to the "Listen to the FinTech" section, and facilitate an open discussion, asking the following questions:
+This introduction to sentiment analysis will offer some context to students about this area of NLP. This goal of this section is to challenge students to think outside of the box and encourage them to dream about future applications of sentiment analysis in FinTech.
+
+Go to the slideshow, navigate to the "Listen to the FinTech" section, and facilitate an open discussion, asking the following questions:
 
 * Can a stock feel sadness if it opens with losses today?
 
@@ -86,13 +88,11 @@ The introduction to sentiment analysis will offer some context to students about
 
   * **Answer:** This is definitely a major concern. Companies should get consent from people to analyze the sentiment of their written communications, and a storage and security infrastructure in compliance with user privacy regulations.
 
-This activity looks to challenge students to think outside of the box and encourages them to dream about future applications of sentiment analysis in FinTech.
-
 ---
 
 ### 3. Instructor Do: Terms Relevance (Understanding TF–IDF) (15 min)
 
-This activity introduces terms relevance from the perspective of term frequency-inverse document frequency (TF–IDF). Also, students will learn how TF–IDF can be implemented using `sklearn`.
+This section introduces terms relevance from the perspective of term frequency-inverse document frequency (TF–IDF). Also, students will learn how TF–IDF can be implemented using `sklearn`.
 
 **Note:** Do not invest too much time on the TF–IDF formulas. Just explain how they work in general, and invest a bit more time on the rationale behind these measures and their implementation using `sklearn`.
 
@@ -102,15 +102,13 @@ Open the lesson slides, navigate to the "Terms Relevance (Understanding TF–IDF
 
 * In a world of words, analyzing text can be confusing due to the complexity of language. This is why measuring term relevance is useful—it offers a way to understand how important a word is to a document in a collection of documents or a corpus.
 
-[[The following is a list/guide of ... ]]
-
 * A **corpus** (_corpora_ in plural) is a large, structured, and organized collection of text documents that normally focuses on a specific matter. There are monolingual, or single-language, corpora and multilingual, or multiple-language, corpora.
 
 * **TF–IDF** is a weighting factor intended to measure how important a word is to a document in a corpus.
 
-* **TF** indicates that if a word appears multiple times in a document, it is deemed relevant and more meaningful than other words in the same text.
+* **TF**, or term frequency, indicates that if a word appears multiple times in a document, it is deemed relevant and more meaningful than other words in the same text.
 
-* **IDF** comes into play when analyzing several documents. If a word also appears many times among a collection of documents, it could be a frequent word, and not necessarily a relevant one.
+* **IDF**, or inverse document frequency, comes into play when analyzing several documents. If a word also appears many times among a collection of documents, it could be a frequent word, and not necessarily a relevant one.
 
 * A high weight in TF–IDF is reached by terms with a high TF and a low document frequency of the term in the corpus. These are often more interesting terms to analyze.
 
@@ -909,7 +907,7 @@ Inform students that they will use this cloud service in the next class. Slack o
 
 Take a moment to congratulate students on wrapping up a really fun and intense week of natural language processing. Remind them that NLP, and sentiment analysis in particular, have many interesting applications in FinTech, such as market prediction and product benchmarking.
 
-Recap by challenging students to summarize, in a three-word phrase or less, what they learned today. Ask for volunteers, and then go round-robin if necessary.
+Recap by challenging students to summarize what they learned today using three or fewer words. Ask for volunteers, and then go round-robin if necessary.
 
 **Answer:** Finance has emotions
 
