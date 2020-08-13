@@ -77,19 +77,25 @@ An out-of-date Anaconda environment can create issues when trying to install new
     conda update conda
     ```
 
-3. Create a fresh conda environment to use with `asyncio` and `streamz`.
+3. Remove the virtual environment.
+
+    ```shell
+    conda env remove --name algotrading
+    ```
+
+4. Create a fresh conda environment to use with `asyncio` and `streamz`.
 
     ```shell
     conda create -n algotrading python=3.7 anaconda
     ```
 
-4. Activate the new environment.
+5. Activate the new environment.
 
     ```shell
     conda activate algotrading
     ```
 
-5. Install the `asyncio` and `streamz` packages.
+6. Install the `asyncio` and `streamz` packages.
 
     ```shell
     pip install asyncio
