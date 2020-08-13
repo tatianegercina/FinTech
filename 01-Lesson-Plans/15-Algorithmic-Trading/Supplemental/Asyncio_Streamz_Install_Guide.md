@@ -1,10 +1,22 @@
-# Asyncio & Streamz Installation Guide
+# Dotenv, Asyncio, and Streamz Installation Guide
 
 This guide serves as a step by step process for setting up and validating the asyncio and streamz Python libraries. Without these libraries, class activities and their associated code will not be able to perform the necessary operations for asynchronous programming and data streaming, respectively.
 
 ## Installation
 
-Open a terminal, and execute the following commands to install `asyncio` and `streamz`, respectively.
+To avoid library dependencies conflicts, we strongly recommend to create a fresh virtual environment for this Unit. You will use environment variables, so if you are creating a new virtual environment, be sure tha all of the dependencies are satisfied. The dependencies list can be found below for reference.
+
+* [`asyncio`](https://pypi.org/project/asyncio/)
+
+* [`python-dotenv`](https://pypi.org/project/python-dotenv/)
+
+Open a terminal, and execute the following commands to install `python-dotenv`, `asyncio`, and `streamz`, respectively.
+
+* Use the `pip install` command to download the `python-dotenv` module.
+
+  ```shell
+  pip install python-dotenv
+  ```
 
 * Use the `pip install` command to download the `asyncio` module.
 
@@ -24,12 +36,12 @@ Open a terminal, and execute the following commands to install `asyncio` and `st
 
 ## Verify Installation
 
-Once the `asyncio` and `streamz` modules are downloaded and installed, verify that both installations completed successfully.
+Once the `python-dotenv`, `asyncio`, and `streamz` modules are downloaded and installed, verify that both installations completed successfully.
 
-* Use the `pip list` function with a `grep` argument to identify if the `asyncio` library installed successfully.
+* Use the `pip list` function with a `grep` argument to identify if the `asyncio` and `python-dotenv` libraries installed successfully.
 
   ```shell
-  pip list | grep asyncio
+  pip list | grep -E "asyncio|python-dotenv"
   ```
 
   ![asyncio-verify](Images/asyncio-verify.png)
@@ -62,7 +74,7 @@ An out-of-date Anaconda environment can create issues when trying to install new
     conda update conda
     ```
 
-3. Create a fresh conda environment to use with `asyncio` and `streamz`.
+3. Create a fresh conda environment to use with `python-dotenv`, `asyncio`, and `streamz`.
 
     ```shell
     conda create -n algotrading python=3.7 anaconda
@@ -74,7 +86,11 @@ An out-of-date Anaconda environment can create issues when trying to install new
     conda activate algotrading
     ```
 
-5. Install the `asyncio` and `streamz` packages.
+5. Install the `python-dotenv`, `asyncio`, and `streamz` packages.
+
+    ```shell
+    pip install python-dotenv
+    ```
 
     ```shell
     pip install asyncio

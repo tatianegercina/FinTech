@@ -36,13 +36,9 @@ Next, head to the API settings of your Kraken account and generate new API keys.
 
   ![kraken-generate-keys](Images/kraken-generate-keys.png)
 
-Then, after generating your API keys, open a terminal and set the `KRAKEN_PUBLIC_KEY` and `KRAKEN_SECRET_KEY` environment variables, respectively. There is no need to include quotes around your api keys when setting the environment variables.
+Then, after generating your API keys, create a `.env` file and set the `KRAKEN_PUBLIC_KEY` and `KRAKEN_SECRET_KEY` environment variables, respectively.
 
   ![kraken-api-keys](Images/kraken-api-keys.png)
-
-  ![ccxt-environment-variables](Images/ccxt-environment-variables.png)
-
-**Note:** Unless you are setting these environment variables globally or permanently, they will need to be set each time you want to access the Kraken API via the ccxt library.
 
 ## Troubleshooting
 
