@@ -1,10 +1,10 @@
-## Bossy Words?
+# Bossy Words?
 
 In this activity, you will use TF–IDF to find the most relevant words from a collection of news articles that talk about money in the [Reuters Corpus](https://www.nltk.org/book/ch02.html#reuters-corpus) bundled in `NLTK`. Once you find the most relevant words, you will visualize the words using a word cloud.
 
-### Instructions
+## Instructions
 
-#### Getting the News About Money
+### Getting the News About Money
 
 You will only analyze news that talks about **money**. There are two categories in the Reuters Corpus that do this: `money-fx` and `money-supply`. In this section, you will filter the news by these categories.
 
@@ -12,7 +12,7 @@ Take a look into the [Reuters Corpus documentation](https://www.nltk.org/book/ch
 
 **Hint:** You can use a comprehension list or a for loop to accomplish this task.
 
-#### Calculating the TF–IDF Weights
+### Calculating the TF–IDF Weights
 
 Calculate the TF–IDF weight for each word on the working corpus using the `TfidfVectorizer()` class. Remember to include the `stop_words='english'` parameter.
 
@@ -22,7 +22,7 @@ You should obtain a DataFrame like this:
 
 ![Sample word frequency DataFrame](Images/tf_idf_words_frequency_df.png)
 
-#### Retrieving the Top Words
+### Retrieving the Top Words
 
 In order to create the word cloud you should get the top words; in this case, we will use a thumb rule that has been empirically tested by some NLP experts which states that words with a frequency between 10 and 30 might be the most relevant in a corpus.
 
@@ -32,7 +32,7 @@ You should get a DataFrame like this:
 
 ![Top words DataFrame example](Images/tf_idf_top_words_frequency_df.png)
 
-#### Creating a Word Cloud
+### Creating a Word Cloud
 
 Now you have all the pieces needed to create a word cloud based on TF–IDF weights, so use the `WordCloud` library to create it.
 
@@ -40,7 +40,7 @@ Your word cloud should look like this:
 
 ![Sample word cloud](Images/tf_idf_word_cloud.png)
 
-### Challenge: Looking for Documents that Contain Top Words
+## Challenge: Looking for Documents that Contain Top Words
 
 If you have time, you can work on the following challenge section.
 
@@ -52,7 +52,7 @@ Once you create the function, answer the following questions:
 * Question 2: How many articles talk about Japan or banks?
 * Question 3: How many articles talk about England or dealers?
 
-#### Hint
+### Hint
 
 For the challenge, you might find it quite useful to check [this post on StackOverflow](https://stackoverflow.com/a/25102099/4325668) to locate any occurrence of the search terms. You should also lowercase all the words to ease your terms search.
 
