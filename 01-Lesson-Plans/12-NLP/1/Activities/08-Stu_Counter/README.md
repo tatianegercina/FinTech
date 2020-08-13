@@ -10,7 +10,7 @@ In this activity, you will create a function that preprocesses and outputs a lis
 
 ## Hint
 
-* Creating a DataFrame from a dictionary where the keys are not column names can be tricky. One way of doing this involves using the items() function of the dictionary. Use Google to your advantage, if you're having trouble implementing this part!
+Creating a DataFrame from a dictionary where the keys are not column names can be tricky. One way of doing this involves using the items() function of the dictionary. If you have trouble implementing this part, use Google to your advantage!
 
 ---
 
