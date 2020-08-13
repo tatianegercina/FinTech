@@ -2,6 +2,12 @@
 
 This guide serves as a step by step process for setting up and validating the asyncio and streamz Python libraries. Without these libraries, class activities and their associated code will not be able to perform the necessary operations for asynchronous programming and data streaming, respectively.
 
+All packages should be installed into the `algotrading` virtual environment.  If you have not already created an `algotrading` virtual environment you can do so by typing the following commands in your terminal:
+
+  ```shell
+  conda create -n algotrading python=3.7 anaconda
+  ```
+
 ## Installation
 
 To avoid library dependencies conflicts, we strongly recommend to create a fresh virtual environment for this Unit. You will use environment variables, so if you are creating a new virtual environment, be sure tha all of the dependencies are satisfied. The dependencies list can be found below for reference.
@@ -16,6 +22,12 @@ Open a terminal, and execute the following commands to install `python-dotenv`, 
 
   ```shell
   pip install python-dotenv
+  ```
+
+* Activate your `algotrading` virtual environment.
+
+  ```shell
+  conda activate algotrading
   ```
 
 * Use the `pip install` command to download the `asyncio` module.
@@ -74,23 +86,37 @@ An out-of-date Anaconda environment can create issues when trying to install new
     conda update conda
     ```
 
+<<<<<<< HEAD
 3. Create a fresh conda environment to use with `python-dotenv`, `asyncio`, and `streamz`.
+=======
+3. Remove the virtual environment.
+
+    ```shell
+    conda env remove --name algotrading
+    ```
+
+4. Create a fresh conda environment to use with `asyncio` and `streamz`.
+>>>>>>> 6e5318e7eae7ef5f509b71fe1fbe162559a16dea
 
     ```shell
     conda create -n algotrading python=3.7 anaconda
     ```
 
-4. Activate the new environment.
+5. Activate the new environment.
 
     ```shell
     conda activate algotrading
     ```
 
+<<<<<<< HEAD
 5. Install the `python-dotenv`, `asyncio`, and `streamz` packages.
 
     ```shell
     pip install python-dotenv
     ```
+=======
+6. Install the `asyncio` and `streamz` packages.
+>>>>>>> 6e5318e7eae7ef5f509b71fe1fbe162559a16dea
 
     ```shell
     pip install asyncio
