@@ -2,9 +2,22 @@
 
 This guide serves as a step by step process for setting up and validating the asyncio. Without this library, class activities and their associated code will not be able to perform the necessary operations for asynchronous programming.
 
+All packages should be installed into the `algotrading` virtual environment.  If you have not already created an `algotrading` virtual environment you can do so by typing the following commands in your terminal:
+
+  ```shell
+  conda create -n algotrading python=3.7 anaconda
+  ```
+
+
 ## Installation
 
 Open a terminal, and execute the following commands to install `asyncio`.
+
+* Activate your `algotrading` virtual environment.
+
+  ```shell
+  conda activate algotrading
+  ```
 
 * Use the `pip install` command to download the `asyncio` module.
 
