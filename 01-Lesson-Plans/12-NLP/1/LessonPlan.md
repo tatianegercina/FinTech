@@ -10,17 +10,17 @@ As a company, Trilogy places a high value on transparency and data-driven change
 
 ### Overview
 
-Welcome to the natural language processing unit! Natural language processing (NLP) is an exciting area of machine learning research and is used in a variety of contexts, from algorithmic trading to chatbots. Today's class will explore what NLP is and give students a solid foundation on preprocessing documents for NLP, as well as introduce them to some simple analytical methods.
+Welcome to the natural language processing unit! Natural language processing (NLP) is an exciting area of machine learning research and is used in a variety of contexts, from algorithmic trading to chatbots. Today's class will explore what NLP is and give students a solid foundation in preprocessing documents for NLP, as well as introduce them to some simple analytical methods.
 
 ### Class Objectives
 
 By the end of the class, students will be able to:
 
-* Understand what NLP is and why we use it.
+* Explain what NLP is and why we use it.
 
-* Understand and be able to implement the NLP workflow.
+* Explain and implement the NLP workflow.
 
-* Demonstrate an ability to tokenize texts into sentences and words, including handling punctuation and non-alphabetic characters gracefully.
+* Tokenize texts into sentences and words, including handling punctuation and non-alphabetic characters.
 
 * Implement lemmatization and stopwording with the understanding of pros and cons of various choices.
 
