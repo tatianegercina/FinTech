@@ -36,7 +36,7 @@ By the end of the class, students will be able to:
 
 * Each step in this lesson ties into the next, and it is critical that students comprehend each section so they can implement the NLP workflow. Check in with students frequently to see if they have questions.
 
-* Students may expect to start off by doing cool things like text modelling or sentiment analysis, which is fine; these are coming in the next couple of lessons! However, it's good to remind them that preprocessing text, like any other kind of data, is critical to prevent the garbage in, garbage out phenomenon.
+* Students may expect to start off by doing cool things like text modelling or sentiment analysis, which is fine; these are coming in the next couple of lessons! However, it's good to remind them that preprocessing text, like any other kind of data, is critical to prevent the "garbage in, garbage out" phenomenon.
 
 * Have your TAs keep track of time with the [Time Tracker.](TimeTracker.xlsx)
 
