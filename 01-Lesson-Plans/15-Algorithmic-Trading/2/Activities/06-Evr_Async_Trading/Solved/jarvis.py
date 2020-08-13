@@ -7,6 +7,8 @@ import asyncio
 import hvplot.pandas
 import panel as pn
 
+from dotenv import load_dotenv
+
 pn.extension()
 
 
@@ -44,6 +46,7 @@ def update_dashboard(df, dashboard):
 
 def fetch_data():
     """Fetches the latest prices."""
+    load_dotenv()
     kraken_public_key = os.getenv("KRAKEN_PUBLIC_KEY")
     kraken_secret_key = os.getenv("KRAKEN_SECRET_KEY")
     kraken = ccxt.kraken({"apiKey": kraken_public_key, "secret": kraken_secret_key})

@@ -4,6 +4,8 @@ import pandas as pd
 import ccxt
 # @TODO: Import asyncio, hvplot, and panel
 
+from dotenv import load_dotenv
+
 
 def initialize(cash=None):
     """Initialize the dashboard, data storage, and account balances."""
@@ -23,6 +25,7 @@ def build_dashboard(data, signals):
 def fetch_data():
     """Fetches the latest prices."""
     print("Fetching data...")
+    load_dotenv()
     kraken_public_key = os.getenv("KRAKEN_PUBLIC_KEY")
     kraken_secret_key = os.getenv("KRAKEN_SECRET_KEY")
     kraken = ccxt.kraken({"apiKey": kraken_public_key, "secret": kraken_secret_key})

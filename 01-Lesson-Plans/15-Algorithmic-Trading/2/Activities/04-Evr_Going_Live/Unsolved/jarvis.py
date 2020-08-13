@@ -4,6 +4,7 @@ import pandas as pd
 
 # @TODO: Import ccxt
 import time
+from dotenv import load_dotenv
 
 
 def initialize(cash=None):

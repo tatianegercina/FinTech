@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import ccxt
 import time
+from dotenv import load_dotenv
 
 
 def initialize(cash=None):
@@ -28,6 +29,7 @@ def build_dashboard(data, signals):
 def fetch_data():
     """Fetches the latest prices."""
     print("Fetching data...")
+    load_dotenv()
     kraken_public_key = os.getenv("KRAKEN_PUBLIC_KEY")
     kraken_secret_key = os.getenv("KRAKEN_SECRET_KEY")
     kraken = ccxt.kraken({"apiKey": kraken_public_key, "secret": kraken_secret_key})

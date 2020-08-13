@@ -47,6 +47,7 @@ By the end of class, students will be able to:
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [15.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ca743d57-d2a0-43eb-a7e6-aafe00f8d9cc) Note that this video may not reflect the most recent lesson plan.
 
 ---
@@ -432,6 +433,7 @@ Move to the `fetch_data` function and prompt the class to help complete the func
 def fetch_data():
     """Fetches the latest prices."""
     print("Fetching data...")
+    load_dotenv()
     kraken_public_key = os.getenv("KRAKEN_PUBLIC_KEY")
     kraken_secret_key = os.getenv("KRAKEN_SECRET_KEY")
     kraken = ccxt.kraken({"apiKey": kraken_public_key, "secret": kraken_secret_key})
@@ -756,6 +758,8 @@ Suggested format:
 
 Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
 
+---
+
 ### 11. Instructor Do: Reflect (10 min)
 
 This activity concludes the lesson and allows students a chance to take a step back and digest the concepts that have been taught today. The idea is to engage students so that they drive the conversation, thereby reinforcing their learning by "teaching" the class.
@@ -779,10 +783,6 @@ Recap the skills and concepts learned throughout the lesson, and engage students
   * What is data persistence? Why is it important?
 
     **Answer:** Data persistence is the concept of storing, or "persisting," data in a reliable location, such as a database. It is often used for failure prevention/disaster recovery if an application fails, allowing an application to pick up where it last failed, thanks to the most recent "save" point. In today's trading framework, it also allows us to offload some of the memory requirements to the database.
-
-  * What is the Streamz library? What benefit did it provide to our algorithmic trading application?
-
-    **Answer:** The Streamz library, combined with hvPlot, allows streaming data visualizations for the dashboard, thereby mitigating the need to rebuild the dashboard each time.
 
 * Ask the class if anyone would like to add anything that has not been previously discussed.
 
