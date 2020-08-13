@@ -48,9 +48,9 @@ As a challenge, search for articles that contain the most relevant words. Create
 
 Once you create the function, answer the following questions:
 
-* Question 1: How many articles talk about yen?
-* Question 2: How many articles talk about Japan or banks?
-* Question 3: How many articles talk about England or dealers?
+* Question 1: How many articles discuss yen?
+* Question 2: How many articles discuss Japan or banks?
+* Question 3: How many articles discuss England or dealers?
 
 ### Hint
 
