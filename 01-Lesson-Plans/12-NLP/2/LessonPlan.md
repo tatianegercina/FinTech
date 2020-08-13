@@ -66,7 +66,7 @@ Go to the slideshow, navigate to the "Sentiment Analysis" section, and highlight
 
 ### 2. Instructor Do: Listen to the FinTech (5 min)
 
-This activity should encourage students to engage in an open, instructor-lead discussion about the applications they envision for sentiment analysis in FinTech.
+This activity should encourage students to engage in an open, instructor-led discussion about the applications they envision for sentiment analysis in FinTech.
 
 The introduction to sentiment analysis will offer some context to students about this area of NLP. Go to the slideshow, navigate to the "Listen to the FinTech" section, and facilitate an open discussion, asking the following questions:
 
@@ -100,11 +100,11 @@ This activity introduces terms relevance from the perspective of term frequency-
 
 Open the lesson slides, navigate to the "Terms Relevance (Understanding TF–IDF)" section, and highlight the following:
 
-* In a world of words, analyzing text can be confusing due to the complexity of language. That is why measuring term relevance is useful—it offers a way to understand how important a word is to a document in a collection of documents or a corpus.
+* In a world of words, analyzing text can be confusing due to the complexity of language. This is why measuring term relevance is useful—it offers a way to understand how important a word is to a document in a collection of documents or a corpus.
 
 [[The following is a list/guide of ... ]]
 
-* A **corpus** (_corpora_ in plural) is a large, structured, and organized collection of text documents that normally focuses on a specific matter; there are monolingual or single-language corpora, and multilingual or multiple-language corpora.
+* A **corpus** (_corpora_ in plural) is a large, structured, and organized collection of text documents that normally focuses on a specific matter. There are monolingual, or single-language, corpora and multilingual, or multiple-language, corpora.
 
 * **TF–IDF** is a weighting factor intended to measure how important a word is to a document in a corpus.
 
@@ -112,9 +112,9 @@ Open the lesson slides, navigate to the "Terms Relevance (Understanding TF–IDF
 
 * **IDF** comes into play when analyzing several documents. If a word also appears many times among a collection of documents, it could be a frequent word, and not necessarily a relevant one.
 
-* A high weight in TF–IDF is reached by terms with a high TF and a low document frequency of the term in the corpus; these are often more interesting terms to analyze.
+* A high weight in TF–IDF is reached by terms with a high TF and a low document frequency of the term in the corpus. These are often more interesting terms to analyze.
 
-* A low weight in TF–IDF is reached by terms with a low TF and a high document frequency of the term in the corpus; normally these are quite common terms across the corpus that could be less interesting to analyze.
+* A low weight in TF–IDF is reached by terms with a low TF and a high document frequency of the term in the corpus. Typically, these are quite common terms across the corpus that could be less interesting to analyze.
 
 * The **bag-of-words model** is a technique in NLP to represent the important words or tokens in a document without worrying about sentence structure. A bag-of-words model can then be used to compare documents based on the number of important words that they share.
 
@@ -190,7 +190,7 @@ To calculate the TF–IDF, a set of 1,000 documents from the Reuters Corpus is u
 
   Conclude the activity by presenting the 10 highest and lowest TF–IDF scores. Explain that highest values normally represent less common and more interesting terms for analysis; they have a high-term frequency in some documents and a low document frequency in the collection of documents.
 
-If there is time, ask the class what they think about the numbers identified as terms (tokens) by the algorithm. In fact, the importance of these terms resides in the context of the documents; for example, a year or an amount could be relevant if you are talking about a historical fact.
+If there is time, ask the class what they think about the numbers identified as terms (tokens) by the algorithm. In fact, the importance of these terms resides in the context of the documents. For example, a year or an amount could be relevant if you are talking about a historical fact.
 
 ---
 
