@@ -16,7 +16,7 @@ In the `Initial imports` cell from the starter Jupyter notebook, we import two m
 
 Open the starter Jupyter notebook and complete the following tasks.
 
-### 1. Retrieve the Document IDs and Text of the US Presidential Inaugural Addresses
+### 1. Retrieve the document IDs and text of the US presidential inaugural addresses. 
 
 In the `inaugural` module, the `fileids()` function retrieves each document's name, where the year of the inaugural address and the president's last name can be identified. This document name represents a unique identifier (ID) for each text in the corpus.
 
@@ -30,7 +30,7 @@ Use the `fileids()` and `raw()` functions to retrieve the following data from th
 
 * For testing purposes, print the first document ID and the first inaugural address in the corpus.
 
-### 2. Retrieve the most frequent adjective from each inaugural address
+### 2. Retrieve the most frequent adjective from each inaugural address.
 
 In this section, you will retrieve the most frequent adjective used in every inaugural address. A function called `most_freq_adj()` is provided to help you to complete this task.
 
@@ -40,7 +40,7 @@ In this section, you will retrieve the most frequent adjective used in every ina
 
 * Create a DataFrame `df_adjs` with the most common adjective for each inaugural address. Define two columns: `doc_id`, with all the document IDs you store in the `ids` Python list, and `adjective`, containing the most common adjective from each inaugural address.
 
-### 3. Analyze adjectives over time
+### 3. Analyze adjectives over time.
 
 In this section, you will analyze how many times US presidents used the most common adjectives in their inaugural addresses over time.
 
@@ -66,7 +66,7 @@ Use these functions to analyze the usage of the adjective over time, as follows:
 
 * Create a line plot using the `df_adjectives` DataFrame to visualize the usage of the most common adjectives over time in the US presidential inaugural addresses.
 
-### 4. Adjectives describing America
+### 4. Identify adjectives describing America. 
 
 In this section, you will use spaCy to analyze all the documents in the inaugural corpus to identify the adjectives that describe the head word `America`.
 
@@ -74,9 +74,9 @@ In this section, you will use spaCy to analyze all the documents in the inaugura
 
 * Use the `describe_america()` function you defined to create a Python list containing all the adjectives describing the word `America` into all the inaugural addresses in the corpus.
 
-## Hints
+## Hint
 
-* To create the Python list, we encourage you to use list comprehensions. You can recall [how list comprehensions work in the Python documentation](https://docs.python.org/3.7/tutorial/datastructures.html#list-comprehensions).
+To create the Python list, we encourage you to use list comprehensions. You can recall [how list comprehensions work in the Python documentation](https://docs.python.org/3.7/tutorial/datastructures.html#list-comprehensions).
 
 ---
 
