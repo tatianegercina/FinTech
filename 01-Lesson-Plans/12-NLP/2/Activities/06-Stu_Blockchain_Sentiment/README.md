@@ -1,6 +1,6 @@
 # Blockchain Sentiment
 
-News article headlines usually serve as the "hook" to compel people to keep reading. However, negative headlines could prevent people from reading news, if they don't want to get depressed. But wait-is this accurate?
+News article headlines usually serve as the "hook" to compel people to keep reading. However, negative headlines could prevent people from reading news, if they don't want to get depressed. But wait—is this accurate?
 
 In this activity, you are tasked to corroborate that a news title with a negative sentiment leads to negative content. You will use VADER sentiment to do this, using the news articles that you previously downloaded in The Voice of the Blockchain activity.
 
