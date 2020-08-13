@@ -10,7 +10,7 @@ In this activity, you'll practice creating a word cloud from a subset of the Reu
 
 ## Challenge
 
-* Create a word cloud that only includes bigrams. 
+Create a word cloud that only includes bigrams. 
 
 ---
 
