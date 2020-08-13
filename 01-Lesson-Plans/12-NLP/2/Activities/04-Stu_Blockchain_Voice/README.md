@@ -41,9 +41,9 @@ Your final DataFrame should look like this:
 
 ![Final news DataFrame example](Images/blockchain_news_df.png)
 
-### Hints
+### Hint
 
-You can use a `for loop` with the `create_df()` function inside to iterate across the news articles list to create the DataFrame's structure.
+You can use a for loop with the `create_df()` function inside to iterate across the news articles list to create the DataFrame's structure.
 
 ---
 
