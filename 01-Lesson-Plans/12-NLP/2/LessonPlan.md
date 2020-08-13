@@ -247,7 +247,7 @@ Open the [solution](Activities/02-Stu_Bossy_Words/Solved/bossy_words.ipynb) and 
   )
   ```
 
-* In the challenge section, the most tricky part could be to code the search by any of the terms passed as a parameter. The clue is to use the [`any()` function](https://stackoverflow.com/a/16505590/4325668) in the condition of the `found_terms` comprehension list, as explained in [this article](https://stackoverflow.com/a/25102099/4325668).
+* In the challenge section, the trickiest part might be to code the search by any of the terms passed as a parameter. The clue is to use the [`any()` function](https://stackoverflow.com/a/16505590/4325668) in the condition of the `found_terms` comprehension list, as explained in [this article](https://stackoverflow.com/a/25102099/4325668).
 
   ```python
   def retrieve_docs(terms):
