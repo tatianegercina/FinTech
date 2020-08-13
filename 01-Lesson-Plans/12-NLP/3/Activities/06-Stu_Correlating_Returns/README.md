@@ -10,7 +10,7 @@ In this activity, you will create a sentiment index from News API headlines and 
 
 3. Correlate the headlines sentiment to S&P 500 returns for each topic. Which one had the highest correlation?
 
-## Hint
+## Hints
 
 * In order to correlate sentiment and returns, we need to make sure that they're grouped in the same unit—in this case, trading days.
 
