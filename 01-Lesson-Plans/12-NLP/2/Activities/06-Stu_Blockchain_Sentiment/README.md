@@ -45,7 +45,7 @@ To answer this question, in this section you will create a bar chart contrasting
 
 Finally, get the descriptive statistics from the English news DataFrame, and discuss the analysis results with your partners.
 
-### Hints
+### Hint
 
 You can use the [`iterrows()` method](https://stackoverflow.com/a/16476974/4325668) from the Pandas DataFrame to iterate across the rows to score the sentiment for the title and the text of each news article.
 
