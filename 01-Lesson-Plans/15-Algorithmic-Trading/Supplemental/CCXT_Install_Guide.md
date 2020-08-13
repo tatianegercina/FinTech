@@ -6,6 +6,12 @@ This guide serves as a step by step process for setting up and validating the cc
 
 Open a terminal, and execute the following commands to install `ccxt`.
 
+* Activate your `algotrading` virtual environment.
+
+  ```shell
+  conda activate algotrading
+  ```
+
 * Use the `pip install` command to download the `ccxt` module.
 
   ```shell
