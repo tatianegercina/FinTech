@@ -12,7 +12,7 @@ By the end of today's class, students will be able to:
 
 * Understand spaCy capabilities and where to find documentation.
 
-* Be able to use POS-tagged text to extract specific words.
+* Use POS-tagged text to extract specific words.
 
 * Use dependency-parsed text to extract descriptors.
 
@@ -30,7 +30,7 @@ By the end of today's class, students will be able to:
 
 * Be sure to emphasize the use of correct preprocessing, which is different for every use case. In this class, hardly any preprocessing will be needed.
 
-* Today's activities may be challenging for students as they introduce unfamiliar concepts and are very open ended. Be sure to provide support along with your TAs, and spend time in review, asking students to explain their rationales in regards to project work.
+* Today's activities may be challenging for students as they introduce unfamiliar concepts and are very open-ended. Be sure to provide support along with your TAs, and spend time in review, asking students to explain their rationales in regard to project work.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
@@ -52,9 +52,9 @@ By the end of today's class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students back to class. In addition to introducing some new concepts, we will synthesize everything we've learned thus far in the unit. We will work with spaCy, another useful tool for general-purpose natural language processing (NLP), and do a few activities using this tool and others from this unit. The activities today should be fun and rewarding; encourage students to think of creative approaches that are "outside the box" to meet the requirements. Take a moment to pause to address any questions about the homework or prior lessons, before continuing on to the introduction to spaCy.
+Welcome students back to class. In addition to introducing some new concepts, we will synthesize everything we've learned thus far in the unit. We will work with spaCy, another useful tool for general-purpose natural language processing (NLP), and do a few activities using this tool and others from this unit. The activities today should be fun and rewarding; encourage students to think of creative approaches that are "outside the box" to meet the requirements. Take a moment to pause to address any questions about the homework or prior lessons before continuing to the introduction to spaCy.
 
-Quickly inform students that it's crucial to install the `spaCy` library and the English language linguistic model, as explained in the unit's installation guide, since we're going to use them for today's activities.
+Inform students that it's crucial to install the `spaCy` library and the English language linguistic model, as explained in the unit's installation guide, since we're going to use them for today's activities.
 
 ---
 
@@ -62,7 +62,7 @@ Quickly inform students that it's crucial to install the `spaCy` library and the
 
 Open the slideshow and navigate to the "spaCy" section, and highlight the following. 
 
-Tell students that in order to implement POS tagging and named entity recognition (more on these later), we will be using spaCy.
+Tell students that in order to implement POS tagging and named entity recognition (more on these later), we will use spaCy.
 
 * SpaCy is different from NLTK in that it is mainly statistically based, instead of rule based, meaning that spaCy's core functions depend on language models learned from tagged text instead of programmed rules. This makes spaCy more flexible, and in many cases, more accurate than some of the NLTK tools.
 
@@ -216,7 +216,7 @@ Slack out this link to the class: https://spacy.io/api/annotation#pos-tagging. T
   . PUNCT jumped
   ```
 
-* If we want to check what word a token is describing or otherwise related to, we can also use the .`head` attribute. For example, using conditionals in a list comprehension, we can filter for adjectives that describe a particular word, like `cow`.
+* If we want to check the word a token is describing or otherwise related to, we can also use the .`head` attribute. For example, using conditionals in a list comprehension, we can filter for adjectives that describe a particular word, like `cow`.
 
   ```python
   # Retrieve the adjectives that describe the word "cow"
@@ -444,7 +444,7 @@ for ent in doc.ents:
 print([ent.text for ent in doc.ents if ent.label_ == 'GPE'])
 ```
 
-Before moving on to the next student activity, ask the class to search for spaCy documentation (https://spacy.io/api/annotation#named-entities) to find out what entity types exist, and what each label means.
+Before moving on to the next student activity, ask the class to search for spaCy documentation (https://spacy.io/api/annotation#named-entities) to find out what entity types exist and what each label means.
 
 ---
 
@@ -608,7 +608,7 @@ The remainder of today's class should be dedicated for the review of any topics,
 
 ### 14. Instructor Do: Structured Review (35 min)
 
-Note: If you are teaching this lesson on a weeknight, save this 35-minute review for the next Saturday class.
+**Note:** If you are teaching this lesson on a weeknight, save this 35-minute review for the next Saturday class.
 
 Use the entire time to review questions with the students before ending class.
 
