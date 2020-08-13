@@ -64,7 +64,7 @@ Welcome students back to class and explain that today is the start of the NLP un
 
  **Sample answer**: I bought 10 shares of TSLA because of a news article about sales of the Model 3. The optimistic tone of the story and the specific numbers they cited made me feel bullish about the company.
 
-Take a few answers from volunteers (or call on a couple of students).
+Take a few answers from volunteers or call on a couple of students.
 
 * Common answers might include statistics cited in a story, something novel that was described, or the tone in which the author wrote about something.
 
@@ -84,7 +84,7 @@ Hopefully, your students are excited and ready to dive into the content at this 
 
 ### 2. Instructor Do: Intro to NLP (10 min)
 
-Open the slides, navigate to the "Intro to NLP" section, and hit the following talking points. Pause after each slide for questions.
+Open the slides, navigate to the "Intro to NLP" section, and cover the following talking points. Pause after each slide for questions.
 
 * Our objectives today are focused on preprocessing—the stage of the NLP workflow when written documents are transformed into units of data that are more easily processed by a computer.
 
