@@ -2,9 +2,22 @@
 
 This guide serves as a step by step process for setting up and validating the asyncio. Without this library, class activities and their associated code will not be able to perform the necessary operations for asynchronous programming.
 
+All packages should be installed into the `algotrading` virtual environment.  If you have not already created an `algotrading` virtual environment you can do so by typing the following commands in your terminal:
+
+  ```shell
+  conda create -n algotrading python=3.7 anaconda
+  ```
+
+
 ## Installation
 
 Open a terminal, and execute the following commands to install `asyncio`.
+
+* Activate your `algotrading` virtual environment.
+
+  ```shell
+  conda activate algotrading
+  ```
 
 * Use the `pip install` command to download the `asyncio` module.
 
@@ -64,19 +77,25 @@ An out-of-date Anaconda environment can create issues when trying to install new
     conda update conda
     ```
 
-3. Create a fresh conda environment to use with `asyncio` and `streamz`.
+3. Remove the virtual environment.
+
+    ```shell
+    conda env remove --name algotrading
+    ```
+
+4. Create a fresh conda environment to use with `asyncio` and `streamz`.
 
     ```shell
     conda create -n algotrading python=3.7 anaconda
     ```
 
-4. Activate the new environment.
+5. Activate the new environment.
 
     ```shell
     conda activate algotrading
     ```
 
-5. Install the `asyncio` and `streamz` packages.
+6. Install the `asyncio` and `streamz` packages.
 
     ```shell
     pip install asyncio

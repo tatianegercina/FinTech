@@ -2,9 +2,21 @@
 
 This guide serves as a step by step process for setting up and validating the ccxt Python library. Without this library, class activities and their associated code will not be able to pull historical and current pricing data from the Kraken Cryptocurrency Exchange.
 
+All packages should be installed into the `algotrading` virtual environment.  If you have not already created an `algotrading` virtual environment you can do so by typing the following commands in your terminal:
+
+  ```shell
+  conda create -n algotrading python=3.7 anaconda
+  ```
+
 ## Installation
 
 Open a terminal, and execute the following commands to install `ccxt`.
+
+* Activate your `algotrading` virtual environment.
+
+  ```shell
+  conda activate algotrading
+  ```
 
 * Use the `pip install` command to download the `ccxt` module.
 
@@ -76,19 +88,25 @@ An out-of-date Anaconda environment can create issues when trying to install new
     conda update conda
     ```
 
-3. Create a fresh conda environment to use with `ccxt`.
+3. Remove the virtual environment.
+
+    ```shell
+    conda env remove --name algotrading
+    ```
+
+4. Create a fresh conda environment to use with `ccxt`.
 
     ```shell
     conda create -n algotrading python=3.7 anaconda
     ```
 
-4. Activate the new environment.
+5. Activate the new environment.
 
     ```shell
     conda activate algotrading
     ```
 
-5. Install the `ccxt` package.
+6. Install the `ccxt` package.
 
     ```shell
     pip install ccxt
