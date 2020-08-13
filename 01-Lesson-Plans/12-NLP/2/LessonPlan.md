@@ -26,17 +26,17 @@ By the end of the class, students will be able to:
 
 * Slack out the [Create and Activate an AWS Account Guide](../../13-AWS-Cloud/Supplemental/1-Create-and-Activate-an-AWS-Account.md). Tell students to complete the AWS account creation and verify it with a TA before the end of the next class. This should help catch account creation issues outside of class time.
 
-* Sentiment analysis is a wide area with a broad range of tools; this class will serve as a brief introduction to sentiment analysis fundamentals.
+* Sentiment analysis is a wide area with a broad range of tools. This class will serve as a brief introduction to sentiment analysis fundamentals.
 
-* Today's lesson includes the use and demonstration of the [News API](https://newsapi.org/), a free API for developers that retrieves metadata for headlines and news, which requires user registration. While the process is quite easy, have your TAs assist students during the instructor demo activity to ensure students get their API keys.
+* Today's lesson includes the use and demonstration of the [News API](https://newsapi.org/), a free API for developers that retrieves metadata for headlines and news, which requires user registration. While the process is quite simple, have your TAs assist students during the instructor demo activity to ensure students get their API keys.
 
-* Students will use the IBM Tone Analyzer cloud service in this class. Registration may be time consuming, so be sure to get familiar with the process on your own before class, so you can assist students as needed.
+* Students will use the IBM Tone Analyzer cloud service in this class. Registration may be time consuming, so be sure to get familiar with the process on your own before class so that you can assist students as needed.
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
 
-* To watch an example class lecture, go here: [12.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c900d473-28d8-4d5d-8f33-aae700f22c46) Note that this video may not reflect the most recent lesson plan.
+To watch an example class lecture, go here: [12.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c900d473-28d8-4d5d-8f33-aae700f22c46) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
 
