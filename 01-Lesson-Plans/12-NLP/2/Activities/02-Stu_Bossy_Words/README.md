@@ -52,7 +52,7 @@ Once you create the function, answer the following questions:
 * Question 2: How many articles talk about Japan or banks?
 * Question 3: How many articles talk about England or dealers?
 
-## Hint
+#### Hint
 
 For the challenge, you might find it quite useful to check [this post on StackOverflow](https://stackoverflow.com/a/25102099/4325668) to locate any occurrence of the search terms. You should also lowercase all the words to ease your terms search.
 
