@@ -865,7 +865,16 @@ Walkthrough the solution and highlight the following:
   MC_AAPL.calc_cumulative_return()
   ```
 
-* Plotting the DataFrame of simulated `AAPL` daily returns for the next `252` trading days shows one potential pathway for how `AAPL` stock prices may behave in the next year. We start creating a DataFrame with the mean, median, minimum, and maximum daily return value to generate the plot. Note that we used the argument `axis=1` to compute the statistics by column.
+* Plotting the DataFrame of simulated `AAPL` daily returns for the next `252` trading days shows all the potential pathways for how `AAPL` stock prices may behave in the next year. We use the `plot_simulation()` function to visually analyze the `500` possible scenarios that we may have over the next `252` trading days.
+
+  ```python
+  # Plot simulation outcomes
+  line_plot = MC_AAPL.plot_simulation()
+  ```
+
+  ![aapl-simulation-plot](Images/aapl-simulation-plot.png)
+
+* Plotting the best and worst-case scenario for cumulative returns makes a lot of intuitive sense from an investment standpoint. We create a DataFrame with the mean, median, minimum, and maximum daily return value to generate a plot to summarize the behavior of the `AAPL` stock in the simulated future. Note that we used the argument `axis=1` to compute the statistics by column.
 
   ```python
   # Compute summary statistics from the simulated daily returns
