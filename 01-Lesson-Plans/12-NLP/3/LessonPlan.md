@@ -1,4 +1,4 @@
-## 12.3 Lesson Plan—Text Extraction
+## 12.3 Lesson Plan: Text Extraction
 
 ---
 
