@@ -1,4 +1,4 @@
-# Bossy Words?
+# Bossy Words
 
 In this activity, you will use TF–IDF to find the most relevant words from a collection of news articles that talk about money in the [Reuters Corpus](https://www.nltk.org/book/ch02.html#reuters-corpus) bundled in `NLTK`. Once you find the most relevant words, you will visualize the words using a word cloud.
 
