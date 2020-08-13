@@ -1,4 +1,4 @@
-## 12.2 Lesson Plan—How the FinTech Feels
+## 12.2 Lesson Plan: How the FinTech Feels
 
 ---
 
