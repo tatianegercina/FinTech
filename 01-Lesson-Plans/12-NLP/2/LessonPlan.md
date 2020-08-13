@@ -40,7 +40,7 @@ To watch an example class lecture, go here: [12.2 Class Video.](https://codingbo
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1j6oqrY-rJARHH_7FOCEyKRgakak5gGgeTcgola_wXVY/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [12.2 Lesson Slides](https://docs.google.com/presentation/d/1hIzteqWeY_OzT7N8qSxWFfWwpAXtb4G0Vrsj935Ogwk/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -150,7 +150,7 @@ Continue the explanation by live coding the solution and highlight the following
   words = vectorizer.get_feature_names()
   ```
 
-When the `X` matrix is printed, you will notice that it contains raw data that shows the counting of each term represented by a tuple `(n, t)  c`; `t` is the term's numeric identifier, `n` refers to the _nth_ document where the term `t` was found, and `c` is the term's counting on the document `n`. 
+When the `X` matrix is printed, you will notice that it contains raw data that shows the counting of each term represented by a tuple `(n, t)  c`; `t` is the term's numeric identifier, `n` refers to the _nth_ document where the term `t` was found, and `c` is the term's counting on the document `n`.
 
 Since we have only one document in this example, the first term is always `0`.
   ![Raw term-document matrix data](Images/raw_bag_of_words.png)
@@ -635,7 +635,7 @@ Start by opening the lesson slides, go to the "Tone Analysis" section, and highl
 
 * IBM Watson Tone Analyzer can be used via its Python API.
 
-After the brief definition of tone analysis and the intro to IBM Watson Tone Analyzer, slack out [the URL for this service](https://cloud.ibm.com/catalog/services/tone-analyzer) and guide students on creating their IBM Cloud account and setting up their Tone Analyzer instance. Ask TAs to assist students on creating their personal IBM Cloud accounts. 
+After the brief definition of tone analysis and the intro to IBM Watson Tone Analyzer, slack out [the URL for this service](https://cloud.ibm.com/catalog/services/tone-analyzer) and guide students on creating their IBM Cloud account and setting up their Tone Analyzer instance. Ask TAs to assist students on creating their personal IBM Cloud accounts.
 
 Navigate to the [XYZ section of the slideshow,] and highlight the following:
 
