@@ -1,8 +1,8 @@
 # Blockchain Sentiment
 
-When you read a news article, normally the headline is the hook to continue reading. However, a negative title could lead you to skip reading an article if you don't want to be in a bad mood. But is this accurate?
+News article headlines usually serve as the "hook" to compel people to keep reading. However, negative headlines could prevent people from reading news, if they don't want to get depressed. But wait—is this accurate?
 
-In this activity, you are tasked to corroborate that a news title with a negative sentiment leads to a negative content. You will use VADER sentiment to accomplish this work using the news articles that you previously downloaded in The Voice of the Blockchain activity.
+In this activity, you are tasked to corroborate that a news title with a negative sentiment leads to negative content. You will use VADER sentiment to do this, using the news articles that you previously downloaded in The Voice of the Blockchain activity.
 
 ---
 
@@ -37,15 +37,15 @@ Your final DataFrame should look like this:
 
 ### Analyzing Sentiments Results
 
-How the sentiment of the title and the text differs in news articles?
+How does the sentiment of the title and the text differ in news articles?
 
-To answer this question, on this section you will create a bar chart contrasting the normalized sentiment for the title and the text of each news article. Use the build-in `plot()` method of the Pandas DataFrame to create a bar chart like the one bellow. Be aware that you chart might differ from this one because it is made from a different news DataFrame.
+To answer this question, in this section you will create a bar chart contrasting the normalized sentiment for the title and the text of each news article. Use the build-in `plot()` method of the Pandas DataFrame to create a bar chart like the one below. Be aware that your chart might differ from this one, since it is made from a different news DataFrame.
 
 ![Sample bar chart of news title and text sentiments](Images/blockchain_feelings_bar_chart.png)
 
-Finally, get the descriptive statistics from the English news DataFrame and discuss the analysis results with your partners.
+Finally, get the descriptive statistics from the English news DataFrame, and discuss the analysis results with your partners.
 
-### Hints
+### Hint
 
 You can use the [`iterrows()` method](https://stackoverflow.com/a/16476974/4325668) from the Pandas DataFrame to iterate across the rows to score the sentiment for the title and the text of each news article.
 

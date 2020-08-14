@@ -102,6 +102,46 @@ conda list | grep spacy
 
 ![SpaCy verification](Images/spacy-verify.png)
 
+## `alpaca-trade-api` SDK Installation
+
+In this unit you will use the Alpaca SKD you installed in the Financial APIs unit. If you are creating a new virtual environment for this unit, please reinstall the `alpaca-trade-api` SDK.
+
+You can install this library running the following command in your terminal:
+
+```shell
+pip install alpaca-trade-api
+```
+
+### Verify the `alpaca-trade-api` SDK Installation
+
+Once the `alpaca-trade-api` library download is complete, verify the installation completed successfully.
+
+* Open the terminal and use the `conda-list` function with a `grep` argument to identify if the `alpaca-trade-api` library installed successfully.
+
+```shell
+conda list | grep alpaca-trade-api
+```
+
+## `python-dotenv` Library Installation
+
+The `python-dotenv` library allows you to read key-value pairs from a `.env` file and adds them as environment variables.
+
+You can install this library running the following command in your terminal:
+
+```shell
+pip install python-dotenv
+```
+
+### Verify the `python-dotenv` Library Installation
+
+Once the `python-dotenv` library download is complete, verify the installation completed successfully.
+
+* Open the terminal and use the `conda-list` function with a `grep` argument to identify if the `python-dotenv` library installed successfully.
+
+```shell
+conda list | grep python-dotenv
+```
+
 ## Troubleshooting
 
 It can be frustrating when packages do not install correctly. Use the below approaches to troubleshoot installation issues and get your machine learning libraries up and running!
