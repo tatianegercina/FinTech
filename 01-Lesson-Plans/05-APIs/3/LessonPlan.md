@@ -990,7 +990,7 @@ In this activity, students execute a Monte Carlo simulation to forecast stock pr
 
 **Files:**
 
-* [financial_forecasting_part_1.ipynb](Activities/06-Stu_Financial_Forecasting/Solved/financial_forecasting.ipynb)
+* [financial_forecasting.ipynb](Activities/06-Stu_Financial_Forecasting/Solved/financial_forecasting.ipynb)
 
 * [MCForecastTools.py](Activities/06-Stu_Financial_Forecasting/Solved/MCForecastTools.py)
 
