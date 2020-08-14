@@ -54,7 +54,7 @@ By the end of class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 5.3 Slides](https://docs.google.com/presentation/d/1rGdbDyLlHywfeGS4MbPQP2znM7XTQweVwIJIBB172Ac/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 5.3 Slides](https://docs.google.com/presentation/d/1mITXb5cjg2HYzI2qv8dWYFBqkwIlqPHY3pb1tzhKyNM/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
 
@@ -116,11 +116,11 @@ Open the lesson slides, move to the "Understanding Probability and Probability D
 
 In short words, probability is the chance of an event happening. Probability merely implies that there is a chance that a specific result or event may occur but makes no guarantees; there will always be a risk of the event not occurring. Probability can be calculated whenever an outcome is uncertain, such as picking the specific color of a candy in its bag, the behavior of a stock, or the outcome of a bet.
 
-* Therefore, an example Monte Carlo simulation would be to flip a coin `10` times to determine the resulting number of heads and tails, and then do that same process another `5` times to determine the frequency distribution of landing on heads (how many times the coin landed a specific number of heads). The frequency distribution of heads can then be used to calculate the corresponding probability distribution that determines how likely it is for varying numbers (or ranges) of heads to land.
+* Therefore, an example Monte Carlo simulation would be to flip a coin `10` times to determine the resulting number of heads and tails and then do that same process another `5` times to determine the frequency distribution of landing on heads (how many times the coin landed a specific number of heads). The frequency distribution of heads can then be used to calculate the corresponding probability distribution that determines how likely it is for varying numbers (or ranges) of heads to land.
 
 * Monte Carlo simulations help us visualize the effect of a probability distribution over time. But what is a probability distribution?
 
-* A probability distribution is a mathematical function that describes the likelihood of possible outcomes for a given range of values. For example we can define a function to calculate the likelihood of getting `7` heads on `10` coin flips.
+* A probability distribution is a mathematical function that describes the likelihood of possible outcomes for a given range of values. For example, we can define a function to calculate the likelihood of getting `7` heads on `10` coin flips.
 
 * The most common probability distribution is the *normal distribution*, and it's found throughout the real-world. A normal distribution is commonly referred to as “the bell curve” and describes a dataset where values farther from its mean occur less frequently than values closer to its mean.
 
@@ -128,7 +128,7 @@ In short words, probability is the chance of an event happening. Probability mer
 
   ![normal-distribution](Images/normal-distribution.png)
 
-* Normal distributions are particularly useful in finance because they adequately approximate the volatility of stock prices, forex rates and other commodities. For example, the daily price change (in percent) from a high volatility stock such as Tesla and a low volatility stock such as Coca-Cola can both demonstrate normal distributions despite the differences in company size, customer base, stock price and market share. We can visualize the normal distribution of these stocks using Pandas as follows.
+* Normal distributions are particularly useful in finance because they adequately approximate the volatility of stock prices, forex rates, and other commodities. For example, the daily price change (in percent) from a high volatility stock such as Tesla and a low volatility stock such as Coca-Cola can both demonstrate normal distributions despite the differences in company size, customer base, stock price, and market share. We can visualize the normal distribution of these stocks using Pandas as follows.
 
 Explain to students that we are going to use probability distributions to visually analyze the outcomes forecasted by Monte Carlo simulations, but first, it's time to learn how to fetch stock data and visualize its distribution using Python.
 
@@ -146,7 +146,7 @@ In this activity, students will learn how to retrieve historical stock data usin
 
 * [stock_price_normal_distribution.ipynb](Activities/01-Ins_Getting_into_Probability_Distributions/Solved/stock_price_normal_distribution.ipynb)
 
-Open the unsolved version of the Jupyter notebook, live code the solution and highlight the following:
+Open the unsolved version of the Jupyter notebook, live code the solution, and highlight the following:
 
 * Before getting started with Monte Carlo simulations, it's important to learn how you can visually analyze the distribution of data using Python.
 
@@ -277,7 +277,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution and hi
 
 * Probability distributions such as the normal distribution help us make educated guesses about what might happen to a stock or commodity in the future. When it comes to the Monte Carlo simulations, the model will randomly select changes that fit within the normal distribution to simulate real-world data best!
 
-Explain to students, that despite most pricing distributions are not perfectly normal, as a FinTech professional it's important to understand what a normal distribution is since it's the most common type of distribution assumed in technical analysis of a stock, commodity, or other assets.
+Explain to students that despite most pricing distributions are not perfectly normal, as a FinTech professional it's important to understand what a normal distribution is since it's the most common type of distribution assumed in technical analysis of a stock, commodity, or other assets.
 
 Answer any questions before moving on.
 
@@ -285,9 +285,9 @@ Answer any questions before moving on.
 
 ### 4. Students Do: Decisive Distributions (20 min)
 
-**Corresponding Activity:** [02-Stu_Probability_Distribution_of_Potential_Outcomes](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes)
+**Corresponding Activity:** [02-Stu_Decisive_Distributions](Activities/02-Stu_Decisive_Distributions)
 
-In this activity students will gain hands-on experience fetching historical stock data and plotting distributions to make investment decisions.
+In this activity, students will gain hands-on experience fetching historical stock data and plotting distributions to make investment decisions.
 
 **Instructions:**
 
@@ -389,7 +389,7 @@ Answer any questions before moving on.
 
 ### 6. Instructor Do: Portfolio Forecasting Using Monte Carlo Simulations (20 min)
 
-**Corresponding Activity:** [03-Ins_Portfolio_Forecasting_Monte_Carlo](3/Activities/03-Ins_Portfolio_Forecasting_Monte_Carlo)
+**Corresponding Activity:** [03-Ins_Portfolio_Forecasting_Monte_Carlo](Activities/03-Ins_Portfolio_Forecasting_Monte_Carlo)
 
 Now that students understand what a probability distribution is and how to recognize a normal distribution in financial data, in this activity, students will learn about Monte Carlo simulations. Although there are many use-cases for Monte Carlo simulations, in finance, we use Monte Carlo simulations for portfolio forecasting.
 
@@ -590,9 +590,9 @@ Answer any questions before moving on.
 
 ### 8. Students Do: Three Stock Monte (30 min)
 
-**Corresponding Activity:** [04-Stu_Three_Stock_Monte](3/Activities/04-Stu_Three_Stock_Monte)
+**Corresponding Activity:** [04-Stu_Three_Stock_Monte](Activities/04-Stu_Three_Stock_Monte)
 
-In this activity students will use the `MCForecastTools` toolkit to determine how much of each stock is worth to purchase in a portfolio in order to maximize your chances of profit.
+In this activity students will use the `MCForecastTools` toolkit to determine how much of each stock is worth purchasing in a portfolio in order to maximize your chances of profit.
 
 You can have students working in pairs for this activity.
 
@@ -970,7 +970,7 @@ Answer any questions before moving on.
 
 ### 11. Students Do: Financial Forecasting (15 min)
 
-**Corresponding Activity:** [06-Stu_Financial_Forecasting](Activities/06-Stu_Financial_Forecasting_Pt_I)
+**Corresponding Activity:** [06-Stu_Financial_Forecasting](Activities/06-Stu_Financial_Forecasting)
 
 In this activity, students execute a Monte Carlo simulation to forecast stock price behavior of historical `TSLA` daily returns.
 

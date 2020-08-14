@@ -2,11 +2,11 @@
 
 ### Overview
 
-For the past three weeks, students have been immersed into the world of Python and common Python libraries that are included in the Anaconda environment (i.e., Pandas and Matplotlib). They've also learned some key techniques for analyzing financial data, such as calculating daily returns and risk-reward ratios. It's now time for students to take it to the next level and enter into the world of application programming interfaces (APIs). There are a number of FinTech APIs available that will allow students to perform more powerful analytics. They will also expose students to datasets they would not typically be able to easily access or consolidate. Now, students will learn the basics of APIs and API requests so that they can begin incorporating APIs into their work.
+For the past three weeks, students have been immersed in the world of Python and common Python libraries that are included in the Anaconda environment (i.e., Pandas and Matplotlib). They've also learned some key techniques for analyzing financial data, such as calculating daily returns and risk-reward ratios. It's now time for students to take it to the next level and enter into the world of application programming interfaces (APIs). There are a number of FinTech APIs available that will allow students to perform more powerful analytics. They will also expose students to datasets they would not typically be able to easily access or consolidate. Now, students will learn the basics of APIs and API requests so that they can begin incorporating APIs into their work.
 
 Today's class will teach students what APIs are, what they're used for, and why they are valuable. Students will also learn, from a high level, what the client-server model is and how it works. Students will submit API calls with Postman (a development environment for APIs) and Python, and they'll learn how to decipher and parse API JSON output. Lastly, students will submit API calls with parameters in order to improve response time and filter and narrow down API output. Learning how to make API calls and parse API output using Postman and Python will prepare students for getting their hands dirty with APIs in the professional world.
 
-Before students leave at the end of the class, instruct them to sign up for the APIs that are going to be used in the next class. These APIs will require that students have API keys. Links are provided below. Remember to slack the links to the students so they have a resource to sign up with.
+Before students leave at the end of the class, instruct them to sign up for the APIs that are going to be used in the next class. These APIs will require that students have API keys. Links are provided below. Remember to slack the links to the students, so they have a resource to sign up with.
 
 * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
@@ -18,7 +18,7 @@ By the end of class, students will be able to:
 
 * Describe the client-server model.
 
-* Read documentation and identify endpoints from a given API.
+* Read the documentation and identify endpoints from a given API.
 
 * Perform a GET request and view the JSON response using the Postman client.
 
@@ -34,7 +34,7 @@ By the end of class, students will be able to:
 
 * Slack out the [Alpaca Installation Guide](../Supplemental/AlpacaMarkets_Installation-Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with Alpaca outside of class time.
 
-* This class will focus on the fundamentals of APIs and the process of submitting APIs. This class is a great opportunity for students to be impressed and inspired by FinTech. There are a number of fun and creative FinTech APIs, such as Quandl and World of Bank, that will be used to drive student engagement. This lesson is the perfect opportunity to get students excited about FinTech again!
+* This class will focus on the fundamentals of APIs and the process of submitting APIs. This class is a great opportunity for students to be impressed and inspired by FinTech. There are a number of fun and creative FinTech APIs, such as Quandl and World of Bank, will be used to drive student engagement. This lesson is the perfect opportunity to get students excited about FinTech again!
 
 * The first half of the lesson will include instructor demonstrations of submitting requests to different FinTech APIs using Postman. Each demo should be focused on showcasing FinTech APIs and getting students excited about contributing to the wealth of APIs that are already out there. Make sure to create accounts for these APIs:
 
@@ -52,7 +52,7 @@ By the end of class, students will be able to:
 
 * Working with APIs can be challenging for anyone using them, especially when documentation is limited. Whenever introducing students to a new API, slack out the link to the documentation so that students have access to it for reference.
 
-Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also encourage students to work with partners.
+Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also, encourage students to work with partners.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
@@ -66,7 +66,7 @@ Be sure to set the pace for the class. Encourage students to attend office hours
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [5.1 Slides](https://docs.google.com/presentation/d/1ApEeROS2N3M-KeyLhqW15avfwwWhcf4GGmEMyfWFRSY/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [5.1 Slides](https://docs.google.com/presentation/d/1o2QoZbtZ2GZ3xU3Gn-e6A45Seh51q_3hrS4rIvVU4gE/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -96,13 +96,13 @@ Open the lesson slides, move to the "Introduction to APIs section", and highligh
 
 * APIs work as endpoints, like old-time telephone operators. A request or call is submitted by a user to be connected to another entity. The API interprets the request and transmits the request to the target entity. The user then receives a response.
 
-* APIs are made by individual developers like the students, as well as private companies and corporations. Some APIs are free and others require payment for services.
+* APIs are made by individual developers like the students, as well as private companies and corporations. Some APIs are free, and others require payment for services.
 
 * There are a large number of FinTech APIs available that accelerate day-to-day financial analytics and data acquisition. These include Quandl and Wrap API, just to name two.
 
 Introduce Quandl and briefly demonstrate to students how to use an internet browser to submit a Quandl API call.
 
-* Quandl is a data mart of financial data. Quandl collects data from various sources, consolidates the data, and then makes it available to users. Quandl is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Quandl's data can be accessed by users via their API. The API supports multiple programming languages, including Python.
+* Quandl is a data mart of financial data. Quandl collects data from various sources, consolidates the data, and then makes it available to users. Quandl is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Users can access Quandl's data via their API. The API supports multiple programming languages, including Python.
 
   ![quandl_flow.gif](Images/quandl_flow.gif)
 
@@ -128,11 +128,11 @@ Finish the demo of Quandl with the following reflective questions:
 
 * If you wanted to automate the extraction of historical stock prices, what's the better tool: nasdaq.com or Quandl?
 
-  **Answer:** Quandl would be the best tool to use to automate extraction of historical stock data. It would be easier than automating the nasdaq.com process.
+  **Answer:** Quandl would be the best tool to use to automate the extraction of historical stock data. It would be easier than automating the nasdaq.com process.
 
 If time remains, communicate to students that if they wanted to automate the Nasdaq process, they could use the cool [WrapAPI](https://wrapapi.com/). Open the site and show students the Yelp GIFs.
 
-* Explain that WrapAPI provides a functionality that allows users to record a series of actions on a website and automate them. This includes actions like signing into Facebook and extracting data from nasdaq.com. It can also scrape data from a website!
+* Explain that WrapAPI provides functionality that allows users to record a series of actions on a website and automate them. This includes actions like signing into Facebook and extracting data from nasdaq.com. It can also scrape data from a website!
 
 * Convey what's happening in each GIF.
 
@@ -188,7 +188,7 @@ Navigate to the 5.1 slides for the client-server model, and highlight the follow
 
 * Define the client-server model as a structure that outlines the relationship and flow of communication between two components: a client and a server.
 
-  * A **client** is any tool or application that is used to connect to or communicate with a server. This includes internet browsers, mobile devices, and command line terminals, just to name a few. Clients submit requests to servers, and clients receive responses from servers.
+  * A **client** is any tool or application that is used to connect to or communicate with a server. This includes internet browsers, mobile devices, and command-line terminals, just to name a few. Clients submit requests to servers, and clients receive responses from servers.
 
   * A **server** is a computer program, device, or hardware. Servers run some form of application and are tasked with interacting and providing functionality to clients. Servers receive requests from clients, and servers send responses back to clients.
 
@@ -206,7 +206,7 @@ If time remains, demonstrate the client-server model by using the terminal to pi
   ping finance.yahoo.com
   ```
 
-* Explain the output from the `ping` command. Underscore that with every execution of the client-server model, data is transmitted over a network. This data is inside **packets**. An example of data contained inside packets is user credentials for a website. When transmission is successful, the number of packets sent will match the number of packets received.
+* Explain the output from the `ping` command. Underscore that with every execution of the client-server model, data is transmitted over a network. This data is inside **packets**. An example of data contained inside packets is user credentials for a website. When the transmission is successful, the number of packets sent will match the number of packets received.
 
   ![client_server_ping.png](Images/client_server_ping.png)
 
@@ -214,7 +214,7 @@ Ask students the following questions. (If time did not permit for the ping demo,
 
 * In this scenario, what is the client and what is the server?
 
-  **Answer**: The terminal is the client and Yahoo Finance provides the server.
+  **Answer**: The terminal is the client, and Yahoo Finance provides the server.
 
 * Was the request sent to Yahoo Finance via the terminal a successful execution of the client-server model based on packets sent and received?
 
@@ -228,7 +228,7 @@ Ask students if there are any questions before moving on.
 
 **Corresponding Activity:** [01-Stu_Eavesdropping_On_Server](Activities/01-Stu_Eavesdropping_On_Server)
 
-This activity drives home the discussion on the client-server model by having students surf the web with the browser's developer console open. Students will visit websites like Facebook and Yahoo, as well as complete a Google search. They will read the standard output from the console to get a better idea of what data is sent between client and server as students navigate sites. This will communicate to students that every click and API request brokers a connection between client and server, allowing data to be exchanged between the two.
+This activity drives home the discussion on the client-server model by having students surf the web with the browser's developer console open. Students will visit websites like Facebook and Yahoo, as well as complete a Google search. They will read the standard output from the console to get a better idea of what data is sent between the client and server as students navigate sites. This will communicate to students that every click and API request brokers a connection between client and server, allowing data to be exchanged between the two.
 
 **Instructions:**
 
@@ -266,7 +266,7 @@ Engage students by asking some of the following review questions:
 
   **Answer:** Servers provided by companies like Google, Yahoo, Microsoft, etc. are used to store and distribute email messages. Email applications and internet browsers are clients that are used to specify who emails are sent to and the body of emails. Clients are used to submit email content to servers, and then servers distribute the message to the corresponding email targets.
 
-* If time remains, round robin and ask some students to give details about the data they saw transmitted. This will allow students to compare what they say with what others saw. It will also help students understand some of the common data exchanges, such as user credentials and search queries.
+* If time remains, round-robin and ask some students to give details about the data they saw transmitted. This will allow students to compare what they say with what others saw. It will also help students understand some of the common data exchanges, such as user credentials and search queries.
 
   **Answer:** `GET` requests
 
@@ -280,7 +280,7 @@ Ask for any remaining questions before moving on.
 
 ### 6. Instructor Do: Postman (5 min)
 
-In this activity, students will learn how to use Postman. The instructor will demo making Quandl API calls with Postman rather than through a browser. This will highlight the advantages of using Postman, such access to a UI, request logs, and tools that format API output for ease of use.
+In this activity, students will learn how to use Postman. The instructor will demo, making Quandl API calls with Postman rather than through a browser. This will highlight the advantages of using Postman, such as access to a UI, request logs, and tools that format API output for ease of use.
 
 Be sure to have the Postman client installed prior to beginning this activity. Consult the Postman Install Guide for instructions on how to install (link is listed below).
 
@@ -342,9 +342,9 @@ It's time students stopped learning about APIs and started playing with some! In
 
 Instruct TAs to make rounds to ensure all students have Postman installed. Postman should have been installed prior to the class. Have TAs provide assistance and troubleshooting to any students experiencing issues getting started.
 
-Recommend that students save their API requests in Postman so they do not have to continually execute the same request.
+Recommend that students save their API requests in Postman, so they do not have to continually execute the same request.
 
-Slack out the supplemental `Postman Install Guide` to students so they have a step-by-step process for how to install and get started.
+Slack out the supplemental `Postman Install Guide` to students, so they have a step-by-step process for installing and getting started.
 
 Instruct students to inform the TAs when they are finished. The next activity will require students to work in pairs, so everyone will need to have completed this activity before the next activity can begin.
 
@@ -390,7 +390,7 @@ Open Postman and submit the below request to Quandl. Then, conduct a live deciph
 
 * JSON Arrays are identified by brackets `[]`. An example of a JSON Array is the `column_names` object returned from the Quandl API call.
 
-If time permits, ask the students  the following questions. Sample answers have been provided.
+If time permits, ask the students the following questions. Sample answers have been provided.
 
 * We've seen a number of APIs in action (e.g., WrapAPI, Quandl, World Bank, Coinbase). Which API did everyone find the most interesting?
 
@@ -432,7 +432,7 @@ Navigate to the 5.1 slides, and highlight the following:
 
   * `PUT` requests are used to overwrite content on the server.
 
-* APIs play a key role in data analytic pipelines, often being the source of data or a means to analyze data. By submitting requests in Python, APIs can be used in-line with other processing. For example, data can be pulled from Coinbase to calculate cumulative returns, sharpe ratio, and beta for a set of cryptos. Similarly, data could be extracted from the Quandl API to complete portfolio simulations. Instead of switching back and forth between Postman and Python, everything can just be completed in Python.
+* APIs play a key role in analytic data pipelines, often being the source of data or a means to analyze data. By submitting requests in Python, APIs can be used in-line with other processing. For example, data can be pulled from Coinbase to calculate cumulative returns, sharpe ratio, and beta for a set of cryptos. Similarly, data could be extracted from the Quandl API to complete portfolio simulations. Instead of switching back and forth between Postman and Python, everything can just be completed in Python.
 
 Demonstrate with live code how to use the Python `requests` library, and use the following discussion points:
 
@@ -463,7 +463,7 @@ Demonstrate with live code how to use the Python `requests` library, and use the
 
   ![request_response.png](Images/request_response.png)
 
-* Most APIs incorporate programming that will return a code with each server response. These are called **response codes**. A list of common response codes and their meanings can be found below.
+* Most APIs incorporate programming that will return code with each server response. These are called **response codes**. A list of common response codes and their meanings can be found below.
 
   ```
   Common Response Codes
@@ -499,7 +499,7 @@ Demonstrate with live code how to use the Python `requests` library, and use the
   data = response_data.json()
   ```
 
-* To improve visual formatting even more, the `json.dump` function can be used to add indentations to the JSON data to make the JSON levels and hierarchies more apparent. The `json.dump` function accepts an argument `indent`, which can be configured to change the indents. `indent=4` is commonly used. Communicate to students  that the `json.dump` function only visually formats the JSON output on the screen; it does not alter the underlying JSON structure.
+* To improve visual formatting, even more, the `json.dump` function can be used to add indentations to the JSON data to make the JSON levels and hierarchies more apparent. The `json.dump` function accepts an argument `indent`, which can be configured to change the indents. `indent=4` is commonly used. Communicate to students  that the `json.dump` function only visually formats the JSON output on the screen; it does not alter the underlying JSON structure.
 
   ```python
   # Add indents to JSON and output to screen
@@ -508,7 +508,7 @@ Demonstrate with live code how to use the Python `requests` library, and use the
 
   ![json_with_indent.png](Images/json_with_indent.png)
 
-* JSON data has to be selected based off levels and hierarchies. For example, some JSON objects are organized by JSON object -> JSON array -> attribute. Some have multiple objects, and others have multiple JSON arrays. Either way, accessing JSON data is just like accessing data in a dictionary. Brackets `[]` are used with **keys** to retrieve values.
+* JSON data has to be selected based on levels and hierarchies. For example, some JSON objects are organized by JSON object -> JSON array -> attribute. Some have multiple objects, and others have multiple JSON arrays. Either way, accessing JSON data is just like accessing data in a dictionary. Brackets `[]` are used with **keys** to retrieve values.
 
   ```python
   # Select country and GDP value for second row
@@ -665,7 +665,7 @@ Navigate to the 5.1 slides, and highlight the following:
 
     **Answer**: When using the `?format=json` tag.
 
-* **Parameters** can be specified in one of two ways. Parameters can follow `/` forward slashes or be specified by parameter name and then by parameter value.
+* **Parameters** can be specified in one of two ways. Parameters can follow `/` forward slashes or be specified by parameter name and then by the parameter value.
 
   ```
   Parameter provided after /
@@ -689,7 +689,7 @@ Navigate to the 5.1 slides, and highlight the following:
   http://numbersapi.com/random?min=10&max=20
   ```
 
-Open the solution, and conduct a dry walk through of the following solution. Touch upon the following discussion points:
+Open the solution, and conduct a dry walkthrough of the following solution. Touch upon the following discussion points:
 
 * The requests `GET` function can be used to submit a parameterized request to the Numbers API to get trivia facts about the number 42.
 
@@ -762,7 +762,7 @@ Students can play the game against a classmate or imaginary dealer. Students are
 
 * [url_parameters.ipynb](Activities/07-Stu_House_of_Requests/Solved/url_parameters.ipynb)
 
-Facilitate a dry walk through of the solution utilizing the following discussion points:
+Facilitate a dry walkthrough of the solution utilizing the following discussion points:
 
 * Passing parameters to APIs through request URLs gives users the ability to configure and control API actions. By passing parameters to the request URLs for the Deck of Cards API, users can create and shuffle a deck of cards. Parameters also allow users to draw `n` number of cards from the deck.
 
@@ -830,9 +830,9 @@ Transition the class into a review session. Ask the following questions:
 
   **Answer**: Automated dealing based off of game type (e.g., poker, Texas Hold'em, etc.)
 
-  **Answer:** Game specific interactions (e.g, playing War compares player cards turn by turn).
+  **Answer:** Game specific interactions (e.g., playing War compares player cards turn by turn).
 
-  **Answer:** Turn based gaming.
+  **Answer:** Turn-based gaming.
 
   **Answer:** Scoring.
 
@@ -848,7 +848,7 @@ This activity will conclude APIs Day 1. Recap the skills and concepts learned th
 
 * Ask if there's a student who would like to volunteer to summarize what was learned today.
 
-* Ask if there are any volunteers who would like to add to what the previous student stated.
+* Ask if any volunteers would like to add to what the previous student stated.
 
 Guide students and the recap session. Use the below sample statements and questions to guide students if student engagement and participation is low. Only use these if necessary; let the students drive the session as much as possible.
 
@@ -856,7 +856,7 @@ Guide students and the recap session. Use the below sample statements and questi
 
 * What APIs were the most useful? In what ways could you continue to use these APIs, especially in everyday life?
 
-Ask students to identify two things they'd like to practice on from today's lesson that they might have struggled with conceptually. Encourage them to do additional practice and reading outside of class to reinforce the knowledge and skill.
+Ask students to identify two things they'd like to practice on from today's lesson that they might have struggled with conceptually. Encourage them to do additional practice and reading outside of class to reinforce their knowledge and skill.
 
 Finish the recap with a few statements of encouragement.
 

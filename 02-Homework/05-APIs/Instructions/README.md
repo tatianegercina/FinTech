@@ -4,13 +4,13 @@
 
 ## Background
 
-You decided to start a FinTech consultancy firm, and you want to make the difference by working on projects with high social impact in local communities. You just won your first contract to help one of the biggest credit unions that wants to create a tool to help their members enhance their financial health. The Chief Technology Officer (CTO) of the credit union, asked you to develop a prototype application to present a demo in the next credit union assembly.
+You decided to start a FinTech consultancy firm, and you want to make the difference by working on projects with high social impact in local communities. You just won your first contract to help one of the biggest credit unions in your area. They want to create a tool that helps their members enhance their financial health. The Chief Technology Officer (CTO) of the credit union, asked you to develop a prototype application to present a demo in the next credit union assembly.
 
-The credit union board wants to allow the union's members to assess their monthly personal finances, and also, being able to forecast a reasonable good retirement plan based on cryptocurrencies, stocks, and bonds.
+The credit union board wants to allow the union's members to assess their monthly personal finances, and also be able to forecast a reasonability good retirement plan based on cryptocurrencies, stocks, and bonds.
 
 In this challenge, you will use all the skills you have learned until now, focusing on using APIs as part of the technical solution.
 
-You will create two financial analysis tools using Jupyter notebooks. The first will be a personal finance planner that will allow visualizing their savings composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
+You will create two financial analysis tools using Jupyter notebooks. The first will be a personal finance planner that will allow user to visualize their savings composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
 
 The second tool will be a retirement planning tool that will use the Alpaca API to fetch historical closing prices for a retirement portfolio composed by stocks and bonds and then run Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to answer questions about the portfolio.
 
@@ -46,7 +46,7 @@ Assume the following amount of crypto assets: `1.2` BTC and `5.3` ETH.
 
 3. Parse the API JSON response to pick the crypto prices and store each price in a variable.
 
-    **Hint:** Be aware of the particular identifier for each cryptocurrency in the API JSON response, bitcoin identifier is `1` whereas ethereum is `1027`.
+    **Hint:** Be aware of the particular identifier for each cryptocurrency in the API JSON response, the bitcoin identifier is `1` whereas ethereum is `1027`.
 
 4. Compute the value in US dollars of the current amount of cryptocurrencies and print the results.
 
@@ -54,7 +54,7 @@ Assume the following amount of crypto assets: `1.2` BTC and `5.3` ETH.
 
 Assume the following amount of shares: `200` `AGG` (bonds) and `50` `SPY` (stocks).
 
-**Important:** Remember to create a `.env` file into your working directory to store the values of your Alpaca API key and Alpaca secret key.
+**Important:** Remember to create a `.env` file in your working directory to store the values of your Alpaca API key and Alpaca secret key.
 
 1. Create the Alpaca API object using the `tradeapi.REST` function from the Alpaca SDK.
 
@@ -80,7 +80,7 @@ In this section, you will assess the financial health of the credit union's memb
 
     * If total savings are greater than the emergency fund, display a message congratulating the person for having enough money in this fund.
 
-    * If total savings are equal to the emergency fund, display a message congratulation the person on reaching this financial goal.
+    * If total savings are equal to the emergency fund, display a message congratulating the person on reaching this financial goal.
 
     * If total savings are less than the emergency fund, display a message showing how many dollars away the person is to reach the goal of saving at least three times their monthly expenses.
 
@@ -88,15 +88,15 @@ In this section, you will assess the financial health of the credit union's memb
 
 In this section, you will use the Alpaca API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at `30` years. You will then use the Monte Carlo data to answer questions about the portfolio.
 
-Follow the steps outlined in the budget starter notebook to complete the following.
+Follow the steps outlined in the starter notebook to complete the following.
 
 #### Monte Carlo Simulation
 
 Use the MCForecastTools toolkit to create a Monte Carlo simulation for the retirement portfolio:
 
-1. Use the Alpaca API to fetch five years historical closing prices for a traditional `60/40` portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`).
+1. Use the Alpaca API to fetch five years historical closing prices for a traditional `40/60` portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`).
 
-2. Run a Monte Carlo Simulation of `500` runs and `30` years for the `60/40` portfolio and plot the results.
+2. Run a Monte Carlo Simulation of `500` runs and `30` years for the `40/60` portfolio and plot the results.
 
     ![monte carlo](Images/monte-carlo.png)
 

@@ -4,9 +4,9 @@
 
 ### Overview
 
-Today's class will focus on exposing students to the exciting and innovative FinTech APIs that have been disrupting the industry. There are so many groundbreaking APIs in the FinTech industry that it's almost impossible not to get excited about them. APIs used in this lesson include **Quandl**, an API that provides access to historical stock data, and **Alpaca**, an API for stock trading. Both of these services help democratize and decentralize financial data stores and analytic approaches. And this is just the beginning. New APIs and SDKs (software development kits) are released regularly, which means there's always new technologies to use to enhance and advance the FinTech industry. It's a new world, and it's a world to be excited about!
+Today's class will expose students to the exciting and innovative FinTech APIs that have been disrupting the industry. There are so many groundbreaking APIs in the FinTech industry that it's almost impossible not to get excited about them. APIs used in this lesson include **Quandl**, an API that provides access to historical stock data, and **Alpaca**, an API for stock trading. Both of these services help democratize and decentralize financial data stores and analytic approaches. And this is just the beginning. New APIs and SDKs (software development kits) are released regularly, which means there's always new technologies to use to enhance and advance the FinTech industry. It's a new world, and it's a world to be excited about!
 
-This lesson presents students with hands-on experience using APIs in a Python environment, requesting and leveraging API keys, and securely storing API keys and credentials as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to Quandl using the Python `requests` library and Alpacas's software development kit, a library packaged to provide developers with access to Alpacas's endpoints and functions.
+This lesson presents students with hands-on experience using APIs in a Python environment, requesting and leveraging API keys, and securely storing API keys and credentials as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to Quandl using the Python `requests` library and Alpacas' software development kit, a library packaged to provide developers with access to Alpacas's endpoints and functions.
 
 ### Class Objectives
 
@@ -28,7 +28,7 @@ By the end of class, students will be able to:
 
 * Slack out the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installations and verify them with a TA before the end of the next class.
 
-* This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created accounts and received API keys prior to this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up if the haven't. Students were instructed to sign up at the end of Lesson 5.1. There will be an activity dedicated to confirming that each student has signed up.
+* This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created accounts and received API keys prior to this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up if they haven't. Students were instructed to sign up at the end of Lesson 5.1. There will be an activity dedicated to confirming that each student has signed up.
 
   * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
@@ -50,7 +50,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [5.2 Slides](https://docs.google.com/presentation/d/1wz8HZNlLWsPJ6ZmNiARjUH7vEOxrkTJ76cIFgMuwfW8/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [5.2 Slides](https://docs.google.com/presentation/d/1b8lJvgBrrKyh4orpMSd-bG1BxaOGiv34njHsINh4wWA/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -523,7 +523,7 @@ Open the unsolved version of the Jupyter notebook and live code the demo. Contin
   alpaca_secret_key = os.getenv("ALPACA_SECRET_KEY")
   ```
 
-* Now you we ready to connect to Alpaca! To use the Alpaca SDK, we need to create an object that will encapsulate the entire Alpaca functionality.
+* Now we are ready to connect to Alpaca! To use the Alpaca SDK, we need to create an object that will encapsulate the entire Alpaca functionality.
 
 * To generate the alpaca object to retrieve stock market data, we will use the `tradeapi.REST()` function by passing the Alpaca keys as arguments and setting the API version we want to use. The current Alpaca API version is 2.0.
 
@@ -684,7 +684,7 @@ Ask students about the pace of the class. Is it going too fast, too slow, or jus
 
 Empower students to continue on by emphasizing that they're one step away from adding Alpaca to their toolkit. Reiterate that Alpaca is going to help them acquire the data they need to perform financial analysis, and it will broker the communication channel between stock exchanges and FinTech application servers.
 
-Remind students that they are making excellent progress. Not only are they submitting requests to an API, they're submitting authenticated requests in a programmatic way using SDKs.
+Remind students that they are making excellent progress. Not only are they submitting requests to an API, but they're also submitting authenticated requests in a programmatic way using SDKs.
 
 If time remains, ask the following questions:
 
