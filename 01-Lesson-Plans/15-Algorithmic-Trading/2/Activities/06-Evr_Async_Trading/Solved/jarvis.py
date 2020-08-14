@@ -46,6 +46,7 @@ def update_dashboard(df, dashboard):
 
 def fetch_data():
     """Fetches the latest prices."""
+    # print("Fetching data...")
     load_dotenv()
     kraken_public_key = os.getenv("KRAKEN_PUBLIC_KEY")
     kraken_secret_key = os.getenv("KRAKEN_SECRET_KEY")
