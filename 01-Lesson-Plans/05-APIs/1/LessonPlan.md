@@ -112,7 +112,7 @@ Show students the URL used to submit a Quandl API request. Underscore the fact t
 
 ![quandl_url.png](Images/quandl_url.png)
 
-* Submit Quandl API to get OPEC oil prices using an internet browser and the link below. Show students the data, and bring attention to the OPEC oil prices in the output.
+* Submit a request to the Quandl API to get OPEC oil prices using an internet browser and the link below. Show students the data, and bring attention to the OPEC oil prices in the output.
 
   ```text
   https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=<instructor's API key>
@@ -483,9 +483,9 @@ Ask students if anyone remembers how to append to a string.
 
   ![raw_json](Images/raw_json.png)
 
-* To improve visual formatting even more, the `json.dump` function can be used to add indentations to the JSON raw data to make the JSON levels and hierarchies more apparent.
+* To improve visual formatting even more, the `json.dumps` function can be used to add indentations to the JSON raw data to make the JSON levels and hierarchies more apparent.
 
-* The `json.dump` function accepts an argument `indent`, which can be configured to change the indents. `indent=4` is commonly used. Communicate to students  that the `json.dump` function only visually formats the JSON output on the screen; it does not alter the underlying JSON structure.
+* The `json.dumps` function accepts an argument `indent`, which can be configured to change the indents. `indent=4` is commonly used. Communicate to students  that the `json.dumps` function only visually formats the JSON output on the screen; it does not alter the underlying JSON structure.
 
   ![json_with_indent.png](Images/json_with_indent.png)
 
@@ -578,7 +578,7 @@ Open the solution and conduct a dry walkthrough, highlighting the following disc
   response_content = response_data.content
   ```
 
-* The `JSON` function is used to format API into JSON format.
+* The `JSON` function is used to format the API response into JSON format.
 
   ```python
   # Get content as JSON
