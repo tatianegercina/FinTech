@@ -499,7 +499,7 @@ Demonstrate with live code how to use the Python `requests` library, and use the
   data = response_data.json()
   ```
 
-* To improve visual formatting, even more, the `josn.dumps` function can be used to add indentations to the JSON data to make the JSON levels and hierarchies more apparent. The `josn.dumps` function accepts an argument `indent`, which can be configured to change the indents. `indent=4` is commonly used. Communicate to students  that the `josn.dumps` function only visually formats the JSON output on the screen; it does not alter the underlying JSON structure.
+* To improve visual formatting, even more, the `json.dumps` function can be used to add indentations to the JSON data to make the JSON levels and hierarchies more apparent. The `json.dumps` function accepts an argument `indent`, which can be configured to change the indents. `indent=4` is commonly used. Communicate to students  that the `json.dumps` function only visually formats the JSON output on the screen; it does not alter the underlying JSON structure.
 
   ```python
   # Add indents to JSON and output to screen
