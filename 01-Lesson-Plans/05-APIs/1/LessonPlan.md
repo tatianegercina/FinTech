@@ -695,7 +695,7 @@ Facilitate a dry walkthrough of the solution utilizing the following discussion 
 
   ![parameter_formats.png](Images/parameter_formats.png)
 
-* Interpolation is a common way to pass parameters to request URLs. This allows for parameters to be assigned to variables and those variables to be interpolated into the request URLs. This also enables dynamic configuration of parameters and removes instances of hard-coded parameter values.
+* String interpolation is a common way to pass parameters to request URLs. This allows for parameters to be assigned to variables and those variables to be interpolated into the request URLs. This also enables dynamic configuration of parameters and removes instances of hard-coded parameter values.
 
   ```python
   draw_cards_url = f"https://deckofcardsapi.com/api/deck/{deck_id}/draw/?count=2"
