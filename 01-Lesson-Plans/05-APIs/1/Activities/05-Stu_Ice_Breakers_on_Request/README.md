@@ -32,7 +32,7 @@ APIS
 
 7. Decipher the JSON data, and identify an interesting fact/joke to share with the class. Write it down to tell the class during the activity review.
 
-8. Select an element from the JSON and store into a new variable. Hint: JSON attribute names are like keys in dictionaries (i.e. `response_content.fact` or `response_content.joke`).
+8. Select an element from the JSON and store it into a new variable. Hint: JSON attribute names are like keys in dictionaries (i.e. `response_content.fact` or `response_content.joke`).
 
 ### Challenge
 

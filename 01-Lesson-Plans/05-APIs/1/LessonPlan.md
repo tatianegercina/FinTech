@@ -112,7 +112,7 @@ Show students the URL used to submit a Quandl API request. Underscore the fact t
 
 ![quandl_url.png](Images/quandl_url.png)
 
-Submit Quandl API to get OPEC oil prices using an internet browser and the link below. Show students the data, and bring attention to the OPEC oil prices in the output. Note that you need to include your Quandl API key as a parameter in the URL to make the API call work.
+Submit a request to the Quandl API to get OPEC oil prices using an internet browser and the link below. Show students the data, and bring attention to the OPEC oil prices in the output. Note that you need to include your Quandl API key as a parameter in the URL to make the API call work.
 
 ```text
 https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=[YOUR-KEY-HERE]
@@ -170,7 +170,7 @@ Walkthrough the homework instructions and highlight the following:
 
 * Lastly, you will analyze the retirement planner activity output and summarize assumptions and findings in a financial analysis report created using markdown that you will upload to your GitHub repository.
 
-Ask the students if there are any questions related to the homework before continue with the next activity.
+Ask the students if there are any questions related to the homework before continuing with the next activity.
 
 ---
 
@@ -266,7 +266,7 @@ Engage students by asking some of the following review questions:
 
   **Answer:** Servers provided by companies like Google, Yahoo, Microsoft, etc. are used to store and distribute email messages. Email applications and internet browsers are clients that are used to specify who emails are sent to and the body of emails. Clients are used to submit email content to servers, and then servers distribute the message to the corresponding email targets.
 
-* If time remains, round-robin and ask some students to give details about the data they saw transmitted. This will allow students to compare what they say with what others saw. It will also help students understand some of the common data exchanges, such as user credentials and search queries.
+* If time remains, round-robin and ask some students to give details about the data they saw transmitted. This will allow students to compare what they saw with what others saw. It will also help students understand some of the common data exchanges, such as user credentials and search queries.
 
   **Answer:** `GET` requests
 
@@ -432,7 +432,7 @@ Navigate to the 5.1 slides, and highlight the following:
 
   * `PUT` requests are used to overwrite content on the server.
 
-* APIs play a key role in analytic data pipelines, often being the source of data or a means to analyze data. By submitting requests in Python, APIs can be used in-line with other processing. For example, data can be pulled from Coinbase to calculate cumulative returns, sharpe ratio, and beta for a set of cryptos. Similarly, data could be extracted from the Quandl API to complete portfolio simulations. Instead of switching back and forth between Postman and Python, everything can just be completed in Python.
+* APIs play a key role in analytic data pipelines, often being the source of data or a means to analyze data. By submitting requests in Python, APIs can be used in-line with other processing. For example, data can be pulled from Coinbase to calculate cumulative returns, sharpe ratios, and beta for a set of cryptos. Similarly, data could be extracted from the Quandl API to complete portfolio simulations. Instead of switching back and forth between Postman and Python, everything can just be completed in Python.
 
 Demonstrate with live code how to use the Python `requests` library, and use the following discussion points:
 
@@ -499,11 +499,11 @@ Demonstrate with live code how to use the Python `requests` library, and use the
   data = response_data.json()
   ```
 
-* To improve visual formatting, even more, the `json.dump` function can be used to add indentations to the JSON data to make the JSON levels and hierarchies more apparent. The `json.dump` function accepts an argument `indent`, which can be configured to change the indents. `indent=4` is commonly used. Communicate to students  that the `json.dump` function only visually formats the JSON output on the screen; it does not alter the underlying JSON structure.
+* To improve visual formatting, even more, the `josn.dumps` function can be used to add indentations to the JSON data to make the JSON levels and hierarchies more apparent. The `josn.dumps` function accepts an argument `indent`, which can be configured to change the indents. `indent=4` is commonly used. Communicate to students  that the `josn.dumps` function only visually formats the JSON output on the screen; it does not alter the underlying JSON structure.
 
   ```python
   # Add indents to JSON and output to screen
-  print(json.dumps(data, indent=4))
+  print(josn.dumpss(data, indent=4))
   ```
 
   ![json_with_indent.png](Images/json_with_indent.png)
@@ -568,7 +568,7 @@ Transition into a reflective Q&A session. Ask the students the following questio
 
 * What type of APIs are you interested in creating?
 
-* Deciphering and parsing JSON can be frustrating and challenging, especially when the data isn't formatted in the best way. Did the `json.dumps` improve your ability to decipher the JSON data?
+* Deciphering and parsing JSON can be frustrating and challenging, especially when the data isn't formatted in the best way. Did the `josn.dumpss` improve your ability to decipher the JSON data?
 
 If time remains, tell students about some of the APIs you've worked with and how they've added to your professional success. Encourage students to take advantage of as many open source APIs as possible. Take this time to recommend any APIs that you feel students might be interested in.
 
@@ -613,20 +613,20 @@ Open the solution and conduct a dry walk-through review, highlighting the follow
   response_content = response_data.content
   ```
 
-* The `JSON` function is used to format API into JSON format.
+* The `JSON` function is used to format the API response into JSON format.
 
   ```python
   # Get content as JSON
   data = response_data.json()
   ```
 
-* `json.dumps` can be used to format the JSON output in a way that is easy to decipher and interpret visually. The indent argument is used to specify how many indentations should be used when formatting. Indents help delineate JSON levels and hierarchies.
+* `josn.dumpss` can be used to format the JSON output in a way that is easy to decipher and interpret visually. The indent argument is used to specify how many indentations should be used when formatting. Indents help delineate JSON levels and hierarchies.
 
   ```python
   import json
 
-  # Use json.dumps with argument indent=4 to format data
-  print(json.dumps(data, indent=4))
+  # Use josn.dumpss with argument indent=4 to format data
+  print(josn.dumpss(data, indent=4))
   ```
 
   ![json_dumps.png](Images/json_dumps.png)
@@ -702,7 +702,7 @@ Open the solution, and conduct a dry walkthrough of the following solution. Touc
 
   # Submit and format request
   response_data = requests.get(request_url).json()
-  print(json.dumps(response_data, indent=4))
+  print(josn.dumpss(response_data, indent=4))
 
   # Select fact
   response_data['text']
@@ -720,7 +720,7 @@ Open the starter file, and live code the following:
 
   # Submit and format request
   response_data = requests.get(request_url).json()
-  print(json.dumps(response_data, indent=4))
+  print(josn.dumpss(response_data, indent=4))
 
   # Select fact
   response_data['text']
