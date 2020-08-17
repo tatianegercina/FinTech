@@ -503,7 +503,7 @@ Demonstrate with live code how to use the Python `requests` library, and use the
 
   ```python
   # Add indents to JSON and output to screen
-  print(josn.dumpss(data, indent=4))
+  print(json.dumps(data, indent=4))
   ```
 
   ![json_with_indent.png](Images/json_with_indent.png)
@@ -568,7 +568,7 @@ Transition into a reflective Q&A session. Ask the students the following questio
 
 * What type of APIs are you interested in creating?
 
-* Deciphering and parsing JSON can be frustrating and challenging, especially when the data isn't formatted in the best way. Did the `josn.dumpss` improve your ability to decipher the JSON data?
+* Deciphering and parsing JSON can be frustrating and challenging, especially when the data isn't formatted in the best way. Did the `json.dumps` improve your ability to decipher the JSON data?
 
 If time remains, tell students about some of the APIs you've worked with and how they've added to your professional success. Encourage students to take advantage of as many open source APIs as possible. Take this time to recommend any APIs that you feel students might be interested in.
 
@@ -620,13 +620,13 @@ Open the solution and conduct a dry walk-through review, highlighting the follow
   data = response_data.json()
   ```
 
-* `josn.dumpss` can be used to format the JSON output in a way that is easy to decipher and interpret visually. The indent argument is used to specify how many indentations should be used when formatting. Indents help delineate JSON levels and hierarchies.
+* `json.dumps` can be used to format the JSON output in a way that is easy to decipher and interpret visually. The indent argument is used to specify how many indentations should be used when formatting. Indents help delineate JSON levels and hierarchies.
 
   ```python
   import json
 
-  # Use josn.dumpss with argument indent=4 to format data
-  print(josn.dumpss(data, indent=4))
+  # Use json.dumps with argument indent=4 to format data
+  print(json.dumps(data, indent=4))
   ```
 
   ![json_dumps.png](Images/json_dumps.png)
@@ -702,7 +702,7 @@ Open the solution, and conduct a dry walkthrough of the following solution. Touc
 
   # Submit and format request
   response_data = requests.get(request_url).json()
-  print(josn.dumpss(response_data, indent=4))
+  print(json.dumps(response_data, indent=4))
 
   # Select fact
   response_data['text']
@@ -720,7 +720,7 @@ Open the starter file, and live code the following:
 
   # Submit and format request
   response_data = requests.get(request_url).json()
-  print(josn.dumpss(response_data, indent=4))
+  print(json.dumps(response_data, indent=4))
 
   # Select fact
   response_data['text']
