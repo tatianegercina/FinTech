@@ -18,7 +18,7 @@ Now that you know that the APIs below are working, go back and rerun one of them
 
 3. Execute the API request and view the output in `JSON` format.
 
-4. Read through the JSON. Try and make sense of a sub-section of the data (i.e., close date for a specific ticker, the Canadian 2018 GDP value, or current price of Ethereum).
+4. Read through the JSON. Try and make sense of a sub-section of the data (i.e., close date for a specific ticker, the Canadian 2018 GDP value, or current price of Bitcoin).
 
 5. Turn and teach your partner about what you deciphered from the JSON data.
 
