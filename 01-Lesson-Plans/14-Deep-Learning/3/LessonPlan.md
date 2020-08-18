@@ -1451,7 +1451,7 @@ predicted = model.predict(X_test)
   stocks = pd.DataFrame({
       "Actual": real_prices.ravel(),
       "Predicted": predicted_prices.ravel()
-  })
+  }, index = gold_df.index[-len(real_prices): ])
   ```
 
 * Once we create the DataFrame, we can use the `plot()` method of the DataFrame to create the line chart.
