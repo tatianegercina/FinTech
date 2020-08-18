@@ -1,6 +1,6 @@
-# Students Do: Predicting Gold Closing Prices
+# Student Do: Predicting Gold Closing Prices
 
-In this activity, you will gain hands-on experience by building an RNN LSTM for predicting gold closing prices using time-series data.
+In this activity, you will gain hands-on experience by building an RNN LSTM model for time-series data to predict gold closing prices in CAD.
 
 ## Instructions
 
@@ -73,7 +73,7 @@ Design the structure of your RNN LSTM as follows:
 
 #### Compile the LSTM RNN Model
 
-Compile the model using the `adam` optimizer, and `mean_square_error` as loss function since the value you want to predict is continuous.
+Compile the model using the `adam` optimizer, and `mean_square_error` as loss function, since the value you want to predict is continuous.
 
 #### Train the Model
 
@@ -101,11 +101,13 @@ Use the `evaluate()` method of the model using the testing data.
 
 * Use the `predict()` method of the model to make some closing gold price predictions using your brand new LSTM RNN model and your testing data. Save the predictions in a variable called `predicted`.
 
-* Since you scaled the original values using the `MinMaxScaler`, you need to recover the original gold prices to better understand of the predictions. Use the `inverse_transform()` method of the scaler to decode the scaled testing and predicted values to their original scale.
+* Since you scaled the original values using the `MinMaxScaler`, you need to recover the original gold prices to better understand the predictions. Use the `inverse_transform()` method of the scaler to decode the scaled testing and predicted values to their original scale.
 
-#### Plotting Predicted Vs. Real Prices
+#### Plotting Predicted vs. Real Prices
 
-* Create a Pandas DataFrame with two columns as follows to plot the predicted vs. the actual gold prices.
+* Create a Pandas DataFrame with two columns (as follows) to plot the predicted vs. actual gold prices.
+
+  * Index: Use the datetime index from your original DataFrame.
 
   * Column 1: Actual prices (testing data)
 
@@ -115,7 +117,8 @@ Use the `evaluate()` method of the model using the testing data.
 
   ![Sample actual vs. predicted gold prices](Images/sample-gold-prices-predictions-df-v2.png)
 
-* Use the `plot()` method from the DataFrame to create a line chart to contrast the actual vs. the predicted gold prices.
+* Use the `plot()` method from the DataFrame to create a line chart to contrast the actual vs. predicted gold prices.
 
 ---
+
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

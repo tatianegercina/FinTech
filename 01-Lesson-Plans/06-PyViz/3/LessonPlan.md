@@ -96,7 +96,7 @@ Go to the slideshow, navigate to the Intro to Panel section, and highlight the f
 
   * PyViz removes the need to use another technology stack for dashboards/visualizations (i.e., Tableau).
 
-Walk through some of these [example](https://gapminder.pyviz.demo.anaconda.com/gapminders) dashboards, using the following discussion points as a guide:
+Walk through some of these [example](https://gapminders.pyviz.demo.anaconda.com/gapminders) dashboards, using the following discussion points as a guide:
 
 * PyViz comes with widgets and plugins that allow it to render plots and visualizations from other technologies, like Pandas, Matplotlib, and Plotly. This enables developers to build visualizations in the appropriate technologies, and then display them all in one centralized location with a Panel dashboard.
 

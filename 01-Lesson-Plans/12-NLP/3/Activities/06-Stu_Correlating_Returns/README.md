@@ -1,14 +1,16 @@
 # Correlating Returns
 
-In this activity, you will create a sentiment index from News API headlines and correlate it to Apple (AAPL) daily returns, looking for text topics that generate the highest correlation.
+In this activity, you will create a sentiment index from News API headlines and correlate it to Apple (`AAPL`) daily returns, looking for text topics that generate the highest correlation.
 
 ## Instructions
 
-* Download returns data for the past month for AAPL.
-* Get news headlines for at least five topics of your choice and apply sentiment analysis to the headlines.
-* Correlate the headlines' sentiment to S&P 500 returns for each topic. Which one had the highest correlation?
+1. Download returns data for the past month for `AAPL` using the Alpaca API.
 
-## Hint
+2. Get news headlines for at least five topics of your choice and apply sentiment analysis to the headlines.
+
+3. Correlate the headlines sentiment to S&P 500 returns for each topic. Which one had the highest correlation?
+
+## Hints
 
 * In order to correlate sentiment and returns, we need to make sure that they're grouped in the same unit—in this case, trading days.
 
@@ -16,7 +18,7 @@ In this activity, you will create a sentiment index from News API headlines and 
 
 ## Troubleshooting Notes
 
-The Vader sentiment library may need to have the input text converted to plain ASCII text. The following code can be used to convert a string or byte to plain ASCII text.
+The VADER sentiment library may need to have the input text converted to plain ASCII text. The following code can be used to convert a string or byte to plain ASCII text.
 
 ```python
 plain_ascii = raw_text.encode('utf-8', 'ignore').decode('ascii', 'ignore')
@@ -41,4 +43,4 @@ def headline_sentiment_summarizer_avg(headlines):
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

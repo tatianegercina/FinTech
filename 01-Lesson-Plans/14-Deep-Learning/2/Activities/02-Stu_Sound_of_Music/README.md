@@ -4,11 +4,11 @@ In this activity, you will use a deep learning model to predict the geographical
 
 ## The Dataset
 
-The dataset contains `68` encoded features of music composition (columns from `0` to `67`) from a music streaming service. The last two columns of the dataset (columns `68` and `69`) are the geographical coordinates where the song was played.
+The dataset contains `68` encoded features of a musical composition (columns from `0` to `67`) from a music streaming service. The last two columns of the dataset (columns `68` and `69`) are the geographical coordinates where the song was played.
 
 ## Instructions
 
-1. Create a shallow (`1` hidden layer) and deep neural network (with two layers) to predict the geographical coordinates of the compositions represented in the data. Decide on your own how many neurons you will use on each hidden layer.
+1. Create a shallow (`1` hidden layer) and deep neural network (with two layers) to predict the geographical coordinates of the compositions represented in the data. Decide how many neurons you will use on each hidden layer.
 
 2. Fit each model with at least `800` epochs, and setting `validation_split=0.3`.
 
@@ -18,10 +18,10 @@ The dataset contains `68` encoded features of music composition (columns from `0
 
 ## Hint
 
-* Note that that there needs to be two regression outputs. Your model structure should reflect this.
+* Note that that there needs to be two regression outputs; your model structure should reflect this.
 
 * When fitting the model, you can set the parameter `verbose=0` in the `fit()` method to mute the printing of each epoch's results.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

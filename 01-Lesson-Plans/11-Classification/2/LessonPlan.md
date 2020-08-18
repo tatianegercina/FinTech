@@ -4,13 +4,11 @@
 
 ### Overview
 
-By the end of Today's class, students will recognize the benefits of using tree-based algorithms for classifications problems. Also, students will gain hands-on experience with random forests and ensemble methods such as bagging and boosting.
-
-Today´s lesson also introduces students to dealing with categorical data in machine learning. Students will be able to identify when it is worth to use categorical data as a feature in a model.
+In today's class, students will learn the benefits of using tree-based algorithms for classification problems, and gain hands-on experience with random forests and ensemble methods, like bagging and boosting. Students will also be introduced to dealing with categorical data in machine learning, and learn how to identify when it is worth using categorical data as a feature in a model.
 
 ### Class Objectives
 
-By the end of the class, students will be able to:
+By the end of today's class, students will be able to:
 
 * Identify when categorical variables are useful for a machine learning algorithm.
 
@@ -22,46 +20,47 @@ By the end of the class, students will be able to:
 
 * Identify the pros and cons of tree-based algorithms.
 
-* Understand the implications of overfitting and how boosting and bagging can help to deal with it.
+* Understand the implications of overfitting and how boosting and bagging can assist with it.
 
-* Apply Gradient Tree Boosting models in classification problems.
+* Apply gradient tree boosting models in classification problems.
 
 ---
 
 ### Instructor Notes
 
-* Today's class is focused on teaching students how tree-based algorithms can be used for classification problems. Students start with an introduction to decision trees and are then introduced to Ensemble Learning algorithms such as Random Forests and Gradient Boosted Trees.
+* Today's class is focused on teaching students how tree-based algorithms can be used for classification problems. Students will start with an introduction to decision trees and then be introduced to ensemble learning algorithms such as random forests and gradient boosted trees.
 
-* tree-based algorithms have a wide range of applications, but today's class will use them for risk analysis scenarios.
+* Tree-based algorithms have a wide range of applications, but today's class will use them for risk analysis scenarios.
 
-* Some of the demos in Today's class will use a lot of memory to train the models which may throw warning messages in Jupyter. Reassure students that these warnings are typically not critical and can mostly be ignored.
+* Some of the demos in today's class will use a lot of memory to train the models, which may throw warning messages in Jupyter. Reassure students that these warnings are typically not critical, and can mostly be ignored.
 
-* Overfitting is a common problem in machine learning that will be discussed today, so take your time to understand its implications and how the techniques covered in this class can help to avoid it.
+* Overfitting is a common problem in machine learning that will be discussed today. Take your time to understand its implications, and how the techniques covered in today's class can help to avoid it.
 
 ### Sample Class Video (Highly Recommended)
-* To watch an example class lecture, go here: [11.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8c4c5255-0418-48d5-8a9e-aae001123070) Note that this video may not reflect the most recent lesson plan.
+
+* To watch an example class lecture, go here: [11.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0f8df8d-18ae-4dc2-8160-abc0012a40d5) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1AjhsJ-tToVzqX-D63O_0EPC9QEZeuDhDYjMPhOPDz7Y/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [11.2 Lesson Slides](https://docs.google.com/presentation/d/1Q5mk8YL10DEiz5IzW5UbhSEwfJ2RW_ajJBLpGfBnWgI/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Day 2 introduces students to tree-based algorithms and Ensemble Learners such as Random Forests and Gradient Boosted Trees. Students will get experience applying this new family of machine learning algorithms to a variety of classification problems. This will also tie in with day 3 as a potential solution to imbalanced classes, which will be seen later in the lesson.
+Day 2 introduces students to tree-based algorithms and ensemble learners, such as random forests and gradient boosted trees. Students will get experience applying this new family of machine learning algorithms to a variety of classification problems. This will also tie in with Day 3 as a potential solution to imbalanced classes, which will be seen later in the lesson.
 
-Open the lesson slides and welcome students to day 2 by highlighting the following:
+Open the lesson slides and welcome students to Day 2 by highlighting the following:
 
-* Today, a new family of machine learning algorithms is going to be introduced: _tree-based algorithms_.
+* Today, a new family of machine learning algorithms will be introduced: tree-based algorithms.
 
-* tree-based algorithms are supervised learning methods that are mostly used for classifications and regression problems.
+* Tree-based algorithms are supervised learning methods that are mostly used for classification and regression problems.
 
 * This class will cover the following algorithms and methods:
 
@@ -70,7 +69,7 @@ Open the lesson slides and welcome students to day 2 by highlighting the followi
   * Weak learners
   * Ensemble methods
 
-Ask for any additional questions before moving on.
+Ask if there are any questions before moving on.
 
 ---
 
@@ -86,15 +85,15 @@ Set up this activity by explaining that before we dig into the tree-based algori
 
 Explain to students that while many datasets contain categorical features such as gender labels or risk categories, machine learning algorithms only work with numerical data.
 
-Explain to students that in order to use text or categorical data in machine learning algorithms, these kinds of data values should be converted to numerical representations.
+Tell students that in order to use text or categorical data in machine learning algorithms, these kinds of data values should be converted to numerical representations.
 
-Additionally, many machine learning algorithms and models are sensitive to input features with wide ranges of numbers. A best practice for preparing the numerical input data is to normalize all of the data to the same scale. This prevents any single feature from dominating the others.
+Additionally, many machine learning algorithms and models are sensitive to input features with wide ranges of numbers. A best practice for preparing the numerical input data is to normalize all of the data to the same scale; this prevents any single feature from dominating the others.
 
-Tell students that we will use `pandas` and the `preprocessing` library of `sklearn` to encode text and categorical data as numbers and to normalize all numerical inputs to the same scale. These preprocessing steps are critical for many machine learning algorithms.
+Tell students that we will use Pandas and the preprocessing library of `sklearn` to encode text and categorical data as numbers, and to normalize all numerical inputs to the same scale. These preprocessing steps are critical for many machine learning algorithms.
 
 Open the Jupyter notebook and highlight the following:
 
-* On the _initial imports_ cell, two functions from the `preprocessing` library of `sklearn` are imported.
+* On the _initial imports_ cell, two functions from the preprocessing library of `sklearn` are imported.
 
   ```python
   from sklearn.preprocessing import LabelEncoder, StandardScaler
@@ -104,7 +103,7 @@ Open the Jupyter notebook and highlight the following:
 
 * [The `StandardScaler` function](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) will be used to standardize numerical features.
 
-Explain to students that they will use simulated data about loans. There is a total of 500 records in the dataset where each row represents a loan application along an arbitrary year. Every column represents the following data about each loan application.
+Explain to students that they will use simulated data about loans. There is a total of 500 records in the dataset, where each row represents a loan application along an arbitrary year. Every column represents the following data about each loan application.
 
 * `amount`: The loan amount in USD.
 * `term`: The loan term in months.
@@ -122,19 +121,19 @@ Continue the demo by loading the dataset on the `loans_df` DataFrame and highlig
 
 * In order to use this dataset to train a machine learning model, these three features need to be converted to numerical values.
 
-* There are different methods to deal with text and categorical data, one of the simplest is _integer encoding_, where every different text value or label is represented as an integer.
+* There are different methods to deal with text and categorical data. One of the simplest is _integer encoding_, where every different text value or label is represented as an integer.
 
-* The `preprocessing` library of `sklearn`, contains some functions to encode text labels.
+* The preprocessing library of `sklearn` contains some functions to encode text labels.
 
-* The `LabelEncoder` function, encodes text labels with integer values between `0` and the total number of classes minus `1`.
+* The `LabelEncoder` function encodes text labels with integer values between `0` and the total number of classes minus `1`.
 
-* To start using the `LabelEncoder` method, first an instance should be created.
+* To start using the `LabelEncoder` method, an instance should be created first.
 
     ```python
     label_encoder = LabelEncoder()
     ```
 
-* Once the `LabelEncoder` instance is created, it should be trained (fit) with the text data you want to encode. The fit step is learning how many classes to use for the encoding. The first example shows how the `LabelEncoder` can be fitted with one column of a DataFrame.
+* Once the `LabelEncoder` instance is created, it should be trained (fit) with the text data that needs to be encoded. The fit step is learning how many classes to use for the encoding. The first example shows how the `LabelEncoder` can be fitted with one column of a DataFrame.
 
     ```python
     label_encoder.fit(loans_df["month"])
@@ -150,7 +149,7 @@ Continue the demo by loading the dataset on the `loans_df` DataFrame and highlig
     loans_df["month_le"] = label_encoder.transform(loans_df["month"])
     ```
 
-Show the DataFrame's head and show that there is actually a problem with using `LabelEncoder` for all of the categorical data in this DataFrame. Explain that there is a contextual issue in this particular case: the number assigned to some months doesn't match with the actual month number (e.g. `July` is encoded as `5`)
+Display the DataFrame's head, and show that there is actually a problem with using `LabelEncoder` for all of the categorical data in this DataFrame. Explain that there is a contextual issue in this particular case: the number assigned to some months doesn't match the actual month number (e.g., `July` is encoded as `5`).
 
 ![Months' names encoded as numbers with Label Encoder](Images/categorical-data-3.png)
 
@@ -180,11 +179,11 @@ months_num = {
 loans_df["month_num"] = loans_df["month"].apply(lambda x: months_num[x])
 ```
 
-* The resulting DataFrame, contains the encoded months' names with a more meaningful numeric value for this context.
+* The resulting DataFrame contains the encoded months' names with a more meaningful numeric value for this context.
 
     ![Meaningful encoded months' names](Images/categorical-data-4.png)
 
-* The `month` and `month_le` columns are dropped since they will not be used anymore.
+* The `month` and `month_le` columns are dropped, since they will not be used anymore.
 
     ```python
     loans_df.drop(["month", "month_le"], axis=1, inplace=True)
@@ -213,7 +212,7 @@ Remind students that they have already seen binary encoded data with the Pandas 
   loans_binary_encoded.to_csv(file_path, index=False)
   ```
 
-Tell students that the final step we need to perform is scaling and normalization. Many machine learning algorithms will perform better with a normalized (scaled) dataset.
+Tell students that the final step we need to perform is scaling and normalization. Many machine learning algorithms perform better with a normalized (scaled) dataset.
 
 Explain to students that some models are sensitive to very large numerical values and may not be able to converge due to those features. It is always a good idea to have features all on the same scale, so they have equal importance to the model.
 
@@ -247,7 +246,7 @@ Answer any questions before moving on.
 
 ### 3. Student Do: Encoding Categorical Data for Machine Learning (10 min)
 
-In this activity, students are tasked to encode some categorical and text features of a dataset that contains `2097` loan applications. In forthcoming activities, they will use this dataset to predict defaulted loan applications.
+In this activity, students are tasked with encoding some categorical and text features of a dataset that contains 2,097 loan applications. In forthcoming activities, they will use this dataset to predict defaulted loan applications.
 
 **Instructions:**
 
@@ -279,7 +278,7 @@ Walkthrough the solution and highlight the following:
   loans_df["Month"] = loans_df["Month"].apply(lambda x: name_to_num[x])
   ```
 
-* The `LabelEncoder´ from `sklearn` is used to encode the `RealEstate`, `RevLineCr` and `UrbanRural` columns, following the Model -> Fit -> Predict/Transform API workflow.
+* The `LabelEncoder` from `sklearn` is used to encode the `RealEstate`, `RevLineCr` and `UrbanRural` columns, following the Model -> Fit -> Predict/Transform API workflow.
 
   ```python
   # Create the LabelEncoder instance
@@ -304,7 +303,7 @@ Walkthrough the solution and highlight the following:
 
   ![Binary Encoding sample](Images/encoding-categorical-1.png)
 
-* Finally, the preprocessed DataFrame is saved as a `CSV` file named `sba_loans_encoded.csv` for forthcoming usage.
+* Finally, the preprocessed DataFrame is saved as a `CSV` file named `sba_loans_encoded.csv` for later usage.
 
 Answer any questions before moving on.
 
@@ -314,13 +313,13 @@ Answer any questions before moving on.
 
 In this lesson, students will be introduced to tree-based algorithms and the `sklearn` modules that implement this algorithmic family.
 
-Open the lesson slides, go to the _Walking into the Algorithms Forest_ section, and highlight the following:
+Open the lesson slides, go to the Walking into the Algorithms Forest section, and highlight the following:
 
 * Tree-based algorithms are part of the supervised machine learning methods.
 
 * These kinds of algorithms can be used to solve classification or regression problems.
 
-* These algorithms are quite often used in finance for assessing risk, preventing fraud, or fighting money laundering.
+* These algorithms are frequently used in finance for assessing risk, preventing fraud, or fighting money laundering.
 
 * In contrast to linear models, tree-based algorithms can map non-linear relationships in data.
 
@@ -328,13 +327,13 @@ Explain to students that in linear models, the relationship among input variable
 
 * Predicting the price of a house based on its size is an example of a linear problem. This is because, as a general rule, the size of the house is directly proportional to the price of the house.
 
-* Predicting if a credit application is going to be fraudulent or not may be an example of a non-linear problem due to the complex relationship between the input features and the output prediction.
+* Predicting if a credit application is going to be fraudulent or not may be an example of a non-linear problem, due to the complex relationship between the input features and the output prediction.
 
 Explain that a linear model fit to non-linear data would only be a good approximation of points near the line and a bad approximation for points that vary from the line.
 
-Explain to students that the most used tree-based algorithms are: decision trees, random forests, and gradient boosting trees.
+Explain to students that the most used tree-based algorithms are decision trees, random forests, and gradient boosting trees.
 
-* `sklearn` has two modules that implement tree-based algorithms that we will be covering Today.
+* `sklearn` has two modules that implement tree-based algorithms that we will be covering today.
 
   * [`sklearn.tree`](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.tree) implements decision trees.
 
@@ -346,7 +345,7 @@ Answer any questions before moving on.
 
 ### 6. Instructor Do: Decision Trees (10 min)
 
-In this activity, students will be introduced to decision trees and how they can use them for classification problems.
+In this activity, students are introduced to decision trees and how to use them for classification problems.
 
 **Files:**
 
@@ -354,31 +353,31 @@ In this activity, students will be introduced to decision trees and how they can
 
 * [loans_data_encoded.csv](Activities/03-Ins_Decision-Trees/Resources/loans_data_encoded.csv)
 
-Start by opening the lesson slides, move to the _Decision Trees_ section, and highlight the following:
+Open the lesson slides, move to the Decision Trees section, and highlight the following:
 
-* Decision Trees encode a series of `True/False` questions.
+* Decision trees encode a series of `True/False` questions.
 
-* `True/False` questions can be represented with a series of if/else statements
+* `True/False` questions can be represented with a series of if/else statements.
 
-* There are some key concepts, that it is important to know while working with decision trees:
+* There are some key concepts that are important to know when working with decision trees:
 
-  * **Root Node:** Represents the entire population or sample data, this node gets divided into two or more homogeneous sets.
+  * **Root Node:** A node that is divided into two or more homogeneous sets and represents the entire population or sample data. 
   * **Parent Node:** A node that is divided into sub-nodes.
   * **Child Node:** Sub-nodes of a parent node.
   * **Decision Node:** A sub-node that is split into further sub-nodes.
   * **Leaf or Terminal Node:** Nodes that do not split.
   * **Branch or Sub-Tree:** A subsection of the entire tree.
-  * **Splitting:** Process of dividing a node into two or more sub-nodes.
-  * **Pruning:** Process of removing sub-nodes of a decision node.
+  * **Splitting:** The process of dividing a node into two or more sub-nodes.
+  * **Pruning:** The process of removing sub-nodes of a decision node.
   * **Tree's Depth:** The number of decision nodes encountered before making a decision.
 
-* Decision trees can become very complex and very deep, depending on how many questions have to be answered. Deep and complex trees tend to overfit to the data and do not generalize well.
+* Decision trees can become very complex and deep, depending on how many questions have to be answered. Deep and complex trees tend to overfit to the data, and do not generalize well.
 
-Close the presentation explain to students that in this demo, you are going to use the loan applications encoded dataset presented before. The goal of this demo is to predict fraudulent loan applications using a decision tree.
+Close the presentation and explain to students that in this demo, you are going to use the loan applications encoded dataset presented before. The goal of this demo is to predict fraudulent loan applications using a decision tree.
 
 Open the unsolved version of the Jupyter notebook to live code the demo and highlight the following:
 
-* In the initial import cell, the `tree` module from `sklearn` is imported since it offers a decision tree implementation for classification problems.
+* In the initial import cell, the `tree` module from `sklearn` is imported, since it offers a decision tree implementation for classification problems.
 
   ```python
   from sklearn import tree
@@ -404,7 +403,7 @@ Open the unsolved version of the Jupyter notebook to live code the demo and high
   df_loans = pd.read_csv(file_path)
   ```
 
-* Once the data is loaded into the `df_loans` DataFrame, the features and target sets are created. The features set `X` contains all the `df_loans` columns except the `bad` column, the `bad` column is the target variable `y`, where `1` means that the loan application was fraudulent, and `0` that it was not.
+* Once the data is loaded into the `df_loans` DataFrame, the features and target sets are created. The features set `X` contains all the `df_loans` columns except the `bad` column. The `bad` column is the target variable `y`, where `1` means that the loan application was fraudulent, and `0` means it was not.
 
   ```python
   # Define features set
@@ -421,7 +420,7 @@ Explain to students that in order to train and validate the decision tree model,
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 ```
 
-Explain to students that in order to improve an algorithm's performance, the features data will be scaled using the 'StandardScaler`. There is no need to scale the target data since it contains the labels that we want to predict using the decision tree.
+Explain to students that in order to improve an algorithm's performance, the features data will be scaled using the `StandardScaler`. There is no need to scale the target data, since it contains the labels that we want to predict using the decision tree.
 
 ```python
 # Creating StandardScaler instance
@@ -479,17 +478,17 @@ Finally, comment to students that an interesting way to analyze a decision tree 
 
 ![Decision tree visualization](Images/decision-trees-2.png)
 
-Explain to students, that a very large and complex tree shape like this, probably indicates that the model is overfitted to this specific data and will not generalize well to other models.
+Explain to students that a very large and complex tree shape like this probably indicates that the model is overfitted to this specific data, and will not generalize well to other models.
 
 * To ease the tree visualization, the image can be saved as `PDF` or `PNG`.
 
   ```python
   # Saving the tree as PDF
-  file_path = Path("../Resources/loans_tree.pdf")
+  file_path = "../Resources/loans_tree.pdf"
   graph.write_pdf(file_path)
 
   # Saving the tree as PNG
-  file_path = Path("../Resources/loans_tree.png")
+  file_path = "../Resources/loans_tree.png"
   graph.write_png(file_path)
   ```
 
@@ -497,7 +496,7 @@ Answer any questions before moving on.
 
 ---
 
-### 7. Students Do: Predicting Fraudulent Loans Applications (10 min)
+### 7. Student Do: Predicting Fraudulent Loan Applications (10 min)
 
 In this activity, students will create a decision tree model to predict fraudulent loan applications.
 
@@ -513,7 +512,7 @@ In this activity, students will create a decision tree model to predict fraudule
 
 ---
 
-### 8. Instructor Do: Review Predicting Fraudulent Loans Applications (10 min)
+### 8. Instructor Do: Review Predicting Fraudulent Loan Applications (10 min)
 
 **Files:**
 
@@ -534,7 +533,7 @@ Open the solution, and live code the review by highlighting the following:
   from IPython.display import Image
   ```
 
-* The data from the `sba_loans_encoded.csv` file is loaded in a pandas DataFrame called `df_loans`.
+* The data from the `sba_loans_encoded.csv` file is loaded in a Pandas DataFrame called `df_loans`.
 
   ```python
   file_path = Path("../Resources/sba_loans_encoded.csv")
@@ -552,13 +551,13 @@ Open the solution, and live code the review by highlighting the following:
   y = df_loans["Default"].values.reshape(-1, 1)
   ```
 
-* The data is split into training and testing set using the `train_test_split` method from `sklearn`.
+* The data is split into a training and testing set using the `train_test_split` method from `sklearn`.
 
   ```python
   X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
   ```
 
-* In order to improve algorithm's performance, the features data is scaled using the `StandardScaler`  method from `sklearn`.
+* In order to improve the algorithm's performance, the features data is scaled using the `StandardScaler`  method from `sklearn`.
 
   ```python
   # Create the StandardScaler instance
@@ -572,7 +571,7 @@ Open the solution, and live code the review by highlighting the following:
   X_test_scaled = X_scaler.transform(X_test)
   ```
 
-Recall to students that the target data is not scaled since it contains the classes that you want to predict with the decision tree.
+Recall to students that the target data is not scaled, since it contains the classes that you want to predict with the decision tree.
 
 * Once the data is scaled, the decision tree model is created and fitted with the training data.
 
@@ -597,7 +596,7 @@ Recall to students that the target data is not scaled since it contains the clas
 
 Explain to students that despite the model's high accuracy, this model is not predicting all the fraudulent loan applications, as can be seen from the precision and recall values. This is why it is important to include the classification report when evaluating a classification model.
 
-Continue live coding the review by creating the model graph using the `pydotplus` library and highlight the following.
+Continue live coding the review by creating the model graph using the `pydotplus` library, and highlight the following.
 
 ```python
 # Create DOT data
@@ -620,7 +619,7 @@ Image(graph.create_png())
 
 * Having imbalanced target classes is a common problem in classification machine learning algorithms when there is a disproportionate ratio of observations in each class.
 
-Explain to students that they will learn how to deal with imbalanced classes in the next class and that there are other tree algorithms such as ensemble learners that can be better at modeling imbalanced classes.
+Explain to students that they will learn how to deal with imbalanced classes in the next class, and that there are other tree algorithms such as ensemble learners that can be better at modelling imbalanced classes.
 
 Answer any questions before moving on.
 
@@ -630,35 +629,33 @@ Answer any questions before moving on.
 
 In this activity, students will be introduced to ensemble learning, weak learners, and random forests.
 
-Navigate to the _Introduction to Ensemble Learning_ section of the slides. Highlight the following:
+Go to the slideshow and navigate to the Introduction to Ensemble Learning section. Highlight the following:
 
-* Address the class and tell them that if they were to take all of the classification models they have used so far and compared them, they would find that some algorithms performed better than others, as expected.
+* Tell the class that if they took all the classification models they've used thus far and compared them, they'd find that some algorithms performed better than others, which is to be expected.
 
-  * Indicate that even though some of the other algorithms performed worse, they were able to execute independently still and classify labels with decent accuracy.
+  * Indicate that even though some of the other algorithms performed worse, they were still able to execute independently and classify labels with decent accuracy.
 
-  * Explain to students that they will come across algorithms that actually fail at learning adequately. These algorithms/classifiers are considered **weak learners**.
+  * Tell students that they will come across algorithms that actually fail at learning adequately. These algorithms/classifiers are considered weak learners.
 
-Communicate that **weak learners** are a consequence of limited data to learn from. This may mean too few features, or the data provided does not allow for data points to be classified.
+  * Communicate that weak learners are a consequence of limited data to learn from. This may mean too few features, or the data provided does not allow for data points to be classified.
 
-* Provide more context around **weak learners** by defining them as algorithms/classifiers that are unable to learn from the data they are being provided accurately. This is why their predictions are only a little better than random chance. The classifiers can make predictions; however, their predictions are not representative of the relationship between inputs and targets.
+* Provide more context around weak learners by defining them as algorithms/classifiers that are unable to learn from the data they are being provided accurately. This is why their predictions are only a little better than random chance. While the classifiers can make predictions, they are not representative of the relationship between inputs and targets.
 
-* **Weak learners** are described as being only slightly better than random chance.
+* Weak learners are described as being only slightly better than random chance.
 
-Explain to students that **weak learners** are still valuable in machine learning.
+* Explain to students that weak learners are still valuable in machine learning, because there are models that can combine many weak learners to create a more accurate and robust prediction engine. A single weak learner will make inaccurate predictions. Combined weak learners can perform just as well as any other strong learner.
 
-* **Weak learners** are valuable because there are models that can combine many weak learners to create a more accurate and robust prediction engine. A single **weak learner** will make inaccurate and imprecise predictions. Combined **weak learners** can perform just as well as any other **strong learner**.
+  * Classify this type of learning as an example of ensemble learning. Ensemble models help improve accuracy and robustness, as well as decrease variance.
 
-  * Classify this type of learning as an example of **ensemble learning**. **Ensemble models** help improve accuracy and robustness, as well as decrease variance.
+* Underscore that weak learners have to be combined using a specific algorithm. Example algorithms include GradientBoostedTree, XGBoost, and Random Forests.
 
-* Underscore that **weak learners** have to be combined using a specific algorithm. Example algorithms include **GradientBoostedTree** , **XGBoost**, and **Random Forests**.
+* Ask students if they can guess what can be done to make a weak learner perform more accurately?
 
-* Ask students if they have any guess as to what can be done to make a **weak learner** perform more accurately?
+  * **Answer:** Boost weak learners with other algorithms for an ensemble learning approach.
 
-  * **Answer** Boost **weak learners** with other algorithms for an **ensemble learning** approach.
+* Tell students that a decision tree could be classified as a weak learner. Ask students what they think would make a decision tree a weak learner.
 
-* Indicate to students that a decision tree could be classified as a **weak learner**. Ask students what they think would make a decision tree a weak learner:
-
-  * **Answer** The decision tree having only one split (i.e., a stump)
+  * **Answer:** The decision tree having only one split (i.e., a stump).
 
 Continue the presentation by introducing the random forest algorithm and highlight the following:
 
@@ -666,11 +663,11 @@ Continue the presentation by introducing the random forest algorithm and highlig
 
 * In a random forest, each tree is much simpler because it is built from a subset of the data.
 
-* These simple trees are created by randomly sampling the data and creating a decision tree for only that small portion of data. This is known as a **weak classifier** because it is only trained on a small piece of the original data and by itself is only slightly better than a random guess. However, many _slightly better than average_ small decision trees can be combined to create a **strong classifier**, which has much better decision making power.
+* These simple trees are created by randomly sampling the data and creating a decision tree for just that small portion of data. This is known as a weak classifier, because it is only trained on a small piece of the original data, and by itself is only slightly better than a random guess. However, many _slightly better than average_ small decision trees can be combined to create a strong classifier, which has much better decision-making power.
 
-* Some of the benefits of the random forest algorithm are:
+* Some benefits of the random forest algorithm are:
 
-  * It is robust against overfitting because all of those weak classifiers are trained on different pieces of the data.
+  * It is robust against overfitting, because all of those weak classifiers are trained on different pieces of the data.
 
   * It can be used to rank the importance of input variables in a natural way.
 
@@ -718,9 +715,9 @@ The data is loaded into a Pandas DataFrame and then scaled and split into traini
   rf_model = RandomForestClassifier(n_estimators=500, random_state=78)
   ```
 
-  * `n_estimators`: This is the number of random forest to be created by the algorithm, in general, a higher number makes the predictions stronger and more stable. However, a very large number can result in higher training time. A good approach is to start low and increase the number if the model performance is not adequate.
+  * `n_estimators`: This is the number of random forest to be created by the algorithm. In general, a higher number makes the predictions stronger and more stable. However, a very large number can result in higher training time. A good approach is to start low and increase the number if the model performance is not adequate.
 
-    * A [research study](https://doi.org/10.1007/978-3-642-31537-4_13) suggests that a range between `64` and `128` trees in a forest could be used for initial modeling.
+    * A [research study](https://doi.org/10.1007/978-3-642-31537-4_13) suggests that a range between `64` and `128` trees in a forest could be used for initial modelling.
 
   * `random_state`: This parameter defines the seed used by the random number generator. It is important to define a random state when comparing multiple models.
 
@@ -753,15 +750,15 @@ The data is loaded into a Pandas DataFrame and then scaled and split into traini
 
   ![Random forest evaluation results](Images/random-forest-1.png)
 
-After observing the results, it can be concluded that this model may not be the best one for preventing fraudulent loan applications. Explain to students that there are several strategies that may improve this model such as:
+After observing the results, it can be concluded that this model may not be the best one for preventing fraudulent loan applications. Explain to students that there are several strategies that may improve this model, such as:
 
-* Reduce the number of features using PCA.
+* Reducing the number of features using principal component analysis (PCA).
 
-* Create new features based on new data from the problem domain.
+* Creating new features based on new data from the problem domain.
 
-* Increase the number of estimators.
+* Increasing the number of estimators.
 
-Finally, explain to students that a byproduct of the Random Forest algorithm is a ranking of feature importance (i.e., which features have the most impact on the decision).
+Finally, explain to students that a byproduct of the random forest algorithm is a ranking of feature importance (i.e., which features have the most impact on the decision).
 
 * The `RandomForestClassifier` of `sklearn` provides an attribute called `feature_importances_`, where you can see which features were the most significant.
 
@@ -775,7 +772,7 @@ Answer any questions before moving on.
 
 ---
 
-### 11. Students Do: Predicting Fraud with Random Forests (10 min)
+### 11. Student Do: Predicting Fraud with Random Forests (10 min)
 
 In this activity, students are going to explore how the random forest algorithm can be used to identify fraudulent loan applications. Students will use the `sba_loans_encoded.csv` file that they created before to train the model.
 
@@ -799,9 +796,9 @@ In this activity, students are going to explore how the random forest algorithm 
 
 * [sba_loans_encoded.csv](Activities/06-Stu_Random_Forest/Resources/sba_loans_encoded.csv)
 
-Walkthrough the solution and highlight the following:
+Walk through the solution and highlight the following:
 
-* The data used in this activity is the same that students used in the decision tree exercise, so data preprocessing is the same.
+* This activity uses the same data that students used in the decision tree exercise, so data preprocessing is the same.
 
 * The random forest model instance is created defining `n_estimators = 500` and `random_state = 78`.
 
@@ -823,21 +820,21 @@ Explain to students that defining the `random_state` parameter is important to c
 
   ![Random forest evaluation results](Images/stu-random-forest-1.png)
 
-Explain to students that it can be observed that model´s accuracy is better than the one obtained using decision trees (`0.89`), in combination to the confusion matrix results and the precision and recall values, we could conclude that using random forest is better to predict fraudulent loan applications.
+Tell students that it can be observed that the model´s accuracy is better than the one obtained using decision trees (`0.89`), in combination to the confusion matrix results and the precision and recall values, we could conclude that using random forest is better to predict fraudulent loan applications.
 
-* The features importance is retrieved from the random forest model using the `feature_importances_` attribute, finally the top 10 most important features are displayed.
+* The features importance is retrieved from the random forest model using the `feature_importances_` attribute. Finally, the top 10 most important features are displayed.
 
   ![Top 10 important features](Images/stu-random-forest-2.png)
 
-Finally, ask a couple of students about their insights in the _Analysis Questions_ sections. You can comment on the following about each question.
+Engage students by calling on a few people to share their insights from the Analysis Questions section. Guiding questions are provided below.
 
-* **Question 1:** Would you trust in this model to deploy a fraud detection solution in a bank?
+* **Question 1:** Would you trust this model to deploy a fraud detection solution in a bank?
 
-  * **Sample Answer:** Model's accuracy is better than using decision trees, so if we want to deploy a fraud detection solution for loans in a Bank, we would trust in random forest more than in decision trees.
+  * **Sample Answer:** This model's accuracy is better than using decision trees, so if we want to deploy a fraud detection solution for loans in a bank, we would trust in random forest more than in decision trees.
 
-* **Question 2:** What are your insights about the top 10 most importance features?
+* **Question 2:** What are your insights on the top 10 features?
 
-  * **Sample Answer:** It seems that the Bank is not relevant for the model, so we can create a new random forest model by only taking these top 10 features. Also, for piloting this model in a business environment, we will only need to fetch new data about these 10 features.
+  * **Sample Answer:** It seems that the bank is not relevant for the model, so we can create a new random forest model by only taking these top 10 features. Also, for piloting this model in a business environment, we will only need to fetch new data about these 10 features.
 
 Answer any questions before moving on.
 
@@ -849,53 +846,53 @@ Answer any questions before moving on.
 
 ### 14. Instructor Do: Boosting and Bagging (15 min)
 
-Students are given a formal lecture on **boosting**, **bagging**, its benefits, and its application in advanced analytics. Guided questions are provided to promote student engagement and to re-enforce content.
+Students are given a formal lecture on boosting, bagging, and its benefits/application in advanced analytics. Guided questions are provided to promote student engagement and to re-enforce content.
 
-Navigate to the **boosting** and **bagging** section of the slideshow. Highlight the following:
+Go to the slideshow and navigate to the Boosting and Bagging section, highlighting the following:
 
-* **Boosting** is both a process and a set of algorithms. Boosting is the process of combining a set of **weak learners** into a **strong longer**.
+* Boosting is a set of algorithms as well as the process of combining a set of weak learners into a strong learner.
 
-  * **Boosting** algorithms work by taking the predictions of each **weak learner** and aggregating them to produce a more accurate and precise prediction. The goal of a boosting algorithm is to combine **weak learners** into **ensemble learners**.
+  * Boosting algorithms work by taking the predictions of each weak learner and aggregating them to produce a more accurate and precise prediction. The goal of a boosting algorithm is to combine weak learners into ensemble learners.
 
-    * For this reason, **boosting algorithms** are considered **meta-algorithms**. Instead of working with and affecting data, **boosting algorithms** work with and affect other algorithms.
+    * For this reason, boosting algorithms are considered meta-algorithms. Instead of working with and affecting data, boosting algorithms work with and affect other algorithms.
 
-  * **Boosting** algorithms use weighted averages (the higher the average, the more inaccurate the prediction) to determine what values are misclassified. The algorithm will iterate until there are no weighted predictions.
+  * Boosting algorithms use weighted averages (the higher the average, the more inaccurate the prediction) to determine what values are misclassified. The algorithm will iterate until there are no weighted predictions.
 
-    * Other algorithms (i.e., **bagging**) create new base learners as older ones prove ineffective.
+    * Other algorithms (i.e., bagging) create new base learners as older ones prove ineffective.
 
     ![boosting_flow.jpg](Images/boosting_flow.jpg)
 
-  * **Boosting** algorithms are so powerful and performant that they have been stealing the spotlight at Kaggle machine learning algorithms competitions. **Boosting** algorithms like XGBoost have consistently outperformed other algorithms in competitions, on multiple occasions. XGBoost's success has put **boosting** algorithms in the spotlight.
+  * Boosting algorithms are so powerful and performant that they have been stealing the spotlight at Kaggle machine learning algorithms competitions. Boosting algorithms like XGBoost have consistently outperformed other algorithms in competitions, on multiple occasions. XGBoost's success has put boosting algorithms in the spotlight.
 
-Highlight to students that **boosting** is not the only way to make a **weak learner** more robust and accurate. Another approach is called **bagging**.
+Highlight to students that boosting is not the only way to make a weak learner more robust and accurate. Another approach is called bagging.
 
-* **Bagging** is another method used to improve the accuracy and robustness of a model.
+* Bagging is another method used to improve the accuracy and robustness of a model.
 
-* Where **boosting** takes multiple algorithms and coordinates them as an ensemble and runs the algorithms in tandem to identify the best prediction, **bagging** focuses on re-sampling data and running with different models on the fly in order to formulate the most accurate and precise prediction.
+* Where boosting takes multiple algorithms, coordinates them as an ensemble, and runs the algorithms iteratively to identify the best prediction, bagging focuses on re-sampling data and running with different models on the fly, to formulate the most accurate and precise prediction.
 
-* Each classifier used in the **bagging** process runs independently of the others. Once all classifiers are finished predicting, the **bagging** algorithm will aggregate results.
+* Each classifier used in the bagging process runs independently of the others. Once all classifiers are finished predicting, the bagging algorithm will aggregate results.
 
-  * Results for a **bagging** algorithm are then aggregated via a voting process. Each classifier will vote for a label, and then the **bagging** algorithm will aggregate votes and classify the label with the most votes as the prediction.
+  * Results for a bagging algorithm are then aggregated via a voting process. Each classifier will vote for a label, and then the bagging algorithm will aggregate votes and classify the label with the most votes as the prediction.
 
-* One of the key differences between **boosting** and **bagging** is that **boosting** algorithms will weigh predictions based on accuracy, and as long as data points are weighted as inaccurate, **boosting** algorithms will continue to run. Instead of weighing predictions, **bagging** algorithms resample and replace data in order to improve model fitting and accuracy.
+* A key difference between boosting and bagging is that boosting algorithms will weigh predictions based on accuracy, and as long as data points are weighted as inaccurate, boosting algorithms will continue to run. Instead of weighing predictions, bagging algorithms resample and replace data in order to improve model fitting and accuracy.
 
   * Summarize the comparison again to help reinforce the differences:
 
-    * Bagging iteratively weighs inaccurate predictions and continue to execute.
+    * Bagging combines predictions from multiple models, taking the most frequent prediction among the models as the most likely prediction. Bagging resamples and replaces data in order to improve model fitting and accuracy.
 
-    * Boosting iteratively resamples and replaces data in order to train the best model.
+    * Boosting also resamples and replaces data in order to train the best model. The difference is that boosting resamples, with greater frequency, the samples that previously had the highest error.
 
     ![bagging_flow.png](Images/bagging_flow.png)
 
-If time remains, engage students with the below questions. If there are no conversations, go round-robin.
+If time remains, engage students with the questions below. 
 
-* Ask if there is a volunteer who would like to summarize the difference between boosting and bagging algorithms.
+* Ask a student to summarize the difference between boosting and bagging algorithms.
 
-  * **Answer** Bagging iteratively weighs inaccurate predictions and continue to execute. Boosting iteratively resamples and replaces data in order to train the best model.
+  * **Answer:** Bagging averages predictions from multiple models and/or multiple re-samples of the data. Boosting is similar, but iteratively resamples more of those observations with previously higher error rates. Both methods average model predictions in order to train the best overall model.
 
-* Ask if another volunteer would like to explain what **boosting** and **bagging** algorithms are used for.
+* Ask another student to explain what boosting and bagging algorithms are used for.
 
-  * **Answer** **Boosting** and **bagging** algorithms are used to improve the accuracy and robustness of **weak learners**. Each class of algorithm converts **weak learners** into **strong learners** through **ensemble learning**.
+  * **Answer:** Boosting and bagging algorithms are used to improve the accuracy and robustness of weak learners. Each class of algorithm converts weak learners into strong learners through ensemble learning.
 
 Ask students if they have any questions before moving on.
 
@@ -903,17 +900,17 @@ Ask students if they have any questions before moving on.
 
 ### 15. Instructor Do: Gradient Boosted Tree (10 min)
 
-The instructor will provide a demonstration on how to use **boosting** in **sklearn** to improve the performance of a decision tree.
+The instructor will provide a demonstration on how to use boosting in `sklearn` to improve the performance of a decision tree.
 
 **File:** [gradient_boosted_tree.ipynb](Activities/07-Ins_Gradient_Boosted_Tree/Solved/gradient_boosted_tree.ipynb)
 
-Open the unsolved file, and live code the following. Make sure to touch upon the below discussion points while coding.
+Open the unsolved file, and live code the following. Make sure to touch upon the discussion points below while coding.
 
-* It is important to remember that **boosting** involves a set of meta-algorithms that are used to improve the performance of **weak learners**.
+* It is important to remember that boosting involves a set of meta-algorithms that are used to improve the performance of weak learners.
 
-* There are a number of algorithms/libraries available. This activity and the next will focus on how to use the **sklearn** `GradientBoostingClassifier` algorithm.
+* There are a number of algorithms/libraries available. This activity, and the next, will focus on how to use the `sklearn` `GradientBoostingClassifier` algorithm.
 
-* The `GradientBoostingClassifier` is a part of the `sklearn.ensemble` package. Like any other **sklearn** library, it has to be imported into the Python environment.
+* The `GradientBoostingClassifier` is a part of the `sklearn.ensemble` package. Like any other `sklearn` library, it has to be imported into the Python environment.
 
     ```python
     import pandas as pd
@@ -927,13 +924,13 @@ Open the unsolved file, and live code the following. Make sure to touch upon the
 
 * The `GradientBoostingClassifier` has four main arguments: `n_estimators`, `learning_rate`, `max_depth`, and `random_state`. Explain each of these parameters while configuring them.
 
-  * The `n_estimators` parameter configures the number of **weak learners** being used with the **boosting** algorithm. The higher the value of `n_estimators`, the more trees that will be created to train the algorithm. The more trees, the better the performance.
+  * The `n_estimators` parameter configures the number of weak learners being used with the boosting algorithm. The higher the value of `n_estimators`, the more trees that will be created to train the algorithm. The more trees, the better the performance.
 
-  * `Learning_rate` controls overfitting. Smaller values should be used when setting `learning_rate`. `Learning_rate` will work with `n_estimators` to identify the number of **weak learners** to train.
+  * `Learning_rate` controls overfitting. Smaller values should be used when setting `learning_rate`. `Learning_rate` will work with `n_estimators` to identify the number of weak learners to train.
 
     * The values should be between 0 and 1.
 
-    * A common technique is to loop through a range of **learning rates**, creating and fitting the classifier with each value in the range. Once the classifier is created, it can be scored. The **learning rate** with the highest test accuracy should be used.
+    * A common technique is to loop through a range of learning rates, creating and fitting the classifier with each value in the range. Once the classifier is created, it can be scored. The learning rate with the highest test accuracy should be used.
 
   * The `max_depth` argument identifies the size/depth of each decision tree being used. `Max_depth` will dictate the number of levels between leaf nodes and the root.
 
@@ -941,7 +938,7 @@ Explain that using the `GradientBoostingClassifier` is like using any other mach
 
 * The `GradientBoostingClassifier` will require values for arguments `n_estimators`, `learning_Rate`, and `max_depth`. The defaults will be used for `n_estimators` and `max_depth`.
 
-* In order to determine the optimal `learning_rate`, a loop is used to iterate over each possible `learning_rate`, and then the model is built and scored using that value. The **learning rate** with the highest test accuracy should be chosen.
+* In order to determine the optimal `learning_rate`, a loop is used to iterate over each possible `learning_rate`, and then the model is built and scored using that value. The learning rate with the highest test accuracy should be chosen.
 
     ```python
     # Create a classifier object
@@ -967,7 +964,7 @@ Explain that using the `GradientBoostingClassifier` is like using any other mach
 
     ![iterate_learning_rate.png](Images/iterate_learning_rate.png)
 
-* The **learning rate** of `0.75` resulted in the highest test accuracy. Create a new classifier using this learning rate. Then, fit the model, score it, and then make predictions using the test data.
+* The learning rate of `0.75` resulted in the highest test accuracy. Create a new classifier using this learning rate. Then, fit the model, score it, and make predictions using the test data.
 
     ```python
     # Choose a learning rate and create classifier
@@ -999,7 +996,7 @@ Explain that using the `GradientBoostingClassifier` is like using any other mach
   Accuracy Score : 0.568
   ```
 
-* Evaluate the performance of the model by generating a **confusion matrix** and **classification report**.
+* Evaluate the performance of the model by generating a confusion matrix and classification report.
 
     ```python
     # Generate the confusion matrix
@@ -1041,9 +1038,9 @@ Ask if there any questions before moving on.
 
 ---
 
-### 16. Students Do: Turbo Boost (10 min)
+### 16. Student Do: Turbo Boost (10 min)
 
-Students will complete an MSMD activity where they use the **sklearn** `GradientBoostedClassifier` **boosting** algorithm to detect fraudulent loan applications using **ensemble learning**.
+Students will complete an MSMD activity where they use the `sklearn` `GradientBoostedClassifier` boosting algorithm to detect fraudulent loan applications using ensemble learning.
 
 **Instructions:**
 
@@ -1063,9 +1060,11 @@ Students will complete an MSMD activity where they use the **sklearn** `Gradient
 
 Open the solution and explain the following:
 
-* The `GradientBoostedClassifier` model was able to produce incredibly high accuracy scores, higher than some of the algorithms we have seen. What about the `GradientBoostedClassifier` makes it better performance than some other algorithms?
+* The `GradientBoostedClassifier` model was able to produce incredibly high accuracy scores, higher than some of the algorithms we have seen. 
 
-  * **Answer** `GradientBoostClassifier` is an **ensemble learning** algorithm. It pools **weak learners** together and executes them in parallel in order to refit the model as needed. Because it leverages multiple algorithms and runs them in parallel, `GradientBoostClassifier` is a more robust algorithm than average.
+* What about the `GradientBoostedClassifier` makes it perform better than some other algorithms?
+
+  * **Answer:** `GradientBoostClassifier` is an ensemble learning algorithm. It pools weak learners together and executes them in parallel in order to refit the model as needed. Because it leverages multiple algorithms and runs them in parallel, `GradientBoostClassifier` is a more robust algorithm than average.
 
     ![gradient_boosting_classifier.png](Images/gradient_boosting_classifier.png)
 
@@ -1073,11 +1072,11 @@ Open the solution and explain the following:
 
   * Explain that this is because the classes are imbalanced, meaning that the algorithm was able to make predictions for one class better than it was for another, and as a result, the algorithm developed bias.
 
-  * Let students know that they will learn what imbalanced classes are and how to deal with them in the next class.
+  * Let students know that they will learn what imbalanced classes are, and how to deal with them, in the next class.
 
 * What are the three main parameters for the `GradientBoostClassifier` model?
 
-  * **Answer** **n_estimators**, **learning_rate**, and **max_depth**.
+  * **Answer:** n_estimators, learning_rate, and max_depth.
 
     * `n_estimators` determines the number of trees/weak learners to use.
 
@@ -1085,73 +1084,76 @@ Open the solution and explain the following:
 
     * `max_depth` dictates the size of each tree.
 
-* Remind students that **boosting** algorithms are supervised learning algorithms, and they are built and trained just like any other algorithm. They can perform better than other algorithms because they make iterative predictions using more than one classifier.
+* Remind students that boosting algorithms are supervised learning algorithms, and they are built and trained just like any other algorithm. They can perform better than other algorithms because they make iterative predictions using more than one classifier.
 
-Use the rest of the time for students to ask questions. If there are no questions, ask students how they are feeling about decision trees and **boosting** algorithms.
+Use the rest of the time for students to ask questions. If there are no questions, ask students how they are feeling about decision trees and boosting algorithms.
 
 Move onto the next activity.
 
 ---
 
-### 18. Instructor Do: The Trees Versus the World (10 min)
+### 18. Instructor Do: The Trees vs. the World (10 min)
 
-In this activity, the instructor will conduct a facilitated discussion in the class where students will be able to compare the strengths and weaknesses of decision trees, random forests, and classical classifiers (Logistic Regression, SVM, KNN).
+In this activity, the instructor will conduct a facilitated discussion in the class where students will be able to compare the strengths and weaknesses of decision trees, random forests, and classical classifiers (logistic regression, SVM, KNN).
 
-Open the lesson slides, go to _The Trees Vs. The World_ section and start the discussion by asking the class the following question:
+Go to the lesson slides, navigate to The Trees vs. The World section, and start the discussion by asking the class the following question:
 
-* Why do you think it is worth to learn about classification algorithms?
+* Why do you think it is worth it to learn about classification algorithms?
 
-Ask a couple of students to answer the question, provide your feedback by continuing with the first slide of the section, and mentioning that classification algorithms are a matter worthy of study since classification is a multidisciplinary challenge.
+Ask a couple of students to provide answers to the question. Give feedback by continuing with the first slide of the section, and mention that classification algorithms are a matter worthy of study, since classification is a multidisciplinary challenge.
 
-* **Finance and Banking:** Fraud detection, money laundry, credit risk assessment.
+* **Finance and Banking:** Fraud detection, money laundering, credit risk assessment.
 
-* **Retail and Marketing:** customized products offers, products recommendation, direct marketing optimization.
+* **Retail and Marketing:** Customized product offers, product recommendations, direct marketing optimization.
 
 * **Politics:** Vote intention, party affinity.
 
-* **Health:** Trials tests, ills diagnosis.
+* **Health:** Trials tests, illness diagnosis.
 
 * **Security:** Intruders detection, predictive maintenance.
 
 * **Education:** Programs affinity, customized curricula, desertion prevention.
 
-Follow the discussion by asking students the next question:
+Continue the discussion by asking students the next question:
 
 * Are tree-based algorithms the strongest for classification?
 
-Ask for one volunteer to answer the question, after listening to student's answer, comment to students some the strengths of tree-based algorithms:
+Ask for one volunteer to answer the question. After the student answers, share some of the strengths of tree-based algorithms:
+
+Tree-based algorithms... 
 
 * Are easy to represent, making a complex model much easier to interpret.
 
-* Can be used for any type of data: Numerical (e.g., loan’s amount) or categorical (e.g., bank’s name that issues a
+* Can be used for any type of data: numerical (e.g., loan amount) or categorical (e.g., name of bank that issues a
 loan).
+
 * Require little data preparation.
 
 * Can handle data that are not normally distributed.
 
 * Can avoid overfitting.
 
-Continue the presentation by showing to students, some of the cases when classical classifiers perform better than tree-based algorithms:
+Continue the presentation by showing some of the cases when classical classifiers perform better than tree-based algorithms:
 
 * Generally speaking, classical classifiers may be faster.
 
-* Logistic regression may outperform Decision trees or random forests having a large number of features with low noise.
+* Logistic regression may outperform decision trees or random forests having a large number of features with low noise.
 
 * SVM also supports linear and non-linear models.
 
 * SVM handles outliers better.
 
-* KNN naturally supports incremental learning (data streams).
+* KNN (a method we'll cover in coming weeks) naturally supports incremental learning (data streams).
 
-Close the discussion by asking this final question:
+Close the discussion by asking a final question:
 
 * Which algorithm should I use for classification?
 
-Ask for one or two students to voluntary answer the question, and conclude by highlighting the following:
+Ask one or two volunteers to answer the question, and conclude by highlighting the following:
 
-* There is no definitive answer to this question, the best answer is _it depends_.
+* There is no definitive answer to this question, but the best answer is _it depends_.
 
-* The best algorithm for a classification problem will be determined by different factors such as:
+* The best algorithm for a classification problem will be determined by different factors, such as:
 
   * Type of data (categorical, numerical, a combination of both).
 
@@ -1165,10 +1167,12 @@ Ask for one or two students to voluntary answer the question, and conclude by hi
 
   * Dataset size (number of records or samples)
 
-Congratulate students on learning about a new family of machine learning algorithms, answer any questions before ending the class.
+Congratulate students on learning about a new family of machine learning algorithms! 
+
+Answer any questions before ending the class.
 
 ### End Class
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

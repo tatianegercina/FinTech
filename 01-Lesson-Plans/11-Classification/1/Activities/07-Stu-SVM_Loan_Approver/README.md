@@ -4,9 +4,9 @@ In this activity, you will build a Support Vector Machine (SVM) classifier that 
 
 ### Instructions
 
-1. Read the data into a Pandas DataFrame
+1. Read the data into a Pandas DataFrame.
 
-2. Separate the features (X) from the target (y). In this case, the loan status is the target.
+2. Separate the features (x) from the target (y). In this case, the loan status is the target.
 
 3. Separate the data into training and testing subsets.
 
@@ -26,6 +26,6 @@ In this activity, you will build a Support Vector Machine (SVM) classifier that 
 
   ![orig_loan_approv_metrics.png](Images/orig_loan_approv_metrics.png)
 
+---
 
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
