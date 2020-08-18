@@ -25,7 +25,7 @@ def window_data(df, window, feature_col_number, target_col_number):
     """
     X = []
     y = []
-    for i in range(len(df) - window - 1):
+    for i in range(len(df) - window):
         features = df.iloc[i : (i + window), feature_col_number]
         target = df.iloc[(i + window), target_col_number]
         X.append(features)
