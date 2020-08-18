@@ -1081,7 +1081,7 @@ def window_data(df, window, feature_col_number, target_col_number):
     """
     X = []
     y = []
-    for i in range(len(df) - window - 1):
+    for i in range(len(df) - window):
         features = df.iloc[i : (i + window), feature_col_number]
         target = df.iloc[(i + window), target_col_number]
         X.append(features)
@@ -1116,9 +1116,9 @@ Tell students that we will predict closing prices using a `5` day window of prev
 ```python
 # Use 70% of the data for training and the remainder for testing
 split = int(0.7 * len(X))
-X_train = X[: split - 1]
+X_train = X[: split]
 X_test = X[split:]
-y_train = y[: split - 1]
+y_train = y[: split]
 y_test = y[split:]
 ```
 
@@ -1337,10 +1337,10 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
   # Manually splitting the data
   split = int(0.7 * len(X))
 
-  X_train = X[: split - 1]
+  X_train = X[: split]
   X_test = X[split:]
 
-  y_train = y[: split - 1]
+  y_train = y[: split]
   y_test = y[split:]
   ```
 
