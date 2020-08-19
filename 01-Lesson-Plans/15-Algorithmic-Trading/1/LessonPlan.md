@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today's lesson consists of elements taught in the Pandas and PyViz units; it includes data analysis, utilization of trading APIs for asset pricing data, and the visualization of trading performance and transaction analysis using a Panel dashboard.
+* Today's lesson consists of elements taught in the Pandas and PyViz units; it includes data analysis, utilization of trading APIs for asset pricing data, and the visualization of trading performance and transaction analysis using `hvplot`.
 
 * The goal of this unit is to educate students on trading, as well as how to use code to automate trading. Trading may be new for many students, so it is important to provide a clear picture of what trading is, all the steps involved in creating entry and exit strategies, and which FinTech APIs integrate well with Python for automated trading.
 
@@ -724,17 +724,17 @@ Ask for any remaining questions before moving on.
 
 ### 14. Everyone Do: Trading Dashboard (15 min)
 
-In this activity, instructors will walk students through creating a trading dashboard with Panel, using the evaluation metrics generated from prior activities. At this point, students should already have exposure to creating dashboards using Panel.
+In this activity, instructors will walk students through creating a trading dashboard visualization using `hvplot`, using the evaluation metrics generated from prior activities. At this point, students should already have exposure to creating charts using `hvplot`.
 
-The purpose of this activity is to show students how to create a trading dashboard using the already shown (Unit 6) Panel dashboard library. In particular, students will once again define rows, columns, and tabs, as well as serve the trading dashboard as an actual web application.
+The purpose of this activity is to show students how to create a trading dashboard visualization using the already shown (Unit 6) `hvplot` library.
 
 **Files:** [trading_dashboard.ipynb](Activities/08-Ins_Trading_Dashboard/Solved/trading_dashboard.ipynb)
 
 Before diving into the walkthrough, navigate to the "Trading Dashboards" section of the slideshow and quickly review the following:
 
-* What is Panel?
+* What is hvPlot?
 
-  **Answer:** Panel is a high-level dashboarding library that allows users to create custom interactive web apps and dashboards by connecting user-defined widgets, plots, images, tables, or text. Panel also works with other visualization libraries such as Plotly Express or hvPlot via extensions.
+  **Answer:** hvPlot is high-level plotting API for the PyData ecosystem built on HoloViews. The hvPlot API mirrors the Pandas plotting API, but instead of generating static images when used in a notebook, it uses HoloViews to create interactive plots.
 
 * What is a dashboard?
 
@@ -746,45 +746,33 @@ Before diving into the walkthrough, navigate to the "Trading Dashboards" section
 
 Open the solution file and highlight the following:
 
-* Make sure to import the necessary libraries and dependencies to use the Panel dashboard and hvPlot visualizations. The `pn.extension()` function automatically detects the need for Panel to load additional extensions; in this case, Panel will load the extension for hvPlot.
+* Make sure to import the necessary libraries and dependencies to use the hvPlot visualizations.
 
   ```python
-  import panel as pn
+  import numpy as np
+  import pandas as pd
+  from pathlib import Path
   import hvplot
   import hvplot.pandas
-  pn.extension()
   ```
 
-* Before creating the Panel dashboard, we will first need to define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvPlot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
+* Before creating the dashboard, we will first need to define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvPlot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
 
   ![hvplot-price-chart](Images/hvplot-price-chart.png)
 
   ![hvplot-evaluation-metrics](Images/hvplot-evaluation-metrics.png)
 
-* After generating the visualizations that will be added to the Panel dashboard, the next step is to assign the visualizations as rows, columns, and tabs to the Panel dashboard using the Panel `Row`, `Column`, and `Tabs` functions.
+* After generating the visualizations that will be added to the dashboard, the next step is to assemble the dashboard visualization.
 
   ```python
-  # Create rows
-  price_chart_row = pn.Row(price_chart)
-  portfolio_evaluation_row = pn.Row(portfolio_evaluation_table)
-  trade_evaluation_row = pn.Row(trade_evaluation_table)
-
-  # Create columns
-  portfolio_column = pn.Column('# Portfolio Evaluation Metrics', price_chart_row, portfolio_evaluation_row)
-  trade_column = pn.Column('# Trade Evaluation Metrics', trade_evaluation_row)
-
-  # Create tabs
-  trading_dashboard = pn.Tabs(
-      ("Portfolio Metrics", portfolio_column),
-      ("Trade Metrics", trade_column)
-  )
+  # Assemble dashboard visualization
+  display(price_chart)
+  portfolio_evaluation_table + trade_evaluation_table
   ```
 
-* Lastly, the `servable` function then serves, or initializes, the dashboard. There are two ways to use the `servable` function, either in a Jupyter notebook file where the dashboard is displayed within the notebook file itself, or using the terminal command `panel serve - show trading_dashboard.ipynb` which creates a web application of the dashboard via the default localhost port 5006.
+* Note that we use the `display()` function to show the `price_chart` on above the tables. Also, we use the plus (`+`) operator to display the two tables side by side.
 
-  ![panel-trading-dashboard-servable](Images/panel-trading-dashboard-servable.png)
-
-  ![panel-trading-dashboard-servable-localhost](Images/panel-trading-dashboard-servable-localhost.png)
+* Using `hvplot`, you can combine several charts to create dashboard-like visualizations quickly and easy to present results and analyze investment information.
 
 Ask if there are any questions before moving forward.
 
