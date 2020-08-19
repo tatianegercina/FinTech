@@ -11,7 +11,7 @@ In this assignment, you will build and evaluate several machine-learning models 
 1. [Resampling](#Resampling)
 2. [Ensemble Learning](#Ensemble-Learning)
 
-- - -
+---
 
 ### Files
 
@@ -21,7 +21,7 @@ In this assignment, you will build and evaluate several machine-learning models 
 
 [Lending Club Loans Data](Instructions/Resources/LoanStats_2019Q1.csv.zip)
 
-- - -
+---
 
 ### Instructions
 
@@ -31,9 +31,10 @@ You will use the [imbalanced learn](https://imbalanced-learn.readthedocs.io) lib
 
 You will:
 
-1. Oversample the data using the `Naive Random Oversampler` and `SMOTE` algorithms.
-2. Undersample the data using the `Cluster Centroids` algorithm.
-3. Over- and under-sample using a combination `SMOTEENN` algorithm.
+1. Load the Lending Club data, split the data into training and testing sets, and scale the features data.
+2. Oversample the data using the `Naive Random Oversampler` and `SMOTE` algorithms.
+3. Undersample the data using the `Cluster Centroids` algorithm.
+4. Over- and under-sample using a combination `SMOTEENN` algorithm.
 
 For each of the above, you will need to:
 
@@ -56,11 +57,12 @@ In this section, you will train and compare two different ensemble classifiers t
 
 Be sure to complete the following steps for each model:
 
-1. Train the model using the quarterly data from LendingClub provided in the `Resource` folder.
-2. Calculate the balanced accuracy score from `sklearn.metrics`.
-3. Print the confusion matrix from `sklearn.metrics`.
-4. Generate a classification report using the `imbalanced_classification_report` from imbalanced learn.
-5. For the balanced random forest classifier only, print the feature importance sorted in descending order (most important feature to least important) along with the feature score.
+1. Load the Lending Club data, split the data into training and testing sets, and scale the features data.
+2. Train the model using the quarterly data from LendingClub provided in the `Resource` folder.
+3. Calculate the balanced accuracy score from `sklearn.metrics`.
+4. Print the confusion matrix from `sklearn.metrics`.
+5. Generate a classification report using the `imbalanced_classification_report` from imbalanced learn.
+6. For the balanced random forest classifier only, print the feature importance sorted in descending order (most important feature to least important) along with the feature score.
 
 Use the above to answer the following:
 
@@ -72,7 +74,7 @@ Use the above to answer the following:
 >
 > What are the top three features?
 
-- - -
+---
 
 ### Hints and Considerations
 
@@ -82,7 +84,7 @@ Refer to the [imbalanced-learn](https://imbalanced-learn.readthedocs.io/en/stabl
 
 For the ensemble learners, use 100 estimators for both models.
 
-- - -
+---
 
 ### Submission
 
@@ -90,6 +92,6 @@ For the ensemble learners, use 100 estimators for both models.
 * Include a markdown that summarizes your homework and include this report in your GitHub repository.
 * Submit the link to your GitHub project to Bootcamp Spot.
 
+---
 
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
