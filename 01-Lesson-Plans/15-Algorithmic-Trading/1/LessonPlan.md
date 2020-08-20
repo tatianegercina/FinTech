@@ -754,7 +754,10 @@ Open the solution file and highlight the following:
   from pathlib import Path
   import hvplot
   import hvplot.pandas
+  from IPython.display import Markdown
   ```
+
+* Note that we are importing the `Markdown` module from the `IPython` library. We will use the `Markdown` module to display markdown text into the notebook programmatically.
 
 * Before creating the dashboard, we will first need to define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvPlot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
 
@@ -766,11 +769,14 @@ Open the solution file and highlight the following:
 
   ```python
   # Assemble dashboard visualization
+  display(Markdown("# Trading Dashboard"))
   display(price_chart)
   portfolio_evaluation_table + trade_evaluation_table
   ```
 
-* Note that we use the `display()` function to show the `price_chart` on above the tables. Also, we use the plus (`+`) operator to display the two tables side by side.
+![trading-dashboard](Images/trading-dashboard.png)
+
+* Note that we use the `display()` function to show the dashboard title and the `price_chart` on above the tables. Also, we use the plus (`+`) operator to display the two tables side by side.
 
 * Using `hvplot`, you can combine several charts to create dashboard-like visualizations quickly and easy to present results and analyze investment information.
 

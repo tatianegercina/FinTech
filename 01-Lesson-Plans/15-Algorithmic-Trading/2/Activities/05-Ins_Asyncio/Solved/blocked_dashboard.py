@@ -1,18 +1,12 @@
 import time
-import panel as pn
-
-pn.extension()
-
 
 def fetch_data():
     """Simulate a delayed fetch."""
+    print("Fetching data...")
     time.sleep(5)
 
-
 def serve_dashboard():
-    dashboard = pn.Column("# My Blocked Dashboard")
-    return dashboard.servable()
-
+    print("My Blocked Dashboard")
 
 fetch_data()
 serve_dashboard()

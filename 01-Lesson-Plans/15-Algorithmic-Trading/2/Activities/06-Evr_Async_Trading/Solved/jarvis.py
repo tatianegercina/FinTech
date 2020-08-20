@@ -1,16 +1,10 @@
 import os
-import numpy as np
-import pandas as pd
 import ccxt
 import asyncio
-
-import hvplot.pandas
-import panel as pn
-
+import numpy as np
+import pandas as pd
 from dotenv import load_dotenv
-
-pn.extension()
-
+import matplotlib.pyplot as plt
 
 def initialize(cash=None):
     """Initialize the dashboard, data storage, and account balances."""
@@ -24,29 +18,30 @@ def initialize(cash=None):
     df = fetch_data()
 
     # Intialize the dashboard
-    dashboard = build_dashboard()
+    build_dashboard(df)
 
     # @TODO: We will complete the rest of this later!
-    return account, df, dashboard
+    return account, df
 
 
-def build_dashboard():
+def build_dashboard(df):
     """Build the dashboard."""
-    loading_text = pn.widgets.StaticText(name="Trading Dashboard", value="Loading...")
-    dashboard = pn.Column(loading_text)
-    print("init dashboard")
-    return dashboard
+    print("Initializing dashboard")
+    dashboard = df.plot()
+    return
 
 
-def update_dashboard(df, dashboard):
+# def update_dashboard(df, dashboard):
+def update_dashboard(df):
     """Update the dashboard."""
-    dashboard[0] = df.hvplot()
+    dashboard = df.plot()
+    
     return
 
 
 def fetch_data():
     """Fetches the latest prices."""
-    # print("Fetching data...")
+    print("Retrieving data...")
     load_dotenv()
     kraken_public_key = os.getenv("KRAKEN_PUBLIC_KEY")
     kraken_secret_key = os.getenv("KRAKEN_SECRET_KEY")
@@ -61,7 +56,7 @@ def fetch_data():
 
 def generate_signals(df):
     """Generates trading signals for a given dataset."""
-    print("Generating Signals")
+    print("-----> Generating trading signals <-----")
     # Set window
     short_window = 10
 
@@ -79,6 +74,7 @@ def generate_signals(df):
 
     # Calculate the points in time at which a position should be taken, 1 or -1
     signals["entry/exit"] = signals["signal"].diff()
+    print("-----> Trading signals generated  <-----")
 
     return signals
 
@@ -86,7 +82,7 @@ def generate_signals(df):
 def execute_trade_strategy(signals, account):
     """Makes a buy/sell/hold decision."""
 
-    print("Executing Trading Strategy!")
+    print("**Executing Trading Strategy**")
 
     if signals["entry/exit"].iloc[-1] == 1.0:
         print("buy")
@@ -99,13 +95,16 @@ def execute_trade_strategy(signals, account):
         account["shares"] = 0
     else:
         print("hold")
+        
+    print("**Trading Strategy Executed**")
 
     return account
 
+account, df = initialize(10000)
 
-account, df, dashboard = initialize(10000)
-dashboard.servable()
-
+# Turns on the interactive mode of matplotlib (https://matplotlib.org/api/_as_gen/matplotlib.pyplot.ion.html)
+plt.ion()
+plt.show()
 
 async def main():
     loop = asyncio.get_event_loop()
@@ -123,8 +122,12 @@ async def main():
             signals = generate_signals(df)
             account = execute_trade_strategy(signals, account)
 
-        update_dashboard(df, dashboard)
+        update_dashboard(df)
 
+        # Since we have an active figure, it's updated and displayed before the pause
+        plt.pause(1)
+        # We need to close the matplotlib plotting area after each plot update to avoid extra memory consumption
+        plt.close()
         await asyncio.sleep(1)
 
 

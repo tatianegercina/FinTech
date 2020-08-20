@@ -527,14 +527,14 @@ Note that a complete explanation of asyncio is out-of-scope for this lesson, so 
 
 * [asyncio_demo.ipynb](Activities/05-Ins_Asyncio/Solved/asyncio_demo.ipynb)
 
-* [async_dashboard.py](Activities/05-Ins_Asyncio/Solved/async_dashboard.py)
+* [async_dashboard.ipynb](Activities/05-Ins_Asyncio/Solved/async_dashboard.ipynb)
 
 Explain to students that now that we have a basic live trading script working, we want to include live visualizations as well. However, there are some problems with plotting live data that need to be addressed first.
 
 Start by running the `blocked_dashboard.py` code to show the long loading time.
 
 ```shell
-panel serve --log-level debug --show blocked_dashboard.py
+python blocked_dashboard.py
 ```
 
 Open the `blocked_dashboard.py` code and highlight the following points:
@@ -542,13 +542,11 @@ Open the `blocked_dashboard.py` code and highlight the following points:
 ```python
 def fetch_data():
     """Simulate a delayed fetch."""
+    print("Fetching data...")
     time.sleep(5)
 
-
 def serve_dashboard():
-    dashboard = pn.Column("# My Blocked Dashboard")
-    return dashboard.servable()
-
+    print("My Blocked Dashboard")
 
 fetch_data()
 serve_dashboard()
@@ -616,8 +614,8 @@ async def fetch_data():
     print("data")
 
 def serve_dashboard():
-    dashboard = pn.Column("# My Panel Dashboard")
-    return dashboard.servable()
+    dashboard = Markdown("# My Panel Dashboard")
+    return dashboard
 
 loop = asyncio.get_event_loop()
 
@@ -625,13 +623,13 @@ loop.create_task(fetch_data())
 serve_dashboard()
 ```
 
-Finally, run the `async_dashboard.py` code to show that the page can immediately load while the data is still being fetched.
+Finally, open the `async_dashboard.ipynb` notebook, run all the cells to show that the text dashboard can immediately load while the data is still being fetched.
 
-```shell
-panel serve --log-level debug --show async_dashboard.py
-```
+![async-dashboard](Images/async-dashboard.gif)
 
-Explain that we can use these ideas to modify our trading dashboard so that the page can load while new data is collected asynchronously. The dashboard can then be updated with the new data once it returns.
+Explain that we can use these ideas to modify our trading dashboard so that the notebook can load while new data is collected asynchronously. The dashboard can then be updated with the new data once it returns.
+
+Answer any questions before moving on.
 
 ---
 
@@ -649,7 +647,7 @@ Open the starter code and live code the solution with the class. Proceed slowly,
 
 Start by skimming the code with the class and showing the `# @TODO:` comments where the code will need to be updated. Explain that the goal is to use asyncio so that the dashboard can be loaded and updated without blocking the page from loading.
 
-Import the necessary libraries to use asyncio, hvPlot, and Panel.
+Import the necessary libraries to use asyncio, and hvPlot.
 
 ```python
 import asyncio
