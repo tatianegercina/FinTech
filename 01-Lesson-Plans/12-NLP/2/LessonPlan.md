@@ -661,13 +661,13 @@ Once students have access to their IBM Cloud dashboard, they need to create an i
 
   ![Tone Analyzer configuration page](Images/tone_analyzer_create_instance.png)
 
-Now that the Tone Analyzer instance is ready to use, ask students to get their API keys and the instance URL by clicking on the "Show credentials" link.
+Now that the Tone Analyzer instance is ready to use, ask students to get their API keys and the instance URL by clicking on the "Service credentials" link.
 
   ![Tone Analyzer instance sample](Images/show_tone_analyzer_credentials.png)
 
-* Students will find their credentials under the section titled, Step 1: Using the general-purpose endpoint via the POST request method.
+* On the resulting page, next to the _Auto-generated service credentials_ section, click the down arrow to expand the selection . 
 
-* Students will see the API key and the instance URL as it's shown below. The URL can differ from the image, but it ends with `/api`.
+* Students will then see the API key and the instance URL as it's shown below. 
 
   ![Tone Analyser credentials](Images/get_tone_analyzer_key.png)
 
