@@ -246,8 +246,6 @@ Open the solution and walk through the following:
 
 * Firefox, Chrome, and Safari all offer developer consoles that allow users to see requests being exchanged between clients and servers.
 
-  ![first_response.png](Activities/01-Stu_Eavesdropping_On_Server/Images/first_response.png)
-
 * Requests sent from a client to a server are commonly either `GET` or `POST`. `GET` requests retrieve data from a server. `POST` requests submit data to a server.
 
   ![console_comm.png](Activities/01-Stu_Eavesdropping_On_Server/Images/console_comm.png)
