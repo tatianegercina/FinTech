@@ -6,15 +6,21 @@ Every time someone uses the internet or a network, a client sends a message to a
 
 Navigate to the below websites with the developer console open to review the exchanges between client (browser) and server (websites visited).
 
-1. Open an internet browser, and launch the developer console. 
+1. Open an internet browser, and launch the developer console. This excercise works best with Firefox, however Chrome, Edge and Safari can all be used.
 
     * The process to launch the developer console for an internet browser is different for each browser.
 
     * Links to documentation for Chrome, Edge, Firefox and Safari can be found [here](https://support.airtable.com/hc/en-us/articles/232313848-How-to-open-the-developer-console).
 
-2. Select `requests`.
+2. In your developer console:
+
+    * If using Firefox, select `requests`:
 
     ![dev_console_reqs.png](Images/dev_console_reqs.png)
+<br>
+    * For other browsers, select `network` then click on the resulting name links:
+
+    ![other_console_reqs.png](Images/other_console_reqs.png)
 
 3. Navigate to `https://google.com`.
 
