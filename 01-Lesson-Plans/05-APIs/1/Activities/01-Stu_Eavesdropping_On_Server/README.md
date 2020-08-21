@@ -2,20 +2,15 @@
 
 Every time someone uses the internet or a network, a client sends a message to a server, and that server responds. Explore the relationship between `client` and `server` in more detail by navigating the web with an internet browser and eavesdropping on the communications sent between `client` and `server`. Review the data that is sent between client and server with an internet browser's developer console.
 
-The process to launch the developer console for an internet browser is different for each browser.
-Links to documentation for Firefox, Chrome, and Safari can be found [here](https://support.airtable.com/hc/en-us/articles/232313848-How-to-open-the-developer-console).
-
 ## Instructions
 
 Navigate to the below websites with the developer console open to review the exchanges between client (browser) and server (websites visited).
 
-1. Open an internet browser, and launch the developer console. Consult the following links for help with getting the developer console open. Instruction is provided for each browser.
+1. Open an internet browser, and launch the developer console. 
 
-    * [Open Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/open)
+    * The process to launch the developer console for an internet browser is different for each browser.
 
-    * [Firefox Browser Console](https://developer.mozilla.org/en-US/docs/Tools/Browser_Console)
-
-    * [Open the Console developer tool in Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console)
+    * Links to documentation for Chrome, Edge, Firefox and Safari can be found [here](https://support.airtable.com/hc/en-us/articles/232313848-How-to-open-the-developer-console).
 
 2. Select `requests`.
 
