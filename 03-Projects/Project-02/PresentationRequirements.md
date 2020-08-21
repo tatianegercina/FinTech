@@ -1,14 +1,14 @@
 # Presentation Requirements
 
-The presentation requirements for the project are as follows.
+The presentation requirements for the project are as follows:
 
 Your presentation must:
 
 * [ ] Be at least 8 to 10 minutes long (check with the instructor for the official presentation time).
 
-* [ ] Describe the core message or hypothesis for your project.
+* [ ] Describe the core message, or hypothesis, of your project.
 
-* [ ] Describe the predictive model chose and why this model was chosen.
+* [ ] Describe the predictive model chosen and why it was chosen.
 
 * [ ] Describe the data preparation and model training process.
 
@@ -20,4 +20,4 @@ Your presentation must:
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

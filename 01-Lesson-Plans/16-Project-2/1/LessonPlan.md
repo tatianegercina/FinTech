@@ -6,19 +6,19 @@ This week, students will begin work on their second project of the boot camp: Fi
 
 #### Instructor Notes
 
-The instructional staff should work together prior to class to identify the groups for this project. It often works best to pair students with similar skill levels so that all students are able to contribute equally to the project.
+The instructional staff should work together prior to class to identify the groups for this project. It often works best to pair students with similar skill levels, so that all students are able to contribute equally to the project.
 
-It is highly recommended to request project proposals from students and then approve their proposals. Students will often struggle with finding data sources and in setting realistic goals, so use this as an opportunity to guide them to unique, interesting, and achievable projects.
+It is highly recommended to request project proposals from students and then approve their proposals. Students will often struggle with finding data sources and setting realistic goals, so use this as an opportunity to guide them to unique, interesting, and achievable projects.
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1Sh0bdCw7eP0Xhd6Bw0gFp-Jt4wYdwWyUiqGBUkFdd68/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Project 2 Lesson Slides](https://docs.google.com/presentation/d/1VdeDlNRo-0bwbs25mttFKnofPlWVDc4bItSCKMQ45OU/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, select "Download as," and then choose "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy."
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
 
@@ -60,4 +60,4 @@ Students will work with their groups to brainstorm project ideas and work on the
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

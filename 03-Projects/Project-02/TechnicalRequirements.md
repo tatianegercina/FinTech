@@ -1,6 +1,6 @@
 # Technical Requirements
 
-The technical requirements for Project 2 are as follows.
+The technical requirements for Project 2 are as follows:
 
 * [ ] Create a Jupyter Notebook, Google Colab Notebook, or Amazon SageMaker Notebook to prepare a training and testing dataset.
 
@@ -24,4 +24,4 @@ The technical requirements for Project 2 are as follows.
 
 ### Copyright
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

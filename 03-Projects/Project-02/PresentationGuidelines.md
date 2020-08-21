@@ -1,6 +1,6 @@
 # Presentation Guidelines
 
-You are free to structure your presentations to your liking, but students tend to have success with the following format.
+You are free to structure your presentations to your liking, but students tend to have success with the following format:
 
 * Title Slide
 
@@ -8,7 +8,7 @@ You are free to structure your presentations to your liking, but students tend t
 
 * Motivation & Summary Slide
 
-  * Define the core message or hypothesis of your project.
+  * Define the core message, or hypothesis, of your project.
 
 * Model Summary
 
@@ -31,7 +31,7 @@ You are free to structure your presentations to your liking, but students tend t
 * Postmortem
 
   * Discuss any difficulties that arose, and how you dealt with them.
-  * Discuss any additional questions or problems that came up but you didn't have time to answer: What would you research next if you had two more weeks?
+  * Discuss any additional questions or problems that you didn't have time to answer: What would you research next, if you had two more weeks?
 
 * Questions
 
@@ -39,4 +39,4 @@ You are free to structure your presentations to your liking, but students tend t
 
 - - -
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
