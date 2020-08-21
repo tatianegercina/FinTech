@@ -10,7 +10,7 @@ def initialize(cash=None):
     """Initialize the dashboard, data storage, and account balances."""
     print("Initializing Account and DataFrame")
 
-    # @TODO: Update to build the dashboard
+    # @TODO: Update to build the plot
     # Initialize Account
     
 
@@ -18,19 +18,20 @@ def initialize(cash=None):
     # @TODO: We will update this later!
     
 
-    # Initialize the dashboard
+    # Initialize the plot
     
 
     # @TODO: We will complete the rest of this later!
     
 
+def build_plot(df):
+    """Build the plot."""
 
-def build_dashboard(data, signals):
-    """Build the dashboard."""
+    # @TODO: Build the Initial Plot!
+    
+    return
 
-    # @TODO: Build the Initial Dashboard!
-
-# @TODO: Create a function to update the dashboard!
+# @TODO: Create a function to update the plot!
 
 
 def fetch_data():

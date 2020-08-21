@@ -517,50 +517,52 @@ Explain that the beauty of a robust application framework is that the abstractio
 
 ### 7. Instructor Do: Asyncio (10 min)
 
-In this demonstration, students will learn how to create asynchronous functions that do not block the dashboard from loading.
+In this demonstration, students will learn how to create asynchronous functions that do not block a plot from loading.
 
 Note that a complete explanation of `asyncio` is out-of-scope for this lesson, so refer students to the [official documents](https://docs.python.org/3/library/asyncio.html) and office hours if they want to learn more.
 
 **Files:**
 
-* [blocked_dashboard.py](Activities/05-Ins_Asyncio/Solved/blocked_dashboard.py)
+* [blocked_plot.py](Activities/05-Ins_Asyncio/Solved/blocked_plot.py)
 
 * [asyncio_demo.ipynb](Activities/05-Ins_Asyncio/Solved/asyncio_demo.ipynb)
 
-* [async_dashboard.ipynb](Activities/05-Ins_Asyncio/Solved/async_dashboard.ipynb)
+* [async_plot.ipynb](Activities/05-Ins_Asyncio/Solved/async_plot.py)
 
 Explain to students that now that we have a basic live trading script working, we want to include live visualizations as well. However, there are some problems with plotting live data that need to be addressed first.
 
-Start by running the `blocked_dashboard.py` code to show the long loading time.
+Start by running the `blocked_plot.py` code to show the long loading time.
 
 ```shell
-python blocked_dashboard.py
+python blocked_plot.py
 ```
 
-![blocked-dashboard](Images/blocked-dashboard.gif)
+![blocked-plot](Images/blocked-plot.gif)
 
-Open the `blocked_dashboard.py` code and highlight the following points:
+Open the `blocked_plot.py` code and highlight the following points:
 
 ```python
+import time
+
 def fetch_data():
     """Simulate a delayed fetch."""
     print("Fetching data...")
     time.sleep(5)
 
-def serve_dashboard():
-    print("My Blocked Dashboard")
+def serve_plot():
+    print("My Blocked Plot")
 
 fetch_data()
-serve_dashboard()
+serve_plot()
 ```
 
 * The `fetch_data` function simulates a data fetch that takes a long time. In practice, any request to an external API may take a long time to fetch and return the data.
 
-* The serve_dashboard function serves up a simple dashboard of text.
+* The `serve_plot` function serves up a simple testing text.
 
-* Python is a synchronous language. That means that it runs one line of code and waits on that code to finish before moving on to run the next line of code. In this example, the `fetch_data` function takes five seconds to run before the code that serves the dashboard can run. This effectively blocks the dashboard from loading until the data returns.
+* Python is a synchronous language. That means that it runs one line of code and waits on that code to finish before moving on to run the next line of code. In this example, the `fetch_data` function takes five seconds to run before the code that serves the plot can run. This effectively blocks the plot from loading until the data returns.
 
-* In practice, fetching data can take a lot longer than expected. Database queries, network delays, and other factors can create delays in the request. With code like this, the user experience suffers because the page cannot load until the data returns.
+* In practice, fetching data can take a lot longer than expected. Database queries, network delays, and other factors can create delays in the request. With code like this, the user experience suffers because the plot cannot load until the data returns.
 
 Open `asyncio_demo.ipynb` and highlight the following points about the asyncio library:
 
@@ -568,18 +570,18 @@ Open `asyncio_demo.ipynb` and highlight the following points about the asyncio l
 
 * Asynchronous code means that Python doesn't have to wait on that line to finish running before moving on to the next line of code.
 
-Run the following cell to show the delay created by the default synchronous behavior. Explain to students that synchronously running the code implies that it runs sequentially from top to bottom, since the `fetch_data` function is executed first, you need to wait three seconds to have the `serve_dashboard` function executed.
+Run the following cell to show the delay created by the default synchronous behavior. Explain to students that synchronously running the code implies that it runs sequentially from top to bottom, since the `fetch_data` function is executed first, you need to wait three seconds to have the `serve_plot` function executed.
 
 ```python
 def fetch_data():
     time.sleep(3)
     print("data")
 
-def serve_dashboard():
-    print("dashboard")
+def serve_plot():
+    print("plot")
 
 fetch_data()
-serve_dashboard()
+serve_plot()
 ```
 
 Break down the asynchronous code cell and explain the following:
@@ -589,13 +591,13 @@ async def fetch_data():
     await asyncio.sleep(3)
     print("data")
 
-def serve_dashboard():
-    print("dashboard")
+def serve_plot():
+    print("plot")
 
 loop = asyncio.get_event_loop()
 
 loop.create_task(fetch_data())
-serve_dashboard()
+serve_plot()
 ```
 
 * Code can be defined as asynchronous using the keywords `async` and `await`. This tells Python to handle this code differently than the other code.
@@ -606,30 +608,30 @@ serve_dashboard()
 
 * Asyncio uses an event loop to run code asynchronously. The event loop can be thought of as a loop that sits off to the side and just periodically checks to see if the async code has finished running yet. When it does finish running, it can rejoin the main program. Meanwhile, Python is free to continue running other code.
 
-* The asyncio provides several functions for using the event loop. This example runs the `fetch_data` function as a task in the event loop. It then immediately moves on to run the `serve_dashboard` code in the main program while `fetch_data` continues to run in the event loop. Once fetch_data finishes, it rejoins the main program.
+* The asyncio provides several functions for using the event loop. This example runs the `fetch_data` function as a task in the event loop. It then immediately moves on to run the `serve_plot` code in the main program while `fetch_data` continues to run in the event loop. Once `fetch_data` finishes, it rejoins the main program.
 
-Show that the dashboard no longer has to wait on the `fetch_data` function:
+Show that the plot testing text no longer has to wait on the `fetch_data` function:
 
 ```python
-async def fetch_data():
+aasync def fetch_data():
     await asyncio.sleep(3)
     print("data")
 
-def serve_dashboard():
-    dashboard = Markdown("# My Dashboard")
-    return dashboard
+def serve_plot():
+    plot = Markdown("# My Plot")
+    return plot
 
 loop = asyncio.get_event_loop()
 
 loop.create_task(fetch_data())
-serve_dashboard()
+serve_plot()
 ```
 
-Finally, open the `async_dashboard.ipynb` notebook, run all the cells to show that the text dashboard can immediately load while the data is still being fetched.
+Finally, open the `async_plot.ipynb` notebook, run all the cells to show that the plot testing text can immediately load while the data is still being fetched.
 
-![async-dashboard](Images/async-dashboard.gif)
+![async-plot](Images/async-plot.gif)
 
-Explain that we can use these ideas to modify our trading dashboard so that the notebook can load while new data is collected asynchronously. The dashboard can then be updated with the new data once it returns.
+Explain that we can use these ideas to modify our trading Python script so that the plot can load while new data is collected asynchronously. The plot can then be updated with the new data once it returns.
 
 Answer any questions before moving on.
 
@@ -665,16 +667,16 @@ from dotenv import load_dotenv
 import matplotlib.pyplot as plt
 ```
 
-Update the code for the `initialize`, `build_dashboard`, and `update_dashboard` functions, and highlight the following:
+Update the code for the `initialize`, `build_plot`, and `update_plot` functions, and highlight the following:
 
-* The `initialize` function sets the initial configuration. It uses the `build_dashboard` function to build and return an initial plot with the current closing price of `BTC/USD`.
+* The `initialize` function sets the initial configuration. It uses the `build_plot` function to build and return an initial plot with the current closing price of `BTC/USD`.
 
   ```python
   def initialize(cash=None):
-      """Initialize the dashboard, data storage, and account balances."""
+      """Initialize the plot, data storage, and account balances."""
       print("Initializing Account and DataFrame")
 
-      # @TODO: Update to build the dashboard
+      # @TODO: Update to build the plot
       # Initialize Account
       account = {"balance": cash, "shares": 0}
 
@@ -682,28 +684,30 @@ Update the code for the `initialize`, `build_dashboard`, and `update_dashboard` 
       # @TODO: We will update this later!
       df = fetch_data()
 
-      # Initialize the dashboard
-      build_dashboard(df)
+      # Initialize the plot
+      build_plot(df)
 
       # @TODO: We will complete the rest of this later!
       return account, df
 
-  def build_dashboard(df):
-      """Build the dashboard."""
 
-      # @TODO: Build the Initial Dashboard!
-      print("Initializing dashboard")
-      dashboard = df.plot(title="Current BTC/USD Price")
+  def build_plot(df):
+      """Build the plot."""
+
+      # @TODO: Build the Initial Plot!
+      print("Initializing plot")
+      plot = df.plot(title="Current BTC/USD Price")
+
       return
   ````
 
-* The `update_dashboard` function is used to update the line chart. It uses new data that is available after fetching from the CCXT API.
+* The `update_plot` function is used to update the line chart. It uses new data that is available after fetching from the CCXT API.
 
   ```python
-  # @TODO: Create a function to update the dashboard!
-  def update_dashboard(df):
-      """Update the dashboard."""
-      dashboard = df.plot(title="Current BTC/USD Price")
+  # @TODO: Create a function to update the plot!
+  def update_plot(df):
+      """Update the plot."""
+      plot = df.plot(title="Current BTC/USD Price")
 
       return
   ```
@@ -714,14 +718,14 @@ Continue by setting the initial configurations and explain the following to the 
 
 * For the purpose of this class, we will create a line chart using `matplotlib` that will be updated as we execute our trading strategy.
 
-* The dashboard is initialized as static text by calling the `initialize` function and passing an initial account balance as an argument.
+* Before start running the main program, we call the `initialize` function and pass an initial account balance as an argument.
 
   ```python
   # Set the initial account configuration
   account, df = initialize(10000)
   ```
 
-* In order to create a live line chart that can be dynamically updated, we need to turn on the interactive mode of `matplotlib` using [the `ion` function]((https://matplotlib.org/api/_as_gen/matplotlib.pyplot.ion.html)). We also use the `show` function of matplotlib to display the initial chart created by the `initialize` function.
+* In order to create a live line chart that can be dynamically updated, we need to turn on the interactive mode of `matplotlib` using [the `ion` function]((https://matplotlib.org/api/_as_gen/matplotlib.pyplot.ion.html)). We also use the `show` function of matplotlib to display the initial plot created by the `initialize` function.
 
 ```python
 # Turns on the interactive mode of matplotlib (https://matplotlib.org/api/_as_gen/matplotlib.pyplot.ion.html)
@@ -742,7 +746,6 @@ async def main():
     while True:
         global account
         global df
-        global dashboard
 
         # Fetch new prices data
         new_df = await loop.run_in_executor(None, fetch_data)
@@ -754,19 +757,19 @@ async def main():
             signals = generate_signals(df)
             account = execute_trade_strategy(signals, account)
 
-        # Update the dashboard visualization
-        update_dashboard(df)
+        # Update the plot
+        update_plot(df)
 
         # Update line chart
         plt.pause(1)
 
-        # We need to close the matplotlib plotting area after each plot update to avoid extra memory consumption
+        # Refresh the matplotlib plotting area to avoid extra memory consumption
         plt.close()
 
         await asyncio.sleep(1)
 ```
 
-* Once the new data is fetched, the `update_dashboard` function is called to update the plot. Since we have an active line chart, we need to use the `pause` function to update and display the plot before the one-second pause.
+* Once the new data is fetched, the `update_plot` function is called to update the plot. Since we have an active line chart, we need to use the `pause` function to update and display the plot before the one-second pause.
 
   * **Note:** Currently, the `pause` function is experimental and not recommended for complex plots, but it's suitable for prototyping and teaching purposes. If you experience issues or glitches running this script, comment out the plotting code or use the `jarvis-text.py` script.
 

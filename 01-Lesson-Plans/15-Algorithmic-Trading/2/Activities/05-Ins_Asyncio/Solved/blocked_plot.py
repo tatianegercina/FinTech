@@ -5,8 +5,8 @@ def fetch_data():
     print("Fetching data...")
     time.sleep(5)
 
-def serve_dashboard():
-    print("My Blocked Dashboard")
+def serve_plot():
+    print("My Blocked Plot")
 
 fetch_data()
-serve_dashboard()
+serve_plot()
