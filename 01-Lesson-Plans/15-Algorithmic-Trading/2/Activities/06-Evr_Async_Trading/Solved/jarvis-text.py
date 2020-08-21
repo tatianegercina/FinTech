@@ -8,10 +8,10 @@ import matplotlib.pyplot as plt
 
 
 def initialize(cash=None):
-    """Initialize the dashboard, data storage, and account balances."""
+    """Initialize the plot, data storage, and account balances."""
     print("Initializing Account and DataFrame")
 
-    # @TODO: Update to build the dashboard
+    # @TODO: Update to build the plot
     # Initialize Account
     account = {"balance": cash, "shares": 0}
 
@@ -19,26 +19,27 @@ def initialize(cash=None):
     # @TODO: We will update this later!
     df = fetch_data()
 
-    # Initialize the dashboard
-    # build_dashboard(df)
+    # Initialize the plot
+    # build_plot(df)
 
     # @TODO: We will complete the rest of this later!
     return account, df
 
 
-def build_dashboard(df):
-    """Build the dashboard."""
+def build_plot(df):
+    """Build the plot."""
 
-    # @TODO: Build the Initial Dashboard!
-    print("Initializing dashboard")
-    dashboard = df.plot(title="Current BTC/USD Price")
+    # @TODO: Build the Initial Plot!
+    print("Initializing plot")
+    plot = df.plot(title="Current BTC/USD Price")
+
     return
 
 
-# @TODO: Create a function to update the dashboard!
-def update_dashboard(df):
-    """Update the dashboard."""
-    dashboard = df.plot(title="Current BTC/USD Price")
+# @TODO: Create a function to update the plot!
+def update_plot(df):
+    """Update the plot."""
+    plot = df.plot(title="Current BTC/USD Price")
 
     return
 
@@ -123,7 +124,6 @@ async def main():
     while True:
         global account
         global df
-        global dashboard
 
         # Fetch new prices data
         new_df = await loop.run_in_executor(None, fetch_data)
@@ -135,8 +135,8 @@ async def main():
             signals = generate_signals(df)
             account = execute_trade_strategy(signals, account)
 
-        # Update the dashboard visualization
-        # update_dashboard(df)
+        # Update the plot
+        # update_plot(df)
 
         # Update line chart
         plt.pause(1)
