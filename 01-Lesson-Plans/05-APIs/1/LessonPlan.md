@@ -765,9 +765,9 @@ Facilitate a dry walkthrough of the solution utilizing the following discussion 
 * Passing parameters to APIs through request URLs gives users the ability to configure and control API actions. By passing parameters to the request URLs for the Deck of Cards API, users can create and shuffle a deck of cards. Parameters also allow users to draw `n` number of cards from the deck.
 
   ```python
-  create_deck_url = "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6"
-  draw_cards_url = "https://deckofcardsapi.com/api/deck/<<deck_id>>/draw/?count=2"
-  shuffle_deck_url = "https://deckofcardsapi.com/api/deck/<<deck_id>>/shuffle/"
+  create_deck_url = f"https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6"
+  draw_cards_url = f"https://deckofcardsapi.com/api/deck/{deck_id}/draw/?count=2"
+  shuffle_deck_url = f"https://deckofcardsapi.com/api/deck/{deck_id}/shuffle/"
   ```
 
   ![parameters.png](Images/parameters.png)
