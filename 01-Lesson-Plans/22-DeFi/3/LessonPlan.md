@@ -742,9 +742,7 @@ Welcome the students back to class, and allow them to use this activity time to 
 
 ![customize.png](Images/customize.png)
 
-* Then select the pins you would like to show on the main page of your profile:
-
-![pins.png](Images/pins.png)
+* Then select the pins you would like to show on the main page of your profile.
 
 * Let students know this allows recruiters to more easily find the repositories you want them to look at!
 
