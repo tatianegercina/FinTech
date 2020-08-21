@@ -6,31 +6,41 @@ import pandas as pd
 from dotenv import load_dotenv
 import matplotlib.pyplot as plt
 
+
 def initialize(cash=None):
     """Initialize the dashboard, data storage, and account balances."""
     print("Initializing Account and DataFrame")
 
     # @TODO: Update to build the dashboard
     # Initialize Account
-    
+    account = {"balance": cash, "shares": 0}
 
     # Initialize DataFrame
     # @TODO: We will update this later!
-    
+    df = fetch_data()
 
     # Initialize the dashboard
-    
+    # build_dashboard(df)
 
     # @TODO: We will complete the rest of this later!
-    
+    return account, df
 
 
-def build_dashboard(data, signals):
+def build_dashboard(df):
     """Build the dashboard."""
 
     # @TODO: Build the Initial Dashboard!
+    print("Initializing dashboard")
+    dashboard = df.plot(title="Current BTC/USD Price")
+    return
+
 
 # @TODO: Create a function to update the dashboard!
+def update_dashboard(df):
+    """Update the dashboard."""
+    dashboard = df.plot(title="Current BTC/USD Price")
+
+    return
 
 
 def fetch_data():
@@ -45,6 +55,7 @@ def fetch_data():
     datetime = kraken.fetch_ticker("BTC/USD")["datetime"]
     df = pd.DataFrame({"close": [close]})
     df.index = pd.to_datetime([datetime])
+
     return df
 
 
@@ -96,5 +107,46 @@ def execute_trade_strategy(signals, account):
 
     return account
 
-
 # @TODO: Set the initial configurations and update the main loop to use asyncio
+# Set the initial account configuration
+account, df = initialize(10000)
+
+# Turns on the interactive mode of matplotlib (https://matplotlib.org/api/_as_gen/matplotlib.pyplot.ion.html)
+plt.ion()
+
+# Show the initial line chart
+plt.show()
+
+async def main():
+    loop = asyncio.get_event_loop()
+
+    while True:
+        global account
+        global df
+        global dashboard
+
+        # Fetch new prices data
+        new_df = await loop.run_in_executor(None, fetch_data)
+        df = df.append(new_df, ignore_index=True)
+
+        # Execute the trading strategy
+        min_window = 22
+        if df.shape[0] >= min_window:
+            signals = generate_signals(df)
+            account = execute_trade_strategy(signals, account)
+
+        # Update the dashboard visualization
+        # update_dashboard(df)
+
+        # Update line chart
+        plt.pause(1)
+
+        # Refresh the matplotlib plotting area to avoid extra memory consumption
+        plt.close()
+
+        await asyncio.sleep(1)
+
+
+# Python 3.7+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
