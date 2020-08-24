@@ -42,9 +42,9 @@ By the end of class, students will be able to:
 
 * Note that the results from Monte Carlo simulations may vary from the lesson plan and a new execution in class since stock data is fetched `90` days before the current date.
 
-* In this class, the concept of random numbers and random numbers generators is introduced and applied using `numpy.random`. A random seed (`random.seed(3)`) has been set for all the Instructor's activities to ensure reproducibility, be aware of that during your coding demos and explain to students the purpose of using a random seed for prototyping but not for deploying models.
+* In this class, the concepts of random numbers and random number generators are introduced and applied using `numpy.random`. A random seed (`random.seed(3)`) has been set for all the Instructor's activities to ensure reproducibility, be aware of that during your coding demos and explain to students the purpose of using a random seed for prototyping but not for deploying models.
 
-* In those Students' activities that use `numpy.random`, there a random seed is not set to allow students to experience randomness.
+* In those Student activities that use `numpy.random`, a random seed is not set to allow students to experience randomness.
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
@@ -86,7 +86,7 @@ Open the lesson slides, move to the "Monte Carlo Simulations" section and highli
 
 * By the end of the lesson, Monte Carlo simulations will have predicted future stock prices and therefore forecast the potential stock's returns of an initial investment, either as a single stock investment or as an investment in a portfolio.
 
-Continue with the slides switching to the "Simulations" section, ease students into the notion of this type of simulations by presenting the following questions and answers:
+Continue with the slides switching to the "Simulations" section, ease students into the notion of this type of simulation by presenting the following questions and answers:
 
 * What are simulations?
 
@@ -184,7 +184,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
 * Let's continue by fetching stock price data over one year for Tesla (`TSLA`) and Coca-Cola (`KO`) using the Alpaca SDK.
 
-**Note:** Analysis and results may vary if you change these dates, we recommend you to validate if you can reach similar results if you decide to run the code with different date in the class.
+**Note:** Analysis and results may vary if you change these dates.  If you decide to run the code with different dates during class, we recommend that you validate the results prior.
 
   ```python
   # Set the Tesla and Coca-Cola tickers
@@ -277,7 +277,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
 * Probability distributions such as the normal distribution help us make educated guesses about what might happen to a stock or commodity in the future. When it comes to the Monte Carlo simulations, the model will randomly select changes that fit within the normal distribution to simulate real-world data best!
 
-Explain to students that despite most pricing distributions are not perfectly normal, as a FinTech professional it's important to understand what a normal distribution is since it's the most common type of distribution assumed in technical analysis of a stock, commodity, or other assets.
+Explain to students that despite most pricing distributions not being perfectly normal, as a FinTech professional it's important to understand what a normal distribution is since it's the most common type of distribution assumed in technical analysis of a stock, commodity, or other assets.
 
 Answer any questions before moving on.
 
@@ -309,7 +309,7 @@ Open the solved version of the Jupyter notebook and explain the following:
 
 * After importing the required libraries and the Alpaca keys, the next step is to read stock data from over one year.
 
-  **Note:** Analysis and results may vary if you change these dates, we recommend you to validate if you can reach similar results if you decide to run the code with different dates in the class.
+  **Note:** Analysis and results may vary if you change these dates.  If you decide to run the code with different dates during class, we recommend that you validate the results prior.
 
   ```python
   # Set timeframe to '1D'
@@ -379,7 +379,7 @@ Open the solved version of the Jupyter notebook and explain the following:
 
   ![tickers-density-plot](Images/tickers-density-plot.png)
 
-* This is quite better, right! From the density plot, we can observe that the most volatile stock is `WORK`, and the lest one is `SPY`. Using these two plots, we can start deciding an investing strategy by setting different weights for each ticker in a portfolio.
+* This is much better, right!? From the density plot, we can observe that the most volatile stock is `WORK`, and the least volatile stock is `SPY`. Using these two plots, we can start deciding an investing strategy by setting different weights for each ticker in a portfolio.
 
 * It would be great to forecast the future outcomes of a portfolio, right? That's where Monte Carlo simulations come into action.
 
@@ -417,7 +417,7 @@ Explain to students, that in order to perform portfolio forecasting in Python, w
 
 Since the waiting time for running the Monte Carlo simulation could be long, open the solved version of the Jupyter notebook, follow the code on each cell and highlight the following.
 
-* Let's pretend that we are looking to add Microsoft (`MSFT`) and Coca-Cola (`KO`) stock to our portfolio if we were to invest $10,000 worth of stock today, how much would it be worth in `5` years? `10` years? Let's find out.
+* Let's pretend that we are looking to add Microsoft (`MSFT`) and Coca-Cola (`KO`) stock to our portfolio. If we were to invest $10,000 worth of stock today, how much would it be worth in `5` years? `10` years? Let's find out.
 
 * After importing our dependencies and setting up the Alpaca API instance, our next step is to query the Alpaca API to retrieve the closing stock price of Microsoft and Coca-Cola over the past `3` years.
 
@@ -485,7 +485,7 @@ Since the waiting time for running the Monte Carlo simulation could be long, ope
   )
   ```
 
-* After creating the `MCSimulation` instance, the daily returns are computed. A new DataFrame is created where the instance automatically created a `daily_return` column that calculates the percent change of closing prices for each stock. The `daily_return` column will be the normally distributed variable we use as input for the Monte Carlo simulation. We can look to this new DataFrame using the `portfolio_data` attribute and linking it to the `head()` function.
+* After creating the `MCSimulation` instance, the daily returns are computed. A new DataFrame is created where the instance automatically created a `daily_return` column that calculates the percent change of closing prices for each stock. The `daily_return` column will be the normally distributed variable we use as input for the Monte Carlo simulation. We can look at this new DataFrame using the `portfolio_data` attribute and linking it to the `head()` function.
 
   ```python
   # Printing the simulation input data
@@ -549,7 +549,7 @@ Continue the demo by highlighting the following about the analysis of the Monte 
 
 * According to our plot, we can see that `95%` of the time, we can expect a cumulative return of approximately one to seven times our original investment amount. To calculate these approximate returns directly, we can use the following code.
 
-* First, we compute the summary statistics from the Monte Carlo simulations results using the `summarize_cumulative_return()` function.
+* First, we compute the summary statistics from the Monte Carlo simulation results using the `summarize_cumulative_return()` function.
 
   ```python
   # Fetch summary statistics from the Monte Carlo simulation results
@@ -710,9 +710,9 @@ Open the solved version of the Jupyter notebook and explain the following:
   There is a 95% chance that an initial investment of $15,000 in the portfolio over the next five years will end within the range of $6627.52 and $46628.21.
   ```
 
-Recall students that the simulation process includes using a random number generator, so their simulated values will vary from this example.
+Recall to students that the simulation process includes using a random number generator, so their simulated values will vary from this example.
 
-The reminder steps of this activity consist of simulating different scenarios by changing the proportion of stocks in each scenario. One essential part of these simulations is to set the `weights` argument of the `MCSimulation()` function to the correct values.
+The remainder of steps for this activity consist of simulating different scenarios by changing the proportion of stocks in each scenario. One essential part of these simulations is to set the `weights` argument of the `MCSimulation()` function to the correct values.
 
 For example, to simulate five-year portfolio growth with `60%` AT&T stock, you need to set-up the `MCSimulation` function as follows.
 
@@ -804,7 +804,7 @@ This activity exemplifies the use case where a Monte Carlo simulation can be app
 
 * [MCForecastTools.py](Activities/05-Ins_Simulation_of_Stock_Price_Trajectory/Solved/MCForecastTools.py)
 
-Walkthrough the solution and highlight the following:
+Walk through the solution and highlight the following:
 
 * As we learned before, Monte Carlo simulations can be executed on *continuous probabilities* such as normal probability distributions.
 
@@ -916,7 +916,7 @@ Walkthrough the solution and highlight the following:
 
   ![aapl-outcomes-df](Images/aapl-outcomes-df.png)
 
-* After computed the possible outcomes, we can create a line plot to analyze their behavior visually.
+* After computing the possible outcomes, we can create a line plot to analyze their behavior visually.
 
   ```python
   # Use the 'plot' function to create a chart of the simulated profits/losses
@@ -1020,7 +1020,7 @@ Open the solution and explain the following:
   ).df
   ```
 
-* Next, we configure and run `1000` Monte Carlo simulations to forecasting the future daily closing prices of `TSLA`.
+* Next, we configure and run `1000` Monte Carlo simulations to forecast the future daily closing prices of `TSLA`.
 
   ```python
   # Set number of simulations
@@ -1101,7 +1101,7 @@ Indicate to students that no matter what they're feeling, either excited and emp
 
 Emphasize that students can reach out individually or attend office hours to ask questions, discuss the activities in the lesson, or just release emotionally.
 
-Use the remaining time to get a head start on office hours. Allow students to ask questions about this lesson, the overall unit, or the homework.
+Use the remaining time for a structured review or to get a head start on office hours. Allow students to ask questions about this lesson, the overall unit, or the homework.
 
 ### End Class
 

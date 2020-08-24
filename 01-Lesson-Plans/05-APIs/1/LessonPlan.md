@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [Alpaca Installation Guide](../Supplemental/AlpacaMarkets_Installation-Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with Alpaca outside of class time.
+* Slack out the [Alpaca and Quandl Installation Guide](../Supplemental/AlpacaMarkets_Installation-Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with Alpaca outside of class time.
 
 * This class will focus on the fundamentals of APIs and the process of submitting APIs. This class is a great opportunity for students to be impressed and inspired by FinTech. There are a number of fun and creative FinTech APIs, such as Quandl and World of Bank, will be used to drive student engagement. This lesson is the perfect opportunity to get students excited about FinTech again!
 
@@ -245,8 +245,6 @@ This activity drives home the discussion on the client-server model by having st
 Open the solution and walk through the following:
 
 * Firefox, Chrome, and Safari all offer developer consoles that allow users to see requests being exchanged between clients and servers.
-
-  ![first_response.png](Activities/01-Stu_Eavesdropping_On_Server/Images/first_response.png)
 
 * Requests sent from a client to a server are commonly either `GET` or `POST`. `GET` requests retrieve data from a server. `POST` requests submit data to a server.
 
@@ -767,9 +765,9 @@ Facilitate a dry walkthrough of the solution utilizing the following discussion 
 * Passing parameters to APIs through request URLs gives users the ability to configure and control API actions. By passing parameters to the request URLs for the Deck of Cards API, users can create and shuffle a deck of cards. Parameters also allow users to draw `n` number of cards from the deck.
 
   ```python
-  create_deck_url = "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6"
-  draw_cards_url = "https://deckofcardsapi.com/api/deck/<<deck_id>>/draw/?count=2"
-  shuffle_deck_url = "https://deckofcardsapi.com/api/deck/<<deck_id>>/shuffle/"
+  create_deck_url = f"https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6"
+  draw_cards_url = f"https://deckofcardsapi.com/api/deck/{deck_id}/draw/?count=2"
+  shuffle_deck_url = f"https://deckofcardsapi.com/api/deck/{deck_id}/shuffle/"
   ```
 
   ![parameters.png](Images/parameters.png)

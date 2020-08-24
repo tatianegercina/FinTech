@@ -6,11 +6,11 @@ While you won't actually win any real prizes in this game, you will get the oppo
 
 API URLs (store these as variables)
 
-* Create a deck and shuffle -> `https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6`
+* Create a deck and shuffle -> `f"https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6" `
 
-* Draw cards -> `https://deckofcardsapi.com/api/deck/<<deck_id>>/draw/?count=2`
+* Draw cards -> `f"https://deckofcardsapi.com/api/deck/{deck_id}/draw/?count=2"`
 
-* Shuffle pre-existing deck -> `https://deckofcardsapi.com/api/deck/<<deck_id>>/shuffle/`
+* Shuffle pre-existing deck -> `f"https://deckofcardsapi.com/api/deck/{deck_id}/shuffle/"`
 
 Rules of the Game
 
