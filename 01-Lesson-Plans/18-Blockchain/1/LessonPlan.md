@@ -64,21 +64,19 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome (5 min)
 
-* **Files:**
-
 Welcome students to the class by expressing excitement over starting the final lap in this boot camp marathon -- BLOCKCHAIN -- and that some might say it’s the most exciting lap by far!
 
 Open the lesson slides and highlight the following:
 
-* Blockchain is exciting - and critical for their careers - because blockchain technology powers not just cryptocurrencies but entire decentralized economies and even enterprise networks.
+* Blockchain is exciting - and critical for your careers - because blockchain technology powers not just cryptocurrencies but entire decentralized economies and even enterprise networks.
 
 * Blockchain is a buzz-word in the industry, but it’s much more than that -- it’s a new way of thinking about money.
 
 * Traditional financial institutions have been skeptical about blockchain technology, however, JP Morgan Chase, the largest U.S. bank, created [Quorum](https://www.goquorum.com/), an Ethereum-based blockchain, in order to leverage the security that blockchain provides for their own systems (and, probably, because they are afraid of being left in the dust by this new technology!).
 
-* In this unit, students will be building their blockchain wallets, write smart contracts, and construct a blockchain from scratch.
+* In this unit, you will be building your blockchain wallets, write smart contracts, and construct a blockchain from scratch.
 
-Some of this may seem intimidating to the students, so express that you are proud of how far the class has already traveled together as a team; after 17 weeks together, the students can do Python, Pandas, and ML!; By the end of this block (get it?), they will be able to speak “blockchain” -- but we’re going far beyond the terminology.
+Some of this may seem intimidating to the students, so express that you are proud of how far the class has already traveled together as a team; after 17 weeks together, the students can do Python, Pandas, and machine learning!; By the end of this block (get it?), they will be able to speak “blockchain” -- but we’re going far beyond the terminology.
 
 Explain to the class that this final stage is huge. That’s going to be challenging, but you know they can do it - after all, they’ve made it this far!
 
