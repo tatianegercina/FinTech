@@ -4,9 +4,9 @@ As a FinTech professional, you are willing to start using your Python and APIs c
 
 ## Instructions
 
-Open the started Jupyter notebook provided, and complete the following tasks.
+Open the starter Jupyter notebook provided, and complete the following tasks.
 
-1. Suppose you have a stock portfolio composed by `200` Microsoft (`MSFT`) shares and `320` Apple (`AAPL`) shares. Create a DataFrame to store the number of shares by setting the ticker names as the index.
+1. Suppose you have a stock portfolio composed of `200` Microsoft (`MSFT`) shares and `320` Apple (`AAPL`) shares. Create a DataFrame to store the number of shares by setting the ticker names as the index.
 
 2. Load the environment variables from your `.env` file and save the Alpaca keys as Python variables.
 
@@ -16,7 +16,7 @@ Open the started Jupyter notebook provided, and complete the following tasks.
 
 5. You will fetch daily data, so create a variable called `timeframe` and set its value to `1D`.
 
-6. Use the `alpaca.get_barset()` function to retrieve the current price data for `MSFT` and `AAPL`.
+6. Use the `alpaca.get_barset()` function to retrieve the current price data for `MSFT` and `AAPL`. **HINT**: You will need add `.df` to view the data as a DataFrame.
 
 7. Calculate the current value in dollars of the stock using the number of shares and the current closing price you retrieved using Alpaca.
 
