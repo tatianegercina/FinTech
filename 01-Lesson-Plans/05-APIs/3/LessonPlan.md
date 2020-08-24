@@ -184,7 +184,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
 * Let's continue by fetching stock price data over one year for Tesla (`TSLA`) and Coca-Cola (`KO`) using the Alpaca SDK.
 
-**Note:** Analysis and results may vary if you change these dates, we recommend you to validate if you can reach similar results if you decide to run the code with different date in the class.
+**Note:** Analysis and results may vary if you change these dates.  If you decide to run the code with different dates during class, we recommend that you validate the results prior.
 
   ```python
   # Set the Tesla and Coca-Cola tickers
@@ -309,7 +309,7 @@ Open the solved version of the Jupyter notebook and explain the following:
 
 * After importing the required libraries and the Alpaca keys, the next step is to read stock data from over one year.
 
-  **Note:** Analysis and results may vary if you change these dates, we recommend you to validate if you can reach similar results if you decide to run the code with different dates in the class.
+  **Note:** Analysis and results may vary if you change these dates.  If you decide to run the code with different dates during class, we recommend that you validate the results prior.
 
   ```python
   # Set timeframe to '1D'
@@ -1101,7 +1101,7 @@ Indicate to students that no matter what they're feeling, either excited and emp
 
 Emphasize that students can reach out individually or attend office hours to ask questions, discuss the activities in the lesson, or just release emotionally.
 
-Use the remaining time to get a head start on office hours. Allow students to ask questions about this lesson, the overall unit, or the homework.
+Use the remaining time for a structured review or to get a head start on office hours. Allow students to ask questions about this lesson, the overall unit, or the homework.
 
 ### End Class
 
