@@ -1,7 +1,6 @@
-# Alpaca Markets (python-sdk) Installation Guide
+# Alpaca Markets (python-sdk) and Quandl Installation Guide
 
-This guide serves as a step by step process for setting up and validating the `Alpaca Markets trade API` Python SDK. Without this library, class activities and code will not be able to extract historical stock data and therefore, will not be able to be completed.
-
+This guide serves as a step by step process for setting up and validating the `Alpaca Markets trade API` Python SDK and the Quandl API. Without this library, class activities and code will not be able to extract historical stock data and therefore, will not be able to be completed.
 
 All packages should be installed into the `alpacaenv` virtual environment.  If you have not already created an `alpacaenv` virtual environment you can do so by typing the following commands in your terminal:
 
@@ -85,6 +84,23 @@ Save this file in the same folder as your python script or jupyter notebook file
   ![alpaca-env-save](Images/alpaca-env-save.png)
 
   ![env-folder](Images/env-folder.png)
+
+## Set QUANDL_API_KEY environment variable
+
+Go to [Quandl.com](https://quandl.com) and login to your account.  After logging in, click on the profile link in the upper right hand corner and select `account settings` from the resulting drop down menu.  
+
+![quandl_api](Images/quandl_api.png)
+
+On the resulting page, click the api key to copy it to your clipboard.
+
+![quandl_api_copy](Images/quandl_api_copy.png)
+
+Next, add this to your existing `.env` file.
+
+**Note**: Make sure your environment variables are specifically named `QUANDL_API_KEY`.
+
+![quandl_api_env](Images/quandl_api_env.png)
+
 
 ## Enabling Hidden Files
 
