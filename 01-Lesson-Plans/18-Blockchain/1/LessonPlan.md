@@ -88,7 +88,7 @@ Answer any questions before moving on.
 
 Before we dig in, let’s get a sense of where the class might be when it comes to blockchain.
 
-Open the lesson slides and move to the "Have you heard?" section; ask a few questions and have the students give a thumbs up for yes or a thumbs down for no.
+Open the lesson slides and move to the "Blockchain Skill Check" section; ask a few questions and have the students give a thumbs up for yes or a thumbs down for no.
 
 * How many of you have heard of blockchain before?
 
@@ -148,9 +148,7 @@ Answer any questions before moving on.
 
 For this activity, the instructor will lead a formal discussion regarding what blockchain technology is and why it’s essential.
 
-First, navigate to the slides and begin with the "Bank CEO" example:
-
-Ask the students the following questions, allowing them to answer, then confirm each of the listed answers:
+Open the lesson slides, navigate to the "The Importance of Blockchain" section, and ask the students the following questions, allowing them to answer, then confirm each of the listed answers:
 
 * "Why would a banker want to use a blockchain?"
 
@@ -164,9 +162,9 @@ Ask the students the following questions, allowing them to answer, then confirm 
 
   **Answer**: Some blockchains can be used as a hedge against hyperinflation of their native currency.
 
-* Why would an individual in the US want to use a blockchain?
+* Why would an individual in Canada want to use a blockchain?
 
-  **Answer**: Removes intermediaries like PayPal, Venmo, Cashapp, etc., and allows for peer to peer payments, thus lower fees.
+  **Answer**: Removes intermediaries like PayPal, Apple Pay, Google Pay, etc., and allows for peer to peer payments, thus lower fees.
 
   **Answer**: Custody over your funds, versus allowing a bank to have custody.
 
