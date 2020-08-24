@@ -631,7 +631,7 @@ Continue the demo highlighting the following.
 
   ![fetch-yearly-closing-prices](Images/fetch-yearly-closing-prices.png)
 
-* Note that the DataFrame created by the Alpaca API is multi-indexed, to pick the `FB` and `TWTR` closing prices from the `df_portfolio_year` DataFrame we used column keys.
+* Note that the DataFrame created by the Alpaca API is multi-indexed. To pick the `FB` and `TWTR` closing prices from the `df_portfolio_year` DataFrame we use column keys.
 
 * Finally, we compute the daily returns using the Pandas `pct_change()` function and plot the results.
 
