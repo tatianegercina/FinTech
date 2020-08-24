@@ -415,19 +415,15 @@ Have the TAs circulate through the class and clarify definitions for students th
 
 * [README.md](Activities/03-Stu_Basic_Terminology/README.md)
 
+---
+
 ### 10. Instructor Do: Basic Terminology Review (10 min)
 
 Students will learn basic, common terminology that will enable them to navigate the blockchain space.
 
-* **Files:**
-
-  * [Lesson Slides](https://docs.google.com/presentation/d/1syUXqizy8YoZuYVrYmJwDFv1TADW5IqXX0a_Itkvh_w/edit?usp=sharing)
-
 Navigate to the slides and define common terms:
 
 #### Hash
-
-![screenshot of hash](https://image.shutterstock.com/image-photo/man-turning-cryptography-switch-change-600w-1038745234.jpg)
 
 * Explain that a "hash" is a unique fingerprint of a piece of data.
 
@@ -440,8 +436,6 @@ Navigate to the slides and define common terms:
 * If you were to change a single bit of the input, you would get a completely different hash. This allows for something called "data integrity" which is a very important part of the internet and data security as well as blockchain technology.
 
 #### Digital Signature
-
-![screenshot of signature](https://image.shutterstock.com/image-vector/businessman-hands-signing-digital-signature-600w-351292748.jpg)
 
 * Digital signatures are used to prove ownership or authenticity of data mathematically.
 
@@ -457,8 +451,6 @@ Ask the students, "If a signed message is modified, what happens?"
 
 #### Crypto Wallet
 
-![screenshot of wallet](https://image.shutterstock.com/image-illustration/digital-wallet-concept-3d-rendering-600w-487340401.jpg)
-
 * A digital wallet is simply a set of "keys" to your funds that are on the blockchain.
 
 * This means that with a wallet, you can create and send transactions, as well as view your balance.
@@ -467,17 +459,15 @@ Ask the students, "If a signed message is modified, what happens?"
 
 * A digital wallet is much like the debit cards in your wallet, and you use them to access funds in your account. Only in this case, the card is now a key, and the bank is now the blockchain.
 
-At this point, students should be curious about what a transaction is in the context of blockchain, continue with the slides, and highlight the following:
+#### Transaction
 
-![screenshot of transaction](https://image.shutterstock.com/image-photo/finger-pressing-block-chain-text-600w-1026226699.jpg)
+At this point, students should be curious about what a transaction is in the context of blockchain, continue with the slides, and highlight the following:
 
 * A transaction is simply a signed message that authorizes a movement of funds between two parties.
 
 * It is essentially "I sign off on the movement of X amount of value from account A to account B" -- now that it is signed off, nobody can modify it.
 
 #### Blockchain Node
-
-![screenshot of node](https://image.shutterstock.com/image-vector/abstract-scheme-modern-computer-network-600w-155306969.jpg)
 
 * A full node keeps a copy of the blockchain. It verifies the signature of every transaction and throws out any that do not validate.
 
@@ -486,8 +476,6 @@ At this point, students should be curious about what a transaction is in the con
 * Nodes are enforcing **all** of the rules of the blockchain. Thus they are a very important part of the security of the network.
 
 #### Miner or Block Producer
-
-![screenshot of miner](https://image.shutterstock.com/image-illustration/design-element-3d-illustration-rendering-600w-1167357031.jpg)
 
 * A miner/block producer is a special type of node that is working to solve computations to finalize transactions.
 
