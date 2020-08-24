@@ -447,7 +447,7 @@ Navigate to the "Introduction to Alpaca" section of the lesson slides, and intro
 
 * SDKs provide out-of-the-box functions that can be used with the API so that developers do not have to worry about reinventing the wheel. [Alpaca](https://alpaca.markets/) exemplifies a great API that eases the work through its SDK.
 
-* Alpaca is a trading API that encapsulates the banking, security, and regulatory complexity, allowing FinTech startups to build brokerage apps on top for free quickly.
+* Alpaca is a trading API that encapsulates banking, security, and regulatory complexity, allowing FinTech startups to build brokerage apps on top for free quickly.
 
 * In addition to its trading capabilities, Alpaca is an example of a financial API that you can use, as a FinTech professional, to fetch current stock market data free of charge from five different exchanges (IEX, NYSE National, NYSE Chicago, Nasdaq BX, and Nasdaq PSX). Today, you will learn how to use Alpaca to retrieve stock data that can be used to develop financial applications.
 
