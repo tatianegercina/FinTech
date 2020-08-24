@@ -134,6 +134,8 @@ Try adjusting the portfolio to either include more risk (a higher stock than bon
 
 * Remember to add the `.env` files to the `.gitignore` configuration to avoid exposing your API keys in your GitHub repository.
 
+* A `.gitignore` file contains file names and extensions of files that you don't want to pushed to your repository. For more information on how a `gitignore` works, you can read the documentation [here](https://docs.github.com/en/github/using-git/ignoring-files).
+
 ---
 
 ### Submission
