@@ -32,7 +32,7 @@ Using the starter code complete the following steps.
 
     * Set the `num_trading_days` parameter to `252*5` to simulate `5` years of trading days.
 
-8. Run the Monte Carlo simulation and visualize the results of the simulation using `MCSimulation` built-in methods.
+8. Run the Monte Carlo simulation and visualize the results of the simulation using `MCSimulation` built-in methods (`plot_simulation()`, `plot_distribution()` and `summarize_cumulative_return()`).
 
 9. Using the `95%` confidence interval and your initial investment of $15,000, determine the lower limit and upper limit of your expected portfolio value after `5` years of growth.
 
