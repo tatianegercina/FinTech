@@ -231,13 +231,13 @@ Answer any questions before moving on.
 
 ---
 
-### 6. Instructor Do: The 5 Pillars of Open Blockchains (10 min)
+### 6. Instructor Do: The Five Pillars of Open Blockchains (10 min)
 
 For this activity, the instructor will lead a formal lecture regarding what the five pillars of open blockchains are and why they are relevant.
 
-See the [blockchain support document](../Instructor_Support/Blockchain.md) for a background video on this topic.
+See the [blockchain support document](../Instructional_Support/Blockchain.md) for a background video on this topic.
 
-Start this activity by explaining the following to students:
+Open the lesson slides, move to "The Five Pillars of Open Blockchains" Section, and start this activity by explaining the following to students:
 
 * As we talk through each pillar, keep in mind what you uncovered during the previous exercise. What feature would you put in each category?
 
@@ -251,8 +251,6 @@ Begin by prefacing that each of these pillars ties into each other to build an o
 
 #### Pillar 1: Open
 
-![screenshot of open slide](https://image.shutterstock.com/image-photo/open-blue-door-sunshine-600w-624832211.jpg)
-
 * Openness in this context refers to access:
 
   * Anyone can access the source code and create a project from it, therefore developer access is high.
@@ -264,8 +262,6 @@ Begin by prefacing that each of these pillars ties into each other to build an o
 * Openness means that the system is designed to incentivize users to keep it open. The internet is an example of this, and it is built on open protocols that anyone can learn and contribute to.
 
 #### Pillar 2: Borderless
-
-![screenshot of borderless](https://image.shutterstock.com/image-photo/abstract-science-global-network-connection-600w-1147048595.jpg)
 
 * Explain to the students that borderless means precisely that, a network without geographical or political borders.
 
@@ -291,8 +287,6 @@ Elaborate and bring out this analogy:
 
 #### Pillar 3: Neutral
 
-![screenshot of neutral](https://image.shutterstock.com/image-illustration/net-neutrality-abstract-background-260nw-1049711261.jpg)
-
 * Explain how neutral means that the protocol does not discriminate against any user.
 
 * In fact, users don't even need to be human. The blockchain does not care if you are a human or a washing machine.
@@ -305,8 +299,6 @@ Elaborate and bring out this analogy:
 
 #### Pillar 4: Censor Resistant
 
-![screenshot of censor resistant](https://image.shutterstock.com/image-illustration/closeup-surprised-desperate-looking-man-600w-1399238933.jpg)
-
 * Blockchains that are properly decentralized are highly resistant to censorship and authoritarian control.
 
 * This means that people suffering in nations that have high censorship can still find a way to use these systems to reach out and to bypass the oppression.
@@ -318,8 +310,6 @@ Elaborate and bring out this analogy:
 * Money is often compared to a form of speech. These are systems where this form of expression cannot be censored.
 
 #### Pillar 5: Public
-
-![screenshot of public](https://image.shutterstock.com/image-illustration/two-way-street-signs-words-260nw-156089513.jpg)
 
 * Explain that this means that open blockchains are separate from the state. Public blockchain networks are suited for public affairs.
 
