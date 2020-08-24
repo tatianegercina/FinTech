@@ -2,7 +2,22 @@
 
 This guide serves as a step by step process for setting up and validating the `Alpaca Markets trade API` Python SDK. Without this library, class activities and code will not be able to extract historical stock data and therefore, will not be able to be completed.
 
+
+All packages should be installed into the `alpacaenv` virtual environment.  If you have not already created an `alpacaenv` virtual environment you can do so by typing the following commands in your terminal:
+
+  ```shell
+  conda create -n alpacaenv python=3.7 anaconda
+  ```
+
 ## Install
+
+Open a terminal, and execute the following commands to install the necessary packages.
+
+* Activate your `alpacaenv` virtual environment.
+
+  ```shell
+  conda activate alpacaenv
+  ```
 
 In order for the `alpaca-trade-api` package to install and run properly, all of the dependencies must be satisfied. The dependencies list can be found below for reference.
 
