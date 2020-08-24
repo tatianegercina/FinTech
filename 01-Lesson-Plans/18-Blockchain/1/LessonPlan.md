@@ -717,7 +717,7 @@ wallet.send_transaction(amount, recipient)
 
 Comment to students that, despite this is pseudocode, it should get the point across. Continue through the lesson slides and highlight the following.
 
-* Ethereum secures over $20 billion US Dollars in assets without a central authority. It powers a huge ecosystem of decentralized applications and financial ecosystems.
+* Ethereum secures over $20 billion Dollars in assets without a central authority. It powers a huge ecosystem of decentralized applications and financial ecosystems.
 
 * First generation blockchains were much like the days of carrying a cell phone, iPod, and calculator with you. Each solved a specific problem.
 
@@ -759,7 +759,7 @@ Now, transition to talk about the types of financial services that you can build
 
 * Decentralized crypto exchange - Using the blockchain as a backend to support a crypto-trading exchange.
 
-* Tokenizing assets - Representing things from the US Dollar, Gold, Securities, to unique video game assets an on the blockchain.
+* Tokenizing assets - Representing things from Dollars, Gold, Securities, to unique video game assets an on the blockchain.
 
 Answer any questions before moving on.
 
