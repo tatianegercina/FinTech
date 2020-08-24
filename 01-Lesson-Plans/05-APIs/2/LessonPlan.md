@@ -72,9 +72,9 @@ Welcome students to the second day of APIs, open the lesson slides and move to "
 
 * Because APIs often offer practical services, they may require subscriptions or payment. Companies use API keys and user accounts to ensure billing and secure transmission of financial and other confidential information.
 
-* You will hands-on experience on using Quandl (to fetch historical stock data) and Alpaca (a trading API)
+* You will gain hands-on experience on using Quandl (to fetch historical stock data) and Alpaca (a trading API)
 
-Recall students that they will need their API keys for Today's activities.
+Recall to students that they will need their API keys for today's activities.
 
 Answer any questions before moving on.
 
@@ -124,7 +124,7 @@ End the activity by asking the students if they have any further questions.
 
 ### 3. Instructor Do: Keys to the FinTech Kingdom (5 min)
 
-Over the next couple of activities, students will be working with APIs that require keys for access. Use this time to engage them with API keys facilitated review discussion.
+Over the next couple of activities, students will be working with APIs that require keys for access. Use this time to engage them with an API keys facilitated review discussion.
 
 Engage the students with the following review questions:
 
@@ -218,7 +218,7 @@ In this activity, students will learn how to call API keys as environment variab
 
 * [env_variables.ipynb](Activities/02-Ins_Call_Env_Variables/Solved/env_variables.ipynb)
 
-Recall students to the concept of environment variables by asking the following question:
+Recall to students the concept of environment variables by asking the following question:
 
 * Imagine you signed up for 10 APIs, and each API gave you a key. It'd be challenging to commit each key to memory, so you need to find some way to save the keys. What are some possible approaches?
 
@@ -259,7 +259,7 @@ Open the solved version of the Jupyter notebook. Next, run the code on every cel
   load_dotenv()
   ```
 
-* Keep in mind unless a file location `string` is passed `load_dotenv` will look for a `.env` in the root directory from which your Python code is executing.
+* Keep in mind, unless a file location `string` is passed, `load_dotenv` will look for a `.env` in the root directory from which your Python code is executing.
 
 * Once an environment variable is declared, it can be called using the `os.getenv` function. The input to the `os.getenv` function is the name of the environment variable. The output should then be stored as a Python variable to be used at a later time.
 
@@ -362,7 +362,7 @@ Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ip
   type(api_key)
   ```
 
-* Once stored as a Python variable, the environment variable value can be used for processing. In this case, the `QUANDL_API_KEY` is stored as Python variable `api_key` and then concatenated with the request URL. The concatenated request URL will then be used to submit a request to the Quandl API.
+* Once stored as a Python variable, the environment variable value can be used for processing. In this case, the `QUANDL_API_KEY` is stored as the Python variable `api_key` and then concatenated with the request URL. The concatenated request URL will then be used to submit a request to the Quandl API.
 
   ```python
   request_url = "https://www.quandl.com/api/v3/datasets/WIKI/MSFT.json?api_key="
@@ -373,7 +373,7 @@ Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ip
 
 If time remains, ask two final, guided questions:
 
-* If a user were to export environment variable `QUANDL_API_KEY` using a terminal but then launched Jupyter Lab in a different terminal window, would Jupyter Lab be able to retrieve the environment variable?
+* If a user were to export the environment variable `QUANDL_API_KEY` using a terminal but then launched Jupyter Lab in a different terminal window, would Jupyter Lab be able to retrieve the environment variable?
 
   **Answer:** No. Environment variables are sourced to current and child processes. Because a new terminal window is used to launch Jupyter Lab, the environment variable `QUANDL_API_KEY` will be out of scope.
 
@@ -419,7 +419,7 @@ Navigate to the 5.2 slides for SDKs, and initiate a facilitated discussion by hi
   quandl.get("WIKI/AMD", rows=5)
   ```
 
-Explain to students that in the code above, they can note that using an SDK looks more straightforward and cleaner. Still, also, it's more secure since SDKs add an additional layer of security by avoiding passing sensitive parameters, like API keys, as plain text in a request URL.
+Explain to students that in the code above, they can note that using an SDK looks more straightforward and cleaner. Also, it's more secure since SDKs add an additional layer of security by avoiding passing sensitive parameters, like API keys, as plain text in a request URL.
 
 Ask students the following guided question:
 
@@ -433,7 +433,7 @@ Ask students the following guided question:
 
   **Answer:** A FinTech SDK might provide a function that calculates Sharpe ratios, which means users would not need to create this functionality themselves; they'd be able to use the SDK to extract historical stock data AND calculate Sharpe ratios. The requests library would only support data extraction.
 
-Explain to students that in the FinTech industry, they will face APIs that provide SDKs and some others that not. That's why they need to understand how to access an API via a request URL using the Python requests library, and how to install and operate an SDK.
+Explain to students that in the FinTech industry, they will face APIs that provide SDKs and others that do not. That's why they need to understand how to access an API via a request URL using the Python requests library, and how to install and operate an SDK.
 
 Ask students if there are any questions before moving on.
 
@@ -443,7 +443,7 @@ Ask students if there are any questions before moving on.
 
 Navigate to the "Introduction to Alpaca" section of the lesson slides, and introduce the Alpaca by highlighting how it is disrupting the FinTech data industry:
 
-* According to a [Forbes article from December 2019](https://www.forbes.com/sites/bernardmarr/2020/12/30/the-top-5-fintech-trends-everyone-should-be-watching-in-2020/#5ce0c02b4846), FinTech is transforming into a new data industry that focuses on and specializes in the democratization of financial services. This is mainly due to startups like **Alpaca**, are seeking to enrich and empower consumers through financial data and technology.
+* According to a [Forbes article from December 2019](https://www.forbes.com/sites/bernardmarr/2020/12/30/the-top-5-fintech-trends-everyone-should-be-watching-in-2020/#5ce0c02b4846), FinTech is transforming into a new data industry that focuses on and specializes in the democratization of financial services. This is mainly due to startups like **Alpaca**, that are seeking to enrich and empower consumers through financial data and technology.
 
 * SDKs provide out-of-the-box functions that can be used with the API so that developers do not have to worry about reinventing the wheel. [Alpaca](https://alpaca.markets/) exemplifies a great API that eases the work through its SDK.
 
@@ -455,15 +455,15 @@ Recall to students that to access the Alpaca API, they need to install the `alpa
 
 Take a couple of minutes to verify if everyone in the class is ready with the Alpaca SDK installed and the Alpaca keys on-hand. Ask your TAs to kindly assist any student who may not be prepared to continue, in the meantime, open the Alpaca website and highlight the following.
 
-* To start using Alpaca, you need to sing up to have access to your Alpaca keys.
+* To start using Alpaca, you need to sign up to have access to your Alpaca keys.
 
-* Once you are already signed up, you can log in to the Alpaca dashboard to fetch your keys.
+* Once you are signed up, you can log in to the Alpaca dashboard to fetch your keys.
 
-Continue by login into the Alpaca dashboard using your personal account.
+Continue by logging into the Alpaca dashboard using your personal account.
 
 ![alpaca-login](Images/alpaca-login.gif)
 
-After logging into your Alpaca dashboard, explain to students that they will find a section named "Your API Keys" where they view their keys by clicking on the "View" button.
+After logging into your Alpaca dashboard, explain to students that they will find a section named "Your API Keys" where they can view their keys by clicking on the "View" button.
 
 ![alpaca-keys-section](Images/alpaca-keys-section.png)
 
@@ -475,7 +475,7 @@ The secret key will disappear when they log out or navigate to a different page 
 
 ![alpaca-keys-regeneration](Images/alpaca-keys-regeneration.gif)
 
-Ask any question students may have, and be sure that all the students have created their keys and installed the Alpaca SDK before continue to the next activity.
+Answer any questions students may have, and be sure that all the students have created their keys and installed the Alpaca SDK before continuing to the next activity.
 
 ---
 
@@ -485,19 +485,19 @@ Ask any question students may have, and be sure that all the students have creat
 
 In this activity, students will receive an instructor-led demo of the Alpaca SDK. The instructor will demonstrate to students how to connect to the Alpaca paper account from a Python environment.
 
-Have the `.env` file prepared with you Alpaca API Keys before class so that it does not need to be created during the activity.
+Have the `.env` file prepared with your Alpaca API Keys before class so that it does not need to be created during the activity.
 
 **Files:**
 
 * [alpaca-demo.ipynb](Activities/04-Ins_Alpaca_Demo/Solved/alpaca-demo.ipynb)
 
-Emphasize to students that one of the cool things about Alpaca is that it provides developers with a paper trading account for users to get started running. The paper account provides a real-time simulation environment where they can test their code using free, real-time market data.
+Emphasize to students that one of the cool things about Alpaca is that it provides developers with a paper trading account for users to get started. The paper account provides a real-time simulation environment where they can test their code using free, real-time market data.
 
-Explain to students that the paper account is excellent because it gives developers a space to play with Alpaca without having to incur on charges. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
+Explain to students that the paper account is excellent because it gives developers a space to play with Alpaca without having to incur charges. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
 
 Open the unsolved version of the Jupyter notebook and live code the demo. Continue by leading students on the environment preparation by highlighting the following:
 
-* To start using the Alpaca SDK, you need to import the `tradeapi` class from the `alpaca_trade_api` library and some other well-known libraries we already used.
+* To start using the Alpaca SDK, you need to import the `tradeapi` class from the `alpaca_trade_api` library and some other well-known libraries we have already used.
 
   ```python
   # Initial imports
@@ -510,7 +510,7 @@ Open the unsolved version of the Jupyter notebook and live code the demo. Contin
   %matplotlib inline
   ```
 
-* Since we are going to make an authenticated connection to the Alpaca API through its SDK, we need to store our Alpaca API and secret keys into out `.env` files and named them as `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` respectively.
+* Since we are going to make an authenticated connection to the Alpaca API through its SDK, we need to store our Alpaca API and secret keys into our `.env` file and name them as `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` respectively.
 
 * After importing the required Python libraries, we have to load the environment variables using the `load_dotenv()` function and store the Alpaca keys as Python variables.
 
@@ -535,14 +535,14 @@ Open the unsolved version of the Jupyter notebook and live code the demo. Contin
       api_version="v2")
   ```
 
-* Now, let's fetch the current closing price of Facebook (`FB`) and Twitter (`TWTR`), two technology stocks that may be interesting to invest in. First, we need to set a variable with the current date into the ISO format.
+* Now, let's fetch the current closing price of Facebook (`FB`) and Twitter (`TWTR`), two technology stocks that may be interesting to invest in. First, we need to set a variable with the current date in the ISO format.
 
   ```python
   # Format current date as ISO format
   today = pd.Timestamp("2020-07-14", tz="America/New_York").isoformat()
   ```
 
-* To define the current date an ISO format date, we use the `TimeStamp` function from Pandas to transform the current date that is passed as a string argument using the `YEAR-MONTH-DAY` format. Next, we link the `isoformat()` function to format the date following the ISO standard.
+* To define the current date as an ISO format date, we use the `TimeStamp` function from Pandas to transform the current date that is passed as a string argument using the `YEAR-MONTH-DAY` format. Next, we link the `isoformat()` function to format the date following the ISO standard.
 
 **Note:** While you follow this example, you may want to change the date to today.
 
@@ -560,7 +560,7 @@ Open the unsolved version of the Jupyter notebook and live code the demo. Contin
   timeframe = "1D"
   ```
 
-* We are all set! Let's fetch the current closing prices for `FB` and `TWTR` using the `alpaca.get_barset()` function. Alpaca Python SDK automatically converts the result JSON response to a Pandas DataFrame if you use the `df` property.
+* We are all set! Let's fetch the current closing prices for `FB` and `TWTR` using the `alpaca.get_barset()` function. Alpaca Python SDK automatically converts the resulting JSON response to a Pandas DataFrame if you use the `df` property.
 
   ```python
   # Get current closing prices for FB and TWTR
@@ -587,7 +587,7 @@ Slack out the following links and encourage students to learn more about the det
 
 Continue the demo highlighting the following.
 
-* Note in the previous code, that to retrieve the current closing price of `FB` and `TWTR`, we set the `start` and `end` day as today's date. Suppose you want to analyze the daily returns of these tech companies to start assessing if they are a good investment option, and you want to retrieve the closing prices from the last year. As you may guess, it's as simple as setting the `start` and `end` parameters to one year period.
+* Note in the previous code, that to retrieve the current closing price of `FB` and `TWTR`, we set the `start` and `end` day as today's date. Suppose you want to analyze the daily returns of these tech companies to start assessing if they are a good investment option, and you want to retrieve the closing prices from the last year. As you may guess, it's as simple as setting the `start` and `end` parameters to a one year period.
 
   ```python
   # Format start and end dates as ISO format for one year period
@@ -692,7 +692,7 @@ If time remains, ask the following questions:
 
   **Answer:** String
 
-* Why Alpaca may be considered a FinTech disrupter?
+* Why might Alpaca be considered a FinTech disrupter?
 
   **Answer:** Alpaca is changing the way developers and consumers can get access to FinTech data. Not only is Alpaca providing a technology platform to get access to FinTech data, but it is also providing analytic and insight products to make data-driven decisions.
 
@@ -714,7 +714,7 @@ Open the solved version of the Jupyter notebook and conduct a dry walkthrough re
 
 * As you have experienced in this activity, SDKs and APIs are great complements to your current Python skills.
 
-* Now you know how to retrieve financial data to boost your finance application and start creating analytical tools to understand financial data better.
+* Now you know how to retrieve financial data to boost your finance application and start creating analytical tools to better understand financial data.
 
 * To solve this activity, we start importing the required libraries.
 
