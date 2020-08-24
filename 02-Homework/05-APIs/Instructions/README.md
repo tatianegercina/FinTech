@@ -6,11 +6,11 @@
 
 You decided to start a FinTech consultancy firm, and you want to make the difference by working on projects with high social impact in local communities. You just won your first contract to help one of the biggest credit unions in your area. They want to create a tool that helps their members enhance their financial health. The Chief Technology Officer (CTO) of the credit union, asked you to develop a prototype application to present a demo in the next credit union assembly.
 
-The credit union board wants to allow the union's members to assess their monthly personal finances, and also be able to forecast a reasonability good retirement plan based on cryptocurrencies, stocks, and bonds.
+The credit union board wants to allow the union's members to assess their monthly personal finances, and also be able to forecast a reasonably good retirement plan based on cryptocurrencies, stocks, and bonds.
 
 In this challenge, you will use all the skills you have learned until now, focusing on using APIs as part of the technical solution.
 
-You will create two financial analysis tools using Jupyter notebooks. The first will be a personal finance planner that will allow user to visualize their savings composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
+You will create two financial analysis tools using Jupyter notebooks. The first will be a personal finance planner that will allow users to visualize their savings composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
 
 The second tool will be a retirement planning tool that will use the Alpaca API to fetch historical closing prices for a retirement portfolio composed by stocks and bonds and then run Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to answer questions about the portfolio.
 
@@ -46,7 +46,7 @@ Assume the following amount of crypto assets: `1.2` BTC and `5.3` ETH.
 
 3. Parse the API JSON response to pick the crypto prices and store each price in a variable.
 
-    **Hint:** Be aware of the particular identifier for each cryptocurrency in the API JSON response, the bitcoin identifier is `1` whereas ethereum is `1027`.
+    **Hint:** Be aware of the particular identifier for each cryptocurrency in the API JSON response - the bitcoin identifier is `1` whereas ethereum is `1027`.
 
 4. Compute the value in US dollars of the current amount of cryptocurrencies and print the results.
 
