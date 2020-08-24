@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [Alpaca Installation Guide](../Supplemental/AlpacaMarkets_Installation-Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with Alpaca outside of class time.
+* Slack out the [Alpaca and Quandl Installation Guide](../Supplemental/AlpacaMarkets_Installation-Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with Alpaca outside of class time.
 
 * This class will focus on the fundamentals of APIs and the process of submitting APIs. This class is a great opportunity for students to be impressed and inspired by FinTech. There are a number of fun and creative FinTech APIs, such as Quandl and World of Bank, will be used to drive student engagement. This lesson is the perfect opportunity to get students excited about FinTech again!
 

@@ -15,7 +15,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [Alpaca Installation Guide](../Supplemental/AlpacaMarkets_Installation-Guide.md) and the [Postman Installation Guide](../Supplemental/PostmanInstallGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues outside of class time.
+* Slack out the [Alpaca and Quandl Installation Guide](../Supplemental/AlpacaMarkets_Installation-Guide.md) and the [Postman Installation Guide](../Supplemental/PostmanInstallGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues outside of class time.
 
 * Students should honestly evaluate their partners' performance as well as their own performance via the [grading rubric](Activities/02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xlsx).
 
