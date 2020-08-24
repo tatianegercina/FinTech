@@ -143,3 +143,6 @@ node_modules/
 
 # .Rhistory files
 .Rhistory
+
+# vscode files
+.vscode
