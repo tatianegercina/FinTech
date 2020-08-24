@@ -337,15 +337,15 @@ You will need to group students into at least three groups:
 
 * Group 1 - Money senders. This group will create and send transactions.
 
-* Group 2 - Record Keepers in the US. This group will be a geographical region of "nodes" in the US.
+* Group 2 - Record Keepers in Canada. This group will be a geographical region of "nodes" in Canada.
 
-* Group 3 - Record Keepers outside the US. This group will be a second geographical region of "nodes" in a different country than the US.
+* Group 3 - Record Keepers outside Canada. This group will be a second geographical region of "nodes" in a different country than Canada.
 
 To speed up this activity, organize the three groups before class and let students know which group they belong to by creating some slides or a document to show in the projector during the activity.
 
 You should create at least two slack channels for this activity, name the channels as follows:
 
-* RecordKeepersUS
+* RecordKeepersCanada
 
 * RecordKeepersChina (China is just an example, feel free to choose another country)
 
