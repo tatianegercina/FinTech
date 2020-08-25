@@ -23,7 +23,7 @@ miles_per_gallon = total_miles / gallons_gas
 
 # Updating variables using assignment
 miles = 48
-kilometers = 0.621371 * miles
+kilometers = miles / 0.621371
 
 # Substituting/formatting variable
 message = f"The total kilometers driven was: {kilometers}"
