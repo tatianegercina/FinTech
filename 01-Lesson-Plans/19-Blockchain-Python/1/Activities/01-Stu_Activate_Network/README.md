@@ -46,7 +46,7 @@ Using this, you can build a cheatsheet to get your `geth` nodes up and running a
   * Enter your password if prompted.
   * It may be difficult to see the password prompt (as seen in the image below), however you must still input the password and hit enter for the chain to begin mining.
 
-  ![Password prompt](../../Images/password-prompt.png)
+  ![Password prompt](./Images/password-prompt.png)
 
 ## Hints
 
