@@ -26,12 +26,14 @@ for tip in cash_tips:
     total += tip
     count += 1
 
-    # Logic to determine minimum and maximum values
+    # Logic to determine minimum values
     if minimum == 0:
         minimum = tip
     elif tip < minimum:
         minimum = tip
-    elif tip > maximum:
+        
+    # Logic to determine maximum values        
+    if tip > maximum:
         maximum = tip
 
 # Calculate the average
