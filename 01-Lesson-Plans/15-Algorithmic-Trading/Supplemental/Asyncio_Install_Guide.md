@@ -10,7 +10,7 @@ All packages should be installed into the `algotrading` virtual environment.  If
 
 ## Installation
 
-In this unit, you will create some plots using `pyviz`, so if you are creating a new virtual environment, be sure to follow the [Unit 6 install guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md) to install all the `pyviz` dependencies together with the libraries for this unit.
+In this unit, you will create some plots using `hvplot`. Also, you will use environment variables, so if you are creating a new virtual environment, be sure to follow all the steps to install all the libraries required for this unit.
 
 Open a terminal, and execute the following commands to install `python-dotenv` and `asyncio` respectively.
 
@@ -32,9 +32,27 @@ Open a terminal, and execute the following commands to install `python-dotenv` a
   pip install asyncio
   ```
 
+* Before install the `hvplot` library, you need to install the `nodejs` package. Use the `conda install` command as follows.
+
+  ```shell
+  conda install -c conda-forge/label/main nodejs
+  ```
+
+* Use the `conda install` command to download the `hvplot` package.
+
+  ```shell
+  conda install -c pyviz hvplot
+  ```
+
+* Finally, install the PyViz JupyterLab extension to visualize `hvplot` charts in Jupyter lab.
+
+  ```shell
+  jupyter labextension install @pyviz/jupyterlab_pyviz
+  ```
+
 ## Verify Installation
 
-Once the `python-dotenv` and `asyncio` modules are downloaded and installed, verify that both installations completed successfully.
+Once the libraries and packages are downloaded and installed, verify that all installations completed successfully.
 
 * Use the `pip list` function with a `grep` argument to identify if the `asyncio` and `python-dotenv` libraries installed successfully.
 
@@ -45,6 +63,17 @@ Once the `python-dotenv` and `asyncio` modules are downloaded and installed, ver
   ```text
   asyncio                            3.4.3
   python-dotenv                      0.14.0
+  ```
+
+* Use the `conda list` function to identify if the `hvplot` package installed successfully.
+
+  ```shell
+  conda list hvplot
+  ```
+
+  ```text
+  # Name                    Version                     Build  Channel
+    hvplot                    0.6.0                      py_0    pyviz
   ```
 
 ## Troubleshooting
@@ -67,7 +96,7 @@ An out-of-date Anaconda environment can create issues when trying to install new
     conda update conda
     ```
 
-3. Create a fresh conda environment to use with `python-dotenv`, `asyncio`, and `streamz`.
+3. Create a fresh conda environment.
 
     ```shell
     conda create -n algotrading python=3.7 anaconda
@@ -87,6 +116,24 @@ An out-of-date Anaconda environment can create issues when trying to install new
 
     ```shell
     pip install asyncio
+    ```
+
+6. Install the `nodejs` package
+
+    ```shell
+    conda install -c conda-forge/label/main nodejs
+    ```
+
+7. Install the `hvplot` package.
+
+    ```shell
+    conda install -c pyviz hvplot
+    ```
+
+8. Finally, install the PyViz JupyterLab extension.
+
+    ```shell
+    jupyter labextension install @pyviz/jupyterlab_pyviz
     ```
 
 ---
