@@ -62,6 +62,7 @@ Sign in into your AWS Management Console and [create a new custom Amazon Lex bot
 * **Session timeout:** 5 minutes
 * **Sentiment analysis:** No
 * **COPPA**: No
+* *Leave default values for all other options.*
 
 Create the `RecommendPortfolio` intent, and configure some sample utterances as follows (you can add more utterances as you wish):
 
@@ -83,13 +84,24 @@ Move to the *Confirmation Prompt* section, and set the following messages:
 
 | Name             | Slot Type            | Prompt                                                                    |
 | ---------------- | -------------------- | ------------------------------------------------------------------------- |
-| firstName        | AMAZON.US_FIRST_NAME | Thank you for trusting on me to help, could you please give me your name? |
+| firstName        | AMAZON.US_FIRST_NAME | Thank you for trusting me to help, could you please give me your name? |
 | age              | AMAZON.NUMBER        | How old are you?                                                          |
 | investmentAmount | AMAZON.NUMBER        | How much do you want to invest?                                           |
 
 The `riskLevel` custom slot will be used to retrieve the risk level the user is willing to take on the investment portfolio. Create this custom slot as follows:
 
-* **Name:** riskLevel
+* Select the `+` icon next to 'Slot Types' in the 'Editor' on the left side of the screen.
+* Choose `create custom slot` from the resulting display window.
+* For **Slot type name**, type: riskLevel
+* Select the radial dial button next to **Restrict to Slot values and synonyms**, then fill in the appropriate values and synonums. *Example*: Low, Minimal; High, Maximum.
+* Click `Add slot to intent` when finished.
+
+To format the response cards for the intent, click on the gear icon next to the intent as seen in the image below:
+
+![gear_icon](Images/gear_icon.png)
+
+Next, input the following data in the resulting display window:
+
 * **Prompt:** What level of investment risk would you like to take?
 * **Maximum number of retries:** 2
 * **Prompt response cards:** 4
