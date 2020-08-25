@@ -66,7 +66,7 @@ Welcome students to the third day of the introduction to the blockchain technolo
 
 * Make transactions in our very own blockchain.
 
-Continue by refreshing students a bit on the data structure of a blockchain. Ask the students the following questions:
+Move to the "Blockchain Skill Check" section, continue by refreshing students a bit on the data structure of a blockchain. Ask the students the following questions:
 
 * What does the "chain" in blockchain refer to?
 
