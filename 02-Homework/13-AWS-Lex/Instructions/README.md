@@ -27,7 +27,7 @@ It is time to take what you have learned about unsupervised learning and the AWS
 
 You were hired as a digital transformation consultant by one of the most prominent retirement plan providers in the country; they want to increase their client portfolio, especially by engaging young people. Since machine learning and NLP are disrupting finance to improve customer experience, you decide to create a robo advisor that could be used by customers or potential new customers to get investment portfolio recommendations for retirement.
 
-In this homework assignment, you will combine your new skills with Amazon Web Services with your already mastered Python superpowers, to create a bot that will recommend an investment portfolio for a retirement plan.
+In this homework assignment, you will combine your new Amazon Web Services skills with your already mastered Python superpowers, to create a bot that will recommend an investment portfolio for a retirement plan.
 
 You are asked to accomplish the following main tasks:
 
@@ -63,7 +63,7 @@ Sign in into your AWS Management Console and [create a new custom Amazon Lex bot
 * **Sentiment analysis:** No
 * **COPPA**: No
 
-Create the `RecommendPortfolio` intent, and configure some sample utterances as follows (you can add more utterances at your own criteria):
+Create the `RecommendPortfolio` intent, and configure some sample utterances as follows (you can add more utterances as you wish):
 
 * I want to save money for my retirement
 * I'm ​`{age}​` and I would like to invest for my retirement
@@ -78,7 +78,7 @@ Move to the *Confirmation Prompt* section, and set the following messages:
 * **Confirm:** Thanks, now I will look for the best investment portfolio for you.
 * **Cancel:** I will be pleased to assist you in the future.
 
-On this bot you will use four slots, three using built-in types and one custom slot named `riskLevel`. Define the three initial slots as follows:
+ This bot will utilize use four slots, three using built-in types and one custom slot named `riskLevel`. Define the three initial slots as follows:
 
 
 | Name             | Slot Type            | Prompt                                                                    |
@@ -87,7 +87,7 @@ On this bot you will use four slots, three using built-in types and one custom s
 | age              | AMAZON.NUMBER        | How old are you?                                                          |
 | investmentAmount | AMAZON.NUMBER        | How much do you want to invest?                                           |
 
-The `riskLevel` custom slot will be used to retrieve the risk level the user is willing to take on the investment portfolio; create this custom slot as follows:
+The `riskLevel` custom slot will be used to retrieve the risk level the user is willing to take on the investment portfolio. Create this custom slot as follows:
 
 * **Name:** riskLevel
 * **Prompt:** What level of investment risk would you like to take?
@@ -112,7 +112,7 @@ Leave the error handling configuration for the `RecommendPortfolio` bot with the
 
 #### Build and Test the Robo Advisor
 
-In this section, you will test your Robo Advisor. Build the bot and test it on the chatbot window. You should see a conversation like the one below.
+In this section, you will test your Robo Advisor. To build your bot, click on the `Build` button in the upper right hand corner. Once the build is complete, test it in the chatbot window. You should see a conversation like the one below.
 
 ![Robo Advisor test](Images/bot-test-no-lambda.gif)
 
@@ -173,9 +173,9 @@ _[Cryptocurrencies coins by Worldspectrum](https://www.pexels.com/@worldspectrum
 
 ### Background
 
-You are a Senior Manager at the Advisory Services team on a [Big Four firm](https://en.wikipedia.org/wiki/Big_Four_accounting_firms), one of your most important clients, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers, however, they are lost in the immense universe of cryptocurrencies, they ask you to present a report of what cryptocurrencies are on the trading market and how cryptocurrencies could be grouped towards creating a classification for developing this new investment product.
+You are a Senior Manager at the Advisory Services team on a [Big Four firm](https://en.wikipedia.org/wiki/Big_Four_accounting_firms). One of your most important clients, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers, however, they are lost in the immense universe of cryptocurrencies. They ask you to help them make sense of it all by generating a report of what cryptocurrencies are available on the trading market and how they can be grouped using classification.  
 
-In this homework assignment, you have the opportunity to put in action your new unsupervised learning and Amazon SageMaker skills to cluster cryptocurrencies and create some plots to present your results.
+In this homework assignment, you will put your new unsupervivsed learning and Amazon SageMaker skills into action by clustering cryptocurrencies and creating plots to present your results.
 
 You are asked to accomplish the following main tasks:
 
@@ -187,7 +187,7 @@ You are asked to accomplish the following main tasks:
 
 * **[Visualizing Results](#Visualizing-Results):** Create some plots and data tables to present your results.
 
-* **[Challenge](#Challenge):** Deploy your notebook to Amazon SageMaker.
+* **[Challenge](#Optional-Challenge):** Deploy your notebook to Amazon SageMaker.
 
 ---
 
@@ -215,7 +215,7 @@ Start by loading the data in a Pandas DataFrame named `crypto_df`, and continue 
 
 7. Remove all cryptocurrencies without coins mined.
 
-9. Store the names of all cryptocurrencies on a DataFramed named `coins_name`, use the `crypto_df.index` as the index for this new DataFrame.
+9. Store the names of all cryptocurrencies in a DataFrame named `coins_name`, use the `crypto_df.index` as the index for this new DataFrame.
 
 10. Remove the `CoinName` column.
 
@@ -229,7 +229,7 @@ Use the [`PCA` algorithm from `sklearn`](https://scikit-learn.org/stable/modules
 
 Once you have reduced the data dimensions, create a DataFrame named `pcs_df` using as columns names `"PC 1", "PC 2"` and `"PC 3"`;  use the `crypto_df.index` as the index for this new DataFrame.
 
-You should have a DataFrame like the following.
+You should have a DataFrame like the following:
 
 ![pcs_df](Images/pcs_df.png)
 
@@ -239,7 +239,7 @@ In this section, you will use the [`KMeans` algorithm from `sklearn`](https://sc
 
 Perform the following tasks:
 
-1. Create an Elbow Curve to find the best value for `k`, use the `pcs_df` DataFrame.
+1. Create an Elbow Curve to find the best value for `k` using the `pcs_df` DataFrame.
 
 2. Once you define the best value for `k`, run the `Kmeans` algorithm to predict the `k` clusters for the cryptocurrencies data. Use the `pcs_df` to run the `KMeans` algorithm.
 
@@ -261,7 +261,7 @@ In this section, you will create some data visualization to present the final re
 
 For the challenge section, you have to upload your Jupyter notebook to Amazon SageMaker and deploy it.
 
-The `hvplot` and Plotly Express libraries are not included in the built-in anaconda environments, despite you can install external libraries on Amazon SageMaker, there is not still full support for these libraries; so, for this challenge section, you should use the `altair` library instead.
+The `hvplot` and Plotly Express libraries are not included in the built-in anaconda environments, so for this challenge section, you should use the `altair` library instead.
 
 Perform the following tasks:
 
