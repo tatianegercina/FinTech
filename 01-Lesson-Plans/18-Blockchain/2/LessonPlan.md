@@ -549,7 +549,7 @@ Illustrate the following example to the class:
 
 * If the function succeeds, then you know that the signature was actually signed by Joe and was not modified.
 
-* In this case, Joe uses his private key to "sign" his identity, and the world can use his public key to verify the signature came from him.
+* In this case, Joe uses his private key to "sign" his identity, and Anita can use her public key to verify the signature came from him.
 
 Pick another volunteer student to help assist with the following demo.
 
