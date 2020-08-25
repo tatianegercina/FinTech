@@ -68,11 +68,11 @@ Ask the students to refresh their definitions:
 
 * What is a hash?
 
-  **Answer**: A one-way function that produces a digital fingerprint of data.
+  **Answer:** A one-way function that produces a digital fingerprint of data.
 
 * What is a wallet?
 
-  **Answer**: A set of "keys" to your funds that are on the blockchain.
+  **Answer:** A set of "keys" to your funds that are on the blockchain.
 
 Explain that today, we will be learning the techniques that make these things possible.
 
@@ -80,7 +80,11 @@ Ask the students to raise their hand if they have heard of:
 
 * Encryption
 
+  **Answer:** It's a method that transforms information into secret a code that hides the information's true meaning.
+
 * Digital Signatures
+
+  **Answer:** Digital signatures are used to prove ownership or authenticity of data mathematically.
 
 Ask the students to offer some of their answers, then move on while telling them that we will be learning these very things.
 
