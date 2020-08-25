@@ -18,15 +18,15 @@ Get into small groups up to three people, or work with the same groups as before
 
 5. Identify the following fields in the transaction:
 
-  * Sender
+    * Sender
 
-  * Recipient
+    * Recipient
 
-  * Amount
+    * Amount
 
-  * Block number
+    * Block number
 
-  * Fees taken
+    * Fees taken
 
 6. Now, have another student volunteer their address to examine.
 
@@ -40,7 +40,7 @@ Get into small groups up to three people, or work with the same groups as before
 
 10. Who is the sender of these test tokens?
 
-11 Explore the sender. This should be an account that the testnet faucet is using to send test tokens from.
+11. Explore the sender. This should be an account that the testnet faucet is using to send test tokens from.
 
 12. What is the balance?
 
@@ -50,4 +50,4 @@ Get into small groups up to three people, or work with the same groups as before
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

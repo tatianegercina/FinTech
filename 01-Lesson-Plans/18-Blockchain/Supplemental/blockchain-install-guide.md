@@ -36,6 +36,20 @@ Running in OS X:
 
  ![OS X Warning](Images/mycrypto-mac-wanrning.png)
 
+### Allowing Permission to Open Apps from Unidentified Developers
+
+When an app is not registered with Apple, it can be automatically blocked by the Mac OS operating system when attempting to open the "unidentified" application. Therefore, in order to allow the use of the MyCrypto app, you may need to allow it as an exception to your Mac OS security preferences. To do so perform the following.
+
+1. Open the MyCrypto app, it should produce a warning error saying that you cannot open the application due to security reasons. Therefore, we'll need to make a security exception for it.
+
+2. Look to the top-left of the screen and click on the Apple Logo and navigate to System Preferences > Security & Privacy.
+
+    ![system-preferences](Images/system-preferences.png)
+
+3. Click in the General tab and allow your MyCrypto application security access to be opened in the "Allow Apps Downloaded From" section. Your screen should look similar to the image below.
+
+    ![catalina-allow-unidentified-app](Images/catalina-allow-unidentified-app.jpg)
+
 ## Installing Go Ethereum Tools
 
 [Go Ethereum](https://geth.ethereum.org/) is one of the three original implementations of the Ethereum protocol. It is written in Go, fully open-source and licensed under the GNU LGPL v3.
@@ -69,4 +83,5 @@ To install the Go Ethereum Tools, please follow the next steps:
 5. You have finished the installation process; you will use these tools to create your very own blockchain!
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -30,4 +30,4 @@ In this activity, you will be building a blockchain with fundamental data struct
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

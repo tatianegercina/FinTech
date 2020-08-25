@@ -26,4 +26,4 @@ In this activity, you will get with a group of three and review the pros and con
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

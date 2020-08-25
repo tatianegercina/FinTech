@@ -46,7 +46,7 @@ By the end of the class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 18.2 Slides](https://docs.google.com/presentation/d/1BoVhryoBLymyaMhnds0B77Mgydfa3yhOV-iX9xMT1EI/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 18.2 Slides](https://docs.google.com/presentation/d/1x3qam1C6gPqVhzZYSAAkTVH_O5tgCLC5DPjVXchC49s/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -68,11 +68,11 @@ Ask the students to refresh their definitions:
 
 * What is a hash?
 
-  **Answer**: A one-way function that produces a digital fingerprint of data.
+  **Answer:** A one-way function that produces a digital fingerprint of data.
 
 * What is a wallet?
 
-  **Answer**: A set of "keys" to your funds that are on the blockchain.
+  **Answer:** A set of "keys" to your funds that are on the blockchain.
 
 Explain that today, we will be learning the techniques that make these things possible.
 
@@ -80,7 +80,11 @@ Ask the students to raise their hand if they have heard of:
 
 * Encryption
 
+  **Answer:** It's a method that transforms information into secret a code that hides the information's true meaning.
+
 * Digital Signatures
+
+  **Answer:** Digital signatures are used to prove ownership or authenticity of data mathematically.
 
 Ask the students to offer some of their answers, then move on while telling them that we will be learning these very things.
 
@@ -307,8 +311,6 @@ Open the session slides, move to the "Symmetric Cryptography" section, and highl
 
 * This is the same technique used to encrypt your hard drive or password-protect a document. It's used to protect "data at rest" aka data that is not moving across a network.
 
-![lock](https://image.shutterstock.com/image-photo/macro-shot-antique-weathered-vintage-600w-551871160.jpg)
-
 Open your browser and navigate to the [Secretbox demo](https://tweetnacl.js.org/#/secretbox) from TweetNacl.js.
 
 * This tool demonstrates symmetric and asymmetric crypto, as well as hashing, signing, and verifying messages.
@@ -403,7 +405,9 @@ Answer any questions before moving on.
 
 In this activity, students will learn how asymmetric cryptography works.
 
-Explain to students that we need a way of sharing secret data without having to share a password beforehand.
+Open the session slides, move to the "Asymmetric Cryptography" section, and highlight the following:
+
+* We need a way of sharing secret data without having to share a password beforehand.
 
 * Asymmetric cryptography doesn't just use one key like symmetric, but now it splits up the key into a "keypair" -- a public key and a private key.
 
@@ -535,7 +539,7 @@ Explain to students that one of the applications of asymmetric cryptography is t
 
 Illustrate the following example to the class:
 
-* Let's say Joe wanted to sign a legal agreement, but he also wanted digital proof that was the exact agreement.
+* Let's say Joe wanted to sign a legal agreement and send it to Anita, but he also wanted digital proof that was the exact agreement.
 
 * What Joe can do is take the document and "sign" it with his private key.
 
@@ -545,7 +549,7 @@ Illustrate the following example to the class:
 
 * If the function succeeds, then you know that the signature was actually signed by Joe and was not modified.
 
-* In this case, Joe uses his private key to "sign" his identity, and the world can use his public key to verify the signature came from him.
+* In this case, Joe uses his private key to "sign" his identity, and Anita can use her public key to verify the signature came from him.
 
 Pick another volunteer student to help assist with the following demo.
 
@@ -765,4 +769,4 @@ Answer any questions before ending the class.
 End Class
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

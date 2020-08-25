@@ -42,7 +42,7 @@ By the end of the class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1E5gDn4M6ivj1i0ZoUmjhcRUIam97v-scO0xQgu1B_CQ/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [18.3 Lesson Slides](https://docs.google.com/presentation/d/1Otdtqw9mvYlvFEp6Y2rszMpDGRXJy3-Sw-9WFTYQUOw/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -56,9 +56,11 @@ By the end of the class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Welcome Class (10 min)
+### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students to the third day of the introduction to the blockchain technology, open the lesson slides, and highlight that by the end of Today's class, we will do the following:
+Welcome students to the third day of the introduction to the blockchain technology, open the lesson slides and present the class objectives.
+
+Move to the "Blockchain Skill Check" section and highlight that by the end of Today's class, we will do the following:
 
 * Build a blockchain from scratch!
 
@@ -86,7 +88,7 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Instructor Do: Consensus Algorithms (10 min)
+### 2. Instructor Do: Consensus Algorithms (15 min)
 
 In this activity, students will learn what consensus algorithms are and the differences between the available existing options.
 
@@ -136,8 +138,6 @@ Explain to students that there are many consensus algorithms in development, but
 
 The first, most straightforward, and least secure algorithm we'll start with is called "Proof of Authority."
 
-![proof of authority](https://image.shutterstock.com/image-photo/successful-team-leader-manager-ceo-600w-461317327.jpg)
-
 * Proof of Authority allows only specific addresses to mine/produce blocks in the network.
 
 * This is a centralized but cheap algorithm mainly used to power test networks.
@@ -145,8 +145,6 @@ The first, most straightforward, and least secure algorithm we'll start with is 
 * This algorithm is never used in production **mainnet blockchains**, it is only for development and testing in **testnet blockchains**.
 
 #### Proof of Work
-
-![proof of work](https://image.shutterstock.com/image-photo/bitcoin-cryptocurrency-mining-farm-600w-761471725.jpg)
 
 * Proof of Work (PoW) is the most popular algorithm in blockchain nowadays.
 
@@ -159,8 +157,6 @@ The first, most straightforward, and least secure algorithm we'll start with is 
 * This is a very secure algorithm, but the most expensive in terms of resources. This is its biggest criticism.
 
 #### Proof of Stake
-
-![proof of stake](https://image.shutterstock.com/image-photo/closeup-portrait-shocked-surprised-young-600w-207481837.jpg)
 
 Explain to students that Proof of Stake (PoS) is very similar to PoW, the main difference is that instead of contributing computational power, this algorithm "stake" some of the cryptocurrency, aka "collateralize" it while you produce blocks.
 
@@ -246,7 +242,9 @@ Answer any questions before moving on.
 
 In this activity, you will be demonstrating the generation of a genesis block using the `puppeth` tool bundled with the Go Ethereum (`geth`) tool.
 
-Explain to students that now we are going to build our blockchain. We will start building the first block of the chain, where we will decide on which consensus algorithm to pick and configure the network.
+Open the lesson slides, move to the "Creating a Genesis Block Demo" section, and highlight the following.
+
+* Now we are going to build our blockchain. We will start building the first block of the chain, where we will decide on which consensus algorithm to pick and configure the network.
 
 Introduce the Go Ethereum tool to the class and highlight the following:
 
@@ -496,6 +494,7 @@ Use this time to ensure that all students have properly configured two nodes wit
 Answer any questions before moving on.
 
 ---
+
 ### 11. BREAK (40 min)
 
 ---
@@ -808,11 +807,11 @@ Ensure that:
 
 * **Education:** It’s important to add certifications and education to a LinkedIn profile. Students should include the following components:
 
-    * School name
+  * School name
 
-    * Degree or certification received
+  * Degree or certification received
 
-    * Dates
+  * Dates
 
 * **Skills:** The skills section also should include keywords that can help recruiters find candidate profiles.
 
@@ -861,4 +860,4 @@ def checkPalindrome(str):
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

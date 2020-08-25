@@ -48,7 +48,7 @@ By the end of the class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1syUXqizy8YoZuYVrYmJwDFv1TADW5IqXX0a_Itkvh_w/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [18.1 Lesson Slides](https://docs.google.com/presentation/d/10N2RJvw29ZurhdpqWQV1a9IvkI2Mu4lTbp98w9tYYxU/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -64,21 +64,19 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome (5 min)
 
-* **Files:**
-
 Welcome students to the class by expressing excitement over starting the final lap in this boot camp marathon -- BLOCKCHAIN -- and that some might say it’s the most exciting lap by far!
 
 Open the lesson slides and highlight the following:
 
-* Blockchain is exciting - and critical for their careers - because blockchain technology powers not just cryptocurrencies but entire decentralized economies and even enterprise networks.
+* Blockchain is exciting - and critical for your careers - because blockchain technology powers not just cryptocurrencies but entire decentralized economies and even enterprise networks.
 
 * Blockchain is a buzz-word in the industry, but it’s much more than that -- it’s a new way of thinking about money.
 
 * Traditional financial institutions have been skeptical about blockchain technology, however, JP Morgan Chase, the largest U.S. bank, created [Quorum](https://www.goquorum.com/), an Ethereum-based blockchain, in order to leverage the security that blockchain provides for their own systems (and, probably, because they are afraid of being left in the dust by this new technology!).
 
-* In this unit, students will be building their blockchain wallets, write smart contracts, and construct a blockchain from scratch.
+* In this unit, you will be building your blockchain wallets, write smart contracts, and construct a blockchain from scratch.
 
-Some of this may seem intimidating to the students, so express that you are proud of how far the class has already traveled together as a team; after 17 weeks together, the students can do Python, Pandas, and ML!; By the end of this block (get it?), they will be able to speak “blockchain” -- but we’re going far beyond the terminology.
+Some of this may seem intimidating to the students, so express that you are proud of how far the class has already traveled together as a team; after 17 weeks together, the students can do Python, Pandas, and machine learning!; By the end of this block (get it?), they will be able to speak “blockchain” -- but we’re going far beyond the terminology.
 
 Explain to the class that this final stage is huge. That’s going to be challenging, but you know they can do it - after all, they’ve made it this far!
 
@@ -90,7 +88,7 @@ Answer any questions before moving on.
 
 Before we dig in, let’s get a sense of where the class might be when it comes to blockchain.
 
-Open the lesson slides and move to the "Have you heard?" section; ask a few questions and have the students give a thumbs up for yes or a thumbs down for no.
+Open the lesson slides and move to the "Blockchain Skill Check" section; ask a few questions and have the students give a thumbs up for yes or a thumbs down for no.
 
 * How many of you have heard of blockchain before?
 
@@ -150,9 +148,7 @@ Answer any questions before moving on.
 
 For this activity, the instructor will lead a formal discussion regarding what blockchain technology is and why it’s essential.
 
-First, navigate to the slides and begin with the "Bank CEO" example:
-
-Ask the students the following questions, allowing them to answer, then confirm each of the listed answers:
+Open the lesson slides, navigate to the "The Importance of Blockchain" section, and ask the students the following questions, allowing them to answer, then confirm each of the listed answers:
 
 * "Why would a banker want to use a blockchain?"
 
@@ -166,9 +162,9 @@ Ask the students the following questions, allowing them to answer, then confirm 
 
   **Answer**: Some blockchains can be used as a hedge against hyperinflation of their native currency.
 
-* Why would an individual in the US want to use a blockchain?
+* Why would an individual in Canada want to use a blockchain?
 
-  **Answer**: Removes intermediaries like PayPal, Venmo, Cashapp, etc., and allows for peer to peer payments, thus lower fees.
+  **Answer**: Removes intermediaries like PayPal, Apple Pay, Google Pay, etc., and allows for peer to peer payments, thus lower fees.
 
   **Answer**: Custody over your funds, versus allowing a bank to have custody.
 
@@ -235,13 +231,13 @@ Answer any questions before moving on.
 
 ---
 
-### 6. Instructor Do: The 5 Pillars of Open Blockchains (10 min)
+### 6. Instructor Do: The Five Pillars of Open Blockchains (10 min)
 
 For this activity, the instructor will lead a formal lecture regarding what the five pillars of open blockchains are and why they are relevant.
 
-See the [blockchain support document](../Instructor_Support/Blockchain.md) for a background video on this topic.
+See the [blockchain support document](../Instructional_Support/Blockchain.md) for a background video on this topic.
 
-Start this activity by explaining the following to students:
+Open the lesson slides, move to "The Five Pillars of Open Blockchains" Section, and start this activity by explaining the following to students:
 
 * As we talk through each pillar, keep in mind what you uncovered during the previous exercise. What feature would you put in each category?
 
@@ -255,8 +251,6 @@ Begin by prefacing that each of these pillars ties into each other to build an o
 
 #### Pillar 1: Open
 
-![screenshot of open slide](https://image.shutterstock.com/image-photo/open-blue-door-sunshine-600w-624832211.jpg)
-
 * Openness in this context refers to access:
 
   * Anyone can access the source code and create a project from it, therefore developer access is high.
@@ -268,8 +262,6 @@ Begin by prefacing that each of these pillars ties into each other to build an o
 * Openness means that the system is designed to incentivize users to keep it open. The internet is an example of this, and it is built on open protocols that anyone can learn and contribute to.
 
 #### Pillar 2: Borderless
-
-![screenshot of borderless](https://image.shutterstock.com/image-photo/abstract-science-global-network-connection-600w-1147048595.jpg)
 
 * Explain to the students that borderless means precisely that, a network without geographical or political borders.
 
@@ -295,8 +287,6 @@ Elaborate and bring out this analogy:
 
 #### Pillar 3: Neutral
 
-![screenshot of neutral](https://image.shutterstock.com/image-illustration/net-neutrality-abstract-background-260nw-1049711261.jpg)
-
 * Explain how neutral means that the protocol does not discriminate against any user.
 
 * In fact, users don't even need to be human. The blockchain does not care if you are a human or a washing machine.
@@ -309,8 +299,6 @@ Elaborate and bring out this analogy:
 
 #### Pillar 4: Censor Resistant
 
-![screenshot of censor resistant](https://image.shutterstock.com/image-illustration/closeup-surprised-desperate-looking-man-600w-1399238933.jpg)
-
 * Blockchains that are properly decentralized are highly resistant to censorship and authoritarian control.
 
 * This means that people suffering in nations that have high censorship can still find a way to use these systems to reach out and to bypass the oppression.
@@ -322,8 +310,6 @@ Elaborate and bring out this analogy:
 * Money is often compared to a form of speech. These are systems where this form of expression cannot be censored.
 
 #### Pillar 5: Public
-
-![screenshot of public](https://image.shutterstock.com/image-illustration/two-way-street-signs-words-260nw-156089513.jpg)
 
 * Explain that this means that open blockchains are separate from the state. Public blockchain networks are suited for public affairs.
 
@@ -351,15 +337,15 @@ You will need to group students into at least three groups:
 
 * Group 1 - Money senders. This group will create and send transactions.
 
-* Group 2 - Record Keepers in the US. This group will be a geographical region of "nodes" in the US.
+* Group 2 - Record Keepers in Canada. This group will be a geographical region of "nodes" in Canada.
 
-* Group 3 - Record Keepers outside the US. This group will be a second geographical region of "nodes" in a different country than the US.
+* Group 3 - Record Keepers outside Canada. This group will be a second geographical region of "nodes" in a different country than Canada.
 
 To speed up this activity, organize the three groups before class and let students know which group they belong to by creating some slides or a document to show in the projector during the activity.
 
 You should create at least two slack channels for this activity, name the channels as follows:
 
-* RecordKeepersUS
+* RecordKeepersCanada
 
 * RecordKeepersChina (China is just an example, feel free to choose another country)
 
@@ -429,19 +415,15 @@ Have the TAs circulate through the class and clarify definitions for students th
 
 * [README.md](Activities/03-Stu_Basic_Terminology/README.md)
 
+---
+
 ### 10. Instructor Do: Basic Terminology Review (10 min)
 
 Students will learn basic, common terminology that will enable them to navigate the blockchain space.
 
-* **Files:**
-
-  * [Lesson Slides](https://docs.google.com/presentation/d/1syUXqizy8YoZuYVrYmJwDFv1TADW5IqXX0a_Itkvh_w/edit?usp=sharing)
-
 Navigate to the slides and define common terms:
 
 #### Hash
-
-![screenshot of hash](https://image.shutterstock.com/image-photo/man-turning-cryptography-switch-change-600w-1038745234.jpg)
 
 * Explain that a "hash" is a unique fingerprint of a piece of data.
 
@@ -454,8 +436,6 @@ Navigate to the slides and define common terms:
 * If you were to change a single bit of the input, you would get a completely different hash. This allows for something called "data integrity" which is a very important part of the internet and data security as well as blockchain technology.
 
 #### Digital Signature
-
-![screenshot of signature](https://image.shutterstock.com/image-vector/businessman-hands-signing-digital-signature-600w-351292748.jpg)
 
 * Digital signatures are used to prove ownership or authenticity of data mathematically.
 
@@ -471,8 +451,6 @@ Ask the students, "If a signed message is modified, what happens?"
 
 #### Crypto Wallet
 
-![screenshot of wallet](https://image.shutterstock.com/image-illustration/digital-wallet-concept-3d-rendering-600w-487340401.jpg)
-
 * A digital wallet is simply a set of "keys" to your funds that are on the blockchain.
 
 * This means that with a wallet, you can create and send transactions, as well as view your balance.
@@ -481,17 +459,15 @@ Ask the students, "If a signed message is modified, what happens?"
 
 * A digital wallet is much like the debit cards in your wallet, and you use them to access funds in your account. Only in this case, the card is now a key, and the bank is now the blockchain.
 
-At this point, students should be curious about what a transaction is in the context of blockchain, continue with the slides, and highlight the following:
+#### Transaction
 
-![screenshot of transaction](https://image.shutterstock.com/image-photo/finger-pressing-block-chain-text-600w-1026226699.jpg)
+At this point, students should be curious about what a transaction is in the context of blockchain, continue with the slides, and highlight the following:
 
 * A transaction is simply a signed message that authorizes a movement of funds between two parties.
 
 * It is essentially "I sign off on the movement of X amount of value from account A to account B" -- now that it is signed off, nobody can modify it.
 
 #### Blockchain Node
-
-![screenshot of node](https://image.shutterstock.com/image-vector/abstract-scheme-modern-computer-network-600w-155306969.jpg)
 
 * A full node keeps a copy of the blockchain. It verifies the signature of every transaction and throws out any that do not validate.
 
@@ -500,8 +476,6 @@ At this point, students should be curious about what a transaction is in the con
 * Nodes are enforcing **all** of the rules of the blockchain. Thus they are a very important part of the security of the network.
 
 #### Miner or Block Producer
-
-![screenshot of miner](https://image.shutterstock.com/image-illustration/design-element-3d-illustration-rendering-600w-1167357031.jpg)
 
 * A miner/block producer is a special type of node that is working to solve computations to finalize transactions.
 
@@ -743,7 +717,7 @@ wallet.send_transaction(amount, recipient)
 
 Comment to students that, despite this is pseudocode, it should get the point across. Continue through the lesson slides and highlight the following.
 
-* Ethereum secures over $20 billion US Dollars in assets without a central authority. It powers a huge ecosystem of decentralized applications and financial ecosystems.
+* Ethereum secures over $20 billion Dollars in assets without a central authority. It powers a huge ecosystem of decentralized applications and financial ecosystems.
 
 * First generation blockchains were much like the days of carrying a cell phone, iPod, and calculator with you. Each solved a specific problem.
 
@@ -785,51 +759,39 @@ Now, transition to talk about the types of financial services that you can build
 
 * Decentralized crypto exchange - Using the blockchain as a backend to support a crypto-trading exchange.
 
-* Tokenizing assets - Representing things from the US Dollar, Gold, Securities, to unique video game assets an on the blockchain.
+* Tokenizing assets - Representing things from Dollars, Gold, Securities, to unique video game assets an on the blockchain.
 
 Answer any questions before moving on.
 
 ---
 
-### 17. Student Do: Use Case Brainstorm (10 min)
+### 17. Student Do: Company Case Study (10 min)
 
-Now that the students have learned about the features of Ethereum and how it acts as a decentralized world computer, it is an excellent time to brainstorm different use cases given these features.
+Now that the students have learned more about the features of blockchain and their potential uses, it is an excellent time to research companies that are using blockchain technology to tackle real world financial problems.
 
-Students will get into groups and come up with different decentralized application ideas, as well as discuss gaps they may be familiar with.
+Students will get into groups and research a Canadian FinTech company that is using blockchain to make an impact in the blockchain space.
 
 Have TAs circulate throughout the class, facilitating discussion and ensuring students are not lost.
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Use_Case_Brainstorm/README.md)
+* [README.md](Activities/06-Stu_Company_Case_Study/README.md)
 
 ---
 
-### 18. Instructor Do: Use Case Review (10 min)
+### 18. Instructor Do: Company Case Study Review (10 min)
 
-Ask different groups what their most exciting use case was and have them describe them to the class.
+Ask different groups what their most exciting company case study was and have them describe it to the class.
 
-Facilitate the discussion toward the benefits of decentralizing specific applications.
+Facilitate the discussion toward how the company uses its blockchain technology and the benefits it may have in solving a financial problem.
 
-* What are the main benefits of decentralizing your application?
+* How does the company utilize their blockchain technology? How does it work?
 
-  **Answer:** The application can only go down if the entire Ethereum network goes down.
+* What is the financial benefit that this company may have by utilizing their blockchain technology?
 
-  **Answer:** The application can run without a central server.
+* Are there any regulatory concerns, blockers, or negative impacts that may arise surrounding the company's blockchain technology?
 
-  **Answer:** The application could potentially live forever (as long as Ethereum exists).
-
-  **Answer:** The application is pay-per-use, much like a decentralized AWS Lambda.
-
-* If the students chose a game-based use case, ask what type of assets they have represented?
-
-* Is there a limit to what you can build with Ethereum's Turing complete smart contracts?
-
-  **Answer:** No, in theory, you could build any application just as you would with any other general-purpose programming language.
-
-Reinforce the idea that Ethereum's smart contracts are just programs that run on a distributed, decentralized computer.
-
-Explain to students that anyone can upload and pay to run code in a secure sandboxed computer environment, allowing for a safer, immutable web, and for building powerful financial applications.
+Explain to students that the world of blockchain is continually expanding and changing. Therefore, it is necessary to keep up with the advancements companies are pioneering in the blockchain space as well as the regulatory or legal concerns surrounding them.
 
 Answer any questions before moving on.
 
@@ -856,4 +818,4 @@ Students have learned tons of new information today. Facilitate a discussion aro
 ### End Class
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
