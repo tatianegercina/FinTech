@@ -311,8 +311,6 @@ Open the session slides, move to the "Symmetric Cryptography" section, and highl
 
 * This is the same technique used to encrypt your hard drive or password-protect a document. It's used to protect "data at rest" aka data that is not moving across a network.
 
-![lock](https://image.shutterstock.com/image-photo/macro-shot-antique-weathered-vintage-600w-551871160.jpg)
-
 Open your browser and navigate to the [Secretbox demo](https://tweetnacl.js.org/#/secretbox) from TweetNacl.js.
 
 * This tool demonstrates symmetric and asymmetric crypto, as well as hashing, signing, and verifying messages.
@@ -407,7 +405,9 @@ Answer any questions before moving on.
 
 In this activity, students will learn how asymmetric cryptography works.
 
-Explain to students that we need a way of sharing secret data without having to share a password beforehand.
+Open the session slides, move to the "Asymmetric Cryptography" section, and highlight the following:
+
+* We need a way of sharing secret data without having to share a password beforehand.
 
 * Asymmetric cryptography doesn't just use one key like symmetric, but now it splits up the key into a "keypair" -- a public key and a private key.
 
