@@ -149,11 +149,5 @@ Be sure to include any preliminary setup information, such as installing depende
 
 #### Remember, *never* share your mainnet private keys! This is a testnet, so coins have no value here!
 
-#### Optional Challenge
-
-There will be a new DevOps engineer joining the team, so you are tasked to add an additional sealer address to the network on the fly!
-
-* Create a separate `bootnode` dedicated to connecting peers together.
-
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
