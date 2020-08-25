@@ -20,6 +20,8 @@ Now that you have learned more about blockchain, it's time to think about compan
 
 * Some may not directly reference concrete blockchain projects, so you'll want to focus more on the companies that have started implementations versus the ones supporting research and development.
 
+* If you are not familiar with Canadian blockchain companies, you can review this list of the [Top Canada Blockchain Development Companies](https://clutch.co/ca/developers/blockchain).
+
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
