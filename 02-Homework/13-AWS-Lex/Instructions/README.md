@@ -201,27 +201,36 @@ You are asked to accomplish the following main tasks:
 
 #### Data Preprocessing
 
-In this section, you have to load the information about cryptocurrencies from the provided `CSV` file and perform some data preprocessing tasks. The data was retrieved from  _CryptoCompare_ using this endpoint: `https://min-api.cryptocompare.com/data/all/coinlist`.
+In this section, you will load the information about cryptocurrencies and perform data preprocessing tasks.  You can choose one of the following methods to load the data:
 
-Start by loading the data in a Pandas DataFrame named `crypto_df`, and continue with the following data preprocessing tasks.
+1. Using the provided `CSV` file, create a `Path` object and read the file data directly into a DataFrame named `crypto_df` using `pd.read_csv()`.
 
-3. Remove all cryptocurrencies that are not on trading.
+2. Using the following `requests` library, retreive the necessary data from the following API endpoint from _CryptoCompare_ - `https://min-api.cryptocompare.com/data/all/coinlist`.  __HINT:__ You will need to use the 'Data' key from the json response, then transpose the DataFrame. Name your DataFrame `crypto_df`.
 
-4. Remove all cryptocurrencies that have not an algorithm defined.
 
-5. Remove the `IsTrading` column.
+With the data loaded into a Pandas DataFrame, continue with the following data preprocessing tasks.
 
-6. Remove all cryptocurrencies with at least one null value.
+3. Keep only the necessary columns: 'CoinName','Algorithm','IsTrading','ProofType','TotalCoinsMined','TotalCoinSupply'
+ 
+4. Keep only the cryptocurrencies that are trading.
 
-7. Remove all cryptocurrencies without coins mined.
+5. Keep only the cryptocurrencies with a working algorithm.
 
-9. Store the names of all cryptocurrencies in a DataFrame named `coins_name`, use the `crypto_df.index` as the index for this new DataFrame.
+6. Remove the `IsTrading` column.
 
-10. Remove the `CoinName` column.
+7. Remove all cryptocurrencies with at least one null value.
 
-11. Create dummies variables for all the text features, store the resulting data on a DataFrame named `X`.
+8. Remove all cryptocurrencies that have no coins mined.
 
-12. Use the [`StandardScaler` from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) to standardize all the data of the `X` DataFrame. Remember, this is important prior to using PCA and K-Means algorithms.
+9. Drop all rows where there are 'N/A' text values.
+
+10. Store the names of all cryptocurrencies in a DataFrame named `coins_name`, use the `crypto_df.index` as the index for this new DataFrame.
+
+11. Remove the `CoinName` column.
+
+12. Create dummy variables for all the text features, and store the resulting data in a DataFrame named `X`.
+
+13. Use the [`StandardScaler` from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) to standardize all the data of the `X` DataFrame. Remember, this is important prior to using PCA and K-Means algorithms.
 
 #### Reducing Data Dimensions Using PCA
 
