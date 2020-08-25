@@ -4,15 +4,15 @@
 
 ### Overview
 
-Today's class will expand upon students' component knowledge of algorithmic trading and abstract one level higher to create a full-fledged trading framework encapsulated in a single application. Students will learn how to wrap their previous code (data collection, signal generation, backtesting, evaluation, and dashboard creation) into functions that will be called via a single workflow, automating the manual component calculations done in the previous class to produce an end-to-end trading dashboard containing all relevant metrics and functionality.
+Today's class will expand upon students' component knowledge of algorithmic trading and abstract one level higher to create a full-fledged trading framework encapsulated in a single application. Students will learn how to wrap their previous code (data collection, signal generation, backtesting, evaluation, and data visualization creation) into functions that will be called via a single workflow, automating the manual component calculations done in the previous class to produce an end-to-end trading visualization containing all relevant metrics and functionality.
 
-Students will also learn how to "go live" with their trading frameworks by establishing a connection to a financial trading API, such as the Kraken Cryptocurrency Exchange API, which provides 24-hour market access and generous API request privileges. They will use asynchronous programming and data pipelines with their live data feed to build a robust trading dashboard with streaming data visualizations.
+Students will also learn how to "go live" with their trading frameworks by establishing a connection to a financial trading API, such as the Kraken Cryptocurrency Exchange API, which provides 24-hour market access and generous API request privileges. They will use asynchronous programming and data pipelines with their live data feed to build streaming data visualizations.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Design an end-to-end workflow for a trading framework (data collection > signal generation > backtesting > evaluation > dashboard creation).
+* Design an end-to-end workflow for a trading framework (data collection > signal generation > backtesting > evaluation > data visualization creation).
 
 * Abstract their previous day's algorithmic trading calculations into functions and execute an end-to-end implementation of a working trading framework.
 
@@ -20,13 +20,13 @@ By the end of class, students will be able to:
 
 * Perform asynchronous tasks and loops using asyncio.
 
-* Implement asyncio with their trading frameworks to fetch data and update the dashboard in parallel.
+* Implement asyncio with their trading frameworks to fetch data and update a chart in parallel.
 
-* Enhance their trading dashboards with data streaming capabilities.
+* Enhance their trading data visualizations with live data.
 
 ### Instructor Notes
 
-* Today's lesson will tie together the concepts and coding solutions from Day 1 of this unit into a single robust trading framework that can produce an end-to-end implementation of a trading dashboard with working metrics.
+* Today's lesson will tie together the concepts and coding solutions from Day 1 of this unit into a single robust trading framework that can produce an end-to-end implementation of a trading data visualization with working metrics.
 
 * This lesson will primarily focus on developing the *infrastructure* of the trading framework and, therefore, will not contain as much domain-specific trading knowledge.
 
