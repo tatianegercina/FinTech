@@ -46,7 +46,7 @@ To do this, you will create and submit four deliverables:
 
 * Write instructions on how to use the chain for the rest of your team.
 
-## Background
+### Background
 
 You have just landed a new job at ZBank, a small, innovative bank that is interested in exploring what
 blockchain technology can do for them and their customers.
@@ -75,9 +75,9 @@ nodes and accounts. You can name the network anything you want, have fun with it
 
 Be sure to include any preliminary setup information, such as installing dependencies and environment configuration.
 
-## Instructions
+### Instructions
 
-### Setup the custom out-of-the-box blockchain
+#### Setup the custom out-of-the-box blockchain
 
 * Create a new project directory for your new network. Call it whatever you want!
 
@@ -113,7 +113,7 @@ Be sure to include any preliminary setup information, such as installing depende
 
 * You should now see both nodes producing new blocks, congratulations!
 
-### Send a test transaction
+#### Send a test transaction
 
 * Use the MyCrypto GUI wallet to connect to the node with the exposed RPC port.
 
@@ -133,7 +133,7 @@ Be sure to include any preliminary setup information, such as installing depende
 
 ![transaction-success](Images/transaction-success.png)
 
-### Create a repository, and instructions for launching the chain
+#### Create a repository, and instructions for launching the chain
 
 * Create a `README.md` in your project directory and create documentation that explains how to start the network.
 
@@ -147,10 +147,13 @@ Be sure to include any preliminary setup information, such as installing depende
 
 * Upload the code, including the `networkname.json` and node folders.
 
-### Remember, *never* share your mainnet private keys! This is a testnet, so coins have no value here!
+#### Remember, *never* share your mainnet private keys! This is a testnet, so coins have no value here!
 
-### Challenge mode
+#### Optional Challenge
 
-* Create a separate `bootnode` dedicated to connecting peers together
+There will be a new DevOps engineer joining the team, so you are tasked to add an additional sealer address to the network on the fly!
 
-* There will be a new DevOps engineer joining the team, add an additional sealer address to the network on the fly!
+* Create a separate `bootnode` dedicated to connecting peers together.
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
