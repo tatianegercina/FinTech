@@ -4,17 +4,17 @@
 
 ### Overview
 
-Today's class will introduce students to **algorithmic trading** in Python. Traditional trading, or the manual purchase and sale of assets such as stocks, has begun to shift to more automated methods due to the advancements in network speed, computing power, and available financial trading APIs. Therefore, students will learn the fundamentals of algorithmic trading and deconstruct the process of producing a functional algorithmic trading model.
+Today's class introduces students to algorithmic trading in Python. Traditional trading, or the manual purchase and sale of assets such as stocks, has begun to shift to more automated methods, due to advancements in network speed, computing power, and available financial trading APIs. Students will learn the fundamentals of algorithmic trading, and deconstruct the process of producing a functional algorithmic trading model.
 
-In particular, students will learn how to generate trading signals from raw data, backtest a trading strategy using such signals, produce evaluation metrics regarding overall portfolio and per-trade performance, and construct a trading dashboard similar to commercial online trading platforms. By the end of this unit, students will also incorporate machine learning to automate and improve portfolio management and trade performance for maximum profitability with minimal risk.
+In particular, students will learn how to generate trading signals from raw data, backtest a trading strategy using these signals, produce evaluation metrics regarding overall portfolio and per-trade performance, and construct a trading dashboard similar to commercial online trading platforms. By the end of this unit, students will also incorporate machine learning to automate and improve portfolio management, and trade performance for maximum profitability with minimal risk.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Delineate what algorithmic trading is, how it came to be, and why it's valuable.
+* Explain what algorithmic trading is, its origins, and value.
 
-* Deconstruct the process for algorithmic trading: obtaining the data, making a trading decision, and evaluating the results.
+* Deconstruct the algorithmic trading process, including obtaining data, making trading decisions, and evaluating results.
 
 * Compare the differences between technical analysis and fundamental analysis.
 
@@ -32,25 +32,25 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today's lesson will consist of elements taught in the Pandas and PyViz units; the lesson will include data analysis, utilization of trading APIs for asset pricing data, and the visualization of trading performance and transaction analysis using a Panel dashboard.
+* Today's lesson consists of elements taught in the Pandas and PyViz units; it includes data analysis, utilization of trading APIs for asset pricing data, and the visualization of trading performance and transaction analysis using `hvplot`.
 
-* The goal of this unit is to educate students on trading, as well as how to use code to automate trading. Trading may be new for many students, so it is important that adequate information is provided regarding what trading is and all of the steps involved in creating entry and exit strategies, as well as which FinTech APIs integrate well with Python for automated trading.
+* The goal of this unit is to educate students on trading, as well as how to use code to automate trading. Trading may be new for many students, so it is important to provide a clear picture of what trading is, all the steps involved in creating entry and exit strategies, and which FinTech APIs integrate well with Python for automated trading.
 
-* Not everyone will have a background in trading, so be thorough when explaining specific trading terminology, concepts, and strategies. Instead of painting the entire picture for students, focus on the individual steps required to execute a trade, and then apply coding concepts (i.e., iterations) to illustrate how the step can be automated using Python code. Definitions for key trading terminology will be provided.
+* Since students' experience with trading will differ, be thorough when explaining specific trading terminology, concepts, and strategies. Focus on the individual steps required to execute a trade, and then apply coding concepts (i.e., iterations) to illustrate how the step can be automated using Python code. Definitions for key trading terminology will be provided.
 
-* Review sessions will be geared towards allowing students to ask as many questions as possible. Questions should be prioritized over instructor posed review questions. While we want to provide as much opportunity as possible for students to ask questions, it is also important that the class is paced so that all material is covered.
+* Review sessions are geared towards allowing students to ask as many questions as possible. Students' questions should be prioritized over instructor-posed review questions. While we want to provide as much opportunity as possible for students to ask questions, also make sure to keep a careful eye on the class pacing, so that all material is covered.
 
-* Encourage students to review supplementary resources, to reach out to TAs individually for assistance, and to attend office hours to address any unanswered questions or confusion.
+* Encourage students to review supplementary resources, to reach out to TAs individually for assistance, and to attend office hours to address any unanswered questions or for additional support.
 
 ### Class Slides and Time Tracker
 
-The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1yKec68KGLenYiTEn3f8yUx3v230WCA6zdfbEcHmzNLU/edit?usp=sharing).
+The slides for this lesson can be viewed on Google Drive here: [15.1 Lesson Slides](https://docs.google.com/presentation/d/1CkNgOAbP4kxlBcut2NE_XTjFb7F4oeHD0c23S-VhBzA/edit?usp=sharing).
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-The time tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTracker.xlsx)
+The Time Tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTracker.xlsx)
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [15.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6702e079-360f-4970-b75a-aafe00f8da33) Note that this video may not reflect the most recent lesson plan.
@@ -59,31 +59,31 @@ The time tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTra
 
 ### 1. Instructor Do: Welcome Class (10 min)
 
-In this activity, students are introduced to what algorithmic trading is and why it's useful for FinTech professionals. In particular, this section is a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and simplify participation in the market through the execution of a single program.
+In this activity, students will be introduced to algorithmic trading and its utility in FinTech. This section provides a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and simplify participation in the market through the execution of a single program.
 
-Welcome students to the first day of algorithmic trading and explain the following:
+Welcome students to the first day of algorithmic trading! Go to the slideshow, navigate to the "Intro to Algorithmic Trading" section, and cover the following points.
 
-* Introduce students to algorithmic trading first by describing how cumbersome it can be to make trades manually. Explain that a typical day for traders involves:
+* It can be very cumbersome to make trades manually. A typical day for traders involves:
 
   * Tracking the transactional history of many stocks.
 
   * Identifying the best opportunity to buy, sell, and hold.
 
-  * Maintaining knowledge about the highs and lows for each individual stock, as well as their overall portfolio value and profit/loss.
+  * Maintaining knowledge about the highs and lows for individual stocks, their overall portfolio value, and profit/loss.
 
   * Keeping emotions in check.
 
-* Also explain that human emotions play a key role in the success or failure of a trade/trader. Because the market is constantly changing with varying degrees of volatility, it's easy for humans to get emotional when trading. The trades that traders make can drastically impact their profitability and livelihood. Furthermore, because traders often deal with other people's money, such as retirement funds, impulsive trading decisions can have the ability to disrupt the economic foundation of countless lives.
+* Explain that human emotions play a key role in the success or failure of a trade/trader. Because the market can be volatile and is constantly changing, it's easy for humans to get emotional when trading. A trader's livelihood can be positively or adversely impacted by the trades they make. Also, because traders mostly deal with other people's money, such as retirement funds, impulsive trading decisions can potentially disrupt the economic foundation of countless lives.
 
-* The sheer number of moving parts and details that need to be considered can make it difficult for the human mind to make profitable trades consistently. This is where **algorithmic trading** comes in.
+* The sheer number of moving parts and details involved can make it difficult for people to make profitable trades consistently. This is where algorithmic trading comes in.
 
-* Algorithmic trading is the concept of utilizing machines to automate the process of buying and selling assets. Machines running algorithms can make predictions about ROI, risk, and analyze transactions much faster than a human brain. Because computers run off of logic rather than emotions, traders don't have to worry about their emotions getting in the way.
+* Algorithmic trading is the concept of utilizing machines to automate the process of buying and selling assets. Machines running algorithms can make predictions about ROI, risk, and analyze transactions much faster than a human brain. Because computers run off of logic rather than emotions, traders don't have to worry about their feelings getting in the way.
 
   * Underscore to students that there are many different algorithmic trading strategies, even ones that can leverage machine learning. Also, an algorithm does not necessarily have to evaluate the basis of a candidate trade in the same way: algorithms can be used to predict the best investments based on profit-to-risk ratios, volume, and volatility, or any number of varying attributes.
 
-* Using algorithmic trading models in conjunction with portfolio management also allows for automatic rebalancing of assets (capital) within the portfolio, thereby aiding in portfolio optimization. Algorithmic trading models automatically buy and sell assets within the portfolio according to the optimal weights for each asset calculated by the model.
+* Using algorithmic trading models in conjunction with portfolio management also allows for automatic rebalancing of assets (capital) within the portfolio, thereby aiding in portfolio optimization. Algorithmic trading models automatically buy and sell assets within the portfolio, according to the optimal weights for each asset calculated by the model.
 
-* If time remains, summarize to students that all **algorithmic trading** involves is the execution of specific trading actions based on specific criteria, such as the ratio of profit-to-risk for the given scenario. In this regard, all a human has to do is click a button to execute the algorithm.
+* If time remains, summarize for students that all algorithmic trading involves is the execution of specific trading actions based on specific criteria, such as the ratio of profit-to-risk for the given scenario. This way, all a human has to do is click a button to execute the algorithm.
 
 * Lastly, if there is time, explain to students that the use of algorithmic trading has given certain firms a competitive advantage compared to those still using manual, human labor. They're able to make smarter, more agile decisions based on real-time predictions and historical analysis, not to mention that less time is wasted on implementing and repeating manual processes.
 
@@ -91,11 +91,11 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Instructor Do: Intro to Algorithmic Trading (10 mins)
+### 2. Instructor Do: Algorithmic Trading: The Basics (10 mins)
 
-In this activity, students will learn the basics of what algorithmic trading is and how it came to be, how it is performed, and what kind of individuals and skillsets are required for potential participants looking to break into the field.
+In this activity, students will learn the basics of algorithmic trading and its origins, how it is performed, and the skillsets that are required for people   looking to break into the field.
 
-Navigate to the slideshow and present the following questions and answers about algorithmic trading:
+Go to the slideshow, navigate to "Algorithmic Trading: The Basics" and present the following Q&A about algorithmic trading:
 
 * What is algorithmic trading?
 
@@ -107,11 +107,11 @@ Navigate to the slideshow and present the following questions and answers about 
 
 * Why use algorithmic trading?
 
-  **Answer:** While there are many benefits to using algorithmic trading over traditional/manual trading, the two main benefits are: one, algorithmic trading can be backtested using historical and real-time data to see if it is a profitable trading strategy and, two, it reduces the possibility of human error in which traders mistime trades based on emotional and psychological factors.
+  **Answer:** While there are many reasons for using algorithmic trading over traditional/manual trading, there are two main benefits. One, algorithmic trading can be backtested using historical and real-time data to see if it is a profitable trading strategy and, two, it reduces the possibility of human error in which traders mistime trades, which are often based on emotional/psychological factors.
 
 * Who performs algorithmic trading?
 
-  **Answer:** Anyone that can code can create their own algorithmic trading bot. Traditionally, Quantitative analysts or quant traders create algorithmic trading models and are often required to have at least a master's or Ph.D. degree level with a familiar background in statistics. However, with human-friendly programming languages like Python, analytical tools, and machine learning libraries, anyone can learn to build a very powerful algorithmic trader.
+  **Answer:** Anyone that can code can create their own algorithmic trading bot. Traditionally, quantitative analysts or quant traders create algorithmic trading models and are often required to have at least a master's or Ph.D. degree with a background in statistics. However, with accessible programming languages like Python, analytical tools, and machine learning libraries, anyone can learn to build a very powerful algorithmic trader.
 
 Ask if there are any questions before moving on.
 
@@ -119,15 +119,15 @@ Ask if there are any questions before moving on.
 
 ### 3. Everyone Do: Demystifying Algorithmic Trading (10 min)
 
-The goal of this activity is to demystify algorithmic trading by showing a simplified trading strategy in code. While this particular strategy isn't something that anyone would want to trade with, it serves to show how a trading strategy can be written in code. The following lessons will build on this core concept using more realistic strategies.
+The goal of this activity is to demystify algorithmic trading by showing a simplified trading strategy in code. While this particular strategy isn't something that anyone would want to trade with, it shows how a trading strategy can be written in code. The following lessons will build upon this core concept, using more realistic strategies.
 
 **Files:** [simple_trading_algorithm.ipynb](Activities/01-Evr_Simple_Trading_Algorithm/Solved/simple_trading_algorithm.ipynb)
 
-Open the solution file and discuss the following:
+Navigate to the "Demystifying Algorithmic Trading" section of the slideshow, open the solution file, and discuss the following:
 
-* Trading algorithms are often misconstrued to be highly complex and esoteric, left only for the quantitative analysts/traders of prominent big banks and hedge funds; however, when breaking down the core components of a trading algorithm, there are three fundamental parts: obtaining the data, making a trading decision, and evaluating the results.
+* Trading algorithms are often misconstrued as highly complex and esoteric, reserved for the quantitative analysts/traders of prominent big banks and hedge funds. However, when breaking down the core components of a trading algorithm, there are three fundamental parts: obtaining the data, making a trading decision, and evaluating the results.
 
-* Often, stock data is provided from brokerage services than can be obtained via API calls. For this particular example, however, we've produced a hard-coded DataFrame consisting of 10 trading days worth of closing prices for AMD. The `bdate_range` function produces a datetime index using only "business day" datetime objects.
+* Often, stock data is provided from brokerage services that can be obtained via API calls. For this particular example, however, we've produced a hard-coded DataFrame consisting of 10 trading days worth of closing prices for AMD. The `bdate_range` function produces a datetime index using only "business day" datetime objects.
 
   ![amd-closing-prices-dataframe](Images/amd-closing-prices-dataframe.png)
 
@@ -145,7 +145,7 @@ Open the solution file and discuss the following:
 
 End the discussion with the following:
 
-* Ask the class if they would use this particular trading strategy with their own money and why they would or wouldn't use it. Call for a few volunteers to provide their answers.
+* Ask students if they would or would not use this particular trading strategy with their own money, and why. Call on a few volunteers to provide their answers.
 
 * Ask how they might formally evaluate the algorithm and then share some of the following ideas for evaluation: risk metrics such as sharp ratios, performing quantitative analysis, using data visualizations.
 
@@ -157,27 +157,27 @@ Answer any questions before moving on.
 
 ### 4. Instructor Do: Trading Signals (10 mins)
 
-In this activity, students will learn what differentiates technical analysis from fundamental analysis, what a technical indicator is, what trading signals are, and how to use these signals to devise a trading strategy (actions based on the occurrence of a trading signal). In particular, students will learn how to generate a dual moving average crossover trading signal, implement the logic/strategy to perform the buy or sell orders, and overlay the points at which the algorithm places the buy and sell orders on top of the plot for closing prices of AAPL stock.
+In this activity, students will learn what differentiates technical analysis from fundamental analysis, what a technical indicator is, what trading signals are, and how to use these signals to devise a trading strategy (actions based on the occurrence of a trading signal). Students will focus on how to generate a dual moving average crossover trading signal, implement the logic/strategy to perform the buy or sell orders, and overlay the points at which the algorithm places the buy and sell orders on top of the plot for closing prices of AAPL stock.
 
 **Files:** [dual_ma_crossover.ipynb](Activities/02-Ins_Trading_Signals/Solved/dual_ma_crossover.ipynb)
 
-Navigate to the trading signals section of the slides, and highlight the following:
+Navigate to the "Trading Signals" section of the slides, and highlight the following:
 
-* Technical analysis is an (often) short-term trading discipline in which investments (such as stocks) are evaluated based on their price action or movement.
+* Technical analysis is an (often) short-term trading discipline, in which investments (such as stocks) are evaluated based on their price action or movement.
 
-* Fundamental analysis is an investment discipline in which investments (such as stocks) are evaluated based on their intrinsic qualities such as financial (income statement, balance sheet, and cash flow statement) or economic data about the underlying company.
+* Fundamental analysis is an investment discipline in which investments (such as stocks) are evaluated based on their intrinsic qualities, such as financial (income statement, balance sheet, and cash flow statement) or economic data about the underlying company.
 
-Engage students by asking if anyone has any guesses or knowledge of what the following terms are. Make sure to communicate to students that they are not expected to have the answers yet.
+Ask students if anyone can guess or knows what the following terms are, making sure that they're aware that this is a fun exercise; they aren't expected to know the answers yet.
 
 * What is a technical indicator?
 
-  **Answer:** Falling under the umbrella of technical analysis, a technical indicator is a data-driven metric that uses trading data such as closing price and volume to analyze the short or long-term price movements occurring over a specified period. For example, a 20-day simple moving average is a technical indicator representing a rolling 20-day mean of a stock's closing prices.
+  **Answer:** Falling under the umbrella of technical analysis, a technical indicator is a data-driven metric that uses trading data, such as closing price and volume, to analyze the short or long-term price movements occurring over a specified period. For example, a 20-day simple moving average is a technical indicator representing a rolling 20-day mean of a stock's closing prices.
 
 * What is a trading signal?
 
-  **Answer:** A trading signal is the point at which a technical indicator, such as the crossover of two moving averages (short MA and long MA), suggests an opportunity for action--namely whether an individual trader or algorithmic trading program should issue a buy or sell order for a security (such as a stock) at that point in time.
+  **Answer:** A trading signal is the point at which a technical indicator, such as the crossover of two moving averages (short MA and long MA), suggests an opportunity for action. Namely, whether an individual trader or algorithmic trading program should issue a buy or sell order for a security (such as a stock) at that point in time.
 
-Transition to explaining to students how technical indicators and trading signals are used in practice, particularly as it relates to the dual moving average crossover trading strategy.
+Transition to explaining how technical indicators and trading signals are used in practice, particularly as it relates to the dual moving average crossover trading strategy.
 
 * Emphasize to students that technical indicators and trading signals are used when implementing trading strategies. The goal of a trading signal is to identify opportunities to get ahead of the trend.
 
@@ -185,7 +185,7 @@ Transition to explaining to students how technical indicators and trading signal
 
     * Use this as an opportunity to remind students that moving averages are calculated using historical quote data. Moving averages are just the average security price over/for a given time period.
 
-* Explain the difference between short term and long term moving averages. Highlight that short term moving average and long term moving averages both track the average price of a security over time; however, long term moving averages are tracked with a greater window than short term.
+* Explain the difference between short term and long term moving averages. Highlight that short term moving averages and long term moving averages both track the average price of a security over time; however, long term moving averages are tracked with a greater window than short term.
 
 * Underscore that short term and long term moving averages, when plotted, will travel in the same direction. At some point, they will cross. The value at the time of the crossover is considered the crossover point. Crossover points are a type of technical indicator.
 
@@ -201,15 +201,15 @@ Elaborate on the role of trading signals in placing trades. Emphasize how buy an
 
   * The technical indicator would suggest that the underlying stock price will rise in the short-term. The trading signal would signal to buy.
 
-* Ask students the following: if **dual moving average crossover** is used, what would be the trading signal for the following scenario:
+* Ask students the following: if dual moving average crossover is used, what would the trading signal be for this scenario:
 
-  * The short window moving average crosses under a long window moving average and continues to be less than the long window moving average (stock will fall in the short-term).
+  * The short window moving average crosses under a long window moving average, and continues to be less than the long window moving average (stock will fall in the short-term).
 
-  * **Answer** The signal would be to issue a sell order. Sell orders would be issued at the points in which the short window moving average crosses under the long window moving average.
+  * **Answer:** The signal would be to issue a sell order. Sell orders would be issued at the points in which the short window moving average crosses under the long window moving average.
 
 Open the solution file and highlight the following points:
 
-* By default, a Pandas DataFrame shows a limited number of rows and columns in order to conserve screen space (ex. the `...`); however, because we'll need to see the specific points at which a trading signal is active and the corresponding trade entry and exit points, it is a good idea to increase the Pandas DataFrame display size to show all of it's contents.
+* By default, a Pandas DataFrame shows a limited number of rows and columns in order to conserve screen space (ex. the `...`); however, because we'll need to see the specific points at which a trading signal is active and the corresponding trade entry and exit points, it is a good idea to increase the Pandas DataFrame display size to show all of its contents.
 
   ![dataframe-options](Images/dataframe-options.png)
 
@@ -222,7 +222,7 @@ Open the solution file and highlight the following points:
     signals_df['SMA100'] = signals_df['close'].rolling(window=long_window).mean()
     ```
 
-* After the averages have been identified, logic has to be defined to return an active/inactive trade signal 1 or -1 when the short MA crosses above/under the long MA. and calculating the points at which the entry or exit position should be made 1 or -1.
+* After the averages have been identified, logic has to be defined to return an active/inactive trade signal 1 or -1 when the short MA crosses above/under the long MA, and calculating the points at which the entry or exit position should be made 1 or -1.
 
   ![dual-ma-signal](Images/dual-ma-signal.png)
 
@@ -303,9 +303,9 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 5. Student Do: The Big Short (15 mins)
+### 5. Student Do: The Big Short, Part I (15 mins)
 
-In this activity, students will take what they've learned about generating trading signals and implementing a corresponding trading strategy, and instead now perform the inverse: create a trading strategy that profits off of price declines by shorting (selling) and covering (buying) the stock.
+In this activity, students will take what they've learned about generating trading signals and implementing a corresponding trading strategy, and perform the inverse: create a trading strategy that profits off of price declines by shorting (selling) and covering (buying) the stock.
 
 **Files:**
 
@@ -317,7 +317,7 @@ In this activity, students will take what they've learned about generating tradi
 
 ---
 
-### 6. Instructor Do: The Big Short Review (10 mins)
+### 6. Instructor Do: The Big Short, Part I Review (10 mins)
 
 **File:** [the_big_short.ipynb](Activities/03-Stu_Trading_Signals/Solved/the_big_short.ipynb)
 
@@ -325,7 +325,7 @@ Take a moment to explain that generating a short position dual moving average cr
 
 * Calculating a short window rolling moving average and a long window rolling moving average of closing prices.
 
-* Defining logic for an active trade signal as 1 when the short MA crosses under the long MA and 0 when the short MA crosses above the long MA.
+* Defining logic for an active trade signal as 1 when the short MA crosses under the long MA, and 0 when the short MA crosses above the long MA.
 
 * Calculating the points at which an entry or exit position should be made using 1 or -1.
 
@@ -373,7 +373,7 @@ Open the solution file and review the following:
 
     ![short-exit.png](Images/short-exit.png)
 
-* Plotting the closing prices of VNQ, a 50-day moving average, and a 100-day moving average overlaid with marker symbols indicating short position entry and exit trades shows that an algorithm utilizing a short position dual moving average crossover strategy during the 2008 recession would have **made** money rather than **lose** money like most other investors during that time.
+* Plotting the closing prices of VNQ, a 50-day moving average, and a 100-day moving average overlaid with marker symbols indicating short position entry and exit trades, shows that an algorithm utilizing a short position dual moving average crossover strategy during the 2008 recession would have made money, rather than lose money, like most other investors experienced during that time.
 
   ![short-dual-ma-crossover-plot](Images/short-dual-ma-crossover-plot.png)
 
@@ -381,19 +381,19 @@ Open the solution file and review the following:
 
 ### 7. Instructor Do: Backtesting (10 mins)
 
-In this activity, students will learn how to test the performance of an algorithmic trading strategy using historical stock data, a process otherwise known as backtesting. In particular, students will use historical stock data to measure the profit/loss of executed trades for a given trading strategy and visualize the overall change in portfolio value over time.
+In this activity, students will learn how to test the performance of an algorithmic trading strategy using historical stock data, a process otherwise known as backtesting. Students will use historical stock data to measure the profit/loss of executed trades for a given trading strategy, and visualize the overall change in portfolio value over time.
 
 **Files:** [backtesting.ipynb](Activities/04-Ins_Backtesting/Solved/backtesting.ipynb)
 
-First, present the following discussion points and use the questions below to elicit student engagement:
+Navigate to the "Backtesting" section of the slideshow, and present the following discussion points:
 
 * Backtesting is the process for measuring the overall performance of a trading strategy using historical stock prices to simulate executed trades dictated by the calculated trading signals and trade decision logic.
 
 * Ask students to guess why backtesting is important?
 
-  **Answer:** Backtesting helps to assess the validity or profitability of a trading strategy over time and provides a benchmark for how it may perform going forward.
+  **Answer:** Backtesting helps assess the validity or profitability of a trading strategy over time and provides a benchmark for how it may perform going forward.
 
-* Underscore to students that while backtesting is important, the results of the backtest correspond to historical prices and not future prices. Therefore, backtesting may provide a reliable benchmark for the stock prices that have already occurred but may prove to be less reliable as new stock data arises.
+* Underscore that while backtesting is important, the results of the backtest correspond to historical prices and not future prices. Therefore, backtesting may provide a reliable benchmark for the stock prices that have already occurred, but may prove to be less reliable as new stock data arises.
 
 Next, open the solution file and present the following:
 
@@ -428,7 +428,7 @@ Walk students through each step required to implement manual backtesting. Highli
 
   ![active-positions](Images/active-positions.png)
 
-* Similar to using the `diff` function on the `Signal` column to calculate entry and exit points, using the `diff` function on the `Position` column calculates the entry and exit points for the specified share size, in this case, 500 shares.
+* Similar to using the `diff` function on the `Signal` column to calculate entry and exit points, using the `diff` function on the `Position` column calculates the entry and exit points for the specified share size; in this case, 500 shares.
 
   ```python
   # Find the points in time where a 500 share position is bought or sold
@@ -437,7 +437,7 @@ Walk students through each step required to implement manual backtesting. Highli
 
   ![entry-exit-positions](Images/entry-exit-positions.png)
 
-* In the next step, a new column `Portfolio Holdings` is created by multiplying the closing prices of AAPL by the cumulative sum for entry and exit positions of 500 shares--indicating the value of the investment made for each trade over time.
+* In the next step, a new column `Portfolio Holdings` is created by multiplying the closing prices of AAPL by the cumulative sum for entry and exit positions of 500 shares-indicating the value of the investment made for each trade over time.
 
   ```python
   # Multiply share price by entry/exit positions and get the cumulatively sum
@@ -455,7 +455,7 @@ Walk students through each step required to implement manual backtesting. Highli
 
   ![erroneous-portoflio-holdings.png](Images/erroneous-portfolio-holdings.png)
 
-* Next, another new column `Portfolio Cash` is created by subtracting the initial capital allocation of $100,000 by the product of APPL closing prices and entry/exit share size positions--indicating the remaining cash value of the simulated portfolio relative to the performance of trades over time. Notice that now, parentheses are used around the product of AAPL closing prices and entry/exit share size positions when calculating the remaining portfolio cash. This is because while the investment value of each trade changes over time, the *cost-basis* of each trade remains the same.
+* Next, another new column `Portfolio Cash` is created by subtracting the initial capital allocation of $100,000 by the product of AAPL closing prices and entry/exit share size positions-indicating the remaining cash value of the simulated portfolio relative to the performance of trades over time. Notice that now, parentheses are used around the product of AAPL closing prices and entry/exit share size positions when calculating the remaining portfolio cash. This is because while the investment value of each trade changes over time, the *cost-basis* of each trade remains the same.
 
   ```python
   # Subtract the initial capital by the portfolio holdings to get the amount of liquid cash in the portfolio
@@ -485,7 +485,7 @@ Walk students through each step required to implement manual backtesting. Highli
 
   ![portfolio-daily-and-cumulative-returns](Images/portfolio-daily-and-cumulative-returns.png)
 
-* Finally, once again using the `hvplot` library, we can plot the entry and exit positions of the backtesting results of a simulated portfolio of $100,000. Results show that the trading strategy increased the simulated portfolio of $100,000 to slightly above $130,000.
+* Finally, once again using the `hvPlot` library, we can plot the entry and exit positions of the backtesting results of a simulated portfolio of $100,000. Results show that the trading strategy increased the simulated portfolio of $100,000 to slightly above $130,000.
 
   ![backtest-code](Images/backtest-code.png)
 
@@ -495,9 +495,9 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 8. Student Do: The Big Short Part II (15 mins)
+### 8. Student Do: The Big Short, Part II (15 mins)
 
-In this activity, students will now take the Short Position Dual Moving Average Crossover trading strategy they made in the previous student activity and now run a backtest to quantify the performance of their trading strategy.
+In this activity, students will take the Short Position Dual Moving Average Crossover trading strategy that they made in the previous student activity, and run a backtest to quantify the performance of their trading strategy.
 
 **Files:**
 
@@ -509,13 +509,13 @@ In this activity, students will now take the Short Position Dual Moving Average 
 
 ---
 
-### 9. Instructor Do: The Big Short Part II Review (10 mins)
+### 9. Instructor Do: The Big Short, Part II Review (10 mins)
 
 **File:** [the_big_short.ipynb](Activities/05-Stu_Backtesting/Solved/the_big_short_part_2.ipynb)
 
 Open the solution file and review the following:
 
-* The plot of the Short Position Dual Moving Average Crossover trading strategy showed that it was possible to *make* money from shorting VNQ (a real estate ETF) stock during the financial recession in 2008. Now, through backtesting the particular strategy, we will be able to see *how much* money can be made.
+* The plot of the Short Position Dual Moving Average Crossover trading strategy showed that it was possible to *make* money from shorting VNQ (a real estate ETF) stock during the financial recession in 2008. Now, through backtesting this particular strategy, we will be able to see *how much* money can be made.
 
   ![short-dual-ma-crossover-code2](Images/short-dual-ma-crossover-code2.png)
 
@@ -539,7 +539,7 @@ Open the solution file and review the following:
 
   ![short-dual-ma-backtesting-positions](Images/short-dual-ma-backtesting-positions.png)
 
-* The calculations for portfolio holdings and show that as the stock price decreases, the value of the portfolio holdings increase (become less negative).
+* The calculations for portfolio holdings show that as the stock price decreases, the value of the portfolio holdings increase (become less negative).
 
   ```python
   # Multiply share price by entry/exit positions and get the cumulatively sum
@@ -578,7 +578,7 @@ Open the solution file and review the following:
 
   ![short-portfolio-returns](Images/short-portfolio-returns.png)
 
-* Finally, plotting the Short Position Dual Moving Average crossover trading strategy against its backtesting results show that the algorithm would have *made* money by shorting VNQ stock during the 2008 financial crisis and by approximately $6,500 on an initial capital allocation of $100,000. Specifically, the ending portfolio value for the algorithm was $106,587.2295, and results in cumulative returns of 6.5872%.
+* Finally, plotting the Short Position Dual Moving Average crossover trading strategy against its backtesting results shows that the algorithm would have *made* money by shorting VNQ stock during the 2008 financial crisis and by approximately $6,500 on an initial capital allocation of $100,000. Specifically, the ending portfolio value for the algorithm was $106,587.2295, and results in cumulative returns of 6.5872%.
 
   ![short-backtest-results-code](Images/short-backtest-results-code.png)
 
@@ -596,27 +596,27 @@ Students will receive a dry walkthrough of the various evaluation metrics that c
 
 **Files:** [trading_algorithm_evaluation.ipynb](Activities/06-Ins_Evaluations/Solved/trading_algorithm_evaluation.ipynb)
 
-Navigate to the **evaluation** slide of the Unit 15.1 slideshow. Communicate the following:
+Go to the slideshow, navigate to the "Evaluation Metrics" section, and communicate the following:
 
 * Evaluating the performance of a portfolio is of utmost importance, regardless if it is a human or an algorithm making trades. The following metrics can be used to evaluate a portfolio.
 
-  * **Cumulative Return**- the total/aggregated amount of gains and losses for an investment. Cumulative return is measured across time and not for a given time period.
+  * **Cumulative Return:** The total/aggregated amount of gains and losses for an investment. Cumulative return is measured across time, and not for a particular time period.
 
-  * **Annual Return**- a time-weighted annual percentage representing the return on an investment over a period of time.
+  * **Annual Return:** A time-weighted annual percentage, representing the return on an investment over a period of time.
 
-  * **Annual Volatility**- the annualized degree of variation in trading prices over time.
+  * **Annual Volatility:** The annualized degree of variation in trading prices over time.
 
-  * **Sharpe Ratio**- The return of investment compared to its risk, measured by the difference between the return on investment and the risk-free return.
+  * **Sharpe Ratio:** The return of investment compared to its risk, measured by the difference between the return on investment and the risk-free return.
 
-  * **Downside Deviation/Return**- The measure of risk for returns that are below the minimum acceptable return.
+  * **Downside Deviation/Return:** The measure of risk for returns that are below the minimum acceptable return.
 
-  * **Sortino Ratio**-  The quotient of harmful volatility and overall volatility. The Sortino ratio focuses on downside deviation rather than the standard deviation.
+  * **Sortino Ratio:** The quotient of harmful volatility and overall volatility. The Sortino ratio focuses on downside deviation, rather than the standard deviation.
 
 * These metrics can be calculated for a portfolio through historical backtesting, or they can be used to measure the performances of specific securities before engaging in a trade.
 
 Transition to a dry walkthrough of the code used to calculate each of these metrics. Open the solution and highlight the following:
 
-* One of the advantages of using an algorithm for trading is that evaluation metrics can be calculated using the algorithm as well. This allows for each metric to be calculated within seconds. Having an algorithm calculate the evaluation metrics diminishes the chances of human error and improves the overall accuracy and time it takes to evaluate a portfolio/security/trade comprehensively.
+* One of the advantages of using an algorithm for trading is that evaluation metrics can be calculated using the algorithm as well. This allows for each metric to be calculated within seconds. Having an algorithm calculate the evaluation metrics diminishes the chances of human error, and improves the overall accuracy and time that it takes to evaluate a portfolio/security/trade comprehensively.
 
 * Point out to students the code to calculate cumulative returns.
 
@@ -626,7 +626,7 @@ Transition to a dry walkthrough of the code used to calculate each of these metr
 
 * Show students the code to calculate annual returns. Highlight that when calculating annual returns, the average of daily return has to be calculated first, and then that value can be multiplied by the number of trading days within a year to derive an annualized value.
 
-  **Note:** Sometimes it is more appropriate to use the formula for Compound Annual Growth Rate (CAGR) to account for compounding effects when dealing with investments over long durations of time. To get a better feel for what this means, visit the illustrative excel spreadsheet [here](../Supplemental/Simple_vs_Compound_Returns.xlsx)
+  **Note:** Sometimes it is more appropriate to use the formula for Compound Annual Growth Rate (CAGR) to account for compounding effects when dealing with investments over long durations of time. To get a better feel for what this means, visit the illustrative Excel spreadsheet [here](../Supplemental/Simple_vs_Compound_Returns.xlsx).
 
   ```python
   annual_returns = signals_df['Portfolio Daily Returns'].mean() * 252
@@ -640,19 +640,19 @@ Transition to a dry walkthrough of the code used to calculate each of these metr
 
 * Ask students if anyone remembers how to calculate a Sharpe ratio.
 
-  **Answer** Calculate the annual average daily return and then divide that by the standard deviation of daily returns. The standard deviation of daily returns will need to be multiplied by the square root of the number of trading days.
+  **Answer:** Calculate the annual average daily return, then divide that by the standard deviation of daily returns. The standard deviation of daily returns will need to be multiplied by the square root of the number of trading days.
 
   ```python
   sharpe_ratio = (signals_df['Portfolio Daily Returns'].mean() * 252) / (signals_df['Portfolio Daily Returns'].std() * np.sqrt(252))
   ```
 
-* Indicate that the downside returns or downside deviation metric is calculated by squaring daily returns less than 0.
+* Indicate that the downside returns, or downside deviation metric, is calculated by squaring daily returns less than 0.
 
   ```python
   sortino_ratio_df.loc[sortino_ratio_df['Portfolio Daily Returns'] < target, 'Downside Returns'] = sortino_ratio_df['Portfolio Daily Returns']**2
   ```
 
-* Sortino ratios are calculated using the downside return. Sortino ratios are calculated by dividing the average daily return by the square root of the average downside return.
+* Sortino ratios are calculated by dividing the average daily return by the square root of the average downside return.
 
   ```python
   down_stdev = np.sqrt(sortino_ratio_df['Downside Returns'].mean()) * np.sqrt(252)
@@ -674,15 +674,15 @@ Transition to a dry walkthrough of the code used to calculate each of these metr
 
 If time remains, finish the walkthrough by reminding students that even when trading with an algorithm, trades and portfolios need to be evaluated. Algorithms are not infallible. Touch upon the following:
 
-* Algorithms have to be tweaked and fine-tuned over time, especially as trading strategies evolve or are replaced. Because a machine will be handling the trading process, the algorithm must have metrics to use that will help measure performance, detect and mitigate risk, and track trends in returns on the fly.
+* Algorithms have to be tweaked and fine tuned over time, especially as trading strategies evolve or are replaced. Because a machine will be handling the trading process, the algorithm must have metrics to use that will help measure performance, detect and mitigate risk, and track trends in returns on the fly.
 
 * Evaluation metrics are also important for traders to have available, even if a machine is doing all of the trading and calculations. By analyzing evaluation metrics, humans can spot nuances in the data that the algorithm might not have been programmed/trained to detect. This could lead to new features for the algorithm, as well as an increased investment opportunity for the trader.
 
-Ask if there are any questions before moving forward.
+Ask if there are any questions before moving on.
 
 ---
 
-### 12. Students Do: The Big Short Part III (15 mins)
+### 12. Student Do: The Big Short, Part III (15 mins)
 
 Now that students have developed a Short Dual Moving Average trading strategy and backtested their strategy against historical VNQ prices, students can now calculate the portfolio and trade evaluation metrics to ascertain the performance of their short strategy.
 
@@ -692,7 +692,7 @@ Now that students have developed a Short Dual Moving Average trading strategy an
 
 ---
 
-### 13. Instructor Do: The Big Short Part III Review (10 mins)
+### 13. Instructor Do: The Big Short, Part III Review (10 mins)
 
 **Files:**
 
@@ -724,17 +724,17 @@ Ask for any remaining questions before moving on.
 
 ### 14. Everyone Do: Trading Dashboard (15 min)
 
-In this activity, instructors will walk students through creating a trading dashboard with Panel using the evaluation metrics generated from prior activities. At this point, students should already have exposure to creating dashboards using Panel.
+In this activity, instructors will walk students through creating a trading dashboard visualization using `hvplot`, using the evaluation metrics generated from prior activities. At this point, students should already have exposure to creating charts using `hvplot`.
 
-The purpose of this activity is to show students how to create a trading dashboard using the already shown (Unit 6) Panel dashboard library. In particular, students will once again define rows, columns, and tabs, as well as serve the trading dashboard as an actual web application.
+The purpose of this activity is to show students how to create a trading dashboard visualization using the already shown (Unit 6) `hvplot` library.
 
 **Files:** [trading_dashboard.ipynb](Activities/08-Ins_Trading_Dashboard/Solved/trading_dashboard.ipynb)
 
-Before moving onto the walkthrough, quickly review the following:
+Before diving into the walkthrough, navigate to the "Trading Dashboards" section of the slideshow and quickly review the following:
 
-* What is Panel?
+* What is hvPlot?
 
-  **Answer:** Panel is a high-level dashboarding library that allows a user to create custom interactive web apps and dashboards by connecting user-defined widgets, plots, images, tables, or text. Also, Panel works with other visualization libraries such as Plotly Express or Hvplot via extensions.
+  **Answer:** hvPlot is high-level plotting API for the PyData ecosystem built on HoloViews. The hvPlot API mirrors the Pandas plotting API, but instead of generating static images when used in a notebook, it uses HoloViews to create interactive plots.
 
 * What is a dashboard?
 
@@ -742,49 +742,43 @@ Before moving onto the walkthrough, quickly review the following:
 
 * Why use a dashboard?
 
-  **Answer:** Having a single interactive interface for key information and visualizations allows a user to monitor the health of an existing process, business function, or application, and therefore aids in measuring performance and identifying any discrepancies that may arise.
+  **Answer:** Having a single interactive interface for key information and visualizations allows users to monitor the health of an existing process, business function, or application, and therefore aids in measuring performance and identifying any discrepancies that may arise.
 
 Open the solution file and highlight the following:
 
-* Make sure to import the necessary libraries and dependencies to use the Panel dashboard and Hvplot visualizations. The `pn.extension()` function automatically detects the need for Panel to load additional extensions; in this case, Panel will load the extension for Hvplot.
+* Make sure to import the necessary libraries and dependencies to use the hvPlot visualizations.
 
   ```python
-  import panel as pn
+  import numpy as np
+  import pandas as pd
+  from pathlib import Path
   import hvplot
   import hvplot.pandas
-  pn.extension()
+  from IPython.display import Markdown
   ```
 
-* Before creating the Panel dashboard, we will need first to define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvplot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
+* Note that we are importing the `Markdown` module from the `IPython` library. We will use the `Markdown` module to display markdown text into the notebook programmatically.
+
+* Before creating the dashboard, we will first need to define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvPlot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
 
   ![hvplot-price-chart](Images/hvplot-price-chart.png)
 
   ![hvplot-evaluation-metrics](Images/hvplot-evaluation-metrics.png)
 
-* After generating the visualizations that will be added to the Panel dashboard, the next step is to assign the visualizations as rows, columns, and tabs to the Panel dashboard using the Panel `Row`, `Column`, and `Tabs` functions.
+* After generating the visualizations that will be added to the dashboard, the next step is to assemble the dashboard visualization.
 
   ```python
-  # Create rows
-  price_chart_row = pn.Row(price_chart)
-  portfolio_evaluation_row = pn.Row(portfolio_evaluation_table)
-  trade_evaluation_row = pn.Row(trade_evaluation_table)
-
-  # Create columns
-  portfolio_column = pn.Column('# Portfolio Evaluation Metrics', price_chart_row, portfolio_evaluation_row)
-  trade_column = pn.Column('# Trade Evaluation Metrics', trade_evaluation_row)
-
-  # Create tabs
-  trading_dashboard = pn.Tabs(
-      ("Portfolio Metrics", portfolio_column),
-      ("Trade Metrics", trade_column)
-  )
+  # Assemble dashboard visualization
+  display(Markdown("# Trading Dashboard"))
+  display(price_chart)
+  portfolio_evaluation_table + trade_evaluation_table
   ```
 
-* Lastly, the `servable` function then serves or initializes the dashboard. There are two ways to use the `servable` function, either in a Jupyter notebook file where the dashboard is displayed within the notebook file itself, or using the terminal command `panel serve --show trading_dashboard.ipynb` which creates a web application of the dashboard via the default localhost port 5006.
+![trading-dashboard](Images/trading-dashboard.png)
 
-  ![panel-trading-dashboard-servable](Images/panel-trading-dashboard-servable.png)
+* Note that we use the `display()` function to show the dashboard title and the `price_chart` on above the tables. Also, we use the plus (`+`) operator to display the two tables side by side.
 
-  ![panel-trading-dashboard-servable-localhost](Images/panel-trading-dashboard-servable-localhost.png)
+* Using `hvplot`, you can combine several charts to create dashboard-like visualizations quickly and easy to present results and analyze investment information.
 
 Ask if there are any questions before moving forward.
 
@@ -792,9 +786,9 @@ Ask if there are any questions before moving forward.
 
 ### 15. Instructor Do: Reflect (15 min)
 
-This activity will conclude today's lesson on Algorithmic Trading Day 1 and provide a chance for students to reflect upon what they've learned throughout the day.
+This activity will conclude today's Day 1 of Algorithmic Trading lesson, and give students a chance to reflect upon what they've learned throughout the day.
 
-The purpose of this activity is to allow students a chance to take a step back and digest the concepts that have been taught today by engaging students in such a way that students drive the conversation, thereby reinforcing their learning by "teaching" the class.
+The purpose of this activity is to let students take a step back and digest the concepts that have been taught today. The goal is to engage students in a way that they are driving the conversation, thereby reinforcing their learning by "teaching" the class.
 
 Recap the skills and concepts learned throughout the lesson, and engage students by having them lead the discussion as much as possible:
 
@@ -810,16 +804,16 @@ Recap the skills and concepts learned throughout the lesson, and engage students
 
   * What kinds of trade evaluation metrics exist?
 
-* Ask if any volunteers would like to anything that has not been previously stated.
+* Ask if any volunteers would like to add anything that has not already been discussed.
 
 Finish the recap with a few statements of encouragement:
 
 * Tell students they should give themselves a round of applause. They are on their way to becoming their own investment fund managers!
 
-* Remind students that by learning how to trade algorithmically, they are now already way ahead of those who only know how to invest manually. Therefore, they now have the tools to do both and can choose which method they prefer, either algorithmically, manually or a hybrid of both.
+* Remind students that by learning how to trade algorithmically, they are now already way ahead of those who only know how to invest manually. Therefore, they now have the tools to do both, and can choose which method they prefer, either algorithmically, manually, or a hybrid of both.
 
-* The next step is to create an algorithmic trading framework on Day 2, in which students will take what they've learned today to create a full-fledged trading application that they can use in real-world scenarios. Students should be pumped for this!
+* In the next class, students will take what they've learned today to create a full-fledged trading application that they can use in real-world scenarios. They should be pumped for this!
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

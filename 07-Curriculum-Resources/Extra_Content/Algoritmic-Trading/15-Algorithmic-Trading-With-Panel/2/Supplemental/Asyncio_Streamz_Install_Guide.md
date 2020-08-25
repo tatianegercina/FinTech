@@ -9,7 +9,7 @@ Open a terminal, and execute the following commands to install `asyncio` and `st
 * Use the `pip install` command to download the `asyncio` module.
 
   ```shell
-  pip install asyncio
+  pip install aysncio
   ```
 
   ![asyncio-install](Images/asyncio-install.png)
@@ -77,7 +77,7 @@ An out-of-date Anaconda environment can create issues when trying to install new
 5. Install the `asyncio` and `streamz` packages.
 
     ```shell
-    pip install asyncio
+    pip install iexfinance
     ```
 
     ```shell
