@@ -58,7 +58,9 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (10 min)
 
-Welcome students to the third day of the introduction to the blockchain technology, open the lesson slides, and highlight that by the end of Today's class, we will do the following:
+Welcome students to the third day of the introduction to the blockchain technology, open the lesson slides and present the class objectives.
+
+Move to the "Blockchain Skill Check" section and highlight that by the end of Today's class, we will do the following:
 
 * Build a blockchain from scratch!
 
@@ -66,7 +68,7 @@ Welcome students to the third day of the introduction to the blockchain technolo
 
 * Make transactions in our very own blockchain.
 
-Move to the "Blockchain Skill Check" section, continue by refreshing students a bit on the data structure of a blockchain. Ask the students the following questions:
+Continue by refreshing students a bit on the data structure of a blockchain. Ask the students the following questions:
 
 * What does the "chain" in blockchain refer to?
 
