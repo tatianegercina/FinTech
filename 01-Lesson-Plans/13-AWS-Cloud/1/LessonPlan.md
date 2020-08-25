@@ -780,7 +780,7 @@ Ask students to login into their [AWS Console](https://console.aws.amazon.com) a
 
 * Amazon SageMaker might not be available in all AWS regions, but `us-west (Oregon)` is sure to have it.
 
-Ask students to explore the main components on the left pane menu, and they can explore beyond the class by clicking on Start with an overview.
+Ask students to explore the main components on the left pane menu.
 
 ![Amazon SageMaker Landing Page](Images/sagemaker-landing.png)
 
