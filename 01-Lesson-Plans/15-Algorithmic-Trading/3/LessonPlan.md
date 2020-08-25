@@ -28,6 +28,22 @@ By the end of class, students will be able to:
 
 ---
 
+### Class Slides and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [15.3 Lesson Slides](https://docs.google.com/presentation/d/1yeWRG2_4t9vo1DcBdS5r-3Wvd2B0Jua9IPUNbJDV3t0/edit?usp=sharing).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to file, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to file and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+
+### Sample Class Video (Highly Recommended)
+
+* To watch an example class lecture, go here: [15.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a79f7419-2a51-4bc6-aa09-ab1c00f77a4b&query=CU-NYC-FIN-PT-08-2019-U-C) Note that this video may not reflect the most recent lesson plan.
+
+---
+
 ### 1. Instructor Do: Random Forest Trading (15 min)
 
 In this activity, students will learn how to generate a set of trading signals derived from raw BTC/USD data that will be used as features to train a Random Forest machine learning model that will autonomously make predictions and corresponding trades.
