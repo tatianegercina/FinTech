@@ -6,13 +6,13 @@
 
 Today's class introduces students to smart contracts.
 
-At a glance, smart contracts are computer programs that allow credible transactions of digital assets under certain conditions without third parties. In this Unit, students will learn what a smart contract is, and they will build smart contracts using [Solidity](https://solidity.readthedocs.io/en/latest/index.html), an object-oriented language for implementing smart contracts in Ethereum.
+At a glance, smart contracts are computer programs that allow credible transactions of digital assets under certain conditions without third parties. In this unit, students will learn what a smart contract is, and they will build smart contracts using [Solidity](https://solidity.readthedocs.io/en/latest/index.html), an object-oriented language for implementing smart contracts in Ethereum.
 
 Today's class will introduce students to the fundamental concepts of smart contracts, as well as to the development tools and environment they will use to create, compile, and deploy their smart contracts.
 
 ### Class Objectives
 
-By the end of the Unit, students will be able to:
+By the end of the unit, students will be able to:
 
 * Explain what a smart contract is, and its applications in FinTech and other business areas.
 
@@ -20,27 +20,27 @@ By the end of the Unit, students will be able to:
 
 * Explain how the Ethereum Virtual Machine (EVM) is an isolated environment, and how Solidity code can only access on-chain data.
 
-* Recognize that a smart contract is a program that runs on the EVM (Ethereum Virtual Machine)
+* Recognize that a smart contract is a program that runs on the EVM.
 
 * Identify the different kinds of smart contracts and their top use cases.
 
-* Explain how Remix & Ganache support blockchain development.
+* Explain how Remix and Ganache support blockchain development.
 
 * Set up their developer environment using Remix and Ganache.
 
 ### Instructor Notes
 
-* Smart contracts have a lot of math and computing complexity that is beyond the scope of today's class. The goal of this lesson is to show students how smart contracts work and what tools are used to create, compile, and deploy smart contracts.
+* Smart contracts have a lot of math and computing complexity that is beyond the scope of today's class. The goal of this lesson is to show students how smart contracts work, and what tools are used to create, compile, and deploy smart contracts.
 
-* Smart contracts have several applications beyond the financial sector such as medical, industrial (supply chain), cybersecurity, and many more. Feel free to include additional use cases or applications that you believe are suitable for the class.
+* Smart contracts have several applications beyond the financial sector, such as medical, industrial (supply chain), cybersecurity, and many more. Feel free to include additional use cases or applications that you believe are suitable for the class.
 
 * Setting up the development environment may be tricky; be sure to follow the [installation guide](../Supplemental/unit-20-install-guide.md) before the class to get familiarized with the process.
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1nTdsL4xs1-BWEpdjocEA0DW4SoUJRLXGjwRMb3G5L44/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [20.1 Lesson Slides](https://docs.google.com/presentation/d/1LOHnW1lmkVYXp7DZVxatvtQC59hQBsUWReL6X6fhRVI/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository, along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting `Make a copy`.
 
@@ -63,9 +63,9 @@ Open the lesson slides and briefly introduce smart contracts:
 
 * Using smart contracts allow for building completely decentralized applications, called `dApps`.
 
-* Today, we will be exploring the smart contract/dApp ecosystem and getting familiar with the development tools needed to build them.
+* Today, we will explore the smart contract/dApp ecosystem and get familiar with the development tools needed to build them.
 
-Explain to students that smart contracts are disrupting the way we understand the ownership and transference of goods, not only digital but also tangible.
+Explain to students that smart contracts are disrupting the way we understand the ownership and transfer of tangible and digital goods.
 
 This is why smart contracts are being used beyond the financial sector in government, real state, supply chain, and health care.
 
@@ -75,21 +75,21 @@ Let's start by exploring some use cases of smart contracts!
 
 ### 2. Instructor Do: Introduction to Smart Contracts and dApps (10 min)
 
-In this activity, students will learn more about smart contracts, and they will be introduced to the concept of decentralized applications (dApps).
+In this activity, students will learn more about smart contracts, and be introduced to the concept of decentralized applications (dApps).
 
 Open the lesson slides and conduct a facilitated discussion by starting with the following question:
 
-* If smart contracts are computer programs that allow credible transactions of digital assets under certain conditions without third parties, what could be the building blocks to define and deploy smart contracts?
+* If smart contracts are computer programs that allow credible transactions of digital assets under certain conditions without third parties, what are the building blocks to define and deploy smart contracts?
 
 If nobody answers the question, lean on blockchain enthusiasts in the class to start the discussion by asking the question directly to one of them.
 
-Spend up to three minutes in this initial question, and use the classroom board to create a list of the building blocks shared by the students. Summarize the answers with the following list and explain each bullet.
+Spend up to three minutes on this initial question, and use the classroom board to create a list of the building blocks shared by the students. Summarize the answers with the following list and explain each bullet.
 
 * A reliable and robust blockchain technology.
 
- * **Explanation:** We will use Ethereum in this class, a platform that not only offers a cryptocurrency but also, it is a blockchain-based distributed computing platform featuring smart contract functionality and applications development.
+ * **Explanation:** We will use Ethereum in this class, a platform that not only offers a cryptocurrency, but is also a blockchain-based distributed computing platform featuring smart contract functionality and applications development.
 
-* A robust and reliable programming language.
+* A reliable and robust programming language.
 
  * **Explanation:** Along the following weeks, we will use Solidity, one of the best programming languages to create and deploy smart contracts in Ethereum.
 
@@ -103,11 +103,11 @@ Spend up to three minutes in this initial question, and use the classroom board 
 
 * An industry-supported blockchain technology.
 
- * **Explanation:** Beside the [Ethereum Foundation](https://www.ethereum.org/), who is in charge of the development of the Ethereum framework, several companies also support Ethereum through [the Enterprise Ethereum Alliance (EEA)](https://entethalliance.org/). Various blockchain start-ups, research groups, and Fortune 500 companies form this association ([full list of members](https://entethalliance.org/members/)).
+ * **Explanation:** While the [Ethereum Foundation](https://www.ethereum.org/) is in charge of the development of the Ethereum framework, several companies also support Ethereum through [the Enterprise Ethereum Alliance (EEA)](https://entethalliance.org/). Various blockchain startups, research groups, and Fortune 500 companies form this association ([full list of members](https://entethalliance.org/members/)).
 
 * A suitable set of development tools to create and deploy smart contracts.
 
- * **Explanation:** As part of the Ethereum development toolbox, we have software tools like Remix, Truffle, and Ganache, that help developers to comfortably and confidently create, compile, and deploy smart contracts. These are the tools we are going to use in this Unit.
+ * **Explanation:** As part of the Ethereum development toolbox, we have software tools like Remix, Truffle, and Ganache, that help developers to comfortably and confidently create, compile, and deploy smart contracts. These are the tools we are going to use in this unit.
 
 Continue in the lesson slides, move the `Decentralized Applications` section, and highlight the following:
 
@@ -125,11 +125,11 @@ Continue in the lesson slides, move the `Decentralized Applications` section, an
 
  * Token generation: tokens as proof of value, generated through a cryptographic algorithm.
 
-* Using dApps, we can develop software applications not only for the financial sector but also for web browsers, cloud storage, instant messaging, social networks, and even operating systems.
+* Using dApps, we can develop software applications not only for the financial sector, but also for web browsers, cloud storage, instant messaging, social networks, and even operating systems.
 
-Explain to students that this new paradigm of software development is also known as version 3 of the Internet or Web 3.0. Web 1.0 was the beginning of the Internet were websites were very simple with limited interactivity, and the basic tools and protocols were defined; Web 2.0 was marked by the rise of social networks and cloud computers, the new Web 3.0 is the evolution of the Internet to a decentralized environment powered by blockchain technologies.
+Explain to students that this new paradigm of software development is also known as version 3 of the internet, or Web 3.0. Web 1.0 was the beginning of the internet, where websites were very simple with limited interactivity, and the basic tools and protocols were defined; Web 2.0 was marked by the rise of social networks and cloud computers. The new Web 3.0 is the evolution of the internet to a decentralized environment powered by blockchain technologies.
 
-Comment to students that in the following weeks, they will learn how to create and deploy dApps using the Ethereum platform.
+Tell students that in the following weeks, they will learn how to create and deploy dApps using the Ethereum platform.
 
 Answer any questions before moving on.
 
@@ -137,7 +137,7 @@ Answer any questions before moving on.
 
 ### 3. Student Do: Smart Contracts in Action (15 min)
 
-In this activity, students will work in groups up to three people to analyze several use cases to explore that correspond with popular types of smart contracts like tokens, notaries, supply chain, digital marketplaces, etc.
+In this activity, students will work in groups of up to three people to analyze several use cases that correspond with popular types of smart contracts, like tokens, notaries, supply chain, digital marketplaces, etc.
 
 Circulate through the room while students are completing the activity. Look to identify students who are actively engaging peers and digging deeper. Keep these students in mind for later, as they may be helpful to distribute among groups.
 
@@ -153,7 +153,7 @@ The only way to not excel at this exercise is to not participate in the research
 
 ### 4. Instructor Do: Smart Contracts in Action Review (5 min)
 
-Conduct a facilitated discussion by asking a couple of groups to share their conclusions and insights about the use cases their review, focus on discussing with the class which features they noticed are compliant with the criteria from ["The General Theory of Decentralized Applications"](https://github.com/DavidJohnstonCEO/DecentralizedApplications).
+Conduct a facilitated discussion by asking a couple of groups to share their conclusions and insights about the use cases they reviewed. Focus on discussing which features they noticed are compliant with the criteria from ["The General Theory of Decentralized Applications"](https://github.com/DavidJohnstonCEO/DecentralizedApplications).
 
 * Decentralized operation: open-source code, autonomous operation, consensus of its users.
 
@@ -163,13 +163,13 @@ Conduct a facilitated discussion by asking a couple of groups to share their con
 
 * Token generation: tokens as proof of value, generated through a cryptographic algorithm.
 
-Have groups share a few items on the lists of features they curated, answer any questions before moving on.
+Have groups share a few items on the lists of features they curated. Answer any questions before moving on.
 
 ---
 
 ### 5. Everyone Do: Installing MetaMask (10 min)
 
-In this activity, the instructor will have the class installing the [MetaMask](https://metamask.io/) browser extension, and import their mnemonics to enable dApp support on their web browsers.
+In this activity, the instructor will have students install the [MetaMask](https://metamask.io/) browser extension, and import their mnemonics to enable dApp support on their web browsers.
 
 Open the lesson slides, move to the `Installing MetaMask` section, and highlight the following:
 
@@ -177,33 +177,33 @@ Open the lesson slides, move to the `Installing MetaMask` section, and highlight
 
 * We are going to use MetaMask to run our dApps and make transfers to our blockchains.
 
-Slack out the MetaMask web address to students (https://metamask.io/), open the URL in your browser, and ask students to follow you along the installation process.
+Slack out the MetaMask web address to students (https://metamask.io/), open the URL in your browser, and ask students to follow along with the installation process.
 
 ![MetaMask installation - 1](Images/metamask-1.png)
 
 Explain to students that since MetaMask is a web browser extension, it will run seamlessly in any operating system.
 
-* When you navigate to the MetaMask's URL, your browser will be automatically detected, if not, choose the correct version.
+* When you navigate to the MetaMask's URL, your browser will be automatically detected. If not, choose the correct version.
 
-* The Google Chrome extension is going to be used in this demo.
+* The Google Chrome extension will be used in this demo.
 
-Click on the `Get Chrome Extension` link, a new window is going to be opened where you will be able to install the MetaMask extension from the Chrome Web Store.
+Click on the `Get Chrome Extension` link. A new window will open where you will install the MetaMask extension from the Chrome Web Store.
 
 ![MetaMask installation - 2](Images/metamask-2.png)
 
-Click on the `Add to Chrome` button to start the installation process.
+Click the `Add to Chrome` button to start the installation process.
 
 Next, a pop-up window will be opened where you have to click on the `Add Extension` button to continue.
 
 ![MetaMask installation - 3](Images/metamask-3.png)
 
-When the `Welcome to MetaMask` website opens, explain to students that they should see a small `fox icon` in the toolbar if MetaMask was successfully installed in their web browsers.
+When the `Welcome to MetaMask` website opens, tell students that they should see a small `fox icon` in the toolbar if MetaMask was successfully installed in their web browsers.
 
 ![MetaMask installation - 4](Images/metamask-4.png)
 
 To start configuring your MetaMask account, click on the `Get Started` button.
 
-Explain to students that we will import the wallet that runs in our local blockchain.
+Tell students that we will import the wallet that runs in our local blockchain.
 
 Click on the `Import Wallet` button to continue.
 
@@ -213,13 +213,13 @@ Explain the following points about the usage agreement:
 
 * The usage agreement is where the MetaMask team asks you to collaborate on improving the tool.
 
-* This agreement to participate is optional and is a personal choice.
+* This agreement to participate is optional and a personal choice.
 
 ![MetaMask installation - 6](Images/metamask-6.png)
 
-In the next window, explain to students that they should enter the twelve word mnemonic of their local wallet, their wallet password, and they should click on the `I have read and agree to the Terms of Use` checkbox to continue.
+In the next window, explain to students that they should enter the 12-word mnemonic of their local wallet, their wallet password, and then click the `I have read and agree to the Terms of Use` checkbox to continue.
 
-Explain to students that we can securely accept the `Terms of Use` from MetaMask. If anyone has a concern about this step, invite them to read through the terms by clicking on the link.
+Tell students that we can securely accept the `Terms of Use` from MetaMask. If anyone has a concern about this step, invite them to read through the terms by clicking on the link.
 
 ![MetaMask installation - 7](Images/metamask-7.png)
 
@@ -227,13 +227,13 @@ After filling out your wallet details, click on the `Import` button to continue,
 
 ![MetaMask installation - 8](Images/metamask-8.png)
 
-Students may notice a message at the bottom of the page that says that `MetaMask cannot recover your seed phrase`. Explain to students that this means that once you import your keys, MetaMask won't export them again, so if you lose your mnemonic, you can't extract it from metamask. Encourage students to keep their mnemonics in a safe place!
+Students may notice a message at the bottom of the page that says, `MetaMask cannot recover your seed phrase`. Explain to students that this means that once you import your keys, MetaMask won't export them again. So if you lose your mnemonic, you can't extract it from Metamask. Encourage students to keep their mnemonics in a safe place!
 
 Click on the `All Done` button to continue. Explain to students that they will see a page showing the balance of their wallet and the transaction history.
 
 ![MetaMask installation - 9](Images/metamask-9.png)
 
-Explain to students that they may have `0 ETH` and no transactions. Explain to students that this is all right from now since we have not started our local blockchain. We will learn how to connect MetaMask with our local wallet in future activities.
+Explain to students that they may have `0 ETH` and no transactions. Tell students that this is all right for now, since we have not started our local blockchain. We will learn how to connect MetaMask with our local wallet in future activities.
 
 Explain the following about the wallet keys:
 
@@ -294,7 +294,7 @@ Click the Server tab.
 
 * The `automine` feature is a very convenient option; when a transaction happens, such as someone executing/deploying a smart contract or sending/receiving funds, the block is instantaneously processed so that there is no wait time.
 
-* `Automine` is convenient because you can see the results of transactions instantaneously but dangerous in the fact that it is not representative of how a blockchain normally functions.
+* `Automine` is convenient because you can see the results of transactions instantaneously, but dangerous in the fact that it is not representative of how a blockchain normally functions.
 
 * The `ERROR ON TRANSACTION FAILURE` is useful because it will log additional information about errors to our GUI.
 
@@ -308,7 +308,7 @@ Now click `Accounts and Keys`.
 
 * `TOTAL ACCOUNTS TO GENERATE` is the number of accounts that will be generated containing the balance.
 
-Emphasize the importance of the wallet mnemonic to an Ethereum wallet and its ability to generate addresses.
+Emphasize the importance of the wallet mnemonic to an Ethereum wallet, and its ability to generate addresses.
 
 * `AUTOGENERATE HD MNEMONIC` is another way to auto-generate our mnemonic. We, however, are going to be using our previously generated mnemonics.
 
@@ -322,7 +322,7 @@ Click `Save Workspace`.
 
 Elaborate on the following sections of the Ganache accounts page.
 
-* The workspace info bar displays the settings for your current workspace, many of these values should be familiar from the initial setup.
+* The workspace info bar displays the settings for your current workspace. Many of these values should be familiar from the initial setup.
 
 * As you can see, our wallet mnemonic is also listed.
 
@@ -332,9 +332,9 @@ Click the blocks tab:
 
 ![ganache_blocks.png](Images/ganache_blocks.png)
 
-This page should be relatively empty, only listing block zero -- explain:
+This page should be relatively empty, only listing block zero. Explain:
 
-* Since it is a new workspace, the blockchain only consists of the block that contains our initial blockchain configuration.
+* Since it is a new workspace, the blockchain only consists of the block containing our initial blockchain configuration.
 
 * As more transactions happen, more blocks will be mined instantaneously because of the `automine` feature.
 
@@ -352,7 +352,7 @@ Briefly introduce Remix:
 
 * Remix is an online IDE and compiler for the `Solidity` smart contract language.
 
-* Remix allows you to write, compile and deploy Solidity smart contracts onto the Ethereum blockchain.
+* Remix allows you to write, compile, and deploy Solidity smart contracts onto the Ethereum blockchain.
 
 Enable the `Solidity` development environment by clicking on the "Solidity" button on the Remix Home tab.
 
@@ -366,7 +366,7 @@ The Solidity file's code should appear in the editor window.
 
 ![remix_editor_message](Images/remix_editor_message_board.png)
 
-Reassure the students that though this contract may look complicated now, soon it will make a lot more sense.
+Reassure the students that though this contract may look complicated now, it will make a lot more sense soon.
 
 Click the `Solidity Compiler` button on the Remix sidebar then click `Compile` to compile the contract.
 
@@ -392,21 +392,21 @@ Change the Environment to `Injected Web3`:
 
 ![remix_injected_web3](Images/remix_injected_web3.png)
 
-You will see a connection request from MetaMask to connect Remix with your local blockchain, click the "Connect" button to continue.
+You will see a connection request from MetaMask to connect Remix with your local blockchain. Click the "Connect" button to continue.
 
 ![remix_metamask_connection](Images/remix_metamask_connection.png)
 
-Explain to the students that:
+Explain to students that:
 
 * Web3 is a library that allows you to communicate with Ethereum nodes.
 
-* We must set our environment to `Injected Web3` so that Remix can talk to MetaMask, which can talk to our local blockchain. In this case, MetaMask is "injecting" the Web3 library into your browser, which allows Remix to communicate to the outside world (Ethereum).
+* We must set our environment to `Injected Web3` so that Remix can talk to MetaMask, which talks to our local blockchain. In this case, MetaMask is "injecting" the Web3 library into your browser, which allows Remix to communicate to the outside world (Ethereum).
 
 * We will be writing our own custom smart contracts tomorrow, but today we will just be familiarizing ourselves with Remix.
 
 ---
 
-### 07. Students Do: Setting up Remix and Ganache (15 min)
+### 07. Student Do: Setting up Remix and Ganache (15 min)
 
 Students will setup Ganache, create a workspace for `fintech`, set the `RPC port` to `8545`, and import their `mnemonic` into Ganache's settings to keep their wallets consistent in their test blockchain. Then, they will explore the Remix IDE with the time left.
 
@@ -414,17 +414,17 @@ Students will setup Ganache, create a workspace for `fintech`, set the `RPC port
 
 * [README.md](Activities/03_Stu_Setting_up_Remix_And_Ganache/README.md)
 
-Have the TA's circulate the room to assist with any installation issues that students may be having -- Students may have to add an allow rule to windows firewall.
+Have the TAs circulate the room to assist with any installation issues that students may be having. Students may have to add an allow rule to the Windows firewall.
 
 ---
 
 ### 08. Instructor Do: Remix and Ganache Review (5 min)
 
-Open Ganache and ask the students the following questions.
+Open Ganache and ask the students the following questions:
 
 * How might a local development blockchain like Ganache make it easier to develop smart contracts?
 
- **Answer** It allows potentially insecure code to run in a private(non-public) environment.
+ **Answer** It allows potentially insecure code to run in a private (non-public) environment.
 
  **Answer** It saves you from having to purchase actual ether.
 
@@ -432,11 +432,11 @@ Open Ganache and ask the students the following questions.
 
  **Answer** Transactions happen right away.
 
-* How might remix make it easier to write smart contracts?
+* How might Remix make it easier to write smart contracts?
 
- **Answer** You can write a smart contract from pretty much any browser.
+ **Answer** You can write a smart contract from almost any browser.
 
- **Answer** It allows for writing, compiling, and deploying all in one place.
+ **Answer** It allows for writing, compiling, and deploying, all in one place.
 
  **Answer** It supports connecting to local development blockchains.
 
@@ -448,9 +448,9 @@ Open Ganache and ask the students the following questions.
 
 ### 10. Instructor Do: Contextualizing Solidity (15 min)
 
-In this exercise, the instructor will explain to the students that Solidity is a statically typed language and that it runs inside the Ethereum Virtual Machine (EVM) in a sandbox.
+In this exercise, the instructor will explain to students that Solidity is a statically typed language and that it runs inside the Ethereum Virtual Machine (EVM) in a sandbox.
 
-* Solidity is the language of smart contracts used by Ethereum, as well as Ethereum-compatible blockchains like IBM's Hyperledger Fabric and Burrow, JPMorgan Chase's Quorum, Ethereum Classic, and last, but not least, Counterparty which extends Bitcoin to support the EVM.
+* Solidity is the language of smart contracts used by Ethereum, as well as Ethereum-compatible blockchains like IBM's Hyperledger Fabric and Burrow, JPMorgan Chase's Quorum, Ethereum Classic, and last, but not least, Counterparty, which extends Bitcoin to support the EVM.
 
 * Solidity is a statically typed language, so it will also help you understand other statically typed languages you may have heard of, like C, C++, Go, Java, Rust, and many more.
 
@@ -462,15 +462,15 @@ Try to conceptualize what is happening in the graphic.
 
 * The Ethereum Virtual Machine is a sandboxed environment backed by a virtual stack and capable of performing calculations. There's an EVM embedded within every Ethereum full node on the Ethereum network. Since code executes inside the sandboxed processes of the Ethereum node, machine code remains isolated from the host machine. Let's break down the levels of the following graphic.
 
-* Higher Level language
+* High-level language
 
- * Solidity is the `Higher Level Language` of the EVM.
+ * Solidity is the `High-level language` of the EVM.
 
- * A higher level language allows code to be written that is independent of a particular computer's hardware.
+ * A high-level language allows code to be written that is independent of a particular computer's hardware.
 
- * A higher level language is a language that is more easily understandable for humans than machine code.
+ * A high-level language is a language that is more easily understandable for humans than machine code.
 
- * A higher level language cannot be understood by a computer; it has to be compiled to machine code by the compiler before it can be understood.
+ * A high-level language cannot be understood by a computer; it has to be compiled to machine code by the compiler before it can be understood.
 
 * Machine Code
 
@@ -492,7 +492,7 @@ Show the class the example machine code.
 
 * Virtual Machine
 
- * The EVM contains a memory, storage, and all of the essential parts of a physical computer, just virtual, and sandboxed inside of your Ethereum node.
+ * The EVM contains memory, storage, and all of the essential parts of a physical computer, just virtual, and sandboxed inside of your Ethereum node.
 
  * Every Ethereum node runs the EVM, which is how all Ethereum nodes are able to process and validate transactions and smart contracts.
 
@@ -512,7 +512,7 @@ Show the class the example machine code.
 
 ---
 
-### 11. Students Do: Contextualizing Solidity Worksheet (10 min)
+### 11. Student Do: Contextualizing Solidity Worksheet (10 min)
 
 Students will fill in a simple chart (pipeline) of the various levels of the EVM's architecture with the names of the various levels and their real-world implementation.
 
@@ -581,13 +581,13 @@ Open the lesson slides, move to the "Unveiling Decentralized Apps" section and h
 
 * According to the Fluence Labs' report, the major obstacle to dApps adoption is new users onboarding.
 
-Continue with lesson slides and ask the following question to students:
+Continue with the lesson slides and ask the following question to students:
 
-* If you were about to start a dApp program, how will you boost your new users' base?
+* If you were about to start a dApp program, how would you boost your new users' base?
 
-If no-one answers the question, ask for a volunteer from the blockchain enthusiast in class to share her or his insights. You may conclude with the following example.
+If no one answers the question, ask for a volunteer from the blockchain enthusiasts in class to share her or his insights. You may conclude with the following example:
 
-* From radio to television and now the internet, every new disrupting technology has faced adoption challenges. In the end, part of the solution has been to ease how people use technology. In other words, improving the user experience may increase the new user base.
+* From radio to television, and now the internet, every new disruptive technology has faced adoption challenges. In the end, part of the solution has been to ease how people use technology. In other words, improving the user experience may increase the new user base.
 
 Open your browser and navigate to the [State Of The Dapps website](https://www.stateofthedapps.com/). Explain to students that this platform showcases a panorama of the dApps ecosystem and ranks the dApps based on an analysis of GitHub activity.
 
@@ -605,11 +605,11 @@ In the navigation menu at the top, click on the "All DApps" option, and highligh
 
 * We may be interested in those projects that are `live`.
 
-Click on the "Rankings" option in the navigation menu and explain to the students that using this option, they can navigate through the dApps listing according to the rank given by the website's statistics.
+Click on the "Rankings" option in the navigation menu, and explain to the students that by using this option, they can navigate through the dApps listing according to the rank given by the website's statistics.
 
 ![State Of The Dapps - 3](Images/state-of-the-daps-3.png)
 
-* The rank is updated daily, and it's based on multiple factors including active users (unique source addresses in transactions to DApp contracts), transaction volume, developer activity, profile freshness and strength, and user recommendations.
+* The rank is updated daily and based on multiple factors, including active users (unique source addresses in transactions to DApp contracts), transaction volume, developer activity, profile freshness and strength, and user recommendations.
 
 * The results can be filtered by `platform` and `category`.
 
@@ -623,11 +623,11 @@ Continue by visiting the "Stats" section from the navigation menu and highlight 
 
 * This information can be used to benchmark the current state of the dApps ecosystem, as well as to analyze trends by a specific sector.
 
-In the search box at the top, look for the `nexo` project, explain to students that you are going to talk about one project that is doing a worth to mention work on attracting new users through improving user experience.
+In the search box at the top, look for the `nexo` project. Explain to students that you are going to talk about one project that is doing a worth to mention work on attracting new users through improving user experience.
 
 ![State Of The Dapps - 5](Images/state-of-the-daps-5.gif)
 
-* Nexo is an instant crypto lending provider on a global scale, servicing more than 40 currencies across more than 200 jurisdictions.
+* Nexo is a global, instant crypto lending provider, servicing more than 40 currencies across more than 200 jurisdictions.
 
 Click on the "Launch DApp/website" button below the logo of Nexo on the right side to open the project's website and highlight the following:
 
@@ -639,27 +639,27 @@ Click on the "Launch DApp/website" button below the logo of Nexo on the right si
 
  ![State Of The Dapps - 6](Images/state-of-the-daps-6.png)
 
-Explain to students that as it can be seen so far, this project is trying to disrupt in the banking sector by offering a solution to earn interest with cryptocurrency savings and offering an automated line of credit.
+Explain to students that so far, it appears that this project is trying to disrupt the banking sector by offering a solution to earn interest with cryptocurrency savings as well as offering an automated line of credit.
 
-Go further with the demo, click on the "Create Account" button in the upper right corner, and follow the next steps.
+Go further with the demo; click on the "Create Account" button in the upper right corner, and follow the next steps.
 
 ![State Of The Dapps - 7](Images/state-of-the-daps-7.png)
 
-**Note:** You may want to use a testing e-mail account for this demo.
+**Note:** You may want to use a testing email account for this demo.
 
-* To create an account, enter your e-mail and password. Solve the verification challenge and click on the "Sign Up" button.
+* To create an account, enter your email and password. Solve the verification challenge and click on the "Sign Up" button.
 
  ![State Of The Dapps - 8](Images/state-of-the-daps-8.png)
 
-* After entering your account details, you will see the next page asking for verification of your e-mail account.
+* After entering your account details, you will see the next page asking for verification of your email account.
 
  ![State Of The Dapps - 9](Images/state-of-the-daps-9.png)
 
-* Open your inbox, verify your e-mail address using the message you received from Nexo. This link will redirect you to the following confirmation page.
+* Open your inbox, verify your email address using the message you received from Nexo. This link will redirect you to the following confirmation page.
 
  ![State Of The Dapps - 10](Images/state-of-the-daps-10.png)
 
-* After clicking on the "Continue to your Nexo Account", you will have instant access to your brand new account.
+* After clicking on "Continue to your Nexo Account," you will have instant access to your brand new account.
 
  ![State Of The Dapps - 11](Images/state-of-the-daps-11.gif)
 
@@ -671,15 +671,15 @@ Go further with the demo, click on the "Create Account" button in the upper righ
 
 Explain to students that this is a demonstration of how a traditional service (saving money and having a credit card) can be simplified and disrupted using the same blockchain technology they are learning in class.
 
-Ask students the following rhetoric question:
+Ask students the following rhetorical question:
 
-* How could you disrupt in any other sector than finance creating a dApp?
+* How could you disrupt a sector besides finance by creating a dApp?
 
-Comment to students that they will answer to this question in the next activity and continue with the next dApp demo.
+Tell students that they will answer this question in the next activity. Now, continue with the next dApp demo.
 
-In the next dApp demo, students will learn how they can use a dApp by transferring `ETH` to use the service provided by the dApp using MetaMask, explain to students that this is how normally they will interact with a dApp.
+In this dApp demo, students will learn how they can use a dApp by transferring `ETH` to use the service provided by the dApp using MetaMask. Explain to students that this is how they would normally interact with a dApp.
 
-Open your browser and navigate to https://www.akta.io/. Akta is a cloud file storage service that uses the `Ropsten` test network to work, so you should be sure that you have `ETH` in your wallet in this test network if you don't have any token in this test network, refer to the ["Getting Ropsten Tokens Guide"](../Instructor_Support/getting-ropsten-tokens.md) in the Instructor Support folder.
+Open your browser and navigate to https://www.akta.io/. Akta is a cloud file storage service that uses the `Ropsten` test network to work, so be sure that you have `ETH` in your wallet in this test network, if you don't have any token in this test network, refer to the ["Getting Ropsten Tokens Guide"](../Instructor_Support/getting-ropsten-tokens.md) in the Instructor Support folder.
 
 Once you open the Akta website, follow the next steps to conduct the demo.
 
@@ -693,14 +693,14 @@ Once you open the Akta website, follow the next steps to conduct the demo.
 
  ![State Of The Dapps - 13](Images/state-of-the-daps-13.png)
 
-4. You will see a pop-up window where MetaMask is asking you for permissions to connect Akta your account, click on the "Connect" button to continue.
+4. You will see a pop-up window where MetaMask asks for permission to connect Akta to your account. Click on the "Connect" button to continue.
 
  ![State Of The Dapps - 14](Images/state-of-the-daps-14.png)
 
  * DApps will typically request access to this connection before using it. Since the wallet address is unique, dApps can use it as login credentials. The connection is then securely made through the selected Ethereum network.
 
 
-5. Next, you are asked to sign the Smart Contract to continue the connection process, click on the "Sign" button to proceed.
+5. Next, you are asked to sign the smart contract to continue the connection process; click on the "Sign" button to proceed.
 
  ![State Of The Dapps - 15](Images/state-of-the-daps-15.png)
 
@@ -710,32 +710,32 @@ Once you open the Akta website, follow the next steps to conduct the demo.
 
 7. Now, we are going to upload a document to show how the transactions work. Click on the "Add" button to upload a file.
 
-8. On the next page, you have to choose the file to upload. Optionally, you can send an e-mail to any person if you want to share this file. However, we will omit this part in this demo. Click on the "Choose File" button and select any file from your local computer (you may upload a generic picture for this demo). Continue by clicking the `Upload` button.
+8. On the next page, you have to choose the file to upload. Optionally, you can send an email to any person if you want to share this file. However, we will omit this part in this demo. Click on the "Choose File" button and select any file from your local computer (you may upload a generic picture for this demo). Continue by clicking the `Upload` button.
 
  ![State Of The Dapps - 17](Images/state-of-the-daps-17.png)
 
-9. You will be warned that the document has no signature. Since this file is for personal usage, we can proceed by clicking on the `OK` to continue.
+9. You will be warned that the document has no signature. Since this file is for personal usage, we can proceed by clicking on `OK` to continue.
 
  ![State Of The Dapps - 18](Images/state-of-the-daps-18.png)
 
-10. Next, you have to assign a name to the file, type the name of your choice, and click "OK" to continue. You can only use letters and numbers.
+10. Next, you have to assign a name to the file. Type the name of your choice, and click "OK" to continue. You can only use letters and numbers.
 
  ![State Of The Dapps - 19](Images/state-of-the-daps-19.png)
 
 11. In the next dialog box, you will be informed that your file is going to be uploaded to the blockchain, so the process is going to take some time. Click on the "OK" button to continue.
 
  ![State Of The Dapps - 20](Images/state-of-the-daps-20.png)
- The upload time depends on your internet connection speed and the current state of the blockchain workload; it takes less than one minute while preparing this demo with a `3.2 MB` file in a WiFi connection with `10 mbps` upload rate, for the class demo you may use a smaller image file or a text file.
+The upload time depends on your internet connection speed and the current state of the blockchain workload; it takes less than one minute while preparing this demo with a `3.2 MB` file in a WiFi connection with `10 mbps` upload rate. For the class demo you may use a smaller image file or a text file.
 
-12. You are going to be asked to sign the file upload transaction using MetaMask, click on the "Sign" button to proceed.
+12. Now, you will be asked to sign the file upload transaction using MetaMask; click on the "Sign" button to proceed.
 
  ![State Of The Dapps - 21](Images/state-of-the-daps-21.png)
 
-13. Next, you are asked to pay in `ETH` for the transaction using your wallet in MetaMask. You may note that the transaction is free. Still, you are requested to pay the `GAS` fee. This is the particular case for this dApp, explain to students that generally transactions in dApps will incur in costs to be paid in `ETH` in addition to the correspondent `GAS` fee. Click on the "Confirm" button to continue.
+13. Next, you are asked to pay in `ETH` for the transaction using your wallet in MetaMask. You may note that the transaction is free. Still, you will be requested to pay the `GAS` fee, which is the particular case for this dApp. Tell students that generally, transactions in dApps will incur costs to be paid in `ETH` in addition to the correspondent `GAS` fee. Click on the "Confirm" button to continue.
 
  ![State Of The Dapps - 22](Images/state-of-the-daps-22.png)
 
-14. After confirming the transaction fee, you will be lead to the Akta home page where you can see your file uploaded to the blockchain.
+14. After confirming the transaction fee, you will be led to the Akta home page where you will see your file uploaded to the blockchain.
 
  ![State Of The Dapps - 23](Images/state-of-the-daps-23.png)
 
@@ -745,7 +745,7 @@ End the activity by explaining to students that the goal of these two dApps demo
 
 * Akta is a dApp with a frontend created to interact with the user and allow transactions using MetaMask.
 
-* We use the `Ropsten` test network in this demo, however, dApps that are monetizing their services use the Ethereum main network, so you have actually to pay for the services those dApps provide.
+* We use the `Ropsten` test network in this demo. However, dApps that are monetizing their services use the Ethereum main network, so you actually have to pay for the services those dApps provide.
 
 Answer any questions before moving on.
 
@@ -755,7 +755,7 @@ Answer any questions before moving on.
 
 In this activity, students will visit [The State Of The Dapps website](https://www.stateofthedapps.com/) to explore the many dApps that exist in the blockchain ecosystem. Students will work in groups up to three people to research and to analyze a dApps from any sector from their interest.
 
-Students will be encouraged to use MetaMask when possible, and write down a short report on their research.
+Students will be encouraged to use MetaMask when possible, and write a short report on their research.
 
 Have TAs circulate the classroom to help students and foster collaboration in each group.
 
@@ -767,11 +767,11 @@ Have TAs circulate the classroom to help students and foster collaboration in ea
 
 ### 15. Instructor Do: State Of The Dapps Review (10 min)
 
-In this activity, conduct a facilitated discussion to allow the students to share their findings after the previous research activity.
+Now you will conduct a facilitated discussion to allow students to share their findings regarding the previous research activity.
 
-Remind students that Ethereum is one of the most used blockchains to create and deploy dApps. This is because Ethereum is more than a Cryptocurrency. It also offers a complete development framework to support different use cases.
+Remind students that Ethereum is one of the most used blockchains to create and deploy dApps. This is because Ethereum is more than a cryptocurrency; it also offers a complete development framework to support different use cases.
 
-Use this activity's time to allow all groups to share their findings regarding the following questions:
+Use this time to allow all groups to share their findings regarding the following questions:
 
 * Why did this dApp catch your attention?
 
@@ -797,7 +797,7 @@ In this activity, students will get a big-picture overview of the homework.
 
 * [README.md](../../../02-Homework/20-Solidity/Instructions/README.md)
 
-Open the Unit 20 homework assignment instruction and briefly demo the homework instructions for students. Be sure to highlight the following:
+Open the instructions for the Unit 20 homework assignment and do a brief demo for students. Be sure to highlight the following:
 
 * The goal of this homework assignment is to use Solidity to define, create, and deploy a smart contract that allows business owners to split profits between themselves automatically.
 
@@ -809,9 +809,9 @@ Open the Unit 20 homework assignment instruction and briefly demo the homework i
 
 * Starter code is provided that includes contract boilerplate to help you get off the ground.
 
-* There are 3 Levels of difficulty for this assignment. You can do all of them with the skills you have learned this unit, so try to finish all 3!
+* There are three levels of difficulty for this assignment. You can do all of them with the skills you have learned in this unit, so try to finish all three!
 
-Explain to students that this will be an excellent opportunity to gain hands-on experience in creating and deploying smart contracts using Solidity.
+Explain to students that this is an excellent opportunity to gain hands-on experience in creating and deploying smart contracts using Solidity.
 
 Answer any questions before moving on.
 
@@ -819,11 +819,11 @@ Answer any questions before moving on.
 
 ### 17. Instructor Do: Recap (5 min)
 
-Congratulate students on completing their first day on smart contracts! End the class by briefly reviewing the main concepts of the day, Smart Contracts and dApps.
+Congratulate students on completing their first day on smart contracts! End the class by briefly reviewing the main concepts of the day, smart contracts and dApps.
 
 Ask students to provide a definition of a smart contract and a dApp and then provide the following definitions:
 
-* Smart contracts are computer programs that run on the blockchain, that allow for any computation. They are mainly used to allow credible transaction of digital assets under certain conditions without third parties.
+* Smart contracts are computer programs that run on the blockchain and allow for any computation. They are mainly used to allow credible transactions of digital assets under certain conditions, without third parties.
 
 * A dApp is a software application that has a decentralized operation and uses decentralized storage or database.
 
@@ -831,8 +831,8 @@ Ask students to provide a definition of a smart contract and a dApp and then pro
 
 Explain to students that we will begin to learn how to program smart contracts in Ethereum using the Solidity programming language.
 
-By the end of this Unit, students will be writing their custom smart contracts and dApps for Ethereum!
+By the end of this unit, students will be writing their custom smart contracts and dApps for Ethereum!
 
 ### End Class
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

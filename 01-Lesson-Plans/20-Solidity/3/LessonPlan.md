@@ -8,11 +8,11 @@ Today's class will dive into more complex Solidity concepts, such as `mapping`s,
 
 By the end of the class, students will be able to:
 
-* Use `uint` and `int` Number types in Solidity and explain when to use each.
+* Use `uint` and `int` number types in Solidity and explain when to use each.
 
 * Use global variables to tell the current block number, transaction sender, and transaction value.
 
-* Work with time in Solidity and use time variables to create a Timelock.
+* Work with time in Solidity and use time variables to create a timelock.
 
 * Recognize that telling time in Solidity has variability relative to the network's block production time, and static compared to Gregorian calendar time.
 
@@ -26,7 +26,7 @@ By the end of the class, students will be able to:
 
 * Today's lesson should be exciting for students now that they have gotten a small taste of building smart contracts with Solidity.
 
-* Expect some or all of the students to be somewhat anxious about learning a new language. Especially when that language differs so much from Python, reassure them that, with practice, they will be able to read and write Solidity in no time at all!
+* Expect some (or all) of the students to be somewhat anxious about learning a new language, especially when that language differs so much from Python. Reassure them that with practice, they will be able to read and write Solidity in no time at all!
 
 * Today's class introduces students to new programming concepts specific to the Solidity language. They will learn to use these concepts to build sophisticated smart contracts for Ethereum.
 
@@ -34,13 +34,13 @@ By the end of the class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1gRBz8OI5bruHxvoox5qagh13VWJMzG2r_n3yCRX_FMI/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [20.3 Lesson Slides](https://docs.google.com/presentation/d/1vupy0sptQcJRmm-Pluj-rVx6NmFbsc3ws2hA8SrTcgk/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [20.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f4c7bd0f-b479-4cc6-8180-ab28004ce744) Note that this video may not reflect the most recent lesson plan.
@@ -67,11 +67,11 @@ First, let's ask the students some recall questions about static data types:
 
 * What is the difference between an `int` and a `uint`?
 
-  * **Answer:** `int` can be positive and negative, `uint` is positive only.
+  * **Answer:** `int` can be positive and negative; `uint` is positive only.
 
 * What is a `payable` address, and why is it different from a regular address?
 
-  * **Answer:** A payable address is like a normal address type, except it allows the `.transfer` function to be called in order to send it Ether.
+  * **Answer:** A payable address is like a normal address type, except it allows the `.transfer` function to be called in order to send it ether.
 
 Ask for any remaining questions before moving along.
 
@@ -93,13 +93,13 @@ Propose to the students:
 
 * To do this, we'll need some built-in variables in Solidity that we can use to access this information.
 
-Open up [Remix](https://remix.ethereum.org) and continue in the `JointSavings.sol` -- the unsolved `GlobalAttributes.sol` contains the code that `JointSavings` should have up to this point.
+Open up [Remix](https://remix.ethereum.org) and continue in the `JointSavings.sol`—the unsolved `GlobalAttributes.sol` contains the code that `JointSavings` should have up to this point.
 
 First, we need to change the way we check who the account owners are.
 
 * Currently, we are checking whether or not the recipient parameter matches either of the accounts we set as the owners.
 
-* This actually opens up a slight "vulnerability" where anyone can force this contract to withdraw funds into either of the owner wallets. While this doesn't transfer the Ether away from the owners, you certainly wouldn't want someone to have *any* control over your funds, even if it means moving between accounts you own.
+* This actually opens up a slight "vulnerability" where anyone can force this contract to withdraw funds into either of the owner wallets. While this doesn't transfer the ether away from the owners, you certainly wouldn't want someone to have *any* control over your funds, even if it means moving between accounts you own.
 
 * We can do this by checking the built-in `msg.sender` variable.
 
@@ -156,9 +156,9 @@ function withdraw(uint amount) public {
 }
 ```
 
-Ask the students:
+Ask students:
 
-* Why might we include this if statement, versus just setting the `last_to_withdraw` every time?
+* Why might we include this if statement, rather than setting the `last_to_withdraw` every time?
 
   * **Answer**: It costs gas to write to the chain. By checking beforehand, we can prevent spending unnecessary gas when the variable doesn't need to change.
 
@@ -176,7 +176,7 @@ uint last_deposit_amount;
 
 * We are going to add a couple of uint variables that will keep track of which block number the withdraw occurred at, as well as how much was withdrawn. We'll do the same for deposits.
 
-* While this data is already on-chain, visible from a block explorer, it is sometimes useful to have available in-contract.
+* While this data is already on-chain and visible from a block explorer, it is sometimes useful to have available in-contract.
 
 * Solidity can't jump outside of its sandbox, so we need to be explicit about the variables we need and don't need.
 
@@ -219,7 +219,7 @@ Explain to the class:
 
 * `msg` refers to the current transaction that is executing the smart contract.
 
-* `msg.value` Refers to the amount of Ether that is attached to said transaction. In our case, we can save the amount that was deposited by storing the `msg.value`. We can use `msg.value` for many other calculations in the future, creating conditions that require a certain amount of Ether, or that keep track of how much Ether each user has stored in your contract.
+* `msg.value` Refers to the amount of ether that is attached to said transaction. In our case, we can save the amount that was deposited by storing the `msg.value`. We can use `msg.value` for many other calculations in the future, creating conditions that require a certain amount of ether, or that keep track of how much ether each user has stored in your contract.
 
 Finally, we need to add the `public` keyword to these variables in order to auto-generate "getter" functions for them:
 
@@ -245,7 +245,7 @@ Great! Now it's time for the students to modify their contracts and add some mor
 
 ---
 
-### 4. Students Do: Using Global Variables (10 min)
+### 4. Student Do: Using Global Variables (10 min)
 
 In this activity, students will be adding the same details using `msg` and `block` variables in their contracts.
 
@@ -275,21 +275,21 @@ Open the solution and explain the following:
 
 * `msg` refers to the current transaction's information.
 
-Ask the students the following questions:
+Ask students the following questions:
 
 * Why might we want to access these variables in our contracts?
 
-  * **Answer:** It allows us to make decisions on what to do next based on who is calling the function, and under what conditions.
+  * **Answer:** It allows us to make decisions on what to do next, based on who is calling the function and under what conditions.
 
 * What is `msg.value`?
 
-  * **Answer:** The amount of Ether that was sent with the transaction.
+  * **Answer:** The amount of ether that was sent with the transaction.
 
 Ask for further questions before moving on.
 
 ---
 
-### 6. Instructor Do: Telling time in Solidity (10 min)
+### 6. Instructor Do: Telling Time in Solidity (10 min)
 
 In this activity, we'll be adding a bit more logic to create a withdraw threshold.
 
@@ -301,7 +301,7 @@ Continue in the same contract as before, `JointSavings.sol`, or leverage the equ
 
 * [TellingTime.sol](Activities/03-Ins_Time_Solidity/Unsolved/TellingTime.sol)
 
-First, add another variable called `uint unlock_time` -- this will be used to control when our contract is locked and unlocked:
+First, add another variable called `uint unlock_time`—this will be used to control when our contract is locked and unlocked:
 
 ```solidity
 contract JointSavings {
@@ -348,11 +348,11 @@ function withdraw(uint amount) public {)
 
 Explain to the students:
 
-* You may notice that we are using the keyword `now` -- this is an alias for `block.timestamp`.
+* You may notice that we are using the keyword `now`—this is an alias for `block.timestamp`.
 
 * Using `now`, we can calculate the current time within a window of 15 seconds.
 
-* You may notice the compiler is saying to "avoid using now/block.timestamp" -- this is because of the inherent inaccuracy of the current time caused by the average blocktime.
+* You may notice the compiler is saying to "avoid using now/block.timestamp"—this is because of the inherent inaccuracy of the current time caused by the average blocktime.
 
 * In Ethereum, the accuracy of `now` will always fluctuate based on the average blocktime. For the majority of our use cases, we can get away with a 15-second window.
 
@@ -382,7 +382,7 @@ function withdraw(uint amount) public {
 
 * Notice how expressive we can calculate the time 24 hours from now, right in the native Solidity syntax!
 
-* Solidity provides time units in `seconds`, `minutes`, `days`, and `weeks` -- and does not consider leap years!
+* Solidity provides time units in `seconds`, `minutes`, `days`, and `weeks`—and does not consider leap years!
 
 * This is another reminder that if we need an extremely specific time, we'll need special smart contracts to maintain the Gregorian calendar for us, but we are just fine using this implementation.
 
@@ -392,7 +392,7 @@ Now it's time for the students to create the timelock!
 
 ---
 
-### 7. Students Do: Creating a Timelock (10 min)
+### 7. Student Do: Creating a Timelock (10 min)
 
 In this activity, students will add the same timelock to their `JointSavings` contracts.
 
@@ -426,7 +426,7 @@ Ask the students:
 
 * What does a `require` do again? Why is it better than an `if` statement for this check?
 
-  * **Answer:** `require` enforces a requirement, stopping the contract if the requirement is not satisfied, and returns leftover gas and Ether. In this case, we want this hard stopping point, as we will not move forward if this condition is not met.
+  * **Answer:** `require` enforces a requirement, stopping the contract if the requirement is not satisfied, and returns leftover gas and ether. In this case, we want this hard stopping point, as we will not move forward if this condition is not met.
 
 * Why is there variability in the accuracy of time when using `now`/`block.timestamp`?
 
@@ -448,7 +448,7 @@ Welcome the students back to class, allow them to settle, and explain the follow
  the balance is pulled.
 
 * Then, we are going to add a special function called a `constructor` that will allow us to deploy this contract with custom
- values, versus hardcoding things like our account owners directly in the code.
+ values versus hardcoding things like our account owners directly in the code.
 
 Have students navigate back to their [Remix IDE](https://remix.ethereum.org) and continue.
 
@@ -488,13 +488,13 @@ Explain to the class:
 
 * With this one condition, we are creating a much more customized system than we'd be able to build on top of typical banking infrastructure.
 
-* Simple things like this can also be what makes your smart contracts so powerful -- you can enforce whatever rules you decide!
+* Simple things like this can also be what makes your smart contracts so powerful—you can enforce whatever rules you decide!
 
 Now, have the students add the same threshold to their contracts!
 
 ---
 
-### 12. Students Do: Adding the Withdraw Threshold (10 min)
+### 12. Student Do: Adding the Withdraw Threshold (10 min)
 
 In this activity, students will follow the same steps to add the threshold to their withdraw function's timelock.
 
@@ -582,7 +582,7 @@ Now it's time for the students to add their constructors!
 
 ---
 
-### 15. Students Do: Adding a Constructor to the contract (15 min)
+### 15. Student Do: Adding a Constructor to the Contract (15 min)
 
 In this activity, students will replace their hardcoded values with a constructor in order to make their contracts
 reusable and more production-ready.
@@ -698,13 +698,13 @@ Get the class excited, as they have just built a complex smart contract that can
 
 ### 18. Instructor Do: Review Smart Contracts (10 min)
 
-Congratulate the students on building smart contracts, and remind them that few in the world can do this, let alone tried! They are already differentiating themselves from the crypto-crowd. However, you must remind them that with this power comes responsibility -- security should be top of mind, and we cannot allow cutting corners in Solidity!
+Congratulate the students on building smart contracts, and remind them that few in the world can do this! They are already differentiating themselves from the crypto-crowd. However, you must remind them that with this power comes responsibility—security should be top of mind, and we cannot allow cutting corners in Solidity!
 
 Ask the students the following questions:
 
 * What are smart contracts useful for?
 
-  * **Answer:** We can build any program on top of the blockchain, giving us the ability to write fully decentralized applications.
+  * **Answer:** Any program can be built on top of the blockchain, providing the ability to write fully decentralized applications.
 
 * Why do we use a constructor?
 
@@ -748,4 +748,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

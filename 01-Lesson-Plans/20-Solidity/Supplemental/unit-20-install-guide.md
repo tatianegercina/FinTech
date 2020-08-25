@@ -28,11 +28,11 @@ To install MetaMask, follow these steps:
 
  ![MetaMask installation - 5](Images/metamask-5.png)
 
-* Next, you will see the data usage agreement where the MetaMask team asks you to collaborate on improving the tool. Click the choice of your preference to continue.
+* Next, you will see the data usage agreement where the MetaMask team asks you to collaborate on improving the tool. Click your preference to continue.
 
  ![MetaMask installation - 6](Images/metamask-6.png)
 
-* In the next window, you should enter the twelve word mnemonic of your local wallet (your wallet password), and you should click on the `I have read and agree the Terms of Use` checkbox to continue.
+* In the next window, you should enter the twelve word mnemonic of your local wallet (your wallet password), and click on the `I have read and agree the Terms of Use` checkbox to continue.
 
 * Be sure to read through the terms by clicking on the link.
 
@@ -42,13 +42,13 @@ To install MetaMask, follow these steps:
 
  ![MetaMask installation - 8](Images/metamask-8.png)
 
-* You may notice a message at the bottom of the page that says that `MetaMask cannot recover your seedphrase`, it means that once you import your keys, MetaMask won't export them again, so if you lose your mnemonic you can't extract it from MetaMask; keep your mnemonics in a safe place!
+* You may notice a message at the bottom of the page that says `MetaMask cannot recover your seedphrase`, it means that once you import your keys, MetaMask won't export them again, so if you lose your mnemonic you can't extract it from MetaMask; keep your mnemonics in a safe place!
 
 * Click on the "All Done" button to continue; you will see a page showing the balance of your wallet and the transaction history.
 
  ![MetaMask installation - 9](Images/metamask-9.png)
 
-* You may note that you have `0 ETH` and no transactions. This is all right from now since you are not connected to your local blockchain.
+* You may note that you have `0 ETH` and no transactions. This is alright for now, since you are not connected to your local blockchain.
 
 Congratulations! You have installed MetaMask.
 
@@ -82,7 +82,7 @@ To download Ganache, follow the next steps.
 
 ### Running the Installer in Windows 10
 
-* Open de installer file. A new window will pop-up asking to install Ganache.
+* Open the installer file. A new window will pop-up asking to install Ganache.
 
 * Make sure the "Launch when ready" checkbox is selected and click on the "Install" button to continue.
 
@@ -94,13 +94,13 @@ To download Ganache, follow the next steps.
 
 ### Troubleshooting in Windows 10
 
-If you see a warning message that says that Ganache is from an untrusted software publisher or source, you should enable the "Sideload apps" installation option as follows.
+If you see a warning message that says that Ganache is from an untrusted software publisher or source, you should enable the "Sideload apps" installation option as follows:
 
 * Close the Ganache installer.
 
 * Click on the "Windows" button and choose "Settings."
 
-* In the "Windows Settings" search box type `developer` and choose `Developer settings."
+* In the "Windows Settings" search box, type `developer` and choose `Developer settings."
 
 * In the "Developer Settings" window, choose the "Sideload apps" options.
 
@@ -111,4 +111,4 @@ If you see a warning message that says that Ganache is from an untrusted softwar
 ![Ganache installation - 6](Images/ganache-6.gif)
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
