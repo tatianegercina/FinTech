@@ -62,6 +62,7 @@ Sign in into your AWS Management Console and [create a new custom Amazon Lex bot
 * **Session timeout:** 5 minutes
 * **Sentiment analysis:** No
 * **COPPA**: No
+* **Advanced options**: No
 * *Leave default values for all other options.*
 
 Create the `RecommendPortfolio` intent, and configure some sample utterances as follows (you can add more utterances as you wish):
