@@ -539,7 +539,7 @@ Explain to students that one of the applications of asymmetric cryptography is t
 
 Illustrate the following example to the class:
 
-* Let's say Joe wanted to sign a legal agreement, but he also wanted digital proof that was the exact agreement.
+* Let's say Joe wanted to sign a legal agreement and send it to Anita, but he also wanted digital proof that was the exact agreement.
 
 * What Joe can do is take the document and "sign" it with his private key.
 
