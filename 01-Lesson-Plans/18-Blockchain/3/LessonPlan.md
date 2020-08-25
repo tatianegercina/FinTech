@@ -56,7 +56,7 @@ By the end of the class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Welcome Class (10 min)
+### 1. Instructor Do: Welcome Class (5 min)
 
 Welcome students to the third day of the introduction to the blockchain technology, open the lesson slides and present the class objectives.
 
@@ -88,7 +88,7 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Instructor Do: Consensus Algorithms (10 min)
+### 2. Instructor Do: Consensus Algorithms (15 min)
 
 In this activity, students will learn what consensus algorithms are and the differences between the available existing options.
 
@@ -138,8 +138,6 @@ Explain to students that there are many consensus algorithms in development, but
 
 The first, most straightforward, and least secure algorithm we'll start with is called "Proof of Authority."
 
-![proof of authority](https://image.shutterstock.com/image-photo/successful-team-leader-manager-ceo-600w-461317327.jpg)
-
 * Proof of Authority allows only specific addresses to mine/produce blocks in the network.
 
 * This is a centralized but cheap algorithm mainly used to power test networks.
@@ -147,8 +145,6 @@ The first, most straightforward, and least secure algorithm we'll start with is 
 * This algorithm is never used in production **mainnet blockchains**, it is only for development and testing in **testnet blockchains**.
 
 #### Proof of Work
-
-![proof of work](https://image.shutterstock.com/image-photo/bitcoin-cryptocurrency-mining-farm-600w-761471725.jpg)
 
 * Proof of Work (PoW) is the most popular algorithm in blockchain nowadays.
 
@@ -161,8 +157,6 @@ The first, most straightforward, and least secure algorithm we'll start with is 
 * This is a very secure algorithm, but the most expensive in terms of resources. This is its biggest criticism.
 
 #### Proof of Stake
-
-![proof of stake](https://image.shutterstock.com/image-photo/closeup-portrait-shocked-surprised-young-600w-207481837.jpg)
 
 Explain to students that Proof of Stake (PoS) is very similar to PoW, the main difference is that instead of contributing computational power, this algorithm "stake" some of the cryptocurrency, aka "collateralize" it while you produce blocks.
 
@@ -248,7 +242,9 @@ Answer any questions before moving on.
 
 In this activity, you will be demonstrating the generation of a genesis block using the `puppeth` tool bundled with the Go Ethereum (`geth`) tool.
 
-Explain to students that now we are going to build our blockchain. We will start building the first block of the chain, where we will decide on which consensus algorithm to pick and configure the network.
+Open the lesson slides, move to the "Creating a Genesis Block Demo" section, and highlight the following.
+
+* Now we are going to build our blockchain. We will start building the first block of the chain, where we will decide on which consensus algorithm to pick and configure the network.
 
 Introduce the Go Ethereum tool to the class and highlight the following:
 
