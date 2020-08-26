@@ -20,7 +20,17 @@ In this activity, you will extract a Bitcoin testnet address from your mnemonic,
 
 ![BTC Test address](Images/bip39-derived.png)
 
-* Navigate to the [Bitcoin Testnet Faucet](https://coinfaucet.eu/en/btc-testnet/) to request tokens.
+* Navigate to one of the following Bitcoin Testnet faucets to request tokens:
+
+  * https://bitcoinfaucet.uo1.net/
+
+  * https://kuttler.eu/en/bitcoin/btc/faucet/
+
+  * https://testnet-faucet.mempool.co/
+
+  * https://testnet.help/en/btcfaucet/testnet
+
+  * **Note:** If these faucets are empty or not available, you may need to perform a search for a `bitcoin testnet3 faucet`.
 
 * Paste your testnet address, and click `Get bitcoins!`
 
