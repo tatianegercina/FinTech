@@ -24,7 +24,7 @@ Using this, you can build a cheatsheet to get your `geth` nodes up and running a
   For example:
   `enode://b044f481e52f03950ed88ad18f550ace268ad4e4e1647f80c5808d6ea2c4e7f550d8ed25a14608afa6e5828f1b69fdfcf5d7775394f7c38d8592f600e4a37e90@127.0.0.1:30303`
 
-* Use the first node's enode address as the bootnode for the second node and run on a separate port.  The command to do this will vary from OS X to Windows:
+* Use the first node's enode address as the bootnode for the second node and run on a separate port. The command to do this will vary from OS X to Windows:
 
     * Running in OS X:
       ```bash
