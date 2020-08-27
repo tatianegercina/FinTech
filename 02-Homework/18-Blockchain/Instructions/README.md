@@ -117,8 +117,5 @@ Be sure to include any preliminary setup information, such as installing depende
 
 ### Remember, *never* share your mainnet private keys! This is a testnet, so coins have no value here!
 
-### Challenge mode
-
-* Create a separate `bootnode` dedicated to connecting peers together
-
-* There will be a new DevOps engineer joining the team, add an additional sealer address to the network on the fly!
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
