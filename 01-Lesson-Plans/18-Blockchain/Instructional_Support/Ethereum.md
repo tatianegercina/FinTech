@@ -1,4 +1,4 @@
-### Ethereum Support material
+# Ethereum Support material
 
 * Ethereum is powered by the "Ethereum Virtual Machine" (EVM) -- much like Java is powered by the "Java Virtual Machine" the EVM is the runtime that smart contracts run in. This means that each node that verifies a transaction that calls a contract's function will run the code in its local EVM. Once the outputs of the contract call are validated against what the node expected, the transaction is validated.
 
@@ -11,3 +11,6 @@
 * The Enterprise Ethereum Alliance is a nonprofit organization that includes the likes of Microsoft, Samsung, Intel, J.P. Morgan, Cooley, Deloitte, Consensys, and many others for the mission of developing open blockchain specifications for bridging the gap between open and enterprise chains.
 
 * While the first generation blockchains, including Bitcoin, have simple scripting languages, Ethereum provides a fully "Turing complete" programming language and computing environment. This means that the programming language can be used to build anything, and is not restricted in features. You could even build another programming language with it.
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
