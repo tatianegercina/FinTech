@@ -85,6 +85,13 @@ As you noticed, the bot allows users to select between Bitcoin, Ethereum, and Ri
 
 ## Hints
 
+* You may have to refresh the Lex intent page after creating the custom slot and the lambda function in order to see them in the options.
+
+* Make sure your intent and slot names are named correctly in your Lambda code.  The names in Lex should match the names in Lambda exactly:
+
+![Lex_Names1](Images/Lex_names1.png)
+![Lex_Names2](Images/Lex_names2.png)
+
 * You can store the response card image on an AWS S3 bucket, remember to configure public access to the image.
 
 * Remember to save your Lambda function once in a while to prevent code loses.
