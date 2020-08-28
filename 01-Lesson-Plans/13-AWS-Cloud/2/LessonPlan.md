@@ -163,7 +163,7 @@ Answer any questions before moving on.
 
 ---
 
-### 5. Student Do: Creating an Amazon SageMaker Notebook Instance (20 min)
+### 5. Everyone Do: Creating an Amazon SageMaker Notebook Instance (20 min)
 
 In this activity, students will learn how to create an instance of Amazon SageMaker and how to use Jupyter notebooks on the AWS cloud.
 
@@ -222,7 +222,7 @@ Explain to students that the next step is to create a Jupyter Notebook instance 
 
   * **Section: Notebook instance settings**
     * Notebook instance name: `sm-test`
-    * Notebook instance type: `ml.m4.xlarge`
+    * Notebook instance type: `ml.t2.medium`
     * Elastic Inference: `none`
     ![Creating an Amazon SageMaker instance - step 10](Images/sagemaker-10.png)
   * **Section: Permissions and encryption**
@@ -475,10 +475,10 @@ Explain to students that this step might take a few minutes, and it will use res
 
 Once the `linear-learner` model has been trained, tell students that it can be deployed to make predictions of the rainfall in Austin. Continue the demo and highlight the following:
 
-* An instance of the linear-learner predictor is created. Note: This step might take a few minutes.
+* In order to make predictions, the model should be deployed; a `ml.t2.medium` instance type is defined since this is the instance type we selected when we created the notebook that is part of the free tier offer.
 
   ```python
-  linear_predictor = linear.deploy(initial_instance_count=1, instance_type="ml.m4.xlarge")
+  linear_predictor = linear.deploy(initial_instance_count=1, instance_type="ml.t2.medium")
   ```
 
 * Some configurations are made to specify the type of data files that are going to be used and to define how the data is going to be serialized and deserialized.
@@ -489,7 +489,7 @@ Once the `linear-learner` model has been trained, tell students that it can be d
   linear_predictor.deserializer = json_deserializer
   ```
 
-* Some predictions are made using the testing data; results are stored on the `y_predictions` array.
+* To make predictions, we use the `predict()` method of the model. We will make predictions using the testing data; results are stored in the `y_predictions` array.
 
   ```python
   result = linear_predictor.predict(X_test)
@@ -504,7 +504,7 @@ Explain to students that once you have the predictions, the model can be evaluat
 
   ![Deploy SageMaker Model - step 5](Images/deploy-sagemaker-5.png)
 
-  Finally, after reviewing the model evaluation's results, explain to students that the endpoint needs to be deleted to avoid additional AWS resources usage and extra billing.
+Finally, after reviewing the model evaluation's results, explain to students that the endpoint needs to be deleted to avoid additional AWS resources usage and extra billing.
 
 ```python
 sagemaker.Session().delete_endpoint(linear_predictor.endpoint)
