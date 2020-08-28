@@ -526,7 +526,7 @@ Answer any questions before moving on.
 
 ---
 
-### 10. Instructor Do: Pros and Cons of Deploying Machine Learning Models with Amazon SageMaker (10 min)
+### 8. Instructor Do: Pros and Cons of Deploying Machine Learning Models with Amazon SageMaker (10 min)
 
 Lead and facilitate a discussion around deploying models in Amazon SageMaker and why a RESTful ML API is useful.
 
@@ -552,9 +552,11 @@ Have students share their opinions with the class and bring up the following poi
 
 * Unavailability: Although there are service-level agreements in place, AWS (and any other cloud provider) can and has suffered outages at times, causing data unavailability.
 
+Answer any questions before moving on.
+
 ---
 
-### 11. Student Do: Credit Risk Evaluation with Amazon SageMaker (20 min)
+### 9. Student Do: Credit Risk Evaluation with Amazon SageMaker (30 min)
 
 In this activity, students will train and deploy a binary classification model to predict the credit risk of a person using the [German Credit Risk dataset](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) and the SageMaker built-in `Linear Learner` algorithm.
 
