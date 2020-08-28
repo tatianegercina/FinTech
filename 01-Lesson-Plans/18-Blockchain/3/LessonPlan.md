@@ -640,21 +640,23 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to connect MyCrypto to the chain we created and send a transaction.
 
+Explain to students that now you are going to connect MyCrypto with the blockchain you created. Follow the next steps.
+
 The first step is to retrieve the private key of the ETH address you use to pre-fund the genesis block. Follow the next steps.
 
-* Open up MyCrypto and be sure the `Kovan` network is selected.
+* Open up MyCrypto and be sure the `Kovan` network is selected. We need to do this because using `mnemonic phrases` on custom blockchain networks is not supported by MyCrypto, and we need to fetch the private key of the address we funded from our mnemonic phrase. This will allow us to switch over to our custom network, and use our pre-funded private key.
 
  ![Verify Kovan network](Images/verify-kovan.gif)
 
 * Unlock your wallet using your mnemonic phrase and choose the address you want to inspect.
 
-* Select the ETH address you use to pre-fund your chain, and in the "Select" dropdown list, choose "Wallet Info.
+* Select the ETH address you used to pre-fund your chain, and in the "Select" dropdown list, choose `Wallet Info`.
 
-* Click on the eye icon next to the "Private Key" field, and copy and paste the private key of the wallet.
+* Click on the eye icon next to the `Private Key` field, and copy and paste the private key of the wallet. Keep this handy, since we'll need it in a bit.
 
- ![Get private key](Images/get-private-key.gif)
+![Get private key](Images/get-private-key.gif)
 
-Explain to students that now you are going to connect MyCrypto with the blockchain you created. Follow the next steps.
+Now, it's time to add the custom blockchain network we created earlier:
 
 * In the left pane on MyCrypto, click "Change Network" at the bottom left:
 
@@ -675,6 +677,12 @@ Explain to students that ETH still denominates the currency since we never chang
 * Click on the "Save & Use Custom Node" button, to use the network; double-check that it is selected and is connected.
 
  ![Puppernet connected](Images/puppernet-connected.png)
+
+Now it's time to load the private key of the address that we pre-funded on our blockchain:
+
+* Changing networks will automatically clear your loaded wallet, but if you have another wallet open, you'll need to click `Change Wallet` on the top right:
+
+![Switch Wallet](Images/mycrypto-switch-wallet.png)
 
 Open the wallet that you use to pre-fund the chain during genesis creation as follows:
 
