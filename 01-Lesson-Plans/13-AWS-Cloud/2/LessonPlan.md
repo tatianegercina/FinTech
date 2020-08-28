@@ -273,17 +273,19 @@ End the demo and answer any questions before moving on.
 
 ---
 
-### 6. Instructor Do: Creating and Deploying a Machine Learning Model in Amazon SageMaker (15 min)
+### 6. Everyone Do: Create and Deploy a Machine Learning Model in Amazon SageMaker (30 min)
 
 In this activity, students will learn how a machine-learning model is created, trained, deployed, and evaluated in Amazon SageMaker.
 
+This is a collaborative activity where you will lead the class through all the process, be sure to keep the pace allowing the students to follow you. Ask TAs to assist any student that may be stuck during the activity.
+
 **Files:**
 
-* [rainfall_forecast.ipynb](Activities/03-Ins_SageMaker_Deployment/Unsolved/rainfall_forecast.ipynb)
+* [rainfall_forecast.ipynb](Activities/03-Evr_SageMaker_Deployment/Unsolved/rainfall_forecast.ipynb)
 
-* [x_austin_final.csv](Activities/03-Ins_SageMaker_Deployment/Resources/x_austin_final.csv)
+* [x_austin_final.csv](Activities/03-Evr_SageMaker_Deployment/Resources/x_austin_final.csv)
 
-* [y_austin_final.csv](Activities/03-Ins_SageMaker_Deployment/Resources/y_austin_final.csv)
+* [y_austin_final.csv](Activities/03-Evr_SageMaker_Deployment/Resources/y_austin_final.csv)
 
 Explain to students that Amazon has actually created an extensive library of machine-learning models that are optimized for the cloud. This demo will show how to use one of those models.
 
