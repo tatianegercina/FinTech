@@ -562,19 +562,21 @@ In this activity, students will train and deploy a binary classification model t
 
 This activity will require the use of an AWS SageMaker notebook instance. The unsolved notebook will guide students through the process and indicate what the missing code snippets are.
 
+**Note:** Remember that the time needed to deploy the model is about 10 minutes.
+
 **Instructions:**
 
-* [README.md](Activities/05-Stu_Credit_Risk_Classification/README.md)
+* [README.md](Activities/04-Stu_Credit_Risk_Classification/README.md)
 
 **Files**:
 
-* [credit-risk-classification.ipynb](Activities/05-Stu_Credit_Risk_Classification/Unsolved/credit-risk-classification.ipynb)
+* [credit-risk-classification.ipynb](Activities/04-Stu_Credit_Risk_Classification/Unsolved/credit-risk-classification.ipynb)
 
-* [german_credit_data.csv](Activities/05-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
+* [german_credit_data.csv](Activities/04-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
 
 ---
 
-### 12. Instructor Do: Review Credit Risk Evaluation with Amazon SageMaker (10 min)
+### 10. Instructor Do: Review Credit Risk Evaluation with Amazon SageMaker (15 min)
 
 * Open JupyterLab in your AWS SageMaker notebook instance.
 
