@@ -640,9 +640,9 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to connect MyCrypto to the chain we created and send a transaction.
 
-Explain to students that now you are going to connect MyCrypto with the blockchain you created. Follow the next steps.
+Explain to students that now you are going to connect MyCrypto with the blockchain you created.
 
-The first step is to retrieve the private key of the ETH address you use to pre-fund the genesis block. Follow the next steps.
+The first step is to retrieve the private key of the ETH address you use to pre-fund the genesis block.
 
 * Open up MyCrypto and be sure the `Kovan` network is selected. We need to do this because using `mnemonic phrases` on custom blockchain networks is not supported by MyCrypto, and we need to fetch the private key of the address we funded from our mnemonic phrase. This will allow us to switch over to our custom network, and use our pre-funded private key.
 
