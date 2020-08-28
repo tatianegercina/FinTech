@@ -173,6 +173,13 @@ Once you have uploaded all the files into the repo, post a link to your homework
 
 ### Hints
 
+* Make sure your intent and slot names are named correctly in your Lambda code.  The names in Lex should match the names in Lambda exactly:
+
+![Lex_Names1](Images/Lex_names1.png)
+![Lex_Names2](Images/Lex_names2.png)
+
+* You may have to refresh the Lex intent page after creating the custom slot and the lambda function in order to see them in the options.
+
 * If you are using a Mac, you can create a screen-recording using the built-in QuickTime player. Follow [this link](https://support.apple.com/en-us/HT208721#quicktime) to learn more.
 
 * If you are using Windows 10, you can create a screen-recording using the built-in Xbox Game Bar. Follow [this link](https://beta.support.xbox.com/help/friends-social-activity/share-socialize/record-game-clips-game-bar-windows-10) to learn more.
