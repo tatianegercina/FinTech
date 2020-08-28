@@ -471,7 +471,9 @@ Create the instance of the linear learner algorithm and highlight the following:
   linear.fit({'train': s3_train_data, 'test': s3_test_data})
   ```
 
-Explain to students that this step might take a few minutes, and it will use resources from the AWS account. Normally, this time is not billed in the two-month trial period, however, clarify to students that policies of AWS free and trial offers constantly changes, so they should always check the pricing pages for any service that they want to use. Below, a sample output is shown. You will notice that the text is in red, but this does not denote an error.
+Explain to students that this step might take a few minutes, and it will use resources from the AWS account. Typically, this time is not billed in the two months trial period. However, clarify to students that policies of the AWS free and trial offer changes regularly, so they should always check the pricing pages for any service that they want to use. Below, a sample output is shown, you will notice that the output text is in blue.
+
+**Important Note:** Explain to students that this step may take up to 15 minutes since Amazon SageMaker is provisioning not only a Jupyter notebook but also a series of virtual machines (EC2 instances) to compute the model. If you are running out of time in this activity, open the solved version of the notebook and continue the demo by dry-walking through the code.
 
 ![Deploy SageMaker Model - step 3](Images/deploy-sagemaker-3.gif)
 
@@ -520,47 +522,7 @@ Answer any questions before moving on.
 
 ---
 
-### 7. Student Do: Deploying a Housing Price Prediction Model in Amazon SageMaker (20 min)
-
-In this activity, students will calculate a linear regression model to predict the price of a house using the Boston Housing dataset and the SageMaker built-in `Linear Learner` algorithm.
-
-**Instructions:**
-
-* [README.md](Activities/04-Stu_Housing_Price/README.md)
-
-**Files**:
-
-* [boston-housing-regression.ipynb](Activities/04-Stu_Housing_Price/Unsolved/boston-housing-regression.ipynb)
-
----
-
-### 8. Instructor Do: Review Deploying a Housing Price Prediction Model in Amazon SageMaker (10 min)
-
-**Files**:
-
-* [boston-housing-regression.ipynb](Activities/04-Stu_Housing_Price/Solved/boston-housing-regression.ipynb)
-
-Reassure students that it is OK if this was challenging. Amazon SageMaker APIs have a learning curve, as do other AWS resources, along with machine learning in general. Tell students that they will get a lot of practice with AWS today!
-
-Walkthrough the solution and highlight the following:
-
-* The data is fetched and analyzed to become familiar with it.
-
-* The data is split into test and train datasets and converted into to the [RecordIO-wrapped ProtoBuf format](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-inference.html) used by Amazon SageMaker's algorithms.
-
-* The prepared and formatted data is uploaded to an Amazon S3 bucket.
-
-* The model is trained using a linear learner algorithm using the data stored in Amazon S3.
-
-* The trained model is deployed on an Amazon SageMaker instance.
-
-* Predictions are performed, and the model's performance is scored.
-
-Answer any questions before moving on.
-
----
-
-### 9. Break (15 min)
+### 7. Break (15 min)
 
 ---
 
