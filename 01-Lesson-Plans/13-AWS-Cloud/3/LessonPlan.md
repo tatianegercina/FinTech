@@ -851,6 +851,15 @@ Continue to the Amazon Lex console, test the bot to validate the changes made on
 
 ![Extended Crypto Converter demo](Images/crypto_converter_extended.gif)
 
+**Hints:**
+
+* You may have to refresh the Lex intent page after creating the custom slot and the lambda function in order to see them in the options.
+
+* Make sure your intent and slot names are named correctly in your Lambda code.  The names in Lex should match the names in Lambda exactly:
+
+![Lex_Names1](Images/Lex_names1.png)
+![Lex_Names2](Images/Lex_names2.png)
+
 Open the lesson slides, move to the slide entitled "Deploying Amazon Lex Bots" and highlight the following:
 
 * Once you create your bot in Amazon Lex, you may want to put it into action and have it talking with your potential users.
