@@ -580,9 +580,9 @@ This activity will require the use of an AWS SageMaker notebook instance. The un
 
 * Open JupyterLab in your AWS SageMaker notebook instance.
 
-* Upload the dataset: [german_credit_data.csv](Activities/05-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv).
+* Upload the dataset: [german_credit_data.csv](Activities/04-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv).
 
-* Upload the solved notebook: [credit-risk-classification.ipynb](Activities/05-Stu_Credit_Risk_Classification/Solved/credit-risk-classification.ipynb).
+* Upload the solved notebook: [credit-risk-classification.ipynb](Activities/04-Stu_Credit_Risk_Classification/Solved/credit-risk-classification.ipynb).
 
 * Walk-through the solved notebook, cell by cell, highlighting the following points:
   * The output of the model prediction is a binary label (0, 1): "Good" or "Bad" Credit Risk.
@@ -649,4 +649,4 @@ Answer any questions before finishing the class.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
