@@ -584,19 +584,18 @@ This activity will require the use of an AWS SageMaker notebook instance. The un
 
 * Upload the solved notebook: [credit-risk-classification.ipynb](Activities/05-Stu_Credit_Risk_Classification/Solved/credit-risk-classification.ipynb).
 
-* Walk through the solved notebook, cell by cell, highlighting the following points:
-  * This activity is similar to the previous Housing Price Prediction; however, rather than `linear regression`, we are calculating a `logistic regression` to perform a `binary classification`.
-  * The output of the model prediction is a binary label (0, 1): "good" or "bad" credit risk.
-  * Despite using a curated dataset, we still need to perform some data preparation tasks: split, hot-encode, and scale the input features.
-  * Similar to the housing price prediction, we use the AWS SageMaker built-in `linear-learner` algorithm but change the hyper-parameter `predictor_type` to `binary_classifier`.
-  * Unlike with housing price prediction, the predictions are in the `predicted_label` field in the prediction result.
-  * For our model evaluation, besides the accuracy score, we use a confusion matrix to get a quick sense of the model's true-positive or negative and false-positive or negative prediction combinations.
+* Walk-through the solved notebook, cell by cell, highlighting the following points:
+  * The output of the model prediction is a binary label (0, 1): "Good" or "Bad" Credit Risk.
+  * Despite using a "curated" dataset, we still need to perform some data preparation tasks: *split*, *hot-encode* and *scale* the input features.
+  * We use the AWS SageMaker built-in `linear-lerner` algorithm by setting the hyper-parameter `predictor_type` to "binary_classifier".
+  * The predictions are in the `predicted_label` field in the prediction result.
+  * Lastly, for our model evaluation, besides the accuracy score, we use a confusion matrix to get a quick sense of the model's true-positive/negative and false-positive/negative prediction combinations.
 
 Answer any questions before moving on.
 
 ---
 
-### 13. Instructor Do: Delete Notebook Instance (10 min)
+### 11. Instructor Do: Delete Notebook Instance (10 min)
 
 In this activity, students will learn how to delete their Amazon SageMaker notebook instance so that no billing charges are incurred for it after class.
 
@@ -630,7 +629,9 @@ Lastly, go to the Amazon S3 console and remove the buckets created for the activ
 
 Answer any questions before moving on.
 
-### 14. Student Do: Delete AWS Resources (15 min)
+---
+
+### 12. Student Do: Delete AWS Resources (15 min)
 
 In this activity, students will delete all the AWS resources created in today's class to avoid additional charges.
 
