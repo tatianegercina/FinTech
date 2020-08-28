@@ -163,7 +163,7 @@ Answer any questions before moving on.
 
 ---
 
-### 5. Student Do: Creating an Amazon SageMaker Notebook Instance (20 min)
+### 5. Everyone Do: Creating an Amazon SageMaker Notebook Instance (20 min)
 
 In this activity, students will learn how to create an instance of Amazon SageMaker and how to use Jupyter notebooks on the AWS cloud.
 
@@ -222,7 +222,7 @@ Explain to students that the next step is to create a Jupyter Notebook instance 
 
   * **Section: Notebook instance settings**
     * Notebook instance name: `sm-test`
-    * Notebook instance type: `ml.m4.xlarge`
+    * Notebook instance type: `ml.t2.medium`
     * Elastic Inference: `none`
     ![Creating an Amazon SageMaker instance - step 10](Images/sagemaker-10.png)
   * **Section: Permissions and encryption**
@@ -273,17 +273,19 @@ End the demo and answer any questions before moving on.
 
 ---
 
-### 6. Instructor Do: Creating and Deploying a Machine Learning Model in Amazon SageMaker (15 min)
+### 6. Everyone Do: Create and Deploy a Machine Learning Model in Amazon SageMaker (30 min)
 
 In this activity, students will learn how a machine-learning model is created, trained, deployed, and evaluated in Amazon SageMaker.
 
+This is a collaborative activity where you will lead the class through all the process, be sure to keep the pace allowing the students to follow you. Ask TAs to assist any student that may be stuck during the activity.
+
 **Files:**
 
-* [rainfall_forecast.ipynb](Activities/03-Ins_SageMaker_Deployment/Unsolved/rainfall_forecast.ipynb)
+* [rainfall_forecast.ipynb](Activities/03-Evr_SageMaker_Deployment/Unsolved/rainfall_forecast.ipynb)
 
-* [x_austin_final.csv](Activities/03-Ins_SageMaker_Deployment/Resources/x_austin_final.csv)
+* [x_austin_final.csv](Activities/03-Evr_SageMaker_Deployment/Resources/x_austin_final.csv)
 
-* [y_austin_final.csv](Activities/03-Ins_SageMaker_Deployment/Resources/y_austin_final.csv)
+* [y_austin_final.csv](Activities/03-Evr_SageMaker_Deployment/Resources/y_austin_final.csv)
 
 Explain to students that Amazon has actually created an extensive library of machine-learning models that are optimized for the cloud. This demo will show how to use one of those models.
 
@@ -469,16 +471,18 @@ Create the instance of the linear learner algorithm and highlight the following:
   linear.fit({'train': s3_train_data, 'test': s3_test_data})
   ```
 
-Explain to students that this step might take a few minutes, and it will use resources from the AWS account. Normally, this time is not billed in the two-month trial period, however, clarify to students that policies of AWS free and trial offers constantly changes, so they should always check the pricing pages for any service that they want to use. Below, a sample output is shown. You will notice that the text is in red, but this does not denote an error.
+Explain to students that this step might take a few minutes, and it will use resources from the AWS account. Typically, this time is not billed in the two months trial period. However, clarify to students that policies of the AWS free and trial offer changes regularly, so they should always check the pricing pages for any service that they want to use. Below, a sample output is shown, you will notice that the output text is in blue.
+
+**Important Note:** Explain to students that this step may take up to 15 minutes since Amazon SageMaker is provisioning not only a Jupyter notebook but also a series of virtual machines (EC2 instances) to compute the model. If you are running out of time in this activity, open the solved version of the notebook and continue the demo by dry-walking through the code.
 
 ![Deploy SageMaker Model - step 3](Images/deploy-sagemaker-3.gif)
 
 Once the `linear-learner` model has been trained, tell students that it can be deployed to make predictions of the rainfall in Austin. Continue the demo and highlight the following:
 
-* An instance of the linear-learner predictor is created. Note: This step might take a few minutes.
+* In order to make predictions, the model should be deployed; a `ml.t2.medium` instance type is defined since this is the instance type we selected when we created the notebook that is part of the free tier offer.
 
   ```python
-  linear_predictor = linear.deploy(initial_instance_count=1, instance_type="ml.m4.xlarge")
+  linear_predictor = linear.deploy(initial_instance_count=1, instance_type="ml.t2.medium")
   ```
 
 * Some configurations are made to specify the type of data files that are going to be used and to define how the data is going to be serialized and deserialized.
@@ -489,7 +493,7 @@ Once the `linear-learner` model has been trained, tell students that it can be d
   linear_predictor.deserializer = json_deserializer
   ```
 
-* Some predictions are made using the testing data; results are stored on the `y_predictions` array.
+* To make predictions, we use the `predict()` method of the model. We will make predictions using the testing data; results are stored in the `y_predictions` array.
 
   ```python
   result = linear_predictor.predict(X_test)
@@ -504,7 +508,7 @@ Explain to students that once you have the predictions, the model can be evaluat
 
   ![Deploy SageMaker Model - step 5](Images/deploy-sagemaker-5.png)
 
-  Finally, after reviewing the model evaluation's results, explain to students that the endpoint needs to be deleted to avoid additional AWS resources usage and extra billing.
+Finally, after reviewing the model evaluation's results, explain to students that the endpoint needs to be deleted to avoid additional AWS resources usage and extra billing.
 
 ```python
 sagemaker.Session().delete_endpoint(linear_predictor.endpoint)
@@ -518,51 +522,11 @@ Answer any questions before moving on.
 
 ---
 
-### 7. Student Do: Deploying a Housing Price Prediction Model in Amazon SageMaker (20 min)
-
-In this activity, students will calculate a linear regression model to predict the price of a house using the Boston Housing dataset and the SageMaker built-in `Linear Learner` algorithm.
-
-**Instructions:**
-
-* [README.md](Activities/04-Stu_Housing_Price/README.md)
-
-**Files**:
-
-* [boston-housing-regression.ipynb](Activities/04-Stu_Housing_Price/Unsolved/boston-housing-regression.ipynb)
+### 7. Break (15 min)
 
 ---
 
-### 8. Instructor Do: Review Deploying a Housing Price Prediction Model in Amazon SageMaker (10 min)
-
-**Files**:
-
-* [boston-housing-regression.ipynb](Activities/04-Stu_Housing_Price/Solved/boston-housing-regression.ipynb)
-
-Reassure students that it is OK if this was challenging. Amazon SageMaker APIs have a learning curve, as do other AWS resources, along with machine learning in general. Tell students that they will get a lot of practice with AWS today!
-
-Walkthrough the solution and highlight the following:
-
-* The data is fetched and analyzed to become familiar with it.
-
-* The data is split into test and train datasets and converted into to the [RecordIO-wrapped ProtoBuf format](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-inference.html) used by Amazon SageMaker's algorithms.
-
-* The prepared and formatted data is uploaded to an Amazon S3 bucket.
-
-* The model is trained using a linear learner algorithm using the data stored in Amazon S3.
-
-* The trained model is deployed on an Amazon SageMaker instance.
-
-* Predictions are performed, and the model's performance is scored.
-
-Answer any questions before moving on.
-
----
-
-### 9. Break (15 min)
-
----
-
-### 10. Instructor Do: Pros and Cons of Deploying Machine Learning Models with Amazon SageMaker (10 min)
+### 8. Instructor Do: Pros and Cons of Deploying Machine Learning Models with Amazon SageMaker (10 min)
 
 Lead and facilitate a discussion around deploying models in Amazon SageMaker and why a RESTful ML API is useful.
 
@@ -588,47 +552,50 @@ Have students share their opinions with the class and bring up the following poi
 
 * Unavailability: Although there are service-level agreements in place, AWS (and any other cloud provider) can and has suffered outages at times, causing data unavailability.
 
+Answer any questions before moving on.
+
 ---
 
-### 11. Student Do: Credit Risk Evaluation with Amazon SageMaker (20 min)
+### 9. Student Do: Credit Risk Evaluation with Amazon SageMaker (30 min)
 
 In this activity, students will train and deploy a binary classification model to predict the credit risk of a person using the [German Credit Risk dataset](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) and the SageMaker built-in `Linear Learner` algorithm.
 
 This activity will require the use of an AWS SageMaker notebook instance. The unsolved notebook will guide students through the process and indicate what the missing code snippets are.
 
+**Note:** Remember that the time needed to deploy the model is about 10 minutes.
+
 **Instructions:**
 
-* [README.md](Activities/05-Stu_Credit_Risk_Classification/README.md)
+* [README.md](Activities/04-Stu_Credit_Risk_Classification/README.md)
 
 **Files**:
 
-* [credit-risk-classification.ipynb](Activities/05-Stu_Credit_Risk_Classification/Unsolved/credit-risk-classification.ipynb)
+* [credit-risk-classification.ipynb](Activities/04-Stu_Credit_Risk_Classification/Unsolved/credit-risk-classification.ipynb)
 
-* [german_credit_data.csv](Activities/05-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
+* [german_credit_data.csv](Activities/04-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
 
 ---
 
-### 12. Instructor Do: Review Credit Risk Evaluation with Amazon SageMaker (10 min)
+### 10. Instructor Do: Review Credit Risk Evaluation with Amazon SageMaker (15 min)
 
 * Open JupyterLab in your AWS SageMaker notebook instance.
 
-* Upload the dataset: [german_credit_data.csv](Activities/05-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv).
+* Upload the dataset: [german_credit_data.csv](Activities/04-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv).
 
-* Upload the solved notebook: [credit-risk-classification.ipynb](Activities/05-Stu_Credit_Risk_Classification/Solved/credit-risk-classification.ipynb).
+* Upload the solved notebook: [credit-risk-classification.ipynb](Activities/04-Stu_Credit_Risk_Classification/Solved/credit-risk-classification.ipynb).
 
-* Walk through the solved notebook, cell by cell, highlighting the following points:
-  * This activity is similar to the previous Housing Price Prediction; however, rather than `linear regression`, we are calculating a `logistic regression` to perform a `binary classification`.
-  * The output of the model prediction is a binary label (0, 1): "good" or "bad" credit risk.
-  * Despite using a curated dataset, we still need to perform some data preparation tasks: split, hot-encode, and scale the input features.
-  * Similar to the housing price prediction, we use the AWS SageMaker built-in `linear-learner` algorithm but change the hyper-parameter `predictor_type` to `binary_classifier`.
-  * Unlike with housing price prediction, the predictions are in the `predicted_label` field in the prediction result.
-  * For our model evaluation, besides the accuracy score, we use a confusion matrix to get a quick sense of the model's true-positive or negative and false-positive or negative prediction combinations.
+* Walk-through the solved notebook, cell by cell, highlighting the following points:
+  * The output of the model prediction is a binary label (0, 1): "Good" or "Bad" Credit Risk.
+  * Despite using a "curated" dataset, we still need to perform some data preparation tasks: *split*, *hot-encode* and *scale* the input features.
+  * We use the AWS SageMaker built-in `linear-lerner` algorithm by setting the hyper-parameter `predictor_type` to "binary_classifier".
+  * The predictions are in the `predicted_label` field in the prediction result.
+  * Lastly, for our model evaluation, besides the accuracy score, we use a confusion matrix to get a quick sense of the model's true-positive/negative and false-positive/negative prediction combinations.
 
 Answer any questions before moving on.
 
 ---
 
-### 13. Instructor Do: Delete Notebook Instance (10 min)
+### 11. Instructor Do: Delete Notebook Instance (10 min)
 
 In this activity, students will learn how to delete their Amazon SageMaker notebook instance so that no billing charges are incurred for it after class.
 
@@ -662,7 +629,9 @@ Lastly, go to the Amazon S3 console and remove the buckets created for the activ
 
 Answer any questions before moving on.
 
-### 14. Student Do: Delete AWS Resources (15 min)
+---
+
+### 12. Student Do: Delete AWS Resources (15 min)
 
 In this activity, students will delete all the AWS resources created in today's class to avoid additional charges.
 
@@ -680,4 +649,4 @@ Answer any questions before finishing the class.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
