@@ -158,13 +158,17 @@ Explain to students that this unit's homework focuses on exposing them to some o
 
 Walkthrough the homework instructions and highlight the following:
 
-* The first component of the homework is focused on budget analysis. Students will use an API called **PLAID** to analyze personal financial data. PLAID can be used to securely access any type of banking, credit, or investment account, providing customers with new services that are not typically available without PLAID. Customers can integrate PLAID with other technologies and apps without security being compromised; it also provides access to personal financial accounts.
+* In this unit's homework, you will create two financial analysis tools using the Alpaca API and the Free Crypto API, a personal financial planner, and a retirement planning tool.
 
-* With financial data accessible via PLAID, students will transition to using PLAID to forecast financial goals. The homework uses a Monte Carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution is sufficient to cover their future income.
+* The personal financial planner will allow you to visualize personal expenses from the last 90 days to assess the current financial health by comparing the monthly household income versus the monthly expenses.
 
-* Lastly, students will analyze the output of the retirement planner activity and summarize assumptions and findings in a markdown file. This file will need to be uploaded to the GitHub repository.
+* Using the financial planner, you also will be able to analyze savings composed by investments in shares and cryptocurrencies.
 
-Ask the students if there are any questions related to the homework.
+* After creating the personal financial planner, you will transition to forecast financial goals. This section uses a Monte Carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution will cover their future income.
+
+* Lastly, you will analyze the retirement planner activity output and summarize assumptions and findings in a financial analysis report created using markdown that you will upload to your GitHub repository.
+
+Ask the students if there are any questions related to the homework before continuing with the next activity.
 
 ---
 
