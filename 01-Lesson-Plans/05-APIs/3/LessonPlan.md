@@ -12,9 +12,9 @@ For example, stock prices fluctuate, so there are varying probabilities as to wh
 
 By the end of class, students will be able to:
 
-* Define what a simulation is, and why it's used.
+* Define what a simulation is and why it's used.
 
-* Deconstruct the components of the Monte Carlo simulation process: probability distributions and iterations.
+* Identify the components of the Monte Carlo simulation process: probability distributions and iterations.
 
 * Interpret probability distributions (normal, bell curve) and random number generators.
 
