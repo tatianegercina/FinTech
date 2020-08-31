@@ -30,21 +30,19 @@ By the end of today's class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [Alpaca Installation Guide](../Supplemental/APIs_Install_Guide.md) (again) and the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class.
+* Slack out the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installations and verify them with a TA before the end of the next class.
 
-* This lesson includes the demonstration, and use of, two APIs that require users to have accounts and API keys. You, students, and TAs should all have created accounts and received API keys prior to this lesson. (Students were instructed to sign up at the end of Lesson 5.1.)
-
-* The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up. There is an activity dedicated to confirming that each student has signed up.
+* This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created accounts and received API keys prior to this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up if they haven't. Students were instructed to sign up at the end of Lesson 5.1. There will be an activity dedicated to confirming that each student has signed up.
 
   * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
-  * [Plaid](https://dashboard.plaid.com/signup)
+  * [Alpaca](https://app.alpaca.markets/signup)
 
-* Since this lesson works with API keys, you and the students must not hardcode or print any API keys, or request URLs with keys. All keys must be stored in environment variables and then referred to with an `os.getenv` function call in Python.
+* Since this lesson will work with API keys, it is important that you and the students do not hardcode or print any API keys or request URLs with keys. All keys must be stored in environment variables and then referred to using the `python-dotenv` Python library.
 
-* This lesson is dependent upon the Quandl and Plaid APIs being up and running. Visit each site and execute preemptive API calls to ensure connectivity. It is imperative to confirm that the APIs used in this lesson are executing as expected.
+* This lesson has a dependency on the Quandl and Alpaca APIs being up and running. Visit each site and execute preemptive API calls to ensure connectivity. It is imperative to confirm that the APIs used in this lesson are executing as expected.
 
-* Some students may have experience working with making API calls. Keep an eye out for these more advanced students so they can potentially assist with review activities; allowing them to help their peers is a great way to keep them engaged and interested in the material.
+* Some students may have experience working with making API calls. Keep an eye out for any students who might be advanced with APIs and could help with review activities. Allowing advanced students to conduct reviews and help their peers is a great way to keep them engaged and interested in the material.
 
 ### Sample Class Video (Highly Recommended)
 
