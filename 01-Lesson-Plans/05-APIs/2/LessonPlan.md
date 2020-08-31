@@ -477,6 +477,199 @@ The secret key will disappear when they log out or navigate to a different page 
 
 Answer any questions students may have, and be sure that all the students have created their keys and installed the Alpaca SDK before continuing to the next activity.
 
+---
+
+### 11. Instructor Do: Alpaca Demo (15 min)
+
+In this activity, students will receive an instructor-led demo of the Alpaca SDK. The instructor will demonstrate to students how to connect to the Alpaca paper account from a Python environment.
+
+Have the `.env` file prepared with your Alpaca API Keys before class so that it does not need to be created during the activity.
+
+**Files:**
+
+* [alpaca-demo.ipynb](Activities/04-Ins_Alpaca_Demo/Solved/alpaca-demo.ipynb)
+
+Emphasize to students that one of the cool things about Alpaca is that it provides developers with a paper trading account for users to get started. The paper account provides a real-time simulation environment where they can test their code using free, real-time market data.
+
+Explain to students that the paper account is excellent because it gives developers a space to play with Alpaca without having to incur charges. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
+
+Open the unsolved version of the Jupyter notebook and live code the demo. Continue by leading students on the environment preparation by highlighting the following:
+
+* To start using the Alpaca SDK, you need to import the `tradeapi` class from the `alpaca_trade_api` library and some other well-known libraries we have already used.
+
+  ```python
+  # Initial imports
+  import os
+  import requests
+  import pandas as pd
+  from dotenv import load_dotenv
+  import alpaca_trade_api as tradeapi
+
+  %matplotlib inline
+  ```
+
+* Since we are going to make an authenticated connection to the Alpaca API through its SDK, we need to store our Alpaca API and secret keys into our `.env` file and name them as `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` respectively.
+
+* After importing the required Python libraries, we have to load the environment variables using the `load_dotenv()` function and store the Alpaca keys as Python variables.
+
+  ```python
+  # Load .env enviroment variables
+  load_dotenv()
+
+  # Set Alpaca API key and secret
+  alpaca_api_key = os.getenv("ALPACA_API_KEY")
+  alpaca_secret_key = os.getenv("ALPACA_SECRET_KEY")
+  ```
+
+* Now we are ready to connect to Alpaca! To use the Alpaca SDK, we need to create an object that will encapsulate the entire Alpaca functionality.
+
+* To generate the alpaca object to retrieve stock market data, we will use the `tradeapi.REST()` function by passing the Alpaca keys as arguments and setting the API version we want to use. The current Alpaca API version is 2.0.
+
+  ```python
+  # Create the Alpaca API object
+  alpaca = tradeapi.REST(
+      alpaca_api_key,
+      alpaca_secret_key,
+      api_version="v2")
+  ```
+
+* Now, let's fetch the current closing price of Facebook (`FB`) and Twitter (`TWTR`), two technology stocks that may be interesting to invest in. First, we need to set a variable with the current date in the ISO format.
+
+  ```python
+  # Format current date as ISO format
+  today = pd.Timestamp("2020-07-14", tz="America/New_York").isoformat()
+  ```
+
+* To define the current date as an ISO format date, we use the `TimeStamp` function from Pandas to transform the current date that is passed as a string argument using the `YEAR-MONTH-DAY` format. Next, we link the `isoformat()` function to format the date following the ISO standard.
+
+**Note:** While you follow this example, you may want to change the date to today.
+
+* Using the Alpaca API, we can retrieve stock data from up to `200` ticker names. We need to pass the symbols as a Python list. Let's create a list of the tech companies we want to invest in.
+
+  ```python
+  # Set the tickers
+  tickers = ["FB", "TWTR"]
+  ```
+
+* Another important parameter we need to define to fetch stock data is the time frame we want to use. We can set the `timeframe` parameter in minutes (`1Min`, `5Min`, `15Min`) or one day (`1D`). We will create a variable called `timeframe` to set this parameter as `1D`.
+
+  ```python
+  # Set timeframe to one day ('1D') for the Alpaca API
+  timeframe = "1D"
+  ```
+
+* We are all set! Let's fetch the current closing prices for `FB` and `TWTR` using the `alpaca.get_barset()` function. Alpaca Python SDK automatically converts the resulting JSON response to a Pandas DataFrame if you use the `df` property.
+
+  ```python
+  # Get current closing prices for FB and TWTR
+  df_portfolio = alpaca.get_barset(
+      tickers,
+      timeframe,
+      start = today,
+      end = today
+  ).df
+
+  # Display sample data
+  df_portfolio
+  ```
+
+  ![fetch-current-alpaca-stock-data](Images/fetch-current-alpaca-stock-data.png)
+
+Explain to students that the `get_barset()` function from the `Alpaca` SDK takes in the following parameters that can be used to refine the query results: `symbols`, `timeframe`, `limit`, `start`, `end`, `after`, and `until`.
+
+Slack out the following links and encourage students to learn more about the details of this function:
+
+1. [Alpaca bars API documentation:](https://alpaca.markets/docs/api-documentation/api-v2/market-data/bars/) Here you can learn more about the values that can be set to each parameter.
+
+2. [Market Data Examples:](https://alpaca.markets/docs/api-documentation/how-to/market-data/) This page provides code examples of the `get_bartset()` function in several programming languages.
+
+Continue the demo highlighting the following.
+
+* Note in the previous code, that to retrieve the current closing price of `FB` and `TWTR`, we set the `start` and `end` day as today's date. Suppose you want to analyze the daily returns of these tech companies to start assessing if they are a good investment option, and you want to retrieve the closing prices from the last year. As you may guess, it's as simple as setting the `start` and `end` parameters to a one year period.
+
+  ```python
+  # Format start and end dates as ISO format for one year period
+  start = pd.Timestamp("2019-07-14", tz="America/New_York").isoformat()
+  end = pd.Timestamp("2020-07-14", tz="America/New_York").isoformat()
+  ```
+
+* We take advantage of the benefits of using an SDK, and we create a new DataFrame using the `alpaca_getbarset()` method by modifying the start and end dates.
+
+  ```python
+  # Get closing prices for FB and TWTR from the last year
+  df_portfolio_year = alpaca.get_barset(
+      tickers,
+      timeframe,
+      start = start,
+      end = end
+  ).df
+
+  # Display sample data
+  df_portfolio_year.head(10)
+  ```
+
+  ![fetch-yearly-alpaca-stock-data](Images/fetch-yearly-alpaca-stock-data.png)
+
+* To analyze the closing prices, let's create a new DataFrame containing only the closing prices from Facebook and Twitter over the last year.
+
+  ```python
+  # Create and empty DataFrame for closing prices
+  df_closing_prices = pd.DataFrame()
+
+  # Fetch the closing prices of FB and TWTR
+  df_closing_prices["FB"] = df_portfolio_year["FB"]["close"]
+  df_closing_prices["TWTR"] = df_portfolio_year["TWTR"]["close"]
+
+  # Drop the time component of the date
+  df_closing_prices.index = df_closing_prices.index.date
+
+  # Display sample data
+  df_closing_prices.head(10)
+  ```
+
+  ![fetch-yearly-closing-prices](Images/fetch-yearly-closing-prices.png)
+
+* Note that the DataFrame created by the Alpaca API is multi-indexed. To pick the `FB` and `TWTR` closing prices from the `df_portfolio_year` DataFrame we use column keys.
+
+* Finally, we compute the daily returns using the Pandas `pct_change()` function and plot the results.
+
+  ```python
+  # Compute daily returns
+  df_daily_returns = df_closing_prices.pct_change().dropna()
+
+  # Display sample data
+  df_daily_returns.head()
+  ```
+
+  ![fb-twtr-daily-returns](Images/fb-twtr-daily-returns.png)
+
+  ```python
+  # Plot daily returns
+  df_daily_returns.plot(title="Daily Returns of FB and TWTR over the Last Year")
+  ```
+
+  ![fb-twtr-daily-returns-plot](Images/fb-twtr-daily-returns-plot.png)
+
+* It seems like Twitter had some bad times throughout the last year, but now, both stocks look like an attractive investment option, don't you think?
+
+Ask students for any thoughts and answer any questions before moving on.
+
+---
+
+### 12. Students Do: Investment Value (25 min)
+
+In this activity, students will use the Alpaca SDK to calculate the present value of a stock portfolio.
+
+**Files:**
+
+* [example.env](Activities/05-Stu_Investment_Value/Unsolved/example.env)
+
+* [investment-value.ipynb](Activities/05-Stu_Investment_Value/Unsolved/investment-value.ipynb)
+
+**Instructions:**
+
+* [README.md](Activities/05-Stu_Investment_Value/README.md)
+
 ### End Class
 
 ---
