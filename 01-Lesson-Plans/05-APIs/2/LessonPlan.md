@@ -84,7 +84,7 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Instructor Do: API Keys (5 min) (Critical)
+### 2. Instructor Do: API Keys (10 min) (Critical)
 
 In this activity, students and the instructor will participate in a facilitated discussion regarding API keys. Students will also learn the "what, why, and how" of API keys.
 
