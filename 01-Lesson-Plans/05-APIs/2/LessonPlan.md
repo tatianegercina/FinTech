@@ -72,29 +72,13 @@ Welcome students to the second day of APIs. Open the lesson slides, move to "The
 
 * Because APIs often offer practical services, they may require subscriptions or payment. Companies use API keys and user accounts to ensure billing and secure transmission of financial and other confidential information.
 
-* You will get hands-on experience using Plaid (a banking API), Quandl (to fetch historical stock data) and Alpaca (a trading API).
+* You will get hands-on experience using Quandl (to fetch historical stock data) and Alpaca (a trading API).
 
 Explain to students that Canada's Department of Finance and Provincial Finance Regulators are responsible for providing a financial regulatory framework. However, the monetary policy for the Canadian FinTech industry is still under development according to [a report released by the Competition Bureau](https://www.competitionbureau.gc.ca/eic/site/cb-bc.nsf/eng/04322.html).
 
 * Within the general regulatory framework, any company interested in providing technology-led financial services should, at the minimum, comply with [The Personal Information Protection and Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/) and [Canada's Anti-Money Laundering and Anti-Terrorist Financing Regime (AML/CT)](https://www.fintrac-canafe.gc.ca/fintrac-canafe/antimltf-eng).
 
 * Companies interested in offering financial services related to cryptocurrencies or tokens should follow the guidance published by the Canadian Securities Administrators (CSA) in the [Staff Notice 46-308 about Securities Law Implications for Offerings of Tokens](https://www.securities-administrators.ca/aboutcsa.aspx?id=1704).
-
-Now, transition into a dry demonstration (just visit the site) of a practical FinTech API used in this lesson: Plaid.
-
-Navigate to the [Plaid](https://plaid.com/) website and highlight the following:
-
-* The Plaid API allows users to connect multiple bank accounts to one platform and provides a unified view of a person's financial ecosystem. It enables users to manage and analyze their accounts and financial information from one spot.
-
-* Plaid was designed as a tool for developers to accelerate their FinTech development. Developers can use Plaid to provide services to their users and consumers without having to worry about making API calls to each bank or financial entity.
-
-* Because Plaid handles any needs behind-the-scenes with each financial institution, developers can focus on designing and developing a program that will:
-
-  1. Make calls to Plaid.
-
-  2. Analyze data by either extracting financial information from Plaid, or by using Plaid's out-of-the-box capabilities.
-
-* [Plaid is available in Canada since May 2019](https://blog.plaid.com/plaid-in-canada/).
 
 Answer any questions before moving on.
 
