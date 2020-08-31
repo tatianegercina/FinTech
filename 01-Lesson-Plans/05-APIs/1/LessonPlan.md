@@ -176,7 +176,7 @@ Ask the students if there are any questions related to the homework before conti
 
 Now that students know what APIs are and how to execute them, it's time they learn what goes on in the backend when an API request is sent. Students will learn the various components of the client-server model through instructor demonstration.
 
-Part of the demonstration will include showing students the client-server model by pinging Yahoo Finance. Make sure to have a terminal open and ready for the demo.
+Part of the demonstration will include showing students the client-server model by pinging Yahoo! Finance. Make sure to have a terminal open and ready for the demo.
 
 Open the lesson slides, move to the "Client-Server Model" section, and highlight the following:
 
@@ -226,7 +226,7 @@ Ask students if there are any questions before moving on.
 
 ### 4. Student Do: Eavesdropping on the Server (10 min)
 
-This activity drives home the discussion on the client-server model by having students surf the web with the browser's developer console open. Students will visit websites like Facebook and Yahoo, as well as complete a Google search. They will read the standard output from the console to get a better idea of what data is sent between the client and server as students navigate sites. This will communicate to students that every click and API request brokers a connection between client and server, allowing data to be exchanged between the two.
+This activity drives home the discussion on the client-server model by having students surf the web with the browser's developer console open. Students will visit different websites as well as complete a Google search. They will read the standard output from the console to get a better idea of what data is sent between the client and server as students navigate sites. This will communicate to students that every click and API request brokers a connection between client and server, allowing data to be exchanged between the two.
 
 **Instructions:**
 
