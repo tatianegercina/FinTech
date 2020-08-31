@@ -70,41 +70,33 @@ Cover the following points:
 
 * The previous lessons focused on API calls and showcased the Alpaca API to exemplify that you can leverage the power of external datasets and functionality.
 
-* Today you will combine what you've learned so far on using APIs to pull in stock data and forecast single stock and portfolio returns using Monte Carlo simulations.
+* Today you will combine what you've learned so far on using Alpaca to pull in stock data and forecast single stock and portfolio returns using Monte Carlo simulations.
 
-* Today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. You should feel empowered while learning how to use other curated datasets to analyze and generate insights on their own.
+* Today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. You should feel empowered as you are learning how you can use other curated datasets to analyze and generate insights on their own.
 
-* Be prepared to push your mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.
+* You should be prepared to push your mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.
 
-Open the lesson slides, move to the "Monte Carlo Simulations" section, and highlight the following:
+Open the lesson slides, move to the "Monte Carlo Simulations" section and highlight the following:
 
 * Today, we will combine what we’ve learned so far on using APIs to pull in stock data and forecast single stock/portfolio returns using Monte Carlo simulations.
 
 * Simulations will require a switch from historical analysis to predicting the future.
 
-* By the end of the lesson, Monte Carlo simulations will have predicted future stock prices, and therefore forecast the potential stock's returns of an initial investment; either as a single stock investment or as an investment in a portfolio.
+* By the end of the lesson, Monte Carlo simulations will have predicted future stock prices and therefore forecast the potential stock's returns of an initial investment, either as a single stock investment or as an investment in a portfolio.
 
-Continue with the slides, switching to the "Simulations" section. Ease students into the idea of this type of simulation by presenting the following questions and answers:
+Continue with the slides switching to the "Simulations" section, ease students into the notion of this type of simulation by presenting the following questions and answers:
 
 * What are simulations?
 
-  * Answer: At its core, a simulation is a running instance of a model that seeks to emulate an existing process or system.
+  * At its core, a simulation is a running instance of a model that seeks to emulate an existing process or system.
 
-* What is a Monte Carlo simulation?
+* What are Monte Carlo simulations?
 
-  * Answer: A Monte Carlo simulation is a specific type of simulation using probability and variables to predict the future potential outcomes of a randomly occurring process.
-
-* What is probability?
-
-  * Answer: The chance of an event happening. For example, the chance of a coin landing on heads is `50%`.
+  * A Monte Carlo simulation is a specific type of simulation that uses probability and variables to predict the future potential outcomes of a randomly occurring process.
 
 * Why use Monte Carlo simulations?
 
-  * Answer: Monte Carlo simulations provide a method of testing the range of values and corresponding probabilities that a random process can generate over time—specifically, how far results may deviate from the expected average. Monte Carlo simulations help to understand the risk of uncertainty in prediction and forecasting models, which is particularly helpful when dabbling in the domain of capital investments and stock price uncertainty.
-
-* What would be an example of a Monte Carlo simulation?
-
-  * Answer: Imagine a scientist wanted to know how often a coin could land on heads for `5` trials of `10` coin flips. Flipping a coin has a `50%` chance of landing on heads and a `50%` chance of landing on tails. Because of the randomly occurring nature of flipping a coin, results could vary: for example, a coin could produce `6` heads and `4` tails; `3` heads and `7` tails; `8` heads and `2` tails, `5` heads and `5` tails, or `4` heads and `6` tails. Therefore, an example Monte Carlo simulation would be to flip a coin `10` times to determine the resulting number of heads and tails, and then do that same process another `5` times to determine the frequency distribution of landing on heads (how many times the coin landed a specific number of heads). The frequency distribution of heads can then be used to calculate the corresponding probability distribution that determines how likely it is for varying numbers (or ranges) of heads to land.
+  * Monte Carlo simulations provide a method of testing the range of values and corresponding probabilities that a random process can generate over time—specifically, how far results may deviate from the expected average. Monte Carlo simulations help to understand the risk of uncertainty in prediction and forecasting models, which is particularly helpful when dabbling in the domain of capital investments and stock price uncertainty!
 
 Ask the students if they can think of any other examples of Monte Carlo simulations. Be sure to have all the students on the same page before moving on.
 
