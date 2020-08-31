@@ -670,6 +670,32 @@ In this activity, students will use the Alpaca SDK to calculate the present valu
 
 * [README.md](Activities/05-Stu_Investment_Value/README.md)
 
+---
+
+### 13. Instructor Do: Emotional Break (10 min)
+
+Facilitate discussion by asking students about their experiences working with API keys and SDKs.
+
+Ask students about the pace of the class. Is it going too fast, too slow, or just right?
+
+Empower students to continue on by emphasizing that they're one step away from adding Alpaca to their toolkit. Reiterate that Alpaca is going to help them acquire the data they need to perform financial analysis, and it will broker the communication channel between stock exchanges and FinTech application servers.
+
+Remind students that they are making excellent progress. Not only are they submitting requests to an API, but they're also submitting authenticated requests in a programmatic way using SDKs.
+
+If time remains, ask the following questions:
+
+* What data type can environment variables be stored as?
+
+  **Answer:** String
+
+* Why might Alpaca be considered a FinTech disrupter?
+
+  **Answer:** Alpaca is changing the way developers and consumers can get access to FinTech data. Not only is Alpaca providing a technology platform to get access to FinTech data, but it is also providing analytic and insight products to make data-driven decisions.
+
+* How glad are you that SDKs don't require users to build long, parameterized request URLs like the Python `requests` library?
+
+Ask students if they have any questions before moving on.
+
 ### End Class
 
 ---
