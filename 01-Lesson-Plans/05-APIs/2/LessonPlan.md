@@ -877,8 +877,6 @@ Ask if there are any remaining questions.
 
 ---
 
----
-
 ### 15. Recap (10 min)
 
 Woo-hoo! You've reached the end of APIs Day 2. Over the past two days, the class has been bombarded with an array of APIs, ranging from APIs that allow users to play fun games to APIs that provide users with a unified view of data across all financial accounts. The importance of API keys has been drilled home, as has the need to store them as environment variables.
