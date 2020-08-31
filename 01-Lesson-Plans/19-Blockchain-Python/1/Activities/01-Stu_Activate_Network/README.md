@@ -61,7 +61,7 @@ Using this, you can build a cheatsheet to get your `geth` nodes up and running a
 
 ## Hints
 
-* If you aren't seeing any movement in the wallet amounts after sending/receiving transactions, make sure you are sending a large enough sum of ETH to see actual movement in the digits. You may have to click on the amount itself to see the full value down to the WEI.
+* If you aren't seeing any movement in the wallet amounts in MyCrypto after sending/receiving transactions, make sure you are sending a large enough sum of ETH to see actual movement in the digits. You may have to click on the amount itself to see the full value down to the WEI.
     ![before_after_click_mycrypto](../../Images/before_after_click_mycrypto.png)
 * If increasing the transaction value and clicking on the wallet amount doesn't help, try the following:
     * Terminate both nodes using `control+C` in the Node1 and Node2 terminal windows.
