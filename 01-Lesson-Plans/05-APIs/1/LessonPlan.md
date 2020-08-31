@@ -569,7 +569,7 @@ Open the solution and conduct a dry walkthrough, highlighting the following disc
   print(request_data)
   ```
 
-  ```
+  ```text
   <Response [200]>
   ```
 
