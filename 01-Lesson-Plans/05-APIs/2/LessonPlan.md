@@ -4,25 +4,25 @@
 
 ### Overview
 
-Today's class will expose students to some exciting and innovative FinTech APIs that have truly disrupted the industry. **Quandl** is an API that provides access to historical stock data, while **Plaid** connects multiple financial institutions for a unified view of personal financial information. Both APIs help democratize and decentralize financial data stores and analytic approaches. But that's not all–new APIs and software development kits (SDKs) are released regularly to help enhance and advance the FinTech industry. It's a whole new world, and one to be excited about!
+Today's class will expose students to the exciting and innovative FinTech APIs that have been disrupting the industry. There are so many groundbreaking APIs in the FinTech industry that it's almost impossible not to get excited about them. APIs used in this lesson include **Quandl**, an API that provides access to historical stock data, and **Alpaca**, an API for stock trading. Both of these services help democratize and decentralize financial data stores and analytic approaches. And this is just the beginning. New APIs and SDKs (software development kits) are released regularly, which means there's always new technologies to use to enhance and advance the FinTech industry. It's a new world, and it's a world to be excited about!
 
-This lesson presents students with hands-on experience using APIs in a Python environment, requesting and leveraging API keys, and securely storing API keys and credentials as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to Quandl using the Python `requests` library and Plaid's software development kit, a library packaged to provide developers with access to Plaid's endpoints and functions.
+This lesson presents students with hands-on experience using APIs in a Python environment, requesting and leveraging API keys, and securely storing API keys and credentials as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to Quandl using the Python `requests` library and Alpacas' software development kit, a library packaged to provide developers with access to Alpacas's endpoints and functions.
 
 ### Class Objectives
 
 By the end of today's class, students will be able to:
 
-* Register for an API key and use it to fetch authenticated requests using the `requests` library.
+* Register for an API key and use the key to fetch authenticated requests using the Requests Library.
 
-* Set/export environment variables in Windows and Mac, and retrieve them in Python.
+* Set/Export environment variables in Windows and Mac and retrieve them in Python.
 
-* Explain the difference between an API and a SDK.
+* Explain the difference between an API and SDK.
 
-* Set authentication for the Plaid SDK.
+* Set authentication for a Python SDK.
 
-* Use a Python SDK to fetch data from Plaid.
+* Use a Python SDK to fetch financial data.
 
-* Use SDKs to analyze personal financial data.
+* Use SDKs to analyze financial data.
 
 * Retrieve historical stock information using the Quandl API.
 
