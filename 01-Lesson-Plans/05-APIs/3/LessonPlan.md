@@ -68,7 +68,7 @@ Energize your students and welcome them to the third day of APIs! Today is the d
 
 Cover the following points:
 
-* Previous lessons focused on API calls and showcased the Plaid API to exemplify that you can leverage the power of external datasets and functionality.
+* The previous lessons focused on API calls and showcased the Alpaca API to exemplify that you can leverage the power of external datasets and functionality.
 
 * Today you will combine what you've learned so far on using APIs to pull in stock data and forecast single stock and portfolio returns using Monte Carlo simulations.
 
