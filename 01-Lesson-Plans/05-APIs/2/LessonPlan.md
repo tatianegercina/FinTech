@@ -696,6 +696,187 @@ If time remains, ask the following questions:
 
 Ask students if they have any questions before moving on.
 
+---
+
+### 14. Students Do: Investment Value Activity Review (10 min)
+
+**Files:**
+
+* [example.env](Activities/05-Stu_Investment_Value/Solved/example.env)
+
+* [investment-value.ipynb](Activities/05-Stu_Investment_Value/Solved/investment-value.ipynb)
+
+Open the solved version of the Jupyter notebook and conduct a dry walkthrough review of the solution by highlighting the following.
+
+* As you have experienced in this activity, SDKs and APIs are great complements to your current Python skills.
+
+* Now you know how to retrieve financial data to boost your finance application and start creating analytical tools to better understand financial data.
+
+* To solve this activity, we start importing the required libraries.
+
+  ```python
+  # Initial imports
+  import os
+  import requests
+  import pandas as pd
+  from dotenv import load_dotenv
+  import alpaca_trade_api as tradeapi
+
+  %matplotlib inline
+  ```
+
+* To compute the value of the stock portfolio, we start by creating a DataFrame to store the number of `MSFT` and `AAPL` shares in the portfolio.
+
+  ```python
+  # Set current amount of shares data
+  shares_data = {
+      "shares": [200, 320]
+  }
+
+  # Set the tickers
+  tickers = ["MSFT", "AAPL"]
+
+  # Create the shares DataFrame
+  df_shares = pd.DataFrame(shares_data, index=tickers)
+
+  # Display shares data
+  df_shares
+  ```
+
+  ![number-shares](Images/number-shares.png)
+
+* Next, we load the Alpaca keys that we have stored as environment variables.
+
+  ```python
+  # Load .env environment variables
+  load_dotenv()
+  ```
+
+  ```text
+  True
+  ```
+
+  ```python
+  # Set Alpaca API key and secret
+  alpaca_api_key = os.getenv("ALPACA_API_KEY")
+  alpaca_secret_key = os.getenv("ALPACA_SECRET_KEY")
+
+  # Verify that Alpaca key and secret were correctly loaded
+  print(f"Alpaca Key type: {type(alpaca_api_key)}")
+  print(f"Alpaca Secret Key type: {type(alpaca_secret_key)}")
+  ```
+
+  ```text
+  Alpaca Key type: <class 'str'>
+  Alpaca Secret Key type: <class 'str'>
+  ```
+
+* Note that we printed the Alpaca keys data type as a mechanism to validate if they were successfully imported.
+
+* The next step is to create the Alpaca API object.
+
+  ```python
+  # Create the Alpaca API object
+  alpaca = tradeapi.REST(
+      alpaca_api_key,
+      alpaca_secret_key,
+      api_version="v2")
+  ```
+
+* Since we will compute the current value in dollars of our stock portfolio, we create a variable called `today` with the current date using the ISO format.
+
+  ```python
+  # Format current date as ISO format
+  today = pd.Timestamp("2020-07-14", tz="America/New_York").isoformat()
+  ````
+
+* We will fetch daily data, so we set a `timeframe` variable as `1D` to fetch closing prices on a daily basis.
+
+  ```python
+  # Set timeframe to one day ('1D') for the Alpaca API
+  timeframe = "1D"
+  ```
+
+* We retrieve the current closing prices using the `get_barset()` function from the Alpaca SDK and passing the `tickers`, `timeframe`, and `today` variables as parameters.
+
+  ```python
+  # Get current closing prices for FB and TWTR
+  df_portfolio = alpaca.get_barset(
+      tickers,
+      timeframe,
+      start = today,
+      end = today
+  ).df
+
+  # Display sample data
+  df_portfolio
+  ```
+
+  ![current-tickers-closing-prices](Images/current-tickers-closing-prices.png)
+
+* To calculate the current value in dollars of the stock portfolio, we fetch the closing prices of `MSFT` and `AAPL` by picking the values using the column keys of the multi-indexed DataFrame.
+
+  ```python
+  # Fetch the current closing prices from the DataFrame
+  msft_price = float(df_portfolio["MSFT"]["close"])
+  aapl_price = float(df_portfolio["AAPL"]["close"])
+  ```
+
+* Once we retrieve the current value of shares, we compute the present value of the stock portfolio by multiplying the number of each share by its value in dollars.
+
+  ```python
+  # Compute the current value in dollars of the stock portfolio
+  msft_value = msft_price * df_shares.loc["MSFT"]["shares"]
+  aapl_value = aapl_price * df_shares.loc["AAPL"]["shares"]
+
+  # Print the current value of the stocks portfolio
+  print(f"The current value of the {df_shares.loc['MSFT']['shares']} MSFT shares is ${msft_value:0.2f}")
+  print(f"The current value of the {df_shares.loc['AAPL']['shares']} AAPL shares is ${aapl_value:0.2f}")
+  ```
+
+  ```text
+  The current value of the 200 MSFT shares is $41678.00
+  The current value of the 320 AAPL shares is $124227.20
+  ```
+
+* To visualize the portfolio composition, we create a DataFrame to store each stock's current value as columns. Having the stock value in columns will ease the creation of the plot.
+
+  ```python
+  # Set the data for the shares value DataFrame
+  value_data = {
+      "MSFT": [msft_value],
+      "AAPL": [aapl_value]
+  }
+
+  # Create a DataFrame with the current value of shares
+  df_value = pd.DataFrame(value_data)
+
+  # Display DataFrame data
+  df_value
+  ```
+
+  ![charts-df](Images/charts-df.png)
+
+* Now, we create a pie chart to show the proportion of stocks in the portfolio and a bar plot to present the current value in dollars of each ticker.
+
+  ```python
+  # Create a pie chart to show the proportion of stocks in the portfolio
+  df_shares.plot.pie(y="shares", title="Stocks Portfolio Composition")
+  ```
+
+  ![pie-chart](Images/pie-chart.png)
+
+  ```python
+  # Create a bar plot to show the value of shares
+  df_value.plot.bar(title="Current Value in Dollars of Stock Portfolio")
+  ```
+
+  ![bar-chart](Images/bar-chart.png)
+
+Ask if there are any remaining questions.
+
+---
+
 ### End Class
 
 ---
