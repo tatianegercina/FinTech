@@ -877,6 +877,54 @@ Ask if there are any remaining questions.
 
 ---
 
+---
+
+### 15. Recap (10 min)
+
+Woo-hoo! You've reached the end of APIs Day 2. Over the past two days, the class has been bombarded with an array of APIs, ranging from APIs that allow users to play fun games to APIs that provide users with a unified view of data across all financial accounts. The importance of API keys has been drilled home, as has the need to store them as environment variables.
+
+Recap by asking students to summarize with one word or a three-word phrase what they learned today. Ask for volunteers, and then eventually go round-robin if necessary.
+
+ **Answer:** Disruptive
+
+ **Answer:** Open-source
+
+ **Answer:** Democratization
+
+ **Answer:** Keys, keys, keys
+
+ **Answer:** Decentralization
+
+ **Answer:** For the people
+
+ **Answer:** Data Extraction
+
+ **Answer:** Development kit
+
+Underscore to students that their progress in learning how to programmatically submit API calls using the Python `requests` library and SDKs is going to have real-world benefits. These skills are practical and could be employed to solve a number of FinTech use cases.
+
+* Software development requires applications to support integration with APIs. Cloud (e.g., Amazon Web Services), big data (e.g., Hadoop), and data science (e.g., Data Science Toolkit ) technologies all require some form of API or SDK be used to use their services, platform, and data.
+
+  * For example, in order to write a machine-learning algorithm that gets data from the Amazon cloud, an AWS SDK will be needed.
+
+  * To process social media data in real-time, a streaming service API will be needed. (e.g., Kafka-Python).
+
+Highlight that students have shown themselves to be cutting edge by working with technologies like Alpaca, which are disrupting the FinTech data world.
+
+* In order to be cutting edge, a developer has to keep up with emerging technologies.
+
+* This requires developers to be able to write code that connects and integrates multiple APIs and SDKs to create unique interactions.
+
+Reinforce to students that this is exactly what they did today in class. With the skills they've learned today, they'll be able to keep up with emerging technologies.
+
+Communicate to students that the applications they've completed today should be discussed during interviews and added to their resumes.
+
+* You've created reusable data extraction tools, which are valuable artifacts in the FinTech industry.
+
+* With the right parameterization, the Quandl and Alpaca APIs could easily evolve into engines and frameworks.
+
+Ask if there are any remaining questions before ending the class.
+
 ### End Class
 
 ---
