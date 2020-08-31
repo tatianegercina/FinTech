@@ -321,7 +321,7 @@ If students finish early, use the extra time to review the final two guided revi
 
 ---
 
-### 7. Instructor Do: Under Lock and Key Activity Review (5 min)
+### 7. Instructor Do: Under Lock and Key Activity Review (10 min)
 
 **Important Note:** Ensure that you have a local `.env` file containing your `QUANDL_API_KEY` into the `Solved` folder before running the solution.
 
