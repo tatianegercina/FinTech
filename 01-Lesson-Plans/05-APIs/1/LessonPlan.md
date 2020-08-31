@@ -44,8 +44,6 @@ By the end of class, students will be able to:
 
   * [Quandl](https://www.quandl.com/)
 
-  * [Plaid](https://plaid.com/)
-
   * [Alpaca](https://alpaca.markets/)
 
 * Students should have already downloaded Postman prior to class. Use the welcome activity to identify any students who may not have downloaded Postman, and have the TAs help them get it installed.
