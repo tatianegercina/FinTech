@@ -208,7 +208,7 @@ Ask if there are any questions, and then move on to the next activity.
 
 ---
 
-### 5. Instructor Do: Calling Environment Variables (5 min) (Critical)
+### 5. Instructor Do: Calling Environment Variables (10 min) (Critical)
 
 In this activity, students will learn how to call API keys as environment variables using the `dotenv` Python package.
 
