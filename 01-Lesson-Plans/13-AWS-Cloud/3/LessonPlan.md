@@ -196,10 +196,13 @@ Ask students to log in as well with their `administrator` IAM users. Once everyo
   * _Sentiment analysis_: `No`
   * _IAM role:_ Leave the default value.
   * _COPPA:_ Select `No`
+  * _Advanced options:_ Select `No`
 
   ![Setting the initial Amazon Lex's bot configurations](Images/amazon-lex-setting-initial-conf.png)
 
 Explain to students that late in 2019, Amazon Web Services added the "sentiment analysis" feature to Amazon Lex. This feature allows scoring the sentiment of users' utterances using another service called [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html) that applies additional charges. We are not going to use this feature in today's class, but slack out [the sentiment analysis documentation](https://docs.aws.amazon.com/lex/latest/dg/sentiment-analysis.html) to students for further research.
+
+Highlight to students that we will set the "Advanced option" parameter to `No` for information privacy concerns. If we select `Yes`, we will send the dialogs as training data to improve AWS algorithms. Before selecting `Yes`, it's recommendable to review the company's information privacy policies or customer where we plan to deploy a chatbot using Amazon Lex.
 
 Explain that Amazon Lex is only available in US English now, so there are some considerations to make (which will be covered later in more depth).
 
