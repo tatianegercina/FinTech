@@ -1,4 +1,4 @@
-# Testing Lambdas
+# Buggy Lambdas
 
 As you already know, not everything is hunky-dory in coding, there are times when bugs and errors appear to add some noise to your code. In this activity, you will test your Lambda function using the starting test event. Then, you and your partner will play a little with the code to provoke and find runtime errors.
 

@@ -90,7 +90,7 @@ Highlight the following about chatbots use cases:
 
   * Founded in 2014 in Toronto, it's an online investment management service focused on millennials. As of August 2019, the firm holds over $5 billion CAD in assets under management.
 
-* News Wealth.
+* Nest Wealth.
 
   * The firm created Canada’s first SaaS-based digital wealth management platform to allow investors access to personalized and transparent wealth management services.
 
@@ -343,7 +343,7 @@ On the "Create function" page, select the "Author from scratch" option, fill out
 
 * **Runtime:** `Python 3.7`
 
-**Note:** Currently, AWS Lambda offers support for Python 3.8. Be aware of choosing version 3.7 as the runtime to avoid version conflicts with the code in today's lesson.
+**Note:** Though AWS Lambda offers support for Python 3.8, be sure to choose version 3.7 as the runtime to avoid version conflicts with the code in today's lesson.
 
 ![Create function page](Images/aws-lambda-create-function.png)
 
