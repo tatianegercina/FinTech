@@ -1,4 +1,4 @@
-# Student & Instructor FAQ
+# Student FAQ
 
 We know how many different questions can pop up during the course of this class, especially with such a scope of technologies covered. This FAQ is intended to answer many common questions asked by students during this course. We hope you find it useful!
 
@@ -435,9 +435,6 @@ Now when we run the code, we get the result we are looking for:
 
 #### Sources:
 McKinney, W. (2013) *Python for Data Analysis.* O'Reilly Media, Inc, USA.
-
-
-- - -
 
 ---
 ## Unit 04: Pandas
@@ -1718,16 +1715,7 @@ Amazon Lex allows you to develop your own chatbots, harnessing the same tech tha
 
 </details>
 
-## Unit 14: Deep Learning
-#### Day by Day Walk through of each day in this week:
-
-## Videos
-[Day-1 Neutral Networks](https://youtu.be/f8BC_wGJD6s)
-
-[Day-2 Deep Learning](https://youtu.be/KyNkhVVKIDQ)
-
-[Day-3 Recurrent Neutral Networks](https://youtu.be/T94osD9Qg98)
-
+---
 # Unit 14: Deep Learning
 
 ## RNN LSTM for Time Series
@@ -2046,6 +2034,8 @@ Many models require the 2d array to be formatted such that each value is in a li
 ![2d_array_reshape](Images/2d_array_reshape.PNG)
 
 </details>
+
+----
 
 # Unit 15: Algorithmic Trading
 
@@ -2730,6 +2720,7 @@ df = pd.read_csv('your_data.csv', infer_datetime_format=True, parse_dates=True, 
 </details>
 <br>
 
+---
 
 # Unit 18: Blockchain
 
