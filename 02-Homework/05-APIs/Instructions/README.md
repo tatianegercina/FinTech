@@ -8,7 +8,7 @@ You decided to start a FinTech consultancy firm, and you want to make the differ
 
 The credit union board wants to allow the union's members to assess their monthly personal finances, and also be able to forecast a reasonably good retirement plan based on cryptocurrencies, stocks, and bonds.
 
-In this challenge, you will use all the skills you have learned until now, focusing on using APIs as part of the technical solution.
+In this homework activity, you will use all the skills you have learned until now, focusing on using APIs as part of the technical solution.
 
 You will create two financial analysis tools using Jupyter notebooks. The first will be a personal finance planner that will allow users to visualize their savings composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
 
@@ -42,13 +42,13 @@ Assume the following amount of crypto assets: `1.2` BTC and `5.3` ETH.
 
 1. Create a variable called `monthly_income` and set its value to `12000`.
 
-2. Use the `requests` library to fetch the current price in US dollars of bitcoin (`BTC`) and ethereum (`ETH`) using the API endpoints provided.
+2. Use the `requests` library to fetch the current price in Canadian dollars of bitcoin (`BTC`) and ethereum (`ETH`) using the API endpoints provided.
 
 3. Parse the API JSON response to pick the crypto prices and store each price in a variable.
 
     **Hint:** Be aware of the particular identifier for each cryptocurrency in the API JSON response - the bitcoin identifier is `1` whereas ethereum is `1027`.
 
-4. Compute the value in US dollars of the current amount of cryptocurrencies and print the results.
+4. Compute the value in Canadian dollars of the current amount of cryptocurrencies and print the results.
 
 #### Collect Investments Data Using Alpaca: `SPY` (stocks) and `AGG` (bonds)
 
@@ -64,13 +64,13 @@ Assume the following amount of shares: `200` `AGG` (bonds) and `50` `SPY` (stock
 
 4. Pick the `SPY` and `AGG` close prices from the Alpaca's `get_barset()` DataFrame response and store them as Python variables. Print the closing values for validation.
 
-5. Compute the value in US dollars of the current amount of shares and print the results.
+5. Compute the value in dollars of the current amount of shares and print the results.
 
 #### Savings Health Analysis
 
 In this section, you will assess the financial health of the credit union's members.
 
-1. To analyze savings health, create a DataFrame called `df_savings` with two rows. Store the total value in US dollars of the crypto assets in the first row and the total value of the shares in the second row.
+1. To analyze savings health, create a DataFrame called `df_savings` with two rows. Store the total value in dollars of the crypto assets in the first row and the total value of the shares in the second row.
 
     **Hint:** The `df_savings` DataFrame should have one column `amount` with two rows with `crypto` and `shares` as index values.
 
