@@ -4,25 +4,25 @@
 
 ### Overview
 
-Today's class will expose students to some exciting and innovative FinTech APIs that have truly disrupted the industry. **Quandl** is an API that provides access to historical stock data, while **Plaid** connects multiple financial institutions for a unified view of personal financial information. Both APIs help democratize and decentralize financial data stores and analytic approaches. But that's not all–new APIs and software development kits (SDKs) are released regularly to help enhance and advance the FinTech industry. It's a whole new world, and one to be excited about!
+Today's class will expose students to the exciting and innovative FinTech APIs that have been disrupting the industry. There are so many groundbreaking APIs in the FinTech industry that it's almost impossible not to get excited about them. APIs used in this lesson include **Quandl**, an API that provides access to historical stock data, and **Alpaca**, an API for stock trading. Both of these services help democratize and decentralize financial data stores and analytic approaches. And this is just the beginning. New APIs and SDKs (software development kits) are released regularly, which means there's always new technologies to use to enhance and advance the FinTech industry. It's a new world, and it's a world to be excited about!
 
-This lesson presents students with hands-on experience using APIs in a Python environment, requesting and leveraging API keys, and securely storing API keys and credentials as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to Quandl using the Python `requests` library and Plaid's software development kit, a library packaged to provide developers with access to Plaid's endpoints and functions.
+This lesson presents students with hands-on experience using APIs in a Python environment, requesting and leveraging API keys, and securely storing API keys and credentials as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to Quandl using the Python `requests` library and Alpacas' software development kit, a library packaged to provide developers with access to Alpacas's endpoints and functions.
 
 ### Class Objectives
 
 By the end of today's class, students will be able to:
 
-* Register for an API key and use it to fetch authenticated requests using the `requests` library.
+* Register for an API key and use the key to fetch authenticated requests using the Requests Library.
 
-* Set/export environment variables in Windows and Mac, and retrieve them in Python.
+* Set/Export environment variables in Windows and Mac and retrieve them in Python.
 
-* Explain the difference between an API and a SDK.
+* Explain the difference between an API and SDK.
 
-* Set authentication for the Plaid SDK.
+* Set authentication for a Python SDK.
 
-* Use a Python SDK to fetch data from Plaid.
+* Use a Python SDK to fetch financial data.
 
-* Use SDKs to analyze personal financial data.
+* Use SDKs to analyze financial data.
 
 * Retrieve historical stock information using the Quandl API.
 
@@ -30,21 +30,19 @@ By the end of today's class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [Alpaca Installation Guide](../Supplemental/APIs_Install_Guide.md) (again) and the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class.
+* Slack out the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installations and verify them with a TA before the end of the next class.
 
-* This lesson includes the demonstration, and use of, two APIs that require users to have accounts and API keys. You, students, and TAs should all have created accounts and received API keys prior to this lesson. (Students were instructed to sign up at the end of Lesson 5.1.)
-
-* The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up. There is an activity dedicated to confirming that each student has signed up.
+* This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created accounts and received API keys prior to this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up if they haven't. Students were instructed to sign up at the end of Lesson 5.1. There will be an activity dedicated to confirming that each student has signed up.
 
   * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
-  * [Plaid](https://dashboard.plaid.com/signup)
+  * [Alpaca](https://app.alpaca.markets/signup)
 
-* Since this lesson works with API keys, you and the students must not hardcode or print any API keys, or request URLs with keys. All keys must be stored in environment variables and then referred to with an `os.getenv` function call in Python.
+* Since this lesson will work with API keys, it is important that you and the students do not hardcode or print any API keys or request URLs with keys. All keys must be stored in environment variables and then referred to using the `python-dotenv` Python library.
 
-* This lesson is dependent upon the Quandl and Plaid APIs being up and running. Visit each site and execute preemptive API calls to ensure connectivity. It is imperative to confirm that the APIs used in this lesson are executing as expected.
+* This lesson has a dependency on the Quandl and Alpaca APIs being up and running. Visit each site and execute preemptive API calls to ensure connectivity. It is imperative to confirm that the APIs used in this lesson are executing as expected.
 
-* Some students may have experience working with making API calls. Keep an eye out for these more advanced students so they can potentially assist with review activities; allowing them to help their peers is a great way to keep them engaged and interested in the material.
+* Some students may have experience working with making API calls. Keep an eye out for any students who might be advanced with APIs and could help with review activities. Allowing advanced students to conduct reviews and help their peers is a great way to keep them engaged and interested in the material.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -74,7 +72,7 @@ Welcome students to the second day of APIs. Open the lesson slides, move to "The
 
 * Because APIs often offer practical services, they may require subscriptions or payment. Companies use API keys and user accounts to ensure billing and secure transmission of financial and other confidential information.
 
-* You will get hands-on experience using Plaid (a banking API), Quandl (to fetch historical stock data) and Alpaca (a trading API).
+* You will get hands-on experience using Quandl (to fetch historical stock data) and Alpaca (a trading API).
 
 Explain to students that Canada's Department of Finance and Provincial Finance Regulators are responsible for providing a financial regulatory framework. However, the monetary policy for the Canadian FinTech industry is still under development according to [a report released by the Competition Bureau](https://www.competitionbureau.gc.ca/eic/site/cb-bc.nsf/eng/04322.html).
 
@@ -82,27 +80,11 @@ Explain to students that Canada's Department of Finance and Provincial Finance R
 
 * Companies interested in offering financial services related to cryptocurrencies or tokens should follow the guidance published by the Canadian Securities Administrators (CSA) in the [Staff Notice 46-308 about Securities Law Implications for Offerings of Tokens](https://www.securities-administrators.ca/aboutcsa.aspx?id=1704).
 
-Now, transition into a dry demonstration (just visit the site) of a practical FinTech API used in this lesson: Plaid.
-
-Navigate to the [Plaid](https://plaid.com/) website and highlight the following:
-
-* The Plaid API allows users to connect multiple bank accounts to one platform and provides a unified view of a person's financial ecosystem. It enables users to manage and analyze their accounts and financial information from one spot.
-
-* Plaid was designed as a tool for developers to accelerate their FinTech development. Developers can use Plaid to provide services to their users and consumers without having to worry about making API calls to each bank or financial entity.
-
-* Because Plaid handles any needs behind-the-scenes with each financial institution, developers can focus on designing and developing a program that will:
-
-  1. Make calls to Plaid.
-
-  2. Analyze data by either extracting financial information from Plaid, or by using Plaid's out-of-the-box capabilities.
-
-* [Plaid is available in Canada since May 2019](https://blog.plaid.com/plaid-in-canada/).
-
 Answer any questions before moving on.
 
 ---
 
-### 2. Instructor Do: API Keys (5 min) (Critical)
+### 2. Instructor Do: API Keys (10 min) (Critical)
 
 In this activity, students and the instructor will participate in a facilitated discussion regarding API keys. Students will also learn the "what, why, and how" of API keys.
 
@@ -226,7 +208,7 @@ Ask if there are any questions, and then move on to the next activity.
 
 ---
 
-### 5. Instructor Do: Calling Environment Variables (5 min) (Critical)
+### 5. Instructor Do: Calling Environment Variables (10 min) (Critical)
 
 In this activity, students will learn how to call API keys as environment variables using the `dotenv` Python package.
 
@@ -339,7 +321,7 @@ If students finish early, use the extra time to review the final two guided revi
 
 ---
 
-### 7. Instructor Do: Under Lock and Key Activity Review (5 min)
+### 7. Instructor Do: Under Lock and Key Activity Review (10 min)
 
 **Important Note:** Ensure that you have a local `.env` file containing your `QUANDL_API_KEY` into the `Solved` folder before running the solution.
 
@@ -403,261 +385,290 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 8. Instructor Do: Intro to SDKs (5 min) (Critical)
+### 8. BREAK (15 min)
 
-The past lesson has focused on students using the Python `requests` library to submit API requests. Students will now learn how to use proprietary software development kits (SDKs) to submit API calls and streamline development efforts.
+---
 
-Tell students that while the Python requests library is a great tool for submitting API requests, there are more sophisticated APIs out there. Software development kits (SDKs) provide a packaged way to access API endpoints and submit calls.
+### 9. Instructor Do: Intro to SDKs (10 min) (Critical)
 
-Open the lesson slides, navigate to the "SDKs" section, and initiate a facilitated discussion by highlighting the following:
+The past two lessons have focused on students using the Python requests library to submit API requests. Students will now learn how to use proprietary software development kits (SDKs) to submit API calls and streamline development efforts.
 
-* SDKs offer programmatic ways to access API endpoints without using the `requests` library. Instead of using the `requests` library to execute API calls, users would use functions provided by the SDK. For example, an SDK would provide a GET function similar to the `requests.get` function offered by the Python `requests` library. The SDK might also provide additional attributes and functions for filtering and calculating data.
+Communicate to students that while the Python requests library is a great tool with which to submit requests to APIs, there are more sophisticated APIs out there that offer tools called software development kits that provide a packaged way to access API endpoints and submit calls.
 
-* Some companies, like Plaid, offer SDKs as a means to submit requests to their APIs.
+Navigate to the 5.2 slides for SDKs, and initiate a facilitated discussion by highlighting the following:
 
-* In addition to the generic GET and POST functions, SDKs offer functions that are specific to their services/API. For example, the Plaid SDK lets you execute a function that returns bank transactions.
+* SDKs offer programmatic ways to access API endpoints without using the requests library. Instead of using the requests library to execute API calls, users would use functions provided by the SDK. For example, an SDK would provide a GET function similar to the `requests.get` function offered by the Python requests library. The SDK might also provide additional attributes and functions for filtering and calculating data.
 
-Pose the following question to facilitate discussion:
+* Example companies that offer SDKs are Quandl, Alpaca, Investors Exchange, Google, and AWS.
 
-* What type of operations can you imagine being offered by SDKs? We already know GET operations are one of them. What are some others?
+* Pose the following question to facilitate discussion:
 
-  * **Answer:** Create, update, and delete operations.
+  * What type of operations can you imagine being offered by SDKs? We already know GET operations are one of them. What are some others?
 
-Explain to students that working with SDKs removes the need to build API request URLs. Instead of using request URLs to make parameterized API calls, SDK functions and attributes are used.
+    **Answer:** Create, update, and delete operations.
 
+* Working with SDKs removes the need to build API request URLs. Instead of using request URLs to make parameterized API calls, SDK functions and attributes are used.
+
+* The following code depicts an example of the differences between using a request URL and an SDK.
+
+  ```python
+  # Using the Python requests library
+  requests.get("https://www.quandl.com/api/v3/datasets/WIKI/AMD?api_key=1A3")
+
+  # Using the Quandl SDK
+  quandl.get("WIKI/AMD", rows=5)
   ```
-  quandl.get("WIKI/AAPL", rows=5)
 
-  vs.
-
-  requests.get("https://www.quandl.com/api/v3/datasets/WIKI/AMD")
-  ```
+Explain to students that in the code above, they can note that using an SDK looks more straightforward and cleaner. Also, it's more secure since SDKs add an additional layer of security by avoiding passing sensitive parameters, like API keys, as plain text in a request URL.
 
 Ask students the following guided question:
 
 * Why would companies create SDKs when Python provides users with the requests library?
 
-  * **Answer:** By creating SDKs, companies allow users to interact with their APIs more effectively. The requests library only supports so many functions (GET, POST, etc.). However, by providing users with an SDK, companies can give users access to in-house built attributes and functions that can offer more value than the functions in the requests library.
+    **Answer:** By creating SDKs, companies allow users to interact with their APIs in a more powerful way. The requests library only supports so many functions (GET, POST, etc.). However, by providing users with an SDK, companies can give users access to in-house built attributes and functions that can provide more value than the functions in the requests library.
 
-  * **Answer:** When writing a Python script, using a Python SDK can often be cleaner and easier to understand and integrate into one's code. SDKs allow developers to use syntax and language features that often simplify and clean up code. A good example of this can be seen when comparing the URL request to Quandl with the `quandl.get("AAPL")` function. Both can extract historical stock; however, the `quandl.get` function is easier to use and looks cleaner.
+    **Answer:** When writing a Python script, using a Python SDK can often be cleaner and easier to understand and integrate in one's code. SDKs allow developers to use syntax and language features that often simplify and clean up code. A decent example of this is evidenced when comparing the URL request to Quandl with the `quandl.get('AAPL')` function. Both will extract historical stock; however, the `quandl.get` function is easier to use and looks cleaner.
 
-* Because SDKs provide out-of-the-box functions that can be used with the API, developers do not have to worry about reinventing the wheel. What is an example of a function, or operation, that a FinTech SDK might provide?
+* Because SDKs provide out-of-the-box functions that can be used with the API, developers do not have to worry about reinventing the wheel. What is an example of a function or operation a FinTech SDK might provide?
 
-  * **Answer:** A FinTech SDK might provide a function that calculates Sharpe ratios, which means users would not need to create this functionality themselves; they'd be able to use the SDK to extract historical stock data and calculate Sharpe ratios. The `requests` library would only support data extraction.
+  **Answer:** A FinTech SDK might provide a function that calculates Sharpe ratios, which means users would not need to create this functionality themselves; they'd be able to use the SDK to extract historical stock data AND calculate Sharpe ratios. The requests library would only support data extraction.
+
+Explain to students that in the FinTech industry, they will face APIs that provide SDKs and others that do not. That's why they need to understand how to access an API via a request URL using the Python requests library, and how to install and operate an SDK.
 
 Ask students if there are any questions before moving on.
 
 ---
 
-### 9. BREAK (15 min)
+### 10. Instructor Do: Intro to Alpaca (15 min)
+
+Navigate to the "Introduction to Alpaca" section of the lesson slides, and introduce the Alpaca by highlighting how it is disrupting the FinTech data industry:
+
+* According to a [Forbes article from December 2019](https://www.forbes.com/sites/bernardmarr/2020/12/30/the-top-5-fintech-trends-everyone-should-be-watching-in-2020/#5ce0c02b4846), FinTech is transforming into a new data industry that focuses on and specializes in the democratization of financial services. This is mainly due to startups like **Alpaca**, that are seeking to enrich and empower consumers through financial data and technology.
+
+* SDKs provide out-of-the-box functions that can be used with the API so that developers do not have to worry about reinventing the wheel. [Alpaca](https://alpaca.markets/) exemplifies a great API that eases the work through its SDK.
+
+* Alpaca is a trading API that encapsulates banking, security, and regulatory complexity, allowing FinTech startups to build brokerage apps on top for free quickly.
+
+* In addition to its trading capabilities, Alpaca is an example of a financial API that you can use, as a FinTech professional, to fetch current stock market data free of charge from five different exchanges (IEX, NYSE National, NYSE Chicago, Nasdaq BX, and Nasdaq PSX). Today, you will learn how to use Alpaca to retrieve stock data that can be used to develop financial applications.
+
+Recall to students that to access the Alpaca API, they need to install the `alpaca-trade-api` SDK and set their API and the secret keys in a `.env` file as it's indicated in the introduction lesson.
+
+Take a couple of minutes to verify if everyone in the class is ready with the Alpaca SDK installed and the Alpaca keys on-hand. Ask your TAs to kindly assist any student who may not be prepared to continue, in the meantime, open the Alpaca website and highlight the following.
+
+* To start using Alpaca, you need to sign up to have access to your Alpaca keys.
+
+* Once you are signed up, you can log in to the Alpaca dashboard to fetch your keys.
+
+Continue by logging into the Alpaca dashboard using your personal account.
+
+![alpaca-login](Images/alpaca-login.gif)
+
+After logging into your Alpaca dashboard, explain to students that they will find a section named "Your API Keys" where they can view their keys by clicking on the "View" button.
+
+![alpaca-keys-section](Images/alpaca-keys-section.png)
+
+Explain to students that the first time that they click on the "View" button, they will see their `API Key ID` and `Secret Key`. This is the only time when they will see both keys, so it's crucial to record the keys into their `.env` file.
+
+![alpaca-keys](Images/alpaca-keys.png)
+
+The secret key will disappear when they log out or navigate to a different page of the Alpaca dashboard. If they lost their `Secret Key`, it can be regenerated by clicking on the "View" button to show the `API Key ID`. Next, they need to click on the "Regenerate Key" button to create a brand new pair of keys. It's important to remark that the previous keys will be invalidated.
+
+![alpaca-keys-regeneration](Images/alpaca-keys-regeneration.gif)
+
+Answer any questions students may have, and be sure that all the students have created their keys and installed the Alpaca SDK before continuing to the next activity.
 
 ---
 
-### 10. Instructor Do: Intro to Plaid (10 min)
+### 11. Instructor Do: Alpaca Demo (15 min)
 
-Navigate to the "Plaid SDK" section of the lesson slides. Introduce the Plaid SDK by highlighting how it is disrupting the FinTech data industry:
+In this activity, students will receive an instructor-led demo of the Alpaca SDK. The instructor will demonstrate to students how to connect to the Alpaca paper account from a Python environment.
 
-* According to a [Forbes article from February 2019](https://www.forbes.com/sites/donnafuscaldo/2019/02/06/plaid-and-quovo-just-scratching-the-surface-with-data-aggregation/#6e169e401841), FinTech is transforming into a new data industry that specializes in the democratization of financial services. This is mainly due the startup **Plaid**, a company seeking to enrich and empower consumers through financial data and technology.
-
-* Whether intentional or not, Plaid is becoming the Magellan of the new FinTech market, circumnavigating the centralized FinTech powers that be and plotting the course for a new, democratized approach to financial services.
-
-* As a FinTech company, Plaid has two customers in mind: the everyday person seeking to take ownership and control over their finances, and the developers trying to design and build robust FinTech applications that enable financial analysis.
-
-* Plaid is tipping the financial scales by breaking down barriers and providing a self-service platform, not for FinTech professionals but FinTech consumers: one that offers data and analytic tools to promote the decentralization of financial analytics. Plaid bestows upon users the processing power and data access points previously reserved for financial elites.
-
-* What exactly does Plaid do? Plaid brokers connections to users' bank accounts to create a one-stop shop for financial management. Typically, when analyzing data across multiple accounts, one would have to visit each financial institution and extract the desired data. Plaid streamlines this process by offering a platform that will broker the request for data extraction, so users don't have to do it manually. Plaid offers analytics and insights products as well, helping users better understand trends in their data.
-
-* The Plaid API allows users to:
-
-  * Connect multiple bank accounts to the Plaid platform.
-
-  * Get account balances.
-
-  * Extract data from Plaid at the institution and account level.
-
-  * Create an asset report.
-
-Up until now, students have been solely conducting quantitative analysis of investments. Facilitate discussion with the following talking points and guided questions:
-
-* Plaid can be used to analyze financial data with a more comprehensive and holistic view. Plaid takes data from each financial account and consolidates it, to create an overarching portfolio encompassing savings, investments, retirement funds, loans, etc. What types of analyses can be done with these datasets?
-
-  * **Answer:** Net worth analysis would require data to be extracted from all financial accounts.
-
-* Plaid was created as a tool to assist developers in designing FinTech applications. By brokering connections to financial institutions, Plaid allows developers to focus on designing analytic pipelines for consumers that provide insight and drive financial budgeting decisions. If you had access to your savings, investment, and retirement account data, what would you do with it?
-
-  * **Answer:** Calculate the rate of cumulative returns daily, quarterly, and yearly, to show cumulative returns over time. This insight could be used to change the types of funds, bonds, and individualized stocks used in each account.
-
-  * **Answer:** Calculate beta to compare individualized stock and retirement portfolio volatility.
-
-Explain to students that by leveraging the data provided by Plaid, consumers are no longer reliant on financial services professionals or big companies for insights into their data. Furthermore, developers no longer have to concern themselves with data acquisition and brokering communication with financial institutions. Instead, both parties can just use Plaid.
-
-Answer any questions before moving on.
-
----
-
-### 11. Instructor Do: Plaid Demo (15 min)
-
-In this activity, students will receive an instructor-led demo of the Plaid API. You will demonstrate to students how to connect to the Plaid sandbox from a Python environment.
-
-Have the `.env` file prepared with your Plaid API Keys before class, so it doesn't need to be created during the activity.
+Have the `.env` file prepared with your Alpaca API Keys before class so that it does not need to be created during the activity.
 
 **Files:**
 
-* [plaid_demo.ipynb](Activities/04-Ins_Plaid_Demo/Solved/plaid_demo.ipynb)
+* [alpaca-demo.ipynb](Activities/04-Ins_Alpaca_Demo/Solved/alpaca-demo.ipynb)
 
-Emphasize to students that one of the cool things about Plaid is that it provides developers with a sandbox for users to get up and running. The sandbox contains account data that can be used to test connectivity to Plaid, as well as some of Plaid's functionality.
+Emphasize to students that one of the cool things about Alpaca is that it provides developers with a paper trading account for users to get started. The paper account provides a real-time simulation environment where they can test their code using free, real-time market data.
 
-Tell students that the sandbox is great because it gives developers a space to play with Plaid without having to connect to personal bank accounts. This grants developers the ability to focus on what they intend to build, rather than how they're going to get their data.
+Explain to students that the paper account is excellent because it gives developers a space to play with Alpaca without having to incur charges. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
 
-Continue the demo by leading students on the environment preparation by highlighting the following:
+Open the unsolved version of the Jupyter notebook and live code the demo. Continue by leading students on the environment preparation by highlighting the following:
 
-* Before you start using the Plaid SDK, install it in your virtual environment using pip-install.
-
-  ```shell
-  pip install plaid-python
-  ```
-
-* Once you've installed the Plaid SDK, the next step is to prepare your environment variables.
-
-* Plaid uses three types of API keys (**client id**, **public key**, and **sandbox secret key**). Each of these needs to be saved as environment variables in a `.env` file.
-
-* To retrieve your keys, log into the [Plaid Dashboard](https://dashboard.plaid.com/account/keys); on the main menu, click on "Team Settings" and choose the "Keys" option.
-
-  ![retrieve_plaid_keys](Images/retrieve_plaid_keys.png)
-
-* Copy your `client_id`, `public_key`, and sandbox secret.
-
-  ![plaid_keys](Images/plaid_keys.png)
-
-* Create a `.env` file and define the following variables to store your Plaid keys as environment variables.
-
-  ```shell
-  PLAID_CLIENT_ID="ENTER YOUR KEY HERE"
-  PLAID_PUBLIC_KEY="ENTER YOUR KEY HERE"
-  PLAID_SBX_SECRET_KEY="ENTER YOUR KEY HERE"
-  ```
-
-Tell students that it's time to start using the Plaid SDK from Python. Open the unsolved version of the Jupyter notebook, live code the solution, and highlight the following:
-
-* After the Plaid SDK is installed, it can be imported into Python using the `import` command. Also, other libraries needed for this activity are imported, including `os`, `json`, `datetime` and `dotenv`.
+* To start using the Alpaca SDK, you need to import the `tradeapi` class from the `alpaca_trade_api` library and some other well-known libraries we have already used.
 
   ```python
   # Initial imports
-  import plaid
   import os
-  import datetime
-  import json
+  import requests
+  import pandas as pd
   from dotenv import load_dotenv
+  import alpaca_trade_api as tradeapi
+
+  %matplotlib inline
   ```
 
-* The environment variables from the `.env` must be loaded and set with the `load_dotenv()` method.
+* Since we are going to make an authenticated connection to the Alpaca API through its SDK, we need to store our Alpaca API and secret keys into our `.env` file and name them as `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` respectively.
+
+* After importing the required Python libraries, we have to load the environment variables using the `load_dotenv()` function and store the Alpaca keys as Python variables.
 
   ```python
+  # Load .env enviroment variables
   load_dotenv()
+
+  # Set Alpaca API key and secret
+  alpaca_api_key = os.getenv("ALPACA_API_KEY")
+  alpaca_secret_key = os.getenv("ALPACA_SECRET_KEY")
   ```
 
-  ```text
-  True
-  ```
+* Now we are ready to connect to Alpaca! To use the Alpaca SDK, we need to create an object that will encapsulate the entire Alpaca functionality.
 
-* Once the environment variables are available, we can retrieve the Plaid keys to store them as Python variables.
+* To generate the alpaca object to retrieve stock market data, we will use the `tradeapi.REST()` function by passing the Alpaca keys as arguments and setting the API version we want to use. The current Alpaca API version is 2.0.
 
   ```python
-  # Extract API keys from environment variables
-  PLAID_CLIENT_ID = os.getenv('PLAID_CLIENT_ID')
-  PLAID_PUBLIC_KEY = os.getenv('PLAID_PUBLIC_KEY')
-  PLAID_SBX_SECRET_KEY = os.getenv('PLAID_SBX_SECRET_KEY')
+  # Create the Alpaca API object
+  alpaca = tradeapi.REST(
+      alpaca_api_key,
+      alpaca_secret_key,
+      api_version="v2")
   ```
 
-* To make a request to the Plaid API, a `client` object needs to be created. This object will serve as the client in the client-server model.
+* Now, let's fetch the current closing price of Facebook (`FB`) and Twitter (`TWTR`), two technology stocks that may be interesting to invest in. First, we need to set a variable with the current date in the ISO format.
 
   ```python
-  # Create client object
-  client = plaid.Client(
-      client_id=PLAID_CLIENT_ID,
-      secret=PLAID_SBX_SECRET_KEY,
-      public_key=PLAID_PUBLIC_KEY,
-      environment="sandbox"
-  )
+  # Format current date as ISO format
+  today = pd.Timestamp("2020-07-14", tz="America/New_York").isoformat()
   ```
 
-* The `client` object will specify the API keys, as well as the desired Plaid environment. Plaid offers three different environments for developers: sandbox, development, and production. The sandbox and development environments are unrestricted; however, Plaid bills for the use of the production environment.
+* To define the current date as an ISO format date, we use the `TimeStamp` function from Pandas to transform the current date that is passed as a string argument using the `YEAR-MONTH-DAY` format. Next, we link the `isoformat()` function to format the date following the ISO standard.
 
-* We can fetch data from Plaid using the `get()` function. The Plaid sandbox comes preloaded with financial data ready and available for use. Sandbox data includes institution data, account information, transactions, investment records, and more. However, to extract data, there are a few data attributes that are needed first.
+**Note:** While you follow this example, you may want to change the date to today.
 
-* To generate a list of all of the institutions that have been loaded into the sandbox, we can use the `Institutions.get()` function, which accepts the number of institutions to fetch as an argument.
-
-  ![plaid_fetch_institutions](Images/plaid_fetch_institutions.png)
-
-* Knowing the institutions available in the sandbox allows one to extract account data for that institution. To extract account data, Plaid will need to perform another level of authentication, which requires the generation and exchange of a **public token** for an **access token**.
-
-* You can create a public token using an `institution_id` from the sandbox (e.g., `ins_112060`). The `client.Sandbox.public_token.create()` function will create and return a public token for `1st Bank (Broadus, MT) - Personal`. The function accepts two arguments: institution and products. Products can be understood as the types of datasets Plaid has available. These include, but are not limited to, transactions, income, and assets.
+* Using the Alpaca API, we can retrieve stock data from up to `200` ticker names. We need to pass the symbols as a Python list. Let's create a list of the tech companies we want to invest in.
 
   ```python
-  # Select an institution for processing
-  INSTITUTION_ID = "ins_112060"
-
-  # Create public token to be exchanged for institution access token
-  create_tkn_response = client.Sandbox.public_token.create(
-      INSTITUTION_ID,
-      ['transactions','income','assets']
-  )
-
-  # Exchange public token for access token
-  exchange_response = client.Item.public_token.exchange(create_tkn_response['public_token'])
-
-  # Store access token as variable
-  access_token = exchange_response['access_token']
+  # Set the tickers
+  tickers = ["FB", "TWTR"]
   ```
 
-* Public tokens can be exchanged for access tokens. Access tokens are needed to be able to access account details, such as transactions. The exchange serves as an additional round of security. The `client.Item.public_token.exchange()` function handles the exchange and returns an access token, item id, and request-id. The `client.Item.public_token.exchange()` function accepts one argument: the `public_token` returned in `create_tkn_response`.
-
-  ![token_exchange.png](Images/token_exchange.png)
-
-* The exchange response will contain the access token needed to get data from the `item` object.
+* Another important parameter we need to define to fetch stock data is the time frame we want to use. We can set the `timeframe` parameter in minutes (`1Min`, `5Min`, `15Min`) or one day (`1D`). We will create a variable called `timeframe` to set this parameter as `1D`.
 
   ```python
-  # Store access token as variable
-  access_token = exchange_response['access_token']
+  # Set timeframe to one day ('1D') for the Alpaca API
+  timeframe = "1D"
   ```
 
-* Once the access token is in hand, you can start using Plaid to its fullest potential. You'll have access to a bunch of different accounts and transactions, all available for use. All that is needed is that access token.
+* We are all set! Let's fetch the current closing prices for `FB` and `TWTR` using the `alpaca.get_barset()` function. Alpaca Python SDK automatically converts the resulting JSON response to a Pandas DataFrame if you use the `df` property.
 
-* Fetch all accounts at an institution:
+  ```python
+  # Get current closing prices for FB and TWTR
+  df_portfolio = alpaca.get_barset(
+      tickers,
+      timeframe,
+      start = today,
+      end = today
+  ).df
 
-  ![get_accounts.png](Images/get_accounts.png)
+  # Display sample data
+  df_portfolio
+  ```
 
-* You can fetch transactions for a date range. Python date objects can be used to specify start and end dates.
+  ![fetch-current-alpaca-stock-data](Images/fetch-current-alpaca-stock-data.png)
 
-  ![get_transactions.png](Images/get_transactions.png)
+Explain to students that the `get_barset()` function from the `Alpaca` SDK takes in the following parameters that can be used to refine the query results: `symbols`, `timeframe`, `limit`, `start`, `end`, `after`, and `until`.
 
-Take some time to emphasize what it means to have this type of data provided by Plaid. Provide FinTech use cases to help ground the discussion.
+Slack out the following links and encourage students to learn more about the details of this function:
 
-* Imagine wanting to create some type of monitoring tool that flags transactions based on specific rules (e.g., time of day, amount, time since the last transaction). Banks provide some of this functionality with their mobile apps, but rarely do they ever allow users to create custom rules. A developer could create an app that does just this, and he or she could use Plaid as their foundation. The sandbox data in Plaid could be used to begin development and testing. Furthermore, once the app is ready for production, Plaid can be the mechanism that consumers use to connect their accounts.
+1. [Alpaca bars API documentation:](https://alpaca.markets/docs/api-documentation/api-v2/market-data/bars/) Here you can learn more about the values that can be set to each parameter.
 
-* Imagine wanting to create a digital dashboard for personal spending. Plaid is what can make this happen, providing the outlet for connecting to personal accounts, as well as a means to consolidate and extract data for aggregation. This means that as developers, we can provide our consumers with the look, feel, and functionality that we want: a digital financial dashboard for the people, by the people.
+2. [Market Data Examples:](https://alpaca.markets/docs/api-documentation/how-to/market-data/) This page provides code examples of the `get_bartset()` function in several programming languages.
 
-If time remains, ask students for their thoughts, and answer any questions before moving on.
+Continue the demo highlighting the following.
+
+* Note in the previous code, that to retrieve the current closing price of `FB` and `TWTR`, we set the `start` and `end` day as today's date. Suppose you want to analyze the daily returns of these tech companies to start assessing if they are a good investment option, and you want to retrieve the closing prices from the last year. As you may guess, it's as simple as setting the `start` and `end` parameters to a one year period.
+
+  ```python
+  # Format start and end dates as ISO format for one year period
+  start = pd.Timestamp("2019-07-14", tz="America/New_York").isoformat()
+  end = pd.Timestamp("2020-07-14", tz="America/New_York").isoformat()
+  ```
+
+* We take advantage of the benefits of using an SDK, and we create a new DataFrame using the `alpaca_getbarset()` method by modifying the start and end dates.
+
+  ```python
+  # Get closing prices for FB and TWTR from the last year
+  df_portfolio_year = alpaca.get_barset(
+      tickers,
+      timeframe,
+      start = start,
+      end = end
+  ).df
+
+  # Display sample data
+  df_portfolio_year.head(10)
+  ```
+
+  ![fetch-yearly-alpaca-stock-data](Images/fetch-yearly-alpaca-stock-data.png)
+
+* To analyze the closing prices, let's create a new DataFrame containing only the closing prices from Facebook and Twitter over the last year.
+
+  ```python
+  # Create and empty DataFrame for closing prices
+  df_closing_prices = pd.DataFrame()
+
+  # Fetch the closing prices of FB and TWTR
+  df_closing_prices["FB"] = df_portfolio_year["FB"]["close"]
+  df_closing_prices["TWTR"] = df_portfolio_year["TWTR"]["close"]
+
+  # Drop the time component of the date
+  df_closing_prices.index = df_closing_prices.index.date
+
+  # Display sample data
+  df_closing_prices.head(10)
+  ```
+
+  ![fetch-yearly-closing-prices](Images/fetch-yearly-closing-prices.png)
+
+* Note that the DataFrame created by the Alpaca API is multi-indexed. To pick the `FB` and `TWTR` closing prices from the `df_portfolio_year` DataFrame we use column keys.
+
+* Finally, we compute the daily returns using the Pandas `pct_change()` function and plot the results.
+
+  ```python
+  # Compute daily returns
+  df_daily_returns = df_closing_prices.pct_change().dropna()
+
+  # Display sample data
+  df_daily_returns.head()
+  ```
+
+  ![fb-twtr-daily-returns](Images/fb-twtr-daily-returns.png)
+
+  ```python
+  # Plot daily returns
+  df_daily_returns.plot(title="Daily Returns of FB and TWTR over the Last Year")
+  ```
+
+  ![fb-twtr-daily-returns-plot](Images/fb-twtr-daily-returns-plot.png)
+
+* It seems like Twitter had some bad times throughout the last year, but now, both stocks look like an attractive investment option, don't you think?
+
+Ask students for any thoughts and answer any questions before moving on.
 
 ---
 
-### 12. Student Do: Sporting Plaid—Part 1 (20 min)
+### 12. Students Do: Investment Value (25 min)
 
-This activity is the first part of a two-part, mini-project activity. Students will create environment variables for Plaid API keys and install the Plaid SDK, which will be used in the next activity to extract transaction data.
-
-Instruct TAs to confirm that each student has Plaid API keys and can authenticate with Plaid. Circulate through the room to help troubleshoot any challenges related to environment variables and API keys.
-
-Communicate to students that they can work with a partner to complete the activity; however, each student will need to complete the assignment.
+In this activity, students will use the Alpaca SDK to calculate the present value of a stock portfolio.
 
 **Files:**
 
-* [example.env](Activities/05-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/example.env)
+* [example.env](Activities/05-Stu_Investment_Value/Unsolved/example.env)
 
-* [sporting_plaid.ipynb](Activities/05-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/sporting_plaid.ipynb)
+* [investment-value.ipynb](Activities/05-Stu_Investment_Value/Unsolved/investment-value.ipynb)
 
 **Instructions:**
 
-* [README.md](Activities/05-Stu_Sporting_Plaid_Pt_1/README.md)
+* [README.md](Activities/05-Stu_Investment_Value/README.md)
 
 ---
 
@@ -667,164 +678,250 @@ Facilitate discussion by asking students about their experiences working with AP
 
 Ask students about the pace of the class. Is it going too fast, too slow, or just right?
 
-Empower students to continue by emphasizing that they're one step away from adding Plaid to their toolkit. Reiterate that Plaid is going to help them acquire the data they need to perform financial analysis, and it will broker the communication channel between banks and FinTech application servers.
+Empower students to continue on by emphasizing that they're one step away from adding Alpaca to their toolkit. Reiterate that Alpaca is going to help them acquire the data they need to perform financial analysis, and it will broker the communication channel between stock exchanges and FinTech application servers.
 
-Remind students that they are making excellent progress. Not only are they submitting requests to an API, they're programmatically sending authenticated requests using SDKs.
+Remind students that they are making excellent progress. Not only are they submitting requests to an API, but they're also submitting authenticated requests in a programmatic way using SDKs.
 
 If time remains, ask the following questions:
 
 * What data type can environment variables be stored as?
 
-  * **Answer:** String
+  **Answer:** String
 
-* Why is Plaid considered a FinTech disrupter?
+* Why might Alpaca be considered a FinTech disrupter?
 
-  * **Answer:** Plaid is changing the way developers and consumers can get access to FinTech data. Not only is Plaid providing a technology platform to get access to FinTech data, but it is also providing analytic and insight products to help consumers understand their data and make data-driven decisions.
+  **Answer:** Alpaca is changing the way developers and consumers can get access to FinTech data. Not only is Alpaca providing a technology platform to get access to FinTech data, but it is also providing analytic and insight products to make data-driven decisions.
 
-* How glad are you that SDKs don't require users to build long, parameterized request URLs, like the Python `requests` library?
-
-  * **Answer:** It's better to use an SDK, since it eases the process of fetching data and reduces the chance of errors due to misspelling URLs or parameters used in the `requests` library.
+* How glad are you that SDKs don't require users to build long, parameterized request URLs like the Python `requests` library?
 
 Ask students if they have any questions before moving on.
 
 ---
 
-### 14. Student Do: Sporting Plaid—Part 2 (25 min)
-
-It's time the students donned some Plaid again, as they will be extracting financial data from the Plaid sandbox. To complete this assignment, students will submit requests to the Plaid API and parse JSON output.
-
-Communicate to students that they can work with a partner to complete the activity; however, each student will need to complete the assignment. If a student or team finishes early, ask if they'd be willing to conduct a dry walkthrough of the solution and explain what steps were taken, and why.
-
-Circulate through the room and assist while students are working. Students may run into difficulty parsing through multiple JSON indexes.
+### 14. Students Do: Investment Value Activity Review (10 min)
 
 **Files:**
 
-* [example.env](Activities/06-Stu_Sporting_Plaid_Pt_2/Unsolved/example.env)
+* [example.env](Activities/05-Stu_Investment_Value/Solved/example.env)
 
-* [sporting_plaid.ipynb](Activities/06-Stu_Sporting_Plaid_Pt_2/Unsolved/sporting_plaid.ipynb)
+* [investment-value.ipynb](Activities/05-Stu_Investment_Value/Solved/investment-value.ipynb)
 
-**Instructions:**
+Open the solved version of the Jupyter notebook and conduct a dry walkthrough review of the solution by highlighting the following.
 
-* [README.md](Activities/06-Stu_Sporting_Plaid_Pt_2/README.md)
+* As you have experienced in this activity, SDKs and APIs are great complements to your current Python skills.
 
----
+* Now you know how to retrieve financial data to boost your finance application and start creating analytical tools to better understand financial data.
 
-### 15. Instructor Do: Sporting Plaid Activity Review (15 min)
-
-**Files:**
-
-* [sporting_plaid.ipynb](Activities/06-Stu_Sporting_Plaid_Pt_2/Solved/sporting_plaid.ipynb)
-
-Students will just have completed a lengthy activity of installing and using the Plaid SDK to extract financial data. End the class with a reflection exercise to reinforce the conceptual information learned.
-
-Give students two minutes to pick one data element from the Plaid transaction data that they'd like to analyze. Call on each student in a round robin, and ask them to volunteer a data point of interest. Allow students to suggest different types of analysis they'd like to do with Plaid's data.
-
-* **Answer:** Example data elements include the amount of interest payments, number of restaurant purchases, number of travel purchases across time, etc.
-
-Ask students to create a summarized list of the steps needed to securely and adequately export environment variables. Ask if there is anyone who would like to volunteer an answer; if not, ask students to call the steps out in unison.
-
-* **Answer:** Steps for securely and adequately exporting environment variables include:
-
-  1. Creating a `.env` file.
-
-  2. Import the `dotenv` package.
-
-  3. Loading the `.env` file with `load_dotenv()` to set the environment variable.
-
-Engage students by asking what they envision for the future of FinTech with companies such as Plaid.
-
-* Are these companies striving to democratize financial data and analytics, including trends, consequences, and paradoxical effects?
-
-  * **Answer:** More peer-to-peer payment services will be driven by Plaid and crypto alt coins.
-
-  * **Answer:** Data generators and synthetic financial data will no longer be needed.
-
-  * **Answer:** Daily financial monitoring will focus on a unified view of all accounts, rather than a deep-dive into one account.
-
-  * **Answer:** Plaid will become the one-stop shop for all financial data needs. This includes daily monitoring and ad-hoc reporting. Instead of checking in with a bank app for one's current account balance or a most recent transaction, Plaid will be used.
-
-  * **Answer:** Instead of democratizing FinTech, Plaid could become the new centralized entity for FinTech data and decision-making. This could lead to reduced rate limits and more expensive premiums.
-
-  * **Answer:** Hackers will be given the tools to attack less sophisticated FinTech applications using Plaid.
-
-If a student, or team of students, were chosen to conduct a review, instruct them to perform a dry walkthrough using the solution. Otherwise, use the solution to complete the dry walkthrough yourself.
-
-* The Plaid SDK functions offer a great way to submit requests without having to create and customize or concatenate request URLs.
-
-* Plaid has a client object that is used to communicate with the Plaid servers. This object stores the **client id**, **secret**, and **public** keys, and it is used to execute each API request.
-
-  ![client_obj_arguments.png](Images/client_obj_arguments.png)
-
-* Plaid offers two types of tokens: **public** and **access**. Public tokens are public and not very secure. Access tokens are secure and are used when authenticating with bank accounts.
-
-  ![plaid_tokens.png](Images/plaid_tokens.png)
-
-* SDK functions replace the need for request URLs. Instead of creating a URL, a simple call is made to the API.
+* To solve this activity, we start importing the required libraries.
 
   ```python
-  # Extract Transactions with date range
-  start_date = '{:%Y-%m-%d}'.format(datetime.datetime.now() + datetime.timedelta(-365))
-  end_date = '{:%Y-%m-%d}'.format(datetime.datetime.now())
-  transactions_response = client.Transactions.get(access_token, start_date, end_date)
+  # Initial imports
+  import os
+  import requests
+  import pandas as pd
+  from dotenv import load_dotenv
+  import alpaca_trade_api as tradeapi
+
+  %matplotlib inline
   ```
 
-  ![sdk_functions.png](Images/sdk_functions.png)
+* To compute the value of the stock portfolio, we start by creating a DataFrame to store the number of `MSFT` and `AAPL` shares in the portfolio.
 
-* JSON data returned from SDK calls are in the same format as response data from request URLs. Key/value pairs access to data elements.
+  ```python
+  # Set current amount of shares data
+  shares_data = {
+      "shares": [200, 320]
+  }
 
-  ![parse_json.png](Images/parse_json.png)
+  # Set the tickers
+  tickers = ["MSFT", "AAPL"]
 
-Explain to students that working with Plaid does not mean just working within the sandbox. They could go home and begin analyzing their financial data across multiple accounts as soon as tonight!
+  # Create the shares DataFrame
+  df_shares = pd.DataFrame(shares_data, index=tickers)
+
+  # Display shares data
+  df_shares
+  ```
+
+  ![number-shares](Images/number-shares.png)
+
+* Next, we load the Alpaca keys that we have stored as environment variables.
+
+  ```python
+  # Load .env environment variables
+  load_dotenv()
+  ```
+
+  ```text
+  True
+  ```
+
+  ```python
+  # Set Alpaca API key and secret
+  alpaca_api_key = os.getenv("ALPACA_API_KEY")
+  alpaca_secret_key = os.getenv("ALPACA_SECRET_KEY")
+
+  # Verify that Alpaca key and secret were correctly loaded
+  print(f"Alpaca Key type: {type(alpaca_api_key)}")
+  print(f"Alpaca Secret Key type: {type(alpaca_secret_key)}")
+  ```
+
+  ```text
+  Alpaca Key type: <class 'str'>
+  Alpaca Secret Key type: <class 'str'>
+  ```
+
+* Note that we printed the Alpaca keys data type as a mechanism to validate if they were successfully imported.
+
+* The next step is to create the Alpaca API object.
+
+  ```python
+  # Create the Alpaca API object
+  alpaca = tradeapi.REST(
+      alpaca_api_key,
+      alpaca_secret_key,
+      api_version="v2")
+  ```
+
+* Since we will compute the current value in dollars of our stock portfolio, we create a variable called `today` with the current date using the ISO format.
+
+  ```python
+  # Format current date as ISO format
+  today = pd.Timestamp("2020-07-14", tz="America/New_York").isoformat()
+  ````
+
+* We will fetch daily data, so we set a `timeframe` variable as `1D` to fetch closing prices on a daily basis.
+
+  ```python
+  # Set timeframe to one day ('1D') for the Alpaca API
+  timeframe = "1D"
+  ```
+
+* We retrieve the current closing prices using the `get_barset()` function from the Alpaca SDK and passing the `tickers`, `timeframe`, and `today` variables as parameters.
+
+  ```python
+  # Get current closing prices for FB and TWTR
+  df_portfolio = alpaca.get_barset(
+      tickers,
+      timeframe,
+      start = today,
+      end = today
+  ).df
+
+  # Display sample data
+  df_portfolio
+  ```
+
+  ![current-tickers-closing-prices](Images/current-tickers-closing-prices.png)
+
+* To calculate the current value in dollars of the stock portfolio, we fetch the closing prices of `MSFT` and `AAPL` by picking the values using the column keys of the multi-indexed DataFrame.
+
+  ```python
+  # Fetch the current closing prices from the DataFrame
+  msft_price = float(df_portfolio["MSFT"]["close"])
+  aapl_price = float(df_portfolio["AAPL"]["close"])
+  ```
+
+* Once we retrieve the current value of shares, we compute the present value of the stock portfolio by multiplying the number of each share by its value in dollars.
+
+  ```python
+  # Compute the current value in dollars of the stock portfolio
+  msft_value = msft_price * df_shares.loc["MSFT"]["shares"]
+  aapl_value = aapl_price * df_shares.loc["AAPL"]["shares"]
+
+  # Print the current value of the stocks portfolio
+  print(f"The current value of the {df_shares.loc['MSFT']['shares']} MSFT shares is ${msft_value:0.2f}")
+  print(f"The current value of the {df_shares.loc['AAPL']['shares']} AAPL shares is ${aapl_value:0.2f}")
+  ```
+
+  ```text
+  The current value of the 200 MSFT shares is $41678.00
+  The current value of the 320 AAPL shares is $124227.20
+  ```
+
+* To visualize the portfolio composition, we create a DataFrame to store each stock's current value as columns. Having the stock value in columns will ease the creation of the plot.
+
+  ```python
+  # Set the data for the shares value DataFrame
+  value_data = {
+      "MSFT": [msft_value],
+      "AAPL": [aapl_value]
+  }
+
+  # Create a DataFrame with the current value of shares
+  df_value = pd.DataFrame(value_data)
+
+  # Display DataFrame data
+  df_value
+  ```
+
+  ![charts-df](Images/charts-df.png)
+
+* Now, we create a pie chart to show the proportion of stocks in the portfolio and a bar plot to present the current value in dollars of each ticker.
+
+  ```python
+  # Create a pie chart to show the proportion of stocks in the portfolio
+  df_shares.plot.pie(y="shares", title="Stocks Portfolio Composition")
+  ```
+
+  ![pie-chart](Images/pie-chart.png)
+
+  ```python
+  # Create a bar plot to show the value of shares
+  df_value.plot.bar(title="Current Value in Dollars of Stock Portfolio")
+  ```
+
+  ![bar-chart](Images/bar-chart.png)
 
 Ask if there are any remaining questions.
 
 ---
 
-### 16. Recap (10 min)
+### 15. Recap (10 min)
 
-Woo-hoo! You've reached the end of APIs Day 2. Over the past two days, students have been bombarded with an array of APIs, ranging from APIs that allow users to play fun games, to APIs that provide users with a unified view of data across all financial accounts. The importance of API keys has been drilled home, as needs to store them as environment variables.
+Woo-hoo! You've reached the end of APIs Day 2. Over the past two days, the class has been bombarded with an array of APIs, ranging from APIs that allow users to play fun games to APIs that provide users with a unified view of data across all financial accounts. The importance of API keys has been drilled home, as has the need to store them as environment variables.
 
-Recap by asking students to summarize with one word or a three-word phrase, what they learned today. Ask for volunteers, and then do a round robin if necessary.
+Recap by asking students to summarize with one word or a three-word phrase what they learned today. Ask for volunteers, and then eventually go round-robin if necessary.
 
-* **Answer:** Disruptive
+ **Answer:** Disruptive
 
-* **Answer:** Open-source
+ **Answer:** Open-source
 
-* **Answer:** Democratization
+ **Answer:** Democratization
 
-* **Answer:** Keys, keys, keys
+ **Answer:** Keys, keys, keys
 
-* **Answer:** Decentralization
+ **Answer:** Decentralization
 
-* **Answer:** For the people
+ **Answer:** For the people
 
-* **Answer:** Data extraction
+ **Answer:** Data Extraction
 
-* **Answer:** Software development kit
+ **Answer:** Development kit
 
-Underscore to students that their progress in learning how to programmatically submit API calls using the Python `requests` library and SDKs will wield real-world benefits. These skills are practical and could be employed to solve several FinTech use cases.
+Underscore to students that their progress in learning how to programmatically submit API calls using the Python `requests` library and SDKs is going to have real-world benefits. These skills are practical and could be employed to solve a number of FinTech use cases.
 
-* Software development requires applications to support integration with APIs. Cloud (e.g., Amazon Web Services), big data (e.g., Hadoop), and data science (e.g., Data Science Toolkit) technologies all require some form of API or SDK be used to utilize their services, platform, and data.
+* Software development requires applications to support integration with APIs. Cloud (e.g., Amazon Web Services), big data (e.g., Hadoop), and data science (e.g., Data Science Toolkit ) technologies all require some form of API or SDK be used to use their services, platform, and data.
 
-  * For example, to write a machine-learning algorithm that gets data from the Amazon cloud, an AWS SDK is needed.
+  * For example, in order to write a machine-learning algorithm that gets data from the Amazon cloud, an AWS SDK will be needed.
 
   * To process social media data in real-time, a streaming service API will be needed. (e.g., Kafka-Python).
 
-Highlight that students have shown themselves to be cutting edge by working with technologies like Plaid, which are disrupting the FinTech data world.
+Highlight that students have shown themselves to be cutting edge by working with technologies like Alpaca, which are disrupting the FinTech data world.
 
-* To be cutting edge, a developer must keep up with emerging technologies.
+* In order to be cutting edge, a developer has to keep up with emerging technologies.
 
 * This requires developers to be able to write code that connects and integrates multiple APIs and SDKs to create unique interactions.
 
-Reinforce to students that this is exactly what they did today in class. With the skills they've learned, they'll be able to keep up with emerging technologies.
+Reinforce to students that this is exactly what they did today in class. With the skills they've learned today, they'll be able to keep up with emerging technologies.
 
 Communicate to students that the applications they've completed today should be discussed during interviews and added to their resumes.
 
 * You've created reusable data extraction tools, which are valuable artifacts in the FinTech industry.
 
-* With the right parameterization, the Quandl and Plaid APIs could quickly evolve into engines and frameworks.
+* With the right parameterization, the Quandl and Alpaca APIs could easily evolve into engines and frameworks.
 
-Answer any questions before ending the class.
+Ask if there are any remaining questions before ending the class.
 
 ### End Class
 
