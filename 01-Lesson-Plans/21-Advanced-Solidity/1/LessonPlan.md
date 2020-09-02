@@ -488,7 +488,7 @@ contract ArcadeToken {
 }
 ```
 
-**Important Note:** Highlight to students that we will use version 2.5 of the SafeMath library for class activities.
+**Important Note:** Highlight to students that we will use version 2.5 of the OpenZeppelin for class activities.
 
 * Remix supports importing libraries straight from Github. It will automatically resolve the dependencies for us.
 
