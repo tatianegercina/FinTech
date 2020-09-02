@@ -38,7 +38,6 @@ By the end of the class, students will be able to:
 
 * The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
-
 ---
 
 ### Instructor Notes
@@ -105,7 +104,7 @@ Begin by giving the students some background on tokens and how they can be utili
 
 * Tokens are used to represent an asset or utility on a blockchain platform.
 
-* You can tokenize things like gold, silver, the USD, real estate, your car, artwork, property, and virtually anything that holds some value.
+* You can tokenize things like gold, silver, dollars, euros, real estate, your car, artwork, property, and virtually anything that holds some value.
 
 * Since tokens are built using smart contracts, they can be programmed to do many things besides just payments.
 
@@ -180,6 +179,8 @@ Discuss the following review questions with the class.
   * **Maker Dao (Dai)** - Dai is a token but also a `stablecoin`, which means 1 Dai = $1. Instead of having a central company back the fiat, the MakerDAO converts ether to the Dai stablecoin. This creates a 1:1 parity with the USD, without a central authority, just smart contracts!
 
   * **Golem (GNT)** - is a token that you use to pay for rentable computing power on the Golem network. It allows you to pay for computations that occur outside of Ethereum, like GPU access or other hardcore number-crunching jobs.
+
+Answer any questions before moving on.
 
 ---
 
@@ -480,12 +481,14 @@ Import the SafeMath library at above the contract definition like so:
 ```solidity
 pragma solidity ^0.5.0;
 
-import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol";
 
 contract ArcadeToken {
     // ...
 }
 ```
+
+**Important Note:** Highlight to students that we will use version 2.5 of the SafeMath library for class activities.
 
 * Remix supports importing libraries straight from Github. It will automatically resolve the dependencies for us.
 
@@ -496,7 +499,7 @@ Next, in the first line of the contract, add `using SafeMath for uint;` to link 
 ```solidity
 pragma solidity ^0.5.0;
 
-import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol";
 
 contract ArcadeToken {
     using SafeMath for uint;
