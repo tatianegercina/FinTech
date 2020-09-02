@@ -517,6 +517,8 @@ Send out the instructions and have TAs circulate the class.
 
 Ensure that students are properly passing parameters to the `ERC20Detailed` constructor and properly using the `onlyOwner` modifier.
 
+---
+
 ### 12. Instructor Do: ERC20 Review (10 min)
 
 **Files:**
@@ -534,6 +536,8 @@ Open the solution and explain the following:
 * The new `mint` function we added will be restricted to `onlyOwner`, and will
 
 Ask for any remaining questions before moving on.
+
+---
 
 ### 13. Everyone Do: Deploying the token to a Testnet (10 min)
 
@@ -601,6 +605,10 @@ Explain to the students:
 
 Now time for the exciting part—actually using our tokens!
 
+Answer any questions before moving on.
+
+---
+
 ### 14. Student Do: Sending and Receiving ERC20 tokens (15 min)
 
 In this activity, students will pair up and exchange each other's tokens on the testnet. They will also explore the transactions and the contract on the Etherscan block explorer, which provides more detail for ERC20-compliant smart contracts.
@@ -610,6 +618,8 @@ In this activity, students will pair up and exchange each other's tokens on the 
 * [README.md](Activities/07-Stu_Sending_Receiving_ERC20/README.md)
 
 Have TAs circulate the room and ensure that students can call their contract functions properly, and mint and transfer tokens to each other.
+
+---
 
 ### 15. Instructor Do: Recap (10 min)
 
