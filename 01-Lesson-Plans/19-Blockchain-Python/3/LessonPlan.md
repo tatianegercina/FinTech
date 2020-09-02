@@ -498,7 +498,9 @@ Now it's time to show the class how to process the terminal output in Python by 
 
 * We are now going to call this CLI tool from within Python, and capture some of its output.
 
-First, have everyone open a new Python file called `wallet.py`:
+First, have everyone open a new Python file called `wallet.py`.  This new file should be located in the parent directory of hd-wallet-derive as follows:
+
+![file_location](Images/file_location.png)
 
 Type the following:
 
@@ -513,7 +515,7 @@ command = ''
 * We are using single quotes, since our command has double quotes in it. Later, we can use more advanced string formatting.
 
 Wait for everyone to catch up, and then have everyone paste the command that they used in the terminal
-inside of the command string:
+inside of the command string. **NOTE:** The mnemonic phrase must be inserted inside *double quotes*, **not** single quotes.
 
 ```python
 import subprocess
