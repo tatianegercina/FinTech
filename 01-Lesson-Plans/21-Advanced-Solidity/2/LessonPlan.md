@@ -30,7 +30,6 @@ By the end of today's class, students will be able to:
 
 * The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
-
 ### Instructor Notes
 
 * Focus on really conveying that ERC's are just standards that can be implemented in a number of ways.
@@ -78,6 +77,10 @@ Review tokens, and the concept of tokenomics with the class.
   * **Answer** Easy transfer of ownership with improvements in liquidity and audibility.
 
   * **Answer** Benefits of an open blockchain; open, public, borderless, censorship-resistant, and neutral.
+
+Answer any questions before moving on.
+
+---
 
 ### 2. Instructor Do: Fungible vs. Non-Fungible Tokens (10 min)
 
@@ -129,6 +132,10 @@ Remind students that we discussed many examples of `fungible` tokens yesterday. 
 
 * Our Arcade Token (ARCD)
 
+Answer any questions before moving on.
+
+---
+
 ### 3. Student Do: Use Case Thought Experiment (15 min)
 
 In this activity, students will break into groups of three to five people and brainstorm ways to leverage fungible and non-fungible tokens.
@@ -136,6 +143,8 @@ In this activity, students will break into groups of three to five people and br
 **Instructions:**
 
 * [README.md](Activities/02_Stu_Use_Case_Thought_Experiment/README.md)
+
+---
 
 ### 4. Instructor Do: Fungible vs. Non-Fungible Review (10 min)
 
@@ -148,6 +157,10 @@ Now that the students have collected their lists of fungible and non-fungible us
 * What do you think the benefits of scaling such a system on a blockchain could be?
 
 * What do you think some downsides of scaling such a system on a blockchain could be?
+
+Answer any questions before moving on.
+
+---
 
 ### 5. Instructor Do: ERC Standards (10 min)
 
@@ -209,6 +222,10 @@ Core EIPs follow a slightly different process from the rest of the EIP categorie
 
 * Assure students that by being able to follow the newest accepted `Ethereum Improvement Proposals`, they will be able to stay up to date on the current Ethereum standards, practices, and technologies.
 
+Answer any questions before moving on.
+
+---
+
 ### 6. Student Do: ERC Standards Exploration (15 min)
 
 In this activity, students will explore the various ERC standards that are currently being developed, as well as those that have been finalized.
@@ -225,6 +242,8 @@ Explain to students:
 * The goal of this activity is to learn how to leverage the current state of the community standards when developing ideas or implementing blockchain technologies. By getting comfortable exploring the standards, you will be able to keep up with the latest developments in the ecosystem, and know that your implementations are compatible with the community.
 
 * Don't be intimidated by the fancy language; try to do some quick googling!
+
+---
 
 ### 7. Instructor Do: ERC Standards Review (10 min)
 
@@ -252,6 +271,8 @@ Ask students the following review questions about the ERC standards activity.
 
 * What ERC standards would you like to see?
 
+Answer any questions before moving on.
+
 ---
 
 ### 8. BREAK (15 min)
@@ -278,6 +299,10 @@ Before the break, we discussed various ERC token standards and what students fou
 
   * **Answer** 20, 777, 721, 1155
 
+Answer any questions before moving on.
+
+---
+
 ### 10. Instructor Do: OpenZeppelin's ERC Library (15 min) (Critical)
 
 In this activity, you will demonstrate the ERC20 contract provided by the OpenZeppelin library, and re-implement the ArcadeToken using the official ERC20 standard.
@@ -303,8 +328,8 @@ Open [Remix](https://remix.ethereum.org) and create a new file called `ArcadeTok
 ```solidity
 pragma solidity ^0.5.0;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20Detailed.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol";
 
 contract ArcadeToken is ERC20, ERC20Detailed {
 
@@ -352,8 +377,8 @@ First, define an `address payable owner` at the top of the contract:
 ```solidity
 pragma solidity ^0.5.0;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20Detailed.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol";
 
 contract ArcadeToken is ERC20, ERC20Detailed {
     address payable owner;
@@ -365,8 +390,8 @@ Then, add the following constructor below the `owner`:
 ```solidity
 pragma solidity ^0.5.0;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20Detailed.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol";
 
 contract ArcadeToken is ERC20, ERC20Detailed {
     address payable owner;
@@ -405,8 +430,8 @@ Add the following `modifier` function to the contract:
 ```solidity
 pragma solidity ^0.5.0;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20Detailed.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol";
 
 contract ArcadeToken is ERC20, ERC20Detailed {
     address payable owner;
@@ -444,8 +469,8 @@ The contract should look like the following up to this point:
 ```solidity
 pragma solidity ^0.5.0;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20Detailed.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol";
 
 contract ArcadeToken is ERC20, ERC20Detailed {
     address payable owner;
@@ -471,6 +496,10 @@ contract ArcadeToken is ERC20, ERC20Detailed {
 * We could potentially deploy this to the mainnet and get this listed on an exchange. It will also automatically be detected by many wallets and block explorers.
 
 Now it's time for the students to implement their own ERC20 tokens!
+
+Answer any questions before moving on.
+
+---
 
 ### 11. Student Do: Building an ERC20 Token with OpenZeppelin (20 min)
 
