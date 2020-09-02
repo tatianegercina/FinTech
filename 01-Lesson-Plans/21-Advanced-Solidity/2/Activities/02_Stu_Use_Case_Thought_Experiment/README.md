@@ -27,3 +27,6 @@ We have been discussing tokens, tokenomics, and tokens' ability to represent a s
 * Remember that a token can be used to represent virtually any store of value.
 
 * When brainstorming, consider the 5 Pillars of Open Blockchain: Open, Neutral, Borderless, Censor Resistant, and Public while developing your token concepts.
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
