@@ -42,7 +42,7 @@ By the end of today's class, students will be able to:
 
 ### 1. Instructor Do: Welcome to Class (10 min)
 
-Review tokens, and the concept of tokenomics with the class.
+Welcome the class to the second day of advance solidity. Open the lesson slides, move to the "Coins vs. Tokens" section, review tokens, and discuss tokenomics with the class.
 
 * What are things that can be represented by a token?
 
@@ -67,6 +67,8 @@ Review tokens, and the concept of tokenomics with the class.
   * **Answer** Tokens are usually built on top of an existing blockchain platform. In contrast, coins are commonly a fundamental component of a blockchain platform.
 
   * **Answer** Coins are typically used as just a currency for buying and selling things. In contrast, tokens can have broader use cases.
+
+  * **Answer** A token is programmed with a smart contract.
 
   * **Answer**  Sometimes there's no difference at all; many people within the crypto communities use the terms interchangeably.
 
