@@ -72,3 +72,6 @@ In this activity, you will be creating a crowdsale contract using the OpenZeppel
 * If you would like to see the parameters you need to pass to `Crowdsale` on-hand, visit the [OpenZeppelin API documentation](https://docs.openzeppelin.com/contracts/2.x/api/crowdsale#_core) for the details.
 
 * The [Crowdsales Overview](https://docs.openzeppelin.com/contracts/2.x/crowdsales) page on OpenZeppelin's documentation also serves as a good resource for how crowdsales work in detail, and the nuances of different implementations provided.
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
