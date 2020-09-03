@@ -4,9 +4,9 @@
 
 ![blockchain-logistics.png](Images/blockchain-logistics.png)
 
-* The idea behind using a blockchain for supply chain tracking is essentially creating a provable historical record for each logistical step in from producer to consumer.
+* The idea behind using a blockchain for supply chain tracking is essentially creating a provable historical record for each logistical step from producer to consumer.
 
-* A unique token can be created to represent an asset, in this case, an Alpaca. Upon each transfer of the Alpaca, the token that represents it can be updated to reflect events such custody transfer, ownership transfer, or reflecting the transport of the Alpaca from location A to B.
+* A unique token can be created to represent an asset, in this case, an Alpaca. Upon each transfer of the Alpaca, the token that represents it can be updated to reflect events such as custody transfer, ownership transfer, or reflecting the transport of the Alpaca from location A to B.
 
 * The consumer can then represent ownership of the asset by owning the unique token. At any point in time, the consumer (or anyone for that matter) can validate the events that led to the final purchase of the Alpaca, and any future metadata regarding the Alpaca.
 
@@ -28,11 +28,11 @@
 
 * Since all you need to participate in a blockchain is a device with an internet connection, crypto is a great way for ad-hoc and online merchants.
 
-* Anyone, anywhere, can use their mobile phone to create a wallet they can receive payment on. This means that merchants can do away with third party services like [Square](https://squareup.com/), and can take the payments directly.
+* Anyone, anywhere, can use their mobile phone to create a wallet with which they can receive payment. This means that merchants can do away with third party services like [Square](https://squareup.com/), and can take the payments directly.
 
 * This makes complex financial infrastructure available to practically anyone.
 
-* Countries like Kenya, Tanzania, India, Lesotho, Congo, Ghana, Mozambique, Egypt already use a purely mobile form of cash, called ["M-Pesa"](https://en.wikipedia.org/wiki/M-Pesa) where they transact via text messages.
+* Countries like Kenya, Tanzania, India, Lesotho, Congo, Ghana, Mozambique, and Egypt already use a purely mobile form of cash, called ["M-Pesa"](https://en.wikipedia.org/wiki/M-Pesa) where they transact via text messages.
 
 * Blockchain provides a far more secure and stable system as an alternative.
 
