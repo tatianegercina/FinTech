@@ -29,3 +29,6 @@ In this activity, you will be exploring the various token standards.
 ## Hints
 
 * Remember that only the ERC's under the `Final` section are officially accepted ERC's.
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

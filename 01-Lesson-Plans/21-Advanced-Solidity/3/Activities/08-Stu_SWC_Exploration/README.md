@@ -19,3 +19,6 @@ In this activity, you will check out the common vulnerabilities in smart contrac
 * Cross-check the MythX tool with the example code given for vulnerable contracts in the SWC Registry.
 
 * If time remains, try to exploit a contract given the example code that the registry provides in Remix!
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

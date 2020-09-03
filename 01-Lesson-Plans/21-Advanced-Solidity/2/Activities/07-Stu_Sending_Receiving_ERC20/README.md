@@ -22,7 +22,7 @@ In this activity, you will partner up with a neighbor, and transact your tokens 
 
 * Send tokens to your neighbor by selecting the token in MetaMask, clicking `Send`, and pasting your partner's address.
 
-![ARCD Send](Images/arcd-send.gif)
+  ![ARCD Send](Images/arcd-send.gif)
 
 * Your partner will be sending their ARCD tokens to you. Make sure to add your partner's token contract address into MetaMask the same way you added yours to get it to recognize the balance you have of their tokens.
 
@@ -30,8 +30,11 @@ In this activity, you will partner up with a neighbor, and transact your tokens 
 
 * Notice in the transaction that Etherscan will recognize the contract. Click on your contract's name and dive deeper to check out the activity happening with your tokens!
 
-![View on Etherscan](Images/arcd-etherscan.png)
+  ![View on Etherscan](Images/arcd-etherscan.png)
 
 ## Challenge
 
 * If time remains, try to close Remix, then reopen your contract file, navigate to the `Deploy` tab and load the contract from its address (make sure to set `Injected Web3` as the environment). Then, mint more tokens to yourself or your partner.
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
