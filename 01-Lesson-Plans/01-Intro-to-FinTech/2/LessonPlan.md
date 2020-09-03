@@ -6,7 +6,7 @@
 
 Today's lesson will focus on command line basics and setting up an Anaconda virtual environment. It will also further investigate the key factors leading to the growth of the FinTech industry.
 
-Specifically, students will be introduced to the basic command line and virtual environment skills, which will help them use more advanced command line interface (CLI) tools in the next lesson as well as future units in the course. By learning more about the history of FinTech and the areas that have been disrupted through innovation and collaborate with others to make predictions about various FinTech domains in the form of future news headlines.
+Specifically, students will be introduced to the basic command line and virtual environment skills, which will help them use more advanced command line interface (CLI) tools in the next lesson as well as future units in the course. By learning more about the history of FinTech and the areas that have been disrupted through innovation, students will collaborate to make predictions about various FinTech domains in the form of future news headlines.
 
 ### Class Objectives
 
@@ -158,7 +158,7 @@ Open the solution and cover the following points. You can also use the slides to
 
 * `cat` reads files and outputs the results to the console.
 
-* `code` opens files in the VS Code.
+* `code` opens files in the VS Code editor.
 
 * `cd ..` navigates up one level.
 
@@ -246,7 +246,7 @@ First, allow students to do a quick turn-and-teach with each other and pose the 
 
 * FinTech has changed immensely over the past 20+ years, due to advancements in technology and shifts in consumer preferences.
 
-* Due to FinTech's rapid growth in recent years, demand for technological investment, and more importantly, the technical expertise driving such investment has exploded. Thus, there is a shortage of workers in the FinTech industry, and this makes it an attractive career opportunity in terms of growth and pay.
+* Due to FinTech's rapid growth in recent years, demand for technological investment, and more importantly - the technical expertise driving such investment - has exploded. Thus, there is a shortage of workers in the FinTech industry, and this makes it an attractive career opportunity in terms of growth and pay.
 
 Lastly, explain the following to the students:
 
@@ -276,7 +276,7 @@ Open the lesson slides, move to the "Evolution of FinTech" section and go throug
 
 * Big Data
 
-  * Over the years, computer processing units (CPUs), random access memory (RAM), and hard drive storage devices have become more powerful and less expensive. Therefore, more companies were able to purchase and utilize large clusters of computers working in parallel.
+  * Over the years, computer processing units (CPUs), random access memory (RAM), and hard drive storage devices have become more powerful and less expensive. Therefore, more companies have been able to purchase and utilize large clusters of computers working in parallel.
 
   * Parallel processing paradigms have also shifted to become more efficient. Traditionally, to enable machines to work in parallel, the concept of MapReduce was born. With MapReduce, data workloads were split among multiple machines for disk-based processing, and then re-aggregated at the end to produce the result. With the advent of Spark, that same process has been refined for in-memory processing, in which data workloads utilize RAM that is much faster at processing data (though more costly).
 
@@ -288,7 +288,7 @@ Open the lesson slides, move to the "Evolution of FinTech" section and go throug
 
   * Traditionally, server farms, or large clusters of machines, required large up-front costs and overhead related to server maintenance.
 
-  * With the inception of cloud computing, however, companies no longer had to purchase their servers for their data-processing needs, but instead could "rent" servers from another vendor on an as-needed (and, therefore, much cheaper) basis. This allowed smaller companies to compete with larger, more established companies about utilizing big data.
+  * With the inception of cloud computing, however, companies no longer had to purchase their own servers for their data-processing needs, but instead could "rent" servers from another vendor on an as-needed (and, therefore, much cheaper) basis. This allowed smaller companies to compete with larger, more established companies about utilizing big data.
 
   * Also, because cloud vendors like Amazon Web Services (AWS) manage hosting and deployment of servers in the cloud, the time-to-market for companies to reap the benefits of investing in technology has decreased, as they can push their applications and features quicker.
 
@@ -314,7 +314,7 @@ Open the lesson slides, move to the "FinTech Domains" section and ask the studen
 
 * How might cloud-based networking contribute to the advent of start-ups and technological innovators?
 
-  **Sample Answer:** Traditionally, hosting servers meant purchasing on-premises server farms with high up-front costs and regular maintenance, which was a barrier for entry for small start-ups. However, with cloud-based networking such as Amazon Web Services (AWS), small start-ups and even individuals can quickly spin up servers faster and on an as-needed basis, thereby minimizing time to deployment and reducing up-front costs. This allows small start-ups to compete more efficiently with larger firms that have existing infrastructures.
+  **Sample Answer:** Traditionally, hosting servers meant purchasing on-premises server farms with high up-front costs and regular maintenance, which was a barrier to entry for small start-ups. However, with cloud-based networking such as Amazon Web Services (AWS), small start-ups and even individuals can quickly spin up servers faster and on an as-needed basis, thereby minimizing time to deployment and reducing up-front costs. This allows small start-ups to compete more efficiently with larger firms that have existing infrastructures.
 
 * Where else might technology disrupt traditional finance?
 
