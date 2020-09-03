@@ -9,39 +9,39 @@ cd ~/Desktop
 # Confirm your current working directory is at the Desktop.
 pwd
 
-# Create a folder called `Terminal-Test`.
-mkdir Terminal-Test
+# Create a folder called `Pets`.
+mkdir Pets
 
 # Navigate into the folder.
-cd Terminal-Test
+cd Pets
 
-# Inside `Terminal-Test`, create two folders: `Folder_1` and `Folder_2`.
-mkdir Folder_1
-mkdir Folder_2
+# Inside `Pets`, create two folders: `Dogs` and `Cats`.
+mkdir Dogs
+mkdir Cats
 
-# Navigate into `Folder_1`.
-cd Folder_1
+# Navigate into `Cats`.
+cd Cats
 
-# Create an empty file named `terminal.txt`.
-touch terminal.txt
+# Create an empty file named `name.txt`.
+touch name.txt
 
-# Edit the file `terminal.txt` with VS Code.
-code terminal.txt
+# Edit the file `name.txt` with VS Code.
+code name.txt
 
-# Read the file `terminal.txt` and output the results to the console.
-cat terminal.txt
+# Read the file `name.txt` and output the results to the console.
+cat name.txt
 
-# Navigate back one level (to the root of the `Terminal-Test` folder).
+# Navigate back one level (to the root of the `Cats` folder).
 cd ..
 
-# Copy the file `terminal.txt` into `Folder_2`.
-cp Folder_1/terminal.txt Folder_2/
+# Copy the file `name.txt` into `Dogs`.
+cp Cats/name.txt Dogs/
 
-# Delete the folder `Folder_1` and its contents.
-rm -r Folder_1
+# Delete the folder `Cats` and its contents.
+rm -r Cats
 
-# Rename the folder `Folder_2` to `Hello_World`.
-mv Folder_2 Hello_World
+# Rename the folder `Dogs` to `Lucky`.
+mv Dogs Lucky
 
-# List the contents of the root of the `Terminal-Test` folder.
+# List the contents of the root of the `Pets` folder.
 ls
