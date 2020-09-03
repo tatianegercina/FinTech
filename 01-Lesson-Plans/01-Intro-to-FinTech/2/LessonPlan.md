@@ -212,7 +212,7 @@ Finally, have the students follow along to complete these steps:
 
 * Create a new Excel file and save it to your desktop. This file will be used to demonstrate how to upload new files.
 
-* Navigate back to GitHub and click the "Upload files" button.
+* Navigate back to GitHub and click the "Add file" button, then select "Upload files" from the resulting drop down.
 
   ![upload file](Images/GitDemo_upload.png)
 
