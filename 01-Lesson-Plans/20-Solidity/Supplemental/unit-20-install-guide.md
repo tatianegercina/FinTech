@@ -10,21 +10,33 @@ To install MetaMask, follow these steps:
 
  ![MetaMask installation - 1](Images/metamask-1.png)
 
-* Click on the `Get Chrome Extension` link. This will open a new window where you will be able to install the MetaMask extension from the Chrome Web Store.
+* Click on the "Download now" button. You will see a new page with the available MetaMask version. Choose "Chrome" to continue. Next, click on "Install MetaMask for Chrome."
+
+  ![Downloading MeteMask for Chrome](Images/metamask-for-chrome.gif)
+
+* A new window will be opened where you will install the MetaMask extension from the Chrome Web Store.
 
  ![MetaMask installation - 2](Images/metamask-2.png)
 
-* Click on the `Add to Chrome` button to start the installation process. A pop-up window will open where you have to click on the `Add Extension` button to continue.
+* Click on the "Add to Chrome" button to start the installation process. A pop-up window will open where you have to click on the "Add extension" button to continue.
 
  ![MetaMask installation - 3](Images/metamask-3.png)
 
-* Next, the "Welcome to MetaMask" website will be opened. If MetaMask was successfully installed, you will see a small fox icon in the toolbar of the web browser. If this does not show up, revisit the previous steps or contact a TA for assistance.
+* Next, the "Welcome to MetaMask" website will be opened.
 
  ![MetaMask installation - 4](Images/metamask-4.png)
 
-* Click the `Get Started` button to start configuring your MetaMask account.
+* If MetaMask was successfully installed, you will see a small fox icon in the web browser's extensions list. If this does not show up, revisit the previous steps.
 
-* You can now import the wallet that runs in your local blockchain. Click on the `Import Wallet` button to continue.
+  ![MetaMask extension icon](Images/metamask-extension-icon.png)
+
+* Optionally, in the latest version of Google Chrome, you can pin the MetaMask extension to your toolbar.
+
+  ![Pinning MetaMask extension to the toolbar](Images/metamask-pinning-extension.gif)
+
+* Click the "Get Started" button to start configuring your MetaMask account.
+
+* You can now import the wallet that runs in your local blockchain. Click on the "Import wallet" button to continue.
 
  ![MetaMask installation - 5](Images/metamask-5.png)
 
