@@ -92,6 +92,8 @@ Then move on to the first topic of the day: defining FinTech. Review the slides 
 
   * Incumbent financial institutions
 
+  ![fintech-categories](Images/fintech-categories.png)
+
 * Why has FinTech become so important?
 
   **Answer:** Rapid advancements in technology have bolstered the ability for smaller companies to innovate and disrupt many traditional financial domains. Thus, larger and traditional finance firms have been forced to compete and upgrade their own technologies, thereby creating technological demand and a need for skilled technical workers.
@@ -99,8 +101,6 @@ Then move on to the first topic of the day: defining FinTech. Review the slides 
 * What kind of careers are to be expected in FinTech?
 
   **Answer:** Because FinTech is just the implementation of technology within the financial domain, FinTech careers are largely similar to that of the IT industry. It's quite common to see general data analyst, data/software engineer, and data scientist roles. However, these roles may be more specifically named as quantitative analysts/traders or portfolio analysts, for example.
-
-  ![fintech-categories](Images/fintech-categories.png)
 
 ---
 
@@ -122,7 +122,7 @@ Once all volunteers have presented, tie everything together by explaining the fo
 
 * FinTech is the application of technology to the finance industry, but what it means at the individual level can differ.
 
-* Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. Furthermore, still, others see FinTech as a path to a new career supported by growing demand.
+* Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. Others see FinTech as a path to a new career supported by growing demand.
 
 Despite students' differing reasons for wanting to learn more about FinTech, each of them has made the leap to take this course. Therefore, it's important to continue to get to know each other, as they'll be together "in the trenches" for the next 24 weeks. The relationships you build in this class can serve as valuable network connections after the completion of the course.
 
@@ -158,7 +158,7 @@ Engage students by presenting some of the activities and homework assignments th
 
 * You will learn how to analyze time-series data to create predictive models for stock prices.
 
-* Throughout the course, you will learn the basics behind the most common machine learning techniques, such as linear regression, logistic regression, KNN, and k-means clustering, to apply these algorithms to classic challenges in the financial services sector.
+* Throughout the course, you will learn the basics behind the most common machine learning techniques, such as linear regression, logistic regression, KNN, and k-means clustering.  You will apply these algorithms to classic challenges in the financial services sector.
 
 * You will also learn how to apply natural language processing to analyze sentiment scores for cryptocurrency news.
 
@@ -214,9 +214,9 @@ In this activity, students will reflect on how the current state of the FinTech 
 
 Quickly explain to the class the following:
 
-* *Rip Van Winkle* is a short story by the American author Washington Irving, first published in 1819. It follows a Dutch American villager in colonial America named Rip Van Winkle, who falls asleep in the Catskill Mountains and wakes up 20 years later, completely missing the events of the American Revolution.
+* *Rip Van Winkle* is a short story by the American author Washington Irving. First published in 1819, it follows a Dutch American villager in colonial America named Rip Van Winkle, who falls asleep in the Catskill Mountains and wakes up 20 years later, completely missing the events of the American Revolution.
 
-* We'll apply the Rip Van Winkle story to FinTech by imagining if a financial analyst who fell asleep in the year 1999 and woke up today. What would he or she find most surprising about the current finance world?
+* We'll apply the Rip Van Winkle story to FinTech by imagining if a financial analyst fell asleep in the year 1999 and woke up today. What would he or she find most surprising about the current finance world?
 
 * You should define areas of finance that have been deeply affected by technology, naming specific companies, products, or innovations that would be surprising to a financial analyst from 1999.
 
@@ -276,7 +276,7 @@ In this activity, students will once again break off into groups of two to four 
 
 **Notes:**
 
-* Open the lesson slides and move to the "FinTech Thought Experiments" section to set up this activity.
+* Open the lesson slides and move to the "FinTech Thought Experiments" section to set up this activity. Move through each slide to reveal the activity instructions to the class.
 
 * The [instructor preparation document](../Instructional_Support/Blockchain.md) contains additional background information for the blockchain related slides.
 
