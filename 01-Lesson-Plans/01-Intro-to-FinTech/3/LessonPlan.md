@@ -239,7 +239,7 @@ In this section, you will demo how to add folder structures to students' newly c
 
 Demo the following:
 
-* Revisit the GitHub website and click the green "CODE" button.
+* Revisit the GitHub website and click the green "Code" button.
 
 * This time, copy the URL, as it represents the GitHub repository link (which will be used for the `git clone` command).
 
