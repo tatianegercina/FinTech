@@ -105,8 +105,6 @@ Then, demonstrate how to create a repository in GitHub, edit files in that repo,
 
 * Git repositories can be created via the GitHub website. Check the option for "Initialize this repository with:" that states `Add a README file`, then click `Create repository` to deploy the repository automatically.
 
-  ![github-website](Images/github-website.png)
-
   ![github-create-repository](Images/github-create-repository.png)
 
 * A git repository can then be downloaded locally as a compressed ZIP file.
@@ -121,11 +119,9 @@ Then, demonstrate how to create a repository in GitHub, edit files in that repo,
 
   ![terminal-vscode](Images/terminal-vscode.png)
 
-  ![vscode-editor](Images/vscode-editor.png)
-
 * Here, `README.md` is edited and saved in the local git repository. However, changes are still local and will need to be pushed to the remote repository in GitHub.
 
-  ![git-local-change](Images/git-local-change.png)
+  ![vscode-editor](Images/vscode-editor.png)
 
 * Files can be committed and changed in the online GitHub repo by clicking on the "Upload files" button and then navigating to the file upload webpage.
 
