@@ -18,7 +18,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [Streamz Installation Guide](../../15-Algorithmic-Trading/Supplemental/Asyncio_Streamz_Install_Guide.md) and the [CCXT Installation Guide](../../15-Algorithmic-Trading/Supplemental/CCXT_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+* Slack out the [Asyncio Installation Guide](../../15-Algorithmic-Trading/Supplemental/Asyncio_Streamz_Install_Guide.md) and the [CCXT Installation Guide](../../15-Algorithmic-Trading/Supplemental/CCXT_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
 * Deep learning has a lot of technical concepts that are beyond the scope of this lesson. Students should be able to obtain a high-level understanding of deep neural network architectures through a series of hands-on activities.
 
@@ -114,6 +114,8 @@ Answer any questions before moving on.
 ---
 
 ### 3. Everyone Do: Deep Learning with Keras (15 min)
+
+**Corresponding Activity:** [01-Ins_Deep_Learning](Activities/01-Ins_Deep_Learning)
 
 In this activity, students will build a deep learning model to predict the quality score of different wines.
 
@@ -220,6 +222,8 @@ Answer any questions before moving on.
 
 ### 4. Student Do: Sound of Music (20 min)
 
+**Corresponding Activity:** [02-Stu_Sound_of_Music](Activities/02-Stu_Sound_of_Music)
+
 In this activity, students will build a model to predict the geographical origins of a musical composition.
 
 **Instructions:**
@@ -246,7 +250,7 @@ In this activity, students will build a model to predict the geographical origin
   df = pd.read_csv(data, header=None)
 
   # Create the features set (X) and the target set (y)
-  X = df.iloc[:, 0:67].values
+  X = df.iloc[:, 0:68].values
   y = df.iloc[:, 68:70].values
   ```
 
@@ -267,7 +271,7 @@ In this activity, students will build a model to predict the geographical origin
   nn = Sequential()
 
   # Hidden layer
-  nn.add(Dense(units=8, input_dim=67, activation="relu"))
+  nn.add(Dense(units=8, input_dim=68, activation="relu"))
 
   # Output layer
   nn.add(Dense(units=2, activation="linear"))
@@ -286,7 +290,7 @@ In this activity, students will build a model to predict the geographical origin
   nn = Sequential()
 
   # First hidden layer
-  nn.add(Dense(units=8, input_dim=67, activation="relu"))
+  nn.add(Dense(units=8, input_dim=68, activation="relu"))
 
   # Second hidden layer
   nn.add(Dense(units=4, activation="relu"))
@@ -318,6 +322,8 @@ Ask students for any questions before moving on.
 ---
 
 ### 6. Instructor Do: Model Persistence (10 min)
+
+**Corresponding Activity:** [03-Ins_Model_Persistence](Activities/03-Ins_Model_Persistence)
 
 To use a neural net model in a production setting, we often need to save the model and have it predict outcomes on unseen data at a future date. In this demo, we will show students how to persist in a neural net model.
 
@@ -352,9 +358,11 @@ Open the solved notebook and go through each cell, stopping for questions.
 
   ```python
   # Save weights
-  file_path = Path("../Resources/model.h5")
+  file_path = "../Resources/model.h5"
   nn.save_weights(file_path)
   ```
+
+**Note:** To save the model, we set a relative file path using a string variable since the `patlib` library has some known issues when working with Keras functions to save and load models.
 
 * To load the models, we need to call the `model_from_json` function from Keras.
 
@@ -368,8 +376,8 @@ Open the solved notebook and go through each cell, stopping for questions.
   loaded_model = model_from_json(model_json)
 
   # load weights into new model
-  file_path = Path("../Resources/model.h5")
-  loaded_model.load_weights("../Resources/model.h5")
+  file_path = "../Resources/model.h5"
+  loaded_model.load_weights(file_path)
   ```
 
 * Finally, we can use the loaded model's `predict()` function to make predictions on unseen data.
@@ -381,6 +389,8 @@ Ask students for questions before moving on to the practice activity.
 ---
 
 ### 7. Student Do: After Training (15 min)
+
+**Corresponding Activity:** [04-Stu_After_Training](Activities/04-Stu_After_Training)
 
 In this activity, students will create a deep learning model from the music geographies data, save it, and load it to evaluate its performance on unseen data.
 
@@ -428,7 +438,7 @@ Open the notebook and walk through the code, stopping for any questions.
   # Create a neural network with 1 hidden layer
   nn = Sequential()
 
-  nn.add(Dense(units=8, input_dim=67, activation="relu"))
+  nn.add(Dense(units=8, input_dim=68, activation="relu"))
   nn.add(Dense(units=2, activation="linear"))
   ```
 
@@ -442,7 +452,7 @@ Open the notebook and walk through the code, stopping for any questions.
       json_file.write(nn_json)
 
   # Save weights
-  file_path = Path("../Resources/model.h5")
+  file_path = "../Resources/model.h5"
   nn.save_weights(file_path)
   ```
 
@@ -459,7 +469,7 @@ Open the notebook and walk through the code, stopping for any questions.
   loaded_model = model_from_json(model_json)
 
   # Load weights into new model
-  file_path = Path("../Resources/model.h5")
+  file_path = "../Resources/model.h5"
   loaded_model.load_weights(file_path)
   ```
 
@@ -491,9 +501,9 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to create and share Jupyter Notebooks on Google Colaboratory (aka Colab), a cloud platform oriented toward machine learning.
 
-Explain to students that Colaboratory is a Google-sponsored environment for running Jupyter Notebooks on the Cloud. It is specifically tailored for running and sharing deep learning experiments. Colab Notebooks have access to specialized computing architectures such as Google's self-developed Tensor Processing Units (TPUs) in addition to general-purpose memory and RAM. TPUs designed specifically by Google to train and run TensorFlow models.
+Explain to students that Colaboratory is a Google-sponsored environment for running Jupyter Notebooks on the Cloud. It is specifically tailored for running and sharing deep learning experiments. Colab Notebooks have access to specialized computing architectures such as Google's self-developed Tensor Processing Units (TPUs), in addition to general-purpose memory and RAM. TPUs are designed specifically by Google to train and run TensorFlow models.
 
-[Open this three minutes introductory video](https://youtu.be/inN8seMm7UI) and reproduce it in the class. After playing the video, highlight the following:
+[Open this three-minute introductory video](https://youtu.be/inN8seMm7UI) and play it for the class. After playing the video, highlight the following:
 
 * Colab allows us to do machine learning on the web using Google Cloud resources.
 
@@ -501,13 +511,13 @@ Explain to students that Colaboratory is a Google-sponsored environment for runn
 
 * Colab makes it easy to share projects and results with potential employers, and you can save Notebooks right to your Google Drive.
 
-* More importantly, you get access to cloud computing resources, including RAM, memory, and Google's proprietary hardware solution for deep learning - Tensor Processor Units (TPUs).
+* More importantly, you get access to cloud computing resources, including RAM, memory, and Google's proprietary hardware solution for deep learning-Tensor Processor Units (TPUs).
 
-Navigate to the [Colab website](https://colab.research.google.com), slack out the URL to students and explain the following points about Colaboratory to students:
+Navigate to the [Colab website](https://colab.research.google.com), slack out the URL to students, and explain the following points about Colab to students:
 
 * To use Colab, students will need a Google account.
 
-* To create a new Jupyter notebook, click on `NEW PYTHON3 NOTEBOOK`:
+* To create a new Jupyter notebook, click on `NEW NOTEBOOK`:
 
   ![Images/colab02.png](Images/colab02.png)
 
@@ -517,7 +527,7 @@ Navigate to the [Colab website](https://colab.research.google.com), slack out th
 
 * Now you are ready to start using Colab.
 
-Type the following command in the first cell, and click on the _Run_ button or press `SHIFT` + `ENTER` on your keyboard to execute the code in the cell.
+Type the following command in the first cell, and click on the _Run_ button, or press `SHIFT` + `ENTER` on your keyboard to execute the code in the cell.
 
   ```python
   print("Hello Colab!")
@@ -527,7 +537,7 @@ Type the following command in the first cell, and click on the _Run_ button or p
 
 * Code snippets provide useful boilerplate code for many tasks, such as building a plot.
 
-* To add a code snippet, open the left bar and type the kind of task you want to accomplish, for example, creating a bar chart.
+* To add a code snippet, open the left bar and type the kind of task you want to accomplish, for example, `bar chart`.
 
 * Once the code snippet appears, click on _INSERT_ to add the code to your notebook.
 
@@ -539,19 +549,19 @@ Type the following command in the first cell, and click on the _Run_ button or p
 
   ![Images/colab13.png](Images/colab13.png)
 
-* To locate in Google Drive where your notebook is stored, click on the _File_ menu, and continue by choosing the _Locate in Drive_ option.
+* To locate where your notebook is stored in Google Drive, click on the _File_ menu, and continue by choosing the _Locate in Drive_ option.
 
   ![Images/colab05.gif](Images/colab05.gif)
 
-* You can also import Jupyter Notebooks from your local drive. Click on the _File_ menu and choose the _Upload notebook...` option, then browse your local drive for the Jupyter notebook you want to upload.
+* You can also import Jupyter Notebooks from your local drive. Click on the _File_ menu and choose the _Upload notebook_ option, then browse your local drive for the Jupyter Notebook you want to upload.
 
   ![Images/colab06.png](Images/colab06.png)
 
-For this demo, a notebook with dummy data is going to be used. Slack out the notebook for this activity to students, while you import the file to Colab.
+For this demo, a notebook with dummy data will be used. Slack out the notebook for this activity to students, while you import the file to Colab.
 
 * Once the file is imported, a new window showing the notebook will be opened.
 
-Explain to students that this particular example is using `hvplot` which is not installed by default in Colab. To avoid potential errors, these lines are just commented out for now.
+Explain to students that this particular example uses `hvplot` which is not installed by default in Colab. To avoid potential errors, these lines are just commented out for now.
 
   ![Images/colab07.png](Images/colab07.png)
 
@@ -561,29 +571,31 @@ Run all the cells by clicking on the _Runtime_ menu and choose the _Run all_ opt
 
 * After a few seconds, all of the cells will run on the Google cloud!
 
-* The default settings for Google Colab currently install TensorFlow v1, though this will change in the near future.  Students may get the following error after running their imports, despite having upgraded or installed Tensorflow v2:
+The default settings for Google Colab currently install TensorFlow v1, though this will change in the near future. Students may get the following error after running their imports, despite having upgraded or installed Tensorflow v2:
+
 ![Images/colab02.png](Images/colab16.png)
 
-* Though the notebook should still run all cells as intended, the defaults can be updated to avoid potential issues in the future.  This can be done by running the following code, selecting `y` when prompted, and then restarting the runtime:
+Though the notebook should still run all cells as intended, the defaults can be updated to avoid potential issues in the future. This can be done by running the following code, selecting `y` when prompted, and then restarting the runtime:
+
 ```python
 !pip uninstall tensorflow
 !pip install tensorflow==2.0.0
 ```
 
-* Students can check then verify their Tensorflow version using the following code:
+Students can check, then verify, their Tensorflow version using the following code:
+
 ```python
 import tensorflow as tf
 print(tf.__version__)
 ```
 
-
-Explain to students that it's possible to install new libraries in Google Colab by running the following command
+Explain to students that it's possible to install new libraries in Google Colab by running the following command.
 
 ```python
 !pip install <library_name>
 ```
 
-Add a new code text below the title cell of the notebook, type and execute the following code to install `hvplot` and make it run in Google Colab. Note that `bokeh` is also installed to ensure we are using the last version.
+Add a new code text below the title cell of the notebook, type and execute the following code to install `hvplot` and make it run in Google Colab. Note that `bokeh` is also installed, to ensure we are using the last version.
 
 ```python
 !pip install hvplot
@@ -592,7 +604,7 @@ Add a new code text below the title cell of the notebook, type and execute the f
 
 ![Images/colab09.gif](Images/colab09.gif)
 
-* Once you have installed these libraries, you may be asked to restart the restart your runtime.
+* Once you have installed these libraries, you may be asked to restart your runtime.
 
   ![Images/colab10.png](Images/colab10.png)
 
@@ -605,6 +617,7 @@ After the installation finish, remove the comments from the initial imports.
 import pandas as pd
 import numpy as np
 import hvplot.pandas # <--- Uncomment this line
+import holoviews as hv # <--- Uncomment this line
 from sklearn.datasets.samples_generator import make_moons
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -612,27 +625,30 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 ```
 
-Also, remove the comments from the cell where the plot is created. Note that we are using the `hvplot.show()` method, explain to students that this is the way to proceed to display the plot in Google Colab
+Also, remove the comments from the cell where the plot is created. Note that for hvplots to render correctly inside Google Colab, the line `hv.extension("bokeh")` must be run in each cell where a plot is displayed.
 
 ```python
 # Plotting the nonlinear dummy data
+hv.extension("bokeh")
 plot = df_moons.hvplot.scatter(x="Feature 1", y="Feature 2", by="Target")
-hvplot.show(plot)
+plot
 ```
 
-Delete the cell where you run `pip` and run all the notebook's cells to show students that the plot is now displayed in the notebook just like it was in the Jupyter Notebooks.
+Delete the cell where you run `pip` and run all the notebook's cells to show students that the plot is now displayed in the notebook, just like it was in the Jupyter Notebooks.
 
 ![Images/colab14.gif](Images/colab14.gif)
 
-Explain to students that there are plenty of examples created by the Colab community using an assortment of data that are available through the platform. These Notebooks can be found on the [Seedbank website](https://research.google.com/seedbank/). Slack out the Seedbank URL to students and highlight the following:
+Explain to students that there are plenty of examples created by the Colab community using an assortment of available data through the platform. Some notebooks can be found on the [Google AI Hub website](https://aihub.cloud.google.com/u/0/s?category=notebook) or GitHub.
 
-* Projects can be searched by tags or keywords.
+Slack out the following link to the [GitHub repository where the TensorFlow Keras tutorials are hosted](https://github.com/tensorflow/docs/tree/master/site/en/tutorials/keras), and highlight the following.
+
+* These examples showcase some of the capabilities of TensorFlow and can be executed in Google Colab.
 
 * These projects can be useful for learning by example, a source of inspiration for your projects, or just a helpful repository of code to copy snippets from.
 
-Type `Classify movie reviews using tf.keras` in the Seedbank search box and press `ENTER` to look for this project.
+Continue the demo by opening the `text_clasification.ipynb` notebook. Once the notebook is loaded, scroll down into the page and click on the "Run in Google Colab".
 
-Once the project appears in the search results, open it and click on the _Run seed in Colab_ button; explain to students that this is how they can import a _seed project_ to their Colab workspace, and start studying it and customizing the code.
+Explain to students that this is how they can import a _seed project_ to their Colab workspace, start studying it, and customize it.
 
 ![Images/colab15.gif](Images/colab15.gif)
 
@@ -652,13 +668,13 @@ In this activity, students will use the text classification demo notebook to und
 
 ### 12. Instructor Do: Review Deep Learning on the Web (15 min)
 
-Open the [Text Classification with Movie Reviews notebook](https://research.google.com/seedbank/seed/classify_movie_reviews_using_tfkeras).
+Open the [_Basic text classification_ notebook](https://github.com/tensorflow/docs/blob/master/site/en/tutorials/keras/text_classification.ipynb) in GitHub.
 
 Walk students through the notebook, pausing to highlight the various sections of code.
 
-Ask one student to volunteer to summarize for the class what this model is doing and the steps it takes to do it.
+Ask a student to summarize what this model is doing and the steps it takes to do it.
 
-Ask volunteers to give examples of ways they changed the architecture, and why. Compare final accuracy and loss metrics.
+Ask other students to give examples of ways they changed the architecture, and why. Compare final accuracy and loss metrics.
 
 ---
 

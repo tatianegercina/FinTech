@@ -69,7 +69,7 @@ By the end of class, students will be able to:
   * Remind students that additional research and practice will be required outside of class in order to reinforce and build competence in learning and evaluating trained models.
 
 ### Sample Class Video (Highly Recommended)
-* To watch an example class lecture, go here: [11.1 Class Video Part 1.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=72314fe6-24a9-4172-bb8b-aadf016874d4) | [11.1 Class Video Part 2.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8c4c5255-0418-48d5-8a9e-aae001123070) Note that this video may not reflect the most recent lesson plan.
+* To watch an example class lecture, go here: [11.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2c11bfa4-4430-4a42-906f-abbd01400914) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
 
@@ -197,6 +197,8 @@ If time remains, let students know there is time for one question.
 
 ### 4. Instructor Do: Making Predictions with Logistic Regression (10 min)
 
+**Corresponding Activity:** [01-Ins_Logistic_Regression](Activities/01-Ins_Logistic_Regression)
+
 Having been introduced to classification, students will now receive a demonstration of how to use logistic regression to make linear predictions for categorical outcomes. This demo will contain two parts: a brief explanation of preprocessing and a more in-depth explanation of model fitting and execution.
 
 Walkthrough the slideshow and highlight the following points:
@@ -285,15 +287,17 @@ Transition into the next part of the demo by explaining to students that once th
 
 The next step after training the model is **validating** it. A common approach is the Train/Test Split approach. Walk students through how this approach is used.
 
-* In order to validate a model, it must be scored, which the **sklearn** `score` function can do. The **testing** data sets are passed to the `score` function, and the function evaluates results. Explain to students that the scoring process takes the predictions made using the training data and compares it to the predictions made using the test data. If the predictions are the same and the score is **1.0**, the model is considered accurate.
+* In order to validate a model, it must be scored, which the **sklearn** `score` function can do. Either the **testing** or **training** data sets are passed to the `score` function, and the function evaluates the results.
+
+Explain to students that the scoring process takes the predictions made using the data and compares it to their actual outcomes (i.e., predicted y versus actual y). If the predictions are the same and the score is **1.0**, the model is considered perfectly accurate. In general, the closer the score is to 1.0, the more accurate the model.
 
 * It's important to note to students that two things need to be scored: the **training** AND **test** data.
 
-  * When scoring the training data, the accuracy of the model is applied against the training data it was created with. The more data is trained, the higher the accuracy.
+  * When scoring the training data, the accuracy of the model is applied against the training data it was created with. Usually, the more data that is trained, the higher the accuracy score.
 
-  * Scoring of test data consists of applying the model against the test data. The test data is considered new data; the model has not seen if the score will reflect the accuracy of the predictions made by the model using the test data.
+  * Scoring of test data consists of applying the model (which was learned using the training data) against only the test data. The test data is considered new data; the model has not seen or learned from this data. Testing using this test data is akin to an acid test: it’s a way to gauge how accurately the model might make predictions in real life.
 
-  * If the training score is more accurate than the testing score, the model is considered overtrained. **Overtraining** the model can result in **overfitting**, where the model learned rules for predictions that apply mostly just for the training data set. The goal is to have the scores as close to each other in accuracy as possible.
+  * If the training score is significantly more accurate than the testing score, the model may be overtrained. **Overtraining** the model can result in **overfitting**, where the model learned rules for predictions that apply mostly just for the training data set. The goal is to have the scores as close to each other in accuracy as possible.
 
     ```python
     # Score the model
@@ -351,6 +355,8 @@ Ask if there are any questions, and then move to the next activity.
 ---
 
 ### 5. Students Do: Predicting Diabetes (15 min)
+
+**Corresponding Activity:** [02-Stu_Diabetes](Activities/02-Stu_Diabetes)
 
 In this activity, students will use the **sklearn** library to execute **logistic regression** models in order to predict whether or not an individual has diabetes. Students will leverage the material covered in the corresponding instructor demo activity to complete this MSMD activity.
 
@@ -462,13 +468,13 @@ The instructor provides a formal lecture explaining to students what accuracy, p
 
 Navigate to the 11.1 slides section on accuracy, precision, and recall; and highlight the following:
 
-* Explain to students that **accuracy**, **precision**, and **recall** are especially important for **classification** models, which a **binary decision problem**. **Binary decision problems** have two possible correct answers: **True Positive** and **True Negative**.
+* Explain to students that **accuracy**, **precision**, and **recall** are especially important for **classification** models, which are **binary decision problems**. **Binary decision problems** have two possible correct answers: **True Positive** and **True Negative**.
 
   * Inaccurate and imprecise models result in models returning false positives and false negatives.
 
 * When running a classification model, or any statistical model, it is important that the model is evaluated for **accuracy**, **precision**, and **recall**.
 
-* Accuracy is how often the model is correct: the ratio of correctly predicted observations to the total number of observations. As demonstrated previously, the **accuracy** of a model can be evaluated by scoring the model using training and testing data sets. Scoring will reveal how accurate the model. However, it does not communicate how precise it is.
+* Accuracy is how often the model is correct: the ratio of correctly predicted observations to the total number of observations. As demonstrated previously, the **accuracy** of a model can be evaluated by scoring the model using training and testing data sets. Scoring will reveal how accurate the model is. However, it does not communicate how precise it is.
 
   * Accuracy can be very susceptible to imbalanced classes. In the case of the homework assignment, the number of good loans greatly outweighs the number of at-risk loans. In this case, it can be really easy for the model to only care about the good loans because that has the biggest impact on accuracy. However, we also care about at-risk loans, so we need a metric that can help us evaluate each class prediction.
 
@@ -499,6 +505,8 @@ Use the remaining time to answer any questions about logistic regression models 
 ---
 
 ### 9. Instructor Do: Confusion Matrix & Classification Report (10 min)
+
+**Corresponding Activity:** [03-Ins_Confusion_Matrices](Activities/03-Ins_Confusion_Matrices)
 
 Students receive a live demonstration of how to create and use a confusion matrix and classification report to evaluate models for error.
 
@@ -546,6 +554,8 @@ Finish the activity by asking students if there are any questions, and then tran
 ---
 
 ### 10. Students Do: Diagnosing the Model (10 min)
+
+**Corresponding Activity:** [04-Stu_Diagnosing_the_Model](Activities/04-Stu_Diagnosing_the_Model)
 
 Students complete a bridge activity where they return to the model they created to predict diabetes and will use a **confusion matrix** and **classification report** to evaluate and diagnose the model. Emphasis needs to be placed on how to interpret confusion matrices and classification reports in order to diagnose issues in the model.
 
@@ -615,6 +625,8 @@ Ask if there are any questions before moving forward.
 ---
 
 ### 12. Student Do: Build Loan Approver (15 min)
+
+**Corresponding Activity:** [05-Stu_Loan_Approver](Activities/05-Stu_Loan_Approver)
 
 Students will participate in a bag of tricks activity where they apply the machine learning concepts, and technical skills learned thus far to create a model for approving loans.
 
@@ -693,6 +705,8 @@ Ask for any remaining questions before moving on.
 ---
 
 ### 15. Instructor Do: Support Vector Machines (10 min)
+
+**Corresponding Activity:** [06-Ins_SVM](Activities/06-Ins_SVM)
 
 Students receive a demonstration and lecture on how to use the support vector machine algorithm. The goal of this activity is to illustrate to students the different approaches that can be taken to come up with the same classification engine.
 
@@ -840,7 +854,7 @@ Emphasize to students that data will not always be equidistant with a wide margi
 
 * Remind students that margins should always be maximized
 
-* Indicate that when support vectors are too close to the margin, there is a 50% change the classification can go either this. This is why these results are not reliable.
+* Indicate that when support vectors are too close to the margin, there is a 50% chance the classification can go either way. This is why these results are not reliable.
 
   ![overlap.png](Images/overlap.png)
 
@@ -902,6 +916,8 @@ Ask for any questions before moving forward.
 ---
 
 ### 16. Students Do: SVM Loan Approver (15 min)
+
+**Corresponding Activity:** [07-Stu-SVM_Loan_Approver](Activities/07-Stu-SVM_Loan_Approver)
 
 Students are asked to update their loan approver with an SVM model and rerun the evaluation metrics. Students will then compare the performance of the SVM model with the Logistic Regression model.
 
@@ -1048,4 +1064,4 @@ Ask if there are any questions before ending the class.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

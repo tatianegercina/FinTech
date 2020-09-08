@@ -4,7 +4,7 @@
 
 ### Overview
 
-By the end of Today's class, students will recognize the benefits of using tree-based algorithms for classifications problems. Also, students will gain hands-on experience with random forests and ensemble methods such as bagging and boosting.
+By the end of today's class, students will recognize the benefits of using tree-based algorithms for classifications problems. Also, students will gain hands-on experience with random forests and ensemble methods such as bagging and boosting.
 
 Today's lesson also introduces students to dealing with categorical data in machine learning. Students will be able to identify when it is worth to use categorical data as a feature in a model.
 
@@ -39,11 +39,11 @@ By the end of the class, students will be able to:
 * Overfitting is a common problem in machine learning that will be discussed today, so take your time to understand its implications and how the techniques covered in this class can help to avoid it.
 
 ### Sample Class Video (Highly Recommended)
-* To watch an example class lecture, go here: [11.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8c4c5255-0418-48d5-8a9e-aae001123070) Note that this video may not reflect the most recent lesson plan.
+* To watch an example class lecture, go here: [11.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0f8df8d-18ae-4dc2-8160-abc0012a40d5) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1AjhsJ-tToVzqX-D63O_0EPC9QEZeuDhDYjMPhOPDz7Y/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1lGvS2pOnyAHyikiOUtM6dIeWQyFrrKgEQDaR-ziNFEI/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -75,6 +75,8 @@ Ask for any additional questions before moving on.
 ---
 
 ### 2. Instructor Do: Dealing with Text and Categorical Data in Machine Learning (10 min)
+
+**Corresponding Activity:** [01-Ins-Categorical-Data](Activities/01-Ins-Categorical-Data)
 
 In this activity, students will learn how categorical data should be preprocessed to be used in machine learning algorithms.
 
@@ -247,6 +249,8 @@ Answer any questions before moving on.
 
 ### 3. Student Do: Encoding Categorical Data for Machine Learning (10 min)
 
+**Corresponding Activity:** [02-Stu_Categorical_Data](Activities/02-Stu_Categorical_Data)
+
 In this activity, students are tasked to encode some categorical and text features of a dataset that contains `2097` loan applications. In forthcoming activities, they will use this dataset to predict defaulted loan applications.
 
 **Instructions:**
@@ -345,6 +349,8 @@ Answer any questions before moving on.
 ---
 
 ### 6. Instructor Do: Decision Trees (10 min)
+
+**Corresponding Activity:** [03-Ins_Decision-Trees](Activities/03-Ins_Decision-Trees)
 
 In this activity, students will be introduced to decision trees and how they can use them for classification problems.
 
@@ -484,12 +490,14 @@ Explain to students, that a very large and complex tree shape like this, probabl
 * To ease the tree visualization, the image can be saved as `PDF` or `PNG`.
 
   ```python
+  # When saving the image, Path() is not used because graph.write_<file_type>() must take a string object
+
   # Saving the tree as PDF
-  file_path = Path("../Resources/loans_tree.pdf")
+  file_path = "../Resources/loans_tree.pdf"
   graph.write_pdf(file_path)
 
   # Saving the tree as PNG
-  file_path = Path("../Resources/loans_tree.png")
+  file_path = "../Resources/loans_tree.png"
   graph.write_png(file_path)
   ```
 
@@ -498,6 +506,8 @@ Answer any questions before moving on.
 ---
 
 ### 7. Students Do: Predicting Fraudulent Loans Applications (10 min)
+
+**Corresponding Activity:** [04-Stu_Predicting_Fraud](Activities/04-Stu_Predicting_Fraud)
 
 In this activity, students will create a decision tree model to predict fraudulent loan applications.
 
@@ -686,6 +696,8 @@ Answer any questions before moving on.
 
 ### 10. Instructor Do: Random Forest (10 min)
 
+**Corresponding Activity:** [05-Ins_Random_Forest](Activities/05-Ins_Random_Forest)
+
 In this activity, students will learn how to implement a random forest using `sklearn`.
 
 **Files:**
@@ -776,6 +788,8 @@ Answer any questions before moving on.
 ---
 
 ### 11. Students Do: Predicting Fraud with Random Forests (10 min)
+
+**Corresponding Activity:** [06-Stu_Random_Forest](Activities/06-Stu_Random_Forest)
 
 In this activity, students are going to explore how the random forest algorithm can be used to identify fraudulent loan applications. Students will use the `sba_loans_encoded.csv` file that they created before to train the model.
 
@@ -871,7 +885,7 @@ Highlight to students that **boosting** is not the only way to make a **weak lea
 
 * **Bagging** is another method used to improve the accuracy and robustness of a model.
 
-* Where **boosting** takes multiple algorithms and coordinates them as an ensemble and runs the algorithms in tandem to identify the best prediction, **bagging** focuses on re-sampling data and running with different models on the fly in order to formulate the most accurate and precise prediction.
+* Where **boosting** takes multiple algorithms and coordinates them as an ensemble and runs the algorithms iteratively to identify the best prediction, **bagging** focuses on re-sampling data and running with different models on the fly in order to formulate the most accurate and precise prediction.
 
 * Each classifier used in the **bagging** process runs independently of the others. Once all classifiers are finished predicting, the **bagging** algorithm will aggregate results.
 
@@ -881,9 +895,9 @@ Highlight to students that **boosting** is not the only way to make a **weak lea
 
   * Summarize the comparison again to help reinforce the differences:
 
-    * Bagging iteratively weighs inaccurate predictions and continue to execute.
+    * Bagging combines predictions from multiple models, taking the most frequent prediction among the models as the most likely prediction. Bagging resamples and replaces data in order to improve model fitting and accuracy.
 
-    * Boosting iteratively resamples and replaces data in order to train the best model.
+    * Boosting also resamples and replaces data in order to train the best model. The difference is that boosting resamples with greater frequency those samples that previously had the highest error.
 
     ![bagging_flow.png](Images/bagging_flow.png)
 
@@ -891,7 +905,7 @@ If time remains, engage students with the below questions. If there are no conve
 
 * Ask if there is a volunteer who would like to summarize the difference between boosting and bagging algorithms.
 
-  * **Answer** Bagging iteratively weighs inaccurate predictions and continue to execute. Boosting iteratively resamples and replaces data in order to train the best model.
+  * **Answer** Bagging averages predictions from multiple models and/or multiple re-samples of the data. Boosting is similar, but iteratively resamples more of those observations with previously higher error rates. Both methods average model predictions in order to train the best overall model.
 
 * Ask if another volunteer would like to explain what **boosting** and **bagging** algorithms are used for.
 
@@ -902,6 +916,8 @@ Ask students if they have any questions before moving on.
 ---
 
 ### 15. Instructor Do: Gradient Boosted Tree (10 min)
+
+**Corresponding Activity:** [07-Ins_Gradient_Boosted_Tree](Activities/07-Ins_Gradient_Boosted_Tree)
 
 The instructor will provide a demonstration on how to use **boosting** in **sklearn** to improve the performance of a decision tree.
 
@@ -1043,6 +1059,8 @@ Ask if there any questions before moving on.
 
 ### 16. Students Do: Turbo Boost (10 min)
 
+**Corresponding Activity:** [08-Stu_Gradient_Boosted_Tree](Activities/08-Stu_Gradient_Boosted_Tree)
+
 Students will complete an MSMD activity where they use the **sklearn** `GradientBoostedClassifier` **boosting** algorithm to detect fraudulent loan applications using **ensemble learning**.
 
 **Instructions:**
@@ -1141,7 +1159,7 @@ Continue the presentation by showing to students, some of the cases when classic
 
 * SVM handles outliers better.
 
-* KNN naturally supports incremental learning (data streams).
+* KNN (a method we'll cover in coming weeks) naturally supports incremental learning (data streams).
 
 Close the discussion by asking this final question:
 
@@ -1171,4 +1189,4 @@ Congratulate students on learning about a new family of machine learning algorit
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

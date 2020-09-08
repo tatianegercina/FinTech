@@ -1,8 +1,10 @@
 ## Unit 0: Intro to Finance
 
-### Overview
+### Overview - Supplemental Content
 
-In this module we will cover some the basics of finance as well as the mechanics of various financial models and markets.
+In this module, we will cover some of the basics of finance as well as the mechanics of various financial models and markets. This module is supplemental to the curriculum, providing a crash-course and refresher into finance.
+
+
 
 ### Lesson Plans
 

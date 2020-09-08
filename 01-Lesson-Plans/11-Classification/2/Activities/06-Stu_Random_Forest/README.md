@@ -1,6 +1,6 @@
-# Students Do: Predicting Fraud with Random Forests
+# Students Do: Predicting Loan Default with Random Forests
 
-In this activity, you are going to explore how random forest algorithms can be used to identify fraudulent loan applications. You will use the `sba_loans_encoded.csv` file that you created before to train the model.
+In this activity, you are going to explore how random forest algorithms can be used to identify loans that are likely to default. You will use the `sba_loans_encoded.csv` file that you created before to train the model.
 
 ## Instructions
 
@@ -22,7 +22,7 @@ In this activity, you are going to explore how random forest algorithms can be u
 
 ### Making Predictions Using the Random Forest Model
 
-7. Validate the trained model by predicting fraudulent loan applications using the testing data (`X_test_scaled`).
+7. Validate the trained model by predicting loan defaults using the testing data (`X_test_scaled`).
 
 ### Model Evaluation
 
@@ -36,7 +36,7 @@ In this activity, you are going to explore how random forest algorithms can be u
 
 10. Analyze the model's evaluation results and answer the following questions:
 
-* **Question 1:** Would you trust in this model to deploy a fraud detection solution in a bank?
+* **Question 1:** Would you trust in this model to deploy a loan default solution in a bank?
 
 * **Question 2:** What are your insights about the top 10 most importance features?
 

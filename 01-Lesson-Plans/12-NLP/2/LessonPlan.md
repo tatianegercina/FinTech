@@ -91,11 +91,13 @@ This activity looks to challenge students to think outside of the box and encour
 
 ### 3. Instructor Do: Terms Relevance (Understanding TF–IDF) (15 min)
 
+**Corresponding Activity:** [01-Ins_Terms_Relevance](Activities/01-Ins_Terms_Relevance)
+
 This activity introduces term relevance from the perspective of TF–IDF (term frequency-inversee document frequency). Also, students will learn how TF–IDF can be implemented using `sklearn`.
 
 Do not invest to much time on the TF–IDF formulas, just explain how they work in general and invest a little more time on the rationale behind these measures and their implementation using `sklearn`.
 
-* [03_Ins_Terms_Relevance.ipynb](Activities/03-Ins_Terms_Relevance/Solved/03_Ins_Terms_Relevance.ipynb)
+* [01_Ins_Terms_Relevance.ipynb](Activities/01-Ins_Terms_Relevance/Solved/01_Ins_Terms_Relevance.ipynb)
 
 Open the lesson slides and move to the **Terms Relevance (Understanding TF–IDF)** section, highlighting the following points:
 
@@ -115,7 +117,7 @@ Open the lesson slides and move to the **Terms Relevance (Understanding TF–IDF
 
 * The **bag-of-words model** is a technique in NLP to represent the important words or tokens in a document without worrying about sentence structure. A bag-of-words model can then be used to compare documents based on the number of important words that they share.
 
-After finishing the lecture slides, switch to the code demo and show how TF–IDF can be calculated with Python using the `sklearn` library; open the [Jupyter starter file](Activities/03-Ins_Terms_Relevance/Unsolved/03_Ins_Terms_Relevance.ipynb) and highlight the following points:
+After finishing the lecture slides, switch to the code demo and show how TF–IDF can be calculated with Python using the `sklearn` library; open the [Jupyter starter file](Activities/01-Ins_Terms_Relevance/Unsolved/01_Ins_Terms_Relevance.ipynb) and highlight the following points:
 
 * `nltk` and `nltk.corpus` are used to retrieve the [Reuters Corpus](https://www.nltk.org/book/ch02.html#reuters-corpus).
 
@@ -191,21 +193,23 @@ If there is time, ask the class what they think about the numbers identified as 
 
 ### 4. Student Do: Bossy Words (20 min)
 
+**Corresponding Activity:** [02-Stu_Bossy_Words](Activities/02-Stu_Bossy_Words)
+
 In this activity, students will use the knowledge from previous lessons to create a word cloud based on TF–IDF weights. The main objective of this activity is to let students see the differences between term relevance and term occurrence in word clouds.
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Bossy_Words/README.md)
+* [README.md](Activities/02-Stu_Bossy_Words/README.md)
 
 **Files:**
 
-* [bossy_words.ipynb](Activities/04-Stu_Bossy_Words/Unsolved/bossy_words.ipynb)
+* [bossy_words.ipynb](Activities/02-Stu_Bossy_Words/Unsolved/bossy_words.ipynb)
 
 ---
 
 ### 5. Instructor Do: Review Bossy Words (10 min)
 
-Open the [solution](Activities/04-Stu_Bossy_Words/Solved/bossy_words.ipynb) and review the code by highlighting the following:
+Open the [solution](Activities/02-Stu_Bossy_Words/Solved/bossy_words.ipynb) and review the code by highlighting the following:
 
 * The `reuters.categories()` method retrieves all the categories for a given document as is explained in the [Reuters Corpus documentation](https://www.nltk.org/book/ch02.html#reuters-corpus).
 
@@ -263,12 +267,13 @@ Ask if there are any questions before moving on.
 
 ### 6. Instructor Do: Getting Data for Sentiment Analysis (15 min)
 
+**Corresponding Activity:** [03-Ins_Sentiment_Analysis_Data](Activities/03-Ins_Sentiment_Analysis_Data)
+
 In this activity, students will learn how to retrieve news articles from the [News API](https://newsapi.org/) and its [Python library](https://newsapi.org/docs/client-libraries/python).
 
 **Files:**
 
-* [sentiment_analysis_data.ipynb](Activities/06-Ins_Sentiment_Analysis_Data/Solved/sentiment_analysis_data.ipynb)
-* [keys.sh](Activities/06-Ins_Sentiment_Analysis_Data/Solved/keys.sh)
+* [sentiment_analysis_data.ipynb](Activities/03-Ins_Sentiment_Analysis_Data/Solved/sentiment_analysis_data.ipynb)
 
 Explain to students that there are several ways to retrieve data for sentiment analysis, such as web scraping, manual corpus creation from document digitization, document transformations (e.g., from PDF, word processors, or spreadsheets to raw text) and using APIs. Among these data-retrieval mechanisms, APIs is one of the most used, so in this activity, students will learn how to retrieve news articles using the [News API](https://newsapi.org/) and its [Python library](https://newsapi.org/docs/client-libraries/python).
 
@@ -287,7 +292,7 @@ Guide students on the account process creation by following these steps:
 
   ![News API account page](Images/news_api_account_details.png)
 
-Ask students to create an environment variable called `news_api` by adding their API key to the `keys.sh` script and executing it on the terminal window as they did on the APIs unit.
+Ask students to create an environment variable called `news_api` by adding their API key to a `.env` file.
 
 You are almost ready to code! Before starting the demo, ask students to install the [News API Python library](https://newsapi.org/docs/client-libraries/python) on their virtual environment by executing the following command.
 
@@ -295,7 +300,7 @@ You are almost ready to code! Before starting the demo, ask students to install 
   pip install newsapi-python
   ```
 
-Open [the unsolved Jupyter notebook](Activities/06-Ins_Sentiment_Analysis_Data/Unsolved/sentiment_analysis_data.ipynb) and live code the demo by highlighting the following:
+Open [the unsolved Jupyter notebook](Activities/03-Ins_Sentiment_Analysis_Data/Unsolved/sentiment_analysis_data.ipynb) and live code the demo by highlighting the following:
 
 * The `NewsApiClient` class should be imported to interact with the News API service.
 
@@ -359,21 +364,23 @@ Answer any questions that arise and move to the next activity.
 
 ### 7. Student Do: The Voice of the Crisis (15 min)
 
+**Corresponding Activity:** [04-Stu_Crisis_Voice](Activities/04-Stu_Crisis_Voice)
+
 In this activity, students will use the News API to retrieve news articles in English and French about the financial crisis of 2008. At the end of the activity, students will create a CSV file that will be used for coming activities.
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Crisis_Voice/README.md)
+* [README.md](Activities/04-Stu_Crisis_Voice/README.md)
 
 **Files:**
 
-* [voice_crisis.ipynb](Activities/07-Stu_Crisis_Voice/Unsolved/voice_crisis.ipynb)
+* [voice_crisis.ipynb](Activities/04-Stu_Crisis_Voice/Unsolved/voice_crisis.ipynb)
 
 ---
 
 ### 8. Instructor Do: Review The Voice of the Crisis (5 min)
 
-Open the [solution](Activities/07-Stu_Crisis_Voice/Solved/voice_crisis.ipynb) and walk through the code, highlight the following:
+Open the [solution](Activities/04-Stu_Crisis_Voice/Solved/voice_crisis.ipynb) and walk through the code, highlight the following:
 
 * As can be read on [the News API documentation for the `Everything` endpoint,](https://newsapi.org/docs/endpoints/everything) it is possible to use logical operators to include or exclude keywords.
   ![Documentation for the q parameter of the News API](Images/new_api_q_param.png)
@@ -436,11 +443,13 @@ Answer any additional questions before moving to the next activity.
 
 ### 9. Instructor Do: Intro to VADER Sentiment (15 min)
 
+**Corresponding Activity:** [05-Ins_Vader_Sentiment](Activities/05-Ins_Vader_Sentiment)
+
 In this activity, students will understand how VADER sentiment works and how to interpret sentiment polarity; also students will learn how to score sentiment using the VADER module of NLTK.
 
 **Files:**
 
-* [vader_sentiment.ipynb](Activities/09-Ins_Vader_Sentiment/Solved/vader_sentiment.ipynb)
+* [vader_sentiment.ipynb](Activities/05-Ins_Vader_Sentiment/Solved/vader_sentiment.ipynb)
 
 Open the lesson slides, move to the Intro to VADER Sentiment section, and highlight the following:
 
@@ -509,15 +518,17 @@ Answer any questions from the class before moving on.
 
 ### 11. Student Do: The Feelings of the Crisis (20 min)
 
+**Corresponding Activity:** [06-Stu_Crisis_Feelings](Activities/06-Stu_Crisis_Feelings)
+
 In this activity, students will use VADER to score the sentiment of news titles and text to verify whether they have the same sentiment. This activity includes a facilitated discussion in the last four to five minutes to talk about students' findings.
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_Crisis_Feelings/README.MD)
+* [README.md](Activities/06-Stu_Crisis_Feelings/README.MD)
 
 **Files:**
 
-* [crisis_feelings.ipynb](Activities/11-Stu_Crisis_Feelings/Unsolved/crisis_feelings.ipynb)
+* [crisis_feelings.ipynb](Activities/06-Stu_Crisis_Feelings/Unsolved/crisis_feelings.ipynb)
 
 ---
 
@@ -525,7 +536,7 @@ In this activity, students will use VADER to score the sentiment of news titles 
 
 **Files:**
 
-* [crisis_feelings.ipynb](Activities/11-Stu_Crisis_Feelings/Solved/crisis_feelings.ipynb)
+* [crisis_feelings.ipynb](Activities/06-Stu_Crisis_Feelings/Solved/crisis_feelings.ipynb)
 
 Open the solution and walk through the code, highlighting the following:
 
@@ -613,13 +624,13 @@ Answer any additional questions before moving to the next activity.
 
 ### 13. Instructor Do: Tone Analysis (20 min)
 
+**Corresponding Activity:** [07-Ins_Tone_Analysis](Activities/07-Ins_Tone_Analysis)
+
 In this activity, students will be introduced to tone analysis and how they can score the tone of human speech using the **IBM Watson Tone Analyzer service** and its Python library.
 
 **Files:**
 
-* [tone_analysis.ipynb](Activities/13-Ins_Tone_Analysis/Solved/tone_analysis.ipynb)
-
-* [keys.sh](Activities/13-Ins_Tone_Analysis/Solved/keys.sh)
+* [tone_analysis.ipynb](Activities/07-Ins_Tone_Analysis/Solved/tone_analysis.ipynb)
 
 Start by opening the lesson slides, go to the Tone Analysis section, and highlight the following:
 
@@ -655,17 +666,17 @@ Once students have access to their IBM Cloud dashboard, they need to create an i
 
   ![Tone Analyzer configuration page](Images/tone_analyzer_create_instance.png)
 
-Now that the Tone Analyzer instance is ready to use, ask students to get their API keys and the instance URL by clicking on the "Show credentials" link.
+Now that the Tone Analyzer instance is ready to use, ask students to get their API keys and the instance URL by clicking on the "Service credentials" link.
 
   ![Tone Analyzer instance sample](Images/show_tone_analyzer_credentials.png)
 
-* Students will find their credentials under the section titled Step 1: Using the general-purpose endpoint via the POST request method.
+* On the resulting page, next to the _Auto-generated service credentials_ section, click the down arrow to expand the selection. 
 
-* Students will see the API key and the instance URL as it's shown below. The URL can differ from the image, but it ends with `/api`.
+* Students will then see the API key and the instance URL as it's shown below. 
 
   ![Tone Analyser credentials](Images/get_tone_analyzer_key.png)
 
-Ask students to create two environment variables, one for the API key and the other for the URL. Open the [unsolved Jupyter notebook](Activities/13-Ins_Tone_Analysis/Solved/tone_analysis.ipynb) and switch to the code demo, highlighting the following:
+Ask students to create two environment variables, one for the API key and the other for the URL. Open the [unsolved Jupyter notebook](Activities/07-Ins_Tone_Analysis/Solved/tone_analysis.ipynb) and switch to the code demo, highlighting the following:
 
 * The IBM Watson Python library needs to be installed using `pip` as follows. This demo runs using version 3.
 
@@ -684,10 +695,10 @@ Ask students to create two environment variables, one for the API key and the ot
 
 * `IAMAuthenticator` is used to authenticate your Python application to access the IBM cloud services.
 
-* The Tone Analyzer response is given in JSON format, so the [`json_normalize` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.io.json.json_normalize.html) is imported from Pandas to transform the JSON response to a DataFrame.
+* The Tone Analyzer response is given in JSON format, so the [`json_normalize` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.json_normalize.html) is imported from Pandas to transform the JSON response to a DataFrame.
 
   ```python
-  from pandas.io.json import json_normalize
+  from pandas import json_normalize
   ```
 
 * The Tone Analyzer service is initialized as follows.

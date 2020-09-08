@@ -99,6 +99,8 @@ Ask if there are any questions before moving on.
 
 ### 3. Instructor Do: Correlation (5 min)
 
+**Corresponding Activity:** [01-Ins_Correlation](Activities/01-Ins_Correlation)
+
 This part of the lesson introduces students to the concept of correlation, or the positive or negative relationship between two variables. Two datasets have been chosen to showcase the example of correlation: ice cream sales and drowning incidents.
 
 **File:** [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
@@ -144,6 +146,8 @@ Ask if there are any questions before moving on.
 
 ### 4. Student Do: Diversification (15 min)
 
+**Corresponding Activity:** [02-Stu_Correlation](Activities/02-Stu_Correlation)
+
 In this activity, students will apply the concept of correlation to diversify a portfolio, a practical financial use case. In order to create a diversified portfolio that tends to minimize long-term volatility and risk, stocks within the portfolio should be as non-correlated as possible. Students need to find the stock with returns that are least correlated to the returns of stocks in an existing portfolio.
 
 **File:** [market_analysis.ipynb](Activities/02-Stu_Correlation/Unsolved/diversification.ipynb)
@@ -186,6 +190,8 @@ Ask if there are any questions before moving on.
 
 ### 6. Instructor Do: Rolling Statistics (10 min)
 
+**Corresponding Activity:** [03-Ins_Rolling_Statistics](Activities/03-Ins_Rolling_Statistics)
+
 This section focuses on the concept of rolling statistics, in which a series of a particular metric is calculated over a shifting window of time. Rolling statistics help view the change or progression of a particular metric over time and therefore aid in identifying statistical trends.
 
 **File:** [rolling_statistics.ipynb](Activities/03-Ins_Rolling_Statistics/Solved/rolling_statistics.ipynb)
@@ -221,6 +227,8 @@ Walk through the solution and explain the following:
 ---
 
 ### 7. Students Do: Simple Moving Averages (15 mins)
+
+**Corresponding Activity:** [04-Stu_Rolling_Statistics](Activities/04-Stu_Rolling_Statistics)
 
 In this activity, students will calculate multiple windows of rolling statistics, such as moving averages and rolling standard deviations, in order to identify trends in average price and volatility/risk that can provide insight to the investment decisions concerning a particular stock.
 
@@ -262,6 +270,8 @@ Ask if there are any questions before moving on.
 
 ### 9. Instructor Do: Beta (10 min)
 
+**Corresponding Activity:** [05-Ins_Beta](Activities/05-Ins_Beta)
+
 In this activity, students will be introduced to the concept of beta and how it is used to determine the relative *unit-driven* performance of one variable to another. For example calculating the beta value of a stock's returns relative to the returns of the overall market.
 
 **File:** [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb)
@@ -282,7 +292,7 @@ Open [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb). As you walk through
 
 * What is the difference between covariance and variance?
 
-   * Variance looks at one variable, measuring the range in which that variable’s values may take. By contrast, covariance looks at the variance of two variables, and studies how those two variables vary together. 
+   * Variance looks at one variable, measuring the range in which that variable’s values may take. By contrast, covariance looks at the variance of two variables, and studies how those two variables vary together.
    * Covariance is similar in concept to correlation: the difference is that covariance values are usually too difficult to interpret (other than being positive or negative), whereas correlation is a standardized value (regardless of data type) that ranges from -1 to 1.
 
 * How do covariance and variance relate to beta?
@@ -308,6 +318,8 @@ Ask if there are any questions before moving on.
 ---
 
 ### 10. Student Do: Beta Comparisons (15 min)
+
+**Corresponding Activity:** [06-Stu_Beta](Activities/06-Stu_Beta)
 
 In this activity, students will apply their knowledge of rolling statistics and beta to plot the 30-day rolling betas of a group of stocks. The goal is to determine the most conservative stock choice, or the stock with the lowest beta.
 
@@ -355,6 +367,8 @@ Ask if there are any questions before moving on.
 
 ### 13. Instructor Do: Portfolio Returns (10 min)
 
+**Corresponding Activity:** [07-Ins_Portfolio_Returns](Activities/07-Ins_Portfolio_Returns)
+
 This section focuses on calculating returns for a group of stocks, or stock portfolios. Students should understand that portfolios of stocks are used by investors to manage and diversify risk. Defining a portfolio with varying capital allocations of stocks allows an investor to control and adjust their risk.
 
 **File:** [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.ipynb)
@@ -380,6 +394,8 @@ Open [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio
 Ask if there are any questions before moving on.
 
 ### 14. Student Do: Portfolio Planner, Part 1 (20 min)
+
+**Corresponding Activity:** [08-Stu_Portfolio_Planner_Part_I](Activities/08-Stu_Portfolio_Planner_Part_I)
 
 In this activity, students will work in pairs to research a group of 10 stocks, find the least to most volatile stocks, drop the top five highly volatile stocks, set portfolio weights to the remaining stocks according to risk profile, and perform an analysis of a `$10,000` investment in the portfolio over time.
 
@@ -418,6 +434,8 @@ Open the solution, [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_
 Ask if there are any questions before moving on.
 
 ### 16. Students Do: Portfolio Planner Part 2 (20 mins)
+
+**Corresponding Activity:** [09-Stu_Portfolio_Planner_Part_II](Activities/09-Stu_Portfolio_Planner_Part_II)
 
 In this activity, students will work in pairs to continue from where they left off in Part 1 of their portfolio evaluation. In this next part, students will evaluate correlations and Sharpe ratios of the 10 stocks, and then filter by only minimally-correlated and high positive Sharpe ratio stocks. They will also set equal-weighted portfolio allocations to those remaining stocks and perform an analysis of a $10,000 investment in the portfolio over time. Finally, they will compare the $10,000 investment in the portfolio to other $10,000 investments in lesser-optimized portfolios.
 

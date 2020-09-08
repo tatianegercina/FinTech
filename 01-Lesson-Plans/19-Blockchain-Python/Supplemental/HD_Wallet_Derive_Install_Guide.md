@@ -105,11 +105,21 @@ To update the pre-built version of PHP in OS X, execute the following steps:
 
  ![PHP OS X install - 1](Images/php-os-x-1.png)
 
-* Once the installation finishes, execute the following command in the terminal to edit your `.bash_profile` in the `nano` text editor.
+* **Important:** If you are on macOS Catalina and up (10.15+), your default shell is now `zsh`, instead of `bash` as in previous versions. No worries, however, since `zsh` can handle the same tasks. If you have yet to upgrade to Catalina, you will be using `bash` as your default shell, which will affect the commands you need to run below. Make sure you are running the commands appropriate for your system!
 
- ```shell
- nano ~/.bash_profile
- ```
+* Once the installation finishes, execute the command appropriate for your system:
+
+  * macOS Catalina and above (`zsh` shell):
+
+    ```shell
+    nano ~/.zshrc
+    ```
+
+  * Versions prior to macOS Catalina (`bash` shell):
+
+    ```shell
+    nano ~/.bash_profile
+    ```
 
 * The `nano` text editor will be opened, scroll down to the end of the file and add the following commands to point to the newest version of PHP globally in your system.
 
@@ -123,13 +133,7 @@ To update the pre-built version of PHP in OS X, execute the following steps:
 
 * Save the changes by pressing the `CONTROL + O` keys combination. Next, exit `nano` by pressing the `CONTROL + X` keys combination.
 
-* Execute the following command to reload your `bash_profile`.
-
- ```shell
- source ~/.bash_profile
- ```
-
-* Close and reopen the terminal. Next, verify that PHP version 7.3 is the current version in your system by executing the following command:
+* **Close and reopen the terminal**. Next, verify that PHP version 7.3 is the current version in your system by executing the following command:
 
  ```shell
  php -version
@@ -153,17 +157,21 @@ To install PHP in Mac OS X using Homebrew, execute the following steps:
  brew install php@7.3
  ```
 
-* Then, to point to the newest version of PHP, export the following path to your `PATH` environment variable. This will allow you to run the command `php` from anywhere in your terminal and point to the Homebrew version that was just installed.
+* **Important:** If you are on macOS Catalina and up (10.15+), your default shell is now `zsh`, instead of `bash` as in previous versions. No worries, however, since `zsh` can handle the same tasks. If you have yet to upgrade to Catalina, you will be using `bash` as your default shell, which will affect the commands you need to run below. Make sure you are running the commands appropriate for your system!
 
- ```shell
- export PATH=/usr/local/opt/php@7.3/bin:$PATH
- ```
+* Execute the command appropriate for your system:
 
-* Append this to your `.bash_profile` by running the following (or manually edit the file):
+  * macOS Catalina and above (`zsh` shell):
 
- ```shell
- echo "export PATH=/usr/local/opt/php@7.3/bin:$PATH" >> ~/.bash_profile
- ```
+    ```shell
+    echo "export PATH=/usr/local/opt/php@7.3/bin:$PATH" >> ~/.zshrc
+    ```
+
+  * Versions prior to macOS Catalina (`bash` shell):
+
+    ```shell
+    echo "export PATH=/usr/local/opt/php@7.3/bin:$PATH" >> ~/.bash_profile
+    ```
 
 * Close and reopen the terminal. Next, verify that PHP version 7.3 is the current version in your system by executing the following command:
 

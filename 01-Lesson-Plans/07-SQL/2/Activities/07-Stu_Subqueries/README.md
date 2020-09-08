@@ -14,7 +14,7 @@ Use the [`payment`](Resources/payment.csv), [`customer`](Resources/customer.csv)
 
 ## Bonus
 
-Use the [`payment`](Resources/payment.csv), [`rental`](Resources/rental.csv), [`inventory`](Resources/inventory.csv), and [`film`](Resources/film.csv) tables to find the film records of all films that have been rented out and paid for.
+Use the [`payment`](Resources/payment.csv), [`rental`](Resources/rental.csv), [`inventory`](Resources/inventory.csv), and [`film`](Resources/film.csv) tables to find the titles of all films that have been rented out and paid for.
 
 **Hint:** You will need to use multiple nested subqueries.
 

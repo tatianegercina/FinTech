@@ -168,6 +168,8 @@ Explain to students that we will be learning how to use Scikit-learn and cloud-b
 
 ### 3. Instructor Do: Data Preparation for Unsupervised Learning (10 min)
 
+**Corresponding Activity:** [01-Ins_Data_Prep](Activities/01-Ins_Data_Prep)
+
 In this activity, students will learn about the data preparation considerations they should take into account before they start working with unsupervised learning algorithms.
 
 **Files:**
@@ -214,6 +216,8 @@ Ask the class if there are any further questions before moving to the next activ
 ---
 
 ### 4. Student Do: Understanding Customers (20 min)
+
+**Corresponding Activity:** [02-Stu_Preparing_Data](Activities/02-Stu_Preparing_Data)
 
 In this activity, students will perform some data preparation tasks on a dataset that contains data from purchases on an e-commerce website made by 200 customers. Students will use this dataset in further activities to find customer segments.
 
@@ -293,6 +297,8 @@ Be sure that there are no questions before moving forward.
 ---
 
 ### 6. Instructor Do: The K-Means Algorithm (15 min)
+
+**Corresponding Activity:** [03-Ins_KMeans](Activities/03-Ins_KMeans)
 
 In this activity, students will learn how the k-means algorithm works. Use your time wisely to cover the theoretical part, as well as the coding part.
 
@@ -440,6 +446,8 @@ Answer any remaining questions before moving on.
 
 ### 7. Student Do: Customer Segments for E-Commerce (20 min)
 
+**Corresponding Activity:** [04-Stu_K_Means_In_Action](Activities/04-Stu_K_Means_In_Action)
+
 In this activity, students will identify the best number of clusters on a customer clustering scenario using the elbow curve. Next, students will use k-means to cluster data and make conclusions about the obtained results.
 
 **Instructions:**
@@ -545,6 +553,8 @@ Encourage one or two students to share their conclusions, ask for any remaining 
 
 ### 10. Instructor Do: Speeding up Machine-Learning Algorithms with PCA (10 min)
 
+**Corresponding Activity:** [05-Ins_PCA](Activities/05-Ins_PCA)
+
 In this activity, students will learn how to use principal component analysis as a technique to speed up machine-learning algorithms by reducing the number of features.
 
 **Files:**
@@ -622,6 +632,8 @@ Answer any questions before moving on.
 ---
 
 ### 11. Student Do: PCA in Action (20 min)
+
+**Corresponding Activity:** [06-Stu_PCA](Activities/06-Stu_PCA)
 
 In this activity, students will use PCA to reduce the dimensions of the consumers' shopping dataset.
 
@@ -815,4 +827,4 @@ Have TAs make sure that all students are able to log in and answer any questions
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

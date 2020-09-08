@@ -19,7 +19,4 @@ Instructional Staff, please use the reference material below to help you prepare
 * [Ethereum Notes](Ethereum.md)
 
 ---
-
-### Copyright
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

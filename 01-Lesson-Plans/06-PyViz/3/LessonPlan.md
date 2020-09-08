@@ -36,6 +36,8 @@ By the end of class, students will be able to:
 
 * Encourage students to work in pairs or groups on in-class activities to help facilitate discussions as well as troubleshooting. Collaborative exercises such as student-led activity reviews and discussions are built into this lesson.
 
+* If students have issues with plots rendering blank in the Jupyter Lab preview, have them refer to the [troubleshooting section](../Supplemental/PyVizInstallationGuide.md#troubleshooting) of the PyViz Installation Guide.
+
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
@@ -124,6 +126,8 @@ Ask for any questions before moving forward.
 - - -
 
 ### 3. Instructor Do: Getting Started with Panel (10 mins)
+
+**Corresponding Activity:** [01-Ins_Getting_Started_Panel](Activities/01-Ins_Getting_Started_Panel)
 
 Students will receive a small demo on how to use Panel at a high level.
 
@@ -220,6 +224,8 @@ Ask if students have any questions before continuing.
 
 ### 4. Instructor Do: Panel Dashboard Components (Panes) (10 mins) (Critical)
 
+**Corresponding Activity:** [02-Ins_Dashboard_Components](Activities/02-Ins_Dashboard_Components)
+
 In this activity, students receive a demonstration of how to use and customize Panel's dashboard components.
 
 **Files:**
@@ -310,6 +316,8 @@ Ask if there are any questions before moving forward.
 
 ### 5. Student Do: No Pane, No Gain (20 mins)
 
+**Corresponding Activity:** [03-Stu_Dashboard_Components](Activities/03-Stu_Dashboard_Components)
+
 In this activity, students will create a Plotly plot and convert it to a Panel **pane**. The goal of this activity is to reinforce to students the importance of Panel **panes** and their role in the dashboard creation process.
 
 **Instructions:**
@@ -374,6 +382,8 @@ Ask for any remaining questions before moving on.
 
 ### 7. Instructor Do: Dashboard Components (Panels) (15 mins) (Critical)
 
+**Corresponding Activity:** [04-Ins_Dashboard_Components_Panels](Activities/04-Ins_Dashboard_Components_Panels)
+
 By the end of this activity, students will have learned how to create and use Panel **panel** objects to create rows, columns, and tabs for dashboard Panels.
 
 **Files:**
@@ -402,7 +412,6 @@ Open the starter file, and conduct a dry walkthrough of how to create and use Pa
   import panel as pn
   from panel.interact import interact
   import plotly.express as px
-  import hvplot.pandas
   pn.extension('plotly')
 
   housing_transactions = pd.DataFrame({
@@ -462,6 +471,8 @@ Ask if there are any questions before moving forward.
 - - -
 
 ### 8. Student Do: The Judge's Panel (20 mins)
+
+**Corresponding Activity:** [05-Stu_Dashboard_Panels](Activities/05-Stu_Dashboard_Panels)
 
 In this activity, students will execute insert, update, and remove operations on Panel **panels**.
 
@@ -562,11 +573,15 @@ Navigate to the 6.3 slides, and highlight the following:
   pn.extension()
   ```
 
+**NOTE:** It is crucial to note to the class that when use using `hvplot.pandas` the panel extensions should be initialized prior to the `hvplot.pandas` import.  The `hvplot.pandas` library initializes its own extension through Holoviews which will disallow the panel extensions unless the panel extensions are imported first.
+
 Ask if there are any questions before continuing.
 
 - - -
 
 ### 12. Student Do: Extending Plotting (15 mins)
+
+**Corresponding Activity:** [06-Stu_Panel_Extensions](Activities/06-Stu_Panel_Extensions)
 
 In this activity, students will create a dashboard that contains map visualizations and `hvPlot` composed plots. The goal of this activity is to reinforce to students that Panel can support all the visualizations that have been created in class so far.
 
@@ -649,6 +664,8 @@ Ask for any remaining questions before moving on.
 - - -
 
 ### 14. Instructor Do: Dashboards As Web Applications (15 mins) (Critical)
+
+**Corresponding Activity:** [07-Ins_Dashboard_Webapps](Activities/07-Ins_Dashboard_Webapps)
 
 Students learn how to transform their Jupyter notebook dashboards into a **web app**. The instructor will demonstrate how to use the `servable` command to execute and run the dashboard on a server. The instructor will use the same dashboard created from the previous activity.
 

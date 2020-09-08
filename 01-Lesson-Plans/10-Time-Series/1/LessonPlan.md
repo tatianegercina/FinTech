@@ -197,6 +197,8 @@ Ask students if they have any questions before moving on.
 
 ### 4. Instructor Do: Time Series Basics (10 min)
 
+**Corresponding Activity:** [01-Ins_Time_Series_Basics](Activities/01-Ins_Time_Series_Basics)
+
 **File:** [datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
 
 Explain to students that over the next several weeks, we will be learning about many different machine learning models and techniques, but we will start with Time Series Models. Time Series Models are very prevalent in the financial world and are very useful models for analyzing time series data.
@@ -303,6 +305,8 @@ Next, explain that the `resample()` method groups rows by a specified time frame
 
 ### 5. Students Do: Time Series Basics (15 min)
 
+**Corresponding Activity:** [02-Stu_Time_Series_Basics](Activities/02-Stu_Time_Series_Basics)
+
 In this activity, students will practice the basics of time series manipulation in pandas.
 
 **Files:**
@@ -351,6 +355,8 @@ Answer any remaining questions before moving on.
 
 ### 7. Instructor Do: Time Series Decomposition (10 min)
 
+**Corresponding Activity:** [03-Ins_Decomposition](Activities/03-Ins_Decomposition)
+
 * **File:** [decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
 
 Use the slides and define time series decomposition to the class:
@@ -396,7 +402,7 @@ Next, explain that the code below decomposes the liquor sales data.
   ```
 
 * The model is specified as multiplicative because the seasonal fluctuation (the spikes) increases with the series.
-   
+
    * Why? If you have a time series with a trend, the amplitude of any seasonal activity  in that series tends to increase over time. In other words, those periodic 'spikes' in a series get 'spikier', the more you progress through time. A multiplicative model specification will better capture and predict this type of activity.
 
 Explain that the time series is decomposed visually by the library:
@@ -421,11 +427,13 @@ Finally, explain that the library used in the notebook is more useful as an illu
 
 ### 9. Instructor Do: EWMA and Hodrick-Prescott Filter (15 min)
 
+**Corresponding Activity:** [04-Ins_Hodrick_Prescott](Activities/04-Ins_Hodrick_Prescott)
+
 In this activity, you will introduce EWMA, or exponentially-weighted moving average. You will also introduce the Hodrick-Prescottt filter, a tool that captures trends by minimizing local fluctuations.
 
-Begin by doing a concept overview of the EWMA and Hodrick-Prescott filters using the slides.  
+Begin by doing a concept overview of the EWMA and Hodrick-Prescott filters using the slides.
 
-**EWMA Slides** 
+**EWMA Slides**
 Explain that an exponentially-weighted moving average (EWMA) is similar to a moving average, with a significant difference:
 
   ![Images/ma02.png](Images/ma02.png)
@@ -451,15 +459,15 @@ The math slide explains the overall mathematical idea of the Hodrick-Prescott fi
 
 * As discussed previously, a time series can be decomposed into trend, periodicity, and noise.
 
-* If we temporarily disregard noise, then, time series data minus trend equals periodicity. 
+* If we temporarily disregard noise, then, time series data minus trend equals periodicity.
 
 * The left side describes the cyclic element: time series (y) minus trend (tau).
 
 * The right side basically describes the volatility in trend.
 
 * The H-P filter essentially **minimizes** the aggregate values associated with non-trend (periodicity and volatility).
- 
-Phew! Let's move on to demo-ing the code. 
+
+Phew! Let's move on to demo-ing the code.
 
 
 **Instructor Demo and Files:**
@@ -480,11 +488,11 @@ Begin the activity with a brief review of the moving average, before rolling on 
 
 * In pandas, it can be computed with the `rolling()` and `mean()` methods, with the `window` argument specifying the number of prior values to average.
 
-* Yet the EWMA is different, as it gives greater weight to the most recent observations. In finance, this is nice, because it means we're still filtering out noise (like a moving average), yet we're also reacting more quickly to information (the "exponentially weighted" part of EWMA). 
+* Yet the EWMA is different, as it gives greater weight to the most recent observations. In finance, this is nice, because it means we're still filtering out noise (like a moving average), yet we're also reacting more quickly to information (the "exponentially weighted" part of EWMA).
 
 * In pandas, an EWMA can be computed with the `ewm()` and `mean()` methods.
 
-* As mentioned above, in a rolling average, a `window` argument is supplied. By contrast, the `ewm()` method takes a `halflife` argument. 
+* As mentioned above, in a rolling average, a `window` argument is supplied. By contrast, the `ewm()` method takes a `halflife` argument.
   *  The two are conceptually similar, but not mathematically the same thing. Essentially halflife relates to how much weight we give to the more recent observations: the shorter the halflife, the more weight we're giving to those recent observations (think: shorter half life==reacting more quickly).
 
 
@@ -515,6 +523,8 @@ Finally, show the plots of the trend and noise components after filtering:
 
 ### 10. Students Do: You've Got a FRED (15 min)
 
+**Corresponding Activity:** [05-Stu_Hodrick_Prescott](Activities/05-Stu_Hodrick_Prescott)
+
 In this activity, students will use the Hodrick-Prescott filter to identify macroeconomic trends in the United States in the period from 2004 to 2010.
 
 **Files:**
@@ -533,16 +543,7 @@ In this activity, students will use the Hodrick-Prescott filter to identify macr
 
 Open the solution file, and conduct a brief dry walkthrough of the code.
 
-* Explain that we'll read in data from the Federal Reserve via a csv. 
-  *  (To prevent in-class bugs, we're using csv's, but for students that want to pull this data real-time, they can use Pandas's `DataReader` package.):
-
-        ```python
-        start = datetime.datetime(2004, 1, 1)
-        end = datetime.datetime(2010, 1, 1)
-        gdp = web.DataReader(['GDP'], 'fred', start, end)
-        ```
-
-        ![datareader.png](Images/datareader.png)
+* Convey to students that we'll read in data from the Federal Reserve via a csv.
 
 * Explain using the H-P filter in Python. It is a `statsmodels` module that requires a single line of code. The plots are created simply with pandas's `plot()` method.
 
@@ -561,13 +562,15 @@ If time allows, take a moment to compare and contrast the H-P filter:
 
 ### 12. Instructor Do: Autocorrelation (15 min)
 
+**Corresponding Activity:** [06-Ins_Auto_Correlation](Activities/06-Ins_Auto_Correlation)
+
 Before diving into the code, introduce the concept of autocorrelation with the first few slides on it:
 
 * Up to this point, when dealing with linear regression, we have tried to identify the relationship between two unrelated variables, such as date vs. weather, or years of experience vs. salary.
 
 * Autocorrelation, on the other hand, determines to what extent, for example, today's values correlate with yesterday's values.
 
-* Hourly temperature is a clear, easy to understand, illustration of the concept autocorrelation. 
+* Hourly temperature is a clear, easy to understand, illustration of the concept autocorrelation.
   * What's the temperature an hour into the future? It's very likely to be similar to what it is now (one "lag" away).
   * What's the temparature at noon today? Likely we'll get good information by looking at what the temperature was at noon yesterday (24 hours, or "lags", ago).
 
@@ -630,7 +633,7 @@ Next, explain the code used to calculate the auto correlation:
 
 * Here, the lag is 1, meaning that the series of temperature readings is correlated against a series of temperature readings taken one hour previously.
 
-* The correlation coefficient is 0.99, a very high number. Temperatures, unlike financial markets, are relatively easy to predict. 
+* The correlation coefficient is 0.99, a very high number. Temperatures, unlike financial markets, are relatively easy to predict.
 
 Explain that autocorrelation can be computed at a different lag
 
@@ -664,7 +667,7 @@ The `plot_acf()` function visualizes what we have discussed so far:
 * This plot, in other words, shows autocorrelation at lags up to 48, which was specified in the argument `lags=48`.
 
 * As pointed out previously, there is high autocorrelation at a lag of 1, slightly lower at lag 2, and so on. Then a high autocorrelation is found at a lag of 24, and multiples of 24, such as 48.
-     * This high autocorrelation at the -24 and -48 hour lag is a good example of seasonality; the weather today at noon is much more likely to be correlated with what the weather was yesterday at noon than, say, what the weather was last midnight.   
+     * This high autocorrelation at the -24 and -48 hour lag is a good example of seasonality; the weather today at noon is much more likely to be correlated with what the weather was yesterday at noon than, say, what the weather was last midnight.
 
 Next, explain that the band in light blue is the confidence interval.
 
@@ -714,6 +717,8 @@ Finally, summarize the key points of the activity:
 
 ### 13. Students Do: Euro ETFs (15 min)
 
+**Corresponding Activity:** [07-Stu_ETF](Activities/07-Stu_ETF)
+
 In this activity, students will examine a time series of bid-ask spreads of an ETF for autocorrelation.
 
 **Files:**
@@ -761,11 +766,11 @@ Review the ACF and PACF plots:
   * The ACF and PACF plots here have a similar appearance, although that is not always the case.
 
   * The ACF and PACF both appear to be significant at a lag of 1, along with possibly the 4th lag.
-    * Should we chose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest we use a model that carries the order all the way out to AR(4). Ultimately, however, whether an AR(1) or an AR(4) is more appropriate will really just ultimately depend on how well the two different specifications perform on the data that we have. 
+    * Should we chose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest we use a model that carries the order all the way out to AR(4). Ultimately, however, whether an AR(1) or an AR(4) is more appropriate will really just ultimately depend on how well the two different specifications perform on the data that we have.
 
-    * While approximately the 13th lag looks significant in the autocorrelation plot, it's not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(); the really beneficial lags are the 1st and the 4th, whereas the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads. 
+    * While approximately the 13th lag looks significant in the autocorrelation plot, it's not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(); the really beneficial lags are the 1st and the 4th, whereas the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads.
 
-  
+
 
 - - -
 

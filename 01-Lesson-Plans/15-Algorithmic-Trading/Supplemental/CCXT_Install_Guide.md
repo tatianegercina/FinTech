@@ -2,9 +2,21 @@
 
 This guide serves as a step by step process for setting up and validating the ccxt Python library. Without this library, class activities and their associated code will not be able to pull historical and current pricing data from the Kraken Cryptocurrency Exchange.
 
+All packages should be installed into the `algotrading` virtual environment.  If you have not already created an `algotrading` virtual environment you can do so by typing the following commands in your terminal:
+
+  ```shell
+  conda create -n algotrading python=3.7 anaconda
+  ```
+
 ## Installation
 
 Open a terminal, and execute the following commands to install `ccxt`.
+
+* Activate your `algotrading` virtual environment.
+
+  ```shell
+  conda activate algotrading
+  ```
 
 * Use the `pip install` command to download the `ccxt` module.
 
@@ -44,17 +56,17 @@ Next, head to the API settings of your Kraken account and generate new API keys.
 
   ![kraken-api-keys](Images/kraken-api-keys.png)
 
-Then, after generating your API keys, open a terminal and set the `KRAKEN_PUBLIC_KEY` and `KRAKEN_SECRET_KEY` environment variables, respectively. There is no need to include quotes around your api keys when setting the environment variables.
-
-If using Bash prompt, the commands to set your environmental variables are:
-
-  ![ccxt-environment-variables-Bash](Images/ccxt-environment-variables.png)
-
-If using Anaconda Prompt, the commands to set your environmental variables are:
-
-  ![ccxt-environment-variables-Anaconda](Images/ccxt-environment-variables-Anaconda.png)
+Then, after generating your API keys, create a new `.env` file for your given project and set the `KRAKEN_PUBLIC_KEY` and `KRAKEN_SECRET_KEY` environment variables, respectively. 
 
 **Note:** Unless you are setting these environment variables globally or permanently, they will need to be set each time you want to access the Kraken API via the ccxt library.
+
+### Alternative API Bitfinex
+
+If you are having API request issues with Kraken, as an alternative go to the [Bitfinex Cryptocurrency Exchange](https://bitfinex.com/) and sign up for an account. You can requet a simple API key in the same manner. 
+
+Then, after generating your API keys, create a new `.env` file for your given project and set the `BITFINEX_PUBLIC_KEY` and `BITFINEX_SECRET_KEY` environment variables, respectively. For the purpose of our usage with `Bitfinex` you can select `No` on prohibited user as you would not be making trades but just requesting data, this will allow usage of the API data request freely. 
+
+![Bitfinex Website](Images/bitfinex-website.png)
 
 ## Troubleshooting
 
@@ -76,19 +88,25 @@ An out-of-date Anaconda environment can create issues when trying to install new
     conda update conda
     ```
 
-3. Create a fresh conda environment to use with `ccxt`.
+3. Remove the virtual environment.
+
+    ```shell
+    conda env remove --name algotrading
+    ```
+
+4. Create a fresh conda environment to use with `ccxt`.
 
     ```shell
     conda create -n algotrading python=3.7 anaconda
     ```
 
-4. Activate the new environment.
+5. Activate the new environment.
 
     ```shell
     conda activate algotrading
     ```
 
-5. Install the `ccxt` package.
+6. Install the `ccxt` package.
 
     ```shell
     pip install ccxt
@@ -96,4 +114,4 @@ An out-of-date Anaconda environment can create issues when trying to install new
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

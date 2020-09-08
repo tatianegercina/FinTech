@@ -131,6 +131,8 @@ Now it's time for students to explore some tokens themselves!
 
 ### 3. Students Do: Token Exploration (10 min)
 
+**Corresponding Activity:** [01-Stu_Token_Exploration](Activities/01-Stu_Token_Exploration)
+
 Students will take the given activity time to research their selected tokens.
 
 Have the students open the following list of popular Ethereum blockchain tokens and select a few that interest them.
@@ -182,6 +184,8 @@ Discuss the following review questions with the class.
 ---
 
 ### 5. Instructor Do: Mappings Data Structure in Solidity (15 min) (Critical)
+
+**Corresponding Activity:** [02-Ins_Mappings](Activities/02-Ins_Mappings)
 
 This activity shows students how to build a simple token with Solidity.
 
@@ -333,6 +337,8 @@ Time for the students to get their hands dirty with some token design!
 
 ### 6. Students Do: Building an Arcade Token with Mappings (20 min)
 
+**Corresponding Activity:** [03-Stu_ArcadeToken](Activities/03-Stu_ArcadeToken)
+
 In this activity, students will practice using the `mapping` data structure by building an ArcadeToken.
 
 Send out the instructions and the starter code below, and have the TAs circulate the class.
@@ -409,6 +415,8 @@ Get the students excited about the next activity by explaining how we are now go
 
 ### 10. Instructor Do: 3rd Parties Libraries in Solidity (SafeMath) (15 min) (Critical)
 
+**Corresponding Activity:** [04-Ins_SafeMath](Activities/04-Ins_SafeMath)
+
 This demonstration shows students how to use the `SafeMath` from `OpenZeppelin` to secure their tokens.
 
 **Files:**
@@ -478,7 +486,7 @@ Import the SafeMath library at above the contract definition like so:
 ```solidity
 pragma solidity ^0.5.0;
 
-import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
+import "github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol";
 
 contract ArcadeToken {
     // ...
@@ -494,7 +502,7 @@ Next, in the first line of the contract, add `using SafeMath for uint;` to link 
 ```solidity
 pragma solidity ^0.5.0;
 
-import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
+import "github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol";
 
 contract ArcadeToken {
     using SafeMath for uint;
@@ -553,6 +561,8 @@ Now it's time for students to secure their tokens!
 
 ### 11. Students Do: Using SafeMath (15 min)
 
+**Corresponding Activity:** [05-Stu_Using_SafeMath](Activities/05-Stu_Using_SafeMath)
+
 In this activity, students will implement the SafeMath library and replace all math operations with the SafeMath alternatives.
 
 Send out the instructions and have TAs circulate the class.
@@ -596,6 +606,8 @@ Ask for any remaining questions before moving on.
 ---
 
 ### 13. Students Do: Tokenized Reward System Challenge (20 min)
+
+**Corresponding Activity:** [06-Stu_Tokenized_Rewards_Challenge](Activities/06-Stu_Tokenized_Rewards_Challenge)
 
 In this activity, students will take some time to work on a "tokenized reward system" challenge.
 
@@ -697,4 +709,4 @@ This section is reserved for the homework demo. Take some time to review the hom
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

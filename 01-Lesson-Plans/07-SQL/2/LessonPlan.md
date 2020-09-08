@@ -52,6 +52,8 @@ Welcome students and review the class objectives, then open the slideshow and co
 
 ### 2. Instructor Do: Import Data (15 min)
 
+**Corresponding Activity:** [01-Evr_Import_Data](Activities/01-Evr_Import_Data)
+
 In this activity, instructors will help students prepare for today's lesson by importing the necessary data to their databases.
 
 * **Note:** If issues arise when using the pgAdmin Import/Export tool, there is an included seed.sql file within the Solved folder of each instructor/student activity. Distribute and use the file when necessary and refer to the SQL troubleshooting guide for more information on how to use the file.
@@ -104,6 +106,8 @@ Then, slack out the [schema](Activities/01-Evr_Import_Data/Solved/schema.sql) an
 The TAs should walk around the classroom to assist students with the database upload.
 
 ### 3. Instructor Do: Aggregate Functions, Aliases, and Grouping (10 min)
+
+**Corresponding Activity:** [02-Ins_Aggregates](Activities/02-Ins_Aggregates)
 
 In this activity, students will learn how to use aggregate functions, aliases, and groupby operations to analyze data on a higher-level or aggregated perspective.
 
@@ -228,6 +232,8 @@ Answer any questions before moving on.
 
 ### 4. Student Do: Gregarious Aggregates (15 min)
 
+**Corresponding Activity:** [03-Stu_GregariousAggregates](Activities/03-Stu_GregariousAggregates)
+
 In this activity, students will practice writing queries with aggregate functions, grouping, and using aliases.
 
 **Files:**
@@ -286,6 +292,8 @@ Answer any questions before moving on.
 
 ### 6. Instructor Do: Order By Aggregates (10 min)
 
+**Corresponding Activity:** [04-Ins_Order_By](Activities/04-Ins_Order_By)
+
 In this activity, students will learn how to sort (ascending or descending) their datasets by a specific column.
 
 **File:** [query.sql](Activities/04-Ins_Order_By/Solved/query.sql)
@@ -331,6 +339,8 @@ Answer any questions before moving on.
 
 ### 7. Student Do: Payments Ordered By (15 min)
 
+**Corresponding Activity:** [05-Stu_Order_By](Activities/05-Stu_Order_By)
+
 In this activity, you will use `ORDER BY` in combination with other SQL methods to query and order the tables.
 
 **Files:**
@@ -361,6 +371,8 @@ Open pgAdmin and walk through the solution, highlighting the following:
   GROUP BY customer_id
   ORDER BY COUNT(*) DESC;
   ```
+
+  **Note:** The ORDER BY clause can be used with column aliases as well. It is often a matter of preference for choosing to order by a column alias or the specific calculations that define the alias.
 
 * The `ORDER BY` clause can be used in either `ASC` (ascending) or `DESC` (descending) order. When used in conjunction with the `LIMIT` clause, results can be filtered down to the desired record count, which in this case will display the top 5 and bottom 5 customer payment counts.
 
@@ -401,7 +413,7 @@ Open pgAdmin and walk through the solution, highlighting the following:
 * The `CAST` function can be used to convert datetime column values to date datatypes. This effectively shortens the value to just the date portions (rather than date and timestamp), which allows for grouping by common date values.
 
   ```sql
-  SELECT CAST(payment_date AS DATE), COUNT(*)
+  SELECT CAST(payment_date AS DATE) as payment_date, COUNT(*)
   FROM payment
   GROUP BY CAST(payment_date AS DATE)
   ORDER BY COUNT(*) DESC;
@@ -414,6 +426,8 @@ Open pgAdmin and walk through the solution, highlighting the following:
 ---
 
 ### 10. Instructor Do: Introduction to Subqueries (10 min)
+
+**Corresponding Activity:** [06-Ins_Subqueries](Activities/06-Ins_Subqueries)
 
 In this activity, students will be introduced to the concept of subqueries to query the resulting dataset of another (nested) query.
 
@@ -518,6 +532,8 @@ Answer any questions before moving on.
 
 ### 11. Student Do: Subqueries (15 min)
 
+**Corresponding Activity:** [07-Stu_Subqueries](Activities/07-Stu_Subqueries)
+
 In this activity, students will practice creating subqueries.
 
 **Files:**
@@ -606,6 +622,8 @@ Review the solution in pgAdmin and explain the following:
 
 ### 13. Instructor Do: Create Views (10 min)
 
+**Corresponding Activity:** [08-Ins_Create_Views](Activities/08-Ins_Create_Views)
+
 In this activity, students will learn how to create and utilize views—virtual tables that can be created from a single table, multiple tables, or another view.
 
 **Files:**
@@ -686,6 +704,8 @@ For the remainder of the activity, have students create and drop their views.
 
 ### 14. Student Do: A View with a Roomful of Queries (15 min)
 
+**Corresponding Activity:** [09-Stu_View_Room_Queries](Activities/09-Stu_View_Room_Queries)
+
 In this activity, students will pair up and practice their join and subquery skills, as well as build out a view.
 
 **Files**:
@@ -763,6 +783,8 @@ Ask if there are any questions before moving on.
 
 ### 16. Instructor Do: Revisit Subqueries (10 min)
 
+**Corresponding Activity:** [10-Ins_Revist_Subquery](Activities/10-Ins_Revist_Subquery)
+
 In this activity, students will gain further experience with more advanced subqueries.
 
 **Files**:
@@ -779,7 +801,7 @@ Discuss the following points with students:
 
 * Up to this point, the subqueries we've seen have been relatively straightforward. In this activity, we will look at more complicated examples, but don't worry. We can perform complexly nested subqueries using the same principles that we've learned so far.
 
-* Begin with a question: How many people have rented the film *Blanket Beverly*? To answer this question systematically, we must first identify the tables needed for our query.
+* Begin with a question: How many people have rented the film *Agent Truman*? To answer this question systematically, we must first identify the tables needed for our query.
 
 * To help with this process, an **entity relationship diagram (ERD)** is used.
 
@@ -807,7 +829,7 @@ Begin a class discussion to determine how to formulate the rest of the subquery 
 
 * Connect the `film` table using the key `film_id`, which it has in common with the `inventory` table.
 
-* In the last subquery, query the film title, *Blanket Beverly*.
+* In the last subquery, query the film title, *Agent Truman*.
 
 The sample query would be as follows:
 
@@ -830,7 +852,7 @@ The sample query would be as follows:
           (
             SELECT film_id
             FROM film
-            WHERE title = 'BLANKET BEVERLY'
+            WHERE title = 'AGENT TRUMAN'
           )
         )
       )
@@ -846,6 +868,8 @@ Explain that there are often multiple ways to find this result through different
 Answer any questions before moving on.
 
 ### 17. Student Do: Mine the Subquery (10 min)
+
+**Corresponding Activity:** [11-Stu_Mine_the_Subquery](Activities/11-Stu_Mine_the_Subquery)
 
 In this activity, students will continue to practice subqueries. Students can either work individually or in pairs.
 

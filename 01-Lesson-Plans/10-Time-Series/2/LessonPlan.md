@@ -36,7 +36,7 @@ By the end of this class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1eEcHtHkmehOP0NEe6qnaqUZ_VOgpcmyH4KvvVMiX3OQ/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [10.2 Lesson Slides](https://docs.google.com/presentation/d/1LbFGZ_uiZZ5DgMdTJvNEoGOEM8uxkpT2u45jfzUSUQc/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -67,6 +67,8 @@ Describe to students what they will be learning today:
 - - -
 
 ### 2. Instructor Do: Stationarity and Non-Stationarity (10 min)
+
+**Corresponding Activity:** [01-Ins_Stationarity](Activities/01-Ins_Stationarity)
 
 In this activity, you will define stationarity, a key concept in time series modeling.
 
@@ -145,6 +147,8 @@ Open the notebook and show the code to convert from a non-stationary dataset to 
 - - -
 
 ### 3. Students Do: Stationarity (15 min)
+
+**Corresponding Activity:** [02-Stu_Stationarity](Activities/02-Stu_Stationarity)
 
 In this activity, students will perform techniques to make stationary a non-stationary time series.
 
@@ -292,9 +296,9 @@ Next, explain the features of an MA model:
 
   ![Images/arma03.gif](Images/arma03.gif)
 
-  * Here, the `m` is the mean of the time series.
+  * Here, `epsilon` at `t-1` is the noise, or error, at time `t-1`, or in other words, at a specified lag before the current value.
 
-  * `epsilon` at `t-1` is the noise, or error, at time `t-1`, or in other words, at a specified lag before the current value.
+  * The `m` is the impact, or coefficient, from that previous error of the time series.
 
   * `epsilon` at `t` is the noise, or error, at time `t`.
 
@@ -331,6 +335,8 @@ Reiterate that, despite the possibly intimidating mathematical formula, the idea
 - - -
 
 ### 6. Instructor Do: ARMA in Practice (10 min)
+
+**Corresponding Activity:** [03-Ins_ARMA](Activities/03-Ins_ARMA)
 
 **File:**
 
@@ -431,6 +437,8 @@ Finally, highlight a few important features of the model's summary:
 
 ### 7. Students Do: Yields (15 min)
 
+**Corresponding Activity:** [04-Stu_Yields](Activities/04-Stu_Yields)
+
 In this activity, students will create an ARMA model on yield data.
 
 **Files:**
@@ -514,6 +522,8 @@ Explain that the model can be used to make predictions:
 - - -
 
 ### 10. Instructor Do: ARIMA (15 mins)
+
+**Corresponding Activity:** [05-Ins_ARIMA](Activities/05-Ins_ARIMA)
 
 In this activity, in addition to describing the ARIMA model, you will elucidate the use of ACF and PACF plots, as well as AIC and BIC, in identifying the order of an ARIMA model.
 
@@ -622,6 +632,8 @@ Send the following link to students for more information on the order of an ARIM
 
 ### 11. Students Do: An ARIMA and a Leg (15 min)
 
+**Corresponding Activity:** [06-Stu_ARIMA_Leg](Activities/06-Stu_ARIMA_Leg)
+
 **Files:**
 
   * [README.md](Activities/06-Stu_ARIMA_Leg/README.md)
@@ -663,6 +675,8 @@ Answer any remaining questions before moving on.
 - - -
 
 ### 13. Instructor Do: GARCH (15 min)
+
+**Corresponding Activity:** [07-Ins_GARCH](Activities/07-Ins_GARCH)
 
 **File:**
 
@@ -796,6 +810,8 @@ Show the plot of the volatility forecast:
 - - -
 
 ### 14. Students Do: Euro-USD Volatility (10 min)
+
+**Corresponding Activity:** [08-Stu_USD](Activities/08-Stu_USD)
 
 **Files:**
 

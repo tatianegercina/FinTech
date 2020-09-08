@@ -46,6 +46,8 @@ By the end of this class, students will be able to:
 
 * Remember that the purpose of this class is not just to teach students how to make interactive plots. Rather, the focus is to teach students how to tell stories through interactive plots, stories that users can deep dive into using the interactive widgets provided by PyViz's technologies.
 
+* If students have issues with plots rendering blank in the Jupyter Lab preview, have them refer to the [troubleshooting section](../Supplemental/PyVizInstallationGuide.md#troubleshooting) of the PyViz Installation Guide.
+
 * Please refer to our [Student FAQ](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
 
 * Have your TAs keep track of the time with the [Time Tracker](TimeTracker.xlsx).
@@ -214,6 +216,8 @@ Ask if there are any questions. Then, continue to the next activity.
 
 ### 5. Instructor Do: HvPlot Demo (10 min)
 
+**Corresponding Activity:** [01-Ins_hvPlot_Demo](Activities/01-Ins_hvPlot_Demo)
+
 **Files:**
 
 * [hvPlot.ipynb](Activities/01-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb)
@@ -292,6 +296,8 @@ Ask students if they have any questions before moving onto the next activity.
 
 ### 6. Students Do: Plotting a Visual Takeover (15 min)
 
+**Corresponding Activity:** [02-Stu_Plotting_Visual_Takeover](Activities/02-Stu_Plotting_Visual_Takeover)
+
 In this activity, students revisit plots they made earlier in the class using Matplotlib, and they recreate them as hvPlots. This bridge assignment aims to demonstrate the similarities between the hvPlot plot API and Matplotlib's API.
 
 **Instructions**
@@ -350,6 +356,8 @@ Ask for any remaining questions before moving on.
 ---
 
 ### 9. Instructor Do: HvPlot Widgets (10 min)
+
+**Corresponding Activity:** [03-Ins_hvPlot_Widgets](Activities/03-Ins_hvPlot_Widgets)
 
 By the end of this activity, students and the instructor will have deep-dived into the different interactions possible with hvPlots. While students may have used some of the widgets already, this activity will serve as a formal review of each button and interaction.
 
@@ -417,6 +425,8 @@ Ask if there are any questions, and then continue to the student activity.
 
 ### 10. Students Do: HvPlot Widgets (15 min)
 
+**Corresponding Activity:** [04-Stu_hvPlot_Widgets](Activities/04-Stu_hvPlot_Widgets)
+
 In this activity, students will play around with the hvPlot widgets to get more accustomed to the different types of interactions supported with hvPlots. Students will use hvPlot visualizations to explore hospital claims data and answer a few basic questions about the data.
 
 **Instructions:**
@@ -460,6 +470,8 @@ Ask for any remaining questions before moving on.
 ---
 
 ### 12. Instructor Do: Composing Plots (10 min)
+
+**Corresponding Activity:** [05-Ins_Composing_Plots](Activities/05-Ins_Composing_Plots)
 
 By the end of this activity, students will have received a dry walkthrough demo on how to combine two plot objects to create a plot with subplots. This activity will teach students how to create plot layouts and overlay visualizations to create a centralized location for comparative data analysis.
 
@@ -508,6 +520,8 @@ Ask and answer any students' questions. Then, move onto the next activity.
 ---
 
 ### 13. Students Do: Composing Masterpieces (10 min)
+
+**Corresponding Activity:** [06-Stu_Composing_Masterpieces](Activities/06-Stu_Composing_Masterpieces)
 
 Students will complete an activity where they use the information learned in the instructor demo to customize their hvPlots. Students will use a range of options to customize the color, labels, and axis alignments.
 
@@ -593,6 +607,8 @@ Ask for any remaining questions before moving on.
 
 ### 15. Instructor Do: Visualization Options (10 min) (Critical)
 
+**Corresponding Activity:** [07-Ins_Viz_Options](Activities/07-Ins_Viz_Options)
+
 The goal of this activity is to provide students with a dry walkthrough demonstration of how to use hvPlot plot attributes and options to customize the look and feel of visualizations. This activity will enable students to perfect their visualizations by fine-tuning details such as axis labels and to create attractive color themes and effects.
 
 Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/real-estate-sale-history-06c8f).
@@ -676,6 +692,8 @@ Ask if there are any more questions. Then, continue to the student challenge act
 ---
 
 ### 16. Students Do: Picture Perfect (15 min)
+
+**Corresponding Activity:** [08-Stu_Picture_Perfect](Activities/08-Stu_Picture_Perfect)
 
 By the end of this activity, students will have employed hvPlot customization attributes and options to perfect and add finishing touches to their visualizations.
 

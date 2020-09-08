@@ -112,6 +112,8 @@ Continue through the slides, introducing the concept of "Web 3.0" and the Python
 
 ### 3. Students Do: Activate Ethereum Network (10 min)
 
+**Corresponding Activity:** [01-Stu_Activate_Network](Activities/01-Stu_Activate_Network)
+
 Students will now activate their local custom chains; they build the last unit.
 
 Provide a checklist for the students with the commands necessary to start the chain, as well as a backup chain for students to use if something went wrong with theirs.
@@ -206,6 +208,8 @@ Ask the students:
   **Answer**: By importing the private key!
 
 ### 5. Everyone Do: Importing Private Keys into Web3.py (15 min)
+
+**Corresponding Activity:** [02-Ins_Importing_Private_Keys](Activities/02-Ins_Importing_Private_Keys)
 
 Explain that it's now time to import the private key of this address into Web3.py.
 
@@ -400,6 +404,8 @@ Have the students copy the address given and keep MyCrypto open just in case.
 * Get excited, because we're about to send a transaction to this address in pure Python!
 
 ### 11. Everyone Do: Sending Transactions with Python (15 min)
+
+**Corresponding Activity:** [03-Ins_Sending_Txns](Activities/03-Ins_Sending_Txns)
 
 Now we will start the process of importing keys and sending transactions with Python.
 
@@ -635,6 +641,8 @@ Ask the students a few questions:
 
 ### 13. Everyone Do: Importing Keystore Accounts (15 min)
 
+**Corresponding Activity:** [04-Ins_Importing_Keystore](Activities/04-Ins_Importing_Keystore)
+
 Now, let's say we wanted to send a transaction from the account stored in a Keystore.
 
 We'll need to import the key in a different way.
@@ -769,6 +777,8 @@ Ask the students a few questions comparing the two methods we just used to impor
 
 ### 14. Students Do: Sending Transactions from Keystore Account (10 min)
 
+**Corresponding Activity:** [05-Stu_Sending_Txns_Back](Activities/05-Stu_Sending_Txns_Back)
+
 Now, challenge the students to use this program that they've written to send a transaction from `account_two` back to `account_one`.
 
 **Files:**
@@ -802,6 +812,8 @@ Ask the students the following questions:
 
 ### 16. Instructor Do: Recap / Prepare for next class (10 min)
 
+**Corresponding Activity:** [06-Ins_Recap](Activities/06-Ins_Recap)
+
 Congratulate the students on learning how to program money with Python.
 
 Ask the students:
@@ -828,4 +840,4 @@ Before the next class, request some test bitcoins of your own to prepare to send
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

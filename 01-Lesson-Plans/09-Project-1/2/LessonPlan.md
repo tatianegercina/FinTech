@@ -12,7 +12,7 @@ In today's class, students will have time to outline their presentations and com
 
 This is the last day of class that students have to work on their projects. That's why they need to spend time thinking about how they'll present their project on Saturday.
 
-Once again, your students' success after the boot camp depends on the quality of their projects. Their presentations compose much of this quality—students need to think about how to communicate the development process of their apps if they hope to impress interviewers with their experience.
+Once again, your students' success after the boot camp depends on the quality of their projects. Their presentations compose much of this quality—students need to think about how to communicate the development process of their dashboards if they hope to impress interviewers with their experience.
 
 The remaining schedule for Project 1 is as follows:
 
@@ -55,10 +55,10 @@ Make sure they don't code. They should consider:
 Offer these tidbits of advice:
 
 * The presentation of any project to an audience must flow like a story. Your narrative should open on a conflict, hint at a potential resolution for that problem, depict the steps taken to resolve the issue, and finally end on the resolution of the conflict with an eye toward the future. In other words:
-  1. What problem does your app focus on?
-  2. How does your app solve this problem at a high-level?
-  3. What steps did you take to build the app?
-  4. Show the app running and solving the problem that began your story. Also talk about what features you'd like to add in an update to your app.
+  1. What problem does your dashboard focus on?
+  2. How does your dashboard solve this problem at a high-level?
+  3. What steps did you take to build the dashboard?
+  4. Show the dashboard running and solving the problem that began your story. Also talk about what features you'd like to add in an update to your dashbard.
 
 While the groups organize their presentations, offer to answer any questions about Saturday.
 
@@ -68,13 +68,13 @@ Don't accuse them of not following directions; just steer them on course.
 
 ### 3. Student Do: Project Work (60 min)
 
-Tell your students that they may work on coding their app again or spend more time on their presentations—whichever they'd prefer.
+Tell your students that they may work on coding their dashboard again or spend more time on their presentations—whichever they'd prefer.
 
-TAs and instructors: For the next 45 minutes, you'll once again be senior developers. Visit each group and answer any questions they may have about coding their apps or presenting on Saturday.
+TAs and instructors: For the next 45 minutes, you'll once again be senior developers. Visit each group and answer any questions they may have about coding their dashboards or presenting on Saturday.
 
 Some students may feel nervous with their deadline approaching. Reassure them that they have solid project ideas and that they'll be fine on Saturday as long as they prepare for their presentation.
 
-A few groups might not seem poised to finish their apps on time. Tell them to drop any undeveloped and unnecessary features. Even if they can't meet their proposed goal, they should still present a functional app on Saturday. Add that they can talk about the dropped features as planned updates.
+A few groups might not seem poised to finish their dashboards on time. Tell them to drop any undeveloped and unnecessary features. Even if they can't meet their proposed goal, they should still present a functional dashboard on Saturday. Add that they can talk about the dropped features as planned updates.
 
 ---
 

@@ -22,7 +22,7 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [Streamz Installation Guide](../../15-Algorithmic-Trading/Supplemental/Asyncio_Streamz_Install_Guide.md) and the [CCXT Installation Guide](../../15-Algorithmic-Trading/Supplemental/CCXT_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+* Slack out the [Asyncio Installation Guide](../../15-Algorithmic-Trading/Supplemental/Asyncio_Streamz_Install_Guide.md) and the [CCXT Installation Guide](../../15-Algorithmic-Trading/Supplemental/CCXT_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
 * Today's class is brief but may be challenging for students. Take extra time during the activities today to ensure that students can follow along.
 
@@ -111,6 +111,8 @@ Explain to students that they will learn how to perform this analysis using pyth
 ---
 
 ### 3. Everyone Do: Measuring Performance with the ROC Curve and AUC (15 min)
+
+**Corresponding Activity:** [01-Evr_ROC_AUC](Activities/01-Evr_ROC_AUC)
 
 This is an everyone do activity, where students will learn how to create the ROC Curve and compute the AUC using Python.
 
@@ -447,6 +449,8 @@ Answer any questions before moving on.
 
 ### 5. Instructor Do: RNNs for NLP - Sentiment Analysis (15 min)
 
+**Corresponding Activity:** [02-Ins_Sentiment_Analysis](Activities/02-Ins_Sentiment_Analysis)
+
 In this activity, students will learn how to define an LSTM RNN model for sentiment analysis using Keras. Also, data preparation for using LSTM models for natural language processing is introduced.
 
 **Files:**
@@ -638,6 +642,8 @@ Answer any questions before moving on.
 ---
 
 ### 6. Students Do: Sentiment Analysis - RNNs Vs. Vader (40 min)
+
+**Corresponding Activity:** [03-Stu_RNN_Vader](Activities/03-Stu_RNN_Vader)
 
 In this activity, students will use two different models to score sentiment. The goal is to put the performance metrics and techniques students have learned into action to decide which model performs better between VADER and RNN LSTM.
 
@@ -1020,6 +1026,8 @@ Answer any questions before moving on.
 
 ### 9. Instructor Do: RNN LSTM and Time Series (15 min)
 
+**Corresponding Activity:** [04-Ins_LSTM_Time_Series](Activities/04-Ins_LSTM_Time_Series)
+
 In this activity, students will learn how to build RNN LSTM models for time series forecasting using Keras.
 
 **Files:**
@@ -1077,7 +1085,7 @@ def window_data(df, window, feature_col_number, target_col_number):
     """
     X = []
     y = []
-    for i in range(len(df) - window - 1):
+    for i in range(len(df) - window):
         features = df.iloc[i : (i + window), feature_col_number]
         target = df.iloc[(i + window), target_col_number]
         X.append(features)
@@ -1112,9 +1120,9 @@ Explain to students, that we will predict closing prices using a `5` days window
 ```python
 # Use 70% of the data for training and the remainder for testing
 split = int(0.7 * len(X))
-X_train = X[: split - 1]
+X_train = X[: split]
 X_test = X[split:]
-y_train = y[: split - 1]
+y_train = y[: split]
 y_test = y[split:]
 ```
 
@@ -1273,6 +1281,8 @@ Answer any questions before moving on.
 
 ### 10. Students Do: Predicting Gold Closing Prices (30 min)
 
+**Corresponding Activity:** [05-Stu_Predict_Gold_Prices](Activities/05-Stu_Predict_Gold_Prices)
+
 This activity is a mini-project where students will gain hands-on experience building an RNN LSTM model for time-series data predicting gold closing prices.
 
 **Instructions:**
@@ -1386,10 +1396,10 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
   # Manually splitting the data
   split = int(0.7 * len(X))
 
-  X_train = X[: split - 1]
+  X_train = X[: split]
   X_test = X[split:]
 
-  y_train = y[: split - 1]
+  y_train = y[: split]
   y_test = y[split:]
   ```
 
@@ -1495,9 +1505,10 @@ predicted = model.predict(X_test)
   ```python
   # Create a DataFrame of Real and Predicted values
   stocks = pd.DataFrame({
-      "Actual": real_prices.ravel(),
-      "Predicted": predicted_prices.ravel()
-  })
+    "Actual": real_prices.ravel(),
+    "Predicted": predicted_prices.ravel()
+  }, index = gold_df.index[-len(real_prices): ]) 
+
   ```
 
 * Once we create the DataFrame, we can use the `plot()` method of the DataFrame to create the line chart.

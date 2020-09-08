@@ -151,6 +151,8 @@ In this activity, you will implement a non-fungible car token containing an immu
 
 * Congratulations, at this point, you should now have a complete Cryptofax ERC721 non-fungible car token contract. Now deploy your contract in remix onto your local ganache blockchain.
 
+* After your cryptofax contract is deployed call the `registerVehicle` function to register a new vehicle.
+
 ## Challenge
 
 * If time remains, try to brainstorm and deploy the CryptoFax contract with some other custom attributes within the Car `struct`.

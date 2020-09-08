@@ -28,6 +28,9 @@ By the end of class, students will be able to:
 
 * There are a few activities that require setup. Have the class follow along and ask questions as you go.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [13.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=88dce2d4-e8b1-4a5d-a7fc-abd40178e01f) Note that this video may not reflect the most recent lesson plan.
+
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson 13.2 Slides](https://docs.google.com/presentation/d/1Y-DPsCtOWFLDa2yCpwK77kqOlvUfrv33NRUxt7on0ic/edit?usp=sharing).
@@ -141,6 +144,8 @@ Answer any questions before moving on.
 
 ### 3. Students Do: Creating an Admin user on IAM (10 min)
 
+**Corresponding Activity:** [01-Stu_IAM_User](Activities/01-Stu_IAM_User)
+
 In this activity, students will create an administrator user to manage their AWS account.
 
 **Instructions:**
@@ -160,6 +165,8 @@ Answer any questions before moving on.
 ---
 
 ### 5. Everyone Do: Create an Amazon SageMaker Notebook Instance (20 min)
+
+**Corresponding Activity:** [02-Evr_SageMaker](Activities/02-Evr_SageMaker)
 
 In this activity, students will learn how to create an instance of Amazon SageMaker, and how to use Jupyter notebooks on the AWS cloud.
 
@@ -253,7 +260,7 @@ Explain to students that, as long as the free tier is used, there are no charges
 
 Explain to students that it's possible to code a Jupyter notebook from scratch on this Amazon SageMaker's notebook instance, but also, you can open an existing Jupyter notebook. Slack out to students the `monte_carlo.ipynb` starter file, and continue the demo as follows.
 
-* This demo code runs a Monte Carlo simulation that uses the IEX API, so ask students to have their API key at hand.
+* This demo code runs a Monte Carlo simulation that uses the Alpaca API, so ask students to have their API keys at hand.
 
 * In your Amazon SageMaker notebook instance, in left icon menu, click on the _Upload_ icon (arrow up) and select the `monte_carlo.ipynb` notebook to upload.
 
@@ -272,6 +279,8 @@ End the demo and answer any questions before moving on.
 ---
 
 ### 6. Everyone Do: Create and Deploy a Machine Learning Model in Amazon SageMaker (30 min)
+
+**Corresponding Activity:** [03-Evr_SageMaker_Deployment](Activities/03-Evr_SageMaker_Deployment)
 
 In this activity, students will learn how to create, train, deploy, and evaluate a machine learning model in Amazon SageMaker.
 
@@ -557,6 +566,8 @@ Answer any questions before moving on.
 ---
 
 ### 9. Students Do: Credit Risk Evaluation with Amazon SageMaker (30 min)
+
+**Corresponding Activity:** [04-Stu_Credit_Risk_Classification](Activities/04-Stu_Credit_Risk_Classification)
 
 In this activity, students will train and deploy a binary classification model to predict the *credit risk* of a person using the [German Credit Risk dataset](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) and the SageMaker built-in `Linear Learner` algorithm.
 

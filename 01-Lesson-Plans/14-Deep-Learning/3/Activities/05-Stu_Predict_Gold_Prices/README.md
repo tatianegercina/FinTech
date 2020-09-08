@@ -47,7 +47,7 @@ def window_data(df, window, feature_col_number, target_col_number):
     """
     X = []
     y = []
-    for i in range(len(df) - window - 1):
+    for i in range(len(df) - window):
         features = df.iloc[i : (i + window), feature_col_number]
         target = df.iloc[(i + window), target_col_number]
         X.append(features)
@@ -127,11 +127,13 @@ Use the `evaluate()` method of the model using the testing data.
 
 #### Plotting Predicted Vs. Real Prices
 
-* Create a Pandas DataFrame with two columns as follows to plot the predicted vs. the actual gold prices.
+Create a Pandas DataFrame with an index and two columns as follows to plot the predicted vs. the actual gold prices.
 
-  * Column 1: Actual prices (testing data)
+* Index: The datetime index from the DataFrame created previously. 
 
-  * Column 2: Predicted prices
+* Column 1: Actual prices (testing data)
+
+* Column 2: Predicted prices
 
 * Your DataFrame should look like the sample below:
 

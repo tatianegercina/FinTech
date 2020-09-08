@@ -1,4 +1,4 @@
--- Find how many people rented BLANKET BEVERLY
+-- Find how many people rented AGENT TRUMAN
 SELECT COUNT(*)
 FROM customer
 WHERE customer_id IN
@@ -17,7 +17,7 @@ WHERE customer_id IN
         (
           SELECT film_id
           FROM film
-          WHERE title = 'BLANKET BEVERLY'
+          WHERE title = 'AGENT TRUMAN'
         )
       )
     )

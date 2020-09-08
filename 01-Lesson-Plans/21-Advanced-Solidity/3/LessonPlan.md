@@ -18,7 +18,7 @@ By the end of the class, students will be able to:
 
 * Design contracts to avoid common security pitfalls, such as a re-entrancy attack.
 
-* Perform a Mythril security scan on contracts to test for simple security vulnerabilities.
+* Analyze contracts to identify and fix simple security vulnerabilities.
 
 ---
 
@@ -39,7 +39,7 @@ By the end of the class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1q661f6W6QL-u-24G6W_Hu5GOBzJfoU1s3XxkS91o4YA/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [21.3 Lesson Slides](https://docs.google.com/presentation/d/1PkHrLIIWTutiyzWzGaS2m3XM9kHxEZmmtokB0tRp4HM/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -163,6 +163,8 @@ Explain to the class that tokenomics still play a huge rule in `crowdsales`. Inv
 
 ### 3. Students Do: Crowdsale Exploration and Discussion (10 min)
 
+**Corresponding Activity:** [01-Stu_Crowdsale_Exploration_and_Discussion](Activities/01-Stu_Crowdsale_Exploration_and_Discussion)
+
 Students will be provided a list of crowdsales from which they will explore and research some of the most popular crowdsales in history.
 
 **Instructions:**
@@ -202,6 +204,8 @@ Discuss the following review questions with the class.
   * **Answer** Increased control over a crowdfunding platform; you essentially become the crowdfunding platform.
 
 ### 5. Instructor Do: Preparing a token for a Crowdsale (10 min)
+
+**Corresponding Activity:** [02-Ins_Preparing_a_token_for_a_Crowdsale](Activities/02-Ins_Preparing_a_token_for_a_Crowdsale)
 
 In this activity, students will be introduced to the ERC20Mintable contract from OpenZeppelin, and how they can use it to prepare a token that can work in a crowdsale.
 
@@ -326,6 +330,8 @@ In the next activity, the students will now be implementing their own `ERC20Mint
 
 ### 6. Students Do: ERC20 Mintable Token Design (10 min)
 
+**Corresponding Activity:** [03-Stu_ERC20Mintable_Token_Design](Activities/03-Stu_ERC20Mintable_Token_Design)
+
 In this activity, students will build a mintable ERC20 token and prepare it for a crowdsale.
 
 **Instructions:**
@@ -369,6 +375,8 @@ Review the previous activity with the class by discussing the following recall q
   * **Answer** To add dependencies to a function.
 
 ### 8. Instructor Do: OpenZeppelin Crowdsales (15 min) (Critical)
+
+**Corresponding Activity:** [04-Ins_Crowdsales](Activities/04-Ins_Crowdsales)
 
 In this activity, you will demonstrate OpenZeppelin's Crowdsale contract library by creating an `ArcadeTokenSale` and an `ArcadeTokenSaleDeployer` contract that will mint tokens automatically when users send Ether to the `ArcadeTokenSale`.
 
@@ -555,6 +563,8 @@ Now it's time for the students to make their own `ArcadeTokenSale`!
 
 ### 9. Students Do: Building an ArcadeTokenSale with OpenZeppelin (20 min)
 
+**Corresponding Activity:** [05-Stu_ArcadeTokenSale](Activities/05-Stu_ArcadeTokenSale)
+
 In this activity, students will be creating and deploying an `ArcadeTokenSale` contract with an `ArcadeTokenSaleDeployer` contract.
 
 Send the instructions to the students and have TAs circulate the class.
@@ -631,13 +641,15 @@ Ask the following recall questions:
 
 Explain to the students that for the rest of the class, we will be examining the security of the crowdsale we just built, and learning about the common vulnerabilities that smart contract developers should avoid.
 
-### 13. Instructor Do: Solidity Security / MythX Intro (15 min) (Critical)
+### 13. Instructor Do: Solidity Security (15 min) (Critical)
 
-In this activity, you will demonstrate the MythX security tool and how it can identify some common security vulnerabilities in Solidity contracts.
+**Corresponding Activity:** [06-Ins_Security](Activities/06-Ins_Security)
+
+In this activity, you will demonstrate how to analyze, identify and fix common security vulnerabilities in Solidity contracts. Download the example contract, open the [Remix IDE](https://remix.ethereum.org), and explain the following.
 
 **Files:**
 
-* [ArcadeTokenVulnerable.sol](Activities/06-Ins_Security/Solved/ArcadeTokenVulnerable.sol)
+* [ArtTokenVulnerable.sol](Activities/06-Ins_Security/Unsolved/ArtTokenVulnerable.sol)
 
 Security is a fundamental topic regarding anything to do with technology, especially software that works directly with monetary value. Stress the importance of security:
 
@@ -653,31 +665,19 @@ Briefly discuss the Ethereum DAO hack:
 
 * A notable instance of this is the DAO hack. This was an organization built entirely from smart contracts that was exploited due to a low-level technical attack called a "re-entrancy" attack that allowed a hacker to drain the contract's funds, which we will learn more about soon. Since this attack, measures have been made to help prevent such attacks, and more security improvements are being made every day.
 
-* Thus, it is important to learn how to spot these vulnerabilities. One way we can do that is to leverage security tools that analyze our code and test it for these low-level vulnerabilities.
+* Thus, it is important to learn how to spot these vulnerabilities.
 
-Present the MythX/Mythril tool to the class by opening the [MythX](https://mythx.io/) website.
+In remix create a new file called `ArtTokenVulnerable.sol` and populate it with the [file linked above](Activities/06-Ins_Security/Unsolved/ArtTokenVulnerable.sol).
 
-* MythX is a service that is based on an open-source command-line tool, [Mythril](https://github.com/ConsenSys/mythril), that allows Solidity developers to scan for common low-level vulnerabilities in their contracts. The tool has integrations with many IDEs, including Remix itself!
+* Now, it's time to look at an example of what a vulnerable contract could look like.
 
-* This tool will help identify the low hanging fruit that you can take care of easily during development. **However**, no automated security tool will uncover **all** vulnerabilities. For instance, it can't uncover logical bugs, like if you are missing some `require`s or have a function that doesn't quite check all of the required access control permissions needed for the contract to work as expected. Essentially, it can detect the little things here and there that could potentially lead to big exploits, but it cannot tell if your contract fulfills its design requirements.
+* This contract is similar to one we wrote back when we first learned how tokens worked.
 
-Open up [Remix](https://remix.ethereum.org) and enable the MythX plugin:
+* Remember how in the past we had an integer underflow/overflow vulnerability that allowed us to hack our token balances is that present in this contract as well?
 
-![MythX Remix Plugin](Images/mythx-remix.gif)
+  * The answer is yes, because we're not using SafeMath.
 
-* This plugin will run in trial mode, but you can create an account at the MythX website and configure the plugin credentials.
-
-* Registration is easy (and free), it's simply providing an email and signing a message with MetaMask, but this is optional.
-
-* We can use this tool for unlimited scans. We would only need to pay for this tool for increased analysis that uses other tools behind the scenes, besides the open-source Mythril tool.
-
-Now, time to use an old contract as an example of what a vulnerable contract could look like. Create a new file called `ArcadeTokenVulnerable.sol` and populate it with the [file linked above](Activities/06-Ins_Security/Solved/ArcadeTokenVulnerable.sol).
-
-* Remember this contract we wrote back when we first learned how tokens worked?
-
-* Remember how we had an integer underflow/overflow vulnerability that allowed us to hack our token balances?
-
-For example:
+In remix highlight the `transfer` function.
 
 ```solidity
 function transfer(address recipient, uint value) public {
@@ -686,80 +686,143 @@ function transfer(address recipient, uint value) public {
 }
 ```
 
-* This function would allow us to send tokens without having balance and would cause the hacker's balance to increase to the maximum value that `uint` allowed.
+* This function would allow us to send tokens without having a balance and would cause the hacker's balance to increase to the maximum value that `uint` allowed.
 
-* Let's see what MythX has to say about this contract!
+At the top of the contract add the`SafeMath` import and use the safemath `uint` alias.
 
-Open up the MythX tab in Remix, ensuring that your contract has compiled, and click the `Analyze` button:
+```solidity
+import "github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol";
 
-![MythX Analyze](Images/mythx-analyze.png)
+contract ArtTokenVulnerable {
+    using SafeMath for uint;
+```
 
-This process can take up to 2 minutes, while you are waiting, ask the students:
+Then redfine the inside of your `transfer` function to use the `add` and `sub` methods.
+
+```solidity
+function transfer(address recipient, uint value) public {
+    balances[msg.sender] = balances[msg.sender].sub(value);
+    balances[recipient] = balances[recipient].add(value);
+}
+```
+
+* We can switch our `transfer` function to use the `add` and `sub` SafeMath methods to prevent integer overflow attacks.
+
+* Let's see what else we can find in this contract!
+
+Next highlight the `withdrawBalance()` function.
+
+```solidity
+function withdrawBalance() public{
+    if( ! (msg.sender.call.value(userBalance[msg.sender])() ) ){
+        revert();
+    }
+    userBalance[msg.sender] = 0;
+}
+```
+
+* This function sends the amount of `userBalance[msg.sender]`s ether to `msg.sender`.
+
+* With the current structure of this function if `msg.sender` is a contract, it will call its fallback function.
+
+* Because of how state is poorly tracked in this function it allows users to syphon off funds and revert the state to say that the user still has a balance
+
+* This is a prime example of a re-entrancy attack. Luckily theirs a simple fix for this.
+
+Inside the `widthdrawBalance` function define a new `uint` named `amount` and use it to save the current `msg.sender`'s `userBalance`. Then set the `userBalance` to 0.
+
+```solidity
+function withdrawBalance(){
+    uint amount = userBalance[msg.sender];
+    userBalance[msg.sender] = 0;
+    if( ! (msg.sender.call.value(amount)() ) ){
+            revert();
+    }
+}
+```
+
+* To protect against re-entrancy the state variable has to be change before the call.
+
+* We are going to define a new `uint` named `amount` and use it to save the current `msg.sender`'s `userBalance`.
+
+* Then we are going to set the `userBalance` to 0.
+
+ Now highlight the `mint` function and pose the following question to the class.
+
+```solidity
+function mint(address recipient, uint value) public {
+    balances[recipient] += value;
+}
+```
+
+* Do you see anything wrong with the the current state of the mint function?
+
+* **Answer**: Currently our mint function does not check to see if you are the owner of the contract. This allows anyone to mint new tokens and increase their balance.
+
+* This final vulnerability that we're going to fix isn't complicated but one that is extremely important to fix.
+
+* We can fix this easily by adding a simple `require` statement.
+
+Modify the mint function to add the following require statement that checks if the current `msg.sender` is the owner of the contract.
+
+```solidity
+function mint(address recipient, uint value) public {
+    require(msg.sender == owner, "You do not have permission to mint tokens!");
+    balances[recipient] += value;
+}
+```
+
+* And just like that we've fixed a major vulnerability in our code.
+
+* We should now have a much more secure contract!
+
+End the activity with a few brief review questions.
 
 * What is the solution we used to fix our underflow/overflow issues?
 
-  **Answer:** OpenZeppelin's SafeMath library!
+  * **Answer:** OpenZeppelin's SafeMath library!
 
 * Who is ultimately responsible for the cybersecurity of an organization?
 
-  **Answer:** Everyone is responsible for carrying the burden of security!
+  * **Answer:** Everyone is responsible for carrying the burden of security!
 
-* Why do we use tools like this? Why not just offload this stuff to the security team?
+* Why not just offload this stuff to the security team?
 
-  **Answer:** The security team is already going to be overwhelmed with many other things to patch and is fighting a constant upward-hill battle.
+  * **Answer:** The security team is already going to be overwhelmed with many other things to patch and is fighting a constant upward-hill battle.
 
-  **Answer:** Every little bit of effort towards security helps.
+  * **Answer:** Every little bit of effort towards security helps.
 
-  **Answer:** We can't be lazy when developing and leave security as an afterthought.
+  * **Answer:** We can't be lazy when developing and leave security as an afterthought.
 
-  **Answer:** Because that's how the technology industry became so vulnerable in the first place!
+  * **Answer:** Because that's how the technology industry became so vulnerable in the first place!
 
-When the analysis finishes, point out the different vulnerabilities that MythX
-identified by clicking on the red and yellow boxes in the sidebar:
+Now it's time for the students to analyze some contracts of their own. Let them know that this is an important step to not only becoming a knowledgeable smart contract engineer but in general a more security minded programmer.
 
-![MythX Analysis](Images/mythx-done.png)
+### 14. Students Do: Bug Hunt - Identifying Common Vulnerabilities (15 min)
 
-* Notice that we have nice and pretty highlighting of our errors!
+**Corresponding Activity:** [07-Stu_Identifying_Common_Vulnerabilities](Activities/07-Stu_Identifying_Common_Vulnerabilities)
 
-* The errors in `red` are critical errors that we **must** fix that MythX has identified.
-
-* As you can see, the tool uncovered the very same issues that we fixed with SafeMath!
-
-* The issues highlighted in `yellow` are warnings. While they are not critical vulnerabilities that MythX knows can be directly exploited, they are flags to look out for. While a hacker might be able to hack your contract using one or two red/critical vulnerabilities as expected, they may also be able to combine several yellow/warning level vulnerabilities to craft an exploit that leverages multiple "less serious" vulnerabilities.
-
-* It is best to get our contracts as close to fully-passing as possible. However, there are some instances where we simply can't, and there are instances where you might be adding safeguards where the tool cannot recognize, and generate a warning anyway. These tools are not perfect, but they can help a long way.
-
-Now it's time for the students to analyze some contracts of their own, starting with the crowdsale they just built!
-
-### 14. Students Do: Scanning Contracts with MythX (15 min)
-
-In this activity, students will spend the time scanning the contracts they have built so far in class, starting with the `ArcadeTokenSale` they just built.
+In this activity, students will spend the time looking through a vulnerable smart contract to identify various vulnerabilities.
 
 Send out the instructions and have TAs circulate the class.
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Scanning_with_MythX/README.md)
+* [README.md](Activities/07-Stu_Identifying_Common_Vulnerabilities/README.md)
 
 **Files:**
 
-* [ArcadeTokenVulnerable.sol](Activities/07-Stu_Scanning_with_MythX/Solved/ArcadeTokenVulnerable.sol)
+* [ArcadeTokenVulnerable.sol](Activities/07-Stu_Identifying_Common_Vulnerabilities/Solved/ArcadeTokenVulnerable.sol)
 
-Ensure that students are scanning their contracts with MythX properly.
+Ensure that students are identifying the three mentioned vulnerabilities and are taking the proper steps to address each one.
 
-If the students are having difficulties, try the following:
-
-* Remove and re-add the MythX plugin in Remix. Hard refresh or clear cookies to reset any cobbled state.
-
-* If the trial does not work properly, register an account at [MythX.io](https://mythx.io) while MetaMask is pointing to the mainnet, then save the credentials in the MythX plugin while in mainnet. Then, MetaMask can be switched back over. This process should take about 2-3 minutes.
-
-### 15. Instructor Do: Review MythX (5 min)
+### 15. Instructor Do: Review Smart Contract Security (5 min)
 
 Now that students have scanned their contracts, ask them the following questions:
 
-* What was the most common vulnerability that kept popping up?
+* Who is ultimately responsible for the cyber-security of an organization?
 
-  **Answer:** Floating pragma version, state variable visibility not being set, etc.
+  **Answer:** Everyone is responsible for carrying the burden of security!
 
 * After fixing our vulnerabilities, are our contracts "hack-proof?"
 
@@ -767,9 +830,17 @@ Now that students have scanned their contracts, ask them the following questions
 
   **Answer:** There may be a bug in our logic that the tool cannot pick up, so we should still have a 3rd party security team test and audit these contracts before deploying to production/mainnet.
 
-Now that students have scanned and fixed their contracts, it's time for them to dive a bit deeper into some common vulnerabilities.
+Now that students have analyzed and fixed their contracts, it's time for them to dive a bit deeper into some common vulnerabilities. Present the MythX/Mythril tool to the class by opening the [MythX](https://mythx.io/) website.
+
+* MythX is a service that is based on an open-source command-line tool, [Mythril](https://github.com/ConsenSys/mythril), that allows Solidity developers to scan for common low-level vulnerabilities in their contracts. The tool has integrations with many IDEs, including Remix itself!
+
+* This tool will help identify the low hanging fruit that you can take care of easily during development. **However**, no automated security tool will uncover **all** vulnerabilities. For instance, it can't uncover logical bugs, like if you are missing some `require`s or have a function that doesn't quite check all of the required access control permissions needed for the contract to work as expected. Essentially, it can detect the little things here and there that could potentially lead to big exploits, but it cannot tell if your contract fulfills its design requirements.
+
+In the next activity students will take a look at some of the registries containing common smart contract vulnerabilities where tools like MythX pull their data from.
 
 ### 16. Students Do: Exploring Common Smart Contract Vulnerabilities (SWCs) (10 min)
+
+**Corresponding Activity:** [08-Stu_SWC_Exploration](Activities/08-Stu_SWC_Exploration)
 
 In this activity, students will use the remaining time to explore the most common smart contract vulnerabilities by checking out the [SWC Registry](https://swcregistry.io/) and the [SWC Coverage](https://mythx.io/swc-coverage/) that MythX supports.
 
@@ -788,12 +859,6 @@ If students get too confused, have them move onto other vulnerabilities and have
 Ask the students the following questions:
 
 * What was the most interesting vulnerability you found?
-
-* Why might some vulnerabilities be supported by the free version of MythX and some require Pro?
-
-  **Answer:** Some analysis takes more computation and time, which costs MythX more.
-
-  **Answer:** Other tools may be used besides the open-source tools that MythX makes available.
 
 * Why is it useful to be able to explore a registry of vulnerabilities like the SWC?
 
@@ -823,4 +888,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

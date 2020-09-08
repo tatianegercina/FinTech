@@ -1,3 +1,6 @@
+# Package-lock
+package-lock.json
+
 # Custom temp file
 deleteme
 
@@ -140,3 +143,6 @@ node_modules/
 
 # .Rhistory files
 .Rhistory
+
+# vscode files
+.vscode

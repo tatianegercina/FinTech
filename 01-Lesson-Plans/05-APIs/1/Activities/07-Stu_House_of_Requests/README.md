@@ -1,16 +1,16 @@
 # House of Requests
 
-You've been challenge to a game of BlackJack, but you don't have any playing cards on-hand. Instead of spending money to buy a set, find a way to programmatically play the game. Use the `Deck of Cards API`, an API that simulates card games through API calls, to play against a classmate or an imaginary dealer. The player with the number of points closest to 21 is the winner!
+You've been challenged to a game of BlackJack, but you don't have any playing cards on-hand. Instead of spending money to buy a set, find a way to programmatically play the game. Use the `Deck of Cards API`, an API that simulates card games through API calls, to play against a classmate or an imaginary dealer. The player with the number of points closest to 21 is the winner!
 
 While you won't actually win any real prizes in this game, you will get the opportunity to crush opponents in Python BlackJack and gain the respect of your peers.
 
 API URLs (store these as variables)
 
-* Create a deck and shuffle -> `https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6`
+* Create a deck and shuffle -> `f"https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6" `
 
-* Draw cards -> `https://deckofcardsapi.com/api/deck/<<deck_id>>/draw/?count=2`
+* Draw cards -> `f"https://deckofcardsapi.com/api/deck/{deck_id}/draw/?count=2"`
 
-* Shuffle pre-existing deck -> `https://deckofcardsapi.com/api/deck/<<deck_id>>/shuffle/`
+* Shuffle pre-existing deck -> `f"https://deckofcardsapi.com/api/deck/{deck_id}/shuffle/"`
 
 Rules of the Game
 
@@ -28,7 +28,7 @@ Rules of the Game
 
 Prep for the Game
 
-1. Submit `parameterized` `GET` request to create and shuffle a deck of cards.
+1. Submit a `parameterized` `GET` request to create and shuffle a deck of cards.
 
 2. Extract the value of `deck ID` from the JSON output, and store it as a variable. This value will be interpolated into the `Draw Cards` and `Shuffling Deck` `request urls`.
 

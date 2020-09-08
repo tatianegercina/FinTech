@@ -45,19 +45,21 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Random Forest Trading (15 min)
 
+**Corresponding Activity:** [01-Ins_Trading_Signal_Features](Activities/01-Ins_Trading_Signal_Features)
+
 In this activity, students will learn how to generate a set of trading signals derived from raw BTC/USD data that will be used as features to train a Random Forest machine learning model that will autonomously make predictions and corresponding trades.
 
 **File:** [trading_signal_features.ipynb](Activities/01-Ins_Trading_Signal_Features/Solved/trading_signal_features.ipynb)
 
 First, quickly introduce the following:
 
-* Now that students have learned to generate trading signals, backtest their trading strategies, and evaluate their results, it is now time to incorporate machine learning into the mix! Students will now have the opportunity to use a machine learning model (Random Forest) to correctly predict next day positive or negative returns based on multiple trading signals.
+* Now that students have learned to generate trading signals, backtest their trading strategies, and evaluate their results, it is time to incorporate machine learning into the mix! Students will have the opportunity to use a machine learning model (Random Forest) to correctly predict next day positive or negative returns based on multiple trading signals.
 
-* The Random Forest model will require multiple features, or in this case, multiple trading signals to train itself on. Therefore, students will learn to generate multiple trading signals using various technical indicators such as an exponential moving average of closing prices, exponential moving average of daily return volatility, and Bollinger Bands, which is are a set of lines representing a (positive and negative) standard deviation away from a simple moving average (SMA) of the asset's closing price.
+* The Random Forest model will require multiple features, or in this case, multiple trading signals to train itself on. Students will learn to generate multiple trading signals using various technical indicators such as an exponential moving average of closing prices, exponential moving average of daily return volatility, and Bollinger Bands, which are a set of lines representing a (positive and negative) standard deviation away from a simple moving average (SMA) of the asset's closing price.
 
-Then, open the solution file and discuss the following:
+Open the solution file and discuss the following:
 
-* As always, before proceeding to generate the multiple features or trading signals of the Random Forest model, the following will first have to be done: importing the relevant libraries, reading in the data as a Pandas DataFrame, and preparing/cleaning the data.
+* As always, before generating the model, the following has to be done first: importing the relevant libraries, reading in the data as a Pandas DataFrame, and preparing/cleaning the data.
 
   ```python
   # Import libraries and dependencies
@@ -80,7 +82,7 @@ Then, open the solution file and discuss the following:
   btc_df
   ```
 
-* Then, in order to calculate the exponential moving average of daily return volatility (2nd trading signal), we will of course need to prepare the DataFrame by calculating the daily returns of BTC/USD closing prices. Using the `dropna` function to drop any rows with NA values is a generally good practice.
+* Then, in order to calculate the exponential moving average of daily return volatility (2nd trading signal), we will need to prepare the DataFrame by calculating the daily returns of BTC/USD closing prices. Using the `dropna` function to drop any rows with NA values is a generally good practice.
 
   ```python
   # Drop NAs and calculate daily percent return
@@ -88,9 +90,9 @@ Then, open the solution file and discuss the following:
   btc_df
   ```
 
-* Now that the data is prepared, it is now time to move onto generating the multiple trading signals! Students should draw from their experiences from the previous unit 15 lessons where they generated a dual moving average crossover trading signal, as the process is similar.
+* Now that the data is prepared, move onto generating the multiple trading signals! Students should draw from the previous unit 15 lessons where they generated a dual moving average crossover trading signal, as the process is similar.
 
-* In contrast to a simple moving average (SMA), an exponential moving average (EMA) represents a moving average with more weight or focus given to the most recent of prices. Therefore, a short window EMA describes "faster" price action than its long window EMA or "slower" counterpart. The logic then dictates such that when the fast EMA is greater than the slow EMA, a long trade opportunity exists, as price action should rise in the short-term, while a short trade opportunity arises for the opposite scenario in which the slow EMA is greater than the fast EMA.
+* In contrast to a simple moving average (SMA), an exponential moving average (EMA) represents a moving average with more weight or focus given to the most recent prices. A short window EMA describes "faster" price action than its long window EMA or "slower" counterpart. A long trade opportunity exists when the fast EMA is greater than the slow EMA, as price action should rise in the short-term. A short trade opportunity arises for the opposite scenario when the slow EMA is greater than the fast EMA.
 
   * Students should be aware that these trading signals will incorporate a long, short, or hold strategy (rather than just long or hold, or short or hold), which is why the `crossover_signal` is calculated as the result of adding both the `crossover_long` and `crossover_short` signals together.
 
@@ -102,7 +104,7 @@ Then, open the solution file and discuss the following:
 
     ![ema-plot](Images/ema-plot.png)
 
-* Similarly, an exponential moving average of daily return volatility gives more weight to the most recent of daily returns. Therefore, when a short window EMA or fast EMA of daily return volatility is greater than a long window or slow EMA of daily return volatility, the crossover suggests that a short opportunity exists where daily return volatility is expected to rise. This is because, during times of rising price volatility, there often exists a negative price bias (selling) and vice versa for when daily return volatility is expected to fall (buying).
+* Similarly, an exponential moving average of daily return volatility gives more weight to the most recent daily returns. Therefore, when a short window (fast) EMA of daily return volatility is greater than a long window (slow) EMA of daily return volatility, the crossover suggests that a short opportunity exists where daily return volatility is expected to rise. This is because, during times of rising price volatility, there often exists a negative price bias (selling) and vice versa for when daily return volatility is expected to fall (buying).
 
   ![ema-std](Images/ema-std.png)
 
@@ -114,21 +116,23 @@ Then, open the solution file and discuss the following:
 
   ![bollinger-band-plot.png](Images/bollinger-band-plot.png)
 
-At the end of the discussion, ask students whether or not they understand what the trading signals are suggesting. This is important as these trading signals will end up training the Random Forest model; therefore it is crucial for them to understand the basis upon which the model will be trained.
+At the end of the discussion, ask students whether or not they understand what the trading signals are suggesting. This is important as these trading signals will train the Random Forest model.
 
 ---
 
 ### 2. Instructor Do: Random Forest Trading (15 min)
 
-In this activity, students will learn how to use the set of trading signal features they generated in the previous activity to now train a Random Forest machine learning model.
+**Corresponding Activity:** [02-Ins_Random_Forest_Training](Activities/02-Ins_Random_Forest_Training)
+
+In this activity, students will learn how to use the set of trading signal features they generated in the previous activity to train a Random Forest machine learning model.
 
 **File:** [random_forest_training.ipynb](Activities/02-Ins_Random_Forest_Training/Solved/random_forest_training.ipynb)
 
-Before proceeding with the coding activity, open the slides, and briefly re-cap the use of machine learning models in regards to trading:
+Before proceeding with the coding activity, open the slides, and briefly recap the use of machine learning models in regards to trading:
 
 * How will we incorporate a machine learning model in terms of trading?
 
-  **Answer:** Machine learning models need to be trained before they can make predictions. Therefore, using the trading signals generated from the previous activity, the Random Forest model will train itself using the trading signals as independent variables that determine a dependent variable (a positive or negative return for the next day). The model can then be saved as a pre-trained model for later use and loaded again for easy deployment.
+  **Answer:** Machine learning models need to be trained before they can make predictions. The Random Forest model will train itself using the trading signals generated from the previous activity as independent variables that determine a dependent variable (a positive or negative return for the next day). The model can be saved as a pre-trained model for later use and loaded again for easy deployment.
 
 * What is a Random Forest model?
 
@@ -196,6 +200,8 @@ Then, open the solution file and discuss the following:
 
 ### 3. Instructor Do: Random Forest Trading (15 min)
 
+**Corresponding Activity:** [03-Ins_Random_Forest_Trading](Activities/03-Ins_Random_Forest_Trading)
+
 In this activity, students will re-deploy a pre-trained Random Forest model to make predictions (positive or negative daily return) given the x test dataset of BTC/USD closing prices. Then, students will compare the actual results vs. the predicted results and backtest the Random Forest model given a capital allocation of $100,000.
 
 **File:** [random_forest_trading.ipynb](Activities/03-Ins_Random_Forest_Trading/Solved/random_forest_trading.ipynb)
@@ -251,7 +257,7 @@ Open the solution file and discuss the following:
 
 In this activity, instructors will briefly re-cap the process of training and using a Random Forest trading model, discuss the ways in which the model can potentially be improved, and consider deploying the model through alternative means such as AWS' Sagemaker--a machine learning cloud service that enables users to build, train, and deploy machine learning models quickly and conveniently.
 
-Open the slideshow and quickly re-cap the following. Engage students by having them answer the questions wherever possible:
+Open the slideshow and quickly recap the following. Engage students by having them answer the questions wherever possible:
 
 * What did we learn today?
 
@@ -273,7 +279,7 @@ Then, ask students if they have any further questions before moving onto the fol
 
   ![x-test-shape](Images/x-test-shape.png)
 
-* In addition, for simplicity, the trading signals were output as binary calculations--either 0 or 1, do not engage in the trade or engage in the trade. However, if a scaled continuous value were used instead of a binary value, the *extent* upon which a trading signal is defined or how *far* the values differ from the crossover point, could be used therefore providing more information to train the model.
+* In addition, for simplicity, the trading signals were binary output - either 0 or 1, meaning do not engage in the trade or engage in the trade. However, if a scaled continuous value were used instead of a binary value, the *extent* upon which a trading signal is defined or how *far* the values differ from the crossover point, could be used to provide more information to train the model.
 
   ![continuous-vs-binary](Images/continuous-vs-binary.png)
 

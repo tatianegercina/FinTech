@@ -98,17 +98,14 @@ Windows users might run into issues with the GraphViz installation, in which cas
 
 ### Imbalanced-learn Installation Prerequisites
 
-In order to install the `imbalanced-learn` package, all of the dependencies must be satisfied. These dependencies come packaged with every Anaconda install/distribution. The dependencies list can be found below for reference.
+If you run into any issues with any of the imbalanced-learn machine learning models, try updating both scikit-learn and imbalanced-learn:
 
-* Numpy (>=1.11)
+```shell
+pip install -U scikit-learn
+pip install -U imbalanced-learn
+```
 
-* Scipy (>=0.17)
-
-* Scikit-learn (>=0.21)
-
-* Keras 2 (optional)
-
-* Tensorflow (optional)
+Then restart JupyterLab and try again.
 
 ### Update Conda Environment
 
@@ -151,7 +148,7 @@ Consult the [imbalanced-learn](https://imbalanced-learn.readthedocs.io/en/stable
 If you have issues running or updating anaconda, you can check if the package is correctly installed by running the following command in your terminal.
 
 ```shell
-conda list | grep anaconda
+conda list anaconda
 ```
 
 After running this command, you should see a list with the anaconda packages installed in your environment, at least the packages in the red square should be listed.

@@ -148,6 +148,8 @@ Now, it's time to have the class convert their mnemonics to a master seed.
 
 ### 3. Students Do: Converting Mnemonic to Seed (10 min)
 
+**Corresponding Activity:** [03-Stu_Converting_Mnemonic.md](Activities/03-Stu_Converting_Mnemonic.md)
+
 In this activity, students will download a local copy of the BIP39 online tool
 and paste their mnemonics into it to convert to a master seed.
 
@@ -226,6 +228,8 @@ Ask the students:
 Now, time for the students to derive some keys of their own!
 
 ### 6. Students Do: Deriving BIP32 Keys (HD Wallets) (10 min)
+
+**Corresponding Activity:** [01-Stu_BIP32_Derivation](Activities/01-Stu_BIP32_Derivation)
 
 Have the students derive some Bitcoin keys and check their addresses.
 They should all have empty balances, as we are generating mainnet Bitcoin keys, not the testnet keys used earlier this week.
@@ -321,6 +325,8 @@ That was quite a lot, let's have the students get some practice generating keys 
 
 ### 9. Students Do: Deriving Multiple Coins with BIP44 (10 min)
 
+**Corresponding Activity:** [02-Stu_BIP44_Derivation](Activities/02-Stu_BIP44_Derivation)
+
 Now it's time for the students to derive multiple coins from their mnemonics.
 
 **Instructions:**
@@ -404,8 +410,20 @@ cd hd-wallet-derive
 php -r "readfile('https://getcomposer.org/installer');" | php
 php -d pcre.jit=0 composer.phar install
 ```
+Run these commands and install the dependencies. Have the students run the example given once the installation completes.
 
-Modify the last line to add the `-d pcre.jit=0` parameter to avoid some issues that may arise in Mac OS X. Run these commands and install the dependencies. Have the students run the example given once the installation completes.
+**NOTE:** We modify the last line to add the `-d pcre.jit=0` parameter to avoid some issues that may arise in Mac OS X. 
+
+**NOTE:** Windows users may encounter issues with the installation while using git bash, specifically the error: 
+
+```
+stdin is not a tty
+stdout is not a tty 
+```
+
+They can overcome the issue by temporarily switching into the windows command prompt (CMD) after cloning the directory initially using the Git Bash prompt. The CMD prompt can be accessed by typing CMD in the Windows search box. Once the CMD is open, they will `cd` into the `hd-wallet-derive` directory and run the 3rd and 4th lines of the above code snippet as they normally would. After successful intallation, they can close the CMD and continue in the Git Bash prompt. The output in the CMD should look like so:
+
+![cmd_php_composer_install](Images/cmd_php_composer_install.png)
 
 Ensure that everyone has successfully installed and can run the `hd-wallet-derive` tool from the command line.
 Once everyone has successfully installed the tool, have everyone `cd ..` into the directory containing the `hd-wallet-derive` folder.
@@ -498,7 +516,9 @@ Now it's time to show the class how to process the terminal output in Python by 
 
 * We are now going to call this CLI tool from within Python, and capture some of its output.
 
-First, have everyone open a new Python file called `wallet.py`:
+First, have everyone open a new Python file called `wallet.py`.  This new file should be located in the parent directory of hd-wallet-derive as follows:
+
+![file_location](Images/file_location.png)
 
 Type the following:
 
@@ -513,7 +533,7 @@ command = ''
 * We are using single quotes since our command has double quotes in it. We can later use more advanced string formatting.
 
 Wait for everyone to catch up, and then have everyone paste the command that they used in the terminal
-inside of the command string:
+inside of the command string. **NOTE:** The mnemonic phrase must be inserted inside *double quotes*, **not** single quotes.
 
 ```python
 import subprocess
@@ -709,6 +729,8 @@ and software, and when to use each!
 
 ### 18. Students Do: "If I Were an Exchange" Thought Experiment (15 min)
 
+**Corresponding Activity:** [04-Stu_If_I_Were_Exchange](Activities/04-Stu_If_I_Were_Exchange)
+
 In this activity, students will break into small groups and design an exchange given the different wallet standards
 and software/hardware implementations.
 
@@ -777,4 +799,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

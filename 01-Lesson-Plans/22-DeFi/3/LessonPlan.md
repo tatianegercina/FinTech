@@ -70,11 +70,13 @@ Review the following recall questions with the class.
 
 ### 2. Instructor Do: Auction Contracts in Solidity (10 min)
 
+**Corresponding Activity:** [01-Ins_Auction_Contracts_in_Solidity](Activities/01-Ins_Auction_Contracts_in_Solidity)
+
 In this activity, the Instructor will demonstrate the various Auction contracts available from the Solidity example documentation, and modify it to fit our needs. Students will be introduced to the story of the "Martian Land Foundation" and how we will be "tokenizing" martian land and auctioning it to the public, raising funds for the Martian Land Foundation's terraforming projects, and allowing every-day citizens to claim their spot on humanity's next frontier.
 
 **Files:**
 
-* [AuctionContract.sol](Activities/02-Ins_Auction_Contracts_in_Solidity/Solved/MartianAuction.sol)
+* [MartianAuction.sol](Activities/01-Ins_Auction_Contracts_in_Solidity/Solved/MartianAuction.sol)
 
 Begin the activity by introducing the class to the backstory of the `Martian Land Foundation`.
 
@@ -106,6 +108,8 @@ pragma solidity >=0.4.22 <0.6.0;
 
 contract MartianAuction {
 
+    address deployer;
+
     // Current state of the auction.
     address payable public beneficiary;
     address public highestBidder;
@@ -116,6 +120,8 @@ contract MartianAuction {
 * Inside our contract, we are going to start by defining some initial variables that will track the state of our auction.
 
 * This consists of:
+
+  * An `address deployer` that will be used to track the address of the contract that deploys the `MartianAuction`.
 
   * An `address payable public beneficiary` will be used to track the beneficiary of the contract.
 
@@ -163,11 +169,14 @@ Define the contracts `constructor` and set the public `beneficiary` variable to 
     constructor(
         address payable _beneficiary
     ) public {
+        deployer = msg.sender;
         beneficiary = _beneficiary;
     }
 ```
 
-* Upon deployment of a new instance of the `MartianAuction` contract, a beneficiary or the person hosting the auction must be set. Here we are going to define a constructor that will set the beneficiary.
+* Upon deployment of a new instance of the `MartianAuction` contract, a beneficiary, or the person hosting the auction, must be set. Here we are defining a constructor that will set the beneficiary.
+
+* We also set the `deployer` address to the `msg.sender` in order to track the address of the contract that will be deploying this one. This is so we can make sure that certain privileged functions (like ending the auction) can only be called from the parent contract that created this one.
 
 Add a new `public` function definition named `bid` for users to bid on the auction.
 
@@ -309,20 +318,20 @@ Define a new `public` function named `auctionEnd`.
 
 Inside the body of the `auctionEnd` contract:
 
-  Define a `require` statement that will check if the auction has ended by negating the `ended` variable with the `!` operator.
+  * Define a `require` statement that will check if the auction has ended by negating the `ended` variable with the `!` operator.
 
-  Below that define a second `require` statement that checks to see if `msg.sender` is equal to `beneficiary`.
+  * Below that, define a second `require` statement that checks to see if `msg.sender` is equal to `deployer`. This will ensure that only the deploying contract can call this function.
 
-  Then set the `ended` variable equal to `true`.
+  * Then set the `ended` variable equal to `true`.
 
-  `Emit` the `AuctionEnded` event passing it the `highestBidder` and the `highestBid` variables.
+  * `Emit` the `AuctionEnded` event passing it the `highestBidder` and the `highestBid` variables.
 
-  Transfer the `highestBid` amount to the `beneficiary` using the `.transfer` address method.
+  * Transfer the `highestBid` amount to the `beneficiary` using the `.transfer` address method.
 
 ```solidity
         // 1. Conditions
         require(!ended, "auctionEnd has already been called.");
-        require(msg.sender == beneficiary, "You are not the auction beneficiary");
+        require(msg.sender == deployer, "You are not the auction deployer!");
 
         // 2. Effects
         ended = true;
@@ -348,7 +357,7 @@ Inside the body of the `auctionEnd` contract:
 
   * We are going to first check for the condition of whether or not the auction has ended by negating the `ended` variable with the `!` operator.
 
-  * A second require is defined to check if the `msg.sender` attempting to end the auction is equal to the `beneficiary` running the auction.
+  * A second require is defined to check if the `msg.sender` attempting to end the auction is equal to the `deployer` running the auction.
 
   * Next, we are going to set `ended` equal to true to end the auction if it hasn't already.
 
@@ -358,21 +367,23 @@ Congratulations, we have just built a `MartianAuction` contract; you may have ve
 
 ### 3. Students Do: Writing an Auction Contract (15 min)
 
+**Corresponding Activity:** [02-Stu_Writing_an_Auction_Contract](Activities/02-Stu_Writing_an_Auction_Contract)
+
 In this activity, students will take a SimpleAuction contract from the Solidity documentation, modify it for their own needs (remove the time-related features), and prepare it for use within another contract.
 
 **Instructions:**
 
-* [README.md](Activities/03-Stu_Writing_an_Auction_Contract/README.md)
+* [README.md](Activities/02-Stu_Writing_an_Auction_Contract/README.md)
 
 **Files:**
 
-* [MartianAuction.sol](Activities/03-Stu_Writing_an_Auction_Contract/Unsolved/MartianAuction.sol)
+* [MartianAuction.sol](Activities/02-Stu_Writing_an_Auction_Contract/Unsolved/MartianAuction.sol)
 
 ### 4. Instructor Do: Writing an Auction Contract Review (15 min)
 
 **Files:**
 
-* [MartianAuction.sol](Activities/03-Stu_Writing_an_Auction_Contract/Solved/MartianAuction.sol)
+* [MartianAuction.sol](Activities/02-Stu_Writing_an_Auction_Contract/Solved/MartianAuction.sol)
 
 Review the code from the previous activity with the class.
 
@@ -398,13 +409,15 @@ Now discuss the following recall questions:
 
 ### 5. Instructor Do: The MartianMarket (ERC721 + Auctions) (15 min) (Critical)
 
+**Corresponding Activity:** [03-Ins_Martian_Market](Activities/03-Ins_Martian_Market)
+
 In this activity, you will be demonstrating combining the ERC721 standard with the modified `MartianAuction` contract that was built in the previous activity.
 
 **Files:**
 
-* [MartianAuction.sol](Activities/05-Ins_Martian_Market/Resources/MartianAuction.sol)
+* [MartianAuction.sol](Activities/03-Ins_Martian_Market/Resources/MartianAuction.sol)
 
-* [MartianMarket.sol](Activities/05-Ins_Martian_Market/Solved/MartianMarket.sol)
+* [MartianMarket.sol](Activities/03-Ins_Martian_Market/Solved/MartianMarket.sol)
 
 First, explain to the students:
 
@@ -414,7 +427,7 @@ First, explain to the students:
 
 * The Martian Land Foundation can end the auctions at any time.
 
-Open up [Remix](https://remix.ethereum.org) and create a new file called `MartianMarket.sol` and populate it with the contents of the [starter code](Activities/05-Ins_Martian_Market/Unsolved/MartianMarket.sol).
+Open up [Remix](https://remix.ethereum.org) and create a new file called `MartianMarket.sol` and populate it with the contents of the [starter code](Activities/03-Ins_Martian_Market/Unsolved/MartianMarket.sol).
 
 The beginning of the contract should look something like:
 
@@ -572,11 +585,13 @@ Finally, we need to create our last function, `bid`:
 
 * We must be careful about this syntax, as it only forwards `2300` gas. Since that's enough to complete our function, we're okay. Otherwise, we'd have to add `.call` right before `.value()`, but that syntax doesn't protect against reentrancy attacks, so we'd need to be very careful about modifying the state of our contract in that case.
 
-Make sure your contract compiles and matches the [solution](Activities/05-Ins_Martian_Market/Solved/MartianMarket.sol). The next activity includes a frontend that expects the same ABI.
+Make sure your contract compiles and matches the [solution](Activities/03-Ins_Martian_Market/Solved/MartianMarket.sol). The next activity includes a frontend that expects the same ABI.
 
 Voila! Now it's time for the students to build out the same system.
 
 ### 6. Students Do: Building the MartianMarket (20 min)
+
+**Corresponding Activity:** [04-Stu_Building_Martian_Market](Activities/04-Stu_Building_Martian_Market)
 
 In this activity, students will be building the ERC721 + Auction based `MartianMarket`.
 
@@ -584,21 +599,21 @@ Have TAs circulate the room and ensure students can complete the activity.
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Building_Martian_Market/README.md)
+* [README.md](Activities/04-Stu_Building_Martian_Market/README.md)
 
 **Files:**
 
-* [MartianMarket.sol](Activities/06-Stu_Building_Martian_Market/Unsolved/MartianMarket.sol)
+* [MartianMarket.sol](Activities/04-Stu_Building_Martian_Market/Unsolved/MartianMarket.sol)
 
-* [MartianAuction.sol](Activities/06-Stu_Building_Martian_Market/Resources/MartianAuction.sol)
+* [MartianAuction.sol](Activities/04-Stu_Building_Martian_Market/Resources/MartianAuction.sol)
 
 ### 7. Instructor Do: MartianMarket Review (10 min)
 
 **Files:**
 
-* [MartianMarket.sol](Activities/06-Stu_Building_Martian_Market/Solved/MartianMarket.sol)
+* [MartianMarket.sol](Activities/04-Stu_Building_Martian_Market/Solved/MartianMarket.sol)
 
-* [MartianAuction.sol](Activities/06-Stu_Building_Martian_Market/Resources/MartianAuction.sol)
+* [MartianAuction.sol](Activities/04-Stu_Building_Martian_Market/Resources/MartianAuction.sol)
 
 Open the solution and review the `MartianMarket` code. Make sure to explain the following:
 
@@ -624,23 +639,25 @@ Ask for any remaining questions before moving on.
 
 ### 8. Students Do: Deploying the MartianMarket (20 min)
 
+**Corresponding Activity:** [05-Stu_Deploying_Martian_Market](Activities/05-Stu_Deploying_Martian_Market)
+
 In this challenge activity, students will create a landing page and deploy the MartianMarket dApp to Github Pages. The frontend will be provided in a similar fashion to `CryptoRight`. Students will leverage their skills to put together their dApp, create a detailed landing page, and deploy to GitHub Pages.
 
 Send the instructions and have TAs circulate the class.
 
 **Instructions:**
 
-* [README.md](Activities/08-Stu_Deploying_Martian_Market/README.md)
+* [README.md](Activities/05-Stu_Deploying_Martian_Market/README.md)
 
 **Files:**
 
-* [index.html](Activities/08-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/index.html)
+* [index.html](Activities/05-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/index.html)
 
-* [dapp.js](Activities/08-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/dapp.js)
+* [dapp.js](Activities/05-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/dapp.js)
 
-* [MartianMarket.json](Activities/08-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/MartianMarket.json)
+* [MartianMarket.json](Activities/05-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/MartianMarket.json)
 
-* [MartianAuction.json](Activities/08-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/MartianAuction.json)
+* [MartianAuction.json](Activities/05-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/MartianAuction.json)
 
 Ensure the following:
 
@@ -692,9 +709,88 @@ Walkthrough the following recall questions with the class to review the various 
 
 ---
 
-### 11. Student Do: Project Work Session (85 mins)
+### 11. Student Do: Project Work Session (50 mins)
 
 Welcome the students back to class, and allow them to use this activity time to work on their projects.
+
+
+### 12. Instructor Do: Career Services (35 min)
+
+**Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
+
+* In this Career Services section, you will discuss with the students the importance of writing a high-quality and effective `README` for each project.
+
+* There's no universal standard in what to include in a `README`, but we do know from speaking to employers the kinds of things they're looking for, and the sort of `READMEs` that are effective.
+
+#### Instructor Do: Introduction to READMEs (5 min)
+
+* Ask the class the following questions (☝️) and call on students for the answers (🙋):
+
+  * ☝️What is a `README` file?
+
+  * 🙋A text file written using Markdown that describes the repository, what it does, how to use it, who built it etc.
+
+  * ☝️ Why are they important when job-seeking?
+
+  * 🙋 It is the first impression recruiters and prospective employers will have of our projects.
+
+  * ☝️And what should we include in order to make it a good, high-quality `README` that we would want employers to see?
+
+  * 🙋A `README` should include a project title, technologies, installation guide, screen shots / examples, instructions on how to use it, contributors, and a license.
+
+* Show students how to pin a repository in GitHub. Navigate to `www.github.com/<yourUsername>` and click `Customize your pins`:
+
+![customize.png](Images/customize.png)
+
+* Then select the pins you would like to show on the main page of your profile.
+
+* Let students know this allows recruiters to more easily find the repositories you want them to look at!
+
+#### Students Do: Compare and Review (10 min)
+
+* In this activity, students will compare three `README` files and write down the differences they note between them.
+
+* Using `06-Stu_Compare_README`, ask students to compare [SAMPLE_1.md](Activities/06-Stu_Compare_README/SAMPLE_1.md),
+[SAMPLE_2.md](Activities/06-Stu_Compare_README/SAMPLE_2.md),
+and [SAMPLE_3.md](Activities/06-Stu_Compare_README/SAMPLE_3.md) and note the differences they see.
+
+* Slack out the instruction file for the activity and these three sample files.
+
+#### Instructor Do: Review ReadMe (5 min)
+
+* Ask the class the following questions (☝️) and call on students for the answers (🙋):
+
+* Pull up `sample_1/README.md` to show to students.
+
+  * ☝️ What did we think of this README?
+
+  * 🙋 Terrible!
+    * No creative title
+    * No subsections containing relevant data
+    * The developer refers to themself as "me"
+    * No images
+
+* Pull up `sample_2/README.md` and `sample_3/README.md` to compare.
+
+  * ☝️ Which of the two do we prefer?
+
+  * 🙋 Number 3!
+
+  * ☝️ OK, and why?
+
+  * 🙋 It's better because it has a unique app title and subsections but:
+    * the images are broken
+    * No installation guide
+    * No license
+    * No LinkedIn
+
+#### Students Do: Create Readme (15 min)
+
+* For the remaining 15 minutes, ask students update their Project #2 `README`. They should feel free to add other elements that they think will be useful for people to know about their project.
+
+* If they finish early, or have already updated their Project #1 and Project #2 `README` files, ask students to move on to updating any homework `README` files that need additional details.
+
+
 
 ---
 
@@ -702,4 +798,4 @@ Welcome the students back to class, and allow them to use this activity time to 
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

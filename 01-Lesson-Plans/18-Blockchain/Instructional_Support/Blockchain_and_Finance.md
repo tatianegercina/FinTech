@@ -2,7 +2,7 @@
 
 ## Blockchain in the Finance Realm Today
 
-With news about cryptocurrency exchange and wallet hacks, scandals, and dirty money, it’s easy to become skeptical about how meaningful blockchain and cryptocurrency is to the broader world of FinTech, or whether it’s a passing fad. 
+With news about cryptocurrency exchange and wallet hacks, scandals, and dirty money, it’s easy to become skeptical about how meaningful blockchain and cryptocurrency is to the broader world of FinTech, or whether it’s a passing fad.
 
 However, although over the next decade blockchain terminology and use-cases will certainly change, the technology behind it is, as of now, being put to practice. Ironically, what once was originally an obscure way to launder money, cryptocurrency is now being adopted by large, heavily regulated banks. JP Morgan, for example, has “forked” (or employed the base code of) a version of Solidity (a cryptocurrency language that we learn in this module), in order to create [its own digital coin](https://www.jpmorgan.com/global/news/digital-coin-payments) and blockchain based payment network, called “JPM Coin.” As of the end of 2019, just 9 months after JP Morgan’s announcement, more than 80 Japanese banks—which in deposit terms, represents nearly the entire banking system of the country—expressed [a willingness to use the coin](https://www.paymentssource.com/articles/money-laundering-battle-drives-japan-banks-to-jpmorgans-network). (Incidentally, for reasons of reducing money laundering risk in the country).
 
@@ -58,12 +58,6 @@ Furthermore, beyond government-owned central banks, mega-banks, and established 
 * [Acronis](https://www.acronis.com/en-us/cyber-protection/) ([Crunchbase funding](https://www.crunchbase.com/organization/acronis#section-overview): 158M; valuation more than $1 Billion)
   * Among other cyber-security business lines, the company provides blockchain-based data authentication. 
 
-
-
-
-
-
-
 ## More on Blockchain and Central Banking
 Central banks, for a variety of reasons, manage the supply and demand of their country’s currency. They keep prices of things one can buy with that currency stable (i.e., prevent inflation in the prices of goods), and change the supply of their currency in order to stimulate or cool down the economy when needed, so as to keep an economy moving along in a healthy fashion and to avoid or at least delay recessions as much as possible. Simply put, this control of money’s supply and demand is designed to stabilize economies. 
 
@@ -75,18 +69,19 @@ If you’re interested in more detail on how central banks are exploring the pos
 
 **Broadly, the white paper by the World Economic Forum highlights the following use-cases where one or more central banks today are actually using blockchain:**
 
- * Retail digital currency: A currency that is peer-to-peer and settled in a decentralized manner (meaning no banks in the middle).
- * A digital currency used just between the central bank and private banks (not household end users) that is also peer-to-peer and decentralized, that has faster transaction processing speed than the traditional set-up. 
- * Regulated securities settlement, where using smart contracts means that financial securities can transact (security for cash) instantaneously, instead of taking days to transfer.  
+* Retail digital currency: A currency that is peer-to-peer and settled in a decentralized manner (meaning no banks in the middle).
+* A digital currency used just between the central bank and private banks (not household end users) that is also peer-to-peer and decentralized, that has faster transaction processing speed than the traditional set-up.
+* Regulated securities settlement, where using smart contracts means that financial securities can transact (security for cash) instantaneously, instead of taking days to transfer.  
 * Decentralized ledgers as a way to make the banking system more resilient to natural disasters, cyber or terror attacks.
- * Keeping track of government issued bonds, for which there are often thousands, all with varying maturity dates, contract terms, and investors.
- * Using blockchain to prevent money laundering (to create a digital “paper trail” to detect dodgy money)
-  * General data sharing of large economic databases between the government and the private sector.
-  * Trade finance: using smart, decentralized digital contracts to digitize what is currently a slow, complicated, and paper driven process underpinning world trade in physical goods.
+* Keeping track of government issued bonds, for which there are often thousands, all with varying maturity dates, contract terms, and investors.
+* Using blockchain to prevent money laundering (to create a digital “paper trail” to detect dodgy money)
+* General data sharing of large economic databases between the government and the private sector.
+* Trade finance: using smart, decentralized digital contracts to digitize what is currently a slow, complicated, and paper driven process underpinning world trade in physical goods.
 * Safer identity recognition (decentralized systems for confirming and sharing identities) for when commercial and central banks do business with each other.  
 
 That said, implementation of blockchain technology by central banks is not without its challenges. [These include the following](https://www.chicagofed.org/~/media/publications/economic-perspectives/2017/ep2017-7-pdf.pdf ):
-* The need for consensus: by virtue of being decentralized, decision making to fundamentally change the technology could be slow or limited, as (in a fully permission-less network) all participants need to agree on the protocol change. 
+
+* The need for consensus: by virtue of being decentralized, decision making to fundamentally change the technology could be slow or limited, as (in a fully permission-less network) all participants need to agree on the protocol change.
 * The uncertainty in how multiple blockchain systems could easily work together (how can a smart contract interact with a smart contract from another system?)
 * The computational nature of many distributed systems means the potential for a requirement for large computing resources to maintain the system (the maintenance of Bitcoin, for example, is estimated to consume [about as much electricity](https://www.bbc.com/news/technology-48853230) as the Country of Switzerland).
 * The fact that once a transaction becomes added to the blockchain, it cannot be undone; that transactions cannot be reversed. 
@@ -94,4 +89,4 @@ That said, implementation of blockchain technology by central banks is not witho
 These are largely technical challenges, that will likely by solved by future iterations of blockchain and distributed ledger technology. Other fundamental issues, however, such as a country’s regulatory control of its own currency, are likely to persist for some time.
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

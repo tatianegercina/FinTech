@@ -88,6 +88,8 @@ Slack out the following resources:
 
 ### 3. Instructor Do: Create a Database (5 min)
 
+**Corresponding Activity:** [01-Ins_Creating_a_Database](Activities/01-Ins_Creating_a_Database)
+
 In this activity, you will walk students through the process of creating a database in PostgreSQL.
 
 Begin by verifying that everyone has successfully installed pgAdmin and PostgreSQL. Everyone should have completed this step prior to today's class.
@@ -115,6 +117,8 @@ At this point, show students that there is a new database listed in the left-han
 Answer any questions before moving on.
 
 ### 4. Instructor Do: Create a Table (10 min)
+
+**Corresponding Activity:** [02-Ins_Creating_Tables](Activities/02-Ins_Creating_Tables)
 
 In this activity, you will walk students through the process of creating a table and manipulating its contents in PostgreSQL.
 
@@ -245,6 +249,8 @@ Answer any questions before moving on.
 
 ### 5. Student Do: Creating Tables (15 min)
 
+**Corresponding Activity:** [03-Stu_Creating_Tables](Activities/03-Stu_Creating_Tables)
+
 In this activity, students will use pgAdmin to recreate and query a table from an image provided.
 
 **Instructions:** [README.md](Activities/03-Stu_Creating_Tables/README.md)
@@ -345,6 +351,8 @@ Now, walk through the solutions for the third and final bonus questions.
 Answer any questions before moving on.
 
 ### 7. Instructor Do: The Value of Unique Values (5 min)
+
+**Corresponding Activity:** [04-Ins_Values_of_Uniques](Activities/04-Ins_Values_of_Uniques)
 
 In this activity, students are introduced to the concept of duplicate and unique values and how to properly remove duplicate records through the use of unique identifiers.
 
@@ -472,6 +480,8 @@ Answer any remaining questions before moving on.
 
 ### 8. Student Do: Making and Using an ID (10 min)
 
+**Corresponding Activity:** [05-Stu_Making_IDs](Activities/05-Stu_Making_IDs)
+
 In this activity, students will recreate a table and then query, insert, and update data.
 
 **Instructions:** [README.md](Activities/05-Stu_Making_IDs/README.md)
@@ -514,6 +524,8 @@ Answer any questions before moving on.
 ---
 
 ### 11. Instructor Do: Import Data (10 min)
+
+**Corresponding Activity:** [06-Ins_Importing_Data](Activities/06-Ins_Importing_Data)
 
 In this activity, students will learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
 
@@ -564,6 +576,8 @@ In the query tool, rerun `SELECT * FROM mortgage` to verify that data has been i
 Let the class know that the larger a dataset is, the longer it will take for pgAdmin to import values.
 
 ### 12. Student Do: Customer Demographics (10 min)
+
+**Corresponding Activity:** [07-Stu_Customer_Demographics](Activities/07-Stu_Customer_Demographics)
 
 In this activity, students will create a new table and import data from a CSV file.
 
@@ -658,6 +672,8 @@ Answer any questions before moving on.
 
 ### 15. Student Do: Using CRUD (20 min)
 
+**Corresponding Activity:** [08-Stu_CRUD](Activities/08-Stu_CRUD)
+
 In this activity, students will utilize CRUD operations on the provided data.
 
 **Files:**
@@ -691,6 +707,8 @@ Open a query tool in `sales_db` and copy and paste the code from schema.sql and 
 * Columns can be added to pre-existing tables using the ALTER TABLE statement.
 
 ### 17. Instructor Do: Joins (15 min)
+
+**Corresponding Activity:** [09-Ins_Joins](Activities/09-Ins_Joins)
 
 In this activity, students are introduced to the concept of joins—the combination of multiple related datasets into a single dataset.
 
@@ -780,6 +798,8 @@ Slack out the link to this explanation of Postgres [joins](https://www.tutorials
 Demonstrate a couple of different joins that can be performed. Then answer any questions before moving on to the next activity.
 
 ### 18. Student Do: Joining the Big Banks (20 min)
+
+**Corresponding Activity:** [10-Stu_Joins](Activities/10-Stu_Joins)
 
 In this activity, students will be using joins to query payment information and associated bank information via a common bank routing number.
 

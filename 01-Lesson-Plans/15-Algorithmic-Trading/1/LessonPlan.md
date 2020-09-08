@@ -44,7 +44,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1yKec68KGLenYiTEn3f8yUx3v230WCA6zdfbEcHmzNLU/edit?usp=sharing).
+The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1M1ePCBBMGgmzJUhjDRR4Vwt0dIIzxwfmUZoL_pk1YBs/edit?usp=sharing).
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -119,6 +119,8 @@ Ask if there are any questions before moving on.
 
 ### 3. Everyone Do: Demystifying Algorithmic Trading (10 min)
 
+**Corresponding Activity:** [01-Evr_Simple_Trading_Algorithm](Activities/01-Evr_Simple_Trading_Algorithm)
+
 The goal of this activity is to demystify algorithmic trading by showing a simplified trading strategy in code. While this particular strategy isn't something that anyone would want to trade with, it serves to show how a trading strategy can be written in code. The following lessons will build on this core concept using more realistic strategies.
 
 **Files:** [simple_trading_algorithm.ipynb](Activities/01-Evr_Simple_Trading_Algorithm/Solved/simple_trading_algorithm.ipynb)
@@ -156,6 +158,8 @@ Answer any questions before moving on.
 ---
 
 ### 4. Instructor Do: Trading Signals (10 mins)
+
+**Corresponding Activity:** [02-Ins_Trading_Signals](Activities/02-Ins_Trading_Signals)
 
 In this activity, students will learn what differentiates technical analysis from fundamental analysis, what a technical indicator is, what trading signals are, and how to use these signals to devise a trading strategy (actions based on the occurrence of a trading signal). In particular, students will learn how to generate a dual moving average crossover trading signal, implement the logic/strategy to perform the buy or sell orders, and overlay the points at which the algorithm places the buy and sell orders on top of the plot for closing prices of AAPL stock.
 
@@ -305,6 +309,8 @@ Ask if there are any questions before moving on.
 
 ### 5. Student Do: The Big Short (15 mins)
 
+**Corresponding Activity:** [03-Stu_Trading_Signals](Activities/03-Stu_Trading_Signals)
+
 In this activity, students will take what they've learned about generating trading signals and implementing a corresponding trading strategy, and instead now perform the inverse: create a trading strategy that profits off of price declines by shorting (selling) and covering (buying) the stock.
 
 **Files:**
@@ -380,6 +386,8 @@ Open the solution file and review the following:
 ---
 
 ### 7. Instructor Do: Backtesting (10 mins)
+
+**Corresponding Activity:** [04-Ins_Backtesting](Activities/04-Ins_Backtesting)
 
 In this activity, students will learn how to test the performance of an algorithmic trading strategy using historical stock data, a process otherwise known as backtesting. In particular, students will use historical stock data to measure the profit/loss of executed trades for a given trading strategy and visualize the overall change in portfolio value over time.
 
@@ -497,6 +505,8 @@ Ask if there are any questions before moving on.
 
 ### 8. Student Do: The Big Short Part II (15 mins)
 
+**Corresponding Activity:** [05-Stu_Backtesting](Activities/05-Stu_Backtesting)
+
 In this activity, students will now take the Short Position Dual Moving Average Crossover trading strategy they made in the previous student activity and now run a backtest to quantify the performance of their trading strategy.
 
 **Files:**
@@ -592,6 +602,8 @@ Open the solution file and review the following:
 
 ### 11. Instructor Do: Evaluation Metrics (10 min)
 
+**Corresponding Activity:** [06-Ins_Evaluations](Activities/06-Ins_Evaluations)
+
 Students will receive a dry walkthrough of the various evaluation metrics that can be used to evaluate their trading algorithms, namely portfolio and trade-related evaluation metrics. This will include revisiting metrics such as cumulative returns and Sharpe ratios, as well as new metrics such as the Sortino ratio. The instructor will explain how the metrics are calculated and how they are used.
 
 **Files:** [trading_algorithm_evaluation.ipynb](Activities/06-Ins_Evaluations/Solved/trading_algorithm_evaluation.ipynb)
@@ -684,6 +696,8 @@ Ask if there are any questions before moving forward.
 
 ### 12. Students Do: The Big Short Part III (15 mins)
 
+**Corresponding Activity:** [07-Stu_Evaluations](Activities/07-Stu_Evaluations)
+
 Now that students have developed a Short Dual Moving Average trading strategy and backtested their strategy against historical VNQ prices, students can now calculate the portfolio and trade evaluation metrics to ascertain the performance of their short strategy.
 
 **Instructions:** [README.md](Activities/07-Stu_Evaluations/README.md)
@@ -723,6 +737,8 @@ Ask for any remaining questions before moving on.
 ---
 
 ### 14. Everyone Do: Trading Dashboard (15 min)
+
+**Corresponding Activity:** [08-Ins_Trading_Dashboard](Activities/08-Ins_Trading_Dashboard)
 
 In this activity, instructors will walk students through creating a trading dashboard with Panel using the evaluation metrics generated from prior activities. At this point, students should already have exposure to creating dashboards using Panel.
 

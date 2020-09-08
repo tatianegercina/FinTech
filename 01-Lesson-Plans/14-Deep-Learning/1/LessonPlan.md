@@ -299,6 +299,8 @@ Answer any questions before moving on.
 
 ### 4. Everyone Do: Activating your first artificial neuron (15 min)
 
+**Corresponding Activity:** [01-Evr_Keras_Intro](Activities/01-Evr_Keras_Intro)
+
 In this activity, students are introduced to Keras and how they can use this library to start building neural networks.
 
 **Files:**
@@ -542,6 +544,8 @@ Answer any questions before moving on.
 
 ### 5. Instructor Do: Connecting neurons (15 min)
 
+**Corresponding Activity:** [02-Ins_Connecting_Neurons](Activities/02-Ins_Connecting_Neurons)
+
 In this activity, students will learn how to build more complex neural networks using Keras.
 
 **Files:**
@@ -672,6 +676,8 @@ Answer any questions before moving on.
 
 ### 6. Student Do: Preventing credit card defaults with neural networks (20 min)
 
+**Corresponding Activity:** [03-Stu_CC_Default](Activities/03-Stu_CC_Default)
+
 In this activity, students will train a neural network model to predict whether a credit card holder will default in the next month.
 
 **Instructions:**
@@ -684,13 +690,20 @@ In this activity, students will train a neural network model to predict whether 
 
 ---
 
-### 7. Instructor Do: Review Preventing credit card defaults with neural networks (10 min)
+### 7. Instructor Do: Review Preventing Credit Card Defaults with Neural Networks (10 min)
 
 **Files:**
 
 * [credit-card-default.ipynb](Activities/03-Stu_CC_Default/Solved/credit-card-default.ipynb)
 
 Walk through the solution and highlight the following:
+
+* Since we want to test different parameter combinations in our models, setting the random seed of Tensor flow to allow results reproducibility is a common practice that helps to reduce unexpected variations across models execution.
+
+  ```python
+  # Set a random seed for TensorFlow to allow reproducible testing results
+  tf.random.set_seed(126)
+  ```
 
 * After the data is read in a DataFrame, it is split and scaled using the `StandardScaler()` function from `sklearn`.
 
@@ -706,7 +719,7 @@ Walk through the solution and highlight the following:
   nn.add(Dense(1, activation='sigmoid'))
   ```
 
-* The first layer has the `23` features as input dimensions, following the rule-of-thumb mentioned before, the triple amount of nodes were defined in the hidden network (`69` units).
+* The first layer has the `23` features as input dimensions, following the rule of thumb mentioned before; the triple amount of nodes were defined in the hidden network (`69` units).
 
 * The model is compiled and trained using `100` epochs. Due to the number of records, the training process takes a few minutes to finish.
 
@@ -714,27 +727,27 @@ Walk through the solution and highlight the following:
 
   ![Model evaluation](Images/cc-results.png)
 
-* The accuracy is not great, but it also is not as harmful enough to discard the model. It could be used in a real-world scenario to run a pilot project.
+* The accuracy is not great, but it also is not harmful enough to discard the model. It could be used in a real world scenario to run a pilot project.
 
-Explain to students that for the challenge section, different approaches could be taken, for this demo, the `tanh` activation function is used in the output layer, and the model is trained with `50` epochs.
+Explain to students that for the challenge section, different approaches could be taken. For this demo, the `tanh` activation function is used in the hidden layer, and the `hard_sigmoid` function is used in the output layer. The model uses `120` hidden nodes, and it's trained with `100` epochs.
 
 ```python
 # Define the model
 number_inputs = 23
-number_hidden_nodes = 69
+number_hidden_nodes = 120
 
 nn_2 = Sequential()
-nn_2.add(Dense(units=number_hidden_nodes, input_dim=number_inputs, activation='relu'))
-nn_2.add(Dense(units=1, activation='tanh'))
+nn_2.add(Dense(units=number_hidden_nodes, input_dim=number_inputs, activation="tanh"))
+nn_2.add(Dense(units=1, activation="hard_sigmoid"))
 
 # Compile model
-nn_2.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+nn_2.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
 
 # Fit the model
-model_2 = nn_2.fit(X_train_scaled, y_train, epochs=50)
+model_2 = nn_2.fit(X_train_scaled, y_train, epochs=100)
 ```
 
-* As it can be seen in the model's evaluation, the accuracy improves a little bit. Having more epochs does not always make accuracy better.
+* As can be seen in the model's evaluation, the accuracy improves a little bit. Changing the activation functions and adding more hidden nodes seems to be a good approach to enhance our model.
 
 Answer any questions before moving on.
 
@@ -745,6 +758,8 @@ Answer any questions before moving on.
 ---
 
 ### 9. Instructor Do: Preparing Data for Neural Networks (15 min)
+
+**Corresponding Activity:** [04-Ins_Preparing_Data](Activities/04-Ins_Preparing_Data)
 
 In this section, we will go over some necessary transformations of data before it can be fed into a neural network.
 
@@ -846,6 +861,8 @@ Ask students if they have any questions before moving on to the next activity.
 ---
 
 ### 10. Students Do: Smartphone Activity Detector (30 min)
+
+**Corresponding Activity:** [05-Stu_Smartphone](Activities/05-Stu_Smartphone)
 
 In this activity, students will create a neural network to predict the activity of the user based on their smartphone's accelerometer data.
 
