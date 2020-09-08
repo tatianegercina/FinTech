@@ -6,7 +6,7 @@ In this activity, you will clone your GitHub repo, create a folder structure, an
 
 Complete the following steps.
 
-1. Navigate to the GitHub website.  Click on the "Clone or download" button, and then copy the repo link.
+1. Navigate to the GitHub website.  Click on the "Code" button, and then copy the repo link.
 
 2. Open the command line and run the command `git clone <repository link>` to clone the repository to your local file system.
 
@@ -15,6 +15,7 @@ Complete the following steps.
 4. Create a `.gitkeep` file within each subfolder so that git knows to retain the empty folder. (Remember, empty folders are not added to git repos by default.)
 
 5. Run the `git add .` command to add all changed files to the tracked files queue.
+    * **NOTE:** The `.` means to add *all* changed files. Alternatively, `git add` can be combined with a specific file such as: `git add sample_file.txt`.
 
 6. Run the `git commit -m "message"` command to group tracked/changed files as a checkpoint prior to uploading to the remote git repo.
 
@@ -24,7 +25,7 @@ Complete the following steps.
 
 ## Hint
 
-GitLab has a pretty good tutorial on how to use the git CLI. Check it out [here](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html).
+GitLab has an excellent tutorial on how to use the git CLI. Check it out [here](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html).
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
