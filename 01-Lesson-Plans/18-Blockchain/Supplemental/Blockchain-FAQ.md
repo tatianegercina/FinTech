@@ -287,7 +287,7 @@ For a quick run down of all the terms we cover in Unit 18, check out [this termi
 
 * [Blockchain Terminology Guide](Blockchain-Terminology-Guide.md)
 
-
+* [Running a POA Blockchain](POA-Blockchain-guide.md)
 
 ---
 
