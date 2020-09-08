@@ -19,3 +19,6 @@ In this activity, you will explore and research some of the most popular crowdsa
 ## Hints
 
 * Think about how tokenomics plays an important role in crowdsales.
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

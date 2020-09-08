@@ -30,8 +30,6 @@ APIs to investigate:
 
   > <https://api.coinbase.com/v2/prices/BTC-CAD/buy?format=json>
 
-## Instructions
-
 Using `Postman`, submit `GET` requests to the above APIs using the provided request URLs. Confirm that a response has been received from the servers.
 
 It is recommended that you save each API request and the output so that it can be leveraged for future assignments.

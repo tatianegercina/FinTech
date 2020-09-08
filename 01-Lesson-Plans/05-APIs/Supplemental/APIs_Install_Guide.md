@@ -1,66 +1,69 @@
 # Unit 5 - Installation Guide
 
-In this Unit, you will learn how to use the following FinTech APIs and their software development kits (SDKs) for the Python language.
+This guide serves as a step by step process for setting up and validating the Alpaca Markets trade API Python SDK and the Quandl API. Without this library, class activities and code will not be able to extract historical stock data and therefore, will not be able to be completed.
 
-* [Quandl](https://www.quandl.com/)
+All packages should be installed into the `alpacaenv` virtual environment.  If you have not already created an `alpacaenv` virtual environment you can do so by typing the following commands in your terminal:
 
-* [Plaid](https://plaid.com/)
+  ```shell
+  conda create -n alpacaenv python=3.7 anaconda
+  ```
 
-* [Alpaca](https://alpaca.markets/)
+## Install
 
-This guide serves as a step by step process for setting up and validating all the libraries needed to interact with these APIs. Without these libraries, you will not be able to follow the activities in class.
+Open a terminal, and execute the following commands to install the necessary packages.
 
-Remember to activate your virtual environment before start the installation process or create a brand new virtual environment.
+* Activate your `alpacaenv` virtual environment.
 
-## Installing `python-dotenv`
+  ```shell
+  conda activate alpacaenv
+  ```
 
-The `python-dotenv` library allows you to read key-value pairs from a `.env` file and adds them as environment variables.
+In order for the `alpaca-trade-api` package to install and run properly, all of the dependencies must be satisfied. The dependencies list can be found below for reference.
 
-You can install this library running the following command in your terminal:
+* Pandas
 
-```shell
+* Requests
+
+* Dotenv
+
+To verify the installation of a package, run `conda list package_name` in your terminal, substituting `package_name` for the actual package name.
+
+If `Dotenv` is not installed, you can do so by running the following command in your terminal:
+
+```python
 pip install python-dotenv
 ```
 
-## Installing the `plaid-python` SDK
+To initiate the `alpaca-trade-api` install, open a terminal and execute the following command:
 
-Plaid is a service that allows you to analyze personal financial data. The `plaid-python` SDK will allow you to interact with the Plaid API.
+* Use the `pip install` command to download the `alpaca-trade-api` module.
 
-You can install this library running the following command in your terminal:
+  ```shell
+  pip install alpaca-trade-api
+  ```
 
-```shell
-pip install plaid-python
-```
-
-## Installing the `alpaca-trade-api` SDK
-
-Alpaca is an API for stock trading. The `alpaca-trade-api` SDK will allow you to interact with Alpaca.
-
-You can install this library running the following command in your terminal:
-
-```shell
-pip install alpaca-trade-api
-```
+  ![alpaca_install.png](Images/alpaca_install.png)
 
 ## Verify Installation
 
-Once the installations are complete, verify the process completed successfully.
+Once the `alpaca-trade-api` download is complete, verify the installation completed successfully.
 
-Use the `pip list` function with a `grep` argument to identify if all the libraries installed successfully.
+* Use the `conda list package_name` terminal command, substituting `package_name` for the actual package name, to determine if the `alpaca-trade-api` library installed successfully.
 
-```shell
-pip list | grep -E "python-dotenv|plaid-python|alpaca-trade-api"
-```
+  ```shell
+  conda list alpaca-trade-api
+  ```
 
-![libraries_verify](Images/libraries_verify.png)
+  ![alpaca_verify](Images/alpaca-verify.png)
 
-## Set `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` Environment Variables
+## Set `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` environment variables
 
-To use the Alpaca trade SDK, you will need to set your `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` environment variables before using the library, as Alpaca communicates with the Alpaca API.
+In order to use the Alpaca trade SDK, you will need to set your `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` environment variables before using the library, as Alpaca communicates with the Alpaca API.
 
-Go to [Alpaca Markets](https://app.alpaca.markets) and login to your account. After logging in, you will be taken to a page that looks like this and will probably display a form asking you for personal information. **YOU DO NOT NEED TO ENTER THIS INFORMATION**
+Go to [Alpaca Markets](https://app.alpaca.markets) and login to your account. After logging in you will be taken to a page that looks like this and will probably display a form asking you for personal information. **YOU DO NOT NEED TO ENTER THIS INFORMATION**
 
 ![SSN_NOT_REQUIRED](Images/SSN_NOT_REQUIRED.png)
+
 
 Now, click the `Go to Paper Account` link in the navigation sidebar.
 
@@ -76,59 +79,56 @@ Next, open or create a new `.env` file where you will store your keys and use th
 
   ![alpaca-token-verify](Images/alpaca-env.png)
 
-Save this file in the same folder as your python script or Jupyter notebook file. If the file is not already created save it as `.env`.
+Save this file in the same folder as your python script or jupyter notebook file. If the file is not already created save it as `.env`.
 
   ![alpaca-env-save](Images/alpaca-env-save.png)
 
   ![env-folder](Images/env-folder.png)
 
-## Set the Plaid Keys as Environment Variables
+## Set `QUANDL_API_KEY` environment variable
 
-To get your Plaid keys, first sign up for a new account by registering yourself in [this link](https://dashboard.plaid.com/signup).
+Go to [Quandl.com](https://quandl.com) and login to your account.  After logging in, click on the profile link in the upper right hand corner and select `account settings` from the resulting drop down menu.  
 
-![plaid_signup](Images/plaid_signup.png)
+![quandl_api](Images/quandl_api.png)
 
-Once you created your account, navigate to [the Plaid dashboard](https://dashboard.plaid.com/overview), click on the "Team Settings" option of the main menu and choose the "Keys" option.
+On the resulting page, click the api key to copy it to your clipboard.
 
-![open_plaid_keys](Images/open_plaid_keys.png)
+![quandl_api_copy](Images/quandl_api_copy.png)
 
-Copy the `client_id`, `public_key`, and the `Sandbox` secret and paste them as variables in your `.env` file as follows:
+Next, add this to your existing `.env` file.
 
-```text
-PLAID_CLIENT_ID="YOUR_CLIENT_ID"
-PLAID_PUBLIC_KEY="YOUR_PUBLIC_KEY"
-PLAID_SECRET="YOUR_SANDBOX_SECRET"
-```
+**Note**: Make sure your environment variables are specifically named `QUANDL_API_KEY`.
+
+![quandl_api_env](Images/quandl_api_env.png)
+
 
 ## Enabling Hidden Files
 
-To work with `.env` files on your machine, you will need to be able to view hidden files on your computer.
+To work with `.env` files on your machine you will need to be able to view hidden files on your machine.
 
-* Windows
+  * Windows
 
-  * Type `folder` in the search bar.
+    * Type `folder` in search bar.
+    * Select `File Explorer Options`.
+    * Click the `View` tab in the pop up box, then click `Show hidden files, folders and drives` as shown below:
 
-  * Select `File Explorer Options`.
+    ![Windows-hidden-files](Images/Windows-hidden-file.png)
 
-  * Click the `View` tab in the pop up box, then click `Show hidden files, folders and drives` as shown below:
+  * Mac OSX
 
-  ![Windows-hidden-files](Images/Windows-hidden-file.png)
+    * Open Finder
 
-* Mac OSX
+    * Press Command + Shift + Dot
 
-  * Open Finder
+  * Linux (Ubuntu)
 
-  * Press `Command + Shift + Dot`
+    * Open your file manager
 
-* Linux (Ubuntu)
-
-  * Open your file manager
-
-  * Press `Ctrl + H`
+    * Press Ctrl + H
 
 ## Usage
 
-Lastly, run `jupyter-lab`. You may have to restart `jupyter-lab` if it is already running in the terminal for `jupyter-lab` to re-scan the environment for new variables.
+Lastly, run `jupyter-lab`. You may have to restart `jupyter-lab` if it is already running in the terminal in order for `jupyter-lab` to re-scan the environment for new variables.
 
 ## Troubleshooting
 
@@ -136,9 +136,9 @@ It can be frustrating when packages do not install correctly, therefore use the 
 
 ### Update Conda Environment
 
-An out-of-date Anaconda environment can create issues when trying to install new packages. Follow the steps below to update your Conda environment.
+An out-of-date Anaconda environment can create issues when trying to install new packages. Follow the steps below to update your conda environment.
 
-1. Deactivate your current Conda environment. This is required to update the global Conda environment. Be sure to quit any running applications, such as Jupyter, before deactivating the environment.
+1. Deactivate your current conda environment. This is required in order to update the global conda environment. Be sure to quit any running applications, such as Jupyter, prior to deactivating the environment.
 
     ```shell
     conda deactivate

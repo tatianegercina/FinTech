@@ -2,9 +2,9 @@
 
 ### Overview
 
-Today's class, students will learn how BIP44 works in preparation for the homework.
+In today's class, students will learn how BIP44 works in preparation for the homework.
 
-The goal of today's class is for the students to understand how to talk to Ethereum and Bitcoin nodes using Python,
+The goal of today's class is for students to understand how to talk to Ethereum and Bitcoin nodes using Python,
 and to understand how wallets work across the blockchain ecosystem.
 
 ### Class Objectives
@@ -37,13 +37,13 @@ and to understand how wallets work across the blockchain ecosystem.
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/17ZfBWxbseY8zRki8IGv1rzyYNUeWmBK4GXhZv07vQFA/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [19.3 Lesson Slides](https://docs.google.com/presentation/d/1ooAdSFLhiKNPzTVDr34f4gNMu1zT-yGqDyf53SmrNE8/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [19.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2768585e-9656-444d-acbd-ab1f0053d1df) Note that this video may not reflect the most recent lesson plan.
@@ -52,7 +52,7 @@ and to understand how wallets work across the blockchain ecosystem.
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students back and refresh a bit on some blockchain wallet architecture.
+Welcome students back, and do a quick refresher on blockchain wallet architecture.
 
 Open the slides, cover the agenda for the day, then navigate to the beginning of the slideshow.
 
@@ -80,9 +80,9 @@ Then, explain that the two parts of a wallet are:
  This is the low-level cryptographic library.
 
 * **Blockchain Node Connectors** -- Code that connects to the blockchains that the wallet supports.
- This is the library that connects the wallet to live blockchain nodes, where signed transactions from the key manager are sent to the network.
+This is the library that connects the wallet to live blockchain nodes, where signed transactions from the key manager are sent to the network.
 
-Remind the class that we have already worked with several wallets already, that contain both of these parts.
+Remind the class that we have already worked with several wallets already that contain both of these parts.
 
 Ask the class to name a few, such as:
 
@@ -101,7 +101,7 @@ Elaborate:
 * Today we will learn the wallet standards that allow us to use the same master key across multiple blockchains,
  as well as how to integrate a universal key manager tool with Web3.py and Bit using our good pal, Python.
 
- This will allow us to have one Python wallet that supports both of the blockchains we've learned so far so that we no longer
+ This will allow us to have one Python wallet that supports both of the blockchains we've learned so far, so that we no longer
  have to use separate tools to send transactions!
 
 ### 2. Instructor Do: Intro to BIP39 (Mnemonic Phrases) (10 min)
@@ -114,7 +114,7 @@ First, let's begin to explain how these wallets work.
 * This is why we are able to use the same 12-word mnemonic phrase across Bitcoin and Ethereum.
  In fact, we can use it across many more blockchains than that!
 
-Now, let's talk about how these mnemonic phrases we've been using.
+Now, let's talk about these mnemonic phrases we've been using.
 
 * So far, we've been using English words as our crypto keys. How might this be possible?
 
@@ -125,13 +125,13 @@ Now, let's talk about how these mnemonic phrases we've been using.
 * This standard comes up with exact lists of 2048 words per language like English, Spanish, Japanese, etc.
  as well as a formula that allows you to take a set of those words and generate private keys with them.
 
-* That way, instead of having to remember your private key (which is a long and confusing alphanumeric string),
- or worrying about writing it down correctly, you can remember the exact words that generate the master key/master seed instead,
+* That way, instead of having to remember your private key (which is a long and confusing alphanumeric string)
+ or worrying about writing it down correctly, you can remember the exact words that generate the master key/master seed,
  and securely convert back and forth from seed to mnemonic phrase.
 
 Now, open up IanColeman's BIP39 online tool [here](https://iancoleman.io/bip39/).
 
-Tell the students to ignore most of the things you see here for now and pay attention to a couple of fields first.
+Tell the students to ignore most of the things you see here for now, and shift their attention to a couple of fields first.
 
 Paste your Instructor Mnemonic into the `BIP39 Mnemonic` field to allow the tool to derive addresses:
 
@@ -146,7 +146,7 @@ Point out the `BIP39 Seed` field that is generated.
 
 Now, it's time to have the class convert their mnemonics to a master seed.
 
-### 3. Students Do: Converting Mnemonic to Seed (10 min)
+### 3. Student Do: Converting Mnemonic to Seed (10 min)
 
 In this activity, students will download a local copy of the BIP39 online tool
 and paste their mnemonics into it to convert to a master seed.
@@ -172,7 +172,7 @@ Ask the students the following questions:
 
 * Why did we download the offline version of the BIP39 tool?
 
-  * **Answer:** It is more secure since the online version can still get hacked.
+  * **Answer:** It is more secure, since the online version can still get hacked.
  It is safer to download the open-source code straight from Github and run it locally.
 
 ### 5. Instructor Do: Back to BIP32 (10 min)
@@ -198,7 +198,7 @@ Point out the `Path` column on the left. Explain to the students:
 * This is the "derivation path" that is applied to the master seed. By applying this path to the master seed,
  the address and public/private keypair to the right is generated.
 
-* By incrementing the derivation path by 1, you can generate a new address and keypair.
+* By incrementing the derivation path by one (1), you can generate a new address and keypair.
 
 Ask the students:
 
@@ -209,23 +209,23 @@ Allow them to answer, then explain:
 * Since Bitcoin is UTXO native, we can generate a new address for every transaction.
  This allows us to make the accounting very easy.
 
-* Because we own all of the keys anyway, we can sign the UTXOs that belong to each of the "child" keys and spend from them all simultaneously.
+* Because we own all of the keys anyway, we can sign the UTXOs that belong to each of the "child" keys and spend from all of them simultaneously.
 
-* Let's say you were a merchant selling goods. For every customer purchase, you can increment the path by 1 and generate a new address for that customer to pay you through.
+* Let's say you were a merchant selling goods. For every customer purchase, you can increment the path by one, and generate a new address for that customer to pay you through.
 
 Ask the students:
 
 * Why might you want to do that?
 
-  * **Answer:** That way, customers can't see your entire balance and purchase history!
+  * **Answer:** Because customers can't see your entire balance and purchase history!
 
-  * **Answer:** Accounting becomes much easier, as each address becomes a receipt of sorts containing that transaction only.
+  * **Answer:** Accounting becomes much easier, as each address becomes a receipt of sorts, containing that transaction only.
 
   * **Answer:** Bitcoin is pseudonymous, not anonymous, so generating new addresses helps preserve privacy.
 
-Now, time for the students to derive some keys of their own!
+Now it's time for students to derive some keys of their own!
 
-### 6. Students Do: Deriving BIP32 Keys (HD Wallets) (10 min)
+### 6. Student Do: Deriving BIP32 Keys (HD Wallets) (10 min)
 
 Have the students derive some Bitcoin keys and check their addresses.
 They should all have empty balances, as we are generating mainnet Bitcoin keys, not the testnet keys used earlier this week.
@@ -276,7 +276,7 @@ Scroll down to the list of keys like before.
 
 Point out:
 
-* While these are all different keys than from BIP32, they are still mainnet Bitcoin keys.
+* While these are all different keys from BIP32, they are still mainnet Bitcoin keys.
 
 * Let's change that by creating some testnet Bitcoin keys.
 
@@ -292,7 +292,7 @@ Navigate back down to the derived addresses. You should now see the same testnet
 
 * Now, let's generate some Ethereum keys!
 
-Scroll back up to the `Coin` dropdown and select `ETH - Ethereum` .
+Scroll back up to the `Coin` dropdown and select `ETH - Ethereum`.
 
 Back down at the derived addresses section, you should see a list of Ethereum addresses:
 
@@ -317,9 +317,9 @@ Explain to the students that this is the sister-standard that contains the list 
 * This contains the data needed to get a coin registered onto this standard.
  New blockchains need to have a PR opened on this SLIP44 standard, and other wallets will use this list for integration.
 
-That was quite a lot, let's have the students get some practice generating keys for multiple coins!
+We've covered a lot; now let's have the students get some practice generating keys for multiple coins!
 
-### 9. Students Do: Deriving Multiple Coins with BIP44 (10 min)
+### 9. Student Do: Deriving Multiple Coins with BIP44 (10 min)
 
 Now it's time for the students to derive multiple coins from their mnemonics.
 
@@ -343,7 +343,7 @@ Ask the students:
 
 * Would an exchange or an innovative bank use BIP44? Why?
 
-  * **Answer:** Yes, it would use it to keep track of customer's keys across multiple blockchains.
+  * **Answer:** Yes, they would use it to keep track of customer's keys across multiple blockchains.
 
 * Where does the list of coin types come from?
 
@@ -386,7 +386,7 @@ Before starting, ensure that everyone has PHP7 installed on their systems. The q
 Students can check their PHP installation by typing `php -v` in the terminal, which should output version `7.3`.
 
 * Explain to the class that while this tool is written in PHP, we just need it to be installed to run it,
- similarly, how Python needs to be installed to run Python programs.
+ similarly to how Python needs to be installed to run Python programs.
 
 * We will not be writing any PHP ourselves, but rather capturing the output of this tool inside of Python.
 
@@ -405,16 +405,16 @@ php -r "readfile('https://getcomposer.org/installer');" | php
 php -d pcre.jit=0 composer.phar install
 ```
 
-Modify the last line to add the `-d pcre.jit=0` parameter to avoid some issues that may arise in Mac OS X. Run these commands and install the dependencies. Have the students run the example given once the installation completes.
+Modify the last line to add the `-d pcre.jit=0` parameter to avoid some issues that may arise in Mac OS X. Run these commands and install the dependencies. Once the installation completes, have students run the example.
 
 Ensure that everyone has successfully installed and can run the `hd-wallet-derive` tool from the command line.
 Once everyone has successfully installed the tool, have everyone `cd ..` into the directory containing the `hd-wallet-derive` folder.
 
 * Explain that we are going to be working in the directory right above the tool's, so that we don't mix our code with the tool's code.
 
-First, let's create something called a "symlink" -- essentially a shortcut -- to our `hd-wallet-derive.php` script called `derive` to make the command shorter.
+First, let's create something called a "symlink"—essentially a shortcut—to our `hd-wallet-derive.php` script called `derive` to make the command shorter.
 
-Note, creating symlinks is not supported by default on Windows, only reading them, so first, have Windows users perform the following steps:
+Note: Creating symlinks is not supported by default on Windows, only reading them, so first, have Windows users perform the following steps:
 
 * Open up Git-Bash as an administrator (right-click on Git-Bash in the start menu).
 
@@ -498,7 +498,9 @@ Now it's time to show the class how to process the terminal output in Python by 
 
 * We are now going to call this CLI tool from within Python, and capture some of its output.
 
-First, have everyone open a new Python file called `wallet.py`:
+First, have everyone open a new Python file called `wallet.py`.  This new file should be located in the parent directory of hd-wallet-derive as follows:
+
+![file_location](Images/file_location.png)
 
 Type the following:
 
@@ -510,10 +512,10 @@ command = ''
 
 * The subprocess module allows us to call other processes, such as CLI tools, from within our Python process.
 
-* We are using single quotes since our command has double quotes in it. We can later use more advanced string formatting.
+* We are using single quotes, since our command has double quotes in it. Later, we can use more advanced string formatting.
 
 Wait for everyone to catch up, and then have everyone paste the command that they used in the terminal
-inside of the command string:
+inside of the command string. **NOTE:** The mnemonic phrase must be inserted inside *double quotes*, **not** single quotes.
 
 ```python
 import subprocess
@@ -548,7 +550,7 @@ Ensure Windows users understand the difference in formatting for their command, 
 
 Have everyone copy this down, and explain:
 
-* While we don't need to know every detail of this command, we are essentially telling the subprocess module to call this command through a system "pipe" and telling it that the program is interactive with the `shell=True` flag.
+* While we don't need to know every detail of this command, we are essentially telling the subprocess module to call this command through a system "pipe," and telling it that the program is interactive with the `shell=True` flag.
 
 * "stdout" means "standard output" -- aka the output that programs return to the operating system to print. When you run "print" in Python, it pipes the string to `stdout`.
 
@@ -562,7 +564,7 @@ Once everyone has successfully copied and run this program, ask the following qu
 
 * What do you notice about the output, particularly the format?
 
-  * **Answer:** It is not formatted very nicely, or in a way that we can process this easily.
+  * **Answer:** It is not formatted very nicely, or in a way that we can process easily.
 
 * What would be another format that would be easier to work with, in this case?
 
@@ -596,7 +598,7 @@ print(keys)
 
 Ensure the students are caught up and are printing their keys in JSON format. You can challenge them to `print` it as well.
 
-Much better, right? Now that we have the keys in an object, we can access the address of the first key like so:
+Much better, right? Now that we have the keys in an object, we can access the address of the first key, like so:
 
 ```python
 print(keys[0]['address'])
@@ -640,19 +642,19 @@ Ask the students:
 
 * Have any of you heard the term "hot" or "cold" wallets before?
 
-* Let's clarify a bit on what these mean.
+* Let's clarify what these mean.
 
 Continue through the slideshow until:
 
 ![hardware wallet](https://image.shutterstock.com/image-photo/cryptocurrency-hardware-wallet-on-laptop-600w-1114321721.jpg)
 
-* This is a hardware wallet. It looks like a USB drive, right? Instead of storing files, what this device does is store your private keys. It can also sign transactions with those keys.
+* This is a hardware wallet. It looks like a USB drive, right? Instead of storing files, this device stores your private keys. It can also sign transactions with those keys.
 
-* Does anyone know why this is more secure than using our mnemonics like we have been?
+* Does anyone know why this is more secure than using our mnemonics?
 
   * **Answer:** The hardware wallet never outputs the private keys once they are generated the first time.
 
-* Essentially, what this means is that this device will give you one, and only one opportunity to write down your mnemonic phrase.
+* Essentially, what this means is that this device will give you one, and only one, opportunity to write down your mnemonic phrase.
  After that, the device will never output the private keys again. You can only use it to restore or generate a mnemonic.
 
 * You are effectively asking the device to sign a transaction that you send to it over USB.
@@ -667,18 +669,18 @@ Now ask the students:
 
   * **Answer:** Security is a spectrum.
 
-Elaborate that a software wallet on your phone or laptop is like carrying physical cash with you, you only want to carry so much.
+Elaborate that a software wallet on your phone or laptop is like carrying physical cash with you; and you only want to carry so much.
 
-* It's really easy to pull cash out of your wallet, but it also carries some risk.
+* While it's really easy to pull cash out of your wallet, it also carries some risk.
 
 * A hardware wallet is more like a sealed bank vault, or an ATM.
  You're protected by a lot more security measures, but it's not always as convenient.
 Imagine being in line at the store, pulling out a hardware wallet, plugging it into your phone, opening the companion app,
- confirming the transaction details, then entering your PIN on the hardware wallet. That would take forever, and probably be a bit embarrassing! In this case, storing a bit of crypto in a software wallet app on your phone is much easier, and you can refill it when convenient.
+ confirming the transaction details, then entering your PIN on the hardware wallet. That would take forever and probably be a bit embarrassing! In this case, storing a bit of crypto in a software wallet app on your phone is much easier, and you can refill it when convenient.
 
 Ask the students:
 
-* Can anyone guess as to why software wallets aren't as secure as a hardware wallet?
+* Can anyone guess why a software wallet isn't as secure as a hardware wallet?
 
   * **Answer:** Computers and phones get hacked all the time!
 
@@ -688,9 +690,9 @@ Explain to the class:
 
 So what's this talk about "hot" vs. "cold" wallets?
 
-* When we refer to hot vs. cold, we are referring to generally how often the wallet is accessed.
+* When we refer to hot vs. cold, we are generally referring to how often the wallet is accessed.
 
-* "Hot" wallets tend to be live and ready to spend funds, and much easier to access.
+* "Hot" wallets tend to be live, ready to spend funds, and much easier to access.
 
 * "Cold" wallets tend to store larger funds and are accessed less frequently, more like a vault.
 
@@ -700,14 +702,14 @@ Ask the students:
 
   * **Answer:** Software wallets are hot wallets.
 
-* What would be a "cold" wallet?
+* What would a "cold" wallet be?
 
   * **Answer:** Hardware wallets.
 
 Congratulations! Now you understand the different wallet standards, the different implementations of these wallets in hardware
 and software, and when to use each!
 
-### 18. Students Do: "If I Were an Exchange" Thought Experiment (15 min)
+### 18. Student Do: "If I Were an Exchange" Thought Experiment (15 min)
 
 In this activity, students will break into small groups and design an exchange given the different wallet standards
 and software/hardware implementations.
@@ -721,11 +723,11 @@ and how they manage the funds.
 
 ### 19. Instructor Do: Exchange Design Review (10 min)
 
-While each group of students may have slightly different designs, generally, the centralize exchanges use similar implementations.
+While each group of students may have slightly different designs, the centralized exchanges generally use similar implementations.
 
 Have the students present their designs, picking a group leader to describe the architecture to the class.
 
-Ask the students the following questions:
+Ask students the following questions:
 
 * What type of wallet would be the best for an exchange to use?
 
@@ -733,7 +735,7 @@ Ask the students the following questions:
 
 * Should you keep all of the funds available to spend, or should you keep a percentage offline?
 
-  * **Answer:** You should store most of the funds offline, then when customers withdraw, do the withdraws in bulk.
+  * **Answer:** You should store most of the funds offline, and when customers withdraw, do the withdraws in bulk.
 
 * How might a decentralized exchange work differently?
 
@@ -741,7 +743,7 @@ Ask the students the following questions:
 
 * What is the advantage of a centralized exchange?
 
-  * **Answer:** Easy onboarding, you can hold the company liable.
+  * **Answer:** Easy onboarding, and you can hold the company liable.
 
   * **Answer:** Potentially higher liquidity, and leverage options. More advanced services may be provided.
 
@@ -777,4 +779,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

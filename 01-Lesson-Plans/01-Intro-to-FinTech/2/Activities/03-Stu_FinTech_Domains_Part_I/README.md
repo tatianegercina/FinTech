@@ -22,7 +22,7 @@ Working in groups of two or three people, you will research the following FinTec
 
 * Research each domain and use your findings to answer the following questions:
 
-  * What does the particular FinTech domain do? What is it's purpose?
+  * What does the particular FinTech domain do? What is its purpose?
 
   * What is the competitive landscape? Who are its main contenders?
 

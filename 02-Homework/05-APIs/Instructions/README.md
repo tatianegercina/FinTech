@@ -1,138 +1,150 @@
-# Unit 5 — How do you like them apps?
+# Unit 5 - Financial Planning
 
 ![Financial Planner](Images/financial-planner.png)
 
 ## Background
 
-The Consumer Division of Harold's company has decided to offer budgeting and financial planning services to customers. They want to build a report for customers that links to their banking and investment accounts and automatically refreshes the data and charts upon login. However, some of the calculations are tricky, and Harold could use some help connecting the accounts and simulating the retirement investment projections. Luckily, there are APIs available to obtain account transactions and fetch retirement portfolio prices.
+You decided to start a FinTech consultancy firm, and you want to make the difference by working on projects with high social impact in local communities. You just won your first contract to help one of the biggest credit unions in your area. They want to create a tool that helps their members enhance their financial health. The Chief Technology Officer (CTO) of the credit union, asked you to develop a prototype application to present a demo in the next credit union assembly.
 
-In this homework assignment, you will help Harold complete the following tasks:
+The credit union board wants to allow the union's members to assess their monthly personal finances, and also be able to forecast a reasonably good retirement plan based on cryptocurrencies, stocks, and bonds.
 
-1. [Budget Analysis with Plaid](#Budget-Analysis)
+In this homework activity, you will use all the skills you have learned until now, focusing on using APIs as part of the technical solution.
 
-2. [Retirement Planner](#Retirement-Planner)
+You will create two financial analysis tools using Jupyter notebooks. The first will be a personal finance planner that will allow users to visualize their savings composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
 
-3. [Financial Report](#Financial-Report)
+The second tool will be a retirement planning tool that will use the Alpaca API to fetch historical closing prices for a retirement portfolio composed by stocks and bonds and then run Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to answer questions about the portfolio.
 
 ---
 
 ### Files
 
-* [Budget Starter Notebook](Starter_Code/account_summary.ipynb)
+* [Personal Finance Planner starter code](Starter_Code/financial-planner.ipynb)
 
-* [Retirement Planner Starter Notebook](Starter_Code/portfolio_planner.ipynb)
+* [MCForecastTools toolkit](Starter_Code/MCForecastTools.py)
 
 ---
 
 ## Instructions
 
-### Budget Analysis
+### Part 1 - Personal Finance Planner
 
-In this section, you will use the Plaid API to obtain transaction and account data for the budget analysis section of the report.
+In this section of the challenge, you will create a personal finance planner application. To develop the personal finance planner prototype, you should take into account the following assumptions:
 
-Follow the steps outlined in the budget starter notebook (`account_summary.ipynb`) to complete the following:
+* The average household income for each member of the credit union is $12,000.
 
-1. Generate a Plaid access token to access the Developer Sandbox.
+* Every union member has a savings portfolio composed of cryptocurrencies, stocks, and bonds.
 
-2. Use the Access token to fetch account transactions from the sandbox. You should fetch the last 90 days of transactions from the sandbox using the following institution:
+Use the starter Jupyter notebook to complete the following steps.
 
-    ```python
-    INSTITUTION_ID = "ins_109508"
-    ```
+#### Collect Crypto Prices Using the `requests` Library
 
-3. Perform basic budget analysis on the sandbox transaction and generate the following plots:
+Assume the following amount of crypto assets: `1.2` BTC and `5.3` ETH.
 
-    * Spending Categories Pie Chart.
+1. Create a variable called `monthly_income` and set its value to `12000`.
 
-      ![Expenses per category](Images/spending-pie.png)
+2. Use the `requests` library to fetch the current price in Canadian dollars of bitcoin (`BTC`) and ethereum (`ETH`) using the API endpoints provided.
 
-    * Spending Per Month Bar Chart.
+3. Parse the API JSON response to pick the crypto prices and store each price in a variable.
 
-      ![Expenses per month](Images/spending-month.png)
+    **Hint:** Be aware of the particular identifier for each cryptocurrency in the API JSON response - the bitcoin identifier is `1` whereas ethereum is `1027`.
 
-4. Use the API to fetch income data from the sandbox and print the following:
+4. Compute the value in Canadian dollars of the current amount of cryptocurrencies and print the results.
 
-* Last Year's Income Before Tax.
+#### Collect Investments Data Using Alpaca: `SPY` (stocks) and `AGG` (bonds)
 
-* Current Monthly Income.
+Assume the following amount of shares: `200` `AGG` (bonds) and `50` `SPY` (stocks).
 
-* Projected Year's Income Before Tax.
+**Important:** Remember to create a `.env` file in your working directory to store the values of your Alpaca API key and Alpaca secret key.
 
-### Retirement Planner
+1. Create the Alpaca API object using the `tradeapi.REST` function from the Alpaca SDK.
+
+2. Format the current date as ISO format. You may change the date set in the starter code to Today's date.
+
+3. Get the current closing prices for `SPY` and `AGG` using the Alpaca's `get_barset()` function. Transform the function's response to a Pandas DataFrame.
+
+4. Pick the `SPY` and `AGG` close prices from the Alpaca's `get_barset()` DataFrame response and store them as Python variables. Print the closing values for validation.
+
+5. Compute the value in dollars of the current amount of shares and print the results.
+
+#### Savings Health Analysis
+
+In this section, you will assess the financial health of the credit union's members.
+
+1. To analyze savings health, create a DataFrame called `df_savings` with two rows. Store the total value in dollars of the crypto assets in the first row and the total value of the shares in the second row.
+
+    **Hint:** The `df_savings` DataFrame should have one column `amount` with two rows with `crypto` and `shares` as index values.
+
+2. Use the `df_savings` DataFrame to plot a pie chart to visualize the composition of personal savings.
+
+3. Use `if` conditional statements to validate if the current savings are enough for an emergency fund. An ideal emergency fund should be equal to three times your monthly income.
+
+    * If total savings are greater than the emergency fund, display a message congratulating the person for having enough money in this fund.
+
+    * If total savings are equal to the emergency fund, display a message congratulating the person on reaching this financial goal.
+
+    * If total savings are less than the emergency fund, display a message showing how many dollars away the person is to reach the goal of saving at least three times their monthly expenses.
+
+### Part 2 - Retirement Planning
 
 In this section, you will use the Alpaca API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at `30` years. You will then use the Monte Carlo data to answer questions about the portfolio.
 
-Follow the steps outlined in the budget starter notebook to complete the following:
+Follow the steps outlined in the starter notebook to complete the following.
 
 #### Monte Carlo Simulation
 
-Create a Monte Carlo simulation for the retirement portfolio:
+Use the MCForecastTools toolkit to create a Monte Carlo simulation for the retirement portfolio:
 
-1. Use the Alpaca API to fetch historical closing prices for a traditional 60/40 portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`).
+1. Use the Alpaca API to fetch five years historical closing prices for a traditional `40/60` portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`).
 
-2. Run a Monte Carlo simulation of `500` runs and `30` years for the `60/40` portfolio and plot the results.
+2. Run a Monte Carlo Simulation of `500` runs and `30` years for the `40/60` portfolio and plot the results.
 
     ![monte carlo](Images/monte-carlo.png)
 
-3. Select the ending cumulative returns from the Monte Carlo simulation and calculate the interval values for a `90`% confidence interval.
-
-4. Using the ending cumulative returns, plot a histogram of the results and plot the `90%` confidence interval as vertical lines on the histogram.
+3. Plot the probability distribution and confidence intervals.
 
     ![histogram](Images/histogram.png)
 
 #### Retirement Analysis
 
-Use the Monte Carlo simulation data to answer the following questions:
+Fetch the summary statistics from the Monte Carlo simulation results to answer the following questions:
 
-1. What are the expected cumulative returns at `30` years for the `10th`, `50th`, and `90th` percentiles?
+1. Given an initial investment of $20,000, what is the expected portfolio return in dollars at the `95%` lower and upper confidence intervals?
 
-2. Given an initial investment of `$20,000`, what is the expected return in dollars at the `10th`, `50th`, and `90th` percentiles?
+2. How would a `50%` increase in the initial investment amount affect the expected portfolio return in dollars at the `95%` lower and upper confidence intervals?
 
-3. Given the current projected annual income from the Plaid analysis, will a `4%` withdrawal rate meet or exceed that value at the `10th` percentile? Note: This is basically determining if retirement income is equivalent to current income.
+### Optional Challenge - Early Retirement
 
-4. How would a `50%` increase in the initial investment amount affect the `4%` retirement withdrawal? In other words, what happens if the initial investment had been bigger?
+The CTO of the Credit Union was really impressed with your work on this planner, but commented that `30` years seems like such a long time to wait to retire! The CFO starts wondering if the retirement plan could be adjusted to retire earlier than normal.
 
-5. (Optional Challenge) Use the Monte Carlo data and calculate the cumulative returns at the `5%`, `50%`, and `95%` quartiles and plot this data as a line chart to see how the cumulative returns change over the life of the investment.
-
-    ![projected-returns.png](Images/projected-returns.png)
-
-### Financial Report
-
-In this section, you will compile a financial report to demo your calculations to the Consumer App Team. The report should be written as a markdown file and include the following sections:
-
-1. **Budget Analysis:** Summarize the transaction data from the budget analysis and include images for each chart and table produced.
-
-2. **Retirement Planning:** Summarize the retirement portfolio analysis and include the charts for the Monte Carlo simulation.
-
-### Optional Challenge — Early Retirement
-
-Harold is impressed with your work on this planner, but thinks that `30` years seems like a very long time to wait to retire! Harold wants to know if the retirement plan could be adjusted to retire earlier than normal. Try adjusting the portfolio to either include more risk (a higher stock than bond ratio), or to have a larger initial investment and then rerun the retirement analysis to see what it would take to retire in `5` years, instead of `30`!
+Try adjusting the portfolio to either include more risk (a higher stock than bond ratio) or to have a larger initial investment and rerun the retirement analysis to see what it would take to retire in `5` or `10` years instead of `30`!
 
 ---
 
 ### Resources
 
-* [Plaid API Docs](https://plaid.com/docs/)
-
 * [AlpacaDOCS](https://alpaca.markets/docs/)
 
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* [Free Crypto API Documentation](https://alternative.me/crypto/api/)
 
 ---
 
 ### Hints and Considerations
 
-* For the Monte Carlo simulation, start out by running `100` simulations for one year of returns, and when you have the code worked out, run the simulation at `100–500` simulations for `30` years (this takes a long time).
+* For the Monte Carlo simulation, start out by running `100` simulations for one year of returns, and when you have the code worked out, run the simulation at `100–500` simulations for `30` years.
+
+* Remember to add the `.env` files to the `.gitignore` configuration to avoid exposing your API keys in your GitHub repository.
+
+* A `.gitignore` file contains file names and extensions of files that you don't want to pushed to your repository. For more information on how a `gitignore` works, you can read the documentation [here](https://docs.github.com/en/github/using-git/ignoring-files).
 
 ---
 
 ### Submission
 
-* Create Jupyter Notebooks for the analysis and planner and host the notebooks on GitHub.
+1. Create a Jupyter Notebook containing your Personal Finance Planner Jupyter notebook.
 
-* Include a Markdown Financial Planner report that summarizes your assumptions and findings and include this report in your GitHub repo.
+2. Submit your notebook to a new GitHub repository and create a `README.md` file.
 
-* Submit the link to your GitHub project to Bootcampspot.
+3. Submit the link to your GitHub project to Bootcampspot for grading.
 
 ---
 

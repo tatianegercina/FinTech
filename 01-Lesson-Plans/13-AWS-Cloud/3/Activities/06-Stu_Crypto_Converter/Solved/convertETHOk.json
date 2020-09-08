@@ -1,0 +1,21 @@
+{
+  "messageVersion": "1.0",
+  "invocationSource": "DialogCodeHook",
+  "userId": "John",
+  "sessionAttributes": {},
+  "bot": {
+    "name": "Crypto_Converter",
+    "alias": "$LATEST",
+    "version": "$LATEST"
+  },
+  "outputDialogMode": "Text",
+  "currentIntent": {
+    "name": "convertCAD",
+    "slots": {
+      "birthday": "1978-12-16",
+      "cadAmount": "10",
+      "crypto": "ETH"
+    },
+    "confirmationStatus": "None"
+  }
+}

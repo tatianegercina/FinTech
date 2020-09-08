@@ -1,11 +1,11 @@
-## 19.2 Lesson Plan: Bit, A Python Library
+## 19.2 Lesson Plan: Bit, a Python Library
 
 ### Overview
 
-Today's class students will begin to interact with blockchains using Python libraries `web3.py`, `bit`,
+In today's class, students will begin to interact with blockchains using Python libraries `web3.py`, `bit`,
 and will also learn how BIP44 works in preparation for the homework.
 
-The goal of today's class is for the students to understand how to talk to Ethereum and Bitcoin nodes using Python,
+The goal today is for students to understand how to talk to Ethereum and Bitcoin nodes using Python,
 and to understand how wallets work across the blockchain ecosystem.
 
 ### Class Objectives
@@ -28,8 +28,8 @@ By the end of the class, students will be able to:
  You may need to send out test bitcoins to students that did not successfully request them from a faucet previously.
 
 * If you can prefund multiple testnet addresses by splitting up what the faucet sends you into multiple addresses,
- you can use these to distribute to students as prefunded private keys if absolutely necessary to keep the class moving
- (for instance, the transaction doesn't confirm between the beginning of class and after the break).
+ you can distribute these to students as prefunded private keys if absolutely necessary to keep the class moving
+ (for instance, if the transaction doesn't confirm between the beginning of class and after the break).
 
 * Use an offline version of the [BIP39 Conversion tool](https://github.com/iancoleman/bip39/releases) to derive your BTC testnet address if necessary.
 
@@ -39,13 +39,13 @@ By the end of the class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1zzJtY3NSG1zj7VXiDrn8BGcuppqN1QlRorW3BXrXgqU/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [19.2 Lesson Slides](https://docs.google.com/presentation/d/1s_ZDENASah_aJXU58coM1IoL9xzwj2pIBzst51LvrE4/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [19.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a8d83586-02b6-45fa-9af9-ab1e0124b037) Note that this video may not reflect the most recent lesson plan.
@@ -68,7 +68,7 @@ Ask the students the following questions:
 
  **Answer**: It makes a decentralized computing and money system available to everyone, powered by everyone.
 
-* Now let's take this back a bit, what was the first blockchain?
+* Now let's take this back a bit. What was the first blockchain?
 
  **Answer**: Bitcoin!
 
@@ -77,13 +77,13 @@ Ethereum-based blockchains.
 
 * Can anyone describe a couple of differences between Bitcoin and Ethereum?
 
- **Answer**: Ethereum is "Turing complete" meaning it is capable of general computing.
+ **Answer**: Ethereum is "Turing complete"—meaning it is capable of general computing.
 
  **Answer**: Bitcoin supports multiple inputs and outputs in transactions (more on this in a bit).
 
  **Answer**: Ethereum uses nonces to count transactions sent from an account.
 
- **Answer**: Ethereum uses a single account system, Bitcoin uses a UTXO system (more on this in a bit).
+ **Answer**: Ethereum uses a single account system, while Bitcoin uses a UTXO system (more on this in a bit).
 
  **Answer**: Bitcoin supports multisig natively versus needing more complex and expensive smart contracts (more on this later today).
 
@@ -98,17 +98,17 @@ Ask the students:
 
 * If Ethereum exists, why is Bitcoin still the number one crypto?
 
-Have the students ponder for a bit, have some students give their ideas.
+Have the students think for a bit, and then share their ideas.
 
 Then explain:
 
 * Even though Ethereum is quite a bit more capable functionally than Bitcoin, architectures designed for general computing
  are more expensive to use.
 
-* Bitcoin's architecture (and thus, all of its derivatives) is designed for complex payments on the natively
+* Bitcoin's architecture (and thus, all of its derivatives) is designed for complex payments on the native
  core layer of the blockchain, and can get them done for less computational effort than Ethereum.
 
-* In the case of Ethereum, you'd have to write smart contracts to do many of types of transactions that Bitcoin can do natively,
+* In the case of Ethereum, you'd have to write smart contracts to do many types of transactions that Bitcoin can do natively,
  which can end up costing more gas/computational effort.
 
 * Ethereum very well may take over as the main cross-border payments network, but for now, Bitcoin is still the leader in the space.
@@ -127,7 +127,7 @@ Ask the students:
 
 Now, let's start learning why Bitcoin is still a top player, and why it might stay that way for longer than you'd think.
 
-### 3. Students Do: Wallet Check (10 min)
+### 3. Student Do: Wallet Check (10 min)
 
 In this activity, students will ensure that they have funded their wallet (using their mnemonic phrase and the BIP39 tool)
 with testnet bitcoins, and prepare their testnet bitcoin private key.
@@ -135,14 +135,14 @@ with testnet bitcoins, and prepare their testnet bitcoin private key.
 For the students that were unable to request tokens for any reason before class, they will be instructed to send you a bitcoin test address.
 **You will need to have testnet bitcoins ready in your instructor wallet for this activity.**
 
-Using the Python program below, you can paste each student's testnet address into the designated array
+Using the Python program below, you can paste each student's testnet address into the designated array;
 the script will send a multi-output transaction that funds all of the addresses with `0.001 BTC` simultaneously.
 
 By bundling into a single transaction, we do not have to wait for multiple transactions to confirm in the blockchain.
 We can guarantee that once this transaction completes, every student will be funded at once, without having to wait for others to confirm.
 The test network may be slow at times, so this is our best option.
 
-Later today, we will show students how to perform this method.
+We will show students how to perform this method later today.
 But first, send out the instructions to all the students and have the students prepare their keys using the BIP39 tool.
 
 **Instructions:**
@@ -175,7 +175,7 @@ Ask the students:
 
 Continue through the slideshow to help illustrate your points.
 
-Ask the students the following question:
+Ask students the following question:
 
 * What mechanism allows us to send to multiple addresses in one transaction?
 
@@ -183,7 +183,7 @@ Ask the students the following question:
 
 Explain to the students that Unspent Transaction Outputs (UTXOs) are the digital equivalent of "change" in a transaction.
 
-* For example, if you have a $20 dollar bill, and you are trying to buy an item for $10, you can't simply rip the bill in half and hand the other half to the merchant. The merchant must give you a $10 bill in return as change.
+* For example, if you have a $20 dollar bill, and you are trying to buy an item for $10, you can't simply rip the bill in half and hand the other half to the merchant. The merchant must give you a $10 bill in change.
 
 * Bitcoin treats balances as sets of change that can be owned by different private keys. To calculate your
  wallet's balance, you simply sum up all of the UTXOs that your private keys own, much like counting the bills and coins stored
@@ -191,7 +191,7 @@ Explain to the students that Unspent Transaction Outputs (UTXOs) are the digital
 
 ![Testnet Funding account](Images/utxo-testnet-funding-account.png)
 
-This is a screenshot of a transaction was sent from the bitcoin testnet faucet,
+This is a screenshot of a transaction that was sent from the bitcoin testnet faucet,
 to a freshly generated address.
 
 * On the left, you see `1 input consumed` that takes about 92 test bitcoins stored in a UTXO owned by the faucet's key and uses it as an input to the transaction. Notice the address starts with `2N5YL5`.
@@ -215,7 +215,7 @@ Ask the students:
 
 * What does having multiple outputs enable?
 
- **Answer:** You can send it to multiple people in one transaction.
+ **Answer:** One transaction can be sent to multiple people.
 
 * Now, can you have multiple inputs in a transaction?
 
@@ -230,7 +230,7 @@ Ask the students:
  **Answer:** By collecting your UTXOs and signing them with their designated private keys.
  As long as all of the inputs are correctly signed, the transaction is good to go!
 
-### 6. Students Do: Visualizing UTXOs (15 min)
+### 6. Student Do: Visualizing UTXOs (15 min)
 
 In this activity, you will have the students explore different transactions using the Blockcypher block explorer.
 
@@ -294,7 +294,7 @@ from bit import wif_to_key
 
 This will allow us to work with our testnet private key.
 
-* WIF means "wallet import format" -- it's a special format bitcoin uses to designate the types of keys it generates.
+* WIF means "wallet import format" -- it's a special format bitcoin uses to designate the types of keys it generates. The tool we used to generate our Bitcoin addresses already formats your private keys in WIF, to make it easy to import into other wallets like `bit`.
 
 Now, we can initialize the key in an object like so:
 
@@ -334,9 +334,9 @@ Ask the students the following questions:
 
  **Answer:** It connects to Bitcoin networks and manages keys, much like web3.py works with Ethereum.
 
-* What does it mean for a transaction to have 6 confirmations?
+* What does it mean for a transaction to have six confirmations?
 
- **Answer:** There are 6 blocks that were mined after the transaction was mined.
+ **Answer:** There are six blocks that were mined after the transaction was mined.
  This threshold makes it virtually impossible to reverse.
 
 ---
@@ -359,7 +359,9 @@ Ask the students:
  **Answer:** UTXOs!
 
 Now it's time to send a multi-output transaction ourselves!
+
 ### 12. Instructor Do: Multi Output Transaction Demo (10 min)
+
 Now it's time to demonstrate how a multi-output transaction is built.
 
 **Files:**
@@ -392,7 +394,7 @@ print(key.send(outputs))
  `(address, amount, denomination)`
 
 * `Bit` is smart enough to take these outputs and build the full transaction out of them.
- Essentially we're telling `bit` what the outputs should look like, and it is building the transaction for us.
+ Essentially, we're telling `bit` what the outputs should look like, and it is building the transaction for us.
 
 Now, copy and paste your private key into the `key` assignment as such:
 
@@ -414,9 +416,9 @@ Alternatively, you can view [this existing transaction](https://live.blockcypher
 
 ![multi output tx](Images/multi-output-tx.png)
 
-See if the students can point out the output that has their bitcoins in it.
+See if students can indicate which output contains their bitcoins.
 
-Point out the outputs on the right that correspond to the student wallets (they are the bubbles with the `0.001 BTC` sent).
+Now, indicate which outputs on the right correspond to the student wallets (they are the bubbles with the `0.001 BTC` sent).
 
 Ask the students:
 
@@ -424,9 +426,9 @@ Ask the students:
 
  **Answer:** Back to the original address, starting with `mhrsdwPN4`.
 
-Now, time for the students to send their own multi-output transactions!
+Now, it's time for the students to send their own multi-output transactions!
 
-### 13. Students Do: Sending a multi-output transaction (15 min)
+### 13. Student Do: Sending a multi-output transaction (15 min)
 
 In this activity, students will write their own Python program that will send a multi-output transaction.
 
@@ -441,14 +443,14 @@ In this activity, students will write their own Python program that will send a 
 Have TAs circulate and ensure that students are not stuck.
 
 If students encounter issues, ensure that they have spendable UTXOs in their wallet.
-This means checking their balance on a block explorer like Blockcypher and ensuring that the incoming transactions
-are confirmed, and the wallet has a positive balance.
+This means checking their balance on a block explorer like Blockcypher, ensuring that the incoming transactions
+are confirmed, and that the wallet has a positive balance.
 
 ### 14. Instructor Do: Bitcoin Transactions Review (5 min)
 
 Congratulate the students on programming money!
 
-Ask the students the following questions:
+Ask students the following questions:
 
 * What are some benefits the UTXO system provides?
 
@@ -462,7 +464,7 @@ Ask the students the following questions:
 
  **Answer:** It is slightly more complex to understand, otherwise it is very powerful.
 
-* Can you send multiple transactions in parallel in UTXO based systems (i.e., two separate transactions being mined at the same time from the same wallet)?
+* Can you send multiple transactions in parallel in UTXO based systems (i.e., two separate transactions being mined at the same time, from the same wallet)?
 
  **Answer:** It depends. As long as you are spending different UTXOs in each transaction, you can send them at the same time.
 
@@ -538,12 +540,12 @@ This will output something like:
 
 * Explain that the `confirmations` field indicates how many blocks ago the UTXO arrived in this wallet.
 
-Now explain to the students that with these functions you can emulate a lot of the functionality that a block explorer provides,
+Now explain to students that with these functions you can emulate a lot of the functionality that a block explorer provides,
 and the more you explore the `bit` library, the more you'll be able to build one yourself.
 
 We are going to use it to build a multi-coin crypto wallet later, and these functions are critical to accomplishing that.
 
-### 16. Students Do: Fetching Network Data (10 min)
+### 16. Student Do: Fetching Network Data (10 min)
 
 Now, the students will practice using the functions you just demonstrated.
 
@@ -579,4 +581,4 @@ Ask the students the following questions:
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
