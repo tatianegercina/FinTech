@@ -41,7 +41,7 @@ By the end of class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.3 Slides](https://docs.google.com/presentation/d/1S8N99BU5zYEsMWU626LilaYEh3bWHzx99BG9do_uEHo/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.3 Slides](https://docs.google.com/presentation/d/1QoLZa4CvI0ONJCXfsR2o4EXOCQaLnXGgBsnaGm3awAA/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to "File", selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -59,7 +59,7 @@ Open the lesson slides to introduce today's lesson and objectives. Then, review 
 
 * The previous two lessons focused on introducing the FinTech course structure as well as the FinTech industry more broadly. We discussed the history and current landscape of the FinTech ecosystem, as well as specific factors that have led to changes in various FinTech domains.
 
-* Today, you will apply what they've learned so far about the FinTech industry to write your case studies in visually enhanced markdown files, and then host them in a GitHub repository.
+* Today, you will apply what you've learned so far about the FinTech industry to write your case studies in visually enhanced markdown files, and then host them in a GitHub repository.
 
 * Today's goal is twofold. You will learn how to (1) manage your repositories and develop in shared repositories, and (2) develop text-based assets in markdown to provide visually appealing `README` files that can be previewed in GitHub (and, therefore, showcased to potential employers).
 
@@ -103,9 +103,7 @@ Open the lesson slides, move to the "GitHub Refresher" section and present the f
 
 Then, demonstrate how to create a repository in GitHub, edit files in that repo, and commit and push changes. Be sure to cover the following points:
 
-* Git repositories can be created via the GitHub website. Check the option to "Initialize this repository with a `README`" to deploy the repository automatically.
-
-  ![github-website](Images/github-website.png)
+* Git repositories can be created via the GitHub website. Check the option for "Initialize this repository with:" that states `Add a README file`, then click `Create repository` to deploy the repository automatically.
 
   ![github-create-repository](Images/github-create-repository.png)
 
@@ -121,11 +119,9 @@ Then, demonstrate how to create a repository in GitHub, edit files in that repo,
 
   ![terminal-vscode](Images/terminal-vscode.png)
 
-  ![vscode-editor](Images/vscode-editor.png)
-
 * Here, `README.md` is edited and saved in the local git repository. However, changes are still local and will need to be pushed to the remote repository in GitHub.
 
-  ![git-local-change](Images/git-local-change.png)
+  ![vscode-editor](Images/vscode-editor.png)
 
 * Files can be committed and changed in the online GitHub repo by clicking on the "Upload files" button and then navigating to the file upload webpage.
 
@@ -153,7 +149,7 @@ In this activity, students will follow the steps in the other instructor demo to
 
 Review the previous activity with students, highlighting the following points:
 
-* Be sure to initialize the new GitHub repository with a `README.md` file. Otherwise, deployment of the repository will be halted until further setup is completed.
+* Be sure to initialize the new GitHub repository with a `README.md` file, Otherwise, deployment of the repository will require additional setup steps as seen in the image below:
 
   ![github-create-repo-uninitialized](Images/github-create-repo-uninitialized.png)
 
@@ -239,7 +235,7 @@ In this section, you will demo how to add folder structures to students' newly c
 
 Demo the following:
 
-* Revisit the GitHub website and click the "Clone or download" button.
+* Revisit the GitHub website and click the green "Code" button.
 
 * This time, copy the URL, as it represents the GitHub repository link (which will be used for the `git clone` command).
 
@@ -356,14 +352,14 @@ Reiterate to students the following:
 
 * A good `README` file helps people understand the purpose of the repository at a glance, and it shows developers how to navigate, install, and run a project.
 
-* There are several recommendations from industry and academia about what is the best structure for a `README` file; however, everyone agrees in a common rule, regardless the complexity of your project, you should always include a `README` file in the root folder of your repo.
+* There are several recommendations from industry and academia about what is the best structure for a `README` file; however, everyone agrees in the common rule, that regardless of the complexity of your project, you should always include a `README` file in the root folder of your repo.
 
-* In all the repositories that you create in the Boot Camp, at least, you should include the following sections in the README file.
+* In all the repositories that you create in the Boot Camp, you should include the following sections in the README file.
 
   ```markdown
   # Project Title
 
-  Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+  Just after the title, introduce your project by describing what the project is about, what problem inspired you to create this project, and/or what the main benefit for the potential user of your project might be.
 
   ---
 
@@ -393,7 +389,7 @@ Reiterate to students the following:
 
   ## Contributors
 
-  In this section, list all the people who contribute to this project; since you may want to be reached by recruiters or potential collaborators, include your contact e-mail, and optionally your LinkedIn or Twitter profile.
+  In this section, list all the people who contribute to this project; since you may want to be reached by recruiters or potential collaborators, include your contact e-mail, and optionally, your LinkedIn or Twitter profile.
 
   ---
 
@@ -427,7 +423,7 @@ Close the lesson slides, and demo the following while explaining each step:
 
   ![markdown-line-break-results](Images/markdown-line-break-results.png)
 
-* Use the backtick **`** syntax to wrap text as snippets or code. Wrapping text as snippet or code blocks adds emphasis to a specific item or piece of code.
+* Use the **`** syntax to wrap text as snippets or code. Wrapping text as snippet or code blocks adds emphasis to a specific item or piece of code.
 
   ![markdown-text-code-snippet](Images/markdown-text-code-snippet.png)
 
@@ -453,7 +449,7 @@ Close the lesson slides, and demo the following while explaining each step:
 
 * Notice how the newly formatted markdown file appears in comparison to the original.
 
-Explain to students that a good README file could be the difference between getting or not your next dream job, so encourage them to be conscientious while writing your README files.
+Explain to students that a good README file could be the difference between getting or not getting your next dream job, so encourage them to be conscientious while writing your README files.
 
 Slack out the ["Writing an Awesome README File" guide](../Supplemental/Awesome_README_Guide.md) and answer any questions before moving on.
 
@@ -491,7 +487,7 @@ Answer any questions before moving on.
 
 ### 13. Instructor Do: Writing Successful Case Studies (10 min)
 
-In this activity, students will learn about writing successful case studies and why it's important to have this ability in their skills set as FinTech professionals.
+In this activity, students will learn about writing successful case studies and why it's important to have this ability in their skill set as FinTech professionals.
 
 Open the lesson slides, move to the "Writing Successful Case Studies" section and highlight the following:
 
@@ -507,7 +503,7 @@ Open the lesson slides, move to the "Writing Successful Case Studies" section an
 
 * A successful case study is a self-contained story about reality. Typically it would be best if you described how a real customer overcame their problems thanks to your products, services, or professional experience.
 
-* Like any story, a successful case study has a beginning, a middle, and an end, where your customer, as the protagonist, overcome a problem in achieving their objectives.
+* Like any story, a successful case study has a beginning, a middle, and an end, where your customer, as the protagonist, overcomes a problem in order to achieve their objectives.
 
 * As a general guide to writing a case study, you can use the "Narrative Arc" that encompasses the following stages.
 
@@ -521,7 +517,7 @@ Open the lesson slides, move to the "Writing Successful Case Studies" section an
 
   * **Falling Action:** In this stage, there is a release of tension towards the conflict's resolution. In this state, you may describe how the protagonist (your customer) has changed as a result of facing the conflict. Usually, this part of the case study is where you highlight how your product, service, or professional experiences contribute to creating the path to the resolution.
 
-  * **Resolution (aka Denouement):** This is the end of the story, typically a happy ending where the problems derived from the conflict are resolved by using your product, service, or professional experience. In the case of an interview case study exposure, the ending doesn't have to be a happy one, but a complete story with an interesting moral for avoiding conflict in the future.
+  * **Resolution (aka Denouement):** This is the end of the story, typically a happy ending where the problems derived from the conflict are resolved by using your product, service, or professional experience. In the case of an interview case study exposure, the ending doesn't have to be a happy one, but one with a complete story and an interesting moral for avoiding conflict in the future.
 
 Next, provide an overview of the next activity.
 
@@ -603,9 +599,9 @@ Students probably know fairly little about Career Services. So today, you will:
 
   ☝️ What is Career Services?
 
-  🙋 Our partner in success. Whether we are job seekers or promotion seekers, Career Services can help us improve our behavioural and technical interviewing skills, as well as create great professional materials (resume, portfolio, LinkedIn etc.)
+  🙋 Our partner in success. Whether we are job seekers or promotion seekers, Career Services can help us improve our behavioural and technical interviewing skills, as well as create great professional materials (resume, portfolio, LinkedIn, etc.)
 
-  ☝️ So there's a lot of keywords in this video, or jargon, that we may not know. Did anybody note anything down that they didn't know?
+  ☝️ So there's a lot of keywords, or jargon, in this video that we may not know. Did anybody note anything down that they didn't know?
 
   🙋 Students will give a variety of answers, likely touching on some of these below. Take the time to run through each of them and give students a cursory idea of what they are:
 
@@ -619,7 +615,7 @@ Students probably know fairly little about Career Services. So today, you will:
 
   * **Demo Day**: Once boot camp is over, we will invite you to present at an event where we will invite local employers and recruiters to view your projects, ask you questions, and hopefully, offer you a job!
 
-  * **Whiteboarding sessions**: Actually, Career Services offers a wide range of sessions on whiteboarding, talking tech with recruiters, tackling online technical assessments and behavioural interviewing techniques. You can find these on your BootcampSpot or Canvas calendar.
+  * **Whiteboarding sessions**: Career Services offers a wide range of sessions on whiteboarding, talking tech with recruiters, tackling online technical assessments and behavioural interviewing techniques. You can find these on your BootcampSpot or Canvas calendar.
 
 #### 17.3 Students Do: Employer-Ready Criteria (8 min)
 
@@ -629,9 +625,9 @@ Students probably know fairly little about Career Services. So today, you will:
 
 #### 17.4 Instructor Do: Wrap-up (2 min)
 
-* ✅ Let students know that if they already have some of these materials, and it's likely that some already do if they're working in a finance or tech-related field, that they can already submit these materials to a Career Materials Advisor (formerly, Profile Coach) for review!
+* ✅ Let students know that if they already have some of these materials, (and it's likely that some already do if they're working in a finance or tech-related field), that they can already submit these materials to a Career Materials Advisor (formerly, Profile Coach) for review!
 
-* ✅ Encourage students to check out the Career Services workshops and sign up for anything that seems useful or interesting to them at this point. There are both general sessions and FinTech specific technical interviewing sessions available.
+* ✅ Encourage students to check out the Career Services workshops and sign up for anything that seems useful or interesting to them. There are both general sessions and FinTech specific technical interviewing sessions available.
 
 
 ### End Class
