@@ -187,7 +187,7 @@ As you research your company, you may find these types of resources to be useful
 
 * Reports devoted to the particular FinTech domain you are focusing on (e.g.,  FinTech in the mortgage industry)
 
-Additionally, popular online sources may be helpful, such as the examples you see here:
+Additionally, other online sources may be helpful, such as the examples you see here:
 
 * [Forbes](https://www.forbes.com/fintech/#39ae67bc13f1)
 
