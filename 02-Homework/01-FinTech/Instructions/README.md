@@ -58,13 +58,13 @@ Remember that because FinTech is an evolving field, different FinTech reports ma
 
 ### 2. Choose a Canadian company (or project) within  your chosen FinTech domain
 
-Use online research to identify the trends in your domain in the Canadian market, and choose a Canadian company that is successful or otherwise interesting to you. For example, if you chose Wealth Management, you may want to look at online journals, periodicals, reports, and websites about the future of Wealth Management, or how FinTech is changing or disrupting Wealth Management in Canada.
+Use online research tools to identify the trends in your domain in the Canadian market, and choose a Canadian company that is successful or otherwise interesting to you. For example, if you chose Wealth Management, you may want to look at online journals, periodicals, reports, and websites about the future of Wealth Management, or how FinTech is changing or disrupting Wealth Management in Canada.
 
 Your company could be:
 
 * A new, emerging Canadian FinTech company that is doing well in a particular domain. Examples include Coinsquare, Borrowell, Shopify, or Finaeo.
 
-* A large incumbent financial or technology company that is doing something interesting and new with technology. Examples include National Bank of Canada Blockchain, Goldman Sachs’ Marcus, JP Morgan’s JPMCoin, Facebook Libra, and Apple Card.
+* A large incumbent financial or technology company that is doing something interesting and new with technology. Examples include: National Bank of Canada Blockchain, Goldman Sachs’ Marcus, JP Morgan’s JPMCoin, Facebook Libra, and Apple Card.
 
 * A smaller start-up that is not yet wildly successful, but that you find promising and interesting. This may include a FinTech company in your local area or a company with a new idea that you would like to learn more about.
 
@@ -72,7 +72,7 @@ Your company could be:
 
 We recommend that you use the case study template below in order to focus your research. You may lengthen, shorten, or––if necessary––remove sections from the template to accommodate the information available about your company.
 
-**Note** If you have chosen a project within a larger company (such as the Apple Credit Card), you may want to focus your research on the origins and scope of the project rather than on the company itself.
+**Note:** If you have chosen a project within a larger company (such as the Apple Credit Card), you may want to focus your research on the origins and scope of the project rather than on the company itself.
 
 #### Case Study Template
 
@@ -165,13 +165,13 @@ For an overview of some of the most successful companies across FinTech domains,
 
 * [The Most Innovative FinTech Companies in 2019, Forbes](https://www.forbes.com/fintech/2019/#5264de5a2b4c)
 
-* [The Future of FinTech and Banking, Accenture](https://www.accenture.com/us-en/insight-future-fintech-banking)
+* [The Future of FinTech and Banking, Accenture](https://www.accenture.com/au-en/insight-future-fintech-banking)
 
 * [Scanning the FinTech Landscape: 10 Disruptive Models, McKinsey & Company](https://www.mckinsey.com/industries/financial-services/our-insights/banking-matters/scanning-the-fintech-landscape)
 
 ### Research Material
 
-As you research your company, you may find these types resources to be useful:
+As you research your company, you may find these types of resources to be useful:
 
 * The company’s website
 
@@ -186,6 +186,8 @@ As you research your company, you may find these types resources to be useful:
 * Interviews with the company’s founders, CTOs, or project leads
 
 * Reports devoted to the particular FinTech domain you are focusing on (e.g.,  FinTech in the mortgage industry)
+
+Additionally, other online sources may be helpful, such as the examples you see here:
 
 * [Forbes](https://www.forbes.com/fintech/#39ae67bc13f1)
 
