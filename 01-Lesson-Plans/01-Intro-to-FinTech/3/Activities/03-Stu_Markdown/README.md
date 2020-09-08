@@ -10,19 +10,19 @@ Complete the following steps:
 
 2. Modify the `README` file in the following order:
 
-    * Add an level 1 header to the `README` title.
+    * Add a level 1 header to the `README` title.
 
     * Add an image. (It doesn't need to be FinTech-related.)
 
-    * Add an level 2 header for the `README` description.
+    * Add a level 2 header for the `README` description.
 
-    * Add an level 3 header for the `README` table of contents.
+    * Add a level 3 header for the `README` table of contents.
 
     * Add links to each subfolder within the table of contents.
 
 3. Push the changes to the remote git repository.
 
-4. Verify the changes by navigating to your repo in the [GitHub](https://github.com/) website.
+4. Verify the changes by navigating to your repo on the [GitHub](https://github.com/) website.
 
 ## Hint
 
