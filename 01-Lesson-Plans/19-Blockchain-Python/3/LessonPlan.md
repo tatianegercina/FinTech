@@ -404,8 +404,20 @@ cd hd-wallet-derive
 php -r "readfile('https://getcomposer.org/installer');" | php
 php -d pcre.jit=0 composer.phar install
 ```
+Run these commands and install the dependencies. Have the students run the example given once the installation completes.
 
-Modify the last line to add the `-d pcre.jit=0` parameter to avoid some issues that may arise in Mac OS X. Run these commands and install the dependencies. Once the installation completes, have students run the example.
+**NOTE:** We modify the last line to add the `-d pcre.jit=0` parameter to avoid some issues that may arise in Mac OS X. 
+
+**NOTE:** Windows users may encounter issues with the installation while using git bash, specifically the error: 
+
+```
+stdin is not a tty
+stdout is not a tty 
+```
+
+They can overcome the issue by temporarily switching into the windows command prompt (CMD) after cloning the directory initially using the Git Bash prompt. The CMD prompt can be accessed by typing CMD in the Windows search box. Once the CMD is open, they will `cd` into the `hd-wallet-derive` directory and run the 3rd and 4th lines of the above code snippet as they normally would. After successful intallation, they can close the CMD and continue in the Git Bash prompt. The output in the CMD should look like so:
+
+![cmd_php_composer_install](Images/cmd_php_composer_install.png)
 
 Ensure that everyone has successfully installed and can run the `hd-wallet-derive` tool from the command line.
 Once everyone has successfully installed the tool, have everyone `cd ..` into the directory containing the `hd-wallet-derive` folder.
