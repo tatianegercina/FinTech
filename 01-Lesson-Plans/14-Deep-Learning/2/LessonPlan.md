@@ -508,7 +508,7 @@ Navigate to the [Colab website](https://colab.research.google.com), slack out th
 
 * To use Colab, students will need a Google account.
 
-* To create a new Jupyter notebook, click on `NEW PYTHON3 NOTEBOOK`:
+* To create a new Jupyter notebook, click on `NEW NOTEBOOK`:
 
   ![Images/colab02.png](Images/colab02.png)
 
@@ -528,7 +528,7 @@ Type the following command in the first cell, and click on the _Run_ button, or 
 
 * Code snippets provide useful boilerplate code for many tasks, such as building a plot.
 
-* To add a code snippet, open the left bar and type the kind of task you want to accomplish, for example, creating a bar chart.
+* To add a code snippet, open the left bar and type the kind of task you want to accomplish, for example, `bar chart`.
 
 * Once the code snippet appears, click on _INSERT_ to add the code to your notebook.
 
@@ -562,17 +562,18 @@ Run all the cells by clicking on the _Runtime_ menu and choose the _Run all_ opt
 
 * After a few seconds, all of the cells will run on the Google cloud!
 
-* The default settings for Google Colab currently install TensorFlow v1, though this will change in the near future. Students may get the following error after running their imports, despite having upgraded or installed Tensorflow v2:
+The default settings for Google Colab currently install TensorFlow v1, though this will change in the near future. Students may get the following error after running their imports, despite having upgraded or installed Tensorflow v2:
+
 ![Images/colab02.png](Images/colab16.png)
 
-* Though the notebook should still run all cells as intended, the defaults can be updated to avoid potential issues in the future. This can be done by running the following code, selecting `y` when prompted, and then restarting the runtime:
+Though the notebook should still run all cells as intended, the defaults can be updated to avoid potential issues in the future. This can be done by running the following code, selecting `y` when prompted, and then restarting the runtime:
 
 ```python
 !pip uninstall tensorflow
 !pip install tensorflow==2.0.0
 ```
 
-* Students can check, then verify, their Tensorflow version using the following code:
+Students can check, then verify, their Tensorflow version using the following code:
 
 ```python
 import tensorflow as tf
@@ -628,15 +629,17 @@ Delete the cell where you run `pip` and run all the notebook's cells to show stu
 
 ![Images/colab14.gif](Images/colab14.gif)
 
-Explain to students that there are plenty of examples created by the Colab community using an assortment of data that are available through the platform. These Notebooks can be found on the [Seedbank website](https://research.google.com/seedbank/). Slack out the Seedbank URL to students and highlight the following:
+Explain to students that there are plenty of examples created by the Colab community using an assortment of available data through the platform. Some notebooks can be found on the [Google AI Hub website](https://aihub.cloud.google.com/u/0/s?category=notebook) or GitHub.
 
-* Projects can be searched by tags or keywords.
+Slack out the following link to the [GitHub repository where the TensorFlow Keras tutorials are hosted](https://github.com/tensorflow/docs/tree/master/site/en/tutorials/keras), and highlight the following.
+
+* These examples showcase some of the capabilities of TensorFlow and can be executed in Google Colab.
 
 * These projects can be useful for learning by example, a source of inspiration for your projects, or just a helpful repository of code to copy snippets from.
 
-Type `Classify movie reviews using tf.keras` in the Seedbank search box, and press `ENTER` to look for this project.
+Continue the demo by opening the `text_clasification.ipynb` notebook. Once the notebook is loaded, scroll down into the page and click on the "Run in Google Colab".
 
-Once the project appears in the search results, open it and click on the _Run seed in Colab_ button. Tell students that this is how they can import a _seed project_ to their Colab workspace, start studying it, and customizing the code.
+Explain to students that this is how they can import a _seed project_ to their Colab workspace, start studying it, and customize it.
 
 ![Images/colab15.gif](Images/colab15.gif)
 
@@ -656,7 +659,7 @@ In this activity, students will use the text classification demo notebook to und
 
 ### 12. Instructor Do: Review Deep Learning on the Web (15 min)
 
-Open the [_Text Classification with Movie Reviews_ notebook](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/text_classification.ipynb).
+Open the [_Basic text classification_ notebook](https://github.com/tensorflow/docs/blob/master/site/en/tutorials/keras/text_classification.ipynb) in GitHub.
 
 Walk students through the notebook, pausing to highlight the various sections of code.
 
