@@ -6,11 +6,15 @@ In this activity, you will use the text classification demo notebook to understa
 
 * Work with a partner for this activity.
 
-* Read through the [_Text classification with movie reviews_ notebook](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/text_classification.ipynb) completely.
+* Open the [_Basic text classification_ notebook](https://github.com/tensorflow/docs/blob/master/site/en/tutorials/keras/text_classification.ipynb) in GitHub.
+
+* Open the notebook in Google Colab and review the code with your partner.
+
+  ![text-classificatiion](Images/text-classificatiion.gif)
 
 * Take turns explaining what each code block is doing; make sure that you both agree.
 
-* In the _Build the model_ section, experiment with the neural network architecture defined to increase the accuracy of the model and decrease loss to the maximum extent possible.
+* In the _Create the model_ section, experiment with the neural network architecture defined to increase the model's accuracy and decrease loss to the maximum extent possible.
 
 ---
 
