@@ -30,7 +30,7 @@ By the end of the class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1devzesQ1UKT2weYAz43Ei9YBIM863dYDtw9IFIMfLis/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [21.1 Lesson Slides](https://docs.google.com/presentation/d/16VnKjOyjFU-O2VyKV0f7HYddIxP4I79BjdhnkthU9mc/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -38,12 +38,11 @@ By the end of the class, students will be able to:
 
 * The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
-
 ---
 
 ### Instructor Notes
 
-* Today's class will be a challenging one as students start to dig deeper into advanced Solidity concepts. Take plenty of time to cover and review the new concepts in today's class.
+* Today's class will be a challenging one, as students start to dig deeper into advanced Solidity concepts. Take plenty of time to cover and review the new concepts in class.
 
 * Reassure students that as they practice Solidity, they will begin to see common patterns in the code. Many of the examples show this week can be reused in other smart contract applications.
 
@@ -59,9 +58,11 @@ Take a few minutes to discuss the following recall questions with the class.
 
 * Before we move on to new and advanced concepts in Solidity, let's review some of the basics that we already know.
 
-  * **Answer** Solidity is:
+* What is Solidity?
 
-  * A high-level object-oriented programing language.
+  * **Answer:** Solidity is:
+
+  * A high-level object-oriented programming language.
 
   * It is the language used to write smart contracts on the Ethereum blockchain.
 
@@ -81,11 +82,11 @@ Take a few minutes to discuss the following recall questions with the class.
 
   * **Answer:** Contracts should not leave room for ambiguity.
 
-  * **Answer:** Being upfront about data types and the size to store them results in less computational overhead/gas costs.
+  * **Answer:** Being upfront about data types, and the size to store them, results in less computational overhead/gas costs.
 
 * What is a `payable` address, and why is it different from a regular address?
 
-  * **Answer:** A payable address is like a normal address type, except it allows the `.transfer` function to be called in order to send it Ether.
+  * **Answer:** A payable address is like a normal address type, except it allows the `.transfer` function to be called in order to send it ether.
 
 * What is a potential benefit of executing code in a virtual machine?
 
@@ -103,37 +104,37 @@ Begin by giving the students some background on tokens and how they can be utili
 
 * Tokens are used to represent an asset or utility on a blockchain platform.
 
-* You can tokenize things like gold, silver, the USD, real-estate, your car, artwork, property, and virtually anything that holds some value.
+* You can tokenize things like gold, silver, dollars, euros, real estate, your car, artwork, property, and virtually anything that holds some value.
 
-* Since tokens are built using smart contracts they can be programmed to do many things besides just payments.
+* Since tokens are built using smart contracts, they can be programmed to do many things besides just payments.
 
 * By tokenizing things, we can make representing and trading value extremely easy and efficient. Since they are blockchain-powered, these tokens can be traded globally without any additional infrastructure.
 
 * Representing commodities as tokens allow for easy transportation of ownership. For example, transferring a metric ton of gold takes a lot of energy. Sending tokens representing that metric ton of gold is much easier, and allows for the same borderless nature given by the blockchain.
 
-* Imagine opening up your crypto wallet to see all the various assets you own in a single place, digital and physical. You could manage your house ownership, car payments, artwork, investments, video game items, and more with cryptographically provable math.
+* Imagine opening up your crypto wallet to see all the various assets you own in a single place, digital and physical. You could manage your house ownership, car payments, artwork, investments, video game items, and more, with cryptographically provable math.
 
 * Business assets can easily be tracked and transferred, dramatically improving liquidity and auditability.
 
-* Items you purchase at a grocery store can even be tokenized, allowing you to scan a code on your groceries to pull up the entire supply chain history of that item, allowing you to prove exactly where it came from.
+* Items you purchase at a grocery store can even be tokenized, allowing you to scan a code to pull up the entire supply chain history of a given item, so you can prove exactly where it came from.
 
-* Stablecoins are tokens designed to have stable value; unlike traditional cryptocurrencies, they are not as volatile since they are backed by fiat (government) currencies.
+* Stablecoins are tokens designed to have stable value. Unlike traditional cryptocurrencies, they are not as volatile, since they are backed by fiat (government) currencies.
 
 * Stablecoins normally hold USD within bank accounts and then issue tokens backed by these dollars.
 
 Clarify that `coins` are the cryptocurrencies native to the blockchain, coins like `BTC` and `ETH`, while `tokens` are generally built on top of existing blockchain platforms.
 
-Additionally, clarify that the previous statement is a loose definition, and you may hear people using the terms coin and token interchangeably.
+Additionally, clarify that the previous statement is a loose definition, and you may hear people using the terms "coin" and "token" interchangeably.
 
 Now it's time for students to explore some tokens themselves!
 
 ---
 
-### 3. Students Do: Token Exploration (10 min)
+### 3. Student Do: Token Exploration (10 min)
 
-Students will take the given activity time to research their selected tokens.
+Students will use this time to research their selected tokens.
 
-Have the students open the following list of popular Ethereum blockchain tokens and select a few that interest them.
+Have students open the following list of popular Ethereum blockchain tokens and select a few that interest them.
 
 **Instructions:**
 
@@ -145,13 +146,13 @@ Have the students open the following list of popular Ethereum blockchain tokens 
 
 Discuss the following review questions with the class.
 
-* What are some potential differences between `coins` and `tokens`?
+* What are some differences between `coins` and `tokens`?
 
   * **Answer** Tokens are often built on top of a blockchain platform, whereas coins usually have their own blockchain.
 
   * **Answer** A token is programmed with a smart contract.
 
-* What are some potential similarities between `coins` and `tokens`?
+* What are some similarities between `coins` and `tokens`?
 
   * **Answer** Both coins and tokens can represent value.
 
@@ -165,23 +166,25 @@ Discuss the following review questions with the class.
 
   * **Potential Answers**
 
-  * **BAT** - seeking to address fraud in advertising, basic attention is an open-source, decentralized ad platform that allows advertisers to pay website publishers for the attention of users.
+  * **Basic Attention Token (BAT)** - seeking to address digital advertising fraud, basic attention is an open-source, decentralized ad platform that allows advertisers to pay website publishers for the attention of users.
 
   * **0x** - a protocol that allows the creation of decentralized crypto exchanges on the Ethereum blockchain using smart contracts for negotiation between users.
 
-  * **Gemini Dollar (GUSD)** - the first federally regulated stablecoin the Gemini dollar is issued by the Gemini Trust Company, LLC, a New York trust company. Each GUSD is backed by one USD.
+  * **Gemini Dollar (GUSD)** - the first federally regulated stablecoin, the Gemini dollar is issued by the Gemini Trust Company, LLC, in New York. Each GUSD is backed by one USD.
 
-  * **Hedge** - a platform that creates a market for knowledge on best trading practices, allows users to trade their current market analysis for an equivalent amount of value.
+  * **Hedge** - a platform that creates a market for knowledge on best trading practices, it allows users to trade their current market analyses for an equivalent amount of value.
 
   * **Vechain** - "VeChain offers a Blockchain-as-a-Service (`BaaS`) platform called ToolChain. ToolChain offerers services like product lifecycle management, supply chain process control, data deposit, data certification, and process certification to enterprise companies like Walmart.
 
-  * **Maker Dao (Dai)** - Dai is a token but also a `stablecoin`, this means 1 Dai = $1. Instead of having a central company back the fiat, the MakerDAO converts Ether to the Dai stablecoin. This creates a 1:1 parity with the USD, without a central authority, just smart contracts!
+  * **Maker Dao (Dai)** - Dai is a token but also a `stablecoin`, which means 1 Dai = $1. Instead of having a central company back the fiat, the MakerDAO converts ether to the Dai stablecoin. This creates a 1:1 parity with the USD, without a central authority, just smart contracts!
 
   * **Golem (GNT)** - is a token that you use to pay for rentable computing power on the Golem network. It allows you to pay for computations that occur outside of Ethereum, like GPU access or other hardcore number-crunching jobs.
 
+Answer any questions before moving on.
+
 ---
 
-### 5. Instructor Do: Mappings Data Structure in Solidity (15 min) (Critical)
+### 5. Instructor Do: Mapping Data Structure in Solidity (15 min) (Critical)
 
 This activity shows students how to build a simple token with Solidity.
 
@@ -189,7 +192,7 @@ This activity shows students how to build a simple token with Solidity.
 
 * [ArcadeToken.sol](Activities/02-Ins_Mappings/Unsolved/ArcadeToken.sol)
 
-Now that we are familiar with the concept of tokens let's build one!
+Now that we are familiar with the concept of tokens, let's build one!
 
 * In order to build a token with Solidity, we need to learn one more data structure, called a `mapping`.
 
@@ -209,7 +212,7 @@ contract ArcadeToken {
 }
 ```
 
-* Let's say we owned an Arcade; we're going to have customers exchange Ether for tokens that can be spent to play games, redeem prizes, etc., at the Arcade.
+* Let's say we owned an arcade. We're going to have customers exchange ether for tokens that can be spent to play games, redeem prizes, etc., at the arcade.
 
 First, define a few variables to get the contract started:
 
@@ -225,7 +228,7 @@ contract ArcadeToken {
 
 * We are setting the owner of the ArcadeToken contract to the `msg.sender`. Since this is only called once during deployment, this will set ourselves us as the owner when we deploy later.
 
-* We are setting a `string public` called `symbol` to our token's ticker. MetaMask and many other wallets and explorers will recognize the symbol as long as it is a public string.
+* We are setting a `string public` called `symbol` to our token's ticker. MetaMask and many other wallets and explorers will recognize the symbol, as long as it is a public string.
 
 * Setting the `exchange_rate` to `100` represents the number of tokens that we will distribute per `wei` spent later.
 
@@ -251,7 +254,7 @@ Stop and explain the `mapping` data structure to the class:
 
 * Since this `mapping` pairs `address`es to `uint`s, we can associate any `address` with a balance stored in a `uint`.
 
-* Let's actually write a function that fetches a `uint` balance that is associated with an `address` by writing a balance function.
+* Let's actually write a function that fetches a `uint` balance associated with an `address` by writing a balance function.
 
 Demonstrate how to access the balance of an address by adding a new `balance` function:
 
@@ -271,7 +274,7 @@ function balance() public view returns(uint) {
 
   * For example, `0xc3879B456DAA348a16B6524CBC558d2CC984722c => 333` is what the data might look like in contract storage.
 
-* Mappings are flexible data types that allow you to link data together efficiently. They are much cheaper than using an array, so we'll be using them quite often. They are one of the main data types used in tokens, because of this easy way of creating a balance system. We can map any type to any type, even `address` to `address`.
+* Mappings are flexible data types that allow you to link data together efficiently. They are much cheaper than using an array, so we'll use them quite often. They are one of the main data types used in tokens, because of this easy way of creating a balance system. We can map any type to any type, even `address` to `address`.
 
 Now, let's demonstrate how customers could transfer ArcadeTokens between each other by adding another function called `transfer`:
 
@@ -288,7 +291,7 @@ function transfer(address recipient, uint value) public {
 
 * As you can see, the logic here is just as simple as you would expect. Value moves from one address to another.
 
-Note, this contract is currently vulnerable to something called an `integer underflow` attack and allows users to spend tokens they do not have. If students notice this, simply explain that we will add more security features later today to prevent spending with zero token balance.
+Note: This contract is currently vulnerable to something called an `integer underflow` attack and allows users to spend tokens they do not have. If students notice this, simply explain that we will add more security features later today to prevent spending with a zero token balance.
 
 Now, we'll need some way to allow users to purchase tokens from the contract. Add a new `purchase` function, and set it to `payable`:
 
@@ -300,17 +303,17 @@ function purchase() public payable {
 }
 ```
 
-* With this `purchase` function, we allow users to send Ether by setting the function to `payable`.
+* With this `purchase` function, we allow users to send ether by setting the function to `payable`.
 
 * We then multiply the `msg.value` by the `exchange_rate` we set earlier.
 
 * Next, we add the number of tokens being purchased to the token balance of the `msg.sender` by changing the value in the `balances mapping`.
 
-* Finally, we transfer the Ether to ourselves via the `owner.transfer(msg.value)` call.
+* Finally, we transfer the ether to ourselves via the `owner.transfer(msg.value)` call.
 
-* Now, when users send Ether to this function, they will be given tokens based on the exchange rate, and the Ether will be sent to the ArcadeToken owner.
+* Now, when users send ether to this function, they will be given tokens based on the exchange rate, and the ether will be sent to the ArcadeToken owner.
 
-* Once the users have tokens, they can call the `transfer` function to send them back and forth, or to pay for Arcade games!
+* Once the users have tokens, they can call the `transfer` function to send them back and forth, or to pay for arcade games!
 
 Explain to the class that we'll need some way to create tokens out of thin air when we absolutely need to. To do this, we'll add a `mint` function:
 
@@ -331,7 +334,7 @@ Time for the students to get their hands dirty with some token design!
 
 ---
 
-### 6. Students Do: Building an Arcade Token with Mappings (20 min)
+### 6. Student Do: Building an Arcade Token with Mappings (20 min)
 
 In this activity, students will practice using the `mapping` data structure by building an ArcadeToken.
 
@@ -349,7 +352,7 @@ Ensure that students are using the mapping to map `address` to `uint` specifical
 
 If students are confused about how the `exchange_rate` works, remind them:
 
-* By multiplying the `exchange_rate` with the `msg.value`, you are effectively multiplying the amount of `wei`, the smallest denomination of Ether, which is stored in a `uint`. We will learn how to calculate Ether values later this week, but operating on `wei` gives absolute precision.
+* By multiplying the `exchange_rate` with the `msg.value`, you are effectively multiplying the amount of `wei`, the smallest denomination of ether, which is stored in a `uint`. We will learn how to calculate ether values later this week, but operating on `wei` gives absolute precision.
 
 For students that are confused about `mapping`:
 
@@ -375,7 +378,7 @@ Open the solution and explain the following:
 
 * In our `transfer` function, we simply subtract the value from the sender's balance in the `balances mapping` and add it to the recipient's.
 
-* By setting an `exchange_rate`, we can reward/create tokens based on how much `wei` is sent to the `purchase` function, and then collect the Ether for ourselves, automatically!
+* By setting an `exchange_rate`, we can reward/create tokens based on how much `wei` is sent to the `purchase` function, and then collect the ether for ourselves, automatically!
 
 * In our `mint` function, we restrict the function only to allow ourselves (the `owner`) to create new tokens when we need to.
 
@@ -403,11 +406,11 @@ Welcome the students back to the class. Allow them to settle in a while, asking 
 
   * **Answer:** There is no set cap, but we are limited by gas prices and gas limits of the current state of the blockchain network.
 
-Get the students excited about the next activity by explaining how we are now going to secure our tokens from a vulnerability that allows users to spend tokens they don't have!
+Get students excited about the next activity by explaining how we are now going to secure our tokens from a vulnerability that allows users to spend tokens they don't have!
 
 ---
 
-### 10. Instructor Do: 3rd Parties Libraries in Solidity (SafeMath) (15 min) (Critical)
+### 10. Instructor Do: 3rd Party Libraries in Solidity (SafeMath) (15 min) (Critical)
 
 This demonstration shows students how to use the `SafeMath` from `OpenZeppelin` to secure their tokens.
 
@@ -421,7 +424,7 @@ It's time to make our tokens more secure. Briefly explain to the class:
 
 * We can make these secure by using a library called `SafeMath` from OpenZeppelin.
 
-First, show students how a contract is vulnerable to rewarding infinite tokens via an `integer underflow` exploit. Here's an example in-action:
+First, show students how a contract is vulnerable to rewarding infinite tokens via an `integer underflow` exploit. Here's an example:
 
 ![Hacked Balance GIF](Images/hacked_balance.gif)
 
@@ -439,7 +442,7 @@ Fill in any address that is **different** from the current account in the `recip
 
 Hit `Transact`, confirm the transaction in MetaMask, then click on the `balance` function in the contract.
 
-You will notice that you have an extremely high balance of tokens; in fact, the maximum balance you could possibly have!
+You will notice that you have an extremely high balance of tokens. In fact, it's the maximum balance you could possibly have!
 
 ![Hacked Balance](Images/hacked_balance.png)
 
@@ -447,17 +450,17 @@ Ask the class:
 
 * Can anyone spot the vulnerability in our code that allows this to happen?
 
-Allow the students to give their answers, then confirm:
+Allow students to give their answers, then confirm:
 
 * We are subtracting the balance from the `msg.sender` without checking if there is enough first!
 
-* When we subtract `1` from a `uint` that is set to `0`, we actually perform something called an "integer underflow."
+* When we subtract `1` from a `uint` that is set to `0`, we perform something called an "integer underflow."
 
 * Imagine if you took a car's odometer (mileage tracker) and cranked it to the maximum value it could support. What would happen when you reached mile `999999999...`? It would reset back to `0`. That's an integer overflow.
 
-* An underflow is the opposite, when we subtract `1` from `0`, we roll it back to the maximum value that can fit inside a `uint`. By default, most programming languages behave this way. It's up to us to make sure that does not happen.
+* An underflow is the opposite. When we subtract `1` from `0`, we roll it back to the maximum value that can fit inside a `uint`. By default, most programming languages behave this way. It's up to us to make sure that does not happen.
 
-Ensure the students understand the concept of an underflow/overflow and how it allows us to hack an insecure contract, then move on.
+Ensure that students understand the concept of an underflow/overflow and how it allows us to hack an insecure contract. Then move on.
 
 * Thankfully, there are libraries out there that allow us to write more secure smart contracts.
 
@@ -478,12 +481,14 @@ Import the SafeMath library at above the contract definition like so:
 ```solidity
 pragma solidity ^0.5.0;
 
-import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol";
 
 contract ArcadeToken {
     // ...
 }
 ```
+
+**Important Note:** Highlight to students that we will use version 2.5 of the OpenZeppelin for class activities.
 
 * Remix supports importing libraries straight from Github. It will automatically resolve the dependencies for us.
 
@@ -494,7 +499,7 @@ Next, in the first line of the contract, add `using SafeMath for uint;` to link 
 ```solidity
 pragma solidity ^0.5.0;
 
-import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol";
 
 contract ArcadeToken {
     using SafeMath for uint;
@@ -526,9 +531,9 @@ Deploy a fresh version of this newly modified contract and fill in the `transfer
 
 ![Secure Transfer](Images/arcade_token_secure_transfer.png)
 
-Now, attempt to make the same transaction. You will need to ignore a `Gas estimation failed` error -- this is because even the EVM knows an error is likely to occur.
+Now, attempt to make the same transaction. You will need to ignore a `Gas estimation failed` error — this is because even the EVM knows an error is likely to occur.
 
-Sending the transaction anyway will result in an error like:
+Sending the transaction anyway will result in an error such as:
 
 ![MetaMask Failed](Images/metamask_failed.png)
 
@@ -541,17 +546,17 @@ transact to ArcadeToken.transfer errored: Error: [ethjs-rpc] rpc error with payl
 
 * Voila! Now our contract is secured against integer under/overflows.
 
-* Note, this will only work with `uint` currently, but we can declare it for `int` as well in the future.
+* Note: This will only work with `uint` currently, but we can also declare it for `int` in the future.
 
 * We'll need to make sure that we replace every instance of a normal operator like `+`, `-`, `*`, `/`, etc, with the SafeMath alternatives.
 
-* It is good practice to leverage this library by default, and the majority of smart contract developers do the same as it has prevented many tokens from being compromised.
+* It is good practice to leverage this library by default, and the majority of smart contract developers do the same, as it has prevented many tokens from being compromised.
 
 Now it's time for students to secure their tokens!
 
 ---
 
-### 11. Students Do: Using SafeMath (15 min)
+### 11. Student Do: Using SafeMath (15 min)
 
 In this activity, students will implement the SafeMath library and replace all math operations with the SafeMath alternatives.
 
@@ -587,7 +592,7 @@ Open the solution and explain the following:
 
 * We import the SafeMath library directly from GitHub at the top of the file. This is only supported in Remix. We can also copy and paste the contract directly into our code above our own.
 
-* We need the `using SafeMath for uint;` line to link the library to the `uint` type. That way, we can call the `.add()`, `.sub()`, etc functions on any `uint` later.
+* We need the `using SafeMath for uint;` line to link the library to the `uint` type. That way, we can call the `.add()`, `.sub()`, etc. functions on any `uint` later.
 
 * By replacing all of the math operations with the SafeMath alternatives, we secure ourselves from potential balance hacks.
 
@@ -595,11 +600,11 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 13. Students Do: Tokenized Reward System Challenge (20 min)
+### 13. Student Do: Tokenized Reward System Challenge (20 min)
 
 In this activity, students will take some time to work on a "tokenized reward system" challenge.
 
-Students will modify their `ArcadeToken` to distribute tokens as a reward for spending Ether with the contract. The new `spend` function will collect a small transaction fee for the owner (say, `0.25%`) and reward points to the user in exchange (say, 3 tokens for every wei spent).
+Students will modify their `ArcadeToken` to distribute tokens as a reward for spending ether with the contract. The new `spend` function will collect a small transaction fee for the owner (say, `0.25%`) and reward points to the user in exchange (say, three tokens for every wei spent).
 
 Send out the instructions to the students and have TAs circulate the class. Remind students to use SafeMath operations!
 
@@ -613,21 +618,21 @@ Send out the instructions to the students and have TAs circulate the class. Remi
 
 Clarify the activity a bit to the students:
 
-* In this activity, we will incentivize loyal Arcade to users to collect `ARCD` tokens passively during regular Ether transactions that can later be used in the Arcade.
+* In this activity, we will incentivize loyal arcade users to collect `ARCD` tokens passively during regular ether transactions to be used later at the arcade.
 
-* We will alter our contract to provide a system similar to credit card points that can be redeemed for cash back, in-store credits, etc. by adding a new function called `spend` that will collect a small transaction fee to the `owner` and forward the rest of the Ether to a `recipient`. Then, the contract will reward X amount of points for every wei spent.
+* We will alter our contract to provide a system similar to credit card points that can be redeemed for cash back, in-store credits, etc. by adding a new function called `spend` that will collect a small transaction fee from the `owner` and forward the rest of the ether to a `recipient`. Then, the contract will reward X amount of points for every wei spent.
 
-* Say we ran an Arcade, or some other store or service. Loyal Arcade customers can spend their Ether with our contract and redeem the tokens back at the Arcade!
+* Say we ran an arcade or some other store or service. Loyal arcade customers can spend their ether with our contract and redeem tokens at the arcade!
 
-* The contract owner collects a small Ether fee passively in return for the rewarded tokens, so capital is generated to provide these benefits. You could configure the reward system; however, you'd see fit.
+* The contract owner passively collects a small ether fee in return for the rewarded tokens, so capital is generated to provide these benefits. You could configure the reward system however you see fit.
 
-Note: since Solidity does not support floating-point numbers (decimals), a formula is provided in the instructions to calculate percentages from "basis points."
+Note: Since Solidity does not support floating-point numbers (decimals), a formula is provided in the instructions to calculate percentages from "basis points."
 
 `1` basis point = `0.01%`. You can calculate a percentage by using `basis_points * some_number / 10000`.
 
 For example: `250 basis points * $100 / 10000` is equal to `$2.5` or 2.5%
 
-Here's a handy chart for easy reference (also provided to the students):
+Here's a handy chart for easy reference (also provided to students):
 
 Basis Points | Percentage
 ---------|----------
@@ -653,23 +658,23 @@ Open the solution and explain the following:
 
 * In our spend function, we calculate the fee by performing `uint fee = msg.value.mul(fee_rate).div(10000)`. This calculates a percentage of the `msg.value` by using the basis points formula.
 
-* We calculate the token reward amount by multiplying the `msg.value` by the reward as so: `uint reward = msg.value.mul(reward_rate)`.
+* We calculate the token reward amount by multiplying the `msg.value` by the reward, as follows: `uint reward = msg.value.mul(reward_rate)`.
 
-* We then add the rewards to the balance of the user by running `balances[msg.sender] = balances[msg.sender].add(reward)`.
+* We then add the rewards to the user's balance by running `balances[msg.sender] = balances[msg.sender].add(reward)`.
 
 * Next, we transfer the `msg.value` minus the fee to the `recipient` using `recipient.transfer(msg.value.sub(fee))`.
 
 * Finally, we transfer the remaining `fee` value by running `owner.transfer(fee)`.
 
-Ask the students the following questions:
+Ask students the following questions:
 
 * Why might we want to implement a reward system like this?
 
-  * **Answer:** You could incentivize loyal users to return to your Arcade or business.
+  * **Answer:** You could incentivize loyal users to return to your arcade or business.
 
-  * **Answer:** You generate capital from small fees that allow you to develop your business further.
+  * **Answer:** You generate capital from small fees that allow you to further develop your business.
 
-  * **Answer:** This works much like an annual credit card fee would, but instead collects passively.
+  * **Answer:** This works much like an annual credit card fee would, but collects passively instead.
 
   * **Answer:** You only need to write the contract once, then you have the reward system in place — less infrastructure cost for the business.
 
@@ -677,7 +682,7 @@ Ask the students the following questions:
 
   * **Answer:** Some users won't be willing to pay an extra fee. In that case, you may be able to remove it, if applicable to your business model.
 
-  * **Answer:** Users have to pay extra gas to run the `spend` function vs. paying Ether directly.
+  * **Answer:** Users have to pay extra gas to run the `spend` function vs. paying ether directly.
 
   * **Answer:** It may be difficult to come up with a viable rewards system that works for your business.
 
@@ -697,4 +702,4 @@ This section is reserved for the homework demo. Take some time to review the hom
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

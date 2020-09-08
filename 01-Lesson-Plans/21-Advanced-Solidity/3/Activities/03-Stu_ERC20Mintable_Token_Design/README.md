@@ -26,3 +26,6 @@ contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 ## Hints
 
 * In case you need some help, you can refer to the [OpenZeppelin Documentation page](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20) on ERC20 tokens.
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

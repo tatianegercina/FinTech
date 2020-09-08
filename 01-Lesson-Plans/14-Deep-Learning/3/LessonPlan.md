@@ -22,7 +22,7 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [Streamz Installation Guide](../../15-Algorithmic-Trading/Supplemental/Asyncio_Streamz_Install_Guide.md) and the [CCXT Installation Guide](../../15-Algorithmic-Trading/Supplemental/CCXT_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+* Slack out the [Asyncio Installation Guide](../../15-Algorithmic-Trading/Supplemental/Asyncio_Install_Guide.md) and the [CCXT Installation Guide](../../15-Algorithmic-Trading/Supplemental/CCXT_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
 * Today's class is brief but may be challenging for students. Take extra time during the activities today to ensure that students can follow along.
 

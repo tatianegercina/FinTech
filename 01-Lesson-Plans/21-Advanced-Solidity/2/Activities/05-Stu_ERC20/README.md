@@ -33,3 +33,6 @@ The starter code will contain the basics like file imports and boilerplate to sa
 * It can be helpful to bring up the OpenZeppelin documentation for the [ERC20](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20) in order to help remember the function names and parameters available.
 
 * Scrolling down to the [ERC20Detailed](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#ERC20Detailed) section will give you more details about the extension contract.
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

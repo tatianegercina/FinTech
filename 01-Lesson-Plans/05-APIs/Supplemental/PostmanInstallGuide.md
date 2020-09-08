@@ -17,3 +17,7 @@ This guide outlines the required steps to sign up for a `Postman` account and to
     ![installing_postman.png](Images/installing_postman.png)
 
 5. Create a `Postman` account, or click cancel. `Postman` does not require users to have accounts.
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

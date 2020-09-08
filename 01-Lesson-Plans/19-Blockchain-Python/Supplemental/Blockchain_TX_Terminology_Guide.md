@@ -14,11 +14,11 @@ This guide serves as an overview of the various concepts required to understand 
 
 * What is an asymmetric key?
 
-  * **Answer:** Asymmetric encryption uses a key pair: a public and private key. As the name suggests, the public key is made freely available to anyone on the Internet while the private key is kept a secret by the end-user. Therefore, messages that are encrypted using the public key can only be decrypted using the associated private key, and messages that are encrypted using the private key can only be decrypted using the associated public key.
+  * **Answer:** Asymmetric encryption uses a key pair: a public and private key. As the name suggests, the public key is made freely available to anyone on the internet, while the private key is kept secret by the end-user. Therefore, messages that are encrypted using the public key can only be decrypted using the associated private key, and messages that are encrypted using the private key can only be decrypted using the associated public key.
 
 * What are the advantages vs. disadvantages of both types of encryption techniques?
 
-  * **Answer:** Symmetric encryption is the oldest and best-known technique for encryption; however, because of its use of only a single key (the private/secret key), there is the potential for a breach in security when exchanging the private key between two parties, especially over a vast network such as the Internet with possible eavesdroppers. In contrast, due to the use of a key pair in asymmetric encryption (public and private key), the private key is never exchanged and therefore is kept a secret at all times. Though as a result of the use of a key pair, asymmetric encryption is slower than symmetric encryption due to the increased processing power used to encrypt and decrypt messages.
+  * **Answer:** Symmetric encryption is the oldest and best-known technique for encryption; however, because of its use of only a single key (the private/secret key), there is the potential for a breach in security when exchanging the private key between two parties, especially over a vast network such as the internet with possible eavesdroppers. In contrast, due to the use of a key pair in asymmetric encryption (public and private key), the private key is never exchanged and thus kept secret at all times. Although as a result of using a key pair, asymmetric encryption is slower than symmetric encryption, due to the increased processing power used to encrypt and decrypt messages.
 
 * What is a hash?
 
@@ -26,7 +26,7 @@ This guide serves as an overview of the various concepts required to understand 
 
 * What is a digital signature?
 
-  * **Answer:** A digital signature is a numerical value that is represented as a sequence of characters and is the product of ensuring the contents of a message have not been altered in transit (integrity), that the message was indeed sent by the sender (authentication), and that the sender cannot deny having sent the message (non-repudiation).
+  * **Answer:** A digital signature is a numerical value that is represented as a sequence of characters. It is the product of ensuring the contents of a message have not been altered in transit (integrity), that the message was indeed sent by the sender (authentication), and that the sender cannot deny having sent the message (non-repudiation).
 
 * How does a digital signature work?
 
@@ -38,20 +38,20 @@ This guide serves as an overview of the various concepts required to understand 
 
 * What is BIP?
 
-  * **Answer:** A BIP or Bitcoin Improvement Proposal is a design document for introducing new features or information about the Bitcoin blockchain network.
+  * **Answer:** A BIP, or Bitcoin Improvement Proposal, is a design document for introducing new features or information about the Bitcoin blockchain network.
 
 * What is BIP32?
 
-  * **Answer:** BIP32 proposes a Hierarchical Deterministic (HD) key creation and transfer protocol, in which a parent key allows for the creation of child keys in a hierarchy. Therefore, wallets that use this protocol are often called HD wallets.
+  * **Answer:** BIP32 proposes a Hierarchical Deterministic (HD) key creation and transfer protocol, in which a parent key allows for the creation of child keys in a hierarchy. Wallets that use this protocol are often called HD wallets.
 
 * What is BIP39?
 
-  * **Answer:** BIP39 proposes the implementation of a mnemonic code or mnemonic sentence--a group of easy to remember words--for the generation of Hierarchical Deterministic (HD) keys.
+  * **Answer:** BIP39 proposes the implementation of a mnemonic code or mnemonic sentence—a group of easy to remember words—for the generation of Hierarchical Deterministic (HD) keys.
 
 * What is BIP44?
 
-  * **Answer:** BIP44 defines an implementation of a HD wallet in which a single seed or mnemonic sentence can be used to generate keys for multiple cryptocurrencies such as Bitcoin, Litecoin or Namecoin under a single account.
+  * **Answer:** BIP44 defines an implementation of a HD wallet in which a single seed or mnemonic sentence can be used to generate keys for multiple cryptocurrencies such as Bitcoin, Litecoin, or Namecoin under a single account.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

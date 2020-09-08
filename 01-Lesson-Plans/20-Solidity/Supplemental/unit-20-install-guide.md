@@ -8,47 +8,59 @@ To install MetaMask, follow these steps:
 
 * Open the [MetaMask website](https://metamask.io/) in your browser.
 
- ![MetaMask installation - 1](Images/metamask-1.png)
+  ![MetaMask installation - 1](Images/metamask-1.png)
 
-* Click on the `Get Chrome Extension` link. This will open a new window where you will be able to install the MetaMask extension from the Chrome Web Store.
+* Click on the "Download now" button. You will see a new page with the available MetaMask version. Choose "Chrome" to continue. Next, click on "Install MetaMask for Chrome."
 
- ![MetaMask installation - 2](Images/metamask-2.png)
+  ![Downloading MeteMask for Chrome](Images/metamask-for-chrome.gif)
 
-* Click on the `Add to Chrome` button to start the installation process. A pop-up window will open where you have to click on the `Add Extension` button to continue.
+* A new window will be opened where you will install the MetaMask extension from the Chrome Web Store.
 
- ![MetaMask installation - 3](Images/metamask-3.png)
+  ![MetaMask installation - 2](Images/metamask-2.png)
 
-* Next, the "Welcome to MetaMask" website will be opened. If MetaMask was successfully installed, you will see a small fox icon in the toolbar of the web browser. If this does not show up, revisit the previous steps or contact a TA for assistance.
+* Click on the "Add to Chrome" button to start the installation process. A pop-up window will open where you have to click on the "Add extension" button to continue.
 
- ![MetaMask installation - 4](Images/metamask-4.png)
+   ![MetaMask installation - 3](Images/metamask-3.png)
 
-* Click the `Get Started` button to start configuring your MetaMask account.
+* Next, the "Welcome to MetaMask" website will be opened.
 
-* You can now import the wallet that runs in your local blockchain. Click on the `Import Wallet` button to continue.
+   ![MetaMask installation - 4](Images/metamask-4.png)
 
- ![MetaMask installation - 5](Images/metamask-5.png)
+* If MetaMask was successfully installed, you will see a small fox icon in the web browser's extensions list. If this does not show up, revisit the previous steps.
 
-* Next, you will see the data usage agreement where the MetaMask team asks you to collaborate on improving the tool. Click your preference to continue.
+  ![MetaMask extension icon](Images/metamask-extension-icon.png)
 
- ![MetaMask installation - 6](Images/metamask-6.png)
+* Optionally, in the latest version of Google Chrome, you can pin the MetaMask extension to your toolbar.
 
-* In the next window, you should enter the twelve word mnemonic of your local wallet (your wallet password), and click on the `I have read and agree the Terms of Use` checkbox to continue.
+  ![Pinning MetaMask extension to the toolbar](Images/metamask-pinning-extension.gif)
+
+* Click the "Get Started" button to start configuring your MetaMask account.
+
+* You can now import the wallet that runs in your local blockchain. Click on the "Import wallet" button to continue.
+
+   ![MetaMask installation - 5](Images/metamask-5.png)
+
+* Next, you will see the data usage agreement where the MetaMask team asks you to collaborate on improving the tool. Click the choice of your preference to continue.
+
+   ![MetaMask installation - 6](Images/metamask-6.png)
+
+* In the next window, you should enter the twelve word mnemonic of your local wallet (your wallet password), and you should click on the `I have read and agree the Terms of Use` checkbox to continue.
 
 * Be sure to read through the terms by clicking on the link.
 
- ![MetaMask installation - 7](Images/metamask-7.png)
+   ![MetaMask installation - 7](Images/metamask-7.png)
 
 * After filling out your wallet details, click on the "Import" button to continue, and you will see the following confirmation page.
 
- ![MetaMask installation - 8](Images/metamask-8.png)
+  ![MetaMask installation - 8](Images/metamask-8.png)
 
-* You may notice a message at the bottom of the page that says `MetaMask cannot recover your seedphrase`, it means that once you import your keys, MetaMask won't export them again, so if you lose your mnemonic you can't extract it from MetaMask; keep your mnemonics in a safe place!
+* You may notice a message at the bottom of the page that says that `MetaMask cannot recover your seedphrase`, it means that once you import your keys, MetaMask won't export them again, so if you lose your mnemonic you can't extract it from MetaMask; keep your mnemonics in a safe place!
 
 * Click on the "All Done" button to continue; you will see a page showing the balance of your wallet and the transaction history.
 
- ![MetaMask installation - 9](Images/metamask-9.png)
+  ![MetaMask installation - 9](Images/metamask-9.png)
 
-* You may note that you have `0 ETH` and no transactions. This is alright for now, since you are not connected to your local blockchain.
+* You may note that you have `0 ETH` and no transactions. This is all right from now since you are not connected to your local blockchain.
 
 Congratulations! You have installed MetaMask.
 

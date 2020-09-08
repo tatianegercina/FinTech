@@ -26,7 +26,7 @@ You will need to:
 
 ### Prepare the data for training and testing
 
-Use the starter code as a guide to create a Jupyter Notebook for each RNN. The starter code contains a function to help window the data for each dataset.
+Use the starter code as a guide to create a Jupyter Notebook for each RNN. The starter code contains a function to create the window of time for the data in each dataset.
 
 For the Fear and Greed model, you will use the FNG values to try and predict the closing price. A function is provided in the notebook to help with this.
 
@@ -36,7 +36,7 @@ Each model will need to use 70% of the data for training and 30% of the data for
 
 Apply a MinMaxScaler to the X and y values to scale the data for the model.
 
-Finally, reshape the X_train and X_test values to fit the model's requirement of (samples, time steps, features).
+Finally, reshape the X_train and X_test values to fit the model's requirement of samples, time steps, and features. (*example:* `X_train = X_train.reshape((X_train.shape[0], X_train.shape[1], 1))`)
 
 ### Build and train custom LSTM RNNs
 

@@ -10,7 +10,7 @@ Before students leave at the end of the class, instruct them to sign up for the 
 
 * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
-* [Plaid](https://dashboard.plaid.com/signup)
+* [Alpaca Markets](https://app.alpaca.markets)
 
 ### Class Objectives
 
@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [Alpaca Installation Guide](../Supplemental/APIs_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with Alpaca outside of class time.
+* Slack out the [Unit 5 Installation Guide](../Supplemental/APIs_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with Alpaca and Quandl outside of class time.
 
 * Today will focus on API fundamentals and the process of submitting APIs. This class is an excellent opportunity for students to be impressed and inspired by FinTech. There are some fun and creative FinTech APIs, such as Quandl and World Bank, that will be used to drive student engagement. This lesson is the perfect opportunity to get students excited about FinTech again!
 
@@ -43,8 +43,6 @@ By the end of class, students will be able to:
   * [World Bank](https://datahelpdesk.worldbank.org/knowledgebase/articles/889386-developer-information-overview)
 
   * [Quandl](https://www.quandl.com/)
-
-  * [Plaid](https://plaid.com/)
 
   * [Alpaca](https://alpaca.markets/)
 
@@ -160,13 +158,17 @@ Explain to students that this unit's homework focuses on exposing them to some o
 
 Walkthrough the homework instructions and highlight the following:
 
-* The first component of the homework is focused on budget analysis. Students will use an API called **PLAID** to analyze personal financial data. PLAID can be used to securely access any type of banking, credit, or investment account, providing customers with new services that are not typically available without PLAID. Customers can integrate PLAID with other technologies and apps without security being compromised; it also provides access to personal financial accounts.
+* In this unit's homework, you will create two financial analysis tools using the Alpaca API and the Free Crypto API, a personal financial planner, and a retirement planning tool.
 
-* With financial data accessible via PLAID, students will transition to using PLAID to forecast financial goals. The homework uses a Monte Carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution is sufficient to cover their future income.
+* The personal financial planner will allow you to visualize personal expenses from the last 90 days to assess the current financial health by comparing the monthly household income versus the monthly expenses.
 
-* Lastly, students will analyze the output of the retirement planner activity and summarize assumptions and findings in a markdown file. This file will need to be uploaded to the GitHub repository.
+* Using the financial planner, you also will be able to analyze savings composed by investments in shares and cryptocurrencies.
 
-Ask the students if there are any questions related to the homework.
+* After creating the personal financial planner, you will transition to forecast financial goals. This section uses a Monte Carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution will cover their future income.
+
+* Lastly, you will analyze the retirement planner activity output and summarize assumptions and findings in a financial analysis report created using markdown that you will upload to your GitHub repository.
+
+Ask the students if there are any questions related to the homework before continuing with the next activity.
 
 ---
 
@@ -174,7 +176,7 @@ Ask the students if there are any questions related to the homework.
 
 Now that students know what APIs are and how to execute them, it's time they learn what goes on in the backend when an API request is sent. Students will learn the various components of the client-server model through instructor demonstration.
 
-Part of the demonstration will include showing students the client-server model by pinging Yahoo Finance. Make sure to have a terminal open and ready for the demo.
+Part of the demonstration will include showing students the client-server model by pinging Yahoo! Finance. Make sure to have a terminal open and ready for the demo.
 
 Open the lesson slides, move to the "Client-Server Model" section, and highlight the following:
 
@@ -224,7 +226,7 @@ Ask students if there are any questions before moving on.
 
 ### 4. Student Do: Eavesdropping on the Server (10 min)
 
-This activity drives home the discussion on the client-server model by having students surf the web with the browser's developer console open. Students will visit websites like Facebook and Yahoo, as well as complete a Google search. They will read the standard output from the console to get a better idea of what data is sent between the client and server as students navigate sites. This will communicate to students that every click and API request brokers a connection between client and server, allowing data to be exchanged between the two.
+This activity drives home the discussion on the client-server model by having students surf the web with the browser's developer console open. Students will visit different websites as well as complete a Google search. They will read the standard output from the console to get a better idea of what data is sent between the client and server as students navigate sites. This will communicate to students that every click and API request brokers a connection between client and server, allowing data to be exchanged between the two.
 
 **Instructions:**
 
@@ -567,7 +569,7 @@ Open the solution and conduct a dry walkthrough, highlighting the following disc
   print(request_data)
   ```
 
-  ```
+  ```text
   <Response [200]>
   ```
 
@@ -750,37 +752,35 @@ Ask if there are any remaining questions or comments before continuing.
 
 ### 18. Instructor Do: Recap (10 min)
 
-This activity will conclude the APIs Day 1. Recap the skills and concepts learned throughout the lesson. Engage the students by having students lead the recap as much as possible.
+This activity will conclude APIs Day 1. Recap the skills and concepts learned throughout the lesson. Engage the students by having students lead the recap as much as possible.
 
-* Ask if there's a student who would like to summarize what was learned today.
+* Ask if there's a student who would like to volunteer to summarize what was learned today.
 
 * Ask if any volunteers would like to add to what the previous student stated.
 
-Use the suggested questions and statements below to guide students, if class engagement/participation is low. Only use these if necessary; let the students drive the session as much as possible.
+Guide students and the recap session. Use the below sample statements and questions to guide students if student engagement and participation is low. Only use these if necessary; let the students drive the session as much as possible.
 
-* Some of the APIs used in the lesson were Quandl, World Bank, Numbers API, Deck of Cards, Statistics Canada, Random Jokes, etc. What APIs did you find to be the most interesting?
+* Some of the APIs used in the lesson were Quandl, World Bank, Numbers API, Deck of Cards, U.S. Spending Stats, Random Jokes, etc. What APIs did you find to be the most interesting?
 
 * What APIs were the most useful? In what ways could you continue to use these APIs, especially in everyday life?
 
-Ask students to identify two things they'd like to practice from today's lesson that they might have struggled with conceptually. Encourage them to do additional practice and reading outside of class to reinforce their knowledge and skills.
+Ask students to identify two things they'd like to practice on from today's lesson that they might have struggled with conceptually. Encourage them to do additional practice and reading outside of class to reinforce their knowledge and skill.
 
 Finish the recap with a few statements of encouragement.
 
-* Give yourselves a big round of applause. You've added yet another valuable tool to your developer's toolkit.
+Tell students they need to give themselves, yet again, a round of applause. They've added yet another valuable tool to their developer's toolkit.
 
-* You've proven your aptitude by completing this amount of work in today's class. It's just growth from here.
+Remind students that completing this amount of work in this time period already means they've proven their aptitude. It's just growth from here.
 
-* The next step for APIs is to work with authenticated APIs, as well as software development kits (SDKs) like PLAID, a personal finance API that can connect to multiple accounts. This is where the class will get heavy into accessing and using financial data via APIs.
+The next step for APIs is to work with authenticated APIs, as well as software development kits (SDKs) like Alpaca, an API for stock trading. This is where the class will get heavy into accessing and using financial data via APIs.
 
-Before students leave, give them a small homework assignment and ask them to sign up for the APIs below. Students need to sign up for these APIs before coming to the next class, as they will be used in the next lesson.
+Before students leave for the end of the day, give them a small homework assignment. Instruct students to sign up for the below APIs. Students will need to sign up for these APIs before coming to the next class; these APIs will be used in Lesson 5.2. Slack out the links so that students will have them. Students who do not have access will not be able to complete all of Lesson 5.2's activities.
 
-Slack out the links to the class. Students who do not have access will not be able to complete all of Lesson 5.2's activities.
-
-Emphasize to students that they should be signing up for free, development accounts. There is no need to purchase any services.
+Emphasize to students that they should be signing up for free development accounts following the install guide. There is no need to purchase any services.
 
 * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
-* [Plaid](https://dashboard.plaid.com/signup)
+* [Alpaca](https://app.alpaca.markets/signup)
 
 ### End Class
 

@@ -8,7 +8,7 @@ Eavesdrop on the exchanges sent between client and server when visiting differen
 
 2. Select `requests`.
 
-    ![dev_console_reqs.png](../Images/dev_console_reqs.png)
+    ![dev_console_reqs.png](../Images/dev_console.png)
 
 3. Navigate to `https://google.com`.
 

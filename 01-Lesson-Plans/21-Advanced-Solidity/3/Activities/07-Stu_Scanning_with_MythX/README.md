@@ -15,3 +15,6 @@ In this activity, you will scan the smart contracts you have developed so far wi
 * Fix any issues that the tool uncovers, then move on to the other contracts you have built, repeating the process.
 
 * With the time remaining, you can choose to create a [MythX](https://mythx.io) account, and register your credentials with the Remix plugin. Make sure that MetaMask is pointing at the mainnet before registering, as you will use MetaMask to sign a message to register, and it won't work if MetaMask is pointing to `localhost`.
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
