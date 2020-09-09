@@ -425,19 +425,25 @@ Explain to the class that we are not going over the math complexity of LSTMs. Ho
 
 * LSTMs are capable of learning long-term dependencies using a mechanism called _gates_.
 
-Open your web browser and navigate to the [Talk to Transformer](https://talktotransformer.com/) website; slack out the URL to the students and explain to them that you will show them how RNNs can be used for automatic text generation, this is part of the _magic_ behind intelligent bots.
+Open your web browser and navigate to the [Write With Transformer](https://transformer.huggingface.co/) website; slack out the URL to the students and explain that this website showcases different models that use neural networks for automatic text generation. This is part of the magic behind intelligent bots.
 
-![Automatic text generator](Images/auto_text_gen.gif)
+Click on the first model to demo how it works. Once the model's UI is opened, deleted the initial text.
 
-Once you open the _Talk to Transformer_ website, highlight the following:
+![launching-write-with-transformer](Images/launching-write-with-transformer.gif)
 
-* When you type `I want to`, this sentence is passed as an initial parameter to the RNN.
+Continue the demo by highlighting the following:
 
-* After processing the initial phrase, the algorithm starts to automatically create a paragraph based on the sequence of the previous words and the knowledge from its corpus.
+* Auto-text generators typically use neural networks to predict the next logical word or phrase to an initial text.
 
-* When we type a longer sentence like `I want to invest for retirement`, we also include an intention in the phrase.
+* Predictions are possible after training the models with thousands of corpus, which usually rely on different knowledge areas.
 
-* Since this new sentence has a better semantic meaning, the algorithm creates a more complex text.
+* Let's start typing `I want to` as the initial sentence. To auto-generate text using this model, you need to press the `TAB` key; next, the algorithm automatically creates some text suggestions based on the sequence of the previous words and the knowledge from its corpus
+
+  ![text-gen-1](Images/text-gen-1.gif)
+
+* When we type a longer sentence like `I want to invest for retirement`, we also include an intention in the phrase, so a different text with an apparently better semantical context is generated.
+
+  ![text-gen-2](Images/text-gen-2.gif)
 
 * This is just an example of how RNNs and LSTMs can be used for NLP.
 
