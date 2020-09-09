@@ -2,7 +2,9 @@
 
 The Proof of Authority (PoA) algorithm is typically used for private blockchain networks as it requires pre-approval of, or voting in of, the account addresses that can approve transactions (seal blocks).  
 
-1. Because the accounts must be approved, we will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses.
+Because the accounts must be approved, we will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses.
+
+1. Begin by creating the new nodes and addresses:
 
     * Create accounts for two nodes for the network with a separate `datadir` for each using `geth`.
         * ./geth --datadir node1 account new
@@ -24,7 +26,7 @@ The Proof of Authority (PoA) algorithm is typically used for private blockchain 
 
     * Export genesis configurations. This will fail to create two of the files, but you only need `networkname.json`.
 
-3. With the genesis block creation completed, we will now initialize the nodes with the genesis' json file.
+3. With the genesis block creation completed, we will now initialize the nodes with the genesis json file.
 
     * Using `geth`, initialize each node with the new `networkname.json`.
         * ./geth --datadir node1 init networkname.json
@@ -39,7 +41,7 @@ The Proof of Authority (PoA) algorithm is typically used for private blockchain 
 
 5. Your private PoA blockchain should now be running!
 
-6. With both nodes up and running, the blockchain can be added to MyCrypto for testing.
+6. With both nodes up and running, the the blockchain can be added to MyCrypto for testing.
 
     * Open the MyCrypto app, then click `Change Network` at the bottom left:
 
@@ -51,9 +53,7 @@ The Proof of Authority (PoA) algorithm is typically used for private blockchain 
 
     ![custom network](Images/custom-network.png)
 
-    * Type `ETH` in the Currency box.
-    
-    * In the Chain ID box, type the chain id you generated during genesis creation.
+    * Type `ETH` in the Currency box and in the Chain ID box, type the chain id you generated during genesis creation.
 
     * In the URL box type: `http://127.0.0.1:8545`.  This points to the default RPC port on your local machine.
 
@@ -63,21 +63,17 @@ The Proof of Authority (PoA) algorithm is typically used for private blockchain 
 
     * Select the `View & Send` option from the left menu pane, then click `Keystore file`.
 
-    ![select_keystore_file](Images/select_keystore_file.png)
-
     * On the next screen, click `Select Wallet File`, then navigate to the keystore directory inside your Node1 directory, select the file located there, provide your password when prompted and then click `Unlock`.
 
     * This will open your account wallet inside MyCrypto. 
     
     * Looks like we're filthy rich! This is the balance that was pre-funded for this account in the genesis configuration; however, these millions of ETH tokens are just for testing purposes.   
 
-    ![keystore_unlock](Images/keystore_unlock.gif)
-
     * In the `To Address` box, type the account address from Node2, then fill in an arbitrary amount of ETH:
 
      ![transaction send](Images/transaction-send.png)
 
-    * Confirm the transaction by clicking "Send Transaction", and the "Send" button in the pop-up window.  
+    * Confirm the transaction by clicking "Send Transaction", and the "Send" button in the pop-up window.  You 
 
     ![Send transaction](Images/send-transaction.gif)
 
@@ -91,4 +87,4 @@ The Proof of Authority (PoA) algorithm is typically used for private blockchain 
 
     ![successful transaction](Images/transaction-status.png)
 
-Congratulations, you successfully created your own private blockchain!
+Congratulations, that was the first transaction send on this blockchain network! Now it's time for the students to do the same.
