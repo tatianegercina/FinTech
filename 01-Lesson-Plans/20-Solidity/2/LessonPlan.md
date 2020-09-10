@@ -37,6 +37,10 @@ By the end of the class, students will be able to:
 
 * Remind students that if they get frustrated, they are learning something that few are skilled at, and by learning a strictly typed language now, they will be able to learn any other programming language in the future easily.
 
+* Remember to set your Remix compiler version to match your pragma. Otherwise unexpected errors may occur.  The pragma and and compiler version should match as seen in the below image:
+
+    <img src="Images/pragma_compiler_match.png" alt="pragma_compiler_match" width=500>
+
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [20.2 Lesson Slides](https://docs.google.com/presentation/d/1bb1y5kEljdo-mwwTXSMlUCcKKg59tbKArC6ESuojojw/edit?usp=sharing).
