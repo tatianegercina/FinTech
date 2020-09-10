@@ -32,6 +32,10 @@ By the end of the class, students will be able to:
 
 * If you are new to Solidity, we recommend reviewing the [Instructor Support documents](../Instructor_Support/Solidity.md) in preparation for this class.
 
+* Remember to set your Remix compiler version to match your pragma. Otherwise unexpected errors may occur.  The pragma and and compiler version should match as seen in the below image:
+
+    <img src="Images/pragma_compiler_match.png" alt="pragma_compiler_match" width=500>
+
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1gRBz8OI5bruHxvoox5qagh13VWJMzG2r_n3yCRX_FMI/edit?usp=sharing).
