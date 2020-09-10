@@ -240,7 +240,7 @@ They will pick apart the individual details of the transactions, including the U
 
 * [README.md](Activities/02-Stu_Visualizing_UTXOs/README.md)
 
-### 6. Instructor Do: Review UTXOs (10 min)
+### 7. Instructor Do: Review UTXOs (10 min)
 
 Ask the students the following questions:
 
