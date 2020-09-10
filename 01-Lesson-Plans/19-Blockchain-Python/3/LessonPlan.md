@@ -146,7 +146,7 @@ Point out the `BIP39 Seed` field that is generated.
 
 Now, it's time to have the class convert their mnemonics to a master seed.
 
-### 3. Students Do: Converting Mnemonic to Seed (10 min)
+### 3. Students Do: Converting Mnemonic to Seed (15 min)
 
 **Corresponding Activity:** [03-Stu_Converting_Mnemonic.md](Activities/03-Stu_Converting_Mnemonic.md)
 
@@ -362,7 +362,7 @@ that all blockchains have an incentive to integrate with this universal standard
 
 ---
 
-### 11. BREAK (15 min)
+### 11. BREAK (40 min)
 
 ---
 
