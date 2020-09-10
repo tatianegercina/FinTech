@@ -145,7 +145,7 @@ Assure students that if they don't know the answers to these next questions, it'
 
 Alright, that's enough architecture; let's start fetching data from our blockchain!
 
-### 4. Everyone Do: Fetching balance with Web3.py (15 min)
+### 5. Everyone Do: Fetching balance with Web3.py (15 min)
 
 Time for us to start pulling transactions from the chain.
 
@@ -203,7 +203,7 @@ Ask the students:
 
   **Answer**: By importing the private key!
 
-### 5. Everyone Do: Importing Private Keys into Web3.py (15 min)
+### 6. Everyone Do: Importing Private Keys into Web3.py (15 min)
 
 Explain that it's now time to import the private key of this address into Web3.py.
 
@@ -319,7 +319,7 @@ Have the students save and run this file. Ensure that the students are successfu
 Now we're getting keys loaded in a much more secure way!
 Congratulate the students on learning a bit of cybersecurity on top of all of their FinTech skills.
 
-### 6. Instructor Do: Importing Keys with Environment Variables Review (5 min)
+### 7. Instructor Do: Importing Keys with Environment Variables Review (5 min)
 
 Ask the students a few questions about why we wrote the code the way we did.
 
@@ -335,7 +335,7 @@ Ask the students a few questions about why we wrote the code the way we did.
 
   **Answer**: Helping setup deployment environments, developer environments, etc.
 
-### 7. Everyone Do: Creating a Keystore (10 min)
+### 8. Everyone Do: Creating a Keystore (10 min)
 
 Time to create a Keystore, which is an encrypted file that contains the private key to an account.
 
@@ -362,7 +362,7 @@ Students can optionally choose to save a paper wallet version of the Keystore fo
 
 Ensure that all students have created a new Keystore and saved the file before continuing.
 
-### 8. Instructor Do: Keystore Review (5 min)
+### 9. Instructor Do: Keystore Review (5 min)
 
 Ask the students a few questions about Keystores:
 
@@ -380,11 +380,11 @@ Ask the students a few questions about Keystores:
 
 ---
 
-### 9. BREAK (15 min)
+### 10. BREAK (15 min)
 
 ---
 
-### 10. Instructor Do: Welcome Back to Class (5 min)
+### 11. Instructor Do: Welcome Back to Class (5 min)
 
 Welcome the students back to class, and have them get settled in.
 
@@ -397,7 +397,7 @@ Have the students copy the address given and keep MyCrypto open just in case.
 
 * Get excited, because we're about to send a transaction to this address in pure Python!
 
-### 11. Everyone Do: Sending Transactions with Python (15 min)
+### 12. Everyone Do: Sending Transactions with Python (15 min)
 
 Now we will start the process of importing keys and sending transactions with Python.
 
@@ -611,7 +611,7 @@ the same, since the wallet can no longer verify if the address is valid, but wil
 
 Congratulations! You now know how to create and send transactions manually using pure Python!
 
-### 12. Instructor Do: Sending Transactions Review (5 min)
+### 13. Instructor Do: Sending Transactions Review (5 min)
 
 Ask the students a few questions:
 
@@ -631,7 +631,7 @@ Ask the students a few questions:
 
   **Answer**: We need to calculate the fee needed to send this exact transaction, so miners will pick it up.
 
-### 13. Everyone Do: Importing Keystore Accounts (15 min)
+### 14. Everyone Do: Importing Keystore Accounts (15 min)
 
 Now, let's say we wanted to send a transaction from the account stored in a Keystore.
 
@@ -737,7 +737,7 @@ print(account_two.address)
 
 When we run `main.py` again, we will be prompted for the password. If it prints the address after, we win!
 
-### 14. Instructor Do: Review Importing Keystores (10 min)
+### 15. Instructor Do: Review Importing Keystores (10 min)
 
 Ask the students a few questions comparing the two methods we just used to import keys:
 
@@ -764,7 +764,7 @@ Ask the students a few questions comparing the two methods we just used to impor
   **Answer**: We can use this to request a transaction, filling in all of the necessary parameters.
   Then, all the user has to do is sign it.
 
-### 14. Student Do: Sending Transactions from Keystore Account (10 min)
+### 16. Student Do: Sending Transactions from Keystore Account (10 min)
 
 Now, challenge the students to use this program that they've written to send a transaction from `account_two` back to `account_one`.
 
@@ -785,7 +785,7 @@ as the sending account, and passing just the `account_one.address` to the recipi
 
 Remind students that they will need to send what is available in the balance.
 
-### 15. Instructor Do: Review Sending from Keystores (5 min)
+### 17. Instructor Do: Review Sending from Keystores (5 min)
 
 Ask the students the following questions:
 
@@ -797,7 +797,7 @@ Ask the students the following questions:
 
   **Answer**: The transaction would still go through, but you'd pay the fee for it.
 
-### 16. Instructor Do: Recap / Prepare for next class (10 min)
+### 18. Instructor Do: Recap / Prepare for next class (10 min)
 
 Congratulate the students on learning how to program money with Python.
 
