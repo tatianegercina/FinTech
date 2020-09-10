@@ -110,7 +110,7 @@ Continue through the slides, introducing the concept of "Web 3.0" and the Python
 
 * Speaking of Ethereum nodes, let's get our networks started so we can start using this library.
 
-### 3. Students Do: Activate Ethereum Network (10 min)
+### 3. Students Do: Activate Ethereum Network (15 min)
 
 **Corresponding Activity:** [01-Stu_Activate_Network](Activities/01-Stu_Activate_Network)
 
@@ -341,7 +341,7 @@ Ask the students a few questions about why we wrote the code the way we did.
 
   **Answer**: Helping setup deployment environments, developer environments, etc.
 
-### 8. Everyone Do: Creating a Keystore (10 min)
+### 8. Everyone Do: Creating a Keystore (15 min)
 
 Time to create a Keystore, a Keystore is an encrypted file that contains the private key to an account.
 
@@ -775,7 +775,7 @@ Ask the students a few questions comparing the two methods we just used to impor
   **Answer**: We can use this to request a transaction, filling in all of the necessary parameters,
   then all the user has to do is sign it.
 
-### 16. Students Do: Sending Transactions from Keystore Account (10 min)
+### 16. Students Do: Sending Transactions from Keystore Account (15 min)
 
 **Corresponding Activity:** [05-Stu_Sending_Txns_Back](Activities/05-Stu_Sending_Txns_Back)
 
