@@ -372,7 +372,9 @@ Click the `Solidity Compiler` button on the Remix sidebar then click `Compile` t
 
 ![remix_compile_message_board](Images/remix_compile_message_board.png)
 
-* Compiling a contract with Remix is as easy as selecting a compatible compiler version and clicking `Compile`.
+* Compiling a contract with Remix is as easy as selecting a compatible compiler version and clicking `Compile`. To avoid unexpected errors, its best to set your Remix compiler version to match your pragma. The pragma and and compiler version should match as seen in the below image:
+
+![pragma_compiler_match](Images/pragma_compiler_match.png)
 
 * Solidity is compiled to basic instructions that are read by the `Ethereum Virtual Machine`.
 
