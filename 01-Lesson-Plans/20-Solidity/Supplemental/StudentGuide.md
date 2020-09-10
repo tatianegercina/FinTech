@@ -14,6 +14,12 @@
 
 * What difference between if and require in Solidity: https://ethereum.stackexchange.com/questions/60585/what-difference-between-if-and-require-in-solidity
 
+## Compiling 
+
+* Compiling a contract with Remix is as easy as selecting a compatible compiler version and clicking `Compile`. To avoid unexpected errors, its best to set your Remix compiler version to match your pragma. The pragma and and compiler version should match as seen in the below image:
+
+    ![pragma_compiler_match](Images/pragma_compiler_match.png)
+
 ## Books
 
 * Building Ethereum Dapps, Roberto Infante, Manning Publications: https://www.manning.com/books/building-ethereum-dapps.
