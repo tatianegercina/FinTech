@@ -127,7 +127,7 @@ Ask the students:
 
 Now, let's start learning why Bitcoin is still a top player, and why it might stay that way for longer than you'd think.
 
-### 3. Students Do: Wallet Check (10 min)
+### 3. Students Do: Wallet Check (15 min)
 
 **Corresponding Activity:** [01-Stu_Wallet_Check](Activities/01-Stu_Wallet_Check)
 
@@ -244,7 +244,7 @@ They will pick apart the individual details of the transactions, including the U
 
 * [README.md](Activities/02-Stu_Visualizing_UTXOs/README.md)
 
-### 6. Instructor Do: Review UTXOs (10 min)
+### 7. Instructor Do: Review UTXOs (10 min)
 
 Ask the students the following questions:
 
@@ -276,7 +276,7 @@ Ask the students the following questions:
 Now it's about time we start spending some of our own UTXOs. But first, we need
 to learn Python to do so. Time to install the `bit` Python library!
 
-### 8. Everyone Do: Installing Bit and checking balances (10 min)
+### 8. Everyone Do: Installing Bit and checking balances (15 min)
 
 In this activity, you will lead the class in installing the `bit` Python library and fetch account balances.
 
@@ -482,7 +482,7 @@ Ask the students the following questions:
 
 Now, let's get a little bit more detail from the transactions and wallets with `bit`.
 
-### 15. Instructor Do: Network Functions (10 min)
+### 15. Instructor Do: Network Functions (15 min)
 
 Let's demonstrate a couple more quick functions to get some more insight from our wallets.
 
@@ -553,7 +553,7 @@ and the more you explore the `bit` library, the more you'll be able to build one
 
 We are going to use it to build a multi-coin crypto wallet later, and these functions are critical to accomplishing that.
 
-### 16. Students Do: Fetching Network Data (10 min)
+### 16. Students Do: Fetching Network Data (15 min)
 
 **Corresponding Activity:** [05-Stu_Fetching_Network_Data](Activities/05-Stu_Fetching_Network_Data)
 
