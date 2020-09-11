@@ -1158,7 +1158,12 @@ In this activity, students will leverage the pseudocode they created in the prev
 
 ### 19. Instructor Do: Review Conditionally Yours (5 min)
 
-**File:** [conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Solved/Core/conditionally_yours_part_2.py)
+**Files:** 
+
+* [CORE - conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Solved/Core/conditionally_yours_part_2.py)
+
+* [CHALLENGE - conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Solved/Challenge/conditionally_yours_part_2.py)
+
 
 Engage the students with the following questions:
 
