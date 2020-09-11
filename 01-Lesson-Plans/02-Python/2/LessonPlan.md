@@ -40,7 +40,7 @@ By the end of this class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 2.2 Slides](https://docs.google.com/presentation/d/1sRR4inzwnprRdkoRTKhiQ6YdQ40KiI6LxWE_78N-FJY/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 2.2 Slides](https://docs.google.com/presentation/d/1ElFhHyW3t656nkGCXBq56jxjj27KBO6iGB3RYujxf3Q/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit).
 
@@ -52,7 +52,7 @@ By the end of this class, students will be able to:
 
 ### 1. Instructor Do: Welcome and Review (5 min)
 
-Welcome students back to class. Open the [slideshow](https://docs.google.com/presentation/d/1sRR4inzwnprRdkoRTKhiQ6YdQ40KiI6LxWE_78N-FJY/edit?usp=sharing) and review today’s class objectives.
+Welcome students back to class. Open the [slideshow](https://docs.google.com/presentation/d/1ElFhHyW3t656nkGCXBq56jxjj27KBO6iGB3RYujxf3Q/edit?usp=sharing) and review today’s class objectives.
 
 Navigate to the refresher slides and do a quick review of the previous lesson by presenting the following questions to the class:
 
