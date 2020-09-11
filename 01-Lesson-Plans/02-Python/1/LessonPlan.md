@@ -383,7 +383,7 @@ Take a moment to discuss best practices for naming variables:
   miles_per_gallon = 24
   ```
 
-* A convention in Python is to use [snake_case](https://www.python.org/dev/peps/pep-0008/), where each word is separated by an underscore.
+* A convention in Python is to use "snake_case", where each word is separated by an underscore.
 
 Explain to students that good variable names can greatly increase the readability of Python code.
 
