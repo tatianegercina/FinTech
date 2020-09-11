@@ -52,11 +52,9 @@ By the end of this class, students will be able to:
 
 ### 1. Instructor Do: Welcome and Review (5 min)
 
-**File:** [Welcome and Refresher Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit?usp=sharing)
+Welcome students back to class. Open the [slideshow](https://docs.google.com/presentation/d/1sRR4inzwnprRdkoRTKhiQ6YdQ40KiI6LxWE_78N-FJY/edit?usp=sharing) and review today’s class objectives.
 
-Welcome students back to class. Open the slideshow and review today’s [class objectives](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_8).
-
-Navigate to the [refresher slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g55e32eac42_0_38) and do a quick review of the previous lesson by presenting the following questions to the class:
+Navigate to the refresher slides and do a quick review of the previous lesson by presenting the following questions to the class:
 
 * What is a terminal?
 
@@ -85,8 +83,6 @@ Answer any questions before moving on.
 ### 2. Instructor Do: Lists (10 min)
 
 **Files:**
-
-* [Lists Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_175)
 
 * [lists.py](Activities/01-Ins_Lists/Solved/lists.py)
 
@@ -627,9 +623,7 @@ Answer any questions before moving on.
 
 ### 8. Instructor Do: Introduction to Dictionaries (5 min)
 
-**File:** [Dicts Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_163)
-
-Use the [slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_163) while you explain the following:
+Use the slides while you explain the following:
 
 * Working with multiple data structures will help you understand the use cases for each type––in other words, when to use them.
 
@@ -980,8 +974,6 @@ Answer any questions before moving on.
 
 **Files:**
 
-* [Nesting Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g55e32eac42_0_91)
-
 * [nesting_list_of_lists.py](Activities/07-Ins_Nesting/Solved/nesting_list_of_lists.py)
 
 * [nesting_list_of_dicts.py](Activities/07-Ins_Nesting/Solved/nesting_list_of_dicts.py)
@@ -990,7 +982,7 @@ Answer any questions before moving on.
 
 * [nesting_dict_of_dicts.py](Activities/07-Ins_Nesting/Solved/nesting_dict_of_dicts.py)
 
-Introduce nesting by explaining that lists and dictionaries are really just data containers. Use the [slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g55e32eac42_0_91) to accompany your lecture.
+Introduce nesting by explaining that lists and dictionaries are really just data containers. Use the slides to accompany your lecture.
 
 * The values in a list or dictionary can actually be other lists and dictionaries. This means that you can have a list of dictionaries, or a dictionary where each value is a list. You can also have lists of lists and dictionaries of dictionaries!
 
@@ -1370,9 +1362,7 @@ Answer any questions before moving on.
 
 ## 16. Instructor Do: Introduction to Functions (5 min)
 
-**File:** [Functions Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_189)
-
-Use the [slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_189) as you explain the following:
+Use the slides as you explain the following:
 
 * This section on functions is meant to help write programs with modularity. **Modularity** is the degree to which code components or parts can be separated or decoupled from a whole.
 
