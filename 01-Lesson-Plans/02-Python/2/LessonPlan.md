@@ -124,7 +124,7 @@ Open the following cheerleading program in JupyterLab. Run the code to show stud
 
 ```python
 # Create a variable named cheer
-cheer = ["Python", "FinTech","Trilogy","Money"]
+cheer = ["Python", "FinTech", "Money"]
 
 # Below strings can be used to add fun
 cheer_symbol = "*\O/*"
@@ -174,7 +174,7 @@ Open the slideshow and use the slides to discuss basic concepts related to lists
 
 Open the `lists.py` file and explain the following:
 
-* Create a list object `employees` by using a syntax combination of comma-separated values contained in a single set of square brackets.
+* Create a list object `pokemon` by using a syntax combination of comma-separated values contained in a single set of square brackets.
 
   ```python
   # Create a list of Pokemon
@@ -340,14 +340,14 @@ If time permits, cover these additional points:
 
   ```python
   # Remove an element from the list based on the given element name
-  print("Removing employee 'Magikarp'...")
+  print("Removing 'Magikarp'...")
   pokemon.remove("Magikarp")
   print(pokemon)
   print()
   ```
 
   ```
-  Removing employee 'Magikarp'...
+  Removing 'Magikarp'...
   ['Raichu', 'Charizard', 'Bulbasaur', 'Gyarados', 'Dragonite', 'Onyx']
   ```
 
@@ -355,7 +355,7 @@ If time permits, cover these additional points:
 
   ```python
   # Remove an element from the list based on the given index
-  print("Removing employee 'Bulbasaur' based off of its index")
+  print("Removing 'Bulbasaur' based off of its index")
   bulbasaur_index = pokemon.index("Bulbasaur")
   pokemon.pop(bulbasaur_index)
   print(pokemon)
@@ -363,7 +363,7 @@ If time permits, cover these additional points:
   ```
 
   ```
-  Removing employee 'Bulbasaur' based off of its index
+  Removing 'Bulbasaur' based off of its index
   ['Raichu', 'Charizard', 'Gyarados', 'Dragonite', 'Onyx']
   ```
 
@@ -943,8 +943,8 @@ Open the solution file, `market_cap.py`, and explain the following:
   ```
 
   ```
-  Largest Bank: JP Morgan Chase
-  Smallest Bank: Republic Bancorp
+    Largest Bank: National Bank of Canada
+    Smallest Bank: Canadian Western Bank
   ```
 
 * Similar to the conditional logic used to determine the banks associated with the minimum and maximum market cap values, it is possible to group banks by their associated market cap values.
@@ -962,10 +962,10 @@ Open the solution file, `market_cap.py`, and explain the following:
   ```
 
   ```
-  Mega Cap Banks: ['JP Morgan Chase', 'Bank of America']
-  Large Cap Banks: ['Citigroup', 'Wells Fargo', 'Goldman Sachs', 'Morgan Stanley', 'U.S. Bancorp', 'TD Bank', 'PNC Financial Services', 'Capital One', 'Ally Financial', 'American Express']
-  Mid Cap Banks: ['FNB Corporation', 'First Hawaiian Bank']
-  Small Cap Banks: ['Republic Bancorp']
+  Mega Cap Banks: ['National Bank of Canada', 'Toronto-Dominion Bank']
+  Large Cap Banks: ['Royal Bank of Canada', 'Wells Fargo', 'Goldman Sachs', 'Morgan Stanley', 'Canadian Imperial Bank of Commerce', 'TD Bank', 'Bank of Montreal', 'Capital One', 'Ally Financial', 'Scotiabank']
+  Mid Cap Banks: ['FNB Corporation', 'Laurentian Bank of Canada']
+  Small Cap Banks: ['Canadian Western Bank']
   ```
 
 Answer any questions before moving on.
@@ -1384,7 +1384,7 @@ Define functions.
 
 * **Functions** are blocks of callable, reusable code that often perform repeated programmatic actions. Functions can optionally take in inputs or *parameters*.
 
-* Functions are valuable because they make programs more more readable, modular, and reusable.
+* Functions are valuable because they make programs more readable, modular, and reusable.
 
 * Functions can be created by a developer or imported from a library.
 
@@ -1534,7 +1534,7 @@ Then, review the mechanics of function inputs and outputs while showing the code
 
   ![LP_Ins_Functions_Variable_Scope.png](Activities/09-Ins_Functions/Images/LP_Ins_Functions_Variable_Scope.png)
 
-* Function names should follow the `camel_case` naming convention.
+* Function names should follow the `snake_case` naming convention.
 
   ```python
   def calculate_market_cap()
@@ -1636,7 +1636,7 @@ Engage students with the following review questions:
 
 * What is the naming convention used for functions?
 
-  **Answer:** Functions follow the `camel_case` naming convention.
+  **Answer:** Functions follow the `snake_case` naming convention.
 
 * How many lines of code should be in the `body` of a function?
 
