@@ -1,6 +1,6 @@
 # Conditionally Yours, Part 2
 
-In this two-part activity, you will use the pseudocode you created in the previous activity to develop a program that recommends purchasing or selling stock based on a percent increase or decrease of its stock price.
+In part two of this activity, you will use the pseudocode you created in the previous activity to develop a program that recommends purchasing or selling stock based on a percent increase or decrease of its stock price.
 
 ## Background
 
