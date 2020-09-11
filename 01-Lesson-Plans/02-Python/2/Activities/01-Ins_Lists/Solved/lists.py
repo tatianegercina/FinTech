@@ -5,7 +5,7 @@ Instructor Demo: Lists.
 This script showcases basic operations of Python Lists.
 """
 
-# Cheer-leading python exercise
+# Cheerleading python exercise
 # Create a variable named cheer
 cheer = ["Python", "FinTech","Money"]
 
