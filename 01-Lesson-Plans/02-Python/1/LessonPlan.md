@@ -342,10 +342,10 @@ Open [variables.py](Activities/04-Ins_Variables/Solved/variables.py) and highlig
   print(expert_status)
 
   # Prints the data type of each declared variable
-  print("The data type of variable title is " + type(title))
-  print("The data type of variable years is " + type(years))
-  print("The data type of variable hourly_wage is " + type(hourly_wage))
-  print("The data type of variable expert_status is " + type(expert_status))
+  print("The data type of variable title is ", type(title))
+  print("The data type of variable years is ", type(years))
+  print("The data type of variable hourly_wage is ", type(hourly_wage))
+  print("The data type of variable expert_status is ", type(expert_status))
   ```
 
 * Variables can be used in calculations. Using variable names can make it easier to understand the logic in the code.
