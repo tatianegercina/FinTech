@@ -64,9 +64,7 @@ By the end of this class, students will be able to:
 
 In this section, you'll welcome students to class and introduce the Python programming language.
 
-**File:** [Welcome and Python Slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit?usp=sharing)
-
-Welcome students to class and introduce the class objectives for the day. Then, explain that today will be the exciting first step toward automating their work with Python!
+Using the slides, welcome students to class and introduce the class objectives for the day. Then, explain that today will be the exciting first step toward automating their work with Python!
 
 Slack out the following files to be used as reference guides as students progress through Python.
 
@@ -108,11 +106,9 @@ In this section, you will introduce JupyterLab. Students should already have Ana
 
 * [JupyterLabInstallGuide.md](../Supplemental/JupyterLabInstallGuide.md)
 
-* [JupyterLab Slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57bb043f18_0_4333)
-
 Introduce JupyterLab by first asking students if they have ever heard of Jupyter Notebook.
 
-Use the [slideshow](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57bb043f18_0_4333) to cover the following points.
+Use the slides to cover the following points.
 
 * Jupyter Notebook was created by Project Jupyter to provide developers and data scientists with an integrated development environment (IDE) that includes all of the tools needed to build Python programs.
 
@@ -175,8 +171,6 @@ Build on the previous demo by guiding students through the process of creating p
 
 **Files:**
 
-* [JupyterLab Demo Slide](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g594d5df485_0_1103)
-
 * [JupyterLabProjectGuide.md](../Supplemental/JupyterLabProjectGuide.md)
 
 Review the following points about JupyterLab projects:
@@ -229,8 +223,6 @@ Take some additional time here if necessary, as students may need to familiarize
 
 Review JupyterLab projects by engaging students with a series of review questions.
 
-**File:** [Review JupyterLab Projects Slide](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g594d5df485_0_1125)
-
 Use the slides and the following questions to review JupyterLab projects with students.
 
 * What is JupyterLab?
@@ -279,8 +271,6 @@ In this section, students will learn how to use variables in Python to perform v
 
 **Files:**
 
-* [Variables Slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57f3228557_0_1)
-
 * [variables.py](Activities/04-Ins_Variables/Solved/variables.py)
 
 Begin this section by saying something like: "Now that the environment and tools have been greased and prepped, it's time to start coding!"
@@ -297,7 +287,7 @@ Set up the following real-world scenario to help explain variables:
 
 * There are advantages to tracking performance or ranking in a game as `score`. First, it increases flexibility. We can reference `score` without specifying if its the score of a baseball game, video game, or even an exam. Regardless of context, `score` has a value, and that value has meaning. `score` as a word and concept is also easy to remember, and its significance is stored in people's mind (memory). `score` can be referenced in conversation, and others will understand its representation. This makes `score` a great example of a variable."
 
-Transition to discussing variables. Use the [slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57f3228557_0_1) to direct your discussion.
+Transition to discussing variables. Use the slides to direct your discussion.
 
 * Variables are one of the key components of programming languages and serve as the primary means of data storage. All variables must have a name, value, and type.
 
@@ -495,11 +485,9 @@ In this section, students will learn how to apply logic to the values assigned t
 
 **Files:**
 
-* [Conditional Slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57f3228557_0_8)
-
 * [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py)
 
-Use the [slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57f3228557_0_8) to review the following points and associated code examples.
+Use the slides to review the following points and associated code examples.
 
 * **Conditionals** are comparisons or evaluations of variables and their associated values.
 
@@ -839,8 +827,6 @@ Answer any questions before moving on.
 
 **Files:**
 
-* [For Loops Slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g58d1bae602_0_153)
-
 * [loop_de_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py)
 
 Introduce for loops by presenting the following scenario:
@@ -849,7 +835,7 @@ Introduce for loops by presenting the following scenario:
 
 * Just before you finish, you realize that you were given last week's data. You have to start over! Well, there's a better way to handle repetitive tasks like this.
 
-At this point, transition to your discussion to for loops. Use the [slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g58d1bae602_0_153) as you cover the following points:
+At this point, transition to your discussion to for loops. Use the slides as you cover the following points:
 
 * We have already learned how to tell computers what to remember by using variables. We also learned how to tell computers to make simple decisions by using conditionals. Now we're going to tell computers to do what they do best: endlessly repeat an action.
 
@@ -1055,8 +1041,6 @@ Answer any questions before moving on.
 
 In this section, students will be introduced to pseudocoding, which will help them approach coding activities in this course as well as real-world professional settings and job interviews. You will demo how to pseudocode using an example from the previous activity.
 
-**File:** [Pseudocoding Slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57f3228557_0_22)
-
 Introduce the module with a series of questions regarding how students organize their thoughts when coding:
 
 * How did you organize your thoughts when thinking through the coding activities?
@@ -1079,7 +1063,7 @@ Go over G. Polya's techniques to problem solving, which are straightforward and 
 
 4. Test and evaluate the plan: Review the algorithm and determine areas of improvement.
 
-Define pseudocoding and explain its effectiveness. Use the [slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57f3228557_0_22) to accompany the lecture.
+Define pseudocoding and explain its effectiveness. Use the slides to accompany the lecture.
 
 * **Pseudocode** is a high-level description (essentially, a prototype or outline) of the inner workings of a program or algorithm. Pseudocode is written in human language to ensure readability.
 
