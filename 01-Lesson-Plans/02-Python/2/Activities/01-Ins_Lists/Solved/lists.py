@@ -83,13 +83,13 @@ print(pokemon)
 print()
 
 # Remove an element from the list based on the given element name
-print("Removing employee 'Magikarp'...")
+print("Removing 'Magikarp'...")
 pokemon.remove("Magikarp")
 print(pokemon)
 print()
 
 # Remove an element from the list based on the given index
-print("Removing employee 'Bulbasaur' based off of its index")
+print("Removing 'Bulbasaur' based off of its index")
 bulbasaur_index = pokemon.index("Bulbasaur")
 pokemon.pop(bulbasaur_index)
 print(pokemon)
