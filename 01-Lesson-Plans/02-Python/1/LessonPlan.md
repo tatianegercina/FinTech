@@ -22,7 +22,7 @@ By the end of this class, students will be able to:
 
 ### Instructor Notes
 
-* As a reminder, slack out the [Anaconda Installation Guide](../Supplemental/AnacondaInstallGuide.md). Tell students that they need to have Anaconda installed prior to class today and to use office hours to debug any problems.
+* As a reminder, prior to class today, slack out the [Anaconda Installation Guide](../Supplemental/AnacondaInstallGuide.md). Tell students that they need to have Anaconda installed before today's class and to use office hours to debug any problems.
 
 * Welcome to the first day of programming with Python! You will be guiding students through a series of increasingly complex activities, which serve as the foundation for the next class as well as the homework. The class should feel like an evenly paced introduction to Python that provides a challenge and engages students with relatable use cases.
 
@@ -32,13 +32,13 @@ By the end of this class, students will be able to:
 
 * Look for opportunities to include real-world examples in your lectures to make concepts more concrete and relatable for students. Feel free to draw upon your own experience using Python in the professional world.
 
-* Be encouraging. Remind students that all developers have started where the students are right now. Actively work to build confidence, engagement, and promote effective problem-solving skills by letting students explain concepts if they feel comfortable.
+* Be encouraging. Remind students that all developers have started where the students are right now. Actively work to build confidence and engagement while promoting effective problem-solving skills by letting students explain concepts if they feel comfortable.
 
 * As you review the activities, find ways to connect the concepts to FinTech. Include brief discussions about emerging or disruptive/innovative technologies and how they have changed the FinTech landscape.
 
 * Today's class will include a tour of JupyterLab. There will also be several live-coding activities that should be completed in a Python Notebook. Make sure JupyterLab is installed and running properly on your machine.
 
-* Activities that involve programming solutions will have an associated coding file linked at the beginning of the activity section. Click on the link to take you to the coding file required for the activity.
+* Activities that involve programming solutions will have an associated coding file linked at the beginning of the activity section. Clicking on that link will take you to the coding file required for the activity.
 
 * Remind the class that a student guide for each unit can be found in the corresponding unit's supplemental folder. Each guide has helpful links and FAQ's for the unit. The unit 2 student guide can be found [here.](../Supplemental/StudentGuide.md) If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
 
@@ -100,7 +100,7 @@ Slack out the following link to students. Tell them that this is a great resourc
 
 ### 2. Instructor Do: Introduction to JupyterLab (5 min)
 
-In this section, you will introduce JupyterLab. Students should already have Anaconda and JupyterLab installed and can proceed to first-time setup. If not, distribute the following installation guidelines to the class.
+In this section, you will introduce JupyterLab. Students should already have Anaconda and JupyterLab installed and can proceed to first-time setup. If not, distribute the following installation guides to the class.
 
 **Files:**
 
@@ -114,7 +114,7 @@ Introduce JupyterLab by first asking students if they have ever heard of Jupyter
 
 Use the [slideshow](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57bb043f18_0_4333) to cover the following points.
 
-* Jupyter Notebook was created by Project Jupyter to provide developers and data scientists with a development environment (integrated development environment) that includes all of the tools needed to build Python programs.
+* Jupyter Notebook was created by Project Jupyter to provide developers and data scientists with an integrated development environment (IDE) that includes all of the tools needed to build Python programs.
 
 * An **integrated development environment (IDE)** is software that provides a text editor as well as technology to package code and interpret it.
 
@@ -122,7 +122,7 @@ Use the [slideshow](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOO
 
   * For example, some IDEs connect with code repositories to make sure code is always backed up in a source control repository.
 
-* Jupyter Notebooks are an interactive, web-based IDE that supports the integration of live coding, document manipulation, narrative text, and data visualization.
+* Jupyter Notebooks are an interactive, web-based IDE that support the integration of live coding, document manipulation, narrative text, and data visualization.
 
 * Jupyter Notebooks support a number of different programming languages, including Python, Scala, and R. Over 40 languages are supported.
 
@@ -171,15 +171,13 @@ Pause here to check if students are able to launch JupyterLab. If any students a
 
 ### 3. Instructor Do: Creating Projects with JupyterLab (10 min)
 
-Walk through the following slides and then proceed to the instructor activity on creating projects with JupyterLab.
+Build on the previous demo by guiding students through the process of creating projects with JupyterLab. Tell students that they will now learn how to create JupyterLab projects, navigate the JupyterLab interface, and execute code in Jupyter.
 
 **Files:**
 
 * [JupyterLab Demo Slide](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g594d5df485_0_1103)
 
 * [JupyterLabProjectGuide.md](../Supplemental/JupyterLabProjectGuide.md)
-
-Tell students that they will now learn how to create JupyterLab projects, navigate the JupyterLab interface, and execute code in Jupyter.
 
 Review the following points about JupyterLab projects:
 
@@ -285,7 +283,7 @@ In this section, students will learn how to use variables in Python to perform v
 
 * [variables.py](Activities/04-Ins_Variables/Solved/variables.py)
 
-Begin this section by saying something like the following: "Now that the environment and tools have been greased and prepped, it's time to start coding!"
+Begin this section by saying something like: "Now that the environment and tools have been greased and prepped, it's time to start coding!"
 
 At this point, students may feel apprehensive about the upcoming coding activities. Build confidence by saying:
 
@@ -299,7 +297,7 @@ Set up the following real-world scenario to help explain variables:
 
 * There are advantages to tracking performance or ranking in a game as `score`. First, it increases flexibility. We can reference `score` without specifying if its the score of a baseball game, video game, or even an exam. Regardless of context, `score` has a value, and that value has meaning. `score` as a word and concept is also easy to remember, and its significance is stored in people's mind (memory). `score` can be referenced in conversation, and others will understand its representation. This makes `score` a great example of a variable."
 
-Transition to discussing variables. Use the [slides]((https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57f3228557_0_1) to direct your discussion.
+Transition to discussing variables. Use the [slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57f3228557_0_1) to direct your discussion.
 
 * Variables are one of the key components of programming languages and serve as the primary means of data storage. All variables must have a name, value, and type.
 
@@ -528,7 +526,7 @@ Open a console within JupyterLab and live code the example of the self-driving c
 * What would happen if a driver fell asleep behind the wheel of a car? Well, if it's a self-driving car, nothing. The car's safety mechanisms will activate, and the car will begin auto-piloting itself to avoid collisions and swerving. If it's not a driverless car, well, a miracle might be needed. An example of such a case could look like the following:
 
   ```python
-  driverless_car = false
+  driverless_car = False
   if True:
       # Do something
       print("Oh no! The driver's asleep! What do we do?!")
@@ -695,7 +693,7 @@ In this activity, students will create a Python script that implements condition
 
 Take some time to walk through the solution while gauging students' level of comfort with conditionals.
 
-**File:** [conditionals.md](Activities/07-Stu_Conditionals/Solved/conditionals.py)
+**File:** [conditionals.py](Activities/07-Stu_Conditionals/Solved/conditionals.py)
 
 Begin by saying something like:
 
@@ -729,11 +727,11 @@ Tell students to look at the following code. Ask:
 
 1. Switch from using `>` to `>=`.
 
-2. Check `if age > 20`.
+2. Check `if age > 18`.
 
     ```python
-    age = 21
-    if age > 21:
+    age = 18
+    if age > 18:
         print("You are of drinking age!")
     else:
         print("Argggggh! You think you can hoodwink me, matey?! You're too young to drink!")
@@ -770,11 +768,11 @@ Use the following code from the solution as an example. Instead of hard-coding t
 * Condition 2: y ** 2 < 26
 
   ```python
-  # 3. Output: `GOT QUESTION 3!`
+  # 3. Output: `GOT QUESTION 4!`
   x = 2
   y = 5
   if (x ** 3 >= y) and (y ** 2 < 26):
-      print("GOT QUESTION 3!")
+      print("GOT QUESTION 4!")
   else:
       print("Oh good you can count")
   ```
@@ -809,17 +807,17 @@ Review what was just learned by asking the following questions:
 
   **Answer:** Logical
 
-* If you want TWO conditions to be met, you would need to write _If x..._
+* If you want TWO conditions to be met, which logical operator would you use?
 
   **Answer:** `AND`
 
-* If you have two conditions, but either one is good enough, you would write _x..._
+* If you have two conditions, but either one is good enough, which logical operator would you use?
 
   **Answer:** `OR`
 
 * What is used to tell the computer we want something that is _not equal to_ something else?
 
-  **Answer:** `!`
+  **Answer:** `!=`
 
 * If you want to declare (or assign) a variable, do you use one or two equals signs?
 
@@ -881,8 +879,6 @@ Open [loop_dee_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py) and rev
 * For loops should be used when you want a process to run _n_ number of times.
 
   * For example, when you want to execute a decision or behaviour for each number in a range, you would use a for loop: you know you have _n_ number of items, and you want a behaviour executed for each item.
-
-  * For loops should be used if you know a process needs to be executed a specific number of times.
 
   * For example, let's say you're training a new robotic supermarket cashier. `for` every egg (element) in the carton (sequence), the robot must move the element around to inspect if it's broken. The robot would leverage the below loop:
 
@@ -1019,7 +1015,7 @@ Review the solution while engaging the students with the following questions:
 
 * If you want to process trades as long as the market is open, what type of loop should you use?
 
-  **Answer:** For loop
+  **Answer:** While loop
 
 * How do you exit a for loop?
 
@@ -1035,7 +1031,7 @@ Review the solution while engaging the students with the following questions:
 
 Review the following points related to the activity:
 
-* The solution works because it loops over an object that is a sequence (the word "cheer").
+* The solution works because it loops over an object that is a sequence (the word "Python").
 
 * Strings can be substituted for a range of numbers.
 
@@ -1073,7 +1069,7 @@ Discuss the importance of using a problem-solving methodology when developing pr
 
 * Having a good approach to understanding problems will enable students to design complex applications and troubleshoot errors and bugs.
 
-Go over G Polya's techniques to problem solving, which are are straightforward and easy to remember. The steps are:
+Go over G. Polya's techniques to problem solving, which are straightforward and easy to remember. The steps are:
 
 1. Understand the problem: Gather as much information as possible pertaining to the problem being solved, inputs, desired outputs, and limitations.
 
@@ -1108,7 +1104,7 @@ Explain that pseudocode is a great tool to use on interviews.
 
 * Pseudocoding on interviews allows employers to see a candidate's thought process and problem-solving skills, as well as their ability to design algorithms.
 
-* Some employers even ask interviewees to complete a pseudocoding activity, which shows how interested employers are in developers' ability to solve problems, design and envision algorithms, and articulate process. Data shows that employers are looking for interviewees to pseudocode during interviews.
+* Some employers even ask interviewees to complete a pseudocoding activity, which shows how interested employers are in developers' ability to solve problems, design and envision algorithms, and articulate processes. Data shows that employers are looking for interviewees to pseudocode during interviews.
 
 * Pseudocoding ensures that interviewees don't jump head first into a technical question; it requires them to think about what they're going to do. The last thing anyone wants is to start coding and not know what to do next.
 
@@ -1158,7 +1154,7 @@ Answer any questions before moving on.
 
 ### 17. Student Do: Conditionally Yours, Part 1 (10 min)
 
-In this activity, students will pseudocode a solution to recommend whether or not a stock should be purchased, based on a specific threshold of percentage increase or decrease. When students have finished pseudocoding, they will implement their algorithm. The objective of the assignment is for the students to learn how to pseudocode solutions prior to developing them.
+In this activity, students will pseudocode a solution to recommend whether or not a stock should be purchased, based on a specific threshold of percentage increase or decrease. In part two of the activity, students will implement their algorithm. The objective of the assignment is for the students to learn how to pseudocode solutions prior to developing them.
 
 **File:** [conditionally_yours.py](Activities/11-Stu_Pseudocoding/Unsolved/conditionally_yours_part_1.py)
 
@@ -1176,7 +1172,7 @@ In this activity, students will leverage the pseudocode they created in the prev
 
 ---
 
-### 19. Instructor Do: Review Conditionally Yours, Part 2 (5 min)
+### 19. Instructor Do: Review Conditionally Yours (5 min)
 
 **File:** [conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Solved/Core/conditionally_yours_part_2.py)
 
