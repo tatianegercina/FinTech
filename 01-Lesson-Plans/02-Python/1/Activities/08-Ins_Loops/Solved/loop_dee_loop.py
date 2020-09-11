@@ -11,9 +11,27 @@ for x in range(2, 7):
 print("----------------------------------------")
 
 # Iterate through letters in a string
-word = "Peace"
-for letters in word:
-    print(letters)
+phrase = "Hello World"
+for x in phrase:
+    print(x)
+
+print("----------------------------------------")
+
+# For loop using a break
+desired_number = 5
+for x in range(10):
+  if (x == desired_number):
+    break
+  print(x)
+
+print("----------------------------------------")
+
+# For loop using a continue
+desired_number = 5
+for x in range(10):
+  if x == 3:
+    continue
+  print(x)
 
 print("----------------------------------------")
 

@@ -1,6 +1,6 @@
 # Conditionally Yours, Part 1
 
-In this two-part activity, you will pseudocode a solution for identifying whether or not a stock should be purchased, based on the percent increase or decrease in stock price. Then, you will implement your algorithm.
+In part one of this two-part activity, you will pseudocode a solution for identifying whether or not a stock should be purchased, based on the percent increase or decrease in stock price. In part two, you will implement your algorithm.
 
 ## Background
 
@@ -10,7 +10,7 @@ While on your lunch break together, you start proposing ideas about how the prog
 
 Harold knows that this would allow him to focus only on buying and selling; the program would handle all decision making and get him one step closer to securing the title of top trader for weeks to come. You begin considering the requirements for the enhanced program.
 
-For this activity, work with a partner to create pseudocode a program that will:
+For this activity, work with a partner to pseudocode a program that will:
 
 * Calculate percent increase or decrease in stock price for Netflix.
 

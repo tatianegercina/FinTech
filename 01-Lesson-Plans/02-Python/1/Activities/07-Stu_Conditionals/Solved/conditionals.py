@@ -13,8 +13,8 @@ else:
     print("Still missing out")
 
 # 3. Output: `You are of drinking age!`
-age = 21
-if age > 20:
+age = 19
+if age > 18:
     print("You are of drinking age!")
 else:
     print("Argggggh! You think you can hoodwink me, matey?! You're too young to drink!")

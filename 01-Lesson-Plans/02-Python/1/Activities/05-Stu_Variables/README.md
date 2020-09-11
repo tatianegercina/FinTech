@@ -8,11 +8,17 @@ For the last week, you've been watching your coworker Harold use a calculator to
 
 For this activity, create a Python program to automate Harold's process by programmatically implementing the percent increase calculation.
 
-Start small by identifying the percent increase in price for Apple stock. Yesterday at 9:00 a.m., Apple's stock price was $198.87. At close of market today, the stock price was $254.32. Calculate the percent increase using the formulas below.
+Start small by identifying the percent increase in price for Apple stock. 
 
-* Increase = Current Price - Original Price
+* Yesterday at 9:00 a.m., Apple's stock price was $198.87. 
 
-* Percent Increase = Increase / Original x 100
+* At close of market today, the stock price was $254.32. 
+
+* Calculate the percent increase using the formulas below.
+
+    * Increase = Current Price - Original Price
+
+    * Percent Increase = Increase / Original x 100
 
 ## Instructions
 
