@@ -397,7 +397,7 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to perform calculations and operations using variables. Students will find the percent increase of Apple stock and complete coding drills.
 
-**File:** [hello_variable_world.py](Activities/05-Stu_Variables/Unsolved/Core/hello_variable_world.py)
+**File:** [hello_variable_world.py](Activities/05-Stu_Variables/Unsolved/hello_variable_world.py)
 
 **Instructions:** [README.md](Activities/05-Stu_Variables/README.md)
 
@@ -407,7 +407,7 @@ If students need additional assistance or finish early, direct them to the Pytho
 
 ### 8. Instructor Do: Review Hello Variable World (5 min)
 
-**File:** [hello_variable_world.py](Activities/05-Stu_Variables/Solved/Core/hello_variable_world.py)
+**File:** [hello_variable_world.py](Activities/05-Stu_Variables/Solved/hello_variable_world.py)
 
 Review the solution to the variables activity, highlighting the following points:
 
