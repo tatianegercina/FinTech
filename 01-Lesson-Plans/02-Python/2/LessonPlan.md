@@ -40,9 +40,9 @@ By the end of this class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 2.2 Slides](https://docs.google.com/presentation/d/1sRR4inzwnprRdkoRTKhiQ6YdQ40KiI6LxWE_78N-FJY/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 2.2 Slides](https://docs.google.com/presentation/d/1ElFhHyW3t656nkGCXBq56jxjj27KBO6iGB3RYujxf3Q/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -52,11 +52,9 @@ By the end of this class, students will be able to:
 
 ### 1. Instructor Do: Welcome and Review (5 min)
 
-**File:** [Welcome and Refresher Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit?usp=sharing)
+Welcome students back to class. Open the [slideshow](https://docs.google.com/presentation/d/1ElFhHyW3t656nkGCXBq56jxjj27KBO6iGB3RYujxf3Q/edit?usp=sharing) and review today’s class objectives.
 
-Welcome students back to class. Open the slideshow and review today’s [class objectives](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_8).
-
-Navigate to the [refresher slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g55e32eac42_0_38) and do a quick review of the previous lesson by presenting the following questions to the class:
+Navigate to the refresher slides and do a quick review of the previous lesson by presenting the following questions to the class:
 
 * What is a terminal?
 
@@ -85,8 +83,6 @@ Answer any questions before moving on.
 ### 2. Instructor Do: Lists (10 min)
 
 **Files:**
-
-* [Lists Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_175)
 
 * [lists.py](Activities/01-Ins_Lists/Solved/lists.py)
 
@@ -124,7 +120,7 @@ Open the following cheerleading program in JupyterLab. Run the code to show stud
 
 ```python
 # Create a variable named cheer
-cheer = ["Python", "FinTech","Trilogy","Money"]
+cheer = ["Python", "FinTech", "Money"]
 
 # Below strings can be used to add fun
 cheer_symbol = "*\O/*"
@@ -174,7 +170,7 @@ Open the slideshow and use the slides to discuss basic concepts related to lists
 
 Open the `lists.py` file and explain the following:
 
-* Create a list object `employees` by using a syntax combination of comma-separated values contained in a single set of square brackets.
+* Create a list object `pokemon` by using a syntax combination of comma-separated values contained in a single set of square brackets.
 
   ```python
   # Create a list of Pokemon
@@ -340,14 +336,14 @@ If time permits, cover these additional points:
 
   ```python
   # Remove an element from the list based on the given element name
-  print("Removing employee 'Magikarp'...")
+  print("Removing 'Magikarp'...")
   pokemon.remove("Magikarp")
   print(pokemon)
   print()
   ```
 
   ```
-  Removing employee 'Magikarp'...
+  Removing 'Magikarp'...
   ['Raichu', 'Charizard', 'Bulbasaur', 'Gyarados', 'Dragonite', 'Onyx']
   ```
 
@@ -355,7 +351,7 @@ If time permits, cover these additional points:
 
   ```python
   # Remove an element from the list based on the given index
-  print("Removing employee 'Bulbasaur' based off of its index")
+  print("Removing 'Bulbasaur' based off of its index")
   bulbasaur_index = pokemon.index("Bulbasaur")
   pokemon.pop(bulbasaur_index)
   print(pokemon)
@@ -363,7 +359,7 @@ If time permits, cover these additional points:
   ```
 
   ```
-  Removing employee 'Bulbasaur' based off of its index
+  Removing 'Bulbasaur' based off of its index
   ['Raichu', 'Charizard', 'Gyarados', 'Dragonite', 'Onyx']
   ```
 
@@ -383,7 +379,7 @@ In this activity, students will work with lists to maintain a grocery list. They
 
 ### 4. Instructor Do: Review Sugar, Flour, Butter! (5 min)
 
-**File:** [Solution](Activities/02-Stu_Lists/Solved/Core/grocery_list_core.py)
+**File:** [Solution](Activities/02-Stu_Lists/Solved/Challeng/grocery_list_challenge.py)
 
 Open the solution file and explain the following:
 
@@ -627,9 +623,7 @@ Answer any questions before moving on.
 
 ### 8. Instructor Do: Introduction to Dictionaries (5 min)
 
-**File:** [Dicts Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_163)
-
-Use the [slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_163) while you explain the following:
+Use the slides while you explain the following:
 
 * Working with multiple data structures will help you understand the use cases for each type––in other words, when to use them.
 
@@ -879,7 +873,7 @@ In this activity, students will practice creating a dictionary, as well as updat
 
 ### 11. Instructor Do: Review Market Capitalization (5 min)
 
-**File:** [market_cap.py](Activities/06-Stu_Dictionaries/Solved/Core/market_cap_core.py)
+**File:** [market_cap.py](Activities/06-Stu_Dictionaries/Solved/Challenge/market_cap_challenge.py)
 
 Open the solution file, `market_cap.py`, and explain the following:
 
@@ -943,8 +937,8 @@ Open the solution file, `market_cap.py`, and explain the following:
   ```
 
   ```
-  Largest Bank: JP Morgan Chase
-  Smallest Bank: Republic Bancorp
+    Largest Bank: National Bank of Canada
+    Smallest Bank: Canadian Western Bank
   ```
 
 * Similar to the conditional logic used to determine the banks associated with the minimum and maximum market cap values, it is possible to group banks by their associated market cap values.
@@ -962,10 +956,10 @@ Open the solution file, `market_cap.py`, and explain the following:
   ```
 
   ```
-  Mega Cap Banks: ['JP Morgan Chase', 'Bank of America']
-  Large Cap Banks: ['Citigroup', 'Wells Fargo', 'Goldman Sachs', 'Morgan Stanley', 'U.S. Bancorp', 'TD Bank', 'PNC Financial Services', 'Capital One', 'Ally Financial', 'American Express']
-  Mid Cap Banks: ['FNB Corporation', 'First Hawaiian Bank']
-  Small Cap Banks: ['Republic Bancorp']
+  Mega Cap Banks: ['National Bank of Canada', 'Toronto-Dominion Bank']
+  Large Cap Banks: ['Royal Bank of Canada', 'Wells Fargo', 'Goldman Sachs', 'Morgan Stanley', 'Canadian Imperial Bank of Commerce', 'TD Bank', 'Bank of Montreal', 'Capital One', 'Ally Financial', 'Scotiabank']
+  Mid Cap Banks: ['FNB Corporation', 'Laurentian Bank of Canada']
+  Small Cap Banks: ['Canadian Western Bank']
   ```
 
 Answer any questions before moving on.
@@ -980,8 +974,6 @@ Answer any questions before moving on.
 
 **Files:**
 
-* [Nesting Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g55e32eac42_0_91)
-
 * [nesting_list_of_lists.py](Activities/07-Ins_Nesting/Solved/nesting_list_of_lists.py)
 
 * [nesting_list_of_dicts.py](Activities/07-Ins_Nesting/Solved/nesting_list_of_dicts.py)
@@ -990,7 +982,7 @@ Answer any questions before moving on.
 
 * [nesting_dict_of_dicts.py](Activities/07-Ins_Nesting/Solved/nesting_dict_of_dicts.py)
 
-Introduce nesting by explaining that lists and dictionaries are really just data containers. Use the [slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g55e32eac42_0_91) to accompany your lecture.
+Introduce nesting by explaining that lists and dictionaries are really just data containers. Use the slides to accompany your lecture.
 
 * The values in a list or dictionary can actually be other lists and dictionaries. This means that you can have a list of dictionaries, or a dictionary where each value is a list. You can also have lists of lists and dictionaries of dictionaries!
 
@@ -1233,9 +1225,9 @@ Encourage students to work with a partner on this activity.
 
 ### 15. Instructor Do: Review Weekly Gains (5 min)
 
-**File:** [weekly_gains.py](Activities/08-Stu_Nesting/Solved/Core/weekly_gains_core.py)
+**File:** [weekly_gains.py](Activities/08-Stu_Nesting/Solved/Challenge/weekly_gains_challenge.py)
 
-Open the solution file, [weekly_gains.py](Activities/08-Stu_Nesting/Solved/Core/weekly_gains_core.py), and explain the following:
+Open the solution file, [weekly_gains.py](Activities/08-Stu_Nesting/Solved/Challenge/weekly_gains_challenge.py), and explain the following:
 
 * Nested objects allow us to contain and structure more information in one place. Although this may be convenient, this also makes accessing data more complicated as the number of nested levels increases.
 
@@ -1370,9 +1362,7 @@ Answer any questions before moving on.
 
 ## 16. Instructor Do: Introduction to Functions (5 min)
 
-**File:** [Functions Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_189)
-
-Use the [slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_189) as you explain the following:
+Use the slides as you explain the following:
 
 * This section on functions is meant to help write programs with modularity. **Modularity** is the degree to which code components or parts can be separated or decoupled from a whole.
 
@@ -1384,7 +1374,7 @@ Define functions.
 
 * **Functions** are blocks of callable, reusable code that often perform repeated programmatic actions. Functions can optionally take in inputs or *parameters*.
 
-* Functions are valuable because they make programs more more readable, modular, and reusable.
+* Functions are valuable because they make programs more readable, modular, and reusable.
 
 * Functions can be created by a developer or imported from a library.
 
@@ -1534,7 +1524,7 @@ Then, review the mechanics of function inputs and outputs while showing the code
 
   ![LP_Ins_Functions_Variable_Scope.png](Activities/09-Ins_Functions/Images/LP_Ins_Functions_Variable_Scope.png)
 
-* Function names should follow the `camel_case` naming convention.
+* Function names should follow the `snake_case` naming convention.
 
   ```python
   def calculate_market_cap()
@@ -1636,7 +1626,7 @@ Engage students with the following review questions:
 
 * What is the naming convention used for functions?
 
-  **Answer:** Functions follow the `camel_case` naming convention.
+  **Answer:** Functions follow the `snake_case` naming convention.
 
 * How many lines of code should be in the `body` of a function?
 

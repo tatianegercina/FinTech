@@ -33,7 +33,7 @@ Using the [starter file](Unsolved/Core/weekly_gains_core.py), complete the follo
 
 ## Challenge
 
-Calculate the weekly gains for each stock ticker and assign to a `results` dictionary for each stock ticker.
+Calculate the weekly gains for each stock ticker and assign it to a `results` dictionary for each stock ticker.
 
 * Loop through every key-value pair in the `historical_stock_data` dictionary.
 
