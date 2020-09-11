@@ -52,11 +52,11 @@ def calculate_compound_growth_rate_list(beginning_balance, ending_balance, years
 
 # Populate growth_rates list with 2016 values by calling calculate_compound_growth_rate_list.
 beginning_balance = 29000.00
-ending_balance = 45000.10
+ending_balance = 45000.00
 calculate_compound_growth_rate_list(beginning_balance, ending_balance, years)
 
 # Populate growth_rates list with 2017 values by calling calculate_compound_growth_rate_list.
-beginning_balance = 45000.10
+beginning_balance = 45000.00
 ending_balance = 47000.00
 calculate_compound_growth_rate_list(beginning_balance, ending_balance, years)
 
