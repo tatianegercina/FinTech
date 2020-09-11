@@ -317,7 +317,7 @@ Transition to discussing variables. Use the slides to direct your discussion.
 
   * Data types correspond to the type of data being stored, e.g., letters/words, phrases, or numbers.
 
-  * Python has five standard data types: number (integer, float, etc.), string, list, dictionary, and tuple.
+  * While Python has several data types, some of the most commonly used are: number (integer, float, etc.), string, list, dictionary, tuple, and boolean.
 
 * Depending on the type of data that you store, Python provides different functions for that data. For example, you can find the length of a string of characters (how many letters are in the string).
 
