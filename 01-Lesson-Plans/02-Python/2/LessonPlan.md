@@ -379,7 +379,7 @@ In this activity, students will work with lists to maintain a grocery list. They
 
 ### 4. Instructor Do: Review Sugar, Flour, Butter! (5 min)
 
-**File:** [Solution](Activities/02-Stu_Lists/Solved/Core/grocery_list_core.py)
+**File:** [Solution](Activities/02-Stu_Lists/Solved/Challeng/grocery_list_challenge.py)
 
 Open the solution file and explain the following:
 
@@ -873,7 +873,7 @@ In this activity, students will practice creating a dictionary, as well as updat
 
 ### 11. Instructor Do: Review Market Capitalization (5 min)
 
-**File:** [market_cap.py](Activities/06-Stu_Dictionaries/Solved/Core/market_cap_core.py)
+**File:** [market_cap.py](Activities/06-Stu_Dictionaries/Solved/Challenge/market_cap_challenge.py)
 
 Open the solution file, `market_cap.py`, and explain the following:
 
@@ -1225,9 +1225,9 @@ Encourage students to work with a partner on this activity.
 
 ### 15. Instructor Do: Review Weekly Gains (5 min)
 
-**File:** [weekly_gains.py](Activities/08-Stu_Nesting/Solved/Core/weekly_gains_core.py)
+**File:** [weekly_gains.py](Activities/08-Stu_Nesting/Solved/Challenge/weekly_gains_challenge.py)
 
-Open the solution file, [weekly_gains.py](Activities/08-Stu_Nesting/Solved/Core/weekly_gains_core.py), and explain the following:
+Open the solution file, [weekly_gains.py](Activities/08-Stu_Nesting/Solved/Challenge/weekly_gains_challenge.py), and explain the following:
 
 * Nested objects allow us to contain and structure more information in one place. Although this may be convenient, this also makes accessing data more complicated as the number of nested levels increases.
 
