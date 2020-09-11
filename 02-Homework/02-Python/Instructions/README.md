@@ -30,7 +30,7 @@ Your task is to create a Python script that analyzes the records to calculate ea
 
 * The greatest increase in profits (date and amount) over the entire period.
 
-* The greatest decrease in losses (date and amount) over the entire period.
+* The greatest decrease in profits (date and amount) over the entire period.
 
 Your resulting analysis should look similar to the following:
 
@@ -141,7 +141,7 @@ Complete the following:
       report[sales_item]["04-profit"] += profit * quantity
       ```
 
-  * Else print the message "{sales_item} does not equal {item}! NO MATCH!".
+  * Else print the message `{sales_item} does not equal {item}! NO MATCH!"`.
 
 * Write out the contents of the `report` dictionary to a text file. The report should output each ramen type as the keys and `01-count`, `02-revenue`, `03-cogs`, and `04-profit` metrics as the values for every ramen type as shown:
 
