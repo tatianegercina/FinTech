@@ -179,7 +179,7 @@ Review the following points about JupyterLab projects:
 
 * Everything used and associated with a JupyterLab application goes in a JupyterLab project. This includes notebooks, files, images, etc. They are essentially a folder on a file system.
 
-Open [JupyterLabProjectGuide.md](../Supplemental/JupyterLabProjectGuide.md). Walk through the solution and highlight the following:
+Using the [JupyterLabProjectGuide.md](../Supplemental/JupyterLabProjectGuide.md) as your guide, walk through the solution and highlight the following:
 
 * The JupyterLab launcher is one of the central components.
 
