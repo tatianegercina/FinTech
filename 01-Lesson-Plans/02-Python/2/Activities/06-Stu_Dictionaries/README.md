@@ -50,13 +50,13 @@ Group banks by their corresponding market capitalization tier.
 
 - Use an if-else statement and lists to compare and group banks by their corresponding market capitalization: `mega-cap`, `large-cap`, `mid-cap`, and `small-cap`.
 
-  - `mega-cap`: Market capitalization greater than or equal to $300 billion.
+  - `mega-cap`: Market capitalization greater than or equal to `$300 billion`.
 
-  - `large-cap`: Market capitalization greater than or equal to $10 billion and less than $300 billion.
+  - `large-cap`: Market capitalization greater than or equal to `$10 billion` and less than `$300 billion`.
 
-  - `mid-cap`: Market capitalization greater than or equal to $2 and less than $10 billion.
+  - `mid-cap`: Market capitalization greater than or equal to `$2 billion` and less than `$10 billion`.
 
-  - `small-cap`: Market capitalization greater than or equal to $300 million and less than $2 billion.
+  - `small-cap`: Market capitalization greater than or equal to `$300 million` and less than `$2 billion`.
 
 ## Hint
 
