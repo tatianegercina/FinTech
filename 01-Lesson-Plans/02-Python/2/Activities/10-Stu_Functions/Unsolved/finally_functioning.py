@@ -6,9 +6,9 @@ Determine the Compound Annual Growth Rate for an investment
 beginning_balance = 29000.00
 
 # Declare a variable ending_balance as float
-ending_balance = 45000.10
+ending_balance = 45000.00
 
-# Declare a variable years as an float
+# Declare a variable years as a float
 years = 1.0
 
 # Define a function called calculate_compound_growth_rate with three arguments: beginning_balance, ending_balance, years. Function should output growth_rate.

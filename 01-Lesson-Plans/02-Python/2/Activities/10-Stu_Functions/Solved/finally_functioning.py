@@ -6,7 +6,7 @@ Determine the Compound Annual Growth Rate for an investment
 beginning_balance = 29000.00
 
 # Declare a variable ending_balance as float
-ending_balance = 45000.10
+ending_balance = 45000.00
 
 # Declare a variable years as an int
 years = 1.0
@@ -20,7 +20,7 @@ def calculate_compound_growth_rate(beginning_balance, ending_balance, years):
 year_one_growth = calculate_compound_growth_rate(beginning_balance, ending_balance, years)
 
 # Update beginning_balance and ending balance for year two, and then execute calculate_compound_growth_rate and capture as year_two_growth.
-beginning_balance = 45000.10
+beginning_balance = 45000.00
 ending_balance = 47000.00
 year_two_growth = calculate_compound_growth_rate(beginning_balance, ending_balance, years)
 
