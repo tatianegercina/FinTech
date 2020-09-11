@@ -74,6 +74,8 @@ In this homework assignment, you will need to:
 
 ### Read the Data
 
+A python starter file has been provided with psuedocode to help get you started as you add your own code to your `main.ipynb` notebook file.
+
 Complete the following:
 
 * Read in `menu_data.csv` and set its contents to a separate list object. (This way, you can cross-reference your menu data with your sales data as you read your sales data in the coming steps.)
