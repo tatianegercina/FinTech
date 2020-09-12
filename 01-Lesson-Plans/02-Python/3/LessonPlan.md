@@ -45,7 +45,7 @@ By the end of this class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-- The slides for this lesson can be viewed on Google Drive here: [Lesson 2.3 Slides](https://docs.google.com/presentation/d/1aOtz9Jgk_8iHMonNL3ySUgVvyRcefFrzxSYkrwrXyL4/edit?usp=sharing).
+- The slides for this lesson can be viewed on Google Drive here: [Lesson 2.3 Slides](https://docs.google.com/presentation/d/1VD_kjIuQXc52-ofdGVzWOWCW7_MeAQcdTBBqyj5Ija4/edit?usp=sharing).
 
 - To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit).
 
@@ -65,7 +65,7 @@ In this section, welcome students to class, review the lesson objectives, then c
 
 Welcome students back to class. Tell them that in today's lesson, we will begin to apply Python concepts to financial use cases. Today will be fun!
 
-Use the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57c97b9346_4_1) to review the class objectives.
+Use the [slides](https://docs.google.com/presentation/d/1VD_kjIuQXc52-ofdGVzWOWCW7_MeAQcdTBBqyj5Ija4/edit?usp=sharing) to review the class objectives.
 
 Use the solution file to perform a live coding session, and quickly recap concepts learned in previous classes. During the session, ask the following questions:
 
