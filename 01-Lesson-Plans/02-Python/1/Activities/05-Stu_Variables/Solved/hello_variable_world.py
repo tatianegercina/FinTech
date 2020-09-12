@@ -1,5 +1,6 @@
-# Percent Increase Challenge Activity
+# Hello Variable World Activity
 
+# Formulas Needed:
 # Increase = Current Price - Original Price
 # Percent Increase = Increase / Original x 100
 
@@ -23,3 +24,7 @@ print(f"Apple's current stock price is ${current_price}")
 
 # Print percent increase
 print(f"Apple's stock price increased by ${percent_increase}")
+
+# CHALLENGE:
+# Use a format specifier with the f-string to print the percent increase with two decimal places:
+print(f"Apples percent increase in price is {percent_increase:.2f}%")

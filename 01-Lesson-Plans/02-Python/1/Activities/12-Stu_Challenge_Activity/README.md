@@ -1,6 +1,6 @@
 # Conditionally Yours, Part 2
 
-In this two-part activity, you will use the pseudocode you created in the previous activity to develop a program that recommends purchasing or selling stock based on a percent increase or decrease of its stock price.
+In part two of this activity, you will use the pseudocode you created in the previous activity to develop a program that recommends purchasing or selling stock based on a percent increase or decrease of its stock price.
 
 ## Background
 
@@ -10,8 +10,12 @@ For this activity, work with a partner to code out the pseudocode solution of th
 
 * Implement the pseudocode in a Python file.
 
-* Test the logic of the program with Netflix stock prices. Yesterday at 4:00 p.m., Netflix's stock price was $360.35. Right now, the stock price is $293.33.
+* Test the logic of the program with Netflix stock prices. 
 
+    * Yesterday at 4:00 p.m., Netflix's stock price was $360.35. 
+
+    * Right now, the stock price is $293.33.
+    
 * Calculate the percent increase using the formulas below, and then print a message to the screen indicating if the stock should be bought or sold.
 
   * Increase = Current Price - Original Price
