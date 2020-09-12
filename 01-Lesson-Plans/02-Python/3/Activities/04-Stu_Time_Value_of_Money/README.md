@@ -10,7 +10,7 @@ A zero-coupon bond is a debt security that does not pay interest (a coupon) as a
 
 Using the [starter file](Unsolved/zero_coupon_bonds.py), walk through the following steps.
 
-* Recreate the `present_value` formula as a function in Python. Make sure the function has the following parameters:
+* Define a function named `calculate_present_value` that executes the present value formula in Python. Make sure the function has the following parameters:
 
   * `future_value`: This is equivalent to the face value, or maturity value, of bonds; a lump sum given at the end of the duration of the bond.
 
@@ -20,7 +20,7 @@ Using the [starter file](Unsolved/zero_coupon_bonds.py), walk through the follow
 
   * `years`: The number of years constituting the duration of the bond.
 
-* Pass the bond parameters into the `present_value` function and return the value to a variable `bond_value`.
+* Pass the bond parameters into the `calculate_present_value` function and return the value to a variable `bond_value`.
 
 * Compare the `bond_value` to its `price` and determine if the bond is worth purchasing or not.
 
