@@ -61,8 +61,6 @@ In this section, welcome students to class, review the lesson objectives, then c
 
 **Files:**
 
-- [Welcome Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss)
-
 - [refresher.py](Activities/01-Ins_Refresher/Solved/refresher.py)
 
 Welcome students back to class. Tell them that in today's lesson, we will begin to apply Python concepts to financial use cases. Today will be fun!
@@ -303,15 +301,13 @@ In this part of the lesson, students will be introduced to the concept of time v
 
 **Files:**
 
-- [Time Value of Money Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57bb043f18_0_4333)
-
 - [time_value.py](Activities/03-Ins_Time_Value_of_Money/Solved/time_value.py)
 
 This section will focus on core financial calculations in Python. Students should understand that these calculations are fundamental to financial analysis, and that they will actually be writing code for each of these formulas.
 
 **Note:** When reviewing the slides, leverage the knowledge of students with a finance background by asking them to help explain time value of money and how it is used.
 
-Use the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57bb043f18_0_4333) as you explain time value of money. Be sure to highlight the following:
+Use the slides as you explain time value of money. Be sure to highlight the following:
 
 - The **time value of money (TVM)** describes the additional value that is created through receiving money today compared to receiving money at a later date, as money today can continue to grow with interest.
 
@@ -383,8 +379,6 @@ This section is exciting because it showcases the power of imports in Python.
 
 **Files:**
 
-- [NPV Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57bb043f18_0_4663)
-
 - [imports.py](Activities/05-Ins_Imports/Solved/imports.py)
 
 Review the following points to motivate students and help them understand how powerful imports can be:
@@ -395,7 +389,7 @@ Review the following points to motivate students and help them understand how po
 
 Explain that we will be importing some really cool financial functions to calculate things like net present value (NPV).
 
-Using the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57bb043f18_0_4663), discuss the theory behind NPV. Then, review the code in `imports.py`, highlighting the following:
+Using the slides, discuss the theory behind NPV. Then, review the code in `imports.py`, highlighting the following:
 
 - Imports allow us to call upon other Python programs and gain access to their functions and variables.
 
@@ -657,9 +651,7 @@ Answer any questions before moving on.
 
 In this section, go over the definition of tabular data.
 
-**File:** [Tabular Data Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57d7f6e59f_1_0)
-
-Use the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57d7f6e59f_1_0) to review the following points about tabular data.
+Use the slides to review the following points about tabular data.
 
 - **Tabular data** is data in a table format with rows, columns, and values for each row-column intersection.
 
