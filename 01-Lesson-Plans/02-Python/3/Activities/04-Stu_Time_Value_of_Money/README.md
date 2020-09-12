@@ -30,9 +30,14 @@ Using the [starter file](Unsolved/zero_coupon_bonds.py), walk through the follow
 
   * Else the bond is selling at its fair market value, you're neutral to the decision.
 
-## Hint
+## Hints
 
-Don't overthink it! We are simply calculating the present value of a future value! If you need to refer to the present value formula, look to the slides.
+Don't overthink it! We are simply calculating the present value of a future value! 
+
+The present value formula is:  `PV = FV / (1 + (i/ n) ^ (n x t))`.  
+
+Example: `PV = $15,000 / (1 + (10% / 1) ^ (1 x 1)) = $13,636`
+
 
 ---
 
