@@ -718,7 +718,7 @@ Tell students to look at the following code. Ask:
 
 1. Switch from using `>` to `>=`.
 
-2. Check `if age > 18`.
+2. Check `if age > 17`.
 
     ```python
     age = 18
