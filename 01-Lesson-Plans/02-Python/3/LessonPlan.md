@@ -454,9 +454,13 @@ In this activity, students will use the `npv` function from the NumPy library to
 
 In this part of the lesson, you will review the previous Net Present Value activity with students.
 
-**File:** [Solution](Activities/06-Stu_Imports/Solved/Core/net_present_value_core.py)
+**Files:** 
 
-Open the [solution file](Activities/06-Stu_Imports/Solved/Core/net_present_value_core.py) and explain the process of performing financial analysis using net present value (NPV):
+ * [Core](Activities/06-Stu_Imports/Solved/Core/net_present_value_core.py)
+
+ * [Challenge](Activities/06-Stu_Imports/Solved/Challenge/net_present_value_challenge.py)
+
+Using the solution files, explain the process of performing financial analysis using net present value (NPV):
 
 - NumPy's built-in NPV function makes it easy to calculate NPV values.
 
@@ -715,9 +719,13 @@ In this activity, students will perform file I/O with a CSV file. Students will 
 
 Take some time to review the previous activity, Sales Analysis, with students.
 
-**File:** [sales_analysis.py](Activities/10-Stu_CSV_Reader/Solved/Core/sales_analysis_core.py)
+**Files:** 
 
-Open the [solution file](Activities/10-Stu_CSV_Reader/Solved/Core/sales_analysis_core.py) to review the solution. Explain the following:
+[Core](Activities/10-Stu_CSV_Reader/Solved/Core/sales_analysis_core.py)
+
+[Challenge](Activities/10-Stu_CSV_Reader/Solved/Challenge/sales_analysis_challenge.py)
+
+Using the solution files to review, explain the following:
 
 - Python's CSV module parses CSV data and creates `row` list objects, making it easier to access specific column values for each row.
 
