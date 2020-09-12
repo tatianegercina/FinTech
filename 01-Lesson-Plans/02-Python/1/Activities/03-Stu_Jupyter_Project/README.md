@@ -16,17 +16,15 @@ Using JupyterLab, complete the following steps:
 
 2. Navigate to the `Jupyter-Workspace` folder.
 
-3. Click the Text File button to create a text file called `hello_world.txt`.
+3. Create a Python Jupyter Notebook.
 
-4. Create a Python Jupyter Notebook.
-
-5. Type the following line of code into the notebook:
+4. Type the following line of code into the notebook:
 
     ```python
     print("Hello World")
     ```
 
-6. Click Run.
+5. Click Run.
 
 ## Challenge
 
