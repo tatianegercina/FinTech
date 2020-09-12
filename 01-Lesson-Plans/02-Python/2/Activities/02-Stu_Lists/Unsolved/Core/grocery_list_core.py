@@ -3,7 +3,7 @@
 Student Do: Grocery List.
 
 This script showcases basic operations of Python Lists to help Mike
-organize her grocery shopping list.
+organize his grocery shopping list.
 """
 
 # @TODO: Create a list of groceries
