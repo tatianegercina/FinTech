@@ -4,7 +4,7 @@ Instructor Demo: Dicts.
 This script showcases basic operations of Python Dicts.
 """
 
-  # Initialize a dictionary containing top traders for each month in 2019
+# Initialize a dictionary containing top traders for each month in 2019
 top_traders_2019 = {
     "january" : "Karen",
     "february" : "Harold",
