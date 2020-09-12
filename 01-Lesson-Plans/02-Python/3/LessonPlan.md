@@ -47,7 +47,7 @@ By the end of this class, students will be able to:
 
 - The slides for this lesson can be viewed on Google Drive here: [Lesson 2.3 Slides](https://docs.google.com/presentation/d/1aOtz9Jgk_8iHMonNL3ySUgVvyRcefFrzxSYkrwrXyL4/edit?usp=sharing).
 
-- To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+- To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit).
 
 - **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -57,7 +57,7 @@ By the end of this class, students will be able to:
 
 ### 1. Instructor Do: Welcome and Review (10 min)
 
-In this section, welcome students to class, review the lesson objectives, and complete a review activity.
+In this section, welcome students to class, review the lesson objectives, then complete the review activity.
 
 **Files:**
 
@@ -261,27 +261,27 @@ Open the [solution file](Activities/02-Stu_Refresher/Solved/marketing.py) to rev
   #   Silver = 1001-2000
   #   Bronze = 0-1000
   def create_greeting(first_name, last_name, revenue):
-  """Creates a customer greeting based on revenue status.
+    """Creates a customer greeting based on revenue status.
 
-  Args:
-      first_name (str): The first name of the customer.
-      last_name (str): The last name of the customer.
-      revenue (int): The revenue of the customer.
+    Args:
+        first_name (str): The first name of the customer.
+        last_name (str): The last name of the customer.
+        revenue (int): The revenue of the customer.
 
-  Returns:
-      A customized greeting string.
-  """
+    Returns:
+        A customized greeting string.
+    """
 
-  if revenue > 3000:
-      greeting = f"Hi {first_name} {last_name}! Thank you for your business of ${revenue}! You are a platinum member."
-  elif (revenue > 2000 and revenue <= 3000):
-      greeting = f"Hi {first_name} {last_name}! Thank you for your business of ${revenue}! You are a gold member."
-  elif (revenue > 1000 and revenue <= 2000):
-      greeting = f"Hi {first_name} {last_name}! Thank you for your business of ${revenue}! You are a silver member."
-  elif (revenue >= 0  and revenue <= 1000):
-      greeting = f"Hi {first_name} {last_name}! Thank you for your business of ${revenue}! You are a bronze member."
+    if revenue > 3000:
+        greeting = f"Hi {first_name} {last_name}! Thank you for your business of ${revenue}! You are a platinum member."
+    elif (revenue > 2000 and revenue <= 3000):
+        greeting = f"Hi {first_name} {last_name}! Thank you for your business of ${revenue}! You are a gold member."
+    elif (revenue > 1000 and revenue <= 2000):
+        greeting = f"Hi {first_name} {last_name}! Thank you for your business of ${revenue}! You are a silver member."
+    elif (revenue >= 0  and revenue <= 1000):
+        greeting = f"Hi {first_name} {last_name}! Thank you for your business of ${revenue}! You are a bronze member."
 
-  return greeting
+    return greeting
   ```
 
 - Since each customer in the list is a dict datatype, call the `first_name`, `last_name`, and `revenue` keys of each customer to pass it into the `create_greeting()` function.
@@ -359,13 +359,13 @@ Take some time to review the Zero-Coupon Bonds activity with students.
 
 Open `zero_coupon_bonds.py` to review the solution and explain the process of valuing a zero-coupon bond:
 
-- The `present_value` function allows us to value the promised future value of the bond upon its maturity.
+- The `calculate_present_value` function allows us to value the promised future value of the bond upon its maturity.
 
-- Because the `present_value` formula is merely a manipulation of the `future_value` formula in the previous activity, its parameters are generally equivalent as well:
+- Because the `calculate_present_value` formula is merely a manipulation of the `future_value` formula in the previous activity, its parameters are generally equivalent as well:
 
   - `future_value`: The face value or maturity value of the bond; the lump sum distributed at the end of the duration of the bond.
 
-  - `interest_rate`: The rate at which we discount the future value or maturity value over the duration of the bond.
+  - `discount_rate`: The rate at which we discount the future value or maturity value over the duration of the bond.
 
   - `compounding_periods`: The compounding periods (assumed to be 1 for bonds).
 
@@ -596,7 +596,7 @@ Answer any questions before moving on.
 
 ---
 
-### 11. Student Do: ECommerce Traffic (15 min)
+### 11. Student Do: E-Commerce Traffic (15 min)
 
 In this activity, students will perform file I/O by parsing a text file and calculating the sum and average of customer etraffic, and then writing the results back to a text file.
 
@@ -604,9 +604,9 @@ In this activity, students will perform file I/O by parsing a text file and calc
 
 **Instructions:** [README.md](Activities/08-Stu_File_IO/README.md)
 
-### 12. Instructor Do: Review ECommerce Traffic (5 min)
+### 12. Instructor Do: Review E-Commerce Traffic (5 min)
 
-Review the previous activity, ECommerce Traffic, with students.
+Review the previous activity, E-Commerce Traffic, with students.
 
 **File:** [Solution](Activities/08-Stu_File_IO/Solved/ecommerce_traffic.py)
 
@@ -684,7 +684,7 @@ Open [csv_reader.py](Activities/09-Ins_CSV_Reader/Solved/csv_reader.py). Walk th
   ```python
   csvreader = csv.reader(csvfile, delimiter=',')
 
-  # Read each row of data after the
+  # Read each row of data after the header
   for row in csvreader:
       # Print the row
       print(row)
