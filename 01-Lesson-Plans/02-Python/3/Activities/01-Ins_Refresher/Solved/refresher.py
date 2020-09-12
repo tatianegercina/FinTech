@@ -29,36 +29,45 @@ print("Creating a list of Pokemon...")
 pokemon = ["Pikachu", "Charizard", "Bulbasaur", "Garydos", "Dragonite", "Onyx"]
 print(pokemon)
 
+# Dicts
+# Initialize a dictionary
+trading_pnl = {
+    "title": "Trading Log",
+    "03-18-2019": -224,
+    "03-19-2019": 352,
+    "03-20-2019": 252,
+    "03-21-2019": 354,
+    "03-22-2019": -544,
+    "03-23-2019": -650,
+    "03-24-2019": 56,
+    "03-25-2019": 123,
+    "03-26-2019": -43,
+    "03-27-2019": 254,
+    "03-28-2019": 325,
+    "03-29-2019": -123,
+    "03-30-2019": 47,
+    "03-31-2019": 321,
+    "04-01-2019": 123,
+    "04-02-2019": 133,
+    "04-03-2019": -151,
+    "04-04-2019": 613,
+    "04-05-2019": 232,
+    "04-06-2019": -311
+}
+print(trading_pnl)
+
 # Loop over list
 # Loop through a range of numbers (0 through 4)
 for x in range(5):
   print(x)
 
-# Dicts
-# Initialize a dictionary
-  trading_pnl = {
-      "title": "Trading Log",
-      "03-18-2019": -224,
-      "03-19-2019": 352,
-      "03-20-2019": 252,
-      "03-21-2019": 354,
-      "03-22-2019": -544,
-      "03-23-2019": -650,
-      "03-24-2019": 56,
-      "03-25-2019": 123,
-      "03-26-2019": -43,
-      "03-27-2019": 254,
-      "03-28-2019": 325,
-      "03-29-2019": -123,
-      "03-30-2019": 47,
-      "03-31-2019": 321,
-      "04-01-2019": 123,
-      "04-02-2019": 133,
-      "04-03-2019": -151,
-      "04-04-2019": 613,
-      "04-05-2019": 232,
-      "04-06-2019": -311
-  }
+# Define a function
+# Define a main function that accepts a string argument
+def main(stock_ticker):
+  print(stock_ticker + " is booming right now!")
+
+stock_ticker = "SBUX"
+main(stock_ticker)
 
 # Traverse/access nested objects
 # List of Dicts
@@ -80,10 +89,4 @@ ceo_nested_dict = [
   }
 ]
 
-# Define a function
-# Define a main function that accepts a string argument
-def main(stock_ticker):
-  print(stock_ticker + " is booming right now!")
-
-stock_ticker = "SBUX"
-main(stock_ticker)
+print(ceo_nested_dict[0]['occupation'])

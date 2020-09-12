@@ -30,7 +30,7 @@ discount_rate = .1
 compounding_periods = 1
 years = 5
 
-# @TODO: Call the calculate_present_value() function and assign to a variables
+# @TODO: Call the calculate_present_value() function and assign to a variable
 
 
 # @TODO: Determine if the bond is worth it
