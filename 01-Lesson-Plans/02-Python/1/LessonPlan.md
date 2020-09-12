@@ -721,7 +721,7 @@ Tell students to look at the following code. Ask:
 2. Check `if age > 17`.
 
     ```python
-    age = 18
+    age = 17
     if age > 17:
         print("You are of drinking age!")
     else:
