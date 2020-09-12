@@ -2,8 +2,8 @@
 """
 Student Do: Grocery List.
 
-This script showcases basic operations of Python Lists to help Sally
-organize her grocery shopping list.
+This script showcases basic operations of Python Lists to help Mike
+organize his grocery shopping list.
 """
 
 # Create a list of groceries
