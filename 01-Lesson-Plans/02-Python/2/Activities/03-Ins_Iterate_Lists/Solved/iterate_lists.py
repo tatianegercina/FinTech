@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Student Do: Iterate Lists.
+Instructor Do: Iterate Lists.
 
 This script demonstrates how to iterate over lists to calculate common summary statistics/metrics.
 """
