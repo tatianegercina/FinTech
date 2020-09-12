@@ -80,7 +80,7 @@ Calculate the aggregate average for each unique customer name and output to a CS
 
       ```python
       analysis[name]['count'] += count
-          analysis[name]['revenue'] += revenue
+      analysis[name]['revenue'] += revenue
       ```
 
 3. Set the output file path for `aggregate.csv`.

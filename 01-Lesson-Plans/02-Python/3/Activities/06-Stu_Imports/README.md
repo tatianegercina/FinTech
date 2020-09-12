@@ -18,7 +18,7 @@ Use the [starter file](Unsolved/Core/net_present_value_core.py) to complete the 
 
 2. Call the NumPy NPV function for each of the three project scenarios (conservative, neutral, aggressive).
 
-3. Assign the return values to a corresponding scenario key in a `npv_dict` dictionary.
+3. Assign the return values to a corresponding scenario key in an `npv_dict` dictionary.
 
 4. Print out the project scenario that holds the max NPV value from the `npv_dict` dictionary.
 
