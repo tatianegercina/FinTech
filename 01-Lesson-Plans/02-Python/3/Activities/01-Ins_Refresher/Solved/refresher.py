@@ -26,7 +26,7 @@ if x == 1:
 # Lists
 # Create a list of Pokemon
 print("Creating a list of Pokemon...")
-pokemon = ["Pikachu", "Charizard", "Bulbasaur", "Garydos", "Dragonite", "Onyx"]
+pokemon = ["Pikachu", "Charizard", "Bulbasaur", "Gyarados", "Dragonite", "Onyx"]
 print(pokemon)
 
 # Dicts
