@@ -704,9 +704,9 @@ Be prepared to explain the following, for example:
 
   * Deciding when to use specific comparison operators comes down to whether you want your conditional statement to include the minimum and maximum values needed to pass the condition.
 
-  * This is best explained with the example of drinking age. In Ontario, you have to be 19 years of age or older to legally drink. 19 is the minimum age acceptable.
+  * This is best explained with the example of drinking age. In Australia, you have to be 18 years of age or older to legally drink. 18 is the minimum age acceptable.
 
-  * If we were to write a program to check whether someone's age meets the legal conditions, we would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 19 cannot drink.
+  * If we were to write a program to check whether someone's age meets the legal conditions, we would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 18 cannot drink.
 
 Tell students to look at the following code. Ask:
 
@@ -718,11 +718,11 @@ Tell students to look at the following code. Ask:
 
 1. Switch from using `>` to `>=`.
 
-2. Check `if age > 20`.
+2. Check `if age > 18`.
 
     ```python
-    age = 21
-    if age > 21:
+    age = 18
+    if age > 17:
         print("You are of drinking age!")
     else:
         print("Argggggh! You think you can hoodwink me, matey?! You're too young to drink!")
