@@ -2,7 +2,7 @@
 
 This guide walks through the installation and configuration process for an Anaconda environment. This guide includes the following:
 
-* Download and installation of Anaconda distribution for Python 3
+* Download and installation of Anaconda distribution for Python 3 
 
 * Configuration of Anaconda dev virtual environment
 
@@ -10,31 +10,38 @@ This guide walks through the installation and configuration process for an Anaco
 
 * Installation of JupyterLab
 
+* **NOTE:** We will be downloading the Python 3.8 distribution by default, however we will create and use a virtual environment that uses Python 3.7 instead, as many of our activities are not yet compatible with the new Python 3.8 version.
+
 ### Download and Install Anaconda
 
 1. Navigate to the Anaconda installation [documentation](https://docs.anaconda.com/anaconda/install/). It will be valuable to have the documentation available in case any issues arise.
 
     ![LP_Ins_Intro_to_Jupyter_Lab_Installation](Images/Jupyter_Lab_Installation.png)
 
-2. Navigate to the Anaconda download site, which can be found [here](https://www.anaconda.com/distribution/#windows). Scroll to the bottom and select the Python 3.7 download.
+2. Navigate to the Anaconda download site, which can be found [here](https://www.anaconda.com/distribution/#windows). Click the `download` button as seen in the below image:
 
-    ![Jupyter_Lab_Python37](Images/Jupyter_Lab_Python37.png)
+    ![Anaconda_Download_1](Images/Anaconda_Download_1.png)
 
-3. You will be asked to save the installer. Save it. After the download is complete, run the download file. This will launch an installation wizard that will walk you through the Anaconda install. Continue through the installation process by clicking either "I Agree" or "Next."
+3. This will automatically move your screen to to the download section of the page.  Select the appropriate distribution for your system.
+
+    ![Anaconda_Download_2](Images/Anaconda_Download_2.png)
+
+
+4. You will be asked to save the installer. Save it. After the download is complete, run the download file. This will launch an installation wizard that will walk you through the Anaconda install. Continue through the installation process by clicking either "I Agree" or "Next."
 
     ![Jupyter_Lab_Start.png](Images/Jupyter_Lab_Start.png)
 
-4. You will eventually get to a screen that asks if you would like to set your PATH environment variable using the installation wizard. Do NOT check this box. Make sure that both boxes are unchecked, as displayed in the below screenshot. Click `install`.
+5. You will eventually get to a screen that asks if you would like to set your PATH environment variable using the installation wizard. Do NOT check this box. Make sure that both boxes are unchecked, as displayed in the below screenshot. Click `install`.
 
     ![Jupyter_Lab_Path.png](Images/Jupyter_Lab_Path.png)
 
-5. Click Finish once the installation is complete.
+6. Click Finish once the installation is complete.
 
-6. Use the Applications folder (Mac) or Start menu (Windows) to open the Anaconda terminal.
+7. Use the Applications folder (Mac) or Start menu (Windows) to open the Anaconda terminal.
 
     ![Jupyter_Lab_Launch_Terminal.png](Images/Jupyter_Lab_Launch_Terminal.png)
 
-7. Execute the following commands to ensure the latest Anaconda packages are installed. When prompted, enter "y" to proceed.
+8. Execute the following commands to ensure the latest Anaconda packages are installed. When prompted, enter "y" to proceed.
 
     ```shell
     conda update conda
@@ -43,7 +50,7 @@ This guide walks through the installation and configuration process for an Anaco
 
     ![Jupyter_Lab_Conda_Update.png](Images/Jupyter_Lab_Conda_Update.png)
 
-8. Create a dev environment. When prompted, enter "y" to proceed.
+9. Create a dev environment. When prompted, enter "y" to proceed.
 
     ```shell
     conda create -n dev python=3.7 anaconda
@@ -51,7 +58,7 @@ This guide walks through the installation and configuration process for an Anaco
 
     ![Jupyter_Lab_Dev_Env.png](Images/Jupyter_Lab_Dev_Env.png)
 
-9. Activate the dev environment.
+10. Activate the dev environment.
 
     ```shell
     conda activate dev
@@ -59,13 +66,13 @@ This guide walks through the installation and configuration process for an Anaco
 
     ![Jupyter_Lab_Activate_Dev.png](Images/Jupyter_Lab_Activate_Dev.png)
 
-10. Verify your your installations by executing the `conda list` command after activating the environment, then locating the following packages in the populated list:
+11. Verify your your installations by executing the `conda list` command after activating the environment, then locating the following packages in the populated list:
 
     - Numpy
     - Pandas
     - Matplotlib
 
-11. After the installation of Anaconda,  we'll want to enable the terminal commands. The instructions differ by your operating system.
+12. After the installation of Anaconda,  we'll want to enable the terminal commands. The instructions differ by your operating system.
 
 * [Windows](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=93a9c967-71b2-434c-bcda-ab7a011f5c9c). After these instructions, you need to open your terminal and run `conda init bash`. Then close your terminal, and start a new one before using any `jupyter` command.
 
