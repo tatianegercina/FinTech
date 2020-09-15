@@ -17,7 +17,7 @@ found = False
 with open(csvpath, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
 
-    # Loop through looking for the video
+    # Loop through to search for the video
     for row in csvreader:
         if row[0] == video:
             print(row[0] + " is rated " + row[1] + " with a rating of " + row[5])
