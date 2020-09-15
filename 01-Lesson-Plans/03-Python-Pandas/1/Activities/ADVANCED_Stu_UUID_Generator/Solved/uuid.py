@@ -4,9 +4,6 @@
 This module allows us to generate a universally unique identifier (UUID)
 with a custom length and character set.
 
-Example:
-    $ python uuid.py
-
 """
 
 # Use import to access code from other modules.

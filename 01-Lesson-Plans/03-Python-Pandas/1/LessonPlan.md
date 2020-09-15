@@ -8,7 +8,7 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * Today's class will consist of Python code drills and review activities. Code drills are a simple way to build muscle memory and give students a chance to practice the fundamentals of programming in Python. Many of the code drills may seem trivial to some students, but they will help students become fluent in both syntax and fundamental problem solving.
 
-* Code drills range in complexity and pace, so the time allotted to each section of activities should be fluid to allow each student to work through the problems at their own speed. You may find it helpful to review specific drills or exercises with the entire class. The majority of time will likely be best served by rotating between groups of students to help with any issues they are having. Today's class is also an excellent time to see how students feeling about Python in general and to provide some words of encouragement.
+* Code drills range in complexity and pace, so the time allotted to each section of activities should be fluid to allow each student to work through the problems at their own speed. You may find it helpful to review specific drills or exercises with the entire class. The majority of time will likely be best served by rotating between groups of students to help with any issues they are having. Today's class is also an excellent time to see how students are feeling about Python in general and to provide some words of encouragement.
 
 * One way to challenge students is to have "code drill races," where students pair off and race each other to complete a set of drills. Be sure to use this strategy cautiously and thoughtfully, so that you don't overwhelm any beginner programmers.
 
@@ -16,6 +16,7 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * Remind the class that a student guide for each unit can be found in the corresponding unit's supplemental folder. Each guide has helpful links and FAQ for the unit. The Unit 3 student guide can be found [here](../Supplemental/StudentGuide.md). If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
 
+- Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
 

@@ -19,7 +19,7 @@
 # Print `our_list`
 
 
-# Declare a variable named `one_to_ten` and assign it an list containing the numbers from 1 to 10.
+# Declare a variable named `one_to_ten` and assign it a list containing the numbers from 1 to 10.
 
 
 # Print the 4th element from `one_to_ten`.
@@ -45,7 +45,7 @@ num_list = [2, 65, 3, 7, 39, 22, 11, 94, 299, 9, 20, 21, 51, 37]
 
 # Iterate through the provided `num_list` and create an if-else statement to print the sum of all the even numbers.
 
-
+# We've declared this list for you
 fruits = [
   "Apple", "Orange", "Banana", "Pomelo", "Apple", "Kiwi", "Peach", "Banana", "Grape", "Tomato",
   "Kiwi", "Apple", "Watermelon", "Lemon", "Pomelo", "Apple", "Banana", "Peach", "Apricot", "Grape"]

@@ -14,7 +14,7 @@ Git is a great resource for managing your code and very convenient if you want t
 
     ![Creating a new respository](Images/02.PNG)
 
-3. Clone the repository by clicking the `Clone or download` button. Copy the link to your clipboard.
+3. Clone the repository by clicking the `Code` button. Copy the link to your clipboard.
 
     ![Copying the clone url](Images/03.PNG)
 

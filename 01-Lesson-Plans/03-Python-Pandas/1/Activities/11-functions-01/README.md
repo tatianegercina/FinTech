@@ -20,13 +20,13 @@ Open the [starter file](Unsolved/functions-01.py) and perform the following:
 
 7. Call your `user_input` function.
 
-8. Define a function `good_day` that creates a input dialogue asking the user "Are you having a nice day?" and prints the response.
+8. Define a function `good_day` that creates an input dialogue asking the user "Are you having a nice day?" and prints the response.
 
 9. Call your `good_day` function.
 
 10. Define a function `average` that calculates the average between two parameters and returns the average.
 
-11. Call the `average` function and assign a variable `calculated_average`. Then print `calculated_average`.
+11. Call the `average` function and assign it to a variable `calculated_average`. Then print `calculated_average`.
 
 
 ---

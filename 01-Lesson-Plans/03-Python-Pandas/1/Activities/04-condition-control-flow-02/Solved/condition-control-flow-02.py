@@ -80,17 +80,17 @@ c2_savings = c2_salary - (c1_yearly_rent + c2_yearly_expenses)
 
 # Write an if-else statement to check if `c1_name` is equal to "Mr. Farley". If so, print a string of "Hello Mr. Farley" using the `c1_name` variable. If not, print a string of "Hello stranger".
 if c1_name == "Mr. Farley":
-    print(f"Hello {c1_name}")
+    print(f"Hello {c1_name}.")
 else:
     print("Hello stranger!")
 
-# Write an if-else statement to check if `c2_age` is greater than `c1_age`. If so, print a string of "Mr. Farley is older than Mr. Snuggles". Else if `c1_age` is greater than `c2_age`, print a string of "Mr. Snuggles is older than Mr. Farley". Else, `c1_age` must have to be equal to `c2_age`, therefore print a string of "Mr. Farley is the same age as Mr. Snuggles".
+# Write an if-else statement to check if `c2_age` is greater than `c1_age`. If so, print a string of "Mr. Farley is older than Mr. Snuggles". Else if `c1_age` is greater than `c2_age`, print a string of "Mr. Snuggles is older than Mr. Farley". Else, `c1_age` must be equal to `c2_age`, therefore print a string of "Mr. Farley is the same age as Mr. Snuggles".
 if c2_age > c1_age:
-    print("Mr. Farley is older than Mr. Snuggles")
+    print("Mr. Farley is older than Mr. Snuggles.")
 elif c1_age > c2_age:
-    print("Mr. Snuggles is older than Mr. Farley")
+    print("Mr. Snuggles is older than Mr. Farley.")
 else:
-    print("Mr. Farley is the same age as Mr. Snuggles")
+    print("Mr. Farley is the same age as Mr. Snuggles.")
 
 # Write an if-else statement to check if `c1_location` is equal to "Oakland, CA". If so, print a string of "Mr. Farley comes from the home of the Raiders!". Else if `c2_location` is equal to a string of "San Francisco, CA", print a string of "Mr. Farley comes from the home of the 49ers!". Else both conditions must not apply and therefore print a string "Mr. Farley doesn't hail from a sports town."
 if c1_location == "Oakland, CA":
@@ -100,24 +100,24 @@ elif c2_location == "San Francisco, CA":
 else:
     print("Mr. Farley doesn't hail from a sports town.")
 
-# Write an if-else statement to check if `c1_rent` is greater than `c2_rent`. If so, print a string of "Mr. Farley pays more rent than Mr. Snuggles". Else if `c1_rent` is less than `c2_rent`, print a string of "Mr. Farley pays less rent than Mr. Snuggles". Else, `c1_rent` must have to be equal to `c2_rent`, therefore print a string of "Mr. Farley pays the same rent as Mr. Snuggles".
+# Write an if-else statement to check if `c1_rent` is greater than `c2_rent`. If so, print a string of "Mr. Farley pays more rent than Mr. Snuggles". Else if `c1_rent` is less than `c2_rent`, print a string of "Mr. Farley pays less rent than Mr. Snuggles". Else, `c1_rent` must be equal to `c2_rent`, therefore print a string of "Mr. Farley pays the same rent as Mr. Snuggles".
 if c1_yearly_rent > c2_yearly_rent:
-    print("Mr. Farley pays more rent than Mr. Snuggles")
+    print("Mr. Farley pays more rent than Mr. Snuggles.")
 elif c1_yearly_rent < c2_yearly_rent:
-    print("Mr. Farley pays less rent than Mr. Snuggles")
+    print("Mr. Farley pays less rent than Mr. Snuggles.")
 else:
-    print("Mr. Farley pays the same rent as Mr. Snuggles")
+    print("Mr. Farley pays the same rent as Mr. Snuggles.")
 
-# Write an if-else statement to check if `c1_monthly_expenses` is greater than `c2_monthly_expenses`. If so, print a string of `Mr. Farley has more expenses than Mr. Snuggles`. Else if `c1_monthly_expenses` is less than `c2_monthly_expenses`, print a string of "Mr. Farley pays less expenses than Mr. Snuggles". Else, `c1_monthly_expenses` must have to be equal to `c2_monthly_expenses`, therefore print a string of "Mr. Farley pays the same expenses at Mr. Snuggles".
+# Write an if-else statement to check if `c1_monthly_expenses` is greater than `c2_monthly_expenses`. If so, print a string of `Mr. Farley has more expenses than Mr. Snuggles`. Else if `c1_monthly_expenses` is less than `c2_monthly_expenses`, print a string of "Mr. Farley pays less expenses than Mr. Snuggles". Else, `c1_monthly_expenses` must be equal to `c2_monthly_expenses`, therefore print a string of "Mr. Farley pays the same expenses as Mr. Snuggles".
 if c1_yearly_expenses > c2_yearly_expenses:
-    print("Mr. Farley has more expenses than Mr. Snuggles")
+    print("Mr. Farley has more expenses than Mr. Snuggles.")
 elif c1_yearly_expenses < c2_yearly_expenses:
-    print("Mr. Farley pays less expenses than Mr. Snuggles")
+    print("Mr. Farley pays less expenses than Mr. Snuggles.")
 else:
-    print("Mr. Farley pays the same expenses at Mr. Snuggles")
+    print("Mr. Farley pays the same expenses as Mr. Snuggles.")
 
-# Write an if-else statement to check if `c1_profession` is equal to "Web Developer" AND `c2_profession` is equal to "Accountant". If so, print a string of "Look a Web Developer and an Accountant", else print a string of "They are professionals."
+# Write an if-else statement to check if `c1_profession` is equal to "Web Developer" AND `c2_profession` is equal to "Accountant". If so, print a string of "They are a Web Developer and an Accountant", else print a string of "They are professionals."
 if c1_profession == "Web Developer" and c2_profession == "Accountant":
-    print("Look a Web Developer and an Accountant")
+    print("They are a Web Developer and an Accountant.")
 else:
-    print("They are professionals")
+    print("They are professionals.")

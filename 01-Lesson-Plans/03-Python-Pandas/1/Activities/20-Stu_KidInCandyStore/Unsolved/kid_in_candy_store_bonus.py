@@ -20,11 +20,21 @@ candy_cart = []
 # Print all of the candies to the screen and their index in brackets
 
 
-# Run through a loop which allows the user to choose which candies to take home with them
+# Set answer to "yes" for while loop
 
+
+
+    # Ask which candy the user would like to bring ho
+
+    
 
     # Add the candy at the index chosen to the candy_cart list
 
     
+
+    # ask the user if they want more candy
+
+    
+
 # Loop through the candy_cart to say what candies were brought home
 
