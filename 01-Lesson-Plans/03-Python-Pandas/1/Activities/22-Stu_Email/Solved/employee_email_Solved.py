@@ -4,9 +4,6 @@
 This module allows us to create an email address using employee data from
 a csv file.
 
-Example:
-    $ python employee_email.py
-
 """
 import os
 import csv

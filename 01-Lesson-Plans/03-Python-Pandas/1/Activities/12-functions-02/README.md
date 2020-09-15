@@ -4,7 +4,7 @@ In this activity, you'll get more practice with functions. By including a return
 
 ## Instructions
 
-Perform the following:
+Open the [starter file](Unsolved/functions-02.py) and perform the following:
 
 1. Define a function `warble` that takes in a string as an argument, adds "arglebargle" to the end of it, and returns the result.
 

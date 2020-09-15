@@ -96,7 +96,7 @@ Open the [starter file](Unsolved/condition-control-flow-02.py) and perform the f
 
 6. Write an if-else statement to check if `c1_profession` is equal to "Web Developer" AND if `c2_profession` is equal to "Accountant".
 
-    * If so, print a string of "Look a Web Developer and an Accountant".
+    * If so, print a string of "They are a Web Developer and an Accountant".
 
     * Else, print a string of "They are professionals."
 

@@ -60,7 +60,7 @@ Open the [starter file](Unsolved/loops-01.py) and perform the following:
 
 3. Print out the `unique_fruits` list.
 
-4. Iterate through the 1st list inside `two_dim_list` and print all the numbers less than 25.
+4. Iterate through the 1st list inside the provided `two_dim_list` and print all the numbers less than 25.
 
 5. Iterate through the 2nd list inside `two_dim_list` and print all the numbers less than 25.
 
