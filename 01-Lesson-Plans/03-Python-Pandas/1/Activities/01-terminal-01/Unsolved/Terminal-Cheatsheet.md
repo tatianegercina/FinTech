@@ -26,7 +26,7 @@
 
   > cd ..
 
-  Navigate to the parent directory whih is indicated by `..`. This command essentially exits the current folder and brings you to the folder that contains it.
+  Navigate to the parent directory which is indicated by `..`. This command essentially exits the current folder and brings you to the folder that contains it.
 
   > cd ~
 
@@ -110,7 +110,7 @@
 
   > [Tab ↹]
 
-  Use the `Tab` button to autocomplete the current file or directory you're typing in. If there's multiple names that can be completed from what you currently have typed up to the point where the names diverge. You can use tab completion again afterwards if you've narrowed down which name you're typing.
+  Use the `Tab` button to autocomplete the current file or directory you're typing in. If there's multiple names that can be completed from what you currently have typed, it will autocomplete up to the point where the names diverge. You can use tab completion again afterwards if you've narrowed down which name you're typing.
 
 * `Closing a process`
 
