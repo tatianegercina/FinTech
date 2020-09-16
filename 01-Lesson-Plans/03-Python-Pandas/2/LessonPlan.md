@@ -845,7 +845,7 @@ Open the solution file and explain the following while doing a dry walkthrough:
 
   ![First 10 Records](Images/first-10-records.png)
 
-* The `iloc[]` function allows for selecting the specific row and column indexes. In this case, the `:` keyword suggests that all rows will be returned from the `0`, `3`, `4`, `8`, `11`, and `16` column indexes.
+* The `iloc[]` function allows for selecting the specific row and column indexes. In this case, the `:` keyword suggests that all rows will be returned from the `0`, `3`, `4`, `8`, `11`, and `16` column indexes. We can also use slicing with `iloc[]` to create a new DataFrame.
 
   ![Specific Columns](Images/specific-columns.png)
 
@@ -854,10 +854,6 @@ Open the solution file and explain the following while doing a dry walkthrough:
   ```python
   loans_csv.describe(include="all")
   ```
-
-* To create a new DataFrame based on a few of the columns, we use slicing with `iloc`.
-
-  ![DataFrame subset](Images/df-subset.png)
 
 * The `loc[]` function combines conditionals with column-value reassignment to modify specific values within a DataFrame.
 
