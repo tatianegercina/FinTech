@@ -32,7 +32,7 @@ Using the [starter file](Unsolved/spring_cleaning.ipynb) and Harold's financial 
 
 ## Challenge
 
-Now that nulls and duplicates have been wrangled, clean up the data a little more by removing the `$` currency symbols from the `price` field. Then, use the `astype` function to cast `price` to a `float`.
+Now that nulls and duplicates have been wrangled, clean up the data a little more by removing the `$` currency symbols from the `price` field. Then, use the `astype` function to cast `price` to a `float`, and validate using `dtype`.
 
 ## Hint
 
