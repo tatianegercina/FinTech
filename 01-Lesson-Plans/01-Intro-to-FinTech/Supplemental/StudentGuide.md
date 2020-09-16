@@ -14,7 +14,7 @@
 <summary>Where can I get started with learning Git?</summary>
 
 Start with our pre-work, which has two modules with video tutorials and activities that can help out with the foundations of working with Git:
-[Bootcamp Pre-work](https://coding-bootcamp-fintech-prework.readthedocs-hosted.com/en/latest )
+[Bootcamp Pre-work](https://coding-bootcamp-fintech-prework.readthedocs-hosted.com/en/latest)
 
 Conveniently, GitHub has their own set of guides to help break down how to use the program:
 [GitHub Guides](https://guides.github.com/)
@@ -65,7 +65,7 @@ As with most topics, there are numerous resources for gaining more information a
 
 [TechCrunch](https://techcrunch.com/tag/fintech/)
 
-[Coin Telegraph](https://cointelegraph.com/)
+[Coin Telegraph](https://cointelegraph.com)
 
 [FinTech Futures](https://www.fintechfutures.com/)
 
