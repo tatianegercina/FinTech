@@ -1028,9 +1028,11 @@ Open the lesson slides and move to the "Returns" section, introduce the concept 
 
 * ROI calculations can be used to standardize and compare the investment performances of varying asset classes, such as equities, bonds, real estate, etc.
 
-Explain to students that ROI can be easily calculated in pure Python. Show them the code in the slide and switch to the unsolved version of the Jupyter notebook to begin the demo.
+* **Daily returns** are a series of returns calculated over several days, with each daily return representing the relative increase or decrease in investment between days.
 
-Open the unsolved file to begin the demo.  
+* **Cumulative returns** are a series of returns in which each return represents the relative increase or decrease in the price of an asset at the time `t`, compared to the initial price of that asset at the time `t0`. Cumulative returns describe the progression of the return on investment of an asset over time.
+
+Explain to students that ROI, daily returns and cumulative returns can all be easily calculated in pure Python. Show them the code in the slide for calculating ROI, then switch to the unsolved version of the Jupyter notebook to begin the demo.
 
 Incorporate the following points into your demonstration as you live code the solution:
 
@@ -1058,17 +1060,15 @@ Incorporate the following points into your demonstration as you live code the so
 
 * After calculating the ROI, you can see it's `0.1` or `10%`.
 
-Continue the demo and explain to students that you will cover some concepts about returns using sample data from the [S&P/TSX Composite Index](https://en.wikipedia.org/wiki/S%26P/TSX_Composite_Index).
+Continue the demo and explain to students that you will now cover calculating daily and cumulative returns using sample data from the [S&P/TSX Composite Index](https://en.wikipedia.org/wiki/S%26P/TSX_Composite_Index).
 
-Conduct a dry walkthrough on the code that loads the S&P TSX data and prepares the DataFrame to start the analysis. After plotting the daily close price, continue the demo and highlight the following:
+Conduct a dry walkthrough of the code that loads the S&P TSX data and prepares the DataFrame to start the analysis. After plotting the daily close price, continue the demo and highlight the following:
 
-* **Daily returns** are a series of returns calculated over several days, with each daily return representing the relative increase or decrease in investment between days.
-
-* The `shift()` function creates an offset of a DataFrame index by a specified amount. In this case, the index of the `tsx_csv` is offset by `1` to emulate the daily return formula.
+* When calculating *daily returns* we can use the `shift` function.  This function creates an offset of a DataFrame index by a specified amount. In this case, the index of the `tsx_csv` is offset by `1` to emulate the daily return formula.
 
   ![shift-function](Images/shift-function.png)
 
-* The `pct_change()` function calculates the percentage difference between each element of a time series. Therefore, for time series data such as daily closing prices of a stock, using the `pct_change()` function conveniently produces a series of daily returns.
+* Alternatively, the `pct_change()` function can be used.  This function calculates the percentage difference between each element of a time series. Therefore, for time series data such as daily closing prices of a stock, using the `pct_change()` function conveniently produces a series of daily returns.
 
   ![pct-change-function](Images/pct-change-function.png)
 
@@ -1076,9 +1076,7 @@ Conduct a dry walkthrough on the code that loads the S&P TSX data and prepares t
 
   ![Plot of Daily Returns](Images/daily-return-plot.png)
 
-* **Cumulative returns** are a series of returns in which each return represents the relative increase or decrease in the price of an asset at the time `t`, compared to the initial price of that asset at the time `t0`. Cumulative returns describe the progression of the return on investment of an asset over time.
-
-* The `cumprod()` function multiplies each number in a series with the next successive number until the end of the series.
+* To calculate *cumulative returns, we can use the `cumprod()` function.  This function multiplies each number in a series with the next successive number until the end of the series.
 
 * In the equation `(1 + daily_returns).cumprod()`:
 
