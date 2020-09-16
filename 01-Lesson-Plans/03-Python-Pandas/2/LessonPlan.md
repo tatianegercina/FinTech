@@ -527,7 +527,7 @@ In this activity, students will perform a series of data quality checks on stock
 
 **Files:**
 
-* [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Unsolved/Core/spring_cleaning.ipynb)
+* [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Unsolved/spring_cleaning.ipynb)
 
 * [stock_data.csv](Activities/05-Stu_Data_Cleaning/Resources/stock_data.csv)
 
@@ -543,7 +543,7 @@ In this part of the lesson, review the solution to the data cleaning activity wi
 
 **Files:**
 
-* [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Solved/Core/spring_cleaning.ipynb)
+* [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Solved/spring_cleaning.ipynb)
 
 * [stock_data.csv](Activities/05-Stu_Data_Cleaning/Resources/stock_data.csv)
 
