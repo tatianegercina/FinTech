@@ -16,10 +16,10 @@
 # Define a function "return_sum" that takes in two numbers as arguments and returns the sum of those two numbers
 
 
-# Using either "return_sum" and no mathematical operators, define a function "triple_sum" that takes in 3 arguments and returns the sum of those 3 numbers.
+# Define a function "triple_sum" that takes in 3 arguments and returns the sum of those 3 numbers.
 
 
-# Define a function "dance_party" that takes in a string as an argument, that prints "dance!", updates the string from calling "wibble" function with that argument, updates the string from calling "warble" function with that argument, returns the updated string
+# Define a function "dance_party" that takes in a string as an argument, prints "dance!", updates the string from calling "wibble" function with that argument, updates the string from calling "warble" function with that argument, returns the updated string
 
 
 # Print the result of calling your "dance_party" function with your name as the argument

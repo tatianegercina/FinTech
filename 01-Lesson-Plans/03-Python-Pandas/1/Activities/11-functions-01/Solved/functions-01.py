@@ -26,7 +26,7 @@ def user_input():
 # Call your `user_input` function.
 user_input()
 
-# Define a function `good_day` that creates a input dialogue asking the user "Are you having a nice day?" and prints the response.
+# Define a function `good_day` that creates an input dialogue asking the user "Are you having a nice day?" and prints the response.
 def good_day():
     response = input("Are you having a nice day? ")
     print(response)
@@ -39,6 +39,6 @@ def average(num_1, num_2):
     avg_calc = num_1 + num_2 / 2
     return avg_calc
 
-# Call the `average` function and assign to a variable `calculated_average`.
+# Call the `average` function and assign it to a variable `calculated_average`.
 calculated_average = average(90, 10)
 print(f"Calculated Average: {calculated_average}")

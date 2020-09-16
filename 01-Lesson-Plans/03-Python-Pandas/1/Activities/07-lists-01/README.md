@@ -4,7 +4,7 @@ In this activity, you will get more practice declaring and manipulating variable
 
 ## Instructions
 
-Open the [starter file](Unsolved/lists-01.py) and perform the following:
+Open the [starter file](Unsolved/variables-05.py) and perform the following:
 
 1. Create a list, `list_1`,  with `0`, `1`, `2`, `3` as values.
 

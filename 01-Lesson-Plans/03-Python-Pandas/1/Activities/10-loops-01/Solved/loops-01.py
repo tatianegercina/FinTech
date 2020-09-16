@@ -68,6 +68,7 @@ for number in num_list:
         sum += number
 print(sum)
 
+# We've declared this list for you
 fruits = [
   "Apple", "Orange", "Banana", "Pomelo", "Apple", "Kiwi", "Peach", "Banana", "Grape", "Tomato",
   "Kiwi", "Apple", "Watermelon", "Lemon", "Pomelo", "Apple", "Banana", "Peach", "Apricot", "Grape"]

@@ -3,23 +3,23 @@ name = input("Welcome to the Boba Shop! What is your name?")
 
 # Check if `name` is not an empty string or equal to `None`.
 if name != "" or name == None:
-    # If so, write a print with a string of "Hello" concatenated with the variable `name`.
+    # If so, write a print statement with a string of "Hello" concatenated with the variable `name`.
     print(f"Hello {name}")
 
     # Then, declare a variable of `beverage` with an input and a string of "What kind of boba drink would you like?".
     beverage = input("What kind of boba drink would you like?")
 
     # Then, Declare a variable of `sweetness` with an input and a string of "How sweet do you want your drink: 0, 50, 100, or 200?".
-    sweetness_level = input("How sweet do you want your drink: 0, 50, 100, or 200?")
+    sweetness_level = int(input("How sweet do you want your drink: 0, 50, 100, or 200?"))
 
     # If `sweetness` equals 50 print "half sweetened".
     if sweetness_level == 50:
         sweetness = "half sweetened"
     # Else if `sweetness` 100 print "normal sweet".
-    elif sweetness == 100:
+    elif sweetness_level == 100:
         sweetness = "normal sweet"
     # Else if `sweetness` 200 print "super sweet".
-    elif sweetness == 200:
+    elif sweetness_level == 200:
         sweetness = "super sweet"
     # Else print with a string of "non-sweet".
     else:

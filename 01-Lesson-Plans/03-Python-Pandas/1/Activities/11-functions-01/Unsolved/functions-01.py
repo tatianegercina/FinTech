@@ -18,7 +18,7 @@
 # Call your `user_input` function.
 
 
-# Define a function `good_day` that creates a input dialogue asking the user "Are you having a nice day?" and prints the response.
+# Define a function `good_day` that creates an input dialogue asking the user "Are you having a nice day?" and prints the response.
 
 
 # Call your `good_day` function.
@@ -27,5 +27,5 @@
 # Define a function `average` that calculates the average between two parameters and returns the average.
 
 
-# Call the `average` function and assign to a variable `calculated_average`.
+# Call the `average` function and assign it to a variable `calculated_average`.
 

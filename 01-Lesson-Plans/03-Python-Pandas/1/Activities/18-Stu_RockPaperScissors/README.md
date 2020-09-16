@@ -4,7 +4,7 @@ In this activity, you will create an RPS game that takes user input from the com
 
 ## Instructions
 
-1. Using the command line, take an input of `r`, `p`, or `s`, which stand for rock, paper, and scissors.
+1. Using the command line, take an input of `r`, `p`, or `s`, which stands for rock, paper, and scissors.
 
 2. Have the computer randomly choose one of these three choices.
 
@@ -14,7 +14,7 @@ In this activity, you will create an RPS game that takes user input from the com
 
 ## Hint
 
-You can refer to this [Stack Overflow post](https://stackoverflow.com/questions/306400/how-to-randomly-select-an-item-from-a-list).
+You can refer to this [Stack Overflow post](https://stackoverflow.com/questions/306400/how-to-randomly-select-an-item-from-a-list) for help with performing random selections in Python.
 
 ---
 

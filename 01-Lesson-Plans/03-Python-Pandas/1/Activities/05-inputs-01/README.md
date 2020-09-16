@@ -10,7 +10,7 @@ Open the [starter file](Unsolved/inputs-01.py) and perform the following:
 
 2. Print the string "Hello" concatenated with the variable `welcome_name`.
 
-3. Declare a variable `question_sandwich` as an input with a string of "Are you here for a sandwich?"
+3. Declare a variable `question_sandwich` as an input with a string of "Are you here for a sandwich? Yes or No?"
 
 4. If `question_sandwich` is equal to true:
 
