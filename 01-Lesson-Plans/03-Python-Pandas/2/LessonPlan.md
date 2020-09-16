@@ -1106,7 +1106,7 @@ Answer any questions before moving on.
 
 ### 17. Student Do: Returns Over Date Ranges (15 min)
 
-In this activity, students will analyze historical price data for Shopify and plot the daily returns over the previous 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each period to determine whether a short or long-term perspective should be used in prospecting Shopify as a potential investment opportunity.
+In this activity, students will analyze historical price data for Shopify and plot the daily returns over the previous 1-, 2-, 3-, and 4-year periods. They will also need to find and show the differences in average daily returns for each period to determine whether a short or long-term perspective should be used in prospecting Shopify as a potential investment opportunity.
 
 **File:**
 
