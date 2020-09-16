@@ -34,7 +34,7 @@ As a general guide to writing a case study, you can use the "Narrative Arc" that
 
 * [How to Write a Convincing Case Study in 7 Steps](https://www.wordstream.com/blog/ws/2017/04/03/how-to-write-a-case-study)
 
-* [What is the Narrative Arc? A Guide to Storytelling Through Story Structure](https://blog.reedsy.com/narrative-arc/)
+* [What is the Narrative Arc? A Guide to Storytelling Through Story Structure](https://blog.reedsy.com/narrative-arc)
 
 * [Writing a Case Study Analysis](https://writingcenter.ashford.edu/writing-case-study-analysis)
 
