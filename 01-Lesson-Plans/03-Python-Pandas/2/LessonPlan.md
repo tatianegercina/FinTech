@@ -420,7 +420,7 @@ Discuss approaches for identifying data quality issues while you switch to Jupyt
 
 * To load the CSV file into the DataFrame, we set the parameter `index_col="order_no` to use the `order_no` columns as index instead of the default numerical index that Pandas generates.
 
-* To get a sample of the data, Pandas provides the `sample` function to the DataFrame to randomly select rows from a DataFrame; we will fetch five rows in this demo.
+* To get a sample of the data, Pandas provides the `sample` function to randomly select rows from a DataFrame. We will fetch five rows in this demo.
 
   ![LP_Ins_Data_Cleansing_Sample_Data.PNG](Images/LP_Ins_Data_Cleansing_Sample_Data.PNG)
 
