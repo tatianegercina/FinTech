@@ -8,13 +8,13 @@ For this activity, use Pandas to clean Harold's portfolio data to get it fit for
 
 ## Instructions
 
-Using the [starter file](Unsolved/Core/spring_cleaning.ipynb) and Harold's financial [data](Resources/stock_data.csv), complete the following steps.
+Using the [starter file](Unsolved/spring_cleaning.ipynb) and Harold's financial [data](Resources/stock_data.csv), complete the following steps.
 
 1. Load CSV data into Pandas using `read_csv`.
 
 2. Identify the number of rows and columns in the DataFrame, otherwise known as its shape/structure.
 
-3. Generate a data sample to visually ensure data has been loaded in correctly.
+3. Preview the DataFrame using `head` to visually ensure data has been loaded in correctly.
 
 4. Identify the number of records in the DataFrame, and compare it with the number of rows in the original file.
 
@@ -31,8 +31,6 @@ Using the [starter file](Unsolved/Core/spring_cleaning.ipynb) and Harold's finan
 10. Remove duplicate rows.
 
 ## Challenge
-
-Complete this challenge using the [starter file](Unsolved/Challenge/spring_cleaning.ipynb).
 
 Now that nulls and duplicates have been wrangled, clean up the data a little more by removing the `$` currency symbols from the `price` field. Then, use the `astype` function to cast `price` to a `float`.
 
