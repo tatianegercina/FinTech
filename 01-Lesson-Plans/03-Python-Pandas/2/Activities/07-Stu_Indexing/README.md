@@ -16,7 +16,7 @@ Complete the following steps.
 
 4. View summary statistics for the `loans.csv` data.
 
-5. Create a subset DataFrame `filtered_df` by filtering out the important columns:
+5. Create a subset DataFrame `filtered_df` by filtering the columns so that only the following columns remain:
 
     * `loan_amnt`
     * `term`
@@ -47,9 +47,9 @@ Complete the following steps.
 
     * What are three-year loans generally used for?
 
-    * What is the difference between counts of three-year loan customers with annual incomes greater than $80,000, compared to those with annual incomes less than $80,000?
+    * What is the difference between counts of three-year loan customers with annual incomes greater than `$80,000`, compared to those with annual incomes less than `$80,000`?
 
-    * What is the difference between interest rates for customers with annual incomes greater than $80,000 compared to those with annual incomes less than $80,000?
+    * What is the difference between interest rates for customers with annual incomes greater than `$80,000` compared to those with annual incomes less than `$80,000`?
 
 ## Hint
 

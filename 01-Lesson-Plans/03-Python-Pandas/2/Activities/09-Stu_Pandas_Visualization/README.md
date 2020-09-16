@@ -2,11 +2,11 @@
 
 In this activity, Harold has been asked to analyze the financial data of the companies in the S&P 500. Specifically, Harold has been asked to find and plot the following:
 
-1. A pie chart of the S&P 500 company sector distribution
+1. A pie chart of the S&P 500 company sector distribution.
 
-2. A bar chart of the top 20 market cap companies
+2. A bar chart of the top 20 market cap companies.
 
-3. A scatter plot of the price vs. earnings relationship
+3. A scatter plot of the price vs. earnings relationship.
 
 Use the Pandas library to help Harold perform this analysis and generate the plots.
 

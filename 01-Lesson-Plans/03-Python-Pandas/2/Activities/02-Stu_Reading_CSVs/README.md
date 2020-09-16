@@ -1,6 +1,6 @@
 # Reading Stock Data from a CSV File
 
-Now that you learned how easy it is to work with spreadsheet data in Pandas let's practice using some real financial data! In this activity, you will create a DataFrame from a CSV file and then explore its contents using the DataFrame's built-in functions.
+Now that you learned how easy it is to work with spreadsheet data in Pandas, let's practice using some real financial data! In this activity, you will create a DataFrame from a CSV file and then explore its contents using the DataFrame's built-in functions.
 
 ## Instructions
 
