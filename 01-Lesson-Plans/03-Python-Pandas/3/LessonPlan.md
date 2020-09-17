@@ -130,19 +130,6 @@ As students work on the activity, circulate the room with the TAs to offer assis
 
 If a student finishes the activity early, ask if they are willing to help present the solution by live coding how to sort a DataFrame by more than one column. This live-coding exercise will be completed in the activity review (the next part of the lesson).
 
-If the student agrees, spend up to five minutes with them reviewing the following scenario.
-
-**Scenario:**
-
-There's a DataFrame named `df` that contains Olympic medal data (gold, silver, and bronze). The DataFrame has four columns:
-
-* `country`
-* `no_of_medals`
-* `class_of_medal`
-* `year_medal_won`
-
-Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by number of medals awarded in descending order. (The medals awarded most should be at the top.)
-
 ---
 
 ### 3. Instructor Do: Review Out of Sorts (10 min)
@@ -159,7 +146,7 @@ Skip to the dry walkthrough of the activity solution if you do not have a studen
 
 **Student Live Codes the Solution:**
 
-Ask the student to live code a solution to the given scenario. If the student loses momentum or seems stuck while live coding, ask guided questions such as:
+Ask the student to live code the solution. If the student loses momentum or seems stuck while live coding, ask guided questions such as:
 
 * How does one sort by more than one column?
 
@@ -168,17 +155,6 @@ Ask the student to live code a solution to the given scenario. If the student lo
 * Can you use a list to tell Pandas to sort some columns by ascending values, and others by descending values?
 
     **Answer:** Yes. The `ascending` parameter can be used to sort columns by ascending values. Default value is `True`. `False` will sort in descending order. The `ascending` parameter accepts a list of Boolean responses when data is sorted by more than one column.
-
-**Scenario for Student Live Coding:**
-
-There's a DataFrame named `df` that contains Olympic medal data (gold, silver, and bronze). The DataFrame has four columns:
-
-* `country`
-* `no_of_medals`
-* `class_of_medal`
-* `year_medal_won`
-
-Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by the number of medals awarded in descending order. (The medals awarded most should be at the top.)
 
 **Dry Walkthrough of the Solution:**
 
