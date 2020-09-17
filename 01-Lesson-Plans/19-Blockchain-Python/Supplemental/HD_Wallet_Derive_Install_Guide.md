@@ -85,9 +85,11 @@ For those with a **Windows operating system**, execute the following steps:
 
  ![Open CMD as Admin - 5](Images/cmd-as-admin-5.png)
 
- * If you do not see the following output, then your environement varibles may not be set correctly. Perform the steps in the below troubleshooting section to make sure that your environment variables are correctly set.
+ * If you do not see the above output, then your environement varibles may not be set correctly. Perform the steps in the below troubleshooting section to make sure that your environment variables are correctly set.
 
 #### Windows Environment Troubleshooting
+
+> WARNING: If you run into the errror `The data being saved is truncated to 1024 characters` then you most likely need to perform the below steps.
 
 1. Click the Windows search and search for `System Properties`, then launch the application.
 
