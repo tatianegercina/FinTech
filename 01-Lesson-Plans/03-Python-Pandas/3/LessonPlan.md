@@ -250,14 +250,14 @@ Start the live demonstration of how to use the `groupby` function. Open the unso
 
   ![group_count.png](Images/group_count.png)
 
-* The `groupby` function requires a function or aggregation to proceed it.
+* The `groupby` function requires a function or aggregation.
 
   * Whenever a function is not chained to a `groupby` function, the output will be a `DataFrameGroupBy` object rather than an actual DataFrame.
 
   * `DataFrameGroupBy` objects must be aggregated before they can be used.
 
   ```python
-  # Group by crypto data by cryptocurrency
+  # Group by cryptocurrency
   crypto_data_grp = crypto_data.groupby("cryptocurrency")
   crypto_data_grp
   ```
@@ -270,7 +270,7 @@ Start the live demonstration of how to use the `groupby` function. Open the unso
 
   ![group_by_aggregate.png](Images/group_by_aggregate.png)
 
-* DataFrames can be grouped by more than one column. This group values across each specified column and summarizes the data into one record. This approach can be used as a way to identify if there are any duplicates within the data.
+* DataFrames can be grouped by more than one column. This will group values across each specified column and summarize the data into one record. This approach can be used as a way to identify if there are any duplicates within the data.
 
 * In this demo, we group the data by the `cryptocurrency` and `data_price` columns to create a view where we can count how many times a price is repeated by cryptocurrency.
 
@@ -280,7 +280,7 @@ Start the live demonstration of how to use the `groupby` function. Open the unso
 
   ![multi_group_round_count.png](Images/multi_group_round_count.png)
 
-* Once data are grouped, each group can be plotted for comparison. This will plot multiple lines on a single plot. Each line is considered a subplot.
+* Once the data is grouped, each group can be plotted for comparison. This will plot multiple lines on a single plot. Each line is considered a subplot.
 
   ![plotting_groupby.png](Images/plotting_groupby.png)
 
@@ -345,7 +345,7 @@ Open the solution file and complete a dry walkthrough of the student activity so
   ethereum         1346.037491
   litecoin          352.713468
   ripple              2.999459
-  Name: data_priceUsd, dtype: float64
+  Name: data_price, dtype: float64
   ```
 
 * `Min` is another standard aggregate function used with grouped data. `Min` can be used to determine the lowest price in the two years, per crypto.
@@ -363,7 +363,7 @@ Open the solution file and complete a dry walkthrough of the student activity so
   ethereum          84.374014
   litecoin          22.550468
   ripple             0.154144
-  Name: data_priceUsd, dtype: float64
+  Name: data_price, dtype: float64
   ```
 
 If time remains, end the review by calling on students to answer the following reflective questions:
@@ -468,7 +468,7 @@ In this activity, students will use hierarchical indexes to gain access to histo
 
 **Files:**
 
-* [indexing_fever.ipynb](Activities/06-Stu_Multi_Indexing/Unsolved/Core/indexing_fever.ipynb)
+* [indexing_fever.ipynb](Activities/06-Stu_Multi_Indexing/Unsolved/indexing_fever.ipynb)
 
 * [bombardier_stock_data.csv](Activities/06-Stu_Multi_Indexing/Resources/bombardier_stock_data.csv)
 
@@ -484,7 +484,7 @@ In this section, you will perform a dry walkthrough of the solution for the Inde
 
 **Files:**
 
-* [indexing_fever.ipynb](Activities/06-Stu_Multi_Indexing/Solved/Challenge/indexing_fever.ipynb)
+* [indexing_fever.ipynb](Activities/06-Stu_Multi_Indexing/Solved/indexing_fever.ipynb)
 
 * [bombardier_stock_data.csv](Activities/06-Stu_Multi_Indexing/Resources/bombardier_stock_data.csv)
 
@@ -496,7 +496,7 @@ Open the solved version to review the solution, and cover the following points:
 
   ```python
   # Read csv data
-  csv_path = Path("../../Resources/bombardier_stock_data.csv")
+  csv_path = Path("../Resources/bombardier_stock_data.csv")
 
   bbd_df = pd.read_csv(
       csv_path, parse_dates=True, index_col="Date", infer_datetime_format=True
@@ -589,10 +589,10 @@ Open the slideshow and provide a brief overview of concatenation:
 
 Open the unsolved version of the Jupyter notebook, live code the demo, and highlight the following:
 
-* A key consideration to keep in mind when concatenating DataFrames is that data is joined by index. Pandas `concat` function will by default join rows or columns by index. Before concatenating DataFrames, make sure the same column indexes the DataFrames.
+* A key consideration to keep in mind when concatenating DataFrames is that data is joined by index. Pandas `concat` function will by default join rows or columns by index. Before concatenating DataFrames, make sure the same column is used as the index for all DataFrames.
 
   ```python
-  # Set data files paths
+  # Set data files' paths
   france_data_path = Path("../Resources/france_products.csv")
   uk_data_path = Path("../Resources/uk_products.csv")
   netherlands_data_path = Path("../Resources/netherlands_products.csv")
@@ -609,7 +609,7 @@ Open the unsolved version of the Jupyter notebook, live code the demo, and highl
 
 * DataFrames can be joined by either `column` or `row`. The `axis` argument can be configured to specify which one to use.
 
-* If rows from one DataFrame simply need to be combined or added to another DataFrame, the DataFrames should be joined on `row`. Joining on the `row` axis requires the DataFrames to be joined to have the same columns.
+* If rows from one DataFrame simply need to be combined or added to another DataFrame, the DataFrames should be joined on `row`. Joining on the `row` axis requires the DataFrames being joined to have the same columns.
 
   ![concat_rows.png](Images/concat_rows.png)
 
@@ -763,7 +763,7 @@ End the presentation and open the unsolved Jupyter notebook. Live code how to us
 
   ![std_dev_box.png](Images/std_dev_box.png)
 
-Emphasize that the takeaway of these charts is that the greater the spread, the greater the risk. The greater the risk, the greater the potential for earnings and lost.
+Emphasize that the takeaway of these charts is that the greater the spread, the greater the risk. The greater the risk, the greater the potential for earnings and loss.
 
 Answer any questions before moving on.
 
@@ -874,11 +874,11 @@ Open the solution, conduct a dry walkthrough review, and highlight the following
   ```
 
   ```
-  BTC     0.049189
-  BTT     0.006185
-  DOGE    0.062264
-  ETH     0.050074
-  LTC     0.048783
+  BTC     0.070488
+  BTT     0.030731
+  DOGE    0.050907
+  ETH     0.091517
+  LTC     0.084703
   dtype: float64
   ```
 
@@ -897,11 +897,11 @@ Open the solution, conduct a dry walkthrough review, and highlight the following
   ```
 
   ```
-  BTC    -0.269714
-  BTT    -0.878716
-  DOGE    0.105533
-  ETH    -0.214963
-  LTC    -0.222482
+  BTC      0.936891
+  BTT    -32.935733
+  DOGE     5.615811
+  ETH     -5.638309
+  LTC     -0.796855
   dtype: float64
   ```
 
