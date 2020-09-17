@@ -825,7 +825,7 @@ Encourage students to work in pairs to complete this activity.
 
 **Files:**
 
-* [risky_business.ipynb](Activities/11-Stu_Risky_Business/Unsolved/Core/risky_business.ipynb)
+* [risky_business.ipynb](Activities/11-Stu_Risky_Business/Unsolved/risky_business.ipynb)
 
 * [harold_portfolio.csv](Activities/11-Stu_Risky_Business/Resources/harold_portfolio.csv)
 
@@ -841,7 +841,7 @@ Encourage students to work in pairs to complete this activity.
 
 **Files:**
 
-* [risky_business.ipynb](Activities/11-Stu_Risky_Business/Unsolved/Core/risky_business.ipynb)
+* [risky_business.ipynb](Activities/11-Stu_Risky_Business/Solved/risky_business.ipynb)
 
 * [harold_portfolio.csv](Activities/11-Stu_Risky_Business/Resources/harold_portfolio.csv)
 
