@@ -16,6 +16,8 @@
 
 ### Additional Course Resources
 
+* [Pandas Reference Guide](Pandas_Reference_Guide.ipyng)
+
 * [Anaconda Install Guide](AnacondaInstallGuide.md)
 
 - - -
@@ -114,6 +116,11 @@ Now when we run the code, we get the result we are looking for:
 3 is the best!
 3 is the best!
 ```
+
+</details>
+<details><summary>Where can I get more help with Pandas?</summary>
+
+We have put together a fantastic Pandas reference guide that can be used inside Jupyter Lab to run live coding samples!  The file is located [here](Pandas_Reference_Guide.ipynb).
 
 </details>
 
