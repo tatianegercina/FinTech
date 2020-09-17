@@ -10,7 +10,7 @@ This guide walks through the installation and configuration process for an Anaco
 
 * Installation of JupyterLab
 
-* **NOTE:** We will be downloading the Python 3.8 distribution by default, however we will create and use a virtual environment that uses Python 3.7 instead, as many of our activities are not yet compatible with the new Python 3.8 version.
+* **NOTE:** We will be downloading the Python 3.8 distribution by default, however we will create and use a virtual environment that utilizes Python 3.7 instead, as many of our activities are not yet compatible with the new Python 3.8 version.
 
 ### Download and Install Anaconda
 
@@ -39,7 +39,7 @@ This guide walks through the installation and configuration process for an Anaco
 
 7. Use the Applications folder (Mac) or Start menu (Windows) to open the Anaconda terminal.
 
-    ![Jupyter_Lab_Launch_Terminal.png](Images/Jupyter_Lab_Launch_Terminal.png)
+    <img alt=Jupyter_Lab_Launch_Terminal.png src=Images/Jupyter_Lab_Launch_Terminal.png width=350>
 
 8. Execute the following commands to ensure the latest Anaconda packages are installed. When prompted, enter "y" to proceed.
 
@@ -47,8 +47,7 @@ This guide walks through the installation and configuration process for an Anaco
     conda update conda
     conda update anaconda
     ```
-
-    ![Jupyter_Lab_Conda_Update.png](Images/Jupyter_Lab_Conda_Update.png)
+    <img alt=Jupyter_Lab_Conda_Update.png src=Images/Jupyter_Lab_Conda_Update.png width=800>  
 
 9. Create a dev environment. When prompted, enter "y" to proceed.
 
@@ -64,7 +63,7 @@ This guide walks through the installation and configuration process for an Anaco
     conda activate dev
     ```
 
-    ![Jupyter_Lab_Activate_Dev.png](Images/Jupyter_Lab_Activate_Dev.png)
+    <img alt=Jupyter_Lab_Activate_Dev.png src=Images/Jupyter_Lab_Activate_Dev.png width=360>
 
 11. Verify your your installations by executing the `conda list` command after activating the environment, then locating the following packages in the populated list:
 
