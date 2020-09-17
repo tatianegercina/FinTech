@@ -214,6 +214,8 @@ Execute the following steps:
 
 * Next, open a terminal and execute the following commands. If you are using Windows, you will need to open the `git-bash` GUI via `C:\Program Files\Git\bin\bash.exe` directly to enable something called `tty` mode that makes the terminal more compatible with Unix systems. Once installed, you may move back to using the usual `git-bash` terminal.
 
+> **Warning**: When cloning the project be conscious of what folder you are cloning the files into. It would probably be best to clone it into your `Blockchain-Tools` folder.
+
  ```shell
  git clone https://github.com/dan-da/hd-wallet-derive
  cd hd-wallet-derive
