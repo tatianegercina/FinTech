@@ -37,7 +37,11 @@ This guide walks through the installation and configuration process for an Anaco
 
 6. Click Finish once the installation is complete.
 
-7. Use the Applications folder (Mac) or Start menu (Windows) to open the Anaconda terminal.
+7. Next, open the terminal (Mac) or Git Bash (Windows).
+  
+    * Mac users can find the terminal by opening their Spotlight Search and typing `Terminal`.
+
+    * Windows users can open Git Bash by locating it in their Start Menu:
 
     <img alt=Jupyter_Lab_Launch_Terminal.png src=Images/Jupyter_Lab_Launch_Terminal.png width=350>
 
@@ -48,7 +52,6 @@ This guide walks through the installation and configuration process for an Anaco
     conda update anaconda
     ```
     <img alt=Jupyter_Lab_Conda_Update.png src=Images/Jupyter_Lab_Conda_Update.png width=800>  
-
 9. Create a dev environment. When prompted, enter "y" to proceed.
 
     ```shell
