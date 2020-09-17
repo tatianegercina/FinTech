@@ -99,6 +99,8 @@ For those with a **Windows operating system**, execute the following steps:
 
 4. Now click `New` and enter your XAMP path, e.g.  `C:\xampp\php`.
 
+5. Finish by clicking `OK` on each window.
+
 ![System Properties Add environment Variable](Images/windows-set-environment_variables.png)
 
 
