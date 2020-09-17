@@ -85,7 +85,7 @@ For those with a **Windows operating system**, execute the following steps:
 
  ![Open CMD as Admin - 5](Images/cmd-as-admin-5.png)
 
- * If you do not see the above output, then your environement varibles may not be set correctly. Perform the steps in the below troubleshooting section to make sure that your environment variables are correctly set.
+ * If you do not see something similar to the above output when running ` php -version`, then your environement varibles may not be set correctly. Perform the steps in the below troubleshooting section to make sure that your environment variables are correctly set.
 
 #### Windows Environment Troubleshooting
 
