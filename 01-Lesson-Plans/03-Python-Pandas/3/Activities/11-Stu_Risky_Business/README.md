@@ -16,6 +16,8 @@ Use the starter file and the provided data to complete the following steps:
 
 1. Load CSV data into Pandas using `read_csv` for each file.
 
+2. Prepare the data by dropping null values and setting `Date` as the index.
+
 2. Calculate daily returns for each portfolio.
 
 3. Concat both DataFrames containing daily returns into one DataFrame.
@@ -38,9 +40,9 @@ Calculate the Sharpe ratio for your entire portfolio. Then, use a comparison ope
 
 1. Calculate annualized `std dev` for each portfolio.
 
-2. Calculate the Sharpe ratio for each crypto in each portfolio.
+2. Calculate the Sharpe ratios for each crypto in each portfolio.
 
-3. Average the Sharpe ratios calculated above.
+3. Average the Sharpe ratios calculated in the previous step.
 
     **Hint:** `harold_sharpe_ratios.mean()`
 
