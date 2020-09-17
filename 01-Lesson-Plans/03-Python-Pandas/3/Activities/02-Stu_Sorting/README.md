@@ -16,7 +16,7 @@ Use the starter file to complete the following steps:
 
 5. Sort the DataFrame by `Close` in descending order using `sort_values` to obtain top daily return records.
 
-6. Slice out five records.
+6. Slice out top five records.
 
 7. Plot the data.
 
