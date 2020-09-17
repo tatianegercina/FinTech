@@ -12,15 +12,13 @@ Use the starter file to complete the following steps:
 
 3. Clean the data.
 
-4. Output a sample of the data.
+4. Calculate daily returns.
 
-5. Calculate daily returns.
+5. Sort the DataFrame by `Close` in descending order using `sort_values` to obtain top daily return records.
 
-6. Sort the DataFrame by `Close` in descending order using `sort_values` to obtain top daily return records.
+6. Slice out five records.
 
-7. Slice out five records.
-
-8. Plot the data.
+7. Plot the data.
 
 ---
 
