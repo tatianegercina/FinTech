@@ -148,7 +148,7 @@ Now, it's time to have the class convert their mnemonics to a master seed.
 
 ### 3. Students Do: Converting Mnemonic to Seed (15 min)
 
-**Corresponding Activity:** [03-Stu_Converting_Mnemonic.md](Activities/03-Stu_Converting_Mnemonic.md)
+**Corresponding Activity:** [03-Stu_Converting_Mnemonic](Activities/03-Stu_Converting_Mnemonic.md)
 
 In this activity, students will download a local copy of the BIP39 online tool
 and paste their mnemonics into it to convert to a master seed.
@@ -410,6 +410,7 @@ cd hd-wallet-derive
 php -r "readfile('https://getcomposer.org/installer');" | php
 php -d pcre.jit=0 composer.phar install
 ```
+
 Run these commands and install the dependencies. Have the students run the example given once the installation completes.
 
 **NOTE:** We modify the last line to add the `-d pcre.jit=0` parameter to avoid some issues that may arise in Mac OS X. 
@@ -511,6 +512,8 @@ Ask the students the following questions:
  Having a pure Python library that supported all of the same features would be ideal for us.
 
 ### 15. Everyone Do: Processing Terminal Output in Python (10 min)
+
+**Corresponding Activity:** [Processing Shell Output](Activities/04-Processing_Shell_Output)
 
 Now it's time to show the class how to process the terminal output in Python by leading a code-along.
 
@@ -729,14 +732,14 @@ and software, and when to use each!
 
 ### 18. Students Do: "If I Were an Exchange" Thought Experiment (15 min)
 
-**Corresponding Activity:** [04-Stu_If_I_Were_Exchange](Activities/04-Stu_If_I_Were_Exchange)
+**Corresponding Activity:** [05-Stu_If_I_Were_Exchange](Activities/05-Stu_If_I_Were_Exchange)
 
 In this activity, students will break into small groups and design an exchange given the different wallet standards
 and software/hardware implementations.
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_If_I_Were_Exchange/README.md)
+* [README.md](Activities/05-Stu_If_I_Were_Exchange/README.md)
 
 Have TAs circulate and ask questions about the students' exchange designs, including what type of wallets they'd use
 and how they manage the funds.
