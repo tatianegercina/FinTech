@@ -69,7 +69,11 @@ This guide walks through the installation and configuration process for an Anaco
 
 * [Windows](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=93a9c967-71b2-434c-bcda-ab7a011f5c9c). After these instructions, you need to open your terminal and run `conda init bash`. Then close your terminal, and start a new one before using any `jupyter` command.
 
+In windows, if you are receiving an error about a "DLL not having an entry point" you most likely have an environmental variable missing. Make sure that you additionally have the `\bin` subdirectory within your anaconda3 directory added as a path in your environmental variables.
+
 * [Mac](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1c0d69d6-523c-4275-86a5-ab7a011f370a). Versions of MacOS 10.15 and beyond (Catalina) will need to run `conda init zsh` in the terminal after these steps. Versions below 10.15 will need to run `conda init bash` instead.
+
+Additionally for Mac, your installation may have been placed in the folder `/opt/anaconda3/bin` instead of your user directory. You will need to change the instructions from the above video for the .zshrc file to instead be `$PATH:/opt/anaconda3/bin` rather than the PATH with your user directory.
 
 A few other things to look out for during the post-installation:
 
