@@ -913,11 +913,11 @@ Ask students the following questions:
 
 * How many smart investments did Harold make compared to risky investments? How many did you make?
 
-    **Answer:** Out of his ten investments, Harold only made four smart investments. Out of the students' six investments, three of them were smart investments.
+    **Answer:** Out of his ten investments, Harold made six smart investments. Out of the students' six investments, three of them were smart investments.
 
-* Which cryptos were the smartest investments?
+* Which three cryptos were the smartest investments?
 
-    **Answer:** DOGE, TRON, and XML were the smartest crypto investments.
+    **Answer:** ZIL, XRP and DOGE were the smartest crypto investments.
 
 For the challenge section, the first step is to compute the annualized standard deviation for each portfolio.
 
