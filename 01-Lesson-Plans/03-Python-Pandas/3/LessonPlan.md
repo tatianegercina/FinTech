@@ -418,7 +418,7 @@ Open the lesson slides, move to the "Multi-Indexing" section, and provide an ove
 
 Now, open the unsolved Jupyter notebook and live code on how to create and use multiple indexes, as well as how to access data using more than one index. Cover the following points:
 
-* When working with indexes, it's a common practice to clean data before setting indexes. For example, a Series being used as an index should not have any `NaN` values. These can be handled by first executing `dropna` against a DataFrame. The `set_index` function can then be used to set the index.
+* When working with indexes, it's a common practice to clean data before setting indexes. For example, a Series being used as an index should not have any `NaN` values. These can be handled by first executing `dropna` against a DataFrame. The `set_index` function can then be used to set the index. (*NOTE:* The data set for this demo has already be cleaned.)
 
 * Multi-indexing is commonly done when working with `Date` data.
 
