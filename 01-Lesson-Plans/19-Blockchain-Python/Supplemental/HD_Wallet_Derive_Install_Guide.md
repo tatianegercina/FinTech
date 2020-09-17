@@ -85,6 +85,21 @@ For those with a **Windows operating system**, execute the following steps:
 
  ![Open CMD as Admin - 5](Images/cmd-as-admin-5.png)
 
+ * If you do not see the following output, then your environement varibles may not be set correctly. Perform the steps in the below troubleshooting section to make sure that your environment variables are correctly set.
+
+#### Windows Environment Troubleshooting
+
+1. Click the Windows search and search for `System Properties`, then launch the application.
+
+2. Next at the bottom of the dialog click `Environment variables`.
+
+3. Then under `System Variables` find the `Path` variable and click `edit`.
+
+4. Now click `New` and enter your XAMP path, e.g.  `C:\xampp\php`.
+
+![System Properties Add environment Variable](Images/windows-set-environment_variables.png)
+
+
 ### Environment Setup in OS X Operating System
 
 For those with a **Mac OS X operating system**, there are two options to install PHP, you can update the OS X pre-built PHP version up to `v7.3`, or you can use the Homebrew package manager. Both methods work great. Your choice will depend on whether or not you want or have the right to use Homebrew in your computer; some corporate computers have policies that restrict the usage of third-party package managers like Homebrew.
