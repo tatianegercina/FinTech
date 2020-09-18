@@ -45,7 +45,7 @@ Ethereum keys are the same format on any network, so they should work with your 
 
 - Test that you can run the `./derive` script properly, using one of the examples on the repo's `README.md`
 
-- Create a file called `wallet.py`—this will be your universal wallet script.
+- Create a file called `wallet.py`—this will be your universal wallet script. You can use [this starter code](Starter-Code/wallet.py) as a starting point.
 
 Your directory tree should look something like this:
 
