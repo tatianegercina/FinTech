@@ -52,37 +52,37 @@ Previously, students have implemented a basic token, as well as the ERC21 fungib
 
 * What are some differences between `fungible` and `non-fungible` tokens?
 
-    * **Answer**: Non-fungible tokens are unique, fungible tokens are not unique.
+  * **Answer**: Non-fungible tokens are unique, fungible tokens are not unique.
 
-    * **Answer**: Fungible tokens are interchangeable with one another, whereas non-fungible are not.
+  * **Answer**: Fungible tokens are interchangeable with one another, whereas non-fungible are not.
 
-    * **Answer**: Non-fungible tokens use ERC721, fungible tokens use ERC777.
+  * **Answer**: Non-fungible tokens use ERC721, fungible tokens use ERC777.
 
 * What are some examples of `fungible` assets?
 
-    * **Answer**: United States Dollars (USD)
+  * **Answer**: United States Dollars (USD)
 
-    * **Answer**: Ethereum (ETH)
+  * **Answer**: Ethereum (ETH)
 
-    * **Answer**: Bitcoin (BTC)
+  * **Answer**: Bitcoin (BTC)
 
-    * **Answer**: Gold
+  * **Answer**: Gold
 
 * What are some examples of `non-fungible` assets?
 
-    * **Answer**: Art
+  * **Answer**: Art
 
-    * **Answer**: Diamonds
+  * **Answer**: Diamonds
 
-    * **Answer**: Land ownership
+  * **Answer**: Land ownership
 
 * What are some potential benefits of using open source libraries such as OpenZeppelin?
 
-    * **Answer**: They are free to use and contribute to under the MIT license.
+  * **Answer**: They are free to use and contribute to under the MIT license.
 
-    * **Answer**: It's a community-backed project that has implemented many of the communities agreed upon standards (EIPS/ERCS).
+  * **Answer**: It's a community-backed project that has implemented many of the communities agreed upon standards (EIPS/ERCS).
 
-    * **Answer**: It provides a secure, standardized starting point for various smart contract standards.
+  * **Answer**: It provides a secure, standardized starting point for various smart contract standards.
 
 Now that the class has had a refresher on fungibility, set the stage for today's lesson by introducing the concept of `DeFi`.
 
@@ -91,6 +91,8 @@ Now that the class has had a refresher on fungibility, set the stage for today's
 * `DeFi` encompasses many of the technologies and paradigms that we have learned about in the previous unit; however, DeFi is not a particular technology or implementation.
 
 * `DeFi` is a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
+
+---
 
 ### 2. Instructor Do: ERC721 Non-Fungible Tokens and Events (15 min)
 
@@ -105,8 +107,8 @@ Start by opening [Remix](https://remix.ethereum.org) in your web browser and cre
  ```solidity
  pragma solidity ^0.5.0;
 
- import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721Full.sol";
- import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/drafts/Counters.sol";
+ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC721/ERC721Full.sol";
+ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/drafts/Counters.sol";
  ```
 
 * In this contract, we will be leveraging the contract for `ERC721Full` and the SafeMath counters data type.

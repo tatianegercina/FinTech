@@ -181,7 +181,7 @@ Highlight the `copyrightWork` method's description.
 Add the imports for `SafeMath counters` under the `pragma` and bind the `counter library` to the `Counter` datatype below the contract definition.
 
 ```Solidity
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/drafts/Counters.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/drafts/Counters.sol";
 import "./ICryptoRight.sol";
 
 contract CryptoRight is ICryptoRight {
