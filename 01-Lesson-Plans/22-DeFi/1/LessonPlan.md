@@ -42,6 +42,8 @@ By the end of the class, students will be able to:
 
 * Refer to the `IPFS` documentation for further information about [IPFS Docs](https://docs.ipfs.io/)
 
+* Recall to students that we will use version 2.5 of the OpenZeppelin library for class activities.
+
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
 ### 1. Instructor Do: Welcome Back (10 min)
@@ -103,8 +105,8 @@ Start by opening [Remix](https://remix.ethereum.org) in your web browser and cre
  ```solidity
  pragma solidity ^0.5.0;
 
- import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721Full.sol";
- import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/drafts/Counters.sol";
+ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC721/ERC721Full.sol";
+ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/drafts/Counters.sol";
  ```
 
 * In this contract, we will be leveraging the contract for `ERC721Full` and the SafeMath counters data type.

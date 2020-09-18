@@ -26,6 +26,8 @@ By the end of the class, students will be able to:
 
 * Refer to the `IPFS` documentation for further information about [IPFS Docs](https://docs.ipfs.io/)
 
+* Recall to students that we will use version 2.5 of the OpenZeppelin library for class activities.
+
 ---
 
 ### Slideshow and Time Tracker
@@ -181,7 +183,7 @@ Highlight the `copyrightWork` method's description.
 Add the imports for `SafeMath counters` under the `pragma` and bind the `counter library` to the `Counter` datatype below the contract definition.
 
 ```Solidity
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/drafts/Counters.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/drafts/Counters.sol";
 import "./ICryptoRight.sol";
 
 contract CryptoRight is ICryptoRight {
