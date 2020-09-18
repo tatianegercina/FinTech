@@ -30,6 +30,8 @@ By the end of the class, students will be able to:
 
 * Refer to the [Solidity documentation for open auctions](https://solidity.readthedocs.io/en/v0.5.11/solidity-by-example.html#simple-open-auction).
 
+* Recall to students that we will use version 2.5 of the OpenZeppelin library for class activities.
+
 * Have your TAs keep track of the [Time Tracker](TimeTracker.xlsx).
 
 ### 1. Instructor Do: Welcome to Class (10 min)
@@ -421,8 +423,8 @@ The beginning of the contract should look something like:
 ```solidity
 pragma solidity ^0.5.0;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721Full.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/ownership/Ownable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC721/ERC721Full.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/ownership/Ownable.sol";
 import "./MartianAuction.sol";
 
 contract MartianMarket is ERC721Full, Ownable {
