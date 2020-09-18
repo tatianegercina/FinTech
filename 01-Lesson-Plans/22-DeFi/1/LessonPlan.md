@@ -2,15 +2,15 @@
 
 ---
 
-### Please take the End-Course Instructional Staff Survey if You Haven't Yet
+### Take the End-Course Instructional Staff Survey
 
-Trilogy, as a company, values transparency and data-driven change quite highly. As we grow, we know there will be areas that need improvement. It’s hard for us to understand what these areas are unless we’re asking questions. Your candid input truly matters to us, as you are key members of the Trilogy team. In addition to the individual feedback at the end of lesson plans, we would appreciate your feedback at the following link if you have not already taken the end-course survey:
+Trilogy is a company that values transparency and data-driven change. As we grow, we know there will be areas that need improvement, and in order to do that effectively, we need your input. Your insights truly matter, since you are an integral member of the Trilogy team. In addition to the individual feedback at the end of each lesson plan, we would appreciate your feedback via the following link, if you have not already taken the end-course survey:
 
 [Instructional Staff Survey](https://docs.google.com/forms/d/e/1FAIpQLSfYVe6jUQwDoXferzGqfd3LZ1k0i_RWzgwccd1f5arSXg2pzA/viewform)
 
 ### Overview
 
-In today's class, students will be introduced to the concept of DeFi (short for decentralized finance). Though DeFi most commonly refers to financial systems built upon distributed ledgers frequently leveraging smart contracts. Students will gain the scope that DeFi is not a particular technology or implementation. Rather, DeFi is a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
+In today's class, students will be introduced to the concept of DeFi (decentralized finance), which are financial systems built upon distributed ledgers that frequently leverage smart contracts. Students will learn that DeFi is not a particular technology or implementation, but rather a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
 
 ### Class Objectives
 
@@ -22,13 +22,13 @@ By the end of the class, students will be able to:
 
 * Use IPFS to store immutable data off-chain to save gas
 
-* Use Filters in Web3.py to react to Events from smart contracts
+* Use Filters in Web3.py to react to events from smart contracts
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1v3vPpBsLchwg8EIWQGC4UXutou2DZmD20b7SyrjQhv4/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1mSVwnJQnqBCj9u2nzfK0UkbKeVvbRzrq8eMOAfg60Fo/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then add the PDF file to your class repository, along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting `Make a copy`.
 
@@ -36,59 +36,63 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* The contracts you will be deploying today are relatively large and may take a few minutes to compile.
+* The contracts you will deploy today are relatively large and may take a few minutes to compile.
 
 * Refer to OpenZeppelin ERC721 documentation for further information about Non-Fungible Tokens. [ERC721 Docs](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721)
 
 * Refer to the `IPFS` documentation for further information about [IPFS Docs](https://docs.ipfs.io/)
 
+* Recall to students that we will use version 2.5 of the OpenZeppelin library for class activities.
+
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
 ### 1. Instructor Do: Welcome Back (10 min)
 
-Previously students have implemented both a basic token as well as the ERC21 fungible token standard using the OpenZeppelin libraries. Today they will be implementing their first ERC721 Non-fungible token using the Openzeppelin libraries. Take a few minutes to review ERC's, OpenZeppelin, and the concept of fungibility by discussing the following recall questions with the class.
+Previously, students have implemented a basic token, as well as the ERC21 fungible token standard using the OpenZeppelin libraries. Today they will implement their first ERC721 non-fungible token using the OpenZeppelin libraries. Take a few minutes to review ERC's, OpenZeppelin, and the concept of fungibility by discussing the following recall questions with the class.
 
 * What are some differences between `fungible` and `non-fungible` tokens?
 
-    * **Answer**: Non-fungible tokens are unique, fungible tokens are not unique.
+  * **Answer**: Non-fungible tokens are unique, fungible tokens are not unique.
 
-    * **Answer**: Fungible tokens are interchangeable with one another whereas non-fungible are not.
+  * **Answer**: Fungible tokens are interchangeable with one another, whereas non-fungible are not.
 
-    * **Answer**: non-fungible tokens use ERC 721, fungible tokens use ERC 777.
+  * **Answer**: Non-fungible tokens use ERC721, fungible tokens use ERC777.
 
 * What are some examples of `fungible` assets?
 
-    * **Answer**: United States Dollars (USD)
+  * **Answer**: United States Dollars (USD)
 
-    * **Answer**: Ethereum (ETH)
+  * **Answer**: Ethereum (ETH)
 
-    * **Answer**: Bitcoin (BTC)
+  * **Answer**: Bitcoin (BTC)
 
-    * **Answer**: Gold
+  * **Answer**: Gold
 
 * What are some examples of `non-fungible` assets?
 
-    * **Answer**: Art
+  * **Answer**: Art
 
-    * **Answer**: Diamonds
+  * **Answer**: Diamonds
 
-    * **Answer**: Land Ownership
+  * **Answer**: Land ownership
 
 * What are some potential benefits of using open source libraries such as OpenZeppelin?
 
-    * **Answer**: They are freely available to use and contribute to under the MIT license.
+  * **Answer**: They are free to use and contribute to under the MIT license.
 
-    * **Answer**: It's a community-backed project that has implemented many of the communities agreed-upon standards (EIPS/ERCS).
+  * **Answer**: It's a community-backed project that has implemented many of the communities agreed upon standards (EIPS/ERCS).
 
-    * **Answer**: It provides a secure, standardized starting point for various smart contract standards.
+  * **Answer**: It provides a secure, standardized starting point for various smart contract standards.
 
-Now that the class has been refreshed on fungibility set the stage for today's lesson by introducing the concept of `DeFi`.
+Now that the class has had a refresher on fungibility, set the stage for today's lesson by introducing the concept of `DeFi`.
 
 * `DeFi` is short for decentralized finance.
 
-* `DeFi` encompasses many of the technologies and paradigms that we have learned throughout the previous unit; however, DeFi is not a particular technology or implementation.
+* `DeFi` encompasses many of the technologies and paradigms that we have learned about in the previous unit; however, DeFi is not a particular technology or implementation.
 
 * `DeFi` is a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
+
+---
 
 ### 2. Instructor Do: ERC721 Non-Fungible Tokens and Events (15 min)
 
@@ -103,8 +107,8 @@ Start by opening [Remix](https://remix.ethereum.org) in your web browser and cre
  ```solidity
  pragma solidity ^0.5.0;
 
- import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721Full.sol";
- import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/drafts/Counters.sol";
+ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC721/ERC721Full.sol";
+ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/drafts/Counters.sol";
  ```
 
 * In this contract, we will be leveraging the contract for `ERC721Full` and the SafeMath counters data type.
@@ -122,18 +126,18 @@ Next, create a new contract named ArtToken that inherits from ERC721Full, for ER
 
 * The `ERC721Full` constructor accepts a `string` for the `token name` and a `string` for the token's `symbol`.
 
-Now define a new counter to keep track of what current `token_id` we are on starting from 0. Apply the `using for` syntax to attach the SafeMath counter library to the counter type and create a new variable named `token_ids` that is of type Counters.counter.
+Now, define a new counter to keep track of what current `token_id` we are starting on from 0. Apply the `using for` syntax to attach the SafeMath counter library to the counter type and create a new variable named `token_ids` that is of type Counters.counter.
 
  ```solidity
  using Counters for Counters.Counter;
  Counters.Counter token_ids;
  ```
 
-* In order for us to track the number of tokens that have been minted and to generate the next `token_id`, we will be leveraging the custom Counter data structure from OpenZeppelin.
+* In order for us to track the number of tokens that have been minted and to generate the next `token_id`, we will be leveraging the custom counter data structure from OpenZeppelin.
 
-* Openzeppelin SafeMath counters allows us to increment and decrement a counter without worrying about overflows and other common types of errors.
+* OpenZeppelin SafeMath counters allow us to increment and decrement a counter without worrying about overflows and other common types of errors.
 
-Represent the artwork's information as a struct named `Artwork` containing these three attributes. A `string` named `name`, a `string` named artist, and a `uint` named `appraisal_value`.
+Represent the artwork's information as a struct named `Artwork` containing these three attributes: a `string` named `name`, a `string` named `artist`, and a `uint` named `appraisal_value`.
 
  ```solidity
  struct Artwork {
@@ -153,7 +157,7 @@ Represent the artwork's information as a struct named `Artwork` containing these
 
 * As you can see, the `struct` that we are creating for this contract contains two `string`s and a `uint`.
 
-* You can think of a struct kind of like a python dictionary in that they are both types of objects containing data, however, make no mistake a struct is a fundamentally different data type than a python dictionary.
+* You can think of a struct kind of like a Python dictionary, in that they are both types of objects containing data. However, make no mistake—a struct is a fundamentally different data type than a Python dictionary.
 
 Define a new `mapping` named `art_collection` that maps a `uint` to our defined Artwork data structure.
 
@@ -171,11 +175,11 @@ Define a new event called `Appraisal` that will accept a `uint` named `token_id`
 
 * The data that is stored on-chain for each art token is stored in the art_collection mapping, but appraisal reports are far too large to store on-chain.
 
-* Instead, it is a much lower gas price to store appraisal reports in a decentralized storage provider such as IPFS and then referenced on-chain by hash. Calling an event is an easy and cheap way to permanently log a `URI` or `Uniform Resource Identifier`.
+* Instead, it is a much lower gas price to store appraisal reports in a decentralized storage provider such as IPFS, and then referenced on-chain by hash. Calling an event is an easy and cheap way to permanently log a `URI` or `Uniform Resource Identifier`.
 
 Define a function named `registerArtwork`; it accepts the following parameters:
 
- * address owner,
+ * address owner
 
  * string memory name
 
@@ -197,7 +201,7 @@ Define a function named `registerArtwork`; it accepts the following parameters:
 
 * The token URI can be a link to some metadata anywhere on the internet. This can be a potential point of centralization, but we will solve that later by using a tool called IPFS.
 
-* In our use case, we will be creating a JSON object that contains a `name`, `description`, and `image` field, then converting it to a special immutable URI with IPFS that ensures that you will always be getting that same piece of data. Essentially, we will be linking to some JSON metadata in a decentralized fashion, but for now, we just need to be able to store a string.
+* In our use case, we will create a JSON object that contains a `name`, `description`, and `image` field. Then we'll convert it to a special immutable URI with IPFS, which ensures that you will always get that same piece of data. Essentially, we'll link to some JSON metadata in a decentralized fashion, but for now, we just need to be able to store a string.
 
 Add the following lines of code inside the `registerArtwork` function for generating the token's id.
 
@@ -206,7 +210,7 @@ Add the following lines of code inside the `registerArtwork` function for genera
  uint token_id = token_ids.current();
  ```
 
-* Inside the body of the `registerArtwork` function you must generate the next `token_id`, this is done by incrementing the `token_ids` counter with the `.increment()` method and then by fetching the current count with the `.current()` method; storing it as a `uint` named `token_id`.
+* Inside the body of the `registerArtwork` function, you must generate the next `token_id`. This is done by incrementing the `token_ids` counter with the `.increment()` method, and then by fetching the current count with the `.current()` method; storing it as a `uint` named `token_id`.
 
 Next, inside the `registerArtwork` function, call the internal `_mint` method from `ERC721Full`. Pass the `owner` value that we defined and the new `token_id` that was generated into the `_mint` function.
 
@@ -235,13 +239,13 @@ On the next line of the `registerArtwork` function, add the generated `token_id`
 
 * When our `registerArtwork` function finishes creating a new artwork token, it will then return the token's id.
 
-Define a second function named `newAppraisal`; this function will be responsible for reporting a new artwork appraisal by logging it's `report_uri`, it accepts three parameters a `uint` named `token_id`, a second `uint` named `new_value` and a `string memory` representing the `report_uri`. Make `newAppraisal` a public function that returns a `uint`.
+Define a second function named `newAppraisal`; this function will be responsible for reporting a new artwork appraisal by logging its `report_uri`. It accepts three parameters: a `uint` named `token_id`, a second `uint` named `new_value`, and a `string memory` representing the `report_uri`. Make `newAppraisal` a public function that returns a `uint`.
 
  ```solidity
  function newAppraisal(uint token_id, uint new_value, string memory report_uri) public returns(uint) {
  ```
 
-Inside the body of the `newAppraisal` function set the passed token_id's appraisal_value to the new_amount passed to the function. Then `emit` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal, and the `report_uri`. Finally return the `new_amount` value.
+Inside the body of the `newAppraisal` function, set the passed token_id's appraisal_value to the new_amount passed to the function. Then `emit` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal, and the `report_uri`. Finally, return the `new_amount` value.
 
  ```solidity
  art_collection[token_id].appraisal_value = new_value;
@@ -251,15 +255,15 @@ Inside the body of the `newAppraisal` function set the passed token_id's apprais
  return art_collection[token_id].appraisal_value;
  ```
 
-* This function will be responsible for reporting a new accident by logging it's `report_uri`.
+* This function will be responsible for reporting a new accident by logging its `report_uri`.
 
 * The `newAppraisal` function does three things:
 
- * it increments the new appraisal amount for the given `token_id` inside the `art_collection` mapping,
+ * It increments the new appraisal amount for the given `token_id` inside the `art_collection` mapping.
 
- * it `emits` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal and the `report_uri`
+ * It `emits` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal, and the `report_uri`.
 
- * it returns the current artwork `appraisal_value` after the latest appraisal.
+ * It returns the current artwork `appraisal_value` after the latest appraisal.
 
 * We have now created a new ERC721 non-fungible token with custom attributes.
 
@@ -269,7 +273,7 @@ If you see a warning like this:
 
 This is coming from the OpenZeppelin library and is safe to ignore.
 
-### 3. Students Do: Building the CryptoFax Car Token (20 min)
+### 3. Student Do: Building the CryptoFax Car Token (20 min)
 
 In this activity, students will implement a non-fungible car token containing an immutable vehicle history using the ERC721 OpenZeppelin contract. This contract will require them to apply their knowledge of SafeMath counters, structs, and events.
 
@@ -296,7 +300,7 @@ contract CryptoFax is ERC721Full {
  constructor() ERC721Full("CryptoFax", "CARS") public { }
 ```
 
-* First, we inherited the properties of ERC721Full's contract in our new CryptoFax contract and called the ERC721Full's constructor passing it the name of the token `CryptoFax` and the token symbol `Cars`.
+* First, we inherited the properties of ERC721Full's contract in our new CryptoFax contract, and called the ERC721Full's constructor passing it the name of the token `CryptoFax` and the token symbol `Cars`.
 
 ```solidity
  using Counters for Counters.Counter;
@@ -314,21 +318,21 @@ contract CryptoFax is ERC721Full {
  }
 ```
 
-* A struct was defined to hold each car's on-chain information, it's `vin` and it's number of `accidents`.
+* A struct was defined to hold each car's on-chain information, its `vin` and its number of `accidents`.
 
 ```solidity
  mapping(uint => Car) public cars;
 ```
 
-* The CryptoFax contract tracks each new token that is minted by storing it's `token_id` and corresponding info for each car.
+* The CryptoFax contract tracks each new token that is minted by storing its `token_id` and corresponding info for each car.
 
 ```solidity
  event Accident(uint token_id, string report_uri);
 ```
 
-* Here we defined a new event called `Accident` that accepts a `uint` named `token_id`, and a `string` named `report_uri`.
+* Here, we defined a new event called `Accident` that accepts a `uint` named `token_id`, and a `string` named `report_uri`.
 
-* As mentioned, the data that is stored on-chain for each car token is stored in the cars `mapping`; however, accident reports are far too large to store on-chain. Instead, it is much cheaper (in gas) to store accident reports in a decentralized storage provider such as [IPFS](https://ipfs.io/) and then reference them on-chain by hash.
+* As mentioned, the data that is stored on-chain for each car token is stored in the car's `mapping`; however, accident reports are far too large to store on-chain. Instead, it is much cheaper (in gas) to store accident reports in a decentralized storage provider such as [IPFS](https://ipfs.io/) and then reference them on-chain by hash.
 
 * Calling an event is an easy and cheap way to permanently log a `URI` or `Uniform Resource Identifier`.
 
@@ -350,11 +354,11 @@ contract CryptoFax is ERC721Full {
 
 * The `token_ids` counter is first incremented so that a new token can be minted; the new token id is stored as a uint named `token_id`.
 
-* The mint function is then called passing it the owner's address from `registerVehicle` and the new `token_id`.
+* The mint function is then called, passing it the owner's address from `registerVehicle` and the new `token_id`.
 
-* The `_setTokenURI` function is then called to set the new token's `URI` based upon it's id.
+* The `_setTokenURI` function is then called to set the new token's `URI` based upon its id.
 
-* A newly defined car with a corresponding `vin` and a given number of `accidents` is then added to the car mapping with it's mapped `token_id`, and the new token_id is returned.
+* A newly defined car with a corresponding `vin` and a given number of `accidents` is then added to the car mapping with its mapped `token_id`, and the new token_id is returned.
 
 ```solidity
  function reportAccident(uint token_id, string memory report_uri) public returns(uint) {
@@ -367,19 +371,19 @@ contract CryptoFax is ERC721Full {
  }
 ```
 
-* The `reportAccident`function is responsible for reporting a new accident by logging its `report_uri`.  It accepts two parameters - a `uint` named `token_id` and a `string memory` representing the `report_uri`.
+* The `reportAccident`function is responsible for reporting a new accident by logging its `report_uri`.  It accepts two parameters—a `uint` named `token_id` and a `string memory` representing the `report_uri`.
 
 * The `reportAccident` function does three things:
 
- * it increments the number of accidents for the given `token_id` inside the car's mapping,
+ * It increments the number of accidents for the given `token_id` inside the car's mapping.
 
- * it `emits` the `Accident` event passing it the given `token_id` and `report_uri`
+ * It `emits` the `Accident` event passing it the given `token_id` and `report_uri`.
 
- * it returns the current number of accidents after the latest accident.
+ * It returns the current number of accidents after the latest accident.
 
-* Remember, you are `emitting` the Accident function in order to trigger the logging of a new accident report.
+* Remember, you are `emitting` the accident function in order to trigger the logging of a new accident report.
 
-* Congratulations, you've just built an `ERC721` compliant `non-fungible` token complete with on-chain custom attributes and several linked token `URI`s
+* Congratulations! You've just built an `ERC721` compliant `non-fungible` token complete with on-chain custom attributes and several linked token `URI`s.
 
 Return to the slides and discuss the following review questions with the class:
 
@@ -395,7 +399,7 @@ Return to the slides and discuss the following review questions with the class:
 
     * **Answer**: Events are a cheap way of logging information on the blockchain.
 
-    * **Answer**: Events alappsApps to update and monitor given values on the blockchain.
+    * **Answer**: Events allow Apps to update and monitor given values on the blockchain.
 
 * What are some other examples of non-fungible tokens that could be created?
 
@@ -413,39 +417,33 @@ In this activity, students are introduced to the `IPFS` technology and how it ca
 
 * [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_System/Solved/example_uri.json))
 
-Begin by giving the students some background on IPFS, what it is, how it works.
+Begin by giving the students some background on IPFS, such as what it is and how it works.
 
 * So what is IPFS?
 
-* IPFS stands for `InterPlanetary Filesystem`, it is both:
+* IPFS stands for `InterPlanetary File System`. It is a `Protocol`, a `Network`, and a `File System`.
 
- * a `Protocol`
-
- * a `Network`
-
- * and a `Filesystem`
-
-* So what exactly does this mean and how does it all fit together?
+* So what exactly does this mean, and how does it all fit together?
 
 * For two users to exchange data with one another across the internet, they need a common set of rules for how the information is sent between them; this is a `communication protocol`.
 
 * `Communication protocols` are usually built within a stack known as a `protocol suite`. For example, the `internet protocol suite` is widely used today, and of the protocols that make up the suite, `HyperText Transfer Protocol` or `HTTP` is the foundation for communication.
 
-* Another important piece is known as the `system's architecture` or how the actual computers within the network can communicate with one another. Traditionally this is done in a `client-server` model; however, IPFS leverages a `peer-to-peer` network model of connection.
+* Another important piece is known as the `system's architecture` or how the actual computers within the network can communicate with one another. Traditionally, this is done in a `client-server` model; however, IPFS leverages a `peer-to-peer` network model of connection.
 
-* In a typical `client-server` model, `centralized` servers store data that is accessed via `location-based addressing`. This provides an easy way to secure and manage data in a scalable manner, though it doesn't come without its drawbacks.
+* In a typical `client-server` model, `centralized` servers store data that is accessed via `location-based addressing`. This provides an easy way to secure and manage data in a scalable manner, although it does have some drawbacks.
 
- * Since data is stored on `centralized` servers, anyone with access to those servers, whether an authorized admin or a hacker with malicious intent, can alter and remove data. This poses problems in both the realms of privacy and security because, in this model, control of the server is equal to control of the data.
+ * Since data is stored on `centralized` servers, anyone with access to those servers—whether an authorized admin or a hacker with malicious intent—can alter and remove data. This poses problems regarding privacy and security, because in this model, control of the server is equal to control of the data.
 
- * In `location-based addressing`; a piece of data is recognized by location as opposed to its content; this means that to access a piece of data, you must go to its specific location even if the same data is available from a closer source.
+ * In `location-based addressing`, a piece of data is recognized by location as opposed to its content. This means that to access a piece of data, you must go to its specific location, even if the same data is available from a closer source.
 
- * This also means a client has no defacto way to tell if the data it has received has been altered because the client isn't concerned with what the data is but rather where it is.
+ * This also means a client has no de facto way to tell if the data it has received has been altered, because the client isn't concerned with what the data is, but rather where it is.
 
  * The `client-server` model works well for websites and small pieces of data, but it's not the most efficient when it comes to big pieces of data.
 
-* IPFS hopes to address these issues with the traditional `client-server` model with the use of a distributed `peer to peer` file-sharing system.
+* IPFS hopes to address these issues with the traditional `client-server` model, with the use of a distributed `peer to peer` file-sharing system.
 
-Now that the students have a general grasp on what IPFS is and the purposes that it is trying to serve. Introduce the class to the Pinata service and how `IPFS` can be a valuable tool for building dApps and decentralized systems.
+Students should now have a general grasp on what IPFS is and what purpose it serves. Introduce the class to the Pinata service and how `IPFS` can be a valuable tool for building dApps and decentralized systems.
 
 Open a web browser and navigate to the [Pinata Website](https://pinata.cloud/).
 
@@ -453,7 +451,7 @@ Open a web browser and navigate to the [Pinata Website](https://pinata.cloud/).
 
 * Pinata is a file pinning service for IPFS. It allows you to host files on the IPFS network and reference them by hash; they also provide a free gateway for communicating with IPFS.
 
-Click the `Try it for Free` or the `Signup` and register for a free account. If you already have an account login to the pinata dashboard.
+Click the `Try it for Free` or the `Signup` and register for a free account. If you already have an account, log in to the pinata dashboard.
 
 ![Pinata Signup](Images/pinata_singup.png)
 
@@ -473,7 +471,7 @@ Open the [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_Syste
 }
 ```
 
-* As previously mentioned, each `ERC721` token typically has an associated `token URI` that is stored on some off-chain storage provider such as IPFS. A URI may resolve to any file, but an ERC721 token URI usually looks something like this.
+* As previously mentioned, each `ERC721` token typically has an associated `token URI` that is stored on an off-chain storage provider, such as IPFS. A URI may resolve to any file, but an ERC721 token URI usually looks something like this.
 
 Click on the `Pinata Upload` link in the website's top navigation bar.
 
@@ -499,19 +497,19 @@ After the upload is successful, click the `Pin Explorer` link in the website's t
 
 ![Pin Hash Click](Images/pinata_pin_hash.png)
 
-* If we click the hash link, pinata will even generate a link to the file on IPFS accessible through pinata's free IPFS gateway.
+* If we click the hash link, Pinata will even generate a link to the file on IPFS, accessible through Pinata's free IPFS gateway.
 
 Make a note to the class that the Pinata gateway is a point of centralization. However, dApps can leverage the use of multiple IPFS gateways to mitigate this.
 
 ![Gateway File](Images/pinata_gateway_file.png)
 
-* By default, pinata generates a connection to the IPFS network through their free IPFS gateway; however, we will be using a direct `ipfs://` link to the hash that will be resolved through the IPFS browser extension.
+* By default, Pinata generates a connection to the IPFS network through their free IPFS gateway; however, we will be using a direct `ipfs://` link to the hash that will be resolved through the IPFS browser extension.
 
 Navigate to the [IPFS Browser Companion github](https://github.com/ipfs-shipyard/ipfs-companion) and install the browser extension for your desired browser.
 
-* You do not need to install the IPFS Desktop version.
+* You do not need to install the IPFS desktop version.
 
-* You also do not need to worry about if you cannot connect to an IPFS node, as the browser extension will fallback to the IPFS.io gateway. You do not need to install an IPFS node if you don't want to, though it is valuable to explore down the line.
+* You also don't need to worry if you cannot connect to an IPFS node, as the browser extension will fallback to the IPFS.io gateway. You do not need to install an IPFS node if you don't want to, but it is worth exploring, down the line.
 
  ![IPFS Install Links](Images/ipfs-browser-companion.png)
 
@@ -519,21 +517,21 @@ In your browser, open the [CID IPFS Website](https://cid.ipfs.io) and convert th
 
 ![CID Converter](Images/cid-converter.png)
 
-* Originally, the CIDv0 standard allowed for URL hashes that supported both upper and lowercase characters, but this breaks in many browsers nowadays since some of them automatically make your URL lowercase. Since the hash relied on case sensitivity to encode the necessary data, this broke it.
+* Originally, the CIDv0 standard allowed for URL hashes that supported both upper and lowercase characters, but this breaks in many browsers nowadays, since some of them automatically make your URL lowercase. Since the hash relied on case sensitivity to encode the necessary data, this broke it.
 
-* CIDv1 is a longer, lowercase hash that also contains more metadata that can be converted for human-readable info in some applications. Since we're alway at the cutting edge, we are going to opt for the newer, more compatible standard.
+* CIDv1 is a longer, lowercase hash that also contains more metadata that can be converted for human-readable info in some applications. Since we're always at the cutting edge, we are going to opt for the newer, more compatible standard.
 
-* Pinata is a useful service, but they have yet to update their file pinning  website frontend to support CIDv1. In order to avoid bugs, we are going to convert the `IPFS hash` with a free CIDv1 converter.
+* Pinata is a useful service, but they have yet to update their file pinning website front end to support CIDv1. In order to avoid bugs, we are going to convert the `IPFS hash` with a free CIDv1 converter.
 
-Now to test the browser extension copy the files new CIDv1 `IPFS hash` and prepend `ipfs://` to the front of it, e.g., [ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m](ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m). Demonstrate creating the link and opening it in your browser.
+Now to test the browser extension, copy the files new CIDv1 `IPFS hash` and prepend `ipfs://` to the front of it, e.g., [ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m](ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m). Demonstrate creating the link and opening it in your browser.
 
 * Once the IPFS browser extension is installed, files on IPFS can be accessed at `ipfs://whatever your file hash is`.
 
 * When pasting an IPFS URI into our browser, we need to make sure it is navigating directly to the `ifps://` scheme, and not simply searching the string on Google.
 
-Now navigate to [Remix](http://remix.ethereum.org/). Then open the example contract for the `Artwork Token` and compile/deploy the contract on your local ganache blockchain.
+Now navigate to [Remix](http://remix.ethereum.org/). Then, open the example contract for the `Artwork Token` and compile/deploy the contract on your local ganache blockchain.
 
-You may have to increase the `Gas Limit`, but once the contract has successfully deployed, click on the deployed contract and click the `newAppraisal` function. Fill in the fields with a generated address from your wallet, some sample details about the artwork, and the token URI; then call the function. The data you enter should be:
+You may have to increase the `Gas Limit`, but once the contract has successfully deployed, click on the deployed contract and then click the `newAppraisal` function. Fill in the fields with a generated address from your wallet, some sample details about the artwork, and the token URI; then call the function. The data you enter should be:
 
 ![Register Artwork](Images/remix_register_artwork.png)
 
@@ -547,13 +545,13 @@ You may have to increase the `Gas Limit`, but once the contract has successfully
 
 * token_uri: `ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m`
 
-Congratulate them, that was a lot of new information to take in; then briefly introduce the next activity.
+Congratulate the students—that was a lot of new information to take in! Then, quickly introduce the next activity.
 
 * We've now deployed our ERC721 non-fungible token with a linked IPFS `token URI`. In the next activity, you will be uploading a similar token URI file to Pinata for your CryptoFax car token.
 
-### 6. Students Do: IPFS + Blockchain (15 min)
+### 6. Student Do: IPFS + Blockchain (15 min)
 
-In this activity, students will upload a Car TokenURI to IPFS via Pinata and link them to a transaction via their ERC721 contracts.
+In this activity, students will upload a Car TokenURI to IPFS via Pinata, and link them to a transaction via their ERC721 contracts.
 
 **Instructions:**
 
@@ -569,21 +567,21 @@ Discuss the following review questions with the class about the general concepts
 
 * What are some potential issues that IPFS seeks to solve?
 
-    * **Answer**: Inefficiencies in the web such as `duplicate files`.
+    * **Answer**: Inefficiencies in the web, such as `duplicate files`.
 
-    * **Answer**: Inefficiencies in the web such as having to route to a faraway server to get the file you need when it might be right next door.
+    * **Answer**: Inefficiencies in the web, such as having to route to a faraway server to get the file you need when it might be right next door.
 
-    * **Answer**: Problems with security and file integrity, such as not knowing whether or not files you have accessed over the web have changed.
+    * **Answer**: Problems with security and file integrity, such as not knowing if files you have accessed over the web have changed.
 
     * **Answer**: Problems with the security of centralized servers providing a centralized attack vector.
 
-* What are some examples of how IPFS seeks to solve these issues?
+* What are some examples of how IPFS tries to solve these issues?
 
     * **Answer**: Hosting any file that you want to maintain an immutable copy of.
 
     * **Answer**: Hosting any file that needs to be censorship-resistant.
 
-    * **Answer**: Hosting very-large files between organizations.
+    * **Answer**: Hosting very large files between organizations.
 
     * **Answer**: Hosting any file in general.
 
@@ -607,7 +605,7 @@ Discuss the following review questions with the class about the general concepts
 
 Now that students understand that IPFS is a content-routed system that works against hashes instead of IP addresses, it's time to put the systems together to make an Accident Report System.
 
-In this activity, you will demonstrate uploading a sample "accident report" in JSON format to IPFS via the Pinata API, then permanently record the report's IPFS URI to the blockchain via the `reportAccident` function on the `CryptoFax` contract using a transaction generated with Web3.py.
+In this activity, you will demonstrate how to upload a sample "accident report" in JSON format to IPFS via the Pinata API, and then permanently record the report's IPFS URI to the blockchain via the `reportAccident` function on the `CryptoFax` contract, using a transaction generated with Web3.py.
 
 **Files:**
 
@@ -718,7 +716,7 @@ def pinJSONtoIPFS(json):
 
 * Then, we return the `IpfsHash` value from the JSON response that Pinata defines inside of an `f` string. The final output is an IPFS URI, formatted like `ipfs://some_hash_here`.
 
-Up to this point, this process should be pretty familiar. The last Pinata related item we need to take care of is a function called `convertDataToJSON` that will take our user input and convert it to a JSON object formatted in a way that allows us to set some options in the Pinata API:
+Up to this point, this process should be pretty familiar. The last Pinata-related item we need to take care of is a function called `convertDataToJSON` that will take our user input and convert it to a JSON object formatted in a way that allows us to set some options in the Pinata API:
 
 ```python
 def convertDataToJSON(time, description):
@@ -736,7 +734,7 @@ def convertDataToJSON(time, description):
 
 * In this function, we are simply taking in a `time` and `description` that we'll accept as user input later, then setting up a dictionary called `data` that contains a few fields.
 
-* The first field, `pinataOptions`, tells the API to use `CIDv1` as the IPFS URL format. This just simply means to use the latest version of the way that IPFS generates the final address that allows for more metadata to be encoded versus using `CIDv0`, which are the shorter, case-sensitive URIs that IPFS used initially.
+* The first field, `pinataOptions`, tells the API to use `CIDv1` as the IPFS URL format. This simply means using the latest version of the way that IPFS generates the final address that allows for more metadata to be encoded, versus using `CIDv0`, which are the shorter, case-sensitive URIs that IPFS used initially.
 
 * `pinataContent` contains the object that will be pinned to IPFS by Pinata. Only what is in this field will be uploaded to IPFS.
 
@@ -762,15 +760,15 @@ from web3.auto import w3
 
 * Web3.py will accept this ABI, plus the address we defined in our `.env` file, and output a contract object that we can use to interact with the `CryptoFax` contract.
 
-* Since we configured `WEB3_PROVIDER_URI` in `.env`, `web3.auto` will automatically recognize the Ganache network and automatically connect and use the same accounts that Ganache generates. No need to work with private keys when using `web3.auto` and Ganache!
+* Since we configured `WEB3_PROVIDER_URI` in `.env`, `web3.auto` will automatically recognize and connect with the Ganache network and use the same accounts Ganache generates. No need to work with private keys when using `web3.auto` and Ganache!
 
 Quickly pull up the [web3.py Documentation](https://web3py.readthedocs.io/en/stable/providers.html#how-automated-detection-works) for how auto-detection works. Explain the following:
 
 * Web3.py in auto-mode will try a few things. First, it will check the `WEB3_PROVIDER_URI` environment variable for a connection string. If it finds one, it'll try to connect to it. Since we provided one, it will find ours immediately!
 
-* After that, it tries to find local Unix socket files to connect to applications like `geth` with. Then, it tries to look for a `localhost:8545` RPC connection. If we didn't set `WEB3_PROVIDER_URI`, Web3.py might have found Ganache automatically.
+* After that, it will try to find local Unix socket files to connect to applications like `geth` with. Then, it will look for a `localhost:8545` RPC connection. If we didn't set `WEB3_PROVIDER_URI`, Web3.py might have found Ganache automatically.
 
-* It's easiest for us to just tell Web3.py right away where to connect, and have it manage our connection and Ganache accounts automatically! If we connect manually, we'd have to work with the raw private keys of our test addresses. Ganache exposes the accounts API to Web3.py in a special way that abstracts away private key logic, which is why we want to use auto-mode.
+* It's easiest just to tell Web3.py where to connect, and have it manage our connection and Ganache accounts automatically! If we connect manually, we'd have to work with the raw private keys of our test addresses. Ganache exposes the accounts API to Web3.py in a special way that abstracts away private key logic, which is why we want to use auto mode.
 
 Now, create one last function in `crypto.py`:
 
@@ -834,7 +832,7 @@ def createAccidentReport():
 
 * Then, we convert that data into the JSON object we want to send to Pinata via the `convertDataToJSON` function.
 
-* We capture the final IPFS URI from our `pinJSONToIPFS` function, passing in the JSON data we want to upload and return the `token_id` and `report_uri` variables.
+* We capture the final IPFS URI from our `pinJSONToIPFS` function, passing in the JSON data we want to upload and returning the `token_id` and `report_uri` variables.
 
 Next, we'll need to create the function that will etch the event to the blockchain:
 
@@ -941,9 +939,9 @@ python accident.py report
 python accident.py get 1
 ```
 
-Voila! A complete vehicle accident report system that permanently stores accident reports to the blockchain and IPFS. Now it's time for the students to build the same system.
+Voila! A complete vehicle accident report system that permanently stores accident reports to the blockchain and IPFS. Now it's time for students to build the same system.
 
-### 10. Students Do: Building the Accident Report System (20 min)
+### 10. Student Do: Building the Accident Report System (20 min)
 
 In this activity, students will build the same Accident Report System, leveraging IPFS and event filters.
 
@@ -961,7 +959,7 @@ Send out the instructions and the starter code, and have TAs circulate the room,
 
 * [.env](Activities/06-Stu_Accident_Report_System/Unsolved/.env)
 
-If students are having difficulties, make sure of the following:
+If students are having difficulties, ensure the following:
 
 * The student has installed the `python-dotenv` package. This can be done by running the following command:
 
@@ -1011,11 +1009,11 @@ Ask for any remaining questions before moving on.
 
 Congratulate the class on having made it this far!
 
-Explain that, over the next two class weeks, students will work in groups to complete a capstone project for FinTech.
+Explain that, over the next two weeks, students will work in groups to complete a capstone project for FinTech.
 
-Explain that students can choose any topic from any section of the course as their capstone project. Point out that this allows them to align their capstone project with their specific career goals, and that the final project does not have to focus on Blockchain.
+Tell students they may choose any topic from any section of the course as their capstone project. Point out that this allows them to align their capstone project with their specific career goals, and that the final project does not have to focus on blockchain.
 
-Tell students that they will also be able to choose their teams of 2-6 students for this final project. Students are also able to request placement on a team by the instructional staff.
+Tell students that they will also be able to choose their teams, of two to six students, for this final project. Students are also able to request placement on a team by the instructional staff.
 
 Explain that the rest of the class will be dedicated to working on their final projects.
 
@@ -1025,4 +1023,4 @@ Explain that the rest of the class will be dedicated to working on their final p
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

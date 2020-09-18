@@ -2,7 +2,7 @@
 
 ### Overview
 
-In today's class, students will be introduced to the thought process and techniques that go into taking a formalized contract spec and implementing it into solidity code. Throughout the process of software development, employees are often required to collaborate with one another, creating a separation of concerns within a system's architecture. Students will learn to take a simple yet more formalized smart contract specification and implement it to fit the interface of an already established frontend dApp. Students will then deploy the configured dApp to a centralized production environment, Github pages.
+In today's class, students will be introduced to the thought processes and techniques that go into taking a formalized contract spec and implementing it into Solidity code. In the software development process, employees frequently collaborate, creating a separation of concerns within a system's architecture. Students will learn to take a simple, yet more formalized, smart contract specification and implement it to fit the interface of an already established front-end dApp. Students will then deploy the configured dApp to a centralized production environment, GitHub Pages.
 
 Students will use the remainder of the class to work on their projects.
 
@@ -12,13 +12,13 @@ Students will use the remainder of the class to work on their projects.
 
 By the end of the class, students will be able to:
 
-* Implement a given smart contract specification into real solidity code.
+* Implement a given smart contract specification into real Solidity code.
 
-* Integrate the contract with a JavaScript/HTML/CSS frontend.
+* Integrate the contract with a JavaScript/HTML/CSS front end.
 
-* Deploy a bundled dApp to Github Pages
+* Deploy a bundled dApp to GitHub Pages.
 
-* Customize and deploy a landing page for projects on Github Pages
+* Customize and deploy a landing page for projects on GitHub Pages.
 
 ---
 
@@ -26,11 +26,13 @@ By the end of the class, students will be able to:
 
 * Refer to the `IPFS` documentation for further information about [IPFS Docs](https://docs.ipfs.io/)
 
+* Recall to students that we will use version 2.5 of the OpenZeppelin library for class activities.
+
 ---
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1MbCKDkKG4XFrhnk1HflJz3GcUBaKf0glBsKJNPT29Do/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1nddRMy7DUMXZ7q9EeIpz0V78YT6wWjSjB_KaKK3Ts5k/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -42,9 +44,9 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome to Class (10 min)
 
-During the previous class, students were introduced to the concept of DeFi (short for decentralized finance). Students were given the scope that many of the concepts that they had learned up to this point can be leveraged to build financial systems based on the principals of DeFi as well as given the tools that directly enable these systems through the deployment of dApps such as solidity events and IPFS. Briefly review the following talking points to refresh the class on DeFi, events, and IPFS.
+In the previous class, students were introduced to the concept of DeFi (short for decentralized finance). Many of the concepts they have learned up to now can be leveraged to build financial systems based on DeFi principles, as well as given the tools that directly enable these systems through the deployment of dApps such as solidity events and IPFS. Briefly review the following talking points to refresh the class on DeFi, events, and IPFS.
 
-* What are some benefits of solidity events?
+* What are some benefits of Solidity events?
 
   **Answer:** They are a cheap amount of gas.
 
@@ -52,7 +54,7 @@ During the previous class, students were introduced to the concept of DeFi (shor
 
   **Answer:** Events are MUCH cheaper than contract storage.
 
-  **Answer:** Events are solidity's built-in way to interact with something external, such as a user interface.
+  **Answer:** Events are Solidity's built-in way to interact with something external, such as a user interface.
 
 * What are some potential issues that IPFS seeks to solve?
 
@@ -60,13 +62,13 @@ During the previous class, students were introduced to the concept of DeFi (shor
 
   **Answer:** Inefficiencies in the web such as having to route to a faraway server to get the file you need when it might be right next door.
 
-  **Answer:** Problems with security and file integrity, such as not knowing whether or not files you have accessed over the web have changed.
+  **Answer:** Problems with security and file integrity, such as not knowing if files you have accessed over the web have changed.
 
   **Answer:** Problems with the security of centralized servers providing a centralized attack vector.
 
 ### 2. Instructor Do: Building to a Smart Contract Specification (15 min)
 
-The instructor will discuss the process of breaking down the elements of a smart contract specification, such as it's interface, and how to turn it into functioning code. The EIP provides an example interface file for testing the contract linked below.
+The instructor will discuss the process of breaking down the elements of a smart contract specification, such as its interface, and how to turn it into functioning code. The EIP provides an example interface file for testing the contract linked below.
 
 **Files:**
 
@@ -78,9 +80,9 @@ The instructor will discuss the process of breaking down the elements of a smart
 
 Begin by opening the [Example CryptoRight EIP](Activities/01-Ins_Building_to_a_Smart_Contract_Specification/Resources/ExampleEIP.md) and displaying it for the class.
 
-* In earlier classes we took a look at a variety of the EIP specifications located on [https://eips.ethereum.org/](https://eips.ethereum.org/)
+* In earlier classes, we took a look at a variety of the EIP specifications located on [https://eips.ethereum.org/](https://eips.ethereum.org/)
 
-* Today we will take a new example EIP, break it down and translate it into functioning code. Remember, an EIP is an Ethereum Improvement Proposal. An ERC is an application-level (aka, Solidity) EIP.
+* Today, we will take a new example EIP, break it down, and translate it into functioning code. Remember—an EIP is an Ethereum Improvement Proposal. An ERC is an application-level (aka, Solidity) EIP.
 
 * Let's begin by identifying the goal of the current contract. This will allow us to gain scope on the logic that we will be implementing.
 
@@ -88,9 +90,9 @@ Begin by opening the [Example CryptoRight EIP](Activities/01-Ins_Building_to_a_S
 
 Together with the class, read the `Simple Summary`, `Abstract`, and `Motivation` sections of the EIP.
 
-Open [Remix](https://remix.ethereum.org/) in your web browser and create two new contracts the first-named `ICryptoRight.sol` and the second named `CryptoRight.sol`.
+Open [Remix](https://remix.ethereum.org/) in your web browser and create two new contracts—the first named `ICryptoRight.sol` and the second named `CryptoRight.sol`.
 
-Inside `ICryptoRight.sol` paste the contents of [ICryptoRight.sol](Activities/01-Ins_Building_to_a_Smart_Contract_Specification/Resources/ICryptoRight.sol) from the resources folder.
+Inside `ICryptoRight.sol` paste the contents of [ICryptoRight.sol](Activities/01-Ins_Building_to_a_Smart_Contract_Specification/Resources/ICryptoRight.sol) from the Resources folder.
 
 Inside `CryptoRight.sol` define a new contract named `CryptoRight` that extends the `ICryptoRight` interface.
 
@@ -109,13 +111,13 @@ Next, pull up Remix side by side with the [Example CryptoRight EIP](Activities/0
 
 * Now that we've familiarized ourselves with the goal of the example ERC333 copyright contract, let's define the structure of our contract and scaffold out each function's business logic.
 
-* When writing code to a particular specification, it can be very helpful to write comments for each step that must be performed inside a function's body. In this activity, we will take the contract specification and break down each of the method's business logic and backing data structures into descriptive comments.
+* When writing code to a particular specification, it can be very helpful to write comments for each step that must be performed inside a function's body. In this activity, we will take the contract specification and break down each component of the method's business logic and backing data structures into descriptive comments.
 
 Read aloud the `copyrights` method's interface definition and description.
 
 * `copyrights`
 
-* Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyright's `owner` and `uri`.
+* Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyrights `owner` and `uri`.
 
 Highlight the CryptoRight contract interface definition.
 
@@ -125,7 +127,7 @@ function copyrights(uint copyright_id) public returns(IWork memory);
 
 * The ERC333 spec defines this interface for the copyrights method.
 
-Now demonstrate what this looks like implemented inside the smart contract.
+Now, demonstrate what this looks like implemented inside the smart contract.
 
 ```Solidity
 mapping(uint => Work) public copyrights;
@@ -138,9 +140,9 @@ mapping(uint => Work) public copyrights;
 
   * Remember that a variable defined with the public modifier automatically generates a getter function with defined parameters. In this case, our publically defined mapping `copyrights` generates a getter function that accepts a `uint` and returns a `Work` struct.
 
-  * This is a great example of how a specification's defined interface may not always exactly match what the actual code will look like but rather the interface that will be generated. `Interface` is both a defined function and the concept of what input/output for a given `API` is expected to be present.
+  * This is a great example of how a specification's defined interface may not always exactly match what the actual code will look like, but rather the interface that will be generated. `Interface` is both a defined function and the concept of what input/output for a given `API` is expected to be present.
 
-Inside the CryptoRight contract under the `copyright_ids` counter create a new `struct` named `Work`. Inside this `struct` create an `address` attribute named `owner` and a `string` attribute named `uri`.
+Inside the CryptoRight contract under the `copyright_ids` counter, create a new `struct` named `Work`. Inside this `struct`, create an `address` attribute named `owner` and a `string` attribute named `uri`.
 
   ```Solidity
   struct Work {
@@ -149,9 +151,9 @@ Inside the CryptoRight contract under the `copyright_ids` counter create a new `
   }
   ```
 
-* We've created our map that reference's a custom datatype named `Work`, but now we have to define that datatype with a `struct`.
+* We've created our map that references a custom datatype named `Work`, but now we have to define that datatype with a `struct`.
 
-* According to the `copyrights` method's spec, we need a "`struct` containing the copyright's `owner` and `uri`".
+* According to the `copyrights` method's spec, we need a "`struct` containing the copyrights `owner` and `uri`".
 
 Read aloud the `copyrightWork` method interface definition and description.
 
@@ -181,7 +183,7 @@ Highlight the `copyrightWork` method's description.
 Add the imports for `SafeMath counters` under the `pragma` and bind the `counter library` to the `Counter` datatype below the contract definition.
 
 ```Solidity
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/drafts/Counters.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/drafts/Counters.sol";
 import "./ICryptoRight.sol";
 
 contract CryptoRight is ICryptoRight {
@@ -201,7 +203,7 @@ contract CryptoRight is ICryptoRight {
 }
 ```
 
-* The `copyrightWork` method spec says that we have to generate an `id` for our copyrights, but it doesn't specify how. This leaves it up to us to decide. For this contract, let's use a Safemath counter and make each id the incremented value from the counter.
+* The `copyrightWork` method spec says that we have to generate an `id` for our copyrights, but it doesn't specify how. This leaves it up to us to decide. For this contract, let's use a SafeMath counter and make each id the incremented value from the counter.
 
 Add the following comments inside the body of the `copyrightWork` function.
 
@@ -324,7 +326,7 @@ Add a modifier between the `copyrights mapping` and `copyrightWork` function nam
     }
 ```
 
-* Here we are adding a modifier named `onlyCopyrightOwner` with a  `require statement` that checks if the given. `copyrights_id` is equal to the current `msg.sender`.
+* Here we are adding a modifier named `onlyCopyrightOwner` with a  `require statement` that checks if the given `copyrights_id` is equal to the current `msg.sender`.
 
 Add the`transferCopyrightOwnership` function defintion with the included `onlyCopyrightOwner` modifier.
 
@@ -341,9 +343,9 @@ Add the following comments to the `transferCopyrightOwnership` function body.
     }
 ```
 
-* Now let's take a look at the first part of the `transferCopyrightOwnership` function definition and break it down into comments about what steps must take place inside the function.
+* Now let's take a look at the first part of the `transferCopyrightOwnership` function definition, and break it down into comments about what steps must take place inside the function.
 
-* As you can see, the `transferCopyrightOwnership` method is relatively simple, the first part of the description can be copied into a single comment consisting of the exact text.
+* As you can see, the `transferCopyrightOwnership` method is relatively simple; the first part of the description can be copied into a single comment consisting of the exact text.
 
 Next, add the code implementation for each commented step inside the `transferCopyrightOwnership` method.
 
@@ -377,9 +379,9 @@ Add the `renounceCopyrightOwnership` function defintion with the `onlyCopyrightO
 
   * However, this time around, we already have our `onlyCopyrightOwner` defined. Let's add it to our function definition.
 
-* Now let's focus on the second part of the function's description and break it down into comments about what steps must take place inside the function.
+* Now, let's focus on the second part of the function's description and break it down into comments about what steps must take place inside the function.
 
-* Re-maps a given copyright ID to the 0x0000000000000000000000000000000000000000 address to "open source" the copyright, and prevent anyone from modifying it further.
+* Remap a given copyright ID to the 0x0000000000000000000000000000000000000000 address to "open source" the copyright, and prevent anyone from modifying it further.
 
 ```Solidity
     function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
@@ -387,9 +389,9 @@ Add the `renounceCopyrightOwnership` function defintion with the `onlyCopyrightO
     }
 ```
 
-* Here the important part of the method descripton is "Re-maps a given copyright_id to the 0x0000000000000000000000000000000000000000".
+* Here the important part of the method descripton is "Remaps a given copyright_id to the 0x0000000000000000000000000000000000000000".
 
-* Remember we've already implemented a function that can re-map copyright to a new owner's address called `transferCopyrightOwnership`.
+* Remember: we've already implemented a function that can remap copyright to a new owner's address called `transferCopyrightOwnership`.
 
 Next, add the code implementation for each commented step inside the `renounceCopyrightOwnership` method.
 
@@ -401,11 +403,11 @@ Next, add the code implementation for each commented step inside the `renounceCo
     }
 ```
 
-* Here we call the previously `transferCopyrightOwnership` method passing it the given `copyright_id` and `address(0)`.
+* Here we call the previously `transferCopyrightOwnership` method, passing it the given `copyright_id` and `address(0)`.
 
-* Mapping, something to `address(0)` in effect, makes it so that no-one can ever control that copyright, e.g., it becomes `open source`.
+* Mapping, something to `address(0)` in effect, makes it so that no one can ever control that copyright; e.g., it becomes `open source`.
 
-Now that all of the method definitions with their accompanying business logic have been implemented. Go back over the contract in remix and implement the defined `events` within the contract specification's events section.
+Now all of the method definitions with their accompanying business logic have been implemented. Go back over the contract in Remix and implement the defined `events` within the contract specification's events section.
 
 Read aloud the `Copyright` event interface definition and description.
 
@@ -417,7 +419,7 @@ event Copyright(uint copyright_id, address owner, string reference_uri);
 
 * According to the `Copyright` event's description, it MUST trigger whenever a new copyrighted work is registered.
 
-* Let's define our events towards the top of our contract above our modifiers.
+* Let's define our events towards the top of our contract, above our modifiers.
 
 Define the `Copyright` event above the modifier. This section of your contract should now look something like this.
 
@@ -443,7 +445,7 @@ Define the `Copyright` event above the modifier. This section of your contract s
 
 * Now, as per the event description, we have to emit the event when a new copyrighted work is registered or, in other words, when the `copyrightWork` function is called.
 
-On the last line inside the body of the `copyrightWork` function `emit` the Copyright event passing it the required parameters.
+On the last line inside the body of the `copyrightWork` function `emit` the copyright event, passing it the required parameters.
 
 ```Solidity
 emit Copyright(id, msg.sender, reference_uri);
@@ -471,9 +473,9 @@ event OpenSource(uint copyright_id, string reference_uri);
 
 * As you can see, we are going to add the `OpenSource` event below the `Copyright` event, but the order does not matter.
 
-* Now, as per the event description, we have to `emit` the event when a new Open Source work is created or in other words when the `openSourceWork` and `renounceCopyrightOwnership` functions are called.
+* Now, as per the event description, we have to `emit` the event when a new open source work is created, such as when the `openSourceWork` and `renounceCopyrightOwnership` functions are called.
 
-On the last line inside the body of the `OpenSource` function `emit` the Copyright event passing it the required parameters.
+On the last line inside the body of the `OpenSource` function, `emit` the copyright event, passing it the required parameters.
 
 ```Solidity
   function openSourceWork(string memory reference_uri) public {
@@ -494,7 +496,7 @@ On the last line inside the body of the `OpenSource` function `emit` the Copyrig
 
 * Inside the `renounceCopyrightOwnership` function we emit the `OpenSource` event like this.
 
-On the last line inside the body of the `renounceCopyrightOwnership` function `emit` the Copyright event passing it the required parameters.
+On the last line inside the body of the `renounceCopyrightOwnership` function `emit` the copyright event, passing it the required parameters.
 
 ```Solidity
     function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
@@ -531,7 +533,7 @@ event Transfer(uint copyright_id, address new_owner);
 
 * Now, as per the event description, we have to emit the event whenever copyright is transferred or, in other words, when the `transferCopyrightOwnership` function is called.
 
-On the last line inside the body of the `transferCopyrightOwnership` function `emit` the `Transfer` event passing it the required parameters.
+On the last line inside the body of the `transferCopyrightOwnership` function, `emit` the `Transfer` event passing it the required parameters.
 
 ```Solidity
     function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
@@ -546,7 +548,7 @@ On the last line inside the body of the `transferCopyrightOwnership` function `e
 
 ### 3. Student Do: Building to a Smart Contract Specification (15 min)
 
-In this activity, students will take a simple, smart contract specification, in this particular case, the ERC333 example contract specification and implement it.
+In this activity, students will take a simple, smart contract specification—in this case, the ERC333 example contract specification—and implement it.
 
 **Instructions:**
 
@@ -560,7 +562,7 @@ In this activity, students will take a simple, smart contract specification, in 
 
 ### 4. Instructor Do: Smart Contract Specifications Review (10 min)
 
-Walkthrough the solution and highlight the following:
+Review the solution and highlight the following:
 
 ```Solidity
 using Counters for Counters.Counter;
@@ -590,7 +592,7 @@ event OpenSource(uint copyright_id, string reference_uri);
 event Transfer(uint copyright_id, address new_owner);
 ```
 
-* We've also defined the three events defined in our copyright specification `Copyright`, `OpenSource`, and `Transfer`.
+* We've also defined the three events defined in our copyright specification: `Copyright`, `OpenSource`, and `Transfer`.
 
 ```Solidity
 modifier onlyCopyrightOwner(uint copyright_id) {
@@ -622,7 +624,7 @@ function openSourceWork(string memory reference_uri) public {
     }
 ```
 
-* The `copyrightWork` and `openSourceWork` functions were both implemented in a very similar way. Both functions generate a new `copyright_id` by incrementing the `copyright_ids` counter and taking its current value. Where the two functions differ is when it comes to setting the Work's owner's address. Since open-source works don't have an owner in this system we leave the `owner` attribute set to the default `address(0)`.
+* The `copyrightWork` and `openSourceWork` functions were both implemented in a very similar way. Both functions generate a new `copyright_id` by incrementing the `copyright_ids` counter and taking its current value. Where the two functions differ is when it comes to setting the Work's owner's address. Since open-source works don't have an owner in this system, we leave the `owner` attribute set to the default `address(0)`.
 
 
 ```Solidity
@@ -634,7 +636,7 @@ function transferCopyrightOwnership(uint copyright_id, address new_owner) public
     }
 ```
 
-* The `transferCopyrightOwnership` function simply re-maps a given copyright_id to a new copyright owner and emits the `Transfer` event.
+* The `transferCopyrightOwnership` function simply remaps a given copyright_id to a new copyright owner, and emits the `Transfer` event.
 
 ```Solidity
 function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
@@ -651,9 +653,9 @@ Ask the class the following review questions.
 
 * Are there any ways that you felt the `CryptoRight` contract code could be improved upon?
 
-* **Potential Answer** Common functionality such as generating copyright_ids could be abstracted to an internal function.
+* **Answer** Common functionality such as generating copyright_ids could be abstracted to an internal function.
 
-* What are some reasons for using a struct with two attributes instead of as opposed to two mappings for the copyright `owner` and `uri`?
+* What are some reasons for using a struct with two attributes, as opposed to two mappings for the copyright `owner` and `uri`?
 
 * **Answer:** Cheaper gas cost.
 
@@ -661,7 +663,7 @@ Ask the class the following review questions.
 
 * After having completed this exercise, can you think of any interesting EIP/ERC specification ideas?
 
-### 5. Instructor Do: Frontend Introduction (10 min)
+### 5. Instructor Do: Front-End Introduction (10 min)
 
 In this activity, you will demonstrate combining the `CryptoRight` contract with a pre-made frontend.
 
@@ -675,9 +677,9 @@ In this activity, you will demonstrate combining the `CryptoRight` contract with
 
 Explain to the class:
 
-* Since we built our `CryptoRight` contract to spec, we should be able to integrate a frontend that was designed against the same interface.
+* Since we built our `CryptoRight` contract to spec, we should be able to integrate a front end that was designed against the same interface.
 
-* In this scenario, a frontend developer built a graphical interface using the specification while you implemented the contract.
+* In this scenario, a front-end developer built a graphical interface using the specification while you implemented the contract.
 
 Copy the files linked above into a new directory, or copy the [cryptoright-frontend](Activities/03-Ins_Integrating_Frontend_Intro/Resources/cryptoright-frontend) folder into your workspace, to a project folder called `cryptoright-frontend`.
 
@@ -693,7 +695,7 @@ python -m http.server 8000
 
 * By serving from the directory, we are able to navigate to `localhost:8000`. Browsers automatically try to load `index.html` first, so since that file is present in our directory, our site will load automatically.
 
-Next, you will need to modify the `contract_address` variable stored in the frontend code to point at your deployed contract.
+Next, you will need to modify the `contract_address` variable stored in the front-end code to point at your deployed contract.
 
 Open up `dapp.js` in a code editor, and modify the first line of code. Copy the deployed contract address (redeploy a fresh contract if needed) from Remix, and set the `contract_address` variable:
 
@@ -701,9 +703,9 @@ Open up `dapp.js` in a code editor, and modify the first line of code. Copy the 
 const contract_address = "0xa5b70b3f9e02b2d0b85E10042a76b1A7F397Cc6b";
 ```
 
-* We must ensure this address matches our deployed contract; otherwise, the frontend will not know where to find the contract.
+* We must ensure this address matches our deployed contract; otherwise, the front end will not know where to find the contract.
 
-After that, all that is left is to ensure that the `CryptoRight.json` has the contract's ABI within.
+After that, all that remains is to ensure that the `CryptoRight.json` has the contract's ABI within.
 
 * The `CryptoRight.json` file contains the contract's ABI. This dApp automatically loads this file and expects it to be in the same directory. We'll want to ensure that our contract's ABI is in this file.
 
@@ -713,7 +715,7 @@ Next, navigate to `localhost:8000` in your web browser. You should see an interf
 
 ![CryptoRight UI](Images/cryptoright-ui.png)
 
-* This front-end fetches all `OpenSource` and `Copyright` events and displays them in a collapsible list. Since we have not copywritten anything yet, the UI is pretty empty.
+* This front-end fetches all `OpenSource` and `Copyright` events and displays them in a collapsible list. Since we have not copywritten anything yet, the UI is fairly empty.
 
 * The UI also allows us to upload files and JSON to Pinata, completely locally. It takes in the `name` and `description` fields we want to account for in our `reference_uri` JSON, as well as uploading an `image`.
 
@@ -721,7 +723,7 @@ Next, navigate to `localhost:8000` in your web browser. You should see an interf
 
 * Once the JSON is pinned to IPFS, a transaction is created via MetaMask that calls the `copyrightWork` or `openSourceWork` functions on the `CryptoRight` contract, passing in the `reference_uri` we generated.
 
-Now it's time to demonstrate using the frontend by creating sample copyright.
+Now it's time to demonstrate using the front end by creating sample copyright.
 
 First, navigate to your [Pinata Account Page](https://pinata.cloud/account), and copy over your API key and Secret API key into the corresponding fields in the form.
 
@@ -737,11 +739,11 @@ The form should look something like:
 
 You can choose to `Check to Open Source`, or leave unchecked. If checked, the `openSourceWork` function is called instead of `copyrightWork`.
 
-Submit the form once filled out by clicking `COPYRIGHT WORK` at the bottom of the form, and confirm the transaction that appears after uploading to IPFS:
+Once the form is filled out, submit by clicking `COPYRIGHT WORK` at the bottom of the form, and confirm the transaction that appears after uploading to IPFS:
 
 ![Form Submit](Images/cryptoright-submit.gif)
 
-* As you can see, notifications appeared on-screen updating the status of the copyright process.
+* As you can see, notifications appeared on-screen, updating the status of the copyright process.
 
 * Once finished, a transaction appears for confirmation. Confirming this transaction permanently etches the `reference_uri` we uploaded via Pinata to the blockchain.
 
@@ -751,15 +753,15 @@ You can expand the items in the accordion menus:
 
 ![Cryptoright Work](Images/cryptoright-work.png)
 
-* This frontend fetches the `reference_uri` and parses the JSON automatically, and also parses and renders the `image` as well!
+* This front end fetches the `reference_uri` and parses the JSON automatically, and also parses and renders the `image` as well!
 
 * Even though the only data stored on-chain is the `reference_uri`, we can fetch all of this metadata with it!
 
-Now it's time for students to integrate the frontend with their contracts!
+Now it's time for students to integrate the front end with their contracts!
 
-### 6. Student Do: Integrating a Pre-Built Frontend (15 min)
+### 6. Student Do: Integrating a Pre-Built Front End (15 min)
 
-In this activity, students will integrate the same frontend code with their `CryptoRight` contracts, and upload a few sample copyrights using the interface.
+In this activity, students will integrate the same front-end code with their `CryptoRight` contracts, and upload a few sample copyrights using the interface.
 
 Send out the instructions and have TAs circulate the class.
 
@@ -781,9 +783,9 @@ Have the TAs ensure that students:
 
 * Have replaced the `contract_address` variable in the `dapp.js` file with their deployed contract.
 
-* Have successfully implemented the contract. If the contract is not implemented properly, the frontend will not function.
+* Have successfully implemented the contract. If the contract is not implemented properly, the front end will not function.
 
-### 7. Instructor Do: Frontend Review (5 min)
+### 7. Instructor Do: Front-End Review (5 min)
 
 **Files:**
 
@@ -791,19 +793,19 @@ Have the TAs ensure that students:
 
 Open the solution and explain the following:
 
-* By setting `contract_address` to point at our deployed contract, the frontend can communicate with the contract via MetaMask.
+* By setting `contract_address` to point at our deployed contract, the front end can communicate with the contract via MetaMask.
 
-* Since our contract was built to spec, the ABI generated will be the same as any other contract built to the same spec. This allows the frontend to be developed independently from the contract.
+* Since our contract was built to spec, the ABI generated will be the same as any other contract built to the same spec. This allows the front end to be developed independently from the contract.
 
-* The dApp uploads an image to IPFS, then takes that images URI and stuffs it into JSON object that also contains `name` and `description`, and uploads that to IPFS. The final URI is used for the `reference_uri` when calling the `copyrightWork` or `openSourceWork` functions on the contract.
+* The dApp uploads an image to IPFS, then takes that image's URI and stuffs it into a JSON object that also contains `name` and `description`, and uploads that to IPFS. The final URI is used for the `reference_uri` when calling the `copyrightWork` or `openSourceWork` functions on the contract.
 
 Ask for any remaining questions before moving on.
 
-### 8. Instructor Do: Intro to Github Pages (10 min)
+### 8. Instructor Do: Intro to GitHub Pages (10 min)
 
-In this activity, you will demonstrate the elegant but straightforward Github themes that GitHub Pages provides by creating a landing page for this dApp that explains its purpose and the technology it is written with and linking to the subfolder.
+In this activity, you will demonstrate the elegant but simple GitHub themes that GitHub Pages provides. You will create a landing page for this dApp explaining its purpose, the technology it is written with, and linking it to the subfolder.
 
-This will allow students to create a simple website explaining their application, which will allow them to explain their applications to future employers better, and the world in general.
+In the following activity, students will create a simple website explaining their application, which will allow them to explain their applications to future employers better, and the world in general.
 
 **Files:**
 
@@ -815,13 +817,13 @@ This will allow students to create a simple website explaining their application
 
 * [README.md](Activities/05-Ins_Intro_Github_Pages/Resources/cryptoright/README.md)
 
-First, explain to the students what Github Pages allows us to do:
+First, explain to students what Github Pages allows us to do:
 
-* Github Pages is a service provided by Github that automatically creates websites from your git repositories.
+* GitHub Pages is a service provided by GitHub that automatically creates websites from your git repositories.
 
-* It allows us to define a `README.md` file and convert it into a simple landing page website that we can use to describe our application to new users, other developers, or future employers that you might want to show off to, that might not understand the full context of what your application does and how it works.
+* It allows us to define a `README.md` file and convert it into a simple landing page website that we can use to describe our application to new users, other developers, or future employers; essentially, anyone who might not fully understand what the application does and how it works.
 
-* We are going to create a simple `README.md` file, describe our application and link to it. Then, we just need to create a repository on Github, push our code to it, set a theme, and then we're live!
+* We are going to create a simple `README.md` file, describe our application, and link to it. Then, we just need to create a repository on GitHub, push our code to it, set a theme, and then we're live!
 
 In your workspace, create a folder called `cryptoright` and `cd` into it:
 
@@ -830,7 +832,7 @@ mkdir cryptoright
 cd cryptoright
 ```
 
-Next, move the frontend code from the previous folder you were working in that contained the `dapp.js`, `index.html`, and `CryptoRight.json` into a subfolder called `frontend`.
+Next, move the front-end code from the previous folder you were working in that contained the `dapp.js`, `index.html`, and `CryptoRight.json` into a subfolder called `frontend`.
 
 Create a `README.md` inside the top-level `cryptoright` folder.
 
@@ -841,7 +843,7 @@ Your directory tree should look something like:
 Within this `README.md` file, add some information explaining the application.
 You will also need to include a link to the dApp's `frontend` directory.
 
-* Github Pages will automatically convert the Markdown file into the HTML necessary to render the website's landing page. By including a link to the `frontend` directory in the `README.md` file, we can generate a URL that points to the dApp's frontend code from our landing page.
+* GitHub Pages will automatically convert the Markdown file into the HTML necessary to render the website's landing page. By including a link to the `frontend` directory in the `README.md` file, we can generate a URL that points to the dApp's front-end code from our landing page.
 
 For now, just add something simple like:
 
@@ -861,7 +863,7 @@ Click [here](frontend/index.html) to launch the CryptoRight application.
 
 * We can use regular Markdown syntax when writing our `README.md`. We just need to make sure that we include a link to `frontend/index.html` somewhere to point to our dApp.
 
-Next, create a new Github repository by navigating to [Github](https://github.com), clicking the `+` at the top right, and selecting `New Repository`:
+Next, create a new GitHub repository by navigating to [Github](https://github.com), clicking the `+` at the top right, and selecting `New Repository`:
 
 ![New Github Repo](Images/github-new-repo.png)
 
@@ -871,7 +873,7 @@ Give it a title and a short description.
 
 * We also do not need to initialize the repository with a `README` since we have one already.
 
-Next, run the first set of commands that Github provides for uploading existing code to the repo, minus the first line of code that `echo`s to the `README.md` file:
+Next, run the first set of commands that GitHub provides for uploading existing code to the repo, minus the first line of code that `echo`s to the `README.md` file:
 
 ![Github Upload CLI](Images/github-repo-cli.png)
 
@@ -879,7 +881,7 @@ Next, run the first set of commands that Github provides for uploading existing 
 
 * We don't need to run the `echo "# cryptoright" >> README.md` line, since we already have content in there.
 
-Once you run this set of commands, you will need to upload the rest of the frontend code, since this set only uploads the `README.md`:
+Once you run this set of commands, you will need to upload the rest of the front-end code, since this set only uploads the `README.md`:
 
 ```bash
 git add -A
@@ -891,27 +893,27 @@ After running this, all of the code should be uploaded to the repository.
 
 ![Github Upload Complete](Images/github-upload.png)
 
-Navigate to the repo settings on Github by clicking the `Settings` tab, and scroll down to the `Github Pages` section, and set the `Source` to `master`:
+Navigate to the repo settings on GitHub by clicking the `Settings` tab, and scroll down to the `Github Pages` section, and set the `Source` to `master`:
 
 ![Github Pages Setup](Images/github-pages-setup.gif)
 
-* By setting up the `Source` that Github Pages will use to `master`, we are telling it to build out everything inside of our repository into a website.
+* By setting up the `Source` that GitHub Pages will use to `master`, we are telling it to build out everything inside of our repository into a website.
 
 * All we need to do next is set a theme!
 
-Click the theme chooser in the same section, and play around with the themes, showing them off to the class a bit. Pick a theme, then navigate to the URL that Github Pages provides. You should see your website generated! **(This may take a few moments to reflect and may need a refresh.)**
+Click the theme chooser in the same section, and play around with the themes, showing them off to the class a bit. Pick a theme, then navigate to the URL that GitHub Pages provides. You should see your website generated! **(This may take a few moments to reflect and may need a refresh.)**
 
-Click on the link that you generated to take you to your dApp, and ensure MetaMask is pointed at the correct network. The dApp should request permissions to connect, and once on the same network, the contract is deployed to, the CryptoRight data should populate.
+Click on the link that you generated to take you to your dApp, and ensure MetaMask is pointed at the correct network. The dApp should request permissions to connect, and once on the same network the contract is deployed to, the CryptoRight data should populate.
 
 ![Github Pages Theme](Images/github-pages-theme.gif)
 
-* Just like that, we have created a nice and elegant landing page website for our dApp. Github Pages has a lot of customization that you can dig even deeper into to make a nice website without yet having to learn frontend development.
+* Just like that, we have created an elegant landing page website for our dApp. GitHub Pages has a lot of customization that you can dig even deeper into to make a nice website without yet having to learn front-end development.
 
-* We can also deploy our contracts to a live testnet like Kovan or Ropsten, even the Mainnet, all we need to change is the contract address in our frontend code!
+* We can also deploy our contracts to a live testnet like Kovan or Ropsten, or even the Mainnet. All we need to change is the contract address in our front-end code!
 
 Voila! Now it's time to have students create their own landing pages!
 
-### 9. Students Do: Create a Landing Page with GitHub Pages (15 min)
+### 9. Student Do: Create a Landing Page with GitHub Pages (15 min)
 
 Now it's time for the students to create their own landing pages!
 
@@ -933,37 +935,37 @@ Send out the instructions and have TAs circulate the room.
 
 Ensure the following:
 
-* Students are using their own ABIs in `CryptoRight.json` and that their frontends are functioning with the local `python -m http.server 8000` command before attempting this activity.
+* Students are using their own ABIs in `CryptoRight.json` and that their front ends are functioning with the local `python -m http.server 8000` command before attempting this activity.
 
-* Ensure that the students directory tree looks like the following:
+* Ensure that students' directory trees look like the following:
 
   ![Github File Tree](Images/github-pages-tree.png)
 
-* Ensure that within the `README.md` there is a link to the `frontend/index.html` file somewhere in order to generate the URL to the frontend dApp.
+* Ensure that within the `README.md` there is a link to the `frontend/index.html` file somewhere in order to generate the URL to the front-end dApp.
 
-### 10. Instructor Do: Github Pages Review (10 min)
+### 10. Instructor Do: GitHub Pages Review (10 min)
 
-Ask the students the following questions:
+Ask students the following questions:
 
-* What is the purpose of having a Github Pages website for our dApp?
+* What is the purpose of having a GitHub Pages website for our dApp?
 
   **Answer:** It allows us to demonstrate our expertise in a context that we can control.
 
   **Answer:** It allows us to write documentation websites, explain the purpose of our project, gain developer and user traction, and much more.
 
-* What facilitates the connection between our frontend code that Github Pages hosts, and the Ethereum networks that we have configured/connected to?
+* What facilitates the connection between our front-end code that GitHub Pages hosts, and the Ethereum networks that we have configured/connected to?
 
   **Answer:** MetaMask!
 
-* Would our frontend code work if we deployed it anywhere else?
+* Would our front-end code work if we deployed it anywhere else?
 
   **Answer:** Yes, as long as the browser has MetaMask installed, our dApp will run!
 
-* Would it be possible to deploy our frontend code to IPFS?
+* Would it be possible to deploy our front-end code to IPFS?
 
   **Answer:** Absolutely! However, it would require some code changes to make sure that the URLs referenced work properly.
 
-* Would it be possible to use Github Pages to create a portfolio website that allows us to show off more than this application?
+* Would it be possible to use GitHub Pages to create a portfolio website that allows us to show off more than this application?
 
   **Answer:** Absolutely! It should be leveraged wherever possible to give your work more exposure.
 
@@ -973,7 +975,7 @@ Ask the students the following questions:
 
 ---
 
-### 12. Students Do: Project Work (Remainder of Class)
+### 12. Student Do: Project Work (Remainder of Class)
 
 Students will use the remainder of the class to work on their projects.
 
@@ -983,4 +985,4 @@ Students will use the remainder of the class to work on their projects.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
