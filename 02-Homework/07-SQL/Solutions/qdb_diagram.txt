@@ -5,24 +5,26 @@ name VARCHAR(50)
 
 credit_card
 -
-card varchar(20) PK
+# We use VARCHAR(20) instead of BIGINT for card as these 
+# numbers are strings and won't be mathematically aggregated
+card VARCHAR(20) PK 
 id_card_holder int FK - card_holder.id
 
 merchant_category
 -
 id INT PK IDENTITY
-name	VARCHAR(15)
+name VARCHAR(15)
 
 merchant
 -
 id INT PK IDENTITY
-name	varchar(20)
+name VARCHAR(20)
 id_merchant_category INT FK - merchant_category.id
 
 transaction
 -
 id INT PK IDENTITY
-date	DATETIME
-amount	FLOAT
+date DATETIME
+amount FLOAT
 card VARCHAR(20) FK - credit_card.card
 id_merchant INT FK - merchant.id
