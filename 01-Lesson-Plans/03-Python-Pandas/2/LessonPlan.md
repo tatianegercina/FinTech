@@ -41,9 +41,9 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1Q2IZDPBF6Cc_fT-8sLSbAOvkZbX2R1TezHNskmRRF0Q/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/116ZvNoFKLHkn1fAUI42lS-vV9BJ-UNAAdNRo2Ndu02Q/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -67,7 +67,7 @@ Then, move to the "Hello Pandas!" section and highlight the following:
 
 Continue to the "Why Pandas?" slides, and highlight the following:
 
-* Since spreadsheets appeared in [1969 when the plant budgeting operations of AT&T first used LANPAR](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed finance and quants analysis forever.
+* Since spreadsheets first appeared in [1969 when the plant budgeting operations of AT&T first used LANPAR](http://www.renepardo.com/), then again with [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) and again with [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they have transformed finance and quants analysis forever.
 
 * However, as the volume and complexity of data has increased significantly, spreadsheets are now limited when it comes to data analysis.
 
@@ -93,7 +93,7 @@ Now ask students if they have experienced any disasters or significant challenge
 
 After discussing some of the common pain points of spreadsheets, introduce Pandas and highlight the following:
 
-* Fortunately, we have Pandas to help us manage data on Python.
+* Fortunately, we have Pandas to help us manage data in Python.
 
 * Pandas is one of the most powerful open source libraries in Python for analyzing and manipulating data.
 
@@ -119,7 +119,7 @@ After discussing some of the common pain points of spreadsheets, introduce Panda
 
 Explain to students that they have already installed Pandas through Anaconda, so they don't need to install additional libraries. However, if they have issues running Pandas, they can use a free notebook by [Google Colaboratory](https://colab.research.google.com/) and troubleshoot their installation with a TA during a break or office hours.
 
-Review the [instructions](../../../02-Homework/04-Pandas/Instructions/README.md) for the homework assignment. Focus on getting students excited about learning Pandas by previewing the skills and work they will accomplish by the end of the week. Emphasize calculating investment returns/profit over time, as well as plot visualizations.
+Review the [instructions](../../../02-Homework/04-Pandas/Instructions/README.md) for the homework assignment. During this unit and the next, students will learn everything they need to know to complete this assignment. Focus on getting students excited about learning Pandas by previewing the skills and work they will accomplish by the end of the week. Emphasize calculating investment returns/profit over time, as well as plot visualizations.
 
 If time allows, you can end by presenting the following Pandas applications which are discussed in more detail [here](https://data-flair.training/blogs/applications-of-pandas/) to give students a taste of what to expect in the field. Applications to highlight include:
 
@@ -129,7 +129,7 @@ If time allows, you can end by presenting the following Pandas applications whic
 
 * Data science
 
-Slack out the [above link](https://data-flair.training/blogs/applications-of-pandas/) to students so they can review the other applications outside of class.
+Slack out [this link](https://data-flair.training/blogs/applications-of-pandas/) to students so they can review the other applications outside of class.
 
 Answer any questions before moving on.
 
@@ -153,11 +153,11 @@ Open the lesson slides, move to "The Pandas DataFrame" section and highlight the
 
 * A Pandas DataFrame can be created in several ways, such as using a Python dictionary, a list of lists, or reading data from an external file like CSV or JSON.
 
-* The [Pandas DataFrame Documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and the [Pandas Getting Started Guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) are great resources if you want to learn more about creating DataFrames.
+* The [Pandas DataFrame Documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and the [Pandas Getting Started Guide](https://pandas.pydata.org/docs/getting_started/intro_tutorials/01_table_oriented.html) are great resources if you want to learn more about creating DataFrames.
 
 * Comma-separated values (CSV) is one of the most common file formats used to share data on finance. You will start working with DataFrames by creating them from CSV files.
 
-Slack out to students the [Pandas DataFrame Documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and the [Pandas Getting Started Guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) and encourage them to review these resources at their own pace.
+Slack out to students the [Pandas DataFrame Documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and the [Pandas Getting Started Guide](https://pandas.pydata.org/docs/getting_started/intro_tutorials/01_table_oriented.html) and encourage them to review these resources at their own pace.
 
 Continue by opening the two CSV files in the "Resources" directory (`sales.csv` and `sales_no_header.csv`) in VSCode or any other plain text editor to show students the format of the data. Point out that one file has a header, while the other does not. Refer back to these files during the demo as needed.
 
@@ -212,7 +212,7 @@ Continue the demo and explain to students that sometimes they may have situation
 
 Explain to students that if they load CSV files without a header into a DataFrame by passing just the file path to the `read_csv` function, the first row will be taken as the header.
 
-Continue the demo by loading the `sales_no_header` file into a DataFrame, then use the `head` method to demonstrate to students the default behaviour fo the `read_csv` function.
+Continue the demo by loading the `sales_no_header` file into a DataFrame, then use the `head` method to demonstrate to students the default behaviour for the `read_csv` function.
 
 ![Loading a CSV file with no header](Images/csv_no_header.png)
 
@@ -323,11 +323,11 @@ Open the solution file and demonstrate the fundamentals of column manipulation i
 
   ![column-names.png](Images/column-names.png)
 
-* The `columns` attribute can be assigned a new list of column values. This has certain restrictions, such as that the list of column names must match the number of columns in the DataFrame (no partial lists). This is valuable whenever column names need to be changed.
+* The `columns` attribute can be assigned a new list of column values. This has certain restrictions, such as requiring the length of the new list of column names to match the number of columns in the DataFrame (no partial lists). This is valuable whenever column names need to be changed.
 
   ![replace-columns.png](Images/replace-columns.png)
 
-* The `rename` function can be used to replace or update selective column names. Simply provide a dictionary to the column's parameter that has the following format:
+* The `rename` function can be used to replace or update column names selectively. Simply provide a dictionary to the column's parameter that has the following format:
 
   ```python
   {
@@ -362,7 +362,7 @@ Slack out the solution file to students to use as a reference. Now that students
 
 ### 6. Instructor Do: Data Cleaning (10 min)
 
-Students will now take part in a lecture and discussion about data cleaning. They will learn what data cleaning is, why it is necessary, and common strategies for cleaning data. This part of the lesson is crucial, as most of the data encountered in the real world are "dirty" and unusable.
+Students will now take part in a lecture and discussion about data cleaning. They will learn what data cleaning is, why it is necessary, and common strategies for cleaning data. This part of the lesson is crucial, as most of the data encountered in the real world is "dirty" and unusable.
 
 **Files:**
 
@@ -420,7 +420,7 @@ Discuss approaches for identifying data quality issues while you switch to Jupyt
 
 * To load the CSV file into the DataFrame, we set the parameter `index_col="order_no` to use the `order_no` columns as index instead of the default numerical index that Pandas generates.
 
-* To get a sample of the data, Pandas provides the `sample` function to the DataFrame to randomly select rows from a DataFrame; we will fetch five rows in this demo.
+* To get a sample of the data, Pandas provides the `sample` function to randomly select rows from a DataFrame. We will fetch five rows in this demo.
 
   ![LP_Ins_Data_Cleansing_Sample_Data.PNG](Images/LP_Ins_Data_Cleansing_Sample_Data.PNG)
 
@@ -468,7 +468,7 @@ At this point, ask students:
 
   ![LP_Ins_Data_Cleansing_No_Of_Null.PNG](Images/LP_Ins_Data_Cleansing_No_Of_Null.PNG)
 
-* Nulls can be cleaned by replacing them with a default value: "Unknown", 0, or mean(). This is exactly what the Pandas `fillna` does!
+* Nulls can be cleaned by replacing them with a default value: "Unknown", 0, or mean(). This is exactly what Pandas' `fillna` does!
 
 * `Fillna` will replace every instance of `null` with the provided default value. For this reason, the function should be executed against a Series.
 
@@ -523,11 +523,11 @@ Ask if there are any questions before moving on.
 
 ### 7. Student Do: Spring Cleaning (15 min)
 
-In this activity, students will perform a series of data quality checks on stock data to ensure the data is ready for analytical use. The objective of this activity is for students to learn how to clean data using Pandas native functions: `count`,`value_counts`,`isnull`,`sum`,`mean`,`contains`, and `replace`.
+In this activity, students will perform a series of data quality checks on stock data to ensure the data is ready for analytical use. The objective of this activity is for students to learn how to clean data using Pandas native functions: `count`, `isnull`,`sum`,`mean`,`fillna`, and `replace`.
 
 **Files:**
 
-* [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Unsolved/Core/spring_cleaning.ipynb)
+* [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Unsolved/spring_cleaning.ipynb)
 
 * [stock_data.csv](Activities/05-Stu_Data_Cleaning/Resources/stock_data.csv)
 
@@ -543,7 +543,7 @@ In this part of the lesson, review the solution to the data cleaning activity wi
 
 **Files:**
 
-* [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Solved/Core/spring_cleaning.ipynb)
+* [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Solved/spring_cleaning.ipynb)
 
 * [stock_data.csv](Activities/05-Stu_Data_Cleaning/Resources/stock_data.csv)
 
@@ -562,7 +562,7 @@ Open the solution file, review the activity solution, and highlight the followin
   ```
 
   ```text
-  (504, 13)
+  (504, 14)
   ```
 
 * Performing a `count` is a great way to assess how many records were loaded into a DataFrame for each Series. The output of `count` reflects the total number of non-null values.
@@ -572,6 +572,7 @@ Open the solution file, review the activity solution, and highlight the followin
   ```
 
   ```text
+  symbol                504
   name                  502
   sector                501
   price                 500
@@ -758,9 +759,9 @@ Continue the demo and highlight the following:
 
 ![Fetching summary statistics from all columns](Images/customer-df-describe-all.png)
 
-Explain to students that now you will show them how they can slide and dice the data. Highlight the following:
+Explain to students that now you will show them how they can slice and dice the data. Highlight the following:
 
-* By default, the index of a DataFrame is numerical and starts in zero. The `iloc[]` function returns row data based on a numerical index.
+* By default, the index of a DataFrame is numerical and starts at zero. The `iloc[]` function returns row data based on a numerical index.
 
   ![iloc-first-row](Images/iloc-first-row.png)
 
@@ -844,7 +845,7 @@ Open the solution file and explain the following while doing a dry walkthrough:
 
   ![First 10 Records](Images/first-10-records.png)
 
-* The `iloc[]` function allows for selecting the specific row and column indexes. In this case, the `:` keyword suggests that all rows will be returned from the `0`, `3`, `4`, `8`, `11`, and `16` column indexes.
+* The `iloc[]` function allows for selecting the specific row and column indexes. In this case, the `:` keyword suggests that all rows will be returned from the `0`, `3`, `4`, `8`, `11`, and `16` column indexes. We can also use slicing with `iloc[]` to create a new DataFrame.
 
   ![Specific Columns](Images/specific-columns.png)
 
@@ -853,10 +854,6 @@ Open the solution file and explain the following while doing a dry walkthrough:
   ```python
   loans_csv.describe(include="all")
   ```
-
-* To create a new DataFrame based on a few of the columns, we use slicing with `iloc`.
-
-  ![DataFrame subset](Images/df-subset.png)
 
 * The `loc[]` function combines conditionals with column-value reassignment to modify specific values within a DataFrame.
 
@@ -898,9 +895,9 @@ Open the unsolved version, live code the demo and explain the following:
 
 * Pandas makes visualization easy by including a DataFrame `plot()` function. The `plot()` function uses data from a DataFrame to set x- and y-axis data points.
 
-* The `plot()` function uses the `matplotlib`, a Python data visualization library, to create the plots.
+* The `plot()` function uses `matplotlib`, a Python data visualization library, to create the plots.
 
-* To display the plots in the notebook's canvas, you need to set a [Jupyter notebook's magic command](https://ipython.readthedocs.io/en/stable/interactive/magics.html) with the name `matplotlib`. A magic command allows us to add interactive elements to a Jupyter notebook, like plots.
+* To display the plots in the notebook's canvas, you need to set [Jupyter notebook's magic command](https://ipython.readthedocs.io/en/stable/interactive/magics.html) with the name `matplotlib`. A magic command allows us to add interactive elements to a Jupyter notebook, like plots.
 
 * To introduce a magic command, you should start with the percentage symbol `%` followed by the command name and, optionally, a parameter. In this demo, we pass the `inline` parameter to the `matplotlib` magic command to allow the plots to be displayed in the notebook's canvas.
 
@@ -932,7 +929,7 @@ Open the unsolved version, live code the demo and explain the following:
 
   ![bar-chart-large](Images/bar-chart-large.png)
 
-Slack out to students the [Pandas Visualization help document](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html) as a further reference to the different kind of plots Pandas includes. Ask if there are any questions before moving on.
+Slack out to students the [Pandas Visualization help document](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html) as a further reference to the different kinds of plots Pandas includes. Ask if there are any questions before moving on.
 
 ---
 
@@ -1024,15 +1021,18 @@ The following demo introduces students to calculating daily returns with Pandas.
 
 * [TSX_Data.csv](Activities/10-Ins_Returns/Resources/TSX_Data.csv)
 
-Open the unsolved version to begin the demo. Incorporate the following points into your demonstration as you live code the solution:
 
-Open the lesson slides and move to the "Results" section, introduce the concept of ROI, and highlight the following:
+Open the lesson slides and move to the "Returns" section, introduce the concept of ROI, and highlight the following:
 
 * A **return on investment (ROI)** is a percentage calculation that signifies either a profit or loss relative to the initial cost of an investment.
 
 * ROI calculations can be used to standardize and compare the investment performances of varying asset classes, such as equities, bonds, real estate, etc.
 
-Explain to students that ROI can be easily calculated in pure Python. Show them the code in the slide and switch to the unsolved version of the Jupyter notebook to begin the demo.
+* **Daily returns** are a series of returns calculated over several days, with each daily return representing the relative increase or decrease in investment between days.
+
+* **Cumulative returns** are a series of returns in which each return represents the relative increase or decrease in the price of an asset at the time `t`, compared to the initial price of that asset at the time `t0`. Cumulative returns describe the progression of the return on investment of an asset over time.
+
+Explain to students that ROI, daily returns and cumulative returns can all be easily calculated in pure Python. Show them the code in the slide for calculating ROI, then switch to the unsolved version of the Jupyter notebook to begin the demo.
 
 Incorporate the following points into your demonstration as you live code the solution:
 
@@ -1060,17 +1060,15 @@ Incorporate the following points into your demonstration as you live code the so
 
 * After calculating the ROI, you can see it's `0.1` or `10%`.
 
-Continue the demo and explain to students that you will cover some concepts about returns using sample data from the [S&P/TSX Composite Index](https://en.wikipedia.org/wiki/S%26P/TSX_Composite_Index).
+Continue the demo and explain to students that you will now cover calculating daily and cumulative returns using sample data from the [S&P/TSX Composite Index](https://en.wikipedia.org/wiki/S%26P/TSX_Composite_Index).
 
-Conduct a dry walkthrough on the code that loads the S&P TSX data and prepares the DataFrame to start the analysis. After plotting the daily close price, continue the demo and highlight the following:
+Conduct a dry walkthrough of the code that loads the S&P TSX data and prepares the DataFrame to start the analysis. After plotting the daily close price, continue the demo and highlight the following:
 
-* **Daily returns** are a series of returns calculated over several days, with each daily return representing the relative increase or decrease in investment between days.
-
-* The `shift()` function creates an offset of a DataFrame index by a specified amount. In this case, the index of the `tsx_csv` is offset by `1` to emulate the daily return formula.
+* When calculating *daily returns* we can use the `shift` function.  This function creates an offset of a DataFrame index by a specified amount. In this case, the index of the `tsx_csv` is offset by `1` to emulate the daily return formula.
 
   ![shift-function](Images/shift-function.png)
 
-* The `pct_change()` function calculates the percentage difference between each element of a time series. Therefore, for time series data such as daily closing prices of a stock, using the `pct_change()` function conveniently produces a series of daily returns.
+* Alternatively, the `pct_change()` function can be used.  This function calculates the percentage difference between each element of a time series. Therefore, for time series data such as daily closing prices of a stock, using the `pct_change()` function conveniently produces a series of daily returns.
 
   ![pct-change-function](Images/pct-change-function.png)
 
@@ -1078,9 +1076,7 @@ Conduct a dry walkthrough on the code that loads the S&P TSX data and prepares t
 
   ![Plot of Daily Returns](Images/daily-return-plot.png)
 
-* **Cumulative returns** are a series of returns in which each return represents the relative increase or decrease in the price of an asset at the time `t`, compared to the initial price of that asset at the time `t0`. Cumulative returns describe the progression of the return on investment of an asset over time.
-
-* The `cumprod()` function multiplies each number in a series with the next successive number until the end of the series.
+* To calculate *cumulative returns, we can use the `cumprod()` function.  This function multiplies each number in a series with the next successive number until the end of the series.
 
 * In the equation `(1 + daily_returns).cumprod()`:
 
@@ -1104,7 +1100,7 @@ Answer any questions before moving on.
 
 ### 17. Student Do: Returns Over Date Ranges (15 min)
 
-In this activity, students will analyze historical price data for Shopify and plot the daily returns over the previous 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each period to determine whether a short or long-term perspective should be used in prospecting Shopify as a potential investment opportunity.
+In this activity, students will analyze historical price data for Shopify and plot the daily returns over the previous 1-, 2-, 3-, and 4-year periods. They will also need to find and show the differences in average daily returns for each period to determine whether a short or long-term perspective should be used in prospecting Shopify as a potential investment opportunity.
 
 **File:**
 
