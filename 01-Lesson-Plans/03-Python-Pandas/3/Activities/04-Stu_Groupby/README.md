@@ -24,11 +24,9 @@ Use the starter file and the historical stock data provided to complete the foll
 
 7. Calculate `min` price across two years for each `cryptocurrency`.
 
-8. Answer the following questions:
+8. Answer the following question:
 
-    * Which coin would you recommend investing in?
-
-    * Which coin had the largest swing in prices?
+    * What does the data say about crypto performance in the past two years? 
 
 ---
 

@@ -10,11 +10,13 @@ Use the starter file to complete the following steps:
 
 1. Use `read_csv` to load the CSV data into a Pandas DataFrame called `bbd_df`.
 
-2. In the `read_csv` function, set the index to equal `Date` series. Enable the  `parse_dates` and `infer_datetime_format` parameters.
+2. In the `read_csv` function, set the index to equal the `Date` series. Enable the  `parse_dates` and `infer_datetime_format` parameters.
 
-3. Group data by DatetimeIndex year and month.
+3. Assess and clean the data.
 
-4. Select close price for `BBD.B` for May 2019 by passing in values for `year` and `month` indices.
+4. Group data by DatetimeIndex year and month.
+
+5. Select close price for `BBD.B` for May 2019 by passing in values for `year` and `month` indices.
 
 ### Challenge
 
