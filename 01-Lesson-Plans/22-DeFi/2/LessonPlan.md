@@ -26,6 +26,8 @@ By the end of the class, students will be able to:
 
 * Refer to the `IPFS` documentation for further information about [IPFS Docs](https://docs.ipfs.io/)
 
+* Recall to students that we will use version 2.5 of the OpenZeppelin library for class activities.
+
 ---
 
 ### Slideshow and Time Tracker

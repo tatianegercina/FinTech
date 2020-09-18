@@ -2,7 +2,7 @@
 
 ---
 
-### Take the End-Course Instructional Staff Survey 
+### Take the End-Course Instructional Staff Survey
 
 Trilogy is a company that values transparency and data-driven change. As we grow, we know there will be areas that need improvement, and in order to do that effectively, we need your input. Your insights truly matter, since you are an integral member of the Trilogy team. In addition to the individual feedback at the end of each lesson plan, we would appreciate your feedback via the following link, if you have not already taken the end-course survey:
 
@@ -42,7 +42,7 @@ By the end of the class, students will be able to:
 
 * Refer to the `IPFS` documentation for further information about [IPFS Docs](https://docs.ipfs.io/)
 
-* Recall to students that we will use version 2.5 of the OpenZeppelin for class activities.
+* Recall to students that we will use version 2.5 of the OpenZeppelin library for class activities.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
@@ -261,7 +261,7 @@ Inside the body of the `newAppraisal` function, set the passed token_id's apprai
 
  * It increments the new appraisal amount for the given `token_id` inside the `art_collection` mapping.
 
- * It `emits` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal, and the `report_uri`. 
+ * It `emits` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal, and the `report_uri`.
 
  * It returns the current artwork `appraisal_value` after the latest appraisal.
 
@@ -377,7 +377,7 @@ contract CryptoFax is ERC721Full {
 
  * It increments the number of accidents for the given `token_id` inside the car's mapping.
 
- * It `emits` the `Accident` event passing it the given `token_id` and `report_uri`. 
+ * It `emits` the `Accident` event passing it the given `token_id` and `report_uri`.
 
  * It returns the current number of accidents after the latest accident.
 
@@ -421,7 +421,7 @@ Begin by giving the students some background on IPFS, such as what it is and how
 
 * So what is IPFS?
 
-* IPFS stands for `InterPlanetary File System`. It is a `Protocol`, a `Network`, and a `File System`. 
+* IPFS stands for `InterPlanetary File System`. It is a `Protocol`, a `Network`, and a `File System`.
 
 * So what exactly does this mean, and how does it all fit together?
 

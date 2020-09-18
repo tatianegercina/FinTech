@@ -30,6 +30,8 @@ By the end of the class, students will be able to:
 
 * Refer to the [Solidity documentation for open auctions](https://solidity.readthedocs.io/en/v0.5.11/solidity-by-example.html#simple-open-auction).
 
+* Recall to students that we will use version 2.5 of the OpenZeppelin library for class activities.
+
 * Have your TAs keep track of the [Time Tracker](TimeTracker.xlsx).
 
 ### 1. Instructor Do: Welcome to Class (10 min)
