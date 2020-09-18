@@ -5,8 +5,11 @@ CREATE TABLE card_holder (
 );
 
 CREATE TABLE credit_card (
-  card VARCHAR(20) NOT NULL,
+  card VARCHAR(20) NOT NULL, 
+  -- We use VARCHAR(20) instead of BIGINT for card as these 
+  -- numbers are strings and won't be mathematically aggregated
   id_card_holder INT,
+  FOREIGN KEY (id_card_holder) REFERENCES card_holder (id),
   PRIMARY KEY (card)
 );
 
