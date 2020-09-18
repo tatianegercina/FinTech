@@ -85,9 +85,28 @@ For those with a **Windows operating system**, execute the following steps:
 
  ![Open CMD as Admin - 5](Images/cmd-as-admin-5.png)
 
+  * If you do not see something similar to the above output when running ` php -version`, then your environement varibles may not be set correctly. Perform the steps in the below troubleshooting section to make sure that your environment variables are correctly set.
+
+#### Windows Environment Troubleshooting
+
+> WARNING: If you run into the errror `The data being saved is truncated to 1024 characters` then you most likely need to perform the below steps.
+
+1. Click the Windows search and search for `System Properties`, then launch the application.
+
+2. Next at the bottom of the dialog click `Environment variables`.
+
+3. Then under `System Variables` find the `Path` variable and click `edit`.
+
+4. Now click `New` and enter your XAMP path, e.g.  `C:\xampp\php`.
+
+5. Finish by clicking `OK` on each window.
+
+![System Properties Add environment Variable](Images/windows-set-environment_variables.png)
+
 ### Environment Setup in OS X Operating System
 
 For those with a **Mac OS X operating system**, there are two options to install PHP, you can update the OS X pre-built PHP version up to `v7.3`, or you can use the Homebrew package manager. Both methods work great. Your choice will depend on whether or not you want or have the right to use Homebrew in your computer; some corporate computers have policies that restrict the usage of third-party package managers like Homebrew.
+
 
 #### Option 1: Installing PHP by Updating the Pre-Built PHP in Mac OS X
 
@@ -194,6 +213,8 @@ Execute the following steps:
  ![hd-wallet-derive-github](Images/hd-wallet-derive-github.png)
 
 * Next, open a terminal and execute the following commands. If you are using Windows, you will need to open the `git-bash` GUI via `C:\Program Files\Git\bin\bash.exe` directly to enable something called `tty` mode that makes the terminal more compatible with Unix systems. Once installed, you may move back to using the usual `git-bash` terminal.
+
+> **Warning**: When cloning the project be conscious of what folder you are cloning the files into. It would probably be best to clone it into your `Blockchain-Tools` folder.
 
  ```shell
  git clone https://github.com/dan-da/hd-wallet-derive
