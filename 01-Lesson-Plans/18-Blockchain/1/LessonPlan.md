@@ -599,7 +599,8 @@ If you encounter any issues with requesting KETH from the Kovan faucet, the foll
 
 `use trouble sponsor panda camp grow pact matrix chief black napkin ghost`
 
-If you end up needing to use this wallet, simply import it into MyCrypto, change to the Kovan network, then distribute the KETH to the class and yourself.
+If you end up needing to use this wallet, simply import it into MyCrypto, change to the Kovan network, make sure you select `TESTNET` from the drop down when choosing an account, then distribute the KETH to the class and yourself.
+
 Since you can work with very small amounts of Ether, you should have plenty of KETH to work with. Sending `0.1` at a time should suffice.
 Make a note to help refill this later for other instructors once the Kovan faucet is back up and running.
 
