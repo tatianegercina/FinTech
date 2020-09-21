@@ -1,8 +1,8 @@
 # Visualizing Transactions
 
-Now it's time to visualize the transactions using `Etherscan`..
+Now it's time to visualize transactions using `Etherscan`.
 
-Get into small groups up to three people, or work with the same groups as before.
+Get into small groups of up to three people, or work with the same groups as before.
 
 ## Instructions
 
@@ -10,7 +10,7 @@ Get into small groups up to three people, or work with the same groups as before
 
 2. Each member of the group, should send a transaction to every member of the group using MyCrypto.
 
-3. Elect one member of the group to send out a transaction hash to the rest of the group.
+3. Select one member of the group to send out a transaction hash to the rest of the group.
 
 4. Paste the address into the search on Etherscan:
 
@@ -46,7 +46,7 @@ Get into small groups up to three people, or work with the same groups as before
 
 13. Can you tell how frequently the test faucet is being tapped from here?
 
-14. What other information can you gleam from these transactions?
+14. What other information can you glean from these transactions?
 
 ---
 
