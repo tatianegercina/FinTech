@@ -549,7 +549,7 @@ At this point, you have created your wallet; now, you need to unlock it to start
 
  ![Unlock wallet step 4](Images/unlock-4.png)
 
-10. At the bottom left of the app, click on "Change network" and select `kovan`. Note that if `kovan` was not selected when you change the network, you should unlock your wallet address again by following steps `6` to `8`.
+10. Next, verify that you are connected to the `kovan` network. At the bottom left of the app, click on "Change network" and select `kovan`. Note that if `kovan` was not already selected when you change the network, you will be required to unlock your wallet address again by following steps `6` to `8`.
 
  ![Change network](Images/change_network_kovan.gif)
 
