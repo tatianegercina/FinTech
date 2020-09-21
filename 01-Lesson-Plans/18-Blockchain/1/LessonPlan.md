@@ -667,7 +667,7 @@ Have TAs circulate to provide assistance to students facing challenges or to cla
 
 Review the groups and ensure that students can navigate and visualize transactions.
 
-Recap by asking the students to answer these questions:
+Recap by moving to the "Visualizing Transactions" slide and asking the students to answer these questions:
 
 * "What is a transaction hash?"
 
