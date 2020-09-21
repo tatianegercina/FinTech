@@ -4,7 +4,7 @@
 
 Today's class will introduce students to blockchain technologies. Students will learn the fundamentals of what the technology is, the types of problems it solves, and how it works.
 
-Most of the people believe that blockchain is only about cryptocurrencies; the goal of this lesson is to break this myth, and get the students thinking about how blockchain technology is used and how it will likely affect their lives as a FinTech entrepreneur, as well as be able to use essential tools like wallets and block explorers to navigate the space and to hold a conversation about the topic.
+Most people believe that blockchain is only about cryptocurrencies; the goal of this lesson is to break this myth, and get the students thinking about how blockchain technology is used and how it will likely affect their lives as a FinTech entrepreneur, as well as be able to use essential tools like wallets and block explorers to navigate the space and to hold a conversation about the topic.
 
 ### Class Objectives
 
@@ -34,7 +34,7 @@ By the end of the class, students will be able to:
 
 * While blockchain inherently has a finance-heavy set of use cases, encourage students to think bigger, since the technology can be used for building secure, globally distributed software.
 
-* There is an activity called "Peoplechain" aimed to emulate the public, censor resistant, and borderless nature of the blockchain; be sure to read through before the class.
+* There is an activity called "Peoplechain" aimed to emulate the public, censor resistant, and borderless nature of the blockchain; be sure to familiarize yourself with it before the class.
 
 * **If you encounter any issues with requesting KETH from the Kovan faucet**, the following mnemonic phrase has been pre-funded with test tokens (**for instructors only!**):
 
@@ -48,7 +48,7 @@ By the end of the class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [18.1 Lesson Slides](https://docs.google.com/presentation/d/10N2RJvw29ZurhdpqWQV1a9IvkI2Mu4lTbp98w9tYYxU/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [18.1 Lesson Slides](https://docs.google.com/presentation/d/1UhEDzVmzO_coz_GW6KT3KlEy7DcPtvOKQsIkaGdro9I/edit?usp=sharing ).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -74,11 +74,11 @@ Open the lesson slides and highlight the following:
 
 * Traditional financial institutions have been skeptical about blockchain technology, however, JP Morgan Chase, the largest U.S. bank, created [Quorum](https://www.goquorum.com/), an Ethereum-based blockchain, in order to leverage the security that blockchain provides for their own systems (and, probably, because they are afraid of being left in the dust by this new technology!).
 
-* In this unit, you will be building your blockchain wallets, write smart contracts, and construct a blockchain from scratch.
+* In this unit, you will build your own blockchain wallets, write smart contracts, and construct a blockchain from scratch.
 
 Some of this may seem intimidating to the students, so express that you are proud of how far the class has already traveled together as a team; after 17 weeks together, the students can do Python, Pandas, and machine learning!; By the end of this block (get it?), they will be able to speak “blockchain” -- but we’re going far beyond the terminology.
 
-Explain to the class that this final stage is huge. That’s going to be challenging, but you know they can do it - after all, they’ve made it this far!
+Explain to the class that this final stage is huge. It's going to be challenging, but you know they can do it - after all, they’ve made it this far!
 
 Answer any questions before moving on.
 
@@ -112,7 +112,7 @@ Remark on the results.
 
 Take a mental note of the students with strong familiarity with blockchain, as you will be able to distribute them among groups that have less knowledge about the topic.
 
-Ask the students to hold out again a fist-to-five (fist for 0, 5 fingers up for 5) to answer how familiar they were with the following topics before they started the course.
+Ask the students to again hold out a fist-to-five (fist for 0, 5 fingers up for 5) to answer how familiar they were with the following topics before they started the course.
 
 * How familiar were you with Python?
 
@@ -122,7 +122,7 @@ Ask the students to hold out again a fist-to-five (fist for 0, 5 fingers up for 
 
 Remind the students that just like they learned how to master Python and ML, and they will surprise themselves with how much they learn over the coming weeks.
 
-It may seem like a foreign language at times, but they’ve already learned a new language as part of this course, and you and the TAs will be there to guide them.
+It may seem like a foreign language at times, but they’ve already learned a new language (Python) as part of this course, and you and the TAs will be there to guide them.
 
 Tell the students it’s time to dig into blockchain: first things first, let’s start with a definition.
 
@@ -265,7 +265,7 @@ Begin by prefacing that each of these pillars ties into each other to build an o
 
 * Explain to the students that borderless means precisely that, a network without geographical or political borders.
 
-* To be borderless, the network needs to be decentralized. This means that any central party does not hold control of the network.
+* To be borderless, the network needs to be decentralized. This means that no one, central party can hold control of the network.
 
 * Since the blockchain is synchronized onto every device that helps maintain it (called nodes), it lives everywhere.
 
@@ -329,7 +329,7 @@ Answer any questions before moving on.
 
 ### 7. Student Do: Peoplechain (15 min)
 
-For this activity, students will emulate the public, censor resistant, and borderless nature of the blockchain by creating a distributed ledger like system breaking up into groups and using themselves as network participants.
+For this activity, students will emulate the public, censor resistant, and borderless nature of the blockchain by creating a distributed ledger-like system breaking up into groups and using themselves as network participants.
 
 #### Activity Logistics
 
@@ -367,7 +367,7 @@ Ask every group to make a list of all the transactions they have a record of in 
 
 Ask each group to slack their list to you.
 
-Show the two different lists on the board. They should be the same, if they aren’t, ask: why aren’t these the same?
+Show the two different lists on the board. They should be the same - if they aren’t, ask: why aren’t these the same?
 
 Did someone miss a transaction? In this case, keep in mind this is why we have computers do it for us.
 
@@ -405,7 +405,7 @@ Answer any questions before moving on.
 
 ---
 
-### 9. Student Do: Basic Terminology (10 min)
+### 9. Student Do: Basic Terminology (5 min)
 
 For this activity, students will Google common terminology used in blockchain development.
 
@@ -431,7 +431,7 @@ Navigate to the slides and define common terms:
 
 * There are several popular hashing algorithms, SHA256 being one of the most popular.
 
-* However, it is easy to run the hash function over the same data again to verify the result is the same.
+* It is easy to run the hash function over the same data again to verify the result is the same.
 
 * If you were to change a single bit of the input, you would get a completely different hash. This allows for something called "data integrity" which is a very important part of the internet and data security as well as blockchain technology.
 
@@ -461,11 +461,11 @@ Ask the students, "If a signed message is modified, what happens?"
 
 #### Transaction
 
-At this point, students should be curious about what a transaction is in the context of blockchain, continue with the slides, and highlight the following:
+At this point, students should be curious about what a transaction is in the context of blockchain. Continue with the slides, and highlight the following:
 
 * A transaction is simply a signed message that authorizes a movement of funds between two parties.
 
-* It is essentially "I sign off on the movement of X amount of value from account A to account B" -- now that it is signed off, nobody can modify it.
+* It essentially means: "I sign off on the movement of X amount of value from account A to account B" -- now that it is signed off, nobody can modify it.
 
 #### Blockchain Node
 
@@ -483,9 +483,9 @@ At this point, students should be curious about what a transaction is in the con
 
 * Each miner races against each other to perform this process first, and the winner is rewarded by the network for its work. Then this race happens again and again for each new block in the chain.
 
-Reassure the students that we will dive deeper into the mechanisms in which nodes and miners communicate with each other, as well as the full life cycle of a transaction from creation to being stored in a block.
+Reassure the students that we will dive deeper into the mechanisms nodes and miners use to communicate with each other, as well as the full life cycle of a transaction from creation to being stored in a block.
 
-After the break, students will learn how to use a cryptocurrency wallet using [MyCrypto Desktop App](https://download.mycrypto.com/), ask the class if everyone has installed the app if some students don't, ask them to reach you or TAs during the break to install it.
+After the break, students will learn how to use a cryptocurrency wallet using [MyCrypto Desktop App](https://download.mycrypto.com/). Ask the class if everyone has installed the app and if some students have not, ask them to reach out to you or the TAs during the break to install it.
 
 Answer any questions before moving on.
 
@@ -505,27 +505,27 @@ You will lead the activity, and the students should follow you along the process
 
 Open the MyCrypto App, and follow the next steps along with the demo.
 
-1. On the left menu, click on "Create New Wallet", next on the right-side panel click on "Generate a Wallet" under the "Create New Wallet Section."
+1. On the left menu, click on "Create New Wallet", then on the right-side panel click on "Generate a Wallet" under the "Create New Wallet Section."
 
  ![Create wallet](Images/create.png)
 
- Explain to students, that we are going to use this option since we are going to make transactions with test Ethereum tokens, this is the best option for testing proposes and it has no cost; students shouldn't be worried about the warning message in red letters that states that this option is "Commonly a target for phishing or hacking".
+ Explain to students, that we are going to use this option since we are going to make transactions with test Ethereum tokens. This is the best option for testing purposes and it has no cost; students shouldn't be worried about the warning message in red letters that states that this option is "Commonly a target for phishing or hacking".
 
 2. In the "Create New Wallet" screen, scroll down to the "Mnemonic Phrase" option and click on the "Generate a Mnemonic Phrase" button.
 
  ![Create nmemonic](Images/mnemonic.gif)
 
-3. MyCrypto will generate a unique mnemonic phrase for you, write down this phrase **in order** and store it in a safe place. Do not share this phrase with anyone, treat it like your banking password. Note that the mnemonic phrase bellow is just a sample and will differ in your demo.
+3. MyCrypto will generate a unique mnemonic phrase for you, write down this phrase **in order** and store it in a safe place. Do not share this phrase with anyone - treat it like your banking password. Note that the mnemonic phrase below is just a sample and will differ in your demo.
 
  ![Confirm mnemonic](Images/mnemonic.png)
 
  After writing down this phrase, click on the "Confirm Phrase" button to continue.
 
-4. In the next screen, you will need to confirm the phrase by clicking your words in order. Click on the "Confirm Phrase" button after clicking on the words in order.
+4. On the next screen, you will need to confirm the phrase by clicking your words in order. Click on the "Confirm Phrase" button after clicking on the words in order.
 
  ![Confirm mnemonic step 2](Images/mnemonic_confirm.gif)
 
-5. In the next screen, you will see the steps you will need to unlock your account in the future.
+5. On the next screen, you will see the steps you will need to unlock your account in the future.
 
  ![Unlock wallet steps](Images/MyCryptop-Unlock-Steps.png)
 
@@ -545,15 +545,15 @@ At this point, you have created your wallet; now, you need to unlock it to start
 
  The address you unlocked is the address of your cryptocurrency wallet for the Ethereum network.
 
-9. Once you unlocked the address, it's time to make your first transaction. In the next screen, you can see the balance of your wallet, `0 ETH` right now, and the account address. Copy the address by clicking on the "copy address" option to continue.
+9. Once you unlock the address, it's time to make your first transaction. In the next screen, you can see the balance of your wallet, `0 ETH` right now, and the account address. Copy the address by clicking on the "copy address" option to continue.
 
  ![Unlock wallet step 4](Images/unlock-4.png)
 
-10. At the bottom left of the app, click on "Change network" and select `kovan`. Note that if `kovan` was not selected when you change the network, you should unlock your wallet address again by following steps `6` to `8`.
+10. Next, verify that you are connected to the `kovan` network. At the bottom left of the app, click on "Change network" and select `kovan`. Note that if `kovan` was not already selected when you change the network, you will be required to unlock your wallet address again by following steps `6` to `8`.
 
  ![Change network](Images/change_network_kovan.gif)
 
-Explain to students that, to test a blockchain, there are testing networks (aka `testnets`) that contain a group of testing addresses for development proposes. In the case of Ethereum, the most commonly used testnets are `kovan` and `ropsten`. We will use `kovan` for this demo since it's faster on delivering testing tokens than `ropsten`.
+Explain to students that, to test a blockchain, there are testing networks (aka `testnets`) that contain a group of testing addresses for development purposes. In the case of Ethereum, the most commonly used testnets are `kovan` and `ropsten`. We will use `kovan` for this demo because it delivers test tokens faster than `ropsten`.
 
 11. Now you are going to request a test Ethereum token from the `kovan` network, and it's going to be transferred to your wallet. Open your browser, and navigate to the testnet token faucet at [https://faucet.kovan.network/](https://faucet.kovan.network/). Once you open the page, click on the "Login with Github" button to continue.
 
@@ -563,11 +563,11 @@ Explain to students that the faucet is a means of providing test tokens to users
 
 * For this demo, the faucet will allow us to request Kovan Ether (KETH) to be used on Kovan Ethereum test network.
 
-12. After login into the faucet, you will see the following form where you can request one Kovan Ether every 24 hours. Paste the wallet address into the `Kovan address` box and click on the "Send me KETH!" button to continue.
+12. After logging into the faucet, you will see the following form where you can request one Kovan Ether every 24 hours. Paste the wallet address into the `Kovan address` box and click on the "Send me KETH!" button to continue.
 
  ![Request ETH -2 ](Images/request-eth-2.png)
 
-13. Once you request the testing KETH token, you will see the following screen that confirms that the transaction was successfully completed.
+13. Once you request the KETH test token, you will see the following screen that confirms that the transaction was successfully completed.
 
  ![Request ETH -3 ](Images/request-eth-3.png)
 
@@ -577,7 +577,7 @@ Explain to students that the faucet is a means of providing test tokens to users
 
 Explain to students that `Etherscan` is a visual BlockExplorer for the Ethereum Blockchain. A BlockExplorer is a search engine that allows users to easily lookup, confirm, and validate transactions that have taken place on the Ethereum Blockchain.
 
-15. Once you confirmed that the transaction was successful, go back to MyCrypto App and refresh your wallet balance by clicking on the refresh icon. Note that now you have one ETH in your wallet, remember that this is not real ETH, it's a testing token for development proposes with no monetary value.
+15. Once you have confirmed that the transaction was successful, go back to MyCrypto App and refresh your wallet balance by clicking on the refresh icon. Note that now you have one ETH in your wallet. Remember, this is not real ETH, it's a testing token for development purposes with no monetary value.
 
  ![Request ETH -4 ](Images/request-eth-5.gif)
 
@@ -587,7 +587,7 @@ Explain to students that `Etherscan` is a visual BlockExplorer for the Ethereum 
 
  ![ETH Transaction](Images/eth-transaction-1.gif)
 
-Explain to students that as they can see in the message that appears after the transaction, it's not an immediate operation; after a transaction is sent, it's mined and confirm in a process that could take three or more hours. You can check the status of the transaction on `Etherscan` using the links provided after the transaction.
+Explain to students that, as they can see in the message that appears after the transaction, it's not an immediate operation; after a transaction is sent, it's mined and confirmed in a process that could take three or more hours. You can check the status of the transaction on `Etherscan` using the links provided after the transaction.
 
 Inform the students:
 
@@ -599,7 +599,8 @@ If you encounter any issues with requesting KETH from the Kovan faucet, the foll
 
 `use trouble sponsor panda camp grow pact matrix chief black napkin ghost`
 
-If you end up needing to use this wallet, simply import it into MyCrypto, change to the Kovan network, then distribute the KETH to the class and yourself.
+If you end up needing to use this wallet, simply import it into MyCrypto, change to the Kovan network, make sure you select `TESTNET` from the drop down when choosing an account, then distribute the KETH to the class and yourself.
+
 Since you can work with very small amounts of Ether, you should have plenty of KETH to work with. Sending `0.1` at a time should suffice.
 Make a note to help refill this later for other instructors once the Kovan faucet is back up and running.
 
@@ -609,7 +610,7 @@ Answer any questions before moving on.
 
 ---
 
-### 13. Instructor Do: Block Explorers Demo (10 minutes)
+### 13. Instructor Do: Block Explorers Demo (5 minutes)
 
 The goal of this demo is to show the students how block explorers can be used to visualize transactions on the blockchain.
 
@@ -623,7 +624,7 @@ Comment to students that the web browser will open the `Etherscan` BlockExplorer
 
 * The balance field reflects that this wallet is part of the public nature of blockchains; some blockchains have this field hidden, like `Zcash` or `Monero`.
 
-* The list of transactions keeps track of all the movements of this account has made, it can be seen that every transaction has a "Transaction Hash" column on the very left.
+* The list of transactions keeps track of all the movements this account has made. It can be seen that every transaction has a "Transaction Hash" column on the very left.
 
 Click on the transaction hash for the first transaction, and ask the students what they think a transaction hash might be, and what it might be used for.
 
@@ -667,7 +668,7 @@ Have TAs circulate to provide assistance to students facing challenges or to cla
 
 Review the groups and ensure that students can navigate and visualize transactions.
 
-Recap by asking the students to answer these questions:
+Recap by moving to the "Visualizing Transactions" slide and asking the students to answer these questions:
 
 * "What is a transaction hash?"
 
@@ -675,7 +676,7 @@ Recap by asking the students to answer these questions:
 
 * "What type of information is available to you on a public blockchain's block explorer?"
 
-  **Answer:** Practically everything, balances, transaction history, data stored on-chain, etc.
+  **Answer:** Practically everything: balances, transaction history, data stored on-chain, etc.
 
 * "Is this a fully anonymous blockchain?"
 
@@ -689,7 +690,7 @@ Explain to the class that while the current version of Ethereum is pseudonymous,
 
 * This means that in the future, transactions will be private, and you will only be able to view transactions that you are a part of.
 
-* There are currently public blockchains, like `Zcash`, that implement this now by default, so be on the lookout for zero-knowledge protocols in future blockchain upgrades.
+* There are currently public blockchains, like `Zcash`, that implement this by default, so be on the lookout for zero-knowledge protocols in future blockchain upgrades.
 
 Answer any questions before moving on.
 
@@ -715,13 +716,13 @@ recipient = "0xc3879B456DAA348a16B6524CBC558d2CC984722c"
 wallet.send_transaction(amount, recipient)
 ```
 
-Comment to students that, despite this is pseudocode, it should get the point across. Continue through the lesson slides and highlight the following.
+Comment to students that, despite this being pseudocode, it should get the point across. Continue through the lesson slides and highlight the following.
 
 * Ethereum secures over $20 billion Dollars in assets without a central authority. It powers a huge ecosystem of decentralized applications and financial ecosystems.
 
 * First generation blockchains were much like the days of carrying a cell phone, iPod, and calculator with you. Each solved a specific problem.
 
-* Ethereum brought to blockchains what the iPhone brought to personal computing, a general-purpose platform where apps take the place of separate devices.
+* Ethereum brought to blockchains what the iPhone brought to personal computing - a general-purpose platform where apps take the place of separate devices.
 
 * Now, you can build fully-fledged applications, called "Smart Contracts" on top of the blockchain with Ethereum.
 
@@ -741,7 +742,7 @@ If students are unclear as to how this works, reassure them that they will be le
 
 * The most significant point to get across is that everyone shares computing power to create a platform that anyone can upload and run code on top of.
 
-Now, transition to talk about the types of financial services that you can build with Ethereum:
+Now, transition to a discussion about the types of financial services that you can build with Ethereum:
 
 * Payments - Peer to Peer, Business to Business, Business to Customer, Machine to Machine
 
@@ -759,7 +760,7 @@ Now, transition to talk about the types of financial services that you can build
 
 * Decentralized crypto exchange - Using the blockchain as a backend to support a crypto-trading exchange.
 
-* Tokenizing assets - Representing things from Dollars, Gold, Securities, to unique video game assets an on the blockchain.
+* Tokenizing assets - Representing things from Dollars, Gold, Securities, to unique video game assets on the blockchain.
 
 Answer any questions before moving on.
 
