@@ -18,7 +18,7 @@ Get into three groups.
 
 #### Money Senders
 
-You are up! Once the instructor says “go,” you will:
+You're up! Once the instructor says “go,” you will:
 
 1. Spread out over the class. You are all going to work individually to send transactions via Slack to members of the other two groups.
 
@@ -34,9 +34,9 @@ Repeat steps 1 to 3 with different students, different amounts, and various fees
 
 #### Record Keepers
 
-You are up (both groups 2 and 3). Once the instructor says “go,” you will:
+You're up (both groups 2 and 3)! Once the instructor says “go,” you will:
 
-* Both groups should elect one Slacker for their group. This person will not be slacking off. Instead, they will be slacking messages back and forth with the other country.
+* Both groups should select one "Slacker" for their group. This person will not be slacking off though! Instead, they will be slacking messages back and forth with the other country.
 
 * If anyone receives a transaction from the Money Senders, copy and paste it into your personal Slack (slack it to yourself). This will be your personal ledger.
 

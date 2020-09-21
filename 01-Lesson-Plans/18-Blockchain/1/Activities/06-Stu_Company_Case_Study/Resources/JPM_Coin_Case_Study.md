@@ -2,11 +2,11 @@
 
 ## What Is It
 
-JPM Coin is a digital coin that JP Morgan Chase announced in February to allow institutional customers to make instantaneous payments to other institutional customers using blockchain technology. Although these payments can only be made in US Dollars at present, Morgan plans to expand their offering to other currencies.
+JPM Coin is a digital coin that JP Morgan Chase announced in February 2019 to allow institutional customers to make instantaneous payments to other institutional customers using blockchain technology. Although these payments can only be made in US Dollars at present, Morgan plans to expand their offering to other currencies.
 
 ## Why This Matters
 
-A few years ago, Jamie Dimon, JP Morgan's CEO famously said that any employee of his that was caught trading cryptocurrencies would be fired. And that mattered because Morgan is banking royalty. In the 19th century, the House of Morgan did more than any other private institution to transform the United States from “zero to hero” economically. After merging with Chase (to become officially JP Morgan Chase), they are currently the largest bank in the United States by assets and one of the most respected, employing over 256,000 people.
+A few years ago, the CEO of JP Morgan, Jamie Dimon, famously said that any employee of his that was caught trading cryptocurrencies would be fired. And that mattered because Morgan is banking royalty. In the 19th century, the House of Morgan did more than any other private institution to transform the United States from “zero to hero” economically. After merging with Chase (to become officially JP Morgan Chase), they are currently the largest bank in the United States by assets and one of the most respected, employing over 256,000 people.
 
 Nevertheless, like every other established business, they are worried about being “Amazon-ed” and rendered irrelevant by some transformative new business model. So they are trying everything they can think of to transform themselves first, including eating their words and joining the cryptocurrency bandwagon (sort of) with JPM Coin.
 
@@ -14,7 +14,7 @@ Given Dimon’s earlier statement, the JPM Coin initiative goes a long way towar
 
 ## Why This May Be Interesting
 
-JP Morgan itself actively recruits young people, most notably through their [internship and associate](https://careers.jpmorgan.com/us/en/students/programs?)  programs. It has a massive presence in New York City and is partial to Columbia grads, who will be our first cohort of students. No doubt, the Bank will need lots of new staff to work on JPM Coin and the smart contracts written on top of it: important areas of banking, such as financial derivatives, construction finance, and letters of credit, are obvious candidates for smart contracts, and the infrastructure for this has yet to be built out. See GlassDoor link to [JP Morgan Blockchain jobs](https://www.glassdoor.com/Jobs/J-P-Morgan-blockchain-Jobs-EI_IE145.0,10_KO11,21.htm).
+JP Morgan itself actively recruits young people, most notably through their [internship and associate](https://careers.jpmorgan.com/us/en/students/programs?)  programs. It has a massive presence in New York City and is partial to Columbia grads, who were also the first cohort of students to graduate from our FinTech Boot Camp. No doubt, the Bank will need lots of new staff to work on JPM Coin and the smart contracts written on top of it: important areas of banking, such as financial derivatives, construction finance, and letters of credit, are obvious candidates for smart contracts, and the infrastructure for this has yet to be built out. See GlassDoor link to [JP Morgan Blockchain jobs](https://www.glassdoor.com/Jobs/J-P-Morgan-blockchain-Jobs-EI_IE145.0,10_KO11,21.htm).
 
 Furthermore, the boost to Ethereum's legitimacy is likely to create an entire ecosystem surrounding it, such as specialty software vendors, specialty law firms to draft and litigate smart contracts, and consultants. One such software vendor (which also offers Ethereum training) is [Consensys](https://consensys.net/), which seems to have worked with JP Morgan to develop Quorum.
 
@@ -28,7 +28,7 @@ Furthermore, the boost to Ethereum's legitimacy is likely to create an entire ec
 
 * The hack of the DAO contracts, resulting in the theft of $50 million in Ether (the Ethereum cryptocurrency)
 
-* An use case of a smart contract using Quorum for a banking transaction, such as the ones listed above.
+* The utilization of a smart contract using Quorum for a banking transaction, such as the ones listed above.
 
 ## Resources
 
