@@ -210,7 +210,13 @@ Please submit a [pull request](https://github.com/coding-boot-camp/FinTech-Lesso
 
 ---
 
-	
+### [Unit 22 - DeFi](01-Lesson-Plans/22-DeFi)
+
+* [22.1 - Lesson Plan](01-Lesson-Plans/22-DeFi/1/LessonPlan.md)
+* [22.2 - Lesson Plan](01-Lesson-Plans/22-DeFi/2/LessonPlan.md)
+* [22.3 - Lesson Plan](01-Lesson-Plans/22-DeFi/3/LessonPlan.md)
+
+---	
 
 ### [Unit 23 - Project-3](01-Lesson-Plans/23-Project-3)
 
