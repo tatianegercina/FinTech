@@ -405,7 +405,7 @@ Answer any questions before moving on.
 
 ---
 
-### 9. Student Do: Basic Terminology (10 min)
+### 9. Student Do: Basic Terminology (5 min)
 
 For this activity, students will Google common terminology used in blockchain development.
 
@@ -609,7 +609,7 @@ Answer any questions before moving on.
 
 ---
 
-### 13. Instructor Do: Block Explorers Demo (10 minutes)
+### 13. Instructor Do: Block Explorers Demo (5 minutes)
 
 The goal of this demo is to show the students how block explorers can be used to visualize transactions on the blockchain.
 
