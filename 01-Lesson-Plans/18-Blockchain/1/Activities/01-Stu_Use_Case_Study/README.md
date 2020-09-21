@@ -8,9 +8,9 @@ In this activity, you will examine several cryptocurrency and blockchain use cas
 
 * Each group member should pick a use case to read for a few minutes.
 
-* While reading, make a list of the different features and functionality that you notice.
+* While reading, make a list of the different features and functionalities that you notice.
 
-* Compare your lists to your group.
+* Compare your lists with the other lists in your group.
 
 * Discuss the differences and similarities.
 
@@ -34,7 +34,7 @@ In this activity, you will examine several cryptocurrency and blockchain use cas
 
 ## Hint
 
-* Think big, it's OK to point out socioeconomic features, not just technical ones.
+* Think big! It's OK to point out socioeconomic features, not just technical ones.
 
 * Try to imagine the implications of these technologies on society.
 
