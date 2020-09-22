@@ -147,4 +147,4 @@ If you see a warning message that says that Ganache is from an untrusted softwar
     ![ganache_create_workspace.png](Images/ganache_import_mnemonic.png)
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
