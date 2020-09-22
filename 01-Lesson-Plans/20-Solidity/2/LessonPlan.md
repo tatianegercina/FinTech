@@ -247,7 +247,7 @@ Now that we've thoroughly covered many of the types within Solidity, let's add s
 
 ### 5. Instructor Do: Solidity Functions (10 min)
 
-**Corresponding Activity:** [02A-Ins_Solidity_Functions](Activities/02A-Ins_Solidity_Functions)
+**Corresponding Activity:** [03-Ins_Solidity_Functions](Activities/03-Ins_Solidity_Functions)
 
 In this demonstration, the instructor will show the various nuances of functions in Solidity, such as specifying the return type and `public`/`private` modifiers.
 
@@ -325,7 +325,7 @@ Add a function to fetch all of the variables in one shot:
 
 ### 6. Students Do: Adding a Getter and Setter (15 min)
 
-**Corresponding Activity:** [03-Stu_Adding_a_Getter_and_Setter](Activities/03-Stu_Adding_a_Getter_and_Setter)
+**Corresponding Activity:** [04-Stu_Adding_a_Getter_and_Setter](Activities/04-Stu_Adding_a_Getter_and_Setter)
 
 In this exercise, students will be adding a `Getter` and a `Setter` function to the `SimpleCustomerAccount` contract that they just wrote.
 
@@ -333,13 +333,13 @@ Send out the instructions to the class so that they may begin reviewing the exer
 
 **Instructions:**
 
-* [README.md](Activities/03-Stu_Adding_a_Getter_and_Setter/README.md)
+* [README.md](Activities/04-Stu_Adding_a_Getter_and_Setter/README.md)
 
 **Files:**
 
-* [Unsolved - Getter_Setter.sol](Activities/03-Stu_Adding_a_Getter_and_Setter/Unsolved/Getter_Setter.sol)
+* [Unsolved - Getter_Setter.sol](Activities/04-Stu_Adding_a_Getter_and_Setter/Unsolved/Getter_Setter.sol)
 
-* [Solved - Getter_Setter.sol](Activities/03-Stu_Adding_a_Getter_and_Setter/Solved/Getter_Setter.sol)
+* [Solved - Getter_Setter.sol](Activities/04-Stu_Adding_a_Getter_and_Setter/Solved/Getter_Setter.sol)
 
 Have TAs circulate to address any questions that students may have about Solidity functions, their modifiers, and parameters.
 
@@ -355,7 +355,7 @@ Have TAs circulate to address any questions that students may have about Solidit
 
 **Files:**
 
-* [Getter_Setter.sol](Activities/03-Stu_Adding_a_Getter_and_Setter/Solved/Getter_Setter.sol)
+* [Getter_Setter.sol](Activities/04-Stu_Adding_a_Getter_and_Setter/Solved/Getter_Setter.sol)
 
 Open the solution and explain the following:
 
@@ -452,7 +452,7 @@ Answer any questions before moving on.
 
 ### 10. Instructor Do: Storing, Catching, Withdrawing ether (10 min)
 
-**Corresponding Activity:** [03A-Ins_Storing_Catching_Withdrawing](Activities/03A-Ins_Storing_Catching_Withdrawing)
+**Corresponding Activity:** [05-Ins_Storing_Catching_Withdrawing](Activities/05-Ins_Storing_Catching_Withdrawing)
 
 In this activity, we will demonstrate how to add functions for depositing ether, withdrawing ether, and a default `fallback` function that can be used to catch ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions as well as to payable addresses in the contract.
 
@@ -568,19 +568,19 @@ Great! Now we have a fully functioning Savings account contract. We can use this
 
 ### 11. Students Do: Implementing ether Management functions (15 min)
 
-**Corresponding Activity:** [04-Stu_Implement_Ether_functions](Activities/04-Stu_Implement_Ether_functions)
+**Corresponding Activity:** [06-Stu_Implement_Ether_functions](Activities/06-Stu_Implement_Ether_functions)
 
 In this exercise, students will be implementing a `joint savings account` contract using the ether management functions from the previous activity. By the end of this activity, students will be able to deposit and withdraw ether from their contract's address.
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Implement_Ether_functions/README.md)
+* [README.md](Activities/06-Stu_Implement_Ether_functions/README.md)
 
 **Files:**
 
-* [Unsolved - JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Unsolved/JointSavings.sol)
+* [Unsolved - JointSavings.sol](Activities/06-Stu_Implement_Ether_functions/Unsolved/JointSavings.sol)
 
-* [Solved - JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
+* [Solved - JointSavings.sol](Activities/06-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
 
 ---
 
@@ -588,7 +588,7 @@ In this exercise, students will be implementing a `joint savings account` contra
 
 **Files:**
 
-* [JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
+* [JointSavings.sol](Activities/06-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
 
 Open the solution and explain the following:
 
@@ -626,7 +626,7 @@ Ask for any remaining questions before moving on.
 
 ### 13. Instructor Do: Conditionals in Solidity (10 min)
 
-**Corresponding Activity:** [05-Ins_Conditionals](Activities/05-Ins_Conditionals)
+**Corresponding Activity:** [07-Ins_Conditionals](Activities/07-Ins_Conditionals)
 
 In this demonstration, we will be discussing how conditionals in Solidity are formatted differently from Python.
 
@@ -634,7 +634,7 @@ To show this, we will be reviewing basic logical operators and control flow to b
 
 **Files:**
 
-* [TradeController.sol](Activities/05-Ins_Conditionals/Solved/TradeController.sol)
+* [TradeController.sol](Activities/07-Ins_Conditionals/Solved/TradeController.sol)
 
 Explain trade controllers to the class:
 
@@ -735,7 +735,7 @@ Now it's time for the students to use some conditionals in Solidity!
 
 ### 14. Students Do: Using If/Else in Solidity (10 min)
 
-**Corresponding Activity:** [06-Stu_If_Else](Activities/06-Stu_If_Else)
+**Corresponding Activity:** [08-Stu_If_Else](Activities/08-Stu_If_Else)
 
 In this activity, students will add to their `JointSavings` contract functionality that uses if/else statements.
 
@@ -745,13 +745,13 @@ Send out the instructions, which include a cheat sheet that compares how conditi
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_If_Else/README.md)
+* [README.md](Activities/08-Stu_If_Else/README.md)
 
 **Files:**
 
-* [JointSavings.sol](Activities/06-Stu_If_Else/Unsolved/JointSavings.sol)
+* [JointSavings.sol](Activities/08-Stu_If_Else/Unsolved/JointSavings.sol)
 
-* [Conditionals Cheat Sheet](Activities/06-Stu_If_Else/Resources/Conditionals_Cheatsheet.md)
+* [Conditionals Cheat Sheet](Activities/08-Stu_If_Else/Resources/Conditionals_Cheatsheet.md)
 
 Have the TAs circulate the class and ensure that students are correctly implementing their if/else statements. Remind them that they have to:
 
@@ -765,7 +765,7 @@ Have the TAs circulate the class and ensure that students are correctly implemen
 
 **Files:**
 
-* [JointSavings.sol](Activities/06-Stu_If_Else/Solved/JointSavings.sol)
+* [JointSavings.sol](Activities/08-Stu_If_Else/Solved/JointSavings.sol)
 
 Open the solution and explain the following:
 
@@ -787,13 +787,13 @@ Ask for any remaining questions before moving on.
 
 ### 16. Everyone Do: Restricting the Withdraw Function with Require (20 min) (Critical)
 
-**Corresponding Activity:** [07-Ins_Restricting_Withdraw_With_Require](Activities/07-Ins_Restricting_Withdraw_With_Require)
+**Corresponding Activity:** [09-Ins_Restricting_Withdraw_With_Require](Activities/09-Ins_Restricting_Withdraw_With_Require)
 
 In this activity, we will be replacing our `if` conditional statement with a `require` function.
 
 **Files:**
 
-* [Unsolved - JointSavings.sol](Activities/07-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
+* [Unsolved - JointSavings.sol](Activities/09-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
 
 Have students follow along while you code.
 
@@ -856,13 +856,13 @@ Now we have a fully working `JointSavings` account with withdrawing protection o
 
 ### 17. Everyone Do: Deploying a Contract in Remix (10 min)
 
-**Corresponding Activity:** [08-Ins_Deploying_Contracts_in_Remix](Activities/08-Ins_Deploying_Contracts_in_Remix)
+**Corresponding Activity:** [10-Ins_Deploying_Contracts_in_Remix](Activities/10-Ins_Deploying_Contracts_in_Remix)
 
 In this activity, students will take their `JointSavings` account contract, compile and deploy it on their local `testnet`.
 
 **Files:**
 
-* [JointSavings.sol](Activities/08-Ins_Deploying_Contracts_in_Remix/Solved/JointSavings.sol)
+* [JointSavings.sol](Activities/10-Ins_Deploying_Contracts_in_Remix/Solved/JointSavings.sol)
 
 Let's compile and deploy our contract to test it out!
 
