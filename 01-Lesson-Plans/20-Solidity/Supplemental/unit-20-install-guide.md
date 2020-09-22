@@ -122,5 +122,25 @@ If you see a warning message that says that Ganache is from an untrusted softwar
 
 ![Ganache installation - 6](Images/ganache-6.gif)
 
+### Configuring a Workspace
+
+* Launch the application to continue.
+
+    ![Ganache releases](Images/ganache_create_workspace.png)
+
+* Create a `New Workspace` and navigate through the various configuration pages. Apply the following settings on the following pages.
+
+  * WORKSPACE
+    * WORKSPACE NAME = `fintech`
+
+  * SERVER
+    * HOSTNAME = `127.0.0.1`
+    * PORT NUMBER = `8545`
+    * AUTOMINE = `ON`
+
+  * ACCOUNTS & KEYS
+    * ACCOUNT DEFAULT BALANCE = `100`
+    * TOTAL ACCOUNTS TO GENERATE = `10`
+    * AUTOGENERATE HD MNEMONIC = `YOUR MNEMONIC PHRASE`
 ---
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
