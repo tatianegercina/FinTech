@@ -132,15 +132,19 @@ If you see a warning message that says that Ganache is from an untrusted softwar
 
   * WORKSPACE
     * WORKSPACE NAME = `fintech`
+    ![ganache_set_workspace_name.png](Images/ganache_set_workspace_name.png)
 
   * SERVER
     * HOSTNAME = `127.0.0.1`
     * PORT NUMBER = `8545`
     * AUTOMINE = `ON`
+    ![ganache_set_server_info.png](Images/ganache_set_server_info.png)
 
   * ACCOUNTS & KEYS
     * ACCOUNT DEFAULT BALANCE = `100`
     * TOTAL ACCOUNTS TO GENERATE = `10`
     * AUTOGENERATE HD MNEMONIC = `YOUR MNEMONIC PHRASE`
+    ![ganache_create_workspace.png](Images/ganache_import_mnemonic.png)
+
 ---
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
