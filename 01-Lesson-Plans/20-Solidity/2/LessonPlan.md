@@ -247,6 +247,8 @@ Now that we've thoroughly covered many of the types within Solidity, let's add s
 
 ### 5. Instructor Do: Solidity Functions (10 min)
 
+**Corresponding Activity:** [02A-Ins_Solidity_Functions](Activities/02A-Ins_Solidity_Functions)
+
 In this demonstration, the instructor will show the various nuances of functions in Solidity, such as specifying the return type and `public`/`private` modifiers.
 
 Let's say you are a famous crypto trader and wanted to publish your latest buy order at the price that you bought it at. You want to be able to prove that it was you that made that recommendation cryptographically, so you're going to build a smart contract to publish your latest trade to the blockchain.
@@ -449,6 +451,8 @@ Answer any questions before moving on.
 ---
 
 ### 10. Instructor Do: Storing, Catching, Withdrawing ether (10 min)
+
+**Corresponding Activity:** [03A-Ins_Storing_Catching_Withdrawing](Activities/03A-Ins_Storing_Catching_Withdrawing)
 
 In this activity, we will demonstrate how to add functions for depositing ether, withdrawing ether, and a default `fallback` function that can be used to catch ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions as well as to payable addresses in the contract.
 
