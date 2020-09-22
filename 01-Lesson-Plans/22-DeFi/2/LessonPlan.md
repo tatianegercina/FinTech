@@ -84,7 +84,19 @@ Begin by opening the [Example CryptoRight EIP](Activities/01-Ins_Building_to_a_S
 
 * Today we will take a new example EIP, break it down and translate it into functioning code. Remember, an EIP is an Ethereum Improvement Proposal. An ERC is an application-level (aka, Solidity) EIP.
 
-* Let's begin by identifying the goal of the current contract. This will allow us to gain scope on the logic that we will be implementing.
+* This demo will introduce students to a contract _interface_ and the _methods_ contained therein.  Take a moment to present this concept to students by letting them know the following:
+
+    * An interface is similiar to a contract, however it does not implement functions or define any contract components such as variables or structs.  
+    
+    * They serve as a kind of scaffold of what the contract will be become by creating functions and structure that will be specifically defined in the actual contract. 
+    
+    * Interfaces aid the design process by providing a consistent, predefined structure that will be used throughout the contract.
+
+    * The functions created in an interface are referred to as methods, and are considered _virtual_ until they are formally defined in the contract itself.
+
+    * More information can be found on interfaces in the [Solidity documention](https://solidity.readthedocs.io/en/v0.4.24/contracts.html#interfaces). 
+
+* Begin the demo by identifying the goal of the current contract. This will allow us to gain scope on the logic that we will be implementing.
 
 * A good way to identify the goal of a given contract specification is by reading the `Simple Summary`, `Abstract`, and `Motivation`.
 
