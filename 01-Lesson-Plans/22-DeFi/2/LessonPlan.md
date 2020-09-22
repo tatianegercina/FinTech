@@ -133,10 +133,10 @@ Now demonstrate what this looks like implemented inside the smart contract.
 mapping(uint => Work) public copyrights;
 ```
 
-  * The details of the method were "Accepts a given `copyright_id` as a `uint` and returns a `mapped string`".
+  * The details of the method were "Accepts a given `copyright_id` as a `uint` and returns a `mapped struct`".
   * This translates to a `mapping` of a `uint` and a `Work` datatype.
 
-  * Pay particular attention to the wording  "as a `uint` and returns a `mapped string`, this can be translated to "a `uint` mapped to a `string`", e.g., a mapping.
+  * Pay particular attention to the wording  "as a `uint` and returns a `mapped struct`, this can be translated to "a `uint` mapped to a `struct`", e.g., a mapping.
 
   * Remember that a variable defined with the public modifier automatically generates a getter function with defined parameters. In this case, our publically defined mapping `copyrights` generates a getter function that accepts a `uint` and returns a `Work` struct.
 
