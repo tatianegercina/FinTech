@@ -450,7 +450,7 @@ Answer any questions before moving on.
 
 **Files:**
 
-* [LatestTrade.sol](Activities/05-Ins_Storing_Catching_Withdrawing/Solved/CustomerSavings.sol)
+* [CustomerSavings.sol](Activities/05-Ins_Storing_Catching_Withdrawing/Solved/CustomerSavings.sol)
 
 In this activity, we will demonstrate how to add functions for depositing ether, withdrawing ether, and a default `fallback` function that can be used to catch ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions, as well as to payable addresses in the contract.
 
