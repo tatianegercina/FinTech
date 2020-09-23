@@ -4,7 +4,7 @@ In this activity, you'll be sending encrypted messages the real way, by using pu
 
 ## Instructions
 
-Get together with a partner, you will be sending messages with and do the following:
+Get together with a partner and do the following:
 
 * Navigate to the ["Box" feature](https://tweetnacl.js.org/#/box) of the TweetNaCl.js demo.
 
@@ -28,9 +28,9 @@ Get together with a partner, you will be sending messages with and do the follow
 
 * Send the following information in the message to your partner:
 
- * Encrypted Message from the `Box` field.
+    * Encrypted Message from the `Box` field.
 
- * Nonce.
+    * Nonce.
 
 * Now, without clearing out your secret key, try to decrypt their message by pasting their encrypted message and nonce into the corresponding fields in your browser.
 
