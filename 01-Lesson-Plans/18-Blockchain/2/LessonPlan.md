@@ -76,17 +76,15 @@ Ask the students to refresh their definitions:
 
 Explain that today, we will be learning the techniques that make these things possible.
 
-Ask the students to raise their hand if they have heard of:
+Ask the students to raise their hand if they have heard of and can define:
 
 * Encryption
 
-  **Answer:** It's a method that transforms information into secret a code that hides the information's true meaning.
+  **Answer:** It's a method that transforms information into a secret code that hides the information's true meaning.
 
 * Digital Signatures
 
   **Answer:** Digital signatures are used to prove ownership or authenticity of data mathematically.
-
-Ask the students to offer some of their answers, then move on while telling them that we will be learning these very things.
 
 Ask the students to raise their hand if:
 
@@ -146,7 +144,7 @@ Now, ask the students to share some ideas about where they might have used crypt
 
 * Securing communications.
 
-* Verifying authenticity of some data.
+* Verifying authenticity of data.
 
 * Payment systems (EMV chips, online payment gateways, banking communication).
 
@@ -168,7 +166,7 @@ Ask the students the following questions:
 
 Now elucidate that while you expect these services to be using good cryptography, practically every application benefits from having it. By using good cryptography, a more robust and secure internet can exist.
 
-Remind students that practically all of the hacks you hear about in the news are from misconfigured or lack of cryptography, so it is crucial to integrate it throughout their lives to protect their data and identity.
+Remind students that practically all of the hacks you hear about in the news are from misconfigured or absent cryptography, so it is crucial to integrate it throughout their lives to protect their data and identity.
 
 Answer any questions before moving on.
 
@@ -219,17 +217,17 @@ Explain to students that most of the hashing algorithms are compliant with the [
  # output: 7d38b5cd25a2baf85ad3bb5b9311383e671a8a142eb302b324d4a5fba8748c69
  ```
 
-* Notice how each hash is different, even though only one character was changed in the input as can be seen with `payment_message`.
+* Also notice how different inputs will result in completely different hashes, even if only one character is changed as can be seen with `payment_message_one` and `payment_message_two`.
 
  ```python
- payment_message = b"I agree to pay Joe $90"
+ payment_message_one = b"I agree to pay Joe $90"
 
- print(payment_message, hash(payment_message))
+ print(payment_message_one, hash(payment_message))
  # output: 8784fee852b5ee466c49b331098286feebc7c0d03ebf6ba826833fac376f4607
 
- payment_message = b"I agree to pay Joe $9"
+ payment_message_two = b"I agree to pay Joe $9"
 
- print(payment_message, hash(payment_message))
+ print(payment_message_two, hash(payment_message))
  # output: eee60f2df1736fb21297cd062d81eaa6f9f95241bf38c04a4db4ff264a0bae72
  ```
 
