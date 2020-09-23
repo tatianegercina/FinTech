@@ -456,24 +456,23 @@ Answer any questions before moving on.
 
 In this activity, we will demonstrate how to add functions for depositing ether, withdrawing ether, and a default `fallback` function that can be used to catch ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions as well as to payable addresses in the contract.
 
-Earlier in the day, we built a simple contract that stored variables representing a rewards/bank account balance. Let's take that a step further and build a JointSavings account smart contract that allows two addresses to manage a savings account.
+Earlier in the day, we built a simple contract that stored variables representing a rewards/bank account balance. Let's take that a step further and build a CustomerSavings account smart contract that allows the contract to store, catch and withdraw ether.
 
-Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavings.sol`:
+
+Open [Remix](http://remix.ethereum.org) and create a new file called `CustomerSavings.sol`:
 
 Type the following contract boilerplate:
 
  ```solidity
  pragma solidity ^0.5.0;
 
- contract JointSavings {
-    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
- }
+ contract CustomerSavings {
+   }
  ```
 
  * Once again, we are defining what version of the compiler we want to use by setting the `pragma`.
 
- * Then, we define the contract and call it `JointSavings`.
+ * Then, we define the contract and call it `CustomerSavings`.
 
  * Next, we set two addresses to represent the owners of the joint savings account.
 
@@ -484,14 +483,12 @@ Add a basic withdraw function to the contract.
  ```solidity
  pragma solidity ^0.5.0;
 
- contract JointSavings {
-    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+ contract CustomerSavings {
 
-    function withdraw(uint amount, address payable recipient) public {
+   function withdraw(uint amount, address payable recipient) public {
         return recipient.transfer(amount);
-    }
- }
+      }
+   }
  ```
 
  * For example, if we wanted to withdraw ether from the contract, we can add a withdraw function like so.
@@ -513,16 +510,14 @@ Add a `public payable` function named deposit to the contract.
  ```solidity
  pragma solidity ^0.5.0;
 
- contract JointSavings {
-    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+ contract CustomerSavings {
 
- function withdraw(uint amount, address payable recipient) public {
-    return recipient.transfer(amount);
- }
+   function withdraw(uint amount, address payable recipient) public {
+      return recipient.transfer(amount);
+   }
 
- function deposit() public payable {}
- }
+   function deposit() public payable {}
+}
  ```
 
  * Now that we can withdraw, let's add the ability to deposit.
@@ -548,10 +543,8 @@ We are going to add one final line to make sure that if ether is sent to the con
  ```solidity
  pragma solidity ^0.5.0;
 
- contract JointSavings {
-    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
-
+ contract CustomerSavings {
+   
  function withdraw(uint amount, address payable recipient) public {
     return recipient.transfer(amount);
  }
