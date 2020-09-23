@@ -243,6 +243,10 @@ Now that we've thoroughly covered many of the types within Solidity, let's add s
 
 ### 5. Instructor Do: Solidity Functions (10 min)
 
+**Files:**
+
+* [LatestTrade.sol](Activities/03-Ins_Solidity_Functions/Solved/LatestTrade.sol)
+
 In this demonstration, the instructor will show the various nuances of functions in Solidity, such as specifying the return type and `public`/`private` modifiers.
 
 Let's say you are a famous crypto trader and want to publish your latest buy order at the price you bought it at. You want to be able to prove that it was you that made that recommendation cryptographically, so you're going to build a smart contract to publish your latest trade to the blockchain.
@@ -325,13 +329,13 @@ Send out the instructions to the class so that they may begin reviewing the exer
 
 **Instructions:**
 
-* [README.md](Activities/03-Stu_Adding_a_Getter_and_Setter/README.md)
+* [README.md](Activities/04-Stu_Adding_a_Getter_and_Setter/README.md)
 
 **Files:**
 
-* [Unsolved - Getter_Setter.sol](Activities/03-Stu_Adding_a_Getter_and_Setter/Unsolved/Getter_Setter.sol)
+* [Unsolved - Getter_Setter.sol](Activities/04-Stu_Adding_a_Getter_and_Setter/Unsolved/Getter_Setter.sol)
 
-* [Solved - Getter_Setter.sol](Activities/03-Stu_Adding_a_Getter_and_Setter/Solved/Getter_Setter.sol)
+* [Solved - Getter_Setter.sol](Activities/04-Stu_Adding_a_Getter_and_Setter/Solved/Getter_Setter.sol)
 
 Have TAs circulate to address any questions that students may have about Solidity functions, their modifiers, and parameters.
 
@@ -347,7 +351,7 @@ Have TAs circulate to address any questions that students may have about Solidit
 
 **Files:**
 
-* [Getter_Setter.sol](Activities/03-Stu_Adding_a_Getter_and_Setter/Solved/Getter_Setter.sol)
+* [Getter_Setter.sol](Activities/04-Stu_Adding_a_Getter_and_Setter/Solved/Getter_Setter.sol)
 
 Open the solution and explain the following:
 
@@ -444,18 +448,22 @@ Answer any questions before moving on.
 
 ### 10. Instructor Do: Storing, Catching, Withdrawing Ether (10 min)
 
+**Files:**
+
+* [CustomerSavings.sol](Activities/05-Ins_Storing_Catching_Withdrawing/Solved/CustomerSavings.sol)
+
 In this activity, we will demonstrate how to add functions for depositing ether, withdrawing ether, and a default `fallback` function that can be used to catch ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions, as well as to payable addresses in the contract.
 
-Earlier in the day, we built a simple contract that stored variables representing a rewards/bank account balance. Let's take that a step further and build a joint savings account smart contract that allows two addresses to manage a savings account.
+Earlier in the day, we built a simple contract that stored variables representing a rewards/bank account balance. Let's take that a step further and build a CustomerSavings account smart contract that allows the contract to store, catch and withdraw ether.
 
-Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavings.sol`:
+Open [Remix](http://remix.ethereum.org) and create a new file called `CustomerSavings.sol`:
 
 Type the following contract boilerplate:
 
  ```solidity
  pragma solidity ^0.5.0;
 
- contract JointSavings {
+ contract CustomerSavings {
     address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
     address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
  }
@@ -463,7 +471,7 @@ Type the following contract boilerplate:
 
  * Once again, we are defining what version of the compiler we want to use by setting the `pragma`.
 
- * Then, we define the contract and call it `JointSavings`.
+ * Then, we define the contract and call it `CustomerSavings`.
 
  * Next, we set two addresses to represent the owners of the joint savings account.
 
@@ -474,7 +482,7 @@ Add a basic withdraw function to the contract.
  ```solidity
  pragma solidity ^0.5.0;
 
- contract JointSavings {
+ contract CustomerSavings {
     address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
     address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
@@ -503,7 +511,7 @@ Add a `public payable` function named deposit to the contract.
  ```solidity
  pragma solidity ^0.5.0;
 
- contract JointSavings {
+ contract CustomerSavings {
     address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
     address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
@@ -538,7 +546,7 @@ We are going to add one final line to make sure that if ether is sent to the con
  ```solidity
  pragma solidity ^0.5.0;
 
- contract JointSavings {
+ contract CustomerSavings {
     address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
     address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
@@ -562,13 +570,13 @@ In this exercise, students will be implementing a `joint savings account` contra
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Implement_Ether_functions/README.md)
+* [README.md](Activities/06-Stu_Implement_Ether_functions/README.md)
 
 **Files:**
 
-* [Unsolved - JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Unsolved/JointSavings.sol)
+* [Unsolved - JointSavings.sol](Activities/06-Stu_Implement_Ether_functions/Unsolved/JointSavings.sol)
 
-* [Solved - JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
+* [Solved - JointSavings.sol](Activities/06-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
 
 ---
 
@@ -576,7 +584,7 @@ In this exercise, students will be implementing a `joint savings account` contra
 
 **Files:**
 
-* [JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
+* [JointSavings.sol](Activities/06-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
 
 Open the solution and explain the following:
 
@@ -620,7 +628,7 @@ To show this, we will be reviewing basic logical operators and control flow to b
 
 **Files:**
 
-* [TradeController.sol](Activities/05-Ins_Conditionals/Solved/TradeController.sol)
+* [TradeController.sol](Activities/07-Ins_Conditionals/Solved/TradeController.sol)
 
 Explain trade controllers to the class:
 
@@ -729,13 +737,13 @@ Send out the instructions, which include a cheat sheet that compares how conditi
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_If_Else/README.md)
+* [README.md](Activities/08-Stu_If_Else/README.md)
 
 **Files:**
 
-* [JointSavings.sol](Activities/06-Stu_If_Else/Unsolved/JointSavings.sol)
+* [JointSavings.sol](Activities/08-Stu_If_Else/Unsolved/JointSavings.sol)
 
-* [Conditionals Cheat Sheet](Activities/06-Stu_If_Else/Resources/Conditionals_Cheatsheet.md)
+* [Conditionals Cheat Sheet](Activities/08-Stu_If_Else/Resources/Conditionals_Cheatsheet.md)
 
 Have the TAs circulate the class to ensure that students are correctly implementing their if/else statements. Remind them that they have to:
 
@@ -749,7 +757,7 @@ Have the TAs circulate the class to ensure that students are correctly implement
 
 **Files:**
 
-* [JointSavings.sol](Activities/06-Stu_If_Else/Solved/JointSavings.sol)
+* [JointSavings.sol](Activities/08-Stu_If_Else/Solved/JointSavings.sol)
 
 Open the solution and explain the following:
 
@@ -775,7 +783,7 @@ In this activity, we will be replacing our `if` conditional statement with a `re
 
 **Files:**
 
-* [Unsolved - JointSavings.sol](Activities/07-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
+* [Unsolved - JointSavings.sol](Activities/09-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
 
 Have students follow along while you code.
 
@@ -842,7 +850,7 @@ In this activity, students will take their `JointSavings` account contract, comp
 
 **Files:**
 
-* [JointSavings.sol](Activities/07-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
+* [JointSavings.sol](Activities/10-Ins_Deploying_Contracts_in_Remix/Solved/JointSavings.sol)
 
 Let's compile and deploy our contract to test it out!
 
