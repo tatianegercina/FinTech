@@ -106,7 +106,7 @@ Answer any questions before moving on.
 
 In this activity, students will be researching in groups some applications of cryptography in the wild.
 
-Explain to the students that getting good at this type of research is key to succeeding in an emerging field like the blockchain industry.
+Explain to students that getting good at this type of research is key to succeeding in an emerging field like the blockchain industry.
 
 Have TAs circulate the class and ensure students are not stuck. This should be a generally easy-going activity.
 
@@ -245,7 +245,7 @@ Answer any questions before moving on.
 
 ### 5. Students Do: Hashing with Hashlib (10 min)
 
-In this activity, students will now hash two equivalent messages and compare the outputs. Then, they will modify one of the messages and compare them again.
+In this activity, students will hash two equivalent messages and compare the outputs. Then, they will modify one of the messages and compare them again.
 
 **Files:**
 
@@ -307,7 +307,7 @@ Open the session slides, move to the "Symmetric Cryptography" section, and highl
 
 * If you want to share the contents of a locked box, you would also have to give away the key (or a copy).
 
-* This is the same technique used to encrypt your hard drive or password-protect a document. It's used to protect "data at rest" aka data that is not moving across a network.
+* This is the same technique used to encrypt your hard drive or password-protect a document. It's used to protect "data at rest", aka data that is not moving across a network.
 
 Open your browser and navigate to the [Secretbox demo](https://tweetnacl.js.org/#/secretbox) from TweetNacl.js.
 
@@ -321,7 +321,7 @@ Type an arbitrary message into the `Message` box:
 
 ![symmetric message](Images/symmetric-message.png)
 
-Reinforce that this message is a secret, and could be some corporate or health data that needs protecting
+Reinforce that this message is a secret, and could be some corporate or health data that needs protecting.
 
 Generate a random symmetric key by clicking the `Random` button in the `Key` field:
 
@@ -466,8 +466,7 @@ Ask the student to slack out the following fields to you:
 
 Once the student has done that, copy the information into the running demo on your computer.
 
-You should have the **Student** public key in the `Their Public Key` field, the encrypted message in the `Box` field,
-and the nonce in the `Nonce` field.
+You should have the **Student** public key in the `Their Public Key` field, the nonce in the `Nonce` field, and the encrypted message in the `Box` field.
 
 ![student's info](Images/decrypting-message.png)
 
@@ -537,7 +536,7 @@ Explain to students that one of the applications of asymmetric cryptography is t
 
 Illustrate the following example to the class:
 
-* Let's say Joe wanted to sign a legal agreement and send it to Anita, but he also wanted digital proof that was the exact agreement.
+* Let's say Joe wanted to sign a legal agreement and send it to Anita, but he also wanted digital proof confirming it was the exact same agreement.
 
 * What Joe can do is take the document and "sign" it with his private key.
 
@@ -557,7 +556,7 @@ Navigate to the ["Sign" feature](https://tweetnacl.js.org/#/sign) of the TweetNa
 
  ![Sign verify](Images/sign-verify.png)
 
-* On your computer, ensure the "Sign" option is selected and click on the "Random" button to generate a `Secret Key`.
+* On your computer, ensure the "Sign" option is selected and click on the "Random" button to generate a `key pair`.
 
  ![Secret Key](Images/sign-secret-key.png)
 
@@ -573,15 +572,15 @@ Navigate to the ["Sign" feature](https://tweetnacl.js.org/#/sign) of the TweetNa
 
   * Public Key
 
-  * Message
-
   * Signature
+  
+  * Message
 
 * Ensure that the volunteer student is at the `Verify` section of the `Sign` feature, and ask the student to paste the public key, signature, and message into their corresponding fields.
 
  ![Student verify message](Images/student-verify-message.png)
 
-* Once the volunteer student pasted the values in the correct fields, the student should be able to click on "Verify" at the bottom of the page to check the signature against the public key.
+* Once the volunteer student has pasted the values into the correct fields, the student should be able to click on "Verify" at the bottom of the page to check the signature against the public key.
 
  ![verified message](Images/verified-message.png)
 
@@ -672,7 +671,7 @@ Explain to the class that the change from green to red represents a break in the
 
 * This means that the hash in the first block has changed since we changed the data, so we have to rebuild the chain from this point all the way to the end.
 
-Click `Mine` in the first block to change it green and to regenerate the hashes:
+Click `Mine` in the first block to change it back to green and to regenerate the hashes:
 
 ![mining](Images/blockchain-mining.png)
 
@@ -758,7 +757,7 @@ Ask the students the following questions:
 
 Remind the students that cryptography is a tough subject that is taught usually in a Computer Science degree and that they should be proud of learning it.
 
-* Cryptography is something that few people understand but powers many systems that keep our information secure every day.
+Cryptography is something that few people understand but powers many systems that keep our information secure every day.
 
 Answer any questions before ending the class.
 
