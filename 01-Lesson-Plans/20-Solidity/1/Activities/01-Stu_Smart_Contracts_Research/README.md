@@ -40,8 +40,6 @@ In this activity, you will examine several smart contract use cases and curate a
 
 * [Cent - The income-generating social network](https://beta.cent.co/)
 
-* [HireGo - Reinventing shared mobility using blockchain, smart contracts, and A.I.](https://www.hirego.io/)
-
 * [CryptoMotors - Digital Automaker powered by the Ethereum Blockchain](https://www.cryptomotors.io/)
 
 ## Hints
@@ -52,4 +50,4 @@ In this activity, you will examine several smart contract use cases and curate a
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

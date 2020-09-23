@@ -1,12 +1,12 @@
 # Implementing Ether Management Functions (Joint Savings Account)
 
-In this activity, you will be implementing basic functions for `depositing`, and `withdrawing` ether from a contract's address.
+In this activity, you will begin building a JointSavings account smart contract that allows two addresses to manage a savings account by implementing basic functions for `depositing`, and `withdrawing` ether from a contract's address. 
 
 ## Instructions
 
 * Open the Remix IDE and create a new file called `JointSavings.sol`.
 
-* Create a new contract named `JointSavings`; it should look something like this.
+* Create a new contract named `JointSavings`; it should look something like this:
 
 ```solidity
 contract JointSavings {
