@@ -6,7 +6,7 @@ In this activity, you will be implementing basic functions for `depositing`, and
 
 * Open the Remix IDE and create a new file called `JointSavings.sol`.
 
-* Create a new contract named `JointSavings`; it should look something like this.
+* Create a new contract named `JointSavings`; it should look something like this:
 
 ```solidity
 contract JointSavings {
