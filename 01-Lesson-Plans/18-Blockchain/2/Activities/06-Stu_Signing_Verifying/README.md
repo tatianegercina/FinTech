@@ -8,7 +8,7 @@ Pick a partner to verify messages with.
 
 * Navigate to the ["Sign" feature](https://tweetnacl.js.org/#/sign) of the TweetNaCl.js demo.
 
-* Generate a `Secret Key` -- this is your private and public keypair (**NEVER** share your private keys).
+* Click the `Random` button by the `Secret Key` field to generate your `keypair` -- this is your private and public keypair (**NEVER** share your private keys).
 
 * Type a message to sign.
 
@@ -18,11 +18,11 @@ Pick a partner to verify messages with.
 
 * Send the following fields to your partner via Slack:
 
- * Public Key
+    * Public Key
 
- * Signature
+    * Signature
 
- * Message
+    * Message
 
 * When your partner sends you the same fields, refresh the page and navigate to the `Verify` section.
 
