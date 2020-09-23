@@ -62,9 +62,9 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome to Class (5 min)
 
-Welcome to the cryptography fundamentals part of the course. In today's class, you will be covering the basic cryptographic techniques that blockchain technology, as well as the rest of the internet, is built upon.
+Begin class by opening the slides and welcoming students to the cryptography fundamentals part of the course. In today's class, you will be covering the basic cryptographic techniques that blockchain technology, as well as the rest of the internet, is built upon.
 
-Ask the students to refresh their definitions:
+Continue through the slides, asking the students to refresh their definitions:
 
 * What is a hash?
 
@@ -120,7 +120,7 @@ Have TAs circulate the class and ensure students are not stuck. This should be a
 
 Given the research the students just did, in this activity, you will conduct a facilitated discussion to allow students to share their insights.
 
-Start the activity by asking the students to share their definitions of the following terms:
+Referring to the slides, start the activity by asking the students to share their definitions of the following terms:
 
 * Cryptography
 
@@ -273,7 +273,7 @@ Have TAs circulate through the class to ensure that students can properly hash m
 
 * [hashing.py](Activities/03-Stu_Hashlib/Solved/hashing.py)
 
-Ask the students the following questions:
+Referring back to the slides, ask the students the following questions:
 
 * What do you notice about the length of the hashes?
 
@@ -377,7 +377,7 @@ Have TAs circulate and ensure that students can use the tool properly and are su
 
 ### 9. Instructor Do: Symmetric Cryptography Review (10 min)
 
-Conduct a facilitated discussion in the class by asking the students the following questions:
+Leverage the review slide to conduct a facilitated discussion in the class by asking the students the following questions:
 
 * What did you learn?
 
@@ -508,7 +508,7 @@ Have TAs circulate and ensure that students are successfully encrypting and decr
 
 ### 12. Instructor Do: Asymmetric Encryption Review (5 min)
 
-Conduct a facilitated discussion in the class by asking the students the following questions:
+Using the review slide, conduct a facilitated discussion in the class by asking the students the following questions:
 
 * What is the most significant benefit to using asymmetric encryption over symmetric?
 
@@ -621,7 +621,7 @@ Have TAs circulate through the class and ensure that students are successfully v
 
 ### 16. Instructor Do: Signing and Verifying Messages Review (10 min)
 
-Conduct a facilitated discussion by asking the students the following questions:
+Refer back to the slides, then conduct a facilitated discussion by asking the students the following questions:
 
 * It looks like this helps a lot with data integrity. Why not just hash the message instead?
 
@@ -705,7 +705,7 @@ Have the TAs circulate through the class and ensure that students are connecting
 
 ### 19. Instructor Do: Blockchain Data Structure Review (5 min)
 
-Conduct a facilitated discussion in the class by asking students the following questions:
+Review the previous activity by conducting a facilitated discussion.  Using the slides, ask students the following questions:
 
 * How are the blocks linked together / What does the "chain" in blockchain mean?
 
