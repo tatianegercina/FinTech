@@ -36,7 +36,7 @@ By the end of the class, students will be able to:
 
 * Have an address/wallet ready to populate as a pre-funded account. You can generate a new one with MyCrypto, or use the same wallet from Day 1.
 
-* Have a look at the [Proof of Stake](https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ) FAQ on the Ethereum wiki for an in-depth comparison between it and Proof of Work.
+* Have a look at the [Proof of Stake](https://eth.wiki/en/concepts/proof-of-stake-faqs) FAQ on the Ethereum wiki for an in-depth comparison between it and Proof of Work.
 
 * Slack out the [Blockchain TX Installation Guide](../../19-Blockchain-Python/Supplemental/Blockchain_TX_Install_Guide.md) and the [HD Wallet Derive Installation Guide](../../19-Blockchain-Python/Supplemental/HD_Wallet_Derive_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
@@ -60,13 +60,13 @@ By the end of the class, students will be able to:
 
 Welcome students to the third day of the introduction to the blockchain technology, open the lesson slides and present the class objectives.
 
-Move to the "Blockchain Skill Check" section and highlight that by the end of Today's class, we will do the following:
+Move to the "Blockchain Skill Check" section and highlight that by the end of today's class, we will do the following:
 
 * Build a blockchain from scratch!
 
 * Learn the differences between the various consensus algorithms available.
 
-* Make transactions in our very own blockchain.
+* Make transactions on our very own blockchain.
 
 Continue by refreshing students a bit on the data structure of a blockchain. Ask the students the following questions:
 
@@ -92,13 +92,13 @@ Answer any questions before moving on.
 
 In this activity, students will learn what consensus algorithms are and the differences between the available existing options.
 
-Open the lesson slides and move to the "Consensus Algorithms" section, recall to students the "people chain" we built in Day 1 and have students to ponder about the following:
+Open the lesson slides and move to the "Consensus Algorithms" section.  Remind students of the "people chain" we built in Day 1 and have them ponder the following questions:
 
 * How would you know if somebody was lying in the network? This is a consensus problem.
 
   **Answer**: Since there are many copies of the chain, it is easy to verify with another node.
 
-  **Answer**: In reality, there are also digital signatures that would enforce the integrity
+  **Answer**: In reality, there are also digital signatures that would enforce the integrity.
 
 * Do any blockchain enthusiasts know what this problem is called?
 
@@ -130,13 +130,13 @@ Explain to students that consensus algorithms help to add trust to the systems. 
 
 * The main purpose of a consensus algorithm in blockchain is to get the entire network to agree on which block gets added to the chain next.
 
-* A good consensus algorithm makes it so expensive to cheat, aka "rollback" the chain, that you'd make more just playing the game by the rules and just adding to it (aka mining) instead.
+* A good consensus algorithm makes it so expensive to cheat, aka "rollback" the chain, that you'd gain more benefit from just playing the game by the rules and adding to the chain (aka mining) instead.
 
-Explain to students that there are many consensus algorithms in development, but blockchain technology has reignited innovation in the distributed computing field; we'll discuss the more popular algorithms relevant to blockchain.
+Explain to students that blockchain technology has reignited innovation in the distributed computing field, meaning there are many consensus algorithms in development.  In today's class we'll discuss the three most popular algorithms relevant to blockchain.
 
 #### Proof of Authority
 
-The first, most straightforward, and least secure algorithm we'll start with is called "Proof of Authority."
+We'll start with the most straightforward, and least secure algorithm - Proof of Authority (PoA).
 
 * Proof of Authority allows only specific addresses to mine/produce blocks in the network.
 
@@ -146,7 +146,7 @@ The first, most straightforward, and least secure algorithm we'll start with is 
 
 #### Proof of Work
 
-* Proof of Work (PoW) is the most popular algorithm in blockchain nowadays.
+* Proof of Work (PoW) is currently the most popular algorithm in blockchain.
 
 * This is what Bitcoin came out with, and where the term "mining" comes from.
 
@@ -158,7 +158,7 @@ The first, most straightforward, and least secure algorithm we'll start with is 
 
 #### Proof of Stake
 
-Explain to students that Proof of Stake (PoS) is very similar to PoW, the main difference is that instead of contributing computational power, this algorithm "stake" some of the cryptocurrency, aka "collateralize" it while you produce blocks.
+Explain to students that Proof of Stake (PoS) is very similar to PoW. The main difference is that instead of contributing computational power, this algorithm requires a "stake" of cryptocurrency, effectively collateralizing it while you produce blocks.
 
 * "Staking" your coins means to lock them in a transaction that proves to the rest of the network that you are willing to "put your money where your mouth is" to be trusted to make blocks.
 
@@ -170,7 +170,7 @@ Explain to students that Proof of Stake (PoS) is very similar to PoW, the main d
 
 * Despite this concern, much of the blockchain community is moving towards different variations of PoS, including Ethereum, with mathematical safeguards in place to reduce this risk significantly.
 
-Explain to the class that there are many other consensus algorithms under research and development, highlight the following:
+Explain to the class that there are many other consensus algorithms under research and development. Highlight the following:
 
 * Proof of Capacity - It uses free hard drive space as a contribution to the network.
 
@@ -196,9 +196,13 @@ Have TAs circulate and ensure that students are actively engaging in discussion.
 
 ### 4. Instructor Do: Consensus Algorithm Review (5 min)
 
-Ask the students the following questions:
+Using the slides, ask students the following questions:
 
 * What is the biggest strength of:
+
+  * Proof of Authority
+
+    **Answer**: Fastest, great for testing and development.
 
   * Proof of Work
 
@@ -208,11 +212,11 @@ Ask the students the following questions:
 
     **Answer**: Similar security as PoW without the electricity cost.
 
+* What is the biggest weakness of:
+
   * Proof of Authority
 
-    **Answer**: Fastest, great for testing and development.
-
-* What is the biggest weakness of:
+    **Answer**: Highly centralized, least secure.
 
   * Proof of Work
 
@@ -221,10 +225,6 @@ Ask the students the following questions:
   * Proof of Stake
 
     **Answer**: "Nothing at Stake," potential wealth distribution issues, incentive structure can be taken advantage of.
-
-  * Proof of Authority
-
-    **Answer**: Highly centralized, least secure.
 
 Congratulate the class on learning some of the most important and fundamental algorithms that blockchains are using today. Now, we can take this knowledge and start to build our blockchain.
 
@@ -244,7 +244,7 @@ In this activity, you will be demonstrating the generation of a genesis block us
 
 Open the lesson slides, move to the "Creating a Genesis Block Demo" section, and highlight the following.
 
-* Now we are going to build our blockchain. We will start building the first block of the chain, where we will decide on which consensus algorithm to pick and configure the network.
+* Now we are going to build our own blockchain. We'll start y deciding which consensus algorithm our chain will use, then we'll configure the network and build the first block. 
 
 Introduce the Go Ethereum tool to the class and highlight the following:
 
@@ -256,7 +256,7 @@ Introduce the Go Ethereum tool to the class and highlight the following:
 
 * `geth` is the official Ethereum node software used to initialize, run and manage Ethereum nodes.
 
-* Don't worry, you don't need to learn Go! You just have to know that it's super fast and has a cute mascot called Gogopher!
+* Don't worry, you don't need to learn Go! You just have to know that it's super fast and has a cute mascot called Go-gopher!
 
  ![Gogopher](Images/256px-Gogophercolor.png)
 
@@ -266,7 +266,7 @@ Ask the students to recall what a "node" is.
 
 * By default, running `geth` will create a standard Ethereum node that will sync to the main network.
 
-* However, since `geth` comes with a handy tool called `puppeth`, we will create our networks!
+* However, since `geth` comes with a handy tool called `puppeth`, we will create our own networks!
 
 Open a terminal window (GitBash in Windows) navigate to your `Blockchain-Tools` folder and type the following command:
 
@@ -296,11 +296,9 @@ Explain to the class that we will be using Proof of Work.
 
 Type `1` to choose `Proof of Work` and continue.
 
-You will be asked to pre-fund accounts. Paste an address from any Ethereum wallet that you control, without the `0x` prefix.
+Next, you will be asked to pre-fund accounts. Explain to students the following:
 
-Use MyCrypto like from the previous class, and explain to the students that in this step is where we are going to pre-fund any accounts.
-
-* We're going to paste in the address from the wallet we used the on Day 1, and when used on this new network, it will be heavily funded for us to test with.
+* We're going to paste in the address from the wallet we used in MyCrypto on Day 1, but without the `0x` prefix. When used on this new network, it will be heavily funded for us to test with.
 
 Once you paste an address and hit enter, hit enter again on the blank `0x` address to continue the prompt.
 
@@ -310,7 +308,7 @@ Continue with the default option for the prompt that asks, `Should the precompil
 
 Ask the class to come up with a number to use as a "chain ID" or make one up yourself, like `333`, for example.
 
-Once you enter the chain ID, hit enter, and you should show this success message and redirect to the original prompt.
+Once you have typed the chain ID, hit enter, and you should show this success message and redirect to the original prompt.
 
 ![success](Images/puppeth-success.png)
 
@@ -341,7 +339,7 @@ Once every student has seen the success message, you can move on.
 
 ### 7. Instructor Do: Creating a Genesis Block Review (5 min)
 
-Conduct a facilitated discussion by asking the students the following questions:
+Referring to the slides, conduct a facilitated discussion by asking the students the following questions:
 
 * What is important about the genesis block?
 
@@ -367,11 +365,11 @@ The first step is to export our genesis configuration into a `json` file. Follow
 
 * In the `puppeth` prompt, navigate to the `Manage existing genesis` by typing `2` and hit enter.
 
-* Next, type `2` again to choose the `Export genesis configurations` option, then continue with the default (current) directory:
+* Next, type `2` again to choose the `Export genesis configurations` option, then continue with the default (current) directory by hitting the `enter` key:
 
  ![export genesis puppeth](Images/puppeth-export.png)
 
-* This will export several `networkname.json` files -- we only need the first one without `aleth`, `parity`, or `harmony` suffixes. In this demo, we will need the file names `puppernet.json`.
+* This will export several `networkname.json` files -- we only need the first one without `aleth`, `parity`, or `harmony` suffixes. In this demo, we will need the file named `puppernet.json`.
 
 Explain to students that we can use the `networkname.json` file to initialize any new nodes in the system automatically to grow the network!
 
@@ -384,20 +382,6 @@ Explain to students that now you will create the first node's data directory usi
 ```bash
 ./geth account new --datadir node1
 ```
-
-Copy the address that is printed into your notes file, and label it "Node 1 Key". You will need this for future reference. You can always fetch the address later by printing the keystore file in the node's folder like so:
-
-```bash
-cat node1/keystore/UTC--2019-10-08T20-14-04.346928000Z--959a2bd5da6097bab0c2d98e14ebfa65bed06b1b
-```
-
-This will output something like:
-
-```bash
-{"address":"959a2bd5da6097bab0c2d98e14ebfa65bed06b1b","crypto":{"cipher":"aes-128-ctr","ciphertext":"07d7df14c082d8d4d14c7d2877c968a9bb624f398c4b820127dcd8d0dfe62bc1","cipherparams":{"iv":"494ce9a4fb08101a52eb3f60b1b80a2f"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"c6a8ce0ed96bada27cd8e82906a78c795953901e90736170180db97196644052"},"mac":"440e051dd3c0333966a403e8a037c50fa80355ea0a911aa323c0f9ef01214f28"},"id":"0de99a24-763b-4c98-8ed7-115954e6d420","version":3}
-```
-
-You can simply copy the `address` property from the JSON keystore. Notice that you can also just copy the address from the end of the file name, since it is appended with the address.
 
 Explain to students that you are using the `geth` command here to create a new account in the `node1` folder.
 
@@ -419,6 +403,20 @@ Once you successfully create the account, you should see this message:
 
 ![geth new account](Images/geth-account-new.png)
 
+Copy the address that is printed into your notes file, and label it "Node 1 Key". You will need this for future reference. You can always fetch the address later by printing the keystore file in the node's folder like so:
+
+```bash
+cat node1/keystore/UTC--2019-10-08T20-14-04.346928000Z--959a2bd5da6097bab0c2d98e14ebfa65bed06b1b
+```
+
+This will output something like:
+
+```bash
+{"address":"959a2bd5da6097bab0c2d98e14ebfa65bed06b1b","crypto":{"cipher":"aes-128-ctr","ciphertext":"07d7df14c082d8d4d14c7d2877c968a9bb624f398c4b820127dcd8d0dfe62bc1","cipherparams":{"iv":"494ce9a4fb08101a52eb3f60b1b80a2f"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"c6a8ce0ed96bada27cd8e82906a78c795953901e90736170180db97196644052"},"mac":"440e051dd3c0333966a403e8a037c50fa80355ea0a911aa323c0f9ef01214f28"},"id":"0de99a24-763b-4c98-8ed7-115954e6d420","version":3}
+```
+
+You can simply copy the `address` property from the JSON keystore. Notice that you can also just copy the address from the end of the file name, since it is appended with the address.
+
 Next, create another account using a different `datadir` by running the following command in the terminal window:
 
 ```bash
@@ -431,7 +429,7 @@ Explain to students that you typically would only have one node per machine, but
 
 * Now we have two folders that each node can use to store its private key and its copy of the blockchain.
 
-Explain to students that now is time to initialize and tell the nodes to use our genesis block! Open the terminal window and run the following command to initialize `node1`.
+Explain to students that now it's time to initialize and tell the nodes to use our genesis block! In the terminal window run the following command to initialize `node1`.
 
 ```bash
 ./geth init puppernet.json --datadir node1
@@ -467,7 +465,7 @@ In this activity, students will create their nodes and accounts for their custom
 
 Have the TAs circulate and ensure that students are successfully following the instructions and initializing their nodes.
 
-Ensure that students are copying the necessary information into their
+Ensure that students are copying the necessary information into their notes.
 
 **Instructions:**
 
@@ -559,7 +557,7 @@ Explain each of the new command-line flags:
 
 * The `--bootnodes` flag allows you to pass the network info needed to find other nodes in the blockchain. This will allow us to connect both of our nodes.
 
-* In Microsoft Windows, we need to add the flag `--ipcdisable` due to the way Windows spawns new IPC/Unix sockets doesn't allow for having multiple sockets running from `geth` at once. Since we are only using `RCP` we can safely disable the `IPC` sockets.
+* In Microsoft Windows, we need to add the flag `--ipcdisable`. Due to the way Windows spawns new IPC/Unix sockets, it doesn't allow for having multiple sockets running from `geth` at once. Since we are only using `RCP` we can safely disable the `IPC` sockets.
 
 * The output of the second node should show information about `Importing block segments` and synchronization:
 
@@ -609,7 +607,7 @@ Ensure that:
 
 * The `--mining` flag is set on the first node.
 
-* The `--minerthreads` flag is set to at least 1 on the first node.
+* The `--minerthreads` flag is set to 1 on the first node.
 
 * The `enode://` address of the **first** node is copied into the **second** node's `--bootnodes` flag in quotes.
 
@@ -617,7 +615,7 @@ Ensure that:
 
 * The `--port` on the second node is set to something different from the first.
 
-* The default sync port is `30303`, so recommend `30304` for the second node.
+* The default sync port is `30303`, so `30304` is recommended for the second node.
 
 * The `--rpc` flag is enabled on the second node. This will be necessary to connect MyCrypto to the blockchain in the next activity.
 
@@ -633,7 +631,7 @@ In this activity, students will learn how to connect MyCrypto to the chain we cr
 
 Explain to students that now you are going to connect MyCrypto with the blockchain you created.
 
-The first step is to retrieve the private key of the ETH address you use to pre-fund the genesis block.
+The first step is to retrieve the private key of the ETH address you used to pre-fund the genesis block.
 
 * Open up MyCrypto and be sure the `Kovan` network is selected. We need to do this because using `mnemonic phrases` on custom blockchain networks is not supported by MyCrypto, and we need to fetch the private key of the address we funded from our mnemonic phrase. This will allow us to switch over to our custom network, and use our pre-funded private key.
 
@@ -653,6 +651,8 @@ Now, it's time to add the custom blockchain network we created earlier:
 
 ![change network](Images/change-network.png)
 
+* **NOTE:** Changing networks will automatically clear your loaded wallet, so make sure your private key has been stored in your notes for use in the next steps. 
+
 * Click on "Add Custom Node", then add the custom network information that was set in the genesis.
 
 * Ensure that you scroll down to choose `Custom` in the "Network" setting to reveal more options like `Chain ID`:
@@ -669,11 +669,7 @@ Explain to students that ETH still denominates the currency since we never chang
 
  ![Puppernet connected](Images/puppernet-connected.png)
 
-Now it's time to load the private key of the address that we pre-funded on our blockchain:
-
-* Changing networks will automatically clear your loaded wallet, but if you have another wallet open, you'll need to click `Change Wallet` on the top right:
-
-![Switch Wallet](Images/mycrypto-switch-wallet.png)
+Now it's time to load the private key of the address that we pre-funded on our blockchain.
 
 Open the wallet that you use to pre-fund the chain during genesis creation as follows:
 
@@ -683,7 +679,7 @@ Open the wallet that you use to pre-fund the chain during genesis creation as fo
 
  ![Open wallet step 1](Images/open-wallet-1.png)
 
-* A new window will pop-up, paste the private key of the pre-fund wallet and click on the "Unlock" button to continue.
+* A new window will pop-up. Paste the private key of the pre-funded wallet and click on the "Unlock" button to continue.
 
  ![Open wallet step 2](Images/open-wallet-2.png)
 
@@ -711,15 +707,15 @@ Explain to students that now we're going to send a transaction to ourselves to t
 
  ![successful transaction](Images/transaction-status.png)
 
-Congratulations, that was the first transaction send on this blockchain network! Now it's time for the students to do the same.
+Congratulations, that was the first transaction sent on this blockchain network! Now it's time for the students to do the same.
 
 Answer any questions before moving on.
 
 ---
 
-### 16. Students Do: Transacting on their chains (10 min)
+### 16. Students Do: Transacting on your chain (10 min)
 
-In this activity, students will to connect MyCrypto to their chain and send a transaction!
+In this activity, students will connect MyCrypto to their chain and send a transaction!
 
 Have the TAs circulate and ensure that students are successfully connecting MyCrypto to their second RPC-enabled node and sending a transaction from a pre-funded account.
 
@@ -759,7 +755,7 @@ Ensure that:
 
   * ☝️ Why is a LinkedIn profile so important?
 
-  * 🙋 Recruiters and prospective employers will use to both find candidates and review candidates.
+  * 🙋 Recruiters and prospective employers will use them find and review candidates.
 
   * ☝️ Who can we submit our LinkedIn profile to for review?
 
@@ -807,9 +803,9 @@ Ensure that:
 
   > Data analyst with a passion and talent for machine learning, application building, algorithm analysis, and analytical skills. Specializes in finance and analytic trends ranging from startups to Fortune 500 companies, including Bank of America and Google. Creative thinker with a love for finance who hopes to help any company make data-driven decisions that are best for product growth.
 
-* **Work experience:** Students might have questions about how to word their previous work experience onto a LinkedIn profile. This answer will vary based on the type of student.
+* **Work experience:** Students might have questions about how to word their previous work experience in their LinkedIn profile. This answer will vary based on the type of student.
 
-  * Transitioning from a different career: A student who is completely new to the FinTech industry is going to want to focus on the projects that are being done in class as their professional background. While interviewing, they can refer to their classroom projects as projects.
+  * Transitioning from a different career: A student who is completely new to the FinTech industry is going to want to focus on the projects that are being done in class as their professional background. While interviewing, they can refer to their classroom projects as experience.
 
   * Previous FinTech experience: An experienced student will want to add to the skill set already on their LinkedIn profiles by highlighting projects and emphasizing new technologies they might not have previously included. They also might want to add sentences that revolve around a passion for finance.
 
@@ -827,7 +823,7 @@ Ensure that:
 
   * The skills below are tech skills that they will have acquired by the end of the class.
 
-  _Python, Python APIs, Python Visualization libraries, Plotly.py, time series analysis and prediction, SQL, natural language processing, Amazon Web Services, SageMaker, Lex, algorithmic trading (trading bot), machine learning, Scikit-Learn, robo advising, blockchain, cryptocurrency, blockchain with Python, Solidity, smart contracts._
+  _Python, Python APIs, Python visualization libraries, Plotly.py, time series analysis and prediction, SQL, natural language processing, Amazon Web Services, SageMaker, Lex, algorithmic trading (trading bot), machine learning, Scikit-Learn, robo advising, blockchain, cryptocurrency, blockchain with Python, Solidity, smart contracts._
 
 #### 17.3 Student Do: LinkedIn Update
 
