@@ -26,7 +26,7 @@ CAGR is valuable, as it calculates and predicts growth rate earnings and percent
 
 Compound annual growth rate formula:
 
-![Readme_Stu_Functions_CAGR.png](Images/Readme_Stu_Functions_CAGR.png)
+![Readme_Stu_Functions_CAGR.png](Images/Ending-Beginning-Balance-Number-of-Years.png)
 
 ## Instructions
 
