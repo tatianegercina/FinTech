@@ -4,7 +4,7 @@ In this activity, you will create your genesis block using `puppeth`, a tool bun
 
 The genesis block is the first step towards creating your very own new blockchain!
 
-If you have not installed jet the Go Ethereum tool, or you have any issues, please refer to the [Unit 18 Installation Guide](../../../Supplemental/blockchain-install-guide.md) for help.
+If you have not yet installed the Go Ethereum tool, or if you have any issues, please refer to the [Unit 18 Installation Guide](../../../Supplemental/blockchain-install-guide.md) for help.
 
 Recall that by **terminal window**, we refer to the `Terminal` in Mac, or `Git Bash` in Windows.
 
@@ -43,7 +43,7 @@ You will be asked to enter a pre-fund account.
 
 * Come up with a number to use as a chain ID (e.g. `333`) type it, then hit enter.
 
-You should see a success message and redirected to the original prompt:
+You should see a success message and be redirected to the original prompt:
 
 ![success](Images/puppeth-success.png)
 
