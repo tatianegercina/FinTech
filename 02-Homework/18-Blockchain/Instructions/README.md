@@ -1,6 +1,6 @@
 # Unit 18 | Homework Assignment: Building the Blockchain
 
-The blockchain domain is rapidly changing, and even those in a highly technical role must stay abreast of what is happening in the digital finance landscape as many FinTech companies are using and creating tools and services that are powered by blockchain. As a FinTech professional in these changing times, it is important to not only be aware of the advancements happening within the FinTech blockchain space, but also understand the process for developing your very own blockchain.
+The blockchain domain is rapidly changing.  Even those in a highly technical role must stay abreast of what is happening in the digital finance landscape as many FinTech companies are using and creating tools and services that are powered by blockchain. As a FinTech professional in these changing times, it's important to not only be aware of the advancements happening within the FinTech blockchain space, but to also understand the process for developing your very own blockchain.
 
 This homework will be a two-part series in which you will first create a case study on a Canadian FinTech blockchain company. Then, you wil develop your very own blockchain.
 
@@ -32,7 +32,7 @@ This assignment will challenge you to learn more about Canadian advancements in 
 
 ## Proof of Authority Development Chain
 
-For this part two assignment, you will take on the role of a new developer at a small bank.
+For part two of this assignment, you will take on the role of a new developer at a small bank.
 
 Your mission, should you choose to accept it, will be to set up a testnet blockchain for your organization.
 
@@ -149,5 +149,18 @@ Be sure to include any preliminary setup information, such as installing depende
 
 #### Remember, *never* share your mainnet private keys! This is a testnet, so coins have no value here!
 
+#### Hints
+
+* If you get stuck - try our step by step PoA Guide located [here](Resources/POA-Blockchain-guide.md).
+
+* If you aren't seeing any movement in the wallet amounts in MyCrypto after sending/receiving transactions, try the following:
+
+    * Terminate both nodes using control+C in the Node1 and Node2 terminal windows.
+    * Change networks in MyCrypto to a Testnet such as Kovan.
+    * Restart Node1 and Node2 in their terminal windows.
+    * Reconnect to your network in MyCrypto.
+    * Log into your wallet and refresh the amount.
+
+* If that doesn't help make sure you are sending a large enough sum of ETH to see actual movement in the digits. You may have to click on the amount itself to see the full value down to the WEI.
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

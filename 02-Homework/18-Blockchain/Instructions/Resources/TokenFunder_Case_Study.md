@@ -14,7 +14,7 @@ In traditional financial markets, new companies or start-ups usually go through 
 
 ## Why This May be Interesting
 
-TokenFunder is on the precipice of changing the game when it comes to providing access to digital financial markets. Not only was TokenFunder the first to be regulator-approved by the Ontario Securities Commission (OSC) for its Initial Coin Offering (ICO), but also was the first to be regulatory-approved for its vision of creating a secondary marketplace for exchanging digital securities through its affiliate TokenGX. TokenFunder could potentially create a vast, secure, and regulatory compliant ecosystem for private companies to raise capital as well as allowing investors to trade digital securities of these private companies. Thus, TokenFunder could become a big name player in the Canadian digital finance space.
+TokenFunder is on the precipice of changing the game when it comes to providing access to digital financial markets. Not only was TokenFunder the first to be regulatory-approved by the Ontario Securities Commission (OSC) for its Initial Coin Offering (ICO), but also was the first to be regulatory-approved for its vision of creating a secondary marketplace for exchanging digital securities through its affiliate TokenGX. TokenFunder could potentially create a vast, secure, and regulatory compliant ecosystem for private companies to raise capital as well as allowing investors to trade digital securities of these private companies. Thus, TokenFunder could become a big name player in the Canadian digital finance space.
 
 ## Things to Keep in Mind for a Case Study
 
