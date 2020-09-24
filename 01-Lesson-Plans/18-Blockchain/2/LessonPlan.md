@@ -46,7 +46,7 @@ By the end of the class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 18.2 Slides](https://docs.google.com/presentation/d/1x3qam1C6gPqVhzZYSAAkTVH_O5tgCLC5DPjVXchC49s/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 18.2 Slides](https://docs.google.com/presentation/d/1zvJQfFShcEtpOWrsVwJmk0C6pMWNvKBvErOEIIZhQBE/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -62,9 +62,9 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome to Class (5 min)
 
-Welcome to the cryptography fundamentals part of the course. In today's class, you will be covering the basic cryptographic techniques that blockchain technology, as well as the rest of the internet, is built upon.
+Begin class by opening the slides and welcoming students to the cryptography fundamentals part of the course. In today's class, you will be covering the basic cryptographic techniques that blockchain technology, as well as the rest of the internet, is built upon.
 
-Ask the students to refresh their definitions:
+Continue through the slides, asking the students to refresh their definitions:
 
 * What is a hash?
 
@@ -76,17 +76,15 @@ Ask the students to refresh their definitions:
 
 Explain that today, we will be learning the techniques that make these things possible.
 
-Ask the students to raise their hand if they have heard of:
+Ask the students to raise their hand if they have heard of and can define:
 
 * Encryption
 
-  **Answer:** It's a method that transforms information into secret a code that hides the information's true meaning.
+  **Answer:** It's a method that transforms information into a secret code that hides the information's true meaning.
 
 * Digital Signatures
 
   **Answer:** Digital signatures are used to prove ownership or authenticity of data mathematically.
-
-Ask the students to offer some of their answers, then move on while telling them that we will be learning these very things.
 
 Ask the students to raise their hand if:
 
@@ -108,7 +106,7 @@ Answer any questions before moving on.
 
 In this activity, students will be researching in groups some applications of cryptography in the wild.
 
-Explain to the students that getting good at this type of research is key to succeeding in an emerging field like the blockchain industry.
+Explain to students that getting good at this type of research is key to succeeding in an emerging field like the blockchain industry.
 
 Have TAs circulate the class and ensure students are not stuck. This should be a generally easy-going activity.
 
@@ -122,7 +120,7 @@ Have TAs circulate the class and ensure students are not stuck. This should be a
 
 Given the research the students just did, in this activity, you will conduct a facilitated discussion to allow students to share their insights.
 
-Start the activity by asking the students to share their definitions of the following terms:
+Referring to the slides, start the activity by asking the students to share their definitions of the following terms:
 
 * Cryptography
 
@@ -146,7 +144,7 @@ Now, ask the students to share some ideas about where they might have used crypt
 
 * Securing communications.
 
-* Verifying authenticity of some data.
+* Verifying authenticity of data.
 
 * Payment systems (EMV chips, online payment gateways, banking communication).
 
@@ -168,7 +166,7 @@ Ask the students the following questions:
 
 Now elucidate that while you expect these services to be using good cryptography, practically every application benefits from having it. By using good cryptography, a more robust and secure internet can exist.
 
-Remind students that practically all of the hacks you hear about in the news are from misconfigured or lack of cryptography, so it is crucial to integrate it throughout their lives to protect their data and identity.
+Remind students that practically all of the hacks you hear about in the news are from misconfigured or absent cryptography, so it is crucial to integrate it throughout their lives to protect their data and identity.
 
 Answer any questions before moving on.
 
@@ -219,17 +217,17 @@ Explain to students that most of the hashing algorithms are compliant with the [
  # output: 7d38b5cd25a2baf85ad3bb5b9311383e671a8a142eb302b324d4a5fba8748c69
  ```
 
-* Notice how each hash is different, even though only one character was changed in the input as can be seen with `payment_message`.
+* Also notice how different inputs will result in completely different hashes, even if only one character is changed as can be seen with `payment_message_one` and `payment_message_two`.
 
  ```python
- payment_message = b"I agree to pay Joe $90"
+ payment_message_one = b"I agree to pay Joe $90"
 
- print(payment_message, hash(payment_message))
+ print(payment_message_one, hash(payment_message))
  # output: 8784fee852b5ee466c49b331098286feebc7c0d03ebf6ba826833fac376f4607
 
- payment_message = b"I agree to pay Joe $9"
+ payment_message_two = b"I agree to pay Joe $9"
 
- print(payment_message, hash(payment_message))
+ print(payment_message_two, hash(payment_message))
  # output: eee60f2df1736fb21297cd062d81eaa6f9f95241bf38c04a4db4ff264a0bae72
  ```
 
@@ -247,7 +245,7 @@ Answer any questions before moving on.
 
 ### 5. Students Do: Hashing with Hashlib (10 min)
 
-In this activity, students will now hash two equivalent messages and compare the outputs. Then, they will modify one of the messages and compare them again.
+In this activity, students will hash two equivalent messages and compare the outputs. Then, they will modify one of the messages and compare them again.
 
 **Files:**
 
@@ -275,7 +273,7 @@ Have TAs circulate through the class to ensure that students can properly hash m
 
 * [hashing.py](Activities/03-Stu_Hashlib/Solved/hashing.py)
 
-Ask the students the following questions:
+Referring back to the slides, ask the students the following questions:
 
 * What do you notice about the length of the hashes?
 
@@ -309,7 +307,7 @@ Open the session slides, move to the "Symmetric Cryptography" section, and highl
 
 * If you want to share the contents of a locked box, you would also have to give away the key (or a copy).
 
-* This is the same technique used to encrypt your hard drive or password-protect a document. It's used to protect "data at rest" aka data that is not moving across a network.
+* This is the same technique used to encrypt your hard drive or password-protect a document. It's used to protect "data at rest", aka data that is not moving across a network.
 
 Open your browser and navigate to the [Secretbox demo](https://tweetnacl.js.org/#/secretbox) from TweetNacl.js.
 
@@ -323,7 +321,7 @@ Type an arbitrary message into the `Message` box:
 
 ![symmetric message](Images/symmetric-message.png)
 
-Reinforce that this message is a secret, and could be some corporate or health data that needs protecting
+Reinforce that this message is a secret, and could be some corporate or health data that needs protecting.
 
 Generate a random symmetric key by clicking the `Random` button in the `Key` field:
 
@@ -379,7 +377,7 @@ Have TAs circulate and ensure that students can use the tool properly and are su
 
 ### 9. Instructor Do: Symmetric Cryptography Review (10 min)
 
-Conduct a facilitated discussion in the class by asking the students the following questions:
+Leverage the review slide to conduct a facilitated discussion in the class by asking the students the following questions:
 
 * What did you learn?
 
@@ -468,8 +466,7 @@ Ask the student to slack out the following fields to you:
 
 Once the student has done that, copy the information into the running demo on your computer.
 
-You should have the **Student** public key in the `Their Public Key` field, the encrypted message in the `Box` field,
-and the nonce in the `Nonce` field.
+You should have the **Student** public key in the `Their Public Key` field, the nonce in the `Nonce` field, and the encrypted message in the `Box` field.
 
 ![student's info](Images/decrypting-message.png)
 
@@ -511,7 +508,7 @@ Have TAs circulate and ensure that students are successfully encrypting and decr
 
 ### 12. Instructor Do: Asymmetric Encryption Review (5 min)
 
-Conduct a facilitated discussion in the class by asking the students the following questions:
+Using the review slide, conduct a facilitated discussion in the class by asking the students the following questions:
 
 * What is the most significant benefit to using asymmetric encryption over symmetric?
 
@@ -539,7 +536,7 @@ Explain to students that one of the applications of asymmetric cryptography is t
 
 Illustrate the following example to the class:
 
-* Let's say Joe wanted to sign a legal agreement and send it to Anita, but he also wanted digital proof that was the exact agreement.
+* Let's say Joe wanted to sign a legal agreement and send it to Anita, but he also wanted digital proof confirming it was the exact same agreement.
 
 * What Joe can do is take the document and "sign" it with his private key.
 
@@ -559,7 +556,7 @@ Navigate to the ["Sign" feature](https://tweetnacl.js.org/#/sign) of the TweetNa
 
  ![Sign verify](Images/sign-verify.png)
 
-* On your computer, ensure the "Sign" option is selected and click on the "Random" button to generate a `Secret Key`.
+* On your computer, ensure the "Sign" option is selected and click on the "Random" button to generate a `key pair`.
 
  ![Secret Key](Images/sign-secret-key.png)
 
@@ -575,15 +572,15 @@ Navigate to the ["Sign" feature](https://tweetnacl.js.org/#/sign) of the TweetNa
 
   * Public Key
 
-  * Message
-
   * Signature
+  
+  * Message
 
 * Ensure that the volunteer student is at the `Verify` section of the `Sign` feature, and ask the student to paste the public key, signature, and message into their corresponding fields.
 
  ![Student verify message](Images/student-verify-message.png)
 
-* Once the volunteer student pasted the values in the correct fields, the student should be able to click on "Verify" at the bottom of the page to check the signature against the public key.
+* Once the volunteer student has pasted the values into the correct fields, the student should be able to click on "Verify" at the bottom of the page to check the signature against the public key.
 
  ![verified message](Images/verified-message.png)
 
@@ -624,7 +621,7 @@ Have TAs circulate through the class and ensure that students are successfully v
 
 ### 16. Instructor Do: Signing and Verifying Messages Review (10 min)
 
-Conduct a facilitated discussion by asking the students the following questions:
+Refer back to the slides, then conduct a facilitated discussion by asking the students the following questions:
 
 * It looks like this helps a lot with data integrity. Why not just hash the message instead?
 
@@ -674,7 +671,7 @@ Explain to the class that the change from green to red represents a break in the
 
 * This means that the hash in the first block has changed since we changed the data, so we have to rebuild the chain from this point all the way to the end.
 
-Click `Mine` in the first block to change it green and to regenerate the hashes:
+Click `Mine` in the first block to change it back to green and to regenerate the hashes:
 
 ![mining](Images/blockchain-mining.png)
 
@@ -708,7 +705,7 @@ Have the TAs circulate through the class and ensure that students are connecting
 
 ### 19. Instructor Do: Blockchain Data Structure Review (5 min)
 
-Conduct a facilitated discussion in the class by asking students the following questions:
+Review the previous activity by conducting a facilitated discussion.  Using the slides, ask students the following questions:
 
 * How are the blocks linked together / What does the "chain" in blockchain mean?
 
@@ -760,7 +757,7 @@ Ask the students the following questions:
 
 Remind the students that cryptography is a tough subject that is taught usually in a Computer Science degree and that they should be proud of learning it.
 
-* Cryptography is something that few people understand but powers many systems that keep our information secure every day.
+Cryptography is something that few people understand but powers many systems that keep our information secure every day.
 
 Answer any questions before ending the class.
 
