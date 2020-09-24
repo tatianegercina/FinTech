@@ -2,7 +2,7 @@
 
 In this activity, you will create two accounts for nodes to use for mining rewards.
 
-Then, you will be initializing the nodes using the genesis block configuration you created earlier to prepare them for bringing the chain to life!
+Then, you will initialize the nodes using the genesis block configuration you created earlier to prepare them for bringing the chain to life!
 
 ## Instructions
 
@@ -16,7 +16,7 @@ First, export your genesis configuration into a `yournetworkname.json` file as f
 
  ![export genesis puppeth](Images/puppeth-export.png)
 
-* This will export several `yournetworkname.json` files -- you only need the first one without `aleth`, `parity`, or `harmony` suffixes.
+* This will export several `yournetworkname.json` files -- we will only be using the first one without `aleth`, `parity`, or `harmony` suffixes.
 
 Now, we need to create at least two nodes to build the chain from the genesis block onward:
 
@@ -40,17 +40,7 @@ You should see a success message similar to this one:
  ./geth account new --datadir node2
  ```
 
-* Make sure to keep track of the node's addresses and which belongs to which. You can always fetch the address later by printing the keystore file in the node's folder like so:
-
-  ```bash
-  cat node1/keystore/UTC--2019-10-08T20-14-04.346928000Z--959a2bd5da6097bab0c2d98e14ebfa65bed06b1b
-  ```
-
-  This will output something like:
-
-  ```bash
-  {"address":"959a2bd5da6097bab0c2d98e14ebfa65bed06b1b","crypto":{"cipher":"aes-128-ctr","ciphertext":"07d7df14c082d8d4d14c7d2877c968a9bb624f398c4b820127dcd8d0dfe62bc1","cipherparams":{"iv":"494ce9a4fb08101a52eb3f60b1b80a2f"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"c6a8ce0ed96bada27cd8e82906a78c795953901e90736170180db97196644052"},"mac":"440e051dd3c0333966a403e8a037c50fa80355ea0a911aa323c0f9ef01214f28"},"id":"0de99a24-763b-4c98-8ed7-115954e6d420","version":3}
-  ```
+* Make sure to keep track of the node's addresses and which belongs to which. 
 
 Now, it's time to initialize and tell the nodes to use your genesis block!
 
@@ -74,10 +64,22 @@ You should see this success message:
 
 Get excited, because your blockchain is only a couple steps away from being brought to life!
 
-Your final directory structure should look something like:
+## HINTS
 
-![directory tree](Images/geth-tree.png)
+* Your final directory structure should look something like:
+    ![directory tree](Images/geth-tree.png)
 
+* If you forgot to store your account addresses, you can always fetch them later by printing the keystore file in the node's folder like so:
+
+  ```bash
+  cat node1/keystore/UTC--2019-10-08T20-14-04.346928000Z--959a2bd5da6097bab0c2d98e14ebfa65bed06b1b
+  ```
+
+  This will output something like:
+
+  ```bash
+  {"address":"959a2bd5da6097bab0c2d98e14ebfa65bed06b1b","crypto":{"cipher":"aes-128-ctr","ciphertext":"07d7df14c082d8d4d14c7d2877c968a9bb624f398c4b820127dcd8d0dfe62bc1","cipherparams":{"iv":"494ce9a4fb08101a52eb3f60b1b80a2f"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"c6a8ce0ed96bada27cd8e82906a78c795953901e90736170180db97196644052"},"mac":"440e051dd3c0333966a403e8a037c50fa80355ea0a911aa323c0f9ef01214f28"},"id":"0de99a24-763b-4c98-8ed7-115954e6d420","version":3}
+  ```
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

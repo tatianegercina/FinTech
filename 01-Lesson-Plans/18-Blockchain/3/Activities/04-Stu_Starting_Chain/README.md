@@ -1,6 +1,6 @@
 # Bringing your blockchain to life
 
-In this activity, you will be starting both nodes that you've created before to bring your blockchain to life.
+In this activity, you will start both previously created nodes to bring your blockchain to life.
 
 * `node1` will be a full node that is also mining.
 
@@ -70,7 +70,7 @@ Now you will launch the second node and configure it to let us talk to the chain
 
 * The `--bootnodes` flag allows you to pass the network info needed to find other nodes in the blockchain. This will allow us to connect both of our nodes.
 
-* In Microsoft Windows, we need to add the flag `--ipcdisable` due to the way Windows spawns new IPC/Unix sockets doesn't allow for having multiple sockets running from `geth` at once. Since we are only using `RCP` we can safely disable the `IPC` sockets.
+* In Microsoft Windows, we need to add the flag `--ipcdisable`. Due to the way Windows spawns new IPC/Unix sockets, it doesn't allow for having multiple sockets running from `geth` at once. Since we are only using `RCP` we can safely disable the `IPC` sockets.
 
 ---
 
