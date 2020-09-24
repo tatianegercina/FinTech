@@ -1,6 +1,6 @@
 # Implementing Ether Management Functions (Joint Savings Account)
 
-In this activity, you will be implementing basic functions for `depositing`, and `withdrawing` ether from a contract's address.
+In this activity, you will begin building a JointSavings account smart contract that allows two addresses to manage a savings account by implementing basic functions for `depositing`, and `withdrawing` ether from a contract's address. 
 
 ## Instructions
 
@@ -18,7 +18,7 @@ contract JointSavings {
 
 * Now define a function named `withdraw` that will accept a `uint` named `amount`, and a `payable address` named `recipient`.
 
-* Inside the `withdraw` function, you are going to call the `transfer` method on the passed `recipient` variable and tell it the `amount` to transfer. The inside of the function should look something like this.
+* Inside the `withdraw` function, you are going to call the `transfer` method on the passed `recipient` variable and tell it the `amount` to transfer. The inside of the function should look something like this:
 
 ```solidity
 recipient.transfer(amount);
@@ -42,4 +42,4 @@ recipient.transfer(amount);
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
