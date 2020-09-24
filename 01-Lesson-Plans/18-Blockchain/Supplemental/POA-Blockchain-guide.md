@@ -92,3 +92,7 @@ The Proof of Authority (PoA) algorithm is typically used for private blockchain 
     ![successful transaction](Images/transaction-status.png)
 
 Congratulations, you successfully created your own private blockchain!
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
