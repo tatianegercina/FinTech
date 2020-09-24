@@ -1,6 +1,6 @@
 # Unit 18 | Homework Assignment: Building the Blockchain
 
-The blockchain domain is rapidly changing, and even those in a highly technical role must stay abreast of what is happening in the digital finance landscape as many FinTech companies are using and creating tools and services that are powered by blockchain. As a FinTech professional in these changing times, it is important to not only be aware of the advancements happening within the FinTech blockchain space, but also understand the process for developing your very own blockchain.
+The blockchain domain is rapidly changing.  Even those in a highly technical role must stay abreast of what is happening in the digital finance landscape as many FinTech companies are using and creating tools and services that are powered by blockchain. As a FinTech professional in these changing times, it's important to not only be aware of the advancements happening within the FinTech blockchain space, but to also understand the process for developing your very own blockchain.
 
 This homework will be a two-part series in which you will first create a case study on a Canadian FinTech blockchain company. Then, you wil develop your very own blockchain.
 
@@ -32,7 +32,7 @@ This assignment will challenge you to learn more about Canadian advancements in 
 
 ## Proof of Authority Development Chain
 
-For this part two assignment, you will take on the role of a new developer at a small bank.
+For part two of this assignment, you will take on the role of a new developer at a small bank.
 
 Your mission, should you choose to accept it, will be to set up a testnet blockchain for your organization.
 
