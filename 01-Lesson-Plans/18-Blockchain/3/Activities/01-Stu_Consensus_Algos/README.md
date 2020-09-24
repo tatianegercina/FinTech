@@ -1,6 +1,6 @@
 # Turn and Teach: Consensus Algorithms
 
-In this activity, you will get with a group of three and review the pros and cons of the consensus algorithms you just learned!
+In this activity, you will get into groups of three and review the pros and cons of the consensus algorithms you just learned!
 
 ## Instructions
 
@@ -16,10 +16,10 @@ In this activity, you will get with a group of three and review the pros and con
 
   Name               | Strength | Weakness
   -------------------|----------|----------
+  Proof of Authority |          |
   Proof of Work      |          |
   Proof of Stake     |          |
-  Proof of Authority |          |
-
+  
 ## Challenge
 
 * If time remains, try discussing any other consensus algorithms you may have heard about or studied and the tradeoffs they make.
