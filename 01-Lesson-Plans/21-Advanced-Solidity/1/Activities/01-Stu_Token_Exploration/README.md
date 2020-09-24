@@ -10,7 +10,7 @@ In this activity, you will examine several tokens on the Ethereum blockchain and
 
 * [Basic Attention Token (BAT)](https://basicattentiontoken.org/)
 
-* [0x](https://bravenewcoin.com/insights/monero-no-plans-to-go-'legit')
+* [0x](https://0x.org/)
 
 * [Gemini Dollar (GUSD)](https://gemini.com/dollar/)
 
