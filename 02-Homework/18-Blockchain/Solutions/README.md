@@ -1,8 +1,8 @@
 # PupperNet, an out-of-the-box blockchain
 
-In this tutorial, I will demonstrate using `geth`, the official Ethereum client, how to run a PupperNet private network.
+In this tutorial, I will demonstrate using `geth`, the official Ethereum client, and how to run the PupperNet private network.
 
-This network is configured for `5 seconds` block times and uses the Clique Proof of Authority consensus algorithm. This
+This network is configured for `5 second` block times and uses the Clique Proof of Authority consensus algorithm. This
 will ensure fast and efficient testing, so no need to worry about your CPU. The chain ID is `333`.
 
 The sealer node addresses are:
@@ -26,11 +26,14 @@ Download and install the desktop version of the MyCrypto wallet here: <https://d
 
 This wallet allows communicating with custom networks, which we will configure later.
 
-## Run the first node and enable the mining/sealing
+## Run the first node and enable mining/sealing
 
 `geth --datadir node1 --unlock "d84d79a0069fb5d3cf8eca3c689f231d6b603c8f" --mine --rpc`
 
 We enable the `--rpc` flag on the first node to talk to it later. This defaults to port `8545`.
+
+Windows users may also need to enable the `--allow-insecure-unlock` flag.
+
 We need to unlock the node's account to enable it to sign blocks.
 
 ## Copy the enode address from this node
@@ -43,6 +46,8 @@ For example:
 `geth --datadir node2 --unlock "7a4f862ab163fc62dce2cfbb734ddac153c5e8cc" --mine --port 30304 --bootnodes enode://b044f481e52f03950ed88ad18f550ace268ad4e4e1647f80c5808d6ea2c4e7f550d8ed25a14608afa6e5828f1b69fdfcf5d7775394f7c38d8592f600e4a37e90@127.0.0.1:30303`
 
 Using the first node as a bootnode will enable the nodes to communicate with each other and discover new nodes later.
+
+Windows users may also need to enable the `--ipcdisable` and `--allow-insecure-unlock` flags.
 
 ## Success!
 
