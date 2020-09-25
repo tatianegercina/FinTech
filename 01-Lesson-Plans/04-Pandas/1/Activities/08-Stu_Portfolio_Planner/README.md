@@ -48,9 +48,9 @@ Using the starter file, complete the following steps:
 
 6. Use the `pct_change` function to calculate daily returns for each stock.
 
-7. Use the `std` function and multiply by `sqrt(252)` to calculate annualized volatility. Use the `sort_values` function to sort by volatility values quickly.
+7. Use the `std` function and multiply by `np.sqrt(252)` to calculate annualized volatility. Use the `sort_values` function to sort by volatility values quickly.
 
-8. Drop the top five stocks with the highest volatility from the DataFrame of daily returns.
+8. Drop the five stocks with the highest volatility from the DataFrame of daily returns.
 
 9. Set portfolio weights of 0.5, 0.2, 0.15, 0.10, and 0.05 to the remaining stocks (from least risk to most risk).
 
@@ -78,9 +78,9 @@ Specifically, upper management wants Harold to go beyond just evaluating stocks 
 
 * Only positive return-to-risk ratio stocks (Sharpe ratios)
 
-Then, they want to visualize the returns of a hypothetical $10,000 investment in such a constructed portfolio over time, as well as how such a portfolio compares to $10,000 investments in less optimized portfolios.
+Then, they want to visualize the returns of a hypothetical $10,000 investment in such a constructed portfolio over time, as well as how such a portfolio compares to 10,000 investments in less optimized portfolios.
 
-Use the Pandas library to help Harold construct an optimized portfolio of stocks, and then plot and compare the returns of a $10,000 investment in the portfolio over time to less optimized portfolios.
+Use the Pandas library to help Harold construct an optimized portfolio of stocks, and then plot and compare the returns of a 10,000 investment in the portfolio over time to less optimized portfolios.
 
 ### Instructions - Part 2
 
