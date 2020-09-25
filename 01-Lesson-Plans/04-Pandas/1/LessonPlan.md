@@ -56,7 +56,7 @@ Introduce today's lesson and get students amped on what they're about to learn�
 
 Welcome to the third day of Pandas! Open the slideshow and introduce the concepts that will be covered, highlighting the following:
 
-* In the previous two classes, we focused on Pandas basics and single stock evaluation. Today, you will transition to analyze groups of stocks (stock portfolios) to achieve the best risk-to-reward ratio for your investments.
+* In the previous two classes, we focused on Pandas basics and single stock evaluation. Today, you will transition into analyzing groups of stocks (stock portfolios) to achieve the best risk-to-reward ratio for your investments.
 
 * The focus of this lesson is on using Pandas to make more informed—and better!—investments. Get excited, as you will learn and use techniques used by financial analysts, quantitative traders, and portfolio managers. 
 
@@ -116,7 +116,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution and hi
 
 * In this demo, we will verify if there is any correlation between ice cream sales and drowning incidents.
 
-* We will start this demo by reading the ice cream sales and the data of the drowning incident into two DataFrames and setting the `Month` column as the index.
+* We will start this demo by reading the ice cream sales data and the drowning incident data into two DataFrames and setting the `Month` column as the index.
 
   ![correlation_data](Images/correlation_data.png)
 
@@ -144,7 +144,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution and hi
 
   ![correlation.png](Images/correlation.png)
 
-* Pandas doesn't offer a plot to visualize correlation, so we will use `Seaborn`, a popular Python data visualization library that is built-in in Anaconda to create a heat map plot. In later units, we will learn about even more advanced plotting libraries.
+* Pandas doesn't offer a plot to visualize correlation, so we will use `Seaborn`, a popular Python data visualization library that is built into Anaconda to create a heat map plot. In later units, we will learn about even more advanced plotting libraries.
 
 * The `heatmap` function from the `Seaborn` library colour codes the different variations in a correlation table. This is particularly useful when there are many variables in a correlation table.
 
@@ -516,7 +516,7 @@ Open the solved version of the Jupyter notebook, live code the solution, and exp
 
   ![sp500-variance](Images/sp500-variance.png)
 
-* The beta quantifies the relative volatility of each social media stock's returns to that of the overall market. For example, if the S&P 500 returns 10% for the year, `TWTR` with a beta of 1.52 should expect to return approximately 15.2% for the year.
+* The beta quantifies the relative volatility of each social media stock's returns to that of the overall market. For example, if the S&P 500 returns 10% for the year, `TWTR` with a beta of 1.51 should expect to return approximately 15.1% for the year.
 
   ![social-media-beta](Images/social-media-beta.png)
 
@@ -536,7 +536,7 @@ This section focuses on calculating returns for a group of stocks, or stock port
 
 **Files:**
 
-* [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.ipynb)
+* [portfolio_returns.ipynb](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.ipynb)
 
 * [emb_historical.csv](Activities/07-Ins_Portfolio_Returns/Resources/emb_historical.csv)
 
@@ -572,9 +572,9 @@ Open the unsolved version of the Jupyter notebook to live code the solution. Cov
 
   ![ins_portfolio_volatility](Images/ins_portfolio_volatility.png)
 
-* A higher portfolio's volatility means more risk but potentially higher returns.
+* The higher a portfolio's volatility means more risk but potentially higher returns.
 
-* The purpose of a portfolio is to control the amount of risk and diversity in an investment. In the following example, `ENB` has more volatility than `IMO`, so changing the weights of the portfolios (how much of each stock is invested in) may affect the returns.
+* The purpose of a portfolio is to control the amount of risk and diversity in an investment. In the following example, `ENB` has more volatility than `IMO`, so changing the weights of the portfolios may affect the returns.
 
   * The `cumprod` function computes the cumulative returns to indicate the total return profit or loss from a percentage standpoint. Multiplying an initial investment of $10,000 by the series of cumulative returns outputs a trend over time of cumulative profit or loss.
 
@@ -650,9 +650,9 @@ In this section, you will review the solution to the previous activity.
 
 * [wrk_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/wrk_data.csv)
 
-Open the solved version of the Jupyter notebook for Part 2, conduct a dry walkthrough review, and explain the following:
+Open the solved version of the Jupyter notebook for Part 2, and conduct a dry walkthrough review, explaining in the following:
 
-* We will start reviewing Part 1.
+* We will start by reviewing Part 1.
 
 * The first step in helping Harold analyze these 10 stocks is to load the data into a DataFrame for each data file.
 
@@ -692,7 +692,7 @@ Open the solved version of the Jupyter notebook for Part 2, conduct a dry walkth
 
   ![part-2-correlation](Images/part-2-correlation.png)
 
-* In this case, the daily returns of `FANG` and `JNJ` appear to be highly correlated and can be dropped from the DataFrame.
+* In this case, the daily returns of `WRK` and `BK` appear to be highly correlated and can be dropped from the DataFrame.
 
   ![portfolio_drop_two](Images/portfolio_drop_two.png)
 
