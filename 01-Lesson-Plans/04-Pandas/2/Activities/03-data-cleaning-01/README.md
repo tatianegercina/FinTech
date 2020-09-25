@@ -18,13 +18,13 @@ In this exercise you'll learn how to assess the quality of your data via the in-
 
     1. Identify the number of rows in the DataFrame.
 
-    2. Identifying the frequency counts of the `First_Name` column. This should identify the number of times a specific name occurs.
+    2. Identify the frequency counts of the `First_Name` column. This should identify the number of times a specific name occurs.
 
     3. Identify any null values in the DataFrame using the `isnull` function.
 
     4. Determine the number of nulls in the DataFrame using the `isnull` function in conjunction with the `sum` function.
 
-    5. Determine the percentage of nulls for each column using the `isnull`, `sum` functions divided by the `len` of the DataFrame. Multiply by `100` to produce a percentage rather than a decimal number.
+    5. Determine the percentage of nulls for each column by chaining the `isnull` and `sum` functions then dividing by the `len` of the DataFrame. Multiply by `100` to produce a percentage rather than a decimal number.
 
     6. Check for duplicate rows using the `duplicated` function.
 
@@ -36,12 +36,14 @@ In this exercise you'll learn how to assess the quality of your data via the in-
 
     2. Use the `dropna` function to drop the remaining records with nulls from the DataFrame. Use the `inplace` parameter set to `True` or resolve the changes to a new DataFrame.
 
-    3. Use the `drop_duplicates` function with the `subset` parameter to drop duplicates based on the `Last_Name` and `First_Name` columns.
+    3. Check once more for null counts for each column.
 
-    4. Use the `as_type` function to convert the `Person_ID` column to the data type `int`.
+    4. Use the `drop_duplicates` function with the `subset` parameter to drop duplicates based on the `Last_Name` and `First_Name` columns.
+
+    5. Use the `as_type` function to convert the `Person_ID` column to the data type `int`.
 
 8. Saved the cleansed data to a new CSV in the `Resources` folder.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

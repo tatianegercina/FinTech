@@ -10,7 +10,7 @@ In this exercise, you will learn how to calculate correlation between the respec
 
 3. Read the CSVs into Pandas DataFrames.
 
-4. Combine the DataFrames by concatenating by columns and performing and inner join.
+4. Combine the DataFrames by concatenating by columns and performing an inner join.
 
 5. Drop the extra columns (everything except closing prices).
 
@@ -36,4 +36,4 @@ In this exercise, you will learn how to calculate correlation between the respec
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

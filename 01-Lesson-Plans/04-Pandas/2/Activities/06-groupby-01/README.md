@@ -1,21 +1,23 @@
-# Grouping Data in Pandas DataFrames
+# Grouping By Columns in Pandas DataFrames
 
-In this exercise you'll learn how to use sort Pandas DataFrames in ascending and descending order.
+In this exercise you will learn how to group by specified columns to create aggregated subsets of data within Pandas DataFrames that can be used to calculate aggregated metrics.
 
 ## Instructions
 
 Perform the following:
 
-1. Import the `pandas` and `pathlib` libraries and set the `%matplotlib inline` property.
+1. Import the `pandas` and `pathlib` libraries.
 
 2. Create a variable `csvpath` that represents the path to the [people_cleansed.csv](Resources/people_cleansed.csv) using the Pathlib library.
 
-3. Read the CSV into a Pandas DataFrame.
+3. Read the CSV into a Pandas DataFrame and display a few rows.
 
-4. Sort DataFrame in ascending order.
+4. Use the `groupby` function to find the count of each `Occupation`.
 
-5. Sort DataFrame in descending order.
+5. Use the `groupby` function to find the mean of the `Salary` and `Age` of each `Occupation`.
+
+6. Use the `groupby` function to find the mean of the `Salary` and `Age` of each `Occupation` and `Gender` combination.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
