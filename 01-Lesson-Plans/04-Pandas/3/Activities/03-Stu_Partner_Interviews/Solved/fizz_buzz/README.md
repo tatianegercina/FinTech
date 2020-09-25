@@ -1,6 +1,6 @@
 # Fizz Buzz
 
-Write a script that prints the numbers 1 to 100 in the console. But for multiples of three, print `Fizz` and for multiples of five, print `Buzz`. For numbers that are multiples of both three and five, print `FizzBuzz`.
+Write a script that prints the numbers 1 to 100 in the console. For multiples of three, print `Fizz` and for multiples of five, print `Buzz`. For numbers that are multiples of both three and five, print `FizzBuzz`.
 
 ## Notes to the Interviewer
 
@@ -28,8 +28,10 @@ Remember the Pythons `%` modulo operator!
 
 ### Modulo If-Else Statements
 
-The solution is simply to check that the current number is a multiple of both three and five; then check whether the number is a multiple of three; then check whether the number is a multiple of five; and then just print the number if all else is false.
+The solution is simply to check that the current number is a multiple of both three and five; then check whether the number is a multiple of three; then check whether the number is a multiple of five; and then just print the number if all else is false.  A solution to this problem can be found [here]
 
----
+The solution file is available in [solution.py](Solved/solution.py).
+
+------
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
