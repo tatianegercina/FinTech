@@ -10,7 +10,7 @@ Use the starter file to complete the following steps:
 
 1. Import libraries and dependencies.
 
-2. Read in `shop.csv` as a Pandas DataFrame, and set the Date column as a datetime index.
+2. Read in `shop.csv` as a Pandas DataFrame, and set the Date column as a datetime index, then plot the data.
 
 3. Use the `rolling` function and set the `window` parameter to designate the time windows. Then, use the `mean` function to calculate the following:
 
