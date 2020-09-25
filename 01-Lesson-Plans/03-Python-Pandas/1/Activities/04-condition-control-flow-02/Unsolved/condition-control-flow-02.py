@@ -71,7 +71,7 @@
 # Make a variable called `c2_yearly_expenses` and have it equal to `c2_monthly_expenses` * 12.
 
 
-# Make a variable called `c2_savings` and have it equal to `c2_salary` - (`c1_yearly_rent` + `c2_yearly_expenses`)
+# Make a variable called `c2_savings` and have it equal to `c2_salary` - (`c2_yearly_rent` + `c2_yearly_expenses`)
 
 
 ##############
