@@ -6,7 +6,7 @@ In this activity, you will learn how to calculate portfolio returns with a 60-40
 
 1. Import the `pandas` and `pathlib` libraries, and set the `%matplotlib inline` property.
 
-2. Create a two variables `msft_csv_path` and `sp500_csv_path` that represents the path to the [MSFT.csv](Resources/MSFT.csv) and [SP500.csv](Resources/SP500.csv) using the Pathlib library.
+2. Create two variables named `msft_csv_path` and `sp500_csv_path` that represent the paths to [MSFT.csv](Resources/MSFT.csv) and [SP500.csv](Resources/SP500.csv) using the Pathlib library.
 
 3. Import the CSVs into Pandas DataFrames.
 
@@ -28,4 +28,4 @@ In this activity, you will learn how to calculate portfolio returns with a 60-40
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

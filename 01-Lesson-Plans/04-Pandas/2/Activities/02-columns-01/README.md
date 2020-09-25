@@ -16,7 +16,7 @@ Perform the following:
 
 5. View the column data types of the Pandas DataFrame.
 
-6. Rename the columns of the Pandas DataFrame to "Person_ID", "First_Name", "Last_Name", "Email", "Gender", "University", "Occupation", "Salary".
+6. Using the `columns` attribute, rename the columns of the Pandas DataFrame to "Person_ID", "First_Name", "Last_Name", "Email", "Gender", "University", "Occupation", "Salary".
 
 7. Alternatively, rename the columns of the Pandas DataFrame using a Dictionary.
 
@@ -30,4 +30,4 @@ Perform the following:
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
