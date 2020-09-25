@@ -6,7 +6,7 @@ In this exercise you'll learn how to categorize records in Pandas DataFrames usi
 
 Perform the following:
 
-1. Import the `pandas` and `pathlib` libraries and set the `%matplotlib inline` property.
+1. Import the `pandas` and `pathlib` libraries.
 
 2. Create a variable `csvpath` that represents the path to the [people_cleansed.csv](Resources/people_cleansed.csv) using the Pathlib library.
 
@@ -18,4 +18,4 @@ Perform the following:
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

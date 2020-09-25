@@ -8,7 +8,7 @@ Perform the following:
 
 1. Import the `pandas`, `pathlib`, and `seaborn` libraries, and set the `%matplotlib inline` property.
 
-2. Create a two variables `msft_csv_path` and `sp500_csv_path` that represents the path to the [MSFT.csv](Resources/MSFT.csv) and [SP500.csv](Resources/SP500.csv) using the Pathlib library.
+2. Create two variables named `msft_csv_path` and `sp500_csv_path` that represent the paths to [MSFT.csv](Resources/MSFT.csv) and [SP500.csv](Resources/SP500.csv) using the Pathlib library.
 
 3. Read the CSVs into Pandas DataFrames.
 
@@ -18,7 +18,7 @@ Perform the following:
 
 6. Rename the columns for the respective stock (MSFT or SP500).
 
-7. Calculate the daily returns of the combined DataFramee.
+7. Calculate the daily returns of the combined DataFrame.
 
 8. Use the `cov` function to calculate the covariance between the daily returns of MSFT and the daily returns of the S&P 500.
 
@@ -32,8 +32,8 @@ Perform the following:
 
 13. Calculate the 30 day rolling beta value for MSFT by dividing the previously calculated 30 day rolling covariance value by the calculated 30 day rolling variance. Plot the 30 day rolling beta.
 
-14. Use the `lmplot` from the `seaborn` library to plot a scatterplot of MSFT to S&P500 daily returns and fit a regression line.
+14. Use the `lmplot` function from the `seaborn` library to plot a scatterplot of MSFT to S&P 500 daily returns and fit a regression line.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

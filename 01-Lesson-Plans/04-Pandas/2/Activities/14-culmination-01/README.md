@@ -1,6 +1,6 @@
 # Bank of America Stock Data
 
-In this exercise you'll be learning to use the pandas module.
+In this exercise you'll practice using various components of the pandas module.
 
 ## Instructions
 
@@ -8,7 +8,7 @@ In this exercise you'll be learning to use the pandas module.
 
 2. Create a variable `bac_path` that represents the path to the [BAC.csv](Resources/BAC.csv) using the Pathlib library.
 
-3. Read the CSV into a Pandas DataFrame.
+3. Read the CSV into a Pandas DataFrame stored in a new variable `bac_df`.
 
 4. Count the number of rows in the DataFrame.
 
@@ -26,4 +26,4 @@ In this exercise you'll be learning to use the pandas module.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
