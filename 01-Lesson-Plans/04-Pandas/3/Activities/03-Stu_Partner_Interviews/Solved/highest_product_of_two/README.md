@@ -42,7 +42,7 @@ This is a good question to pose to candidates who have already seen the [maximin
 
       * You want the candidate to explain that they can keep track of the biggest element they've seen _so far_, and return this as the maximum in the list.
 
-      * If your candidate correctly they could sort the list and return the last element, simply explain the answer you were looking for to save time.
+      * If your candidate incorrectly explains how they could sort the list and return the last element, simply explain the answer you were looking for to save time.
 
 * **Follow-Up**:
 
