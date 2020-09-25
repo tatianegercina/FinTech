@@ -1,6 +1,6 @@
 # Fetching Stock Data Using Google Sheets
 
-Google Sheets offers a mechanism to fetch stock data. This feature is quite handy when you ware prototyping portfolios or performing stock data analysis. You can retrieve data from the major indexes such as the S&P 500, NYSE, NASDAQ, and the S&P TSX 60.
+Google Sheets offers a mechanism to fetch stock data. This feature is quite handy when you are prototyping portfolios or performing stock data analysis. You can retrieve data from the major indexes such as the S&P 500, NYSE, NASDAQ, and the S&P TSX 60.
 
 This guide will show you how to extract historical stock ticker data from Google Sheets via [the Google Finance function](https://support.google.com/docs/answer/3093281) as a CSV.
 
@@ -54,7 +54,7 @@ To start using this feature of Google Sheets, follow the next steps:
 
   ![fb-google-finance-csv](Images/fb-google-finance-csv.png)
 
-  **Note:** The downloaded file may have to be renamed again as the Google Sheets appends the current sheet name to the file, for example, `fb_google_finance - Sheet2.csv`.
+  **Note:** The downloaded file may have to be renamed again as Google Sheets appends the current sheet name to the file, for example, `fb_google_finance - Sheet2.csv`.
 
 * The general process for extracting Google Finance data from within Google Sheets and downloading as a CSV is shown below.
 
