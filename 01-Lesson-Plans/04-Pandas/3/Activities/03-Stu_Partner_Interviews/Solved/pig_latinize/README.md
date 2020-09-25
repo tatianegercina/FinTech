@@ -65,7 +65,7 @@ Most candidates should be able to solve the basic problem of translating a word 
 
         * If your candidate makes other suggestions but misses this one, simply let them know that their suggestions were good, but that this is the implementation you're looking for.
 
-* **Note**: You don't need your candidate to implement this, yet—the conceptual solution is enough for now. When your candidate gets the answer, or when you reveal it, explain this, and move on to the next prompt.
+* **Note**: You don't need your candidate to implement this just yet — the conceptual solution is enough for now. When your candidate gets the answer, or when you reveal it, explain this, and move on to the next prompt.
   
 * **Prompt**: How would you deal with punctuation? For example, does your function properly deal with "fish."?
 
