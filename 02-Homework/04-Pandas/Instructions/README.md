@@ -16,7 +16,7 @@ For this homework assignment, you have three main tasks:
 
 2. [Determine Success of Each Portfolio](#Conduct-Quantitative-Analysis)
 
-3. [Choose and Evaluate a Custom Portfolio](#Create-Custom-Portfolio)
+3. [Choose and Evaluate a Custom Portfolio](#Create-a-Custom-Portfolio)
 
 ---
 
@@ -52,7 +52,7 @@ First, read and clean several CSV files for analysis. The CSV files include whal
 
 2. Detect and remove null values.
 
-3. Remove dollar signs and any other character from the numeric values and convert the data types as needed.
+3. If any columns have dollar signs or characters other than numeric values, remove those characters and convert the data types as needed.
 
 4. The whale portfolios and algorithmic portfolio CSV files contain daily returns, but the S&P TSX 60 CSV file contains closing prices. Convert the S&P TSX 60 closing prices to daily returns.
 
@@ -66,21 +66,27 @@ Analyze the data to see if any of the portfolios outperform the stock market (i.
 
 #### Performance Analysis
 
-1. Calculate and plot cumulative returns. Does any portfolio outperform the S&P TSP 60?
+1. Calculate and plot daily returns of all portfolios.
+
+2. Calculate and plot cumulative returns for all portfolios. Does any portfolio outperform the S&P TSX 60?
 
 #### Risk Analysis
 
-1. Create a box plot for each of the returns. Which box has the largest spread? Which has the smallest spread?
+1. Create a box plot for each of the returns. 
 
-2. Calculate the standard deviation for each portfolio. Which portfolios are riskier than the S&P TSX 60?
+2. Calculate the standard deviation for each portfolio. 
+
+3. Determine which portfolios are riskier than the S&P TSX 60
+
+4. Calculate the Annualized Standard Deviation.
 
 #### Rolling Statistics
 
-1. Plot the rolling standard deviation of the firm's portfolios along with the rolling standard deviation of the S&P TSX 60. Does the risk increase for each of the portfolios at the same time risk increases in the S&P TSX 60?
+1. Calculate and plot the rolling standard deviation for all portfolios using a 21-day window.
 
-2. Construct a correlation table for the algorithmic, whale, and S&P TSX 60 returns. Which returns most closely mimic the S&P TSX 60?
+2. Calculate and plot the correlation between each stock to determine which portfolios may mimick the S&P TSX 60.
 
-3. Choose one portfolio and plot a rolling beta between that portfolio's returns and S&P TSX 60 returns. Does the portfolio seem sensitive to movements in the S&P TSX 60?
+3. Choose one portfolio, then calculate and plot beta it and the S&P 60 TSX.
 
 #### Rolling Statistics Challenge: Exponentially Weighted Average
 
@@ -96,13 +102,25 @@ Investment managers and their institutional investors look at the return-to-risk
 
 ### Create a Custom Portfolio
 
-Harold is ecstatic that you were able to help him prove that the algorithmic trading portfolios are doing so well compared to the market and whales portfolios. However, now you are wondering whether you can choose your portfolio that performs just as well as the algorithmic portfolios. Investigate by doing the following:
+Harold is ecstatic that you were able to help him prove that the algorithmic trading portfolios are doing so well compared to the market and whales portfolios. However, now you are wondering whether you can choose your own portfolio that performs just as well as the algorithmic portfolios. Investigate by doing the following:
 
 1. Visit [Google Sheets](https://docs.google.com/spreadsheets/) and use the built-in Google Finance function to choose 3-5 stocks for your portfolio.
 
 2. Download the data as CSV files and calculate the portfolio returns.
 
-3. Add your portfolio returns to the DataFrame with the other portfolios and re-run the analysis. How does your portfolio do?
+3. Calculate the weighted returns for your portfolio, assuming equal number of shares per stock.
+
+4. Add your portfolio returns to the DataFrame with the other portfolios.
+
+5. Run the following analyses:
+
+    * Calculate the Annualized Standard Deviation.
+    * Calculate and plot rolling `std` with a 21-day window.
+    * Calculate and plot the correlation.
+    * Calculate and plot beta for your portfolio compared to the S&P 60 TSX.
+    * Calculate the Sharpe ratios and generate a bar plot.
+
+4. How does your portfolio do?
 
 ---
 
@@ -130,7 +148,7 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 
 ## Submission
 
-1. Create a Jupyter Notebook containing your data preparation, analysis, and visualizations. Put your analysis and answers to the assignment questions in raw text (markdown) cells in the report.
+1. Use the provided starter Jupyter Notebook to house the code for your data preparation, analysis, and visualizations. Put any analysis or answers to assignment questions in raw text (markdown) cells in the report.
 
 2. Submit your notebook to a new GitHub repository.
 
