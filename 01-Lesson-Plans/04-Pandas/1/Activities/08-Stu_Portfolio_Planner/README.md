@@ -40,7 +40,7 @@ Using the starter file, complete the following steps:
     * `wdc_data.csv`
     * `wrk_data.csv`
 
-3. Combine the DataFrames so that the closing prices from each DataFrame are stacked column by column.
+3. Use `concat` to combine the DataFrames.
 
 4. Use the `sort_index` function to sort the combined DataFrame by datetime index in ascending order (past to present).
 
@@ -48,9 +48,9 @@ Using the starter file, complete the following steps:
 
 6. Use the `pct_change` function to calculate daily returns for each stock.
 
-7. Use the `std` function and multiply by `sqrt(252)` to calculate annualized volatility. Use the `sort_values` function to sort by volatility values quickly.
+7. Use the `std` function and multiply by `np.sqrt(252)` to calculate annualized volatility. Use the `sort_values` function to sort by volatility values quickly.
 
-8. Drop the top five stocks with the highest volatility from the DataFrame of daily returns.
+8. Drop the five stocks with the highest volatility from the DataFrame of daily returns.
 
 9. Set portfolio weights of 0.5, 0.2, 0.15, 0.10, and 0.05 to the remaining stocks (from least risk to most risk).
 
@@ -78,45 +78,49 @@ Specifically, upper management wants Harold to go beyond just evaluating stocks 
 
 * Only positive return-to-risk ratio stocks (Sharpe ratios)
 
-Then, they want to visualize the returns of a hypothetical $10,000 investment in such a constructed portfolio over time, as well as how such a portfolio compares to $10,000 investments in less optimized portfolios.
+Then, they want to visualize the returns of a hypothetical $10,000 investment in such a constructed portfolio over time, as well as how such a portfolio compares to 10,000 investments in less optimized portfolios.
 
-Use the Pandas library to help Harold construct an optimized portfolio of stocks, and then plot and compare the returns of a $10,000 investment in the portfolio over time to less optimized portfolios.
+Use the Pandas library to help Harold construct an optimized portfolio of stocks, and then plot and compare the returns of a 10,000 investment in the portfolio over time to less optimized portfolios.
 
 ### Instructions - Part 2
 
 Using the starter file, complete the following steps:
 
-1. Reset the DataFrame for daily returns of the 10 stocks. Use the `pct_change` function to calculate and reassign a new DataFrame of daily returns.
+1. Import libraries and dependencies.
 
-2. Use the `corr` function and the `heatmap` function from the `Seaborn` library to calculate and visualize the stock return correlations for each stock pair.
+2. Read in the provided CSV file containing the combined DataFrame created in Part 1.
 
-3. Drop highly correlated stocks and keep only non-correlated stocks from the DataFrame (two stocks should be dropped).
+3. Use the `pct_change` function to calculate and reassign a new DataFrame of daily returns.
+
+4. Use the `corr` function and the `heatmap` function from the `Seaborn` library to calculate and visualize the stock return correlations for each stock pair.
+
+5. Drop highly correlated stocks and keep only non-correlated stocks from the DataFrame (two stocks should be dropped).
 
     **Hint:** You can do this by visually identifying high correlations, or by summing then comparing total correlation values per stock.
 
-4. Use the `mean` and `std` functions to calculate the annualized Sharpe ratio and assess the reward-to-risk ratio of the non-correlated stocks.
+6. Use the `mean` and `std` functions to calculate the annualized Sharpe ratio and assess the reward-to-risk ratio of the non-correlated stocks.
 
-5. Drop stocks with negative Sharpe ratios from the DataFrame (three stocks should be dropped).
+7. Drop stocks with negative Sharpe ratios from the DataFrame (three stocks should be dropped).
 
-6. Assess the investment potential of a non-correlated (diversified) and return-to-risk (Sharpe ratio) optimized portfolio:
+8. Assess the investment potential of a non-correlated (diversified) and return-to-risk (Sharpe ratio) optimized portfolio:
 
     * Set an equal weight for each stock in the optimized portfolio (five stocks). Use the `dot` function to multiply weights by each stock's daily returns to output the optimized portfolio's daily returns.
 
     * Calculate the optimized portfolio's cumulative returns, and then multiply the initial investment of $10,000 against the portfolio's series of cumulative returns. Plot the trend.
 
-7. Assess the investment potential of a non-correlated (diversified) portfolio:
+9. Assess the investment potential of a non-correlated (diversified) portfolio:
 
     * Set an equal weight for each stock in a non-correlated stock portfolio (eight stocks). Use the `dot` function to multiply weights by each stock's daily returns to output the non-correlated stock portfolio's daily returns.
 
     * Calculate the non-correlated stock portfolio's cumulative returns, and then multiply the initial investment of $10,000 against the portfolio's series of cumulative returns. Plot the trend.
 
-8. Assess the investment potential of the original unoptimized portfolio:
+10. Assess the investment potential of the original unoptimized portfolio:
 
     * Set an equal weight for each stock in an unoptimized portfolio (all 10 stocks). Use the `dot` function to multiply weights by each stock's daily returns to output the unoptimized portfolio's daily returns.
 
     * Calculate the unoptimized stock portfolio's cumulative returns, and then multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
 
-9. Overlay the investment trend of every portfolio on a single chart, including the portfolio constructed in Part 1.
+11. Overlay the investment trend of every portfolio on a single chart, including the portfolio constructed in Part 1.
 
 ### Hint
 

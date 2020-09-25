@@ -22,11 +22,13 @@ Using the [starter file](Unsolved/diversification.ipynb), complete the following
     * `IPL.csv`
     * `TSM.csv`
 
-3. Use the `concat` function to combine the seven DataFrames into a single combined DataFrame.
+3. Use the `concat` function to combine the seven DataFrames into a single combined DataFrame with an index of `date`.
 
-4. Use the `corr` function on the combined DataFrame to calculate and output a correlation table of each stock-to-stock pair.
+4. Calculate the daily returns using the `pct_change` function.
 
-5. From the correlation matrix, choose the stock with the least correlation to `BMO` and `CNQ` that should be added to the existing portfolio.
+5. Use the `corr` function on the combined DataFrame to calculate and output a correlation table of each stock-to-stock pair.
+
+6. From the correlation matrix, choose the stock with the least correlation to `BMO` and `CNQ` that should be added to the existing portfolio.
 
 ## Hint
 
