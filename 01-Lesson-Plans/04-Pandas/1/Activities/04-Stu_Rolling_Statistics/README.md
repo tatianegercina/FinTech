@@ -10,7 +10,7 @@ Use the starter file to complete the following steps:
 
 1. Import libraries and dependencies.
 
-2. Read in `shop.csv` as a Pandas DataFrame, and set the Date column as a datetime index, then plot the data.
+2. Read in `shop.csv` as a Pandas DataFrame, and set the Date column as a datetime index, then plot the data. stan
 
 3. Use the `rolling` function and set the `window` parameter to designate the time windows. Then, use the `mean` function to calculate the following:
 
@@ -22,13 +22,7 @@ Use the starter file to complete the following steps:
 
 4. Overlay the plot for daily closing prices of `SHOP` with the SMAs.
 
-5. Use the `rolling` function and set the `window` parameter to designate the time windows. Then, use the `mean` function to calculate the following:
-
-    * 20-day rolling standard deviation
-
-    * 50-day rolling standard deviation
-
-    * 100-day rolling standard deviation
+5. Perform the same actions from items 3 and 4, only this time calculate the rolling standard deviation by using the `std` function instead of `mean`.  Try chaining the functions to create the calculation and the plot in one line.  Example: `df.rolling(window=20).std().plot(ax=ax)`.
 
 6. Overlay the plot for daily closing prices with the standard deviations.
 
