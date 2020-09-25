@@ -40,7 +40,7 @@ Using the starter file, complete the following steps:
     * `wdc_data.csv`
     * `wrk_data.csv`
 
-3. Combine the DataFrames so that the closing prices from each DataFrame are stacked column by column.
+3. Use `concat` to combine the DataFrames.
 
 4. Use the `sort_index` function to sort the combined DataFrame by datetime index in ascending order (past to present).
 
