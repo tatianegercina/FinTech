@@ -61,7 +61,7 @@ total_cost = rent_cost + utilities_cost + food_cost + transportation_cost + comp
 if total_cost < budget:
     print(f"You're total cost is {total_cost}")
 else:
-    print(f"You're over budget by {total_cost} - {budget}")
+    print(f"You're over budget by {total_cost - budget}")
 
 # Write an if statement that checks whether the rent_cost is larger than the sum of the `utilities_cost`, `food_cost`,
 # and `transportation_cost`. If so, print a string that says "The rent is too damn high!".
