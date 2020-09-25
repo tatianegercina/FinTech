@@ -1,6 +1,6 @@
 # Maximin
 
-Write a function that prints the minimum and maximum elements from an list *without* using the `min` or `max` list functions.
+Write a function that prints the minimum and maximum elements from a list *without* using the `min` or `max` list functions.
 
 ```python
 [12, 33, 41, 2, 61, 32, 75, 43, 67]
@@ -54,4 +54,4 @@ This is an exemplary introduction to greedy algorithms—algorithms that keep tr
 
 ------
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

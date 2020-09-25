@@ -22,7 +22,7 @@ Because every candidate is unique, with their own thoughts and characteristics, 
 
 ## Guidelines for Evaluating Candidates
 
-* Candidates should talk through each step outlined in `HowToInterviewWell.pdf`.
+* Candidates should talk through each step outlined in [`TechnicalInterviewGuidelines.pdf`](../01-Ins_Problem_solving_Guidlines/Solved/TechnicalInterviewGuidlines.pdf).
 
   * If a problem does not lend itself to one of the steps—e.g., you give the candidate a true or false question and there is no implementation step—they should talk through each step that is relevant. Use your judgment in determining which steps these are.
 
@@ -32,7 +32,7 @@ Because every candidate is unique, with their own thoughts and characteristics, 
 
 * Ideally, candidates won't need _any_ prompts.
 
-  * Don't penalize candidates if they need prompts but use the information well. But, do reward them if they do _not_ need the prompts.
+  * Don't penalize candidates if they need prompts but, do reward them if they do _not_ need the prompts.
 
 * Candidates who answer the prompts _before you ask them_ are performing well.
 
