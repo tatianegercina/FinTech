@@ -692,7 +692,7 @@ Open the solved version of the Jupyter notebook for Part 2, and conduct a dry wa
 
   ![part-2-correlation](Images/part-2-correlation.png)
 
-* In this case, the daily returns of `FANG` and `JNJ` appear to be highly correlated and can be dropped from the DataFrame.
+* In this case, the daily returns of `WRK` and `BK` appear to be highly correlated and can be dropped from the DataFrame.
 
   ![portfolio_drop_two](Images/portfolio_drop_two.png)
 
