@@ -10,7 +10,7 @@ Perform the following:
 
 2. Create a variable `pokemon_path` that represents the path to the [Pokemon.csv](Resources/Pokemon.csv) using the Pathlib library.
 
-3. Import the CSV into a Pandas DataFrame
+3. Import the CSV into a Pandas DataFrame named `pokemon_df`.
 
 4. View summary statistics using the `describe` function.
 
@@ -24,4 +24,4 @@ Perform the following:
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
