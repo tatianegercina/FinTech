@@ -23,7 +23,7 @@ By the end of class, students will be able to:
 
 * Review the interview questions for the workshop ahead of time. These are available in the [Interview Questions](Activities/README.md) repository. You will need one question for each 30-minute interview — partners will *not* work on the same interview problems successively.
 
-* Have your TAs refer to the `Workshop Time Tracker` to help keep track of time; more important than the Time Tracker is that students have adequate time to work through interview problems.
+* Have your TAs refer to the [`Workshop Time Tracker`](TimeTracker.xlsx) to help keep track of time; more important than the Time Tracker is that students have adequate time to work through interview problems.
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [4.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a7bf65da-a346-4846-b9c2-aab300263be1) Note that this video may not reflect the most recent lesson plan.
@@ -50,7 +50,7 @@ In this activity, instructors will introduce the problem-solving guidelines that
 
 * [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf)
 
-* Students will use the methodologies outlined in the [problem-solving guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to impress upon a technical interviewer that they are strong problem solvers. Specifically, students will use the following technical interview methodologies:
+* Students will use the methodologies outlined in the [problem-solving guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) document to impress upon a technical interviewer that they are strong problem solvers. Specifically, students will use the following technical interview methodologies:
 
   * Restate and explain the problem with a concrete example.
   * Sketch the solution at a high level (for example, pseudocode).
@@ -81,7 +81,7 @@ In this activity, instructors will overview the process of the mock interviews f
 
 * After each student pair has completed the full interview process (acted as both interviewer and interviewee, and discussed feedback), students will break off into new pairs and repeat the process until the end of class.
 
-Then slack out the [peer interview grading rubric](Activities/02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xlsx) and explain the following:
+Slack out the [peer interview grading rubric](Activities/02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xlsx) and explain the following:
 
 * The rubric will be used by interviewers to assess their corresponding partner's interview performances.
 

@@ -30,11 +30,11 @@ most_frequent(num_list) # Should return 2
 
     * **Candidate Asks for Input**.
 
-      * There multiple legitimate ways to deal with this. One could:
+      * There are multiple legitimate ways to deal with this. One could:
 
-      * Return every element; or
+        * Return every element; or
 
-      * Return some value indicating that there is no "most frequent."
+        * Return some value indicating that there is no "most frequent."
 
       * Both are valid solutions, but the latter is arguably better.
 
@@ -52,4 +52,4 @@ most_frequent(num_list) # Should return 2
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

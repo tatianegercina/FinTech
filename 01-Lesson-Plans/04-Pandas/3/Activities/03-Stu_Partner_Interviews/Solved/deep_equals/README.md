@@ -33,7 +33,7 @@ If we want to compare the _contents_ of two lists, we have to write our own func
 
       * Some strong candidates will know the answer immediately.
 
-      * Strong candidates who don't know the answer immediately will raise a few possibilities. Example good answers include:
+      * Strong candidates who don't know the answer immediately will raise a few possibilities. Good example answers include:
 
         * `first` and `second` might refer to different objects; or
 
@@ -51,7 +51,7 @@ If we want to compare the _contents_ of two lists, we have to write our own func
 
     * Candidate Explains Solution Behavior
 
-      * Candidates should be able to explain that a properly implemented function will return `True` if every element in appears the same number of times in the second list with no additional numbers, and `False` otherwise.
+      * Candidates should be able to explain that a properly implemented function will return `True` if every element appears the same number of times in the second list with no additional numbers, and `False` otherwise.
 
 * **Prompt**: How would this function determine if the contents in the two lists are equal?
 
@@ -77,4 +77,4 @@ The solution is available in [Deep_Equals.ipynb](Solved/Deep_Equals.ipynb).
 
 ------
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
