@@ -24,8 +24,6 @@ Use the starter file to complete the following steps:
 
 5. Perform the same actions from items 3 and 4, only this time calculate the rolling standard deviation by using the `std` function instead of `mean`.  Try chaining the functions to create the calculation and the plot in one line.  Example: `df.rolling(window=20).std().plot(ax=ax)`.
 
-6. Overlay the plot for daily closing prices with the standard deviations.
-
 ## Hint
 
 Go [here](https://www.investopedia.com/terms/s/sma.asp) to learn more about simple moving averages and how they work.
