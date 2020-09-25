@@ -22,7 +22,7 @@ Using the [starter file](Unsolved/diversification.ipynb), complete the following
     * `IPL.csv`
     * `TSM.csv`
 
-3. Use the `concat` function to combine the seven DataFrames into a single combined DataFrame.
+3. Use the `concat` function to combine the seven DataFrames into a single combined DataFrame with an index of `date`.
 
 4. Calculate the daily returns using the `pct_change` function.
 
