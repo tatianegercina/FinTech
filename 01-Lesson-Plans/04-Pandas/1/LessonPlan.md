@@ -516,7 +516,7 @@ Open the solved version of the Jupyter notebook, live code the solution, and exp
 
   ![sp500-variance](Images/sp500-variance.png)
 
-* The beta quantifies the relative volatility of each social media stock's returns to that of the overall market. For example, if the S&P 500 returns 10% for the year, `TWTR` with a beta of 1.52 should expect to return approximately 15.2% for the year.
+* The beta quantifies the relative volatility of each social media stock's returns to that of the overall market. For example, if the S&P 500 returns 10% for the year, `TWTR` with a beta of 1.51 should expect to return approximately 15.1% for the year.
 
   ![social-media-beta](Images/social-media-beta.png)
 
