@@ -25,3 +25,8 @@ Review the [Notes to the Interviewer](03-Stu_Partner_Interviews/README.md) prior
 * [Palindrome](03-Stu_Partner_Interviews/Solved/palindrome)
 
 * [Pig Latinize](03-Stu_Partner_Interviews/Solved/pig_latinize)
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+

@@ -60,4 +60,4 @@ If you’re familiar with time complexity, now is a good time to mention it.
 
 - - -
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -34,4 +34,4 @@ The solution file is available in [solution.py](Solved/solution.py).
 
 ------
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
