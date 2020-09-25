@@ -12,7 +12,7 @@ Use the starter file to complete the following steps:
 
 2. Read in the files `fb_data.csv`, `twtr_data.csv`, `snap_data.csv`, and `sp500_data.csv` as Pandas DataFrames. Set the Date column as a datetime index for each DataFrame.
 
-3. Use `concat` to combine the DataFrames on their shared `date` column then sort the new DataFrame in ascending order.
+3. Use `concat` to combine the DataFrames then sort the new DataFrame in ascending order.
 
 4. Rename the columns to reflect the corresponding stock.
 
