@@ -12,10 +12,13 @@
 
 * [Pandas Merging](https://pandas.pydata.org/pandas-docs/stable/merging.html)
 
-* [Anaconda Install Guide](AnacondaInstallGuide.md)
 - - -
 
 ### Additional Course Resources
+
+* [Pandas Reference Guide](Pandas_Reference_Guide.ipynb)
+
+* [Anaconda Install Guide](AnacondaInstallGuide.md)
 
 ### FAQs
 
