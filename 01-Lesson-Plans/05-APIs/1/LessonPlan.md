@@ -110,7 +110,7 @@ Show students the URL used to submit a Quandl API request. Underscore the fact t
 
 ![quandl_url.png](Images/quandl_url.png)
 
-* Submit a request to the Quandl API to get OPEC oil prices using an internet browser and the link below. Show students the data, and bring attention to the OPEC oil prices in the output.
+* Submit a request to the Quandl API to get OPEC oil prices using an internet browser and the link below, making sure to substitute your own API key where indicated. Show students the data, and bring attention to the OPEC oil prices in the output. 
 
   ```text
   https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=<instructor's API key>
