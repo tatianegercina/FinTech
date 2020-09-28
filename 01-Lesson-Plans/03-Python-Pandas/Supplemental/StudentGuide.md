@@ -16,7 +16,7 @@
 
 ### Additional Course Resources
 
-* [Pandas Reference Guide](Pandas_Reference_Guide.ipyng)
+* [Pandas Reference Guide](Pandas_Reference_Guide.ipynb)
 
 * [Anaconda Install Guide](AnacondaInstallGuide.md)
 
