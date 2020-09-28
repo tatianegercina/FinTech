@@ -22,13 +22,13 @@ By the end of class, students will:
 
 ### Instructor Notes
 
-* Today will be more relaxed, as the focus of the first day of the course is to simply familiarize students with each other as well as with the course itself, and ease them into the concept of FinTech.
+* Today will be more relaxed, as the focus of the first day of the course is to simply familiarise students with each other as well as with the course itself, and ease them into the concept of FinTech.
 
 * This is one of the few days where there will be dedicated time for instructors to connect with the students and get to know them. Take advantage of this time and use it to set the tone! Ask your students questions and break the ice.
 
 * Make sure your TAs have sufficient time to introduce themselves as well, as they will be major stakeholders when it comes to helping students progress through the course.
 
-* When reviewing the course requirements, be sure to emphasize that cheating or plagiarism of any kind is prohibited; engaging in this kind of behaviour can endanger student eligibility for certification upon graduation.
+* When reviewing the course requirements, be sure to emphasise that cheating or plagiarism of any kind is prohibited; engaging in this kind of behaviour can endanger student eligibility for certification upon graduation.
 
 * Let students know a student guide for each unit can be found in the corresponding unit's supplemental folder. Each guide has helpful links and FAQ's for the unit. The unit 1 student guide can be found [here.](../Supplemental/StudentGuide.md) If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
 
@@ -82,7 +82,7 @@ Then move on to the first topic of the day: defining FinTech. Review the slides 
 
 * What defines a FinTech company?
 
-  **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through back-end network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups:
+  **Answer:** A FinTech company is a financial services company that seeks to utilise technology to drive more efficient operation, either through back-end network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups:
 
   * Infrastructure providers
 
@@ -170,7 +170,7 @@ Answer any questions before moving on.
 
 Provide students with some encouragement and tips for overcoming the mental frustrations they will more than likely face throughout the course.
 
-Open the lesson slides, move to the "Tips" section and emphasize the following points.
+Open the lesson slides, move to the "Tips" section and emphasise the following points.
 
 * Embrace your inner toddler. Recognizing how little you know is the first step toward growth as a learner. Hard work, humility, and a relentless desire to improve are essential for succeeding in this program.
 
@@ -232,7 +232,7 @@ In this review portion of the previous activity, students will present their ref
 
 * Ask for a few volunteers to share their group's thoughts on what they felt would be most surprising to a financial analyst from 1999 witnessing the current state of the finance world.
 
-* Take note of each group's findings and emphasize some of the overarching themes regarding the state of the current FinTech ecosystem. Some topics that are likely to come up include:
+* Take note of each group's findings and emphasise some of the overarching themes regarding the state of the current FinTech ecosystem. Some topics that are likely to come up include:
 
   * Automation
 
@@ -256,7 +256,7 @@ As you review the slides, look for opportunities to prompt students to reflect. 
 
 * Market analysis shows that global FinTech investment has grown dramatically in recent years.
 
-* Since 2015, FinTech startups are disrupting in different sectors in Canada, such as: accounting and expenses management, capital markets, lending, personal finance, digital banking, insurance, real estate, among others.
+* Since 2015, FinTech startups are disrupting in different sectors in Australia and Canada, such as: accounting and expenses management, capital markets, lending, personal finance, digital banking, insurance, real estate, among others.
 
 * Recent technological advancements in (big) data and mobile network infrastructure has led to a consumer desire for companies to provide not only more efficient data-driven services, but also quality engagement through scalable mobile platforms.
 
