@@ -340,7 +340,7 @@ Instruct TAs to make rounds to make sure all students have Postman installed. Po
 
 Recommend that students save their API requests in Postman, so they do not have to execute the same request continually.
 
-Slack out the supplemental `Postman Install Guide` to students, so they have a step-by-step process for how to install and get started.
+Slack out the supplemental [Postman Install Guide](../Supplemental/PostmanInstallGuide.md) to students, so they have a step-by-step process for how to install and get started.
 
 Instruct students to inform the TAs when they are finished. The next activity will require students to work in pairs, so everyone will need to have completed this activity before the next activity can begin.
 
@@ -605,7 +605,7 @@ Answer any questions before moving on.
 
 ### 15. Instructor Do: URL Parameters (5 min)
 
-In this activity, students will learn how to customize API requests with parameters through instructor demonstration. The [Numbers API](http://number sapi.com) will be used for the demonstration, so make sure the API is still up and running before class.
+In this activity, students will learn how to customize API requests with parameters through instructor demonstration. The [Numbers API](http://numbersapi.com) will be used for the demonstration, so make sure the API is still up and running before class.
 
 **Files:**
 
