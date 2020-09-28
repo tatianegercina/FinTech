@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [Unit 5 Installation Guide](../Supplemental/APIs_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with Alpaca and Quandl outside of class time.
+* Slack out the [Unit 5 Installation Guide](../Supplemental/APIs_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the beginning of the next class. This should help catch installation issues with Alpaca and Quandl outside of class time.
 
 * Today will focus on API fundamentals and the process of submitting APIs. This class is an excellent opportunity for students to be impressed and inspired by FinTech. There are some fun and creative FinTech APIs, such as Quandl and World Bank, that will be used to drive student engagement. This lesson is the perfect opportunity to get students excited about FinTech again!
 
@@ -62,7 +62,7 @@ Be sure to set the pace for the class. Encourage students to attend office hours
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson 5.1 Slides](https://docs.google.com/presentation/d/1XJkEUoD9EWjjfhayPkDErPAUBQdRJXXAFF_28WnHCyw/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, select "Download as," and then choose "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and select "Make a copy...".
 
