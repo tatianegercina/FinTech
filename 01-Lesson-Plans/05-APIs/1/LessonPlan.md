@@ -158,9 +158,9 @@ Explain to students that this unit's homework focuses on exposing them to some o
 
 Walkthrough the homework instructions and highlight the following:
 
-* In this unit's homework, you will create two financial analysis tools using the Alpaca API and the Free Crypto API, a personal financial planner, and a retirement planning tool.
+* In this unit's homework, you will create two financial analysis tools using the Alpaca API and the Free Crypto API - a personal financial planner, and a retirement planning tool.
 
-* The personal financial planner will allow you to visualize personal expenses from the last 90 days to assess the current financial health by comparing the monthly household income versus the monthly expenses.
+* The personal financial planner will allow you to visualize personal expenses from the last 90 days to assess current financial health by comparing the monthly household income versus the monthly expenses.
 
 * Using the financial planner, you also will be able to analyze savings composed by investments in shares and cryptocurrencies.
 
@@ -336,7 +336,7 @@ Ask if there are any questions before moving onto the next activity.
 
 It's time students stopped learning about APIs and started playing with some! In this activity, students will go through a list of FinTech APIs and test out their functionality using Postman. This will give students a better understanding of what Postman is and how it should be used, and it will expose students to one of the most common tools used in the FinTech industry.
 
-Instruct TAs to make rounds to sure all students have Postman installed. Postman should have been installed before the class. Have TAs provide assistance and troubleshooting to any students experiencing issues getting started.
+Instruct TAs to make rounds to make sure all students have Postman installed. Postman should have been installed before the class. Have TAs provide assistance and troubleshooting to any students experiencing issues getting started.
 
 Recommend that students save their API requests in Postman, so they do not have to execute the same request continually.
 
@@ -356,7 +356,7 @@ Instruct students to inform the TAs when they are finished. The next activity wi
 
 ### 8. Student Do: Parlez-vous le JSON? (5 min)
 
-In this activity, students will choose a sub-selection of the JSON output to decipher. They will then explain the sub-selection to a peer. The key to working with APIs is being able to decipher their output. Because API output is commonly in JSON format, students will need practice deciphering JSON structures and syntax.
+In this activity, students will choose a sub-selection of the JSON output to decipher. They will then explain the sub-selection to a peer. The key to working with APIs is being able to decipher their output. Because API output is commonly stored in JSON format, students will need practice deciphering JSON structures and syntax.
 
 Walk around and instruct TAs to circulate during this activity so that students can ask questions as they make sense of the JSON data, including its structure and syntax. Some students will have had little to no exposure to JSON data in the past. It can be frustrating trying to interpret JSON data when the structure and syntax is foreign.
 
@@ -368,7 +368,7 @@ Walk around and instruct TAs to circulate during this activity so that students 
 
 ### 9. Instructor Do: Parlez-vous le JSON Activity Review (5 min)
 
-Instructor and students will review the JSON turn and teach the activity. The instructor will complete a live demo of submitting an API request and deciphering the JSON output.
+Instructor and students will review the JSON turn and teach activity. The instructor will complete a live demo of submitting an API request and deciphering the JSON output.
 
 Open Postman and submit the below request to Quandl. Then conduct a live deciphering of the JSON data, emphasizing the following:
 
@@ -456,7 +456,7 @@ Ask students if anyone remembers how to append to a string.
   url = url + "?format=json"
   ```
 
-* `GET` requests can be sent using the `requests.get` function. The function accepts the request URL as an argument.
+* `GET` requests can be sent using the `requests.get` function. This function accepts the request URL as an argument.
 
   ![request_response.png](Images/request_response.png)
 
@@ -529,13 +529,13 @@ If any students did not find a fact or joke they feel like sharing, ask them to 
 
 Transition into a reflective Q&A session. Ask students the following questions:
 
-* Having seen a range of FinTech and quirky APIs, what API can you see yourself implementing on your own accord?
+* Having seen a range of FinTech and quirky APIs, what API can you see yourself implementing of your own accord?
 
 * Are there specific types, or categories, of APIs you'd be interested in working with?
 
 * What type of APIs are you interested in creating?
 
-* Deciphering and parsing JSON can be frustrating and challenging, especially when the data isn't formatted in the best way. Did the `json.dumps` improve your ability to decipher the JSON data?
+* Deciphering and parsing JSON can be frustrating and challenging, especially when the data isn't formatted in the best way. Did the `json.dumps` function improve your ability to decipher the JSON data?
 
 If time remains, tell students about some of the APIs you've worked with and how they've added to your professional success. Encourage students to take advantage of as many open source APIs as possible. Take this time to recommend any APIs that you feel students might be interested in.
 
@@ -760,7 +760,7 @@ This activity will conclude APIs Day 1. Recap the skills and concepts learned th
 
 Guide students and the recap session. Use the below sample statements and questions to guide students if student engagement and participation is low. Only use these if necessary; let the students drive the session as much as possible.
 
-* Some of the APIs used in the lesson were Quandl, World Bank, Numbers API, Deck of Cards, U.S. Spending Stats, Random Jokes, etc. What APIs did you find to be the most interesting?
+* Some of the APIs used in the lesson were Quandl, World Bank, Numbers API, Deck of Cards, Statistics Canada, Random Jokes, etc. What APIs did you find to be the most interesting?
 
 * What APIs were the most useful? In what ways could you continue to use these APIs, especially in everyday life?
 
