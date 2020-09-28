@@ -396,7 +396,7 @@ Ask students to write down two things they like about APIs and the client-server
 
   **Answer:** The client-server model is simple, easy to understand, and used almost everywhere. APIs are cool because they eliminate the need of having to reinvent the wheel.
 
-Ask students to write down one thing they do not like or find challenging about APIs and the client-server model. Ask one student to volunteer an answer and collect the remaining answers as students leave the classroom.
+Ask students to write down one thing they do not like or find challenging about APIs and the client-server model. Ask for one volunteer to present their answer.
 
   **Answer**: Not all APIs have good documentation. It's difficult to gauge exactly what an API can do, or how it should be used.
 
