@@ -10,7 +10,7 @@ Submit `GET` requests using the Python `requests` library for one of the below `
 
 * **Random Jokes:** <https://official-joke-api.appspot.com/jokes/random>
 
-* **Cat Facts:** https://cat-fact.herokuapp.com/facts
+* **Cat Facts:** https://catfact.ninja/facts
 
 * **The Daily Releases of Statistics Canada:** <https://www150.statcan.gc.ca/n1/dai-quo/ssi/homepage/daily-banner-eng.json>
 
