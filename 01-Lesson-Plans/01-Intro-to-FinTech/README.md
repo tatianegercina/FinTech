@@ -24,8 +24,6 @@ This week we will cover the fundamentals of FinTech industry and basic git comma
 
 * [Instructions](../../02-Homework/01-FinTech/Instructions/README.md)
 
-* [Solutions](../../02-Homework/01-FinTech/Solutions/)
-
 * [Grading Rubric](../../02-Homework/01-FinTech/GradingRubric.pdf)
 
 ### Supplemental
