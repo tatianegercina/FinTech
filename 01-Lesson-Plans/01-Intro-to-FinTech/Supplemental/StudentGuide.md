@@ -83,7 +83,7 @@ As with most topics, there are numerous resources for gaining more information a
 
 [Australian blockchain industry body](https://blockchainaustralia.org/)
 
-[National blockhain roadmap](https://www.industry.gov.au/data-and-publications/national-blockchain-roadmap)
+[National blockchain roadmap](https://www.industry.gov.au/data-and-publications/national-blockchain-roadmap)
 
 [Australian FinTech conference](https://fintechsummit.com.au/)
 
