@@ -73,6 +73,26 @@ As with most topics, there are numerous resources for gaining more information a
 
 [Digital Finance Institute](https://www.digitalfinanceinstitute.org/)
 
+#### Australian FinTech and blockchain sites
+
+[IT News Australia](https://www.itnews.com.au/)
+
+[Australian FinTech industry body](https://www.fintechaustralia.org.au/)
+
+[Australian FinTech network](https://australianfintech.com.au/)
+
+[Australian blockchain industry body](https://blockchainaustralia.org/)
+
+[National blockhain roadmap](https://www.industry.gov.au/data-and-publications/national-blockchain-roadmap)
+
+[Australian FinTech conference](https://fintechsummit.com.au/)
+
+[Incubator for FinTech and other startups](https://www.stoneandchalk.com.au/)
+
+[Australian FinTech Awards](https://fintechawards.net/)
+
+#### Canadian FinTech and blockchain sites
+
 [Canadian FinTech Market Map](https://www.pwc.com/ca/en/industries/technology/canadian-fintech-market-map.html)
 
 [Status of The Canadian FinTech Landscape (CFA Montréal)](https://www.cfamontreal.org/static/uploaded/Files/Presentation/19-02-07-David_Nault_Rendez-Vous-Fintech_CFA-Montreal.pdf)

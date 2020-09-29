@@ -4,7 +4,7 @@
 
 When customers apply for larger loans and mortgages, they usually have to supply supporting documentation to prove that they hold the assets and receive the income they claim. The financial institution must verify that these documents are legitimate as one of the steps in granting the loan request. Machine learning tools can help the bank's fraud detection team focus on the most likely fraudulent documents - it would be impossible to examine them all thoroughly. These tools can also be adapted as the methods of the fraudsters change over time.
 
-This is just one of many types of fruad that a bank is exposed to, including money laundering, scamming, phishing, credit card scams, internal fraud - the list goes on.
+This is just one of many types of fraud that a bank is exposed to, including money laundering, scamming, phishing, credit card scams, internal fraud - the list goes on.
 
 ## Why This Matters
 
