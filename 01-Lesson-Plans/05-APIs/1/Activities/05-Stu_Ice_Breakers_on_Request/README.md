@@ -26,13 +26,13 @@ Submit `GET` requests using the Python `requests` library for one of the below `
 
 4. Execute `response_data.content` to extract the data from the request. Store the data in a variable named `response_content`, and output the data to the screen.
 
-5. Use the `json` function to format `response_content` as JSON. Store the output as a variable named `data`.
+5. Use the `json` function to format `response_data` as JSON. Store the output as a variable named `data`.
 
-6. Import the `json` package, and use `json.dump` to print `response_content` to the screen with formatting. Use the `indent=4` parameter to format with indentation.
+6. Import the `json` package, and use `json.dump` to print `data` to the screen with formatting. Use the `indent=4` parameter to format with indentation.
 
 7. Decipher the JSON data, and identify an amusing fact/joke to share with the class. Write it down to tell the class during the activity review.
 
-8. Select an element from the JSON and store it into a new variable. Hint: JSON attribute names are like keys in dictionaries (i.e., `response_content.fact` or `response_content.joke`).
+8. Select an element from the JSON and store it into a new variable. Hint: JSON attribute names are like keys in dictionaries (i.e., `data.fact` or `data.joke`).
 
 ### Challenge
 
