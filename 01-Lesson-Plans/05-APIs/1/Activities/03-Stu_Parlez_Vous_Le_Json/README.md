@@ -1,14 +1,23 @@
 # Parlez-vouz le JSON?
 
-Now that you know that the APIs below are working, go back and rerun one of them to get a closer look at the JSON data being returned. Capture your findings, and then turn and share your observations with a partner.
+Now that you know the APIs below are working, go back and rerun one of them to get a closer look at the JSON data being returned. Capture your findings, and then turn and share your observations with a partner.
 
 ## APIs
 
-* **Quandl:** <https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json?api_key=YOUR_KEY_GOES_HERE>
+* **Quandl:** 
+    ```text
+    https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json?api_key=YOUR_KEY_GOES_HERE
+    ```
 
-* **World Bank:** <http://api.worldbank.org/v2/country/ca/indicator/NY.GDP.MKTP.CD?format=json>
+* **World Bank:** 
+    ```text
+    http://api.worldbank.org/v2/country/ca/indicator/NY.GDP.MKTP.CD?format=json
+    ```
 
-* **Coinbase:** <https://api.coinbase.com/v2/prices/BTC-CAD/buy?format=json>
+* **Coinbase:** 
+    ```text
+    https://api.coinbase.com/v2/prices/BTC-CAD/buy?format=json
+    ```
 
 ## Instructions
 

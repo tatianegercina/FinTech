@@ -1,4 +1,4 @@
-# Eavesdropping on the Server Review
+## Eavesdropping on the Server
 
 Eavesdrop on the exchanges sent between client and server when visiting different websites.
 
@@ -6,17 +6,17 @@ Eavesdrop on the exchanges sent between client and server when visiting differen
 
     ![dev_console.png](../Images/dev_console.png)
 
-2. Select `requests`.
+2. Make the appropriate selection in your browser:
 
-    ![dev_console_reqs.png](../Images/dev_console.png)
+    * Select `requests` if using Firefox: ![dev_console_reqs.png](../Images/dev_console_reqs.png)
+
+    * Select `network` if using another browser: ![other_console.requs.png](../Images/other_console_reqs.png)
 
 3. Navigate to `https://google.com`.
 
 4. Review the output in the developer console. Compare the `POST` requests with the `GET` requests.
 
-    ![console_comm.png](../Images/console_comm.png)
-
-5. Scroll to the top of the console and identify the first request sent to the server. This was the first message sent by the client to the server when the site was accessed.
+5. Scroll to the top of the console and identify the first request sent to the server. This was the first message sent by the client to the server when the site was accessed. Note:  Depending on the browser being used, your console output may have a different appearance than that seen in the image below.
 
     ![first_response.png](../Images/first_response.png)
 
@@ -30,8 +30,4 @@ Eavesdrop on the exchanges sent between client and server when visiting differen
 
     ![console_nasdaq.png](../Images/console_nasdaq.png)
 
-9. Continue to navigate the internet with the developer console open. Take note of the type of requests that are sent for each site visited (how many POST vs. GET). Also, take into consideration the differences in API URLs.
-
----
-
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+9. Continue to navigate the internet with the developer console open. Take note of the type of requests that are sent for each site visited (how many POST vs GET). Also take into consideration the differences in API URLs.

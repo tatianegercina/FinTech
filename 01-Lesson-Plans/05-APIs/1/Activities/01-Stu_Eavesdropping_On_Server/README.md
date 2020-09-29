@@ -1,26 +1,31 @@
 # Eavesdropping on the Server
 
-Every time someone uses the internet or a network, a client sends a message to a server, and that server responds. Explore the relationship between `client` and `server` in more detail by navigating the web with an internet browser and eavesdropping in on the communications sent between `client` and `server`. Review the data that is sent between the client and server with an internet browser's developer console.
-
-The process of launching the developer console for an internet browser is different for each browser.
-
-Links to documentation for Firefox, Chrome, and Safari can be found [here](https://support.airtable.com/hc/en-us/articles/232313848-How-to-open-the-developer-console).
+Every time someone uses the internet or a network, a client sends a message to a server, and that server responds. Explore the relationship between `client` and `server` in more detail by navigating the web with an internet browser and eavesdropping on the communications sent between `client` and `server`. Review the data that is sent between client and server with an internet browser's developer console.
 
 ## Instructions
 
-Navigate to the websites below with the developer console open to review the exchanges between the client (browser) and server (websites visited).
+Navigate to the below websites with the developer console open to review the exchanges between client (browser) and server (websites visited).
 
-1. Open an internet browser, and launch the developer console. Consult the following links for help with getting the developer console open. Instruction is provided for each browser.
+1. Open an internet browser, and launch the developer console. This excercise works best with Firefox, however Chrome, Edge and Safari can all be used.
 
-    * [Open Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/open)
+    * The process to launch the developer console for an internet browser is different for each browser.
 
-    * [Firefox Browser Console](https://developer.mozilla.org/en-US/docs/Tools/Browser_Console)
+    * Links to documentation for Chrome, Edge, Firefox and Safari can be found [here](https://support.airtable.com/hc/en-us/articles/232313848-How-to-open-the-developer-console).
 
-    * [Open the Console developer tool in Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console)
+2. In your developer console:
 
-2. On the developer console, select `network`.
+    * If using Firefox, select `requests`:
 
-    ![network_console](Images/network_console.gif)
+    ![dev_console_reqs.png](Images/dev_console_reqs.png)
+<br>
+
+    * If using Google Chrome, select `network`:
+
+        ![network_console](Images/network_console.gif)
+
+    * For other browsers, select `network` then click on the resulting name links:
+
+    ![other_console_reqs.png](Images/other_console_reqs.png)
 
 3. Navigate to `https://www.un.org/`.
 
@@ -38,7 +43,7 @@ Navigate to the websites below with the developer console open to review the exc
 
 8. Visit `https://finance.yahoo.com/` and search for a ticker. Review the developer console as you submit the request.
 
-9. Continue to navigate the internet with the developer console open. Take note of the type of requests that are sent for each site visited (how many POST vs. GET). Also, take into consideration the differences in API URLs.
+9. Continue to navigate the internet with the developer console open. Take note of the type of requests that are sent for each site visited (how many POST vs GET). Also take into consideration the differences in API URLs.
 
 ---
 
