@@ -60,7 +60,7 @@ Be sure to set the pace for the class. Encourage students to attend office hours
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 5.1 Slides](https://docs.google.com/presentation/d/1XJkEUoD9EWjjfhayPkDErPAUBQdRJXXAFF_28WnHCyw/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 5.1 Slides](https://docs.google.com/presentation/d/1OMd_yOoAQoH8xldMMnMknS9Vo76RQTZUDtxzvXVxOwU/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
