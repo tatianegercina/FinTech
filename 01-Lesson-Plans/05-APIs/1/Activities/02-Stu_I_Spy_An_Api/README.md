@@ -20,15 +20,21 @@ APIs to investigate:
 
 * [Quandl](https://www.quandl.com/): This API provides historical stock data, and would be useful if you needed to calculate cumulative returns for `GOOG`.
 
-  > <https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json?api_key=YOUR_KEY_GOES_HERE>
+  ``` text
+  https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json?api_key=YOUR_KEY_GOES_HERE
+  ```
 
 * [The World Bank API](https://datahelpdesk.worldbank.org/knowledgebase/articles/889386-developer-information-overview): This API has a wealth of international bank data. If you wanted to analyze the growth rate of each country's gross domestic product values (GDP), you could extract GDP values, by year, from [The World Bank's Indicators API](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation).
 
-  > <http://api.worldbank.org/v2/country/ca/indicator/NY.GDP.MKTP.CD?format=json>
+  ``` text
+  http://api.worldbank.org/v2/country/ca/indicator/NY.GDP.MKTP.CD?format=json
+  ```
 
 * [Coinbase](https://www.coinbase.com/): This API provides price data for cryptocurrencies. Use it if you need to get the price of a crypto at any given moment, such as `BTC`.
 
-  > <https://api.coinbase.com/v2/prices/BTC-CAD/buy?format=json>
+  ``` text
+  https://api.coinbase.com/v2/prices/BTC-CAD/buy?format=json
+  ```
 
 Using `Postman`, submit `GET` requests to the above APIs using the provided request URLs. Confirm that a response has been received from the servers.
 
@@ -56,9 +62,15 @@ Let the TAs know when you've finished the core activity. If time remains, give t
 
 The output format of an API can be changed by altering the `?format=` part of the link, or changing the extension of the target file from `json` to `csv`. See below for examples.
 
-* Quandl -> <https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json?api_key=YOUR_KEY_GOES_HERE>
+* Quandl json output request: 
+``` text
+https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json?api_key=YOUR_KEY_GOES_HERE
+```
 
-* Quandl -> <https://www.quandl.com/api/v3/datasets/WIKI/GOOG.csv?api_key=YOUR_KEY_GOES_HERE>
+* Quandl csv output request: 
+``` text
+https://www.quandl.com/api/v3/datasets/WIKI/GOOG.csv?api_key=YOUR_KEY_GOES_HERE
+```
 
 ---
 
