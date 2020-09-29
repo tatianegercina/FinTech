@@ -560,13 +560,13 @@ Open the solution and conduct a dry walkthrough, highlighting the following disc
 * The `requests` library comes with a `GET` function that can be used to execute a request URL.
 
   ```python
-  request_data = requests.get(prog_joke_url)
+  response_data = requests.get(prog_joke_url)
   ```
 
 * Each Python request generates a response code. The response code indicates whether or not the response was successful and details whether there were any errors.
 
   ```python
-  print(request_data)
+  print(response_data)
   ```
 
   ```text
