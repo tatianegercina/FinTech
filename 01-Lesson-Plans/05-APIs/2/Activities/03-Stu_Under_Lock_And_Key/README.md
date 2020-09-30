@@ -8,13 +8,13 @@ Since Quandl has cracked down on the number of API calls users can make to the s
 
 ### Acquire and Store API key
 
-1. Navigate to the Quandl [Account Settings](https://www.quandl.com/account/profile) page to retrieve your API key.
+1. Navigate to the Quandl [Account Settings](https://www.quandl.com/account/profile) page (log in if prompted) to retrieve your API key. 
 
-2. Create a new `.env` file and declare an environment variable named `QUANDL_API_KEY`.
+2. Create a new `.env` file and declare an environment variable named `QUANDL_API_KEY`. Alternatively, you may use the `example.env` file provided by renaming it as just `.env`.
+
+### Load and verify the env variable
 
 3. Open the Jupyter Notebook starter file and import the Python `requests`, `os`, and `dotenv` libraries.
-
-### Execute API call with API key/env variable
 
 4. Use the `load_dotenv()` method from the `dotenv` package to load and export the environment variables.
 
@@ -22,15 +22,19 @@ Since Quandl has cracked down on the number of API calls users can make to the s
 
 6. Use the `type` function to confirm the retrieval of the API key. Hint: If `NoneType` is returned, the environment variable does not exist. Revisit steps 2 and 3.
 
+### Execute API call with API key/env variable
+
 7. Concatenate `request_url` with the `api_key` variable.
 
 8. Execute a `GET` request using Python `requests` library and the newly created request_url.
 
 9. Display content to screen using the content attribute.
 
-## Hint
+## Hints
 
-You may find it useful to review the [Quandl API documentation](https://www.quandl.com/tools/api).
+* The variable name from the `.env` must match the string value passed to the `os.getenv` function in your notebook.
+
+* You may find it useful to review the [Quandl API documentation](https://www.quandl.com/tools/api).
 
 ---
 

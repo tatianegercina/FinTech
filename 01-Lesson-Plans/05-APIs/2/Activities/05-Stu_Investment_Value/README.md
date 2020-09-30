@@ -1,12 +1,12 @@
 # Investment Value
 
-As a FinTech professional, you are willing to start using your Python and APIs coding skills to analyze financial data. In this activity, you will use the Alpaca SDK to calculate the present value of a stock portfolio.
+As a FinTech professional, you will be using your Python and APIs coding skills to analyze financial data. In this activity, you will use the Alpaca SDK to calculate the present value of a stock portfolio.
 
 ## Instructions
 
 Open the starter Jupyter notebook provided, and complete the following tasks.
 
-1. Suppose you have a stock portfolio composed of `200` Microsoft (`MSFT`) shares and `320` Apple (`AAPL`) shares. Create a DataFrame to store the number of shares by setting the ticker names as the index.
+1. Suppose you have a stock portfolio composed of `200` Microsoft (`MSFT`) shares and `320` Apple (`AAPL`) shares. Create a DataFrame named `df_shares` to store the number of shares by setting the ticker names as the index.
 
 2. Load the environment variables from your `.env` file and save the Alpaca keys as Python variables.
 
@@ -16,11 +16,27 @@ Open the starter Jupyter notebook provided, and complete the following tasks.
 
 5. You will fetch daily data, so create a variable called `timeframe` and set its value to `1D`.
 
-6. Use the `alpaca.get_barset()` function to retrieve the current price data for `MSFT` and `AAPL`. **HINT**: You will need add `.df` to view the data as a DataFrame.
+6. Use the `alpaca.get_barset()` function to retrieve the current price data for `MSFT` and `AAPL` and view the data as a DataFrame. 
 
 7. Calculate the current value in dollars of the stock using the number of shares and the current closing price you retrieved using Alpaca.
 
-8. Create a couple of plots to visualize your portfolio composition. Create a pie chart to show the proportion of stocks in the portfolio and a bar plot to present the current value in dollars of each ticker.
+8. Add a column `values` to the original `df_shares` DataFrame and display the DataFrame.
+
+9. Using the updated `df_shares` DataFrame, create a couple of plots to visualize your portfolio composition:
+
+    * Create a pie chart to show the proportion of stocks in the portfolio. 
+
+    * Create a bar plot to present the current value in dollars of each ticker.
+
+## Hints
+
+* When using the `get_barset` function, you will need add `.df` to view the data as a DataFrame.
+
+* Use `.plot` to generate the final two plots.
+
+    * Specify the type of plot using the `kind=` parameter. 
+    
+    * The x and y values can be set using the `x=` and `y=` parameters to the appropriate column name.
 
 ---
 
