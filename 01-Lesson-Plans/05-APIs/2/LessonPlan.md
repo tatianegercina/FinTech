@@ -12,7 +12,7 @@ This lesson presents students with hands-on experience using APIs in a Python en
 
 By the end of today's class, students will be able to:
 
-* Register for an API key and use the key to fetch authenticated requests using the Requests Library.
+* Use an API key to fetch authenticated requests using the Requests Library.
 
 * Set/Export environment variables in Windows and Mac and retrieve them in Python.
 
@@ -32,7 +32,7 @@ By the end of today's class, students will be able to:
 
 * Slack out the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installations and verify them with a TA before the end of the next class.
 
-* This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created accounts and received API keys prior to this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up if they haven't. Students were instructed to sign up at the end of Lesson 5.1. There will be an activity dedicated to confirming that each student has signed up.
+* This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created accounts and received API keys prior to this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up if they haven't. There will be an activity dedicated to confirming that each student has signed up.
 
   * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
@@ -50,9 +50,9 @@ By the end of today's class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 5.2 Slides](https://docs.google.com/presentation/d/1digpVcYsFXqMulG33gmjCcRWfIXSMWjDM4H5zjIpzwY/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 5.2 Slides](https://docs.google.com/presentation/d/1bVZNg1ZPB_x-JVVnQAFxvQpdQTamJX2OPn-49QLw4NA/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -64,7 +64,7 @@ By the end of today's class, students will be able to:
 
 Today will take students to the next step in using APIs. Students will transition from using the Python `requests` library to using SDKs that provide practical use cases for FinTech analysis.
 
-Welcome students to the second day of APIs. Open the lesson slides, move to "The Rise of APIs" section, and highlight the following points:
+Welcome students to the second day of APIs. Open the lesson slides, review the class objectives, then move to "The Rise of APIs" section, highlighting the following points:
 
 * While today's class will be a continuation of the last session, there will be a stronger emphasis on how to use FinTech APIs effectively.
 
@@ -130,7 +130,7 @@ End the activity by asking the students if they have any further questions.
 
 Over the next couple of activities, students will work with APIs that require keys for access. Use this time to engage with them on API keys through a facilitated discussion.
 
-Ask students the following review questions:
+Navigate to the "Keys to the FinTech Kingdome" section of the slides and ask students the following review questions:
 
 * Do *all* APIs require API keys?
 
@@ -190,7 +190,7 @@ Open a plain text editor, such as VSCode or Sublime Text, and create a new blank
 
 * Now, we will create a `.env` file to store the API keys as environment variables.
 
-* To set an environment variable, you have to define a name for that variable. Let's start creating a variable to store the Quandl API key.
+* To set an environment variable, you have to define a name for that variable. Let's start by creating a variable to store the Quandl API key.
 
 * Set the variable name as `QUANDL_API_KEY` and assign your API key to it.
 
@@ -218,13 +218,19 @@ In this activity, students will learn how to call API keys as environment variab
 
 * [env_variables.ipynb](Activities/02-Ins_Call_Env_Variables/Solved/env_variables.ipynb)
 
-Recall students to the concept of environment variables by asking the following question:
+Have students recall the concept of environment variables by asking the following question:
 
 * Imagine you signed up for 10 APIs, and each API gave you a key. It would be hard to memorize each key, so you'd need to find some way to save the keys. What are some possible approaches?
 
   **Answer:** One approach could include tracking the keys in an Excel document. The document could be password protected, to preserve confidentiality.
 
   **Answer:** Environment variables could be created, and the keys could be stored in the variables.
+
+Referring to the slides, explain the process of calling environment variables.
+
+* In order to make environment variables inheritable, they have to be exported and sourced.
+
+* To do this, we call upon the `os.getenv` function.
 
 Open the solved version of the Jupyter notebook. Next, run the code on every cell and highlight the following:
 
@@ -278,7 +284,7 @@ Open the solved version of the Jupyter notebook. Next, run the code on every cel
   ```
 
   ```text
-  NoneType
+  str
   ```
 
 * If an environment variable does not exist, Python will return `NoneType` as the data type. An empty environment variable will cause an API call to fail.
@@ -294,6 +300,8 @@ Open the solved version of the Jupyter notebook. Next, run the code on every cel
   ```
 
 * If an API key doesn't seem to be working right, double-check your environment variable by reviewing your `.env` file.
+
+* The variable name created in the `.env` file must match the string value passed to the `os.getenv` function.
 
 Emphasize to students that they need to make sure that the environment variable `print` statement is not pushed into Git, or any other repository, as it would expose their API keys to anyone who has access to the repository.
 
@@ -323,7 +331,7 @@ If students finish early, use the extra time to review the final two guided revi
 
 ### 7. Instructor Do: Under Lock and Key Activity Review (10 min)
 
-**Important Note:** Ensure that you have a local `.env` file containing your `QUANDL_API_KEY` into the `Solved` folder before running the solution.
+**Important Note:** Ensure that you have saved a local `.env` file containing your `QUANDL_API_KEY` in the `Solved` folder before running the solution.
 
 **Files:**
 
@@ -361,7 +369,7 @@ Open the solution and end the review session with a quick walkthrough of the sol
   api_key = os.getenv("QUANDL_API_KEY")
   ```
 
-* Once stored as a Python variable, the environment variable value can be used for processing. In this case, the `QUANDL_API_KEY` is stored as Python variable api_key, and then concatenated with the request URL. The concatenated request URL will then be used to submit a request to the Quandl API.
+* Once stored as a Python variable, the environment variable value can be used for processing. In this case, the `QUANDL_API_KEY` is stored as the Python variable `api_key`, and then concatenated with the request URL. The concatenated request URL will then be used to submit a request to the Quandl API.
 
   ```python
   # Define the base request URL
@@ -373,7 +381,7 @@ Open the solution and end the review session with a quick walkthrough of the sol
 
 If time remains, ask two final, guided questions:
 
-* If a user were to export environment variable `QUANDL_API_KEY` using a terminal, but then launched Jupyter Lab in a different terminal window, would Jupyter Lab be able to retrieve the environment variable?
+* If a user were to export the environment variable `QUANDL_API_KEY` using a terminal, but then launched Jupyter Lab in a different terminal window, would Jupyter Lab be able to retrieve the environment variable?
 
   * **Answer:** No. Environment variables are sourced to current and child processes. Because a new terminal window is used to launch Jupyter Lab, the environment variable `QUANDL_API_KEY` will be out of scope.
 
@@ -395,7 +403,7 @@ The past two lessons have focused on students using the Python requests library 
 
 Communicate to students that while the Python requests library is a great tool with which to submit requests to APIs, there are more sophisticated APIs out there that offer tools called software development kits that provide a packaged way to access API endpoints and submit calls.
 
-Navigate to the 5.2 slides for SDKs, and initiate a facilitated discussion by highlighting the following:
+Navigate to the "SDKs" section of the slides and initiate a facilitated discussion by highlighting the following:
 
 * SDKs offer programmatic ways to access API endpoints without using the requests library. Instead of using the requests library to execute API calls, users would use functions provided by the SDK. For example, an SDK would provide a GET function similar to the `requests.get` function offered by the Python requests library. The SDK might also provide additional attributes and functions for filtering and calculating data.
 
@@ -427,7 +435,7 @@ Ask students the following guided question:
 
     **Answer:** By creating SDKs, companies allow users to interact with their APIs in a more powerful way. The requests library only supports so many functions (GET, POST, etc.). However, by providing users with an SDK, companies can give users access to in-house built attributes and functions that can provide more value than the functions in the requests library.
 
-    **Answer:** When writing a Python script, using a Python SDK can often be cleaner and easier to understand and integrate in one's code. SDKs allow developers to use syntax and language features that often simplify and clean up code. A decent example of this is evidenced when comparing the URL request to Quandl with the `quandl.get('AAPL')` function. Both will extract historical stock; however, the `quandl.get` function is easier to use and looks cleaner.
+    **Answer:** When writing a Python script, using a Python SDK can often be cleaner and easier to understand and integrate in one's code. SDKs allow developers to use syntax and language features that often simplify and clean up code. A decent example of this is evidenced when comparing the URL request to Quandl with the `quandl.get("WIKI/AMD", rows=5)` function. Both will extract historical stock; however, the `quandl.get` function is easier to use and looks cleaner.
 
 * Because SDKs provide out-of-the-box functions that can be used with the API, developers do not have to worry about reinventing the wheel. What is an example of a function or operation a FinTech SDK might provide?
 
@@ -441,17 +449,17 @@ Ask students if there are any questions before moving on.
 
 ### 10. Instructor Do: Intro to Alpaca (15 min)
 
-Navigate to the "Introduction to Alpaca" section of the lesson slides, and introduce the Alpaca by highlighting how it is disrupting the FinTech data industry:
+Navigate to the "Introduction to Alpaca" section of the lesson slides, and introduce the Alpaca SDK by highlighting how it is disrupting the FinTech data industry:
 
 * According to a [Forbes article from December 2019](https://www.forbes.com/sites/bernardmarr/2020/12/30/the-top-5-fintech-trends-everyone-should-be-watching-in-2020/#5ce0c02b4846), FinTech is transforming into a new data industry that focuses on and specializes in the democratization of financial services. This is mainly due to startups like **Alpaca**, that are seeking to enrich and empower consumers through financial data and technology.
 
-* SDKs provide out-of-the-box functions that can be used with the API so that developers do not have to worry about reinventing the wheel. [Alpaca](https://alpaca.markets/) exemplifies a great API that eases the work through its SDK.
+* SDKs provide out-of-the-box functions that can be used with the API so that developers do not have to worry about reinventing the wheel. [Alpaca](https://alpaca.markets/) exemplifies a great API that eases the work involved in data retrieval through APIs by using its SDK.
 
-* Alpaca is a trading API that encapsulates banking, security, and regulatory complexity, allowing FinTech startups to build brokerage apps on top for free quickly.
+* Alpaca is a trading API that encapsulates banking, security, and regulatory complexity, allowing FinTech startups to build brokerage apps on top for free and quickly.
 
 * In addition to its trading capabilities, Alpaca is an example of a financial API that you can use, as a FinTech professional, to fetch current stock market data free of charge from five different exchanges (IEX, NYSE National, NYSE Chicago, Nasdaq BX, and Nasdaq PSX). Today, you will learn how to use Alpaca to retrieve stock data that can be used to develop financial applications.
 
-Recall to students that to access the Alpaca API, they need to install the `alpaca-trade-api` SDK and set their API and the secret keys in a `.env` file as it's indicated in the introduction lesson.
+Remind students that to access the Alpaca API, they need to install the `alpaca-trade-api` SDK and set their API and the secret keys in a `.env` file as it's indicated in the introduction lesson.
 
 Take a couple of minutes to verify if everyone in the class is ready with the Alpaca SDK installed and the Alpaca keys on-hand. Ask your TAs to kindly assist any student who may not be prepared to continue, in the meantime, open the Alpaca website and highlight the following.
 
@@ -463,11 +471,11 @@ Continue by logging into the Alpaca dashboard using your personal account.
 
 ![alpaca-login](Images/alpaca-login.gif)
 
-After logging into your Alpaca dashboard, explain to students that they will find a section named "Your API Keys" where they can view their keys by clicking on the "View" button.
+After logging into your Alpaca dashboard, explain to students that they will need to access their "Paper Account", then they'll a find a section named "Your API Keys" where they can view their keys by clicking on the "View" button.
 
 ![alpaca-keys-section](Images/alpaca-keys-section.png)
 
-Explain to students that the first time that they click on the "View" button, they will see their `API Key ID` and `Secret Key`. This is the only time when they will see both keys, so it's crucial to record the keys into their `.env` file.
+Explain to students that the first time that they click on the "View" button, they will see their `API Key ID` and `Secret Key`. This is the only time when they will see both keys, so it's crucial to record the keys in their `.env` file at this time.
 
 ![alpaca-keys](Images/alpaca-keys.png)
 
@@ -581,7 +589,7 @@ Slack out the following links and encourage students to learn more about the det
 
 1. [Alpaca bars API documentation:](https://alpaca.markets/docs/api-documentation/api-v2/market-data/bars/) Here you can learn more about the values that can be set to each parameter.
 
-2. [Market Data Examples:](https://alpaca.markets/docs/api-documentation/how-to/market-data/) This page provides code examples of the `get_bartset()` function in several programming languages.
+2. [Market Data Examples:](https://alpaca.markets/docs/api-documentation/how-to/market-data/) This page provides code examples of the `get_barset()` function in several programming languages.
 
 Continue the demo highlighting the following.
 
@@ -698,7 +706,7 @@ Ask students if they have any questions before moving on.
 
 ---
 
-### 14. Students Do: Investment Value Activity Review (10 min)
+### 14. Instructor Do: Investment Value Activity Review (10 min)
 
 **Files:**
 
@@ -712,7 +720,7 @@ Open the solved version of the Jupyter notebook and conduct a dry walkthrough re
 
 * Now you know how to retrieve financial data to boost your finance application and start creating analytical tools to better understand financial data.
 
-* To solve this activity, we start importing the required libraries.
+* To solve this activity, we start by importing the required libraries.
 
   ```python
   # Initial imports
@@ -800,7 +808,7 @@ Open the solved version of the Jupyter notebook and conduct a dry walkthrough re
 * We retrieve the current closing prices using the `get_barset()` function from the Alpaca SDK and passing the `tickers`, `timeframe`, and `today` variables as parameters.
 
   ```python
-  # Get current closing prices for FB and TWTR
+  # Get current closing prices for MSFT and AAPL
   df_portfolio = alpaca.get_barset(
       tickers,
       timeframe,
