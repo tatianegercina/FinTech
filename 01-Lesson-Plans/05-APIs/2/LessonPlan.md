@@ -130,7 +130,7 @@ End the activity by asking the students if they have any further questions.
 
 Over the next couple of activities, students will work with APIs that require keys for access. Use this time to engage with them on API keys through a facilitated discussion.
 
-Ask students the following review questions:
+Navigate to the "Keys to the FinTech Kingdome" section of the slides and ask students the following review questions:
 
 * Do *all* APIs require API keys?
 
