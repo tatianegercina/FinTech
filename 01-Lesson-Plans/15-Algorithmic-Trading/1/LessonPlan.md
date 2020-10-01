@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today's lesson will consist of elements taught in the Pandas and PyViz units; the lesson will include data analysis, utilization of trading APIs for asset pricing data, and the visualization of trading performance and transaction analysis using a Panel dashboard.
+* Today's lesson will consist of elements taught in the Pandas and PyViz units; the lesson will include data analysis, utilization of trading APIs for asset pricing data, and the visualization of trading performance and transaction analysis using a `hvplot`.
 
 * The goal of this unit is to educate students on trading, as well as how to use code to automate trading. Trading may be new for many students, so it is important that adequate information is provided regarding what trading is and all of the steps involved in creating entry and exit strategies, as well as which FinTech APIs integrate well with Python for automated trading.
 
@@ -53,6 +53,7 @@ Note: Editing access is not available for this document. If you wish to modify t
 The time tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTracker.xlsx)
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [15.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6702e079-360f-4970-b75a-aafe00f8da33) Note that this video may not reflect the most recent lesson plan.
 
 ---
@@ -61,25 +62,25 @@ The time tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTra
 
 In this activity, students are introduced to what algorithmic trading is and why it's useful for FinTech professionals. In particular, this section is a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and simplify participation in the market through the execution of a single program.
 
-Welcome students to the first day of algorithmic trading and explain the following:
+Welcome students to the first day of algorithmic trading! Go to the slideshow, navigate to the "Intro to Algorithmic Trading" section, and cover the following points.
 
-* Introduce students to algorithmic trading first by describing how cumbersome it can be to make trades manually. Explain that a typical day for traders involves:
+* It can be very cumbersome to make trades manually. A typical day for traders involves:
 
   * Tracking the transactional history of many stocks.
 
   * Identifying the best opportunity to buy, sell, and hold.
 
-  * Maintaining knowledge about the highs and lows for each individual stock, as well as their overall portfolio value and profit/loss.
+  * Maintaining knowledge about the highs and lows for individual stocks, their overall portfolio value, and profit/loss.
 
   * Keeping emotions in check.
 
-* Also explain that human emotions play a key role in the success or failure of a trade/trader. Because the market is constantly changing with varying degrees of volatility, it's easy for humans to get emotional when trading. The trades that traders make can drastically impact their profitability and livelihood. Furthermore, because traders often deal with other people's money, such as retirement funds, impulsive trading decisions can have the ability to disrupt the economic foundation of countless lives.
+Explain that human emotions play a key role in the success or failure of a trade/trader. Because the market is constantly changing with varying degrees of volatility, it's easy for humans to get emotional when trading. The trades that traders make can drastically impact their profitability and livelihood. Furthermore, because traders often deal with other people's money, such as retirement funds, impulsive trading decisions can have the ability to disrupt the economic foundation of countless lives.
 
 * The sheer number of moving parts and details that need to be considered can make it difficult for the human mind to make profitable trades consistently. This is where **algorithmic trading** comes in.
 
 * Algorithmic trading is the concept of utilizing machines to automate the process of buying and selling assets. Machines running algorithms can make predictions about ROI, risk, and analyze transactions much faster than a human brain. Because computers run off of logic rather than emotions, traders don't have to worry about their emotions getting in the way.
 
-  * Underscore to students that there are many different algorithmic trading strategies, even ones that can leverage machine learning. Also, an algorithm does not necessarily have to evaluate the basis of a candidate trade in the same way: algorithms can be used to predict the best investments based on profit-to-risk ratios, volume, and volatility, or any number of varying attributes.
+Underscore to students that there are many different algorithmic trading strategies, even ones that can leverage machine learning. Also, an algorithm does not necessarily have to evaluate the basis of a candidate trade in the same way: algorithms can be used to predict the best investments based on profit-to-risk ratios, volume, and volatility, or any number of varying attributes.
 
 * Using algorithmic trading models in conjunction with portfolio management also allows for automatic rebalancing of assets (capital) within the portfolio, thereby aiding in portfolio optimization. Algorithmic trading models automatically buy and sell assets within the portfolio according to the optimal weights for each asset calculated by the model.
 
@@ -95,7 +96,7 @@ Answer any questions before moving on.
 
 In this activity, students will learn the basics of what algorithmic trading is and how it came to be, how it is performed, and what kind of individuals and skillsets are required for potential participants looking to break into the field.
 
-Navigate to the slideshow and present the following questions and answers about algorithmic trading:
+Go to the slideshow, navigate to "Algorithmic Trading: The Basics" and present the following Q&A about algorithmic trading:
 
 * What is algorithmic trading?
 
@@ -307,7 +308,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 5. Student Do: The Big Short (15 mins)
+### 5. Student Do: The Big Short, Part I (15 mins)
 
 **Corresponding Activity:** [03-Stu_Trading_Signals](Activities/03-Stu_Trading_Signals)
 
@@ -323,7 +324,7 @@ In this activity, students will take what they've learned about generating tradi
 
 ---
 
-### 6. Instructor Do: The Big Short Review (10 mins)
+### 6. Instructor Do: The Big Short, Part I Review (10 mins)
 
 **File:** [the_big_short.ipynb](Activities/03-Stu_Trading_Signals/Solved/the_big_short.ipynb)
 
@@ -503,7 +504,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 8. Student Do: The Big Short Part II (15 mins)
+### 8. Student Do: The Big Short, Part II (15 mins)
 
 **Corresponding Activity:** [05-Stu_Backtesting](Activities/05-Stu_Backtesting)
 
@@ -694,7 +695,7 @@ Ask if there are any questions before moving forward.
 
 ---
 
-### 12. Students Do: The Big Short Part III (15 mins)
+### 12. Students Do: The Big Short, Part III (15 mins)
 
 **Corresponding Activity:** [07-Stu_Evaluations](Activities/07-Stu_Evaluations)
 
@@ -706,7 +707,7 @@ Now that students have developed a Short Dual Moving Average trading strategy an
 
 ---
 
-### 13. Instructor Do: The Big Short Part III Review (10 mins)
+### 13. Instructor Do: The Big Short, Part III Review (10 mins)
 
 **Files:**
 
@@ -738,19 +739,19 @@ Ask for any remaining questions before moving on.
 
 ### 14. Everyone Do: Trading Dashboard (15 min)
 
-**Corresponding Activity:** [08-Ins_Trading_Dashboard](Activities/08-Ins_Trading_Dashboard)
+**Corresponding Activity:** [08-Evr_Trading_Dashboard](Activities/08-Evr_Trading_Dashboard)
 
-In this activity, instructors will walk students through creating a trading dashboard with Panel using the evaluation metrics generated from prior activities. At this point, students should already have exposure to creating dashboards using Panel.
+In this activity, instructors will walk students through creating a trading dashboard visualization using `hvplot`, using the evaluation metrics generated from prior activities. At this point, students should already have exposure to creating charts using `hvplot`.
 
-The purpose of this activity is to show students how to create a trading dashboard using the already shown (Unit 6) Panel dashboard library. In particular, students will once again define rows, columns, and tabs, as well as serve the trading dashboard as an actual web application.
+The purpose of this activity is to show students how to create a trading dashboard visualization using the already shown (Unit 6) `hvplot` library.
 
 **Files:** [trading_dashboard.ipynb](Activities/08-Ins_Trading_Dashboard/Solved/trading_dashboard.ipynb)
 
-Before moving onto the walkthrough, quickly review the following:
+Before diving into the walkthrough, navigate to the "Trading Dashboards" section of the slideshow and quickly review the following:
 
-* What is Panel?
+* What is hvPlot?
 
-  **Answer:** Panel is a high-level dashboarding library that allows a user to create custom interactive web apps and dashboards by connecting user-defined widgets, plots, images, tables, or text. Also, Panel works with other visualization libraries such as Plotly Express or Hvplot via extensions.
+  **Answer:** hvPlot is high-level plotting API for the PyData ecosystem built on HoloViews. The hvPlot API mirrors the Pandas plotting API, but instead of generating static images when used in a notebook, it uses HoloViews to create interactive plots.
 
 * What is a dashboard?
 
@@ -758,49 +759,43 @@ Before moving onto the walkthrough, quickly review the following:
 
 * Why use a dashboard?
 
-  **Answer:** Having a single interactive interface for key information and visualizations allows a user to monitor the health of an existing process, business function, or application, and therefore aids in measuring performance and identifying any discrepancies that may arise.
+  **Answer:** Having a single interactive interface for key information and visualizations allows users to monitor the health of an existing process, business function, or application, and therefore aids in measuring performance and identifying any discrepancies that may arise.
 
 Open the solution file and highlight the following:
 
-* Make sure to import the necessary libraries and dependencies to use the Panel dashboard and Hvplot visualizations. The `pn.extension()` function automatically detects the need for Panel to load additional extensions; in this case, Panel will load the extension for Hvplot.
+* Make sure to import the necessary libraries and dependencies to use the hvPlot visualizations.
 
   ```python
-  import panel as pn
+  import numpy as np
+  import pandas as pd
+  from pathlib import Path
   import hvplot
   import hvplot.pandas
-  pn.extension()
+  from IPython.display import Markdown
   ```
 
-* Before creating the Panel dashboard, we will need first to define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvplot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
+* Note that we are importing the `Markdown` module from the `IPython` library. We will use the `Markdown` module to display markdown text into the notebook programmatically.
+
+* Before creating the dashboard, we will first need to define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvPlot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
 
   ![hvplot-price-chart](Images/hvplot-price-chart.png)
 
   ![hvplot-evaluation-metrics](Images/hvplot-evaluation-metrics.png)
 
-* After generating the visualizations that will be added to the Panel dashboard, the next step is to assign the visualizations as rows, columns, and tabs to the Panel dashboard using the Panel `Row`, `Column`, and `Tabs` functions.
+* After generating the visualizations that will be added to the dashboard, the next step is to assemble the dashboard visualization.
 
   ```python
-  # Create rows
-  price_chart_row = pn.Row(price_chart)
-  portfolio_evaluation_row = pn.Row(portfolio_evaluation_table)
-  trade_evaluation_row = pn.Row(trade_evaluation_table)
-
-  # Create columns
-  portfolio_column = pn.Column('# Portfolio Evaluation Metrics', price_chart_row, portfolio_evaluation_row)
-  trade_column = pn.Column('# Trade Evaluation Metrics', trade_evaluation_row)
-
-  # Create tabs
-  trading_dashboard = pn.Tabs(
-      ("Portfolio Metrics", portfolio_column),
-      ("Trade Metrics", trade_column)
-  )
+  # Assemble dashboard visualization
+  display(Markdown("# Trading Dashboard"))
+  display(price_chart)
+  portfolio_evaluation_table + trade_evaluation_table
   ```
 
-* Lastly, the `servable` function then serves or initializes the dashboard. There are two ways to use the `servable` function, either in a Jupyter notebook file where the dashboard is displayed within the notebook file itself, or using the terminal command `panel serve --show trading_dashboard.ipynb` which creates a web application of the dashboard via the default localhost port 5006.
+![trading-dashboard](Images/trading-dashboard.png)
 
-  ![panel-trading-dashboard-servable](Images/panel-trading-dashboard-servable.png)
+* Note that we use the `display()` function to show the dashboard title and the `price_chart` on above the tables. Also, we use the plus (`+`) operator to display the two tables side by side.
 
-  ![panel-trading-dashboard-servable-localhost](Images/panel-trading-dashboard-servable-localhost.png)
+* Using `hvplot`, you can combine several charts to create dashboard-like visualizations quickly and easy to present results and analyze investment information.
 
 Ask if there are any questions before moving forward.
 
