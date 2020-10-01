@@ -8,6 +8,8 @@ Help Harold by creating a Monte Carlo simulation that simulates the next `252 * 
 
 Using the starter file provided, walk through the following steps.
 
+* Copy the starter code and the `MCForecastTools` into the same working directory.
+
 * Import dependencies and create the Alpaca API environment.
 
 * Use the `get_barset()` function to retrieve `3` year's worth of daily prices for `TSLA` stock as a `pandas` DataFrame.
