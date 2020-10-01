@@ -8,17 +8,23 @@ Help Harold by creating a Monte Carlo simulation that simulates the next `252 * 
 
 Using the starter file provided, walk through the following steps.
 
-* Import libraries and dependencies
+* Copy the starter code and the `MCForecastTools` into the same working directory.
+
+* Import dependencies and create the Alpaca API environment.
 
 * Use the `get_barset()` function to retrieve `3` year's worth of daily prices for `TSLA` stock as a `pandas` DataFrame.
 
-* Build a Monte Carlo simulation that runs `1000` times through `252 * 3` trading days and saves the results:
+* Build a Monte Carlo simulation that runs `1000` times through `252 * 3` trading days to determine the simulated daily returns.
 
-* Plot the simulated daily returns of `TSLA` stock over the next `3` trading years.
+* Create a new DataFrame to hold the summary statistics for the simulated daily returns.  **Hint:** You will need to calculate the _mean_, _median_, _min_ and _max_ using the `axis=1` parameter.
+    
+* Generate a line plot to visualize the summary statistics for the simulated daily returns.
 
-* Plot the simulated profits and losses for a $10,000 investment in TSLA given the simulated cumulative returns.
+* Create a new DataFrame to hold the summary statistics for the simulated daily returns assuming an initial investment of `$10,000`.
 
-* Calculate the range of the possible outcomes of our $10,000 investments in `TSLA` stocks with a `95%` confidence interval
+* Generate a line plot to visualize the updated summary statistics for simulated daily returns using a `$10,000` initial investment.
+
+* Calculate the range of the possible outcomes for our $10,000 investment in `TSLA` stocks with a `95%` confidence interval
 
 ## Hints
 

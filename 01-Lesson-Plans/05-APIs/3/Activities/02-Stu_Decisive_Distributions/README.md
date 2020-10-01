@@ -1,6 +1,6 @@
 # Decisive Distributions
 
-You have been working as a financial analyst for Investments4You for over a year. Today, your boss stopped by your desk and asked for your help.
+You have been working as a financial analyst at _Investments4You_ for over a year. Today, your boss stopped by your desk and asked for your help.
 
 She explained that she is trying to put together a presentation and wants something that can help visualize the differences in volatility across several potential stocks.
 
