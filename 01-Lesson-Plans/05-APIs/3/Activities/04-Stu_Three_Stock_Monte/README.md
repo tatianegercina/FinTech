@@ -6,9 +6,9 @@ Your job is to use your API knowledge and the `MCForecastTools.py` toolkit to de
 
 ## Instructions
 
-Using the starter code complete the following steps.
+Use the starter code to complete the following steps.
 
-1. Copy the starter code and the `MCForecastTools` in the same working directory.
+1. Copy the starter code and the `MCForecastTools` into the same working directory.
 
 2. Import the necessary libraries and dependencies.
 
@@ -32,21 +32,21 @@ Using the starter code complete the following steps.
 
     * Set the `num_trading_days` parameter to `252*5` to simulate `5` years of trading days.
 
-8. Run the Monte Carlo simulation and visualize the results of the simulation using `MCSimulation` built-in methods (`plot_simulation()`, `plot_distribution()` and `summarize_cumulative_return()`).
+8. Run the Monte Carlo simulation and visualize the results of the simulation using the `MCSimulation` built-in methods `plot_simulation()`, `plot_distribution()` and `summarize_cumulative_return()`.
 
 9. Using the `95%` confidence interval and your initial investment of $15,000, determine the lower limit and upper limit of your expected portfolio value after `5` years of growth.
 
 10. Create a second instance of `MCSimulation` with the same attributes, except set the `weights` variable to `[.20,.60,.20]` to represent a portfolio with a majority of AT&T stock.
 
-11. Run the Monte Carlo simulation using your new weights. Once complete, use the 95% confidence interval and your initial investment of $15,000, determine what the lower limit and upper limit of your expected portfolio value after `5` years of growth is.
+11. Run the Monte Carlo simulation using your new weights. Once complete, use the 95% confidence interval and your initial investment of $15,000 to determine what the lower and upper limits of your expected portfolio value will be after `5` years of growth.
 
 12. Create a third instance of `MCSimulation` using the same attributes, except set the `weights` variable to `[.60,.20,.20]` to represent a portfolio with a majority of Nike stock.
 
-13. Once again, run the Monte Carlo simulation using your new weights. Once complete, use the 95% confidence interval and your initial investment of $15,000, determine what the lower limit and upper limit of your expected portfolio value after `5` years of growth is.
+13. Once again, run the Monte Carlo simulation using your new weights. Once complete, use the 95% confidence interval and your initial investment of $15,000 to determine what the lower and upper limits of your expected portfolio value will be after `5` years of growth.
 
 14. Create a fourth instance of `MCSimulation` using the same attributes, except set the `weights` variable to `[.20,.20,.60]` to represent a portfolio with a majority of Exxon stock.
 
-15. Once more, run the Monte Carlo simulation using your new weights. When complete, use the 95% confidence interval and your initial investment of $15,000, determine what the lower limit and upper limit of your expected portfolio value after `5` years of growth is.
+15. Once more, run the Monte Carlo simulation using your new weights. When complete, use the 95% confidence interval and your initial investment of $15,000 to determine what the lower and upper limits of your expected portfolio value will be after `5` years of growth.
 
 16. Lastly, look across all four simulated portfolios and determine which set of investments gives you the best chances of profit. In your notebooks, write which portfolio you chose and why.
 
