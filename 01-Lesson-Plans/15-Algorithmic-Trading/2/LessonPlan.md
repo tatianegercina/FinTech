@@ -92,6 +92,8 @@ Answer any questions before moving on.
 
 ### 2. Student Do: Trading Functions (10 min)
 
+**Corresponding Activity:** [01-Stu_Trading_Functions](Activities/01-Stu_Trading_Functions/)
+
 In this activity, students will be given a random sequence of trading function names. They will be asked to propose the correct order of the functions if they were to be implemented in an algorithmic trading application. Note that there is no single correct order, so treat this as a thought exercise to help drive engagement and discussion around the use of frameworks to encapsulate and abstract code.
 
 **Instructions:**
@@ -101,6 +103,8 @@ In this activity, students will be given a random sequence of trading function n
 **Files:**
 
 * [jarvis.py](Activities/01-Stu_Trading_Functions/Unsolved/jarvis.py)
+
+---
 
 ### 3. Instructor Do: Review Trading Functions (10 min)
 
@@ -133,6 +137,8 @@ Ask any questions before moving on.
 ---
 
 ### 4. Everyone Do: Algorithmic Trading Framework (20 min)
+
+**Corresponding Activity:** [02-Evr_Algo_Trading_Framework](Activities/02-Evr_Algo_Trading_Framework/)
 
 In this activity, students will code along with the instructor and port over their previous algorithmic trading code into the new algorithmic trading framework.
 
@@ -236,9 +242,8 @@ def build_dashboard(signals_df, portfolio_evaluation_df):
     )
 
     # Build the dashboard
-    dashboard = pn.Column(
-        "# Trading Dashboard", price_chart, portfolio_evaluation_table
-    )
+    dashboard = price_chart + portfolio_evaluation_table
+
     return dashboard
 ```
 
@@ -254,7 +259,8 @@ def main():
     tested_signals_df = execute_backtest(signals_df)
     portfolio_evaluation_df = evaluate_metrics(tested_signals_df)
     dashboard = build_dashboard(tested_signals_df, portfolio_evaluation_df)
-    dashboard.servable()
+    hvplot.show(dashboard)
+
     return
 
 
@@ -272,6 +278,8 @@ Explain that the next several activities will continue to build and iterate on t
 ---
 
 ### 5. Instructor Do: Trading with CCXT (15 min)
+
+**Corresponding Activity:** [03-Ins_Going_Live](Activities/03-Ins_Going_Live/)
 
 In this section, students will become familiar with the expansive CCXT library, which provides an API for over 120 cryptocurrency exchanges. Students will work with the Kraken API and extract both historical and current price data.
 
@@ -358,6 +366,8 @@ Answer any remaining questions before moving on.
 ---
 
 ### 6. Everyone Do: Going Live with CCXT (15 min)
+
+**Corresponding Activity:** [04-Evr_Going_Live](Activities/04-Evr_Going_Live/)
 
 In this activity, students will code along with the instructor to update a version of the algorithmic trading framework to use the Kraken exchange from the CCXT API.
 
@@ -517,6 +527,8 @@ Explain that the beauty of a robust application framework is that the abstractio
 
 ### 7. Instructor Do: Asyncio (10 min)
 
+**Corresponding Activity:** [05-Ins_Asyncio](Activities/05-Ins_Asyncio/)
+
 In this demonstration, students will learn how to create asynchronous functions that do not block a plot from loading.
 
 Note that a complete explanation of `asyncio` is out-of-scope for this lesson, so refer students to the [official documents](https://docs.python.org/3/library/asyncio.html) and office hours if they want to learn more.
@@ -643,6 +655,8 @@ Answer any questions before moving on.
 
 ### 9. Everyone Do: Async Trading (15 min)
 
+**Corresponding Activity:** [06-Evr_Async_Trading](Activities/06-Evr_Async_Trading/)
+
 In this activity, students will code along with the instructor to update their live trading code to fetch data asynchronously with [asyncio](https://docs.python.org/3/library/asyncio.html).
 
 **Files:**
@@ -651,7 +665,7 @@ In this activity, students will code along with the instructor to update their l
 
 * [jarvis-text.py](Activities/06-Evr_Async_Trading/Solved/jarvis-text.py)
 
-Open the starter code and live code the solution with the class. Proceed slowly, explain new concepts as you go, and take frequent pauses to ensure that students can keep up.
+Open the `jarvis.py` starter code and live code the solution with the class. Proceed slowly, explain new concepts as you go, and take frequent pauses to ensure that students can keep up.
 
 Start by skimming the code with the class and showing the `# @TODO:` comments where the code will need to be updated. Explain that the goal is to use `asyncio` so that a plot can be loaded and updated without blocking the script from running.
 
