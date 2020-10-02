@@ -950,6 +950,8 @@ Open the slideshow and provide an overview of Sharpe ratios and how they are cal
 
   ![sharpe_ratio_formula.png](Images/sharpe_ratio_formula.PNG)
 
+* The **risk-free rate** is the return that one expects if investing in securities that effectively offer a guaranteed return. Usually the return on 30-day U.S. government bills (treasuries) are used. Because such securities yield 0% (or less!) these days, rather than explicitly subtract zero from the numerator every time we calculate the Sharpe Ratio, we'll calculate Sharpe as the ratio of portfolio return relative to its risk (i.e., without the risk-free rate).
+
 Open [sharpe_ratios.ipynb](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.ipynb) and live code how to calculate and plot sharpe ratios. Explain the following as part of the demo:
 
 * Sharpe ratios are commonly used to indicate whether or not an investment is a good decision. While standard deviation illustrates how far an investment has deviated from its average, Sharpe ratios use standard deviation to illustrate the relationship between standard deviation and risk-reward.
