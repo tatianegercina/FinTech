@@ -769,6 +769,8 @@ Open the slideshow, move to the "Sharpe Ratios" section, and provide an overview
 
   ![sharpe_ratio_formula.png](Images/sharpe_ratio_formula.PNG)
 
+* The risk-free rate is the return that one expects if investing in securities that effectively offer a guaranteed return. Usually the return on very short-term Australian or U.S. government bonds are used. Because such securities yield 0% (or less!) these days, rather than explicitly subtract zero from the numerator every time we calculate the Sharpe Ratio, we'll calculate Sharpe as the ratio of portfolio return relative to its risk (i.e., without the risk-free rate).
+
 Open the unsolved Jupyter notebook and live code on how to calculate and plot Sharpe ratios. Explain the following as part of the demo:
 
 * To calculate Sharpe ratios in this demo, we will use data from two files with stock data from diverse technology companies.
