@@ -1,16 +1,16 @@
 import os
-from dotenv import load_dotenv
 import numpy as np
 import pandas as pd
 
 # @TODO: Import ccxt
 import time
+from dotenv import load_dotenv
 
 
 def initialize(cash=None):
     """Initialize the dashboard, data storage, and account balances."""
     print("Intializing Account and DataFrame")
-    load_dotenv()
+
     # @TODO: initialize account and DataFrame
 
 
