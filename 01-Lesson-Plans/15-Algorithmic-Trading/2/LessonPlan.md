@@ -102,6 +102,8 @@ In this activity, students will be given a random sequence of trading function n
 
 * [jarvis.py](Activities/01-Stu_Trading_Functions/Unsolved/jarvis.py)
 
+---
+
 ### 3. Instructor Do: Review Trading Functions (10 min)
 
 Call on different students to describe their function call order and live code their solution directly into the unsolved Python script.
@@ -236,9 +238,8 @@ def build_dashboard(signals_df, portfolio_evaluation_df):
     )
 
     # Build the dashboard
-    dashboard = pn.Column(
-        "# Trading Dashboard", price_chart, portfolio_evaluation_table
-    )
+    dashboard = price_chart + portfolio_evaluation_table
+
     return dashboard
 ```
 
@@ -254,7 +255,8 @@ def main():
     tested_signals_df = execute_backtest(signals_df)
     portfolio_evaluation_df = evaluate_metrics(tested_signals_df)
     dashboard = build_dashboard(tested_signals_df, portfolio_evaluation_df)
-    dashboard.servable()
+    hvplot.show(dashboard)
+
     return
 
 
