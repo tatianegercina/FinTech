@@ -130,7 +130,7 @@ In short words, probability is the chance of an event happening. Probability mer
 # Visualize the distribution of percent change in closing price for both stocks using a density plot
 df_daily_returns.plot.density()
 ```
-![Density_Distribution.plot](images/Density_Distribution.png)
+![Density_Distribution.png](Images/Density_Distribution.png)
 
 Explain to students that we are going to use probability distributions to visually analyze the outcomes forecasted by Monte Carlo simulations, but first, it's time to learn how to fetch stock data and visualize its distribution using Python.
 
