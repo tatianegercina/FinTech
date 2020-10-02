@@ -15,6 +15,8 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
+* In preparation for Unit 5, slack out the [Unit 5 Installation Guide](../Supplemental/APIs_Install_Guide.md) and the [Postman Installation Guide](../Supplemental/PostmanInstallGuide.md). Tell students to complete these installations prior to the beginning of the next class and verify it with a TA. This will ensure students have the necessary tools to complete in-class activities.  It will also help catch installation issues with Alpaca and Quandl outside of class time.
+
 * Students should provide honest evaluations of their own performance, as well as their partner's, via the [grading rubric](Activities/02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xlsx).
 
 * Students should systematically apply the problem-solving guidelines with each problem; they can deviate once they've internalized the format, but *not* before.
