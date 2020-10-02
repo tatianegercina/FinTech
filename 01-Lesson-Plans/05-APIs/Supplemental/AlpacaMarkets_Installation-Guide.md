@@ -1,42 +1,32 @@
-# Alpaca Markets (python-sdk) and Quandl Installation Guide
+# Unit 5 - APIs Installation Guide
 
-This guide serves as a step by step process for setting up and validating the `Alpaca Markets trade API` Python SDK and the Quandl API. Without this library, class activities and code will not be able to extract historical stock data and therefore, will not be able to be completed.
+This guide serves as a step by step process for setting up and validating the packages and files needed to utilize the Alpaca Markets API/Python SDK and the Quandl API. Without proper installation and set up, class activities and code will not extract historical stock data and therefore, cannot be completed.
 
-All packages should be installed into the `alpacaenv` virtual environment.  If you have not already created an `alpacaenv` virtual environment you can do so by typing the following commands in your terminal:
+---
+
+## Install
+
+* Open a new terminal window.
+
+* All packages should be installed into the `alpacaenv` virtual environment.  To create the `alpacaenv` virtual environment, run the following command in your terminal, answering `y` when prompted:
 
   ```shell
   conda create -n alpacaenv python=3.7 anaconda
   ```
 
-## Install
-
-Open a terminal, and execute the following commands to install the necessary packages.
-
-* Activate your `alpacaenv` virtual environment.
+* After the `alpacaenv` environment installation is complete, activate it by typing the following command:
 
   ```shell
   conda activate alpacaenv
   ```
 
-In order for the `alpaca-trade-api` package to install and run properly, all of the dependencies must be satisfied. The dependencies list can be found below for reference.
+* Next, install the `python-dotenv` package by running the following command in your terminal:
 
-* Pandas
+  ```python
+  pip install python-dotenv
+  ```
 
-* Requests
-
-* Dotenv
-
-To verify the installation of a package, run `conda list package_name` in your terminal, substituting `package_name` for the actual package name.
-
-If `Dotenv` is not installed, you can do so by running the following command in your terminal:
-
-```python
-pip install python-dotenv
-```
-
-To initiate the `alpaca-trade-api` install, open a terminal and execute the following command:
-
-* Use the `pip install` command to download the `alpaca-trade-api` module.
+* Now, initiate the `alpaca-trade-api` install by running the following command:
 
   ```shell
   pip install alpaca-trade-api
@@ -44,65 +34,40 @@ To initiate the `alpaca-trade-api` install, open a terminal and execute the foll
 
   ![alpaca_install.png](Images/alpaca_install.png)
 
-## Verify Installation
+---
 
-Once the `alpaca-trade-api` download is complete, verify the installation completed successfully.
+## Verify
 
-* Use the `conda list package_name` terminal command, substituting `package_name` for the actual package name, to determine if the `alpaca-trade-api` library installed successfully.
+* The `alpaca-trade-api` package will not run properly unless all needed dependencies and packages are properly installed.
 
-  ```shell
-  conda list alpaca-trade-api
-  ```
+* The above steps should have installed the following packages:
+
+    * pandas
+
+    * requests
+
+    * python-dotenv
+
+    * alpaca-trade-api
+
+* Verify the installation of each package by running the command `conda list package_name` in your terminal, substituting `package_name` for the actual package name from the list above.
+
+* If the package is properly installed, the output from `conda list` will look similar to the following:
 
   ![alpaca_verify](Images/alpaca-verify.png)
 
-## Set ALPACA_API_KEY and ALPACA_SECRET_KEY environment variables
+* If you find a package has not been installed, you can do so by running the following command in your terminal, substituting `package_name` for the actual missing package name:
 
-In order to use the Alpaca trade SDK, you will need to set your `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` environment variables before using the library, as Alpaca communicates with the Alpaca API.
+  ```python
+  pip install package_name
+  ```
+---
 
-Go to [Alpaca Markets](https://app.alpaca.markets) and login to your account. After logging in you will be taken to a page that looks like this and will probably display a form asking you for personal information. **YOU DO NOT NEED TO ENTER THIS INFORMATION**
+## Set Environment Variables
 
-![SSN_NOT_REQUIRED](Images/SSN_NOT_REQUIRED.png)
+As you will learn during class, many APIs will not allow access to their resources without the use of an `api key`. For security these keys will be stored as environment variables in a type of file called `.env`.  The following steps will guide you through the process of creating a `.env`, accessing your api keys, and storing them as environment variables inside your `.env` file. 
 
-
-Now, click the `Go to Paper Account` link in the navigation sidebar.
-
-  ![alpaca-token](Images/alpaca_go_to_paper.png)
-
-Now click on the `Your API Keys` section and grab your `ALPACA_API_KEY` and `ALPACA_SECRET_KEY`.
-
-  ![alpaca-token](Images/alpaca-token.png)
-
-Next, open or create a new `.env` file where you will store your keys and use the following syntax.
-
-**Note**: Make sure your environment variables are specifically named `ALPACA_API_KEY` and `ALPACA_SECRET_KEY`.
-
-  ![alpaca-token-verify](Images/alpaca-env.png)
-
-Save this file in the same folder as your python script or jupyter notebook file. If the file is not already created save it as `.env`.
-
-  ![alpaca-env-save](Images/alpaca-env-save.png)
-
-  ![env-folder](Images/env-folder.png)
-
-## Set QUANDL_API_KEY environment variable
-
-Go to [Quandl.com](https://quandl.com) and login to your account.  After logging in, click on the profile link in the upper right hand corner and select `account settings` from the resulting drop down menu.  
-
-![quandl_api](Images/quandl_api.png)
-
-On the resulting page, click the api key to copy it to your clipboard.
-
-![quandl_api_copy](Images/quandl_api_copy.png)
-
-Next, add this to your existing `.env` file.
-
-**Note**: Make sure your environment variables are specifically named `QUANDL_API_KEY`.
-
-![quandl_api_env](Images/quandl_api_env.png)
-
-
-## Enabling Hidden Files
+### Enabling Hidden Files
 
 To work with `.env` files on your machine you will need to be able to view hidden files on your machine.
 
@@ -126,13 +91,56 @@ To work with `.env` files on your machine you will need to be able to view hidde
 
     * Press Ctrl + H
 
-## Usage
+### Set `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` environment variables
 
-Lastly, run `jupyter-lab`. You may have to restart `jupyter-lab` if it is already running in the terminal in order for `jupyter-lab` to re-scan the environment for new variables.
+* Go to [Alpaca Markets](https://app.alpaca.markets) and log into your account. After logging in you may be taken to a form asking you for personal information - **YOU DO NOT NEED TO ENTER THIS INFORMATION**.
+
+    ![SSN_NOT_REQUIRED](Images/SSN_NOT_REQUIRED.png)
+
+* Now, click the `Go to Paper Account` link in the navigation sidebar.
+
+     ![alpaca-token](Images/alpaca_go_to_paper.png)
+
+* Now click on the `Your API Keys` section and grab your `ALPACA_API_KEY` and `ALPACA_SECRET_KEY`.
+
+  ![alpaca-token](Images/alpaca-token.png)
+
+* Next, create a new file named `.env`.  This is where you will store your keys.  
+
+* Using the syntax in the image below, create your environment variables inside the `.env` file. **NOTE:** Make sure your environment variables are specifically named `ALPACA_API_KEY` and `ALPACA_SECRET_KEY`.
+
+  ![alpaca-token-verify](Images/alpaca-env.png)
+
+* Save this file in the same folder as your python script or jupyter notebook file. 
+
+  ![env-folder](Images/env-folder.png)
+
+### Set `QUANDL_API_KEY` environment variable
+
+* Go to [Quandl.com](https://quandl.com) and log into your account.  After logging in, click on the profile link in the upper right hand corner and select `account settings` from the resulting drop down menu.  
+
+  ![quandl_api](Images/quandl_api.png)
+
+* On the resulting page, click the api key to copy it to your clipboard.
+
+  ![quandl_api_copy](Images/quandl_api_copy.png)
+
+* Next, add this to your existing `.env` file.
+
+* **Note**: Make sure your environment variable is specifically named `QUANDL_API_KEY`.
+
+  ![quandl_api_env](Images/quandl_api_env.png)
+<br>  
+<br>
+---
 
 ## Troubleshooting
 
 It can be frustrating when packages do not install correctly, therefore use the below approaches to troubleshoot any installation or usage issues.
+
+### Jupyter Lab
+
+If you have already begun an instance of `jupyter lab` in your terminal prior to creating your environment variables, you may need to restart the kernel so it can scan the environment for new variables.
 
 ### Update Conda Environment
 
@@ -162,12 +170,8 @@ An out-of-date Anaconda environment can create issues when trying to install new
     conda activate alpacaenv
     ```
 
-5. Install the **alpaca-trade-api** package.
-
-    ```shell
-    pip install alpaca-trade-api
-    ```
+5. Install the libraries following the steps explained above.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
