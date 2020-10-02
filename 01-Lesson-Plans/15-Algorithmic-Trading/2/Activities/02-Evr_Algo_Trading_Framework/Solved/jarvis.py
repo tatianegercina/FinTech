@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 from pathlib import Path
+import hvplot
 import hvplot.pandas
-import panel as pn
 
 
 def initialize():
@@ -21,9 +21,8 @@ def build_dashboard(signals_df, portfolio_evaluation_df):
     )
 
     # Build the dashboard
-    dashboard = pn.Column(
-        "# Trading Dashboard", price_chart, portfolio_evaluation_table
-    )
+    dashboard = price_chart + portfolio_evaluation_table
+
     return dashboard
 
 
@@ -181,7 +180,8 @@ def main():
     tested_signals_df = execute_backtest(signals_df)
     portfolio_evaluation_df = evaluate_metrics(tested_signals_df)
     dashboard = build_dashboard(tested_signals_df, portfolio_evaluation_df)
-    dashboard.servable()
+    hvplot.show(dashboard)
+
     return
 
 
