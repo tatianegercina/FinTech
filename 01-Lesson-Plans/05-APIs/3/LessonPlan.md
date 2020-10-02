@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's class will focus on the notion of using Monte Carlo simulations to forecast results and make confident predictions supported by statistical evidence. A Monte Carlo simulation is an essential tool for emulating a real-world use case that involves a degree of randomness surrounding an event or outcome. It seeks to iterate `n` a number of times to find the most probable result of a variable event, as well as the range of effects and their corresponding probabilities of occurring.
+Today's class will focus on the notion of using Monte Carlo simulations to forecast results and make confident predictions supported by statistical evidence. A Monte Carlo simulation is an essential tool for emulating a real-world use case that involves a degree of randomness surrounding an event or outcome. It seeks to iterate `n` number of times to find the most probable result of a variable event, as well as the range of effects and their corresponding probabilities of occurring.
 
 For example, stock prices fluctuate, so there are varying probabilities as to where the price may deviate from its average (daily, weekly, monthly). This lesson will teach students how to apply Monte Carlo simulations to predict future stock prices, thus forecasting the potential returns of an initial investment, either as a single stock or as a portfolio.
 
@@ -40,11 +40,11 @@ By the end of class, students will be able to:
 
 * Toward the end of class, students will begin applying Monte Carlo simulations to portfolio returns. Therefore, they will need to combine the concepts of portfolio optimization (taught in the Pandas unit) with the concept of portfolio forecasting (taught in today's lesson). Walk through the steps in detail, as students could easily get lost in this myriad of technical concepts!
 
-* Note that the results from Monte Carlo simulations may vary from the lesson plan and a new execution in class since stock data is fetched `90` days before the current date.
+* Note that, due to the random numbers used in Monte Carlo simulations, a new execution of Monte Carlo simulations in class may produce different results than what you see in the lesson plan.  Selecting different dates than those used in the lesson plan will also produce different results, as the stock data fetched will be different.
 
-* In this class, the concept of random numbers and random numbers generators is introduced and applied using `numpy.random`. A random seed (`random.seed(3)`) has been set for all the Instructor's activities to ensure reproducibility. Be aware of this during your coding demos, and explain the purpose of using a random seed for prototyping but not for deploying models.
+* In this class, the concept of random numbers and random number generators is introduced and applied using `numpy.random`. A random seed (`random.seed(3)`) has been set for all the Instructor's activities to ensure reproducibility. Be aware of this during your coding demos, and explain the purpose of using a random seed for prototyping but not for deploying models.
 
-* In the student activities using `numpy.random`, there a random seed is not set to allow students to experience randomness.
+* In the student activities using `numpy.random`, the random seed is not set to allow students to experience randomness.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -52,9 +52,9 @@ By the end of class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 5.3 Slides](https://docs.google.com/presentation/d/16NiajbpXB3GCrOjwbf_Z4h47jD7KcQzgULA9a5McwNw/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 5.3 Slides](https://docs.google.com/presentation/d/1gTBrh_ac0HgXx91UFS3YUiWrSUuv3lorKJZja5qc5p0/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -70,21 +70,19 @@ Cover the following points:
 
 * The previous lessons focused on API calls and showcased the Alpaca API to exemplify that you can leverage the power of external datasets and functionality.
 
-* Today you will combine what you've learned so far on using Alpaca to pull in stock data and forecast single stock and portfolio returns using Monte Carlo simulations.
-
 * Today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. You should feel empowered as you are learning how you can use other curated datasets to analyze and generate insights on their own.
 
-* You should be prepared to push your mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.
+* You should be prepared to push your mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may take in the future, thereby making educated predictions on where the portfolio could end up.
 
 Open the lesson slides, move to the "Monte Carlo Simulations" section and highlight the following:
 
-* Today, we will combine what we’ve learned so far on using APIs to pull in stock data and forecast single stock/portfolio returns using Monte Carlo simulations.
+* Today, we will combine what we’ve learned so far on using APIs to pull in stock data, to forecast single stock/portfolio returns using Monte Carlo simulations.
 
 * Simulations will require a switch from historical analysis to predicting the future.
 
 * By the end of the lesson, Monte Carlo simulations will have predicted future stock prices and therefore forecast the potential stock's returns of an initial investment, either as a single stock investment or as an investment in a portfolio.
 
-Continue with the slides switching to the "Simulations" section, ease students into the notion of this type of simulation by presenting the following questions and answers:
+Continue with the slides by moving to the "Simulations" section. Ease students into the notion of this type of simulation by presenting the following questions and answers:
 
 * What are simulations?
 
@@ -126,7 +124,13 @@ In short words, probability is the chance of an event happening. Probability mer
 
   ![normal-distribution](Images/normal-distribution.png)
 
-* Normal distributions are particularly useful in finance because they adequately approximate the volatility of stock prices, forex rates, and other commodities. For example, the daily price change (in percent) from a high volatility stock such as Tesla and a low volatility stock such as Coca-Cola can both demonstrate normal distributions despite the differences in company size, customer base, stock price, and market share. We can visualize the normal distribution of these stocks using Pandas as follows.
+* Normal distributions are particularly useful in finance because they adequately approximate the volatility of stock prices, forex rates, and other commodities. For example, the daily price change (in percent) from a high volatility stock such as Tesla and a low volatility stock such as Coca-Cola can both demonstrate normal distributions despite the differences in company size, customer base, stock price, and market share. We can visualize the normal distribution of these stocks using Pandas as follows:
+
+```python
+# Visualize the distribution of percent change in closing price for both stocks using a density plot
+df_daily_returns.plot.density()
+```
+![Density_Distribution.png](Images/Density_Distribution.png)
 
 Explain to students that we are going to use probability distributions to visually analyze the outcomes forecasted by Monte Carlo simulations, but first, it's time to learn how to fetch stock data and visualize its distribution using Python.
 
@@ -148,7 +152,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
 * Before getting started with Monte Carlo simulations, it's important to learn how you can visually analyze the distribution of data using Python.
 
-* Today, we will work with stock data to forecast possible outcomes using Monte Carlo simulations, as a first step, let's learn how to use histograms and density plots to see the probability distributions in action.
+* Today, we will work with stock data to forecast possible outcomes using Monte Carlo simulations. As a first step, let's learn how to use histograms and density plots to see the probability distributions in action.
 
 * Let's start by importing the required libraries and loading our Alpaca keys from the environment variables stored in the `.env.` file.
 
@@ -329,7 +333,7 @@ Open the solved version of the Jupyter notebook and explain the following:
   ).df
   ```
 
-* Until now, we retrieved stock data from one or two tickers, note that it's possible to fetch data from several tickers by only adding the symbols to the `tickers` list.
+* Until now, we retrieved stock data from one or two tickers; note that it's possible to fetch data from several tickers just by adding the symbols to the `tickers` list.
 
 * Next, we create a new DataFrame containing only closing prices since we want to analyze their distribution to compare stock volatility.
 
@@ -377,7 +381,7 @@ Open the solved version of the Jupyter notebook and explain the following:
 
   ![tickers-density-plot](Images/tickers-density-plot.png)
 
-* This is much better, right!? From the density plot, we can observe that the most volatile stock is `WORK`, and the least volatile stock is `SPY`. Using these two plots, we can start deciding an investing strategy by setting different weights for each ticker in a portfolio.
+* This is much better, right!? From the density plot, we can observe that the most volatile stock is `WORK`, and the least volatile stock is `SPY`. Using these two plots, we can start planning an investing strategy by setting different weights for each ticker in a portfolio.
 
 * It would be great to forecast the future outcomes of a portfolio, right? That's where Monte Carlo simulations come into action.
 
@@ -413,7 +417,7 @@ Explain to students, that in order to perform portfolio forecasting in Python, w
 
 * To carry out portfolio forecasting, we provide you with a library called `MCForecastTools` that contains functions to help build Monte Carlo simulations and will allow you to test several future scenarios by setting different parameters.
 
-Since the waiting time for running the Monte Carlo simulation could be long, open the solved version of the Jupyter notebook, follow the code on each cell and highlight the following.
+Since the waiting time for running the Monte Carlo simulation could be long, open the solved version of the Jupyter notebook, follow the code in each cell and highlight the following.
 
 * Let's pretend that we are looking to add Microsoft (`MSFT`) and Coca-Cola (`KO`) stock to our portfolio. If we were to invest $10,000 worth of stock today, how much would it be worth in `5` years? `10` years? Let's find out.
 
@@ -483,7 +487,7 @@ Since the waiting time for running the Monte Carlo simulation could be long, ope
   )
   ```
 
-* After creating the `MCSimulation` instance, the daily returns are computed. A new DataFrame is created where the instance automatically created a `daily_return` column that calculates the percent change of closing prices for each stock. The `daily_return` column will be the normally distributed variable we use as input for the Monte Carlo simulation. We can look at this new DataFrame using the `portfolio_data` attribute and linking it to the `head()` function.
+* After creating the `MCSimulation` instance, the daily returns are computed. A new DataFrame is created where the instance automatically created a `daily_return` column that calculates the percent change of closing prices for each stock. The `daily_return` column will be the normally distributed variable we use as input for the Monte Carlo simulation. We can preview this new DataFrame using the `portfolio_data` attribute and linking it to the `head()` function.
 
   ```python
   # Printing the simulation input data
@@ -527,7 +531,7 @@ Highlight to students that if they want to use this plot for a report or present
 
 Continue the demo by highlighting the following about the analysis of the Monte Carlo simulation results.
 
-* Looking at our line plot, we see the trajectory of each and every sample across all of the simulated trading days. The x-axis of our plot shows the training days, while the y-axis is the portfolio's cumulative return. When we are looking at cumulative returns, a value of `1` indicates no change in the portfolio value.
+* Looking at our line plot, we see the trajectory of each and every sample across all of the simulated trading days. The x-axis of our plot shows the trading days, while the y-axis is the portfolio's cumulative return. When we are looking at cumulative returns, a value of `1` indicates no change in the portfolio value.
 
 * According to our plot, we can see there are some cumulative returns of `2`, `6`, or even `12` times the original value, but it is hard for us to tell what the distribution of values looks like from this perspective. Alternatively, we can look at the distribution of cumulative returns using the `plot_distribution()` function.
 
@@ -590,7 +594,7 @@ Answer any questions before moving on.
 
 **Corresponding Activity:** [04-Stu_Three_Stock_Monte](Activities/04-Stu_Three_Stock_Monte)
 
-In this activity students will use the `MCForecastTools` toolkit to determine how much of each stock is worth purchasing in a portfolio in order to maximize your chances of profit.
+In this activity students will use the `MCForecastTools` toolkit to determine how much of each stock is worth purchasing in a portfolio in order to maximize the chances of profit.
 
 You can have students working in pairs for this activity.
 
@@ -663,7 +667,7 @@ Open the solved version of the Jupyter notebook and explain the following:
 
   ![three-monte-plots](Images/three-monte-plots.png)
 
-* After observing the `95%` confidence intervals in the probability distribution plot, we can deduce that our initial investment will drop by `50%` or increase by `320%`.
+* After observing the `95%` confidence intervals in the probability distribution plot, we can deduce that our initial investment will drop by `50%` or increase by `320%`. 
 
   ![three-monte-confidence-intervals](Images/three-monte-confidence-intervals.png)
 
@@ -691,7 +695,7 @@ Open the solved version of the Jupyter notebook and explain the following:
   Name: 1260, dtype: float64
   ```
 
-* We use the lower and upper `95%` confidence intervals to calculate the range of the possible outcomes of our $15,000 investments.
+* We use the lower and upper `95%` confidence intervals to calculate the range of the possible outcomes of our $15,000 investment.
 
   ```python
   # Use the lower and upper `95%` confidence intervals to calculate the range of the possible outcomes of our $15,000 investments in stocks
@@ -708,7 +712,7 @@ Open the solved version of the Jupyter notebook and explain the following:
   There is a 95% chance that an initial investment of $15,000 in the portfolio over the next five years will end within the range of $6627.52 and $46628.21.
   ```
 
-Recall to students that the simulation process includes using a random number generator, so their simulated values will vary from this example.
+Remind students that the simulation process includes using a random number generator, so their simulated values will vary from this example.
 
 The remainder of steps for this activity consist of simulating different scenarios by changing the proportion of stocks in each scenario. One essential part of these simulations is to set the `weights` argument of the `MCSimulation()` function to the correct values.
 
@@ -735,7 +739,7 @@ Another important aspect of the solution is to create a variable to store the su
 
 4. `exxon_tbl`, `exxon_ci_lower`, `exxon_ci_upper`: Stores the statistics of the Monte Carlo simulation with `60%` Exxon Mobil stock.
 
-Finally, to summarize the findings across all four simulations, we use the variables created for each scenario to print the resulting range of the possible outcomes of our $15,000 investments in stocks.
+Finally, to summarize the findings across all four simulations, we use the variables created for each scenario to print the resulting range of the possible outcomes of our $15,000 investment in stocks.
 
 ```python
 # Even weighted stocks
@@ -794,7 +798,7 @@ Answer any questions before moving on.
 
 **Corresponding Activity:** [05-Ins_Simulation_of_Stock_Price_Trajectory](Activities/05-Ins_Simulation_of_Stock_Price_Trajectory)
 
-This activity exemplifies the use case where a Monte Carlo simulation can be applied to a historical dataset such as daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution. Stock datasets will be pulled in from the Alpaca API and used to generate a Monte Carlo simulation-based off a normally distributed random process using the dataset's calculated average and standard deviation of daily returns.
+This activity exemplifies the use case where a Monte Carlo simulation can be applied to a historical dataset such as daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution. Stock datasets will be pulled in from the Alpaca API and used to generate a Monte Carlo simulation based off a normally distributed random process using the dataset's calculated average and standard deviation of daily returns.
 
 **Files:**
 
@@ -824,7 +828,7 @@ Walk through the solution and highlight the following:
   %matplotlib inline
   ```
 
-* We use the `get_barset()` function from the `Alpaca` SDK to retrieve a DataFrame of `AAPL` daily stock prices. The `start_date` and `end_date` variables, in this case, are set to five years from the current date and the current date, respectively. To fetch the stock data correctly, the Alpaca SDK works with dates in ISO format, so we transform the `start_date` and the `end_date` using the `Timestamp` and `isoformat` functions from Pandas.
+* We use the `get_barset()` function from the `Alpaca` SDK to retrieve a DataFrame of `AAPL` daily stock prices. The `start_date` and `end_date` variables, in this case, are a span of five years - the start date and five years from the start date, respectively. To fetch the stock data correctly, the Alpaca SDK works with dates in ISO format, so we transform the `start_date` and the `end_date` using the `Timestamp` and `isoformat` functions from Pandas.
 
   ```python
   # Set the ticker
@@ -846,7 +850,7 @@ Walk through the solution and highlight the following:
   ).df
   ```
 
-* Next, we configure and run `500` Monte Carlo simulations to forecast the stock daily returns over the next `252` trading days.
+* Next, we configure and run `500` Monte Carlo simulations to forecast the stock's daily returns over the next `252` trading days.
 
   ```python
   # Set number of simulations
@@ -923,7 +927,7 @@ Walk through the solution and highlight the following:
 
   ![aapl-outcomes-plot](Images/aapl-outcomes-plot.png)
 
-* Finally, we calculate the range of the possible outcomes of our $10,000 investments in `AAPL` stocks with a `95%` confidence interval by fetching the summary statistics from the Monte Carlo simulation results.
+* Finally, we calculate the range of the possible outcomes of our $10,000 investment in `AAPL` stocks with a `95%` confidence interval by fetching the summary statistics from the Monte Carlo simulation results.
 
 ```python
 # Fetch summary statistics from the Monte Carlo simulation results
@@ -996,7 +1000,7 @@ Open the solution and explain the following:
 
 * Make sure that the `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` environment variables are properly set in your projects `.env` file so that the `alpaca-trade-api` SDK can communicate to the `Alpaca` API.
 
-* The `get_barset()` function pulls three years worth stock data from the Alpaca API.
+* The `get_barset()` function pulls three years worth of stock data from the Alpaca API.
 
   ```python
   # Set the ticker
@@ -1069,7 +1073,7 @@ Make sure students can recognize and acknowledge their accomplishments. Communic
 
 * You've added another tool to your API-SDK tool belt: the Alpaca Trade API SDK, which is an excellent resource for historical stock data and financial functions.
 
-* You've taken yet another deep dive into statistics, learning how to create, calculate, and interpret probability distributions. This includes using mean, **standard deviation**, **daily returns**, and charts to implement and visualize portfolio simulations.
+* You've taken yet another deep dive into statistics, learning how to create, calculate, and interpret probability distributions. This includes using **mean**, **standard deviation**, **daily returns**, and charts to implement and visualize portfolio simulations.
 
 * You've plotted the price trajectory of stock prices and returns using multiple Monte Carlo simulations.
 
@@ -1081,7 +1085,7 @@ Make sure students can recognize and acknowledge their accomplishments. Communic
 
 Give students space to emotionally release. Use this activity as a way to gauge student confidence, frustration, and stress levels.
 
-Ask students to summarize how they're feeling with a one-word emotion. Ask for volunteers first. If no one volunteers initiate the activity by using one word to convey how you're feeling, and then go round-robin. Gauge the students, verbal and nonverbal cues of stress and confusion (e.g., withdrawal from the activity or isolation, irritability or impatience, chronic worrying, pessimistic attitude, and restlessness).
+Ask students to summarize how they're feeling with a one-word emotion. Ask for volunteers first. If no one volunteers initiate the activity by using one word to convey how you're feeling, and then go round-robin. Gauge the students' verbal and nonverbal cues of stress and confusion (e.g., withdrawal from the activity or isolation, irritability or impatience, chronic worrying, pessimistic attitude, and restlessness).
 
   **Answer**: Relieved
 
