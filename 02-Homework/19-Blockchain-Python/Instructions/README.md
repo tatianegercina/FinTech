@@ -104,8 +104,11 @@ You will need to create three more functions:
   You will need to check the coin, then return one of the following functions based on the library:
 
   - For `ETH`, return `Account.privateKeyToAccount(priv_key)`
+      - This function returns an account object from the private key string. You can read more about this object [here](https://web3js.readthedocs.io/en/v1.2.0/web3-eth-accounts.html#privatekeytoaccount).
   - For `BTCTEST`, return `PrivateKeyTestnet(priv_key)`
-
+      - This is a function from the `bit` libarary that converts the private key string into a WIF (Wallet Import Format) object. WIF is a special format bitcoin uses to designate the types of keys it generates. 
+      - You can read more about this function [here](https://ofek.dev/bit/dev/api.html).
+      
 - `create_tx` -- this will create the raw, unsigned transaction that contains all metadata needed to transact.
   This function needs the following parameters:
 
