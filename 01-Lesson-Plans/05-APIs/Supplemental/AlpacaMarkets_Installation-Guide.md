@@ -1,4 +1,4 @@
-# Unit 5 - APIs Installation Guide
+# Alpaca Markets (python-sdk) and Quandl Installation Guide
 
 This guide serves as a step by step process for setting up and validating the packages and files needed to utilize the Alpaca Markets API/Python SDK and the Quandl API. Without proper installation and set up, class activities and code will not extract historical stock data and therefore, cannot be completed.
 
