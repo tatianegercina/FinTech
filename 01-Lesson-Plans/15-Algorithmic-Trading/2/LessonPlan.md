@@ -4,56 +4,59 @@
 
 ### Overview
 
-Today's class will expand upon students' component knowledge of algorithmic trading and abstract one level higher to create a full-fledged trading framework encapsulated in a single application. In particular, students will learn how to wrap their previous code (data collection, signal generation, backtesting, evaluation, and dashboard creation) into functions that will be called via a single workflow. In other words, students will automate the manual component calculations done in the previous class to produce an end-to-end trading dashboard containing all relevant metrics and functionality.
+Today's class will expand upon students' component knowledge of algorithmic trading and abstract one level higher to create a full-fledged trading framework encapsulated in a single application. Students will learn how to wrap their previous code (data collection, signal generation, backtesting, evaluation, and data visualization creation) into functions that will be called via a single workflow, automating the manual component calculations done in the previous class to produce an end-to-end trading visualization containing all relevant metrics and functionality.
 
-Students will learn how to "go live" with their trading frameworks by establishing a connection to a financial trading API, such as the Kraken or Bitfinex Cryptocurrency Exchange API, which both provide 24-hour market access and generous API request privileges.
+Students will also learn how to "go live" with their trading frameworks by establishing a connection to a financial trading API, such as the Kraken Cryptocurrency Exchange API, which provides 24-hour market access and generous API request privileges. They will use asynchronous programming and data pipelines with their live data feed to build streaming data visualizations.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Design an end-to-end workflow for a trading framework (data collection > signal generation > backtesting > evaluation > dashboard creation).
+* Design an end-to-end workflow for a trading framework (data collection > signal generation > backtesting > evaluation > data visualization creation).
 
 * Abstract their previous day's algorithmic trading calculations into functions and execute an end-to-end implementation of a working trading framework.
 
-* Utilize live financial data by connecting their trading frameworks to the Kraken or Bitfinex Cryptocurrency Exchange API.
+* Utilize live financial data by connecting their trading frameworks to the Kraken Cryptocurrency Exchange API.
 
 * Perform asynchronous tasks and loops using asyncio.
 
-* Implement asyncio with their trading frameworks to fetch data and update the dashboard in parallel.
+* Implement asyncio with their trading frameworks to fetch data and update a chart in parallel.
+
+* Enhance their trading data visualizations with live data.
 
 ### Instructor Notes
 
-* Today's lesson will tie together the concepts and coding solutions from the previous day into a single robust trading framework that can produce an end-to-end implementation of a trading dashboard with working metrics.
+* Today's lesson will tie together the concepts and coding solutions from Day 1 of this unit into a single robust trading framework that can produce an end-to-end implementation of a trading data visualization with working metrics.
 
 * This lesson will primarily focus on developing the *infrastructure* of the trading framework and, therefore, will not contain as much domain-specific trading knowledge.
 
-* Review sessions will be geared towards allowing students to ask as many questions as possible. Questions should be prioritized over instructor posed review questions. While we want to provide as much opportunity as possible for students to ask questions, it is also important that the class is paced so that all material is covered.
+* Review sessions will be geared towards allowing students to ask as many questions as possible. Students' questions should be prioritized over instructor-posed review questions. While we want to provide as much opportunity as possible for students to ask questions, also be sure to keep a careful eye on the class pacing, so that all material is covered.
 
-* Encourage students to review supplementary resources, to reach out to TAs individually for assistance, and to attend office hours to address any unanswered questions or confusion.
+* Encourage students to review supplementary resources, to reach out to TAs individually for assistance, and to attend office hours to address any unanswered questions or for additional support.
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [15.2 Lesson Slides](https://docs.google.com/presentation/d/1j96VQ9ZJF1O6N1hIXBzGu65yHNxvBshk3Ev8mPZbhNM/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [15.2 Lesson Slides](https://docs.google.com/presentation/d/1p13SgnoYS83wsmOB-vcq5wGRwidKjGkUy-G3RS1A1Xk/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to file, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to file, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to file and selecting "Make a copy...".
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [15.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ca743d57-d2a0-43eb-a7e6-aafe00f8d9cc) Note that this video may not reflect the most recent lesson plan.
 
 ---
 
 ### 1. Instructor Do: Welcome Class (10 min)
 
-In this section, students will review the algorithmic trading concepts taught in the previous class to prepare them for today's consolidation of multiple trading functions (signal generation, backtesting, trade evaluation, etc.) into a single trading framework. This section is a key opportunity to quickly re-visit the core components related to algorithmic trading before transitioning to the design of an algorithmic trading framework.
+In this section, students will review the algorithmic trading concepts taught in the previous class to prepare them for today's consolidation of multiple trading functions (signal generation, backtesting, trade evaluation, etc.) into a single trading framework. This section is a key opportunity to quickly revisit the core components related to algorithmic trading before transitioning to the design of an algorithmic trading framework.
 
-Welcome students to the second day of algorithmic trading and ask for any volunteers that can answer the following review questions:
+Welcome students to the second day of algorithmic trading! Begin by navigating to the first slides of the deck, and calling on volunteers to answer the following review questions:
 
 * What is algorithmic trading?
 
@@ -61,7 +64,7 @@ Welcome students to the second day of algorithmic trading and ask for any volunt
 
 * What is a trading signal?
 
-  **Answer:** A trading signal is the point at which a technical indicator, such as the crossover of two moving averages (short MA and long MA), suggests an opportunity for action--namely whether an individual trader or algorithmic trading program should issue a buy or sell order for a security (such as a stock) at that point in time.
+  **Answer:** A trading signal is the point at which a technical indicator, such as the crossover of two moving averages (short MA and long MA), suggests an opportunity for action; namely, whether an individual trader or algorithmic trading program should issue a buy or sell order for a security (such as a stock) at that point in time.
 
 * What is backtesting?
 
@@ -75,13 +78,13 @@ Welcome students to the second day of algorithmic trading and ask for any volunt
 
   **Answer:** Like other dashboards, a *trading dashboard* consolidates and presents multiple facets of information about the performance of an algorithmic trading application, allowing a user to interact with the data via tables and plots (visualizations).
 
-Then, create some excitement around the day by mentioning the following points:
+Now, create some excitement around the day by mentioning the following points:
 
-* The goal of today's lesson is to take what students learned in day one and put the concepts together to build an end-to-end full-stack trading application that is capable of pulling financial data, generating signals, backtesting, executing a trading strategy, evaluating results, and generating dashboard visualizations in a single workflow.
+* Today's goal is for students to take the concepts learned on Day One, and put them together to build an end-to-end, full-stack trading application that is capable of pulling financial data, generating signals, backtesting, executing a trading strategy, evaluating results, and generating dashboard visualizations in a single workflow.
 
-* Creating a trading application from scratch should hopefully dispel the esoteric nature of developing algorithmic trading applications similar to those offered from commercial services, and allows for the ability to add additional features in the future, should students desire to do so.
+* The hope is that creating a trading application from scratch will dispel the somewhat esoteric nature of developing algorithmic trading applications (like those offered commercially), and will allow students to add on additional features in the future, if they desire.
 
-* By the end of today's lesson, students should have a working trading application that they can demo to future employers, as well as use as the foundation for their custom trading application if they decide to further expand upon it.
+* By the end of today's lesson, students should have a working trading application that they can demo to future employers, and use as the foundation for their very own custom trading application.
 
 Answer any questions before moving on.
 
@@ -89,13 +92,13 @@ Answer any questions before moving on.
 
 ### 2. Student Do: Trading Functions (10 min)
 
-**Corresponding Activity:** [01-Stu_Trading_Functions](Activities/01-Stu_Trading_Functions)
+In this activity, students will be given a random sequence of trading function names. They will be asked to propose the correct order of the functions if they were to be implemented in an algorithmic trading application. Note that there is no single correct order, so treat this as a thought exercise to help drive engagement and discussion around the use of frameworks to encapsulate and abstract code.
 
-In this activity, students will be given a random sequence of trading function names. They will be asked to propose the correct order of the functions if they were to be implemented in an algorithmic trading application. Note that there is not a single precise order, so treat this as a thought exercise to help drive engagement and discussion around the use of frameworks to encapsulate and abstract code.
+**Instructions:**
+
+* [README.md](Activities/01-Stu_Trading_Functions/README.md)
 
 **Files:**
-
-* [Instructions](Activities/01-Stu_Trading_Functions/README.md)
 
 * [jarvis.py](Activities/01-Stu_Trading_Functions/Unsolved/jarvis.py)
 
@@ -107,7 +110,7 @@ After displaying a few student solutions, explain the following points:
 
 * Even without code, a framework provides an abstraction that is easy to read, understand, and use. This is a very powerful programming technique that is analogous to providing an API to the code.
 
-* By encapsulating the code in functions, we can swap code out when necessary. For example, fetching data from a file or an API can easily be changed inside of the `fetch_data` function without affecting how the functions are called.
+* By encapsulating the code in functions, we can swap code out when necessary. For example, fetching data from a file or an API can easily be changed inside of the `fetch_data` function, without affecting how the functions are called.
 
 Open the solution and highlight the solution that was provided:
 
@@ -121,7 +124,7 @@ evaluate_metrics()
 build_dashboard()
 ```
 
-* The true order of this solution may change once the code and behavior of each function are provided, but even without code, the call order will typically follow a pattern of initializing data containers, fetching data, transforming, or using the data, and displaying the data.
+* The true order of this solution may change once the code and behaviour of each function are provided, but even without code, the call order will typically follow a pattern of initializing data containers, fetching data, transforming or using the data, and displaying the data.
 
 * By placing the call order in the main function, it can be easy to control and update the function call order in a single place in the program.
 
@@ -130,8 +133,6 @@ Ask any questions before moving on.
 ---
 
 ### 4. Everyone Do: Algorithmic Trading Framework (20 min)
-
-**Corresponding Activity:** [02-Evr_Algo_Trading_Framework](Activities/02-Evr_Algo_Trading_Framework)
 
 In this activity, students will code along with the instructor and port over their previous algorithmic trading code into the new algorithmic trading framework.
 
@@ -143,7 +144,7 @@ In this activity, students will code along with the instructor and port over the
 
 Explain to students that the algorithmic trading code from the previous day can also be abstracted and ported over to the new trading framework. By abstracting the code, it makes it easier to change and adapt the algorithms and strategies used.
 
-Open the Jupyter Notebook with the source code to be ported and highlight the following:
+Open the Jupyter Notebook with the source code to be ported, and highlight the following:
 
 * Jupyter naturally provides a method of chunking code into cells, which can make the code more readable and reusable; in programming, a better practice is to chunk code together into functions. This provides a layer of abstraction that makes the code easier to modify and reuse.
 
@@ -184,7 +185,7 @@ Complete the `generate_signals` function and discuss the following points:
 ```python
 def generate_signals(data_df):
     """Generates trading signals for a given dataset."""
-    # Grab just the `date` and `close` from the dataset
+    # Grab just the `date` and `close` from the IEX dataset
     signals_df = data_df.loc[:, ["date", "close"]].copy()
 
     # Set the `date` column as the index
@@ -216,13 +217,13 @@ def generate_signals(data_df):
 
 * It is helpful to encapsulate all of the signal generation into a single function. Signal generation may occur separately from the data fetching process, depending on the interval or amount of data needed to generate the signals. For example, in a live trading scenario, you may need to fetch a single record of data multiple times before there is enough data to generate the signals. Separating these functions makes it easier to manage that process.
 
-Prompt students to help complete the `execute_backtest` and `evaluate_metrics` sections and explain the following:
+Prompt students to help complete the `execute_backtest` and `evaluate_metrics` sections, and explain the following:
 
 * Backtesting and evaluating a trading algorithm is sometimes used only in the initial design of an algorithmic trading system. Therefore, it is helpful to separate these into their own functions.
 
 * Backtesting may also be done outside of the trading framework as a separate function. By encapsulating backtesting into a function, it can be added or removed as needed.
 
-Next, complete the `build_dashboard` function and discuss the following:
+Next, complete the `build_dashboard` function, and discuss the following:
 
 ```python
 def build_dashboard(signals_df, portfolio_evaluation_df):
@@ -266,15 +267,13 @@ main()
 
 As a final recap of this activity, explain to students that abstraction and encapsulation are techniques that every good programmer uses to make their code more readable and reusable. Striving to write code in this manner will make it easier to share code, and it shows a level of programming self-mastery that senior developers will recognize.
 
-Explain that the next several activities will continue to build and iterate on the trading framework until everyone has a live algorithmic trading application working that can be used for real trading!
+Explain that the next several activities will continue to build and iterate on the trading framework, until everyone has a live algorithmic trading application working that can be used for real trading!
 
 ---
 
 ### 5. Instructor Do: Trading with CCXT (15 min)
 
-**Corresponding Activity:** [03-Ins_Going_Live](Activities/03-Ins_Going_Live)
-
-In this section, students will become familiar with the expansive CCXT library, which provides an API for over 120 cryptocurrency exchanges. In particular, students will work with the Kraken or Bitfinex API and extract both historical and current price data.
+In this section, students will become familiar with the expansive CCXT library, which provides an API for over 120 cryptocurrency exchanges. Students will work with the Kraken API and extract both historical and current price data.
 
 **File:** [ccxt_demo.ipynb](Activities/03-Ins_Going_Live/Solved/ccxt_demo.ipynb)
 
@@ -282,7 +281,7 @@ Open the solution file and review the following:
 
 * CCXT provides a common API for over 120 cryptocurrency exchanges.
 
-* To use a specific exchange, the API keys for that exchange must be set. In this example, the Kraken exchange is used and requires those keys to be exported before running the notebook. If you are ever having problems with kraken requests not going through you can also leverage the bitfinex API as a drop-in alterative.
+* To use a specific exchange, the API keys for that exchange must be set. In this example, the Kraken exchange is used, and requires those keys to be exported before running the notebook.
 
   ```python
   # Import environment variables
@@ -342,7 +341,7 @@ Take a moment to explain the differences in evaluating a trading strategy and go
   current_price = exchange.fetch_ticker('BTC/USD')
   ```
 
-* The `info` column contains the original exchange API data that usually just be treated as duplicate information and deleted.
+* The `info` column contains the original exchange API data that usually is just treated as duplicate information and deleted.
 
   ```python
   del current_price['info']
@@ -350,7 +349,7 @@ Take a moment to explain the differences in evaluating a trading strategy and go
 
 Explain that while today's lesson only focuses on fetching pricing data from the Kraken API, the CCXT library also allows a user to perform tasks such as checking account balances/status, fetching any open orders, or even placing and executing trades.
 
-  **Note:** The following functions return minimal/empty datasets due to the fact that the Kraken account used in this lesson is not funded with capital. The same would be true for using another API such as Bitfinex.
+  **Note:** The following functions return minimal/empty datasets, due to the fact that the Kraken account used in this lesson is not funded with capital.
 
   ![additional-functions](Images/additional-functions.png)
 
@@ -360,9 +359,7 @@ Answer any remaining questions before moving on.
 
 ### 6. Everyone Do: Going Live with CCXT (15 min)
 
-**Corresponding Activity:** [04-Evr_Going_Live](Activities/04-Evr_Going_Live)
-
-In this activity, students will code along with the instructor to update a version of the algorithmic trading framework to use the Kraken or Bitfinex exchange from the CCXT API.
+In this activity, students will code along with the instructor to update a version of the algorithmic trading framework to use the Kraken exchange from the CCXT API.
 
 **File:**
 
@@ -370,7 +367,7 @@ In this activity, students will code along with the instructor to update a versi
 
 Live code the solution to this activity with the entire class. Use the code to explain new concepts to students, and engage the class with questions when appropriate. Be sure to go slow and give students plenty of time to keep up.
 
-Start the activity with a brief overview of the framework to show which sections will need to be updated to "go live".
+Start the activity with a brief overview of the framework, to show which sections will need to be updated to "go live."
 
 * **NOTE:** Each section that needs to be updated will have a `# @TODO:` comment to make it easier to find those sections.
 
@@ -399,9 +396,9 @@ def main():
         time.sleep(1)
 ```
 
-* The main function uses a loop to fetch new data every 1 second. This loop can easily be modified to fetch data at any interval required for the trading algorithm.
+* The main function uses a loop to fetch new data every one second. This loop can easily be modified to fetch data at any interval required for the trading algorithm.
 
-* The loop refers to `global` variables for the account and DataFrame. This is required because the `account` and `df` variables are initialized outside of the loop. We will see later in today's class why initializing certain variables like this will be advantageous.
+* The loop refers to `global` variables for the account and DataFrame. This is required because the `account` and `df` variables are initialized outside of the loop. We will see later in today's class why initializing certain variables like this is advantageous.
 
 * New data is fetched from the Kraken API using the `fetch_data` function and then appended to the main `df` DataFrame.
 
@@ -424,7 +421,7 @@ def initialize(cash=None):
     return account, df
 ```
 
-* The initialize function is used to create all of the initial variables and data containers that the function may need. By initializing all of the functions in a single function, it makes it easy to update and change the initial values or data types used.
+* The initialize function is used to create all of the initial variables and data containers that the function may need. By initializing all of the functions in a single function, it's easy to update and change the initial values or data types used.
 
 * The account balance is a simple Python dictionary to keep track of the cash balance and the number of shares owned.
 
@@ -481,7 +478,7 @@ def generate_signals(df):
     return signals
 ```
 
-Move on to the `execute_trade_strategy` and show how we can use the account balance and the latest data retrieved to make a trading decision.
+Move on to the `execute_trade_strategy`, and show how we can use the account balance and the latest data retrieved to make a trading decision.
 
 ```python
 def execute_trade_strategy(signals, account):
@@ -506,7 +503,7 @@ def execute_trade_strategy(signals, account):
 
 * This function only prints the trade decision, but an API call can be used here to place a real order.
 
-Run the complete trading script in the terminal to show that the data being fetched until there is enough data collected to generate signals and execute the trading strategy.
+Run the complete trading script in the terminal to show that the data is being fetched until there is enough data collected to generate signals and execute the trading strategy.
 
 ```shell
 python jarvis.py
@@ -520,71 +517,71 @@ Explain that the beauty of a robust application framework is that the abstractio
 
 ### 7. Instructor Do: Asyncio (10 min)
 
-**Corresponding Activity:** [05-Ins_Asyncio](Activities/05-Ins_Asyncio)
+In this demonstration, students will learn how to create asynchronous functions that do not block a plot from loading.
 
-In this demonstration, students will learn how to create asynchronous functions that do not block the dashboard from loading.
-
-Note that a complete explanation of asyncio is out-of-scope for this lesson, so refer students to the [official documents](https://docs.python.org/3/library/asyncio.html) and office hours if they want to learn more.
+Note that a complete explanation of `asyncio` is out-of-scope for this lesson, so refer students to the [official documents](https://docs.python.org/3/library/asyncio.html) and office hours if they want to learn more.
 
 **Files:**
 
-* [blocked_dashboard.py](Activities/05-Ins_Asyncio/Solved/blocked_dashboard.py)
+* [blocked_plot.py](Activities/05-Ins_Asyncio/Solved/blocked_plot.py)
 
 * [asyncio_demo.ipynb](Activities/05-Ins_Asyncio/Solved/asyncio_demo.ipynb)
 
-* [async_dashboard.py](Activities/05-Ins_Asyncio/Solved/async_dashboard.py)
+* [async_plot.ipynb](Activities/05-Ins_Asyncio/Solved/async_plot.py)
 
-Explain to students that now that we have a basic live trading script working, we want to include live visualizations as well. However, there are some problems with plotting live data that needs to be addressed first.
+Explain to students that now that we have a basic live trading script working, we want to include live visualizations as well. However, there are some problems with plotting live data that need to be addressed first.
 
-Start by running the `blocked_dashboard.py` code to show the long loading time.
+Start by running the `blocked_plot.py` code to show the long loading time.
 
 ```shell
-panel serve --log-level debug --show blocked_dashboard.py
+python blocked_plot.py
 ```
 
-Open the `blocked_dashboard.py` code and highlight the following points:
+![blocked-plot](Images/blocked-plot.gif)
+
+Open the `blocked_plot.py` code and highlight the following points:
 
 ```python
+import time
+
 def fetch_data():
     """Simulate a delayed fetch."""
+    print("Fetching data...")
     time.sleep(5)
 
-
-def serve_dashboard():
-    dashboard = pn.Column("# My Blocked Dashboard")
-    return dashboard.servable()
-
+def serve_plot():
+    print("My Blocked Plot")
 
 fetch_data()
-serve_dashboard()
+serve_plot()
 ```
 
 * The `fetch_data` function simulates a data fetch that takes a long time. In practice, any request to an external API may take a long time to fetch and return the data.
 
-* The serve_dashboard function serves up a simple dashboard of text.
+* The `serve_plot` function serves up a simple testing text.
 
-* Python is a synchronous language. That means that it runs one line of code and waits on that code to finish before moving on to run the next line of code. In this example, the `fetch_data` function takes 5 seconds to run before the code that serves the dashboard can run. This effectively blocks the page from loading until the data returns.
+* Python is a synchronous language. That means that it runs one line of code and waits on that code to finish before moving on to run the next line of code. In this example, the `fetch_data` function takes five seconds to run before the code that serves the plot can run. This effectively blocks the plot from loading until the data returns.
 
-* In practice, fetching data can take a lot longer than expected. Database queries, network delays, and other factors can create delays in the request. With code like this, the user experience suffers because the page cannot load until the data returns.
+* In practice, fetching data can take a lot longer than expected. Database queries, network delays, and other factors can create delays in the request. With code like this, the user experience suffers because the plot cannot load until the data returns.
 
 Open `asyncio_demo.ipynb` and highlight the following points about the asyncio library:
 
-* Python provides a library called `asyncio` to write concurrent or asynchronous code.
+* Python provides a library called `asyncio` to write concurrent, or asynchronous, code.
 
 * Asynchronous code means that Python doesn't have to wait on that line to finish running before moving on to the next line of code.
 
-Run the following cell to show the delay created by the default synchronous behavior:
+Run the following cell to show the delay created by the default synchronous behavior. Explain to students that synchronously running the code implies that it runs sequentially from top to bottom, since the `fetch_data` function is executed first, you need to wait three seconds to have the `serve_plot` function executed.
 
 ```python
 def fetch_data():
     time.sleep(3)
     print("data")
 
-def serve_dashboard():
-    print("dashboard")
+def serve_plot():
+    print("plot")
 
 fetch_data()
-serve_dashboard()
+serve_plot()
 ```
 
 Break down the asynchronous code cell and explain the following:
@@ -594,49 +591,49 @@ async def fetch_data():
     await asyncio.sleep(3)
     print("data")
 
-def serve_dashboard():
-    print("dashboard")
+def serve_plot():
+    print("plot")
 
 loop = asyncio.get_event_loop()
 
 loop.create_task(fetch_data())
-serve_dashboard()
+serve_plot()
 ```
 
 * Code can be defined as asynchronous using the keywords `async` and `await`. This tells Python to handle this code differently than the other code.
 
-* The `async` keyword in the function definition tells asyncio that this function is something called a [coroutine](https://docs.python.org/3/glossary.html#term-coroutine). A coroutine is just code that can be executed differently (asynchronously) from the normal code.
+* The `async` keyword in the `fetch_data` function definition tells asyncio that this function is something called a [coroutine](https://docs.python.org/3/glossary.html#term-coroutine). A coroutine is just code that can be executed differently (asynchronously) from the normal code.
 
-* The `await` keyword indicates which line of code can be waited for asynchronously. This is what suspends the coroutine until this line of code finishes running. In other words, the sleep statement can run asynchronously while Python continues to run the remaining code in the program.
+* The `await` keyword indicates which line of code can be waited for asynchronously. This is what suspends the coroutine until this line of code finishes running. In other words, the `sleep` statement can run asynchronously while Python continues to run the remaining code in the program.
 
 * Asyncio uses an event loop to run code asynchronously. The event loop can be thought of as a loop that sits off to the side and just periodically checks to see if the async code has finished running yet. When it does finish running, it can rejoin the main program. Meanwhile, Python is free to continue running other code.
 
-* The asyncio provides several functions for using the event loop. This example runs the `fetch_data` function as a task in the event loop. It then immediately moves on to run the `serve_dashboard` code in the main program while fetch_data continues to run in the event loop. Once fetch_data finishes, it rejoins the main program.
+* The asyncio provides several functions for using the event loop. This example runs the `fetch_data` function as a task in the event loop. It then immediately moves on to run the `serve_plot` code in the main program while `fetch_data` continues to run in the event loop. Once `fetch_data` finishes, it rejoins the main program.
 
-Show that the dashboard no longer has to wait on the fetch_data function:
+Show that the plot testing text no longer has to wait on the `fetch_data` function:
 
 ```python
-async def fetch_data():
+aasync def fetch_data():
     await asyncio.sleep(3)
     print("data")
 
-def serve_dashboard():
-    dashboard = pn.Column("# My Panel Dashboard")
-    return dashboard.servable()
+def serve_plot():
+    plot = Markdown("# My Plot")
+    return plot
 
 loop = asyncio.get_event_loop()
 
 loop.create_task(fetch_data())
-serve_dashboard()
+serve_plot()
 ```
 
-Finally, run the `async_dashboard.py` code to show that the page can immediately load while the data is still being fetched.
+Finally, open the `async_plot.ipynb` notebook, run all the cells to show that the plot testing text can immediately load while the data is still being fetched.
 
-```shell
-panel serve --log-level debug --show async_dashboard.py
-```
+![async-plot](Images/async-plot.gif)
 
-Explain that we can use these ideas to modify our trading dashboard so that the page can load while new data is collected asynchronously. The dashboard can then be updated with the new data once it returns.
+Explain that we can use these ideas to modify our trading Python script so that the plot can load while new data is collected asynchronously. The plot can then be updated with the new data once it returns.
+
+Answer any questions before moving on.
 
 ---
 
@@ -646,98 +643,144 @@ Explain that we can use these ideas to modify our trading dashboard so that the 
 
 ### 9. Everyone Do: Async Trading (15 min)
 
-**Corresponding Activity:** [06-Evr_Async_Trading](Activities/06-Evr_Async_Trading)
-
 In this activity, students will code along with the instructor to update their live trading code to fetch data asynchronously with [asyncio](https://docs.python.org/3/library/asyncio.html).
 
-**Files:** [jarvis.py](Activities/06-Evr_Async_Trading/Unsolved/jarvis.py)
+**Files:**
 
-Open the starter code and live code the solution with the class. Explain any new concepts as you go, and be sure to proceed slowly and frequently pause to make sure that students can keep up.
+* [jarvis.py](Activities/06-Evr_Async_Trading/Unsolved/jarvis.py)
 
-Start by skimming the code with the class and showing the `# @TODO:` comments where the code will need to be updated. Explain that the goal is to use asyncio so that the dashboard can be loaded and updated without blocking the page from loading.
+* [jarvis-text.py](Activities/06-Evr_Async_Trading/Solved/jarvis-text.py)
 
-Import the necessary libraries to use asyncio, hvplot, and panel.
+Open the starter code and live code the solution with the class. Proceed slowly, explain new concepts as you go, and take frequent pauses to ensure that students can keep up.
+
+Start by skimming the code with the class and showing the `# @TODO:` comments where the code will need to be updated. Explain that the goal is to use `asyncio` so that a plot can be loaded and updated without blocking the script from running.
+
+Import the necessary libraries to use `asyncio`, and `matplotlib`.
 
 ```python
+import os
+import ccxt
 import asyncio
-
-import hvplot.pandas
-import panel as pn
-
-pn.extension()
+import numpy as np
+import pandas as pd
+from dotenv import load_dotenv
+import matplotlib.pyplot as plt
 ```
 
-Update the code for the `initialize`, `build_dashboard`, and `update_dashboard` functions and highlight the following:
+Update the code for the `initialize`, `build_plot`, and `update_plot` functions, and highlight the following:
+
+* The `initialize` function sets the initial configuration. It uses the `build_plot` function to build and return an initial plot with the current closing price of `BTC/USD`.
+
+  ```python
+  def initialize(cash=None):
+      """Initialize the plot, data storage, and account balances."""
+      print("Initializing Account and DataFrame")
+
+      # @TODO: Update to build the plot
+      # Initialize Account
+      account = {"balance": cash, "shares": 0}
+
+      # Initialize DataFrame
+      # @TODO: We will update this later!
+      df = fetch_data()
+
+      # Initialize the plot
+      build_plot(df)
+
+      # @TODO: We will complete the rest of this later!
+      return account, df
+
+
+  def build_plot(df):
+      """Build the plot."""
+
+      # @TODO: Build the Initial Plot!
+      print("Initializing plot")
+      plot = df.plot(title="Current BTC/USD Price")
+
+      return
+  ````
+
+* The `update_plot` function is used to update the line chart. It uses new data that is available after fetching from the CCXT API.
+
+  ```python
+  # @TODO: Create a function to update the plot!
+  def update_plot(df):
+      """Update the plot."""
+      plot = df.plot(title="Current BTC/USD Price")
+
+      return
+  ```
+
+Continue by setting the initial configurations and explain the following to the class:
+
+* Trading dashboards are composite web or mobile applications that use the same principles of asynchronous coding that we review today. You have to run different portions of your code asynchronously to keep a dashboard alive and updated.
+
+* For the purpose of this class, we will create a line chart using `matplotlib` that will be updated as we execute our trading strategy.
+
+* Before start running the main program, we call the `initialize` function and pass an initial account balance as an argument.
+
+  ```python
+  # Set the initial account configuration
+  account, df = initialize(10000)
+  ```
+
+* In order to create a live line chart that can be dynamically updated, we need to turn on the interactive mode of `matplotlib` using [the `ion` function]((https://matplotlib.org/api/_as_gen/matplotlib.pyplot.ion.html)). We also use the `show` function of matplotlib to display the initial plot created by the `initialize` function.
 
 ```python
-# Initialize the dashboard
-    dashboard = build_dashboard()
+# Turns on the interactive mode of matplotlib (https://matplotlib.org/api/_as_gen/matplotlib.pyplot.ion.html)
+plt.ion()
 
-    # @TODO: We will complete the rest of this later!
-    return account, df, dashboard
-
-
-def build_dashboard():
-    """Build the dashboard."""
-    loading_text = pn.widgets.StaticText(name="Trading Dashboard", value="Loading...")
-    dashboard = pn.Column(loading_text)
-    print("init dashboard")
-    return dashboard
+# Show the initial line chart
+plt.show()
 ```
 
-* The `initialize` function uses the `build_dashboard` function to build and return a simple dashboard that initially contains static text.
+* In this example, we use an asynchronous `main` function to fetch new data and update the line chart without blocking the script from running. The code awaits both the `fetch_data` function and the `asyncio.sleep` function.
 
-* The `update_dashboard` function is used to update the Panel dashboard with a line chart. It uses new data that is available after fetching from the CCXT API.
-
-* Because the dashboard is just a container for plots, the dashboard contents can be replaced with new plots using `dashboard[0] = dv.hvplot()`.
-
-Complete the main function and explain the following to the class:
+  * **Note:** The API call used in the `fetch_data` function is considered a blocking library. Blocking libraries like this must be called using a special function called `run_in_executor`. More information about this can be found in the official [asyncio documents](https://docs.python.org/3/library/asyncio-eventloop.html#executing-code-in-thread-or-process-pools), but this code can be used anytime that the requests library or and API call is used. Alternatively, there is an asyncio-compatible library called [aiohttp-requests](https://pypi.org/project/aiohttp-requests/) that can be used instead.
 
 ```python
-account, df, dashboard = initialize(10000)
-dashboard.servable()
-
-
 async def main():
     loop = asyncio.get_event_loop()
 
     while True:
         global account
         global df
-        global dashboard
 
+        # Fetch new prices data
         new_df = await loop.run_in_executor(None, fetch_data)
         df = df.append(new_df, ignore_index=True)
 
+        # Execute the trading strategy
         min_window = 22
         if df.shape[0] >= min_window:
             signals = generate_signals(df)
             account = execute_trade_strategy(signals, account)
 
-        update_dashboard(df, dashboard)
+        # Update the plot
+        update_plot(df)
+
+        # Update line chart
+        plt.pause(1)
+
+        # Refresh the matplotlib plotting area to avoid extra memory consumption
+        plt.close()
 
         await asyncio.sleep(1)
-
-
-# Python 3.7+
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
 ```
 
-* The dashboard is initialized as Static text and then served immediately. Afterward, we can use an asynchronous main function to fetch new data and update the dashboard without blocking the page from loading.
+* Once the new data is fetched, the `update_plot` function is called to update the plot. Since we have an active line chart, we need to use the `pause` function to update and display the plot before the one-second pause.
+
+  * **Note:** Currently, the `pause` function is experimental and not recommended for complex plots, but it's suitable for prototyping and teaching purposes. If you experience issues or glitches running this script, comment out the plotting code or use the `jarvis-text.py` script.
+
+* After updating calling the `pause` function, we need to refresh the `matplotlib` plotting area using the `close` function to avoid extra memory consumption
 
   ```python
-  account, df, dashboard = initialize(10000)
-  dashboard.servable()
+  # Refresh the matplotlib plotting area to avoid extra memory consumption
+  plt.close()
   ```
 
-* In this example, we choose to make the main function async so that it does not block the dashboard from loading. The code awaits both the `fetch_data` function and the `asyncio.sleep` function.
-
-  * **Note:** The `requests` library that is used in the `fetch_data` function is considered a blocking library. Blocking libraries like this must be called using a special function called `run_in_executor`. More information about this can be found in the official [asyncio documents](https://docs.python.org/3/library/asyncio-eventloop.html#executing-code-in-thread-or-process-pools), but this code can be used anytime that the requests library is used. Alternatively, there is an asyncio-compatible library called [aiohttp-requests](https://pypi.org/project/aiohttp-requests/) that can be used instead.
-
-* Once the new data is fetched, the `update_dashboard` function is called to update the plots. This function replaces the dashboard plots for now, but this will be improved later in class.
-
-* Finally, the main function is executed with a special asyncio function called `run_until_complete`. This is just one way to run the asynchronous code in the event loop.
+* Finally, the main function is executed with a special `asyncio` function called `run_until_complete`. This is just one way to run the asynchronous code in the event loop.
 
   ```python
   # Python 3.7+
@@ -745,9 +788,17 @@ loop.run_until_complete(main())
   loop.run_until_complete(main())
   ```
 
-Wrap up this activity by acknowledging that asynchronous code is very challenging to write. However, the code provided in this example can be used as a template that can be reused for many different algorithmic trading applications. Furthermore, other libraries exist that can help make their asyncronous dashboards even better.  One such library is Streamz.  
+Run the `jarvis.py` code to show that the script starts to execute the trading strategy after a few seconds.
 
-Explain that hvplot uses the Streamz library to build a pipeline or buffer to manage continuous streams of data. A Stream can be thought of as a data reservoir that live data can be sent to. Hvplot can then connect to this Stream and update its plots when new data arrives.  Students will have aleady installed Streamz if they followed the [Asyncio_Streamz_Install_Guide](../Supplemental/Asyncio_Streamz_Install_Guide.md).  For students that want to know more, slack out the [`Streamz` documentation](https://streamz.readthedocs.io/en/latest/).
+```shell
+python jarvis.py
+```
+
+![jarvis-trading](Images/jarvis-trading.gif)
+
+Wrap up this activity by acknowledging that asynchronous code is very challenging to write. However, the code provided in this example can be used as a template that can be reused for prototyping many different algorithmic trading applications.
+
+Answer any questions before moving on.
 
 ---
 
@@ -765,11 +816,11 @@ Suggested format:
 
 Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
 
+---
+
 ### 11. Instructor Do: Reflect (10 min)
 
-This activity will conclude today's lesson and provide a chance for students to reflect on what they've learned throughout the day.
-
-The purpose of this activity is to allow students a chance to take a step back and digest the concepts that have been taught today by engaging students in such a way that students drive the conversation, thereby reinforcing their learning by "teaching" the class.
+This activity concludes the lesson and allows students a chance to take a step back and digest the concepts that have been taught today. The idea is to engage students so that they drive the conversation, thereby reinforcing their learning by "teaching" the class.
 
 Recap the skills and concepts learned throughout the lesson, and engage students by having them lead the discussion as much as possible:
 
@@ -789,24 +840,24 @@ Recap the skills and concepts learned throughout the lesson, and engage students
 
   * What is data persistence? Why is it important?
 
-    **Answer:** Data persistence is the concept of storing or "persisting" data in a reliable location such as a database. It is often important for failure prevention/disaster recovery in the event that an application fails, meaning that an application can pick up where it last failed due to the most recent "save" point. In today's trading framework, it also allows us to offload some of the memory requirements to the database.
+    **Answer:** Data persistence is the concept of storing, or "persisting," data in a reliable location, such as a database. It is often used for failure prevention/disaster recovery if an application fails, allowing an application to pick up where it last failed, thanks to the most recent "save" point. In today's trading framework, it also allows us to offload some of the memory requirements to the database.
 
-* Ask if any volunteers would like to add anything that has not been previously stated.
+* Ask the class if anyone would like to add anything that has not been previously discussed.
 
-Then, get students reflecting on what they've learned so far:
+Then, get students to reflect on what they've learned so far:
 
 * Ask students how might they apply what they've learned so far in Unit 15. Will they go on to manage their investments through automation?
 
-* Ask students how they now feel regarding algorithmic trading (comfortable or uncomfortable?).
+* Ask students how they now feel about algorithmic trading (comfortable or uncomfortable?).
 
-* Ask students to identify two potential things they'd like to practice more from today's lesson that they might have struggled with conceptually.
+* Ask students to identify two things today that they struggled with conceptually that they'd like to practice more.
 
 Finish the recap with a few statements of encouragement:
 
-* Tell students they should give themselves another round of applause. Students now have the tools necessary to engage in live algorithmic trading!
+* Tell students to give themselves a round of applause–they now have the tools necessary to engage in live algorithmic trading!
 
-* Remind students that should they choose, they can continue to build out their trading applications to make them even more robust and scalable. In particular, this will be especially impressive to potential employers as not many individuals have an algorithmic trading application under their belts!
+* Remind students that they can continue to build out their trading applications to make them even more robust and scalable. This will be particularly impressive to potential employers, as not many individuals have an algorithmic trading application under their belts!
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -20,7 +20,7 @@ def initialize(cash=None):
     df = fetch_data()
 
     # Initialize the plot
-    build_plot(df)
+    # build_plot(df)
 
     # @TODO: We will complete the rest of this later!
     return account, df
@@ -136,7 +136,7 @@ async def main():
             account = execute_trade_strategy(signals, account)
 
         # Update the plot
-        update_plot(df)
+        # update_plot(df)
 
         # Update line chart
         plt.pause(1)

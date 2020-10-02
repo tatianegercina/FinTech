@@ -40,7 +40,7 @@ def fetch_data():
 
 def generate_signals(data_df):
     """Generates trading signals for a given dataset."""
-    # Grab just the `date` and `close` from the dataset
+    # Grab just the `date` and `close` from the IEX dataset
     signals_df = data_df.loc[:, ["date", "close"]].copy()
 
     # Set the `date` column as the index

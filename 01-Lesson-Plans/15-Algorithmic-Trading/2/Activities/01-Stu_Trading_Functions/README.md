@@ -1,8 +1,8 @@
 # Trading Functions
 
-Tony, an aspiring trader, wants to invest his money in the stock market. His colleagues and friends all tell him that his best bet is to invest his money in a mutual fund and hold for the long-term. While Tony admits investing in the long-term is indeed the safest bet, Tony is fascinated with short-term market swings and wants to profit off of such market fluctuations. Unfortunately for him, Tony has a 9 to 5 day job that prevents him from constantly monitoring his short-term investments. Therefore, one night, while thinking of how to maximize his profits while minimizing his risk, he undergoes an epiphany and realizes he needs to create JARVIS (Just Another Research Visualization and Investment Service) to monitor his investments *for* him. Not knowing where exactly to start, Tony goes to the drawing board to figure out what operations JARVIS should perform. He starts jotting some ideas down but now needs to piece everything in a cohesive manner.
+Tony, an aspiring trader, wants to invest in the stock market. While his colleagues and friends are advising Tony to invest in a mutual fund and hold it for the long term, he is fascinated with short-term market swings and wants to profit off of such market fluctuations. Unfortunately for Tony, he has a 9 to 5 day job and is unable to constantly track his short-term investments. One night, while thinking of how to maximize his profits while minimizing risk, he has an epiphany and realizes he needs to create JARVIS (Just Another Research Visualization and Investment Service) to monitor his investments *for* him. Tony sits down to brainstorm what operations JARVIS should perform. 
 
-Help Tony decide what the correct order of the below functions should be called and why.
+Help Tony decide what the correct order of the functions below should be called, and why.
 
 ## Instructions
 
@@ -32,4 +32,4 @@ Imagine that each function had complete code and the data was all connected. Whi
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

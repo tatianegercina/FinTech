@@ -1,24 +1,37 @@
 import os
-from dotenv import load_dotenv
+import ccxt
+import asyncio
 import numpy as np
 import pandas as pd
-import ccxt
-# @TODO: Import asyncio, hvplot, and panel
-
+from dotenv import load_dotenv
+import matplotlib.pyplot as plt
 
 def initialize(cash=None):
     """Initialize the dashboard, data storage, and account balances."""
-    print("Intializing Account and DataFrame")
+    print("Initializing Account and DataFrame")
 
-    # @TODO: Update to build the dashboard
+    # @TODO: Update to build the plot
+    # Initialize Account
+    
 
+    # Initialize DataFrame
+    # @TODO: We will update this later!
+    
 
-def build_dashboard(data, signals):
-    """Build the dashboard."""
+    # Initialize the plot
+    
 
-    # @TODO: Build the Initial Dashboard!
+    # @TODO: We will complete the rest of this later!
+    
 
-# @TODO: Create a function to update the dashboard!
+def build_plot(df):
+    """Build the plot."""
+
+    # @TODO: Build the Initial Plot!
+    
+    return
+
+# @TODO: Create a function to update the plot!
 
 
 def fetch_data():
@@ -36,27 +49,9 @@ def fetch_data():
     return df
 
 
-    """ALTERNATIVE BITFINEX API
-    load_dotenv()
-    bitfinex_public_key = os.getenv('BITFINEX_PUBLIC_KEY')
-    bitfinex_secret_key = os.getenv('BITFINEX_SECRET_KEY')
-
-    bitfinex = ccxt.bitfinex({
-        'apiKey': bitfinex_public_key,
-        'secret': bitfinex_secret_key
-    })
-
-    close = bitfinex.fetch_ticker("BTC/USD")["close"]
-    datetime = bitfinex.fetch_ticker("BTC/USD")["datetime"]
-    df = pd.DataFrame({"close": [close]})
-    df.index = pd.to_datetime([datetime])
-    return df
-    """
-
-
 def generate_signals(df):
     """Generates trading signals for a given dataset."""
-    print("Generating Signals")
+    print("-----> Generating trading signals <-----")
     # Set window
     short_window = 10
 
@@ -74,6 +69,7 @@ def generate_signals(df):
 
     # Calculate the points in time at which a position should be taken, 1 or -1
     signals["entry/exit"] = signals["signal"].diff()
+    print("-----> Trading signals generated  <-----")
 
     return signals
 
@@ -81,21 +77,25 @@ def generate_signals(df):
 def execute_trade_strategy(signals, account):
     """Makes a buy/sell/hold decision."""
 
-    print("Executing Trading Strategy!")
+    print("**Executing Trading Strategy**")
 
     if signals["entry/exit"].iloc[-1] == 1.0:
-        print("buy")
+        print("Buy")
         number_to_buy = round(account["balance"] / signals["close"].iloc[-1], 0) * 0.001
         account["balance"] -= number_to_buy * signals["close"].iloc[-1]
-        account["shares"] += number_to_buy
+        account["shares"] += number_to_buy        
     elif signals["entry/exit"].iloc[-1] == -1.0:
-        print("sell")
+        print("Sell")
         account["balance"] += signals["close"].iloc[-1] * account["shares"]
         account["shares"] = 0
     else:
-        print("hold")
+        print("Hold")
+        
+    print(f"Account balance: ${account['balance']}")
+    print(f"Account shares : {account['shares']}")
+    print("**Trading Strategy Executed**")
 
     return account
 
 
-# @TODO: Update the main loop to use asyncio
+# @TODO: Set the initial configurations and update the main loop to use asyncio
