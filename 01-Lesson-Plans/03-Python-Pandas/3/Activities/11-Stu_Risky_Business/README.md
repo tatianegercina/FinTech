@@ -14,7 +14,7 @@ Using standard deviation and Sharpe ratios, do the following:
 
 Use the starter file and the provided data to complete the following steps:
 
-1. Load CSV data into Pandas using `read_csv` for each file.
+1. Load CSV data into Pandas using `read_csv` for each file and remove any null values using `dropna`.
 
 2. Prepare the data by dropping null values and setting `Date` as the index.
 
