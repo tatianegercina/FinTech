@@ -8,7 +8,7 @@ Now that you have learned more about blockchain, it's time to think about compan
 
 * Go to the example [JPM Coin Case Study](Resources/JPM_Coin_Case_Study.md) and read the case study to get a feel for what you'll need to research and describe.
 
-* Then, choose a Canadian blockchain company to research and discuss with your group the following findings:
+* Then, choose a Australian blockchain company to research and discuss with your group the following findings:
 
   * What the company is.
   
@@ -20,7 +20,7 @@ Now that you have learned more about blockchain, it's time to think about compan
 
 * Some may not directly reference concrete blockchain projects, so you'll want to focus more on the companies that have started implementations versus the ones supporting research and development.
 
-* If you are not familiar with Canadian blockchain companies, you can review this list of the [Top Blockchain Developers in Canada](https://clutch.co/ca/developers/blockchain).
+* If you are not familiar with Australian blockchain companies, you can review this list of the [Top Blockchain Developers in Australia](https://clutch.co/au/developers/blockchain) or this list of the [Top Australian Blockchain companies](https://bestinau.com.au/blockchain-companies/).
 
 ---
 

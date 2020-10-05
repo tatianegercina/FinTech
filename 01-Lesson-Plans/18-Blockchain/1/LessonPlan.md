@@ -48,7 +48,7 @@ By the end of the class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [18.1 Lesson Slides](https://docs.google.com/presentation/d/1UhEDzVmzO_coz_GW6KT3KlEy7DcPtvOKQsIkaGdro9I/edit?usp=sharing ).
+* The slides for this lesson can be viewed on Google Drive here: [18.1 Lesson Slides](https://docs.google.com/presentation/d/1lCvs6x0yq9yhVY4m8lRLNCqTzh8wq9_X4rzuFbvFe1o/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -162,7 +162,7 @@ Open the lesson slides, navigate to the "The Importance of Blockchain" section, 
 
   **Answer**: Some blockchains can be used as a hedge against hyperinflation of their native currency.
 
-* Why would an individual in Canada want to use a blockchain?
+* Why would an individual in Australia want to use a blockchain?
 
   **Answer**: Removes intermediaries like PayPal, Apple Pay, Google Pay, etc., and allows for peer to peer payments, thus lower fees.
 
@@ -337,15 +337,15 @@ You will need to group students into at least three groups:
 
 * Group 1 - Money senders. This group will create and send transactions.
 
-* Group 2 - Record Keepers in Canada. This group will be a geographical region of "nodes" in Canada.
+* Group 2 - Record Keepers in Australia. This group will be a geographical region of "nodes" in Australia.
 
-* Group 3 - Record Keepers outside Canada. This group will be a second geographical region of "nodes" in a different country than Canada.
+* Group 3 - Record Keepers outside Australia. This group will be a second geographical region of "nodes" in a different country than Australia.
 
 To speed up this activity, organize the three groups before class and let students know which group they belong to by creating some slides or a document to show in the projector during the activity.
 
 You should create at least two slack channels for this activity, name the channels as follows:
 
-* RecordKeepersCanada
+* RecordKeepersAustralia
 
 * RecordKeepersChina (China is just an example, feel free to choose another country)
 
@@ -770,7 +770,7 @@ Answer any questions before moving on.
 
 Now that the students have learned more about the features of blockchain and their potential uses, it is an excellent time to research companies that are using blockchain technology to tackle real world financial problems.
 
-Students will get into groups and research a Canadian FinTech company that is using blockchain to make an impact in the blockchain space.
+Students will get into groups and research a Australian FinTech company that is using blockchain to make an impact in the blockchain space.
 
 Have TAs circulate throughout the class, facilitating discussion and ensuring students are not lost.
 

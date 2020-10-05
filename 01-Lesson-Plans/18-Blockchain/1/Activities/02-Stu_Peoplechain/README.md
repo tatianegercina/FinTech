@@ -10,7 +10,7 @@ Get into three groups.
 
 * Group 1: Money Senders.
 
-* Group 2: Record Keepers in Canada.
+* Group 2: Record Keepers in Australia.
 
 * Group 3: Record Keepers in the country of their choice.
 
@@ -46,11 +46,11 @@ You're up (both groups 2 and 3)! Once the instructor says “go,” you will:
 
 ## Example
 
-Rosa is a Money Sender. Joe is the Slacker for Canada Record Keepers. Alec is the Slacker for China (the other country in this example). Jeremy is a member of the Canada Record Keepers.
+Rosa is a Money Sender. Joe is the Slacker for Australia Record Keepers. Alec is the Slacker for China (the other country in this example). Jeremy is a member of the Australia Record Keepers.
 
 * Rosa sends a transaction to Jeremy.
 
-* Jeremy sends a copy of the transaction to himself and to his team channel, the Canada Record Keepers.
+* Jeremy sends a copy of the transaction to himself and to his team channel, the Australia Record Keepers.
 
 * Joe sees the Slack message from Jeremy in the group channel and sends a copy of the transaction to Alec.
 
