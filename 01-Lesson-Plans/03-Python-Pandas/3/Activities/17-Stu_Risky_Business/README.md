@@ -14,7 +14,7 @@ Using standard deviation and sharpe ratios, do the following:
 
 Using the [starter file](Unsolved/Core/risky_business.ipynb) and the data in the [Resources](Resources) folder, complete the following steps:
 
-1. Load CSV data into Pandas using `read_csv` for each file.
+1. Load CSV data into Pandas using `read_csv` for each file and remove any null values using `dropna`.
 
 2. Calculate daily returns for each portfolio.
 
