@@ -30,13 +30,16 @@ implement the contracts. Good luck! Remember, you're building something few peop
 2. From your terminal, `cd` into the repo directory and copy the contents of the [starter code] file into it.
 3. Remaining inside the repo directory, run the following commands in your terminal:
 
-    * npm install
-    * npm install -g truffle
-    * npm install @truffle/hdwallet-provider
-    * npm install @openzeppelin/contracts
+    * `npm install`
+    * `npm install -g truffle`
+    * `npm install @truffle/hdwallet-provider`
+    * `npm install @openzeppelin/contracts`
 
 4. These commands will install various dependencies that will allow for more streamlined deployment of your app.
-
+5. Navigate to the `truffle-config.js` file and make the following changes:
+    * On line 22, insert your mnemonic phrase.
+    * On line 61, insert your infura endpoint.
+    * Save the file. 
 
 This also supports `gh-pages` deployment, run `npm run deploy` against a Github Pages repo to deploy the frontend.
 
@@ -80,10 +83,28 @@ You will need to complete the functions provided in the starter code. Here are s
 - Make sure to include `require(_exists(tokenId), "error message here")` when possible, and other `requires` that will
   prevent lost ether or enforce security.
 
+### Deploying the Market to a Testnet
+
+1. After the contracts are properly implemented, use your terminal to run the command `truffle deploy` and pass your desired network using the `--network` flag. Example:
+
+```python
+truffle deploy --network ropsten
+```
+2. This will initiate a process of deployment that will take some time, so don't worry if it looks like things are stalling. You should see output to your screen similar to the following:
+
+![deployment_output](Images/deployment_output.png)
+
+3. Once this process is complete, your contract will full deployed on the Testnet of your choice.  
+
+4. **Important!:** 
+    * Make sure you copy the contract address from the output!
+    * Make sure you copy the deployer address from the output!
+
+    ![deployment_addresses](Images/deployment_addresses.png)
+
 ### Modifying the frontend code
 
-You will need to update the `contractAddress` at the very top of `dapp.js`. This will ensure the frontend can communicate
-with the smart contract backend. This will need to be consistent with the network the market is deployed on.
+* Navigate to the file titled `dapp.js`.  At the very top of the file, you will need to insert your newly revealed contract address. This will ensure the frontend can communicate with the smart contract backend. 
 
 ### Testing the Market
 
@@ -95,9 +116,7 @@ with the smart contract backend. This will need to be consistent with the networ
 
     * Once you run the command, you can type `localhost:1234` in your browser and the app should be visible and available for testing.
 
-    * You should import at least 2 accounts into MetaMask, the first being the deployer of the contracts and one other
-to test non-admin features.
-
+    * You should import at least 2 accounts into MetaMask, the first being the deployer of the contracts (the one we notated in the deployment process) and one other address of your choosing to test non-admin features.
 
 * After launching with the above steps, you should see something like this:
 
@@ -119,19 +138,14 @@ to test non-admin features.
 
 ![register](Images/register.png)
 
-### Deploying the Market
 
-1. Once the contracts are properly tested and implemented, use your terminal to run the command `truffle deploy` and pass your desired network using the `--network` flag. Example:
+### Github Deployment
 
-```python
-truffle deploy --network ropsten
-```
+1. With the contracts and front end fully functioning, you can now deploy to github pages for a live, interactive dApp experience to add to your portfolio!
 
-The provided `truffle-config.js` file includes some configuration for the Kovan and Ropsten networks, but feel free to use any other network as long as you designate this in your submission.
+2. Deploy to Github Pages by running the command `npm run deploy` in your terminal. This will run the provided convenience package `gh-pages` will automatically publish the bundle to the `martian_market` repo you initialized in the beginning of the homework. 
 
-2. Finally, deploy to Github Pages by running the command `npm run deploy` in your terminal. This will run the provided convenience package `gh-pages` will automatically publish the bundle to the `martian_market` repo you initialized in the beginning of the homework. After running `npm run deploy` continue the normal process of pushing to your remote repository.
-
-3. Deploying the contracts to a testnet or the mainnet will take a while, so don't worry if it looks like things are stalling.
+3. After running `npm run deploy` continue the normal process of pushing to your remote repository.
 
 ### Submission
 
