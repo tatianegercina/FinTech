@@ -24,11 +24,19 @@ implement the contracts. Good luck! Remember, you're building something few peop
 
 - [martian-market.zip](Starter-Code/martian-market.zip)
 
-### Creating your project
+### Setting up your project
 
-You will need to unzip the `martian-market.zip` file and run an `npm install`.
+1. Create a new Github repository named `martian_market` and clone it to your machine. 
+2. From your terminal, `cd` into the repo directory and copy the contents of the [starter code] file into it.
+3. Remaining inside the repo directory, run the following commands in your terminal:
 
-There are scripts available for easy development, simply run `npm run dev` to launch the frontend.
+    * npm install
+    * npm install -g truffle
+    * npm install @truffle/hdwallet-provider
+    * npm install @openzeppelin/contracts
+
+4. These commands will install various dependencies that will allow for more streamlined deployment of your app.
+
 
 This also supports `gh-pages` deployment, run `npm run deploy` against a Github Pages repo to deploy the frontend.
 
@@ -79,46 +87,55 @@ with the smart contract backend. This will need to be consistent with the networ
 
 ### Testing the Market
 
-When you launch the market, you should see something like this:
+* To test your dApp:
+    
+    * cd into `martian_market` and run `npm run dev`.
+
+    * This command will launch the front end via a local server that will allow you test your app locally in your browser.
+
+    * Once you run the command, you can type `localhost:1234` in your browser and the app should be visible and available for testing.
+
+    * You should import at least 2 accounts into MetaMask, the first being the deployer of the contracts and one other
+to test non-admin features.
+
+
+* After launching with the above steps, you should see something like this:
 
 ![market](Images/market.png)
 
-You should import at least 2 private keys into MetaMask, the first being the deployer of the contracts and another other
-to test non-admin features.
-
-You should be able to bid on a token:
+* You should be able to bid on a token:
 
 ![bid](Images/bid.png)
 
-When you are out-bid, you should be able to withdraw your pending balance in escrow:
+* When you are out-bid, you should be able to withdraw your pending balance in escrow:
 
 ![withdraw](Images/withdraw.png)
 
-When you are using the foundation account in MetaMask, you should be able to end auctions as well.
-This will then transfer the token to the highest bidder of the auction. You will see this as such:
+* When you are using the foundation account in MetaMask, you should be able to end auctions as well. This will then transfer the token to the highest bidder of the auction. You will see this as such:
 
 ![ended](Images/ended.png)
 
-You can also register new land using the foundation address:
+* You can also register new land using the foundation address:
 
 ![register](Images/register.png)
 
 ### Deploying the Market
 
-The migration scripts are provided here already. This means that once the contracts are properly implemented,
-you can simply run `truffle deploy` and pass your desired network using the `--network` flag. We have included some
-configuration for the Kovan and Ropsten networks, but feel free to use any other network as long as you designate in your submission.
+1. Once the contracts are properly tested and implemented, use your terminal to run the command `truffle deploy` and pass your desired network using the `--network` flag. Example:
 
-You will also need to deploy this to Github Pages. Follow the same process as previous homeworks.
-Remember to use the convenience package `gh-pages` by running `npm run deploy`. This will automatically publish the
-bundle to the Github Pages repo you initialized in the beginning.
+```python
+truffle deploy --network ropsten
+```
 
-Deploying the contracts to a testnet or the mainnet will take a while, so don't worry if it looks like things are stalling.
+The provided `truffle-config.js` file includes some configuration for the Kovan and Ropsten networks, but feel free to use any other network as long as you designate this in your submission.
+
+2. Finally, deploy to Github Pages by running the command `npm run deploy` in your terminal. This will run the provided convenience package `gh-pages` will automatically publish the bundle to the `martian_market` repo you initialized in the beginning of the homework. After running `npm run deploy` continue the normal process of pushing to your remote repository.
+
+3. Deploying the contracts to a testnet or the mainnet will take a while, so don't worry if it looks like things are stalling.
 
 ### Submission
 
-Once the dapp is live on Github Pages and accessible to the world, publish the code with a `README.md`.
-Explain how the dapp works, and how it is built. Remember, the more details, the better.
+Once the dapp is live on Github Pages and accessible to the world, utilize the `README.md`to explain how the dapp works and how it is built. Remember: the more details, the better.
 
 Ensure that you have changed the `contractAddress` in the frontend code to be the address deployed on a live network.
 
