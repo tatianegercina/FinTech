@@ -1,11 +1,11 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
-import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC721/ERC721Full.sol';
-import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/ownership/Ownable.sol';
+import '@openzeppelin/contracts/token/ERC721/ERC721.sol';
+import '@openzeppelin/contracts/access/Ownable.sol';
 import './MartianAuction.sol';
 
-contract MartianMarket is ERC721Full, Ownable {
-    constructor() ERC721Full("MartianMarket", "MARS") public {}
+contract MartianMarket is ERC721, Ownable {
+    constructor() ERC721("MartianMarket", "MARS") public {}
 
     address payable foundationAddress = msg.sender;
 
