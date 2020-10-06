@@ -18,7 +18,7 @@
  *
  */
 
-const HDWalletProvider = require("truffle-hdwallet-provider");
+const HDWalletProvider = require("@truffle/hdwallet-provider");
 const mnemonic = "";
 
 module.exports = {
