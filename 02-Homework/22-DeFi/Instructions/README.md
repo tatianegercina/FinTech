@@ -2,8 +2,6 @@
 
 ![mars](https://image.shutterstock.com/image-photo/silhouette-astronaut-standing-on-rocky-600w-1049625047.jpg)
 
-## Background
-
 The Martian Development Foundation has asked you to develop a system to raise funds for Martian land development.
 The system will be a combination of an ERC721 contract and an Auction contract combined to form the MartianMarket contract.
 
@@ -18,13 +16,24 @@ Each landmark will be a unique ERC721 token, with its own metadata including the
 Your frontend developer has already provided you the UI necessary for getting the job done, all you need to do is
 implement the contracts. Good luck! Remember, you're building something few people have explored, so don't be afraid!
 
-## Instructions
+# Instructions
 
 ## Files
 
-- [martian-market.zip](Starter-Code/martian-market.zip)
+- [Starter Code](Starter-Code/martian-market)
 
-### Setting up your project
+## Before you begin
+
+1. An infura account and endpoint is necessary for this assignment.
+
+2. Go to [infura.io](https://infura.io/) and sign up for an account.
+![infura_sign-up](Images/infura_sign-up.png)
+
+3. Once you've signed up, create a project and record the end point:
+![infura_create_project](Images/infura_create_project.png)
+![infura_endpoint](Images/infura_endpoint.png)
+
+## Setting up your project
 
 1. Create a new Github repository named `martian_market` and clone it to your machine. 
 2. From your terminal, `cd` into the repo directory and copy the contents of the [starter code] file into it.
@@ -41,13 +50,9 @@ implement the contracts. Good luck! Remember, you're building something few peop
     * On line 61, insert your infura endpoint.
     * Save the file. 
 
-This also supports `gh-pages` deployment, run `npm run deploy` against a Github Pages repo to deploy the frontend.
+## Designing the contracts
 
-Initialize the project against a new Github repo and ensure your developer environment is properly setup.
-
-### Designing the contracts
-
-#### MartianAuction
+### MartianAuction
 
 The included `MartianAuction.sol` contract is a direct copy of the `SimpleAuction` contract from the
 [Solidity documentation](https://solidity.readthedocs.io/en/v0.5.10/solidity-by-example.html?highlight=auction#id2).
@@ -62,7 +67,7 @@ You will need to modify this contract in the following ways:
 
 - Add a `require` in `auctionEnd` that only allows the beneficiary to end the auction
 
-#### MartianMarket
+### MartianMarket
 
 This contract will store an array of MartianAuctions in a mapping of tokenIds to MartianAuctions.
 When the auction ends, the token ownership will be transferred to the highest bidder of the auction.
@@ -83,7 +88,7 @@ You will need to complete the functions provided in the starter code. Here are s
 - Make sure to include `require(_exists(tokenId), "error message here")` when possible, and other `requires` that will
   prevent lost ether or enforce security.
 
-### Deploying the Market to a Testnet
+## Deploying to a Testnet
 
 1. After the contracts are properly implemented, use your terminal to run the command `truffle deploy` and pass your desired network using the `--network` flag. Example:
 
@@ -102,11 +107,11 @@ truffle deploy --network ropsten
 
     ![deployment_addresses](Images/deployment_addresses.png)
 
-### Modifying the frontend code
+## Modifying the frontend code
 
 * Navigate to the file titled `dapp.js`.  At the very top of the file, you will need to insert your newly revealed contract address. This will ensure the frontend can communicate with the smart contract backend. 
 
-### Testing the Market
+## Testing the Market
 
 * To test your dApp:
     
@@ -139,7 +144,7 @@ truffle deploy --network ropsten
 ![register](Images/register.png)
 
 
-### Github Deployment
+## Github Deployment
 
 1. With the contracts and front end fully functioning, you can now deploy to github pages for a live, interactive dApp experience to add to your portfolio!
 
@@ -147,7 +152,7 @@ truffle deploy --network ropsten
 
 3. After running `npm run deploy` continue the normal process of pushing to your remote repository.
 
-### Submission
+## Submission
 
 Once the dapp is live on Github Pages and accessible to the world, utilize the `README.md`to explain how the dapp works and how it is built. Remember: the more details, the better.
 
