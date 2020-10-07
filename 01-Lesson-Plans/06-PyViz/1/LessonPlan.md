@@ -695,11 +695,13 @@ If time remains, discuss how to use the `opts` function to switch the x and y ax
 
   ![plot_invert.png](Images/plot_invert.png)
 
-Slack out the [hvPlot customization](http://holoviews.org/user_guide/Customizing_Plots.html) link. The site lists all of the options available in hvPlot. Encourage students to review the list of options.
+Slack out the [hvPlot customization](https://hvplot.pyviz.org/user_guide/Customization.html) link you see below. The site lists all of the options available in hvPlot. Encourage students to review the list of options.
 
-* Customizing plots -> http://holoviews.org/user_guide/Customizing_Plots.html
+```
+https://hvplot.pyviz.org/user_guide/Customization.html
+```
 
-Ask if there are any more questions. Then, continue to the student challenge activity.
+Ask if there are any more questions. Then, continue to the student activity.
 
 ---
 
