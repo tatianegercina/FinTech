@@ -317,7 +317,7 @@ Open the solution and conduct a dry walkthrough while explaining the following:
 * HvPlot has attributes that can be used to create line and bar plots explicitly. If an explicit declaration is not desired, the `hvplot` function can be used.
 
   ```python
-  # Plot a hvplot bar chart of the top 20 market cap companies
+  # Plot a hvplot bar and line charts of the top 20 market cap companies
   top_20_market_cap.hvplot()
   top_20_market_cap.hvplot.line(title='Top 20 Market Cap Companies (in billions)')
   top_20_market_cap.hvplot.bar(title='Top 20 Market Cap Companies (in billions)')
@@ -326,6 +326,14 @@ Open the solution and conduct a dry walkthrough while explaining the following:
   ![hvplot_plot.png](Images/hvplot_plot.png)
 
   ![hvplot_bar_market_cap.png](Images/hvplot_bar_market_cap.png)
+
+* Ask students if anyone completed the challenge portion of the assignment. Let students know that scatter plots can be created with the following code:
+
+    ```python
+    # Plot a scatter plot using hvplot function to display the relationship between price vs. earnings/share
+    sp500_companies_csv.hvplot(kind='scatter', x='Earnings/Share', y='Price')
+    ```
+  ![hvplot_scatter.png](Images/hvplot_scatter.png)
 
 If time remains, transition into a small review session. Ask the following guided questions:
 
