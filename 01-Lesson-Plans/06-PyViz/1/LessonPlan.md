@@ -620,11 +620,21 @@ Open the starter file, and perform a dry walkthrough of the solution, highlighti
 
   ```python
   # Read in data, filter, and slice
-  home_sale_prices = pd.read_csv('../Resources/housing_sale_data.csv',index_col='salesHistoryKey')
-  home_sale_prices = home_sale_prices[home_sale_prices['saleDate'] > '2019-06-01'][home_sale_prices['saleDate'] < '2019-06-31']
+  home_sale_prices = pd.read_csv(
+      Path("../Resources/housing_sale_data.csv"), index_col="salesHistoryKey"
+  )
+  home_sale_prices = home_sale_prices.loc[
+      (home_sale_prices["saleDate"] > "2019-06-01")
+      & (home_sale_prices["saleDate"] < "2019-06-31")
+  ]
 
   # Slice data
-  sale_prices_by_year = home_sale_prices[['saleAmt','saleDate']].groupby('saleDate').mean().sort_values('saleDate')
+  sale_prices_by_year = (
+      home_sale_prices[["saleAmt", "saleDate"]]
+      .groupby("saleDate")
+      .mean()
+      .sort_values("saleDate")
+  )
 
   # Plot data without rotation
   sale_prices_by_year.hvplot.bar(x='saleDate',y='saleAmt')
@@ -675,7 +685,11 @@ If time remains, discuss how to use the `opts` function to switch the x and y ax
 
   ```python
   # Invert axes
-  sale_prices_by_year_title.opts(invert_axes=True)
+  sale_prices_by_year.hvplot.bar(x="saleDate", y="saleAmt").opts(
+    xformatter="%.0f",
+    title="Arlington, VA Housing Sale Prices June 2016",
+    invert_axes=True,
+  )
   ```
 
   ![plot_invert.png](Images/plot_invert.png)
