@@ -608,7 +608,7 @@ Ask for any remaining questions before moving on.
 
 The goal of this activity is to provide students with a dry walkthrough demonstration of how to use hvPlot plot attributes and options to customize the look and feel of visualizations. This activity will enable students to perfect their visualizations by fine-tuning details such as axis labels, and to create attractive color themes and effects.
 
-Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/real-estate-sale-history-06c8f).
+Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset).
 
 **Files:**
 
@@ -673,6 +673,7 @@ Open the starter file, and perform a dry walkthrough of the solution, highlighti
     x='saleDate',
     y='saleAmt',
     rot=90).opts(
+      yformatter="%.0f",
       title='Arlington, VA Housing Sale Prices June 2016'
     )
   ```
