@@ -24,7 +24,7 @@ implement the contracts. Good luck! Remember, you're building something few peop
 
 ## Before you begin
 
-1. An infura account and endpoint is necessary for this assignment.
+1. An infura account and endpoint is necessary for this assignment. This will allow you to deploy directly to your chosen Testnet from the CLI. (Remix will not be used!)
 
 2. Go to [infura.io](https://infura.io/) and sign up for an account.
 ![infura_sign-up](Images/infura_sign-up.png)
@@ -36,8 +36,8 @@ implement the contracts. Good luck! Remember, you're building something few peop
 ## Setting up your project
 
 1. Create a new Github repository named `martian_market` and clone it to your machine. 
-2. From your terminal, `cd` into the repo directory and copy the contents of the [starter code] file into it.
-3. Remaining inside the repo directory, run the following commands in your terminal:
+2. Copy the contents of the [starter code](Starter-Code) file into this new directory.
+3. From your terminal, `cd` into the directory, then run the following commands:
 
     * `npm install`
     * `npm install -g truffle`
@@ -45,13 +45,13 @@ implement the contracts. Good luck! Remember, you're building something few peop
     * `npm install @openzeppelin/contracts`
 
 4. These commands will install various dependencies that will allow for more streamlined deployment of your app.
-5. Navigate to the `truffle-config.js` file and make the following changes:
+5. Using a code editor such as VSCode, navigate to the `truffle-config.js` file and make the following changes:
     * On line 22, insert your mnemonic phrase.
     * On line 61, insert your infura endpoint.
     * Save the file. 
 
 ## Designing the contracts
-
+---
 ### MartianAuction
 
 The included `MartianAuction.sol` contract is a direct copy of the `SimpleAuction` contract from the
@@ -89,29 +89,34 @@ You will need to complete the functions provided in the starter code. Here are s
   prevent lost ether or enforce security.
 
 ## Deploying to a Testnet
+---
+1. After the contracts are properly implemented, use your terminal to run the command `truffle deploy` and pass your desired network using the `--network` flag like so:
 
-1. After the contracts are properly implemented, use your terminal to run the command `truffle deploy` and pass your desired network using the `--network` flag. Example:
+    ```python
+    truffle deploy --network ropsten
+    ```
+2. This will initiate a process of deployment.  It will take some time, so don't worry if it looks like things are stalling. You should see output to your screen similar to the following:
 
-```python
-truffle deploy --network ropsten
-```
-2. This will initiate a process of deployment that will take some time, so don't worry if it looks like things are stalling. You should see output to your screen similar to the following:
+    ![deployment_output](Images/deployment_output.png)
 
-![deployment_output](Images/deployment_output.png)
-
-3. Once this process is complete, your contract will full deployed on the Testnet of your choice.  
+3. Once this process is complete, your contract will fully deployed on the Testnet of your choice.  
 
 4. **Important!:** 
-    * Make sure you copy the contract address from the output!
-    * Make sure you copy the deployer address from the output!
+    * Record the contract address and the deployer address from the output for later use!
 
     ![deployment_addresses](Images/deployment_addresses.png)
 
-## Modifying the frontend code
+## Working with the frontend
+---
+### Modifying the frontend code
 
-* Navigate to the file titled `dapp.js`.  At the very top of the file, you will need to insert your newly revealed contract address. This will ensure the frontend can communicate with the smart contract backend. 
+* Navigate to the file titled `dapp.js`.  
 
-## Testing the Market
+* At the very top of the file, insert your newly recordeded contract address. 
+
+* This will ensure the frontend can communicate with the smart contract backend. 
+
+### Testing the Market
 
 * To test your dApp:
     
@@ -121,7 +126,9 @@ truffle deploy --network ropsten
 
     * Once you run the command, you can type `localhost:1234` in your browser and the app should be visible and available for testing.
 
-    * You should import at least 2 accounts into MetaMask, the first being the deployer of the contracts (the one we notated in the deployment process) and one other address of your choosing to test non-admin features.
+    * You should import at least 2 accounts into MetaMask for testing:
+        * The deployer of the contracts (the one we notated in the deployment process) 
+        * One other address of your choosing to test non-admin features.
 
 * After launching with the above steps, you should see something like this:
 
@@ -146,15 +153,15 @@ truffle deploy --network ropsten
 
 ## Github Deployment
 
-1. With the contracts and front end fully functioning, you can now deploy to github pages for a live, interactive dApp experience to add to your portfolio!
+With the contracts and front end fully functioning, you can now deploy to github pages for a live, interactive dApp experience to add to your portfolio!
 
-2. Deploy to Github Pages by running the command `npm run deploy` in your terminal. This will run the provided convenience package `gh-pages` will automatically publish the bundle to the `martian_market` repo you initialized in the beginning of the homework. 
+1. Deploy to Github Pages by running the command `npm run deploy` in your terminal. This will run the provided convenience package `gh-pages` will automatically publish the bundle to the `martian_market` repo you initialized in the beginning of the homework. 
 
-3. After running `npm run deploy` continue the normal process of pushing to your remote repository.
+2.  After running `npm run deploy` continue the normal process of pushing to your remote repository.
 
 ## Submission
 
-Once the dapp is live on Github Pages and accessible to the world, utilize the `README.md`to explain how the dapp works and how it is built. Remember: the more details, the better.
+Once the dapp is live on Github Pages and accessible to the world, utilize the `README.md` to explain how the dapp works and how it is built. Remember: the more details, the better.
 
 Ensure that you have changed the `contractAddress` in the frontend code to be the address deployed on a live network.
 
