@@ -46,8 +46,6 @@ By the end of class, students will be able to:
 
 * Remember that the purpose of today's class isn't just to teach students how to make interactive plots, but how to use them in order to tell stories, which users can take a deep dive into with the interactive widgets provided by PyViz's technologies.
 
-* Please refer to our [Student FAQ](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
-
 * Have your TAs keep track of the time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
@@ -395,7 +393,7 @@ Transition into a demo of the widget bar by opening the solution file and highli
 
   ![hvplot_wheel_zoom.gif](Images/hvplot_wheel_zoom.gif)
 
-* Another way to interact with visualizations is to save them. HvPlot allows visualizations to be saved as HTML documents for later use.
+* Another way to interact with visualizations is to save them. HvPlot allows visualizations to be saved as PNG files for later use.
 
   ![hvplot_save.gif](Images/hvplot_save.gif)
 
@@ -557,20 +555,20 @@ Initiate the review session by asking the student volunteer to conduct a dry wal
 
   * **Answer:** One.
 
-Ask the student volunteer (or call on a student) to open the solution. They should highlight the following:
+Make sure the the following points are highlighted during the walkthrough: 
 
 * The `+` operator is used to compose plots adjacent to each other. This creates a single plot that contains more than one visualization.
 
   ```python
   # Slice data for Total Average Loan Amount by 2015-2016 and 2010-2014 date ranges
-  loan_data_range_1 = loan_data['2015 * 2016']
-  loan_data_range_2 = loan_data['2010 * 2014']
+  loan_data_range_1 = loan_data['2015 - 2016']
+  loan_data_range_2 = loan_data['2010 - 2014']
   loan_data_range_grp = loan_data_range_1.sort_values()
   loan_data_range_grp_2 = loan_data_range_2.sort_values()
 
   # Plot data for date ranges
-  plot_2015_2016 = loan_data_range_grp.hvplot(label='2015 * 2016')
-  plot_2010_2014 = loan_data_range_grp_2.hvplot(label='2010 * 2014')
+  plot_2015_2016 = loan_data_range_grp.hvplot(label='2015 - 2016')
+  plot_2010_2014 = loan_data_range_grp_2.hvplot(label='2010 - 2014')
 
   # Compose plots
   plot_2015_2016 + plot_2010_2014
