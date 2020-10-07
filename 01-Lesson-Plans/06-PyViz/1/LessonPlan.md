@@ -82,13 +82,13 @@ Open the slideshow, navigate to the PyViz section, and highlight the following:
 
 * The creators of PyViz recognized that one technology or package cannot solve all data visualization needs. PyViz was created to provide developers with a platform that enables more than one data visualization package to be used for a project.
 
-Transition into a demonstration of the types of visualizations that can be made using PyViz:
+* Interactive visualizations:
 
-* Interactive visualizations allow data to be explored and analyzed in the most efficient and effective manner for human eyes.
+    * Allow data to be explored and analyzed in the most efficient and effective manner for human eyes.
 
-* Interactive visualizations give users the ability to pan, zoom, and filter data elements and values.
+    * Give users the ability to pan, zoom, and filter data elements and values.
 
-* Interactive visualizations also include functionality that allows data to be sorted off different values with a single click.
+    * Include functionality that allows data to be sorted off different values with a single click.
 
 End by telling students that gone are the days where simple line, bar, and histogram charts satisfied data visualization and data analysis needs. Students will now learn how to create interactive and innovative visualizations.
 
@@ -98,7 +98,7 @@ Ask for any questions before proceeding.
 
 ### 2. Instructor Do: Review Homework (10 min)
 
-This activity involves a quick demo and a review of the homework.
+Transition into a demonstration of the types of visualizations that can be made using PyViz by previewing the homework.  
 
 **Files:**
 
@@ -357,15 +357,13 @@ By the end of this activity, students and the instructor will have deep-dived in
 
 * [hvplot_widgets.ipynb](Activities/03-Ins_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
 
-Explain to students that plot interactions all happen with the hvPlot widget bar.
+Navigate to the slides section titled "Interactive Visualizations" and use them to briefly explain the following:
 
-* The widget bar includes several buttons for different user interactions.
-
+* Interactive visualizations are charts and graphs that can be manipulated by user interaction. Example interactions include clicking, panning, and zooming, all of which come out of the box with hvPlot.
+ 
 * The widget bar will be present for all plots created using the `hvplot` function.
 
   ![hvplot_widget.png](Images/hvplot_widget.png)
-
-Transition into a demo of the widget bar by opening the solution file and highlighting the following:
 
 * The hvPlot widget bar gives users the ability to choose how they want to interact with the data.
 
@@ -410,6 +408,9 @@ Transition into a demo of the widget bar by opening the solution file and highli
   * Point out to students that certain widgets cannot be used with other widgets. For example, users cannot pan and box zoom at the same time. One action has to occur first, and then the second widget option can be chosen.
 
   ![hvplot_all_actions.png](Images/hvplot_all_actions.gif)
+
+Transition into a live demo of the above information by opening the [solution file](Activities/03-Ins_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
+ and walking students through how to manipulate hvPlots by using the widgets bar.
 
 Ask for any questions before moving on.
 
@@ -743,7 +744,7 @@ Facilitate a recap discussion with students by asking some of the following ques
 
 * In what ways will interactive visualizations help with data analysis?
 
-  * **Answer:** Interactive visualizations provide real-time data manipulation and exploration capabilities. This cuts back on the time and lines of codes needed to filter, and slice and dice the data for data exploration.
+  * **Answer:** Interactive visualizations provide real-time data manipulation and exploration capabilities. This cuts back on the time and lines of code needed to filter, and slice and dice the data for data exploration.
 
   * **Answer:** A challenge with static charts is that it's difficult to zoom in on, or highlight, a specific data point or range of data points. Interactive visualizations make zooming in on data points easy.
 
