@@ -1,7 +1,14 @@
 pragma solidity ^0.6.0;
 
-contract MartianAuction {
+// taken straight from the Solidity docs
+// https://solidity.readthedocs.io/en/v0.5.10/solidity-by-example.html?highlight=auction#id2
+// you must modify this to be compatible with the MartianMarket contract
+contract SimpleAuction {
+    // Parameters of the auction. Times are either
+    // absolute unix timestamps (seconds since 1970-01-01)
+    // or time periods in seconds.
     address payable public beneficiary;
+    uint public auctionEndTime;
 
     // Current state of the auction.
     address public highestBidder;
@@ -12,7 +19,7 @@ contract MartianAuction {
 
     // Set to true at the end, disallows any change.
     // By default initialized to `false`.
-    bool public ended;
+    bool ended;
 
     // Events that will be emitted on changes.
     event HighestBidIncreased(address bidder, uint amount);
@@ -27,24 +34,37 @@ contract MartianAuction {
     /// seconds bidding time on behalf of the
     /// beneficiary address `_beneficiary`.
     constructor(
+        uint _biddingTime,
         address payable _beneficiary
     ) public {
         beneficiary = _beneficiary;
+        auctionEndTime = now + _biddingTime;
     }
 
     /// Bid on the auction with the value sent
     /// together with this transaction.
     /// The value will only be refunded if the
     /// auction is not won.
-    function bid(address payable sender) public payable {
+    function bid() public payable {
+        // No arguments are necessary, all
+        // information is already part of
+        // the transaction. The keyword payable
+        // is required for the function to
+        // be able to receive Ether.
+
+        // Revert the call if the bidding
+        // period is over.
+        require(
+            now <= auctionEndTime,
+            "Auction already ended."
+        );
+
         // If the bid is not higher, send the
         // money back.
         require(
             msg.value > highestBid,
             "There already is a higher bid."
         );
-
-        require(!ended, "auctionEnd has already been called.");
 
         if (highestBid != 0) {
             // Sending back the money by simply using
@@ -54,9 +74,9 @@ contract MartianAuction {
             // withdraw their money themselves.
             pendingReturns[highestBidder] += highestBid;
         }
-        highestBidder = sender;
+        highestBidder = msg.sender;
         highestBid = msg.value;
-        emit HighestBidIncreased(sender, msg.value);
+        emit HighestBidIncreased(msg.sender, msg.value);
     }
 
     /// Withdraw a bid that was overbid.
@@ -77,10 +97,6 @@ contract MartianAuction {
         return true;
     }
 
-    function pendingReturn(address sender) public view returns (uint) {
-        return pendingReturns[sender];
-    }
-
     /// End the auction and send the highest bid
     /// to the beneficiary.
     function auctionEnd() public {
@@ -98,6 +114,7 @@ contract MartianAuction {
         // external contracts.
 
         // 1. Conditions
+        require(now >= auctionEndTime, "Auction not yet ended.");
         require(!ended, "auctionEnd has already been called.");
 
         // 2. Effects

@@ -1,9 +1,9 @@
-import marsJson from "./build/contracts/MartianMarket.json";
-import auctionJson from "./build/contracts/MartianAuction.json";
+import marsJson from "./MartianMarket.json";
+import auctionJson from "./MartianAuction.json";
 
 const Web3 = require("web3");
 
-const contractAddress = "0xC4a8af75fF3AA434010200F279ca8581A24BC0D5"; // ropsten contract address
+const contractAddress = ""; // insert MartianMarket contract address here
 
 const dApp = {
   ethEnabled: function() {
@@ -23,7 +23,7 @@ const dApp = {
     this.accounts = await window.web3.eth.getAccounts();
     this.contractAddress = contractAddress;
     this.marsContract = new window.web3.eth.Contract(
-      marsJson.abi,
+      marsJson,
       this.contractAddress,
       { defaultAccount: this.accounts[0] }
     );

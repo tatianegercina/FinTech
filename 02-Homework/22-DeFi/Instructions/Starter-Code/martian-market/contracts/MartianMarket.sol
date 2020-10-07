@@ -7,7 +7,10 @@ import './MartianAuction.sol';
 contract MartianMarket is ERC721, Ownable {
     constructor() ERC721("MartianMarket", "MARS") public {}
 
-    address payable foundationAddress = msg.sender;
+    // cast a payable address for the Martian Development Foundation to be the beneficiary in the auction
+    // this contract is designed to have the owner of this contract (foundation) to pay for most of the function calls
+    // (all but bid and withdraw)
+    address payable foundationAddress = address(uint160(owner()));
 
     mapping(uint => MartianAuction) public auctions;
 
@@ -19,42 +22,33 @@ contract MartianMarket is ERC721, Ownable {
     }
 
     function createAuction(uint tokenId) public onlyOwner {
-        auctions[tokenId] = new MartianAuction(foundationAddress);
+        // your code here...
     }
 
     function endAuction(uint tokenId) public onlyOwner {
         require(_exists(tokenId), "Land not registered!");
         MartianAuction auction = getAuction(tokenId);
-        auction.auctionEnd();
-        safeTransferFrom(owner(), auction.highestBidder(), tokenId);
+        // your code here...
     }
 
     function getAuction(uint tokenId) public view returns(MartianAuction auction) {
-        return auctions[tokenId];
+        // your code here...
     }
 
     function auctionEnded(uint tokenId) public view returns(bool) {
-        require(_exists(tokenId), "Land not registered!");
-        MartianAuction auction = getAuction(tokenId);
-        return auction.ended();
+        // your code here...
     }
 
     function highestBid(uint tokenId) public view returns(uint) {
-        require(_exists(tokenId), "Land not registered!");
-        MartianAuction auction = getAuction(tokenId);
-        return auction.highestBid();
+        // your code here...
     }
 
     function pendingReturn(uint tokenId, address sender) public view returns(uint) {
-        require(_exists(tokenId), "Land not registered!");
-        MartianAuction auction = getAuction(tokenId);
-        return auction.pendingReturn(sender);
+        // your code here...
     }
 
     function bid(uint tokenId) public payable {
-        require(_exists(tokenId), "Land not registered!");
-        MartianAuction auction = getAuction(tokenId);
-        auction.bid.value(msg.value)(msg.sender);
+        // your code here...
     }
 
 }
