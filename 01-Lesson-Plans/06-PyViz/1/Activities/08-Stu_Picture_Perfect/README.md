@@ -1,18 +1,18 @@
 # Picture Perfect
 
-It's time to put some finishing touches to your masterpiece to make it picture perfect. Using the customization attributes and options demonstrated by the instructor, curate your visualizations. Make sure to assess each plot for opportunities of aesthetic improvement.
+It's time to put some finishing touches to your masterpiece to make it picture perfect. Using the customization attributes and options demonstrated by the instructor, curate your visualizations. Make sure to assess each plot for aesthetic improvement opportunities.
 
 ## Instructions
 
-1. Open the [starter file](Unsolved/Core/picture_perfect.ipynb), and use the `rot` function to make the x axis more legible.
+Open the [starter file](Unsolved/Core/picture_perfect.ipynb). The code to generate multiple plots is provided, your job is to assess them and make improvements as follows:
+
+1. Use the `rot` function to make the x axis more legible.
 
 2. Use the  `opts(yformatter=)` option to format y axis labels.
 
 3. Add a title to all of your visualizations.
 
-4. Invert any bar chart visualizations using dates, so that data over time is seen horizontally rather than vertically. Hint: date values will be on the y axis.
-
-5. Increase the height or width of any plots that have rendered too small.
+4. Increase the height or width of any plots that have rendered too small.
 
 If you complete the activity early, continue on to the optional challenge section.
 

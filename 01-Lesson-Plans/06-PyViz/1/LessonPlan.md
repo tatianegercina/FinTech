@@ -46,8 +46,6 @@ By the end of class, students will be able to:
 
 * Remember that the purpose of today's class isn't just to teach students how to make interactive plots, but how to use them in order to tell stories, which users can take a deep dive into with the interactive widgets provided by PyViz's technologies.
 
-* Please refer to our [Student FAQ](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
-
 * Have your TAs keep track of the time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
@@ -84,13 +82,13 @@ Open the slideshow, navigate to the PyViz section, and highlight the following:
 
 * The creators of PyViz recognized that one technology or package cannot solve all data visualization needs. PyViz was created to provide developers with a platform that enables more than one data visualization package to be used for a project.
 
-Transition into a demonstration of the types of visualizations that can be made using PyViz:
+* Interactive visualizations:
 
-* Interactive visualizations allow data to be explored and analyzed in the most efficient and effective manner for human eyes.
+    * Allow data to be explored and analyzed in the most efficient and effective manner for human eyes.
 
-* Interactive visualizations give users the ability to pan, zoom, and filter data elements and values.
+    * Give users the ability to pan, zoom, and filter data elements and values.
 
-* Interactive visualizations also include functionality that allows data to be sorted off different values with a single click.
+    * Include functionality that allows data to be sorted off different values with a single click.
 
 End by telling students that gone are the days where simple line, bar, and histogram charts satisfied data visualization and data analysis needs. Students will now learn how to create interactive and innovative visualizations.
 
@@ -100,7 +98,7 @@ Ask for any questions before proceeding.
 
 ### 2. Instructor Do: Review Homework (10 min)
 
-This activity involves a quick demo and a review of the homework.
+Transition into a demonstration of the types of visualizations that can be made using PyViz by previewing the homework.  
 
 **Files:**
 
@@ -319,7 +317,7 @@ Open the solution and conduct a dry walkthrough while explaining the following:
 * HvPlot has attributes that can be used to create line and bar plots explicitly. If an explicit declaration is not desired, the `hvplot` function can be used.
 
   ```python
-  # Plot a hvplot bar chart of the top 20 market cap companies
+  # Plot a hvplot bar and line charts of the top 20 market cap companies
   top_20_market_cap.hvplot()
   top_20_market_cap.hvplot.line(title='Top 20 Market Cap Companies (in billions)')
   top_20_market_cap.hvplot.bar(title='Top 20 Market Cap Companies (in billions)')
@@ -328,6 +326,14 @@ Open the solution and conduct a dry walkthrough while explaining the following:
   ![hvplot_plot.png](Images/hvplot_plot.png)
 
   ![hvplot_bar_market_cap.png](Images/hvplot_bar_market_cap.png)
+
+* Ask students if anyone completed the challenge portion of the assignment. Let students know that scatter plots can be created with the following code:
+
+    ```python
+    # Plot a scatter plot using hvplot function to display the relationship between price vs. earnings/share
+    sp500_companies_csv.hvplot(kind='scatter', x='Earnings/Share', y='Price')
+    ```
+  ![hvplot_scatter.png](Images/hvplot_scatter.png)
 
 If time remains, transition into a small review session. Ask the following guided questions:
 
@@ -359,15 +365,13 @@ By the end of this activity, students and the instructor will have deep-dived in
 
 * [hvplot_widgets.ipynb](Activities/03-Ins_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
 
-Explain to students that plot interactions all happen with the hvPlot widget bar.
+Navigate to the slides section titled "Interactive Visualizations" and use them to briefly explain the following:
 
-* The widget bar includes several buttons for different user interactions.
-
+* Interactive visualizations are charts and graphs that can be manipulated by user interaction. Example interactions include clicking, panning, and zooming, all of which come out of the box with hvPlot.
+ 
 * The widget bar will be present for all plots created using the `hvplot` function.
 
   ![hvplot_widget.png](Images/hvplot_widget.png)
-
-Transition into a demo of the widget bar by opening the solution file and highlighting the following:
 
 * The hvPlot widget bar gives users the ability to choose how they want to interact with the data.
 
@@ -395,7 +399,7 @@ Transition into a demo of the widget bar by opening the solution file and highli
 
   ![hvplot_wheel_zoom.gif](Images/hvplot_wheel_zoom.gif)
 
-* Another way to interact with visualizations is to save them. HvPlot allows visualizations to be saved as HTML documents for later use.
+* Another way to interact with visualizations is to save them. HvPlot allows visualizations to be saved as PNG files for later use.
 
   ![hvplot_save.gif](Images/hvplot_save.gif)
 
@@ -412,6 +416,9 @@ Transition into a demo of the widget bar by opening the solution file and highli
   * Point out to students that certain widgets cannot be used with other widgets. For example, users cannot pan and box zoom at the same time. One action has to occur first, and then the second widget option can be chosen.
 
   ![hvplot_all_actions.png](Images/hvplot_all_actions.gif)
+
+Transition into a live demo of the above information by opening the [solution file](Activities/03-Ins_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
+ and walking students through how to manipulate hvPlots by using the widgets bar.
 
 Ask for any questions before moving on.
 
@@ -440,6 +447,8 @@ Data for this activity was retrieved from [data.cms.gov](https://data.cms.gov/Me
 **Files:**
 
 * [hvplot_widgets.ipynb](Activities/04-Stu_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
+
+Conduct a walkthrough of the solution, using the generated plots to illustrate how hvPlot widgets can be used. 
 
 Engage students in a review discussion by asking the following questions:
 
@@ -471,7 +480,7 @@ This activity teaches students how to create plot layouts and overlay visualizat
 
 * [composing_plots.ipynb](Activities/05-Ins_Composing_Plots/Solved/composing_plots.ipynb)
 
-Go to the slideshow, navigate to the Composing Plots instructor demo section, and highlight the following:
+Go to the slideshow, navigate to the Composing Plots section, and highlight the following:
 
 * One of the most valuable and powerful features that hvPlot provides is the ability to compose multiple visualizations.
 
@@ -488,7 +497,7 @@ Open the starter file and facilitate a dry walkthrough demonstration of composin
   total_payment_by_state.hvplot.bar() + sorted_data.hvplot.line()
   ```
 
-  ![compose_layout.png](Images/compose_layout.png)
+  ![compose_layout.png](Images/compose_layout_ins.png)
 
 * Plots can also be overlaid using the `*` operator, which places the two plots along the same axis. For example, if one wanted to analyze Average Total Payments in relation to Average Medicare Payments, plots representing both per state could be composed in one plot. Note to students that labels should be used when overlaying plots; labels will identify which plot is which.
 
@@ -501,9 +510,9 @@ sorted_data_med = total_payment_by_state_med.sort_values('Average Medicare Payme
 sorted_data.hvplot() * sorted_data_med.hvplot()
 ```
 
-![compose_overlay.png](Images/compose_overlay.png)
+![compose_overlay.png](Images/compose_overlay_ins.png)
 
-* Once the plots have been composed, users can interact with both (sub) plots with a single widget bar.
+* Once the plots have been composed, users can interact with both (sub) plots with a single widget bar. Example:
 
   ![single_widget_bar.gif](Images/single_widget_bar.gif)
 
@@ -557,20 +566,20 @@ Initiate the review session by asking the student volunteer to conduct a dry wal
 
   * **Answer:** One.
 
-Ask the student volunteer (or call on a student) to open the solution. They should highlight the following:
+Make sure the the following points are highlighted during the walkthrough: 
 
 * The `+` operator is used to compose plots adjacent to each other. This creates a single plot that contains more than one visualization.
 
   ```python
   # Slice data for Total Average Loan Amount by 2015-2016 and 2010-2014 date ranges
-  loan_data_range_1 = loan_data['2015 * 2016']
-  loan_data_range_2 = loan_data['2010 * 2014']
+  loan_data_range_1 = loan_data['2015 - 2016']
+  loan_data_range_2 = loan_data['2010 - 2014']
   loan_data_range_grp = loan_data_range_1.sort_values()
   loan_data_range_grp_2 = loan_data_range_2.sort_values()
 
   # Plot data for date ranges
-  plot_2015_2016 = loan_data_range_grp.hvplot(label='2015 * 2016')
-  plot_2010_2014 = loan_data_range_grp_2.hvplot(label='2010 * 2014')
+  plot_2015_2016 = loan_data_range_grp.hvplot(label='2015 - 2016')
+  plot_2010_2014 = loan_data_range_grp_2.hvplot(label='2010 - 2014')
 
   # Compose plots
   plot_2015_2016 + plot_2010_2014
@@ -599,7 +608,7 @@ Ask for any remaining questions before moving on.
 
 The goal of this activity is to provide students with a dry walkthrough demonstration of how to use hvPlot plot attributes and options to customize the look and feel of visualizations. This activity will enable students to perfect their visualizations by fine-tuning details such as axis labels, and to create attractive color themes and effects.
 
-Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/real-estate-sale-history-06c8f).
+Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset).
 
 **Files:**
 
@@ -611,11 +620,21 @@ Open the starter file, and perform a dry walkthrough of the solution, highlighti
 
   ```python
   # Read in data, filter, and slice
-  home_sale_prices = pd.read_csv('../Resources/housing_sale_data.csv',index_col='salesHistoryKey')
-  home_sale_prices = home_sale_prices[home_sale_prices['saleDate'] > '2019-06-01'][home_sale_prices['saleDate'] < '2019-06-31']
+  home_sale_prices = pd.read_csv(
+      Path("../Resources/housing_sale_data.csv"), index_col="salesHistoryKey"
+  )
+  home_sale_prices = home_sale_prices.loc[
+      (home_sale_prices["saleDate"] > "2019-06-01")
+      & (home_sale_prices["saleDate"] < "2019-06-31")
+  ]
 
   # Slice data
-  sale_prices_by_year = home_sale_prices[['saleAmt','saleDate']].groupby('saleDate').mean().sort_values('saleDate')
+  sale_prices_by_year = (
+      home_sale_prices[["saleAmt", "saleDate"]]
+      .groupby("saleDate")
+      .mean()
+      .sort_values("saleDate")
+  )
 
   # Plot data without rotation
   sale_prices_by_year.hvplot.bar(x='saleDate',y='saleAmt')
@@ -654,6 +673,7 @@ Open the starter file, and perform a dry walkthrough of the solution, highlighti
     x='saleDate',
     y='saleAmt',
     rot=90).opts(
+      yformatter="%.0f",
       title='Arlington, VA Housing Sale Prices June 2016'
     )
   ```
@@ -666,16 +686,22 @@ If time remains, discuss how to use the `opts` function to switch the x and y ax
 
   ```python
   # Invert axes
-  sale_prices_by_year_title.opts(invert_axes=True)
+  sale_prices_by_year.hvplot.bar(x="saleDate", y="saleAmt").opts(
+    xformatter="%.0f",
+    title="Arlington, VA Housing Sale Prices June 2016",
+    invert_axes=True,
+  )
   ```
 
   ![plot_invert.png](Images/plot_invert.png)
 
-Slack out the [hvPlot customization](http://holoviews.org/user_guide/Customizing_Plots.html) link. The site lists all of the options available in hvPlot. Encourage students to review the list of options.
+Slack out the [hvPlot customization](https://hvplot.pyviz.org/user_guide/Customization.html) link you see below. The site lists all of the options available in hvPlot. Encourage students to review the list of options.
 
-* Customizing plots -> http://holoviews.org/user_guide/Customizing_Plots.html
+```
+https://hvplot.pyviz.org/user_guide/Customization.html
+```
 
-Ask if there are any more questions. Then, continue to the student challenge activity.
+Ask if there are any more questions. Then, continue to the student activity.
 
 ---
 
@@ -745,7 +771,7 @@ Facilitate a recap discussion with students by asking some of the following ques
 
 * In what ways will interactive visualizations help with data analysis?
 
-  * **Answer:** Interactive visualizations provide real-time data manipulation and exploration capabilities. This cuts back on the time and lines of codes needed to filter, and slice and dice the data for data exploration.
+  * **Answer:** Interactive visualizations provide real-time data manipulation and exploration capabilities. This cuts back on the time and lines of code needed to filter, and slice and dice the data for data exploration.
 
   * **Answer:** A challenge with static charts is that it's difficult to zoom in on, or highlight, a specific data point or range of data points. Interactive visualizations make zooming in on data points easy.
 

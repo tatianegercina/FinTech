@@ -22,9 +22,11 @@ Start working on some sample visualizations as a portfolio to showcase to Marily
 
 ## Instructions
 
-1. Open the [starter file](Unsolved/composing_masterpieces.ipynb), and calculate the total average loan amount by state. Plot the data, and name this plot `plot_state_avgs`. Make this plot a **bar** plot.
+1. Open the [starter file](Unsolved/composing_masterpieces.ipynb).  The data has been grouped, summed and stored in a DataFrame named `loan_data` for your use in this activity.
 
-2. Use the `hvplot` function to create separate plots visualizing sum of average loan amounts for 2015–2016 and 2010–2014. Name these plots `plot_2015_2016` and `plot_2010_2014`.
+2. Using the `hvplot` function, create a **bar** plot to visualize the total average loan amount by state. Name this plot `plot_state_avgs`. 
+
+2. Create two separate **line** plots visualizing the sum of average loan amounts for years 2015–2016 and years 2010–2014. Name these plots `plot_2015_2016` and `plot_2010_2014`.
 
 3. Compose plots `plot_2015_2016` and `plot_2010_2014` using the `+` operator.
 

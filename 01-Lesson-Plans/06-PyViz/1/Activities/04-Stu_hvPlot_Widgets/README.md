@@ -6,7 +6,7 @@ Using hvPlot, analyze and plot the provided hospital claims data. Use the widget
 
 ## Instructions
 
-1. Open the [starter file](Unsolved/hvplot_widgets.ipynb), and group the filtered hospital data by **Average Total Payments** and **Provider State**. Then, sum by **Average Total Payments**. Hint: Use Pandas `groupby` function.
+1. Open the [starter file](Unsolved/hvplot_widgets.ipynb). Code for data preparation has been provided.  Group the provided hospital data by **Average Total Payments** and **Provider State**. Then, sum by **Average Total Payments**. Hint: Use Pandas `groupby` function.
 
 2. Plot the aggregated data using the `hvplot.bar` function. Explore the unsorted data using the **pan** and **zoom** widgets to find the costs for the state of **New Jersey**. Zoom in and out of the data to get a better understanding of costs for different states.
 
