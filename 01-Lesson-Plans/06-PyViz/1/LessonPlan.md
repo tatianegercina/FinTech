@@ -480,7 +480,7 @@ This activity teaches students how to create plot layouts and overlay visualizat
 
 * [composing_plots.ipynb](Activities/05-Ins_Composing_Plots/Solved/composing_plots.ipynb)
 
-Go to the slideshow, navigate to the Composing Plots instructor demo section, and highlight the following:
+Go to the slideshow, navigate to the Composing Plots section, and highlight the following:
 
 * One of the most valuable and powerful features that hvPlot provides is the ability to compose multiple visualizations.
 
@@ -497,7 +497,7 @@ Open the starter file and facilitate a dry walkthrough demonstration of composin
   total_payment_by_state.hvplot.bar() + sorted_data.hvplot.line()
   ```
 
-  ![compose_layout.png](Images/compose_layout.png)
+  ![compose_layout.png](Images/compose_layout_ins.png)
 
 * Plots can also be overlaid using the `*` operator, which places the two plots along the same axis. For example, if one wanted to analyze Average Total Payments in relation to Average Medicare Payments, plots representing both per state could be composed in one plot. Note to students that labels should be used when overlaying plots; labels will identify which plot is which.
 
@@ -510,9 +510,9 @@ sorted_data_med = total_payment_by_state_med.sort_values('Average Medicare Payme
 sorted_data.hvplot() * sorted_data_med.hvplot()
 ```
 
-![compose_overlay.png](Images/compose_overlay.png)
+![compose_overlay.png](Images/compose_overlay_ins.png)
 
-* Once the plots have been composed, users can interact with both (sub) plots with a single widget bar.
+* Once the plots have been composed, users can interact with both (sub) plots with a single widget bar. Example:
 
   ![single_widget_bar.gif](Images/single_widget_bar.gif)
 
