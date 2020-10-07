@@ -448,6 +448,8 @@ Data for this activity was retrieved from [data.cms.gov](https://data.cms.gov/Me
 
 * [hvplot_widgets.ipynb](Activities/04-Stu_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
 
+Conduct a walkthrough of the solution, using the generated plots to illustrate how hvPlot widgets can be used. 
+
 Engage students in a review discussion by asking the following questions:
 
 * HvPlots have six standard widgets. One of them is pan. What are the other five widgets?
