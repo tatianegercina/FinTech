@@ -300,7 +300,7 @@ For this activity, students will revisit plots they made earlier using Matplotli
 
 **Files:**
 
-* [plotting_visual_takeover.ipynb](Activities/02-Stu_Plotting_Visual_Takeover/Unsolved/Core/plotting_visual_takeover.ipynb)
+* [plotting_visual_takeover.ipynb](Activities/02-Stu_Plotting_Visual_Takeover/Unsolved/plotting_visual_takeover.ipynb)
 
 ---
 
@@ -308,7 +308,7 @@ For this activity, students will revisit plots they made earlier using Matplotli
 
 **Files:**
 
-* [plotting_visual_takeover.ipynb](Activities/02-Stu_Plotting_Visual_Takeover/Solved/Core/plotting_visual_takeover.ipynb)
+* [plotting_visual_takeover.ipynb](Activities/02-Stu_Plotting_Visual_Takeover/Solved/plotting_visual_takeover.ipynb)
 
 Open the solution and conduct a dry walkthrough while explaining the following:
 
@@ -717,7 +717,7 @@ Make sure to slack out to students the [hvPlot customization](https://hvplot.pyv
 
 **Files:**
 
-* [picture_perfect.ipynb](Activities/08-Stu_Picture_Perfect/Unsolved/Core/picture_perfect.ipynb)
+* [picture_perfect.ipynb](Activities/08-Stu_Picture_Perfect/Unsolved/picture_perfect.ipynb)
 
 ---
 
@@ -727,7 +727,7 @@ For this activity, students will participate in a five-minute turn and teach to 
 
 **Files:**
 
-* [picture_perfect.ipynb](Activities/08-Stu_Picture_Perfect/Solved/Core/picture_perfect.ipynb)
+* [picture_perfect.ipynb](Activities/08-Stu_Picture_Perfect/Solved/picture_perfect.ipynb)
 
 Instruct students to turn and find a partner to demo their visualizations and customizations. Encourage students to teach each other different tricks and shortcuts they may have learned along the way, as well as to provide constructive criticism to help make the visualizations more appealing and insightful.
 
