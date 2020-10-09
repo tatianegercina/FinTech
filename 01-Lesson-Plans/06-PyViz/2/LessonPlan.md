@@ -203,7 +203,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 **Files:**
 
-* [plotting_w_plotly.ipynb](Activities/02-Stu_Plotting_w_Plotly/Unsolved/Core/plotting_w_plotly.ipynb)
+* [plotting_w_plotly.ipynb](Activities/02-Stu_Plotting_w_Plotly/Unsolved/plotting_w_plotly.ipynb)
 
 - - -
 
@@ -213,7 +213,7 @@ Students and instructors participate in a dry walkthrough of the solution for th
 
 **Files:**
 
-* [plotting_w_plotly.ipynb](Activities/02-Stu_Plotting_w_Plotly/Solved/Core/plotting_w_plotly.ipynb)
+* [plotting_w_plotly.ipynb](Activities/02-Stu_Plotting_w_Plotly/Solved/plotting_w_plotly.ipynb)
 
 Open the solution and conduct a dry walkthrough.
 
@@ -221,7 +221,7 @@ Open the solution and conduct a dry walkthrough.
 
   ```python
   # Read in data
-  foreclosures = pd.read_csv(Path('../../Resources/allegheny_foreclosures.csv'),
+  foreclosures = pd.read_csv(Path('../Resources/allegheny_foreclosures.csv'),
                             infer_datetime_format= True,
                             parse_dates=True,
                             index_col='filing_date')
@@ -253,6 +253,10 @@ Explore the data, encouraging students to follow along and complete the same int
   * Without the ability to interact with data points via technologies like Plotly Express, spotting outliers could be like finding a needle in a haystack. The process would be less efficient, and arguably less effective.
 
   ![explore_outlier.gif](Images/explore_outlier.gif)
+
+* Review the Challenge section, walking students through how to create the area plot using the `area` function.
+
+  * Highlight to students that an area plot is an advanced take on the traditional line plot.  The area between the lines is filled in, providing a  more impactful visual representation of the data. 
 
 Ask for any remaining questions before moving on.
 
