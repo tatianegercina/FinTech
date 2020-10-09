@@ -6,7 +6,7 @@ The interviewers are satisfied with your skills in **hvPlot**, and now want to b
 
 Using **Plotly Express** and the provided real estate data, correlate the Pennsylvania Allegheny County sales data with foreclosures. Your goal is to demonstrate your understanding of real estate reporting requirements as well as your ability to develop visualizations that tell stories through data, especially relative to market targeting.
 
-Complete this activity successfully, and you'll continue onto the next phase of the interview process!
+Complete this activity successfully, and you'll continue on to the next phase of the interview process!
 
 ## Instructions
 
@@ -32,7 +32,7 @@ Plot the progression of foreclosures using an area chart to determine if the rat
 
 ### Hint
 
-Creating an **area** plot can be done using the Plotly Express `area` function.
+Creating an **area** plot can be done using the Plotly Express [`area` function](https://plotly.com/python/filled-area-plots).
 
 ---
 
