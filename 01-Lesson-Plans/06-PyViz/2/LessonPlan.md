@@ -331,7 +331,7 @@ This will be the first time students work with parallel coordinate plots. Ask TA
 
 **Files:**
 
-* [plotting_in_parallel.ipynb](Activities/04-Stu_Parallel_Coordinates/Unsolved/Core/plotting_in_parallel.ipynb)
+* [plotting_in_parallel.ipynb](Activities/04-Stu_Parallel_Coordinates/Unsolved/plotting_in_parallel.ipynb)
 
 - - -
 
@@ -339,7 +339,7 @@ This will be the first time students work with parallel coordinate plots. Ask TA
 
 **Files:**
 
-* [plotting_in_parallel.ipynb](Activities/04-Stu_Parallel_Coordinates/Solved/Core/plotting_in_parallel.ipynb)
+* [plotting_in_parallel.ipynb](Activities/04-Stu_Parallel_Coordinates/Solved/plotting_in_parallel.ipynb)
 
 Kick off the review session by asking some of the questions below.
 
@@ -489,7 +489,7 @@ Open the solution and ask the student volunteer to present the plot and relay th
 
   ![stu_parallel_categories_dimensions.png](Images/stu_parallel_categories_dimensions.png)
 
-* The line colouring of the plot can be changed using the `colour` attribute. This will help spot trends in the data.
+* The line colouring of the plot can be changed using the `color` attribute. This will help spot trends in the data.
 
   ![stu_parallel_categories_colour.png](Images/stu_parallel_categories_colour.png)
 
