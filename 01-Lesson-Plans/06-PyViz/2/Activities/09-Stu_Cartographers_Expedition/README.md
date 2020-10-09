@@ -4,25 +4,27 @@ Harold's birthday is right around the corner! For the New York City trip, Harold
 
 Everyone's complaining at the thought of trekking around the big city without a GPS, but Harold is unrelenting. He wants to do this trip old-school style. Thinking about it, you realize that using an actual map might be pretty cool.
 
-Instead of spending money on a NYC mapbook, become a true, modern cartographer and create interactive map plots that can be used by you and your friends to get the lay of the city.
+Instead of spending money on a NYC mapbook, become a true, modern cartographer and create interactive map plots that can be used by you and your friends to get the layout of the city.
 
 Work in teams of two or three people to:
 
 1. Identify six to eight locations to visit.
 
-2. Use Plotly Express and Mapbox to plot routes (point A to point B to point C) for the expedition.
+2. Use Plotly Express and Mapbox to plot 3 routes for the expedition.
+
+3. Each route will hold 2-4 locations.
 
 ### Instructions
 
-1. Read in the `harold_bday_plans.csv` data file.
+1. Set the Mapbox API key using the os.getenv function.
 
-2. Slice data for your **arriving airport** and the **first** location the group will visit.
+2. Read in the `harold_bday_plans.csv` data file.
 
-3. Now plot a course to the **second** location. Continue to plot the courses until you've included six to eight locations.
+2. Plot the data for **Route 1** by slicing the DataFrame for your **arriving airport** and the **first** set of locations the group will visit.
 
-4. Once you have three points on one map, create another map, and plot the next set of locations.
+3. Now plot **Route 2** with the the **second** set of locations. Continue to plot the courses until you've included six to eight locations in three plots.
 
-5. Plot all locations on one map.
+4. Finally, create a map with all locations plotted together.
 
 ### Challenge
 

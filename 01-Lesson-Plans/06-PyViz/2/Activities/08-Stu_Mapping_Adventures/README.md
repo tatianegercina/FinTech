@@ -12,7 +12,7 @@ Use Plotly Express and **MapBox** to create a geographical plot that will visual
 
 2. Read in the places of interest data.
 
-3. Use the Plotly Express `scatter_mapbox` function to plot interest data, setting the colour to **Name**.
+3. Use the Plotly Express `scatter_mapbox` function to plot interest data, setting the colour to **Name** with the `color` attribute.
 
 4. Use `scatter_mapbox` to plot places of interest by **place type**.
 

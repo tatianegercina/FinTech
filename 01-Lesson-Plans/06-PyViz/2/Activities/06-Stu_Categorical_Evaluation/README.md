@@ -4,11 +4,11 @@ On August 1, Allegheny County released its 2019 real estate property assessment 
 
 If you finish early, complete the challenge section. If you're feeling confident in your story, volunteer to present your findings and lead the activity review module.
 
-1. Open the starter file, and slice `prop_assessments` DataFrame by **LOCALTOTAL**, **USEDESC**, **TOTALROOMS**, **BEDROOMS**, and **FULLBATHS**.
+1. Open the starter file, and slice the `prop_assessments` DataFrame by **LOCALTOTAL**, **USEDESC**, **TOTALROOMS**, **BEDROOMS**, and **FULLBATHS**.
 
-2. Use the parallel categories function to plot the data. Colour code the lines based on the LOCALTOTAL field. Hint: Make sure to include the `dimensions` and `colour` attributes.
+2. Use the parallel categories function to plot the data. Colour code the lines based on the **LOCALTOTAL** field. Hint: Make sure to include the `dimensions` and `colour` attributes.
 
-3. Sort the plot so that **,BEDROOMS**, **TOTALROOMS**, and **,FULLBATHS**, are sorted in ascending order.
+3. Sort the plot so that **BEDROOMS**, **TOTALROOMS**, and **FULLBATHS**, are sorted in ascending order.
 
 4. Explore the data and try to spot various trends or patterns in the data.
 
