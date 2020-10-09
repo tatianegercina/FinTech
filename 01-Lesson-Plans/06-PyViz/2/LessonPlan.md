@@ -46,7 +46,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-The slides for this lesson can be viewed on Google Drive here: [Lesson 6.2 Slides](https://docs.google.com/presentation/d/1B5qCzhhp_DdzUVKagMGLqePI6ENWfdKTAqTkBmY5G4Q/edit?usp=sharing).
+The slides for this lesson can be viewed on Google Drive here: [Lesson 6.2 Slides](https://docs.google.com/presentation/d/1JkzM66tbGNCFDSf-XP90FuGE9FmNfKmaTik5j6kd5WI/edit?usp=sharing).
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -64,7 +64,7 @@ Open the slideshow, navigate to the Plotly section, and quickly highlight the fo
 
 **hvPlot** is not the only visualization package that can be used to create interactive visualizations.
 
-* Plotly Express is a package similar to hvPlot, offering many of the same plots as hvPlot (bar, line, scatter, etc.) but more as well (e.g., parallel coordinates and parallel categories plots).
+* Plotly Express is a package similar to hvPlot, offering many of the same plots as hvPlot (bar, line, scatter, etc.), as well as some new plots like parallel coordinates and parallel categories.
 
 * Plotly Express is a favorite among the data science and web-based data visualization communities.
 
@@ -74,17 +74,17 @@ Open the slideshow, navigate to the Plotly section, and quickly highlight the fo
 
 * Tell students that by the end of class, they will know how to create visualizations using Plotly Express and gain valuable skills and knowledge that data scientists and analysts are actively using in the industry today.
 
-If time remains, share some sample visualizations of the types of plots being made with Plotly Express. Use this [site](https://plot.ly/python/plotly-express/#visualize-distributions) for examples.
+Share some sample visualizations of the types of plots being made with Plotly Express. Use this [site](https://plot.ly/python/plotly-express) for examples.
 
 * Use the left navigation pane, and select the following pages. Remember to highlight and focus on how Plotly's unique plot types work toward telling a story.
 
-  * [Scatter and Line Plots](https://plot.ly/python/plotly-express/#scatter-and-line-plots)
+  * [Scatter and Line Plots](https://plotly.com/python/plotly-express/#scatter-line-area-and-bar-charts)
 
-  * [Visualize Distributions](https://plot.ly/python/plotly-express/#visualize-distributions)
+  * [Distributions](https://plotly.com/python/plotly-express/#distributions)
 
-  * [Ternary Visualizations](https://plot.ly/python/plotly-express/#ternary-coordinates)
+  * [Ternary Visualizations](https://plotly.com/python/plotly-express/#ternary-coordinates)
 
-  * [Maps](https://plot.ly/python/plotly-express/#maps)
+  * [Maps](https://plotly.com/python/plotly-express/#maps)
 
 Ask for any questions before moving on.
 
@@ -100,7 +100,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 * [plotly_demo.ipynb](Activities/01-Ins_Plotly_Exp_Demo/Unsolved/plotly_demo.ipynb)
 
-Go back to the slideshow, navigate to the Plotly Express demo section, and quickly highlight the following:
+Continuing with the slideshow, navigate to the Plotly Express demo section, and quickly highlight the following:
 
 * Plotly Express works much like hvPlot, giving users a simple `plot` based interface that allows developers to create and customize interactive visualizations.
 
@@ -116,7 +116,7 @@ Communicate to students that working with Plotly Express is going to be similar 
 
 Open the starter file provided and live code, creating a scatter plot using Plotly Express.
 
-* Import the Plotly Express library, and prepare the dataset because Plotly Express abstracts over Pandas (like hvPlot), data for visualization should be stored in a Pandas DataFrame.
+* Import the Plotly Express library, and prepare the dataset. Because Plotly Express abstracts over Pandas (like hvPlot), data for visualization should be stored in a Pandas DataFrame.
 
   ```python
   import plotly_express as px
@@ -135,7 +135,7 @@ Open the starter file provided and live code, creating a scatter plot using Plot
 
   * Control the size of the circles by setting the size to equal Number of Housing Units Sold.
 
-  * Colour code the plot by County.
+  * Colour code the plot by County. **Note:** The Plotly Express library is maintained in the United States, hence the colour argument is spelled _color_.
 
   ```python
   # Create scatter plot comparing average sale price and cost of living index
@@ -181,7 +181,7 @@ If time remains, ask students the following questions:
 
 * What story do these visualizations tell about the real estate market in Maryland?
 
-  * **Answer:** The higher the cost of living, the higher the number of housing units sold. More homes are being sold in areas with a higher cost of the index, which can be related to the quality of the homes, the population size of the counties, etc. It also shows that more and more individuals are gravitating toward the areas with higher cost.
+  * **Answer:** The higher the cost of living, the higher the number of housing units sold. More homes are being sold in areas with a higher cost of living index, which can be related to the quality of the homes, the population size of the counties, etc. It also shows that more and more individuals are gravitating toward the areas with higher cost.
 
 * Which county could be an up-and-coming real estate opportunity? Why?
 
@@ -203,7 +203,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 **Files:**
 
-* [plotting_w_plotly.ipynb](Activities/02-Stu_Plotting_w_Plotly/Unsolved/Core/plotting_w_plotly.ipynb)
+* [plotting_w_plotly.ipynb](Activities/02-Stu_Plotting_w_Plotly/Unsolved/plotting_w_plotly.ipynb)
 
 - - -
 
@@ -213,7 +213,7 @@ Students and instructors participate in a dry walkthrough of the solution for th
 
 **Files:**
 
-* [plotting_w_plotly.ipynb](Activities/02-Stu_Plotting_w_Plotly/Solved/Core/plotting_w_plotly.ipynb)
+* [plotting_w_plotly.ipynb](Activities/02-Stu_Plotting_w_Plotly/Solved/plotting_w_plotly.ipynb)
 
 Open the solution and conduct a dry walkthrough.
 
@@ -221,7 +221,7 @@ Open the solution and conduct a dry walkthrough.
 
   ```python
   # Read in data
-  foreclosures = pd.read_csv(Path('../../Resources/allegheny_foreclosures.csv'),
+  foreclosures = pd.read_csv(Path('../Resources/allegheny_foreclosures.csv'),
                             infer_datetime_format= True,
                             parse_dates=True,
                             index_col='filing_date')
@@ -254,6 +254,10 @@ Explore the data, encouraging students to follow along and complete the same int
 
   ![explore_outlier.gif](Images/explore_outlier.gif)
 
+* Review the Challenge section, walking students through how to create the area plot using the `area` function.
+
+  * Highlight to students that an area plot is an advanced take on the traditional line plot.  The area between the lines is filled in, providing a  more impactful visual representation of the data. 
+
 Ask for any remaining questions before moving on.
 
 - - -
@@ -268,27 +272,27 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 * [parallel_coordinate.ipynb](Activities/03-Ins_Parallel_Coordinate/Solved/parallel_coordinates.ipynb)
 
-Open the solved solution file and conduct a dry walkthrough. While walking through the solved file, highlight the discussion points below. Make sure to place particular emphasis on the what and why of parallel coordinate plots, so students understand their use case and when they should be applied.
-
-Walkthrough the syntax required to create a parallel coordinate plot:
-
-* The parallel coordinate plot can be created using the `parallel_coordinates` function.
-
-  ```python
-  import plotly.express as px
-  import pandas as pd
-  from pathlib import Path
-
-  # Read in data
-  typology = pd.read_csv(Path('../Resources/housing_market_typology.csv'))[:30].sort_values('blockGroup')
-
-  # Create Parallel Coordinates plot
-  px.parallel_coordinates(typology, color='blockGroup')
-  ```
-
-  ![parallel_coordinates.gif](Images/parallel_coordinates.gif)
+Navigate to the Parallel Coordinate Plots section of the slides.  Moving through the slides, highlight the points below.
 
 * Communicate that parallel coordinate plots allow for multiple variables to be represented in parallel to one another. This is particularly valuable when tracing the relationships between variables, and how each variable relates to and affects the other.
+
+* Walkthrough the syntax required to create a parallel coordinate plot:
+
+  * The parallel coordinate plot can be created using the `parallel_coordinates` function.
+
+    ```python
+    import plotly.express as px
+    import pandas as pd
+    from pathlib import Path
+
+    # Read in data
+    typology = pd.read_csv(Path('../Resources/housing_market_typology.csv'))[:30].sort_values('blockGroup')
+
+    # Create Parallel Coordinates plot
+    px.parallel_coordinates(typology, color='blockGroup')
+    ```
+
+    ![parallel_coordinates.gif](Images/parallel_coordinates.gif)
 
 * By sorting the axes and filtering values, analysts can cluster attributes to assess relationships and trends.
 
@@ -296,11 +300,14 @@ Walkthrough the syntax required to create a parallel coordinate plot:
 
   * An assessment of **vacantLots**, **unitsPerSquareMile**, and **foreclosures** reveals that if there are more vacant lots on a block, there will be fewer units per square mile and fewer sales.
 
-Reinforce to students that parallel coordinate plots are used to visualize multivariate analysis by providing example use cases.
+
+Open the solved solution file and conduct a dry walkthrough. While walking through the solved file, highlight the discussion points below. Make sure to place particular emphasis on the what and why of parallel coordinate plots, so students understand their use case and when they should be applied.
+
+* Reinforce to students that parallel coordinate plots are used to visualize multivariate analysis by providing example use cases.
 
 * Another use case for a parallel coordinate plot would be analyzing the quality of a diamond. Variables of interest would be cut, carats, clarity, and price. Parallel coordinates would show how any of these attributes can affect the other.
 
-Break down the anatomy of the plot, emphasizing the components below.
+* Break down the anatomy of the plot, emphasizing the components below.
 
 * Point out the verticals on the plot. Each vertical represents a different variable. Because each variable can have a different range of numeric values, the scale of each vertical is specific to that variable. This would mean each vertical could have a different scale.
 
@@ -324,7 +331,7 @@ This will be the first time students work with parallel coordinate plots. Ask TA
 
 **Files:**
 
-* [plotting_in_parallel.ipynb](Activities/04-Stu_Parallel_Coordinates/Unsolved/Core/plotting_in_parallel.ipynb)
+* [plotting_in_parallel.ipynb](Activities/04-Stu_Parallel_Coordinates/Unsolved/plotting_in_parallel.ipynb)
 
 - - -
 
@@ -332,7 +339,7 @@ This will be the first time students work with parallel coordinate plots. Ask TA
 
 **Files:**
 
-* [plotting_in_parallel.ipynb](Activities/04-Stu_Parallel_Coordinates/Solved/Core/plotting_in_parallel.ipynb)
+* [plotting_in_parallel.ipynb](Activities/04-Stu_Parallel_Coordinates/Solved/plotting_in_parallel.ipynb)
 
 Kick off the review session by asking some of the questions below.
 
@@ -344,7 +351,7 @@ Kick off the review session by asking some of the questions below.
 
   * **Answer:** Scatter plots visualize the relationship between two data points as an intersection. Parallel coordinate plots visualize the relationship between two data points as parallel axes.
 
-  * **Answer:** **Scatter plots** inherently use two axes, while parallel coordinates are built for multivariate analysis and can have two or more axes.
+  * **Answer:** Scatter plots inherently use two axes, while parallel coordinates are built for multivariate analysis and can have two or more axes.
 
 * Which plot allows you to gain more value from the interaction?
 
@@ -378,13 +385,13 @@ In this instructor demo, students will continue learning about more advanced sta
 
 * [parallel_categories.ipynb](Activities/05-Ins_Parallel_Categories/Solved/parallel_categories.ipynb)
 
-Open the slideshow, navigate to the [section name here] and highlight the following:
+Open the slideshow, navigate to the Parallel Categories section, and highlight the following:
 
 * Whereas parallel coordinate plots are used for multivariate analysis and mapping relationships between variables, parallel categories plots are used to perform **multidimensional** analysis.
 
   * An example of multidimensional analysis is looking at sales and foreclosures data by housing type, region, and the number of units.
 
-* **Dimensions** are considered to be categories**. **Parallel categories plots focus on connecting the dots between each category, assessing the nuances per category, and the impact of categories on other categories.
+* **Dimensions** are considered to be categories. Parallel categories plots focus on connecting the dots between each category, assessing the nuances per category, and the impact of categories on other categories.
 
 Open the [starter file](Activities/05-Ins_Parallel_Categories/Solved/parallel_categories.ipynb), and live code the following:
 
@@ -459,7 +466,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 ### 11. Student Do: Categorical Property Evaluation Activity Review (10 min)
 
-For this activity, one student volunteer will present the story of Alleghany property assessments, sharing the parallel categories plot and providing some findings on dimensional patterns.
+For this activity, one student volunteer will present the story of Allegheny property assessments, sharing the parallel categories plot and providing some findings on dimensional patterns.
 
 This is a revised version of a turn-and-teach activity; however, instead of students working in teams, one student will lead the teaching.
 
@@ -482,7 +489,7 @@ Open the solution and ask the student volunteer to present the plot and relay th
 
   ![stu_parallel_categories_dimensions.png](Images/stu_parallel_categories_dimensions.png)
 
-* The line colouring of the plot can be changed using the `colour` attribute. This will help spot trends in the data.
+* The line colouring of the plot can be changed using the `color` attribute. This will help spot trends in the data.
 
   ![stu_parallel_categories_colour.png](Images/stu_parallel_categories_colour.png)
 
@@ -518,9 +525,9 @@ In this activity, students observe a demonstration of how to use the Mapbox API 
 
 To complete this activity, a Mapbox API will be required. A personal key can be obtained by signing up [here](https://account.mapbox.com/auth/signup/).
 
-Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/500-cities-local-data-for-better-health-fc759).
+Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset).
 
-Remember to create your `.env` file to set you Mapbox API key. You can use the `sample.env` file as a template.
+Remember to create your `.env` file to set you Mapbox API key. You can use the [`sample.env`](Activities/07-Ins_Mapbox_Demo/Solved/sample.env) file as a template.
 
 **Files:**
 
@@ -530,13 +537,11 @@ Go to the slideshow, navigate to the Mapbox section, and highlight the following
 
 * Mapbox API is an open-source API that gives developers a range of mapping visualizations and functions that enable the creation of interactive map plots.
 
-* Mapbox API is democratizing the map services industry (e.g., navigation and cartography), similar to how Plaid is doing this for FinTech.
+* Mapbox API is democratizing the map services industry (e.g., navigation and cartography), similar to how Alpaca is doing this for FinTech.
 
 * Mapbox offers three main services: maps, navigation, and search.
 
   * These services come with handy tools, such as map styles and vectors, map images and datasets, and live location.
-
-Open the starter file, and live code the following (make sure to have your Mapbox API key handy, and highlight the discussion points while coding):
 
 * Plotly Express has an integration endpoint that is specific for Mapbox API. This allows Plotly to use the Mapbox Maps API to create interactive map visualizations. Plotly Express comes with functions designed specifically for interacting with Mapbox.
 
@@ -585,11 +590,14 @@ Demonstrate how to create a map scatter plot using the Plotly Express `scatter_m
 
   ![scatter_map_plot.gif](Images/scatter_map_plot.gif)
 
+
+Open the starter file, and live code the steps to create a map plot as discussed in the slides. Make sure to have your Mapbox API key handy, and highlight the following discussion points while coding:
+
 * It's important to note that map plots can be a little more memory intensive than the plots we are used to.
 
   * Datasets should be filtered and aggregated to the highest level of granularity possible (without jeopardizing reporting context) so that plots do not take long to load.
 
-  * Sampling techniques (e.g., visualizing only top *n* items) to help reduce the amount of data being reflected on the visualization. These approaches will preserve reporting integrity.
+  * Use sampling techniques (e.g., visualizing only top *n* items) to help reduce the amount of data being reflected on the visualization. These approaches will preserve reporting integrity.
 
 Inform students that when datasets become too large to manage or reduce, technologies like [Datashader](http://datashader.org) can also be considered. Datashader specializes in turning large volumes of data into visualizations.
 
@@ -631,7 +639,7 @@ Open the solution and conduct a dry walkthrough:
 
   ![plotting_adventures.gif](Images/plotting_adventures.gif)
 
-* The scatter mapbox plot can be created using the `scatter_mapbox` function. The function has three key parameters: DataFrame, latitude field, and longitude field. Colour is also an acceptable argument, which accepts a DataFrame column as its value.
+* The scatter mapbox plot can be created using the `scatter_mapbox` function. The function has three key parameters: DataFrame, latitude field, and longitude field. The argument `color` accepts a DataFrame column as its value. 
 
   ![scatter_mapbox.png](Images/scatter_mapbox.png)
 
