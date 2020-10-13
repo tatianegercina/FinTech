@@ -18,9 +18,12 @@ In this homework assignment, you will help Harold accomplish the following tasks
 
 The data provided for this homework was retrieved from the following websites:
 
-* [Toronro Open Data](https://open.toronto.ca/)
+* [Toronto Open Data](https://open.toronto.ca/)
 
 * [Census Profile, 2016 Census - Toronto Metropolitan Area, Ontario and Canada](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/prof/details/page.cfm?Lang=E&Geo1=CMACA&Code1=535&Geo2=PR&Code2=01&SearchText=toronto&SearchType=Begins&SearchPR=01&B1=All&TABID=1&type=0)
+
+
+**Note:** If you encounter technical difficulties using PyViz, refer to the troubleshooting section of the [PyViz Installation Guide](PyVizInstallationGuide.md).
 
 ---
 
@@ -38,7 +41,7 @@ The data provided for this homework was retrieved from the following websites:
 
 ### Rental Analysis
 
-The first step to building the dashboard is to work out all of the calculations and visualizations in an analysis notebook. Once the code is running out, it can be copied over to a dashboard code and used with Panel to create the final layout. Use the `rental_analysis.ipynb` to complete the following:
+The first step to building the dashboard is to work out all of the calculations and visualizations in an analysis notebook. Once the code is running properly, it can be copied over to a dashboard code and used with Panel to create the final layout. Use the `rental_analysis.ipynb` to complete the following:
 
 #### Dwelling Types Per Year
 
@@ -66,7 +69,7 @@ As an optional challenge, you can plot each line chart in a different colour.
 
 #### Average House Value per Year
 
-In this section, you want to determine the average house value per year. An investor may want to understand better the sales price of the rental property over time. For example, a customer will want to know if they should expect an increase or decrease in the property value over time so they can determine how long to hold the rental property. You will visualize the `average_house_value` per year as a bar chart.
+In this section, you want to determine the average house value per year. An investor may want to better understand the sales price of the rental property over time. For example, a customer will want to know if they should expect an increase or decrease in the property value over time so they can determine how long to hold the rental property. You will visualize the `average_house_value` per year as a bar chart.
 
 1. Calculate the mean `average_house_value` for each year.
 
@@ -102,7 +105,7 @@ In this section, you want to figure out which neighbourhoods are the most expens
 
 #### Neighbourhood Map
 
-In this final section, you will read in neighbourhood location data and build an interactive map with the average prices per neighbourhood. Use a scatter Mapbox object from Plotly express to create the visualization. Remember, you will need your Mapbox API key for this.
+In this final section, you will read in neighbourhood location data and build an interactive map with the average prices per neighbourhood. Use a scatter Mapbox object from Plotly express to create the visualization. You will need your Mapbox API key for this.
 
 Remember that to create maps visualizations using Plotly Express, you will need to create an account at [mapbox](https://www.mapbox.com/) and [create an access token](https://docs.mapbox.com/help/how-mapbox-works/access-tokens/#creating-and-managing-access-tokens).
 
@@ -110,7 +113,7 @@ Remember that to create maps visualizations using Plotly Express, you will need 
 
 #### Cost Analysis (Optional Challenge)
 
-Plotly express offers a broad selection of interactive plots. In this optional challenge section, you will use Plotly express to a couple of plots that investors can interactively filter and explore various factors related to the house value of Toronto's neighbourhoods.
+Plotly express offers a broad selection of interactive plots. In this optional challenge section, you will use Plotly express to create a couple of plots that investors can interactively filter and explore various factors related to the house value of Toronto's neighbourhoods.
 
 1. Create a bar chart row facet to plot the average house values for all Toronto neighbourhoods per year.
 
@@ -138,7 +141,7 @@ Sample Dashboard:
 
 ### Submission
 
-* Create separate notebooks for the analysis and the dashboard and upload these to Github.
+* Upload two separate notebooks to Github - One for the analysis and one for the dashboard.
 
 * Write a README file to explain how to run and use your dashboard.
 
