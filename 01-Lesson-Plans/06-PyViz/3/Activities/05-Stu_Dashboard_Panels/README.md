@@ -10,7 +10,7 @@ Put your best foot forward and create a dashboard using Panel. Emphasize to the 
 
 1. Create a Panel **row** using `parallel_categories` and `parallel_coordinates`.
 
-2. Create a **row** that contains only plot `num_foreclosures_plot`.
+2. Create a **row** that contains only `num_foreclosures_plot`.
 
 3. Use the `append` function to add `num_sales_plot` to the **row** object created in step 2.
 
