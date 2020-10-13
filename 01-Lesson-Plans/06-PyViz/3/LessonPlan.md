@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 * Throughout the lesson, emphasize the importance of dashboards to FinTech. Dashboards offer FinTech a new platform for information and data visualization, and allow finance professionals to monitor and visualize data trends and changes over time. For example, dashboards are used by investment bankers to track and monitor stocks and trades. They also enable banking consumers to understand and consume their financial data more efficiently. Moreover, dashboards allow account owners a visual of their spending habits (i.e., bills, groceries, entertainment, shopping, etc.).
 
-* Be mindful of your machine's resource consumption while running the dashboards. Because the server used to host Panel dashboards as web apps are spun up locally, your machine will have to execute the code and host the web app.
+* Be mindful of your machine's resource consumption while running the dashboards. Because the server used to host Panel dashboards as web apps is spun up locally, your machine will have to execute the code and host the web app.
 
 * Watch the class pacing; it should feel urgent, but not rushed. Stick to the Time Tracker as closely as possible. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Encourage students in need of support to attend office hours.
 
@@ -46,7 +46,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.3 Slides](https://docs.google.com/presentation/d/1Y5C2PV0BJYnZWVk-CXqsHvHAX9zoJRLIEW2tZI2d4go/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.3 Slides](https://docs.google.com/presentation/d/1jBGVmcCsXtg-FHaXCl8amMRdRMJ0kqFnJnCIwcFB7b8/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -62,7 +62,7 @@ Welcome back! Today marks the final day of the PyViz Data Visualization unit. To
 
 Explain to students that dashboards are data platforms that host multiple reports and visualizations. Dashboards take data reporting up a notch by projecting curated, tailored charts and visualizations that measure performance and corresponding KPIs.
 
-Emphasize that creating a dashboard is different from creating a report.
+Using the slides, emphasize that creating a dashboard is different from creating a report.
 
 * Reports are used to help visualize underlying data and enable users to perform their own analysis of the data.
 
@@ -80,15 +80,15 @@ Share that Panel is an open-source Python library that allows users to integrate
 
 ### 2. Instructor Do: Intro to Panel (10 mins) (Critical)
 
-Go to the slideshow, navigate to the Intro to Panel section, and highlight the following:
+Contuing with the slideshow, navigate to the Intro to Panel section, and highlight the following:
 
 * Digital dashboards have become a staple in the tech world; they are used to visualize personal finances, company performance and revenue, and even for election predictions and results.
 
-* Traditionally, visualization technology-specific stacks–like those associated with Cognos, Tableau, and Qlik–were used to create dashboards.
+* Traditionally, visualization technology stacks – like those associated with Cognos, Tableau, and Qlik – were used to create dashboards.
 
 * **Panel**, a PyViz dashboard package, has altered the data visualization arena by providing a programmatic way to easily create dashboards. Now Python developers can create dashboards without having to learn a new technology stack specific for visualization (i.e., Cognos and Tableau). Panel also allows Python developers to be competitive in the visualization job market, which has been primarily reserved for visualization developers.
 
-  * Imagine combining **Panel** with other FinTech technologies, such as **Plaid**. A Python developer could use **Plaid** to get financial data, and then the developer could aggregate and summarize the data with a **Panel** dashboard. This unique marriage of **Panel** and **Plaid** is only possible because **Panel** supports Python.
+  * Imagine combining **Panel** with other FinTech technologies, such as **Alpaca**. A Python developer could use **Alpaca** to get financial data, and then the developer could aggregate and summarize the data with a **Panel** dashboard. This unique marriage of **Panel** and **Alpaca** is only possible because **Panel** supports Python.
 
 * Panel's integration with PyViz has made it a highly valuable skill in analytics, as well as a staple in the Python data visualization ecosystem. Dashboards are currently being used to drive business decisions, track and monitor KPIs, and improve operational processes.
 
@@ -96,7 +96,7 @@ Go to the slideshow, navigate to the Intro to Panel section, and highlight the f
 
   * PyViz removes the need to use another technology stack for dashboards/visualizations (i.e., Tableau).
 
-Walk through some of these [example](https://gapminders.pyviz.demo.anaconda.com/gapminders) dashboards, using the following discussion points as a guide:
+Walk through this [example](https://gapminders.pyviz.demo.anaconda.com/gapminders) dashboard, using the following discussion points as a guide:
 
 * PyViz comes with widgets and plugins that allow it to render plots and visualizations from other technologies, like Pandas, Matplotlib, and Plotly. This enables developers to build visualizations in the appropriate technologies, and then display them all in one centralized location with a Panel dashboard.
 
@@ -132,7 +132,7 @@ Students will now receive a short demo on how to use Panel at a high level.
 
 * [getting_started_panel.ipynb](Activities/01-Ins_Getting_Started_Panel/Solved/getting_started_panel.ipynb)
 
-Open the solved file, and show how to prep **Panel** within Jupyter Lab:
+Referring to the _Getting Started with Panel_ section of the slides, discuss the steps to prep **Panel** inside a Jupyter Notebook:
 
 * Panel can be imported into Python using the import command.
 
@@ -164,6 +164,8 @@ Walk students through how the `interact` function is used to create quick and ea
   * It's important to note that this parameter widget is an added benefit provided by Panel. Not all dashboarding technologies provide this convenient feature.
 
     ![interact_data_struct.gif](Images/interact_data_struct.gif)
+
+Transitioning to a live demonstration, open the solved file, and show how to prep **Panel** within Jupyter Lab.  Then, walk through the remaining code, discussing the following:
 
 * Most Panel interact functions accept other functions as arguments. This is because the **interact** widget was designed from a functional programming point of view. This approach heavily relies on developers passing functions to functions, which allows Panel to dynamically render content and plots based on user input/interaction.
 
@@ -266,19 +268,19 @@ Open the solution file, and conduct a dry walkthrough. Emphasize the following:
                   color='years',
                   title='Alleghany, PA Housing Transactions')
 
-    # Create plot
-    plot = px.scatter(housing_transactions, x='sales',
-                                          y='foreclosures',
-                                          color='years',
-                                          title='Alleghany, PA Housing Transactions')
+  # Create plot
+  plot = px.scatter(housing_transactions, x='sales',
+                                        y='foreclosures',
+                                        color='years',
+                                        title='Alleghany, PA Housing Transactions')
 
-    # Wrap Plotly object by explicitly declaring Panel pane
-    pn.pane.Plotly(plot)
+  # Wrap Plotly object by explicitly declaring Panel pane
+  pn.pane.Plotly(plot)
   ```
 
   ![plot_as_pane.png](Images/plot_as_pane.png)
 
-* If ever unsure whether or not an object should be wrapped as a **pane** or **panel**, the `panel.panel` helper function can be used to identify the appropriate **pane** or **panel** library to use. `panel.panel` will render the same object as `panel.pane`.
+* If ever unsure whether or not an object should be wrapped as a **pane** or **panel**, the `panel.panel` helper function can be used. This function will identify the appropriate **pane** or **panel** library to use and render the appropriate object. 
 
   * Not all objects can be rendered as a Panel **pane**. Some objects, like hvPlots, have to be rendered as **panel**, which is similar to a **pane** but with additional row/column structuring.
 
@@ -338,7 +340,7 @@ Open the solution and explain the following:
 
   * Ask students: What is the purpose behind the `interact` function? What does it do?
 
-    * **Answer:** The `interact` function creates an interaction sliding widget that serves as a way for users to customize data presented on a plot. The `interact` widget is an alternative to hardcoding argument values, and it serves as a separate mechanism for getting user input.
+    * **Answer:** The `interact` function creates an interactive sliding widget that serves as a way for users to customize data presented on a plot. The `interact` widget is an alternative to hardcoding argument values, and it serves as a separate mechanism for getting user input.
 
   * In order for Panel to create the interaction widget, it has to convert the plot to a **pane** object. The `interact` function handles this conversion behind the scenes.
 
@@ -399,31 +401,6 @@ Open the starter file, and conduct a dry walkthrough of how to create and use Pa
 * The `panel.Row` function is used to create a **row**. The function accepts media types as arguments. The function will align all content horizontally.
 
   ```python
-  import pandas as pd
-  import numpy as np
-  import panel as pn
-  from panel.interact import interact
-  import plotly.express as px
-  pn.extension('plotly')
-
-  housing_transactions = pd.DataFrame({
-    "years": np.random.randint(2010, 2019, 100),
-    "sales": np.random.randint(53, 500, 100),
-    "foreclosures": np.random.randint(10, 147, 100)}).sort_values(['years', 'sales'])
-
-  # Create scatter plot
-  scatter_plot = px.scatter(
-      housing_transactions,
-      x='sales',
-      y='foreclosures',
-      color='years',
-      title='Allegheny Sales/Foreclosures Correlation'
-  )
-
-  # Create bar plot
-  transactions_by_year = housing_transactions.groupby('years').sum().reset_index()
-  bar_plot = px.bar(transactions_by_year, x='years', y='sales', title='Allegheny Sales by Year')
-
   # Create row
   row = pn.Row(scatter_plot, bar_plot)
   row
@@ -667,7 +644,7 @@ Go to the slideshow, navigate to the dashboards as web applications section, and
 
 Open the starter file, and live code how to run a Panel dashboard as a **web app**.
 
-* In order to deploy the notebook and dashboard as a  **web app**, a Panel object has to be ran as a servable object. This can be achieved using the `servable` function.
+* In order to deploy the notebook and dashboard as a  **web app**, a Panel object must first be ran as a servable object from inside its Jupyter notebook. This can be achieved using the `servable` function.
 
   ```python
   # Execute Panel dashboard using servable function
@@ -680,8 +657,7 @@ Open the starter file, and live code how to run a Panel dashboard as a **web app
 
   * The `servable` function can be considered as a flag that tells Panel what Panel object to render as a **web app**.
 
-* Once the Panel object has been tagged as servable, the `panel serve` command can be executed from a CLI to spin up a **Bokeh** server and deploy the specified Panel object as a **web app**.
-
+* Once the Panel object has been tagged as servable, the `panel serve` command can be executed in the CLI, from the notebook file location, to spin up a **Bokeh** server and deploy the specified Panel object as a **web app**.
   ```shell
   panel serve dashboard_webapps.ipynb --log-level debug --show
   ```
@@ -694,7 +670,7 @@ If time remains, ask the following guiding question:
 
 * In what ways can Panel dashboards add value to the financial industry?
 
-  * **Answer:** Panel dashboards allow financial companies to retire one*off/ad hoc reports. Instead of distributing financial reports via email and making graphs and pivot tables in Excel, all reporting can be migrated to Panel dashboards, executed as **web apps**, and made accessible company-wide.
+  * **Answer:** Panel dashboards allow financial companies to retire one-off/ad hoc reports. Instead of distributing financial reports via email and making graphs and pivot tables in Excel, all reporting can be migrated to Panel dashboards, executed as **web apps**, and made accessible company-wide.
 
   * **Answer:** Panel's interactive dashboards offer financial companies the opportunity to analyze and gain insights from data using an interactive platform. Instead of analyzing financial reports that contain static/stale data, finance professionals can simply utilize a dashboard to access the latest data.
 
