@@ -10,17 +10,27 @@ If you finish early, assist your peers with troubleshooting and debugging.
 
 ## Instructions
 
-1. Use the Panel `extension` function to specify the Panel plugin(s) required for today's activity. The activity will use **Plotly Express** and **hvPlot**.
+1. Create a `.env` with your Mapbox API stored as the environment variable `mapbox`.  
 
-2. Create a Panel column and add `population_plot` and `crime_plot` to it. Also, provide a Markdown header explaining what these plots represent.
+2. Use the Panel `extension` function to specify the Panel plugin(s) required for today's activity. The activity will use **Plotly Express** and **hvPlot**.
+
+3. Using the code provided:
+
+    * Read in your Mapbox API key.
+    * Set the Mapbox access token.
+    * Read in CSVs and prepare the data.
+    * Create the plots.
+    
+    
+4. Create a Panel column and add `population_plot` and `crime_plot` to it. Also, provide a Markdown header explaining what these plots represent.
 
    **Hint:** `## Population and Crime Geo Plots`.
 
-3. Create a second Panel column and add `population_violence` and `violent_murder` objects to it. Provide a markdown header.
+5. Create a second Panel column and add `population_violence` and `violent_murder` objects to it. Provide a markdown header.
 
-4. Create a tabs object that will contain the column panels created in steps 1 and 2. There should be two tabs, with a column object in each.
+6. Create a tabs object that will contain the column panels created in steps 1 and 2. There should be two tabs, with a column object in each.
 
-5. Customize the labels used for each tab. The first tab should be called **Geospatial**. The second should be called **Correlations**.
+7. Customize the labels used for each tab. The first tab should be called **Geospatial**. The second should be called **Correlations**.
 
 ### Hint
 
