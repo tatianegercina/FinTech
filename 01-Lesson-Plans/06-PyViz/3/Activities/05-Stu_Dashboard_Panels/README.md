@@ -8,15 +8,17 @@ Put your best foot forward and create a dashboard using Panel. Emphasize to the 
 
 ## Instructions
 
-1. Create a Panel **row** using `parallel_categories` and `parallel_coordinates`.
+Use the provided plots to generate your dashboard.
 
-2. Create a **row** that contains only plot `num_foreclosures_plot`.
+1. Create a Panel **row** using `parallel_categories` and `parallel_coordinates`. Name this object `row_of_parallel`.
+
+2. Create a **row** that contains only `num_foreclosures_plot`. Name this object `row_of_bar`.
 
 3. Use the `append` function to add `num_sales_plot` to the **row** object created in step 2.
 
-4. Create a **column** object that contains a Markdown title, `row_of_parallel`, and `row_of_bar`.
+4. Create a **column** object that contains a Markdown title, `row_of_parallel`, and `row_of_bar`. Name this object `plots_as_column`.
 
-5. Declare a **tab** object containing the following content: `plots_as_column`, `row_of_bar`, and `row_of_parallel`.
+5. Declare a **tab** object containing the following content: `plots_as_column`, `row_of_bar`, and `row_of_parallel`. Name this object `tabs`.
 
 - - -
 
