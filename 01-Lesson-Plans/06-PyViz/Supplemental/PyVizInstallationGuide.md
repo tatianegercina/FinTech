@@ -4,7 +4,7 @@ PyViz is a Python visualization package that provides a single platform to acces
 
 Follow the steps below to install and set up PyViz in your Python environment. These steps should be completed outside of class.
 
-**NOTE:** Make sure that you are using your conda environment that has anaconda installed. If necessary, create a new environment for this lesson using:
+**NOTE:** Make sure that you are using your conda environment that has anaconda installed. Create a new environment for this lesson using:
 
 ```shell
 conda create -n pyvizenv python=3.7 anaconda
@@ -115,6 +115,31 @@ Now you're all set to get started creating visual masterpieces using PyViz techn
 ---
 
 ## Troubleshooting
+
+If you experience blank plots rendering in your Jupyter Lab preview, try the following steps:
+
+1. First, make sure you are not importing `hvplot.pandas` before a `pn.extension()`.  Loading `hvplot.pandas` first initializes a Holoviews extension and causes the Panel extension to fail.
+
+2. Next, clear your browser cache.
+
+    - If using Chrome, you can do this by right clicking and choosing `Inspect` from the drop menu.
+
+      <img width=400 src=Images/clear_browser_cache1.PNG alt='clear_browser_cache1'><br>
+      <br>
+
+    - Next, hold down click on the browser reload button which will cause another drop down menu to appear.  From this menu select `Empty Cache and Hard Reload`.
+
+      <img width=400 src=Images/clear_browser_cache2.PNG alt='clear_browser_cache2'><br>
+      <br>
+
+3. Then clear the Kernel cache:
+
+    - Click the `Kernel` drop down menu inside Jupyter Lab.  From this menu, click `Restart Kernel and Clear Outputs`.
+
+      <img width=400 src=Images/clear_kernel_cache.PNG alt='clear_kernel_cache'><br>
+      <br>
+
+4. After these steps are completed, re-run your notebook.
 
 If you have issues with PyViz or Jupyter Lab, you may need to update your Conda environment. Follow the steps below to update the environment and then go back to the install guide to complete a fresh installation of PyViz.
 
