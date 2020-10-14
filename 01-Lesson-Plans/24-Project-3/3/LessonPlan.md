@@ -86,7 +86,7 @@ After students have presented their projects, please take some time to submit th
 
 ### Grading
 
-The rubric provided [Project Rubric](/Rubric/Grading_Rubric.pdf) is intended as a general guide. Use your own judgment regarding presentation and splitting tasks among group members. If your group has any questions about individual contributions to the project, contact your SSM to determine grading for each group member.
+The rubric provided [Project Rubric](./Rubric/Grading_Rubric.pdf) is intended as a general guide. Use your own judgment regarding presentation and splitting tasks among group members. If your group has any questions about individual contributions to the project, contact your SSM to determine grading for each group member.
 
 ---
 
