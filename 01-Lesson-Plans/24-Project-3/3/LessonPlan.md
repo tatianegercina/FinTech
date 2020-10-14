@@ -80,8 +80,15 @@ Congratulate them! It's challenging to conceive, develop, and present a new FinT
 
 After students have presented their projects, please take some time to submit their work to the form below. This will assist future instructional staff.
 
-* [Student Project Examples]()
+* [Student Project Examples](https://forms.gle/CBk5tyy4sSsGN8k38)
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+### Grading
+
+The rubric provided [Project Rubric](/Rubric/Grading_Rubric.pdf) is intended as a general guide. Use your own judgment regarding presentation and splitting tasks among group members. If your group has any questions about individual contributions to the project, contact your SSM to determine grading for each group member.
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
