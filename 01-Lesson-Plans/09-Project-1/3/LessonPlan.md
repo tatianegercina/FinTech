@@ -20,7 +20,7 @@ Today, students will present their project apps to the class! Afterwards, they w
 
 ### 1. Instructor Do: Set Up Your Equipment (15 minutes before class)
 
-Come to class with enough time to set up your laptop and other equipment. It is advisable to prepare a list of the GitHub pages links for all deployed repos, so students can quickly launch their apps.
+Come to class with enough time to set up your laptop and other equipment. 
 
 If students have hosted presentations on Google Presentations, compile a list of those as well, to avoid switching computers.
 
@@ -33,8 +33,6 @@ Welcome students and check whether anyone has any questions before the presentat
 Congratulate students for developing their projects to a state worth presenting to the class. They should take pride in what they've done over just nine weeks of training!
 
 Tell students to deploy their latest changes to GitHub. After this, all it will take is a quick pull to get any changes.
-
-Make sure groups have deployed their app to GitHub Pages as well. We want to see their projects in action!
 
 Share the following breakdown and tips on presenting with the class:
 
@@ -84,7 +82,13 @@ Congratulate them! It's challenging to conceive, develop, and present a new FinT
 
 After students have presented their projects, please take some time to submit their work to the form below. This will assist future instructional staff.
 
-* [Student Project Examples]()
+* [Student Project Examples](https://forms.gle/CBk5tyy4sSsGN8k38)
+
+---
+
+### Grading
+
+The rubric provided [Project Rubric](/Rubric/Grading_Rubric.pdf) is intended as a general guide. Use your own judgment regarding presentation and splitting tasks among group members. If your group has any questions about individual contributions to the project, contact your SSM to determine grading for each group member.
 
 ---
 
