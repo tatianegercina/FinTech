@@ -20,7 +20,7 @@ In this class, your students will present their project dashboards to the class!
 
 ### 0. Instructor Do: Set Up Your Equipment (15 minutes before class)
 
-Make sure to come to class and setup your laptop and other equipment. It is recommended that you prepare a list of the GitHub pages links for all deployed repos so that students can quickly launch their dashboards.
+Make sure to come to class and setup your laptop and other equipment.
 
 If students have hosted presentations on Google Presentations, compile a list of those as well to avoid switching computers.
 
@@ -33,8 +33,6 @@ Welcome students and check whether anyone has any questions before the presentat
 Congratulate your class for developing their projects to a state worth presenting. Assure them that they should take pride in what they've done over a mere nine weeks of training!
 
 Tell students to deploy their latest changes to GitHub. After this, all it will take is a quick pull to get any changes.
-
-Make sure groups have deployed their dashboard to GitHub Pages, as well. We want to see their projects in action!
 
 Give students a rundown of how their presentations should pan out.
 
@@ -82,8 +80,14 @@ Congratulate them! It's challenging to conceive, develop, and present a new FinT
 
 After students have presented their projects, please take some time to submit their work to the form below. This will assist future instructional staff.
 
-* [Student Project Examples]()
+* [Student Project Examples](https://forms.gle/CBk5tyy4sSsGN8k38)
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+### Grading
+
+The rubric provided [Project Rubric](./Rubric/Grading_Rubric.pdf) is intended as a general guide. Use your own judgment regarding presentation and splitting tasks among group members. If your group has any questions about individual contributions to the project, contact your SSM to determine grading for each group member.
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
