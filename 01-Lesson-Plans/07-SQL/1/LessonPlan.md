@@ -32,6 +32,8 @@ By the end of today's class, students will be able to:
 
 * This lesson introduces new content rapidly. Students may express frustration at learning a new interface and programming language simultaneously. Explain to students that while the learning curve may be steep at first, SQL experience is highly sought after and well worth the effort required to become comfortable with it.
 
+* The homework assignment for this unit is **optional**.
+
 ### Sample Class Video (Highly Recommended)
 
 * To watch an example class lecture, go here: [7.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c6264b7e-e1bb-41d4-be84-aac3016512d0) Note that this video may not reflect the most recent lesson plan.
@@ -58,7 +60,11 @@ Open the slideshow and review the learning outcomes and class objectives. Then, 
 
 * Today's lesson will introduce students to the most popular database management language: SQL.
 
-* SQL allows us to connect to a database and store, manipulate, and analyze the (often large amounts of) data within.
+* SQL (often pronounced "sequel") stands for Structured Query Language.  It is one of the main query languages used to access data within relational databases.
+
+* SQL allows programmers to create, populate, manipulate, and access databases, as well as provide the ability to leverage scalable server-side storage for large volumes of data.
+
+* With SQL, data is stored in tables on a server, similar to spreadsheets that you would create in Microsoft Excel. This makes the data easy to visualize and search.
 
 * As companies continue to store data and leverage the insights derived from data analysis, SQL programmers continue to be in high demand. Therefore, SQL is also an economically valuable skill.
 
@@ -68,11 +74,7 @@ Open the slideshow and review the learning outcomes and class objectives. Then, 
 
 In this activity, instructors introduce students to PostgreSQL and pgAdmin, a database management language and GUI, respectively.
 
-Open the slideshow to the Postgres section and take some time to go over the purpose of PostgreSQL and pgAdmin:
-
-* SQL (often pronounced "sequel") stands for Structured Query Language. It is a powerful programming language designed to allow programmers to create, populate, manipulate, and access databases, as well as provide the ability to leverage scalable server-side storage for large volumes of data.
-
-* With SQL, data is stored in tables on a server, similar to spreadsheets that you would create in Microsoft Excel. This makes the data easy to visualize and search.
+Open the slideshow to the "Postgres and pgAdmin" section and take some time to go over the purpose of PostgreSQL and pgAdmin:
 
 * PostgreSQL (usually referred to as "Postgres") is an object-relational database system that uses the SQL language. PostgreSQL is one of the many *vendors* that utilize the underlying SQL technology—similar to other well-known vendors such as MySQL, Microsoft SQL Server, and Oracle SQL.
 
@@ -80,7 +82,7 @@ Open the slideshow to the Postgres section and take some time to go over the pur
 
 Slack out the following resources:
 
-* [Student Guide](../Supplemental/StudentGuide.md) containing this week's objectives as well as resource links.
+* [Student Guide](../Supplemental/StudentGuide.md) containing resource links and helpful information relevant to this week's class.
 
 * [SQL Reference Guide](../Supplemental/SQL_reference_guide.pdf) for students to use as a reference during the activities this week.
 
@@ -171,9 +173,9 @@ CREATE TABLE customer (
 
 * `city VARCHAR(50)` creates a `city` column that represents the city in which the customer lives. The column values can hold character strings of up to 50 characters.
 
-* `province CHAR(2)` creates a `province` column that represents the province ticker in which the customer lives. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values *must* be character strings of 2 characters.
+* `province CHAR(2)` creates a `province` column that represents the province ticker in which the customer lives. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values must be character strings of *exactly* 2 characters.
 
-* `postal_code CHAR(6)` creates a `postal_code` column which represents the postal code of the customer. The CHAR datatype ensures that the column values *must* be character strings of 6 characters.
+* `postal_code CHAR(6)` creates a `postal_code` column which represents the postal code of the customer. The CHAR datatype ensures that the column values must be character strings of *exactly* 6 characters.
 
 **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
 
@@ -195,7 +197,7 @@ Ask the class how to avoid this kind of error. Students may respond that they ca
 
 Show the class an alternative method:
 
-* Highlight the lines of code to run, and then click the lightning bolt icon to run only the highlighted selection. This method of running SQL code is preferable to deleting the previous code.
+* Highlight the lines of code to run, and then click the play icon to run only the highlighted selection. This method of running SQL code is preferable to deleting the previous code.
 
   ![Select.png](Images/Select.png)
 
@@ -451,7 +453,7 @@ Explain the following points:
 
 * Because values will automatically increment, each row's ID is guaranteed to be unique. This ensures that SQL does not identify and update the wrong row when CRUD (Create, Read, Update, Delete) statements are implemented (which we'll cover in the following activities).
 
-* The `INSERT` statements have not changed, as they do not need to insert data specifically into the `customer_id` column. SQL automatically provides value for this column, fulfilling the uniqueness constraint by automatically incrementing the last value used as a customer ID.
+* The `INSERT` statements have not changed, as they do not need to insert data specifically into the `customer_id` column. SQL automatically provides the values for this column, fulfilling the uniqueness constraint by automatically incrementing the last value used as a customer ID.
 
 * The data type for the `customer_id` column is automatically assigned as an integer.
 
@@ -539,11 +541,13 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
 
-**Note:** If issues arise when using the pgAdmin Import/Export tool, there is an included [seed.sql](Activities/06-Ins_Importing_Data/Solved/seed.sql) file within the Solved folder of each instructor/student activity in the remaining half of the day. Distribute and use the file when necessary and refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
+**Note:** If issues arise when using the pgAdmin Import/Export tool, there is an included *seed.sql* file within the Solved folder of each instructor/student activity in the remaining half of the day. Distribute and use the file when necessary and refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
 
 **Files:**
 
 * [mortgage.csv](Activities/06-Ins_Importing_Data/Resources/mortgage.csv)
+
+* [seed.sql](Activities/06-Ins_Importing_Data/Solved/seed.sql)
 
 * [schema.sql](Activities/06-Ins_Importing_Data/Solved/schema.sql)
 
@@ -629,7 +633,7 @@ Answer any questions before moving on.
 
 In this activity, students are introduced to the concept of Create, Read, Update, and Delete (CRUD) statements in SQL.
 
-Return to the `CRUD` section of the slides and begin to explain CRUD operations.
+Return to the slides, navigate to the `CRUD` section, and begin to explain CRUD operations.
 
 * **CRUD**, while an unusual acronym, is a set of tools that are persistently used throughout programming.
 
@@ -698,7 +702,7 @@ In this activity, students will utilize CRUD operations on the provided data.
 
 Let the class know that they will be using the `WHERE` clause in this activity.
 
-This activity will require students to do some research. Links are provided to help them search for solutions to problems they are likely to encounter.
+This activity will require students to do some research. A link is provided to help them with this component.
 
 ---
 
@@ -712,7 +716,7 @@ This activity will require students to do some research. Links are provided to h
 
 * [query.sql](Activities/08-Stu_CRUD/Solved/query.sql)
 
-Open a query tool in `sales_db` and copy and paste the code from schema.sql and seed.sql to create and populate a new table named `sales`. Then explain the following:
+Open a query tool in `sales_db` and copy and paste the code from schema.sql and seed.sql to create and populate a new table named `sales`. Walk through the queries provided, explaining the following:
 
 * Select statements read the data from the table and output the specified columns.
 
@@ -886,21 +890,22 @@ Open the query.sql file and copy the code. Then open a new query tool and paste 
   FROM payments
   CROSS JOIN banks;
   ```
+* To complete the bonus section, use code from the schema.sql file to create a new table named `customer` using the data in `customer.csv`, then explain the following to students while running the accompanying query:
 
-* In order to find the customers with Wells Fargo bank accounts, the banks and customer tables must be joined together with the payments table. This is because the customer table cannot directly join to the banks table, as there is no common key or column. However, by using the payments table as a joiner table (containing both a `bank_routing_number` and a `customer_id`), customers can be linked to payment records that are linked to Wells Fargo bank accounts.
+    * In order to find the customers with Wells Fargo bank accounts, the banks and customer tables must be joined together with the payments table. This is because the customer table cannot directly join to the banks table, as there is no common key or column. However, by using the payments table as a joiner table (containing both a `bank_routing_number` and a `customer_id`), customers can be linked to payment records that are linked to Wells Fargo bank accounts.
 
-  ```sql
-  SELECT
-    a.payment_id,
-    a.bank_number,
-    a.bank_routing_number,
-    b.bank_name,
-    c.first_name,
-    c.last_name
-  FROM payments as a
-  INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number
-  INNER JOIN customer as c ON a.customer_id = c.customer_id
-  ```
+      ```sql
+      SELECT
+        a.payment_id,
+        a.bank_number,
+        a.bank_routing_number,
+        b.bank_name,
+        c.first_name,
+        c.last_name
+      FROM payments as a
+      INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number
+      INNER JOIN customer as c ON a.customer_id = c.customer_id
+      ```
 
 Answer any questions before ending the class.
 
