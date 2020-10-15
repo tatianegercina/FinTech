@@ -16,10 +16,10 @@ In this activity, you will be utilizing CRUD operations (Create, Read, Update, D
 
 * Add a new boolean column `loan_distributed` that defaults to True.
 
-* Insert a new record into the sales table where the sales_id is 101, the payment_id is 101, the mortgage_id is 2, the loan_amount is $734544, and the loan_date is `1995-10-05`.
+* Insert a new record into the sales table where the sales_id is 101, the payment_id is 101, the mortgage_id is 2, the loan_amount is $734,544, and the loan_date is `1995-10-05`.
 
 * Delete the sales record where sales_id is 72.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

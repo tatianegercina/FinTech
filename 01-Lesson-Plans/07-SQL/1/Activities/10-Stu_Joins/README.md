@@ -6,7 +6,7 @@ In this activity, you will be using joins to query payment information and assoc
 
 1. Create a new database named `payments_db`.
 
-2. Use the the pgAdmin Import/Export tool to create the `payments` and `banks` tables:
+2. Create two tables named `payments` and `banks`, then import the data from `payments.csv` and `banks.csv` using the pgAdmin Import/Export tool:
 
     * [payments.csv](Resources/payments.csv)
 
@@ -53,4 +53,4 @@ Create a `customer` table and import the [customer.csv](Resources/customer.csv) 
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

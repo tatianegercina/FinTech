@@ -22,4 +22,4 @@ Create a query to return all female customers from Maryland who are less than 30
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -34,4 +34,4 @@ In this activity, you will use pgAdmin to recreate and query a table based on an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
